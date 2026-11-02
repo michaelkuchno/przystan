@@ -23,7 +23,11 @@ jobs:
         with:
           distribution: temurin
           java-version: 21
-      - uses: android-actions/setup-android@v3
+      - name: Android SDK packages (SDK is preinstalled on the runner)
+        run: |
+          echo "ANDROID_HOME=$ANDROID_SDK_ROOT" >> "$GITHUB_ENV"
+          yes | "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+          "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "build-tools;36.0.0"
       - run: npm ci
       - name: Restore keystore
         run: echo "${{ secrets.PRZYSTAN_KEYSTORE_BASE64 }}" | base64 -d > "$RUNNER_TEMP/przystan-release.jks"
