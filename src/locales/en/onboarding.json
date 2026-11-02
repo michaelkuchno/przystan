@@ -1,0 +1,48 @@
+{
+  "progress": "Step {{step}} of {{total}}",
+  "language": "Language",
+  "welcome": {
+    "title": "Welcome to Harbor",
+    "text": "A work and study tool for social rehabilitation educators and addiction specialists. Choose a language – you can change it at any time in settings.",
+    "offline": "Harbor works 100% offline. Nothing is sent to the internet – your data stays on this device only."
+  },
+  "password": {
+    "title": "Set a password",
+    "text": "The password encrypts all data (AES-256). You will enter it every time you open the app and after automatic locking.",
+    "label": "Password or PIN (min. 6 characters)",
+    "hint": "A few words or a longer phrase works best.",
+    "repeat": "Repeat password",
+    "strength0": "Too short",
+    "strength1": "Weak – make it longer or more varied",
+    "strength2": "Fair",
+    "strength3": "Good",
+    "strength4": "Very good",
+    "lossTitle": "Lost password = lost data.",
+    "lossText": "There is no way to recover the password and no back door. Keep it somewhere safe and make regular backups.",
+    "ack": "I understand that I cannot recover my data without the password.",
+    "ackRequired": "Please confirm that you understand how the password works.",
+    "tooShort": "The password must have at least 6 characters.",
+    "mismatch": "The passwords do not match.",
+    "create": "Encrypt and continue",
+    "creating": "Creating key…"
+  },
+  "modules": {
+    "title": "What's inside",
+    "text": "One consistent space for working with many people, designing prevention and studying.",
+    "clients": { "title": "{{Clients}}", "text": "Educational assessment, individual plan, relapse prevention plan, timeline, genogram." },
+    "tools": { "title": "Tools to use together", "text": "Urge surfing, readiness ruler, chain analysis, HALT and more." },
+    "prevention": { "title": "Prevention", "text": "Prevention programme builder with evaluation and PDF export." },
+    "simulator": { "title": "Conversation simulator", "text": "Motivational interviewing practice with feedback." },
+    "learn": { "title": "Study", "text": "Spaced-repetition flashcards and exam practice." },
+    "disclaimer": "Harbor supports work and study. It does not make medical diagnoses or decisions on behalf of a professional – all indicators and suggestions are supportive only."
+  },
+  "mode": {
+    "title": "Where do you start?",
+    "text": "The two modes are completely separate.",
+    "demo": "Training mode (DEMO)",
+    "demoText": "Fictional, realistic case studies – ideal for classes, placements and presenting at university.",
+    "practice": "Practice mode",
+    "practiceText": "Real work – an empty, encrypted space for the people you work with.",
+    "changeLater": "You can switch mode at any time in the header or in settings."
+  }
+}

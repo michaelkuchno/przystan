@@ -1,0 +1,26 @@
+{
+  "title": "Wiedza",
+  "subtitle_one": "{{count}} karta – podejścia oparte na dowodach, resocjalizacja, rodzina",
+  "subtitle_few": "{{count}} karty – podejścia oparte na dowodach, resocjalizacja, rodzina",
+  "subtitle_many": "{{count}} kart – podejścia oparte na dowodach, resocjalizacja, rodzina",
+  "subtitle_other": "{{count}} karty – podejścia oparte na dowodach, resocjalizacja, rodzina",
+  "search": "Szukaj w bazie wiedzy…",
+  "all": "Wszystkie",
+  "statusAll": "Każdy status",
+  "noResults": "Brak wyników",
+  "notFound": "Nie znaleziono karty",
+  "sections": {
+    "approaches": "Podejścia terapeutyczne",
+    "criteria": "Kryteria i klasyfikacje",
+    "resocialization": "Resocjalizacja",
+    "family": "Rodzina",
+    "law": "Prawo",
+    "prevention": "Profilaktyka"
+  },
+  "whenToUse": "Kiedy stosować",
+  "techniques": "Kluczowe techniki",
+  "phrases": "Przykładowe sformułowania",
+  "pitfalls": "Typowe błędy",
+  "sources": "Źródła",
+  "ownWords": "Opracowanie własnymi słowami na podstawie wskazanych źródeł. Bez porad dotyczących dawkowania leków."
+}

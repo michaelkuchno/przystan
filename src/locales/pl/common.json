@@ -1,0 +1,90 @@
+{
+  "appName": "Przystań",
+  "tagline": "Pedagogika resocjalizacyjna i profilaktyka",
+  "add": "Dodaj",
+  "addItem": "Dodaj pozycję…",
+  "remove": "Usuń: {{item}}",
+  "autosaved": "Zapisano",
+  "saving": "Zapisywanie…",
+  "back": "Wstecz",
+  "next": "Dalej",
+  "cancel": "Anuluj",
+  "close": "Zamknij",
+  "confirm": "Potwierdź",
+  "save": "Zapisz",
+  "saved": "Zapisano",
+  "edit": "Edytuj",
+  "delete": "Usuń",
+  "deleted": "Usunięto",
+  "undo": "Cofnij",
+  "date": "Data",
+  "pdfReady": "PDF gotowy",
+  "locked": "Zablokowano",
+  "lockNow": "Zablokuj teraz",
+  "skipToContent": "Przejdź do treści",
+  "supportive": "Wskaźnik pomocniczy – nie jest diagnozą i nie zastępuje oceny specjalisty.",
+  "clientDatDefault": "{{clientDat}}",
+  "lock": {
+    "text": "Dane są zaszyfrowane. Wpisz hasło, aby kontynuować.",
+    "password": "Hasło",
+    "unlock": "Odblokuj",
+    "wrong": "Nieprawidłowe hasło. Spróbuj ponownie.",
+    "forgot": "Hasła nie da się odzyskać – bez niego dane pozostaną zaszyfrowane. Możesz odtworzyć dane z kopii zapasowej po ponownej instalacji."
+  },
+  "mode": {
+    "switch": "Przełącz tryb praktyczny / szkoleniowy",
+    "demoShort": "tryb szkoleniowy",
+    "practiceShort": "Praktyka"
+  },
+  "presentation": {
+    "on": "Włącz tryb prezentacji",
+    "off": "Wyłącz tryb prezentacji"
+  },
+  "review": {
+    "toVerify": "Do weryfikacji",
+    "verified": "Zweryfikowane",
+    "toggle": "Kliknij, aby zmienić status weryfikacji treści"
+  },
+  "update": {
+    "ready": "Dostępna jest nowa wersja aplikacji.",
+    "later": "Później",
+    "reload": "Aktualizuj"
+  },
+  "nav": {
+    "label": "Nawigacja główna",
+    "dashboard": "Pulpit",
+    "clients": "{{Clients}}",
+    "meetings": "Spotkania",
+    "tools": "Narzędzia",
+    "more": "Więcej",
+    "screening": "Przesiewowe",
+    "recipes": "Kreator zajęć",
+    "prevention": "Profilaktyka",
+    "resocialization": "Resocjalizacja",
+    "family": "Rodzina",
+    "help": "System pomocy",
+    "knowledge": "Wiedza",
+    "simulator": "Symulator MI",
+    "learn": "Nauka",
+    "settings": "Ustawienia",
+    "crisis": "Pomoc w kryzysie",
+    "search": "Szukaj",
+    "privacy": "Prywatność",
+    "about": "O aplikacji"
+  },
+  "navHint": {
+    "screening": "AUDIT, AUDIT-C, DUDIT",
+    "recipes": "Przepisy na zajęcia",
+    "prevention": "Kreator programu",
+    "resocialization": "Wiedza i readaptacja",
+    "family": "Współuzależnienie, przemoc, CRAFT",
+    "help": "Gdzie skierować",
+    "knowledge": "Podejścia oparte na dowodach",
+    "simulator": "Trening rozmowy",
+    "learn": "Fiszki i egzamin",
+    "settings": "Język, motyw, kopia",
+    "crisis": "Telefony 24/7",
+    "privacy": "Gdzie są dane",
+    "about": "Wersja i zastrzeżenia"
+  }
+}

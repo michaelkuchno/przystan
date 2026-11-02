@@ -1,0 +1,60 @@
+{
+  "context": {
+    "clinic": "Outpatient clinic / counselling point",
+    "residential": "Residential / day centre",
+    "prison": "Prison / remand centre",
+    "juvenile": "Youth centre / correctional facility for juveniles",
+    "probation": "Court probation service",
+    "school": "School / youth club",
+    "community": "Community / social services",
+    "streetwork": "Street work",
+    "homeless": "Centre for people experiencing homelessness",
+    "crisis": "Crisis intervention / emergency care"
+  },
+  "problem": {
+    "alcohol": "Alcohol",
+    "cannabis": "Cannabis",
+    "stimulants": "Stimulants",
+    "opioids": "Opioids",
+    "sedatives": "Sedatives / sleeping pills",
+    "nps": "New psychoactive substances",
+    "nicotine": "Nicotine",
+    "gambling": "Gambling",
+    "gaming": "Digital gaming",
+    "internet": "Internet / social media",
+    "shopping": "Shopping",
+    "codependency": "Co-dependency",
+    "other": "Other"
+  },
+  "stage": {
+    "precontemplation": "Precontemplation",
+    "contemplation": "Contemplation",
+    "preparation": "Preparation",
+    "action": "Action",
+    "maintenance": "Maintenance",
+    "recurrence": "Recurrence"
+  },
+  "goal": {
+    "abstinence": "Abstinence",
+    "harmReduction": "Harm reduction",
+    "undecided": "To be agreed"
+  },
+  "status": {
+    "active": "Active",
+    "paused": "Paused",
+    "closed": "Closed"
+  },
+  "ageGroup": {
+    "child": "Child",
+    "teen": "Teenager",
+    "youngAdult": "Young adult",
+    "adult": "Adult",
+    "senior": "Older adult"
+  },
+  "sex": {
+    "female": "Female",
+    "male": "Male",
+    "other": "Other",
+    "unspecified": "Not stated"
+  }
+}

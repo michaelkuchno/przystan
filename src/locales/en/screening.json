@@ -1,0 +1,66 @@
+{
+  "title": "Screening tools",
+  "subtitle": "Automatic scoring and cut-off interpretation according to official sources",
+  "disclaimerTitle": "These are screening tools, not a diagnosis.",
+  "disclaimer": "The result only shows whether a fuller assessment is worthwhile. A diagnosis of dependence is made by a physician or qualified specialist.",
+  "about": {
+    "AUDIT": "Alcohol use – 10 questions, WHO",
+    "AUDIT-C": "Short AUDIT – 3 consumption questions",
+    "DUDIT": "Use of substances other than alcohol – 11 questions"
+  },
+  "items_one": "{{count}} question",
+  "items_other": "{{count}} questions",
+  "population": { "adult": "Adults", "adolescentAdult": "Adolescents and adults" },
+  "todoPl": "TODO: PL version",
+  "todoPlText": "No official validated Polish version in the app yet.",
+  "excludedTitle": "Tools left out",
+  "excludedText": "{{list}} were left out because their licence status does not clearly allow free use in an app (details in docs/DECISIONS.md). They can be added once the authors give permission.",
+  "notFound": "Tool not found",
+  "client": "{{Client}}",
+  "noClient": "— don't save (practice) —",
+  "sexForNorms": "Sex (for interpretation cut-offs)",
+  "sexNote": "Sex not stated – the more conservative male cut-off is used.",
+  "progress": "Answered: {{answered}}/{{total}}",
+  "reset": "Clear",
+  "save": "Save to record",
+  "saved": "Result saved",
+  "incomplete": "Answer all questions",
+  "source": "Source",
+  "licence": "Licence",
+  "bands": {
+    "AUDIT": {
+      "zone1": "Zone I – low risk",
+      "zone2": "Zone II – hazardous drinking",
+      "zone3": "Zone III – harmful drinking",
+      "zone4": "Zone IV – possible dependence"
+    },
+    "AUDIT-C": {
+      "negative": "Negative screen",
+      "positive": "Positive screen – hazardous drinking",
+      "high": "High score"
+    },
+    "DUDIT": {
+      "negative": "Below cut-off",
+      "problems": "Probable drug-related problems",
+      "dependence": "Probable dependence"
+    }
+  },
+  "bandHints": {
+    "AUDIT": {
+      "zone1": "WHO: alcohol education.",
+      "zone2": "WHO: simple advice.",
+      "zone3": "WHO: simple advice plus brief counselling and continued monitoring.",
+      "zone4": "WHO: referral to a specialist for diagnostic evaluation and treatment."
+    },
+    "AUDIT-C": {
+      "negative": "No indication for further assessment based on consumption.",
+      "positive": "Consider the full AUDIT and a conversation about drinking.",
+      "high": "Full AUDIT and a specialist consultation are advisable."
+    },
+    "DUDIT": {
+      "negative": "Below the cut-off for sex (≥ 6 men, ≥ 2 women).",
+      "problems": "Further assessment (e.g. DUDIT-E) and a motivational conversation are advisable.",
+      "dependence": "Score ≥ 25 – a consultation at an addiction treatment clinic is advisable."
+    }
+  }
+}

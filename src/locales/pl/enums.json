@@ -1,0 +1,60 @@
+{
+  "context": {
+    "clinic": "Poradnia / punkt konsultacyjny",
+    "residential": "Ośrodek stacjonarny / dzienny",
+    "prison": "Zakład karny / areszt",
+    "juvenile": "MOW / MOS / zakład poprawczy / schronisko",
+    "probation": "Kuratela sądowa",
+    "school": "Szkoła / świetlica",
+    "community": "Środowisko otwarte / OPS / PCPR",
+    "streetwork": "Streetworking",
+    "homeless": "Ośrodek dla osób w kryzysie bezdomności",
+    "crisis": "Interwencja kryzysowa / pogotowie opiekuńcze"
+  },
+  "problem": {
+    "alcohol": "Alkohol",
+    "cannabis": "Konopie",
+    "stimulants": "Stymulanty",
+    "opioids": "Opioidy",
+    "sedatives": "Leki uspokajające / nasenne",
+    "nps": "Nowe substancje psychoaktywne",
+    "nicotine": "Nikotyna",
+    "gambling": "Hazard",
+    "gaming": "Gry cyfrowe",
+    "internet": "Internet / media społecznościowe",
+    "shopping": "Zakupy",
+    "codependency": "Współuzależnienie",
+    "other": "Inne"
+  },
+  "stage": {
+    "precontemplation": "Prekontemplacja",
+    "contemplation": "Kontemplacja",
+    "preparation": "Przygotowanie",
+    "action": "Działanie",
+    "maintenance": "Utrzymanie",
+    "recurrence": "Powrót do zachowań"
+  },
+  "goal": {
+    "abstinence": "Abstynencja",
+    "harmReduction": "Ograniczanie szkód",
+    "undecided": "Do ustalenia"
+  },
+  "status": {
+    "active": "Aktywny",
+    "paused": "Wstrzymany",
+    "closed": "Zakończony"
+  },
+  "ageGroup": {
+    "child": "Dziecko",
+    "teen": "Nastolatek",
+    "youngAdult": "Młody dorosły",
+    "adult": "Dorosły",
+    "senior": "Senior"
+  },
+  "sex": {
+    "female": "Kobieta",
+    "male": "Mężczyzna",
+    "other": "Inna",
+    "unspecified": "Nie podano"
+  }
+}

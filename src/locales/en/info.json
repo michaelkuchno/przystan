@@ -1,0 +1,33 @@
+{
+  "about": {
+    "title": "About",
+    "version": "Version {{v}}",
+    "disclaimerTitle": "Important:",
+    "disclaimer": "Harbor is a tool that supports work and study. It does not make medical diagnoses or decisions on behalf of a professional. All indicators, interpretations and suggestions are supportive only. Professional, legal content and phone numbers marked “To verify” must be checked before use in practice.",
+    "paragraphs": [
+      "Harbor was made for social rehabilitation educators and future addiction therapists – for work in clinics, centres, prisons and youth correctional facilities, probation, schools and community settings.",
+      "The perspective is educational and rehabilitative: we start from strengths and resources, use non-stigmatising language and treat lapses as information, not failure.",
+      "The app works fully offline, with no accounts, servers or fees. All data is encrypted and stored only on this device."
+    ]
+  },
+  "privacy": {
+    "title": "Privacy",
+    "lead": "In short: everything stays on this device and is encrypted with your password.",
+    "items": [
+      { "q": "Where is the data stored?", "a": "Only on this device, in the browser's local database (IndexedDB) or in the Android app. There is no server, account or sync." },
+      { "q": "Is anything sent to the internet?", "a": "No. The app contains no analytics, ads or trackers and makes no network requests. Internet is only needed to download PWA updates." },
+      { "q": "How is the data protected?", "a": "The content of every record is encrypted with AES-256-GCM. The key is derived from your password (PBKDF2, 600,000 iterations, random salt) and is kept in memory only while the app is unlocked." },
+      { "q": "What happens when the app locks?", "a": "The key is removed from memory and the content is hidden. The app locks after inactivity and always when it goes to the background." },
+      { "q": "What if I forget my password?", "a": "The data cannot be recovered – that is the price of real encryption. So make regular encrypted backups." },
+      { "q": "Data about the people I work with", "a": "This is special-category data (GDPR in Poland, nDSG in Switzerland). Use codes instead of names by default and keep records in line with your organisation's rules and professional confidentiality. PDF reports contain no code or name of the person." },
+      { "q": "What is not encrypted?", "a": "Only technical identifiers, the record type and change date (for indexing) and appearance settings. They contain no personal data." }
+    ]
+  },
+  "sources": {
+    "title": "Sources",
+    "screening": "Screening tools",
+    "literature_one": "Literature ({{count}} item)",
+    "literature_other": "Literature ({{count}} items)",
+    "fonts": "Fonts: Inter and Fraunces (SIL Open Font License), bundled with the app. Icons: Lucide (ISC)."
+  }
+}

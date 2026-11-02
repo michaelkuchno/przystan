@@ -1,0 +1,24 @@
+{
+  "title": "Knowledge",
+  "subtitle_one": "{{count}} card – evidence-based approaches, rehabilitation, family",
+  "subtitle_other": "{{count}} cards – evidence-based approaches, rehabilitation, family",
+  "search": "Search the knowledge base…",
+  "all": "All",
+  "statusAll": "Any status",
+  "noResults": "No results",
+  "notFound": "Card not found",
+  "sections": {
+    "approaches": "Therapeutic approaches",
+    "criteria": "Criteria and classifications",
+    "resocialization": "Social rehabilitation",
+    "family": "Family",
+    "law": "Law",
+    "prevention": "Prevention"
+  },
+  "whenToUse": "When to use",
+  "techniques": "Key techniques",
+  "phrases": "Example phrases",
+  "pitfalls": "Common mistakes",
+  "sources": "Sources",
+  "ownWords": "Written in our own words based on the sources listed. No medication dosing advice."
+}

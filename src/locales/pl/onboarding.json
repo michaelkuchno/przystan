@@ -1,0 +1,48 @@
+{
+  "progress": "Krok {{step}} z {{total}}",
+  "language": "Język",
+  "welcome": {
+    "title": "Witaj w Przystani",
+    "text": "Narzędzie do pracy i nauki dla pedagoga resocjalizacyjnego i specjalisty ds. uzależnień. Wybierz język – możesz go zmienić w każdej chwili w ustawieniach.",
+    "offline": "Przystań działa w 100% offline. Nic nie jest wysyłane do internetu – dane zostają wyłącznie na tym urządzeniu."
+  },
+  "password": {
+    "title": "Ustal hasło",
+    "text": "Hasło szyfruje wszystkie dane (AES-256). Będziesz je wpisywać przy każdym otwarciu aplikacji i po automatycznej blokadzie.",
+    "label": "Hasło lub PIN (min. 6 znaków)",
+    "hint": "Najlepiej kilka słów lub dłuższa fraza.",
+    "repeat": "Powtórz hasło",
+    "strength0": "Za krótkie",
+    "strength1": "Słabe – dodaj długości lub różnych znaków",
+    "strength2": "Przeciętne",
+    "strength3": "Dobre",
+    "strength4": "Bardzo dobre",
+    "lossTitle": "Utrata hasła = utrata danych.",
+    "lossText": "Nie ma możliwości odzyskania hasła ani „furtki”. Zapisz je w bezpiecznym miejscu i regularnie rób kopię zapasową.",
+    "ack": "Rozumiem, że bez hasła nie odzyskam danych.",
+    "ackRequired": "Potwierdź, że rozumiesz zasady przechowywania hasła.",
+    "tooShort": "Hasło musi mieć co najmniej 6 znaków.",
+    "mismatch": "Hasła nie są takie same.",
+    "create": "Zaszyfruj i dalej",
+    "creating": "Tworzenie klucza…"
+  },
+  "modules": {
+    "title": "Co znajdziesz w środku",
+    "text": "Jedna spójna przestrzeń do pracy z wieloma osobami, projektowania profilaktyki i nauki.",
+    "clients": { "title": "{{Clients}}", "text": "Diagnoza pedagogiczna, IPR, plan zapobiegania nawrotom, oś czasu, genogram." },
+    "tools": { "title": "Narzędzia do pracy razem", "text": "Surfowanie na fali głodu, linijka gotowości, analiza łańcuchowa, HALT i inne." },
+    "prevention": { "title": "Profilaktyka", "text": "Kreator programu profilaktycznego z ewaluacją i eksportem PDF." },
+    "simulator": { "title": "Symulator rozmowy", "text": "Trening dialogu motywującego z informacją zwrotną." },
+    "learn": { "title": "Nauka", "text": "Fiszki z powtórkami i tryb przygotowania do egzaminu." },
+    "disclaimer": "Przystań wspiera pracę i naukę. Nie stawia diagnoz medycznych i nie podejmuje decyzji za specjalistę – wszystkie wskaźniki i podpowiedzi mają charakter pomocniczy."
+  },
+  "mode": {
+    "title": "Od czego zaczynasz?",
+    "text": "Oba tryby są od siebie odizolowane.",
+    "demo": "Tryb szkoleniowy (DEMO)",
+    "demoText": "Fikcyjne, realistyczne studia przypadków – idealne na zajęcia, praktyki i prezentację na uczelni.",
+    "practice": "Tryb praktyczny",
+    "practiceText": "Prawdziwa praca – pusta, zaszyfrowana przestrzeń na dane osób, z którymi pracujesz.",
+    "changeLater": "Tryb zmienisz w każdej chwili w nagłówku lub w ustawieniach."
+  }
+}

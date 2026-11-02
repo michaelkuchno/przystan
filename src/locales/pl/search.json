@@ -1,0 +1,23 @@
+{
+  "title": "Szukaj",
+  "placeholder": "Szukaj we wszystkich modułach…",
+  "hint": "Przeszukuje bazę wiedzy, instytucje, przepisy, scenariusze, fiszki, narzędzia oraz Twoje dane (zaszyfrowane, przeszukiwane lokalnie).",
+  "noResults": "Brak wyników",
+  "results_one": "{{count}} wynik",
+  "results_few": "{{count}} wyniki",
+  "results_many": "{{count}} wyników",
+  "results_other": "{{count}} wyniku",
+  "kind": {
+    "client": "{{Client}}",
+    "meeting": "Spotkanie",
+    "knowledge": "Wiedza",
+    "institution": "Instytucja",
+    "legal": "Prawo",
+    "scenario": "Symulator",
+    "card": "Fiszka",
+    "recipe": "Przepis",
+    "prevention": "Program",
+    "tool": "Narzędzie",
+    "template": "Szablon zajęć"
+  }
+}

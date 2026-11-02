@@ -1,0 +1,31 @@
+{
+  "title": "System pomocy",
+  "subtitle": "Gdzie skierować – instytucje, ścieżki, podstawy prawne",
+  "tabs": { "referral": "Kreator skierowania", "map": "Mapa systemu", "law": "Podstawy prawne", "crisis": "Telefony kryzysowe" },
+  "question": "Pytanie {{n}} z {{total}}",
+  "restart": "Od nowa",
+  "bestMatch": "Najlepiej dopasowane",
+  "alsoConsider": "Rozważ też",
+  "steps": "Kroki",
+  "institutions": "Instytucje",
+  "wizardNote": "Ścieżki mają charakter orientacyjny. Sprawdź lokalne zasady i dostępność placówek – decyzję podejmujesz razem z osobą i zespołem.",
+  "forWhom": "Dla kogo",
+  "howToAccess": "Jak trafić",
+  "cat": {
+    "all": "Wszystkie",
+    "central": "Instytucja centralna",
+    "treatment": "Leczenie uzależnień",
+    "social": "Pomoc społeczna",
+    "justice": "Wymiar sprawiedliwości",
+    "education": "Oświata",
+    "local": "Samorząd lokalny",
+    "selfHelp": "Grupy samopomocowe",
+    "phone": "Telefony zaufania"
+  },
+  "lawNote": "Opis własnymi słowami, w skrócie – nie zastępuje tekstu ustawy. Sprawdź aktualny stan prawny (np. isap.sejm.gov.pl).",
+  "stateAsOf": "Stan: {{date}}",
+  "country": { "PL": "Polska", "CH": "Szwajcaria" },
+  "call": "Zadzwoń {{number}} – {{name}}",
+  "crisisTitle": "Pomoc w kryzysie",
+  "crisisSubtitle": "W sytuacji zagrożenia życia dzwoń 112 (PL) lub 144 (CH). Numery do weryfikacji przed użyciem."
+}

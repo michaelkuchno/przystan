@@ -1,0 +1,21 @@
+{
+  "title": "Search",
+  "placeholder": "Search all modules…",
+  "hint": "Searches the knowledge base, institutions, law, scenarios, flashcards, tools and your own data (encrypted, searched locally).",
+  "noResults": "No results",
+  "results_one": "{{count}} result",
+  "results_other": "{{count}} results",
+  "kind": {
+    "client": "{{Client}}",
+    "meeting": "Session",
+    "knowledge": "Knowledge",
+    "institution": "Institution",
+    "legal": "Law",
+    "scenario": "Simulator",
+    "card": "Flashcard",
+    "recipe": "Recipe",
+    "prevention": "Programme",
+    "tool": "Tool",
+    "template": "Session template"
+  }
+}

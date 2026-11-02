@@ -1,0 +1,15 @@
+{
+  "title": "Rodzina",
+  "subtitle": "Współuzależnienie, dzieci z rodzin z problemem alkoholowym, przemoc, CRAFT",
+  "tabs": { "knowledge": "Wiedza", "violence": "Przemoc w rodzinie", "tools": "Narzędzia i plany" },
+  "violenceUrgent": "Jeśli ktoś jest w bezpośrednim zagrożeniu – dzwoń 112. Wsparcie i konsultacje:",
+  "toolsIntro": "Genogram / ekomapa i plan wsparcia rodziny prowadzisz w profilu konkretnej osoby (zakładki „Genogram” i „Rodzina”). Tu widzisz wszystkie w jednym miejscu.",
+  "genograms": "Genogramy i ekomapy",
+  "noGenograms": "Brak genogramów",
+  "plans": "Plany wsparcia rodziny",
+  "noPlans": "Brak planów wsparcia rodziny",
+  "nodes_one": "{{count}} element",
+  "nodes_few": "{{count}} elementy",
+  "nodes_many": "{{count}} elementów",
+  "nodes_other": "{{count}} elementu"
+}

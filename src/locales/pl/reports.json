@@ -1,0 +1,17 @@
+{
+  "footer": "Przystań · dokument roboczy · wskaźniki mają charakter pomocniczy",
+  "footerAnon": "Raport bez danych identyfikujących · sprawdź, czy pola opisowe nie zawierają nazwisk · charakter pomocniczy",
+  "clientTitle": "Raport pomocniczy z pracy",
+  "area": "Obszar",
+  "notes": "Obserwacje",
+  "tool": "Narzędzie",
+  "result": "Wynik",
+  "meetingsDone_one": "Odbyto {{count}} spotkanie.",
+  "meetingsDone_few": "Odbyto {{count}} spotkania.",
+  "meetingsDone_many": "Odbyto {{count}} spotkań.",
+  "meetingsDone_other": "Odbyto {{count}} spotkania.",
+  "relapseTitle": "Mój plan zapobiegania nawrotom",
+  "relapseSubtitle": "Karta do noszenia przy sobie",
+  "crisisLine": "W kryzysie: 116 123 (wsparcie emocjonalne dla dorosłych), 116 111 (dzieci i młodzież), 112 (zagrożenie życia). Szwajcaria: 143, 147, 144.",
+  "readaptationTitle": "Plan readaptacji"
+}

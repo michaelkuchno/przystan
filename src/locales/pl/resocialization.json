@@ -1,0 +1,12 @@
+{
+  "title": "Resocjalizacja i readaptacja",
+  "subtitle": "Koncepcje, plan readaptacji i program socjoterapeutyczny",
+  "tabs": { "knowledge": "Karty wiedzy", "readaptation": "Plany readaptacji", "sociotherapy": "Program socjoterapeutyczny" },
+  "readaptationIntro": "Plan readaptacji dla osoby opuszczającej placówkę lub zakład karny tworzysz w jej profilu (zakładka „Readaptacja”) – z szablonu obejmującego mieszkanie, dokumenty, pracę i edukację, zdrowie i leczenie uzależnienia, relacje oraz wsparcie instytucjonalne.",
+  "noPlans": "Brak planów readaptacji",
+  "noPlansText": "Otwórz profil osoby i wybierz zakładkę „Readaptacja”.",
+  "progress": "Zrobione {{done}} z {{total}}",
+  "goals": "Cele",
+  "rules": "Zasady grupy",
+  "cycle": "Cykl spotkań"
+}

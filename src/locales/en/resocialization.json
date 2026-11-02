@@ -1,0 +1,12 @@
+{
+  "title": "Rehabilitation and re-entry",
+  "subtitle": "Concepts, re-entry plans and a sociotherapy programme",
+  "tabs": { "knowledge": "Knowledge cards", "readaptation": "Re-entry plans", "sociotherapy": "Sociotherapy programme" },
+  "readaptationIntro": "You create a re-entry plan for someone leaving a facility or prison in their profile (“Re-entry” tab) – from a template covering housing, documents, work and education, health and addiction treatment, relationships and institutional support.",
+  "noPlans": "No re-entry plans yet",
+  "noPlansText": "Open a person's profile and choose the “Re-entry” tab.",
+  "progress": "{{done}} of {{total}} done",
+  "goals": "Goals",
+  "rules": "Group rules",
+  "cycle": "Session cycle"
+}

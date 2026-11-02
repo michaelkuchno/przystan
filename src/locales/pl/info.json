@@ -1,0 +1,35 @@
+{
+  "about": {
+    "title": "O aplikacji",
+    "version": "Wersja {{v}}",
+    "disclaimerTitle": "Ważne:",
+    "disclaimer": "Przystań to narzędzie wspierające pracę i naukę. Nie stawia diagnoz medycznych i nie podejmuje decyzji za specjalistę. Wszystkie wskaźniki, interpretacje i podpowiedzi mają charakter pomocniczy. Treści merytoryczne, prawne i numery telefonów oznaczone „Do weryfikacji” wymagają sprawdzenia przed użyciem w praktyce.",
+    "paragraphs": [
+      "Przystań powstała z myślą o pedagogach resocjalizacyjnych i przyszłych specjalistach terapii uzależnień – do pracy w poradniach, ośrodkach, zakładach karnych i poprawczych, kurateli, szkołach i w środowisku otwartym.",
+      "Perspektywa jest pedagogiczna i resocjalizacyjna: zaczynamy od mocnych stron i zasobów, piszemy językiem bez stygmatyzacji, a nawroty traktujemy jako informację, a nie porażkę.",
+      "Aplikacja działa w całości offline, bez kont, serwerów i opłat. Wszystkie dane są szyfrowane i przechowywane wyłącznie na tym urządzeniu."
+    ]
+  },
+  "privacy": {
+    "title": "Prywatność",
+    "lead": "Krótko: wszystko zostaje na tym urządzeniu i jest zaszyfrowane Twoim hasłem.",
+    "items": [
+      { "q": "Gdzie są przechowywane dane?", "a": "Wyłącznie na tym urządzeniu, w lokalnej bazie przeglądarki (IndexedDB) lub aplikacji Android. Nie ma serwera, konta ani synchronizacji." },
+      { "q": "Czy coś jest wysyłane do internetu?", "a": "Nie. Aplikacja nie zawiera analityki, reklam ani trackerów i nie wykonuje żadnych zapytań sieciowych. Internet jest potrzebny tylko do pobrania aktualizacji PWA." },
+      { "q": "Jak dane są chronione?", "a": "Treść każdego rekordu jest szyfrowana algorytmem AES-256-GCM. Klucz powstaje z Twojego hasła (PBKDF2, 600 000 iteracji, losowa sól) i jest trzymany tylko w pamięci, gdy aplikacja jest odblokowana." },
+      { "q": "Co się dzieje po zablokowaniu?", "a": "Klucz jest usuwany z pamięci, a treść zasłonięta. Aplikacja blokuje się po bezczynności i zawsze przy przejściu w tło." },
+      { "q": "Co, jeśli zapomnę hasła?", "a": "Danych nie da się odzyskać – to cena prawdziwego szyfrowania. Dlatego rób regularnie zaszyfrowaną kopię zapasową." },
+      { "q": "Dane osób, z którymi pracuję", "a": "To dane szczególnie chronione (RODO w Polsce, nDSG w Szwajcarii). Domyślnie używaj kodów zamiast imion i nazwisk, prowadź dokumentację zgodnie z zasadami placówki i tajemnicą zawodową. Raporty PDF nie zawierają kodu ani imienia osoby." },
+      { "q": "Co jest jawne w bazie?", "a": "Tylko techniczne identyfikatory, rodzaj rekordu i data zmiany (do indeksowania) oraz ustawienia wyglądu. Nie zawierają one danych osobowych." }
+    ]
+  },
+  "sources": {
+    "title": "Źródła",
+    "screening": "Narzędzia przesiewowe",
+    "literature_one": "Literatura ({{count}} pozycja)",
+    "literature_few": "Literatura ({{count}} pozycje)",
+    "literature_many": "Literatura ({{count}} pozycji)",
+    "literature_other": "Literatura ({{count}} pozycji)",
+    "fonts": "Czcionki: Inter i Fraunces (SIL Open Font License), dołączone do aplikacji. Ikony: Lucide (ISC)."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Narzędzia przesiewowe",
+  "subtitle": "Automatyczne liczenie wyniku i interpretacja progowa wg oficjalnych źródeł",
+  "disclaimerTitle": "To narzędzia przesiewowe, nie diagnoza.",
+  "disclaimer": "Wynik wskazuje jedynie, czy warto pogłębić rozpoznanie. Diagnozę uzależnienia stawia lekarz lub uprawniony specjalista.",
+  "about": {
+    "AUDIT": "Używanie alkoholu – 10 pytań, WHO",
+    "AUDIT-C": "Wersja skrócona AUDIT – 3 pytania o spożycie",
+    "DUDIT": "Używanie substancji innych niż alkohol – 11 pytań"
+  },
+  "items_one": "{{count}} pytanie",
+  "items_few": "{{count}} pytania",
+  "items_many": "{{count}} pytań",
+  "items_other": "{{count}} pytania",
+  "population": { "adult": "Dorośli", "adolescentAdult": "Młodzież i dorośli" },
+  "todoPl": "TODO: wersja PL",
+  "todoPlText": "Brak oficjalnej, walidowanej polskiej wersji w aplikacji. Wyświetlany jest oryginał angielski. Nie tłumaczymy samodzielnie narzędzi walidowanych – wstaw oficjalną polską wersję (src/lib/screening/pl.ts).",
+  "excludedTitle": "Narzędzia pominięte",
+  "excludedText": "{{list}} zostały pominięte, ponieważ ich status licencyjny nie pozwala jednoznacznie na swobodne użycie w aplikacji (szczegóły w docs/DECISIONS.md). Można je dodać po uzyskaniu zgody autorów.",
+  "notFound": "Nie znaleziono narzędzia",
+  "client": "{{Client}}",
+  "noClient": "— bez zapisu (ćwiczenie) —",
+  "sexForNorms": "Płeć (do progów interpretacji)",
+  "sexNote": "Płeć nie została podana – zastosowano bardziej zachowawczy próg dla mężczyzn.",
+  "progress": "Odpowiedzi: {{answered}}/{{total}}",
+  "reset": "Wyczyść",
+  "save": "Zapisz w karcie",
+  "saved": "Wynik zapisany",
+  "incomplete": "Odpowiedz na wszystkie pytania",
+  "source": "Źródło",
+  "licence": "Licencja",
+  "bands": {
+    "AUDIT": {
+      "zone1": "Strefa I – niskie ryzyko",
+      "zone2": "Strefa II – picie ryzykowne",
+      "zone3": "Strefa III – picie szkodliwe",
+      "zone4": "Strefa IV – możliwe uzależnienie"
+    },
+    "AUDIT-C": {
+      "negative": "Wynik ujemny",
+      "positive": "Wynik dodatni – picie ryzykowne",
+      "high": "Wysoki wynik"
+    },
+    "DUDIT": {
+      "negative": "Poniżej progu",
+      "problems": "Prawdopodobne problemy związane z substancjami",
+      "dependence": "Prawdopodobne uzależnienie"
+    }
+  },
+  "bandHints": {
+    "AUDIT": {
+      "zone1": "WHO: edukacja na temat alkoholu.",
+      "zone2": "WHO: krótka porada.",
+      "zone3": "WHO: krótka porada, krótka interwencja i dalsza obserwacja.",
+      "zone4": "WHO: skierowanie do specjalisty w celu diagnozy i ewentualnego leczenia."
+    },
+    "AUDIT-C": {
+      "negative": "Brak wskazań do pogłębienia na podstawie spożycia.",
+      "positive": "Warto przeprowadzić pełny AUDIT i rozmowę o piciu.",
+      "high": "Wskazany pełny AUDIT i rozważenie konsultacji specjalistycznej."
+    },
+    "DUDIT": {
+      "negative": "Poniżej progu dla danej płci (≥ 6 mężczyźni, ≥ 2 kobiety).",
+      "problems": "Wskazane pogłębienie rozpoznania (np. DUDIT-E) i rozmowa motywująca.",
+      "dependence": "Wynik ≥ 25 – wskazana konsultacja w poradni leczenia uzależnień."
+    }
+  }
+}

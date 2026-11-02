@@ -1,0 +1,90 @@
+{
+  "appName": "Harbor",
+  "tagline": "Social rehabilitation & prevention",
+  "add": "Add",
+  "addItem": "Add an item…",
+  "remove": "Remove: {{item}}",
+  "autosaved": "Saved",
+  "saving": "Saving…",
+  "back": "Back",
+  "next": "Next",
+  "cancel": "Cancel",
+  "close": "Close",
+  "confirm": "Confirm",
+  "save": "Save",
+  "saved": "Saved",
+  "edit": "Edit",
+  "delete": "Delete",
+  "deleted": "Deleted",
+  "undo": "Undo",
+  "date": "Date",
+  "pdfReady": "PDF ready",
+  "locked": "Locked",
+  "lockNow": "Lock now",
+  "skipToContent": "Skip to content",
+  "supportive": "Supportive indicator – not a diagnosis and no substitute for a specialist's assessment.",
+  "clientDatDefault": "{{clientDat}}",
+  "lock": {
+    "text": "Your data is encrypted. Enter your password to continue.",
+    "password": "Password",
+    "unlock": "Unlock",
+    "wrong": "Wrong password. Please try again.",
+    "forgot": "The password cannot be recovered – without it the data stays encrypted. After reinstalling you can restore data from a backup."
+  },
+  "mode": {
+    "switch": "Switch between practice and training mode",
+    "demoShort": "training mode",
+    "practiceShort": "Practice"
+  },
+  "presentation": {
+    "on": "Turn on presentation mode",
+    "off": "Turn off presentation mode"
+  },
+  "review": {
+    "toVerify": "To verify",
+    "verified": "Verified",
+    "toggle": "Click to change the content review status"
+  },
+  "update": {
+    "ready": "A new version of the app is available.",
+    "later": "Later",
+    "reload": "Update"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "dashboard": "Dashboard",
+    "clients": "{{Clients}}",
+    "meetings": "Sessions",
+    "tools": "Tools",
+    "more": "More",
+    "screening": "Screening",
+    "recipes": "Session builder",
+    "prevention": "Prevention",
+    "resocialization": "Rehabilitation",
+    "family": "Family",
+    "help": "Help system",
+    "knowledge": "Knowledge",
+    "simulator": "MI simulator",
+    "learn": "Study",
+    "settings": "Settings",
+    "crisis": "Crisis help",
+    "search": "Search",
+    "privacy": "Privacy",
+    "about": "About"
+  },
+  "navHint": {
+    "screening": "AUDIT, AUDIT-C, DUDIT",
+    "recipes": "Session recipes",
+    "prevention": "Programme builder",
+    "resocialization": "Knowledge & re-entry",
+    "family": "Co-dependency, violence, CRAFT",
+    "help": "Where to refer",
+    "knowledge": "Evidence-based approaches",
+    "simulator": "Conversation practice",
+    "learn": "Flashcards & exam",
+    "settings": "Language, theme, backup",
+    "crisis": "24/7 hotlines",
+    "privacy": "Where data lives",
+    "about": "Version & disclaimers"
+  }
+}
