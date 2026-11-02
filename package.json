@@ -12,7 +12,9 @@
     "typecheck": "tsc -b --noEmit",
     "format": "prettier --write .",
     "assets": "pwa-assets-generator && node scripts/fix-splash.mjs",
-    "e2e": "playwright test"
+    "e2e": "playwright test",
+    "apk": "bash scripts/build-apk.sh",
+    "check": "npm run lint && npm run typecheck && npm run test && npm run build"
   },
   "dependencies": {
     "@capacitor/android": "^8.6.0",

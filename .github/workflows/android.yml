@@ -1,0 +1,45 @@
+name: Android APK
+
+# Builds the signed APK. The keystore is stored as repository secrets:
+#   PRZYSTAN_KEYSTORE_BASE64, PRZYSTAN_KEYSTORE_PASSWORD, PRZYSTAN_KEY_ALIAS, PRZYSTAN_KEY_PASSWORD
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - uses: android-actions/setup-android@v3
+      - run: npm ci
+      - name: Restore keystore
+        run: echo "${{ secrets.PRZYSTAN_KEYSTORE_BASE64 }}" | base64 -d > "$RUNNER_TEMP/przystan-release.jks"
+      - name: Build signed APK
+        env:
+          PRZYSTAN_KEYSTORE: ${{ runner.temp }}/przystan-release.jks
+          PRZYSTAN_KEYSTORE_PASSWORD: ${{ secrets.PRZYSTAN_KEYSTORE_PASSWORD }}
+          PRZYSTAN_KEY_ALIAS: ${{ secrets.PRZYSTAN_KEY_ALIAS }}
+          PRZYSTAN_KEY_PASSWORD: ${{ secrets.PRZYSTAN_KEY_PASSWORD }}
+        run: npm run apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: przystan-apk
+          path: release/*.apk
+      - name: Attach to release (tags only)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: release/*.apk

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Przystań</string>
+    <string name="title_activity_main">Przystań</string>
+    <string name="package_name">pl.przystan.app</string>
+    <string name="custom_url_scheme">pl.przystan.app</string>
+</resources>
