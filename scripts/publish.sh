@@ -4,13 +4,17 @@
 # Run it while `gh` is logged in to the account that should own the project.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+YES=0
+if [ "${1:-}" = "--yes" ]; then YES=1; shift; fi
 REPO_NAME="${1:-przystan}"
 KDIR="${PRZYSTAN_KEYSTORE_DIR:-$HOME/przystan-keystore}"
 
 LOGIN=$(gh api user --jq .login)
 echo "GitHub account: $LOGIN"
-read -r -p "Publish as public repository $LOGIN/$REPO_NAME? [y/N] " ok
-[ "$ok" = "y" ] || { echo "Cancelled."; exit 1; }
+if [ "$YES" != 1 ]; then
+  read -r -p "Publish as public repository $LOGIN/$REPO_NAME? [y/N] " ok
+  [ "$ok" = "y" ] || { echo "Cancelled."; exit 1; }
+fi
 
 if ! gh repo view "$LOGIN/$REPO_NAME" >/dev/null 2>&1; then
   gh repo create "$REPO_NAME" --public --source . --remote origin --description "Przystań / Harbor – offline PWA dla pedagoga resocjalizacyjnego i specjalisty ds. uzależnień"
@@ -29,6 +33,15 @@ prop keyAlias | gh secret set PRZYSTAN_KEY_ALIAS -R "$LOGIN/$REPO_NAME"
 prop keyPassword | gh secret set PRZYSTAN_KEY_PASSWORD -R "$LOGIN/$REPO_NAME"
 
 git push -u origin main
+
+# Android APK as a downloadable release asset
+VERSION=$(node -p "require('./package.json').version")
+APK="release/przystan-$VERSION.apk"
+if [ -f "$APK" ] && ! gh release view "v$VERSION" -R "$LOGIN/$REPO_NAME" >/dev/null 2>&1; then
+  gh release create "v$VERSION" "$APK" -R "$LOGIN/$REPO_NAME" --title "Przystań $VERSION" \
+    --notes "Android: pobierz plik APK poniżej. iPhone: otwórz https://$LOGIN.github.io/$REPO_NAME/ w Safari → Udostępnij → Do ekranu początkowego."
+  echo "APK: https://github.com/$LOGIN/$REPO_NAME/releases/tag/v$VERSION"
+fi
 echo
 echo "PWA (after the Pages workflow finishes): https://$LOGIN.github.io/$REPO_NAME/"
 echo "Workflow status: gh run list -R $LOGIN/$REPO_NAME"
