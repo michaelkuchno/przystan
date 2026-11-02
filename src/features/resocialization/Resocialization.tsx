@@ -51,7 +51,11 @@ export default function Resocialization() {
                     leading={c && <Avatar label={c.code} />}
                     title={<span className="pii">{c?.code}</span>}
                     subtitle={t('progress', { done, total: p.items.length })}
-                    trailing={<Badge tone={done === p.items.length ? 'ok' : 'primary'}>{Math.round((done / Math.max(1, p.items.length)) * 100)}%</Badge>}
+                    trailing={
+                      <Badge tone={done === p.items.length ? 'ok' : 'primary'}>
+                        {Math.round((done / Math.max(1, p.items.length)) * 100)}%
+                      </Badge>
+                    }
                   />
                 );
               })}
@@ -70,11 +74,19 @@ export default function Resocialization() {
             <div className="mt-3 grid gap-4 md:grid-cols-2">
               <div>
                 <h3 className="mb-1 font-sans font-semibold">{t('goals')}</h3>
-                <ul className="space-y-1 text-sm">{socio.goals.map((g) => <li key={g}>• {g}</li>)}</ul>
+                <ul className="space-y-1 text-sm">
+                  {socio.goals.map((g) => (
+                    <li key={g}>• {g}</li>
+                  ))}
+                </ul>
               </div>
               <div>
                 <h3 className="mb-1 font-sans font-semibold">{t('rules')}</h3>
-                <ul className="space-y-1 text-sm">{socio.groupRules.map((g) => <li key={g}>• {g}</li>)}</ul>
+                <ul className="space-y-1 text-sm">
+                  {socio.groupRules.map((g) => (
+                    <li key={g}>• {g}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           </Card>
@@ -84,11 +96,17 @@ export default function Resocialization() {
               <li key={m.no}>
                 <Card>
                   <div className="flex items-center gap-3">
-                    <span className="flex size-10 items-center justify-center rounded-full bg-accent-soft font-serif font-bold text-accent-soft-fg">{m.no}</span>
+                    <span className="flex size-10 items-center justify-center rounded-full bg-accent-soft font-serif font-bold text-accent-soft-fg">
+                      {m.no}
+                    </span>
                     <div className="font-semibold">{m.title}</div>
                   </div>
                   <p className="mt-2 text-sm text-muted">{m.aims}</p>
-                  <ul className="mt-2 space-y-0.5 text-sm">{m.activities.map((a) => <li key={a}>– {a}</li>)}</ul>
+                  <ul className="mt-2 space-y-0.5 text-sm">
+                    {m.activities.map((a) => (
+                      <li key={a}>– {a}</li>
+                    ))}
+                  </ul>
                 </Card>
               </li>
             ))}

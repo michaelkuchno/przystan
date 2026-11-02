@@ -44,8 +44,12 @@ export default function MeetingsList() {
   const meetings = useStore(() => all('meeting'));
   const [view, setView] = useState<'upcoming' | 'past'>('upcoming');
   const today = todayIso();
-  const upcoming = meetings.filter((m) => m.date.slice(0, 10) >= today && m.status === 'planned').sort((a, b) => a.date.localeCompare(b.date));
-  const past = meetings.filter((m) => !(m.date.slice(0, 10) >= today && m.status === 'planned')).sort((a, b) => b.date.localeCompare(a.date));
+  const upcoming = meetings
+    .filter((m) => m.date.slice(0, 10) >= today && m.status === 'planned')
+    .sort((a, b) => a.date.localeCompare(b.date));
+  const past = meetings
+    .filter((m) => !(m.date.slice(0, 10) >= today && m.status === 'planned'))
+    .sort((a, b) => b.date.localeCompare(a.date));
   const list = view === 'upcoming' ? upcoming : past;
 
   // group by day

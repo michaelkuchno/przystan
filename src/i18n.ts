@@ -2,17 +2,23 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import type { Lang, Term } from '@/lib/prefs';
 
-const modules = import.meta.glob<{ default: Record<string, unknown> }>('./locales/*/*.json', { eager: true });
+// UI strings are loaded per language (only the active one at start-up), one chunk each.
+const bundles: Record<string, () => Promise<{ default: Record<string, Record<string, unknown>> }>> = {
+  pl: () => import('./locales/pl'),
+  en: () => import('./locales/en'),
+};
 
-const resources: Record<string, Record<string, Record<string, unknown>>> = {};
-for (const [path, mod] of Object.entries(modules)) {
-  const m = path.match(/locales\/(\w+)\/(\w+)\.json$/);
-  if (!m) continue;
-  const [, lng, ns] = m as unknown as [string, string, string];
-  (resources[lng] ??= {})[ns] = mod.default;
+async function loadLanguage(lang: string): Promise<Record<string, Record<string, unknown>>> {
+  return (await (bundles[lang] ?? bundles.pl!)()).default;
 }
 
-export const NAMESPACES = Object.keys(resources.pl ?? {});
+export const NAMESPACES = Object.keys(import.meta.glob('./locales/pl/*.json')).map((p) => p.match(/\/(\w+)\.json$/)![1]!);
+
+async function ensureLanguage(lang: string) {
+  if (i18n.hasResourceBundle(lang, 'common')) return;
+  const bundle = await loadLanguage(lang);
+  for (const [ns, res] of Object.entries(bundle)) i18n.addResourceBundle(lang, ns, res, true, true);
+}
 
 /** Terminology variants (settings → nazewnictwo), injected as interpolation variables. */
 const TERMS: Record<Lang, Record<Term, Record<string, string>>> = {
@@ -73,9 +79,11 @@ export function termVars(lang: Lang, term: Term): Record<string, string> {
   };
 }
 
-export function initI18n(lang: Lang, term: Term) {
-  return i18n.use(initReactI18next).init({
+export async function initI18n(lang: Lang, term: Term) {
+  const resources = { [lang]: await loadLanguage(lang) };
+  await i18n.use(initReactI18next).init({
     resources,
+    partialBundledLanguages: true,
     lng: lang,
     fallbackLng: 'pl',
     ns: NAMESPACES,
@@ -86,6 +94,7 @@ export function initI18n(lang: Lang, term: Term) {
 }
 
 export async function changeLanguage(lang: Lang, term: Term) {
+  await ensureLanguage(lang);
   i18n.options.interpolation = { ...i18n.options.interpolation, defaultVariables: termVars(lang, term) };
   await i18n.changeLanguage(lang);
 }

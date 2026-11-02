@@ -5,7 +5,8 @@ import { ShieldAlert, Save, Plus, Trash2 } from 'lucide-react';
 import { Page, PageHeader, Notice } from '@/components/ui/page';
 import { Button, Card, IconButton } from '@/components/ui/core';
 import { TextField, Chips, SelectField, DateField, TextInput } from '@/components/ui/form';
-import { Sheet, useToast } from '@/components/ui/overlay';
+import { Sheet } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { get, save, uid, all } from '@/lib/store';
 import { getPrefs, setPrefs } from '@/lib/prefs';
 import { PROBLEMS, STAGES, WORK_CONTEXTS, type Client } from '@/domain/types';
@@ -43,7 +44,9 @@ export default function ClientForm() {
   const [showFull, setShowFull] = useState(!!existing?.fullName);
   const [error, setError] = useState<string | null>(null);
   const prefs = getPrefs();
-  const [notice, setNotice] = useState(!existing && prefs.mode === 'practice' && !prefs.privacyNoticeSeen && all('client').length === 0);
+  const [notice, setNotice] = useState(
+    !existing && prefs.mode === 'practice' && !prefs.privacyNoticeSeen && all('client').length === 0,
+  );
 
   const set = <K extends keyof Client>(k: K, v: Client[K]) => setC((x) => ({ ...x, [k]: v }));
 
@@ -93,7 +96,12 @@ export default function ClientForm() {
               <Notice tone="warn" icon={<ShieldAlert aria-hidden />}>
                 {t('fields.fullNameWarning')}
               </Notice>
-              <TextField label={t('fields.fullName')} value={c.fullName ?? ''} onChange={(v) => set('fullName', v)} autoComplete="off" />
+              <TextField
+                label={t('fields.fullName')}
+                value={c.fullName ?? ''}
+                onChange={(v) => set('fullName', v)}
+                autoComplete="off"
+              />
             </div>
           )}
           <Chips
@@ -110,7 +118,10 @@ export default function ClientForm() {
               label={t('fields.ageGroup')}
               value={c.ageGroup}
               onChange={(v) => set('ageGroup', v)}
-              options={(['child', 'teen', 'youngAdult', 'adult', 'senior'] as const).map((v) => ({ value: v, label: t(`enums:ageGroup.${v}`) }))}
+              options={(['child', 'teen', 'youngAdult', 'adult', 'senior'] as const).map((v) => ({
+                value: v,
+                label: t(`enums:ageGroup.${v}`),
+              }))}
             />
             <TextField
               label={t('fields.age')}
@@ -126,7 +137,10 @@ export default function ClientForm() {
               hint={t('fields.sexHint')}
               value={c.sex}
               onChange={(v) => set('sex', v)}
-              options={(['female', 'male', 'other', 'unspecified'] as const).map((v) => ({ value: v, label: t(`enums:sex.${v}`) }))}
+              options={(['female', 'male', 'other', 'unspecified'] as const).map((v) => ({
+                value: v,
+                label: t(`enums:sex.${v}`),
+              }))}
             />
           </div>
         </Card>
@@ -150,7 +164,10 @@ export default function ClientForm() {
               label={t('fields.goal')}
               value={c.goal}
               onChange={(v) => set('goal', v)}
-              options={(['abstinence', 'harmReduction', 'undecided'] as const).map((v) => ({ value: v, label: t(`enums:goal.${v}`) }))}
+              options={(['abstinence', 'harmReduction', 'undecided'] as const).map((v) => ({
+                value: v,
+                label: t(`enums:goal.${v}`),
+              }))}
             />
             <SelectField
               label={t('fields.stage')}
@@ -168,8 +185,19 @@ export default function ClientForm() {
         </Card>
 
         <Card className="space-y-4">
-          <TextField multiline label={t('fields.strengths')} hint={t('fields.strengthsHint')} value={c.strengths} onChange={(v) => set('strengths', v)} />
-          <TextField multiline label={t('fields.supportNetwork')} value={c.supportNetwork} onChange={(v) => set('supportNetwork', v)} />
+          <TextField
+            multiline
+            label={t('fields.strengths')}
+            hint={t('fields.strengthsHint')}
+            value={c.strengths}
+            onChange={(v) => set('strengths', v)}
+          />
+          <TextField
+            multiline
+            label={t('fields.supportNetwork')}
+            value={c.supportNetwork}
+            onChange={(v) => set('supportNetwork', v)}
+          />
           <TextField multiline label={t('fields.family')} value={c.family} onChange={(v) => set('family', v)} />
           <TextField multiline label={t('fields.education')} value={c.education} onChange={(v) => set('education', v)} />
           <TextField multiline label={t('fields.notes')} value={c.notes ?? ''} onChange={(v) => set('notes', v)} />
@@ -197,17 +225,35 @@ export default function ClientForm() {
                 <TextInput
                   id={`kd-${k.id}`}
                   value={k.label}
-                  onChange={(e) => set('keyDates', c.keyDates.map((x, j) => (j === i ? { ...x, label: e.target.value } : x)))}
+                  onChange={(e) =>
+                    set(
+                      'keyDates',
+                      c.keyDates.map((x, j) => (j === i ? { ...x, label: e.target.value } : x)),
+                    )
+                  }
                 />
               </div>
               <div className="w-40">
                 <DateField
                   label={t('keyDateDate')}
                   value={k.date}
-                  onChange={(v) => set('keyDates', c.keyDates.map((x, j) => (j === i ? { ...x, date: v } : x)))}
+                  onChange={(v) =>
+                    set(
+                      'keyDates',
+                      c.keyDates.map((x, j) => (j === i ? { ...x, date: v } : x)),
+                    )
+                  }
                 />
               </div>
-              <IconButton label={t('common:delete')} onClick={() => set('keyDates', c.keyDates.filter((_, j) => j !== i))}>
+              <IconButton
+                label={t('common:delete')}
+                onClick={() =>
+                  set(
+                    'keyDates',
+                    c.keyDates.filter((_, j) => j !== i),
+                  )
+                }
+              >
                 <Trash2 className="size-4" />
               </IconButton>
             </div>

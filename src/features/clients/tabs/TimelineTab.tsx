@@ -1,9 +1,23 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Plus, CalendarCheck, Activity, Flag, Gavel, DoorOpen, School, Briefcase, Repeat, Milestone, Circle, Footprints } from 'lucide-react';
+import {
+  Plus,
+  CalendarCheck,
+  Activity,
+  Flag,
+  Gavel,
+  DoorOpen,
+  School,
+  Briefcase,
+  Repeat,
+  Milestone,
+  Circle,
+  Footprints,
+} from 'lucide-react';
 import { Button, Badge, EmptyState, IconButton } from '@/components/ui/core';
-import { Sheet, useToast } from '@/components/ui/overlay';
+import { Sheet } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { TextField, SelectField, DateField } from '@/components/ui/form';
 import { useStore, forClient, save, uid, remove } from '@/lib/store';
 import { fmtDate } from '@/lib/format';
@@ -11,7 +25,17 @@ import { todayIso } from '@/lib/platform';
 import type { Client, TimelineEvent, TimelineEventType } from '@/domain/types';
 import { Trash2 } from 'lucide-react';
 
-const TYPES: TimelineEventType[] = ['court', 'pass', 'transfer', 'schoolReturn', 'work', 'stageChange', 'lapse', 'milestone', 'other'];
+const TYPES: TimelineEventType[] = [
+  'court',
+  'pass',
+  'transfer',
+  'schoolReturn',
+  'work',
+  'stageChange',
+  'lapse',
+  'milestone',
+  'other',
+];
 const ICON: Record<TimelineEventType, typeof Flag> = {
   court: Gavel,
   pass: DoorOpen,
@@ -73,18 +97,13 @@ export default function TimelineTab({ client }: { client: Client }) {
       kind: 'measurement',
       title: m.source.kind === 'screening' ? m.source.instrument : t(`tools:names.${m.source.tool}`),
       subtitle:
-        m.score !== undefined
-          ? m.scoreBefore !== undefined
-            ? `${m.scoreBefore} → ${m.score}`
-            : String(m.score)
-          : undefined,
+        m.score !== undefined ? (m.scoreBefore !== undefined ? `${m.scoreBefore} → ${m.score}` : String(m.score)) : undefined,
       tone: 'neutral',
       Icon: Activity,
     })),
   ].sort((a, b) => b.date.localeCompare(a.date));
 
-  const startNew = () =>
-    setEditing({ id: uid(), clientId: client.id, date: todayIso(), type: 'milestone', title: '', note: '' });
+  const startNew = () => setEditing({ id: uid(), clientId: client.id, date: todayIso(), type: 'milestone', title: '', note: '' });
 
   return (
     <div>
@@ -103,7 +122,9 @@ export default function TimelineTab({ client }: { client: Client }) {
               <>
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="text-xs font-medium text-muted">{fmtDate(it.date)}</span>
-                  <Badge tone={it.tone}>{it.kind === 'event' && it.event ? t(`timeline.type.${it.event.type}`) : t(`timeline.kind.${it.kind}`)}</Badge>
+                  <Badge tone={it.tone}>
+                    {it.kind === 'event' && it.event ? t(`timeline.type.${it.event.type}`) : t(`timeline.kind.${it.kind}`)}
+                  </Badge>
                 </div>
                 <div className="mt-0.5 font-medium">{it.title}</div>
                 {it.subtitle && <div className="text-sm text-muted">{it.subtitle}</div>}
@@ -148,7 +169,11 @@ export default function TimelineTab({ client }: { client: Client }) {
                   onClick={async () => {
                     const undo = await remove('event', editing.id);
                     setEditing(null);
-                    toast({ text: t('common:deleted'), tone: 'info', action: { label: t('common:undo'), run: () => void undo() } });
+                    toast({
+                      text: t('common:deleted'),
+                      tone: 'info',
+                      action: { label: t('common:undo'), run: () => void undo() },
+                    });
                   }}
                 >
                   <Trash2 className="size-4" />
@@ -182,7 +207,12 @@ export default function TimelineTab({ client }: { client: Client }) {
             {editing.type === 'lapse' && <p className="rounded-xl bg-blue-soft p-3 text-sm">{t('timeline.lapseNote')}</p>}
             <DateField label={t('common:date')} value={editing.date} onChange={(v) => setEditing({ ...editing, date: v })} />
             <TextField label={t('timeline.title')} value={editing.title} onChange={(v) => setEditing({ ...editing, title: v })} />
-            <TextField multiline label={t('timeline.note')} value={editing.note} onChange={(v) => setEditing({ ...editing, note: v })} />
+            <TextField
+              multiline
+              label={t('timeline.note')}
+              value={editing.note}
+              onChange={(v) => setEditing({ ...editing, note: v })}
+            />
           </div>
         )}
       </Sheet>

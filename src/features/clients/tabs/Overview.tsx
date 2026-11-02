@@ -14,7 +14,9 @@ export function Overview({ client }: { client: Client }) {
   const flags = useAttention().filter((f) => f.clientId === client.id);
   const meetings = useStore(() => forClient('meeting', client.id));
   const today = todayIso();
-  const next = meetings.filter((m) => m.status === 'planned' && m.date.slice(0, 10) >= today).sort((a, b) => a.date.localeCompare(b.date))[0];
+  const next = meetings
+    .filter((m) => m.status === 'planned' && m.date.slice(0, 10) >= today)
+    .sort((a, b) => a.date.localeCompare(b.date))[0];
   const fields: [string, string | undefined][] = [
     [t('fields.strengths'), client.strengths],
     [t('fields.supportNetwork'), client.supportNetwork],

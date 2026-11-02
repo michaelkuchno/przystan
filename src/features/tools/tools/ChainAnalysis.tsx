@@ -18,7 +18,14 @@ type K = (typeof LINKS)[number]['k'];
 export default function ChainAnalysis({ aud, onResult }: ToolProps) {
   const { t } = useTranslation('tools');
   const prompts = useContent('tools').chainAnalysis.prompts;
-  const [v, setV] = useState<Record<K | 'breakPoint', string>>({ trigger: '', thoughts: '', emotions: '', behaviour: '', consequences: '', breakPoint: '' });
+  const [v, setV] = useState<Record<K | 'breakPoint', string>>({
+    trigger: '',
+    thoughts: '',
+    emotions: '',
+    behaviour: '',
+    consequences: '',
+    breakPoint: '',
+  });
   useEffect(() => onResult({ payload: v }), [v, onResult]);
   return (
     <div className="space-y-1">

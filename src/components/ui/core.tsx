@@ -86,7 +86,13 @@ export const IconButton = forwardRef<
 
 export function Card({ className, children, ...rest }: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div className={cn('rounded-[var(--radius-card)] border border-line bg-surface p-4 shadow-[var(--shadow-card)] sm:p-5', className)} {...rest}>
+    <div
+      className={cn(
+        'rounded-[var(--radius-card)] border border-line bg-surface p-4 shadow-[var(--shadow-card)] sm:p-5',
+        className,
+      )}
+      {...rest}
+    >
       {children}
     </div>
   );
@@ -200,7 +206,12 @@ export function ListRow({
 
 export function List({ children, className }: { children: ReactNode; className?: string }) {
   return (
-    <div className={cn('divide-y divide-line overflow-hidden rounded-[var(--radius-card)] border border-line bg-surface shadow-[var(--shadow-card)]', className)}>
+    <div
+      className={cn(
+        'divide-y divide-line overflow-hidden rounded-[var(--radius-card)] border border-line bg-surface shadow-[var(--shadow-card)]',
+        className,
+      )}
+    >
       {children}
     </div>
   );
@@ -210,16 +221,25 @@ export function Stat({ label, value, hint, tone = 'primary' }: { label: string; 
   return (
     <div className="rounded-2xl border border-line bg-surface p-4">
       <div className="text-xs font-medium tracking-wide text-muted uppercase">{label}</div>
-      <div className={cn('mt-1 font-serif text-3xl font-semibold', tone === 'accent' ? 'text-accent' : 'text-primary')}>{value}</div>
+      <div className={cn('mt-1 font-serif text-3xl font-semibold', tone === 'accent' ? 'text-accent' : 'text-primary')}>
+        {value}
+      </div>
       {hint && <div className="mt-1 text-xs text-muted">{hint}</div>}
     </div>
   );
 }
 
 export function Avatar({ label, tone = 'primary' }: { label: string; tone?: 'primary' | 'accent' | 'blue' }) {
-  const t = { primary: 'bg-primary-soft text-primary-soft-fg', accent: 'bg-accent-soft text-accent-soft-fg', blue: 'bg-blue-soft text-blue' }[tone];
+  const t = {
+    primary: 'bg-primary-soft text-primary-soft-fg',
+    accent: 'bg-accent-soft text-accent-soft-fg',
+    blue: 'bg-blue-soft text-blue',
+  }[tone];
   return (
-    <span className={cn('pii inline-flex size-11 items-center justify-center rounded-2xl font-serif text-sm font-semibold', t)} aria-hidden>
+    <span
+      className={cn('pii inline-flex size-11 items-center justify-center rounded-2xl font-serif text-sm font-semibold', t)}
+      aria-hidden
+    >
       {label.slice(0, 3)}
     </span>
   );

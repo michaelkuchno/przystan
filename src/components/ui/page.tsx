@@ -1,12 +1,10 @@
 import type { ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, Info, ShieldCheck, ShieldQuestion } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { cn } from './cn';
 import { IconButton } from './core';
-import { setPrefs, getPrefs, usePrefs } from '@/lib/prefs';
-import type { ReviewStatus } from '@/content/types';
 
 export function Page({ children, className, wide }: { children: ReactNode; className?: string; wide?: boolean }) {
   const reduce = useReducedMotion();
@@ -17,7 +15,11 @@ export function Page({ children, className, wide }: { children: ReactNode; class
       initial={reduce ? false : { opacity: 0, y: 6 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.22, ease: 'easeOut' }}
-      className={cn('mx-auto w-full px-4 pt-4 pb-28 focus:outline-none sm:px-6 lg:pb-12', wide ? 'max-w-6xl' : 'max-w-4xl', className)}
+      className={cn(
+        'mx-auto w-full px-4 pt-4 pb-28 focus:outline-none sm:px-6 lg:pb-12',
+        wide ? 'max-w-6xl' : 'max-w-4xl',
+        className,
+      )}
     >
       {children}
     </motion.main>
@@ -42,11 +44,7 @@ export function PageHeader({
   return (
     <div className="mb-5 flex flex-wrap items-start gap-3">
       {back && (
-        <IconButton
-          label={t('back')}
-          className="-ml-2"
-          onClick={() => (typeof back === 'string' ? nav(back) : nav(-1))}
-        >
+        <IconButton label={t('back')} className="-ml-2" onClick={() => (typeof back === 'string' ? nav(back) : nav(-1))}>
           <ArrowLeft className="size-5" />
         </IconButton>
       )}
@@ -60,62 +58,4 @@ export function PageHeader({
   );
 }
 
-/** Subtle, clickable marker for content review status (spec 5.10). */
-export function ReviewBadge({ id, status }: { id: string; status: ReviewStatus }) {
-  const { t } = useTranslation();
-  const { review } = usePrefs();
-  const effective = review[id] ?? status;
-  const verified = effective === 'zweryfikowane';
-  const toggle = () =>
-    setPrefs({ review: { ...getPrefs().review, [id]: verified ? 'do_weryfikacji' : 'zweryfikowane' } });
-  return (
-    <button
-      type="button"
-      onClick={toggle}
-      className={cn(
-        'inline-flex min-h-8 items-center gap-1 rounded-full px-2.5 text-xs font-medium transition',
-        verified ? 'bg-ok-soft text-ok' : 'bg-warn-soft text-warn',
-      )}
-      aria-pressed={verified}
-      title={t('review.toggle')}
-    >
-      {verified ? <ShieldCheck className="size-3.5" aria-hidden /> : <ShieldQuestion className="size-3.5" aria-hidden />}
-      {verified ? t('review.verified') : t('review.toVerify')}
-    </button>
-  );
-}
-
-export function Notice({
-  children,
-  tone = 'info',
-  icon,
-  className,
-}: {
-  children: ReactNode;
-  tone?: 'info' | 'warn' | 'accent';
-  icon?: ReactNode;
-  className?: string;
-}) {
-  const tones = {
-    info: 'bg-blue-soft text-fg border-blue/20',
-    warn: 'bg-warn-soft text-fg border-warn/25',
-    accent: 'bg-accent-soft text-fg border-accent/20',
-  };
-  return (
-    <div className={cn('flex gap-3 rounded-2xl border p-4 text-sm leading-relaxed', tones[tone], className)}>
-      <span className="mt-0.5 shrink-0 [&_svg]:size-5">{icon ?? <Info aria-hidden />}</span>
-      <div className="flex-1">{children}</div>
-    </div>
-  );
-}
-
-/** "Supportive, not diagnostic" disclaimer used across screening and attention UI. */
-export function SupportiveNote({ text }: { text?: string }) {
-  const { t } = useTranslation();
-  return (
-    <p className="flex items-start gap-2 text-xs text-muted">
-      <Info className="mt-0.5 size-3.5 shrink-0" aria-hidden />
-      {text ?? t('supportive')}
-    </p>
-  );
-}
+export { ReviewBadge, Notice, SupportiveNote } from './notice';

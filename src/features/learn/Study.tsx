@@ -20,7 +20,12 @@ export default function Study() {
   const queue = useMemo(() => {
     if (!deck) return [];
     const states = all('cardState');
-    const due = deck.cards.filter((c) => isDue(states.find((s) => s.id === `${deck.id}:${c.id}`), today));
+    const due = deck.cards.filter((c) =>
+      isDue(
+        states.find((s) => s.id === `${deck.id}:${c.id}`),
+        today,
+      ),
+    );
     return shuffle(extra || !due.length ? deck.cards : due).slice(0, 30);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [deck?.id, extra]);
@@ -28,7 +33,12 @@ export default function Study() {
   const [flipped, setFlipped] = useState(false);
   const [counts, setCounts] = useState({ again: 0, hard: 0, good: 0, easy: 0 });
 
-  if (!deck) return <Page><EmptyState title={t('notFound')} /></Page>;
+  if (!deck)
+    return (
+      <Page>
+        <EmptyState title={t('notFound')} />
+      </Page>
+    );
   const card = queue[i];
 
   const grade = async (g: Grade) => {
@@ -44,7 +54,11 @@ export default function Study() {
 
   return (
     <Page>
-      <PageHeader back="/learn" title={deck.title} subtitle={card ? t('progress', { n: i + 1, total: queue.length }) : undefined} />
+      <PageHeader
+        back="/learn"
+        title={deck.title}
+        subtitle={card ? t('progress', { n: i + 1, total: queue.length }) : undefined}
+      />
       {!card ? (
         <EmptyState
           icon={<PartyPopper />}
@@ -72,7 +86,12 @@ export default function Study() {
           <div className="mb-4 h-1.5 overflow-hidden rounded-full bg-surface-3" aria-hidden>
             <div className="h-full bg-primary transition-all" style={{ width: `${(i / queue.length) * 100}%` }} />
           </div>
-          <button type="button" onClick={() => setFlipped(!flipped)} className="block w-full [perspective:1200px]" aria-label={flipped ? t('showFront') : t('showBack')}>
+          <button
+            type="button"
+            onClick={() => setFlipped(!flipped)}
+            className="block w-full [perspective:1200px]"
+            aria-label={flipped ? t('showFront') : t('showBack')}
+          >
             <motion.div
               className="relative min-h-72 [transform-style:preserve-3d]"
               animate={{ rotateY: flipped ? 180 : 0 }}
@@ -91,7 +110,12 @@ export default function Study() {
           </button>
           <AnimatePresence>
             {flipped && (
-              <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="mt-5 grid grid-cols-4 gap-2">
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                className="mt-5 grid grid-cols-4 gap-2"
+              >
                 {(['again', 'hard', 'good', 'easy'] as const).map((g) => (
                   <button
                     key={g}
@@ -99,7 +123,13 @@ export default function Study() {
                     onClick={() => void grade(g)}
                     className={cn(
                       'min-h-14 rounded-2xl text-sm font-semibold transition active:scale-95',
-                      g === 'again' ? 'bg-accent-soft text-accent-soft-fg' : g === 'hard' ? 'bg-warn-soft text-warn' : g === 'good' ? 'bg-primary-soft text-primary-soft-fg' : 'bg-blue-soft text-blue',
+                      g === 'again'
+                        ? 'bg-accent-soft text-accent-soft-fg'
+                        : g === 'hard'
+                          ? 'bg-warn-soft text-warn'
+                          : g === 'good'
+                            ? 'bg-primary-soft text-primary-soft-fg'
+                            : 'bg-blue-soft text-blue',
                     )}
                   >
                     {t(`grade.${g}`)}

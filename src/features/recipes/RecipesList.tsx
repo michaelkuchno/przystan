@@ -19,7 +19,10 @@ export function recipeFromTemplate(tpl: SessionTemplate | undefined, ingredients
     title: tpl?.title ?? '',
     goal: tpl?.goal ?? '',
     audience: tpl?.audience ?? '',
-    durationMin: Math.max(45, items.reduce((s, i) => s + i.minutes, 0)),
+    durationMin: Math.max(
+      45,
+      items.reduce((s, i) => s + i.minutes, 0),
+    ),
     items,
     ...(tpl ? { templateId: tpl.id } : {}),
     updatedAt: new Date().toISOString(),
@@ -66,7 +69,8 @@ export default function RecipesList() {
               <div className="mt-2 font-serif text-lg font-semibold">{r.title || t('untitled')}</div>
               <div className="mt-1 line-clamp-2 text-sm text-muted">{r.goal}</div>
               <div className="mt-3 flex items-center gap-1.5 text-sm text-muted">
-                <Clock className="size-4" aria-hidden /> {r.items.reduce((s, i) => s + i.minutes, 0)} min · {t('steps', { count: r.items.length })}
+                <Clock className="size-4" aria-hidden /> {r.items.reduce((s, i) => s + i.minutes, 0)} min ·{' '}
+                {t('steps', { count: r.items.length })}
               </div>
             </button>
           ))}

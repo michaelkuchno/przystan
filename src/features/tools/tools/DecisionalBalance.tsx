@@ -21,23 +21,35 @@ export default function DecisionalBalance({ aud, onResult }: ToolProps) {
         {CELLS.map((c) => (
           <div
             key={c}
-            className={cn('rounded-2xl p-4', c === 'prosChange' || c === 'consStatus' ? 'bg-primary-soft/60' : 'bg-accent-soft/50')}
+            className={cn(
+              'rounded-2xl p-4',
+              c === 'prosChange' || c === 'consStatus' ? 'bg-primary-soft/60' : 'bg-accent-soft/50',
+            )}
           >
-            <ListEditor label={t(`balance.${c}`)} hint={prompts[c][aud]} items={v[c]} onChange={(items) => setV({ ...v, [c]: items })} />
+            <ListEditor
+              label={t(`balance.${c}`)}
+              hint={prompts[c][aud]}
+              items={v[c]}
+              onChange={(items) => setV({ ...v, [c]: items })}
+            />
           </div>
         ))}
       </div>
       <div className="rounded-2xl border border-line p-4" aria-live="polite">
         <div className="mb-2 text-sm font-medium">{t('balance.scale')}</div>
         <div className="flex items-center gap-3 text-sm">
-          <span className="w-24 text-right text-accent">{t('balance.status')} ({forStatus})</span>
+          <span className="w-24 text-right text-accent">
+            {t('balance.status')} ({forStatus})
+          </span>
           <div className="relative h-3 flex-1 rounded-full bg-surface-3">
             <div
               className="absolute top-1/2 size-5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-surface bg-primary shadow transition-all"
               style={{ left: `${forChange + forStatus ? (forChange / (forChange + forStatus)) * 100 : 50}%` }}
             />
           </div>
-          <span className="w-24 text-primary">{t('balance.change')} ({forChange})</span>
+          <span className="w-24 text-primary">
+            {t('balance.change')} ({forChange})
+          </span>
         </div>
         <p className="mt-2 text-xs text-muted">{t('balance.note')}</p>
       </div>

@@ -32,7 +32,9 @@ export default function Exam() {
     const sel = shuffle(pool).slice(0, Number(count));
     setQs(
       sel.map(({ c, d }) => {
-        const distract = shuffle(d.cards.filter((x) => x.id !== c.id)).slice(0, 3).map((x) => x.back);
+        const distract = shuffle(d.cards.filter((x) => x.id !== c.id))
+          .slice(0, 3)
+          .map((x) => x.back);
         const options = shuffle([c.back, ...distract]);
         return { card: c, deck: d.title, options, answer: options.indexOf(c.back) };
       }),
@@ -47,8 +49,19 @@ export default function Exam() {
       <Page>
         <PageHeader back="/learn" title={t('exam')} subtitle={t('examSubtitle')} />
         <Card className="space-y-5">
-          <Chips label={t('chooseDecks')} multiple value={chosen} onChange={setChosen} options={decks.map((d) => ({ value: d.id, label: d.title }))} />
-          <Chips label={t('questions')} value={count} onChange={(v) => v[0] && setCount(v[0])} options={['10', '20', '30'].map((n) => ({ value: n, label: n }))} />
+          <Chips
+            label={t('chooseDecks')}
+            multiple
+            value={chosen}
+            onChange={setChosen}
+            options={decks.map((d) => ({ value: d.id, label: d.title }))}
+          />
+          <Chips
+            label={t('questions')}
+            value={count}
+            onChange={(v) => v[0] && setCount(v[0])}
+            options={['10', '20', '30'].map((n) => ({ value: n, label: n }))}
+          />
           <Button size="lg" disabled={!chosen.length} icon={<Play className="size-5" />} onClick={start}>
             {t('startExam')}
           </Button>
@@ -116,7 +129,11 @@ export default function Exam() {
                   }}
                   className={cn(
                     'flex min-h-14 w-full items-start gap-3 rounded-2xl border px-4 py-3 text-left text-sm transition',
-                    state === 'right' ? 'border-ok bg-ok-soft' : state === 'wrong' ? 'border-accent bg-accent-soft' : 'border-line bg-surface hover:border-primary',
+                    state === 'right'
+                      ? 'border-ok bg-ok-soft'
+                      : state === 'wrong'
+                        ? 'border-accent bg-accent-soft'
+                        : 'border-line bg-surface hover:border-primary',
                   )}
                 >
                   <span className="flex-1">{o}</span>

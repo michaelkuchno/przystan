@@ -19,7 +19,10 @@ export default function Halt({ aud, onResult }: ToolProps) {
       {KEYS.map((k) => (
         <div key={k} className="rounded-2xl border border-line p-4">
           <div className="flex items-center gap-3">
-            <span className="flex size-12 items-center justify-center rounded-2xl bg-accent-soft font-serif text-2xl font-bold text-accent-soft-fg" aria-hidden>
+            <span
+              className="flex size-12 items-center justify-center rounded-2xl bg-accent-soft font-serif text-2xl font-bold text-accent-soft-fg"
+              aria-hidden
+            >
               {LETTER[k]}
             </span>
             <div className="flex-1">
@@ -35,7 +38,10 @@ export default function Halt({ aud, onResult }: ToolProps) {
                 role="radio"
                 aria-checked={v[k] === n}
                 onClick={() => setV({ ...v, [k]: n })}
-                className={cn('min-h-11 rounded-xl text-sm font-medium transition', v[k] === n ? 'bg-primary text-primary-fg' : 'bg-surface-2')}
+                className={cn(
+                  'min-h-11 rounded-xl text-sm font-medium transition',
+                  v[k] === n ? 'bg-primary text-primary-fg' : 'bg-surface-2',
+                )}
               >
                 {t(`halt.level${n}`)}
               </button>

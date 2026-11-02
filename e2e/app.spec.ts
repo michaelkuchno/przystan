@@ -220,12 +220,42 @@ test('presentation mode hides identifiers and navigates with arrows @desktop', a
 test('no horizontal scrolling at phone width on any screen', async ({ page }) => {
   await onboard(page, 'demo');
   const routes = [
-    '#/', '#/clients', '#/clients/demo-01', '#/clients/demo-01/diagnosis', '#/clients/demo-01/ipr', '#/clients/demo-01/relapse',
-    '#/clients/demo-01/measurements', '#/clients/demo-01/timeline', '#/clients/demo-01/genogram', '#/clients/demo-03/readaptation',
-    '#/clients/demo-07/family', '#/meetings', '#/recipes', '#/tools', '#/tools/urgeSurfing', '#/tools/decisionalBalance',
-    '#/tools/triggerMap', '#/tools/socialSkills', '#/screening', '#/screening/AUDIT', '#/prevention', '#/prevention/demo-08-prev',
-    '#/resocialization', '#/family', '#/help', '#/help/map', '#/help/law', '#/knowledge', '#/simulator', '#/learn', '#/learn/exam',
-    '#/settings', '#/info/privacy', '#/crisis', '#/more', '#/search',
+    '#/',
+    '#/clients',
+    '#/clients/demo-01',
+    '#/clients/demo-01/diagnosis',
+    '#/clients/demo-01/ipr',
+    '#/clients/demo-01/relapse',
+    '#/clients/demo-01/measurements',
+    '#/clients/demo-01/timeline',
+    '#/clients/demo-01/genogram',
+    '#/clients/demo-03/readaptation',
+    '#/clients/demo-07/family',
+    '#/meetings',
+    '#/recipes',
+    '#/tools',
+    '#/tools/urgeSurfing',
+    '#/tools/decisionalBalance',
+    '#/tools/triggerMap',
+    '#/tools/socialSkills',
+    '#/screening',
+    '#/screening/AUDIT',
+    '#/prevention',
+    '#/prevention/demo-08-prev',
+    '#/resocialization',
+    '#/family',
+    '#/help',
+    '#/help/map',
+    '#/help/law',
+    '#/knowledge',
+    '#/simulator',
+    '#/learn',
+    '#/learn/exam',
+    '#/settings',
+    '#/info/privacy',
+    '#/crisis',
+    '#/more',
+    '#/search',
   ];
   const overflow: string[] = [];
   for (const r of routes) {
@@ -235,4 +265,40 @@ test('no horizontal scrolling at phone width on any screen', async ({ page }) =>
     if (w[0]! > w[1]! + 1) overflow.push(`${r}: ${w[0]} > ${w[1]}`);
   }
   expect(overflow).toEqual([]);
+});
+
+test('main screens have no serious accessibility violations', async ({ page }) => {
+  const { default: AxeBuilder } = await import('@axe-core/playwright');
+  await onboard(page, 'demo');
+  const routes = [
+    '#/',
+    '#/clients',
+    '#/clients/demo-01',
+    '#/clients/demo-01/diagnosis',
+    '#/clients/demo-01/genogram',
+    '#/meetings',
+    '#/tools',
+    '#/tools/urgeSurfing',
+    '#/screening/AUDIT',
+    '#/prevention/demo-08-prev',
+    '#/help',
+    '#/knowledge',
+    '#/simulator',
+    '#/learn',
+    '#/settings',
+  ];
+  const problems: string[] = [];
+  for (const r of routes) {
+    await go(page, r);
+    await page.waitForTimeout(500);
+    const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
+    for (const v of res.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical'))
+      problems.push(
+        `${r} ${v.id}: ${v.nodes
+          .slice(0, 3)
+          .map((n) => n.target.join(' '))
+          .join(' | ')}`,
+      );
+  }
+  expect(problems).toEqual([]);
 });

@@ -5,7 +5,8 @@ import { Play, Save, Trash2 } from 'lucide-react';
 import { Page, PageHeader } from '@/components/ui/page';
 import { Button, ButtonLink, Card } from '@/components/ui/core';
 import { Chips, ListEditor, SelectField, TextField, Field, TextInput } from '@/components/ui/form';
-import { useConfirm, useToast } from '@/components/ui/overlay';
+import { useConfirm } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { all, get, remove, save, uid, useStore } from '@/lib/store';
 import { nowLocalIso, toLocalInput } from '@/lib/format';
 import { NOTE_FIELDS, type Meeting, type NoteType } from '@/domain/types';
@@ -138,7 +139,11 @@ export default function MeetingEditor() {
               value={m.recipeId ?? ''}
               onChange={(v) => {
                 const r = get('recipe', v);
-                setM({ ...m, recipeId: v || undefined, ...(r && !m.agenda.length ? { agenda: r.items.map((i) => i.title) } : {}) });
+                setM({
+                  ...m,
+                  recipeId: v || undefined,
+                  ...(r && !m.agenda.length ? { agenda: r.items.map((i) => i.title) } : {}),
+                });
               }}
               options={[{ value: '', label: '—' }, ...recipes.map((r) => ({ value: r.id, label: r.title }))]}
             />

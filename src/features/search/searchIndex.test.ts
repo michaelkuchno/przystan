@@ -2,8 +2,20 @@ import { describe, expect, it } from 'vitest';
 import { norm, search } from './searchIndex';
 
 const docs = [
-  { id: '1', kind: 'knowledge' as const, title: 'Dialog motywujący', body: 'OARS, pytania otwarte, odzwierciedlenia', to: '/k/1' },
-  { id: '2', kind: 'knowledge' as const, title: 'Zapobieganie nawrotom', body: 'sytuacje wysokiego ryzyka, źródła wsparcia', to: '/k/2' },
+  {
+    id: '1',
+    kind: 'knowledge' as const,
+    title: 'Dialog motywujący',
+    body: 'OARS, pytania otwarte, odzwierciedlenia',
+    to: '/k/1',
+  },
+  {
+    id: '2',
+    kind: 'knowledge' as const,
+    title: 'Zapobieganie nawrotom',
+    body: 'sytuacje wysokiego ryzyka, źródła wsparcia',
+    to: '/k/2',
+  },
 ];
 
 describe('search', () => {

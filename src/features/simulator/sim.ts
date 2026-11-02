@@ -24,7 +24,14 @@ export interface SimStats {
 }
 
 const INCONSISTENT: MitiCategory[] = ['confront', 'moralize', 'adviseWithoutPermission'];
-const CONSISTENT: MitiCategory[] = ['affirmation', 'adviseWithPermission', 'summary', 'complexReflection', 'simpleReflection', 'openQuestion'];
+const CONSISTENT: MitiCategory[] = [
+  'affirmation',
+  'adviseWithPermission',
+  'summary',
+  'complexReflection',
+  'simpleReflection',
+  'openQuestion',
+];
 
 export function computeStats(scenario: Scenario, steps: SimStep[]): SimStats {
   const nodes = new Map(scenario.nodes.map((n) => [n.id, n]));

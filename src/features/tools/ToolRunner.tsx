@@ -5,7 +5,7 @@ import { Maximize2, Minimize2, Save } from 'lucide-react';
 import { Page, PageHeader } from '@/components/ui/page';
 import { Button, Card, Skeleton, EmptyState } from '@/components/ui/core';
 import { Chips, SelectField, TextField } from '@/components/ui/form';
-import { useToast } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { all, get, save, uid, useStore } from '@/lib/store';
 import { todayIso, haptic } from '@/lib/platform';
 import { useContent } from '@/content/ContentProvider';
@@ -39,7 +39,9 @@ export default function ToolRunner() {
   const [clientId, setClientId] = useState(params.get('client') ?? '');
   const meetingId = params.get('meeting') ?? undefined;
   const client = get('client', clientId);
-  const [aud, setAud] = useState<Audience>(client && (client.ageGroup === 'teen' || client.ageGroup === 'child') ? 'youth' : 'adult');
+  const [aud, setAud] = useState<Audience>(
+    client && (client.ageGroup === 'teen' || client.ageGroup === 'child') ? 'youth' : 'adult',
+  );
   const [show, setShow] = useState(false);
   const [note, setNote] = useState('');
   const result = useRef<ToolResult>({});
@@ -50,7 +52,12 @@ export default function ToolRunner() {
   }, []);
 
   const meta = TOOL_META.find((m) => m.id === tool);
-  if (!meta) return <Page><EmptyState title={t('notFound')} /></Page>;
+  if (!meta)
+    return (
+      <Page>
+        <EmptyState title={t('notFound')} />
+      </Page>
+    );
   const Comp = COMPONENTS[meta.id];
 
   const saveResult = async () => {
@@ -138,7 +145,6 @@ export default function ToolRunner() {
           </Card>
         </div>
       </div>
-
     </Page>
   );
 }

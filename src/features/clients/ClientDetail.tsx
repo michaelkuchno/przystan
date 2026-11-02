@@ -4,7 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { Pencil, Trash2, FileDown, CalendarPlus } from 'lucide-react';
 import { Page, PageHeader } from '@/components/ui/page';
 import { Badge, Button, ButtonLink, EmptyState, Avatar, Skeleton } from '@/components/ui/core';
-import { Tabs, useConfirm, useToast } from '@/components/ui/overlay';
+import { Tabs, useConfirm } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { useStore, get, remove } from '@/lib/store';
 import { Overview } from './tabs/Overview';
 import { clientReportPdf } from '@/lib/reports';
@@ -38,7 +39,12 @@ export default function ClientDetail() {
     );
 
   const del = async () => {
-    const ok = await confirm({ title: t('deleteConfirm'), text: t('deleteConfirmText'), confirm: t('common:delete'), danger: true });
+    const ok = await confirm({
+      title: t('deleteConfirm'),
+      text: t('deleteConfirmText'),
+      confirm: t('common:delete'),
+      danger: true,
+    });
     if (!ok) return;
     const undo = await remove('client', client.id);
     nav('/clients');
@@ -82,7 +88,12 @@ export default function ClientDetail() {
         }
         actions={
           <>
-            <ButtonLink to={`/meetings/new?client=${client.id}`} variant="soft" size="sm" icon={<CalendarPlus className="size-4" />}>
+            <ButtonLink
+              to={`/meetings/new?client=${client.id}`}
+              variant="soft"
+              size="sm"
+              icon={<CalendarPlus className="size-4" />}
+            >
               {t('newMeeting')}
             </ButtonLink>
             <Button

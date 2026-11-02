@@ -72,7 +72,13 @@ export default function ClientsList() {
               <label htmlFor="client-search" className="sr-only">
                 {t('search')}
               </label>
-              <TextInput id="client-search" className="pl-9" placeholder={t('search')} value={q} onChange={(e) => setQ(e.target.value)} />
+              <TextInput
+                id="client-search"
+                className="pl-9"
+                placeholder={t('search')}
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+              />
             </div>
             <Button variant="secondary" onClick={() => setOpen(true)} icon={<SlidersHorizontal className="size-4" />}>
               {t('filters')}

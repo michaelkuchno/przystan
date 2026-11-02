@@ -7,7 +7,10 @@ export function parseDate(iso: string): Date {
   return /^\d{4}-\d{2}-\d{2}$/.test(iso) ? new Date(`${iso}T12:00:00`) : new Date(iso);
 }
 
-export function fmtDate(iso: string | undefined, opts: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short', year: 'numeric' }) {
+export function fmtDate(
+  iso: string | undefined,
+  opts: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short', year: 'numeric' },
+) {
   if (!iso) return '';
   return parseDate(iso).toLocaleDateString(locale(), opts);
 }

@@ -82,7 +82,10 @@ export function KnowledgeCardView({ card }: { card: KnowledgeCard }) {
 
 export function KnowledgeTile({ card, to }: { card: KnowledgeCard; to: string }) {
   return (
-    <Link to={to} className="group block rounded-[var(--radius-card)] border border-line bg-surface p-4 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:border-primary/40">
+    <Link
+      to={to}
+      className="group block rounded-[var(--radius-card)] border border-line bg-surface p-4 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:border-primary/40"
+    >
       <div className="font-serif text-lg leading-snug font-semibold">{card.title}</div>
       <p className="mt-1 line-clamp-3 text-sm text-muted">{card.essence}</p>
       <div className="mt-2 flex flex-wrap gap-1">

@@ -88,7 +88,12 @@ export async function clientReportPdf(clientId: string): Promise<ExportResult> {
         widths: ['*', '*', '*'],
         body: [
           [
-            { stack: [{ text: t('clients:fields.problems'), style: 'label' }, c.problems.map((p) => t(`enums:problem.${p}`)).join(', ') || '—'] },
+            {
+              stack: [
+                { text: t('clients:fields.problems'), style: 'label' },
+                c.problems.map((p) => t(`enums:problem.${p}`)).join(', ') || '—',
+              ],
+            },
             { stack: [{ text: t('clients:fields.stage'), style: 'label' }, t(`enums:stage.${c.stage}`)] },
             { stack: [{ text: t('clients:fields.goal'), style: 'label' }, t(`enums:goal.${c.goal}`)] },
           ],
@@ -113,7 +118,11 @@ export async function clientReportPdf(clientId: string): Promise<ExportResult> {
               { text: '1–5', style: 'label' },
               { text: t('reports:notes'), style: 'label' },
             ],
-            ...DIAGNOSIS_AREAS.map((a) => [t(`clients:diagnosis.areas.${a}`), String(dx.areas[a].score), dx.areas[a].notes || '']),
+            ...DIAGNOSIS_AREAS.map((a) => [
+              t(`clients:diagnosis.areas.${a}`),
+              String(dx.areas[a].score),
+              dx.areas[a].notes || '',
+            ]),
           ],
         },
         layout: 'lightHorizontalLines',
@@ -138,7 +147,14 @@ export async function clientReportPdf(clientId: string): Promise<ExportResult> {
             { text: `${i + 1}. ${g.title}  (${g.progress}%)`, style: 'h3' },
             { text: [{ text: 'S: ', bold: true }, g.specific, '   ', { text: 'M: ', bold: true }, g.measurable] },
             ...(g.actions.length
-              ? [{ ul: g.actions.map((a) => `${a.done ? '✓ ' : ''}${a.text}${a.responsible ? ` – ${a.responsible}` : ''}${a.due ? ` (${fmtDate(a.due)})` : ''}`) }]
+              ? [
+                  {
+                    ul: g.actions.map(
+                      (a) =>
+                        `${a.done ? '✓ ' : ''}${a.text}${a.responsible ? ` – ${a.responsible}` : ''}${a.due ? ` (${fmtDate(a.due)})` : ''}`,
+                    ),
+                  },
+                ]
               : []),
           ],
           margin: [0, 0, 0, 6],
@@ -154,10 +170,16 @@ export async function clientReportPdf(clientId: string): Promise<ExportResult> {
           headerRows: 1,
           widths: [80, '*', 60],
           body: [
-            [{ text: t('common:date'), style: 'label' }, { text: t('reports:tool'), style: 'label' }, { text: t('reports:result'), style: 'label' }],
+            [
+              { text: t('common:date'), style: 'label' },
+              { text: t('reports:tool'), style: 'label' },
+              { text: t('reports:result'), style: 'label' },
+            ],
             ...ms.map((m) => [
               fmtDate(m.date),
-              m.source.kind === 'screening' ? `${m.source.instrument}${m.band ? ` – ${t(`screening:bands.${m.source.instrument}.${m.band}`)}` : ''}` : t(`tools:names.${m.source.tool}`),
+              m.source.kind === 'screening'
+                ? `${m.source.instrument}${m.band ? ` – ${t(`screening:bands.${m.source.instrument}.${m.band}`)}` : ''}`
+                : t(`tools:names.${m.source.tool}`),
               m.scoreBefore !== undefined ? `${m.scoreBefore} → ${m.score ?? ''}` : String(m.score ?? '—'),
             ]),
           ],
@@ -176,18 +198,37 @@ export async function clientReportPdf(clientId: string): Promise<ExportResult> {
 
 export async function relapseCardPdf(p: RelapsePlan): Promise<ExportResult> {
   const content: Content[] = [
-    { columns: [
-      { stack: [{ text: t('clients:relapse.highRisk'), style: 'h2' }, bullets(p.highRiskSituations)] },
-      { stack: [{ text: t('clients:relapse.triggers'), style: 'h2' }, bullets(p.triggers)] },
-    ], columnGap: 18 },
-    { columns: [
-      { stack: [{ text: t('clients:relapse.warning'), style: 'h2' }, bullets(p.warningSigns)] },
-      { stack: [{ text: t('clients:relapse.coping'), style: 'h2' }, bullets(p.copingStrategies)] },
-    ], columnGap: 18 },
-    ...section(t('clients:relapse.people'), bullets(p.supportPeople.map((x) => `${x.name}${x.contact ? ` – ${x.contact}` : ''}`))),
+    {
+      columns: [
+        { stack: [{ text: t('clients:relapse.highRisk'), style: 'h2' }, bullets(p.highRiskSituations)] },
+        { stack: [{ text: t('clients:relapse.triggers'), style: 'h2' }, bullets(p.triggers)] },
+      ],
+      columnGap: 18,
+    },
+    {
+      columns: [
+        { stack: [{ text: t('clients:relapse.warning'), style: 'h2' }, bullets(p.warningSigns)] },
+        { stack: [{ text: t('clients:relapse.coping'), style: 'h2' }, bullets(p.copingStrategies)] },
+      ],
+      columnGap: 18,
+    },
+    ...section(
+      t('clients:relapse.people'),
+      bullets(p.supportPeople.map((x) => `${x.name}${x.contact ? ` – ${x.contact}` : ''}`)),
+    ),
     ...section(t('clients:relapse.places'), bullets(p.supportPlaces)),
     {
-      table: { widths: ['*'], body: [[{ stack: [{ text: t('clients:relapse.lapsePlan'), style: 'h2', margin: [0, 0, 0, 4] }, p.lapsePlan || '—'], margin: [8, 8, 8, 8] }]] },
+      table: {
+        widths: ['*'],
+        body: [
+          [
+            {
+              stack: [{ text: t('clients:relapse.lapsePlan'), style: 'h2', margin: [0, 0, 0, 4] }, p.lapsePlan || '—'],
+              margin: [8, 8, 8, 8],
+            },
+          ],
+        ],
+      },
       layout: 'noBorders',
       fillColor: '#f5e0d6',
       margin: [0, 16, 0, 0],
@@ -219,7 +260,13 @@ function recipeContent(r: Recipe): Content[] {
       columns: [
         { stack: [{ text: t('recipes:goal'), style: 'label' }, r.goal || '—'] },
         { stack: [{ text: t('recipes:audience'), style: 'label' }, r.audience || '—'] },
-        { stack: [{ text: t('recipes:duration'), style: 'label' }, `${r.items.reduce((s, i) => s + i.minutes, 0)} / ${r.durationMin} min`], width: 110 },
+        {
+          stack: [
+            { text: t('recipes:duration'), style: 'label' },
+            `${r.items.reduce((s, i) => s + i.minutes, 0)} / ${r.durationMin} min`,
+          ],
+          width: 110,
+        },
       ],
       columnGap: 12,
       margin: [0, 0, 0, 8],
@@ -229,11 +276,19 @@ function recipeContent(r: Recipe): Content[] {
         headerRows: 1,
         widths: [52, '*', 44],
         body: [
-          [{ text: t('recipes:time'), style: 'label' }, { text: t('recipes:step'), style: 'label' }, { text: 'min', style: 'label' }],
+          [
+            { text: t('recipes:time'), style: 'label' },
+            { text: t('recipes:step'), style: 'label' },
+            { text: 'min', style: 'label' },
+          ],
           ...r.items.map((it) => {
             const from = minute;
             minute += it.minutes;
-            return [`${from}–${minute}′`, { stack: [{ text: it.title, bold: true }, ...(it.note ? [{ text: it.note, style: 'muted' }] : [])] }, String(it.minutes)];
+            return [
+              `${from}–${minute}′`,
+              { stack: [{ text: it.title, bold: true }, ...(it.note ? [{ text: it.note, style: 'muted' }] : [])] },
+              String(it.minutes),
+            ];
           }),
         ],
       },
@@ -256,9 +311,20 @@ export async function preventionPdf(p: PreventionProgram, content: PreventionFil
   const level = content.levels.find((l) => l.id === p.level);
   const recipes = p.recipeIds.map((id) => get('recipe', id)).filter((r): r is Recipe => !!r);
   const body: Content[] = [
-    ...section(t('prevention:steps.needs'), { stack: [{ text: p.setting, bold: true }, p.needs || '—', { text: t('prevention:resources'), style: 'h3' }, p.resources || '—'] }),
+    ...section(t('prevention:steps.needs'), {
+      stack: [
+        { text: p.setting, bold: true },
+        p.needs || '—',
+        { text: t('prevention:resources'), style: 'h3' },
+        p.resources || '—',
+      ],
+    }),
     ...section(t('prevention:steps.target'), {
-      stack: [p.targetGroup || '—', { text: `${t('prevention:level')}: ${level?.title ?? p.level}`, bold: true, margin: [0, 4, 0, 0] }, { text: level?.description ?? '', style: 'muted' }],
+      stack: [
+        p.targetGroup || '—',
+        { text: `${t('prevention:level')}: ${level?.title ?? p.level}`, bold: true, margin: [0, 4, 0, 0] },
+        { text: level?.description ?? '', style: 'muted' },
+      ],
     }),
     ...section(t('prevention:steps.factors'), {
       columns: [
@@ -268,7 +334,10 @@ export async function preventionPdf(p: PreventionProgram, content: PreventionFil
       columnGap: 16,
     }),
     ...section(t('prevention:steps.goals'), { stack: [{ text: p.generalGoal || '—', bold: true }, bullets(p.specificGoals)] }),
-    ...section(t('prevention:steps.strategies'), bullets(p.strategies.map((s) => content.strategies.find((x) => x.id === s)?.title ?? s))),
+    ...section(
+      t('prevention:steps.strategies'),
+      bullets(p.strategies.map((s) => content.strategies.find((x) => x.id === s)?.title ?? s)),
+    ),
     ...section(t('prevention:steps.schedule'), {
       table: {
         widths: [80, '*'],
@@ -283,7 +352,12 @@ export async function preventionPdf(p: PreventionProgram, content: PreventionFil
         headerRows: 1,
         widths: ['*', 50, 50, 50],
         body: [
-          [{ text: t('prevention:indicator'), style: 'label' }, { text: t('prevention:pre'), style: 'label' }, { text: t('prevention:post'), style: 'label' }, { text: 'Δ', style: 'label' }],
+          [
+            { text: t('prevention:indicator'), style: 'label' },
+            { text: t('prevention:pre'), style: 'label' },
+            { text: t('prevention:post'), style: 'label' },
+            { text: 'Δ', style: 'label' },
+          ],
           ...p.indicators.map((i) => [
             i.label,
             i.pre?.toFixed(1) ?? '—',
@@ -296,7 +370,11 @@ export async function preventionPdf(p: PreventionProgram, content: PreventionFil
     }),
   ];
   const checked = content.goodPractice.filter((g) => p.checklist[g.id]);
-  if (checked.length) body.push(...section(t('prevention:checklistTitle'), bullets(checked.map((g) => (g.kind === 'do' ? '✓ ' : '✗ ') + g.text))));
+  if (checked.length)
+    body.push(...section(t('prevention:checklistTitle'), bullets(checked.map((g) => (g.kind === 'do' ? '✓ ' : '✗ ') + g.text))));
   for (const r of recipes) body.push({ text: r.title, style: 'h2', pageBreak: 'before' }, ...recipeContent(r));
-  return render(base(p.title || t('prevention:untitled'), `${t('prevention:pdfSubtitle')} · ${p.targetGroup}`, body), p.title || 'program');
+  return render(
+    base(p.title || t('prevention:untitled'), `${t('prevention:pdfSubtitle')} · ${p.targetGroup}`, body),
+    p.title || 'program',
+  );
 }

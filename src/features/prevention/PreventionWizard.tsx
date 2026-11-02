@@ -6,7 +6,8 @@ import { ArrowLeft, ArrowRight, FileDown, Lightbulb, Plus, Trash2, Check, ChefHa
 import { Page, PageHeader, Notice } from '@/components/ui/page';
 import { Button, Card, EmptyState, IconButton, Badge } from '@/components/ui/core';
 import { ListEditor, TextField, TextInput } from '@/components/ui/form';
-import { useConfirm, useToast } from '@/components/ui/overlay';
+import { useConfirm } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { SaveStatus } from '@/components/SaveStatus';
 import { PrePostChart } from '@/components/LazyCharts';
 import { all, get, remove, save, uid, useStore } from '@/lib/store';
@@ -44,7 +45,13 @@ function Wizard({ program }: { program: PreventionProgram }) {
     ),
     target: (
       <div className="space-y-4">
-        <TextField multiline rows={2} label={t('targetGroup')} value={draft.targetGroup} onChange={(v) => update({ targetGroup: v })} />
+        <TextField
+          multiline
+          rows={2}
+          label={t('targetGroup')}
+          value={draft.targetGroup}
+          onChange={(v) => update({ targetGroup: v })}
+        />
         <fieldset>
           <legend className="mb-2 text-sm font-medium">{t('level')}</legend>
           <div className="grid gap-3 md:grid-cols-3" role="radiogroup">
@@ -55,7 +62,10 @@ function Wizard({ program }: { program: PreventionProgram }) {
                 role="radio"
                 aria-checked={draft.level === l.id}
                 onClick={() => update({ level: l.id })}
-                className={cn('rounded-2xl border-2 p-4 text-left transition', draft.level === l.id ? 'border-primary bg-primary-soft/50' : 'border-line bg-surface')}
+                className={cn(
+                  'rounded-2xl border-2 p-4 text-left transition',
+                  draft.level === l.id ? 'border-primary bg-primary-soft/50' : 'border-line bg-surface',
+                )}
               >
                 <div className="flex items-center justify-between font-semibold">
                   {l.title}
@@ -70,14 +80,35 @@ function Wizard({ program }: { program: PreventionProgram }) {
     ),
     factors: (
       <div className="grid gap-4 md:grid-cols-2">
-        <ListEditor label={t('risk')} items={draft.riskFactors} onChange={(v) => update({ riskFactors: v })} suggestions={c.riskFactors.map((f) => f.text)} />
-        <ListEditor label={t('protective')} items={draft.protectiveFactors} onChange={(v) => update({ protectiveFactors: v })} suggestions={c.protectiveFactors.map((f) => f.text)} />
+        <ListEditor
+          label={t('risk')}
+          items={draft.riskFactors}
+          onChange={(v) => update({ riskFactors: v })}
+          suggestions={c.riskFactors.map((f) => f.text)}
+        />
+        <ListEditor
+          label={t('protective')}
+          items={draft.protectiveFactors}
+          onChange={(v) => update({ protectiveFactors: v })}
+          suggestions={c.protectiveFactors.map((f) => f.text)}
+        />
       </div>
     ),
     goals: (
       <div className="space-y-4">
-        <TextField multiline rows={2} label={t('generalGoal')} value={draft.generalGoal} onChange={(v) => update({ generalGoal: v })} />
-        <ListEditor label={t('specificGoals')} hint={t('specificGoalsHint')} items={draft.specificGoals} onChange={(v) => update({ specificGoals: v })} />
+        <TextField
+          multiline
+          rows={2}
+          label={t('generalGoal')}
+          value={draft.generalGoal}
+          onChange={(v) => update({ generalGoal: v })}
+        />
+        <ListEditor
+          label={t('specificGoals')}
+          hint={t('specificGoalsHint')}
+          items={draft.specificGoals}
+          onChange={(v) => update({ specificGoals: v })}
+        />
       </div>
     ),
     strategies: (
@@ -90,8 +121,14 @@ function Wizard({ program }: { program: PreventionProgram }) {
                 key={s.id}
                 type="button"
                 aria-pressed={on}
-                onClick={() => update({ strategies: on ? draft.strategies.filter((x) => x !== s.id) : [...draft.strategies, s.id] })}
-                className={cn('rounded-2xl border-2 p-3 text-left transition', on ? 'border-primary bg-primary-soft/50' : 'border-line bg-surface', s.evidence === 'harmful' && 'opacity-80')}
+                onClick={() =>
+                  update({ strategies: on ? draft.strategies.filter((x) => x !== s.id) : [...draft.strategies, s.id] })
+                }
+                className={cn(
+                  'rounded-2xl border-2 p-3 text-left transition',
+                  on ? 'border-primary bg-primary-soft/50' : 'border-line bg-surface',
+                  s.evidence === 'harmful' && 'opacity-80',
+                )}
               >
                 <div className="flex items-start justify-between gap-2">
                   <span className="font-semibold">{s.title}</span>
@@ -116,8 +153,13 @@ function Wizard({ program }: { program: PreventionProgram }) {
                   key={r.id}
                   type="button"
                   aria-pressed={on}
-                  onClick={() => update({ recipeIds: on ? draft.recipeIds.filter((x) => x !== r.id) : [...draft.recipeIds, r.id] })}
-                  className={cn('inline-flex min-h-11 items-center gap-2 rounded-full border px-3.5 text-sm', on ? 'border-primary bg-primary text-primary-fg' : 'border-line bg-surface')}
+                  onClick={() =>
+                    update({ recipeIds: on ? draft.recipeIds.filter((x) => x !== r.id) : [...draft.recipeIds, r.id] })
+                  }
+                  className={cn(
+                    'inline-flex min-h-11 items-center gap-2 rounded-full border px-3.5 text-sm',
+                    on ? 'border-primary bg-primary text-primary-fg' : 'border-line bg-surface',
+                  )}
                 >
                   <ChefHat className="size-4" aria-hidden /> {r.title || t('untitled')}
                 </button>
@@ -129,7 +171,10 @@ function Wizard({ program }: { program: PreventionProgram }) {
               icon={<Plus className="size-4" />}
               onClick={async () => {
                 await flush();
-                const r = recipeFromTemplate(templates.sessionTemplates.find((x) => x.id === 'classPrevention'), templates.ingredients);
+                const r = recipeFromTemplate(
+                  templates.sessionTemplates.find((x) => x.id === 'classPrevention'),
+                  templates.ingredients,
+                );
                 await save('recipe', r);
                 await save('prevention', { ...draft, recipeIds: [...draft.recipeIds, r.id] });
                 nav(`/recipes/${r.id}`);
@@ -149,23 +194,49 @@ function Wizard({ program }: { program: PreventionProgram }) {
               <label className="mb-1 block text-xs text-muted" htmlFor={`sd-${s.id}`}>
                 {t('common:date')}
               </label>
-              <TextInput id={`sd-${s.id}`} type="date" value={s.date} onChange={(e) => update({ schedule: draft.schedule.map((x) => (x.id === s.id ? { ...x, date: e.target.value } : x)) })} />
+              <TextInput
+                id={`sd-${s.id}`}
+                type="date"
+                value={s.date}
+                onChange={(e) =>
+                  update({ schedule: draft.schedule.map((x) => (x.id === s.id ? { ...x, date: e.target.value } : x)) })
+                }
+              />
             </div>
             <div className="flex-1">
               <label className="mb-1 block text-xs text-muted" htmlFor={`sa-${s.id}`}>
                 {t('activity')}
               </label>
-              <TextInput id={`sa-${s.id}`} value={s.activity} onChange={(e) => update({ schedule: draft.schedule.map((x) => (x.id === s.id ? { ...x, activity: e.target.value } : x)) })} />
+              <TextInput
+                id={`sa-${s.id}`}
+                value={s.activity}
+                onChange={(e) =>
+                  update({ schedule: draft.schedule.map((x) => (x.id === s.id ? { ...x, activity: e.target.value } : x)) })
+                }
+              />
             </div>
-            <IconButton label={t('common:delete')} onClick={() => update({ schedule: draft.schedule.filter((x) => x.id !== s.id) })}>
+            <IconButton
+              label={t('common:delete')}
+              onClick={() => update({ schedule: draft.schedule.filter((x) => x.id !== s.id) })}
+            >
               <Trash2 className="size-4" />
             </IconButton>
           </div>
         ))}
-        <Button variant="soft" icon={<Plus className="size-4" />} onClick={() => update({ schedule: [...draft.schedule, { id: uid(), date: '', activity: '' }] })}>
+        <Button
+          variant="soft"
+          icon={<Plus className="size-4" />}
+          onClick={() => update({ schedule: [...draft.schedule, { id: uid(), date: '', activity: '' }] })}
+        >
           {t('addActivity')}
         </Button>
-        <TextField multiline rows={3} label={t('budget')} value={draft.budgetResources} onChange={(v) => update({ budgetResources: v })} />
+        <TextField
+          multiline
+          rows={3}
+          label={t('budget')}
+          value={draft.budgetResources}
+          onChange={(v) => update({ budgetResources: v })}
+        />
       </div>
     ),
     evaluation: (
@@ -177,7 +248,13 @@ function Wizard({ program }: { program: PreventionProgram }) {
               <label className="mb-1 block text-xs text-muted" htmlFor={`il-${i.id}`}>
                 {t('indicator')}
               </label>
-              <TextInput id={`il-${i.id}`} value={i.label} onChange={(e) => update({ indicators: draft.indicators.map((x) => (x.id === i.id ? { ...x, label: e.target.value } : x)) })} />
+              <TextInput
+                id={`il-${i.id}`}
+                value={i.label}
+                onChange={(e) =>
+                  update({ indicators: draft.indicators.map((x) => (x.id === i.id ? { ...x, label: e.target.value } : x)) })
+                }
+              />
             </div>
             {(['pre', 'post'] as const).map((k) => (
               <div key={k}>
@@ -193,33 +270,51 @@ function Wizard({ program }: { program: PreventionProgram }) {
                   value={i[k] ?? ''}
                   onChange={(e) =>
                     update({
-                      indicators: draft.indicators.map((x) => (x.id === i.id ? { ...x, [k]: e.target.value === '' ? undefined : Number(e.target.value) } : x)),
+                      indicators: draft.indicators.map((x) =>
+                        x.id === i.id ? { ...x, [k]: e.target.value === '' ? undefined : Number(e.target.value) } : x,
+                      ),
                     })
                   }
                 />
               </div>
             ))}
-            <IconButton label={t('common:delete')} onClick={() => update({ indicators: draft.indicators.filter((x) => x.id !== i.id) })}>
+            <IconButton
+              label={t('common:delete')}
+              onClick={() => update({ indicators: draft.indicators.filter((x) => x.id !== i.id) })}
+            >
               <Trash2 className="size-4" />
             </IconButton>
           </div>
         ))}
         <div className="flex flex-wrap gap-2">
-          <Button variant="soft" size="sm" icon={<Plus className="size-4" />} onClick={() => update({ indicators: [...draft.indicators, { id: uid(), label: '' }] })}>
+          <Button
+            variant="soft"
+            size="sm"
+            icon={<Plus className="size-4" />}
+            onClick={() => update({ indicators: [...draft.indicators, { id: uid(), label: '' }] })}
+          >
             {t('addIndicator')}
           </Button>
           {c.indicatorExamples
             .filter((e) => !draft.indicators.some((i) => i.label === e))
             .slice(0, 4)
             .map((e) => (
-              <button key={e} type="button" onClick={() => update({ indicators: [...draft.indicators, { id: uid(), label: e }] })} className="min-h-9 rounded-full border border-dashed border-line px-3 text-xs text-muted hover:border-primary">
+              <button
+                key={e}
+                type="button"
+                onClick={() => update({ indicators: [...draft.indicators, { id: uid(), label: e }] })}
+                className="min-h-9 rounded-full border border-dashed border-line px-3 text-xs text-muted hover:border-primary"
+              >
                 + {e}
               </button>
             ))}
         </div>
         {draft.indicators.some((i) => i.pre !== undefined || i.post !== undefined) && (
           <Card>
-            <PrePostChart data={draft.indicators.map((i) => ({ label: i.label, pre: i.pre, post: i.post }))} labels={{ pre: t('pre'), post: t('post') }} />
+            <PrePostChart
+              data={draft.indicators.map((i) => ({ label: i.label, pre: i.pre, post: i.post }))}
+              labels={{ pre: t('pre'), post: t('post') }}
+            />
           </Card>
         )}
         <div>
@@ -229,10 +324,19 @@ function Wizard({ program }: { program: PreventionProgram }) {
             {c.goodPractice.map((g) => (
               <li key={g.id}>
                 <label className="flex min-h-11 cursor-pointer items-start gap-3 rounded-xl p-2 hover:bg-surface-2">
-                  <input type="checkbox" className="mt-1 size-5 accent-[var(--primary)]" checked={!!draft.checklist[g.id]} onChange={(e) => update({ checklist: { ...draft.checklist, [g.id]: e.target.checked } })} />
+                  <input
+                    type="checkbox"
+                    className="mt-1 size-5 accent-[var(--primary)]"
+                    checked={!!draft.checklist[g.id]}
+                    onChange={(e) => update({ checklist: { ...draft.checklist, [g.id]: e.target.checked } })}
+                  />
                   <span>
                     <span className="flex items-center gap-1.5 font-medium">
-                      {g.kind === 'do' ? <ThumbsUp className="size-4 text-ok" aria-hidden /> : <ThumbsDown className="size-4 text-accent" aria-hidden />}
+                      {g.kind === 'do' ? (
+                        <ThumbsUp className="size-4 text-ok" aria-hidden />
+                      ) : (
+                        <ThumbsDown className="size-4 text-accent" aria-hidden />
+                      )}
                       {g.kind === 'do' ? g.text : t('avoided', { text: g.text })}
                     </span>
                     <span className="block text-sm text-muted">{g.rationale}</span>
@@ -256,9 +360,17 @@ function Wizard({ program }: { program: PreventionProgram }) {
                 type="button"
                 onClick={() => setStep(s)}
                 aria-current={step === s ? 'step' : undefined}
-                className={cn('flex min-h-11 w-full items-center gap-2 rounded-xl px-3 text-left text-sm whitespace-nowrap transition', step === s ? 'bg-fg text-bg' : 'hover:bg-surface-2')}
+                className={cn(
+                  'flex min-h-11 w-full items-center gap-2 rounded-xl px-3 text-left text-sm whitespace-nowrap transition',
+                  step === s ? 'bg-fg text-bg' : 'hover:bg-surface-2',
+                )}
               >
-                <span className={cn('flex size-6 shrink-0 items-center justify-center rounded-full text-xs font-bold', step === s ? 'bg-bg text-fg' : i < idx ? 'bg-primary text-primary-fg' : 'bg-surface-3')}>
+                <span
+                  className={cn(
+                    'flex size-6 shrink-0 items-center justify-center rounded-full text-xs font-bold',
+                    step === s ? 'bg-bg text-fg' : i < idx ? 'bg-primary text-primary-fg' : 'bg-surface-3',
+                  )}
+                >
                   {i < idx ? <Check className="size-3.5" aria-hidden /> : i + 1}
                 </span>
                 {t(`steps.${s}`)}
@@ -292,13 +404,24 @@ function Wizard({ program }: { program: PreventionProgram }) {
             <span>{c.wizardHints[step]}</span>
           </div>
           <AnimatePresence mode="wait">
-            <motion.div key={step} initial={{ opacity: 0, x: 16 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -16 }} transition={{ duration: 0.18 }}>
+            <motion.div
+              key={step}
+              initial={{ opacity: 0, x: 16 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -16 }}
+              transition={{ duration: 0.18 }}
+            >
               {body[step]}
             </motion.div>
           </AnimatePresence>
         </Card>
         <div className="mt-4 flex flex-wrap items-center gap-2">
-          <Button variant="secondary" disabled={idx === 0} icon={<ArrowLeft className="size-4" />} onClick={() => setStep(STEPS[idx - 1]!)}>
+          <Button
+            variant="secondary"
+            disabled={idx === 0}
+            icon={<ArrowLeft className="size-4" />}
+            onClick={() => setStep(STEPS[idx - 1]!)}
+          >
             {t('common:back')}
           </Button>
           <div className="flex-1" />

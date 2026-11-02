@@ -11,7 +11,7 @@ export function useDecks(): Deck[] {
 /** Validates an imported deck file ({title, cards:[{front, back}]}, or {decks:[…]}). */
 export function parseDeckImport(text: string): { title: string; module?: string; cards: { front: string; back: string }[] }[] {
   const data = JSON.parse(text) as unknown;
-  const list = Array.isArray(data) ? data : (data as { decks?: unknown[] }).decks ?? [data];
+  const list = Array.isArray(data) ? data : ((data as { decks?: unknown[] }).decks ?? [data]);
   const out = list.map((d) => {
     const deck = d as { title?: unknown; module?: unknown; cards?: unknown };
     if (typeof deck.title !== 'string' || !Array.isArray(deck.cards)) throw new Error('invalid');

@@ -3,7 +3,7 @@ import { Plus, LifeBuoy, FileDown, Trash2 } from 'lucide-react';
 import { Card, Button, EmptyState, IconButton } from '@/components/ui/core';
 import { ListEditor, TextField, TextInput } from '@/components/ui/form';
 import { SaveStatus } from '@/components/SaveStatus';
-import { useToast } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { useStore, forClient, save, uid } from '@/lib/store';
 import { useEditable } from '@/lib/useEditable';
 import { useContent } from '@/content/ContentProvider';
@@ -85,7 +85,10 @@ function Editor({ plan }: { plan: RelapsePlan }) {
                 placeholder={t('relapse.personName')}
                 value={p.name}
                 onChange={(e) =>
-                  update((d) => ({ ...d, supportPeople: d.supportPeople.map((x) => (x.id === p.id ? { ...x, name: e.target.value } : x)) }))
+                  update((d) => ({
+                    ...d,
+                    supportPeople: d.supportPeople.map((x) => (x.id === p.id ? { ...x, name: e.target.value } : x)),
+                  }))
                 }
               />
               <TextInput
@@ -93,7 +96,10 @@ function Editor({ plan }: { plan: RelapsePlan }) {
                 placeholder={t('relapse.personContact')}
                 value={p.contact}
                 onChange={(e) =>
-                  update((d) => ({ ...d, supportPeople: d.supportPeople.map((x) => (x.id === p.id ? { ...x, contact: e.target.value } : x)) }))
+                  update((d) => ({
+                    ...d,
+                    supportPeople: d.supportPeople.map((x) => (x.id === p.id ? { ...x, contact: e.target.value } : x)),
+                  }))
                 }
               />
               <IconButton

@@ -10,14 +10,7 @@ import { describe, expect, it } from 'vitest';
 import { CONTENT_KINDS, type ContentBundle, type ContentKind } from './types';
 import { scoreInstrument } from '@/lib/screening/score';
 import { INSTRUMENTS } from '@/lib/screening/instruments';
-import {
-  DIAGNOSIS_AREAS,
-  PROBLEMS,
-  STAGES,
-  WORK_CONTEXTS,
-  type InstrumentId,
-  type ToolId,
-} from '@/domain/types';
+import { DIAGNOSIS_AREAS, PROBLEMS, STAGES, WORK_CONTEXTS, type InstrumentId, type ToolId } from '@/domain/types';
 
 const files = import.meta.glob<{ default: unknown }>('../locales/*/content/*.json', { eager: true });
 
@@ -96,8 +89,7 @@ function compare(a: unknown, b: unknown, path: string, key: string | undefined, 
       const onlyB = kb.filter((k) => !ka.includes(k));
       return void errors.push(`${path}: keys differ – only PL: [${onlyA}] only EN: [${onlyB}]`);
     }
-    for (const k of ka)
-      compare((a as Record<string, unknown>)[k], (b as Record<string, unknown>)[k], `${path}.${k}`, k, errors);
+    for (const k of ka) compare((a as Record<string, unknown>)[k], (b as Record<string, unknown>)[k], `${path}.${k}`, k, errors);
     return;
   }
   if (typeof a !== typeof b) return void errors.push(`${path}: ${typeof a} vs ${typeof b}`);
@@ -233,9 +225,7 @@ describe.runIf(has('helpsystem'))('help system', () => {
       combos.splice(0, combos.length, ...next);
     }
     for (const c of combos) {
-      const matched = h.referral.rules.filter((r) =>
-        Object.entries(r.when).every(([q, opts]) => !opts || opts.includes(c[q]!)),
-      );
+      const matched = h.referral.rules.filter((r) => Object.entries(r.when).every(([q, opts]) => !opts || opts.includes(c[q]!)));
       expect(matched.length, JSON.stringify(c)).toBeGreaterThan(0);
     }
   });

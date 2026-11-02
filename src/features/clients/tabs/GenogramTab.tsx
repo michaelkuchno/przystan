@@ -40,6 +40,14 @@ function zigzag(x1: number, y1: number, x2: number, y2: number) {
   return `${d} L${x2},${y2}`;
 }
 
+/** Shortens a label on a word boundary so the visible text stays part of the accessible name. */
+function shortLabel(label: string, max = 20): string {
+  if (label.length <= max) return label;
+  const cut = label.slice(0, max);
+  const i = cut.lastIndexOf(' ');
+  return `${i > 6 ? cut.slice(0, i) : cut}…`;
+}
+
 function NodeShape({ n, selected }: { n: GenoNode; selected: boolean }) {
   const fill = n.substance ? 'url(#half)' : 'var(--surface)';
   const stroke = selected ? 'var(--focus)' : n.isClient ? 'var(--primary)' : 'var(--fg)';
@@ -52,15 +60,22 @@ function NodeShape({ n, selected }: { n: GenoNode; selected: boolean }) {
     ) : n.kind === 'person' ? (
       <path d={`M0,${-R} L${R},0 L0,${R} L${-R},0 Z`} fill={fill} stroke={stroke} strokeWidth={sw} />
     ) : n.kind === 'institution' ? (
-      <rect x={-R * 1.4} y={-R * 0.8} width={R * 2.8} height={R * 1.6} rx={6} fill="var(--blue-soft)" stroke={stroke} strokeWidth={sw} />
+      <rect
+        x={-R * 1.4}
+        y={-R * 0.8}
+        width={R * 2.8}
+        height={R * 1.6}
+        rx={6}
+        fill="var(--blue-soft)"
+        stroke={stroke}
+        strokeWidth={sw}
+      />
     ) : (
       <ellipse rx={R * 1.5} ry={R * 0.95} fill="var(--accent-soft)" stroke={stroke} strokeWidth={sw} />
     );
   return (
     <>
-      {n.isClient && (
-        <circle r={R + 7} fill="none" stroke="var(--primary)" strokeWidth={2} strokeDasharray="2 3" />
-      )}
+      {n.isClient && <circle r={R + 7} fill="none" stroke="var(--primary)" strokeWidth={2} strokeDasharray="2 3" />}
       {shape}
       {n.deceased && (
         <g stroke="var(--fg)" strokeWidth={2}>
@@ -69,7 +84,7 @@ function NodeShape({ n, selected }: { n: GenoNode; selected: boolean }) {
         </g>
       )}
       <text y={R + 16} textAnchor="middle" fontSize={12} fill="var(--fg)" className="pii select-none" style={{ fontWeight: 600 }}>
-        {n.label.slice(0, 18)}
+        {shortLabel(n.label)}
       </text>
     </>
   );
@@ -116,8 +131,8 @@ function Editor({ geno }: { geno: Genogram }) {
       label: t(`genogram.kind.${kind}`),
       kind,
       // place new nodes on a spiral around the centre
-      x: Math.round(W / 2 + Math.cos(draft.nodes.length * 2.4) * (60 + draft.nodes.length * 14)) % (W - 2 * R) + R,
-      y: Math.round(H / 2 + Math.sin(draft.nodes.length * 2.4) * (50 + draft.nodes.length * 9)) % (H - 2 * R) + R,
+      x: (Math.round(W / 2 + Math.cos(draft.nodes.length * 2.4) * (60 + draft.nodes.length * 14)) % (W - 2 * R)) + R,
+      y: (Math.round(H / 2 + Math.sin(draft.nodes.length * 2.4) * (50 + draft.nodes.length * 9)) % (H - 2 * R)) + R,
     };
     update((d) => ({ ...d, nodes: [...d.nodes, n] }));
     setSelected(n.id);
@@ -126,7 +141,12 @@ function Editor({ geno }: { geno: Genogram }) {
 
   const onKey = (e: KeyboardEvent, n: GenoNode) => {
     const step = e.shiftKey ? 20 : 6;
-    const moves: Record<string, [number, number]> = { ArrowLeft: [-step, 0], ArrowRight: [step, 0], ArrowUp: [0, -step], ArrowDown: [0, step] };
+    const moves: Record<string, [number, number]> = {
+      ArrowLeft: [-step, 0],
+      ArrowRight: [step, 0],
+      ArrowUp: [0, -step],
+      ArrowDown: [0, step],
+    };
     const mv = moves[e.key];
     if (mv) {
       e.preventDefault();
@@ -153,7 +173,12 @@ function Editor({ geno }: { geno: Genogram }) {
           <div className="mb-2 flex items-center gap-2 rounded-xl bg-blue-soft px-3 py-2 text-sm" role="status">
             <Link2 className="size-4" aria-hidden />
             {t('genogram.connectHint')}
-            <button type="button" className="ml-auto inline-flex size-9 items-center justify-center" aria-label={t('common:cancel')} onClick={() => setConnectFrom(null)}>
+            <button
+              type="button"
+              className="ml-auto inline-flex size-9 items-center justify-center"
+              aria-label={t('common:cancel')}
+              onClick={() => setConnectFrom(null)}
+            >
               <X className="size-4" />
             </button>
           </div>
@@ -168,7 +193,10 @@ function Editor({ geno }: { geno: Genogram }) {
             if (!drag.current) return;
             const p = toLocal(e);
             drag.current.moved = true;
-            setNode(drag.current.id, { x: Math.round(Math.min(W - R, Math.max(R, p.x))), y: Math.round(Math.min(H - R, Math.max(R, p.y))) });
+            setNode(drag.current.id, {
+              x: Math.round(Math.min(W - R, Math.max(R, p.x))),
+              y: Math.round(Math.min(H - R, Math.max(R, p.y))),
+            });
           }}
           onPointerUp={() => {
             if (drag.current && !drag.current.moved) tapNode(drag.current.id);
@@ -196,12 +224,27 @@ function Editor({ geno }: { geno: Genogram }) {
             const mx = (a.x + b.x) / 2;
             const my = (a.y + b.y) / 2;
             return (
-              <g key={e.id} onClick={() => { setSelectedEdge(e.id); setSelected(null); }} className="cursor-pointer">
+              <g
+                key={e.id}
+                onClick={() => {
+                  setSelectedEdge(e.id);
+                  setSelected(null);
+                }}
+                className="cursor-pointer"
+              >
                 <line x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke="transparent" strokeWidth={18} />
                 {e.type === 'conflict' ? (
                   <path d={zigzag(a.x, a.y, b.x, b.y)} fill="none" stroke={s.stroke} strokeWidth={s.width} />
                 ) : (
-                  <line x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke={selectedEdge === e.id ? 'var(--focus)' : s.stroke} strokeWidth={s.width} strokeDasharray={s.dash} />
+                  <line
+                    x1={a.x}
+                    y1={a.y}
+                    x2={b.x}
+                    y2={b.y}
+                    stroke={selectedEdge === e.id ? 'var(--focus)' : s.stroke}
+                    strokeWidth={s.width}
+                    strokeDasharray={s.dash}
+                  />
                 )}
                 {e.type === 'cutoff' && (
                   <g stroke="var(--fg)" strokeWidth={2.5}>
@@ -251,13 +294,34 @@ function Editor({ geno }: { geno: Genogram }) {
               onChange={(v) => v[0] && setNode(node.id, { kind: v[0] })}
               options={KINDS.map((k) => ({ value: k, label: t(`genogram.kind.${k}`) }))}
             />
-            <Switch label={t('genogram.isClient')} checked={!!node.isClient} onChange={(v) => setNode(node.id, { isClient: v })} />
-            <Switch label={t('genogram.substance')} checked={!!node.substance} onChange={(v) => setNode(node.id, { substance: v })} />
-            <Switch label={t('genogram.deceased')} checked={!!node.deceased} onChange={(v) => setNode(node.id, { deceased: v })} />
+            <Switch
+              label={t('genogram.isClient')}
+              checked={!!node.isClient}
+              onChange={(v) => setNode(node.id, { isClient: v })}
+            />
+            <Switch
+              label={t('genogram.substance')}
+              checked={!!node.substance}
+              onChange={(v) => setNode(node.id, { substance: v })}
+            />
+            <Switch
+              label={t('genogram.deceased')}
+              checked={!!node.deceased}
+              onChange={(v) => setNode(node.id, { deceased: v })}
+            />
             <div className="border-t border-line pt-3">
               <label className="mb-1.5 block text-sm font-medium">{t('genogram.relation')}</label>
-              <Chips value={edgeType} onChange={(v) => v[0] && setEdgeType(v[0])} options={EDGES.map((k) => ({ value: k, label: t(`genogram.edge.${k}`) }))} />
-              <Button className="mt-3 w-full" variant="soft" icon={<Link2 className="size-4" />} onClick={() => setConnectFrom(node.id)}>
+              <Chips
+                value={edgeType}
+                onChange={(v) => v[0] && setEdgeType(v[0])}
+                options={EDGES.map((k) => ({ value: k, label: t(`genogram.edge.${k}`) }))}
+              />
+              <Button
+                className="mt-3 w-full"
+                variant="soft"
+                icon={<Link2 className="size-4" />}
+                onClick={() => setConnectFrom(node.id)}
+              >
                 {t('genogram.connect')}
               </Button>
             </div>
@@ -266,7 +330,11 @@ function Editor({ geno }: { geno: Genogram }) {
               className="w-full text-danger"
               icon={<Trash2 className="size-4" />}
               onClick={() => {
-                update((d) => ({ ...d, nodes: d.nodes.filter((n) => n.id !== node.id), edges: d.edges.filter((e) => e.from !== node.id && e.to !== node.id) }));
+                update((d) => ({
+                  ...d,
+                  nodes: d.nodes.filter((n) => n.id !== node.id),
+                  edges: d.edges.filter((e) => e.from !== node.id && e.to !== node.id),
+                }));
                 setSelected(null);
               }}
             >
@@ -278,7 +346,9 @@ function Editor({ geno }: { geno: Genogram }) {
             <h3 className="font-semibold">{t('genogram.relation')}</h3>
             <Chips
               value={edge.type}
-              onChange={(v) => v[0] && update((d) => ({ ...d, edges: d.edges.map((x) => (x.id === edge.id ? { ...x, type: v[0]! } : x)) }))}
+              onChange={(v) =>
+                v[0] && update((d) => ({ ...d, edges: d.edges.map((x) => (x.id === edge.id ? { ...x, type: v[0]! } : x)) }))
+              }
               options={EDGES.map((k) => ({ value: k, label: t(`genogram.edge.${k}`) }))}
             />
             <Button
@@ -364,4 +434,3 @@ export default function GenogramTab({ client }: { client: Client }) {
     );
   return <Editor key={geno.id} geno={geno} />;
 }
-

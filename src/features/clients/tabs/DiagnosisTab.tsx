@@ -66,8 +66,19 @@ function Editor({ diagnosis, previous }: { diagnosis: Diagnosis; previous?: Diag
             onChange={(v) => update({ protectiveFactors: v })}
             suggestions={prevention.protectiveFactors.map((f) => f.text)}
           />
-          <TextField multiline label={t('diagnosis.resources')} value={draft.resources} onChange={(v) => update({ resources: v })} />
-          <TextField multiline rows={4} label={t('diagnosis.conclusions')} value={draft.conclusions} onChange={(v) => update({ conclusions: v })} />
+          <TextField
+            multiline
+            label={t('diagnosis.resources')}
+            value={draft.resources}
+            onChange={(v) => update({ resources: v })}
+          />
+          <TextField
+            multiline
+            rows={4}
+            label={t('diagnosis.conclusions')}
+            value={draft.conclusions}
+            onChange={(v) => update({ conclusions: v })}
+          />
           <SupportiveNote text={t('diagnosis.note')} />
         </Card>
       </div>

@@ -52,16 +52,30 @@ export default function PreventionList() {
         }
       />
       {programs.length === 0 ? (
-        <EmptyState icon={<Sprout />} title={t('emptyTitle')} text={t('emptyText')} action={<Button onClick={() => void create()}>{t('new')}</Button>} />
+        <EmptyState
+          icon={<Sprout />}
+          title={t('emptyTitle')}
+          text={t('emptyText')}
+          action={<Button onClick={() => void create()}>{t('new')}</Button>}
+        />
       ) : (
         <div className="grid gap-3 sm:grid-cols-2">
           {programs.map((p) => (
-            <button key={p.id} type="button" onClick={() => nav(`/prevention/${p.id}`)} className="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-left shadow-[var(--shadow-card)] transition hover:-translate-y-0.5">
+            <button
+              key={p.id}
+              type="button"
+              onClick={() => nav(`/prevention/${p.id}`)}
+              className="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-left shadow-[var(--shadow-card)] transition hover:-translate-y-0.5"
+            >
               <Badge tone="primary">{content.levels.find((l) => l.id === p.level)?.title}</Badge>
               <div className="mt-2 font-serif text-xl font-semibold">{p.title || t('untitled')}</div>
               <div className="mt-1 text-sm text-muted">{p.targetGroup}</div>
               <div className="mt-3 text-xs text-muted">
-                {t('summary', { goals: p.specificGoals.length, strategies: p.strategies.length, indicators: p.indicators.length })}
+                {t('summary', {
+                  goals: p.specificGoals.length,
+                  strategies: p.strategies.length,
+                  indicators: p.indicators.length,
+                })}
               </div>
             </button>
           ))}
@@ -88,7 +102,11 @@ export default function PreventionList() {
         {(['do', 'avoid'] as const).map((kind) => (
           <Card key={kind} className={kind === 'do' ? 'border-ok/30' : 'border-accent/30'}>
             <h3 className="mb-3 flex items-center gap-2 font-semibold">
-              {kind === 'do' ? <ThumbsUp className="size-5 text-ok" aria-hidden /> : <ThumbsDown className="size-5 text-accent" aria-hidden />}
+              {kind === 'do' ? (
+                <ThumbsUp className="size-5 text-ok" aria-hidden />
+              ) : (
+                <ThumbsDown className="size-5 text-accent" aria-hidden />
+              )}
               {t(kind === 'do' ? 'works' : 'avoid')}
             </h3>
             <ul className="space-y-3">
@@ -98,7 +116,9 @@ export default function PreventionList() {
                   <li key={g.id} className="text-sm">
                     <div className="font-medium">{g.text}</div>
                     <div className="text-muted">{g.rationale}</div>
-                    <div className="mt-0.5 text-xs text-muted italic">{g.sources.map((s) => `${s.authors} (${s.year})`).join('; ')}</div>
+                    <div className="mt-0.5 text-xs text-muted italic">
+                      {g.sources.map((s) => `${s.authors} (${s.year})`).join('; ')}
+                    </div>
                   </li>
                 ))}
             </ul>
@@ -106,7 +126,9 @@ export default function PreventionList() {
         ))}
       </div>
 
-      <SectionTitle action={<ReviewBadge id="prevention-standards" status={content.standards.reviewStatus} />}>{content.standards.title}</SectionTitle>
+      <SectionTitle action={<ReviewBadge id="prevention-standards" status={content.standards.reviewStatus} />}>
+        {content.standards.title}
+      </SectionTitle>
       <Card className="space-y-3 leading-relaxed">
         {content.standards.paragraphs.map((p, i) => (
           <p key={i}>{p}</p>

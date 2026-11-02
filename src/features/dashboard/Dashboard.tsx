@@ -26,7 +26,7 @@ import { computeAttention, type AttentionFlag } from '@/lib/attention';
 import { todayIso } from '@/lib/platform';
 import { fmtDate, fmtTime, fmtWeekday } from '@/lib/format';
 import { usePrefs } from '@/lib/prefs';
-import { useToast } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { cn } from '@/components/ui/cn';
 import { useContent } from '@/content/ContentProvider';
 import { isDue } from '@/lib/srs';
@@ -47,10 +47,7 @@ export function AttentionItem({ flag, showClient = true }: { flag: AttentionFlag
   const { t } = useTranslation('dashboard');
   const client = get('client', flag.clientId);
   return (
-    <Link
-      to={`/clients/${flag.clientId}`}
-      className="flex items-start gap-3 rounded-2xl px-3 py-3 transition hover:bg-surface-2"
-    >
+    <Link to={`/clients/${flag.clientId}`} className="flex items-start gap-3 rounded-2xl px-3 py-3 transition hover:bg-surface-2">
       <span
         className={cn(
           'mt-0.5 flex size-9 shrink-0 items-center justify-center rounded-xl',
@@ -77,7 +74,9 @@ export function AttentionItem({ flag, showClient = true }: { flag: AttentionFlag
 
 function Tasks() {
   const { t } = useTranslation('dashboard');
-  const tasks = useStore(() => all('task')).sort((a, b) => Number(a.done) - Number(b.done) || (a.due ?? '').localeCompare(b.due ?? ''));
+  const tasks = useStore(() => all('task')).sort(
+    (a, b) => Number(a.done) - Number(b.done) || (a.due ?? '').localeCompare(b.due ?? ''),
+  );
   const [draft, setDraft] = useState('');
   const toast = useToast();
   const add = async () => {
@@ -149,7 +148,9 @@ export function Dashboard() {
   const decks = useContent('decks').decks;
   const flags = useAttention();
 
-  const todays = meetings.filter((m) => m.date.slice(0, 10) === today && m.status !== 'cancelled').sort((a, b) => a.date.localeCompare(b.date));
+  const todays = meetings
+    .filter((m) => m.date.slice(0, 10) === today && m.status !== 'cancelled')
+    .sort((a, b) => a.date.localeCompare(b.date));
   const upcoming = meetings
     .filter((m) => m.date.slice(0, 10) > today && m.status === 'planned')
     .sort((a, b) => a.date.localeCompare(b.date))
@@ -158,7 +159,14 @@ export function Dashboard() {
   const totalCards = decks.reduce((s, d) => s + d.cards.length, 0);
   const learned = cardStates.filter((c) => c.repetitions >= 2).length;
   const due = decks.reduce(
-    (s, d) => s + d.cards.filter((c) => isDue(cardStates.find((x) => x.id === `${d.id}:${c.id}`), today)).length,
+    (s, d) =>
+      s +
+      d.cards.filter((c) =>
+        isDue(
+          cardStates.find((x) => x.id === `${d.id}:${c.id}`),
+          today,
+        ),
+      ).length,
     0,
   );
   const hour = new Date().getHours();
@@ -169,9 +177,7 @@ export function Dashboard() {
       <div className="mb-6">
         <p className="text-sm font-medium text-accent first-letter:uppercase">{fmtWeekday(today)}</p>
         <h1 className="mt-1 text-3xl font-semibold sm:text-4xl">{greeting}</h1>
-        <p className="mt-1 text-muted">
-          {prefs.mode === 'demo' ? t('demoIntro') : t('intro', { count: active })}
-        </p>
+        <p className="mt-1 text-muted">{prefs.mode === 'demo' ? t('demoIntro') : t('intro', { count: active })}</p>
       </div>
 
       <div className="grid gap-3 sm:grid-cols-4">
@@ -252,9 +258,15 @@ export function Dashboard() {
           {upcoming.length > 0 && (
             <div className="mt-3 space-y-1 text-sm text-muted">
               {upcoming.map((m) => (
-                <Link key={m.id} to={`/meetings/${m.id}`} className="flex min-h-11 items-center gap-2 rounded-xl px-2 hover:bg-surface-2">
+                <Link
+                  key={m.id}
+                  to={`/meetings/${m.id}`}
+                  className="flex min-h-11 items-center gap-2 rounded-xl px-2 hover:bg-surface-2"
+                >
                   <CalendarClock className="size-4" aria-hidden />
-                  <span>{fmtDate(m.date, { weekday: 'short', day: 'numeric', month: 'short' })}, {fmtTime(m.date)}</span>
+                  <span>
+                    {fmtDate(m.date, { weekday: 'short', day: 'numeric', month: 'short' })}, {fmtTime(m.date)}
+                  </span>
                   <span className="pii font-medium text-fg">{get('client', m.clientId)?.code ?? m.title}</span>
                 </Link>
               ))}
@@ -311,8 +323,18 @@ export function Dashboard() {
                 {t('dueCards', { count: due })}
               </ButtonLink>
             </div>
-            <div className="mt-3 h-2 overflow-hidden rounded-full bg-surface-3" role="progressbar" aria-valuenow={learned} aria-valuemax={totalCards} aria-valuemin={0} aria-label={t('learned')}>
-              <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${totalCards ? (learned / totalCards) * 100 : 0}%` }} />
+            <div
+              className="mt-3 h-2 overflow-hidden rounded-full bg-surface-3"
+              role="progressbar"
+              aria-valuenow={learned}
+              aria-valuemax={totalCards}
+              aria-valuemin={0}
+              aria-label={t('learned')}
+            >
+              <div
+                className="h-full rounded-full bg-primary transition-all"
+                style={{ width: `${totalCards ? (learned / totalCards) * 100 : 0}%` }}
+              />
             </div>
           </Card>
 

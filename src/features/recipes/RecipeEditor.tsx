@@ -6,7 +6,8 @@ import { GripVertical, Plus, Trash2, FileDown, Clock, ChefHat, Search, Copy } fr
 import { Page, PageHeader } from '@/components/ui/page';
 import { Button, Card, EmptyState, IconButton, Badge } from '@/components/ui/core';
 import { TextField, TextInput, Chips } from '@/components/ui/form';
-import { useConfirm, useToast } from '@/components/ui/overlay';
+import { useConfirm } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { SaveStatus } from '@/components/SaveStatus';
 import { get, remove, save, uid, useStore } from '@/lib/store';
 import { useEditable } from '@/lib/useEditable';
@@ -29,7 +30,19 @@ const CAT_TONE: Record<IngredientCategory, string> = {
   closing: 'bg-surface-3 text-fg',
 };
 
-function Step({ item, index, start, onChange, onRemove }: { item: RecipeItem; index: number; start: number; onChange: (i: RecipeItem) => void; onRemove: () => void }) {
+function Step({
+  item,
+  index,
+  start,
+  onChange,
+  onRemove,
+}: {
+  item: RecipeItem;
+  index: number;
+  start: number;
+  onChange: (i: RecipeItem) => void;
+  onRemove: () => void;
+}) {
   const { t } = useTranslation('recipes');
   const controls = useDragControls();
   return (
@@ -48,7 +61,12 @@ function Step({ item, index, start, onChange, onRemove }: { item: RecipeItem; in
             <span className="w-16 shrink-0 text-xs font-semibold text-muted tabular-nums">
               {start}–{start + item.minutes}′
             </span>
-            <TextInput aria-label={t('stepTitle', { n: index + 1 })} value={item.title} onChange={(e) => onChange({ ...item, title: e.target.value })} className="font-medium" />
+            <TextInput
+              aria-label={t('stepTitle', { n: index + 1 })}
+              value={item.title}
+              onChange={(e) => onChange({ ...item, title: e.target.value })}
+              className="font-medium"
+            />
           </div>
           <div className="flex items-center gap-2">
             <label className="flex w-16 shrink-0 items-center gap-1 text-xs text-muted" htmlFor={`min-${item.id}`}>
@@ -63,7 +81,13 @@ function Step({ item, index, start, onChange, onRemove }: { item: RecipeItem; in
               onChange={(e) => onChange({ ...item, minutes: Math.max(1, Number(e.target.value) || 1) })}
               className="min-h-11 w-20 rounded-xl border border-line bg-surface px-2 text-center"
             />
-            <TextInput aria-label={t('note')} placeholder={t('note')} value={item.note} onChange={(e) => onChange({ ...item, note: e.target.value })} className="text-sm" />
+            <TextInput
+              aria-label={t('note')}
+              placeholder={t('note')}
+              value={item.note}
+              onChange={(e) => onChange({ ...item, note: e.target.value })}
+              className="text-sm"
+            />
           </div>
         </div>
         <IconButton label={t('common:delete')} onClick={onRemove}>
@@ -92,11 +116,17 @@ function Editor({ recipe }: { recipe: Recipe }) {
   );
 
   const add = (ing: Ingredient) => {
-    update((d) => ({ ...d, items: [...d.items, { id: uid(), ingredientId: ing.id, title: ing.title, minutes: ing.minutes, note: '' }] }));
+    update((d) => ({
+      ...d,
+      items: [...d.items, { id: uid(), ingredientId: ing.id, title: ing.title, minutes: ing.minutes, note: '' }],
+    }));
     void haptic('light');
   };
 
-  const starts = draft.items.reduce<number[]>((acc, _it, i) => [...acc, i === 0 ? 0 : acc[i - 1]! + draft.items[i - 1]!.minutes], []);
+  const starts = draft.items.reduce<number[]>(
+    (acc, _it, i) => [...acc, i === 0 ? 0 : acc[i - 1]! + draft.items[i - 1]!.minutes],
+    [],
+  );
   return (
     <div className="grid gap-5 lg:grid-cols-[1.25fr_1fr]">
       <div className="space-y-4">
@@ -109,7 +139,13 @@ function Editor({ recipe }: { recipe: Recipe }) {
           <TextField label={t('name')} value={draft.title} onChange={(v) => update({ title: v })} />
           <div className="grid gap-3 sm:grid-cols-2">
             <TextField multiline rows={2} label={t('goal')} value={draft.goal} onChange={(v) => update({ goal: v })} />
-            <TextField multiline rows={2} label={t('audience')} value={draft.audience} onChange={(v) => update({ audience: v })} />
+            <TextField
+              multiline
+              rows={2}
+              label={t('audience')}
+              value={draft.audience}
+              onChange={(v) => update({ audience: v })}
+            />
           </div>
         </Card>
 
@@ -162,7 +198,10 @@ function Editor({ recipe }: { recipe: Recipe }) {
               const ing = ingredients.find((i) => i.id === e.dataTransfer.getData('text/ingredient'));
               if (ing) add(ing);
             }}
-            className={cn('min-h-32 rounded-2xl border-2 border-dashed p-2 transition', dragOver ? 'border-primary bg-primary-soft/40' : 'border-transparent')}
+            className={cn(
+              'min-h-32 rounded-2xl border-2 border-dashed p-2 transition',
+              dragOver ? 'border-primary bg-primary-soft/40' : 'border-transparent',
+            )}
           >
             {draft.items.length === 0 ? (
               <EmptyState title={t('emptySteps')} text={t('emptyStepsText')} />
@@ -189,7 +228,12 @@ function Editor({ recipe }: { recipe: Recipe }) {
             size="sm"
             className="mt-2"
             icon={<Plus className="size-4" />}
-            onClick={() => update((d) => ({ ...d, items: [...d.items, { id: uid(), ingredientId: 'custom', title: t('customStep'), minutes: 10, note: '' }] }))}
+            onClick={() =>
+              update((d) => ({
+                ...d,
+                items: [...d.items, { id: uid(), ingredientId: 'custom', title: t('customStep'), minutes: 10, note: '' }],
+              }))
+            }
           >
             {t('addCustom')}
           </Button>
@@ -209,7 +253,12 @@ function Editor({ recipe }: { recipe: Recipe }) {
             variant="secondary"
             icon={<Copy className="size-4" />}
             onClick={async () => {
-              const copy = { ...draft, id: uid(), title: `${draft.title} (${t('copy')})`, items: draft.items.map((i) => ({ ...i, id: uid() })) };
+              const copy = {
+                ...draft,
+                id: uid(),
+                title: `${draft.title} (${t('copy')})`,
+                items: draft.items.map((i) => ({ ...i, id: uid() })),
+              };
               await save('recipe', copy);
               nav(`/recipes/${copy.id}`);
             }}
@@ -239,7 +288,13 @@ function Editor({ recipe }: { recipe: Recipe }) {
           <p className="mb-3 text-sm text-muted">{t('ingredientsHint')}</p>
           <div className="relative mb-3">
             <Search className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted" aria-hidden />
-            <TextInput aria-label={t('searchIngredients')} placeholder={t('searchIngredients')} className="pl-9" value={q} onChange={(e) => setQ(e.target.value)} />
+            <TextInput
+              aria-label={t('searchIngredients')}
+              placeholder={t('searchIngredients')}
+              className="pl-9"
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+            />
           </div>
           <Chips
             className="mb-3"
@@ -259,7 +314,9 @@ function Editor({ recipe }: { recipe: Recipe }) {
                   aria-label={t('addIngredient', { name: ing.title })}
                 >
                   <div className="flex items-center gap-2">
-                    <span className={cn('rounded-full px-2 py-0.5 text-[0.7rem] font-semibold', CAT_TONE[ing.category])}>{t(`cat.${ing.category}`)}</span>
+                    <span className={cn('rounded-full px-2 py-0.5 text-[0.7rem] font-semibold', CAT_TONE[ing.category])}>
+                      {t(`cat.${ing.category}`)}
+                    </span>
                     <span className="text-xs text-muted">{ing.minutes} min</span>
                     <Plus className="ml-auto size-4 text-primary opacity-60 group-hover:opacity-100" aria-hidden />
                   </div>

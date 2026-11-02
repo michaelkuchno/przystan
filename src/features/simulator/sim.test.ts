@@ -41,7 +41,10 @@ describe('simulator stats', () => {
   });
 
   it('clamps alliance to 0–100', () => {
-    const st = computeStats(sc, Array.from({ length: 8 }, () => opt('moralize', -2, 's')));
+    const st = computeStats(
+      sc,
+      Array.from({ length: 8 }, () => opt('moralize', -2, 's')),
+    );
     expect(st.alliance).toBe(0);
     expect(st.rq).toBeNull();
   });

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { GraduationCap, Plus, Upload, FileQuestion, Pencil } from 'lucide-react';
 import { Page, PageHeader } from '@/components/ui/page';
 import { Button, ButtonLink, Card, Badge, SectionTitle, IconButton } from '@/components/ui/core';
-import { useToast } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { useStore, all, save, uid } from '@/lib/store';
 import { isDue } from '@/lib/srs';
 import { todayIso, pickTextFile } from '@/lib/platform';
@@ -23,7 +23,12 @@ export default function Learn() {
     try {
       const parsed = parseDeckImport(text);
       for (const d of parsed)
-        await save('deck', { id: uid(), title: d.title, module: d.module ?? 'custom', cards: d.cards.map((c) => ({ id: uid(), ...c })) });
+        await save('deck', {
+          id: uid(),
+          title: d.title,
+          module: d.module ?? 'custom',
+          cards: d.cards.map((c) => ({ id: uid(), ...c })),
+        });
       toast({ text: t('imported', { count: parsed.length }), tone: 'ok' });
     } catch {
       toast({ text: t('importError'), tone: 'warn' });
@@ -65,11 +70,19 @@ export default function Learn() {
               <div className="mt-1 font-serif text-lg font-semibold">{d.title}</div>
               <div className="mt-1 text-sm text-muted">{t('cards', { count: d.cards.length })}</div>
               <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-surface-3" aria-hidden>
-                <div className="h-full bg-primary" style={{ width: `${d.cards.length ? (learned / d.cards.length) * 100 : 0}%` }} />
+                <div
+                  className="h-full bg-primary"
+                  style={{ width: `${d.cards.length ? (learned / d.cards.length) * 100 : 0}%` }}
+                />
               </div>
               <div className="mt-3 flex items-center justify-between gap-2">
                 <Badge tone={due ? 'accent' : 'ok'}>{due ? t('due', { count: due }) : t('upToDate')}</Badge>
-                <Button size="sm" variant={due ? 'primary' : 'soft'} disabled={!d.cards.length} onClick={() => nav(`/learn/study/${d.id}`)}>
+                <Button
+                  size="sm"
+                  variant={due ? 'primary' : 'soft'}
+                  disabled={!d.cards.length}
+                  onClick={() => nav(`/learn/study/${d.id}`)}
+                >
                   {t('study')}
                 </Button>
               </div>

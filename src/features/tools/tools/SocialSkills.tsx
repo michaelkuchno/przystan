@@ -34,25 +34,56 @@ export default function SocialSkills({ aud, onResult }: ToolProps) {
         </div>
         <div className="grid gap-3 sm:grid-cols-2">
           <div className="rounded-2xl bg-surface-2/60 p-4">
-            <h4 className="mb-2 flex items-center gap-2 font-semibold"><Users className="size-4" aria-hidden />{t('skills.roles')}</h4>
-            <ul className="space-y-1 text-sm">{card.roles.map((r) => <li key={r}>• {r}</li>)}</ul>
+            <h4 className="mb-2 flex items-center gap-2 font-semibold">
+              <Users className="size-4" aria-hidden />
+              {t('skills.roles')}
+            </h4>
+            <ul className="space-y-1 text-sm">
+              {card.roles.map((r) => (
+                <li key={r}>• {r}</li>
+              ))}
+            </ul>
           </div>
           <div className="rounded-2xl bg-surface-2/60 p-4">
-            <h4 className="mb-2 flex items-center gap-2 font-semibold"><ListOrdered className="size-4" aria-hidden />{t('skills.steps')}</h4>
-            <ol className="list-decimal space-y-1 pl-5 text-sm">{card.steps.map((s) => <li key={s}>{s}</li>)}</ol>
+            <h4 className="mb-2 flex items-center gap-2 font-semibold">
+              <ListOrdered className="size-4" aria-hidden />
+              {t('skills.steps')}
+            </h4>
+            <ol className="list-decimal space-y-1 pl-5 text-sm">
+              {card.steps.map((s) => (
+                <li key={s}>{s}</li>
+              ))}
+            </ol>
           </div>
         </div>
         <div className="rounded-2xl bg-primary-soft/60 p-4">
-          <h4 className="mb-2 flex items-center gap-2 font-semibold"><Lightbulb className="size-4" aria-hidden />{t('skills.tips')}</h4>
-          <ul className="space-y-1 text-sm">{card.tips.map((s) => <li key={s}>• {s}</li>)}</ul>
+          <h4 className="mb-2 flex items-center gap-2 font-semibold">
+            <Lightbulb className="size-4" aria-hidden />
+            {t('skills.tips')}
+          </h4>
+          <ul className="space-y-1 text-sm">
+            {card.tips.map((s) => (
+              <li key={s}>• {s}</li>
+            ))}
+          </ul>
         </div>
-        <Slider label={t('skills.rating')} value={rating} onChange={setRating} minLabel={t('skills.hard')} maxLabel={t('skills.easy')} />
+        <Slider
+          label={t('skills.rating')}
+          value={rating}
+          onChange={setRating}
+          minLabel={t('skills.hard')}
+          maxLabel={t('skills.easy')}
+        />
       </motion.div>
     );
 
   return (
     <div className="space-y-4">
-      <Chips value={skill} onChange={(v) => v[0] && setSkill(v[0])} options={[{ value: 'all', label: t('all') }, ...skills.map((s) => ({ value: s, label: t(`skills.type.${s}`) }))]} />
+      <Chips
+        value={skill}
+        onChange={(v) => v[0] && setSkill(v[0])}
+        options={[{ value: 'all', label: t('all') }, ...skills.map((s) => ({ value: s, label: t(`skills.type.${s}`) }))]}
+      />
       <div className="grid gap-3 sm:grid-cols-2">
         {shown.map((c, i) => (
           <motion.button

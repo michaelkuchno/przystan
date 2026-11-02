@@ -63,8 +63,22 @@ export default function UrgeSurfing({ aud, onResult }: ToolProps) {
     <div className="space-y-5">
       {phase === 'before' && (
         <>
-          <Slider label={t('urge.before')} value={before} onChange={setBefore} minLabel={t('urge.none')} maxLabel={t('urge.max')} />
-          <Button size="lg" icon={<ArrowRight className="size-5" />} onClick={() => { setPhase('surf'); setAfter(before); void haptic('light'); }}>
+          <Slider
+            label={t('urge.before')}
+            value={before}
+            onChange={setBefore}
+            minLabel={t('urge.none')}
+            maxLabel={t('urge.max')}
+          />
+          <Button
+            size="lg"
+            icon={<ArrowRight className="size-5" />}
+            onClick={() => {
+              setPhase('surf');
+              setAfter(before);
+              void haptic('light');
+            }}
+          >
             {t('urge.start')}
           </Button>
         </>
@@ -72,7 +86,13 @@ export default function UrgeSurfing({ aud, onResult }: ToolProps) {
       {phase === 'surf' && (
         <>
           <Wave intensity={Math.max(0, before - step)} />
-          <motion.p key={step} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="min-h-20 text-center font-serif text-xl leading-relaxed" aria-live="polite">
+          <motion.p
+            key={step}
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="min-h-20 text-center font-serif text-xl leading-relaxed"
+            aria-live="polite"
+          >
             {steps[step]?.[aud]}
           </motion.p>
           <div className="flex justify-center gap-1.5" aria-label={t('stepOf', { n: step + 1, total: steps.length })} role="img">
@@ -100,7 +120,14 @@ export default function UrgeSurfing({ aud, onResult }: ToolProps) {
             </div>
             <p className="mt-1 text-sm">{after < before ? t('urge.wentDown') : t('urge.stayed')}</p>
           </div>
-          <Button variant="ghost" icon={<RotateCcw className="size-4" />} onClick={() => { setPhase('before'); setStep(0); }}>
+          <Button
+            variant="ghost"
+            icon={<RotateCcw className="size-4" />}
+            onClick={() => {
+              setPhase('before');
+              setStep(0);
+            }}
+          >
             {t('again')}
           </Button>
         </>

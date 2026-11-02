@@ -104,14 +104,7 @@ export interface Client {
 }
 
 export type DiagnosisAreaId =
-  | 'family'
-  | 'schoolWork'
-  | 'peers'
-  | 'leisure'
-  | 'health'
-  | 'substanceUse'
-  | 'riskBehaviour'
-  | 'justice';
+  'family' | 'schoolWork' | 'peers' | 'leisure' | 'health' | 'substanceUse' | 'riskBehaviour' | 'justice';
 
 export const DIAGNOSIS_AREAS: DiagnosisAreaId[] = [
   'family',
@@ -255,15 +248,7 @@ export interface Measurement {
 }
 
 export type TimelineEventType =
-  | 'court'
-  | 'pass'
-  | 'transfer'
-  | 'schoolReturn'
-  | 'work'
-  | 'stageChange'
-  | 'lapse'
-  | 'milestone'
-  | 'other';
+  'court' | 'pass' | 'transfer' | 'schoolReturn' | 'work' | 'stageChange' | 'lapse' | 'milestone' | 'other';
 
 export interface TimelineEvent {
   id: string;

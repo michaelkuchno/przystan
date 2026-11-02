@@ -58,7 +58,10 @@ function Wizard() {
                 setAnswers(next);
               }}
               disabled={!a}
-              className={cn('min-h-11 rounded-full border px-3 text-sm', a ? 'border-primary bg-primary-soft text-primary-soft-fg' : 'border-dashed border-line text-muted')}
+              className={cn(
+                'min-h-11 rounded-full border px-3 text-sm',
+                a ? 'border-primary bg-primary-soft text-primary-soft-fg' : 'border-dashed border-line text-muted',
+              )}
             >
               {a ? q.options.find((o) => o.id === a)?.label : q.text}
             </button>
@@ -95,10 +98,19 @@ function Wizard() {
       ) : (
         <div className="space-y-4">
           {paths.map((p, idx) => (
-            <motion.div key={p.rule.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: idx * 0.06 }}>
+            <motion.div
+              key={p.rule.id}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: idx * 0.06 }}
+            >
               <Card className={cn(p.rule.when.urgency?.includes('crisis') && 'border-accent/50 bg-accent-soft/30')}>
                 <div className="flex items-start gap-3">
-                  {p.rule.when.urgency?.includes('crisis') ? <Siren className="size-6 shrink-0 text-accent" aria-hidden /> : <Compass className="size-6 shrink-0 text-primary" aria-hidden />}
+                  {p.rule.when.urgency?.includes('crisis') ? (
+                    <Siren className="size-6 shrink-0 text-accent" aria-hidden />
+                  ) : (
+                    <Compass className="size-6 shrink-0 text-primary" aria-hidden />
+                  )}
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold">{p.rule.title}</h3>
                     {p.rule.note && <p className="mt-1 text-sm text-muted">{p.rule.note}</p>}
@@ -158,9 +170,13 @@ export default function HelpSystem() {
                 type="button"
                 aria-pressed={cat === c}
                 onClick={() => setCat(c)}
-                className={cn('min-h-11 rounded-full border px-3.5 text-sm', cat === c ? 'border-primary bg-primary text-primary-fg' : 'border-line bg-surface')}
+                className={cn(
+                  'min-h-11 rounded-full border px-3.5 text-sm',
+                  cat === c ? 'border-primary bg-primary text-primary-fg' : 'border-line bg-surface',
+                )}
               >
-                {t(`cat.${c}`)} {c !== 'all' && <span className="opacity-70">({help.institutions.filter((i) => i.category === c).length})</span>}
+                {t(`cat.${c}`)}{' '}
+                {c !== 'all' && <span className="opacity-70">({help.institutions.filter((i) => i.category === c).length})</span>}
               </button>
             ))}
           </div>

@@ -57,7 +57,14 @@ export function DiagnosisRadar({ data, labels }: { data: RadarDatum[]; labels: {
             strokeDasharray="4 3"
           />
         )}
-        <Radar name={labels.current} dataKey="value" stroke="var(--chart-1)" fill="var(--chart-1)" fillOpacity={0.35} strokeWidth={2} />
+        <Radar
+          name={labels.current}
+          dataKey="value"
+          stroke="var(--chart-1)"
+          fill="var(--chart-1)"
+          fillOpacity={0.35}
+          strokeWidth={2}
+        />
         <Tooltip {...tooltipStyle} />
         {hasPrev && <Legend wrapperStyle={{ fontSize: 12 }} />}
       </RadarChart>

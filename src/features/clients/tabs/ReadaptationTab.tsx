@@ -3,7 +3,7 @@ import { Plus, DoorOpen, CheckSquare2, Square, Trash2, FileDown } from 'lucide-r
 import { Card, Button, EmptyState, IconButton } from '@/components/ui/core';
 import { DateField, TextInput } from '@/components/ui/form';
 import { SaveStatus } from '@/components/SaveStatus';
-import { useToast } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { useStore, forClient, save, uid } from '@/lib/store';
 import { useEditable } from '@/lib/useEditable';
 import { useContent } from '@/content/ContentProvider';
@@ -29,7 +29,10 @@ export function ReadaptationEditor({ plan }: { plan: ReadaptationPlan }) {
         <div className="flex-1">
           <div className="text-sm text-muted">{t('readaptation.progress', { done, total: draft.items.length })}</div>
           <div className="mt-1 h-2 overflow-hidden rounded-full bg-surface-3">
-            <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${draft.items.length ? (done / draft.items.length) * 100 : 0}%` }} />
+            <div
+              className="h-full rounded-full bg-primary transition-all"
+              style={{ width: `${draft.items.length ? (done / draft.items.length) * 100 : 0}%` }}
+            />
           </div>
         </div>
         <SaveStatus status={status} />
@@ -72,12 +75,18 @@ export function ReadaptationEditor({ plan }: { plan: ReadaptationPlan }) {
                     <input
                       type="date"
                       aria-label={t('ipr.due')}
-                      className={cn('w-[8.5rem] rounded-lg border border-line bg-surface px-2 py-1.5 text-xs', overdue && 'border-accent text-accent')}
+                      className={cn(
+                        'w-[8.5rem] rounded-lg border border-line bg-surface px-2 py-1.5 text-xs',
+                        overdue && 'border-accent text-accent',
+                      )}
                       value={it.due ?? ''}
                       onChange={(e) => setIt({ due: e.target.value })}
                       title={it.due ? fmtDate(it.due) : ''}
                     />
-                    <IconButton label={t('common:delete')} onClick={() => update((d) => ({ ...d, items: d.items.filter((x) => x.id !== it.id) }))}>
+                    <IconButton
+                      label={t('common:delete')}
+                      onClick={() => update((d) => ({ ...d, items: d.items.filter((x) => x.id !== it.id) }))}
+                    >
                       <Trash2 className="size-4" />
                     </IconButton>
                   </div>
@@ -87,9 +96,12 @@ export function ReadaptationEditor({ plan }: { plan: ReadaptationPlan }) {
                 className="flex gap-2"
                 onSubmit={(e) => {
                   e.preventDefault();
-                  const input = (e.currentTarget.elements.namedItem('text') as HTMLInputElement);
+                  const input = e.currentTarget.elements.namedItem('text') as HTMLInputElement;
                   if (!input.value.trim()) return;
-                  update((d) => ({ ...d, items: [...d.items, { id: uid(), area: a.id, text: input.value.trim(), done: false }] }));
+                  update((d) => ({
+                    ...d,
+                    items: [...d.items, { id: uid(), area: a.id, text: input.value.trim(), done: false }],
+                  }));
                   input.value = '';
                 }}
               >

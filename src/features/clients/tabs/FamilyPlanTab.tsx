@@ -22,20 +22,49 @@ function Editor({ plan }: { plan: FamilyPlan }) {
       </div>
       <div className="grid gap-4 md:grid-cols-2">
         <Card>
-          <ListEditor label={t('familyPlan.goals')} items={draft.familyGoals} onChange={(v) => update({ familyGoals: v })} suggestions={fs.goalExamples} />
+          <ListEditor
+            label={t('familyPlan.goals')}
+            items={draft.familyGoals}
+            onChange={(v) => update({ familyGoals: v })}
+            suggestions={fs.goalExamples}
+          />
         </Card>
         <Card>
-          <ListEditor label={t('familyPlan.support')} items={draft.supportForFamily} onChange={(v) => update({ supportForFamily: v })} suggestions={fs.supportExamples} />
+          <ListEditor
+            label={t('familyPlan.support')}
+            items={draft.supportForFamily}
+            onChange={(v) => update({ supportForFamily: v })}
+            suggestions={fs.supportExamples}
+          />
         </Card>
         <Card>
-          <TextField multiline rows={4} label={t('familyPlan.strengths')} value={draft.familyStrengths} onChange={(v) => update({ familyStrengths: v })} />
+          <TextField
+            multiline
+            rows={4}
+            label={t('familyPlan.strengths')}
+            value={draft.familyStrengths}
+            onChange={(v) => update({ familyStrengths: v })}
+          />
         </Card>
         <Card>
-          <TextField multiline rows={4} label={t('familyPlan.agreements')} value={draft.agreements} onChange={(v) => update({ agreements: v })} />
+          <TextField
+            multiline
+            rows={4}
+            label={t('familyPlan.agreements')}
+            value={draft.agreements}
+            onChange={(v) => update({ agreements: v })}
+          />
         </Card>
       </div>
       <Card className="space-y-3 border-accent/30">
-        <TextField multiline rows={3} label={t('familyPlan.safety')} hint={t('familyPlan.safetyHint')} value={draft.safetyNotes} onChange={(v) => update({ safetyNotes: v })} />
+        <TextField
+          multiline
+          rows={3}
+          label={t('familyPlan.safety')}
+          hint={t('familyPlan.safetyHint')}
+          value={draft.safetyNotes}
+          onChange={(v) => update({ safetyNotes: v })}
+        />
         <Notice tone="accent" icon={<ShieldAlert aria-hidden />}>
           {t('familyPlan.violence')}{' '}
           <Link className="font-semibold underline" to="/family/violence">

@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Loader2, LockKeyhole, LifeBuoy } from 'lucide-react';
-import { motion, useAnimationControls } from 'framer-motion';
 import { Button } from '@/components/ui/core';
 import { TextInput } from '@/components/ui/form';
 import { Logo } from '@/components/Logo';
 import { Sheet } from '@/components/ui/overlay';
-import { CrisisList } from '@/features/settings/Crisis';
+import { CrisisList } from '@/features/settings/CrisisList';
+import { RequireContent } from '@/content/ContentProvider';
+import { Skeleton } from '@/components/ui/core';
 import { unlock } from '@/lib/vault';
 import { WrongPasswordError } from '@/lib/crypto';
 import { haptic } from '@/lib/platform';
@@ -18,7 +19,7 @@ export function LockScreen() {
   const [error, setError] = useState(false);
   const [crisis, setCrisis] = useState(false);
   const ref = useRef<HTMLInputElement>(null);
-  const shake = useAnimationControls();
+  const [shake, setShake] = useState(0);
 
   useEffect(() => {
     ref.current?.focus();
@@ -36,7 +37,7 @@ export function LockScreen() {
         setError(true);
         setPw('');
         void haptic('warning');
-        void shake.start({ x: [0, -10, 10, -6, 6, 0], transition: { duration: 0.35 } });
+        setShake((n) => n + 1);
         ref.current?.focus();
       } else throw e;
     } finally {
@@ -46,9 +47,9 @@ export function LockScreen() {
 
   return (
     <div className="safe-top safe-bottom flex min-h-dvh flex-col items-center justify-center bg-gradient-to-b from-primary-soft/50 to-bg px-6">
-      <motion.form
-        animate={shake}
-        className="w-full max-w-sm text-center"
+      <form
+        className={`w-full max-w-sm text-center ${shake ? 'shake' : ''}`}
+        onAnimationEnd={() => setShake(0)}
         onSubmit={(e) => {
           e.preventDefault();
           void submit();
@@ -82,7 +83,7 @@ export function LockScreen() {
           {t('lock.unlock')}
         </Button>
         <p className="mt-6 text-xs text-muted">{t('lock.forgot')}</p>
-      </motion.form>
+      </form>
       <button
         type="button"
         className="mt-10 inline-flex min-h-11 items-center gap-2 rounded-full bg-accent-soft px-4 text-sm font-medium text-accent-soft-fg"
@@ -92,7 +93,9 @@ export function LockScreen() {
         {t('nav.crisis')}
       </button>
       <Sheet open={crisis} onOpenChange={setCrisis} title={t('nav.crisis')}>
-        <CrisisList />
+        <RequireContent fallback={<Skeleton className="h-40" />}>
+          <CrisisList />
+        </RequireContent>
       </Sheet>
     </div>
   );

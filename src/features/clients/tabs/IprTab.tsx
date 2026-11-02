@@ -93,7 +93,10 @@ function Editor({ ipr }: { ipr: Ipr }) {
                 const setA = (patch: Partial<typeof a>) =>
                   setGoal(g.id, { actions: g.actions.map((x) => (x.id === a.id ? { ...x, ...patch } : x)) });
                 return (
-                  <div key={a.id} className="grid gap-2 rounded-2xl bg-surface-2 p-2 sm:grid-cols-[auto_1fr_10rem_9.5rem_auto] sm:items-center">
+                  <div
+                    key={a.id}
+                    className="grid gap-2 rounded-2xl bg-surface-2 p-2 sm:grid-cols-[auto_1fr_10rem_9.5rem_auto] sm:items-center"
+                  >
                     <button
                       type="button"
                       role="checkbox"
@@ -117,8 +120,16 @@ function Editor({ ipr }: { ipr: Ipr }) {
                       value={a.responsible}
                       onChange={(e) => setA({ responsible: e.target.value })}
                     />
-                    <TextInput aria-label={t('ipr.due')} type="date" value={a.due ?? ''} onChange={(e) => setA({ due: e.target.value })} />
-                    <IconButton label={t('common:delete')} onClick={() => setGoal(g.id, { actions: g.actions.filter((x) => x.id !== a.id) })}>
+                    <TextInput
+                      aria-label={t('ipr.due')}
+                      type="date"
+                      value={a.due ?? ''}
+                      onChange={(e) => setA({ due: e.target.value })}
+                    />
+                    <IconButton
+                      label={t('common:delete')}
+                      onClick={() => setGoal(g.id, { actions: g.actions.filter((x) => x.id !== a.id) })}
+                    >
                       <Trash2 className="size-4" />
                     </IconButton>
                   </div>
@@ -127,17 +138,40 @@ function Editor({ ipr }: { ipr: Ipr }) {
             </div>
           </div>
 
-          <Slider label={t('ipr.progress')} value={g.progress} max={100} step={5} onChange={(v) => setGoal(g.id, { progress: v })} />
-          <TextField multiline label={t('ipr.reviewNotes')} value={g.reviewNotes} onChange={(v) => setGoal(g.id, { reviewNotes: v })} />
+          <Slider
+            label={t('ipr.progress')}
+            value={g.progress}
+            max={100}
+            step={5}
+            onChange={(v) => setGoal(g.id, { progress: v })}
+          />
+          <TextField
+            multiline
+            label={t('ipr.reviewNotes')}
+            value={g.reviewNotes}
+            onChange={(v) => setGoal(g.id, { reviewNotes: v })}
+          />
         </Card>
       ))}
 
-      <Button variant="secondary" className="w-full" icon={<Plus className="size-4" />} onClick={() => update((d) => ({ ...d, goals: [...d.goals, newGoal()] }))}>
+      <Button
+        variant="secondary"
+        className="w-full"
+        icon={<Plus className="size-4" />}
+        onClick={() => update((d) => ({ ...d, goals: [...d.goals, newGoal()] }))}
+      >
         {t('ipr.addGoal')}
       </Button>
 
       <Card>
-        <TextField multiline rows={4} label={t('ipr.evaluation')} hint={t('ipr.evaluationHint')} value={draft.evaluation} onChange={(v) => update({ evaluation: v })} />
+        <TextField
+          multiline
+          rows={4}
+          label={t('ipr.evaluation')}
+          hint={t('ipr.evaluationHint')}
+          value={draft.evaluation}
+          onChange={(v) => update({ evaluation: v })}
+        />
       </Card>
     </div>
   );

@@ -21,7 +21,10 @@ export default function Search() {
   const ref = useRef<HTMLInputElement>(null);
   useEffect(() => ref.current?.focus(), []);
   const toolNames = useMemo(() => Object.fromEntries(TOOL_META.map((m) => [m.id, t(`tools:names.${m.id}`)])), [t]);
-  const docs = useMemo(() => buildDocs(content, { clients, meetings, recipes, programs }, toolNames), [content, clients, meetings, recipes, programs, toolNames]);
+  const docs = useMemo(
+    () => buildDocs(content, { clients, meetings, recipes, programs }, toolNames),
+    [content, clients, meetings, recipes, programs, toolNames],
+  );
   const hits = useMemo(() => search(docs, q), [docs, q]);
 
   return (
@@ -32,7 +35,15 @@ export default function Search() {
         <label htmlFor="global-search" className="sr-only">
           {t('placeholder')}
         </label>
-        <TextInput ref={ref} id="global-search" type="search" className="min-h-13 pl-11 text-lg" placeholder={t('placeholder')} value={q} onChange={(e) => setQ(e.target.value)} />
+        <TextInput
+          ref={ref}
+          id="global-search"
+          type="search"
+          className="min-h-13 pl-11 text-lg"
+          placeholder={t('placeholder')}
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+        />
       </div>
       {q.trim().length < 2 ? (
         <p className="text-sm text-muted">{t('hint')}</p>

@@ -8,13 +8,7 @@ import { bandFor } from './screening/score';
 import { addDays } from './srs';
 
 export type AttentionRule =
-  | 'cravingRise'
-  | 'cravingHigh'
-  | 'screeningWorse'
-  | 'missedMeeting'
-  | 'keyDateSoon'
-  | 'noContact'
-  | 'iprReviewOverdue';
+  'cravingRise' | 'cravingHigh' | 'screeningWorse' | 'missedMeeting' | 'keyDateSoon' | 'noContact' | 'iprReviewOverdue';
 
 export interface AttentionFlag {
   rule: AttentionRule;

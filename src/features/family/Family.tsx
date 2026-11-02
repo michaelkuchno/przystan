@@ -39,7 +39,11 @@ export default function Family() {
             <strong>{t('violenceUrgent')}</strong>
             <div className="mt-2 flex flex-wrap gap-2">
               {crisis.map((c) => (
-                <a key={c.id} href={`tel:${c.number.replace(/\s/g, '')}`} className="inline-flex min-h-11 items-center gap-2 rounded-full bg-surface px-3 text-sm font-semibold">
+                <a
+                  key={c.id}
+                  href={`tel:${c.number.replace(/\s/g, '')}`}
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full bg-surface px-3 text-sm font-semibold"
+                >
                   <Phone className="size-4" aria-hidden /> {c.number} · {c.name}
                 </a>
               ))}
@@ -64,7 +68,15 @@ export default function Family() {
             <List>
               {genos.map((g) => {
                 const c = get('client', g.clientId);
-                return <ListRow key={g.id} to={`/clients/${g.clientId}/genogram`} leading={c && <Avatar label={c.code} />} title={<span className="pii">{c?.code}</span>} subtitle={t('nodes', { count: g.nodes.length })} />;
+                return (
+                  <ListRow
+                    key={g.id}
+                    to={`/clients/${g.clientId}/genogram`}
+                    leading={c && <Avatar label={c.code} />}
+                    title={<span className="pii">{c?.code}</span>}
+                    subtitle={t('nodes', { count: g.nodes.length })}
+                  />
+                );
               })}
             </List>
           )}
@@ -77,7 +89,15 @@ export default function Family() {
             <List>
               {plans.map((p) => {
                 const c = get('client', p.clientId);
-                return <ListRow key={p.id} to={`/clients/${p.clientId}/family`} leading={c && <Avatar label={c.code} />} title={<span className="pii">{c?.code}</span>} subtitle={p.familyGoals.slice(0, 2).join(' · ')} />;
+                return (
+                  <ListRow
+                    key={p.id}
+                    to={`/clients/${p.clientId}/family`}
+                    leading={c && <Avatar label={c.code} />}
+                    title={<span className="pii">{c?.code}</span>}
+                    subtitle={p.familyGoals.slice(0, 2).join(' · ')}
+                  />
+                );
               })}
             </List>
           )}

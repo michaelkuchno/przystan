@@ -43,7 +43,11 @@ export default function Knowledge() {
         <TextInput id="k-search" className="pl-9" placeholder={t('search')} value={q} onChange={(e) => setQ(e.target.value)} />
       </div>
       <div className="mb-5 flex flex-wrap gap-4">
-        <Chips value={section} onChange={(v) => v[0] && setSection(v[0])} options={[{ value: 'all', label: t('all') }, ...sections.map((s) => ({ value: s, label: t(`sections.${s}`) }))]} />
+        <Chips
+          value={section}
+          onChange={(v) => v[0] && setSection(v[0])}
+          options={[{ value: 'all', label: t('all') }, ...sections.map((s) => ({ value: s, label: t(`sections.${s}`) }))]}
+        />
         <Chips
           value={status}
           onChange={(v) => v[0] && setStatus(v[0])}

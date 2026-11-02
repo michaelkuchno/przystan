@@ -142,15 +142,7 @@ export interface PreventionFile {
 /* --------------------------------------------------------------- templates */
 
 export type IngredientCategory =
-  | 'opening'
-  | 'mi'
-  | 'cbt'
-  | 'skills'
-  | 'group'
-  | 'family'
-  | 'prevention'
-  | 'relaxation'
-  | 'closing';
+  'opening' | 'mi' | 'cbt' | 'skills' | 'group' | 'family' | 'prevention' | 'relaxation' | 'closing';
 
 export interface Ingredient {
   id: string;

@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { ClipboardList, Sparkles, Activity, Trash2 } from 'lucide-react';
 import { Card, ButtonLink, EmptyState, Badge, IconButton } from '@/components/ui/core';
 import { SupportiveNote } from '@/components/ui/page';
-import { useToast } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { TrendChart } from '@/components/LazyCharts';
 import { useStore, forClient, remove } from '@/lib/store';
 import { fmtDate } from '@/lib/format';
@@ -25,7 +25,8 @@ export default function MeasurementsTab({ client }: { client: Client }) {
   const tools = new Map<ToolId, Measurement[]>();
   for (const m of ms) {
     if (m.source.kind === 'screening') screenings.set(m.source.instrument, [...(screenings.get(m.source.instrument) ?? []), m]);
-    else if (m.score !== undefined || m.scoreBefore !== undefined) tools.set(m.source.tool, [...(tools.get(m.source.tool) ?? []), m]);
+    else if (m.score !== undefined || m.scoreBefore !== undefined)
+      tools.set(m.source.tool, [...(tools.get(m.source.tool) ?? []), m]);
   }
 
   const actions = (
@@ -39,7 +40,10 @@ export default function MeasurementsTab({ client }: { client: Client }) {
     </div>
   );
 
-  if (ms.length === 0) return <EmptyState icon={<Activity />} title={t('measurements.emptyTitle')} text={t('measurements.emptyText')} action={actions} />;
+  if (ms.length === 0)
+    return (
+      <EmptyState icon={<Activity />} title={t('measurements.emptyTitle')} text={t('measurements.emptyText')} action={actions} />
+    );
 
   return (
     <div className="space-y-4">
@@ -63,7 +67,9 @@ export default function MeasurementsTab({ client }: { client: Client }) {
                 data={list.map((m) => ({ label: fmtDate(m.date, { day: 'numeric', month: 'short' }), score: m.score }))}
                 series={[{ key: 'score', name: t('measurements.score') }]}
                 max={inst.maxScore}
-                {...(firstPositive ? { threshold: { value: firstPositive.min, label: t('measurements.cutoff', { n: firstPositive.min }) } } : {})}
+                {...(firstPositive
+                  ? { threshold: { value: firstPositive.min, label: t('measurements.cutoff', { n: firstPositive.min }) } }
+                  : {})}
               />
             </Card>
           );
@@ -78,8 +84,13 @@ export default function MeasurementsTab({ client }: { client: Client }) {
                 score: m.score,
               }))}
               series={[
-                ...(list.some((m) => m.scoreBefore !== undefined) ? [{ key: 'before', name: t('measurements.before'), dashed: true }] : []),
-                { key: 'score', name: list.some((m) => m.scoreBefore !== undefined) ? t('measurements.after') : t('measurements.score') },
+                ...(list.some((m) => m.scoreBefore !== undefined)
+                  ? [{ key: 'before', name: t('measurements.before'), dashed: true }]
+                  : []),
+                {
+                  key: 'score',
+                  name: list.some((m) => m.scoreBefore !== undefined) ? t('measurements.after') : t('measurements.score'),
+                },
               ]}
               max={10}
             />

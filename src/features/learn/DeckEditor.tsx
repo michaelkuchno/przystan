@@ -4,7 +4,8 @@ import { Plus, Trash2, Download } from 'lucide-react';
 import { Page, PageHeader } from '@/components/ui/page';
 import { Button, Card, EmptyState, IconButton } from '@/components/ui/core';
 import { TextField, TextArea } from '@/components/ui/form';
-import { useConfirm, useToast } from '@/components/ui/overlay';
+import { useConfirm } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { SaveStatus } from '@/components/SaveStatus';
 import { get, remove, uid, useStore } from '@/lib/store';
 import { useEditable } from '@/lib/useEditable';
@@ -27,22 +28,41 @@ function Editor({ deck }: { deck: Deck }) {
       </Card>
       {draft.cards.map((c, i) => (
         <Card key={c.id} className="grid gap-2 sm:grid-cols-[1fr_1.4fr_auto]">
-          <TextArea aria-label={t('front', { n: i + 1 })} placeholder={t('frontPh')} rows={2} value={c.front} onChange={(e) => update({ cards: draft.cards.map((x) => (x.id === c.id ? { ...x, front: e.target.value } : x)) })} />
-          <TextArea aria-label={t('backN', { n: i + 1 })} placeholder={t('backPh')} rows={2} value={c.back} onChange={(e) => update({ cards: draft.cards.map((x) => (x.id === c.id ? { ...x, back: e.target.value } : x)) })} />
+          <TextArea
+            aria-label={t('front', { n: i + 1 })}
+            placeholder={t('frontPh')}
+            rows={2}
+            value={c.front}
+            onChange={(e) => update({ cards: draft.cards.map((x) => (x.id === c.id ? { ...x, front: e.target.value } : x)) })}
+          />
+          <TextArea
+            aria-label={t('backN', { n: i + 1 })}
+            placeholder={t('backPh')}
+            rows={2}
+            value={c.back}
+            onChange={(e) => update({ cards: draft.cards.map((x) => (x.id === c.id ? { ...x, back: e.target.value } : x)) })}
+          />
           <IconButton label={t('common:delete')} onClick={() => update({ cards: draft.cards.filter((x) => x.id !== c.id) })}>
             <Trash2 className="size-4" />
           </IconButton>
         </Card>
       ))}
       <div className="flex flex-wrap gap-2">
-        <Button icon={<Plus className="size-4" />} onClick={() => update({ cards: [...draft.cards, { id: uid(), front: '', back: '' }] })}>
+        <Button
+          icon={<Plus className="size-4" />}
+          onClick={() => update({ cards: [...draft.cards, { id: uid(), front: '', back: '' }] })}
+        >
           {t('addCard')}
         </Button>
         <Button
           variant="secondary"
           icon={<Download className="size-4" />}
           onClick={async () => {
-            const json = JSON.stringify({ title: draft.title, module: draft.module, cards: draft.cards.map(({ front, back }) => ({ front, back })) }, null, 2);
+            const json = JSON.stringify(
+              { title: draft.title, module: draft.module, cards: draft.cards.map(({ front, back }) => ({ front, back })) },
+              null,
+              2,
+            );
             await exportFile(`${slug(draft.title) || 'talia'}.json`, new Blob([json], { type: 'application/json' }));
           }}
         >

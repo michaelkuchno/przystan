@@ -6,7 +6,7 @@ import { Save, RotateCcw, Languages } from 'lucide-react';
 import { Page, PageHeader, Notice, SupportiveNote } from '@/components/ui/page';
 import { Button, Card, EmptyState, Badge } from '@/components/ui/core';
 import { SelectField } from '@/components/ui/form';
-import { useToast } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { INSTRUMENTS } from '@/lib/screening/instruments';
 import { PL_INSTRUMENTS } from '@/lib/screening/pl';
 import { scoreInstrument } from '@/lib/screening/score';
@@ -16,7 +16,12 @@ import { todayIso, haptic } from '@/lib/platform';
 import { cn } from '@/components/ui/cn';
 import type { InstrumentId, Sex } from '@/domain/types';
 
-const TONES = ['bg-ok-soft text-ok', 'bg-warn-soft text-warn', 'bg-accent-soft text-accent-soft-fg', 'bg-danger-soft text-danger'];
+const TONES = [
+  'bg-ok-soft text-ok',
+  'bg-warn-soft text-warn',
+  'bg-accent-soft text-accent-soft-fg',
+  'bg-danger-soft text-danger',
+];
 
 export default function ScreeningForm() {
   const { t } = useTranslation('screening');
@@ -34,7 +39,12 @@ export default function ScreeningForm() {
   const [answers, setAnswers] = useState<(number | undefined)[]>([]);
 
   const result = useMemo(() => (inst ? scoreInstrument(inst.id, answers, sex) : null), [inst, answers, sex]);
-  if (!inst || !result) return <Page><EmptyState title={t('notFound')} /></Page>;
+  if (!inst || !result)
+    return (
+      <Page>
+        <EmptyState title={t('notFound')} />
+      </Page>
+    );
 
   const pl = lang === 'pl' ? PL_INSTRUMENTS[inst.id] : null;
   const showTodo = lang === 'pl' && !pl;
@@ -96,7 +106,9 @@ export default function ScreeningForm() {
               <Card>
                 <fieldset>
                   <legend className="mb-3 flex gap-3 font-medium">
-                    <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-surface-2 text-sm font-semibold">{i + 1}</span>
+                    <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-surface-2 text-sm font-semibold">
+                      {i + 1}
+                    </span>
                     <span lang={pl ? 'pl' : 'en'}>{text}</span>
                   </legend>
                   <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3" role="radiogroup">
@@ -114,7 +126,9 @@ export default function ScreeningForm() {
                         }}
                         className={cn(
                           'flex min-h-12 items-center justify-between gap-2 rounded-xl border px-3 py-2 text-left text-sm transition',
-                          answers[i] === j ? 'border-primary bg-primary text-primary-fg' : 'border-line bg-surface hover:bg-surface-2',
+                          answers[i] === j
+                            ? 'border-primary bg-primary text-primary-fg'
+                            : 'border-line bg-surface hover:bg-surface-2',
                         )}
                       >
                         <span lang={pl ? 'pl' : 'en'}>{pl?.items[i]?.options[j] ?? o.label}</span>

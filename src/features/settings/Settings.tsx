@@ -1,11 +1,23 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Download, Upload, KeyRound, RefreshCcw, Trash2, Info, ShieldCheck, BookMarked, ChevronRight, Loader2 } from 'lucide-react';
+import {
+  Download,
+  Upload,
+  KeyRound,
+  RefreshCcw,
+  Trash2,
+  Info,
+  ShieldCheck,
+  BookMarked,
+  ChevronRight,
+  Loader2,
+} from 'lucide-react';
 import { Page, PageHeader, Notice } from '@/components/ui/page';
 import { Button, Card, SectionTitle } from '@/components/ui/core';
 import { Chips, Field, TextInput, Switch } from '@/components/ui/form';
-import { Sheet, useConfirm, useToast } from '@/components/ui/overlay';
+import { Sheet, useConfirm } from '@/components/ui/overlay';
+import { useToast } from '@/components/ui/toast';
 import { usePrefs, setPrefs, type Lang, type Term, type Theme } from '@/lib/prefs';
 import { changeLanguage, setTerm } from '@/i18n';
 import { changePassword, wipeAll } from '@/lib/vault';
@@ -40,7 +52,11 @@ export default function Settings() {
 
   const doBackup = async () => {
     const b = await createBackup(APP_VERSION);
-    const res = await exportFile(`przystan-kopia-${todayIso()}.przystan`, new Blob([serializeBackup(b)], { type: 'application/json' }), t('backup.title'));
+    const res = await exportFile(
+      `przystan-kopia-${todayIso()}.przystan`,
+      new Blob([serializeBackup(b)], { type: 'application/json' }),
+      t('backup.title'),
+    );
     if (res !== 'cancelled') {
       await setPrefs({ lastBackupAt: new Date().toISOString() });
       toast({ text: t('backup.done', { count: b.records.length }), tone: 'ok' });
@@ -89,7 +105,15 @@ export default function Settings() {
 
       <SectionTitle>{t('appearance')}</SectionTitle>
       <Card className="space-y-5">
-        <Chips label={t('language')} value={prefs.lang} onChange={(v) => v[0] && void setLang(v[0])} options={[{ value: 'pl', label: 'Polski' }, { value: 'en', label: 'English' }]} />
+        <Chips
+          label={t('language')}
+          value={prefs.lang}
+          onChange={(v) => v[0] && void setLang(v[0])}
+          options={[
+            { value: 'pl', label: 'Polski' },
+            { value: 'en', label: 'English' },
+          ]}
+        />
         <Chips
           label={t('term')}
           value={prefs.term}
@@ -98,9 +122,17 @@ export default function Settings() {
             void setPrefs({ term: v[0] });
             setTerm(prefs.lang, v[0]);
           }}
-          options={(['podopieczny', 'klient', 'wychowanek', 'uczestnik'] as Term[]).map((x) => ({ value: x, label: t(`terms.${x}`) }))}
+          options={(['podopieczny', 'klient', 'wychowanek', 'uczestnik'] as Term[]).map((x) => ({
+            value: x,
+            label: t(`terms.${x}`),
+          }))}
         />
-        <Chips label={t('theme')} value={prefs.theme} onChange={(v) => v[0] && void setPrefs({ theme: v[0] })} options={(['system', 'light', 'dark'] as Theme[]).map((x) => ({ value: x, label: t(`themes.${x}`) }))} />
+        <Chips
+          label={t('theme')}
+          value={prefs.theme}
+          onChange={(v) => v[0] && void setPrefs({ theme: v[0] })}
+          options={(['system', 'light', 'dark'] as Theme[]).map((x) => ({ value: x, label: t(`themes.${x}`) }))}
+        />
         <Chips
           label={t('textSize')}
           value={String(prefs.textScale)}
@@ -112,7 +144,12 @@ export default function Settings() {
             { value: '1.375', label: 'A+++' },
           ]}
         />
-        <Switch label={t('presentation')} description={t('presentationHint')} checked={prefs.presentation} onChange={(v) => void setPrefs({ presentation: v })} />
+        <Switch
+          label={t('presentation')}
+          description={t('presentationHint')}
+          checked={prefs.presentation}
+          onChange={(v) => void setPrefs({ presentation: v })}
+        />
       </Card>
 
       <SectionTitle>{t('mode')}</SectionTitle>
@@ -145,9 +182,20 @@ export default function Settings() {
       <SectionTitle>{t('security')}</SectionTitle>
       <Card className="space-y-5">
         <Field label={t('autoLock')} hint={t('autoLockHint')}>
-          <Chips value={String(prefs.autoLockMin)} onChange={(v) => v[0] && void setPrefs({ autoLockMin: Number(v[0]) })} options={['1', '3', '5', '10', '15'].map((m) => ({ value: m, label: `${m} min` }))} />
+          <Chips
+            value={String(prefs.autoLockMin)}
+            onChange={(v) => v[0] && void setPrefs({ autoLockMin: Number(v[0]) })}
+            options={['1', '3', '5', '10', '15'].map((m) => ({ value: m, label: `${m} min` }))}
+          />
         </Field>
-        <Button variant="secondary" icon={<KeyRound className="size-4" />} onClick={() => { setErr(null); setPwOpen(true); }}>
+        <Button
+          variant="secondary"
+          icon={<KeyRound className="size-4" />}
+          onClick={() => {
+            setErr(null);
+            setPwOpen(true);
+          }}
+        >
           {t('password.change')}
         </Button>
       </Card>
@@ -155,7 +203,9 @@ export default function Settings() {
       <SectionTitle>{t('backup.title')}</SectionTitle>
       <Card className="space-y-4">
         <p className="text-sm leading-relaxed">{t('backup.text')}</p>
-        <p className="text-sm text-muted">{prefs.lastBackupAt ? t('backup.last', { date: fmtDate(prefs.lastBackupAt) }) : t('backup.never')}</p>
+        <p className="text-sm text-muted">
+          {prefs.lastBackupAt ? t('backup.last', { date: fmtDate(prefs.lastBackupAt) }) : t('backup.never')}
+        </p>
         <div className="flex flex-wrap gap-2">
           <Button icon={<Download className="size-4" />} onClick={() => void doBackup()}>
             {t('backup.export')}
@@ -220,18 +270,46 @@ export default function Settings() {
           </Button>
         }
       >
-        <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); void doChangePw(); }}>
+        <form
+          className="space-y-4"
+          onSubmit={(e) => {
+            e.preventDefault();
+            void doChangePw();
+          }}
+        >
           <Field label={t('password.old')} htmlFor="pw-old">
-            <TextInput id="pw-old" type="password" autoComplete="current-password" value={oldPw} onChange={(e) => setOldPw(e.target.value)} />
+            <TextInput
+              id="pw-old"
+              type="password"
+              autoComplete="current-password"
+              value={oldPw}
+              onChange={(e) => setOldPw(e.target.value)}
+            />
           </Field>
           <Field label={t('password.new')} htmlFor="pw-new">
-            <TextInput id="pw-new" type="password" autoComplete="new-password" value={newPw} onChange={(e) => setNewPw(e.target.value)} />
+            <TextInput
+              id="pw-new"
+              type="password"
+              autoComplete="new-password"
+              value={newPw}
+              onChange={(e) => setNewPw(e.target.value)}
+            />
           </Field>
           <Field label={t('password.repeat')} htmlFor="pw-new2">
-            <TextInput id="pw-new2" type="password" autoComplete="new-password" value={newPw2} onChange={(e) => setNewPw2(e.target.value)} />
+            <TextInput
+              id="pw-new2"
+              type="password"
+              autoComplete="new-password"
+              value={newPw2}
+              onChange={(e) => setNewPw2(e.target.value)}
+            />
           </Field>
           <Notice tone="warn">{t('password.note')}</Notice>
-          {err && <p className="text-sm font-medium text-danger" role="alert">{err}</p>}
+          {err && (
+            <p className="text-sm font-medium text-danger" role="alert">
+              {err}
+            </p>
+          )}
           <button type="submit" hidden />
         </form>
       </Sheet>
@@ -248,12 +326,22 @@ export default function Settings() {
           </Button>
         }
       >
-        <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); void doRestore(); }}>
+        <form
+          className="space-y-4"
+          onSubmit={(e) => {
+            e.preventDefault();
+            void doRestore();
+          }}
+        >
           <Field label={t('backup.password')} htmlFor="restore-pw">
             <TextInput id="restore-pw" type="password" value={restorePw} onChange={(e) => setRestorePw(e.target.value)} />
           </Field>
           <Notice tone="warn">{t('backup.replaceWarning')}</Notice>
-          {err && <p className="text-sm font-medium text-danger" role="alert">{err}</p>}
+          {err && (
+            <p className="text-sm font-medium text-danger" role="alert">
+              {err}
+            </p>
+          )}
           <button type="submit" hidden />
         </form>
       </Sheet>

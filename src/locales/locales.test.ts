@@ -17,7 +17,8 @@ for (const [p, m] of Object.entries(mods)) {
 }
 
 function flat(o: unknown, prefix = '', out = new Set<string>()): Set<string> {
-  if (o && typeof o === 'object' && !Array.isArray(o)) for (const [k, v] of Object.entries(o)) flat(v, prefix ? `${prefix}.${k}` : k, out);
+  if (o && typeof o === 'object' && !Array.isArray(o))
+    for (const [k, v] of Object.entries(o)) flat(v, prefix ? `${prefix}.${k}` : k, out);
   else out.add(prefix);
   return out;
 }
@@ -82,12 +83,19 @@ describe('UI locales', () => {
       ...DIAGNOSIS_AREAS.map((v) => `clients:diagnosis.areas.${v}`),
       ...TOOL_META.map((m) => `tools:names.${m.id}`),
       ...Object.values(INSTRUMENTS).flatMap((i) =>
-        (['female', 'male'] as const).flatMap((s) => i.bands(s).flatMap((b) => [`screening:bands.${i.id}.${b.id}`, `screening:bandHints.${i.id}.${b.id}`])),
+        (['female', 'male'] as const).flatMap((s) =>
+          i.bands(s).flatMap((b) => [`screening:bands.${i.id}.${b.id}`, `screening:bandHints.${i.id}.${b.id}`]),
+        ),
       ),
-      ...['cravingRise', 'cravingHigh', 'screeningWorse', 'missedMeeting', 'keyDateSoon', 'noContact', 'iprReviewOverdue'].flatMap((r) => [
-        `dashboard:rules.${r}.title`,
-        `dashboard:rules.${r}.why`,
-      ]),
+      ...[
+        'cravingRise',
+        'cravingHigh',
+        'screeningWorse',
+        'missedMeeting',
+        'keyDateSoon',
+        'noContact',
+        'iprReviewOverdue',
+      ].flatMap((r) => [`dashboard:rules.${r}.title`, `dashboard:rules.${r}.why`]),
     ];
     for (const lng of [pl, en]) expect(need.filter((k) => !lng.has(k))).toEqual([]);
   });

@@ -63,7 +63,10 @@ export default function Breathing({ onResult }: ToolProps) {
           phaseRef.current = 'inhale';
           setLeft(patterns.find((x) => x.id === v[0])?.inhale ?? 4);
         }}
-        options={patterns.map((x) => ({ value: x.id, label: `${x.name} (${[x.inhale, x.hold, x.exhale, x.holdAfter].filter(Boolean).join('-')})` }))}
+        options={patterns.map((x) => ({
+          value: x.id,
+          label: `${x.name} (${[x.inhale, x.hold, x.exhale, x.holdAfter].filter(Boolean).join('-')})`,
+        }))}
         className="flex justify-center"
       />
       <div className="relative mx-auto flex size-64 items-center justify-center">
@@ -79,7 +82,11 @@ export default function Breathing({ onResult }: ToolProps) {
         </div>
       </div>
       <div className="text-sm text-muted">{t('breath.cycles', { count: cycles })}</div>
-      <Button size="lg" icon={running ? <Pause className="size-5" /> : <Play className="size-5" />} onClick={() => setRunning(!running)}>
+      <Button
+        size="lg"
+        icon={running ? <Pause className="size-5" /> : <Play className="size-5" />}
+        onClick={() => setRunning(!running)}
+      >
         {running ? t('pause') : t('start')}
       </Button>
     </div>

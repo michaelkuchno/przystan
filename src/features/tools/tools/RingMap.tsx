@@ -14,7 +14,15 @@ interface Item {
 }
 
 /** Concentric map: tap an item to move it closer/further from the centre. */
-function RingMap({ kind, suggestions, onResult }: { kind: 'trigger' | 'support'; suggestions: string[]; onResult: ToolProps['onResult'] }) {
+function RingMap({
+  kind,
+  suggestions,
+  onResult,
+}: {
+  kind: 'trigger' | 'support';
+  suggestions: string[];
+  onResult: ToolProps['onResult'];
+}) {
   const { t } = useTranslation('tools');
   const [items, setItems] = useState<Item[]>([]);
   const [draft, setDraft] = useState('');
@@ -26,8 +34,12 @@ function RingMap({ kind, suggestions, onResult }: { kind: 'trigger' | 'support';
     setDraft('');
     void haptic('light');
   };
-  const rings = kind === 'trigger' ? [t('rings.triggerStrong'), t('rings.triggerMid'), t('rings.triggerWeak')] : [t('rings.supportClose'), t('rings.supportMid'), t('rings.supportFar')];
-  const colors = kind === 'trigger' ? ['var(--accent)', 'var(--chart-4)', 'var(--muted)'] : ['var(--primary)', 'var(--blue)', 'var(--muted)'];
+  const rings =
+    kind === 'trigger'
+      ? [t('rings.triggerStrong'), t('rings.triggerMid'), t('rings.triggerWeak')]
+      : [t('rings.supportClose'), t('rings.supportMid'), t('rings.supportFar')];
+  const colors =
+    kind === 'trigger' ? ['var(--accent)', 'var(--chart-4)', 'var(--muted)'] : ['var(--primary)', 'var(--blue)', 'var(--muted)'];
 
   return (
     <div className="space-y-4">
@@ -44,7 +56,9 @@ function RingMap({ kind, suggestions, onResult }: { kind: 'trigger' | 'support';
             aria-hidden
           />
         ))}
-        <div className="absolute inset-[44%] flex items-center justify-center rounded-full bg-surface text-center text-xs font-semibold shadow">{t('rings.me')}</div>
+        <div className="absolute inset-[44%] flex items-center justify-center rounded-full bg-surface text-center text-xs font-semibold shadow">
+          {t('rings.me')}
+        </div>
         {items.map((it, i) => {
           const sameRing = items.filter((x) => x.ring === it.ring);
           const idx = sameRing.indexOf(it);
@@ -82,7 +96,12 @@ function RingMap({ kind, suggestions, onResult }: { kind: 'trigger' | 'support';
           add(draft);
         }}
       >
-        <TextInput aria-label={t(kind === 'trigger' ? 'rings.addTrigger' : 'rings.addSupport')} placeholder={t(kind === 'trigger' ? 'rings.addTrigger' : 'rings.addSupport')} value={draft} onChange={(e) => setDraft(e.target.value)} />
+        <TextInput
+          aria-label={t(kind === 'trigger' ? 'rings.addTrigger' : 'rings.addSupport')}
+          placeholder={t(kind === 'trigger' ? 'rings.addTrigger' : 'rings.addSupport')}
+          value={draft}
+          onChange={(e) => setDraft(e.target.value)}
+        />
         <IconButton label={t('common:add')} variant="soft" type="submit">
           <Plus className="size-5" />
         </IconButton>
@@ -92,7 +111,12 @@ function RingMap({ kind, suggestions, onResult }: { kind: 'trigger' | 'support';
           .filter((s) => !items.some((i) => i.text === s))
           .slice(0, 14)
           .map((s) => (
-            <button key={s} type="button" onClick={() => add(s)} className="min-h-9 rounded-full border border-dashed border-line px-3 text-xs text-muted hover:border-primary">
+            <button
+              key={s}
+              type="button"
+              onClick={() => add(s)}
+              className="min-h-9 rounded-full border border-dashed border-line px-3 text-xs text-muted hover:border-primary"
+            >
               + {s}
             </button>
           ))}
@@ -102,7 +126,12 @@ function RingMap({ kind, suggestions, onResult }: { kind: 'trigger' | 'support';
           {items.map((it) => (
             <li key={it.text} className="inline-flex items-center gap-1 rounded-full bg-surface-2 py-0.5 pr-0.5 pl-3 text-xs">
               {it.text}
-              <button type="button" className="inline-flex size-8 items-center justify-center" aria-label={t('common:remove', { item: it.text })} onClick={() => setItems(items.filter((x) => x !== it))}>
+              <button
+                type="button"
+                className="inline-flex size-8 items-center justify-center"
+                aria-label={t('common:remove', { item: it.text })}
+                onClick={() => setItems(items.filter((x) => x !== it))}
+              >
                 <X className="size-3.5" />
               </button>
             </li>

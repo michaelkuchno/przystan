@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from 'react';
 import type { ContentBundle, ContentKind, ReviewStatus } from './types';
 import { CONTENT_KINDS } from './types';
 import type { Lang } from '@/lib/prefs';
@@ -24,25 +24,45 @@ export async function loadContent(lang: Lang): Promise<ContentBundle> {
 }
 
 const Ctx = createContext<ContentBundle | null>(null);
+const Want = createContext<() => void>(() => undefined);
 
-export function ContentProvider({ children, fallback }: { children: ReactNode; fallback: ReactNode }) {
+/**
+ * Loads the content bundle for the current language on demand: as soon as a
+ * <RequireContent> mounts (i.e. after unlocking, or the crisis list on the lock
+ * screen). Onboarding and the lock screen render without it, which keeps the
+ * first paint fast.
+ */
+export function ContentProvider({ children }: { children: ReactNode }) {
   const { lang } = usePrefs();
-  const [bundle, setBundle] = useState<ContentBundle | null>(() => cache.get(lang) ?? null);
+  const [wanted, setWanted] = useState(false);
+  // state only triggers a re-render once the bundle is in the cache
+  const [, setLoaded] = useState<ContentBundle | null>(() => cache.get(lang) ?? null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    if (!wanted) return;
     let alive = true;
     loadContent(lang)
-      .then((b) => alive && setBundle(b))
+      .then((b) => alive && setLoaded(b))
       .catch((e: unknown) => alive && setError(String(e)));
     return () => {
       alive = false;
     };
-  }, [lang]);
+  }, [lang, wanted]);
 
+  const want = useCallback(() => setWanted(true), []);
   if (error) return <div role="alert">{error}</div>;
-  if (!bundle) return <>{fallback}</>;
-  return <Ctx.Provider value={bundle}>{children}</Ctx.Provider>;
+  return (
+    <Want.Provider value={want}>
+      <Ctx.Provider value={cache.get(lang) ?? null}>{children}</Ctx.Provider>
+    </Want.Provider>
+  );
+}
+
+export function RequireContent({ children, fallback }: { children: ReactNode; fallback: ReactNode }) {
+  const want = useContext(Want);
+  useEffect(() => want(), [want]);
+  return useContext(Ctx) ? <>{children}</> : <>{fallback}</>;
 }
 
 export function useContent(): ContentBundle;
