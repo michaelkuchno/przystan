@@ -118,3 +118,44 @@ Repozytorium aplikacji jest osobne (`~/projects/przystan`), poza repozytoriami s
 Commity podpisane prywatnym adresem autora. Konto GitHub zalogowane w `gh` na tej maszynie jest
 kontem służbowym – publikacja repozytorium i GitHub Pages wymaga decyzji, na którym koncie
 (patrz `HANDOVER.md`).
+
+## D-020 Hasła keystore nie trafiają do repozytorium
+Specyfikacja prosi o zapisanie haseł keystore w `HANDOVER.md`. Repozytorium może być publiczne,
+więc hasła i sam keystore leżą **poza repozytorium**: `~/przystan-keystore/` (`przystan-release.jks`,
+`keystore.properties`, uprawnienia 600). `HANDOVER.md` wskazuje to miejsce w sekcji
+„Przechowaj bezpiecznie”. Kopia `android/keystore.properties` jest w `.gitignore`.
+
+## D-021 Uprawnienie INTERNET w APK
+WebView Capacitora serwuje aplikację z `https://localhost`. Bez możliwości przetestowania na
+urządzeniu/emulatorze (brak KVM w środowisku budowania) pozostawiono standardowe uprawnienie
+INTERNET, by nie ryzykować niedziałającej aplikacji. Brak ruchu sieciowego gwarantują: CSP
+`connect-src 'self'`, brak zewnętrznych zasobów i brak kodu wykonującego zapytania. Kopie
+zapasowe Androida są wyłączone (`allowBackup=false`, `dataExtractionRules`), a `FLAG_SECURE`
+ukrywa treść na przełączniku aplikacji i blokuje zrzuty ekranu.
+
+## D-022 Nazewnictwo w wersji angielskiej
+„podopieczny” → *service user*, „klient” → *client*, „wychowanek” → *resident*, „uczestnik” →
+*participant*. Polskie formy przypadków (dopełniacz, celownik) są wstrzykiwane jako zmienne
+i18next (`{{clientGen}}`, `{{clientDat}}`), więc zmiana nazewnictwa działa w całym interfejsie.
+
+## D-023 Treści ładowane na żądanie, lekki pierwszy ekran
+Onboarding i ekran blokady nie potrzebują treści merytorycznych ani biblioteki animacji. Treści
+(~130 kB gzip) i główna część aplikacji ładują się dopiero po odblokowaniu (lub przy otwarciu
+listy telefonów kryzysowych). Teksty interfejsu ładowane są tylko dla aktywnego języka. Wynik:
+Lighthouse Performance 91–92 (mobile, symulowane 4G), Accessibility 100, Best Practices 100.
+
+## D-024 Dane demo a zmiana języka
+Dane trybu szkoleniowego są fikcyjne; po zmianie języka w trybie DEMO są automatycznie wczytywane
+ponownie w nowym języku (zmiany wprowadzone w DEMO są wtedy tracone). Dane praktyczne nigdy nie
+są modyfikowane przy zmianie języka.
+
+## D-025 Brak automatycznej publikacji na koncie służbowym
+Na tej maszynie `gh` jest zalogowane na służbowe konto GitHub. Publikacja prywatnego projektu
+(repozytorium publiczne + GitHub Pages + sekrety z keystore) na koncie służbowym byłaby
+niewłaściwa i trudna do odwrócenia, dlatego ten krok czeka na decyzję właściciela
+(gotowe komendy w `HANDOVER.md`).
+
+## D-026 Wybór pomocniczy: autosave
+Formularze dokumentacji (diagnoza, IPR, plany, genogram, przepisy, programy) zapisują się
+automatycznie po 600 ms bez pisania, ze wskaźnikiem „Zapisano”. Usunięcia są „miękkie”
+z możliwością cofnięcia przez ok. minutę.
