@@ -1,0 +1,217 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/*
+ * Design tokens – "Przystań" palette: sage, muted blue, warm beige, terracotta.
+ * All text/background pairs meet WCAG 2.1 AA (≥ 4.5:1 for body text).
+ */
+:root {
+  --bg: #f6f1ea;
+  --surface: #fffdf9;
+  --surface-2: #efe7dc;
+  --surface-3: #e6dccd;
+  --fg: #2a2926;
+  --muted: #615c54;
+  --border: #ddd2c2;
+  --primary: #456552;
+  --primary-hover: #3a5545;
+  --primary-fg: #ffffff;
+  --primary-soft: #dfe8e0;
+  --primary-soft-fg: #2f4a3b;
+  --blue: #44637d;
+  --blue-soft: #dde6ee;
+  --accent: #a84f33;
+  --accent-soft: #f5e0d6;
+  --accent-soft-fg: #7a3520;
+  --danger: #a3372c;
+  --danger-soft: #f7dcd8;
+  --warn: #7f5a12;
+  --warn-soft: #f6ead0;
+  --ok: #356146;
+  --ok-soft: #dcebdf;
+  --focus: #2f6f9f;
+  --shadow: 0 1px 2px rgb(60 45 25 / 0.06), 0 4px 16px rgb(60 45 25 / 0.06);
+  --chart-1: #456552;
+  --chart-2: #a84f33;
+  --chart-3: #44637d;
+  --chart-4: #b08a2e;
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --bg: #151816;
+  --surface: #1d211e;
+  --surface-2: #262b28;
+  --surface-3: #303632;
+  --fg: #ece7df;
+  --muted: #aaa399;
+  --border: #39403b;
+  --primary: #93b8a0;
+  --primary-hover: #a6c8b2;
+  --primary-fg: #0f1511;
+  --primary-soft: #253429;
+  --primary-soft-fg: #c4dccb;
+  --blue: #93b2cc;
+  --blue-soft: #233140;
+  --accent: #e3916f;
+  --accent-soft: #3d2620;
+  --accent-soft-fg: #f2c0aa;
+  --danger: #f08c80;
+  --danger-soft: #3d201d;
+  --warn: #e3c072;
+  --warn-soft: #3a3020;
+  --ok: #8fc79f;
+  --ok-soft: #1f3326;
+  --focus: #8cc2ea;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 4px 16px rgb(0 0 0 / 0.25);
+  --chart-1: #93b8a0;
+  --chart-2: #e3916f;
+  --chart-3: #93b2cc;
+  --chart-4: #e3c072;
+  color-scheme: dark;
+}
+
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Fraunces Variable', ui-serif, Georgia, serif;
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-fg: var(--primary-fg);
+  --color-primary-soft: var(--primary-soft);
+  --color-primary-soft-fg: var(--primary-soft-fg);
+  --color-blue: var(--blue);
+  --color-blue-soft: var(--blue-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-soft-fg: var(--accent-soft-fg);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-focus: var(--focus);
+
+  --radius-card: 1.25rem;
+  --shadow-card: var(--shadow);
+}
+
+html {
+  font-size: calc(100% * var(--text-scale, 1));
+  /* keep focused / scrolled-to elements clear of the sticky header and the bottom tab bar */
+  scroll-padding-top: calc(4.5rem + env(safe-area-inset-top));
+  scroll-padding-bottom: calc(6rem + env(safe-area-inset-bottom));
+  -webkit-text-size-adjust: 100%;
+  background: var(--bg);
+}
+
+body {
+  @apply bg-bg text-fg font-sans antialiased;
+  min-height: 100dvh;
+  overscroll-behavior-y: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-serif;
+  font-variation-settings: 'SOFT' 50, 'WONK' 0;
+  letter-spacing: -0.01em;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@media (min-width: 64rem) {
+  html {
+    scroll-padding-bottom: 1rem;
+  }
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.safe-x {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* Recipe cards (kreator zajęć) – subtle "kitchen card" look */
+.recipe-card {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 1.95rem,
+    color-mix(in oklab, var(--blue) 14%, transparent) 1.95rem,
+    color-mix(in oklab, var(--blue) 14%, transparent) 2rem
+  );
+}
+
+.privacy-shield {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: var(--bg);
+  display: grid;
+  place-items: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface-2);
+}
+.skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, color-mix(in oklab, var(--surface) 60%, transparent), transparent);
+  animation: shimmer 1.4s infinite;
+}
+
+/* presentation mode: blur identifiers */
+[data-presentation='true'] .pii {
+  filter: blur(6px);
+  user-select: none;
+}
+
+@media print {
+  nav,
+  header,
+  .no-print {
+    display: none !important;
+  }
+}

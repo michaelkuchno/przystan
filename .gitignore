@@ -1,0 +1,17 @@
+node_modules
+dist
+dev-dist
+release/*.apk
+playwright-report
+test-results
+coverage
+*.local
+.DS_Store
+docs/*.tmp.md
+android/app/build
+android/build
+android/.gradle
+android/local.properties
+android/keystore.properties
+*.jks
+*.keystore
