@@ -1,0 +1,867 @@
+{
+  "decks": [
+    {
+      "id": "deck-resocialization",
+      "title": "Resocjalizacja – pojęcia i teorie",
+      "module": "resocialization",
+      "cards": [
+        {
+          "id": "res-01",
+          "front": "Resocjalizacja – definicja",
+          "back": "Proces planowych oddziaływań wychowawczych wobec osób niedostosowanych społecznie, którego celem jest zmiana postaw i zachowań tak, by mogły samodzielnie i konstruktywnie pełnić role społeczne."
+        },
+        {
+          "id": "res-02",
+          "front": "Niedostosowanie społeczne – czyje koncepcje i istota?",
+          "back": "Pojęcie rozwijane w polskiej pedagogice resocjalizacyjnej m.in. przez Czesława Czapowa i Lesława Pytkę. Oznacza względnie trwały wzorzec zachowań naruszających normy społeczne, utrudniający pełnienie ról społecznych."
+        },
+        {
+          "id": "res-03",
+          "front": "Twórcza resocjalizacja – autor i istota",
+          "back": "Koncepcja Marka Konopczyńskiego. Wykorzystuje działania twórcze (np. teatr, muzykę, sport, plastykę) do rozwijania potencjałów podopiecznego i budowania nowej, prospołecznej tożsamości."
+        },
+        {
+          "id": "res-04",
+          "front": "Podejście zasobowe (potencjałowe) a deficytowe",
+          "back": "Podejście deficytowe koncentruje się na brakach i zaburzeniach, a zasobowe – na mocnych stronach, zainteresowaniach i wsparciu w otoczeniu, które stają się punktem wyjścia oddziaływań."
+        },
+        {
+          "id": "res-05",
+          "front": "Readaptacja społeczna",
+          "back": "Ponowne przystosowanie osoby do samodzielnego życia w społeczeństwie po okresie izolacji, np. po opuszczeniu zakładu karnego lub placówki – obejmuje m.in. mieszkanie, pracę i relacje."
+        },
+        {
+          "id": "res-06",
+          "front": "Pomoc postpenitencjarna",
+          "back": "Wsparcie osób opuszczających zakład karny i ich rodzin (np. mieszkaniowe, materialne, zawodowe, prawne), mające ułatwić readaptację i ograniczyć powrót do przestępstwa."
+        },
+        {
+          "id": "res-07",
+          "front": "Teoria naznaczania społecznego – autorzy",
+          "back": "Edwin Lemert i Howard Becker. Reakcja otoczenia i nadanie etykiety „dewianta” mogą utrwalać zachowania dewiacyjne i przekształcać tożsamość osoby."
+        },
+        {
+          "id": "res-08",
+          "front": "Dewiacja pierwotna i wtórna",
+          "back": "Rozróżnienie Lemerta: dewiacja pierwotna to incydentalne naruszenia norm bez wpływu na tożsamość; wtórna pojawia się, gdy osoba przyjmuje nadaną etykietę i organizuje wokół niej swoje zachowanie."
+        },
+        {
+          "id": "res-09",
+          "front": "Teoria zróżnicowanych powiązań – autor",
+          "back": "Edwin Sutherland. Zachowań przestępczych – technik, motywów i uzasadnień – uczymy się w interakcjach z bliskimi osobami i grupami."
+        },
+        {
+          "id": "res-10",
+          "front": "Teoria anomii – autor i typy przystosowania",
+          "back": "Robert K. Merton. Napięcie między celami kulturowymi a dostępnymi środkami instytucjonalnymi prowadzi do typów przystosowania: konformizmu, innowacji, rytualizmu, wycofania i buntu."
+        },
+        {
+          "id": "res-11",
+          "front": "Teoria więzi społecznych – autor i elementy",
+          "back": "Travis Hirschi. Przed przestępczością chronią więzi z otoczeniem: przywiązanie, zaangażowanie (w konwencjonalne cele), uczestnictwo (w konwencjonalne aktywności) i przekonania (akceptacja norm)."
+        },
+        {
+          "id": "res-12",
+          "front": "Teoria społecznego uczenia się – autor",
+          "back": "Albert Bandura. Zachowania, w tym agresywne, są nabywane m.in. przez obserwację i naśladowanie modeli oraz utrwalane przez wzmocnienia."
+        },
+        {
+          "id": "res-13",
+          "front": "Model RNR – autorzy i zasady",
+          "back": "Don Andrews i James Bonta. Zasady: ryzyka (intensywność oddziaływań dopasowana do poziomu ryzyka), potrzeb (praca nad potrzebami kryminogennymi) i responsywności (metody dopasowane do możliwości i stylu uczenia się osoby)."
+        },
+        {
+          "id": "res-14",
+          "front": "Potrzeby kryminogenne",
+          "back": "Dynamiczne, czyli podatne na zmianę, czynniki ryzyka związane z przestępczością, np. postawy prokryminalne, kontakty z osobami popełniającymi przestępstwa, używanie substancji, brak zatrudnienia."
+        },
+        {
+          "id": "res-15",
+          "front": "Czynniki ryzyka statyczne a dynamiczne",
+          "back": "Statyczne nie podlegają zmianie (np. wiek pierwszego czynu, historia karalności); dynamiczne można zmieniać oddziaływaniami (np. postawy, umiejętności, środowisko), dlatego są celem pracy resocjalizacyjnej."
+        },
+        {
+          "id": "res-16",
+          "front": "Good Lives Model – autor i istota",
+          "back": "Tony Ward. Zakłada, że ludzie dążą do dóbr podstawowych (np. relacji, kompetencji, autonomii), a praca polega na pomocy w ich osiąganiu w sposób prospołeczny, a nie tylko na redukcji ryzyka."
+        },
+        {
+          "id": "res-17",
+          "front": "Desistance – czym jest?",
+          "back": "Proces stopniowego odchodzenia od przestępczości i utrzymywania życia bez przestępstw. Shadd Maruna opisał rolę narracji tożsamościowej („skrypt odkupienia”) w tym procesie."
+        },
+        {
+          "id": "res-18",
+          "front": "Trening Zastępowania Agresji (ART) – autor i komponenty",
+          "back": "Program opracowany przez Arnolda P. Goldsteina i współpracowników. Trzy komponenty: trening umiejętności prospołecznych, trening kontroli złości i trening wnioskowania moralnego."
+        },
+        {
+          "id": "res-19",
+          "front": "Sprawiedliwość naprawcza",
+          "back": "Podejście (rozwijane m.in. przez Howarda Zehra), w którym reakcja na przestępstwo koncentruje się na naprawieniu szkody i relacji z udziałem pokrzywdzonego, sprawcy i społeczności, np. przez mediację."
+        },
+        {
+          "id": "res-20",
+          "front": "Systemy wykonywania kary pozbawienia wolności (Polska)",
+          "back": "Kodeks karny wykonawczy przewiduje trzy systemy: programowanego oddziaływania, terapeutyczny i zwykły."
+        },
+        {
+          "id": "res-21",
+          "front": "System programowanego oddziaływania",
+          "back": "System, w którym osoba odbywająca karę za swoją zgodą realizuje indywidualny program oddziaływania przygotowany z jej udziałem (np. nauka, praca, terapia, kontakty z rodziną)."
+        },
+        {
+          "id": "res-22",
+          "front": "Diagnoza resocjalizacyjna – cele",
+          "back": "Rozpoznanie problemów i deficytów, ale także zasobów osoby i jej środowiska, wyjaśnienie mechanizmów niedostosowania oraz sformułowanie prognozy i podstaw indywidualnego programu."
+        },
+        {
+          "id": "res-23",
+          "front": "Kurator sądowy – rola",
+          "back": "Wykonuje orzeczenia sądu i prowadzi nadzór lub dozór, łącząc kontrolę z działaniami wychowawczo-resocjalizacyjnymi i pomocą; w Polsce działają kuratorzy rodzinni i dla dorosłych."
+        },
+        {
+          "id": "res-24",
+          "front": "Młodzieżowy ośrodek wychowawczy (MOW)",
+          "back": "Placówka systemu oświaty dla dzieci i młodzieży niedostosowanych społecznie, do której umieszcza się na podstawie orzeczenia sądu rodzinnego; łączy edukację z oddziaływaniami wychowawczymi."
+        },
+        {
+          "id": "res-25",
+          "front": "Młodzieżowy ośrodek socjoterapii (MOS)",
+          "back": "Placówka oświatowa dla dzieci i młodzieży zagrożonych niedostosowaniem społecznym, wymagających zajęć socjoterapeutycznych i specjalnej organizacji nauki."
+        },
+        {
+          "id": "res-26",
+          "front": "Zakład poprawczy a schronisko dla nieletnich",
+          "back": "Zakład poprawczy wykonuje orzeczony przez sąd środek poprawczy; schronisko dla nieletnich służy tymczasowemu umieszczeniu nieletniego na czas trwania postępowania."
+        },
+        {
+          "id": "res-27",
+          "front": "Podkultura więzienna („drugie życie”)",
+          "back": "Nieformalny system norm, hierarchii i rytuałów wśród osób przebywających w izolacji, który może utrudniać oddziaływania resocjalizacyjne i sprzyjać przemocy."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-prevention",
+      "title": "Profilaktyka – poziomy, czynniki, strategie",
+      "module": "prevention",
+      "cards": [
+        {
+          "id": "prev-01",
+          "front": "Profilaktyka uniwersalna",
+          "back": "Działania skierowane do całych populacji (np. wszystkich uczniów danej klasy) bez względu na indywidualny poziom ryzyka; celem jest opóźnienie lub zapobieganie inicjacji."
+        },
+        {
+          "id": "prev-02",
+          "front": "Profilaktyka selektywna",
+          "back": "Działania skierowane do grup o podwyższonym ryzyku z powodu sytuacji życiowej lub środowiska (np. dzieci z rodzin z problemem alkoholowym), zanim pojawią się problemy."
+        },
+        {
+          "id": "prev-03",
+          "front": "Profilaktyka wskazująca",
+          "back": "Działania wobec osób, u których występują już pierwsze symptomy lub zachowania ryzykowne (np. eksperymentowanie z substancjami), ale bez rozpoznania uzależnienia."
+        },
+        {
+          "id": "prev-04",
+          "front": "Kto zaproponował podział na profilaktykę uniwersalną, selektywną i wskazującą?",
+          "back": "Robert Gordon (1983); podział ten został upowszechniony m.in. przez raport Institute of Medicine z 1994 r."
+        },
+        {
+          "id": "prev-05",
+          "front": "Profilaktyka I, II i III stopnia",
+          "back": "Starszy podział: pierwszorzędowa zapobiega pojawieniu się problemu, drugorzędowa wcześnie go wykrywa i ogranicza, trzeciorzędowa przeciwdziała pogłębianiu się skutków i nawrotom oraz wspiera reintegrację."
+        },
+        {
+          "id": "prev-06",
+          "front": "Czynniki ryzyka",
+          "back": "Cechy osoby lub jej otoczenia zwiększające prawdopodobieństwo zachowań problemowych, np. konflikty w rodzinie, niepowodzenia szkolne, kontakty z rówieśnikami używającymi substancji, łatwa dostępność substancji."
+        },
+        {
+          "id": "prev-07",
+          "front": "Czynniki chroniące",
+          "back": "Cechy osoby lub otoczenia zmniejszające prawdopodobieństwo zachowań problemowych lub łagodzące wpływ czynników ryzyka, np. silna więź z rodzicami, zainteresowanie nauką, prospołeczne normy i grupy, umiejętności społeczne."
+        },
+        {
+          "id": "prev-08",
+          "front": "Resilience (odporność psychiczna)",
+          "back": "Zdolność do pozytywnej adaptacji i prawidłowego rozwoju mimo doświadczania niekorzystnych warunków; wzmacnianie jej czynników to jeden z celów profilaktyki."
+        },
+        {
+          "id": "prev-09",
+          "front": "Teoria zachowań problemowych – autor",
+          "back": "Richard Jessor. Zachowania ryzykowne (np. używanie substancji, wczesna inicjacja seksualna, wagary) współwystępują i pełnią dla młodzieży określone funkcje rozwojowe, dlatego warto oddziaływać na ich wspólne uwarunkowania."
+        },
+        {
+          "id": "prev-10",
+          "front": "Strategie profilaktyczne – wymień",
+          "back": "Najczęściej wymieniane: informacyjne, edukacyjne (rozwój umiejętności), alternatyw, interwencyjne, zmniejszania szkód oraz zmian środowiskowych i zmian przepisów."
+        },
+        {
+          "id": "prev-11",
+          "front": "Skuteczność strategii wyłącznie informacyjnej",
+          "back": "Samo przekazywanie wiedzy o szkodliwości substancji zwykle nie zmienia zachowań, a przekazy oparte na straszeniu mogą być nieskuteczne lub przeciwskuteczne; informacja działa lepiej jako element szerszego programu."
+        },
+        {
+          "id": "prev-12",
+          "front": "Edukacja normatywna",
+          "back": "Korygowanie przekonań młodzieży, że używanie substancji wśród rówieśników jest bardziej rozpowszechnione i akceptowane, niż jest w rzeczywistości."
+        },
+        {
+          "id": "prev-13",
+          "front": "Model wpływów społecznych w profilaktyce",
+          "back": "Programy uczące rozpoznawania presji rówieśniczej, medialnej i reklamowej oraz radzenia sobie z nią (np. asertywnej odmowy), często połączone z edukacją normatywną."
+        },
+        {
+          "id": "prev-14",
+          "front": "Umiejętności życiowe (life skills) wg WHO",
+          "back": "Zdolności do pozytywnego zachowania i radzenia sobie z wyzwaniami, m.in. podejmowanie decyzji, rozwiązywanie problemów, krytyczne myślenie, komunikacja, radzenie sobie ze stresem i emocjami."
+        },
+        {
+          "id": "prev-15",
+          "front": "Unplugged",
+          "back": "Szkolny program profilaktyki uniwersalnej używania substancji dla młodzieży w wieku ok. 12–14 lat, oparty na modelu wpływów społecznych i rozwijaniu umiejętności życiowych; prowadzony w formie interaktywnych lekcji."
+        },
+        {
+          "id": "prev-16",
+          "front": "System rekomendacji programów profilaktycznych (Polska)",
+          "back": "Wspólny system instytucji centralnych (m.in. KCPU i ORE), który ocenia programy pod kątem jakości i dowodów skuteczności; rekomendowane programy są zebrane w bazie dostępnej dla szkół i samorządów."
+        },
+        {
+          "id": "prev-17",
+          "front": "Europejskie Standardy Jakości w Profilaktyce (EDPQS)",
+          "back": "Standardy opracowane pod auspicjami EMCDDA, opisujące cykl projektu profilaktycznego: od oceny potrzeb, przez planowanie i realizację, po ewaluację."
+        },
+        {
+          "id": "prev-18",
+          "front": "Cechy skutecznych programów profilaktycznych",
+          "back": "Oparcie na diagnozie potrzeb i teorii, interaktywne metody, odpowiednia intensywność i ciągłość, dostosowanie do wieku i kultury, zaangażowanie rodziców i środowiska oraz ewaluacja."
+        },
+        {
+          "id": "prev-19",
+          "front": "Ewaluacja procesu a ewaluacja wyników",
+          "back": "Ewaluacja procesu sprawdza, jak program został zrealizowany (zasięg, zgodność z założeniami, odbiór); ewaluacja wyników ocenia, czy osiągnięto zamierzone zmiany u uczestników."
+        },
+        {
+          "id": "prev-20",
+          "front": "Zmniejszanie szkód (harm reduction)",
+          "back": "Podejście ograniczające zdrowotne i społeczne skutki używania substancji bez stawiania abstynencji jako warunku pomocy, np. programy wymiany igieł i strzykawek czy leczenie substytucyjne."
+        },
+        {
+          "id": "prev-21",
+          "front": "Profilaktyka środowiskowa (strategie zmian środowiskowych)",
+          "back": "Zmiana warunków, w których ludzie podejmują decyzje, np. ograniczanie fizycznej i ekonomicznej dostępności alkoholu, egzekwowanie zakazu sprzedaży osobom niepełnoletnim, kształtowanie norm lokalnych."
+        },
+        {
+          "id": "prev-22",
+          "front": "Krótka interwencja – model FRAMES",
+          "back": "Elementy krótkiej interwencji: Feedback (informacja zwrotna), Responsibility (odpowiedzialność osoby), Advice (rada), Menu (wybór opcji), Empathy (empatia), Self-efficacy (wzmacnianie poczucia skuteczności)."
+        },
+        {
+          "id": "prev-23",
+          "front": "Wczesna interwencja",
+          "back": "Szybkie rozpoznanie pierwszych sygnałów problemu (np. pierwszych epizodów używania) i podjęcie adekwatnych działań, zanim problem się utrwali."
+        },
+        {
+          "id": "prev-24",
+          "front": "Profilaktyka rówieśnicza (peer education)",
+          "back": "Przygotowani i wspierani przez dorosłych młodzi liderzy prowadzą działania wśród rówieśników, wykorzystując ich wiarygodność i wpływ normatywny."
+        },
+        {
+          "id": "prev-25",
+          "front": "Promocja zdrowia – dokument i definicja",
+          "back": "Karta Ottawska WHO (1986): promocja zdrowia to proces umożliwiający ludziom zwiększenie kontroli nad własnym zdrowiem i jego poprawę."
+        },
+        {
+          "id": "prev-26",
+          "front": "Strategia alternatyw",
+          "back": "Dostarczanie atrakcyjnych, prospołecznych sposobów zaspokajania potrzeb (np. przygody, uznania, przynależności) – sport, wolontariat, działania twórcze – najlepiej w połączeniu z innymi strategiami."
+        },
+        {
+          "id": "prev-27",
+          "front": "Diagnoza potrzeb przed programem profilaktycznym",
+          "back": "Rozpoznanie problemów, czynników ryzyka i chroniących oraz zasobów w danej grupie lub społeczności; pozwala dobrać poziom profilaktyki, cele i metody oraz stanowi punkt odniesienia dla ewaluacji."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-addiction",
+      "title": "Uzależnienia – mechanizmy, zmiana, nawroty",
+      "module": "addiction",
+      "cards": [
+        {
+          "id": "add-01",
+          "front": "Uzależnienie od substancji w ICD-11 – trzy cechy kluczowe",
+          "back": "Upośledzona kontrola nad używaniem; rosnące pierwszeństwo używania nad innymi aktywnościami i obowiązkami mimo szkód; cechy fizjologiczne (tolerancja, objawy odstawienne). Do rozpoznania zwykle wymagane są co najmniej dwie."
+        },
+        {
+          "id": "add-02",
+          "front": "Szkodliwy wzorzec używania",
+          "back": "Wzorzec używania substancji, który powoduje szkody dla zdrowia fizycznego lub psychicznego (a w ICD-11 także szkody dla innych), bez spełnienia kryteriów uzależnienia."
+        },
+        {
+          "id": "add-03",
+          "front": "Tolerancja",
+          "back": "Zjawisko, w którym do uzyskania tego samego efektu potrzebne są coraz większe ilości substancji lub ta sama ilość daje słabszy efekt."
+        },
+        {
+          "id": "add-04",
+          "front": "Zespół abstynencyjny (odstawienny)",
+          "back": "Zespół objawów fizycznych i psychicznych pojawiających się po odstawieniu lub ograniczeniu substancji przyjmowanej długotrwale; niektóre (np. przy alkoholu) mogą zagrażać życiu i wymagają pomocy medycznej."
+        },
+        {
+          "id": "add-05",
+          "front": "Głód substancji (craving)",
+          "back": "Silne pragnienie lub przymus użycia substancji, często wyzwalany przez bodźce kojarzone z używaniem; jego pojawienie się nie oznacza porażki, lecz sygnał do zastosowania strategii radzenia sobie."
+        },
+        {
+          "id": "add-06",
+          "front": "Psychologiczne mechanizmy uzależnienia – autor i nazwy",
+          "back": "Jerzy Mellibruda: mechanizm nałogowego regulowania uczuć, mechanizm iluzji i zaprzeczeń oraz mechanizm rozproszonego i rozdwojonego „ja”."
+        },
+        {
+          "id": "add-07",
+          "front": "Model biopsychospołeczny uzależnienia",
+          "back": "Ujęcie, w którym na rozwój i podtrzymanie uzależnienia wpływają łącznie czynniki biologiczne (np. genetyczne, neurobiologiczne), psychologiczne (np. regulacja emocji) i społeczne (np. rodzina, środowisko, dostępność)."
+        },
+        {
+          "id": "add-08",
+          "front": "Układ nagrody a uzależnienie",
+          "back": "Substancje i niektóre zachowania silnie aktywują mózgowy układ nagrody (m.in. szlak mezolimbiczny, dopamina), co sprzyja uczeniu się powiązań między bodźcami a używaniem i osłabia kontrolę."
+        },
+        {
+          "id": "add-09",
+          "front": "Transteoretyczny model zmiany (TTM) – autorzy",
+          "back": "James Prochaska i Carlo DiClemente. Opisuje zmianę zachowania jako przechodzenie przez etapy: prekontemplację, kontemplację, przygotowanie, działanie i utrzymanie (z możliwym nawrotem)."
+        },
+        {
+          "id": "add-10",
+          "front": "TTM – prekontemplacja",
+          "back": "Osoba nie planuje zmiany w dającej się przewidzieć przyszłości (zwykle: najbliższych 6 miesięcy) i często nie widzi problemu; pomaga budowanie relacji, rzetelna informacja i niekonfrontacyjna rozmowa."
+        },
+        {
+          "id": "add-11",
+          "front": "TTM – kontemplacja",
+          "back": "Osoba dostrzega problem i rozważa zmianę, ale jest ambiwalentna – widzi zarówno korzyści, jak i koszty zmiany; pomocne jest badanie ambiwalencji i wzmacnianie motywacji."
+        },
+        {
+          "id": "add-12",
+          "front": "TTM – przygotowanie",
+          "back": "Osoba zamierza podjąć działanie w najbliższym czasie (zwykle w ciągu miesiąca) i często robi pierwsze kroki; pomaga wspólne tworzenie konkretnego planu zmiany."
+        },
+        {
+          "id": "add-13",
+          "front": "TTM – działanie i utrzymanie",
+          "back": "W działaniu osoba aktywnie zmienia zachowanie; w utrzymaniu (po ok. 6 miesiącach) utrwala zmianę i zapobiega nawrotom. Wsparcie skupia się na umiejętnościach radzenia sobie i wzmacnianiu efektów."
+        },
+        {
+          "id": "add-14",
+          "front": "Nawrót w TTM",
+          "back": "Nawrót traktuje się jako częstą część procesu zmiany, a nie porażkę; osoba może wrócić do wcześniejszego etapu i wykorzystać doświadczenie w kolejnej próbie."
+        },
+        {
+          "id": "add-15",
+          "front": "Model zapobiegania nawrotom (RP) – autorzy",
+          "back": "G. Alan Marlatt i Judith Gordon. Model poznawczo-behawioralny: nawrót wynika z interakcji sytuacji wysokiego ryzyka, umiejętności radzenia sobie, poczucia własnej skuteczności i oczekiwań wobec substancji."
+        },
+        {
+          "id": "add-16",
+          "front": "Wpadka (lapse) a nawrót (relapse)",
+          "back": "Wpadka to pojedynczy epizod użycia po okresie abstynencji lub ograniczenia; nawrót to powrót do wcześniejszego, problemowego wzorca. Odpowiednia reakcja na wpadkę może zapobiec nawrotowi."
+        },
+        {
+          "id": "add-17",
+          "front": "Efekt naruszenia abstynencji (AVE)",
+          "back": "Opisana przez Marlatta reakcja na wpadkę: poczucie winy i przypisywanie jej stałym, wewnętrznym przyczynom („jestem słaby, nie dam rady”), co zwiększa ryzyko przejścia wpadki w nawrót."
+        },
+        {
+          "id": "add-18",
+          "front": "Sytuacje wysokiego ryzyka – najczęstsze kategorie wg Marlatta",
+          "back": "Negatywne stany emocjonalne, konflikty interpersonalne i presja społeczna; do innych należą m.in. pozytywne emocje, testowanie kontroli i głód."
+        },
+        {
+          "id": "add-19",
+          "front": "Pozornie nieistotne decyzje",
+          "back": "Drobne, z pozoru niezwiązane z używaniem wybory (np. droga do domu obok dawnego miejsca picia), które stopniowo zbliżają osobę do sytuacji wysokiego ryzyka."
+        },
+        {
+          "id": "add-20",
+          "front": "Poczucie własnej skuteczności w zapobieganiu nawrotom",
+          "back": "Pojęcie Alberta Bandury: przekonanie osoby, że poradzi sobie w konkretnej trudnej sytuacji; wyższe poczucie skuteczności wiąże się z mniejszym ryzykiem nawrotu."
+        },
+        {
+          "id": "add-21",
+          "front": "Sygnały ostrzegawcze nawrotu – czyj model?",
+          "back": "Terence Gorski (model CENAPS) opisał nawrót jako proces, w którym zmiany w myśleniu, emocjach i zachowaniu poprzedzają powrót do używania; uczy się je rozpoznawać i przerywać."
+        },
+        {
+          "id": "add-22",
+          "front": "MBRP – czym jest?",
+          "back": "Mindfulness-Based Relapse Prevention (Sarah Bowen, Neha Chawla, G. Alan Marlatt) łączy zapobieganie nawrotom z praktyką uważności, ucząc obserwowania głodu i emocji bez automatycznego reagowania."
+        },
+        {
+          "id": "add-23",
+          "front": "Uzależnienia behawioralne w ICD-11",
+          "back": "W grupie zaburzeń związanych z zachowaniami nałogowymi ICD-11 wyróżnia zaburzenie hazardowe i zaburzenie związane z graniem (gaming disorder)."
+        },
+        {
+          "id": "add-24",
+          "front": "Inne zachowania opisywane jako uzależnienia behawioralne",
+          "back": "Np. problemowe korzystanie z internetu i mediów społecznościowych, kompulsywne kupowanie czy praca; nie mają odrębnej kategorii w ICD-11, a kompulsywne zachowania seksualne sklasyfikowano tam jako zaburzenie kontroli impulsów."
+        },
+        {
+          "id": "add-25",
+          "front": "Model Minnesota",
+          "back": "Model terapii uzależnień łączący profesjonalną terapię (głównie grupową) z programem 12 kroków; celem jest abstynencja, a osoba jest zachęcana do udziału we wspólnotach samopomocowych."
+        },
+        {
+          "id": "add-26",
+          "front": "Wspólnoty samopomocowe – przykład i początek",
+          "back": "Anonimowi Alkoholicy powstali w 1935 r. w USA; opierają się na programie 12 kroków i wzajemnym wsparciu. Podobne wspólnoty działają dla innych uzależnień (np. NA, AH) i dla bliskich (Al-Anon)."
+        },
+        {
+          "id": "add-27",
+          "front": "Podwójna diagnoza",
+          "back": "Współwystępowanie zaburzeń związanych z używaniem substancji i innych zaburzeń psychicznych (np. depresji, lęku); wymaga zintegrowanej, skoordynowanej pomocy."
+        },
+        {
+          "id": "add-28",
+          "front": "Ograniczanie picia jako cel pracy",
+          "back": "Dla części osób (zwłaszcza bez uzależnienia o dużym nasileniu) celem może być ograniczenie i kontrolowanie picia zamiast pełnej abstynencji; cel ustala się indywidualnie, wspólnie ze specjalistą."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-law",
+      "title": "Prawo – polskie ramy prawne",
+      "module": "law",
+      "cards": [
+        {
+          "id": "law-01",
+          "front": "Ustawa o wychowaniu w trzeźwości i przeciwdziałaniu alkoholizmowi – data",
+          "back": "Ustawa z 26 października 1982 r.; reguluje m.in. profilaktykę i rozwiązywanie problemów alkoholowych, zasady sprzedaży i reklamy alkoholu oraz obowiązek leczenia."
+        },
+        {
+          "id": "law-02",
+          "front": "Ustawa o przeciwdziałaniu narkomanii – data",
+          "back": "Ustawa z 29 lipca 2005 r.; reguluje profilaktykę, leczenie, rehabilitację i ograniczanie szkód, a także kontrolę substancji i odpowiedzialność karną."
+        },
+        {
+          "id": "law-03",
+          "front": "Ustawa o wspieraniu i resocjalizacji nieletnich – kiedy weszła w życie?",
+          "back": "1 września 2022 r. Zastąpiła ustawę z 1982 r. o postępowaniu w sprawach nieletnich."
+        },
+        {
+          "id": "law-04",
+          "front": "Ustawa o wspieraniu i resocjalizacji nieletnich – zakres podmiotowy",
+          "back": "Dotyczy m.in. zapobiegania i zwalczania demoralizacji osób poniżej 18 lat oraz postępowania w sprawach o czyny karalne popełnione przez osoby między 10. a 17. rokiem życia (przed ukończeniem 17 lat)."
+        },
+        {
+          "id": "law-05",
+          "front": "Środki wobec nieletnich – przykłady",
+          "back": "Np. upomnienie, zobowiązanie do określonego zachowania, nadzór odpowiedzialny rodziców, nadzór kuratora, umieszczenie w MOW, a jako środek poprawczy – umieszczenie w zakładzie poprawczym."
+        },
+        {
+          "id": "law-06",
+          "front": "Ustawa o przeciwdziałaniu przemocy domowej",
+          "back": "Ustawa z 29 lipca 2005 r., która po nowelizacji z 2023 r. zmieniła nazwę (wcześniej: o przeciwdziałaniu przemocy w rodzinie) i poszerzyła definicję przemocy, m.in. o przemoc ekonomiczną i cyberprzemoc."
+        },
+        {
+          "id": "law-07",
+          "front": "Procedura „Niebieskie Karty”",
+          "back": "Procedura podejmowania interwencji w przypadku uzasadnionego podejrzenia przemocy domowej; wszczyna ją przedstawiciel jednej z uprawnionych służb przez wypełnienie formularza „Niebieska Karta – A”."
+        },
+        {
+          "id": "law-08",
+          "front": "Kto może wszcząć procedurę „Niebieskie Karty”?",
+          "back": "Przedstawiciele: jednostek organizacyjnych pomocy społecznej, gminnych komisji rozwiązywania problemów alkoholowych, Policji, oświaty i ochrony zdrowia."
+        },
+        {
+          "id": "law-09",
+          "front": "Zespół interdyscyplinarny i grupa diagnostyczno-pomocowa",
+          "back": "Zespół interdyscyplinarny powołuje gmina do przeciwdziałania przemocy domowej; w konkretnych sprawach działają grupy diagnostyczno-pomocowe (od 2023 r. w miejsce grup roboczych)."
+        },
+        {
+          "id": "law-10",
+          "front": "Środki chroniące osobę doznającą przemocy domowej – przykłady",
+          "back": "Np. nakaz natychmiastowego opuszczenia wspólnie zajmowanego mieszkania i zakaz zbliżania się, które może wydać Policja (lub Żandarmeria Wojskowa), a następnie rozpatruje sąd."
+        },
+        {
+          "id": "law-11",
+          "front": "KCPU – co to za instytucja i od kiedy?",
+          "back": "Krajowe Centrum Przeciwdziałania Uzależnieniom, działające od 1 stycznia 2022 r.; przejęło zadania PARPA i Krajowego Biura ds. Przeciwdziałania Narkomanii i odpowiada za politykę wobec uzależnień od substancji i behawioralnych."
+        },
+        {
+          "id": "law-12",
+          "front": "PARPA i KBPN",
+          "back": "Państwowa Agencja Rozwiązywania Problemów Alkoholowych i Krajowe Biuro ds. Przeciwdziałania Narkomanii – instytucje centralne zlikwidowane z końcem 2021 r., których zadania przejęło KCPU."
+        },
+        {
+          "id": "law-13",
+          "front": "GKRPA – zadania",
+          "back": "Gminna komisja rozwiązywania problemów alkoholowych inicjuje działania profilaktyczne, opiniuje wydawanie zezwoleń na sprzedaż alkoholu pod kątem zgodności z uchwałami rady gminy i podejmuje czynności zmierzające do orzeczenia obowiązku leczenia."
+        },
+        {
+          "id": "law-14",
+          "front": "Gminny program profilaktyki i rozwiązywania problemów alkoholowych – finansowanie",
+          "back": "Gmina realizuje go jako zadanie własne; finansowany jest z opłat za korzystanie z zezwoleń na sprzedaż napojów alkoholowych."
+        },
+        {
+          "id": "law-15",
+          "front": "Obowiązek poddania się leczeniu – wobec kogo?",
+          "back": "Wobec osób, które w związku z nadużywaniem alkoholu powodują rozkład życia rodzinnego, demoralizację małoletnich, uchylają się od pracy albo systematycznie zakłócają spokój lub porządek publiczny."
+        },
+        {
+          "id": "law-16",
+          "front": "Obowiązek poddania się leczeniu – kto orzeka i na czyj wniosek?",
+          "back": "Orzeka sąd rejonowy właściwy dla miejsca zamieszkania osoby, zwykle na wniosek gminnej komisji rozwiązywania problemów alkoholowych lub prokuratora, z udziałem biegłych."
+        },
+        {
+          "id": "law-17",
+          "front": "Sprzedaż alkoholu – podstawowe zakazy",
+          "back": "Zabroniona jest sprzedaż i podawanie napojów alkoholowych osobom poniżej 18 lat, osobom, których zachowanie wskazuje na stan nietrzeźwości, oraz na kredyt lub pod zastaw."
+        },
+        {
+          "id": "law-18",
+          "front": "Reklama alkoholu w Polsce",
+          "back": "Reklama i promocja napojów alkoholowych jest co do zasady zakazana, z wyjątkiem piwa, którego reklama jest dopuszczalna przy spełnieniu ustawowych ograniczeń."
+        },
+        {
+          "id": "law-19",
+          "front": "Posiadanie środków odurzających",
+          "back": "Ustawa o przeciwdziałaniu narkomanii penalizuje posiadanie środków odurzających i substancji psychotropowych; w określonych sytuacjach (np. nieznaczna ilość na własny użytek) postępowanie może zostać umorzone."
+        },
+        {
+          "id": "law-20",
+          "front": "„Leczenie zamiast karania” w ustawie o przeciwdziałaniu narkomanii",
+          "back": "Ustawa przewiduje rozwiązania, które pozwalają osobie uzależnionej, wobec której toczy się postępowanie, podjąć leczenie, co może wpłynąć na tok postępowania, np. jego zawieszenie."
+        },
+        {
+          "id": "law-21",
+          "front": "Ustawa o kuratorach sądowych",
+          "back": "Ustawa z 27 lipca 2001 r. określa organizację kuratorskiej służby sądowej oraz prawa i obowiązki kuratorów rodzinnych i dla dorosłych."
+        },
+        {
+          "id": "law-22",
+          "front": "Kodeks karny wykonawczy – co reguluje?",
+          "back": "Wykonywanie orzeczeń w sprawach karnych, m.in. kary pozbawienia wolności (w tym systemy jej odbywania), kary ograniczenia wolności oraz dozoru i pomocy postpenitencjarnej."
+        },
+        {
+          "id": "law-23",
+          "front": "Dozór elektroniczny",
+          "back": "Sposób wykonywania kary pozbawienia wolności (w określonych przypadkach) poza zakładem karnym, w miejscu pobytu skazanego, z elektroniczną kontrolą jego przebywania."
+        },
+        {
+          "id": "law-24",
+          "front": "Ustawa o pomocy społecznej",
+          "back": "Ustawa z 12 marca 2004 r.; określa zadania i formy pomocy społecznej oraz instytucje, m.in. ośrodki pomocy społecznej (gmina) i powiatowe centra pomocy rodzinie (powiat)."
+        },
+        {
+          "id": "law-25",
+          "front": "Ustawa o ochronie zdrowia psychicznego",
+          "back": "Ustawa z 19 sierpnia 1994 r.; reguluje m.in. zasady udzielania pomocy psychiatrycznej, w tym przyjęcia do szpitala bez zgody w sytuacjach określonych w ustawie."
+        },
+        {
+          "id": "law-26",
+          "front": "Standardy ochrony małoletnich",
+          "back": "Po nowelizacji z 2023 r. szkoły, placówki i inne podmioty pracujące z dziećmi mają obowiązek wprowadzić standardy ochrony małoletnich przed krzywdzeniem (od 2024 r.)."
+        },
+        {
+          "id": "law-27",
+          "front": "Wymiar sprawiedliwości wobec nieletnich – jaki sąd?",
+          "back": "Sprawy nieletnich rozpoznaje sąd rodzinny (wydział rodzinny i nieletnich sądu rejonowego)."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-mi",
+      "title": "Dialog motywujący (MI)",
+      "module": "mi",
+      "cards": [
+        {
+          "id": "mi-01",
+          "front": "Dialog motywujący – autorzy",
+          "back": "William R. Miller i Stephen Rollnick."
+        },
+        {
+          "id": "mi-02",
+          "front": "Dialog motywujący – definicja",
+          "back": "Oparty na współpracy, ukierunkowany na cel styl rozmowy, który zwraca szczególną uwagę na język zmiany i wzmacnia osobistą motywację oraz zaangażowanie w zmianę, wydobywając własne powody osoby."
+        },
+        {
+          "id": "mi-03",
+          "front": "Duch MI – elementy",
+          "back": "Partnerstwo, akceptacja, współczucie (troska o dobro osoby) i wydobywanie (ewokacja); w czwartym wydaniu (2023) wydobywanie zastąpiono wzmacnianiem (empowerment)."
+        },
+        {
+          "id": "mi-04",
+          "front": "Partnerstwo w duchu MI",
+          "back": "Praca „z” osobą, a nie „na” niej: praktyk i podopieczny są ekspertami – praktyk w zakresie wiedzy, podopieczny w zakresie własnego życia."
+        },
+        {
+          "id": "mi-05",
+          "front": "Akceptacja w duchu MI – cztery aspekty",
+          "back": "Uznanie bezwarunkowej wartości człowieka, trafna empatia, wspieranie autonomii i dowartościowanie (docenianie mocnych stron i wysiłków)."
+        },
+        {
+          "id": "mi-06",
+          "front": "Wydobywanie (ewokacja)",
+          "back": "Zakłada, że motywacja i zasoby do zmiany są już w osobie; zadaniem praktyka jest je przywołać, zamiast wkładać własne argumenty."
+        },
+        {
+          "id": "mi-07",
+          "front": "Cztery procesy MI",
+          "back": "Angażowanie (budowanie relacji), ukierunkowanie (ustalenie celu rozmowy), wywoływanie (wydobywanie motywacji do zmiany) i planowanie (budowanie zobowiązania i planu)."
+        },
+        {
+          "id": "mi-08",
+          "front": "OARS – rozwinięcie",
+          "back": "Pytania otwarte (Open questions), dowartościowanie (Affirmations), odzwierciedlenia (Reflections) i podsumowania (Summaries) – podstawowe umiejętności MI."
+        },
+        {
+          "id": "mi-09",
+          "front": "Pytania otwarte",
+          "back": "Pytania zachęcające do szerszej wypowiedzi i refleksji (np. „Co sprawia, że myślisz o zmianie?”), w odróżnieniu od zamkniętych, na które odpowiada się „tak/nie” lub krótko."
+        },
+        {
+          "id": "mi-10",
+          "front": "Dowartościowanie (afirmacja)",
+          "back": "Szczere docenienie konkretnych mocnych stron, wartości lub wysiłków osoby (np. „Mimo trudnego tygodnia przyszedłeś – to pokazuje, że ci zależy”), a nie ogólna pochwała."
+        },
+        {
+          "id": "mi-11",
+          "front": "Odzwierciedlenie proste a złożone",
+          "back": "Proste powtarza lub lekko parafrazuje wypowiedź; złożone dodaje znaczenie, np. nazywa emocję lub domyślny sens, i zwykle bardziej posuwa rozmowę naprzód."
+        },
+        {
+          "id": "mi-12",
+          "front": "Odzwierciedlenie dwustronne",
+          "back": "Odzwierciedlenie obu stron ambiwalencji, np. „Z jednej strony picie pomaga ci się odprężyć, a z drugiej martwisz się o zdrowie”; najlepiej kończyć stroną zmiany."
+        },
+        {
+          "id": "mi-13",
+          "front": "Odzwierciedlenie wzmocnione",
+          "back": "Odzwierciedlenie wypowiedzi podtrzymującej status quo w nieco przesadzonej formie, wypowiedziane bez ironii, co często skłania osobę do zrównoważenia stanowiska i wypowiedzi o zmianie."
+        },
+        {
+          "id": "mi-14",
+          "front": "Rodzaje podsumowań w MI",
+          "back": "Zbierające (gromadzą kilka wypowiedzi), łączące (wiążą aktualną wypowiedź z wcześniejszą) i przejściowe (zamykają etap rozmowy i przechodzą do kolejnego)."
+        },
+        {
+          "id": "mi-15",
+          "front": "Mowa zmiany – DARN-CAT",
+          "back": "Przygotowawcza: Desire (pragnienie), Ability (możliwość), Reasons (powody), Need (potrzeba); mobilizująca: Commitment (zobowiązanie), Activation (gotowość do działania), Taking steps (podejmowane kroki)."
+        },
+        {
+          "id": "mi-16",
+          "front": "Mowa przygotowawcza a mobilizująca",
+          "back": "Przygotowawcza wyraża motywację („chciałbym”, „mógłbym”, „powinienem”); mobilizująca wskazuje na rozpoczynanie działania („zrobię”, „jestem gotów”, „w tym tygodniu już…”)."
+        },
+        {
+          "id": "mi-17",
+          "front": "Mowa podtrzymania (sustain talk)",
+          "back": "Wypowiedzi przemawiające za pozostawieniem zachowania bez zmian (np. „Picie mi nie szkodzi”); jest naturalną częścią ambiwalencji, a nie oporem do przełamywania."
+        },
+        {
+          "id": "mi-18",
+          "front": "Niezgoda (discord)",
+          "back": "Napięcie w relacji między praktykiem a osobą (np. spieranie się, przerywanie, wycofanie); w nowszych wydaniach MI zastąpiła część znaczenia pojęcia „opór” i jest sygnałem dla praktyka, by zmienić podejście."
+        },
+        {
+          "id": "mi-19",
+          "front": "Odruch naprawiania (righting reflex)",
+          "back": "Naturalna chęć pomagającego, by przekonywać, doradzać i „naprawiać” problem; zwykle wywołuje u osoby ambiwalentnej obronę statusu quo, dlatego w MI się go powstrzymuje."
+        },
+        {
+          "id": "mi-20",
+          "front": "Linijki (skale ważności i pewności)",
+          "back": "Pytania o ocenę w skali 0–10, jak ważna jest zmiana i jak bardzo osoba jest pewna, że da radę, a następnie: „Dlaczego tyle, a nie mniej?” i „Co pomogłoby podnieść ocenę o punkt?”."
+        },
+        {
+          "id": "mi-21",
+          "front": "Wywołaj – Przekaż – Wywołaj (E-P-E)",
+          "back": "Sposób przekazywania informacji w MI: zapytaj, co osoba wie lub chce wiedzieć, przekaż informację (za zgodą, neutralnie), zapytaj, co o niej myśli."
+        },
+        {
+          "id": "mi-22",
+          "front": "Ambiwalencja w MI",
+          "back": "Jednoczesne odczuwanie motywacji za zmianą i przeciw niej; traktowana jako normalny etap na drodze do zmiany, który warto badać, a nie zwalczać."
+        },
+        {
+          "id": "mi-23",
+          "front": "Rozwijanie rozbieżności",
+          "back": "Pomaganie osobie dostrzec różnicę między obecnym zachowaniem a jej ważnymi wartościami i celami, co może wzmacniać motywację do zmiany."
+        },
+        {
+          "id": "mi-24",
+          "front": "Cztery zasady MI z wcześniejszych wydań",
+          "back": "Wyrażanie empatii, rozwijanie rozbieżności, „płynięcie z oporem” (unikanie argumentowania) i wspieranie poczucia własnej skuteczności."
+        },
+        {
+          "id": "mi-25",
+          "front": "Pułapki w rozmowie wg MI – przykłady",
+          "back": "Pułapka pytań i odpowiedzi, eksperta, etykietowania, przedwczesnego skupienia, obwiniania i pogawędki – utrudniają zaangażowanie osoby."
+        },
+        {
+          "id": "mi-26",
+          "front": "Techniki wywoływania mowy zmiany – przykłady",
+          "back": "Pytania ewokujące, linijki, pytania o skrajności („Co najgorszego mogłoby się stać?”), patrzenie wstecz i w przyszłość oraz badanie wartości i celów."
+        },
+        {
+          "id": "mi-27",
+          "front": "MITI",
+          "back": "Motivational Interviewing Treatment Integrity – narzędzie do kodowania nagrań rozmów, służące ocenie wierności MI i rozwijaniu umiejętności praktyka."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-family",
+      "title": "Rodzina – współuzależnienie, role, narzędzia",
+      "module": "family",
+      "cards": [
+        {
+          "id": "fam-01",
+          "front": "Współuzależnienie",
+          "back": "Utrwalony wzorzec myśli, emocji i zachowań osoby bliskiej, który rozwija się w wyniku długotrwałego życia z osobą uzależnioną (np. nadmierna kontrola, przejmowanie odpowiedzialności, zaniedbywanie siebie); rozumiane jako przystosowanie do przewlekłego stresu, a nie choroba."
+        },
+        {
+          "id": "fam-02",
+          "front": "Typowe zachowania bliskich osoby z problemem alkoholowym",
+          "back": "Kontrolowanie picia, ukrywanie problemu przed otoczeniem, usprawiedliwianie, przejmowanie obowiązków, łagodzenie skutków picia – co może nieświadomie podtrzymywać problem."
+        },
+        {
+          "id": "fam-03",
+          "front": "Role dzieci w rodzinie z problemem alkoholowym – autorka",
+          "back": "Sharon Wegscheider-Cruse: bohater rodziny, kozioł ofiarny, zagubione dziecko i maskotka; obok nich opisywana jest rola „wspierającego” (często partnera osoby pijącej)."
+        },
+        {
+          "id": "fam-04",
+          "front": "Rola bohatera rodziny",
+          "back": "Zwykle najstarsze dziecko: odpowiedzialne, osiągające sukcesy, przynosi rodzinie powód do dumy, ale często kosztem własnych potrzeb i emocji."
+        },
+        {
+          "id": "fam-05",
+          "front": "Rola kozła ofiarnego",
+          "back": "Dziecko, które przez trudne zachowania (bunt, problemy w szkole) skupia na sobie uwagę i napięcie rodziny, odwracając ją od problemu picia."
+        },
+        {
+          "id": "fam-06",
+          "front": "Rola zagubionego dziecka",
+          "back": "Dziecko wycofane, ciche, „niewidoczne”, które unika konfliktów i nie sprawia kłopotów, ale bywa osamotnione i pomijane."
+        },
+        {
+          "id": "fam-07",
+          "front": "Rola maskotki",
+          "back": "Dziecko rozładowujące napięcie humorem i błazenadą; skupia uwagę i łagodzi atmosferę, ale może mieć trudność z wyrażaniem prawdziwych uczuć."
+        },
+        {
+          "id": "fam-08",
+          "front": "Zasady „nie mów, nie ufaj, nie czuj” – autorka",
+          "back": "Claudia Black opisała te niepisane reguły rodzin z problemem alkoholowym, które uczą dzieci milczenia o problemie, nieufności i tłumienia uczuć."
+        },
+        {
+          "id": "fam-09",
+          "front": "DDA",
+          "back": "Dorosłe dzieci z rodzin z problemem alkoholowym – osoby, u których doświadczenia z dzieciństwa mogą wpływać na dorosłe funkcjonowanie; to nie diagnoza. Opisała je m.in. Janet Woititz."
+        },
+        {
+          "id": "fam-10",
+          "front": "CRAFT – rozwinięcie i autorzy",
+          "back": "Community Reinforcement and Family Training – podejście opracowane przez Roberta J. Meyersa i współpracowników (m.in. Jane Ellen Smith, Brendę L. Wolfe) dla bliskich osób, które nie chcą podjąć leczenia."
+        },
+        {
+          "id": "fam-11",
+          "front": "CRAFT – cele",
+          "back": "Poprawa samopoczucia i funkcjonowania bliskich, ograniczenie używania substancji przez osobę uzależnioną oraz zwiększenie szans, że podejmie ona leczenie."
+        },
+        {
+          "id": "fam-12",
+          "front": "CRAFT – główne techniki",
+          "back": "Analiza funkcjonalna używania, pozytywna komunikacja, nagradzanie zachowań bez substancji, pozwalanie na naturalne konsekwencje używania, dbanie o własne potrzeby, plan bezpieczeństwa i wybór momentu na zaproszenie do leczenia."
+        },
+        {
+          "id": "fam-13",
+          "front": "CRAFT a interwencja konfrontacyjna (Johnsona)",
+          "back": "W badaniach porównawczych CRAFT częściej prowadził do podjęcia leczenia niż interwencja konfrontacyjna czy kierowanie bliskich do Al-Anon, a jest mniej obciążający dla relacji."
+        },
+        {
+          "id": "fam-14",
+          "front": "Bezpieczeństwo w pracy z rodziną",
+          "back": "Gdy w rodzinie występuje przemoc, priorytetem jest bezpieczeństwo osób doznających przemocy (plan bezpieczeństwa, procedura „Niebieskie Karty”), przed pracą nad motywacją osoby pijącej."
+        },
+        {
+          "id": "fam-15",
+          "front": "Model stres – napięcie – radzenie sobie – wsparcie",
+          "back": "Model Jima Orforda i współpracowników: życie z bliskim używającym substancji jest źródłem stresu i napięcia, a bliscy radzą sobie przez zaangażowanie, tolerowanie lub wycofanie; wsparcie społeczne łagodzi skutki."
+        },
+        {
+          "id": "fam-16",
+          "front": "Metoda Pięciu Kroków (5-Step Method)",
+          "back": "Krótka interwencja dla członków rodziny (Copello, Orford, Velleman i in.): wysłuchanie, przekazanie informacji, omówienie sposobów radzenia sobie, rozwijanie wsparcia społecznego i ustalenie dalszej pomocy."
+        },
+        {
+          "id": "fam-17",
+          "front": "Genogram",
+          "back": "Graficzny zapis struktury rodziny obejmujący zwykle co najmniej trzy pokolenia, wraz z ważnymi wydarzeniami i relacjami; standard zapisu spopularyzowały Monica McGoldrick i Randy Gerson."
+        },
+        {
+          "id": "fam-18",
+          "front": "Genogram – podstawowe symbole",
+          "back": "Kwadrat oznacza mężczyznę, koło kobietę, znak X w symbolu – zgon; poziome linie łączą partnerów, pionowe prowadzą do dzieci, a specjalne linie opisują jakość relacji (np. bliskość, konflikt)."
+        },
+        {
+          "id": "fam-19",
+          "front": "Ekomapa – autorka i cel",
+          "back": "Ann Hartman (1978). Przedstawia rodzinę na tle jej otoczenia – instytucji, osób i grup – pokazując źródła wsparcia i napięć oraz przepływ zasobów."
+        },
+        {
+          "id": "fam-20",
+          "front": "Ekomapa – oznaczenia linii",
+          "back": "Linia ciągła oznacza silną, wspierającą więź, przerywana – słabą, a linia przekreślana kreskami – relację napiętą lub konfliktową; strzałki pokazują kierunek przepływu energii lub zasobów."
+        },
+        {
+          "id": "fam-21",
+          "front": "Podejście systemowe do rodziny",
+          "back": "Rodzinę traktuje się jako system wzajemnie powiązanych osób; problem jednego członka wpływa na wszystkich i może pełnić funkcję w utrzymaniu równowagi systemu."
+        },
+        {
+          "id": "fam-22",
+          "front": "Homeostaza rodzinna – autor pojęcia",
+          "back": "Don D. Jackson. Tendencja rodziny do utrzymywania dotychczasowej równowagi, nawet jeśli jest ona dysfunkcyjna, co może utrudniać zmianę."
+        },
+        {
+          "id": "fam-23",
+          "front": "Granice w rodzinie – autor i rodzaje",
+          "back": "Salvador Minuchin (terapia strukturalna): granice mogą być wyraźne, sztywne (sprzyjają oddzieleniu) lub rozmyte (sprzyjają uwikłaniu)."
+        },
+        {
+          "id": "fam-24",
+          "front": "Parentyfikacja",
+          "back": "Odwrócenie ról, w którym dziecko przejmuje obowiązki i odpowiedzialność emocjonalną właściwą dorosłym; pojęcie wprowadził Iván Böszörményi-Nagy."
+        },
+        {
+          "id": "fam-25",
+          "front": "Model kołowy (Circumplex) – autor i wymiary",
+          "back": "David H. Olson. Opisuje funkcjonowanie rodziny w wymiarach spójności i elastyczności, z komunikacją jako wymiarem ułatwiającym."
+        },
+        {
+          "id": "fam-26",
+          "front": "Wsparcie samopomocowe dla rodzin",
+          "back": "Al-Anon – wspólnota dla bliskich osób z problemem alkoholowym; Alateen – dla nastolatków. Oferują wsparcie niezależnie od tego, czy osoba pijąca podejmie leczenie."
+        },
+        {
+          "id": "fam-27",
+          "front": "Czynniki chroniące dzieci w rodzinach z problemem alkoholowym",
+          "back": "M.in. co najmniej jedna stabilna, wspierająca osoba dorosła, przewidywalne rytuały rodzinne, rzetelna informacja o problemie dostosowana do wieku oraz wsparcie poza domem (szkoła, świetlica, grupa)."
+        }
+      ],
+      "builtIn": true
+    }
+  ]
+}

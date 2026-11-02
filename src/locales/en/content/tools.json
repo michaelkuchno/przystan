@@ -1,0 +1,656 @@
+{
+  "intros": {
+    "urgeSurfing": {
+      "youth": "A craving is like a wave – it rises, peaks and falls. Let's ride it out together, breathing calmly.",
+      "adult": "A craving is like a wave: it builds, peaks and fades. This exercise helps you observe it without acting on it."
+    },
+    "readinessRuler": {
+      "youth": "Mark on the ruler from 0 to 10 where you are. There are no wrong answers.",
+      "adult": "Please mark on a scale from 0 to 10 how you rate the importance of change, your confidence and your readiness. Any answer is fine."
+    },
+    "decisionalBalance": {
+      "youth": "Let's look at what you get from what you do now and what a change could give you. Write down everything that comes to mind.",
+      "adult": "Let's look together at the benefits and costs of the current situation and of a possible change. It is worth writing everything down, including what speaks against change."
+    },
+    "chainAnalysis": {
+      "youth": "Let's break one situation into pieces: what happened, what you thought, what you felt, what you did and what came of it.",
+      "adult": "We will reconstruct one specific situation step by step to see how the links connect and where a different response was possible."
+    },
+    "halt": {
+      "youth": "Quick check: are you hungry, angry, lonely or tired right now? Those are moments when bad decisions come more easily.",
+      "adult": "A short review of four states – hunger, anger, loneliness and tiredness – that increase the risk of relapse. It is worth checking them regularly."
+    },
+    "thoughtRecord": {
+      "youth": "Sometimes your mind serves up thoughts that aren't quite true. Let's write one down and check it like a detective.",
+      "adult": "A thought record helps notice automatic thoughts, name their distortions and find a more balanced view of the situation."
+    },
+    "scaling": {
+      "youth": "Imagine a scale from 0 to 10. Where are you today and what would help you move up even one step?",
+      "adult": "Scaling questions help notice what already works and plan small steps. We focus on solutions rather than the problem."
+    },
+    "triggerMap": {
+      "youth": "Mark what makes you want to use or do something you regret later: people, places, feelings.",
+      "adult": "The trigger map shows the people, places, situations and states that increase risk, and helps plan how to deal with them."
+    },
+    "supportMap": {
+      "youth": "Who is on your side? Place the people and places that can help you – the closer to the centre, the closer to you.",
+      "adult": "The support map shows the people and institutions you can rely on, and where support is missing."
+    },
+    "grounding": {
+      "youth": "When your head is too full, your senses can help. Look around and count the things around you.",
+      "adult": "The 5-4-3-2-1 exercise helps bring you back to the present moment when strong anxiety, tension or craving appears."
+    },
+    "breathing": {
+      "youth": "Breathe with the circle: in as it grows, out as it shrinks. A few minutes is enough.",
+      "adult": "Calm, rhythmic breathing helps lower tension. Please choose a comfortable rhythm and breathe along with the animation."
+    },
+    "socialSkills": {
+      "youth": "Let's practise a tricky situation for pretend before it happens for real. Draw a card and give it a go.",
+      "adult": "Role-play allows you to practise difficult conversations in a safe setting. After each scene we discuss what worked."
+    }
+  },
+  "urgeSurfing": {
+    "steps": [
+      {
+        "youth": "Rate how strong the craving is right now – from 0 to 10.",
+        "adult": "Please rate the strength of the craving right now on a scale from 0 to 10."
+      },
+      {
+        "youth": "Sit comfortably and take a few calm breaths.",
+        "adult": "Please sit comfortably and take a few calm, deeper breaths."
+      },
+      {
+        "youth": "Where in your body do you feel the craving? Stomach, hands, throat?",
+        "adult": "Please notice where in your body you feel the craving."
+      },
+      {
+        "youth": "Look at the feeling with curiosity. How does it change? Growing, fading?",
+        "adult": "Please observe the sensation with curiosity, without judging – how it changes moment to moment."
+      },
+      {
+        "youth": "Imagine you're on a board riding this wave. You're not fighting it – just riding it.",
+        "adult": "Please imagine riding this wave. There is no need to fight it or give in to it."
+      },
+      {
+        "youth": "Keep breathing. The wave has a peak and then it always falls.",
+        "adult": "Please keep breathing calmly. Every wave peaks and then subsides."
+      },
+      {
+        "youth": "Rate the craving again – from 0 to 10. What do you notice?",
+        "adult": "Please rate the craving again on a 0–10 scale and say what you notice."
+      }
+    ]
+  },
+  "readiness": {
+    "importance": [
+      {
+        "youth": "Why did you pick that number and not a lower one, like 2?",
+        "adult": "Why that number and not a lower one, for example 2?"
+      },
+      {
+        "youth": "What would need to happen for this to matter even more to you?",
+        "adult": "What would need to happen for this change to become even more important to you?"
+      },
+      {
+        "youth": "What would get better if you pulled it off?",
+        "adult": "What would change for the better in your life if this change succeeded?"
+      }
+    ],
+    "confidence": [
+      {
+        "youth": "What puts you at that level and not lower?",
+        "adult": "What makes your confidence that high and not lower?"
+      },
+      {
+        "youth": "What helped you do something hard before?",
+        "adult": "What helped you manage a difficult change in the past?"
+      },
+      {
+        "youth": "What could raise your confidence by one point?",
+        "adult": "What could raise that rating by one point?"
+      }
+    ],
+    "readiness": [
+      {
+        "youth": "Why that number and not 0?",
+        "adult": "Why exactly that number and not zero?"
+      },
+      {
+        "youth": "What would your first small step be?",
+        "adult": "What could the first, smallest step be?"
+      },
+      {
+        "youth": "Who or what could help you with this?",
+        "adult": "Who or what could support you in this?"
+      }
+    ]
+  },
+  "decisionalBalance": {
+    "prompts": {
+      "prosChange": {
+        "youth": "What good could a change bring you?",
+        "adult": "What benefits could change bring?"
+      },
+      "consChange": {
+        "youth": "What might be hard, or what might you fear, if you change?",
+        "adult": "What difficulties or losses might come with change?"
+      },
+      "prosStatus": {
+        "youth": "What do you get from what you do now?",
+        "adult": "What does the current situation or behaviour give you?"
+      },
+      "consStatus": {
+        "youth": "What does what you do now cost you?",
+        "adult": "What costs do you bear in the current situation?"
+      }
+    }
+  },
+  "chainAnalysis": {
+    "prompts": {
+      "trigger": {
+        "youth": "What happened at the start? Where were you, who with?",
+        "adult": "What started the situation? Where were you and who were you with?"
+      },
+      "thoughts": {
+        "youth": "What went through your head?",
+        "adult": "What thoughts came up then?"
+      },
+      "emotions": {
+        "youth": "What did you feel? How strongly?",
+        "adult": "What emotions came up and how strong were they?"
+      },
+      "behaviour": {
+        "youth": "What did you do?",
+        "adult": "What did you do?"
+      },
+      "consequences": {
+        "youth": "What came of it – right away and later?",
+        "adult": "What were the consequences – short- and long-term?"
+      }
+    }
+  },
+  "halt": {
+    "items": {
+      "hungry": {
+        "question": {
+          "youth": "Are you hungry?",
+          "adult": "Are you hungry?"
+        },
+        "ideas": ["eat a small snack", "drink some water", "plan regular meals"]
+      },
+      "angry": {
+        "question": {
+          "youth": "Are you angry or annoyed?",
+          "adult": "Are you feeling anger or irritation?"
+        },
+        "ideas": [
+          "go for a walk or move about",
+          "do a breathing exercise",
+          "write down what upset you",
+          "talk to someone you trust"
+        ]
+      },
+      "lonely": {
+        "question": {
+          "youth": "Are you feeling lonely?",
+          "adult": "Are you feeling lonely?"
+        },
+        "ideas": [
+          "call or text someone close",
+          "go to a support group meeting",
+          "go somewhere with people"
+        ]
+      },
+      "tired": {
+        "question": {
+          "youth": "Are you tired?",
+          "adult": "Are you tired?"
+        },
+        "ideas": [
+          "rest for a few minutes",
+          "go to bed earlier",
+          "put off difficult decisions until later"
+        ]
+      }
+    }
+  },
+  "distortions": [
+    {
+      "id": "allOrNothing",
+      "name": "All-or-nothing thinking",
+      "description": "Seeing a situation in two extreme categories with no shades in between.",
+      "example": "“I smoked once, so it's all ruined.”"
+    },
+    {
+      "id": "overgeneralisation",
+      "name": "Overgeneralisation",
+      "description": "Drawing general conclusions from a single event.",
+      "example": "“I didn't get that job – nobody will ever hire me.”"
+    },
+    {
+      "id": "mentalFilter",
+      "name": "Mental filter",
+      "description": "Focusing only on the negatives and ignoring the positives.",
+      "example": "“The probation officer praised five things, but I only remember the one remark.”"
+    },
+    {
+      "id": "discountingPositive",
+      "name": "Discounting the positive",
+      "description": "Treating successes as luck or as not counting.",
+      "example": "“A month without drinking is nothing, anyone could do it.”"
+    },
+    {
+      "id": "mindReading",
+      "name": "Mind reading",
+      "description": "Assuming I know what others think of me.",
+      "example": "“Everyone in class thinks I'm a loser.”"
+    },
+    {
+      "id": "fortuneTelling",
+      "name": "Fortune telling",
+      "description": "Predicting a negative future as if it were certain.",
+      "example": "“I'll go back to using anyway, there's no point trying.”"
+    },
+    {
+      "id": "catastrophising",
+      "name": "Catastrophising",
+      "description": "Exaggerating consequences and expecting the worst.",
+      "example": "“If I'm late for my probation officer, I'll definitely go back to prison.”"
+    },
+    {
+      "id": "emotionalReasoning",
+      "name": "Emotional reasoning",
+      "description": "Treating a feeling as proof of how things really are.",
+      "example": "“I feel hopeless, so my situation is hopeless.”"
+    },
+    {
+      "id": "shouldStatements",
+      "name": "“Should” statements",
+      "description": "Rigid demands on oneself and others.",
+      "example": "“I should manage on my own without anyone's help.”"
+    },
+    {
+      "id": "labelling",
+      "name": "Labelling",
+      "description": "Attaching a global, negative label to oneself or others.",
+      "example": "“I'm a failure.”"
+    },
+    {
+      "id": "personalisation",
+      "name": "Personalisation",
+      "description": "Taking blame for things outside one's control.",
+      "example": "“My parents argue because I'm in the centre.”"
+    },
+    {
+      "id": "permissionGiving",
+      "name": "Permission-giving thoughts",
+      "description": "Thoughts that justify using a substance.",
+      "example": "“I deserve one beer after a week like this.”"
+    }
+  ],
+  "scaling": {
+    "miracle": {
+      "youth": "Imagine that tonight, while you're asleep, a miracle happens and the problem we're talking about disappears. You don't know it happened. How would you notice in the morning that something had changed?",
+      "adult": "Please imagine that tonight, while you are asleep, a miracle happens and the problem that brought you here is solved. Because you are asleep, you don't know it. What would be the first sign in the morning that something had changed?"
+    },
+    "followUps": [
+      {
+        "youth": "Who would notice first that something had changed? How?",
+        "adult": "Who around you would notice the change first, and how?"
+      },
+      {
+        "youth": "When was it even a little like that recently?",
+        "adult": "When did even part of that “miracle” last happen?"
+      },
+      {
+        "youth": "Where are you today on a scale from 0 to 10?",
+        "adult": "Where on a scale from 0 to 10 are you today?"
+      },
+      {
+        "youth": "What helped you get this far and not lower?",
+        "adult": "What made it that number and not lower?"
+      },
+      {
+        "youth": "What would be a small sign that you're one point higher?",
+        "adult": "What would be a small sign that you have moved one point up?"
+      }
+    ]
+  },
+  "triggerSuggestions": [
+    "stress at school or work",
+    "an argument at home",
+    "meeting friends you used with",
+    "a party or the weekend",
+    "boredom and no plans for free time",
+    "loneliness",
+    "getting money (payday, pocket money)",
+    "sadness or low mood",
+    "anger",
+    "tiredness and lack of sleep",
+    "a specific place (park, stairwell, bar)",
+    "music or films linked to using",
+    "a message or call from a dealer",
+    "celebrating a success",
+    "a pass or leave from the centre"
+  ],
+  "supportSuggestions": [
+    "mum or dad",
+    "brother or sister",
+    "partner",
+    "a friend",
+    "class teacher or school counsellor",
+    "therapist at the clinic",
+    "probation officer",
+    "social worker from the welfare centre",
+    "a support group (e.g. AA, NA)",
+    "coach or activity leader",
+    "a helpline",
+    "a faith leader or community"
+  ],
+  "grounding": {
+    "steps": [
+      {
+        "count": 5,
+        "sense": "see",
+        "prompt": {
+          "youth": "Name 5 things you can see.",
+          "adult": "Please name 5 things you can see."
+        }
+      },
+      {
+        "count": 4,
+        "sense": "touch",
+        "prompt": {
+          "youth": "Name 4 things you can touch.",
+          "adult": "Please name 4 things you can touch."
+        }
+      },
+      {
+        "count": 3,
+        "sense": "hear",
+        "prompt": {
+          "youth": "Name 3 sounds you can hear.",
+          "adult": "Please name 3 sounds you can hear."
+        }
+      },
+      {
+        "count": 2,
+        "sense": "smell",
+        "prompt": {
+          "youth": "Name 2 things you can smell.",
+          "adult": "Please name 2 things you can smell."
+        }
+      },
+      {
+        "count": 1,
+        "sense": "taste",
+        "prompt": {
+          "youth": "Name 1 thing you can taste.",
+          "adult": "Please name 1 thing you can taste."
+        }
+      }
+    ]
+  },
+  "breathing": {
+    "patterns": [
+      {
+        "id": "box",
+        "name": "Box breathing 4-4-4-4",
+        "inhale": 4,
+        "hold": 4,
+        "exhale": 4,
+        "holdAfter": 4
+      },
+      {
+        "id": "calm",
+        "name": "Calm out-breath 4-6",
+        "inhale": 4,
+        "hold": 0,
+        "exhale": 6,
+        "holdAfter": 0
+      },
+      {
+        "id": "478",
+        "name": "4-7-8 breathing",
+        "inhale": 4,
+        "hold": 7,
+        "exhale": 8,
+        "holdAfter": 0
+      },
+      {
+        "id": "simple",
+        "name": "Simple rhythm 3-3",
+        "inhale": 3,
+        "hold": 0,
+        "exhale": 3,
+        "holdAfter": 0
+      }
+    ]
+  },
+  "socialSkills": [
+    {
+      "id": "ss-party-refusal",
+      "skill": "refusal",
+      "title": "Saying no at a party",
+      "audience": "youth",
+      "situation": "You're at a friend's birthday party. Someone hands you a beer and says: “Come on, one won't hurt.”",
+      "roles": ["person saying no", "friend with the beer", "observer"],
+      "steps": [
+        "Say a clear “no” while looking the other person in the eye.",
+        "Give a short reason without over-explaining.",
+        "Suggest something else or change the subject.",
+        "If the pressure continues, walk away."
+      ],
+      "tips": [
+        "Keep your tone calm but firm.",
+        "You can repeat the same refusal like a “broken record”."
+      ]
+    },
+    {
+      "id": "ss-old-friend",
+      "skill": "refusal",
+      "title": "Meeting an old acquaintance",
+      "audience": "adult",
+      "situation": "A few days after leaving the centre you meet an acquaintance you used to drink with. He suggests: “Come on, let's celebrate you being back.”",
+      "roles": ["person after treatment", "old acquaintance", "observer"],
+      "steps": [
+        "Say a clear “no” while looking the other person in the eye.",
+        "Give a short reason without over-explaining.",
+        "Suggest something else or change the subject.",
+        "If the pressure continues, walk away."
+      ],
+      "tips": [
+        "Prepare one refusal sentence in advance.",
+        "You have the right not to explain your treatment."
+      ]
+    },
+    {
+      "id": "ss-vape-group",
+      "skill": "peerPressure",
+      "title": "Group pressure at break time",
+      "audience": "youth",
+      "situation": "At break a group of friends is vaping behind the school. They laugh that “only kids don't vape”.",
+      "roles": [
+        "person under pressure",
+        "two or three friends from the group",
+        "observer"
+      ],
+      "steps": [
+        "Notice that this is pressure, not your decision.",
+        "Reply briefly, with humour or calmly.",
+        "Look for an ally in the group.",
+        "Suggest another activity or walk away."
+      ],
+      "tips": [
+        "Most young people don't vape – pressure is often based on myths.",
+        "You don't have to convince anyone."
+      ]
+    },
+    {
+      "id": "ss-dare",
+      "skill": "peerPressure",
+      "title": "A dare at the centre",
+      "audience": "youth",
+      "situation": "In your group at the centre, others urge you to stay out overnight on your pass “for a laugh”.",
+      "roles": ["young person", "peers pushing", "observer"],
+      "steps": [
+        "Think about the consequences for you.",
+        "Say what matters to you (e.g. your next pass).",
+        "Refuse without insulting others.",
+        "Talk to a staff member if the pressure doesn't stop."
+      ],
+      "tips": [
+        "Remind yourself of your goal.",
+        "Courage also means being able to say “no”."
+      ]
+    },
+    {
+      "id": "ss-conflict-teacher",
+      "skill": "conflict",
+      "title": "Conflict with a teacher",
+      "audience": "youth",
+      "situation": "A teacher gave you a behaviour note for talking in class, which you think was unfair.",
+      "roles": ["pupil", "teacher", "observer"],
+      "steps": [
+        "Calm down before you start talking.",
+        "Ask to talk after class.",
+        "Explain how you see it using an “I” message.",
+        "Listen to the other side and look for a solution."
+      ],
+      "tips": [
+        "Avoid sarcasm and raising your voice.",
+        "The goal is a solution, not winning."
+      ]
+    },
+    {
+      "id": "ss-conflict-home",
+      "skill": "conflict",
+      "title": "Argument at home about money",
+      "audience": "adult",
+      "situation": "Your partner accuses you of spending money again without agreeing it first. You feel anger rising.",
+      "roles": ["person in the argument", "partner", "observer"],
+      "steps": [
+        "Notice the anger and take a break if needed.",
+        "Listen to the complaint and paraphrase it.",
+        "Say what you need without accusations.",
+        "Agree one specific rule for the future."
+      ],
+      "tips": [
+        "Don't discuss difficult issues under the influence.",
+        "A break isn't running away – come back to the conversation."
+      ]
+    },
+    {
+      "id": "ss-job-interview",
+      "skill": "jobInterview",
+      "title": "Job interview after release",
+      "audience": "adult",
+      "situation": "You're at a job interview at a warehouse. The employer asks about the gap in your employment over the last two years.",
+      "roles": ["candidate", "employer", "observer"],
+      "steps": [
+        "Greet the employer and introduce yourself briefly.",
+        "Answer about the gap briefly and honestly, without detail.",
+        "Move on to what you have learnt and what you can do.",
+        "Ask about the job details and say thank you."
+      ],
+      "tips": [
+        "Prepare two or three sentences about the gap in advance.",
+        "Highlight courses and experience gained during that time."
+      ]
+    },
+    {
+      "id": "ss-first-job",
+      "skill": "jobInterview",
+      "title": "First interview for a summer job",
+      "audience": "youth",
+      "situation": "You're applying for a summer job in a café. The manager asks why you want to work there.",
+      "roles": ["candidate", "manager", "observer"],
+      "steps": [
+        "Say hello and smile.",
+        "Say what you like and what you're good at.",
+        "Give an example of when you were responsible.",
+        "Ask about the working hours."
+      ],
+      "tips": [
+        "Practise your answers out loud in front of a mirror.",
+        "Arrive a few minutes early."
+      ]
+    },
+    {
+      "id": "ss-ask-help-school",
+      "skill": "askingForHelp",
+      "title": "Asking the school counsellor for help",
+      "audience": "youth",
+      "situation": "For weeks you've been worried about a friend who drinks a lot. You want to talk to the school counsellor.",
+      "roles": ["pupil", "school counsellor", "observer"],
+      "steps": [
+        "Choose a good moment and ask to talk.",
+        "Say specifically what worries you.",
+        "Ask what you can do.",
+        "Agree on what happens next."
+      ],
+      "tips": [
+        "Asking for help isn't snitching.",
+        "You can start with: “I've got something, I'm not sure how to say it.”"
+      ]
+    },
+    {
+      "id": "ss-ask-help-ops",
+      "skill": "askingForHelp",
+      "title": "Visiting the social welfare centre",
+      "audience": "adult",
+      "situation": "After release you have no money for food. You go to the social welfare centre for the first time.",
+      "roles": ["person seeking help", "social worker", "observer"],
+      "steps": [
+        "Introduce yourself and say why you've come.",
+        "Briefly describe your situation.",
+        "Ask which documents are needed.",
+        "Write down what was agreed and the next contact date."
+      ],
+      "tips": [
+        "Bring your ID and release certificate.",
+        "You have the right to ask until everything is clear."
+      ]
+    },
+    {
+      "id": "ss-criticism-staff",
+      "skill": "criticism",
+      "title": "Receiving criticism",
+      "audience": "both",
+      "situation": "A staff member or supervisor tells you your work was careless and needs redoing.",
+      "roles": [
+        "person receiving criticism",
+        "staff member/supervisor",
+        "observer"
+      ],
+      "steps": [
+        "Listen to the end without interrupting.",
+        "Ask what exactly needs improving.",
+        "Acknowledge what you agree with.",
+        "Say what you'll do next."
+      ],
+      "tips": [
+        "Criticism is about behaviour, not about you as a person.",
+        "Take a breath before you reply."
+      ]
+    },
+    {
+      "id": "ss-probation-criticism",
+      "skill": "criticism",
+      "title": "A remark from the probation officer",
+      "audience": "adult",
+      "situation": "Your probation officer points out that you didn't bring the clinic certificate on time.",
+      "roles": ["person under supervision", "probation officer", "observer"],
+      "steps": [
+        "Listen calmly.",
+        "Briefly explain what happened, without excuses.",
+        "Suggest when you will deliver the document.",
+        "Ask how to avoid this in future."
+      ],
+      "tips": [
+        "Keep deadlines in your phone.",
+        "A matter-of-fact conversation builds trust."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,729 @@
+{
+  "ingredients": [
+    {
+      "id": "welcomeContract",
+      "title": "Welcome and working agreement",
+      "category": "opening",
+      "minutes": 10,
+      "description": "Introduce yourself, explain the purpose and length of the meeting, confidentiality and its limits. Ask what the person expects."
+    },
+    {
+      "id": "checkInRound",
+      "title": "Opening round",
+      "category": "opening",
+      "minutes": 10,
+      "description": "Each participant says in one or two sentences what they bring today. The facilitator does not comment, only thanks."
+    },
+    {
+      "id": "moodWeather",
+      "title": "Mood weather",
+      "category": "opening",
+      "minutes": 5,
+      "description": "Participants describe their mood as weather (sun, fog, storm). Good for young people and groups reluctant to talk about feelings."
+    },
+    {
+      "id": "haltCheckIn",
+      "title": "HALT check-in",
+      "category": "opening",
+      "minutes": 5,
+      "description": "Quick check: am I hungry, angry, lonely, tired? Helps notice states that raise the risk of relapse.",
+      "toolId": "halt"
+    },
+    {
+      "id": "openQuestions",
+      "title": "Open questions and reflections",
+      "category": "mi",
+      "minutes": 10,
+      "description": "Ask questions that cannot be answered “yes/no” and reflect back what you hear. Aim for more reflections than questions."
+    },
+    {
+      "id": "readinessRuler",
+      "title": "Readiness ruler",
+      "category": "mi",
+      "minutes": 10,
+      "description": "The person marks on a 0–10 scale how important change is and how confident they are. Follow up: “Why that number and not lower?”",
+      "toolId": "readinessRuler"
+    },
+    {
+      "id": "decisionalBalance",
+      "title": "Decisional balance",
+      "category": "mi",
+      "minutes": 15,
+      "description": "Fill in the matrix together: benefits and costs of the current behaviour and of change. End with a summary of what speaks for change.",
+      "toolId": "decisionalBalance"
+    },
+    {
+      "id": "elicitChangeTalk",
+      "title": "Eliciting change talk",
+      "category": "mi",
+      "minutes": 10,
+      "description": "Ask about desire, ability, reasons and need for change (“What would be better if…?”). Reinforce every statement about change."
+    },
+    {
+      "id": "lookingForward",
+      "title": "Looking forward",
+      "category": "mi",
+      "minutes": 10,
+      "description": "Ask what life might look like in a year if nothing changes, and if the change succeeds. Do not judge the answers."
+    },
+    {
+      "id": "changePlan",
+      "title": "Change plan",
+      "category": "mi",
+      "minutes": 10,
+      "description": "When the person is ready, write together: what I want to change, why, first steps, who will help me, how I will know I am progressing."
+    },
+    {
+      "id": "chainAnalysis",
+      "title": "Chain analysis",
+      "category": "cbt",
+      "minutes": 20,
+      "description": "Reconstruct a specific situation step by step: trigger, thoughts, emotions, behaviour, consequences. Look for links where a different choice was possible.",
+      "toolId": "chainAnalysis"
+    },
+    {
+      "id": "thoughtRecord",
+      "title": "Thought record",
+      "category": "cbt",
+      "minutes": 15,
+      "description": "Write down the situation, automatic thought, emotion and its intensity. Identify the distortion and look for a more balanced thought.",
+      "toolId": "thoughtRecord"
+    },
+    {
+      "id": "triggerMap",
+      "title": "Trigger map",
+      "category": "cbt",
+      "minutes": 15,
+      "description": "The person marks people, places, states and situations that trigger the urge to use. Match coping strategies to the strongest ones.",
+      "toolId": "triggerMap"
+    },
+    {
+      "id": "scalingQuestions",
+      "title": "Scaling and the miracle question",
+      "category": "cbt",
+      "minutes": 10,
+      "description": "Ask where the person is today on a 0–10 scale and what would move them one point up. You can add the miracle question.",
+      "toolId": "scaling"
+    },
+    {
+      "id": "refusalSkills",
+      "title": "Refusal skills training",
+      "category": "skills",
+      "minutes": 20,
+      "description": "Go through the steps of assertive refusal (a clear “no”, a reason without over-explaining, an alternative, leaving the situation) and practise them.",
+      "toolId": "socialSkills"
+    },
+    {
+      "id": "assertivenessDrill",
+      "title": "Assertive “I” message",
+      "category": "skills",
+      "minutes": 15,
+      "description": "Participants practise the formula: “When…, I feel…, because…, I would like…”. Use examples from their own lives."
+    },
+    {
+      "id": "rolePlay",
+      "title": "Role-play with a situation card",
+      "category": "skills",
+      "minutes": 25,
+      "description": "Draw a situation card, assign roles and observers. After the scene discuss what worked and repeat it with improvements.",
+      "toolId": "socialSkills"
+    },
+    {
+      "id": "problemSolving",
+      "title": "Step-by-step problem solving",
+      "category": "skills",
+      "minutes": 15,
+      "description": "Define the problem, list possible solutions without judging, weigh pros and cons, choose one and plan the first step."
+    },
+    {
+      "id": "groupContract",
+      "title": "Group contract",
+      "category": "group",
+      "minutes": 15,
+      "description": "The group agrees on rules together (e.g. confidentiality, speaking for oneself, the right to pass). The rules are written down and accepted by all."
+    },
+    {
+      "id": "energiser",
+      "title": "Movement energiser",
+      "category": "group",
+      "minutes": 5,
+      "description": "A short movement game (e.g. “Change places if you like…”) that releases tension and energises the group."
+    },
+    {
+      "id": "trustExercise",
+      "title": "Trust exercise",
+      "category": "group",
+      "minutes": 15,
+      "description": "A pair exercise building trust (e.g. guiding a partner with closed eyes). Always with the option to opt out and a debrief."
+    },
+    {
+      "id": "groupDiscussion",
+      "title": "Small-group discussion",
+      "category": "group",
+      "minutes": 20,
+      "description": "Split the group into teams of 3–4 with a specific question and time limit. Teams present their conclusions to everyone."
+    },
+    {
+      "id": "genogram",
+      "title": "Family genogram",
+      "category": "family",
+      "minutes": 25,
+      "description": "Draw a three-generation family tree together, marking relationships, key events and patterns (e.g. drinking, violence, strengths)."
+    },
+    {
+      "id": "familyCommunication",
+      "title": "Family communication exercise",
+      "category": "family",
+      "minutes": 20,
+      "description": "Family members take turns speaking about one issue while the other paraphrases before replying. The facilitator ensures people speak for themselves, not accuse."
+    },
+    {
+      "id": "supportMap",
+      "title": "Support map",
+      "category": "family",
+      "minutes": 15,
+      "description": "The person places people and institutions who can help around themselves according to closeness. Look for gaps and new sources of support.",
+      "toolId": "supportMap"
+    },
+    {
+      "id": "familyStrengths",
+      "title": "Family strengths",
+      "category": "family",
+      "minutes": 10,
+      "description": "Each family member names one thing they value about the family and one thing they do well together."
+    },
+    {
+      "id": "normativeQuiz",
+      "title": "Normative quiz",
+      "category": "prevention",
+      "minutes": 15,
+      "description": "Pupils estimate what percentage of peers drink or smoke, then compare with survey data. Discuss where the differences come from."
+    },
+    {
+      "id": "mythsFacts",
+      "title": "Myths and facts",
+      "category": "prevention",
+      "minutes": 15,
+      "description": "Teams get statements about substances and decide: myth or fact. The facilitator explains factually, without scaring."
+    },
+    {
+      "id": "lifeSkillsScenario",
+      "title": "Life-skills scenario",
+      "category": "prevention",
+      "minutes": 20,
+      "description": "Groups work on a short story about a peer in a difficult situation (party, pressure, exam stress) and suggest solutions."
+    },
+    {
+      "id": "mediaLiteracy",
+      "title": "Advert analysis",
+      "category": "prevention",
+      "minutes": 15,
+      "description": "Pupils analyse an alcohol or e-cigarette advert: who it targets, what it promises, what it leaves out."
+    },
+    {
+      "id": "breathing",
+      "title": "Breathing exercise",
+      "category": "relaxation",
+      "minutes": 5,
+      "description": "Guided breathing in a steady rhythm (e.g. 4–4–4–4) for a few minutes. Good at the start, after a difficult part or at the end.",
+      "toolId": "breathing"
+    },
+    {
+      "id": "grounding",
+      "title": "Grounding 5-4-3-2-1",
+      "category": "relaxation",
+      "minutes": 5,
+      "description": "The person names 5 things they see, 4 they touch, 3 they hear, 2 they smell and 1 taste. Helps return to the here and now.",
+      "toolId": "grounding"
+    },
+    {
+      "id": "urgeSurfing",
+      "title": "Urge surfing",
+      "category": "relaxation",
+      "minutes": 10,
+      "description": "The person rates the craving 0–10, observes it like a wave that rises and falls while breathing calmly, then rates it again.",
+      "toolId": "urgeSurfing"
+    },
+    {
+      "id": "summary",
+      "title": "Summary",
+      "category": "closing",
+      "minutes": 5,
+      "description": "Summarise the main themes and agreements in your own words, then ask whether anything is missing."
+    },
+    {
+      "id": "homework",
+      "title": "Between-session task",
+      "category": "closing",
+      "minutes": 5,
+      "description": "Agree together on one small, specific task until the next meeting (e.g. noting triggers)."
+    },
+    {
+      "id": "feedbackRound",
+      "title": "Closing round",
+      "category": "closing",
+      "minutes": 10,
+      "description": "Everyone completes the sentence: “Today I'm taking away…”. You can add a quick rating of the session."
+    },
+    {
+      "id": "nextSteps",
+      "title": "Agreeing the next step",
+      "category": "closing",
+      "minutes": 5,
+      "description": "Agree the date of the next meeting and what happens until then. Remind the person of crisis contacts."
+    }
+  ],
+  "sessionTemplates": [
+    {
+      "id": "firstMeeting",
+      "title": "First meeting",
+      "goal": "Building the relationship, agreeing how to work together and an initial understanding of the person's situation.",
+      "audience": "Individual meeting, young people or adults",
+      "items": [
+        {
+          "ingredientId": "welcomeContract",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "openQuestions",
+          "minutes": 20
+        },
+        {
+          "ingredientId": "supportMap",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "summary",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "nextSteps",
+          "minutes": 5
+        }
+      ]
+    },
+    {
+      "id": "motivationalInterview",
+      "title": "Motivational conversation",
+      "goal": "Strengthening motivation for change by exploring ambivalence and eliciting change talk.",
+      "audience": "Individual meeting",
+      "items": [
+        {
+          "ingredientId": "haltCheckIn",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "openQuestions",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "readinessRuler",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "decisionalBalance",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "elicitChangeTalk",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "summary",
+          "minutes": 5
+        }
+      ]
+    },
+    {
+      "id": "chainAnalysis",
+      "title": "Chain analysis",
+      "goal": "Understanding the course of a specific incident (e.g. a relapse) and finding points where a different response is possible.",
+      "audience": "Individual meeting after an incident or relapse",
+      "items": [
+        {
+          "ingredientId": "checkInRound",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "chainAnalysis",
+          "minutes": 25
+        },
+        {
+          "ingredientId": "triggerMap",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "breathing",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "homework",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "summary",
+          "minutes": 5
+        }
+      ]
+    },
+    {
+      "id": "sociotherapy",
+      "title": "Socio-therapeutic session",
+      "goal": "Providing corrective relational experiences and practising social skills in a safe group.",
+      "audience": "Group of 8–12 young people",
+      "items": [
+        {
+          "ingredientId": "checkInRound",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "energiser",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "trustExercise",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "groupDiscussion",
+          "minutes": 20
+        },
+        {
+          "ingredientId": "rolePlay",
+          "minutes": 20
+        },
+        {
+          "ingredientId": "feedbackRound",
+          "minutes": 10
+        }
+      ]
+    },
+    {
+      "id": "socialSkills",
+      "title": "Social skills training",
+      "goal": "Learning and practising a selected skill (refusal, assertiveness, conflict resolution).",
+      "audience": "Group or individual meeting",
+      "items": [
+        {
+          "ingredientId": "moodWeather",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "assertivenessDrill",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "refusalSkills",
+          "minutes": 20
+        },
+        {
+          "ingredientId": "rolePlay",
+          "minutes": 25
+        },
+        {
+          "ingredientId": "homework",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "feedbackRound",
+          "minutes": 5
+        }
+      ]
+    },
+    {
+      "id": "familySession",
+      "title": "Family session",
+      "goal": "Improving family communication, identifying strengths and agreeing shared steps of support.",
+      "audience": "The person with family members",
+      "items": [
+        {
+          "ingredientId": "welcomeContract",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "familyStrengths",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "genogram",
+          "minutes": 20
+        },
+        {
+          "ingredientId": "familyCommunication",
+          "minutes": 20
+        },
+        {
+          "ingredientId": "summary",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "nextSteps",
+          "minutes": 5
+        }
+      ]
+    },
+    {
+      "id": "classPrevention",
+      "title": "Classroom prevention lesson",
+      "goal": "Correcting normative beliefs and practising decision-making – interactively, without scare tactics.",
+      "audience": "School class (45 minutes)",
+      "items": [
+        {
+          "ingredientId": "energiser",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "normativeQuiz",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "lifeSkillsScenario",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "feedbackRound",
+          "minutes": 10
+        }
+      ]
+    },
+    {
+      "id": "relapsePrevention",
+      "title": "Relapse prevention",
+      "goal": "Identifying high-risk situations and practising ways to cope with cravings.",
+      "audience": "Individual meeting or group",
+      "items": [
+        {
+          "ingredientId": "haltCheckIn",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "triggerMap",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "urgeSurfing",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "thoughtRecord",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "changePlan",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "summary",
+          "minutes": 5
+        }
+      ]
+    }
+  ],
+  "sociotherapy": {
+    "title": "Socio-therapeutic programme “Easier Together” – template",
+    "goals": [
+      "building a sense of safety and belonging in the group",
+      "recognising and naming emotions and ways to express them",
+      "developing communication, cooperation and assertiveness skills",
+      "practising constructive conflict resolution",
+      "strengthening self-worth and experiencing success"
+    ],
+    "groupRules": [
+      "What we say in the group stays in the group (except when someone is in danger).",
+      "We speak for ourselves and about ourselves.",
+      "We listen and don't interrupt.",
+      "We don't judge or mock others.",
+      "Everyone has the right to pass.",
+      "We come on time and sober."
+    ],
+    "cycle": [
+      {
+        "no": 1,
+        "title": "Getting to know each other",
+        "aims": "Group bonding and agreeing the group contract.",
+        "activities": [
+          "name round with a gesture",
+          "group contract",
+          "closing round"
+        ]
+      },
+      {
+        "no": 2,
+        "title": "Me and my strengths",
+        "aims": "Building a positive self-image.",
+        "activities": [
+          "“My strengths” poster",
+          "feedback from the group",
+          "closing round"
+        ]
+      },
+      {
+        "no": 3,
+        "title": "Emotions – what do I feel?",
+        "aims": "Recognising and naming emotions.",
+        "activities": [
+          "mood weather",
+          "emotion charades",
+          "talk about where in the body we feel emotions"
+        ]
+      },
+      {
+        "no": 4,
+        "title": "Anger and how to handle it",
+        "aims": "Learning safe ways to express anger.",
+        "activities": [
+          "anger thermometer",
+          "breathing exercise",
+          "list of ways to calm down"
+        ]
+      },
+      {
+        "no": 5,
+        "title": "Communication",
+        "aims": "Practising active listening and the “I” message.",
+        "activities": [
+          "telephone game",
+          "paraphrasing in pairs",
+          "assertive “I” message"
+        ]
+      },
+      {
+        "no": 6,
+        "title": "Assertiveness and refusal",
+        "aims": "Practising refusal and defending one's boundaries.",
+        "activities": [
+          "refusal skills training",
+          "role-play with a situation card"
+        ]
+      },
+      {
+        "no": 7,
+        "title": "Peer pressure",
+        "aims": "Recognising pressure and ways to stay independent.",
+        "activities": [
+          "life-skills scenario",
+          "small-group discussion",
+          "normative quiz"
+        ]
+      },
+      {
+        "no": 8,
+        "title": "Conflicts",
+        "aims": "Practising constructive resolution of disputes.",
+        "activities": ["step-by-step problem solving", "role-play: conflict"]
+      },
+      {
+        "no": 9,
+        "title": "Trust and cooperation",
+        "aims": "Experiencing cooperation and mutual support.",
+        "activities": [
+          "trust exercise",
+          "team task (e.g. building something together)",
+          "debrief"
+        ]
+      },
+      {
+        "no": 10,
+        "title": "Farewell and what next",
+        "aims": "Summing up, recognising change, closing the group.",
+        "activities": [
+          "letter to myself in six months",
+          "“hot seat” with positive feedback",
+          "evaluation of the sessions"
+        ]
+      }
+    ]
+  },
+  "readaptationAreas": [
+    {
+      "id": "housing",
+      "title": "Housing",
+      "items": [
+        "establish where the person will live in the first days",
+        "check whether returning to family or previous housing is possible",
+        "if needed, apply for a place in a shelter, night shelter or training/supported flat",
+        "apply for municipal (social) housing",
+        "check rent arrears and options to repay or work them off"
+      ]
+    },
+    {
+      "id": "documents",
+      "title": "Documents",
+      "items": [
+        "ID card – apply for or collect",
+        "registration of residence (meldunek) at the current address",
+        "release certificate and report from the prison or facility",
+        "school certificates, diplomas, course certificates",
+        "employment history and social insurance (ZUS) documents (e.g. to establish work record)",
+        "disability card or certificate – if applicable"
+      ]
+    },
+    {
+      "id": "workEducation",
+      "title": "Work and education",
+      "items": [
+        "register with the district labour office as unemployed or job-seeking",
+        "prepare a CV and practise a job interview",
+        "look into options for people leaving prison (e.g. social cooperatives, social integration centres)",
+        "continue education or a vocational course",
+        "financial plan for the first month"
+      ]
+    },
+    {
+      "id": "health",
+      "title": "Health and addiction treatment",
+      "items": [
+        "national health insurance (NFZ) – check or register (e.g. via the labour office or social welfare centre)",
+        "choose a primary care doctor",
+        "book an appointment at an addiction treatment clinic or continue therapy",
+        "contact a support group or mutual-help fellowship (e.g. AA, NA)",
+        "relapse prevention plan for the first weeks",
+        "continue any prescribed treatment according to the doctor's documentation"
+      ]
+    },
+    {
+      "id": "relations",
+      "title": "Relationships",
+      "items": [
+        "establish which family members and friends can be contacted",
+        "plan a conversation with the family about rules and expectations",
+        "identify relationships that raise the risk of reoffending or using",
+        "contact with children – check court arrangements",
+        "find at least one trusted person to contact in a crisis"
+      ]
+    },
+    {
+      "id": "institutional",
+      "title": "Institutional support",
+      "items": [
+        "contact with the probation officer (if supervision was ordered) – date of the first meeting",
+        "visit the social welfare centre (OPS/MOPS) – benefits, material help, social work",
+        "check eligibility for help from the Justice Fund (post-release support)",
+        "contact an NGO that supports people after release",
+        "free legal aid – debts, maintenance, fines",
+        "list of phone numbers and addresses with opening hours"
+      ]
+    }
+  ],
+  "familySupport": {
+    "goalExamples": [
+      "the family knows the available forms of help and where to go",
+      "parents agree shared, clear rules at home",
+      "family members talk about difficulties without blaming",
+      "the family member looks after their own health and rest",
+      "the family has a safety plan for a crisis or violence",
+      "the family reinforces the loved one's sober behaviour (CRAFT approach)",
+      "the child has regular contact with a trusted adult outside the home"
+    ],
+    "supportExamples": [
+      "consultations at the municipal counselling point",
+      "support group for family members (e.g. Al-Anon, groups at clinics)",
+      "therapy for family members at an addiction treatment clinic",
+      "parenting-skills workshops",
+      "socio-therapeutic day-care centre for children",
+      "family assistant from the social welfare centre",
+      "the “Blue Card” procedure and interdisciplinary team in cases of violence",
+      "psychological and educational counselling centre"
+    ]
+  }
+}

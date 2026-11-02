@@ -1,0 +1,919 @@
+{
+  "intro": "Ten przewodnik porządkuje polski system pomocy osobom z problemami uzależnień, ich rodzinom i osobom doznającym przemocy. Obejmuje lecznictwo (głównie w ramach NFZ), zadania gminy i powiatu, pomoc społeczną, wymiar sprawiedliwości, oświatę, samopomoc i instytucję centralną. Kreator skierowania podpowiada możliwe ścieżki – decyzję zawsze podejmuje specjalista. Nazwy, kompetencje i numery mogą się zmieniać: przed skierowaniem sprawdź aktualne dane lokalnej instytucji.",
+  "institutions": [
+    {
+      "id": "addictionClinic",
+      "name": "Poradnia leczenia uzależnień (poradnia terapii uzależnienia i współuzależnienia)",
+      "category": "treatment",
+      "role": "Ambulatoryjna terapia indywidualna i grupowa osób uzależnionych od alkoholu, narkotyków i zachowań, a także terapia osób współuzależnionych i członków rodzin.",
+      "forWhom": "Dorośli, a w poradniach z ofertą dla młodzieży także nastolatki (z udziałem rodziców).",
+      "howToAccess": "Świadczenia w ramach NFZ, bez skierowania; wystarczy zgłosić się lub zadzwonić i umówić termin.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "inpatientUnit",
+      "name": "Oddział lub ośrodek stacjonarnej terapii uzależnień",
+      "category": "treatment",
+      "role": "Całodobowa, kilkutygodniowa terapia uzależnienia; osobno istnieją oddziały detoksykacyjne (leczenie zespołów abstynencyjnych).",
+      "forWhom": "Osoby, którym leczenie ambulatoryjne nie wystarcza lub które potrzebują odcięcia od środowiska.",
+      "howToAccess": "Zwykle po konsultacji w poradni; terminy przyjęć ustala ośrodek, często obowiązuje kolejka.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "dayCentre",
+      "name": "Oddział dzienny terapii uzależnień",
+      "category": "treatment",
+      "role": "Intensywna terapia w godzinach dziennych przez kilka tygodni, bez nocowania.",
+      "forWhom": "Osoby, które mogą mieszkać w domu, ale potrzebują więcej niż spotkań raz w tygodniu.",
+      "howToAccess": "W ramach NFZ, po kwalifikacji – zwykle przez poradnię.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "rehabCentre",
+      "name": "Ośrodek rehabilitacji dla osób uzależnionych od substancji psychoaktywnych",
+      "category": "treatment",
+      "role": "Długoterminowa terapia stacjonarna (zwykle kilka–kilkanaście miesięcy), często w formie społeczności terapeutycznej; istnieją ośrodki dla młodzieży.",
+      "forWhom": "Osoby uzależnione głównie od narkotyków, w tym młodzież.",
+      "howToAccess": "Kontakt bezpośredni z ośrodkiem lub przez poradnię; często wymagany detoks przed przyjęciem.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "hostel",
+      "name": "Hostel dla osób uzależnionych",
+      "category": "treatment",
+      "role": "Czasowe zamieszkanie po zakończonej terapii stacjonarnej, z kontynuacją terapii i wsparciem w usamodzielnieniu.",
+      "forWhom": "Osoby po terapii, które nie mają bezpiecznego miejsca do powrotu.",
+      "howToAccess": "Zwykle na wniosek ośrodka terapii lub poradni; liczba miejsc jest ograniczona.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "consultationPoint",
+      "name": "Punkt konsultacyjny (gminny)",
+      "category": "local",
+      "role": "Pierwszy kontakt: informacja, rozmowa motywująca, wsparcie dla rodzin, pomoc osobom doznającym przemocy, kierowanie dalej.",
+      "forWhom": "Osoby z problemem alkoholowym, narkotykowym lub behawioralnym, ich bliscy, osoby doznające przemocy.",
+      "howToAccess": "Bezpłatnie, bez skierowania; adres i godziny – w urzędzie gminy lub na jego stronie.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "gkrpa",
+      "name": "Gminna komisja rozwiązywania problemów alkoholowych (GKRPA)",
+      "category": "local",
+      "role": "Inicjuje działania profilaktyczne, motywuje do leczenia, prowadzi postępowanie w sprawie zobowiązania do leczenia odwykowego i może skierować wniosek do sądu; może wszczynać procedurę „Niebieskie Karty”.",
+      "forWhom": "Osoby z problemem alkoholowym, ich rodziny, a także sąsiedzi i instytucje zgłaszające problem.",
+      "howToAccess": "Pisemne zgłoszenie do komisji przy urzędzie gminy/miasta (może złożyć rodzina lub instytucja).",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "interdisciplinaryTeam",
+      "name": "Zespół interdyscyplinarny ds. przeciwdziałania przemocy domowej",
+      "category": "local",
+      "role": "Koordynuje pomoc w sprawach przemocy domowej; przyjmuje „Niebieskie Karty”, powołuje grupy diagnostyczno-pomocowe, planuje i monitoruje pomoc.",
+      "forWhom": "Rodziny i osoby, wobec których wszczęto procedurę „Niebieskie Karty”.",
+      "howToAccess": "Zwykle przez instytucję wszczynającą procedurę; kontakt także przez OPS.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "socialWelfare",
+      "name": "Ośrodek pomocy społecznej (OPS / MOPS / GOPS)",
+      "category": "social",
+      "role": "Praca socjalna, zasiłki i pomoc rzeczowa, kontrakt socjalny, asystent rodziny, kierowanie do schronisk i usług; udział w procedurze „Niebieskie Karty”.",
+      "forWhom": "Mieszkańcy gminy w trudnej sytuacji życiowej, w tym osoby z problemem uzależnienia, w kryzysie bezdomności, opuszczające zakład karny.",
+      "howToAccess": "Zgłoszenie osobiste lub telefoniczne w OPS właściwym dla miejsca pobytu; pracownik socjalny przeprowadza wywiad.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "pcpr",
+      "name": "Powiatowe centrum pomocy rodzinie (PCPR)",
+      "category": "social",
+      "role": "Zadania powiatu: piecza zastępcza, pomoc w usamodzielnieniu wychowanków placówek, wsparcie osób z niepełnosprawnościami, często prowadzenie interwencji kryzysowej.",
+      "forWhom": "Rodziny zastępcze, osoby usamodzielniane (np. po MOW, MOS), rodziny w kryzysie.",
+      "howToAccess": "Kontakt bezpośredni w siedzibie PCPR (w dużych miastach zadania pełni MOPS/MOPR).",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "crisisCentre",
+      "name": "Ośrodek interwencji kryzysowej (OIK)",
+      "category": "social",
+      "role": "Natychmiastowa pomoc psychologiczna, socjalna i prawna w kryzysie; często miejsca schronienia dla osób doznających przemocy.",
+      "forWhom": "Osoby i rodziny w ostrym kryzysie: przemoc, nagła strata, próba samobójcza w rodzinie, utrata mieszkania.",
+      "howToAccess": "Bez skierowania i bez względu na dochód; wiele OIK działa całodobowo.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "homelessShelter",
+      "name": "Schronisko, noclegownia, ogrzewalnia dla osób w kryzysie bezdomności",
+      "category": "social",
+      "role": "Tymczasowe schronienie, posiłek, praca socjalna; część schronisk prowadzi programy wychodzenia z bezdomności i oferuje wsparcie w leczeniu uzależnienia.",
+      "forWhom": "Osoby w kryzysie bezdomności, także pod wpływem alkoholu (ogrzewalnie, noclegownie).",
+      "howToAccess": "Przez OPS (skierowanie do schroniska); noclegownie i ogrzewalnie – bezpośrednio; zimą informacje także przez Straż Miejską i Policję.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "familyProbation",
+      "name": "Kurator rodzinny (sądowy)",
+      "category": "justice",
+      "role": "Wykonuje orzeczenia sądu rodzinnego: nadzór nad nieletnimi, nadzór nad rodzinami, nadzór w sprawach o leczenie odwykowe; przeprowadza wywiady środowiskowe.",
+      "forWhom": "Nieletni, rodziny z ograniczoną władzą rodzicielską, osoby zobowiązane do leczenia odwykowego.",
+      "howToAccess": "Przydzielany przez sąd; kontakt przez zespół kuratorskiej służby sądowej przy sądzie rejonowym.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "adultProbation",
+      "name": "Kurator dla dorosłych (sądowy)",
+      "category": "justice",
+      "role": "Dozór nad skazanymi (m.in. warunkowe zawieszenie kary, warunkowe przedterminowe zwolnienie), kontrola obowiązków, w tym obowiązku terapii; pomoc w readaptacji.",
+      "forWhom": "Osoby skazane w okresie próby i osoby opuszczające zakład karny.",
+      "howToAccess": "Przydzielany przez sąd; kontakt przez zespół kuratorski przy sądzie rejonowym.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "familyCourt",
+      "name": "Sąd rodzinny (wydział rodzinny i nieletnich sądu rejonowego)",
+      "category": "justice",
+      "role": "Orzeka w sprawach nieletnich (środki wychowawcze, poprawcze), władzy rodzicielskiej, pieczy zastępczej i obowiązku leczenia odwykowego.",
+      "forWhom": "Nieletni i ich rodziny, dzieci w zagrożeniu, osoby z problemem alkoholowym (na wniosek GKRPA lub prokuratora).",
+      "howToAccess": "Wniosek lub zawiadomienie pisemne do sądu rejonowego właściwego dla miejsca zamieszkania; może je złożyć każdy, kto wie o zagrożeniu dziecka.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "police",
+      "name": "Policja (112)",
+      "category": "justice",
+      "role": "Interwencja w sytuacji zagrożenia, zatrzymanie sprawcy, nakaz opuszczenia mieszkania i zakaz zbliżania się wobec osoby stosującej przemoc; wszczynanie „Niebieskiej Karty”.",
+      "forWhom": "Każdy w sytuacji zagrożenia życia, zdrowia lub mienia.",
+      "howToAccess": "Numer alarmowy 112 – całodobowo; w sprawach nienagłych – komisariat lub dzielnicowy.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "readaptationCentre",
+      "name": "Ośrodki pomocy postpenitencjarnej i readaptacji społecznej",
+      "category": "justice",
+      "role": "Pomoc osobom opuszczającym zakład karny i ich rodzinom: doradztwo, pomoc rzeczowa, mieszkania readaptacyjne, aktywizacja zawodowa; prowadzone m.in. przez organizacje pozarządowe, często ze środków Funduszu Sprawiedliwości.",
+      "forWhom": "Osoby opuszczające zakład karny lub areszt i ich bliscy.",
+      "howToAccess": "Informację daje wychowawca w zakładzie karnym, kurator lub OPS; aktualna lista ośrodków na stronach Ministerstwa Sprawiedliwości.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "counsellingCentre",
+      "name": "Poradnia psychologiczno-pedagogiczna (PPP)",
+      "category": "education",
+      "role": "Diagnoza, terapia i konsultacje dla dzieci, młodzieży i rodziców; wydaje opinie i orzeczenia (np. o potrzebie kształcenia specjalnego); wspiera szkoły w profilaktyce.",
+      "forWhom": "Dzieci i młodzież do końca nauki w szkole, ich rodzice i nauczyciele.",
+      "howToAccess": "Bezpłatnie, bez skierowania; zapisuje rodzic (lub pełnoletni uczeń) w poradni rejonowej.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "schoolPedagogue",
+      "name": "Pedagog i psycholog szkolny",
+      "category": "education",
+      "role": "Pierwsza linia wsparcia w szkole: rozmowa, kontakt z rodzicami, interwencja, plan pomocy psychologiczno-pedagogicznej, kierowanie do poradni; realizacja szkolnych działań profilaktycznych.",
+      "forWhom": "Uczniowie, ich rodzice i nauczyciele.",
+      "howToAccess": "Bezpośrednio w szkole; uczeń może przyjść sam.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "youthCentres",
+      "name": "Młodzieżowy ośrodek socjoterapii (MOS) i młodzieżowy ośrodek wychowawczy (MOW)",
+      "category": "education",
+      "role": "MOS: nauka i socjoterapia dla młodzieży zagrożonej niedostosowaniem społecznym. MOW: nauka i resocjalizacja młodzieży niedostosowanej społecznie umieszczonej przez sąd.",
+      "forWhom": "Dzieci i młodzież w wieku szkolnym.",
+      "howToAccess": "MOS – za zgodą rodziców, na podstawie orzeczenia poradni, przez starostwo; MOW – na podstawie postanowienia sądu rodzinnego, skierowanie wg obowiązujących przepisów oświatowych.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "juvenileFacilities",
+      "name": "Schronisko dla nieletnich i zakład poprawczy",
+      "category": "justice",
+      "role": "Schronisko – tymczasowe umieszczenie na czas postępowania; zakład poprawczy – wykonanie środka poprawczego wobec nieletnich sprawców czynów karalnych. Placówki Ministerstwa Sprawiedliwości.",
+      "forWhom": "Nieletni w postępowaniu przed sądem rodzinnym.",
+      "howToAccess": "Wyłącznie na podstawie postanowienia sądu.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "aa",
+      "name": "Anonimowi Alkoholicy (AA)",
+      "category": "selfHelp",
+      "role": "Wspólnota samopomocowa oparta na programie 12 kroków; mityngi otwarte i zamknięte.",
+      "forWhom": "Osoby, które chcą przestać pić; na mityngi otwarte mogą przyjść też bliscy i profesjonaliści.",
+      "howToAccess": "Bezpłatnie, bez zapisów; lista mityngów na stronie wspólnoty AA w Polsce.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "na",
+      "name": "Anonimowi Narkomani (NA)",
+      "category": "selfHelp",
+      "role": "Wspólnota samopomocowa 12 kroków dla osób uzależnionych od substancji.",
+      "forWhom": "Osoby, które chcą przestać używać narkotyków lub innych substancji.",
+      "howToAccess": "Bezpłatnie, bez zapisów; lista spotkań na stronie NA w Polsce.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "alAnon",
+      "name": "Al-Anon i Alateen",
+      "category": "selfHelp",
+      "role": "Grupy samopomocowe dla rodzin i przyjaciół osób z problemem alkoholowym; Alateen – dla nastolatków.",
+      "forWhom": "Partnerzy, rodzice, dorosłe dzieci i nastoletnie dzieci osób pijących.",
+      "howToAccess": "Bezpłatnie, bez zapisów; lista grup na stronie Al-Anon w Polsce.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ga",
+      "name": "Anonimowi Hazardziści (AH)",
+      "category": "selfHelp",
+      "role": "Wspólnota samopomocowa 12 kroków dla osób z problemem hazardowym.",
+      "forWhom": "Osoby, które chcą przestać grać.",
+      "howToAccess": "Bezpłatnie; spotkania w większych miastach i online.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "helplines",
+      "name": "Telefony zaufania i linie wsparcia",
+      "category": "phone",
+      "role": "Anonimowa rozmowa, wsparcie emocjonalne, informacja o miejscach pomocy – m.in. 116 123, 116 111, 800 120 002 (Niebieska Linia).",
+      "forWhom": "Każdy w kryzysie, osoby uzależnione, bliscy, dzieci i młodzież, osoby doznające przemocy.",
+      "howToAccess": "Telefonicznie, część linii także przez czat lub e-mail; numery w sekcji „Pomoc w kryzysie”.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "kcpu",
+      "name": "Krajowe Centrum Przeciwdziałania Uzależnieniom (KCPU)",
+      "category": "central",
+      "role": "Państwowa jednostka podległa ministrowi zdrowia, działająca od 1 stycznia 2022 r.; przejęła zadania dawnej PARPA i dawnego Krajowego Biura ds. Przeciwdziałania Narkomanii. Odpowiada za politykę wobec alkoholu, narkotyków i uzależnień behawioralnych: programy profilaktyczne, szkolenia, certyfikację, rekomendacje, wsparcie samorządów.",
+      "forWhom": "Profesjonaliści, samorządy, szkoły, organizacje; pośrednio – wszyscy mieszkańcy.",
+      "howToAccess": "Strona internetowa KCPU (materiały, baza programów rekomendowanych, informacje o szkoleniach i certyfikacji).",
+      "reviewStatus": "do_weryfikacji"
+    }
+  ],
+  "referral": {
+    "questions": [
+      {
+        "id": "age",
+        "text": "Ile lat ma osoba, której dotyczy sytuacja?",
+        "options": [
+          {
+            "id": "minor",
+            "label": "Nieletnia / niepełnoletnia (poniżej 18 lat)"
+          },
+          {
+            "id": "adult",
+            "label": "Dorosła"
+          }
+        ]
+      },
+      {
+        "id": "problem",
+        "text": "Jaki jest główny problem?",
+        "options": [
+          {
+            "id": "alcohol",
+            "label": "Alkohol"
+          },
+          {
+            "id": "drugs",
+            "label": "Narkotyki / inne substancje"
+          },
+          {
+            "id": "behavioural",
+            "label": "Uzależnienie behawioralne (hazard, gry, internet)"
+          },
+          {
+            "id": "codependency",
+            "label": "Bliski osoby uzależnionej (współuzależnienie)"
+          },
+          {
+            "id": "violence",
+            "label": "Przemoc domowa"
+          }
+        ]
+      },
+      {
+        "id": "context",
+        "text": "W jakim kontekście pojawia się sytuacja?",
+        "options": [
+          {
+            "id": "school",
+            "label": "Szkoła"
+          },
+          {
+            "id": "justice",
+            "label": "Wymiar sprawiedliwości (sąd, kurator, postępowanie)"
+          },
+          {
+            "id": "postPenitentiary",
+            "label": "Po opuszczeniu zakładu karnego lub placówki"
+          },
+          {
+            "id": "homeless",
+            "label": "Kryzys bezdomności"
+          },
+          {
+            "id": "family",
+            "label": "Rodzina"
+          },
+          {
+            "id": "none",
+            "label": "Brak szczególnego kontekstu"
+          }
+        ]
+      },
+      {
+        "id": "urgency",
+        "text": "Jak pilna jest sytuacja?",
+        "options": [
+          {
+            "id": "crisis",
+            "label": "Kryzys – zagrożenie teraz"
+          },
+          {
+            "id": "planned",
+            "label": "Pomoc planowa"
+          }
+        ]
+      }
+    ],
+    "rules": [
+      {
+        "id": "crisisAny",
+        "title": "Sytuacja kryzysowa – zagrożenie teraz",
+        "when": {
+          "urgency": ["crisis"]
+        },
+        "institutionIds": ["police", "crisisCentre", "helplines"],
+        "steps": [
+          "Przy zagrożeniu życia lub zdrowia (także myślach samobójczych, przedawkowaniu) dzwoń 112.",
+          "Nie zostawiaj osoby samej, jeśli to bezpieczne; usuń dostęp do niebezpiecznych przedmiotów i substancji.",
+          "Gdy bezpośrednie zagrożenie minie – kontakt z ośrodkiem interwencji kryzysowej lub telefonem zaufania (116 123, dla młodzieży 116 111).",
+          "Zapisz, co się wydarzyło, i poinformuj przełożonego zgodnie z procedurą instytucji."
+        ],
+        "note": "Ta ścieżka ma pierwszeństwo przed pozostałymi."
+      },
+      {
+        "id": "violenceCrisis",
+        "title": "Przemoc domowa – bezpośrednie zagrożenie",
+        "when": {
+          "problem": ["violence"],
+          "urgency": ["crisis"]
+        },
+        "institutionIds": [
+          "police",
+          "crisisCentre",
+          "socialWelfare",
+          "interdisciplinaryTeam"
+        ],
+        "steps": [
+          "Dzwoń 112 – Policja może wydać nakaz natychmiastowego opuszczenia mieszkania i zakaz zbliżania się wobec osoby stosującej przemoc.",
+          "Zapewnij osobie doznającej przemocy (i dzieciom) bezpieczne miejsce – w razie potrzeby schronienie w OIK.",
+          "Wszcznij lub poproś o wszczęcie procedury „Niebieskie Karty” (formularz A, przekazanie formularza B).",
+          "Gdy dziecko jest w bezpośrednim zagrożeniu, pracownik socjalny wraz z Policją i przedstawicielem ochrony zdrowia może je zabezpieczyć – powiadom OPS."
+        ]
+      },
+      {
+        "id": "violenceAny",
+        "title": "Przemoc domowa – plan pomocy",
+        "when": {
+          "problem": ["violence"]
+        },
+        "institutionIds": [
+          "interdisciplinaryTeam",
+          "socialWelfare",
+          "consultationPoint",
+          "crisisCentre",
+          "helplines"
+        ],
+        "steps": [
+          "Porozmawiaj z osobą na osobności; opisz fakty bez ocen.",
+          "Wszcznij procedurę „Niebieskie Karty” lub poinformuj instytucję uprawnioną (OPS, Policja, GKRPA, szkoła, ochrona zdrowia).",
+          "Ułóż z osobą plan bezpieczeństwa (ważne numery, dokumenty, bezpieczne miejsce).",
+          "Wskaż Niebieską Linię 800 120 002 i punkt konsultacyjny w gminie."
+        ],
+        "note": "Nie proponuj mediacji ani wspólnych spotkań z osobą stosującą przemoc."
+      },
+      {
+        "id": "violenceMinor",
+        "title": "Przemoc wobec dziecka lub nastolatka",
+        "when": {
+          "age": ["minor"],
+          "problem": ["violence"]
+        },
+        "institutionIds": [
+          "schoolPedagogue",
+          "socialWelfare",
+          "interdisciplinaryTeam",
+          "familyCourt",
+          "helplines"
+        ],
+        "steps": [
+          "Przyjmij to, co dziecko mówi, spokojnie; nie obiecuj tajemnicy i nie przesłuchuj.",
+          "Wypełnij „Niebieską Kartę – A” (w miarę możliwości z rodzicem niebędącym sprawcą) i przekaż ją zespołowi interdyscyplinarnemu.",
+          "Przy zagrożeniu dobra dziecka zawiadom sąd rodzinny; przy podejrzeniu przestępstwa – Policję lub prokuraturę.",
+          "Podaj dziecku numer 116 111."
+        ]
+      },
+      {
+        "id": "minorSubstanceSchool",
+        "title": "Nieletni + substancje + szkoła",
+        "when": {
+          "age": ["minor"],
+          "problem": ["alcohol", "drugs"],
+          "context": ["school"]
+        },
+        "institutionIds": [
+          "schoolPedagogue",
+          "counsellingCentre",
+          "consultationPoint",
+          "addictionClinic"
+        ],
+        "steps": [
+          "Pedagog rozmawia z uczniem (bez zawstydzania) i niezwłocznie informuje rodziców zgodnie ze szkolną procedurą.",
+          "Spotkanie z rodzicami: ustalenia, kontrakt, propozycja konsultacji w poradni psychologiczno-pedagogicznej lub poradni dla młodzieży.",
+          "Gdy rodzice nie współpracują lub zachowanie wskazuje na demoralizację – zawiadomienie sądu rodzinnego.",
+          "Przy podejrzeniu posiadania lub handlu substancjami – Policja zgodnie z procedurą szkoły."
+        ]
+      },
+      {
+        "id": "minorJustice",
+        "title": "Nieletni w postępowaniu sądowym",
+        "when": {
+          "age": ["minor"],
+          "context": ["justice"]
+        },
+        "institutionIds": [
+          "familyCourt",
+          "familyProbation",
+          "youthCentres",
+          "juvenileFacilities",
+          "counsellingCentre"
+        ],
+        "steps": [
+          "Ustal, jakie środki orzekł lub rozważa sąd rodzinny (np. nadzór kuratora, MOW).",
+          "Nawiąż współpracę z kuratorem rodzinnym; uzgodnij wspólny plan oddziaływań.",
+          "Włącz pomoc terapeutyczną (poradnia dla młodzieży, poradnia psychologiczno-pedagogiczna) i rodzinę."
+        ]
+      },
+      {
+        "id": "minorAlcohol",
+        "title": "Nastolatek a alkohol",
+        "when": {
+          "age": ["minor"],
+          "problem": ["alcohol"]
+        },
+        "institutionIds": [
+          "consultationPoint",
+          "counsellingCentre",
+          "addictionClinic",
+          "alAnon"
+        ],
+        "steps": [
+          "Rozmowa motywująca z nastolatkiem i spotkanie z rodzicami.",
+          "Konsultacja w punkcie konsultacyjnym lub poradni psychologiczno-pedagogicznej; przy nasilonym piciu – poradnia uzależnień z ofertą dla młodzieży.",
+          "Jeśli pije rodzic – zaproponuj grupę Alateen."
+        ]
+      },
+      {
+        "id": "minorDrugs",
+        "title": "Nastolatek a narkotyki",
+        "when": {
+          "age": ["minor"],
+          "problem": ["drugs"]
+        },
+        "institutionIds": [
+          "addictionClinic",
+          "rehabCentre",
+          "consultationPoint",
+          "counsellingCentre"
+        ],
+        "steps": [
+          "Ocena stopnia zaangażowania (eksperymentowanie, używanie szkodliwe, uzależnienie) – bez etykietowania.",
+          "Konsultacja w poradni dla młodzieży; przy uzależnieniu – ośrodek rehabilitacyjny dla młodzieży.",
+          "Wsparcie rodziców (np. program wzorowany na CRAFT, grupy dla rodziców)."
+        ]
+      },
+      {
+        "id": "minorPostInstitution",
+        "title": "Nastolatek po opuszczeniu placówki",
+        "when": {
+          "age": ["minor"],
+          "context": ["postPenitentiary"]
+        },
+        "institutionIds": [
+          "familyProbation",
+          "pcpr",
+          "schoolPedagogue",
+          "counsellingCentre"
+        ],
+        "steps": [
+          "Sprawdź, czy orzeczono nadzór kuratora – i skontaktuj się z nim.",
+          "Zaplanuj powrót do szkoły i zajęcia popołudniowe (świetlica, ośrodek kuratorski, sport).",
+          "Wsparcie w usamodzielnieniu (PCPR) dla osoby kończącej pobyt w placówce."
+        ]
+      },
+      {
+        "id": "minorHomeless",
+        "title": "Nastolatek bez bezpiecznego miejsca do mieszkania",
+        "when": {
+          "age": ["minor"],
+          "context": ["homeless"]
+        },
+        "institutionIds": ["police", "socialWelfare", "pcpr", "familyCourt"],
+        "steps": [
+          "Dziecko bez opieki – zapewnij bezpieczeństwo, powiadom Policję lub OPS.",
+          "OPS i PCPR organizują pomoc rodzinie lub pieczę zastępczą (interwencyjną).",
+          "Sąd rodzinny decyduje o pieczy i ewentualnych środkach wobec rodziców."
+        ]
+      },
+      {
+        "id": "adultAlcohol",
+        "title": "Dorosły z problemem alkoholowym",
+        "when": {
+          "age": ["adult"],
+          "problem": ["alcohol"]
+        },
+        "institutionIds": [
+          "addictionClinic",
+          "dayCentre",
+          "inpatientUnit",
+          "aa",
+          "consultationPoint"
+        ],
+        "steps": [
+          "Rozmowa motywująca; wspólne ustalenie, czego osoba chce.",
+          "Poradnia leczenia uzależnień (NFZ, bez skierowania) jako pierwszy krok; przy objawach odstawienia – oddział detoksykacyjny.",
+          "W zależności od potrzeb: oddział dzienny lub terapia stacjonarna, potem kontynuacja w poradni.",
+          "Zaproponuj mityng AA (otwarty – można iść razem)."
+        ]
+      },
+      {
+        "id": "adultAlcoholFamily",
+        "title": "Alkohol w rodzinie – odmowa leczenia",
+        "when": {
+          "age": ["adult"],
+          "problem": ["alcohol"],
+          "context": ["family"]
+        },
+        "institutionIds": [
+          "gkrpa",
+          "consultationPoint",
+          "alAnon",
+          "familyCourt"
+        ],
+        "steps": [
+          "Wsparcie dla bliskich: punkt konsultacyjny, terapia dla rodzin w poradni, Al-Anon.",
+          "Jeśli picie powoduje rozkład życia rodzinnego, demoralizację małoletnich, uchylanie się od pracy lub zakłócanie porządku – zgłoszenie do GKRPA.",
+          "GKRPA wzywa osobę na rozmowę, może skierować na badanie przez biegłych i złożyć wniosek do sądu o zobowiązanie do leczenia.",
+          "Gdy w rodzinie jest przemoc – równolegle procedura „Niebieskie Karty”."
+        ]
+      },
+      {
+        "id": "adultDrugs",
+        "title": "Dorosły używający narkotyków",
+        "when": {
+          "age": ["adult"],
+          "problem": ["drugs"]
+        },
+        "institutionIds": [
+          "addictionClinic",
+          "rehabCentre",
+          "dayCentre",
+          "na",
+          "consultationPoint"
+        ],
+        "steps": [
+          "Rozmowa motywująca i informacja o redukcji szkód (np. ryzyko łączenia substancji).",
+          "Poradnia leczenia uzależnień; przy potrzebie – detoks, następnie ośrodek rehabilitacyjny lub oddział dzienny.",
+          "Wspólnota NA jako wsparcie długoterminowe."
+        ]
+      },
+      {
+        "id": "afterSentenceSubstances",
+        "title": "Osoba po wyroku lub opuszczająca zakład karny + alkohol/narkotyki",
+        "when": {
+          "age": ["adult"],
+          "problem": ["alcohol", "drugs"],
+          "context": ["postPenitentiary", "justice"]
+        },
+        "institutionIds": [
+          "adultProbation",
+          "readaptationCentre",
+          "addictionClinic",
+          "hostel",
+          "socialWelfare",
+          "aa",
+          "na"
+        ],
+        "steps": [
+          "Ustal obowiązki z wyroku (np. obowiązek terapii) i nawiąż kontakt z kuratorem.",
+          "Umów pierwszą wizytę w poradni uzależnień najlepiej jeszcze przed zwolnieniem lub w pierwszym tygodniu.",
+          "Zabezpiecz mieszkanie (rodzina, hostel, mieszkanie readaptacyjne) i dokumenty; OPS – pomoc doraźna.",
+          "Ostrzeż przed ryzykiem przedawkowania po okresie abstynencji (spadek tolerancji)."
+        ]
+      },
+      {
+        "id": "postPenitentiaryAny",
+        "title": "Osoba opuszczająca zakład karny – readaptacja",
+        "when": {
+          "age": ["adult"],
+          "context": ["postPenitentiary"]
+        },
+        "institutionIds": [
+          "readaptationCentre",
+          "socialWelfare",
+          "adultProbation"
+        ],
+        "steps": [
+          "Plan readaptacji: dokumenty, meldunek, ubezpieczenie zdrowotne, mieszkanie, praca.",
+          "Skorzystaj z pomocy postpenitencjarnej (organizacje finansowane z Funduszu Sprawiedliwości, OPS).",
+          "Wzmocnij relacje z rodziną i sieć wsparcia."
+        ]
+      },
+      {
+        "id": "justiceAdult",
+        "title": "Dorosły pod dozorem lub w postępowaniu",
+        "when": {
+          "age": ["adult"],
+          "context": ["justice"]
+        },
+        "institutionIds": [
+          "adultProbation",
+          "addictionClinic",
+          "consultationPoint"
+        ],
+        "steps": [
+          "Współpraca z kuratorem: jasne cele i informacja dla podopiecznego, co jest raportowane do sądu.",
+          "Gdy problem dotyczy substancji – sprawdź możliwość leczenia jako alternatywy lub uzupełnienia kary (np. mechanizmy ustawy o przeciwdziałaniu narkomanii).",
+          "Kieruj do terapii lub programów korekcyjno-edukacyjnych."
+        ]
+      },
+      {
+        "id": "homelessSubstances",
+        "title": "Kryzys bezdomności + alkohol/narkotyki",
+        "when": {
+          "age": ["adult"],
+          "problem": ["alcohol", "drugs"],
+          "context": ["homeless"]
+        },
+        "institutionIds": [
+          "homelessShelter",
+          "socialWelfare",
+          "addictionClinic",
+          "inpatientUnit",
+          "hostel",
+          "aa"
+        ],
+        "steps": [
+          "Najpierw schronienie i bezpieczeństwo (szczególnie zimą: noclegownia, ogrzewalnia).",
+          "OPS: praca socjalna, skierowanie do schroniska, pomoc w dokumentach i ubezpieczeniu.",
+          "Propozycja leczenia bez warunków wstępnych: poradnia, detoks, terapia stacjonarna, potem hostel.",
+          "Streetworking i stały kontakt budują zaufanie."
+        ]
+      },
+      {
+        "id": "homelessAny",
+        "title": "Kryzys bezdomności",
+        "when": {
+          "age": ["adult"],
+          "context": ["homeless"]
+        },
+        "institutionIds": ["homelessShelter", "socialWelfare", "crisisCentre"],
+        "steps": [
+          "Ustal, gdzie osoba spędzi najbliższą noc.",
+          "Skontaktuj się z OPS właściwym dla miejsca pobytu.",
+          "Przy przemocy lub nagłej utracie mieszkania – ośrodek interwencji kryzysowej."
+        ]
+      },
+      {
+        "id": "behavioural",
+        "title": "Uzależnienie behawioralne (hazard, gry, internet)",
+        "when": {
+          "problem": ["behavioural"]
+        },
+        "institutionIds": [
+          "addictionClinic",
+          "consultationPoint",
+          "ga",
+          "helplines"
+        ],
+        "steps": [
+          "Rozmowa motywująca; analiza kosztów (pieniądze, sen, relacje, nauka/praca).",
+          "Konsultacja w poradni uzależnień lub punkcie konsultacyjnym.",
+          "Przy hazardzie – Anonimowi Hazardziści, ograniczenie dostępu do pieniędzy, pomoc w zadłużeniu."
+        ]
+      },
+      {
+        "id": "behaviouralMinor",
+        "title": "Nastolatek a gry i internet",
+        "when": {
+          "age": ["minor"],
+          "problem": ["behavioural"]
+        },
+        "institutionIds": [
+          "schoolPedagogue",
+          "counsellingCentre",
+          "consultationPoint"
+        ],
+        "steps": [
+          "Rozmowa z nastolatkiem i rodzicami o funkcji grania (nuda, ucieczka, kontakty).",
+          "Wspólne zasady korzystania z urządzeń i alternatywne aktywności.",
+          "Konsultacja w poradni psychologiczno-pedagogicznej."
+        ]
+      },
+      {
+        "id": "codependency",
+        "title": "Bliski osoby uzależnionej",
+        "when": {
+          "problem": ["codependency"]
+        },
+        "institutionIds": [
+          "consultationPoint",
+          "addictionClinic",
+          "alAnon",
+          "socialWelfare"
+        ],
+        "steps": [
+          "Wysłuchaj i nazwij obciążenie; podkreśl, że bliski ma prawo do pomocy dla siebie.",
+          "Terapia dla osób współuzależnionych w poradni (NFZ) lub wsparcie w punkcie konsultacyjnym.",
+          "Grupy Al-Anon; elementy CRAFT, gdy bliski chce zmotywować osobę do leczenia.",
+          "Sprawdź bezpieczeństwo – czy w domu nie ma przemocy."
+        ]
+      },
+      {
+        "id": "codependencyMinor",
+        "title": "Dziecko z rodziny z problemem alkoholowym lub narkotykowym",
+        "when": {
+          "age": ["minor"],
+          "problem": ["codependency"]
+        },
+        "institutionIds": [
+          "schoolPedagogue",
+          "counsellingCentre",
+          "alAnon",
+          "socialWelfare"
+        ],
+        "steps": [
+          "Zapewnij dziecku stały kontakt z zaufanym dorosłym w szkole.",
+          "Zaproponuj zajęcia socjoterapeutyczne lub świetlicę; dla nastolatków – Alateen.",
+          "Oceń, czy dziecko jest bezpieczne i zaopiekowane; w razie wątpliwości – OPS, „Niebieska Karta”, sąd rodzinny."
+        ]
+      }
+    ]
+  },
+  "legal": [
+    {
+      "id": "alcoholAct",
+      "title": "Ustawa o wychowaniu w trzeźwości i przeciwdziałaniu alkoholizmowi (1982)",
+      "summary": "Podstawowa ustawa o polityce wobec alkoholu: określa zadania gmin, zasady sprzedaży i reklamy alkoholu, finansowanie profilaktyki oraz procedurę zobowiązania do leczenia odwykowego.",
+      "keyPoints": [
+        "Gmina realizuje gminny program profilaktyki i rozwiązywania problemów alkoholowych (może być łączony z przeciwdziałaniem narkomanii), finansowany z opłat za zezwolenia na sprzedaż alkoholu.",
+        "Gmina powołuje GKRPA i prowadzi punkty konsultacyjne.",
+        "Leczenie uzależnienia jest co do zasady dobrowolne; wyjątkiem jest zobowiązanie przez sąd.",
+        "Procedura: zgłoszenie do GKRPA → rozmowa z osobą → badanie przez biegłych (psycholog, psychiatra) → wniosek GKRPA do sądu rejonowego → sąd może orzec obowiązek leczenia stacjonarnego lub ambulatoryjnego i ustanowić nadzór kuratora.",
+        "Przesłanki: uzależnienie i co najmniej jedno z: rozkład życia rodzinnego, demoralizacja małoletnich, uchylanie się od pracy, systematyczne zakłócanie spokoju lub porządku publicznego."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "drugAct",
+      "title": "Ustawa o przeciwdziałaniu narkomanii (2005)",
+      "summary": "Reguluje profilaktykę, leczenie, rehabilitację i reintegrację osób uzależnionych od narkotyków, a także kontrolę substancji i przepisy karne. Zawiera mechanizmy „leczenie zamiast kary”.",
+      "keyPoints": [
+        "Leczenie jest dobrowolne; u niepełnoletnich decyzję mogą podjąć rodzice lub sąd rodzinny.",
+        "Prokurator może zawiesić postępowanie wobec osoby uzależnionej, która podda się leczeniu (art. 72).",
+        "Możliwe jest umorzenie postępowania w sprawie posiadania nieznacznej ilości substancji na własny użytek (art. 62a).",
+        "Sąd może zobowiązać skazanego uzależnionego do leczenia, a czas leczenia może być zaliczony na poczet kary.",
+        "Gminy realizują zadania z zakresu przeciwdziałania narkomanii w ramach gminnego programu."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "juvenileAct",
+      "title": "Ustawa o wspieraniu i resocjalizacji nieletnich (2022)",
+      "summary": "Obowiązuje od 1 września 2022 r. i zastąpiła ustawę o postępowaniu w sprawach nieletnich z 1982 r. Określa zasady zapobiegania demoralizacji, postępowania przed sądem rodzinnym oraz wykonywania środków wobec nieletnich.",
+      "keyPoints": [
+        "Dobro nieletniego jest naczelną zasadą; środki dobiera się do jego potrzeb i sytuacji.",
+        "Ustawa przewiduje dolną granicę wieku w sprawach o demoralizację (10 lat) i odpowiedzialność za czyny karalne od 13 lat.",
+        "Dyrektor szkoły może, za zgodą rodziców i ucznia, zastosować środek oddziaływania wychowawczego (np. pouczenie, ostrzeżenie, przeproszenie) w określonych przypadkach.",
+        "Środki wychowawcze (m.in. nadzór kuratora, MOW), środek poprawczy (zakład poprawczy), schronisko dla nieletnich jako środek tymczasowy.",
+        "Możliwość mediacji w sprawach nieletnich."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "violenceAct",
+      "title": "Ustawa o przeciwdziałaniu przemocy domowej (2005, nowelizacja 2023)",
+      "summary": "Pierwotnie ustawa o przeciwdziałaniu przemocy w rodzinie; nowelizacja z 2023 r. zmieniła tytuł i rozszerzyła zakres ochrony. Reguluje procedurę „Niebieskie Karty”, zadania gmin i powiatów oraz środki chroniące osoby doznające przemocy.",
+      "keyPoints": [
+        "Definicja obejmuje przemoc fizyczną, psychiczną, seksualną, ekonomiczną i z użyciem środków komunikacji elektronicznej.",
+        "Ochrona obejmuje także byłych małżonków i partnerów oraz osoby wspólnie zamieszkujące; dziecko–świadek jest osobą doznającą przemocy.",
+        "Gmina powołuje zespół interdyscyplinarny; grupy diagnostyczno-pomocowe zastąpiły grupy robocze.",
+        "Policja może wydać nakaz natychmiastowego opuszczenia wspólnie zajmowanego mieszkania i zakaz zbliżania się.",
+        "Wszczęcie procedury „Niebieskie Karty” nie wymaga zgody osoby doznającej przemocy."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "publicHealthAct",
+      "title": "Ustawa o zdrowiu publicznym (2015) i Narodowy Program Zdrowia",
+      "summary": "Ustawa o zdrowiu publicznym tworzy ramy dla Narodowego Programu Zdrowia, przyjmowanego przez Radę Ministrów na kilka lat. NPZ obejmuje m.in. profilaktykę uzależnień od alkoholu, narkotyków, tytoniu i uzależnień behawioralnych i wskazuje kierunki dla samorządów.",
+      "keyPoints": [
+        "NPZ jest przyjmowany rozporządzeniem Rady Ministrów na kolejne okresy (np. lata 2021–2025) – sprawdź aktualną edycję.",
+        "Gminne programy profilaktyki powinny być spójne z celami NPZ.",
+        "Finansowanie profilaktyki pochodzi m.in. z opłat za zezwolenia na alkohol (gminy) i środków centralnych.",
+        "Promowane są programy o udowodnionej skuteczności (programy rekomendowane)."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "kcpu",
+      "title": "Krajowe Centrum Przeciwdziałania Uzależnieniom (KCPU)",
+      "summary": "Od 1 stycznia 2022 r. KCPU jest centralną instytucją odpowiedzialną za politykę wobec uzależnień. Zastąpiło dwie dawne jednostki: Państwową Agencję Rozwiązywania Problemów Alkoholowych (PARPA) i Krajowe Biuro ds. Przeciwdziałania Narkomanii – te nazwy dotyczą już wyłącznie instytucji historycznych.",
+      "keyPoints": [
+        "Podlega ministrowi właściwemu do spraw zdrowia.",
+        "Zajmuje się alkoholem, narkotykami i uzależnieniami behawioralnymi w jednej instytucji.",
+        "Realizuje zadania Narodowego Programu Zdrowia, wspiera i doradza samorządom, prowadzi bazę programów rekomendowanych.",
+        "Prowadzi system szkoleń i certyfikacji m.in. specjalistów i instruktorów terapii uzależnień – istotne dla planowanej ścieżki zawodowej."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    }
+  ],
+  "crisis": [
+    {
+      "id": "ch143",
+      "country": "CH",
+      "number": "143",
+      "name": "Die Dargebotene Hand / La Main Tendue",
+      "description": "Całodobowy, anonimowy telefon zaufania w Szwajcarii dla osób dorosłych w kryzysie (także czat).",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch147",
+      "country": "CH",
+      "number": "147",
+      "name": "Pro Juventute – telefon dla dzieci i młodzieży",
+      "description": "Bezpłatna, poufna pomoc dla dzieci i młodzieży w Szwajcarii: telefon, czat, SMS.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch144",
+      "country": "CH",
+      "number": "144",
+      "name": "Pogotowie ratunkowe (Szwajcaria)",
+      "description": "Nagłe zagrożenie życia lub zdrowia, także zatrucie lub przedawkowanie.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch117",
+      "country": "CH",
+      "number": "117",
+      "name": "Policja (Szwajcaria)",
+      "description": "Zagrożenie bezpieczeństwa, przemoc.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "pl116123",
+      "country": "PL",
+      "number": "116 123",
+      "name": "Kryzysowy telefon zaufania dla dorosłych",
+      "description": "Wsparcie emocjonalne dla osób dorosłych w kryzysie.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "pl116111",
+      "country": "PL",
+      "number": "116 111",
+      "name": "Telefon zaufania dla dzieci i młodzieży",
+      "description": "Bezpłatna, anonimowa pomoc dla dzieci i nastolatków (także czat).",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "pl800120002",
+      "country": "PL",
+      "number": "800 120 002",
+      "name": "Niebieska Linia – pogotowie dla osób doznających przemocy domowej",
+      "description": "Wsparcie i informacja dla osób doznających przemocy domowej i ich bliskich, także dla świadków.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "pl800702222",
+      "country": "PL",
+      "number": "800 70 2222",
+      "name": "Centrum Wsparcia dla osób w stanie kryzysu psychicznego",
+      "description": "Całodobowa linia wsparcia dla dorosłych w kryzysie psychicznym.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "pl112",
+      "country": "PL",
+      "number": "112",
+      "name": "Numer alarmowy 112",
+      "description": "Bezpośrednie zagrożenie życia, zdrowia lub bezpieczeństwa: pogotowie, Policja, straż pożarna. Działa w całej UE.",
+      "reviewStatus": "do_weryfikacji"
+    }
+  ],
+  "countryNote": ""
+}

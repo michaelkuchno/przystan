@@ -1,0 +1,656 @@
+{
+  "intros": {
+    "urgeSurfing": {
+      "youth": "Głód jest jak fala – rośnie, osiąga szczyt i opada. Spróbujemy ją przeczekać razem, oddychając spokojnie.",
+      "adult": "Głód substancji przypomina falę: narasta, osiąga szczyt i słabnie. To ćwiczenie pomaga go obserwować, nie działając pod jego wpływem."
+    },
+    "readinessRuler": {
+      "youth": "Zaznacz na linijce od 0 do 10, jak to u ciebie wygląda. Nie ma złych odpowiedzi.",
+      "adult": "Proszę zaznaczyć na skali od 0 do 10, jak ocenia Pan/Pani ważność zmiany, pewność siebie i gotowość. Każda odpowiedź jest w porządku."
+    },
+    "decisionalBalance": {
+      "youth": "Zobaczmy, co ci daje to, co robisz teraz, a co mogłaby dać zmiana. Wpisz wszystko, co przychodzi ci do głowy.",
+      "adult": "Przyjrzyjmy się razem korzyściom i kosztom obecnej sytuacji oraz możliwej zmiany. Warto zapisać wszystko, także to, co przemawia przeciw zmianie."
+    },
+    "chainAnalysis": {
+      "youth": "Rozłóżmy jedną sytuację na kawałki: co się stało, co pomyślałeś/pomyślałaś, co poczułeś/poczułaś, co zrobiłeś/zrobiłaś i co z tego wyszło.",
+      "adult": "Odtworzymy krok po kroku jedną konkretną sytuację, aby zobaczyć, jak ogniwa łączą się ze sobą i gdzie można było zareagować inaczej."
+    },
+    "halt": {
+      "youth": "Szybki test: czy jesteś teraz głodny, zły, samotny albo zmęczony? To momenty, w których łatwiej o złe decyzje.",
+      "adult": "Krótki przegląd czterech stanów – głodu, złości, samotności i zmęczenia – które zwiększają ryzyko nawrotu. Warto sprawdzać je regularnie."
+    },
+    "thoughtRecord": {
+      "youth": "Czasem głowa podsuwa myśli, które nie do końca są prawdą. Zapiszmy jedną i sprawdźmy ją jak detektyw.",
+      "adult": "Dziennik myśli pomaga zauważyć automatyczne myśli, nazwać ich zniekształcenia i znaleźć bardziej wyważone spojrzenie na sytuację."
+    },
+    "scaling": {
+      "youth": "Wyobraź sobie skalę od 0 do 10. Gdzie jesteś dziś i co by pomogło przesunąć się choć o krok?",
+      "adult": "Pytania skalujące pomagają dostrzec to, co już działa, i zaplanować małe kroki. Skupiamy się na rozwiązaniach, nie na problemie."
+    },
+    "triggerMap": {
+      "youth": "Zaznacz, co sprawia, że masz ochotę sięgnąć po substancję albo zrobić coś, czego potem żałujesz: ludzie, miejsca, uczucia.",
+      "adult": "Mapa wyzwalaczy pozwala zobaczyć osoby, miejsca, sytuacje i stany, które zwiększają ryzyko, oraz zaplanować, jak sobie z nimi radzić."
+    },
+    "supportMap": {
+      "youth": "Kto jest po twojej stronie? Umieść ludzi i miejsca, które mogą ci pomóc – im bliżej środka, tym bliżej ciebie.",
+      "adult": "Mapa wsparcia pokazuje osoby i instytucje, na które można liczyć, oraz miejsca, gdzie wsparcia brakuje."
+    },
+    "grounding": {
+      "youth": "Kiedy w głowie jest za dużo, pomóc mogą zmysły. Rozejrzyj się i policz rzeczy wokół siebie.",
+      "adult": "Ćwiczenie 5-4-3-2-1 pomaga wrócić do chwili obecnej, gdy pojawia się silny niepokój, napięcie lub głód."
+    },
+    "breathing": {
+      "youth": "Oddychaj razem z kółkiem: wdech, gdy rośnie, wydech, gdy się zmniejsza. Kilka minut wystarczy.",
+      "adult": "Spokojny, rytmiczny oddech pomaga obniżyć napięcie. Proszę wybrać rytm, który jest wygodny, i oddychać za animacją."
+    },
+    "socialSkills": {
+      "youth": "Przećwiczmy trudną sytuację na niby, zanim zdarzy się naprawdę. Wylosuj kartę i spróbuj.",
+      "adult": "Odgrywanie ról pozwala przećwiczyć trudne rozmowy w bezpiecznych warunkach. Po każdej scence omawiamy, co zadziałało."
+    }
+  },
+  "urgeSurfing": {
+    "steps": [
+      {
+        "youth": "Oceń, jak silny jest teraz głód – od 0 do 10.",
+        "adult": "Proszę ocenić siłę głodu w tej chwili w skali od 0 do 10."
+      },
+      {
+        "youth": "Usiądź wygodnie i weź kilka spokojnych oddechów.",
+        "adult": "Proszę usiąść wygodnie i wziąć kilka spokojnych, głębszych oddechów."
+      },
+      {
+        "youth": "Gdzie w ciele czujesz głód? W brzuchu, w rękach, w gardle?",
+        "adult": "Proszę zauważyć, w którym miejscu ciała odczuwa Pan/Pani głód."
+      },
+      {
+        "youth": "Popatrz na to uczucie z ciekawością. Jak się zmienia? Rośnie, słabnie?",
+        "adult": "Proszę obserwować to odczucie z ciekawością, bez oceniania – jak się zmienia z chwilą na chwilę."
+      },
+      {
+        "youth": "Wyobraź sobie, że jesteś na desce i płyniesz na tej fali. Nie walczysz z nią – po prostu na niej płyniesz.",
+        "adult": "Proszę wyobrazić sobie, że unosi się Pan/Pani na tej fali. Nie trzeba z nią walczyć ani jej spełniać."
+      },
+      {
+        "youth": "Oddychaj dalej. Fala ma szczyt, a potem zawsze opada.",
+        "adult": "Proszę dalej spokojnie oddychać. Każda fala osiąga szczyt i słabnie."
+      },
+      {
+        "youth": "Oceń głód jeszcze raz – od 0 do 10. Co zauważasz?",
+        "adult": "Proszę ponownie ocenić głód w skali 0–10 i powiedzieć, co Pan/Pani zauważa."
+      }
+    ]
+  },
+  "readiness": {
+    "importance": [
+      {
+        "youth": "Dlaczego zaznaczyłeś/zaznaczyłaś tyle, a nie mniej, np. 2?",
+        "adult": "Dlaczego taka liczba, a nie niższa, na przykład 2?"
+      },
+      {
+        "youth": "Co musiałoby się stać, żeby to było dla ciebie jeszcze ważniejsze?",
+        "adult": "Co musiałoby się wydarzyć, żeby zmiana stała się dla Pana/Pani jeszcze ważniejsza?"
+      },
+      {
+        "youth": "Co by się zmieniło na lepsze, gdyby ci się udało?",
+        "adult": "Co zmieniłoby się na lepsze w Pana/Pani życiu, gdyby ta zmiana się udała?"
+      }
+    ],
+    "confidence": [
+      {
+        "youth": "Co sprawia, że jesteś na takim poziomie, a nie niżej?",
+        "adult": "Co sprawia, że Pana/Pani pewność jest na tym poziomie, a nie niższym?"
+      },
+      {
+        "youth": "Co pomogło ci kiedyś zrobić coś trudnego?",
+        "adult": "Co pomogło Panu/Pani w przeszłości poradzić sobie z trudną zmianą?"
+      },
+      {
+        "youth": "Co mogłoby podnieść twoją pewność o jeden punkt?",
+        "adult": "Co mogłoby podnieść tę ocenę o jeden punkt?"
+      }
+    ],
+    "readiness": [
+      {
+        "youth": "Dlaczego tyle, a nie 0?",
+        "adult": "Dlaczego właśnie tyle, a nie zero?"
+      },
+      {
+        "youth": "Jaki byłby twój pierwszy mały krok?",
+        "adult": "Jaki mógłby być pierwszy, najmniejszy krok?"
+      },
+      {
+        "youth": "Kto albo co mogłoby ci w tym pomóc?",
+        "adult": "Kto lub co mogłoby Pana/Panią w tym wesprzeć?"
+      }
+    ]
+  },
+  "decisionalBalance": {
+    "prompts": {
+      "prosChange": {
+        "youth": "Co dobrego może dać ci zmiana?",
+        "adult": "Jakie korzyści może przynieść zmiana?"
+      },
+      "consChange": {
+        "youth": "Co może być trudne albo czego możesz się bać, gdy coś zmienisz?",
+        "adult": "Jakie trudności lub straty mogą wiązać się ze zmianą?"
+      },
+      "prosStatus": {
+        "youth": "Co ci daje to, co robisz teraz?",
+        "adult": "Co daje Panu/Pani obecna sytuacja lub zachowanie?"
+      },
+      "consStatus": {
+        "youth": "Co cię kosztuje to, co robisz teraz?",
+        "adult": "Jakie koszty ponosi Pan/Pani w obecnej sytuacji?"
+      }
+    }
+  },
+  "chainAnalysis": {
+    "prompts": {
+      "trigger": {
+        "youth": "Co się stało na początku? Gdzie byłeś/byłaś, z kim?",
+        "adult": "Co zapoczątkowało sytuację? Gdzie i z kim Pan/Pani wtedy był/była?"
+      },
+      "thoughts": {
+        "youth": "Co przeszło ci przez głowę?",
+        "adult": "Jakie myśli się wtedy pojawiły?"
+      },
+      "emotions": {
+        "youth": "Co czułeś/czułaś? Jak mocno?",
+        "adult": "Jakie emocje się pojawiły i jak silne były?"
+      },
+      "behaviour": {
+        "youth": "Co zrobiłeś/zrobiłaś?",
+        "adult": "Co Pan/Pani zrobił/zrobiła?"
+      },
+      "consequences": {
+        "youth": "Co z tego wyszło – od razu i później?",
+        "adult": "Jakie były skutki – krótko- i długoterminowe?"
+      }
+    }
+  },
+  "halt": {
+    "items": {
+      "hungry": {
+        "question": {
+          "youth": "Czy jesteś głodny/głodna?",
+          "adult": "Czy jest Pan/Pani głodny/głodna?"
+        },
+        "ideas": [
+          "zjedz coś małego",
+          "napij się wody",
+          "zaplanuj regularne posiłki"
+        ]
+      },
+      "angry": {
+        "question": {
+          "youth": "Czy jesteś zły/zła albo wkurzony/wkurzona?",
+          "adult": "Czy odczuwa Pan/Pani złość lub irytację?"
+        },
+        "ideas": [
+          "wyjdź na spacer lub się poruszaj",
+          "zrób ćwiczenie oddechowe",
+          "zapisz, co cię zdenerwowało",
+          "porozmawiaj z kimś zaufanym"
+        ]
+      },
+      "lonely": {
+        "question": {
+          "youth": "Czy czujesz się samotny/samotna?",
+          "adult": "Czy czuje się Pan/Pani samotny/samotna?"
+        },
+        "ideas": [
+          "zadzwoń lub napisz do bliskiej osoby",
+          "idź na spotkanie grupy wsparcia",
+          "wyjdź tam, gdzie są ludzie"
+        ]
+      },
+      "tired": {
+        "question": {
+          "youth": "Czy jesteś zmęczony/zmęczona?",
+          "adult": "Czy jest Pan/Pani zmęczony/zmęczona?"
+        },
+        "ideas": [
+          "odpocznij kilka minut",
+          "połóż się wcześniej spać",
+          "odłóż trudne decyzje na później"
+        ]
+      }
+    }
+  },
+  "distortions": [
+    {
+      "id": "allOrNothing",
+      "name": "Myślenie czarno-białe",
+      "description": "Widzenie sytuacji w dwóch skrajnych kategoriach, bez odcieni.",
+      "example": "„Zapaliłem raz, więc wszystko zepsute.”"
+    },
+    {
+      "id": "overgeneralisation",
+      "name": "Nadmierne uogólnianie",
+      "description": "Wyciąganie ogólnych wniosków z jednego zdarzenia.",
+      "example": "„Nie dostałam tej pracy – nikt mnie nigdy nie zatrudni.”"
+    },
+    {
+      "id": "mentalFilter",
+      "name": "Filtr negatywny",
+      "description": "Skupianie się wyłącznie na negatywach i pomijanie pozytywów.",
+      "example": "„Kurator pochwalił mnie za pięć rzeczy, ale pamiętam tylko jedną uwagę.”"
+    },
+    {
+      "id": "discountingPositive",
+      "name": "Dyskwalifikowanie pozytywów",
+      "description": "Uznawanie sukcesów za przypadek lub „nieliczące się”.",
+      "example": "„Miesiąc bez picia to nic, każdy by tak umiał.”"
+    },
+    {
+      "id": "mindReading",
+      "name": "Czytanie w myślach",
+      "description": "Zakładanie, że wiem, co inni o mnie myślą.",
+      "example": "„Wszyscy w klasie uważają, że jestem frajerem.”"
+    },
+    {
+      "id": "fortuneTelling",
+      "name": "Przepowiadanie przyszłości",
+      "description": "Przewidywanie negatywnej przyszłości jako pewnej.",
+      "example": "„I tak wrócę do brania, nie ma sensu się starać.”"
+    },
+    {
+      "id": "catastrophising",
+      "name": "Katastrofizowanie",
+      "description": "Wyolbrzymianie skutków i oczekiwanie najgorszego.",
+      "example": "„Jeśli spóźnię się do kuratora, na pewno wrócę do więzienia.”"
+    },
+    {
+      "id": "emotionalReasoning",
+      "name": "Rozumowanie emocjonalne",
+      "description": "Traktowanie uczucia jako dowodu na to, jak jest naprawdę.",
+      "example": "„Czuję się beznadziejnie, więc moja sytuacja jest beznadziejna.”"
+    },
+    {
+      "id": "shouldStatements",
+      "name": "Myślenie „powinienem”",
+      "description": "Sztywne wymagania wobec siebie i innych.",
+      "example": "„Powinienem dać radę sam, bez niczyjej pomocy.”"
+    },
+    {
+      "id": "labelling",
+      "name": "Etykietowanie",
+      "description": "Przypisywanie sobie lub innym ogólnej, negatywnej etykiety.",
+      "example": "„Jestem nieudacznikiem.”"
+    },
+    {
+      "id": "personalisation",
+      "name": "Personalizacja",
+      "description": "Branie na siebie winy za rzeczy, na które nie miało się wpływu.",
+      "example": "„Rodzice się kłócą, bo jestem w ośrodku.”"
+    },
+    {
+      "id": "permissionGiving",
+      "name": "Myśli przyzwalające",
+      "description": "Myśli, które usprawiedliwiają sięgnięcie po substancję.",
+      "example": "„Zasłużyłem na jedno piwo po takim tygodniu.”"
+    }
+  ],
+  "scaling": {
+    "miracle": {
+      "youth": "Wyobraź sobie, że dziś w nocy, kiedy śpisz, dzieje się cud i problem, o którym rozmawiamy, znika. Nie wiesz, że to się stało. Po czym rano poznasz, że coś się zmieniło?",
+      "adult": "Proszę wyobrazić sobie, że tej nocy, gdy Pan/Pani śpi, wydarza się cud i problem, który nas tu sprowadza, zostaje rozwiązany. Ponieważ Pan/Pani śpi, nie wie o tym. Co rano byłoby pierwszym znakiem, że coś się zmieniło?"
+    },
+    "followUps": [
+      {
+        "youth": "Kto pierwszy zauważyłby, że coś się zmieniło? Po czym?",
+        "adult": "Kto z otoczenia zauważyłby zmianę jako pierwszy i po czym?"
+      },
+      {
+        "youth": "Kiedy ostatnio choć trochę tak było?",
+        "adult": "Kiedy ostatnio choć część tego „cudu” już się wydarzyła?"
+      },
+      {
+        "youth": "Gdzie jesteś dziś na skali od 0 do 10?",
+        "adult": "Gdzie na skali od 0 do 10 jest Pan/Pani dzisiaj?"
+      },
+      {
+        "youth": "Co pomogło ci dojść aż tutaj, a nie niżej?",
+        "adult": "Co sprawiło, że jest to ta liczba, a nie niższa?"
+      },
+      {
+        "youth": "Co byłoby małym znakiem, że jesteś o jeden punkt wyżej?",
+        "adult": "Co byłoby małym sygnałem, że przesunął/przesunęła się Pan/Pani o jeden punkt w górę?"
+      }
+    ]
+  },
+  "triggerSuggestions": [
+    "stres w szkole lub w pracy",
+    "kłótnia w domu",
+    "spotkanie ze znajomymi, z którymi się używało",
+    "impreza lub weekend",
+    "nuda i brak planu na wolny czas",
+    "samotność",
+    "dostanie pieniędzy (wypłata, kieszonkowe)",
+    "smutek lub przygnębienie",
+    "złość",
+    "zmęczenie i brak snu",
+    "konkretne miejsce (park, klatka schodowa, bar)",
+    "muzyka lub filmy kojarzące się z używaniem",
+    "wiadomość lub telefon od dilera",
+    "świętowanie sukcesu",
+    "przepustka lub wyjście z ośrodka"
+  ],
+  "supportSuggestions": [
+    "mama lub tata",
+    "rodzeństwo",
+    "partner lub partnerka",
+    "przyjaciel lub przyjaciółka",
+    "wychowawca lub pedagog szkolny",
+    "terapeuta w poradni",
+    "kurator sądowy",
+    "pracownik socjalny z OPS",
+    "grupa wsparcia (np. AA, NA)",
+    "trener lub opiekun zajęć",
+    "telefon zaufania",
+    "osoba duchowna lub wspólnota"
+  ],
+  "grounding": {
+    "steps": [
+      {
+        "count": 5,
+        "sense": "see",
+        "prompt": {
+          "youth": "Wymień 5 rzeczy, które widzisz.",
+          "adult": "Proszę wymienić 5 rzeczy, które Pan/Pani widzi."
+        }
+      },
+      {
+        "count": 4,
+        "sense": "touch",
+        "prompt": {
+          "youth": "Wymień 4 rzeczy, których możesz dotknąć.",
+          "adult": "Proszę wymienić 4 rzeczy, których może Pan/Pani dotknąć."
+        }
+      },
+      {
+        "count": 3,
+        "sense": "hear",
+        "prompt": {
+          "youth": "Wymień 3 dźwięki, które słyszysz.",
+          "adult": "Proszę wymienić 3 dźwięki, które Pan/Pani słyszy."
+        }
+      },
+      {
+        "count": 2,
+        "sense": "smell",
+        "prompt": {
+          "youth": "Wymień 2 zapachy, które czujesz.",
+          "adult": "Proszę wymienić 2 zapachy, które Pan/Pani czuje."
+        }
+      },
+      {
+        "count": 1,
+        "sense": "taste",
+        "prompt": {
+          "youth": "Wymień 1 smak, który czujesz w ustach.",
+          "adult": "Proszę wymienić 1 smak, który czuje Pan/Pani w ustach."
+        }
+      }
+    ]
+  },
+  "breathing": {
+    "patterns": [
+      {
+        "id": "box",
+        "name": "Oddech w kwadracie 4-4-4-4",
+        "inhale": 4,
+        "hold": 4,
+        "exhale": 4,
+        "holdAfter": 4
+      },
+      {
+        "id": "calm",
+        "name": "Spokojny wydech 4-6",
+        "inhale": 4,
+        "hold": 0,
+        "exhale": 6,
+        "holdAfter": 0
+      },
+      {
+        "id": "478",
+        "name": "Oddech 4-7-8",
+        "inhale": 4,
+        "hold": 7,
+        "exhale": 8,
+        "holdAfter": 0
+      },
+      {
+        "id": "simple",
+        "name": "Prosty rytm 3-3",
+        "inhale": 3,
+        "hold": 0,
+        "exhale": 3,
+        "holdAfter": 0
+      }
+    ]
+  },
+  "socialSkills": [
+    {
+      "id": "ss-party-refusal",
+      "skill": "refusal",
+      "title": "Odmowa na imprezie",
+      "audience": "youth",
+      "situation": "Jesteś na urodzinach kolegi. Ktoś podaje ci piwo i mówi: „No weź, jedno nie zaszkodzi”.",
+      "roles": ["osoba odmawiająca", "kolega z piwem", "obserwator"],
+      "steps": [
+        "Powiedz wyraźnie „nie”, patrząc rozmówcy w oczy.",
+        "Podaj krótki powód, bez długiego tłumaczenia się.",
+        "Zaproponuj coś innego lub zmień temat.",
+        "Jeśli presja trwa, odejdź."
+      ],
+      "tips": [
+        "Ton głosu spokojny, ale stanowczy.",
+        "Możesz powtarzać tę samą odmowę jak „zdarta płyta”."
+      ]
+    },
+    {
+      "id": "ss-old-friend",
+      "skill": "refusal",
+      "title": "Spotkanie dawnego znajomego",
+      "audience": "adult",
+      "situation": "Kilka dni po wyjściu z ośrodka spotykasz znajomego, z którym wcześniej piłeś. Proponuje: „Chodź, oblejemy twój powrót”.",
+      "roles": ["osoba po terapii", "dawny znajomy", "obserwator"],
+      "steps": [
+        "Powiedz wyraźnie „nie”, patrząc rozmówcy w oczy.",
+        "Podaj krótki powód, bez długiego tłumaczenia się.",
+        "Zaproponuj coś innego lub zmień temat.",
+        "Jeśli presja trwa, odejdź."
+      ],
+      "tips": [
+        "Wcześniej przygotuj jedno zdanie odmowy.",
+        "Masz prawo nie tłumaczyć się ze swojego leczenia."
+      ]
+    },
+    {
+      "id": "ss-vape-group",
+      "skill": "peerPressure",
+      "title": "Presja grupy na przerwie",
+      "audience": "youth",
+      "situation": "Na przerwie grupa znajomych pali e-papierosy za szkołą. Śmieją się, że „tylko dzieci nie palą”.",
+      "roles": [
+        "osoba pod presją",
+        "dwóch–trzech kolegów z grupy",
+        "obserwator"
+      ],
+      "steps": [
+        "Zauważ, że to presja, a nie twoja decyzja.",
+        "Odpowiedz krótko, z humorem lub spokojnie.",
+        "Poszukaj sojusznika w grupie.",
+        "Zaproponuj inną aktywność albo odejdź."
+      ],
+      "tips": [
+        "Większość młodzieży nie pali – presja często opiera się na mitach.",
+        "Nie musisz nikogo przekonywać."
+      ]
+    },
+    {
+      "id": "ss-dare",
+      "skill": "peerPressure",
+      "title": "Wyzwanie w ośrodku",
+      "audience": "youth",
+      "situation": "W grupie w ośrodku koledzy namawiają cię, żebyś uciekł/uciekła na noc z przepustki „dla jaj”.",
+      "roles": ["wychowanek/wychowanka", "koledzy namawiający", "obserwator"],
+      "steps": [
+        "Pomyśl o konsekwencjach dla siebie.",
+        "Powiedz, co jest dla ciebie ważne (np. kolejna przepustka).",
+        "Odmów bez obrażania innych.",
+        "Porozmawiaj z wychowawcą, jeśli presja nie mija."
+      ],
+      "tips": [
+        "Przypomnij sobie swój cel.",
+        "Odwaga to też umiejętność powiedzenia „nie”."
+      ]
+    },
+    {
+      "id": "ss-conflict-teacher",
+      "skill": "conflict",
+      "title": "Konflikt z nauczycielem",
+      "audience": "youth",
+      "situation": "Nauczyciel niesłusznie, twoim zdaniem, wpisał ci uwagę za rozmowę na lekcji.",
+      "roles": ["uczeń/uczennica", "nauczyciel", "obserwator"],
+      "steps": [
+        "Ochłoń, zanim zaczniesz rozmowę.",
+        "Poproś o rozmowę po lekcji.",
+        "Powiedz, jak widzisz sytuację, komunikatem „ja”.",
+        "Wysłuchaj drugiej strony i poszukajcie rozwiązania."
+      ],
+      "tips": [
+        "Unikaj ironii i podnoszenia głosu.",
+        "Celem jest rozwiązanie, nie wygrana."
+      ]
+    },
+    {
+      "id": "ss-conflict-home",
+      "skill": "conflict",
+      "title": "Spór w domu o pieniądze",
+      "audience": "adult",
+      "situation": "Partnerka zarzuca ci, że znowu wydałeś pieniądze bez uzgodnienia. Czujesz narastającą złość.",
+      "roles": ["osoba w sporze", "partnerka/partner", "obserwator"],
+      "steps": [
+        "Zauważ złość i zrób przerwę, jeśli trzeba.",
+        "Wysłuchaj zarzutu i sparafrazuj go.",
+        "Powiedz o swoich potrzebach bez oskarżeń.",
+        "Uzgodnijcie jedną konkretną zasadę na przyszłość."
+      ],
+      "tips": [
+        "Nie rozmawiajcie o trudnych sprawach pod wpływem substancji.",
+        "Przerwa to nie ucieczka – wróć do rozmowy."
+      ]
+    },
+    {
+      "id": "ss-job-interview",
+      "skill": "jobInterview",
+      "title": "Rozmowa o pracę po wyjściu z zakładu",
+      "audience": "adult",
+      "situation": "Idziesz na rozmowę o pracę w magazynie. Pracodawca pyta o przerwę w zatrudnieniu w ostatnich dwóch latach.",
+      "roles": ["kandydat/kandydatka", "pracodawca", "obserwator"],
+      "steps": [
+        "Przywitaj się i przedstaw krótko.",
+        "Odpowiedz o przerwie krótko i uczciwie, bez szczegółów.",
+        "Przejdź do tego, czego się nauczyłeś/nauczyłaś i co umiesz.",
+        "Zapytaj o szczegóły pracy i podziękuj."
+      ],
+      "tips": [
+        "Przygotuj wcześniej dwa–trzy zdania o przerwie.",
+        "Podkreśl kursy i doświadczenie zdobyte w tym czasie."
+      ]
+    },
+    {
+      "id": "ss-first-job",
+      "skill": "jobInterview",
+      "title": "Pierwsza rozmowa o pracę wakacyjną",
+      "audience": "youth",
+      "situation": "Starasz się o pracę wakacyjną w kawiarni. Kierowniczka pyta, dlaczego chcesz tu pracować.",
+      "roles": ["kandydat/kandydatka", "kierowniczka", "obserwator"],
+      "steps": [
+        "Przywitaj się i uśmiechnij.",
+        "Powiedz, co lubisz i co umiesz.",
+        "Podaj przykład, kiedy byłeś/byłaś odpowiedzialny/odpowiedzialna.",
+        "Zapytaj o godziny pracy."
+      ],
+      "tips": [
+        "Ćwicz odpowiedzi na głos przed lustrem.",
+        "Przyjdź kilka minut wcześniej."
+      ]
+    },
+    {
+      "id": "ss-ask-help-school",
+      "skill": "askingForHelp",
+      "title": "Prośba o pomoc do pedagoga",
+      "audience": "youth",
+      "situation": "Od kilku tygodni martwisz się o koleżankę, która dużo pije. Chcesz porozmawiać z pedagogiem szkolnym.",
+      "roles": ["uczeń/uczennica", "pedagog szkolny", "obserwator"],
+      "steps": [
+        "Wybierz dobry moment i poproś o rozmowę.",
+        "Powiedz, co cię martwi, konkretnie.",
+        "Zapytaj, co możesz zrobić.",
+        "Ustalcie, co dalej."
+      ],
+      "tips": [
+        "Prośba o pomoc to nie donoszenie.",
+        "Możesz zacząć od: „Mam sprawę, nie wiem, jak o tym powiedzieć”."
+      ]
+    },
+    {
+      "id": "ss-ask-help-ops",
+      "skill": "askingForHelp",
+      "title": "Wizyta w ośrodku pomocy społecznej",
+      "audience": "adult",
+      "situation": "Po wyjściu z zakładu nie masz pieniędzy na jedzenie. Idziesz do OPS po raz pierwszy.",
+      "roles": ["osoba szukająca pomocy", "pracownik socjalny", "obserwator"],
+      "steps": [
+        "Przedstaw się i powiedz, po co przychodzisz.",
+        "Opisz krótko swoją sytuację.",
+        "Zapytaj, jakie dokumenty są potrzebne.",
+        "Zapisz ustalenia i termin kolejnego kontaktu."
+      ],
+      "tips": [
+        "Weź ze sobą dowód osobisty i zaświadczenie o zwolnieniu.",
+        "Masz prawo pytać, dopóki wszystko nie będzie jasne."
+      ]
+    },
+    {
+      "id": "ss-criticism-staff",
+      "skill": "criticism",
+      "title": "Przyjmowanie krytyki",
+      "audience": "both",
+      "situation": "Wychowawca lub kierownik mówi ci, że twoja praca była niedokładna i trzeba ją poprawić.",
+      "roles": ["osoba krytykowana", "wychowawca/kierownik", "obserwator"],
+      "steps": [
+        "Wysłuchaj do końca, nie przerywaj.",
+        "Dopytaj, co konkretnie trzeba poprawić.",
+        "Przyznaj, z czym się zgadzasz.",
+        "Powiedz, co zrobisz dalej."
+      ],
+      "tips": [
+        "Krytyka dotyczy zachowania, nie ciebie jako osoby.",
+        "Weź oddech, zanim odpowiesz."
+      ]
+    },
+    {
+      "id": "ss-probation-criticism",
+      "skill": "criticism",
+      "title": "Uwaga od kuratora",
+      "audience": "adult",
+      "situation": "Kurator zwraca uwagę, że nie dostarczyłeś na czas zaświadczenia z poradni.",
+      "roles": ["osoba pod dozorem", "kurator", "obserwator"],
+      "steps": [
+        "Wysłuchaj spokojnie.",
+        "Wyjaśnij krótko, co się stało, bez wymówek.",
+        "Zaproponuj, kiedy dostarczysz dokument.",
+        "Zapytaj, jak uniknąć tego w przyszłości."
+      ],
+      "tips": [
+        "Zapisuj terminy w telefonie.",
+        "Rzeczowa rozmowa buduje zaufanie."
+      ]
+    }
+  ]
+}

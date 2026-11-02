@@ -1,0 +1,3993 @@
+{
+  "cases": [
+    {
+      "id": "demo-01",
+      "client": {
+        "code": "KW-16",
+        "sex": "male",
+        "ageGroup": "teen",
+        "age": 16,
+        "context": "juvenile",
+        "problems": ["cannabis"],
+        "goal": "abstinence",
+        "stage": "preparation",
+        "status": "active",
+        "strengths": "Zdolności manualne (pracownia stolarska), poczucie humoru, lojalność wobec młodszej siostry. Dobrze reaguje na jasne zasady i konkretne zadania.",
+        "supportNetwork": "Wychowawca w MOW (relacja zaufania), babcia ze strony matki, trener sekcji piłkarskiej przy ośrodku. Kontakt z matką odbudowywany stopniowo.",
+        "family": "Mieszka z matką, jej partnerem i 11-letnią siostrą. Silny konflikt z partnerem matki (kłótnie, ucieczki z domu). Ojciec bez kontaktu od kilku lat.",
+        "education": "Klasa I branżowej szkoły I stopnia przy MOW (stolarz). Wcześniej powtarzał 8 klasę, ok. 60% nieobecności nieusprawiedliwionych.",
+        "keyDates": [
+          {
+            "id": "kd1",
+            "label": "Posiedzenie sądu rodzinnego – przegląd środka wychowawczego",
+            "date": "@+9"
+          },
+          {
+            "id": "kd2",
+            "label": "Planowana przepustka weekendowa do domu",
+            "date": "@+18"
+          }
+        ]
+      },
+      "diagnosis": {
+        "date": "@-85",
+        "areas": {
+          "family": {
+            "score": 2,
+            "notes": "Częste konflikty z partnerem matki, matka przeciążona i niekonsekwentna. Ważna, ciepła więź z babcią."
+          },
+          "schoolWork": {
+            "score": 2,
+            "notes": "Duże zaległości, długotrwałe wagary przed umieszczeniem. W MOW chodzi na zajęcia, najlepiej radzi sobie na praktykach."
+          },
+          "peers": {
+            "score": 2,
+            "notes": "Dotychczasowa grupa rówieśnicza związana z używaniem konopi i wagarami. W ośrodku nawiązuje nowe, neutralne kontakty."
+          },
+          "leisure": {
+            "score": 3,
+            "notes": "Piłka nożna i stolarka to realne alternatywy. Poza ośrodkiem brak zorganizowanego czasu wolnego."
+          },
+          "health": {
+            "score": 3,
+            "notes": "Zaburzony rytm snu, nieregularne posiłki przed przyjęciem. Obecnie stabilizacja w rytmie dnia ośrodka."
+          },
+          "substanceUse": {
+            "score": 2,
+            "notes": "Używanie konopi kilka razy w tygodniu od 14. roku życia, okazjonalnie alkohol. Używanie „żeby się wyluzować” po kłótniach w domu."
+          },
+          "riskBehaviour": {
+            "score": 2,
+            "notes": "Ucieczki z domu, nocowanie u znajomych, jednorazowo drobna kradzież w sklepie."
+          },
+          "justice": {
+            "score": 2,
+            "notes": "Postanowienie sądu rodzinnego o umieszczeniu w MOW (demoralizacja, wagary). Brak spraw karnych."
+          }
+        },
+        "riskFactors": [
+          "Konflikt w rodzinie i niespójne zasady wychowawcze",
+          "Grupa rówieśnicza używająca substancji",
+          "Wczesna inicjacja (14 lat) i używanie jako sposób regulacji emocji",
+          "Niepowodzenia szkolne i wagary"
+        ],
+        "protectiveFactors": [
+          "Więź z babcią i siostrą",
+          "Zainteresowanie stolarką i sportem",
+          "Dobra relacja z wychowawcą w ośrodku"
+        ],
+        "resources": "Pracownia stolarska i sekcja piłkarska w MOW, gotowość babci do udziału w spotkaniach, możliwość terapii rodzinnej w poradni psychologiczno-pedagogicznej.",
+        "conclusions": "Używanie konopi pełni funkcję ucieczki od napięcia rodzinnego. Praca powinna łączyć trening radzenia sobie ze złością, wzmacnianie alternatyw i stopniową pracę z rodziną przed przepustkami."
+      },
+      "ipr": {
+        "startDate": "@-80",
+        "reviewDate": "@+10",
+        "goals": [
+          {
+            "id": "g1",
+            "title": "Utrzymanie abstynencji od konopi",
+            "specific": "Nie używać konopi w ośrodku i podczas przepustek.",
+            "measurable": "Samoopis na spotkaniach, brak incydentów w dokumentacji ośrodka, DUDIT co 6 tygodni.",
+            "achievable": "Wsparcie wychowawcy, plan na przepustkę, ćwiczenie surfowania na fali głodu.",
+            "relevant": "Warunek pozytywnej opinii dla sądu i powrotu do domu.",
+            "timeBound": "Do przeglądu środka wychowawczego.",
+            "actions": [
+              {
+                "id": "a1",
+                "text": "Spisać plan na przepustkę (miejsca, osoby, co robię, gdy pojawi się chęć)",
+                "responsible": "Podopieczny z pedagogiem",
+                "due": "@-35",
+                "done": true
+              },
+              {
+                "id": "a2",
+                "text": "Cotygodniowe ćwiczenie surfowania na fali głodu",
+                "responsible": "Pedagog",
+                "done": false
+              }
+            ],
+            "progress": 60,
+            "reviewNotes": "Jeden poślizg podczas pierwszej przepustki, sam o nim powiedział – to ważny sygnał zaufania."
+          },
+          {
+            "id": "g2",
+            "title": "Regularna nauka i praktyki",
+            "specific": "Chodzić na wszystkie zajęcia w szkole przy MOW.",
+            "measurable": "Frekwencja co najmniej 90% w miesiącu.",
+            "achievable": "Rytm dnia ośrodka, pomoc w odrabianiu zaległości z matematyki.",
+            "relevant": "Daje perspektywę zawodu i poczucie sukcesu.",
+            "timeBound": "Koniec semestru.",
+            "actions": [
+              {
+                "id": "a3",
+                "text": "Korepetycje z matematyki 2× w tygodniu",
+                "responsible": "Nauczyciel",
+                "done": true
+              }
+            ],
+            "progress": 75,
+            "reviewNotes": "Frekwencja 94% w ostatnim miesiącu."
+          },
+          {
+            "id": "g3",
+            "title": "Radzenie sobie ze złością w kontakcie z rodziną",
+            "specific": "Stosować „stop – oddech – wyjście z pokoju” zamiast ucieczki z domu.",
+            "measurable": "Brak ucieczek podczas przepustek; omówienie każdej trudnej sytuacji.",
+            "achievable": "Trening umiejętności społecznych, spotkanie rodzinne z udziałem babci.",
+            "relevant": "Konflikt w domu jest głównym wyzwalaczem używania.",
+            "actions": [
+              {
+                "id": "a4",
+                "text": "Spotkanie rodzinne przed kolejną przepustką",
+                "responsible": "Pedagog, matka, babcia",
+                "due": "@+7",
+                "done": false
+              }
+            ],
+            "progress": 40,
+            "reviewNotes": ""
+          }
+        ],
+        "evaluation": "Widoczna poprawa w szkole i stopniowy wzrost motywacji. Najtrudniejszy pozostaje kontakt z partnerem matki."
+      },
+      "relapsePlan": {
+        "highRiskSituations": [
+          "Kłótnia z partnerem mamy podczas przepustki",
+          "Spotkanie dawnych kolegów na osiedlu",
+          "Nuda w weekend, brak planu dnia"
+        ],
+        "triggers": [
+          "Krzyk i poczucie niesprawiedliwości",
+          "Zapach konopi, wiadomości od dawnej grupy"
+        ],
+        "warningSigns": [
+          "Zamykam się w pokoju i nie odpisuję",
+          "Myśl „raz nic się nie stanie”"
+        ],
+        "copingStrategies": [
+          "Wyjście do babci lub na boisko",
+          "Surfowanie na fali głodu – 10 minut",
+          "Telefon do wychowawcy z ośrodka"
+        ],
+        "supportPeople": [
+          {
+            "id": "sp1",
+            "name": "Wychowawca w MOW",
+            "contact": "telefon dyżurny ośrodka"
+          },
+          {
+            "id": "sp2",
+            "name": "Babcia",
+            "contact": ""
+          }
+        ],
+        "supportPlaces": ["Mieszkanie babci", "Orlik na osiedlu"],
+        "lapsePlan": "Poślizg to informacja, a nie porażka. Mówię o nim wychowawcy po powrocie, razem analizujemy, co się stało, i poprawiamy plan."
+      },
+      "meetings": [
+        {
+          "type": "individual",
+          "date": "@-84T11:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": [
+            "Poznanie się i zasady współpracy",
+            "Historia używania i sytuacja rodzinna"
+          ],
+          "quickNotes": "",
+          "noteType": "observation",
+          "note": {
+            "situation": "Pierwsza rozmowa indywidualna w gabinecie pedagoga, tydzień po przyjęciu.",
+            "behaviour": "Początkowo zdystansowany, odpowiadał krótko; ożywił się przy rozmowie o piłce.",
+            "emotions": "Złość na sąd i matkę, pod nią smutek i poczucie odrzucenia.",
+            "relations": "Szacunek wobec wychowawcy, nieufność wobec dorosłych spoza ośrodka.",
+            "strengths": "Szczerość w opisie używania, troska o siostrę.",
+            "conclusions": "Budować sojusz przez konkretne, krótkie zadania. Diagnoza w kolejnych tygodniach."
+          },
+          "toolsUsed": ["supportMap"],
+          "homework": "Zapisać trzy rzeczy, które lubi robić bez konopi.",
+          "title": "Pierwsze spotkanie"
+        },
+        {
+          "type": "individual",
+          "date": "@-70T11:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Linijka gotowości", "Za i przeciw zmiany"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Ocena ważności zmiany 5/10, pewności 3/10. Wymienił zyski z używania: „spokój”, „koledzy”.",
+            "assessment": "Ambiwalencja, etap rozważania. Pojawiają się wypowiedzi o zmianie dotyczące szkoły i siostry.",
+            "plan": "Kontynuować dialog motywujący, wzmocnić alternatywy (sekcja piłkarska)."
+          },
+          "toolsUsed": ["readinessRuler", "decisionalBalance"],
+          "homework": "Zapisać się na treningi w ośrodku."
+        },
+        {
+          "type": "individual",
+          "date": "@-56T11:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Trening reagowania na złość", "Odgrywanie scenki z domu"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Odegraliśmy scenkę kłótni o telefon. Za drugim razem zastosował „stop – oddech – wyjście”.",
+            "assessment": "Umie rozpoznać narastanie złości w ciele (zaciśnięte pięści, gorąco).",
+            "plan": "Ćwiczyć technikę w ośrodku, przygotować plan na pierwszą przepustkę."
+          },
+          "toolsUsed": ["socialSkills", "breathing"],
+          "homework": "Zauważyć i zapisać jedną sytuację złości w tygodniu."
+        },
+        {
+          "type": "individual",
+          "date": "@-27T11:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": [
+            "Co się wydarzyło na przepustce",
+            "Analiza łańcuchowa poślizgu"
+          ],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Sam powiedział, że w sobotę zapalił z kolegą po kłótni z partnerem matki. Wrócił punktualnie.",
+            "assessment": "Poślizg w przewidzianej sytuacji wysokiego ryzyka; szczerość świadczy o rosnącym zaufaniu.",
+            "plan": "Uzupełnić plan o wyjście do babci i telefon do wychowawcy. Zaproponować spotkanie rodzinne."
+          },
+          "toolsUsed": ["chainAnalysis", "urgeSurfing"],
+          "homework": "Dopisać do planu dwa bezpieczne miejsca na osiedlu.",
+          "title": "Omówienie przepustki"
+        },
+        {
+          "type": "individual",
+          "date": "@-13T11:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Przegląd IPR", "DUDIT – pomiar kontrolny"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Wynik DUDIT spadł z 17 do 8 punktów. Frekwencja w szkole 94%. Gotowość do zmiany 7/10.",
+            "assessment": "Przejście do etapu przygotowania; wyraźne wypowiedzi o zmianie („chcę skończyć szkołę”).",
+            "plan": "Przygotować opinię na posiedzenie sądu, ustalić termin spotkania rodzinnego."
+          },
+          "toolsUsed": ["readinessRuler"],
+          "homework": "Przemyśleć, co chce powiedzieć mamie na spotkaniu."
+        },
+        {
+          "type": "individual",
+          "date": "@0T10:00",
+          "durationMin": 50,
+          "status": "planned",
+          "agenda": [
+            "Co mówię sędziemu o swoich postępach",
+            "Obawy związane z posiedzeniem"
+          ],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": ["grounding"],
+          "homework": "",
+          "title": "Przygotowanie do posiedzenia sądu"
+        },
+        {
+          "type": "family",
+          "date": "@+7T15:00",
+          "durationMin": 90,
+          "status": "planned",
+          "agenda": ["Zasady na przepustce", "Plan na trudne sytuacje w domu"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": [],
+          "homework": "",
+          "title": "Spotkanie rodzinne (matka, babcia)"
+        }
+      ],
+      "measurements": [
+        {
+          "date": "@-84",
+          "source": {
+            "kind": "screening",
+            "instrument": "DUDIT"
+          },
+          "answers": [3, 0, 1, 2, 2, 1, 3, 0, 1, 0, 2],
+          "score": 17,
+          "band": "problems",
+          "note": "Dotyczy okresu przed umieszczeniem w MOW."
+        },
+        {
+          "date": "@-70",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 4,
+          "payload": {
+            "importance": 5,
+            "confidence": 3,
+            "readiness": 4
+          }
+        },
+        {
+          "date": "@-42",
+          "source": {
+            "kind": "screening",
+            "instrument": "DUDIT"
+          },
+          "answers": [1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 2],
+          "score": 11,
+          "band": "problems"
+        },
+        {
+          "date": "@-27",
+          "source": {
+            "kind": "tool",
+            "tool": "urgeSurfing"
+          },
+          "scoreBefore": 7,
+          "score": 4,
+          "note": "Po omówieniu poślizgu na przepustce."
+        },
+        {
+          "date": "@-27",
+          "source": {
+            "kind": "tool",
+            "tool": "chainAnalysis"
+          },
+          "payload": {
+            "trigger": "Kłótnia z partnerem mamy o późny powrót",
+            "thoughts": "„On nie ma prawa mi rozkazywać”, „i tak wszyscy mnie skreślili”",
+            "emotions": "Złość, upokorzenie",
+            "behaviour": "Wyjście z domu, wiadomość do kolegi, wspólne palenie",
+            "consequences": "Chwilowa ulga, potem lęk przed powrotem do ośrodka",
+            "alternative": "Pójść do babci, zadzwonić do wychowawcy"
+          }
+        },
+        {
+          "date": "@-20",
+          "source": {
+            "kind": "tool",
+            "tool": "urgeSurfing"
+          },
+          "scoreBefore": 5,
+          "score": 2
+        },
+        {
+          "date": "@-13",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 7,
+          "payload": {
+            "importance": 8,
+            "confidence": 6,
+            "readiness": 7
+          }
+        },
+        {
+          "date": "@-13",
+          "source": {
+            "kind": "screening",
+            "instrument": "DUDIT"
+          },
+          "answers": [1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 2],
+          "score": 8,
+          "band": "problems",
+          "note": "Jeden epizod używania podczas przepustki."
+        }
+      ],
+      "events": [
+        {
+          "date": "@-110",
+          "type": "court",
+          "title": "Postanowienie sądu rodzinnego",
+          "note": "Umieszczenie w młodzieżowym ośrodku wychowawczym."
+        },
+        {
+          "date": "@-91",
+          "type": "transfer",
+          "title": "Przyjęcie do MOW",
+          "note": "Przyjęty do grupy wychowawczej, przydzielony wychowawca."
+        },
+        {
+          "date": "@-86",
+          "type": "schoolReturn",
+          "title": "Rozpoczęcie nauki w szkole przy MOW",
+          "note": "Klasa I branżowej szkoły, profil stolarz."
+        },
+        {
+          "date": "@-30",
+          "type": "pass",
+          "title": "Pierwsza przepustka weekendowa",
+          "note": "Powrót punktualny, trudna sytuacja w domu."
+        },
+        {
+          "date": "@-29",
+          "type": "lapse",
+          "title": "Poślizg podczas przepustki",
+          "note": "Jednorazowe użycie konopi po kłótni w domu; sam o tym powiedział. Omówione jako materiał do nauki."
+        },
+        {
+          "date": "@-13",
+          "type": "stageChange",
+          "title": "Etap: przygotowanie",
+          "note": "Konkretne plany dotyczące szkoły i powrotu do domu."
+        }
+      ],
+      "genogram": {
+        "nodes": [
+          {
+            "id": "n1",
+            "label": "KW-16",
+            "kind": "male",
+            "x": 300,
+            "y": 300,
+            "isClient": true
+          },
+          {
+            "id": "n2",
+            "label": "Matka (41)",
+            "kind": "female",
+            "x": 380,
+            "y": 170
+          },
+          {
+            "id": "n3",
+            "label": "Ojciec",
+            "kind": "male",
+            "x": 200,
+            "y": 170,
+            "substance": true,
+            "note": "Brak kontaktu od 5 lat"
+          },
+          {
+            "id": "n4",
+            "label": "Partner matki",
+            "kind": "male",
+            "x": 530,
+            "y": 170
+          },
+          {
+            "id": "n5",
+            "label": "Siostra (11)",
+            "kind": "female",
+            "x": 430,
+            "y": 310
+          },
+          {
+            "id": "n6",
+            "label": "Babcia",
+            "kind": "female",
+            "x": 380,
+            "y": 50
+          },
+          {
+            "id": "n7",
+            "label": "MOW – wychowawca",
+            "kind": "institution",
+            "x": 120,
+            "y": 330
+          },
+          {
+            "id": "n8",
+            "label": "Dawna grupa z osiedla",
+            "kind": "group",
+            "x": 120,
+            "y": 230
+          }
+        ],
+        "edges": [
+          {
+            "id": "e1",
+            "from": "n3",
+            "to": "n2",
+            "type": "cutoff"
+          },
+          {
+            "id": "e2",
+            "from": "n2",
+            "to": "n1",
+            "type": "stressful"
+          },
+          {
+            "id": "e3",
+            "from": "n4",
+            "to": "n1",
+            "type": "conflict"
+          },
+          {
+            "id": "e4",
+            "from": "n2",
+            "to": "n4",
+            "type": "family"
+          },
+          {
+            "id": "e5",
+            "from": "n1",
+            "to": "n5",
+            "type": "strong"
+          },
+          {
+            "id": "e6",
+            "from": "n6",
+            "to": "n1",
+            "type": "support"
+          },
+          {
+            "id": "e7",
+            "from": "n6",
+            "to": "n2",
+            "type": "family"
+          },
+          {
+            "id": "e8",
+            "from": "n7",
+            "to": "n1",
+            "type": "support"
+          },
+          {
+            "id": "e9",
+            "from": "n8",
+            "to": "n1",
+            "type": "weak"
+          },
+          {
+            "id": "e10",
+            "from": "n3",
+            "to": "n1",
+            "type": "cutoff"
+          }
+        ]
+      }
+    },
+    {
+      "id": "demo-02",
+      "client": {
+        "code": "ZN-15",
+        "sex": "female",
+        "ageGroup": "teen",
+        "age": 15,
+        "context": "school",
+        "problems": ["gaming", "internet"],
+        "goal": "harmReduction",
+        "stage": "preparation",
+        "status": "active",
+        "strengths": "Bardzo dobre zdolności plastyczne (rysuje postacie z gier), wysoka sprawność cyfrowa, wrażliwość na krzywdę zwierząt.",
+        "supportNetwork": "Mama (zaangażowana, choć zmęczona), wychowawczyni klasy, jedna koleżanka z dawnej klasy. Kontakty online z grupą z gry.",
+        "family": "Mieszka z mamą i 9-letnim bratem. Rodzice rozwiedzeni od 2 lat, kontakt z tatą co drugi weekend. Mama pracuje na zmiany.",
+        "education": "Klasa 1 liceum ogólnokształcącego. Od początku roku 34% nieobecności (głównie pierwsze lekcje), spadek ocen z 4,6 do 3,2.",
+        "keyDates": [
+          {
+            "id": "kd1",
+            "label": "Klasyfikacja śródroczna",
+            "date": "@+45"
+          },
+          {
+            "id": "kd2",
+            "label": "Konsultacja w poradni psychologiczno-pedagogicznej",
+            "date": "@+20"
+          }
+        ]
+      },
+      "diagnosis": {
+        "date": "@-48",
+        "areas": {
+          "family": {
+            "score": 3,
+            "notes": "Ciepła relacja z mamą, ale mało wspólnego czasu. Napięcia wokół zabierania telefonu."
+          },
+          "schoolWork": {
+            "score": 2,
+            "notes": "Spóźnienia i nieobecności na pierwszych lekcjach, unikanie odpowiedzi ustnych."
+          },
+          "peers": {
+            "score": 2,
+            "notes": "Wycofanie z życia klasy po zmianie szkoły; przerwy spędza sama z telefonem."
+          },
+          "leisure": {
+            "score": 2,
+            "notes": "Niemal cały czas wolny online (gra sieciowa, krótkie filmy). Porzuciła zajęcia plastyczne."
+          },
+          "health": {
+            "score": 2,
+            "notes": "Gra do 2–3 w nocy, przewlekłe niewyspanie, bóle głowy, nieregularne posiłki."
+          },
+          "substanceUse": {
+            "score": 5,
+            "notes": "Nie używa substancji psychoaktywnych."
+          },
+          "riskBehaviour": {
+            "score": 3,
+            "notes": "Kontakty z nieznanymi osobami w grze; brak sygnałów przemocy online, omówiono zasady bezpieczeństwa."
+          },
+          "justice": {
+            "score": 5,
+            "notes": "Brak kontaktu z wymiarem sprawiedliwości."
+          }
+        },
+        "riskFactors": [
+          "Zmiana szkoły i utrata dotychczasowej grupy",
+          "Rozwód rodziców i mniejsza dostępność mamy",
+          "Brak zasad korzystania z urządzeń, telefon w nocy w pokoju",
+          "Gra jako główne źródło poczucia kompetencji"
+        ],
+        "protectiveFactors": [
+          "Talent plastyczny",
+          "Zaangażowana mama",
+          "Wcześniejsze dobre wyniki w nauce"
+        ],
+        "resources": "Koło plastyczne w szkole, świetlica z grami planszowymi, poradnia psychologiczno-pedagogiczna, gotowość mamy do ustalenia zasad.",
+        "conclusions": "Nadmierne granie pełni funkcję ucieczki od samotności i poczucia porażki. Cel: przywrócenie snu i rytmu dnia, stopniowy powrót do kontaktów rówieśniczych offline, bez całkowitego zakazu grania."
+      },
+      "ipr": {
+        "startDate": "@-45",
+        "reviewDate": "@+15",
+        "goals": [
+          {
+            "id": "g1",
+            "title": "Sen i ekran",
+            "specific": "Wyłączać urządzenia o 22:30 i zostawiać telefon w kuchni.",
+            "measurable": "Co najmniej 5 nocy w tygodniu (dzienniczek snu).",
+            "achievable": "Umowa z mamą, budzik zamiast telefonu.",
+            "relevant": "Niewyspanie powoduje nieobecności na pierwszych lekcjach.",
+            "timeBound": "Przez 6 tygodni.",
+            "actions": [
+              {
+                "id": "a1",
+                "text": "Spisać umowę rodzinną dotyczącą ekranów",
+                "responsible": "Podopieczna, mama, pedagog",
+                "due": "@-30",
+                "done": true
+              },
+              {
+                "id": "a2",
+                "text": "Prowadzić dzienniczek snu",
+                "responsible": "Podopieczna",
+                "done": false
+              }
+            ],
+            "progress": 55,
+            "reviewNotes": "4–5 nocy w tygodniu bez telefonu, w weekendy trudniej."
+          },
+          {
+            "id": "g2",
+            "title": "Kontakt z rówieśnikami offline",
+            "specific": "Wrócić na koło plastyczne i spędzić jedną przerwę dziennie z grupą.",
+            "measurable": "Obecność na kole co tydzień; samoocena w skali 0–10.",
+            "achievable": "Wsparcie wychowawczyni, zadanie w parze na kole.",
+            "relevant": "Samotność jest głównym wyzwalaczem długiego grania.",
+            "actions": [
+              {
+                "id": "a3",
+                "text": "Rozmowa z opiekunką koła plastycznego",
+                "responsible": "Pedagog",
+                "done": true
+              }
+            ],
+            "progress": 45,
+            "reviewNotes": "Była na kole 3 razy, poznała koleżankę z równoległej klasy."
+          }
+        ],
+        "evaluation": ""
+      },
+      "relapsePlan": {
+        "highRiskSituations": [
+          "Wieczór, gdy mama jest na nocnej zmianie",
+          "Zła ocena lub przykra sytuacja w klasie"
+        ],
+        "triggers": [
+          "Powiadomienia z gry i wydarzenia czasowe",
+          "Poczucie samotności"
+        ],
+        "warningSigns": [
+          "„Jeszcze jedna runda” po 22:00",
+          "Rezygnuję z koła i wyjść"
+        ],
+        "copingStrategies": [
+          "Rysowanie przed snem zamiast grania",
+          "Wyłączone powiadomienia z gry",
+          "Wiadomość do koleżanki zamiast logowania"
+        ],
+        "supportPeople": [
+          {
+            "id": "sp1",
+            "name": "Mama",
+            "contact": ""
+          },
+          {
+            "id": "sp2",
+            "name": "Pedagog szkolny",
+            "contact": "gabinet 12, wt. i czw."
+          }
+        ],
+        "supportPlaces": ["Koło plastyczne", "Świetlica szkolna"],
+        "lapsePlan": "Jeśli zagram w nocy, rano mówię o tym mamie bez kar i razem sprawdzamy, co zawiodło w planie."
+      },
+      "meetings": [
+        {
+          "type": "individual",
+          "date": "@-48T12:40",
+          "durationMin": 45,
+          "status": "done",
+          "agenda": [
+            "Powód zgłoszenia (wychowawczyni)",
+            "Jak wygląda typowy dzień"
+          ],
+          "quickNotes": "",
+          "noteType": "observation",
+          "note": {
+            "situation": "Spotkanie w gabinecie pedagoga z inicjatywy wychowawczyni.",
+            "behaviour": "Ciche odpowiedzi, unikała kontaktu wzrokowego; chętnie pokazała swoje rysunki.",
+            "emotions": "Wstyd z powodu ocen, poczucie, że „nikt jej tu nie zna”.",
+            "relations": "Mówi o grupie z gry jako o „jedynych przyjaciołach”.",
+            "strengths": "Refleksyjność, talent plastyczny.",
+            "conclusions": "Nie stawiać grania jako wroga; zacząć od snu i samotności."
+          },
+          "toolsUsed": ["scaling"],
+          "homework": "",
+          "title": "Rozmowa wstępna"
+        },
+        {
+          "type": "family",
+          "date": "@-41T12:40",
+          "durationMin": 60,
+          "status": "done",
+          "agenda": ["Wspólne ustalenie zasad korzystania z ekranów"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Mama opisała nocne granie i kłótnie o telefon. Wspólnie zapisano umowę: telefon w kuchni o 22:30.",
+            "assessment": "Obie strony chcą zmiany, potrzebna przewidywalność zamiast zakazów pod wpływem złości.",
+            "plan": "Przegląd umowy za 2 tygodnie."
+          },
+          "toolsUsed": ["decisionalBalance"],
+          "homework": "Dzienniczek snu.",
+          "title": "Spotkanie z mamą"
+        },
+        {
+          "type": "individual",
+          "date": "@-34T12:40",
+          "durationMin": 45,
+          "status": "done",
+          "agenda": ["Dzienniczek snu", "Linijka gotowości"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "3 z 7 nocy bez telefonu. Gotowość 5/10, pewność 4/10.",
+            "assessment": "Zauważa, że po przespanej nocy lepiej czuje się w szkole.",
+            "plan": "Dodać rysowanie jako rytuał przed snem."
+          },
+          "toolsUsed": ["readinessRuler"],
+          "homework": "Zapytać opiekunkę koła o możliwość powrotu."
+        },
+        {
+          "type": "individual",
+          "date": "@-20T12:40",
+          "durationMin": 45,
+          "status": "done",
+          "agenda": ["Trening: jak dołączyć do rozmowy w grupie"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Ćwiczyłyśmy rozpoczęcie rozmowy na przerwie. Była już dwa razy na kole plastycznym.",
+            "assessment": "Rośnie poczucie kompetencji poza grą; przejście do etapu przygotowania.",
+            "plan": "Kontynuować, przygotować się do konsultacji w poradni."
+          },
+          "toolsUsed": ["socialSkills", "scaling"],
+          "homework": "Zaprosić koleżankę z koła na wspólną przerwę."
+        },
+        {
+          "type": "individual",
+          "date": "@-6T12:40",
+          "durationMin": 45,
+          "status": "done",
+          "agenda": ["Przegląd tygodnia", "Skalowanie samopoczucia w szkole"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "5 nocy bez telefonu, frekwencja na pierwszych lekcjach wyraźnie lepsza. Samopoczucie w szkole 6/10.",
+            "assessment": "Stabilna poprawa, weekendy pozostają wyzwaniem.",
+            "plan": "Plan weekendowy z jedną aktywnością offline."
+          },
+          "toolsUsed": ["scaling", "readinessRuler"],
+          "homework": "Zaplanować sobotę: 1 aktywność poza domem."
+        },
+        {
+          "type": "individual",
+          "date": "@+3T12:40",
+          "durationMin": 45,
+          "status": "planned",
+          "agenda": [
+            "Omówienie weekendu",
+            "Przygotowanie do konsultacji w poradni"
+          ],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": [],
+          "homework": ""
+        }
+      ],
+      "measurements": [
+        {
+          "date": "@-48",
+          "source": {
+            "kind": "tool",
+            "tool": "scaling"
+          },
+          "score": 3,
+          "payload": {
+            "question": "Jak się czujesz w nowej szkole (0–10)?",
+            "miracle": "Rano się wyspałam, ktoś na mnie czeka przed klasą."
+          }
+        },
+        {
+          "date": "@-41",
+          "source": {
+            "kind": "tool",
+            "tool": "decisionalBalance"
+          },
+          "payload": {
+            "prosChange": ["Będę wyspana", "Mniej kłótni z mamą"],
+            "consChange": ["Stracę miejsce w drużynie w grze"],
+            "prosStatus": [
+              "W grze czuję się dobra w czymś",
+              "Nie myślę o szkole"
+            ],
+            "consStatus": ["Spóźnienia i złe oceny", "Bóle głowy"]
+          }
+        },
+        {
+          "date": "@-34",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 5,
+          "payload": {
+            "importance": 6,
+            "confidence": 4,
+            "readiness": 5
+          }
+        },
+        {
+          "date": "@-20",
+          "source": {
+            "kind": "tool",
+            "tool": "scaling"
+          },
+          "score": 5,
+          "payload": {
+            "question": "Jak się czujesz w nowej szkole (0–10)?"
+          }
+        },
+        {
+          "date": "@-6",
+          "source": {
+            "kind": "tool",
+            "tool": "scaling"
+          },
+          "score": 6,
+          "payload": {
+            "question": "Jak się czujesz w nowej szkole (0–10)?"
+          }
+        },
+        {
+          "date": "@-6",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 7,
+          "payload": {
+            "importance": 8,
+            "confidence": 6,
+            "readiness": 7
+          }
+        }
+      ],
+      "events": [
+        {
+          "date": "@-50",
+          "type": "other",
+          "title": "Zgłoszenie przez wychowawczynię",
+          "note": "Niepokój z powodu nieobecności i wycofania."
+        },
+        {
+          "date": "@-30",
+          "type": "milestone",
+          "title": "Umowa rodzinna o ekranach",
+          "note": "Podpisana przez podopieczną i mamę."
+        },
+        {
+          "date": "@-22",
+          "type": "other",
+          "title": "Powrót na koło plastyczne",
+          "note": "Pierwsze zajęcia po 4 miesiącach przerwy."
+        },
+        {
+          "date": "@-20",
+          "type": "stageChange",
+          "title": "Etap: przygotowanie",
+          "note": "Sama proponuje kolejne zmiany w planie dnia."
+        }
+      ]
+    },
+    {
+      "id": "demo-03",
+      "client": {
+        "code": "RT-38",
+        "sex": "male",
+        "ageGroup": "adult",
+        "age": 38,
+        "context": "community",
+        "problems": ["alcohol"],
+        "goal": "abstinence",
+        "stage": "action",
+        "status": "active",
+        "strengths": "Doświadczenie w pracy na budowie (uprawnienia na wózek widłowy), punktualność, ukończony w zakładzie karnym program terapii uzależnień. Chce odbudować kontakt z córką.",
+        "supportNetwork": "Siostra (mieszka u niej tymczasowo), grupa AA przy parafii, kurator sądowy, doradca w powiatowym urzędzie pracy.",
+        "family": "Rozwiedziony, 12-letnia córka mieszka z byłą żoną. Kontakty z córką ustalone przez sąd – na razie spotkania w obecności matki. Ojciec zmarł, miał problem alkoholowy.",
+        "education": "Wykształcenie zasadnicze zawodowe (murarz). W zakładzie karnym kurs operatora wózków widłowych. Przed osadzeniem prace dorywcze.",
+        "keyDates": [
+          {
+            "id": "kd1",
+            "label": "Spotkanie z kuratorem (warunkowe przedterminowe zwolnienie)",
+            "date": "@+12"
+          },
+          {
+            "id": "kd2",
+            "label": "Rozmowa kwalifikacyjna – magazyn",
+            "date": "@+5"
+          },
+          {
+            "id": "kd3",
+            "label": "Koniec okresu próby",
+            "date": "@+300"
+          }
+        ]
+      },
+      "diagnosis": {
+        "date": "@-58",
+        "areas": {
+          "family": {
+            "score": 2,
+            "notes": "Relacja z siostrą wspierająca, ale napięta z powodu ciasnoty mieszkania. Kontakt z córką ograniczony."
+          },
+          "schoolWork": {
+            "score": 2,
+            "notes": "Bez zatrudnienia od zwolnienia. Ma kwalifikacje, ale obawia się pytań o przerwę w życiorysie."
+          },
+          "peers": {
+            "score": 3,
+            "notes": "Odciął się od dawnych kolegów od picia; nowe kontakty głównie z grupy AA."
+          },
+          "leisure": {
+            "score": 2,
+            "notes": "Dużo niezagospodarowanego czasu, wieczory w mieszkaniu siostry."
+          },
+          "health": {
+            "score": 3,
+            "notes": "Nadciśnienie pod opieką lekarza POZ, problemy ze snem. Brak ubezpieczenia do czasu rejestracji w PUP – uzupełnione."
+          },
+          "substanceUse": {
+            "score": 3,
+            "notes": "Przed osadzeniem codzienne picie. W zakładzie abstynencja i program terapeutyczny. Po wyjściu jeden epizod picia."
+          },
+          "riskBehaviour": {
+            "score": 3,
+            "notes": "Wcześniej agresja pod wpływem alkoholu. Obecnie brak incydentów."
+          },
+          "justice": {
+            "score": 2,
+            "notes": "Warunkowe przedterminowe zwolnienie, dozór kuratora, obowiązek powstrzymania się od nadużywania alkoholu."
+          }
+        },
+        "riskFactors": [
+          "Brak pracy i stałego mieszkania",
+          "Stygmatyzacja w kontakcie z pracodawcami",
+          "Długi alimentacyjne",
+          "Samotne wieczory"
+        ],
+        "protectiveFactors": [
+          "Motywacja związana z córką",
+          "Ukończony program terapii w zakładzie karnym",
+          "Wsparcie siostry i grupy AA"
+        ],
+        "resources": "Program readaptacji w ośrodku pomocy postpenitencjarnej, Fundusz Sprawiedliwości (pomoc dla osób opuszczających zakłady karne), PUP, poradnia leczenia uzależnień – grupa po terapii.",
+        "conclusions": "Kluczowe jest szybkie ustrukturyzowanie dnia (praca, grupa wsparcia) i rozwiązanie kwestii mieszkaniowej. Ryzyko nawrotu rośnie przy kolejnych odmowach w rekrutacji."
+      },
+      "ipr": {
+        "startDate": "@-55",
+        "reviewDate": "@+20",
+        "goals": [
+          {
+            "id": "g1",
+            "title": "Podjęcie pracy",
+            "specific": "Znaleźć zatrudnienie na umowę jako operator wózka lub pracownik budowlany.",
+            "measurable": "Min. 3 aplikacje tygodniowo; podpisana umowa.",
+            "achievable": "Wsparcie doradcy zawodowego, przygotowane CV, trening rozmowy kwalifikacyjnej.",
+            "relevant": "Praca daje strukturę dnia, dochód na alimenty i warunek pozytywnej opinii kuratora.",
+            "timeBound": "W ciągu 3 miesięcy od zwolnienia.",
+            "actions": [
+              {
+                "id": "a1",
+                "text": "Przygotować CV i list motywacyjny",
+                "responsible": "Podopieczny z pedagogiem",
+                "due": "@-40",
+                "done": true
+              },
+              {
+                "id": "a2",
+                "text": "Trening rozmowy: jak mówić o przerwie w zatrudnieniu",
+                "responsible": "Pedagog",
+                "due": "@+4",
+                "done": false
+              }
+            ],
+            "progress": 50,
+            "reviewNotes": "11 aplikacji, 2 rozmowy, odmowy. Zaproszenie na rozmowę do magazynu."
+          },
+          {
+            "id": "g2",
+            "title": "Abstynencja i grupa wsparcia",
+            "specific": "Chodzić na mityngi AA dwa razy w tygodniu i na grupę poterapeutyczną w poradni.",
+            "measurable": "Lista obecności, AUDIT-C co 2–3 tygodnie.",
+            "achievable": "Grupy w odległości 15 minut pieszo.",
+            "relevant": "Obowiązek nałożony przez sąd i własny cel.",
+            "actions": [
+              {
+                "id": "a3",
+                "text": "Zapisać się na grupę poterapeutyczną",
+                "responsible": "Podopieczny",
+                "done": true
+              }
+            ],
+            "progress": 55,
+            "reviewNotes": "Poślizg po odmowie w pracy – omówiony, plan uzupełniony."
+          },
+          {
+            "id": "g3",
+            "title": "Mieszkanie",
+            "specific": "Uzyskać miejsce w mieszkaniu wspieranym lub wynająć pokój.",
+            "measurable": "Złożony wniosek, decyzja OPS.",
+            "achievable": "Współpraca z pracownikiem socjalnym OPS.",
+            "relevant": "Ciasnota u siostry powoduje konflikty.",
+            "actions": [
+              {
+                "id": "a4",
+                "text": "Złożyć wniosek o mieszkanie wspierane",
+                "responsible": "Podopieczny, pracownik socjalny",
+                "due": "@-20",
+                "done": true
+              }
+            ],
+            "progress": 30,
+            "reviewNotes": "Wniosek złożony, oczekiwanie na decyzję."
+          }
+        ],
+        "evaluation": ""
+      },
+      "relapsePlan": {
+        "highRiskSituations": [
+          "Odmowa po rozmowie o pracę",
+          "Piątkowy wieczór sam w domu",
+          "Spotkanie dawnych kolegów pod sklepem"
+        ],
+        "triggers": [
+          "Poczucie, że „i tak nikt mnie nie zatrudni”",
+          "Napięcie po rozmowie z byłą żoną"
+        ],
+        "warningSigns": [
+          "Opuszczam mityng",
+          "Złość i drażliwość wobec siostry",
+          "Zła jakość snu przez kilka nocy"
+        ],
+        "copingStrategies": [
+          "Telefon do sponsora z AA",
+          "Spacer z psem siostry, HALT",
+          "Zapisać jedną rzecz, która się udała danego dnia"
+        ],
+        "supportPeople": [
+          {
+            "id": "sp1",
+            "name": "Sponsor z AA (Pan J.)",
+            "contact": ""
+          },
+          {
+            "id": "sp2",
+            "name": "Siostra",
+            "contact": ""
+          },
+          {
+            "id": "sp3",
+            "name": "Kurator sądowy",
+            "contact": "zespół kuratorskiej służby sądowej"
+          }
+        ],
+        "supportPlaces": [
+          "Mityng AA przy parafii (wt., pt.)",
+          "Klub abstynenta"
+        ],
+        "lapsePlan": "Przerywam picie najszybciej, jak mogę, dzwonię do sponsora i mówię o tym na najbliższym spotkaniu. Poślizg nie przekreśla tego, co osiągnąłem."
+      },
+      "readaptation": {
+        "releaseDate": "@-62",
+        "items": [
+          {
+            "id": "r1",
+            "area": "Dokumenty",
+            "text": "Nowy dowód osobisty",
+            "due": "@-50",
+            "done": true
+          },
+          {
+            "id": "r2",
+            "area": "Dokumenty",
+            "text": "Meldunek tymczasowy u siostry",
+            "done": true
+          },
+          {
+            "id": "r3",
+            "area": "Praca",
+            "text": "Rejestracja w powiatowym urzędzie pracy",
+            "due": "@-55",
+            "done": true
+          },
+          {
+            "id": "r4",
+            "area": "Praca",
+            "text": "Odnowienie zaświadczenia UDT na wózek widłowy",
+            "due": "@+10",
+            "done": false
+          },
+          {
+            "id": "r5",
+            "area": "Zdrowie",
+            "text": "Wizyta u lekarza POZ (nadciśnienie)",
+            "done": true
+          },
+          {
+            "id": "r6",
+            "area": "Mieszkanie",
+            "text": "Wniosek o mieszkanie wspierane w OPS",
+            "done": true
+          },
+          {
+            "id": "r7",
+            "area": "Finanse",
+            "text": "Ugoda dotycząca zaległych alimentów",
+            "due": "@+30",
+            "done": false
+          },
+          {
+            "id": "r8",
+            "area": "Wsparcie",
+            "text": "Grupa poterapeutyczna w poradni",
+            "done": true
+          }
+        ]
+      },
+      "meetings": [
+        {
+          "type": "individual",
+          "date": "@-58T13:30",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Najpilniejsze potrzeby", "Lista kontrolna readaptacji"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Zwolniony 4 dni temu, mieszka u siostry. Ma dowód tymczasowy, brak środków poza zapomogą.",
+            "assessment": "Wysoka motywacja, duży lęk przed „łatką” byłego więźnia.",
+            "plan": "Rejestracja w PUP, dokumenty, kontakt z OPS."
+          },
+          "toolsUsed": ["supportMap"],
+          "homework": "Zarejestrować się w PUP.",
+          "title": "Pierwsze spotkanie po zwolnieniu"
+        },
+        {
+          "type": "individual",
+          "date": "@-44T13:30",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["CV i list motywacyjny", "Linijka gotowości"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Przygotowane CV z opisem kursów z zakładu karnego jako „szkolenia zawodowe”. Gotowość do utrzymania abstynencji 8/10.",
+            "assessment": "Etap działania. Dobre zasoby, ale słaba sieć społeczna.",
+            "plan": "Wysyłać 3 aplikacje tygodniowo, zapisać się na grupę poterapeutyczną."
+          },
+          "toolsUsed": ["readinessRuler"],
+          "homework": "3 aplikacje."
+        },
+        {
+          "type": "individual",
+          "date": "@-11T13:30",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": [
+            "Co się wydarzyło",
+            "HALT",
+            "Uzupełnienie planu zapobiegania nawrotom"
+          ],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Dzień po odmowie w drugiej firmie wypił kilka piw w parku. Następnego dnia zadzwonił do sponsora i poszedł na mityng.",
+            "assessment": "Poślizg wywołany poczuciem porażki i samotnością; szybkie przerwanie i sięgnięcie po wsparcie to ważna umiejętność.",
+            "plan": "Dodać do planu „dzień po odmowie” – spotkanie ze sponsorem. Ćwiczyć rozmowę o przerwie w życiorysie."
+          },
+          "toolsUsed": ["halt", "chainAnalysis"],
+          "homework": "Codzienny HALT wieczorem.",
+          "title": "Omówienie poślizgu"
+        },
+        {
+          "type": "individual",
+          "date": "@-4T13:30",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["AUDIT-C", "Przygotowanie do rozmowy w magazynie"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "AUDIT-C dodatni (5). Mówi o dwóch kolejnych sytuacjach „kilku piw” w weekend.",
+            "assessment": "Wzrost ryzyka – picie wraca w schemat weekendowy. Potrzebne wzmocnienie wsparcia i rozmowa o konsultacji w poradni.",
+            "plan": "Konsultacja w poradni leczenia uzależnień w tym tygodniu, plan na weekend."
+          },
+          "toolsUsed": ["readinessRuler"],
+          "homework": "Umówić konsultację w poradni."
+        },
+        {
+          "type": "individual",
+          "date": "@0T13:30",
+          "durationMin": 50,
+          "status": "planned",
+          "agenda": ["Odgrywanie rozmowy w magazynie", "Plan na weekend"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": ["socialSkills"],
+          "homework": "",
+          "title": "Trening rozmowy kwalifikacyjnej"
+        },
+        {
+          "type": "individual",
+          "date": "@+7T13:30",
+          "durationMin": 50,
+          "status": "planned",
+          "agenda": ["Omówienie rozmowy kwalifikacyjnej"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": [],
+          "homework": ""
+        }
+      ],
+      "measurements": [
+        {
+          "date": "@-58",
+          "source": {
+            "kind": "screening",
+            "instrument": "AUDIT"
+          },
+          "answers": [4, 3, 3, 2, 2, 1, 2, 2, 0, 2],
+          "score": 23,
+          "band": "zone4",
+          "note": "Dotyczy roku przed osadzeniem."
+        },
+        {
+          "date": "@-44",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 8,
+          "payload": {
+            "importance": 9,
+            "confidence": 7,
+            "readiness": 8
+          }
+        },
+        {
+          "date": "@-35",
+          "source": {
+            "kind": "screening",
+            "instrument": "AUDIT-C"
+          },
+          "answers": [0, 0, 0],
+          "score": 0,
+          "band": "negative"
+        },
+        {
+          "date": "@-21",
+          "source": {
+            "kind": "screening",
+            "instrument": "AUDIT-C"
+          },
+          "answers": [1, 1, 0],
+          "score": 2,
+          "band": "negative"
+        },
+        {
+          "date": "@-11",
+          "source": {
+            "kind": "tool",
+            "tool": "halt"
+          },
+          "score": 3,
+          "payload": {
+            "hungry": false,
+            "angry": true,
+            "lonely": true,
+            "tired": true
+          }
+        },
+        {
+          "date": "@-11",
+          "source": {
+            "kind": "tool",
+            "tool": "chainAnalysis"
+          },
+          "payload": {
+            "trigger": "Telefon z odmową z drugiej firmy",
+            "thoughts": "„Z wyrokiem nikt mnie nie weźmie”",
+            "emotions": "Wstyd, bezsilność, złość",
+            "behaviour": "Zakup piwa, picie w parku",
+            "consequences": "Poczucie winy, kłótnia z siostrą",
+            "alternative": "Telefon do sponsora od razu po odmowie"
+          }
+        },
+        {
+          "date": "@-4",
+          "source": {
+            "kind": "screening",
+            "instrument": "AUDIT-C"
+          },
+          "answers": [2, 1, 2],
+          "score": 5,
+          "band": "positive",
+          "note": "Picie weekendowe po poślizgu."
+        },
+        {
+          "date": "@-4",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 6,
+          "payload": {
+            "importance": 9,
+            "confidence": 4,
+            "readiness": 6
+          }
+        }
+      ],
+      "events": [
+        {
+          "date": "@-62",
+          "type": "transfer",
+          "title": "Opuszczenie zakładu karnego",
+          "note": "Warunkowe przedterminowe zwolnienie z dozorem kuratora."
+        },
+        {
+          "date": "@-57",
+          "type": "court",
+          "title": "Pierwsze spotkanie z kuratorem",
+          "note": "Omówione obowiązki okresu próby."
+        },
+        {
+          "date": "@-30",
+          "type": "work",
+          "title": "Pierwsza rozmowa kwalifikacyjna",
+          "note": "Firma budowlana – odmowa."
+        },
+        {
+          "date": "@-13",
+          "type": "work",
+          "title": "Druga odmowa",
+          "note": "Pytanie o przerwę w życiorysie było dla niego bardzo trudne."
+        },
+        {
+          "date": "@-12",
+          "type": "lapse",
+          "title": "Poślizg – picie alkoholu",
+          "note": "Jednorazowe picie po odmowie; następnego dnia sam sięgnął po wsparcie."
+        },
+        {
+          "date": "@-6",
+          "type": "work",
+          "title": "Zaproszenie na rozmowę – magazyn",
+          "note": "Stanowisko operatora wózka widłowego."
+        }
+      ],
+      "genogram": {
+        "nodes": [
+          {
+            "id": "n1",
+            "label": "RT-38",
+            "kind": "male",
+            "x": 260,
+            "y": 200,
+            "isClient": true,
+            "substance": true
+          },
+          {
+            "id": "n2",
+            "label": "Ojciec",
+            "kind": "male",
+            "x": 200,
+            "y": 60,
+            "deceased": true,
+            "substance": true
+          },
+          {
+            "id": "n3",
+            "label": "Matka (66)",
+            "kind": "female",
+            "x": 340,
+            "y": 60
+          },
+          {
+            "id": "n4",
+            "label": "Siostra (42)",
+            "kind": "female",
+            "x": 420,
+            "y": 200
+          },
+          {
+            "id": "n5",
+            "label": "Była żona",
+            "kind": "female",
+            "x": 110,
+            "y": 200
+          },
+          {
+            "id": "n6",
+            "label": "Córka (12)",
+            "kind": "female",
+            "x": 180,
+            "y": 340
+          },
+          {
+            "id": "n7",
+            "label": "Grupa AA",
+            "kind": "group",
+            "x": 470,
+            "y": 340
+          },
+          {
+            "id": "n8",
+            "label": "Kurator sądowy",
+            "kind": "institution",
+            "x": 330,
+            "y": 360
+          }
+        ],
+        "edges": [
+          {
+            "id": "e1",
+            "from": "n2",
+            "to": "n3",
+            "type": "family"
+          },
+          {
+            "id": "e2",
+            "from": "n2",
+            "to": "n1",
+            "type": "conflict"
+          },
+          {
+            "id": "e3",
+            "from": "n3",
+            "to": "n1",
+            "type": "weak"
+          },
+          {
+            "id": "e4",
+            "from": "n4",
+            "to": "n1",
+            "type": "support"
+          },
+          {
+            "id": "e5",
+            "from": "n5",
+            "to": "n1",
+            "type": "stressful"
+          },
+          {
+            "id": "e6",
+            "from": "n1",
+            "to": "n6",
+            "type": "weak"
+          },
+          {
+            "id": "e7",
+            "from": "n5",
+            "to": "n6",
+            "type": "strong"
+          },
+          {
+            "id": "e8",
+            "from": "n7",
+            "to": "n1",
+            "type": "support"
+          },
+          {
+            "id": "e9",
+            "from": "n8",
+            "to": "n1",
+            "type": "support"
+          }
+        ]
+      }
+    },
+    {
+      "id": "demo-04",
+      "client": {
+        "code": "HB-57",
+        "sex": "male",
+        "ageGroup": "adult",
+        "age": 57,
+        "context": "homeless",
+        "problems": ["alcohol", "nicotine"],
+        "goal": "harmReduction",
+        "stage": "preparation",
+        "status": "active",
+        "strengths": "Z zawodu ślusarz, naprawia drobne rzeczy w schronisku. Dotrzymuje słowa, ma dobry kontakt z innymi mieszkańcami, poczucie humoru.",
+        "supportNetwork": "Pracownik socjalny MOPS, opiekun w schronisku, pielęgniarka z punktu medycznego dla osób w kryzysie bezdomności. Sporadyczny kontakt z bratem.",
+        "family": "Rozwiedziony od 9 lat. Dorosły syn nie utrzymuje kontaktu. Brat mieszka w tym samym mieście, spotykają się kilka razy w roku.",
+        "education": "Wykształcenie zasadnicze zawodowe (ślusarz), 20 lat pracy w zakładzie mechanicznym. Od 4 lat bez stałego zatrudnienia, prace dorywcze.",
+        "keyDates": [
+          {
+            "id": "kd1",
+            "label": "Przegląd indywidualnego programu wychodzenia z bezdomności",
+            "date": "@+25"
+          },
+          {
+            "id": "kd2",
+            "label": "Komisja ds. orzekania o niepełnosprawności",
+            "date": "@+33"
+          }
+        ]
+      },
+      "diagnosis": {
+        "date": "@-78",
+        "areas": {
+          "family": {
+            "score": 2,
+            "notes": "Zerwany kontakt z synem, rzadkie spotkania z bratem. Tęskni za synem, unika tematu."
+          },
+          "schoolWork": {
+            "score": 2,
+            "notes": "Bez pracy, ale z kwalifikacjami i chęcią pracy w warsztacie. Brak udokumentowanego stażu za ostatnie lata."
+          },
+          "peers": {
+            "score": 3,
+            "notes": "Dobre relacje z częścią mieszkańców schroniska; część znajomych z dworca pije razem z nim."
+          },
+          "leisure": {
+            "score": 2,
+            "notes": "Dzień wypełniony szukaniem jedzenia i miejsca w ciągu dnia; brak stałych zajęć."
+          },
+          "health": {
+            "score": 2,
+            "notes": "Owrzodzenie podudzia pod opieką punktu medycznego, przewlekły kaszel, palenie tytoniu. Zaniedbane zęby."
+          },
+          "substanceUse": {
+            "score": 1,
+            "notes": "Codzienne picie od kilku lat, zwykle tanie wino i piwo. Okresy kilku dni bez picia, gdy jest w schronisku."
+          },
+          "riskBehaviour": {
+            "score": 2,
+            "notes": "Nocowanie na klatkach schodowych zimą, upadki pod wpływem alkoholu."
+          },
+          "justice": {
+            "score": 4,
+            "notes": "Grzywna za spożywanie alkoholu w miejscu publicznym; brak innych spraw."
+          }
+        },
+        "riskFactors": [
+          "Długotrwała bezdomność i brak dochodu",
+          "Środowisko pijących znajomych",
+          "Problemy zdrowotne bez stałej opieki",
+          "Poczucie wstydu i rezygnacji"
+        ],
+        "protectiveFactors": [
+          "Kwalifikacje zawodowe i umiejętności manualne",
+          "Gotowość do korzystania ze schroniska",
+          "Więź z bratem"
+        ],
+        "resources": "Indywidualny program wychodzenia z bezdomności (MOPS), punkt medyczny, Centrum Integracji Społecznej (warsztat ślusarski), punkt konsultacyjny ds. uzależnień przy schronisku.",
+        "conclusions": "Na tym etapie priorytetem jest bezpieczeństwo, zdrowie i ograniczenie szkód. Picie jest powiązane z rytmem dnia na ulicy – stabilne miejsce i zajęcie w CIS mogą wspierać dalszą zmianę."
+      },
+      "ipr": {
+        "startDate": "@-75",
+        "reviewDate": "@+25",
+        "goals": [
+          {
+            "id": "g1",
+            "title": "Utrzymanie miejsca w schronisku",
+            "specific": "Nie pić na terenie schroniska i wracać przed 20:00.",
+            "measurable": "Liczba nocy w schronisku w miesiącu (cel: min. 25).",
+            "achievable": "Wsparcie opiekuna, plan dnia z miejscami pobytu dziennego.",
+            "relevant": "Dach nad głową chroni zdrowie i życie, szczególnie zimą.",
+            "actions": [
+              {
+                "id": "a1",
+                "text": "Ustalić plan dnia z jadłodajnią i świetlicą",
+                "responsible": "Podopieczny z pedagogiem",
+                "done": true
+              }
+            ],
+            "progress": 70,
+            "reviewNotes": "27 nocy w ostatnim miesiącu, jedna noc poza schroniskiem."
+          },
+          {
+            "id": "g2",
+            "title": "Ograniczenie picia i kontakt z poradnią",
+            "specific": "Mniej dni picia w tygodniu i konsultacja w poradni leczenia uzależnień.",
+            "measurable": "Kalendarz dni bez picia; AUDIT co 4–6 tygodni.",
+            "achievable": "Punkt konsultacyjny przy schronisku, towarzyszenie w pierwszej wizycie.",
+            "relevant": "Sam łączy picie z utratą pracy i rodziny.",
+            "actions": [
+              {
+                "id": "a2",
+                "text": "Pierwsza wizyta w poradni (z pracownikiem)",
+                "responsible": "Pedagog",
+                "due": "@+14",
+                "done": false
+              }
+            ],
+            "progress": 35,
+            "reviewNotes": "3–4 dni bez picia w tygodniu, jeden epizod ciężkiego picia."
+          },
+          {
+            "id": "g3",
+            "title": "Dokumenty i dochód",
+            "specific": "Wyrobić dowód osobisty i złożyć wniosek o orzeczenie o niepełnosprawności.",
+            "measurable": "Dowód w ręku, złożony wniosek.",
+            "achievable": "Pomoc pracownika socjalnego, zaświadczenie z punktu medycznego.",
+            "relevant": "Bez dokumentów nie może podjąć pracy w CIS.",
+            "actions": [
+              {
+                "id": "a3",
+                "text": "Złożyć wniosek o dowód osobisty",
+                "responsible": "Podopieczny, pracownik socjalny",
+                "done": true
+              },
+              {
+                "id": "a4",
+                "text": "Wniosek do komisji orzekającej",
+                "responsible": "Pracownik socjalny",
+                "done": true
+              }
+            ],
+            "progress": 80,
+            "reviewNotes": "Dowód odebrany, termin komisji wyznaczony."
+          }
+        ],
+        "evaluation": ""
+      },
+      "relapsePlan": {
+        "highRiskSituations": [
+          "Dni wypłaty zasiłku",
+          "Spotkanie znajomych na dworcu",
+          "Zimne, deszczowe dni bez zajęcia"
+        ],
+        "triggers": ["Myśli o synu", "Ból nogi"],
+        "warningSigns": ["Opuszczam obiad w jadłodajni", "Wracam po 20:00"],
+        "copingStrategies": [
+          "Świetlica dzienna i warsztat w CIS",
+          "Rozmowa z opiekunem schroniska",
+          "Herbata i coś ciepłego do jedzenia zamiast pierwszego piwa"
+        ],
+        "supportPeople": [
+          {
+            "id": "sp1",
+            "name": "Opiekun w schronisku",
+            "contact": "dyżurka"
+          },
+          {
+            "id": "sp2",
+            "name": "Brat",
+            "contact": ""
+          }
+        ],
+        "supportPlaces": [
+          "Świetlica dzienna",
+          "Punkt medyczny",
+          "Punkt konsultacyjny przy schronisku"
+        ],
+        "lapsePlan": "Jeśli wypiję, nie wracam pod wpływem do schroniska, tylko idę do ogrzewalni, a następnego dnia rozmawiam z opiekunem. Nie tracę przez to wsparcia."
+      },
+      "meetings": [
+        {
+          "type": "individual",
+          "date": "@-78T10:30",
+          "durationMin": 40,
+          "status": "done",
+          "agenda": ["Najważniejsze potrzeby", "AUDIT"],
+          "quickNotes": "",
+          "noteType": "observation",
+          "note": {
+            "situation": "Rozmowa w pokoju socjalnym schroniska, dzień po przyjęciu z ogrzewalni.",
+            "behaviour": "Uprzejmy, zmęczony, z wyraźnym bólem nogi. Wypełnił AUDIT z pomocą.",
+            "emotions": "Wstyd, rezygnacja („za późno na zmiany”).",
+            "relations": "Ciepło mówi o bracie, unika tematu syna.",
+            "strengths": "Zawód, poczucie humoru, gotowość do pomocy innym.",
+            "conclusions": "Zacząć od zdrowia i dokumentów; o piciu rozmawiać bez nacisku, w duchu ograniczania szkód."
+          },
+          "toolsUsed": [],
+          "homework": "",
+          "title": "Rozmowa wstępna w schronisku"
+        },
+        {
+          "type": "individual",
+          "date": "@-64T10:30",
+          "durationMin": 40,
+          "status": "done",
+          "agenda": ["Dokumenty", "Za i przeciw picia"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Wniosek o dowód złożony. W balansie decyzyjnym wymienił: „picie grzeje i pozwala zapomnieć”, „przez picie straciłem syna”.",
+            "assessment": "Rozważanie zmiany, pierwsze wypowiedzi o zmianie dotyczące zdrowia.",
+            "plan": "Wizyta w punkcie medycznym, plan dni bez picia."
+          },
+          "toolsUsed": ["decisionalBalance"],
+          "homework": "Zaznaczać w kalendarzu dni bez picia."
+        },
+        {
+          "type": "individual",
+          "date": "@-45T10:30",
+          "durationMin": 40,
+          "status": "done",
+          "agenda": ["Kalendarz dni bez picia", "AUDIT – pomiar kontrolny"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "2–3 dni bez picia tygodniowo. AUDIT niższy, ale nadal wysoki.",
+            "assessment": "Pierwsze efekty; rośnie poczucie sprawczości.",
+            "plan": "Rozmowa o warsztacie w CIS."
+          },
+          "toolsUsed": ["readinessRuler"],
+          "homework": "Odwiedzić warsztat w CIS z opiekunem."
+        },
+        {
+          "type": "individual",
+          "date": "@-23T10:30",
+          "durationMin": 40,
+          "status": "done",
+          "agenda": ["Wrażenia z CIS", "HALT"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Był dwa razy w warsztacie, „poczuł się znowu ślusarzem”. Dowód odebrany.",
+            "assessment": "Etap przygotowania; zgoda na konsultację w poradni.",
+            "plan": "Umówić wizytę w poradni z towarzyszeniem."
+          },
+          "toolsUsed": ["halt"],
+          "homework": ""
+        },
+        {
+          "type": "individual",
+          "date": "@-9T10:30",
+          "durationMin": 40,
+          "status": "missed",
+          "agenda": ["Przygotowanie do wizyty w poradni"],
+          "quickNotes": "Nie przyszedł; poprzedniej nocy nie wrócił do schroniska. Opiekun potwierdził, że spał w ogrzewalni.",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": [],
+          "homework": ""
+        },
+        {
+          "type": "individual",
+          "date": "@-7T10:30",
+          "durationMin": 40,
+          "status": "done",
+          "agenda": ["Co się wydarzyło w dniu wypłaty", "AUDIT"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "W dniu wypłaty zasiłku pił z dawnymi znajomymi. Zgodnie z planem poszedł do ogrzewalni, a nie do schroniska.",
+            "assessment": "Poślizg w przewidzianej sytuacji; skorzystał z planu bezpieczeństwa. AUDIT pokazuje dalszy spadek ryzyka w skali ostatnich tygodni.",
+            "plan": "W dniu wypłaty: rano warsztat w CIS i wspólne zakupy z opiekunem."
+          },
+          "toolsUsed": ["chainAnalysis"],
+          "homework": "Dopisać do planu „dzień wypłaty”."
+        },
+        {
+          "type": "individual",
+          "date": "@+2T10:30",
+          "durationMin": 40,
+          "status": "planned",
+          "agenda": ["Przygotowanie do pierwszej wizyty w poradni"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": [],
+          "homework": ""
+        }
+      ],
+      "measurements": [
+        {
+          "date": "@-78",
+          "source": {
+            "kind": "screening",
+            "instrument": "AUDIT"
+          },
+          "answers": [4, 3, 4, 3, 3, 2, 2, 3, 2, 2],
+          "score": 32,
+          "band": "zone4"
+        },
+        {
+          "date": "@-64",
+          "source": {
+            "kind": "tool",
+            "tool": "decisionalBalance"
+          },
+          "payload": {
+            "prosChange": ["Noga się zagoi", "Może syn się odezwie"],
+            "consChange": ["Nie wiem, jak wytrzymać wieczory"],
+            "prosStatus": ["Grzeje i pozwala zapomnieć"],
+            "consStatus": [
+              "Upadki i wstyd",
+              "Ryzyko utraty miejsca w schronisku"
+            ]
+          }
+        },
+        {
+          "date": "@-45",
+          "source": {
+            "kind": "screening",
+            "instrument": "AUDIT"
+          },
+          "answers": [3, 2, 3, 2, 2, 1, 2, 2, 2, 2],
+          "score": 25,
+          "band": "zone4"
+        },
+        {
+          "date": "@-45",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 5,
+          "payload": {
+            "importance": 7,
+            "confidence": 4,
+            "readiness": 5
+          }
+        },
+        {
+          "date": "@-23",
+          "source": {
+            "kind": "tool",
+            "tool": "halt"
+          },
+          "score": 2,
+          "payload": {
+            "hungry": true,
+            "angry": false,
+            "lonely": true,
+            "tired": false
+          }
+        },
+        {
+          "date": "@-23",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 6,
+          "payload": {
+            "importance": 8,
+            "confidence": 5,
+            "readiness": 6
+          }
+        },
+        {
+          "date": "@-7",
+          "source": {
+            "kind": "screening",
+            "instrument": "AUDIT"
+          },
+          "answers": [2, 2, 2, 1, 1, 0, 1, 1, 2, 2],
+          "score": 18,
+          "band": "zone3",
+          "note": "Mimo poślizgu w dniu wypłaty."
+        }
+      ],
+      "events": [
+        {
+          "date": "@-79",
+          "type": "transfer",
+          "title": "Przyjęcie do schroniska",
+          "note": "Przeniesienie z ogrzewalni na skierowanie MOPS."
+        },
+        {
+          "date": "@-74",
+          "type": "milestone",
+          "title": "Indywidualny program wychodzenia z bezdomności",
+          "note": "Podpisany z pracownikiem socjalnym."
+        },
+        {
+          "date": "@-30",
+          "type": "work",
+          "title": "Pierwsze zajęcia w warsztacie CIS",
+          "note": "Naprawa zamków – bardzo dobrze przyjęty."
+        },
+        {
+          "date": "@-23",
+          "type": "stageChange",
+          "title": "Etap: przygotowanie",
+          "note": "Zgoda na konsultację w poradni leczenia uzależnień."
+        },
+        {
+          "date": "@-10",
+          "type": "lapse",
+          "title": "Poślizg w dniu wypłaty zasiłku",
+          "note": "Picie z dawnymi znajomymi; skorzystał z ogrzewalni zgodnie z planem bezpieczeństwa."
+        }
+      ]
+    },
+    {
+      "id": "demo-05",
+      "client": {
+        "code": "DS-22",
+        "sex": "male",
+        "ageGroup": "youngAdult",
+        "age": 22,
+        "context": "probation",
+        "problems": ["stimulants", "alcohol"],
+        "goal": "abstinence",
+        "stage": "action",
+        "status": "active",
+        "strengths": "Pracowity (kurier, pełny etat), dobry kontakt z ludźmi, regularnie trenuje na siłowni. Potrafi otwarcie mówić o trudnościach.",
+        "supportNetwork": "Kuratorka sądowa, terapeuta z poradni (grupa wczesnej interwencji), starszy brat, trener z siłowni.",
+        "family": "Mieszka z matką. Ojciec pracuje za granicą, kontakt telefoniczny. Starszy brat (27) wspiera go i nie używa substancji. Niedawno rozstał się z partnerką.",
+        "education": "Technikum logistyczne (bez matury). Pracuje jako kurier, rozważa zdanie matury w szkole dla dorosłych.",
+        "keyDates": [
+          {
+            "id": "kd1",
+            "label": "Spotkanie z kuratorką",
+            "date": "@+6"
+          },
+          {
+            "id": "kd2",
+            "label": "Koniec okresu próby (dozór kuratora)",
+            "date": "@+40"
+          }
+        ]
+      },
+      "diagnosis": {
+        "date": "@-68",
+        "areas": {
+          "family": {
+            "score": 3,
+            "notes": "Wspierający brat, matka zaniepokojona i nadmiernie kontrolująca. Brak kontaktu na co dzień z ojcem."
+          },
+          "schoolWork": {
+            "score": 4,
+            "notes": "Stała praca, dobre opinie przełożonego. Zmiany popołudniowe i wieczorne."
+          },
+          "peers": {
+            "score": 2,
+            "notes": "Część znajomych z imprez używa stymulantów; nowe kontakty przez siłownię."
+          },
+          "leisure": {
+            "score": 3,
+            "notes": "Siłownia 3× w tygodniu; weekendy dawniej wyłącznie imprezowe."
+          },
+          "health": {
+            "score": 3,
+            "notes": "Problemy ze snem po zmianach wieczornych, okresowo obniżony nastrój."
+          },
+          "substanceUse": {
+            "score": 2,
+            "notes": "Amfetamina weekendowo od 18. roku życia, alkohol przy okazji imprez. Od wyroku przerwy, jeden niedawny epizod."
+          },
+          "riskBehaviour": {
+            "score": 3,
+            "notes": "Prowadzenie samochodu po nieprzespanej nocy; brak innych ryzykownych zachowań."
+          },
+          "justice": {
+            "score": 2,
+            "notes": "Warunkowe umorzenie postępowania (posiadanie substancji) z dozorem kuratora i obowiązkiem udziału w programie."
+          }
+        },
+        "riskFactors": [
+          "Grupa znajomych używających stymulantów",
+          "Rozstanie z partnerką",
+          "Przekonanie, że po zakończeniu dozoru „nikt nie sprawdza”",
+          "Niedobór snu"
+        ],
+        "protectiveFactors": [
+          "Stała praca",
+          "Wspierający brat",
+          "Sport jako źródło satysfakcji"
+        ],
+        "resources": "Grupa wczesnej interwencji w poradni leczenia uzależnień, zespół kuratorskiej służby sądowej, telefon zaufania w sprawie narkotyków.",
+        "conclusions": "Zbliżający się koniec dozoru to moment przejścia z motywacji zewnętrznej na wewnętrzną. Potrzebny plan na okres po dozorze i praca z cravingiem w weekendy."
+      },
+      "ipr": {
+        "startDate": "@-66",
+        "reviewDate": "@+30",
+        "goals": [
+          {
+            "id": "g1",
+            "title": "Abstynencja od stymulantów",
+            "specific": "Nie używać amfetaminy ani innych stymulantów.",
+            "measurable": "Samoopis, DUDIT co 4–5 tygodni, wyniki testów zlecanych przez kuratora.",
+            "achievable": "Grupa w poradni, plan weekendowy, ćwiczenia surfowania na fali głodu.",
+            "relevant": "Warunek zakończenia dozoru i własny cel – utrzymanie pracy.",
+            "timeBound": "Do końca okresu próby i 3 miesiące po nim.",
+            "actions": [
+              {
+                "id": "a1",
+                "text": "Udział w grupie wczesnej interwencji (8 spotkań)",
+                "responsible": "Podopieczny",
+                "done": true
+              },
+              {
+                "id": "a2",
+                "text": "Plan na pierwsze 3 miesiące po zakończeniu dozoru",
+                "responsible": "Podopieczny z pedagogiem",
+                "due": "@+30",
+                "done": false
+              }
+            ],
+            "progress": 55,
+            "reviewNotes": "Jeden poślizg na imprezie urodzinowej; rosnący craving w weekendy."
+          },
+          {
+            "id": "g2",
+            "title": "Sen i regeneracja",
+            "specific": "Spać co najmniej 7 godzin, także po zmianach wieczornych.",
+            "measurable": "Dzienniczek snu, HALT na spotkaniach.",
+            "achievable": "Rozmowa z przełożonym o grafiku.",
+            "relevant": "Zmęczenie zwiększa craving.",
+            "actions": [
+              {
+                "id": "a3",
+                "text": "Rozmowa z przełożonym o zmianach",
+                "responsible": "Podopieczny",
+                "done": false
+              }
+            ],
+            "progress": 30,
+            "reviewNotes": ""
+          }
+        ],
+        "evaluation": ""
+      },
+      "relapsePlan": {
+        "highRiskSituations": [
+          "Imprezy urodzinowe i weekendowe wyjścia z dawną grupą",
+          "Piątek po nocnej zmianie"
+        ],
+        "triggers": [
+          "Zmęczenie i potrzeba „doładowania”",
+          "Samotność po rozstaniu",
+          "Wiadomości od dilera"
+        ],
+        "warningSigns": [
+          "Myśl „po dozorze już mogę”",
+          "Odpuszczam siłownię",
+          "Kontakt z dawnymi znajomymi z imprez"
+        ],
+        "copingStrategies": [
+          "Surfowanie na fali głodu",
+          "Zablokowany numer dilera",
+          "Weekendowy trening z bratem"
+        ],
+        "supportPeople": [
+          {
+            "id": "sp1",
+            "name": "Brat",
+            "contact": ""
+          },
+          {
+            "id": "sp2",
+            "name": "Terapeuta z poradni",
+            "contact": "rejestracja poradni"
+          }
+        ],
+        "supportPlaces": ["Siłownia", "Poradnia – grupa wsparcia"],
+        "lapsePlan": "Po użyciu nie prowadzę samochodu, piszę do brata i mówię o tym na najbliższym spotkaniu. Poślizg analizujemy jako źródło wiedzy o wyzwalaczach."
+      },
+      "meetings": [
+        {
+          "type": "individual",
+          "date": "@-68T17:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Obowiązki z wyroku", "DUDIT"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Skierowany przez kuratorkę. Opisuje weekendowe używanie amfetaminy od 4 lat. DUDIT w zakresie problemowym.",
+            "assessment": "Motywacja głównie zewnętrzna (dozór), ale widzi koszty dla pracy i zdrowia.",
+            "plan": "Grupa wczesnej interwencji, balans decyzyjny."
+          },
+          "toolsUsed": ["readinessRuler"],
+          "homework": "",
+          "title": "Pierwsze spotkanie"
+        },
+        {
+          "type": "individual",
+          "date": "@-54T17:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Balans decyzyjny"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Za zmianą: praca, zdrowie, brat. Przeciw: „nudne weekendy”, utrata części znajomych.",
+            "assessment": "Przejście do działania; pierwsze kroki podjęte samodzielnie (zablokowany numer).",
+            "plan": "Plan weekendowy."
+          },
+          "toolsUsed": ["decisionalBalance"],
+          "homework": "Zaplanować dwa weekendy."
+        },
+        {
+          "type": "individual",
+          "date": "@-35T17:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["DUDIT", "Surfowanie na fali głodu"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "DUDIT wyraźnie niższy. Craving w weekendy 5–6/10, po ćwiczeniu 3/10.",
+            "assessment": "Dobra odpowiedź na techniki radzenia sobie z głodem.",
+            "plan": "Ćwiczyć surfowanie codziennie przez tydzień."
+          },
+          "toolsUsed": ["urgeSurfing"],
+          "homework": "Codziennie 5 minut surfowania."
+        },
+        {
+          "type": "individual",
+          "date": "@-21T17:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Rozstanie z partnerką", "HALT"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Tydzień po rozstaniu. Śpi 5 godzin, więcej myśli o używaniu.",
+            "assessment": "Wzrost ryzyka: samotność i zmęczenie.",
+            "plan": "Wzmocnić wsparcie brata, dzienniczek snu."
+          },
+          "toolsUsed": ["halt", "urgeSurfing"],
+          "homework": ""
+        },
+        {
+          "type": "individual",
+          "date": "@-7T17:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Analiza łańcuchowa", "Plan po zakończeniu dozoru"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Na urodzinach kolegi przyjął amfetaminę. Nie prowadził auta, napisał do brata.",
+            "assessment": "Poślizg w sytuacji wysokiego ryzyka; craving w ostatnich tygodniach rośnie (8–9/10). Ważne, że zastosował część planu.",
+            "plan": "Częstsze spotkania do końca dozoru, rozmowa o kontynuacji w poradni po dozorze."
+          },
+          "toolsUsed": ["chainAnalysis", "urgeSurfing"],
+          "homework": "Wypisać 3 powody, dla których chce kontynuować po dozorze.",
+          "title": "Omówienie poślizgu"
+        },
+        {
+          "type": "individual",
+          "date": "@-2T17:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["DUDIT", "Surfowanie na fali głodu"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "DUDIT wyższy niż przed miesiącem. Craving przed ćwiczeniem 9/10, po 6/10.",
+            "assessment": "Rosnący craving przy zbliżającym się końcu dozoru – sygnał do wzmocnienia wsparcia.",
+            "plan": "Konsultacja z terapeutą poradni, uzgodnienie z kuratorką informacji o postępach."
+          },
+          "toolsUsed": ["urgeSurfing"],
+          "homework": ""
+        },
+        {
+          "type": "individual",
+          "date": "@+3T17:00",
+          "durationMin": 50,
+          "status": "planned",
+          "agenda": [
+            "Plan na weekend",
+            "Przygotowanie do spotkania z kuratorką"
+          ],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": [],
+          "homework": ""
+        }
+      ],
+      "measurements": [
+        {
+          "date": "@-68",
+          "source": {
+            "kind": "screening",
+            "instrument": "DUDIT"
+          },
+          "answers": [3, 2, 2, 3, 3, 2, 2, 1, 2, 0, 2],
+          "score": 24,
+          "band": "problems"
+        },
+        {
+          "date": "@-68",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 5,
+          "payload": {
+            "importance": 6,
+            "confidence": 5,
+            "readiness": 5
+          }
+        },
+        {
+          "date": "@-54",
+          "source": {
+            "kind": "tool",
+            "tool": "decisionalBalance"
+          },
+          "payload": {
+            "prosChange": [
+              "Utrzymam pracę",
+              "Lepsze zdrowie i forma",
+              "Brat będzie mi ufał"
+            ],
+            "consChange": ["Nudne weekendy", "Stracę część znajomych"],
+            "prosStatus": ["Energia na imprezie"],
+            "consStatus": ["Zjazdy i brak snu", "Sprawa sądowa"]
+          }
+        },
+        {
+          "date": "@-35",
+          "source": {
+            "kind": "tool",
+            "tool": "urgeSurfing"
+          },
+          "scoreBefore": 6,
+          "score": 3
+        },
+        {
+          "date": "@-35",
+          "source": {
+            "kind": "screening",
+            "instrument": "DUDIT"
+          },
+          "answers": [1, 1, 1, 1, 2, 1, 1, 0, 1, 0, 2],
+          "score": 13,
+          "band": "problems"
+        },
+        {
+          "date": "@-28",
+          "source": {
+            "kind": "tool",
+            "tool": "urgeSurfing"
+          },
+          "scoreBefore": 5,
+          "score": 2
+        },
+        {
+          "date": "@-21",
+          "source": {
+            "kind": "tool",
+            "tool": "urgeSurfing"
+          },
+          "scoreBefore": 7,
+          "score": 4
+        },
+        {
+          "date": "@-21",
+          "source": {
+            "kind": "tool",
+            "tool": "halt"
+          },
+          "score": 3,
+          "payload": {
+            "hungry": false,
+            "angry": true,
+            "lonely": true,
+            "tired": true
+          }
+        },
+        {
+          "date": "@-14",
+          "source": {
+            "kind": "tool",
+            "tool": "urgeSurfing"
+          },
+          "scoreBefore": 8,
+          "score": 5
+        },
+        {
+          "date": "@-7",
+          "source": {
+            "kind": "tool",
+            "tool": "urgeSurfing"
+          },
+          "scoreBefore": 8,
+          "score": 6
+        },
+        {
+          "date": "@-7",
+          "source": {
+            "kind": "tool",
+            "tool": "chainAnalysis"
+          },
+          "payload": {
+            "trigger": "Urodziny kolegi, zmęczenie po tygodniu zmian wieczornych",
+            "thoughts": "„Za miesiąc koniec dozoru, raz nic nie zmieni”",
+            "emotions": "Samotność, chęć bycia „jak dawniej”",
+            "behaviour": "Przyjęcie amfetaminy od znajomego",
+            "consequences": "Dwa dni złego samopoczucia, wstyd przed bratem",
+            "alternative": "Krótka obecność na urodzinach z bratem, wyjście przed północą"
+          }
+        },
+        {
+          "date": "@-2",
+          "source": {
+            "kind": "screening",
+            "instrument": "DUDIT"
+          },
+          "answers": [2, 1, 1, 2, 3, 1, 1, 0, 2, 0, 2],
+          "score": 17,
+          "band": "problems",
+          "note": "Wynik wyższy niż miesiąc temu."
+        },
+        {
+          "date": "@-2",
+          "source": {
+            "kind": "tool",
+            "tool": "urgeSurfing"
+          },
+          "scoreBefore": 9,
+          "score": 6
+        }
+      ],
+      "events": [
+        {
+          "date": "@-75",
+          "type": "court",
+          "title": "Warunkowe umorzenie postępowania",
+          "note": "Okres próby z dozorem kuratora i obowiązkiem udziału w programie."
+        },
+        {
+          "date": "@-54",
+          "type": "stageChange",
+          "title": "Etap: działanie",
+          "note": "Zablokował numer dilera, zaplanował weekendy."
+        },
+        {
+          "date": "@-40",
+          "type": "milestone",
+          "title": "Ukończona grupa wczesnej interwencji",
+          "note": "8 z 8 spotkań."
+        },
+        {
+          "date": "@-25",
+          "type": "other",
+          "title": "Rozstanie z partnerką",
+          "note": "Ważne obciążenie emocjonalne."
+        },
+        {
+          "date": "@-9",
+          "type": "lapse",
+          "title": "Poślizg – użycie amfetaminy",
+          "note": "Jednorazowo na imprezie urodzinowej; nie prowadził auta i sam o tym opowiedział."
+        }
+      ]
+    },
+    {
+      "id": "demo-06",
+      "client": {
+        "code": "AP-45",
+        "sex": "male",
+        "ageGroup": "adult",
+        "age": 45,
+        "context": "clinic",
+        "problems": ["gambling"],
+        "goal": "abstinence",
+        "stage": "action",
+        "status": "active",
+        "strengths": "Stała praca (kierownik zmiany w zakładzie produkcyjnym), umiejętności organizacyjne, zaangażowany ojciec. Przyznał się żonie do długów i sam zgłosił się do poradni.",
+        "supportNetwork": "Żona (wspiera, ale jest bardzo zraniona), grupa Anonimowych Hazardzistów, terapeutka w poradni, kolega z pracy, który przeszedł podobną drogę.",
+        "family": "Żonaty od 18 lat, dwoje dzieci (16 i 12 lat). Ojciec miał problem alkoholowy (zmarł). Konflikt z bratem, od którego pożyczył pieniądze.",
+        "education": "Wykształcenie średnie techniczne (mechanik), od 15 lat w jednej firmie.",
+        "keyDates": [
+          {
+            "id": "kd1",
+            "label": "Spotkanie w poradni dłużniczej – plan spłaty",
+            "date": "@+11"
+          },
+          {
+            "id": "kd2",
+            "label": "Rata ugody z firmą pożyczkową",
+            "date": "@+16"
+          }
+        ]
+      },
+      "diagnosis": {
+        "date": "@-58",
+        "areas": {
+          "family": {
+            "score": 2,
+            "notes": "Kryzys zaufania w małżeństwie po ujawnieniu długów. Dzieci odczuwają napięcie, starszy syn wie o sytuacji."
+          },
+          "schoolWork": {
+            "score": 3,
+            "notes": "Utrzymuje pracę, ale spadek koncentracji; grał w przerwach w pracy."
+          },
+          "peers": {
+            "score": 3,
+            "notes": "Mało bliskich znajomych; wcześniej kontakty głównie przez zakłady sportowe."
+          },
+          "leisure": {
+            "score": 2,
+            "notes": "Czas wolny zdominowany przez zakłady online i automaty; porzucone wędkowanie."
+          },
+          "health": {
+            "score": 2,
+            "notes": "Bezsenność, napięcie, myśli „nie ma wyjścia” w okresie ujawnienia długów – aktualnie brak myśli samobójczych, ustalony plan bezpieczeństwa."
+          },
+          "substanceUse": {
+            "score": 4,
+            "notes": "Alkohol okazjonalnie, bez cech szkodliwego picia. Pali papierosy."
+          },
+          "riskBehaviour": {
+            "score": 1,
+            "notes": "Zakłady sportowe online i automaty od 6 lat, „odgrywanie się”, kredyty i pożyczki krótkoterminowe ukrywane przed rodziną."
+          },
+          "justice": {
+            "score": 4,
+            "notes": "Brak spraw karnych; jedna sprawa windykacyjna w toku."
+          }
+        },
+        "riskFactors": [
+          "Długi ok. 70 tys. zł i presja windykacji",
+          "Łatwy dostęp do zakładów w telefonie",
+          "Przekonanie, że „odegra się” i spłaci długi",
+          "Historia uzależnienia w rodzinie pochodzenia"
+        ],
+        "protectiveFactors": [
+          "Stała praca i dochód",
+          "Gotowość żony do wspólnej pracy",
+          "Silna motywacja związana z dziećmi"
+        ],
+        "resources": "Poradnia leczenia uzależnień (terapia uzależnień behawioralnych), grupa AH, bezpłatne poradnictwo dłużnicze, blokada transakcji hazardowych w banku, rejestr domen zakazanych.",
+        "conclusions": "Hazard pełni funkcję regulacji napięcia i ucieczki od problemów; długi podtrzymują mechanizm „odgrywania się”. Priorytet: ograniczenie dostępu do pieniędzy i gier, plan spłaty, praca nad zniekształceniami myślenia oraz wsparcie rodziny."
+      },
+      "ipr": {
+        "startDate": "@-56",
+        "reviewDate": "@+20",
+        "goals": [
+          {
+            "id": "g1",
+            "title": "Ograniczenie dostępu do hazardu",
+            "specific": "Usunąć aplikacje, zablokować transakcje hazardowe i oddać żonie kartę kredytową.",
+            "measurable": "Wszystkie blokady aktywne; liczba dni bez gry.",
+            "achievable": "Pomoc żony i terapeutki przy ustawieniu blokad.",
+            "relevant": "Dostępność gry jest głównym czynnikiem ryzyka.",
+            "timeBound": "W ciągu 2 tygodni.",
+            "actions": [
+              {
+                "id": "a1",
+                "text": "Blokada transakcji hazardowych w banku",
+                "responsible": "Podopieczny",
+                "due": "@-45",
+                "done": true
+              },
+              {
+                "id": "a2",
+                "text": "Usunięcie aplikacji i kont bukmacherskich",
+                "responsible": "Podopieczny",
+                "done": true
+              }
+            ],
+            "progress": 85,
+            "reviewNotes": "Blokady aktywne; jeden zakład przez konto znajomego."
+          },
+          {
+            "id": "g2",
+            "title": "Plan spłaty długów",
+            "specific": "Spisać wszystkie zobowiązania i ustalić plan spłaty z doradcą.",
+            "measurable": "Kompletna lista długów, podpisane ugody, terminowe raty.",
+            "achievable": "Bezpłatne poradnictwo dłużnicze, stały dochód.",
+            "relevant": "Presja długów wyzwala myśli o „odegraniu się”.",
+            "actions": [
+              {
+                "id": "a3",
+                "text": "Lista wierzycieli z kwotami",
+                "responsible": "Podopieczny z żoną",
+                "done": true
+              },
+              {
+                "id": "a4",
+                "text": "Spotkanie w poradni dłużniczej",
+                "responsible": "Podopieczny",
+                "due": "@+11",
+                "done": false
+              }
+            ],
+            "progress": 45,
+            "reviewNotes": "Jedna ugoda podpisana."
+          },
+          {
+            "id": "g3",
+            "title": "Odbudowa zaufania w rodzinie",
+            "specific": "Cotygodniowa rozmowa z żoną o finansach i uczestnictwo w spotkaniu rodzinnym w poradni.",
+            "measurable": "Skalowanie zaufania przez żonę (0–10).",
+            "achievable": "Wsparcie terapeutki, grupa dla rodzin osób grających.",
+            "relevant": "Rodzina jest dla niego najważniejszym powodem zmiany.",
+            "actions": [
+              {
+                "id": "a5",
+                "text": "Sesja rodzinna z żoną",
+                "responsible": "Terapeutka, pedagog",
+                "due": "@+18",
+                "done": false
+              }
+            ],
+            "progress": 30,
+            "reviewNotes": ""
+          }
+        ],
+        "evaluation": ""
+      },
+      "relapsePlan": {
+        "highRiskSituations": [
+          "Dzień wypłaty",
+          "Mecze w telewizji",
+          "Kłótnia o pieniądze"
+        ],
+        "triggers": [
+          "Reklamy bukmacherów",
+          "List od windykatora",
+          "Myśl „jeden duży wygrany zakład rozwiąże wszystko”"
+        ],
+        "warningSigns": [
+          "Sprawdzam kursy „tylko z ciekawości”",
+          "Ukrywam drobne wydatki",
+          "Unikam mityngu"
+        ],
+        "copingStrategies": [
+          "Telefon do kolegi z AH",
+          "Dziennik myśli – kwestionowanie „odegram się”",
+          "Wędkowanie z synem w sobotę"
+        ],
+        "supportPeople": [
+          {
+            "id": "sp1",
+            "name": "Żona",
+            "contact": ""
+          },
+          {
+            "id": "sp2",
+            "name": "Kolega z grupy AH",
+            "contact": ""
+          }
+        ],
+        "supportPlaces": ["Mityng AH (czwartek)", "Poradnia"],
+        "lapsePlan": "Jeśli zagram, mówię o tym żonie i terapeutce w ciągu 24 godzin, nie próbuję się odgrywać i sprawdzamy, która blokada zawiodła."
+      },
+      "meetings": [
+        {
+          "type": "individual",
+          "date": "@-58T18:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Historia grania i długi", "Bezpieczeństwo"],
+          "quickNotes": "",
+          "noteType": "observation",
+          "note": {
+            "situation": "Zgłosił się sam po ujawnieniu długów żonie.",
+            "behaviour": "Mówił szybko, wielokrotnie przepraszał, przyniósł listę pożyczek.",
+            "emotions": "Silny wstyd i lęk; myśli „nie ma wyjścia” w ostatnich dniach.",
+            "relations": "Boi się utraty rodziny, konflikt z bratem.",
+            "strengths": "Szczerość, gotowość do działania, stała praca.",
+            "conclusions": "Ustalono plan bezpieczeństwa i telefony zaufania. Priorytet: blokady i pierwsze kroki finansowe."
+          },
+          "toolsUsed": ["supportMap"],
+          "homework": "Ustawić blokadę w banku.",
+          "title": "Konsultacja wstępna"
+        },
+        {
+          "type": "individual",
+          "date": "@-44T18:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Blokady", "Balans decyzyjny"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Blokady w banku i telefonie aktywne. W balansie: „adrenalina” vs. „dzieci, dom, sen”.",
+            "assessment": "Etap działania, wysoka ważność zmiany, niska pewność siebie.",
+            "plan": "Dziennik myśli dotyczących „odgrywania się”."
+          },
+          "toolsUsed": ["decisionalBalance", "readinessRuler"],
+          "homework": "Zapisać 3 myśli o wygranej i odpowiedzi na nie."
+        },
+        {
+          "type": "individual",
+          "date": "@-30T18:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Dziennik myśli", "Lista długów"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Rozpoznał zniekształcenia: „złudzenie kontroli” i „prawie wygrałem”. Lista długów kompletna.",
+            "assessment": "Rosnąca świadomość mechanizmów; pierwsze tygodnie bez gry.",
+            "plan": "Przygotowanie do dnia wypłaty."
+          },
+          "toolsUsed": ["thoughtRecord"],
+          "homework": ""
+        },
+        {
+          "type": "individual",
+          "date": "@-17T18:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Analiza łańcuchowa"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "W dniu wypłaty postawił zakład przez konto kolegi (400 zł, przegrana). Następnego dnia powiedział żonie.",
+            "assessment": "Poślizg wywołany listem od windykatora; zastosował zasadę 24 godzin.",
+            "plan": "Wypłata przelewana na wspólne konto z limitem, plan na dzień wypłaty."
+          },
+          "toolsUsed": ["chainAnalysis", "urgeSurfing"],
+          "homework": "Ustawić limit na koncie wspólnie z żoną.",
+          "title": "Omówienie poślizgu"
+        },
+        {
+          "type": "individual",
+          "date": "@-10T18:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Linijka gotowości", "Przygotowanie sesji rodzinnej"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Pewność siebie 6/10 (wzrost). Żona zgodziła się przyjść na sesję rodzinną.",
+            "assessment": "Stabilizacja po poślizgu, lepsza kontrola finansów.",
+            "plan": "Kolejne spotkanie: plan spłaty."
+          },
+          "toolsUsed": ["readinessRuler"],
+          "homework": ""
+        },
+        {
+          "type": "individual",
+          "date": "@-3T18:00",
+          "durationMin": 50,
+          "status": "missed",
+          "agenda": ["Plan spłaty długów"],
+          "quickNotes": "Nie przyszedł i nie odwołał wizyty. Wysłano SMS z propozycją nowego terminu.",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": [],
+          "homework": ""
+        },
+        {
+          "type": "individual",
+          "date": "@+4T18:00",
+          "durationMin": 50,
+          "status": "planned",
+          "agenda": [
+            "Co się wydarzyło w ostatnim tygodniu",
+            "Plan spłaty długów"
+          ],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": [],
+          "homework": ""
+        }
+      ],
+      "measurements": [
+        {
+          "date": "@-44",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 6,
+          "payload": {
+            "importance": 10,
+            "confidence": 3,
+            "readiness": 6
+          }
+        },
+        {
+          "date": "@-44",
+          "source": {
+            "kind": "tool",
+            "tool": "decisionalBalance"
+          },
+          "payload": {
+            "prosChange": ["Spokój w domu", "Sen", "Spłata długów"],
+            "consChange": [
+              "Nuda i brak adrenaliny",
+              "Utrata szansy na „odegranie się”"
+            ],
+            "prosStatus": ["Emocje i nadzieja na wygraną"],
+            "consStatus": ["Długi", "Kłamstwa wobec żony", "Bezsenność"]
+          }
+        },
+        {
+          "date": "@-30",
+          "source": {
+            "kind": "tool",
+            "tool": "thoughtRecord"
+          },
+          "payload": {
+            "situation": "Reklama zakładów podczas meczu",
+            "thought": "„Znam tę ligę, tym razem wygram”",
+            "distortion": "Złudzenie kontroli",
+            "alternative": "Wynik meczu nie zależy od mojej wiedzy; kursy są ustawione na korzyść bukmachera."
+          }
+        },
+        {
+          "date": "@-30",
+          "source": {
+            "kind": "tool",
+            "tool": "urgeSurfing"
+          },
+          "scoreBefore": 6,
+          "score": 3
+        },
+        {
+          "date": "@-17",
+          "source": {
+            "kind": "tool",
+            "tool": "urgeSurfing"
+          },
+          "scoreBefore": 7,
+          "score": 4
+        },
+        {
+          "date": "@-17",
+          "source": {
+            "kind": "tool",
+            "tool": "chainAnalysis"
+          },
+          "payload": {
+            "trigger": "List od firmy windykacyjnej w dniu wypłaty",
+            "thoughts": "„Jeden dobry kupon i spłacę tę ratę”",
+            "emotions": "Lęk, presja, nadzieja",
+            "behaviour": "Zakład przez konto kolegi",
+            "consequences": "Strata 400 zł, poczucie winy, rozmowa z żoną",
+            "alternative": "Pokazać list żonie i zadzwonić do poradni dłużniczej"
+          }
+        },
+        {
+          "date": "@-10",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 8,
+          "payload": {
+            "importance": 10,
+            "confidence": 6,
+            "readiness": 8
+          }
+        }
+      ],
+      "events": [
+        {
+          "date": "@-60",
+          "type": "other",
+          "title": "Ujawnienie długów w rodzinie",
+          "note": "Rozmowa z żoną, decyzja o zgłoszeniu się do poradni."
+        },
+        {
+          "date": "@-45",
+          "type": "stageChange",
+          "title": "Etap: działanie",
+          "note": "Wszystkie blokady ustawione."
+        },
+        {
+          "date": "@-38",
+          "type": "milestone",
+          "title": "Pierwszy mityng AH",
+          "note": "Zadeklarował regularny udział."
+        },
+        {
+          "date": "@-18",
+          "type": "lapse",
+          "title": "Poślizg – zakład przez konto kolegi",
+          "note": "Jednorazowy zakład po liście od windykatora; poinformował żonę następnego dnia."
+        },
+        {
+          "date": "@-12",
+          "type": "milestone",
+          "title": "Pierwsza ugoda z wierzycielem",
+          "note": "Rozłożenie długu na raty."
+        }
+      ],
+      "genogram": {
+        "nodes": [
+          {
+            "id": "n1",
+            "label": "AP-45",
+            "kind": "male",
+            "x": 250,
+            "y": 200,
+            "isClient": true
+          },
+          {
+            "id": "n2",
+            "label": "Żona (43)",
+            "kind": "female",
+            "x": 400,
+            "y": 200
+          },
+          {
+            "id": "n3",
+            "label": "Syn (16)",
+            "kind": "male",
+            "x": 280,
+            "y": 340
+          },
+          {
+            "id": "n4",
+            "label": "Córka (12)",
+            "kind": "female",
+            "x": 400,
+            "y": 340
+          },
+          {
+            "id": "n5",
+            "label": "Ojciec",
+            "kind": "male",
+            "x": 180,
+            "y": 60,
+            "deceased": true,
+            "substance": true,
+            "note": "Problem alkoholowy"
+          },
+          {
+            "id": "n6",
+            "label": "Matka (70)",
+            "kind": "female",
+            "x": 320,
+            "y": 60
+          },
+          {
+            "id": "n7",
+            "label": "Brat (48)",
+            "kind": "male",
+            "x": 90,
+            "y": 200
+          },
+          {
+            "id": "n8",
+            "label": "Grupa AH",
+            "kind": "group",
+            "x": 530,
+            "y": 90
+          },
+          {
+            "id": "n9",
+            "label": "Wierzyciele",
+            "kind": "institution",
+            "x": 90,
+            "y": 340
+          }
+        ],
+        "edges": [
+          {
+            "id": "e1",
+            "from": "n5",
+            "to": "n6",
+            "type": "family"
+          },
+          {
+            "id": "e2",
+            "from": "n5",
+            "to": "n1",
+            "type": "stressful"
+          },
+          {
+            "id": "e3",
+            "from": "n6",
+            "to": "n1",
+            "type": "family"
+          },
+          {
+            "id": "e4",
+            "from": "n1",
+            "to": "n2",
+            "type": "stressful"
+          },
+          {
+            "id": "e5",
+            "from": "n1",
+            "to": "n3",
+            "type": "strong"
+          },
+          {
+            "id": "e6",
+            "from": "n1",
+            "to": "n4",
+            "type": "family"
+          },
+          {
+            "id": "e7",
+            "from": "n2",
+            "to": "n4",
+            "type": "strong"
+          },
+          {
+            "id": "e8",
+            "from": "n7",
+            "to": "n1",
+            "type": "conflict"
+          },
+          {
+            "id": "e9",
+            "from": "n8",
+            "to": "n1",
+            "type": "support"
+          },
+          {
+            "id": "e10",
+            "from": "n9",
+            "to": "n1",
+            "type": "stressful"
+          }
+        ]
+      }
+    },
+    {
+      "id": "demo-07",
+      "client": {
+        "code": "EM-44",
+        "sex": "female",
+        "ageGroup": "adult",
+        "age": 44,
+        "context": "clinic",
+        "problems": ["codependency"],
+        "goal": "undecided",
+        "stage": "action",
+        "status": "active",
+        "strengths": "Odpowiedzialna, dobrze zorganizowana, bardzo zaangażowana w wychowanie dzieci. Ma stałą pracę (księgowa) i przyjaciółkę, której ufa.",
+        "supportNetwork": "Grupa wsparcia dla osób bliskich osób uzależnionych w poradni, przyjaciółka, siostra. Wcześniej izolowała się, by „nikt się nie dowiedział”.",
+        "family": "Mąż (47) z problemem alkoholowym, obecnie nie podejmuje leczenia. Syn (17) w konflikcie z ojcem, córka (10) wycofana. W okresach picia męża zdarzają się kłótnie i krzyki.",
+        "education": "Wykształcenie wyższe ekonomiczne, pracuje jako księgowa w biurze rachunkowym.",
+        "keyDates": [
+          {
+            "id": "kd1",
+            "label": "Wywiadówka – syn (zagrożenie z dwóch przedmiotów)",
+            "date": "@+8"
+          },
+          {
+            "id": "kd2",
+            "label": "Koniec cyklu grupy wsparcia",
+            "date": "@+35"
+          }
+        ]
+      },
+      "diagnosis": {
+        "date": "@-62",
+        "areas": {
+          "family": {
+            "score": 1,
+            "notes": "Życie rodziny podporządkowane piciu męża; przejmuje jego obowiązki, tłumaczy jego nieobecności w pracy. Dzieci obciążone napięciem."
+          },
+          "schoolWork": {
+            "score": 4,
+            "notes": "Dobrze funkcjonuje w pracy, ale bierze nadgodziny, by „nie być w domu”."
+          },
+          "peers": {
+            "score": 2,
+            "notes": "Ograniczyła kontakty towarzyskie ze wstydu; utrzymuje kontakt z jedną przyjaciółką."
+          },
+          "leisure": {
+            "score": 2,
+            "notes": "Brak czasu dla siebie, porzuciła chór."
+          },
+          "health": {
+            "score": 2,
+            "notes": "Napięciowe bóle głowy, bezsenność, przewlekłe zmęczenie."
+          },
+          "substanceUse": {
+            "score": 5,
+            "notes": "Nie używa alkoholu ani innych substancji."
+          },
+          "riskBehaviour": {
+            "score": 3,
+            "notes": "Kontrolowanie męża (szukanie butelek, sprawdzanie telefonu), uległość w sytuacjach kłótni."
+          },
+          "justice": {
+            "score": 4,
+            "notes": "Brak spraw. Poinformowana o procedurze „Niebieskiej Karty” i możliwościach zgłoszenia przemocy."
+          }
+        },
+        "riskFactors": [
+          "Przejmowanie odpowiedzialności za picie męża",
+          "Izolacja społeczna i wstyd",
+          "Przewlekły stres i przemęczenie",
+          "Ryzyko eskalacji kłótni w okresach picia"
+        ],
+        "protectiveFactors": [
+          "Stała praca i niezależność finansowa",
+          "Silna więź z dziećmi",
+          "Przyjaciółka i siostra"
+        ],
+        "resources": "Grupa wsparcia w poradni, konsultacje dla dzieci w poradni psychologiczno-pedagogicznej, ośrodek interwencji kryzysowej, gminna komisja rozwiązywania problemów alkoholowych.",
+        "conclusions": "Wzorzec nadodpowiedzialności i kontroli utrwala sytuację w rodzinie i wyczerpuje podopieczną. Praca skupia się na granicach, trosce o siebie, bezpieczeństwie i wsparciu dzieci – niezależnie od decyzji męża."
+      },
+      "ipr": {
+        "startDate": "@-60",
+        "reviewDate": "@+30",
+        "goals": [
+          {
+            "id": "g1",
+            "title": "Oddanie odpowiedzialności za picie",
+            "specific": "Nie usprawiedliwiać męża w pracy i nie szukać butelek.",
+            "measurable": "Liczba sytuacji „ratowania” w tygodniu (dzienniczek).",
+            "achievable": "Grupa wsparcia, przećwiczone zdania odmowy.",
+            "relevant": "Ratowanie chroni męża przed konsekwencjami i wyczerpuje ją.",
+            "actions": [
+              {
+                "id": "a1",
+                "text": "Przećwiczyć odmowę zadzwonienia do pracy męża",
+                "responsible": "Podopieczna z pedagogiem",
+                "done": true
+              }
+            ],
+            "progress": 50,
+            "reviewNotes": "Dwa razy odmówiła, raz wróciła do dawnego wzorca."
+          },
+          {
+            "id": "g2",
+            "title": "Czas dla siebie",
+            "specific": "Jedna aktywność tylko dla siebie w tygodniu (chór lub spacer z przyjaciółką).",
+            "measurable": "Odhaczenie w kalendarzu; skalowanie samopoczucia.",
+            "achievable": "Siostra zajmie się córką w tym czasie.",
+            "relevant": "Odbudowa zasobów i kontaktów.",
+            "actions": [
+              {
+                "id": "a2",
+                "text": "Zapisać się ponownie do chóru",
+                "responsible": "Podopieczna",
+                "done": true
+              }
+            ],
+            "progress": 70,
+            "reviewNotes": "Wróciła do chóru 3 tygodnie temu."
+          },
+          {
+            "id": "g3",
+            "title": "Bezpieczeństwo i wsparcie dzieci",
+            "specific": "Ustalić plan bezpieczeństwa i umówić konsultację dla dzieci.",
+            "measurable": "Plan spisany, konsultacja odbyta.",
+            "achievable": "Poradnia psychologiczno-pedagogiczna, wsparcie siostry.",
+            "relevant": "Dzieci są obciążone sytuacją w domu.",
+            "actions": [
+              {
+                "id": "a3",
+                "text": "Plan bezpieczeństwa (gdzie iść, do kogo dzwonić)",
+                "responsible": "Podopieczna z pedagogiem",
+                "done": true
+              },
+              {
+                "id": "a4",
+                "text": "Konsultacja dla córki w poradni",
+                "responsible": "Podopieczna",
+                "due": "@+14",
+                "done": false
+              }
+            ],
+            "progress": 45,
+            "reviewNotes": ""
+          }
+        ],
+        "evaluation": ""
+      },
+      "familyPlan": {
+        "familyGoals": [
+          "Rozmowa z dziećmi o problemie alkoholowym taty w języku dostosowanym do wieku",
+          "Stałe rytuały rodzinne niezależne od picia (niedzielny obiad, wspólne wyjście)",
+          "Jasne granice: nie rozmawiamy z tatą o ważnych sprawach, gdy jest pod wpływem"
+        ],
+        "familyStrengths": "Bliska relacja matki z dziećmi, wsparcie siostry, stabilność finansowa, syn otwarcie mówi o swoich uczuciach.",
+        "supportForFamily": [
+          "Grupa dla osób bliskich w poradni (matka)",
+          "Konsultacje w poradni psychologiczno-pedagogicznej (córka)",
+          "Zajęcia socjoterapeutyczne lub grupa dla młodzieży z rodzin z problemem alkoholowym (syn)",
+          "Gminna komisja rozwiązywania problemów alkoholowych – informacja o procedurze motywowania męża do leczenia"
+        ],
+        "safetyNotes": "W okresach picia kłótnie i krzyki, bez przemocy fizycznej. Ustalony plan: wyjście z dziećmi do siostry, telefon alarmowy 112, Niebieska Linia. Omówiona procedura „Niebieskiej Karty”.",
+        "agreements": "Matka nie przejmuje obowiązków męża wobec pracodawcy. Syn może wyjść do kolegi, gdy w domu robi się napięcie, i informuje o tym SMS-em."
+      },
+      "meetings": [
+        {
+          "type": "individual",
+          "date": "@-62T16:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Sytuacja rodzinna", "Bezpieczeństwo"],
+          "quickNotes": "",
+          "noteType": "observation",
+          "note": {
+            "situation": "Zgłosiła się po kłótni w domu, o której opowiedział jej syn wychowawcy.",
+            "behaviour": "Mówiła głównie o mężu i dzieciach, z trudem o sobie.",
+            "emotions": "Wyczerpanie, wstyd, lęk o dzieci, złość tłumiona poczuciem winy.",
+            "relations": "Silna więź z dziećmi, kontrola i napięcie w relacji z mężem.",
+            "strengths": "Odpowiedzialność, niezależność finansowa, gotowość do pracy nad sobą.",
+            "conclusions": "Zaproponowano grupę wsparcia i plan bezpieczeństwa. Skupić pracę na niej, nie na zmienianiu męża."
+          },
+          "toolsUsed": ["supportMap", "scaling"],
+          "homework": "Zapisać, co robi dla siebie w ciągu tygodnia.",
+          "title": "Pierwsza konsultacja"
+        },
+        {
+          "type": "individual",
+          "date": "@-48T16:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Mechanizmy ratowania i kontroli", "Plan bezpieczeństwa"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Opisała tydzień: dwukrotnie dzwoniła do pracy męża, codziennie przeszukiwała szafki. Spisano plan bezpieczeństwa.",
+            "assessment": "Zaczyna dostrzegać koszt kontroli dla siebie.",
+            "plan": "Ćwiczenie odmowy, dołączenie do grupy."
+          },
+          "toolsUsed": ["socialSkills"],
+          "homework": "Jedna sytuacja, w której nie zareaguje „ratowaniem”."
+        },
+        {
+          "type": "individual",
+          "date": "@-34T16:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Wrażenia z grupy", "HALT"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Była na dwóch spotkaniach grupy. Pierwszy raz odmówiła zadzwonienia do pracy męża.",
+            "assessment": "Ulga i lęk jednocześnie; pierwsze doświadczenie granicy.",
+            "plan": "Wzmocnić troskę o siebie – chór."
+          },
+          "toolsUsed": ["halt", "scaling"],
+          "homework": "Zadzwonić do dyrygentki chóru."
+        },
+        {
+          "type": "individual",
+          "date": "@-19T16:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Powrót do starego wzorca", "Uziemienie"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Po awanturze znowu przeszukała mieszkanie i wylała alkohol. Mówi o tym ze wstydem.",
+            "assessment": "Powrót do kontroli pod wpływem silnego lęku – naturalna część zmiany. Potrzebne szybkie techniki obniżania napięcia.",
+            "plan": "Ćwiczenie 5-4-3-2-1, przygotowanie spotkania z synem."
+          },
+          "toolsUsed": ["grounding", "breathing"],
+          "homework": ""
+        },
+        {
+          "type": "individual",
+          "date": "@-6T16:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Przegląd planu pracy", "Skalowanie"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Samopoczucie 6/10. Chodzi na chór, mąż sam zadzwonił do pracodawcy. Syn zgodził się przyjść na spotkanie.",
+            "assessment": "Wyraźna poprawa w trosce o siebie i granicach.",
+            "plan": "Spotkanie rodzinne z synem, ustalenia w planie rodzinnym."
+          },
+          "toolsUsed": ["scaling"],
+          "homework": ""
+        },
+        {
+          "type": "family",
+          "date": "@0T16:00",
+          "durationMin": 60,
+          "status": "planned",
+          "agenda": [
+            "Jak syn przeżywa sytuację w domu",
+            "Wspólne ustalenia na trudne wieczory"
+          ],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": ["supportMap"],
+          "homework": "",
+          "title": "Spotkanie z matką i synem"
+        },
+        {
+          "type": "individual",
+          "date": "@+14T16:00",
+          "durationMin": 50,
+          "status": "planned",
+          "agenda": ["Przygotowanie do zakończenia cyklu grupy"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": [],
+          "homework": ""
+        }
+      ],
+      "measurements": [
+        {
+          "date": "@-62",
+          "source": {
+            "kind": "tool",
+            "tool": "scaling"
+          },
+          "score": 3,
+          "payload": {
+            "question": "Jak oceniasz swoje samopoczucie (0–10)?",
+            "miracle": "Budzę się wyspana, nie nasłuchuję, w jakim stanie wróci mąż."
+          }
+        },
+        {
+          "date": "@-62",
+          "source": {
+            "kind": "tool",
+            "tool": "supportMap"
+          },
+          "payload": {
+            "people": [
+              "Siostra – bardzo bliska",
+              "Przyjaciółka z pracy – bliska",
+              "Grupa wsparcia – nowa"
+            ]
+          }
+        },
+        {
+          "date": "@-34",
+          "source": {
+            "kind": "tool",
+            "tool": "scaling"
+          },
+          "score": 4,
+          "payload": {
+            "question": "Jak oceniasz swoje samopoczucie (0–10)?"
+          }
+        },
+        {
+          "date": "@-34",
+          "source": {
+            "kind": "tool",
+            "tool": "halt"
+          },
+          "score": 3,
+          "payload": {
+            "hungry": true,
+            "angry": false,
+            "lonely": true,
+            "tired": true
+          }
+        },
+        {
+          "date": "@-19",
+          "source": {
+            "kind": "tool",
+            "tool": "scaling"
+          },
+          "score": 4,
+          "payload": {
+            "question": "Jak oceniasz swoje samopoczucie (0–10)?"
+          }
+        },
+        {
+          "date": "@-6",
+          "source": {
+            "kind": "tool",
+            "tool": "scaling"
+          },
+          "score": 6,
+          "payload": {
+            "question": "Jak oceniasz swoje samopoczucie (0–10)?"
+          }
+        }
+      ],
+      "events": [
+        {
+          "date": "@-63",
+          "type": "other",
+          "title": "Kłótnia w domu, interwencja wychowawcy syna",
+          "note": "Syn opowiedział o sytuacji w szkole; matka zgłosiła się do poradni."
+        },
+        {
+          "date": "@-45",
+          "type": "milestone",
+          "title": "Dołączenie do grupy wsparcia",
+          "note": "Grupa dla osób bliskich osób z problemem alkoholowym."
+        },
+        {
+          "date": "@-36",
+          "type": "stageChange",
+          "title": "Etap: działanie",
+          "note": "Pierwsza świadoma odmowa „ratowania” męża."
+        },
+        {
+          "date": "@-21",
+          "type": "lapse",
+          "title": "Powrót do kontrolowania",
+          "note": "Po awanturze przeszukała mieszkanie; omówione jako zrozumiała reakcja na lęk."
+        },
+        {
+          "date": "@-20",
+          "type": "milestone",
+          "title": "Powrót do chóru",
+          "note": "Pierwsza regularna aktywność tylko dla siebie od lat."
+        }
+      ],
+      "genogram": {
+        "nodes": [
+          {
+            "id": "n1",
+            "label": "EM-44",
+            "kind": "female",
+            "x": 320,
+            "y": 180,
+            "isClient": true
+          },
+          {
+            "id": "n2",
+            "label": "Mąż (47)",
+            "kind": "male",
+            "x": 170,
+            "y": 180,
+            "substance": true
+          },
+          {
+            "id": "n3",
+            "label": "Syn (17)",
+            "kind": "male",
+            "x": 190,
+            "y": 330
+          },
+          {
+            "id": "n4",
+            "label": "Córka (10)",
+            "kind": "female",
+            "x": 320,
+            "y": 330
+          },
+          {
+            "id": "n5",
+            "label": "Siostra (40)",
+            "kind": "female",
+            "x": 470,
+            "y": 180
+          },
+          {
+            "id": "n6",
+            "label": "Teść",
+            "kind": "male",
+            "x": 100,
+            "y": 50,
+            "deceased": true,
+            "substance": true
+          },
+          {
+            "id": "n7",
+            "label": "Przyjaciółka",
+            "kind": "person",
+            "x": 520,
+            "y": 320
+          },
+          {
+            "id": "n8",
+            "label": "Grupa wsparcia",
+            "kind": "group",
+            "x": 470,
+            "y": 50
+          },
+          {
+            "id": "n9",
+            "label": "Szkoła syna",
+            "kind": "institution",
+            "x": 60,
+            "y": 330
+          }
+        ],
+        "edges": [
+          {
+            "id": "e1",
+            "from": "n1",
+            "to": "n2",
+            "type": "stressful"
+          },
+          {
+            "id": "e2",
+            "from": "n6",
+            "to": "n2",
+            "type": "family"
+          },
+          {
+            "id": "e3",
+            "from": "n1",
+            "to": "n3",
+            "type": "strong"
+          },
+          {
+            "id": "e4",
+            "from": "n1",
+            "to": "n4",
+            "type": "strong"
+          },
+          {
+            "id": "e5",
+            "from": "n2",
+            "to": "n3",
+            "type": "conflict"
+          },
+          {
+            "id": "e6",
+            "from": "n2",
+            "to": "n4",
+            "type": "weak"
+          },
+          {
+            "id": "e7",
+            "from": "n5",
+            "to": "n1",
+            "type": "support"
+          },
+          {
+            "id": "e8",
+            "from": "n7",
+            "to": "n1",
+            "type": "support"
+          },
+          {
+            "id": "e9",
+            "from": "n8",
+            "to": "n1",
+            "type": "support"
+          },
+          {
+            "id": "e10",
+            "from": "n9",
+            "to": "n3",
+            "type": "support"
+          }
+        ]
+      }
+    },
+    {
+      "id": "demo-08",
+      "client": {
+        "code": "Klasa 7b",
+        "sex": "unspecified",
+        "ageGroup": "teen",
+        "age": 13,
+        "context": "school",
+        "problems": ["nicotine", "alcohol", "internet"],
+        "goal": "abstinence",
+        "stage": "action",
+        "status": "active",
+        "isGroup": true,
+        "strengths": "Klasa aktywna i ciekawa świata, dobrze współpracuje w zadaniach projektowych. Zaangażowana wychowawczyni i samorząd klasowy.",
+        "supportNetwork": "Wychowawczyni, pedagog i psycholog szkolny, rada rodziców, pielęgniarka szkolna, świetlica środowiskowa w pobliżu szkoły.",
+        "family": "24 uczniów (13 dziewcząt, 11 chłopców). Zróżnicowana sytuacja rodzinna; kilkoro uczniów z rodzin w trudnej sytuacji – objętych wsparciem indywidualnym poza programem.",
+        "education": "Klasa 7 szkoły podstawowej. Program realizowany na godzinach wychowawczych w ramach szkolnego programu wychowawczo-profilaktycznego.",
+        "keyDates": [
+          {
+            "id": "kd1",
+            "label": "Prezentacja wyników ewaluacji na radzie pedagogicznej",
+            "date": "@+10"
+          }
+        ]
+      },
+      "diagnosis": {
+        "date": "@-49",
+        "areas": {
+          "family": {
+            "score": 3,
+            "notes": "Rodzice deklarują małą wiedzę o e-papierosach i aktywności dzieci w sieci."
+          },
+          "schoolWork": {
+            "score": 4,
+            "notes": "Dobre wyniki i frekwencja; spadek motywacji pod koniec semestru."
+          },
+          "peers": {
+            "score": 3,
+            "notes": "Wyraźne podgrupy, kilka sytuacji wykluczania na czacie klasowym."
+          },
+          "leisure": {
+            "score": 3,
+            "notes": "Większość czasu wolnego w mediach społecznościowych; ok. 40% uczniów w zajęciach pozalekcyjnych."
+          },
+          "health": {
+            "score": 3,
+            "notes": "Ponad połowa uczniów korzysta z telefonu po 23:00; częste napoje energetyczne."
+          },
+          "substanceUse": {
+            "score": 3,
+            "notes": "Ankieta: 21% próbowało e-papierosa, 12% alkoholu; brak regularnego używania."
+          },
+          "riskBehaviour": {
+            "score": 3,
+            "notes": "Zawyżone przekonania o normach – uczniowie sądzą, że „większość” rówieśników używa e-papierosów."
+          },
+          "justice": {
+            "score": 5,
+            "notes": "Brak sygnałów."
+          }
+        },
+        "riskFactors": [
+          "Zawyżone przekonania normatywne",
+          "Łatwa dostępność e-papierosów i napojów energetycznych",
+          "Słabe umiejętności radzenia sobie z presją w grupie i w sieci",
+          "Niedobór snu"
+        ],
+        "protectiveFactors": [
+          "Dobra relacja z wychowawczynią",
+          "Zaangażowanie w szkole",
+          "Gotowość rodziców do udziału w spotkaniach"
+        ],
+        "resources": "Godziny wychowawcze, sala z rzutnikiem, pedagog i psycholog szkolny, środki gminnego programu profilaktyki, świetlica środowiskowa.",
+        "conclusions": "Wskazana profilaktyka uniwersalna oparta na edukacji normatywnej i umiejętnościach życiowych, z komponentem dla rodziców. Unikać straszenia i jednorazowych pogadanek."
+      },
+      "meetings": [
+        {
+          "type": "group",
+          "date": "@-42T08:55",
+          "durationMin": 45,
+          "status": "done",
+          "agenda": [
+            "Kontrakt grupowy",
+            "Ćwiczenie integracyjne",
+            "Moje mocne strony"
+          ],
+          "quickNotes": "",
+          "noteType": "observation",
+          "note": {
+            "situation": "Pierwsze zajęcia na godzinie wychowawczej, obecnych 22 uczniów.",
+            "behaviour": "Duże zaangażowanie przy tworzeniu kontraktu; kilka osób wycofanych.",
+            "emotions": "Ciekawość, początkowo rozbawienie i dystans.",
+            "relations": "Widoczne podgrupy; samorząd klasowy przejmuje inicjatywę.",
+            "strengths": "Pomysłowość, poczucie humoru.",
+            "conclusions": "Pracować w mieszanych zespołach, angażować osoby wycofane przez role w zadaniach."
+          },
+          "toolsUsed": [],
+          "homework": "",
+          "title": "Zajęcia 1: Nasza klasa – nasze zasady"
+        },
+        {
+          "type": "group",
+          "date": "@-35T08:55",
+          "durationMin": 45,
+          "status": "done",
+          "agenda": ["Quiz normatywny", "Porównanie z wynikami ankiety"],
+          "quickNotes": "",
+          "noteType": "observation",
+          "note": {
+            "situation": "Zajęcia z edukacji normatywnej, 24 uczniów.",
+            "behaviour": "Duże zaskoczenie wynikami – uczniowie szacowali, że e-papierosów używa 60% rówieśników.",
+            "emotions": "Zaskoczenie, ulga, ożywiona dyskusja.",
+            "relations": "Dyskusja przekraczała podziały w klasie.",
+            "strengths": "Krytyczne myślenie, pytania o źródła danych.",
+            "conclusions": "Kontynuować wątek wpływu reklamy i mediów społecznościowych."
+          },
+          "toolsUsed": [],
+          "homework": "",
+          "title": "Zajęcia 2: Jak jest naprawdę?"
+        },
+        {
+          "type": "group",
+          "date": "@-28T08:55",
+          "durationMin": 45,
+          "status": "done",
+          "agenda": [
+            "Dzienniczek ekranowy",
+            "Mapa wyzwalaczy „jeszcze 5 minut”"
+          ],
+          "quickNotes": "",
+          "noteType": "observation",
+          "note": {
+            "situation": "Zajęcia o higienie cyfrowej i śnie.",
+            "behaviour": "Uczniowie chętnie analizowali własne nawyki; kilka osób przyznało, że gra do późna.",
+            "emotions": "Zaangażowanie, trochę oporu przy temacie limitów.",
+            "relations": "Wymiana pomysłów w parach.",
+            "strengths": "Samodzielne propozycje klasowego wyzwania.",
+            "conclusions": "Klasa podjęła wyzwanie „telefon poza sypialnią” na 2 tygodnie."
+          },
+          "toolsUsed": ["triggerMap"],
+          "homework": "",
+          "title": "Zajęcia 3: Sen, ekran i energia"
+        },
+        {
+          "type": "group",
+          "date": "@-21T08:55",
+          "durationMin": 45,
+          "status": "done",
+          "agenda": ["Techniki odmowy", "Scenki: presja na imprezie i w sieci"],
+          "quickNotes": "",
+          "noteType": "observation",
+          "note": {
+            "situation": "Trening asertywności w małych grupach.",
+            "behaviour": "Scenki odgrywane z humorem; trudniej było odmówić bliskiemu koledze niż obcemu.",
+            "emotions": "Napięcie w scenkach, potem satysfakcja.",
+            "relations": "Wzajemne wsparcie, oklaski dla osób nieśmiałych.",
+            "strengths": "Kreatywne sposoby odmowy.",
+            "conclusions": "Utrwalić techniki w zajęciach przypominających."
+          },
+          "toolsUsed": ["socialSkills"],
+          "homework": "",
+          "title": "Zajęcia 4: Odmawiam z klasą"
+        },
+        {
+          "type": "group",
+          "date": "@-14T08:55",
+          "durationMin": 45,
+          "status": "done",
+          "agenda": ["Oddech i uziemienie", "Klasowa mapa wsparcia"],
+          "quickNotes": "",
+          "noteType": "observation",
+          "note": {
+            "situation": "Zajęcia o radzeniu sobie ze stresem, 23 uczniów.",
+            "behaviour": "Spokojna atmosfera; ćwiczenie oddechowe przyjęte z początkowym śmiechem, potem poważnie.",
+            "emotions": "Wyciszenie, otwartość.",
+            "relations": "Uczniowie wskazywali dorosłych, do których mogą się zwrócić.",
+            "strengths": "Gotowość do mówienia o emocjach.",
+            "conclusions": "Przygotować podsumowanie i ankietę końcową."
+          },
+          "toolsUsed": ["breathing", "grounding", "supportMap"],
+          "homework": "",
+          "title": "Zajęcia 5: Stres – co mi pomaga?"
+        },
+        {
+          "type": "group",
+          "date": "@-7T08:55",
+          "durationMin": 45,
+          "status": "done",
+          "agenda": ["Ankieta post", "Plakat „Co zabieramy ze sobą”"],
+          "quickNotes": "",
+          "noteType": "observation",
+          "note": {
+            "situation": "Zajęcia podsumowujące, ankieta wypełniona przez 23 uczniów.",
+            "behaviour": "Uczniowie samodzielnie przygotowali plakat z zasadami.",
+            "emotions": "Duma, zadowolenie.",
+            "relations": "Lepsza współpraca między podgrupami niż na początku.",
+            "strengths": "Poczucie wspólnoty klasy.",
+            "conclusions": "Wyniki ewaluacji wskazują poprawę; zaplanować zajęcia przypominające."
+          },
+          "toolsUsed": ["scaling"],
+          "homework": "",
+          "title": "Zajęcia 6: Podsumowanie i ankieta końcowa"
+        },
+        {
+          "type": "group",
+          "date": "@0T08:55",
+          "durationMin": 45,
+          "status": "planned",
+          "agenda": [
+            "Przypomnienie technik odmowy",
+            "Studium przypadku: czat klasowy"
+          ],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": ["socialSkills"],
+          "homework": "",
+          "title": "Zajęcia przypominające: presja w sieci"
+        },
+        {
+          "type": "group",
+          "date": "@+21T17:30",
+          "durationMin": 60,
+          "status": "planned",
+          "agenda": [
+            "Wyniki ewaluacji",
+            "Jak rozmawiać z nastolatkiem o e-papierosach i ekranach"
+          ],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": [],
+          "homework": "",
+          "title": "Spotkanie z rodzicami – podsumowanie programu"
+        }
+      ],
+      "measurements": [
+        {
+          "date": "@-42",
+          "source": {
+            "kind": "tool",
+            "tool": "scaling"
+          },
+          "score": 5,
+          "note": "Średnia klasy: „Jak dobrze czujesz się w naszej klasie?”"
+        },
+        {
+          "date": "@-7",
+          "source": {
+            "kind": "tool",
+            "tool": "scaling"
+          },
+          "score": 7,
+          "note": "Średnia klasy: „Jak dobrze czujesz się w naszej klasie?”"
+        }
+      ],
+      "events": [
+        {
+          "date": "@-56",
+          "type": "other",
+          "title": "Decyzja rady pedagogicznej",
+          "note": "Wybór klasy 7b do programu na podstawie diagnozy szkolnej."
+        },
+        {
+          "date": "@-49",
+          "type": "milestone",
+          "title": "Ankieta wstępna",
+          "note": "Wypełniona przez 24 uczniów."
+        },
+        {
+          "date": "@-31",
+          "type": "other",
+          "title": "Spotkanie z rodzicami",
+          "note": "Warsztat dla rodziców: normy, rozmowa i zasady w domu; obecnych 15 rodziców."
+        },
+        {
+          "date": "@-7",
+          "type": "milestone",
+          "title": "Ankieta końcowa",
+          "note": "Wypełniona przez 23 uczniów."
+        }
+      ],
+      "prevention": {
+        "title": "„Wiem, wybieram, odmawiam” – program profilaktyki uniwersalnej dla klasy 7b",
+        "setting": "Szkoła podstawowa w średniej wielkości mieście, godziny wychowawcze.",
+        "needs": "Ankieta wstępna i obserwacje wychowawczyni: inicjacja e-papierosowa u części uczniów, zawyżone przekonania normatywne, korzystanie z telefonu późno w nocy, napięcia na czacie klasowym.",
+        "resources": "Pedagog szkolny (prowadzący), wychowawczyni, psycholog, sala z rzutnikiem, wsparcie rady rodziców.",
+        "targetGroup": "Uczniowie klasy 7b (24 osoby, 13 lat) oraz ich rodzice.",
+        "level": "universal",
+        "riskFactors": [
+          "Zawyżone przekonania normatywne",
+          "Słabe umiejętności odmowy",
+          "Niedobór snu związany z ekranami",
+          "Mała wiedza rodziców o e-papierosach"
+        ],
+        "protectiveFactors": [
+          "Więź ze szkołą i wychowawczynią",
+          "Umiejętności życiowe (asertywność, radzenie sobie ze stresem)",
+          "Zaangażowanie rodziców"
+        ],
+        "generalGoal": "Opóźnienie inicjacji nikotynowej i alkoholowej oraz wzmocnienie zdrowych nawyków cyfrowych uczniów klasy 7b.",
+        "specificGoals": [
+          "Urealnienie przekonań o używaniu substancji przez rówieśników",
+          "Rozwijanie umiejętności odmowy i radzenia sobie z presją",
+          "Zwiększenie wiedzy o wpływie ekranów na sen",
+          "Wsparcie rodziców w rozmowie z dziećmi"
+        ],
+        "strategies": [
+          "Edukacja normatywna",
+          "Rozwijanie umiejętności życiowych (trening asertywności, radzenie sobie ze stresem)",
+          "Alternatywy – klasowe wyzwanie i zajęcia pozalekcyjne",
+          "Interwencja wobec rodziców – warsztat"
+        ],
+        "recipeIds": [],
+        "schedule": [
+          {
+            "id": "s1",
+            "date": "@-49",
+            "activity": "Ankieta wstępna i diagnoza potrzeb"
+          },
+          {
+            "id": "s2",
+            "date": "@-42",
+            "activity": "Zajęcia 1: kontrakt i mocne strony"
+          },
+          {
+            "id": "s3",
+            "date": "@-35",
+            "activity": "Zajęcia 2: edukacja normatywna"
+          },
+          {
+            "id": "s4",
+            "date": "@-31",
+            "activity": "Warsztat dla rodziców"
+          },
+          {
+            "id": "s5",
+            "date": "@-28",
+            "activity": "Zajęcia 3: sen i ekrany"
+          },
+          {
+            "id": "s6",
+            "date": "@-21",
+            "activity": "Zajęcia 4: trening odmowy"
+          },
+          {
+            "id": "s7",
+            "date": "@-14",
+            "activity": "Zajęcia 5: radzenie sobie ze stresem"
+          },
+          {
+            "id": "s8",
+            "date": "@-7",
+            "activity": "Zajęcia 6: podsumowanie i ankieta końcowa"
+          },
+          {
+            "id": "s9",
+            "date": "@0",
+            "activity": "Zajęcia przypominające"
+          },
+          {
+            "id": "s10",
+            "date": "@+21",
+            "activity": "Spotkanie z rodzicami – wyniki"
+          }
+        ],
+        "budgetResources": "Materiały papiernicze i druk ankiet ok. 150 zł (środki gminnego programu profilaktyki), czas pracy pedagoga w ramach etatu.",
+        "indicators": [
+          {
+            "id": "i1",
+            "label": "Trafność przekonań o normach rówieśniczych",
+            "pre": 2.1,
+            "post": 3.6
+          },
+          {
+            "id": "i2",
+            "label": "Umiejętność odmowy (samoocena)",
+            "pre": 2.8,
+            "post": 3.9
+          },
+          {
+            "id": "i3",
+            "label": "Zamiar niesięgania po e-papierosa w ciągu roku",
+            "pre": 3.4,
+            "post": 4.1
+          },
+          {
+            "id": "i4",
+            "label": "Wiedza o wpływie ekranów na sen",
+            "pre": 2.6,
+            "post": 3.8
+          },
+          {
+            "id": "i5",
+            "label": "Poczucie przynależności do klasy",
+            "pre": 3,
+            "post": 3.5
+          }
+        ],
+        "checklist": {}
+      },
+      "recipes": [
+        {
+          "title": "Jak jest naprawdę? – edukacja normatywna",
+          "goal": "Urealnienie przekonań o używaniu e-papierosów i alkoholu przez rówieśników.",
+          "audience": "Klasa 7b, 24 uczniów",
+          "durationMin": 45,
+          "templateId": "classPrevention",
+          "items": [
+            {
+              "id": "r1",
+              "ingredientId": "custom",
+              "title": "Powitanie i przypomnienie kontraktu",
+              "minutes": 5,
+              "note": "Krótka runda „jednym słowem”."
+            },
+            {
+              "id": "r2",
+              "ingredientId": "custom",
+              "title": "Quiz: „Ilu z nas…?”",
+              "minutes": 10,
+              "note": "Uczniowie anonimowo szacują odsetek rówieśników używających substancji."
+            },
+            {
+              "id": "r3",
+              "ingredientId": "custom",
+              "title": "Porównanie z wynikami ankiety",
+              "minutes": 12,
+              "note": "Wykres: szacunki klasy vs dane z ankiety szkolnej i badań ogólnopolskich."
+            },
+            {
+              "id": "r4",
+              "ingredientId": "custom",
+              "title": "Dyskusja: skąd biorą się nasze przekonania?",
+              "minutes": 13,
+              "note": "Reklama, media społecznościowe, „głośna mniejszość”."
+            },
+            {
+              "id": "r5",
+              "ingredientId": "custom",
+              "title": "Podsumowanie i zadanie",
+              "minutes": 5,
+              "note": "Zadanie: znaleźć jedną reklamę i opisać, co sugeruje."
+            }
+          ]
+        },
+        {
+          "title": "Odmawiam z klasą – trening asertywności",
+          "goal": "Ćwiczenie technik odmowy w sytuacjach presji rówieśniczej offline i online.",
+          "audience": "Klasa 7b, 24 uczniów",
+          "durationMin": 45,
+          "templateId": "classPrevention",
+          "items": [
+            {
+              "id": "r1",
+              "ingredientId": "custom",
+              "title": "Rozgrzewka: „Tak / nie” w ruchu",
+              "minutes": 5,
+              "note": "Ćwiczenie ruchowe rozluźniające grupę."
+            },
+            {
+              "id": "r2",
+              "ingredientId": "custom",
+              "title": "Mini-wykład: techniki odmowy",
+              "minutes": 10,
+              "note": "Zdarta płyta, propozycja alternatywy, wyjście z sytuacji."
+            },
+            {
+              "id": "r3",
+              "ingredientId": "custom",
+              "title": "Scenki w czwórkach",
+              "minutes": 20,
+              "note": "Karty sytuacji: impreza, przerwa, czat klasowy; rotacja ról."
+            },
+            {
+              "id": "r4",
+              "ingredientId": "custom",
+              "title": "Omówienie",
+              "minutes": 7,
+              "note": "Co było najtrudniejsze? Co pomogło?"
+            },
+            {
+              "id": "r5",
+              "ingredientId": "custom",
+              "title": "Runda zamykająca",
+              "minutes": 3,
+              "note": "Jedno zdanie odmowy, które zabieram ze sobą."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

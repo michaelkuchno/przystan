@@ -1,0 +1,264 @@
+{
+  "cards": [
+    {
+      "id": "codependency",
+      "section": "family",
+      "title": "Codependency",
+      "essence": "Codependency describes how a close person (most often a partner or parent) functions after living for a long time with someone else's addiction. Typical signs: life centred around the other person's drinking or using, controlling, hiding the problem, taking over responsibilities, neglecting one's own needs, chronic stress and guilt. It is neither the family member's fault nor their illness, but an understandable reaction to a long-lasting crisis – and a state one can recover from with support.",
+      "whenToUse": [
+        "Contact with a partner or parent of a person with an alcohol or drug problem.",
+        "When a relative seeks help \"for someone else\" while being exhausted themselves.",
+        "When violence accompanying addiction is suspected."
+      ],
+      "techniques": [
+        "Psychoeducation: mechanisms of addiction and codependency.",
+        "Distinguishing one's own responsibility from the other person's; letting go of \"rescuing\".",
+        "Referring to therapy for codependent people at an addiction clinic and to Al-Anon groups.",
+        "Safety assessment and, if needed, starting the \"Blue Card\" procedure."
+      ],
+      "phrases": [
+        "I can see how much effort you put into keeping the family going. Who takes care of you?",
+        "You did not cause his drinking, and you don't have to control it to deserve help."
+      ],
+      "pitfalls": [
+        "Blaming the relative (\"you drive him to it\").",
+        "Treating codependency as a medical diagnosis or a label.",
+        "Overlooking violence and safety risks."
+      ],
+      "sources": [
+        {
+          "authors": "Mellibruda J., Sobolewska-Mellibruda Z.",
+          "year": 2006,
+          "title": "Integracyjna psychoterapia uzależnień. Teoria i praktyka",
+          "publisher": "Instytut Psychologii Zdrowia PTP"
+        },
+        {
+          "authors": "Cierpiałkowska L.",
+          "year": 2000,
+          "title": "Alkoholizm. Przyczyny, leczenie, profilaktyka",
+          "publisher": "Wydawnictwo Naukowe UAM"
+        }
+      ],
+      "tags": ["codependency", "family", "Al-Anon"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "childrenAlcoholFamilies",
+      "section": "family",
+      "title": "Children from families with alcohol problems (ACoA)",
+      "essence": "Children growing up in a family with alcohol problems live with unpredictability, often with shame and fear, and frequently experience violence or neglect. Family rules of \"don't talk, don't trust, don't feel\" make it hard to seek help. S. Wegscheider-Cruse described typical roles: family hero, scapegoat, lost child and mascot. In adulthood some people recognise difficulties described as Adult Children of Alcoholics (ACoA; Polish DDA) or Adult Children of Dysfunctional Families (Polish DDD) – terms from self-help and psychotherapy, not diagnoses.",
+      "whenToUse": [
+        "A pupil with sudden change of behaviour, withdrawal, over-responsibility or aggression.",
+        "Planning sociotherapy and day-care activities.",
+        "Work with an adult who talks about a difficult childhood in a family with alcohol problems."
+      ],
+      "techniques": [
+        "A safe, predictable relationship with an adult outside the family.",
+        "Age-appropriate psychoeducation: \"it is not your fault\".",
+        "Sociotherapy, day-care centres, Alateen groups; for adults ACoA groups and psychotherapy.",
+        "Assessing the child's safety and cooperating with social services, a counselling centre and, if needed, the family court."
+      ],
+      "phrases": [
+        "Many children go through similar things at home. It is not your fault and you don't have to deal with it alone.",
+        "You can tell me as much as you want. If I need to inform someone, I will tell you first."
+      ],
+      "pitfalls": [
+        "Promising a child complete secrecy that cannot be kept.",
+        "Pinning a role on the child (\"you are the scapegoat\") instead of working with its function.",
+        "Criticising the parent in front of the child."
+      ],
+      "sources": [
+        {
+          "authors": "Wegscheider-Cruse S.",
+          "year": 1981,
+          "title": "Another Chance: Hope and Health for the Alcoholic Family",
+          "publisher": "Science and Behavior Books"
+        },
+        {
+          "authors": "Woititz J.G.",
+          "year": 1983,
+          "title": "Adult Children of Alcoholics",
+          "publisher": "Health Communications"
+        },
+        {
+          "authors": "Cierpiałkowska L.",
+          "year": 2000,
+          "title": "Alkoholizm. Przyczyny, leczenie, profilaktyka",
+          "publisher": "Wydawnictwo Naukowe UAM"
+        }
+      ],
+      "tags": ["ACoA", "children", "family roles"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "domesticViolence",
+      "section": "family",
+      "title": "Domestic violence – recognition and help paths",
+      "essence": "The Polish Act on Counteracting Domestic Violence (ustawa o przeciwdziałaniu przemocy domowej, amended in 2023) covers physical, psychological, sexual and economic violence as well as violence using electronic communication, against family members but also former partners and people sharing a household. A child who witnesses violence is treated as a person experiencing violence. Help is organised locally: the municipal interdisciplinary team (zespół interdyscyplinarny), social welfare centre, consultation point, crisis intervention centre, police (112), the \"Blue Line\" helpline (Niebieska Linia, 800 120 002). The police can order the person using violence to leave the home immediately and not to approach the victim.",
+      "whenToUse": [
+        "When a client, pupil or family member discloses violence or there are visible signs.",
+        "When addiction in the family comes with rows, threats or financial control.",
+        "In any situation of immediate danger to life or health – call 112 at once."
+      ],
+      "techniques": [
+        "Safety first: is there immediate danger? If so – call 112.",
+        "A calm conversation in private, without the suspected perpetrator present.",
+        "Documenting facts (what, when, the person's words, visible injuries) – without judging.",
+        "Starting the \"Blue Card\" procedure in one's institution and informing the supervisor.",
+        "A safety plan and information on where to get help (crisis centre, social welfare, Blue Line).",
+        "If a crime is suspected – notifying the police or prosecutor, in line with the institution's duty."
+      ],
+      "phrases": [
+        "Thank you for telling me. What is happening is not your fault.",
+        "It is my duty to look after your safety. I will tell you what I will do now and whom I will ask for help."
+      ],
+      "pitfalls": [
+        "Holding a joint conversation or mediation with the person experiencing and the person using violence.",
+        "Delaying action \"until certain\" – the procedure starts on reasonable suspicion.",
+        "Interrogating a child yourself; repeating interviews.",
+        "Excusing violence by alcohol (\"it's the drinking\")."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 2005,
+          "title": "Ustawa z dnia 29 lipca 2005 r. o przeciwdziałaniu przemocy domowej (tytuł i treść po nowelizacji z 2023 r.)"
+        },
+        {
+          "authors": "Herman J.L.",
+          "year": 1992,
+          "title": "Trauma and Recovery",
+          "publisher": "Basic Books"
+        }
+      ],
+      "tags": ["domestic violence", "safety", "procedures"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "blueCard",
+      "section": "family",
+      "title": "The \"Blue Card\" (Niebieska Karta) procedure step by step",
+      "essence": "The \"Blue Card\" (Niebieskie Karty) procedure is a structured way for institutions to respond to suspected domestic violence. It is started by representatives of social welfare, the municipal alcohol problems commission, the police, education and health care, among others, by completing the \"Blue Card – A\" form. The person experiencing violence receives form \"B\" with information on their rights and where to get help. The card is sent to the interdisciplinary team, which sets up a diagnostic-and-support group and plans help. Starting the procedure does not require the consent of the person experiencing violence.",
+      "whenToUse": [
+        "A school pedagogue or care worker has reasonable suspicion of violence against a pupil or in their family.",
+        "An adult discloses violence during a consultation.",
+        "Violence by a person with an alcohol problem – alongside action by the municipal alcohol commission."
+      ],
+      "techniques": [
+        "1. Ensure safety; in danger call 112.",
+        "2. Complete form \"A\" in the presence of the person experiencing violence (if possible); for a child – where possible with a parent or carer who is not suspected of violence.",
+        "3. Give the person form \"B\" (it is not handed to a child – a non-offending parent or carer receives it).",
+        "4. Promptly send form \"A\" to the chair of the interdisciplinary team (the deadline is set by regulation), keep a copy.",
+        "5. Take part in the diagnostic-and-support group and carry out the agreed help plan.",
+        "6. If a crime is suspected – notify the police or prosecutor."
+      ],
+      "phrases": [
+        "I am filling in this card so that various institutions can work together to keep you safe.",
+        "Here is information on where you can get help, including round the clock."
+      ],
+      "pitfalls": [
+        "Making the procedure depend on the consent or \"readiness\" of the person experiencing violence.",
+        "Inviting the person experiencing and the person using violence to the same meeting.",
+        "Using outdated forms – check the current templates (2023 regulation)."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 2005,
+          "title": "Ustawa z dnia 29 lipca 2005 r. o przeciwdziałaniu przemocy domowej (tytuł i treść po nowelizacji z 2023 r.)"
+        },
+        {
+          "authors": "Rada Ministrów",
+          "year": 2023,
+          "title": "Rozporządzenie w sprawie procedury „Niebieskie Karty” oraz wzorów formularzy"
+        }
+      ],
+      "tags": ["Blue Card", "procedures", "school"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "craft",
+      "section": "family",
+      "title": "CRAFT – Community Reinforcement and Family Training",
+      "essence": "CRAFT (Community Reinforcement and Family Training, R.J. Meyers, J.E. Smith) is a programme for relatives of a person who refuses treatment. It teaches them – instead of confronting, pleading or threatening – to reinforce sober behaviour, allow natural consequences of drinking or using, improve communication and look after themselves. Research shows CRAFT leads to treatment entry more often than confrontational interventions and improves family well-being.",
+      "whenToUse": [
+        "A relative seeks help while the person with the problem refuses to contact a clinic.",
+        "Parents of a teenager who uses substances.",
+        "When there is no violence threatening safety in the family (safety first)."
+      ],
+      "techniques": [
+        "Functional analysis of drinking or using: triggers and consequences.",
+        "Positive communication: brief, specific, \"I\" statements, with empathy.",
+        "Rewarding sobriety and not shielding from consequences.",
+        "Choosing the right moment to suggest treatment; safety plan; self-care."
+      ],
+      "phrases": [
+        "When I notice a sober evening, I can tell him I enjoy talking with him.",
+        "I am worried about you. If you want to talk to someone, I found a clinic and I can go with you."
+      ],
+      "pitfalls": [
+        "Confusing CRAFT with a confrontational \"intervention\" or an ultimatum.",
+        "Using it amid active violence without a safety plan.",
+        "Making the family responsible for the outcome."
+      ],
+      "sources": [
+        {
+          "authors": "Smith J.E., Meyers R.J.",
+          "year": 2004,
+          "title": "Motivating Substance Abusers to Enter Treatment: Working with Family Members",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Meyers R.J., Wolfe B.L.",
+          "year": 2004,
+          "title": "Get Your Loved One Sober: Alternatives to Nagging, Pleading, and Threatening",
+          "publisher": "Hazelden"
+        }
+      ],
+      "tags": ["CRAFT", "family", "motivation"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "familySystems",
+      "section": "family",
+      "title": "The family as a system: genogram and ecomap",
+      "essence": "The systemic approach sees the family as a whole in which one person's problem (e.g. addiction, a teenager's behaviour) has a function within relationships, roles and boundaries. A genogram is a diagram of at least three generations with relationships, key events and recurring patterns (e.g. addiction, violence). An ecomap (A. Hartman) shows the family's links with its environment: school, work, institutions, friends – pointing to sources of support and strain.",
+      "whenToUse": [
+        "First meetings with a family – gathering history in an accessible way.",
+        "Planning support and a help network (ecomap).",
+        "Discussing intergenerational patterns of addiction."
+      ],
+      "techniques": [
+        "Drawing the genogram together with the client or family.",
+        "Marking relationships (close, conflictual, cut-off) and critical events.",
+        "An ecomap before and after intervention – showing changes in the support network.",
+        "Circular questions: \"Who is the first to notice that…?\"."
+      ],
+      "phrases": [
+        "Who in the family worries most about this, and who least?",
+        "Let's draw who is around you – who helps and who adds weight."
+      ],
+      "pitfalls": [
+        "Treating the genogram as an interrogation – the family sets the pace.",
+        "Looking for culprits instead of understanding patterns.",
+        "Storing sensitive data without consent and protection."
+      ],
+      "sources": [
+        {
+          "authors": "McGoldrick M., Gerson R., Petry S.",
+          "year": 2008,
+          "title": "Genograms: Assessment and Intervention (3rd ed.)",
+          "publisher": "W.W. Norton"
+        },
+        {
+          "authors": "Hartman A.",
+          "year": 1978,
+          "title": "Diagrammatic Assessment of Family Relationships",
+          "publisher": "Social Casework"
+        }
+      ],
+      "tags": ["genogram", "ecomap", "family systems"],
+      "reviewStatus": "do_weryfikacji"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "cards": [
+    {
+      "id": "codependency",
+      "section": "family",
+      "title": "Współuzależnienie",
+      "essence": "Współuzależnienie to sposób funkcjonowania osoby bliskiej (najczęściej partnerki, partnera lub rodzica), która żyje w długotrwałej sytuacji związanej z uzależnieniem drugiej osoby. Typowe są: koncentracja życia wokół picia lub zażywania bliskiego, kontrolowanie, ukrywanie problemu, przejmowanie odpowiedzialności, zaniedbywanie własnych potrzeb, chroniczny stres i poczucie winy. To nie jest wina ani choroba osoby bliskiej, lecz zrozumiała reakcja na przewlekły kryzys – i stan, z którego można wyjść dzięki wsparciu.",
+      "whenToUse": [
+        "Kontakt z partnerką/partnerem lub rodzicem osoby z problemem alkoholowym albo narkotykowym.",
+        "Gdy bliski zgłasza się po pomoc „dla kogoś”, a sam jest wyczerpany.",
+        "Przy podejrzeniu przemocy towarzyszącej uzależnieniu."
+      ],
+      "techniques": [
+        "Psychoedukacja: mechanizmy uzależnienia i współuzależnienia.",
+        "Odróżnianie odpowiedzialności własnej od cudzej; rezygnacja z „ratowania”.",
+        "Kierowanie do terapii dla osób współuzależnionych w poradni oraz do grup Al-Anon.",
+        "Ocena bezpieczeństwa i ewentualne uruchomienie procedury „Niebieskie Karty”."
+      ],
+      "phrases": [
+        "Widzę, jak dużo sił wkłada pani w to, żeby rodzina jakoś funkcjonowała. A kto dba o panią?",
+        "Nie spowodowała pani jego picia i nie musi go pani kontrolować, żeby mieć prawo do pomocy."
+      ],
+      "pitfalls": [
+        "Obwinianie osoby bliskiej („pani go do tego doprowadza”).",
+        "Traktowanie współuzależnienia jako diagnozy medycznej lub etykiety.",
+        "Przeoczenie przemocy i zagrożenia bezpieczeństwa."
+      ],
+      "sources": [
+        {
+          "authors": "Mellibruda J., Sobolewska-Mellibruda Z.",
+          "year": 2006,
+          "title": "Integracyjna psychoterapia uzależnień. Teoria i praktyka",
+          "publisher": "Instytut Psychologii Zdrowia PTP"
+        },
+        {
+          "authors": "Cierpiałkowska L.",
+          "year": 2000,
+          "title": "Alkoholizm. Przyczyny, leczenie, profilaktyka",
+          "publisher": "Wydawnictwo Naukowe UAM"
+        }
+      ],
+      "tags": ["współuzależnienie", "rodzina", "Al-Anon"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "childrenAlcoholFamilies",
+      "section": "family",
+      "title": "Dzieci z rodzin z problemem alkoholowym (DDA/DDD)",
+      "essence": "Dzieci wychowujące się w rodzinie z problemem alkoholowym żyją w nieprzewidywalności, często w poczuciu wstydu i lęku, a nierzadko doświadczają przemocy lub zaniedbania. Rodzinne zasady „nie mów, nie ufaj, nie czuj” utrudniają szukanie pomocy. S. Wegscheider-Cruse opisała typowe role dzieci: bohater rodzinny, kozioł ofiarny, dziecko niewidzialne (zagubione) i maskotka. W dorosłości część osób rozpoznaje u siebie trudności opisywane jako syndrom DDA (Dorosłe Dzieci Alkoholików) lub DDD (Dorosłe Dzieci z rodzin Dysfunkcyjnych) – to określenia z obszaru samopomocy i psychoterapii, nie diagnozy.",
+      "whenToUse": [
+        "Uczeń z nagłą zmianą zachowania, wycofaniem, nadodpowiedzialnością lub agresją.",
+        "Planowanie zajęć socjoterapeutycznych i świetlicowych.",
+        "Praca z dorosłym, który mówi o trudnym dzieciństwie w rodzinie z problemem alkoholowym."
+      ],
+      "techniques": [
+        "Bezpieczna, przewidywalna relacja z dorosłym spoza rodziny.",
+        "Psychoedukacja dostosowana do wieku: „to nie twoja wina”.",
+        "Socjoterapia, świetlice, grupy Alateen; dla dorosłych grupy DDA i psychoterapia.",
+        "Ocena bezpieczeństwa dziecka i współpraca z OPS, poradnią, w razie potrzeby sądem rodzinnym."
+      ],
+      "phrases": [
+        "Wiele dzieci przeżywa podobne rzeczy w domu. To nie twoja wina i nie musisz sobie z tym radzić sam.",
+        "Możesz mi powiedzieć tyle, ile chcesz. Jeśli będzie trzeba kogoś poinformować, powiem ci o tym wcześniej."
+      ],
+      "pitfalls": [
+        "Obiecywanie dziecku pełnej tajemnicy, której nie można dotrzymać.",
+        "Przypinanie roli („jesteś kozłem ofiarnym”) zamiast pracy z jej funkcją.",
+        "Krytykowanie rodzica przy dziecku."
+      ],
+      "sources": [
+        {
+          "authors": "Wegscheider-Cruse S.",
+          "year": 1981,
+          "title": "Another Chance: Hope and Health for the Alcoholic Family",
+          "publisher": "Science and Behavior Books"
+        },
+        {
+          "authors": "Woititz J.G.",
+          "year": 1983,
+          "title": "Adult Children of Alcoholics",
+          "publisher": "Health Communications"
+        },
+        {
+          "authors": "Cierpiałkowska L.",
+          "year": 2000,
+          "title": "Alkoholizm. Przyczyny, leczenie, profilaktyka",
+          "publisher": "Wydawnictwo Naukowe UAM"
+        }
+      ],
+      "tags": ["DDA", "dzieci", "role w rodzinie"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "domesticViolence",
+      "section": "family",
+      "title": "Przemoc domowa – rozpoznanie i ścieżki pomocy",
+      "essence": "Ustawa o przeciwdziałaniu przemocy domowej (po nowelizacji z 2023 r.) obejmuje przemoc fizyczną, psychiczną, seksualną, ekonomiczną oraz przemoc z użyciem środków komunikacji elektronicznej, wobec członków rodziny, ale też byłych partnerów i osób wspólnie zamieszkujących. Dziecko będące świadkiem przemocy jest traktowane jako osoba doznająca przemocy. Pomoc jest zorganizowana lokalnie: zespół interdyscyplinarny w gminie, OPS, punkt konsultacyjny, ośrodek interwencji kryzysowej, Policja (112), Niebieska Linia (800 120 002). Policja może wydać osobie stosującej przemoc nakaz natychmiastowego opuszczenia mieszkania i zakaz zbliżania się.",
+      "whenToUse": [
+        "Gdy podopieczny, uczeń lub członek rodziny ujawnia przemoc lub są jej widoczne ślady.",
+        "Gdy uzależnienie w rodzinie łączy się z awanturami, groźbami, kontrolą finansową.",
+        "W każdej sytuacji bezpośredniego zagrożenia życia lub zdrowia – natychmiast 112."
+      ],
+      "techniques": [
+        "Najpierw bezpieczeństwo: czy grozi bezpośrednie niebezpieczeństwo? Jeśli tak – 112.",
+        "Spokojna rozmowa na osobności, bez obecności osoby podejrzewanej o przemoc.",
+        "Dokumentowanie faktów (co, kiedy, słowa osoby, widoczne obrażenia) – bez oceniania.",
+        "Wszczęcie procedury „Niebieskie Karty” w swojej instytucji i powiadomienie przełożonego.",
+        "Plan bezpieczeństwa i informacja o miejscach pomocy (OIK, OPS, Niebieska Linia).",
+        "Przy podejrzeniu przestępstwa – zawiadomienie Policji lub prokuratury zgodnie z obowiązkiem instytucji."
+      ],
+      "phrases": [
+        "Dziękuję, że mi o tym mówisz. To, co się dzieje, nie jest twoją winą.",
+        "Moim obowiązkiem jest zadbać o twoje bezpieczeństwo. Powiem ci, co teraz zrobię i kogo poproszę o pomoc."
+      ],
+      "pitfalls": [
+        "Prowadzenie wspólnej rozmowy lub mediacji z osobą doznającą i stosującą przemoc.",
+        "Odkładanie działań „aż będzie pewność” – procedurę wszczyna się już przy uzasadnionym podejrzeniu.",
+        "Samodzielne „przesłuchiwanie” dziecka; powtarzanie wywiadów.",
+        "Tłumaczenie przemocy alkoholem („to przez picie”)."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 2005,
+          "title": "Ustawa z dnia 29 lipca 2005 r. o przeciwdziałaniu przemocy domowej (tytuł i treść po nowelizacji z 2023 r.)"
+        },
+        {
+          "authors": "Herman J.L.",
+          "year": 1992,
+          "title": "Trauma and Recovery",
+          "publisher": "Basic Books"
+        }
+      ],
+      "tags": ["przemoc domowa", "bezpieczeństwo", "procedury"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "blueCard",
+      "section": "family",
+      "title": "Procedura „Niebieskie Karty” krok po kroku",
+      "essence": "Procedura „Niebieskie Karty” to uporządkowany sposób reagowania instytucji na podejrzenie przemocy domowej. Wszczynają ją przedstawiciele m.in. pomocy społecznej, gminnej komisji rozwiązywania problemów alkoholowych, Policji, oświaty i ochrony zdrowia przez wypełnienie formularza „Niebieska Karta – A”. Osoba doznająca przemocy otrzymuje formularz „B” z informacją o prawach i miejscach pomocy. Kartę przekazuje się do zespołu interdyscyplinarnego, który powołuje grupę diagnostyczno-pomocową i planuje pomoc. Wszczęcie procedury nie wymaga zgody osoby doznającej przemocy.",
+      "whenToUse": [
+        "Pedagog szkolny lub wychowawca placówki ma uzasadnione podejrzenie przemocy wobec ucznia lub w jego rodzinie.",
+        "Osoba dorosła ujawnia przemoc podczas konsultacji.",
+        "Przemoc ze strony osoby z problemem alkoholowym – równolegle z działaniami GKRPA."
+      ],
+      "techniques": [
+        "1. Zapewnij bezpieczeństwo; przy zagrożeniu dzwoń 112.",
+        "2. Wypełnij formularz „A” w obecności osoby doznającej przemocy (jeśli to możliwe); w przypadku dziecka – w miarę możliwości z rodzicem lub opiekunem, który nie jest podejrzewany o przemoc.",
+        "3. Przekaż osobie formularz „B” (dzieciom go nie przekazuje się – otrzymuje go rodzic lub opiekun niebędący sprawcą).",
+        "4. Niezwłocznie przekaż formularz „A” przewodniczącemu zespołu interdyscyplinarnego (termin określa rozporządzenie), zachowaj kopię.",
+        "5. Uczestnicz w pracy grupy diagnostyczno-pomocowej i realizuj ustalony plan pomocy.",
+        "6. Przy podejrzeniu przestępstwa – zawiadom Policję lub prokuraturę."
+      ],
+      "phrases": [
+        "Wypełniam tę kartę po to, żeby różne instytucje mogły wspólnie zadbać o twoje bezpieczeństwo.",
+        "Tu jest informacja o tym, gdzie możesz szukać pomocy, także całodobowo."
+      ],
+      "pitfalls": [
+        "Uzależnianie wszczęcia procedury od zgody lub „gotowości” osoby doznającej przemocy.",
+        "Wzywanie osoby doznającej przemocy i stosującej ją na to samo spotkanie.",
+        "Korzystanie z nieaktualnych formularzy – sprawdzaj obowiązujące wzory (rozporządzenie z 2023 r.)."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 2005,
+          "title": "Ustawa z dnia 29 lipca 2005 r. o przeciwdziałaniu przemocy domowej (tytuł i treść po nowelizacji z 2023 r.)"
+        },
+        {
+          "authors": "Rada Ministrów",
+          "year": 2023,
+          "title": "Rozporządzenie w sprawie procedury „Niebieskie Karty” oraz wzorów formularzy"
+        }
+      ],
+      "tags": ["Niebieska Karta", "procedury", "szkoła"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "craft",
+      "section": "family",
+      "title": "CRAFT – wzmacnianie rodziny",
+      "essence": "CRAFT (Community Reinforcement and Family Training, R.J. Meyers, J.E. Smith) to program dla bliskich osoby, która nie chce się leczyć. Uczy bliskich, jak – zamiast konfrontacji, błagania czy grożenia – wzmacniać zachowania trzeźwe, pozwalać na naturalne konsekwencje picia lub zażywania, poprawiać komunikację i dbać o siebie. Badania pokazują, że CRAFT częściej niż konfrontacyjne interwencje prowadzi do podjęcia leczenia przez osobę uzależnioną i poprawia samopoczucie rodziny.",
+      "whenToUse": [
+        "Bliski zgłasza się po pomoc, a osoba z problemem odmawia kontaktu z poradnią.",
+        "Rodzice nastolatka używającego substancji.",
+        "Gdy w rodzinie nie ma przemocy zagrażającej bezpieczeństwu (najpierw bezpieczeństwo)."
+      ],
+      "techniques": [
+        "Analiza funkcjonalna picia lub zażywania: wyzwalacze i konsekwencje.",
+        "Pozytywna komunikacja: krótko, konkretnie, z perspektywy „ja”, z empatią.",
+        "Nagradzanie trzeźwości i niewyręczanie w konsekwencjach.",
+        "Wybór dobrego momentu na propozycję leczenia; plan bezpieczeństwa; dbanie o siebie."
+      ],
+      "phrases": [
+        "Kiedy zauważę, że wieczór jest trzeźwy, mogę mu powiedzieć, że dobrze mi się z nim rozmawia.",
+        "Martwię się o ciebie. Gdybyś chciał z kimś porozmawiać, znalazłam poradnię i mogę pójść z tobą."
+      ],
+      "pitfalls": [
+        "Mylenie CRAFT z „interwencją konfrontacyjną” lub z ultimatum.",
+        "Stosowanie przy aktywnej przemocy bez planu bezpieczeństwa.",
+        "Obarczanie rodziny odpowiedzialnością za efekt."
+      ],
+      "sources": [
+        {
+          "authors": "Smith J.E., Meyers R.J.",
+          "year": 2004,
+          "title": "Motivating Substance Abusers to Enter Treatment: Working with Family Members",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Meyers R.J., Wolfe B.L.",
+          "year": 2004,
+          "title": "Get Your Loved One Sober: Alternatives to Nagging, Pleading, and Threatening",
+          "publisher": "Hazelden"
+        }
+      ],
+      "tags": ["CRAFT", "rodzina", "motywacja"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "familySystems",
+      "section": "family",
+      "title": "Rodzina jako system: genogram i ekomapa",
+      "essence": "Podejście systemowe traktuje rodzinę jako całość, w której problem jednej osoby (np. uzależnienie, zachowania nastolatka) pełni funkcję w układzie relacji, ról i granic. Genogram to graficzny zapis co najmniej trzech pokoleń rodziny z relacjami, ważnymi wydarzeniami i powtarzającymi się wzorami (np. uzależnienia, przemoc). Ekomapa (A. Hartman) pokazuje powiązania rodziny ze środowiskiem: szkołą, pracą, instytucjami, przyjaciółmi – i wskazuje źródła wsparcia oraz napięć.",
+      "whenToUse": [
+        "Pierwsze spotkania z rodziną – zbieranie wywiadu w przystępnej formie.",
+        "Planowanie wsparcia i sieci pomocy (ekomapa).",
+        "Rozmowa o międzypokoleniowych wzorach uzależnienia."
+      ],
+      "techniques": [
+        "Wspólne rysowanie genogramu z podopiecznym lub rodziną.",
+        "Oznaczanie relacji (bliskie, konfliktowe, zerwane) i wydarzeń krytycznych.",
+        "Ekomapa przed i po interwencji – pokazanie zmian w sieci wsparcia.",
+        "Pytania cyrkularne: „Kto pierwszy zauważa, że…?”."
+      ],
+      "phrases": [
+        "Kto w rodzinie najbardziej martwi się tą sytuacją, a kto najmniej?",
+        "Narysujmy, kto jest wokół was – kto pomaga, a kto dodaje ciężaru."
+      ],
+      "pitfalls": [
+        "Traktowanie genogramu jako „przesłuchania” – tempo dyktuje rodzina.",
+        "Szukanie winnych zamiast zrozumienia wzorów.",
+        "Przechowywanie wrażliwych danych bez zgody i zabezpieczenia."
+      ],
+      "sources": [
+        {
+          "authors": "McGoldrick M., Gerson R., Petry S.",
+          "year": 2008,
+          "title": "Genograms: Assessment and Intervention (3rd ed.)",
+          "publisher": "W.W. Norton"
+        },
+        {
+          "authors": "Hartman A.",
+          "year": 1978,
+          "title": "Diagrammatic Assessment of Family Relationships",
+          "publisher": "Social Casework"
+        }
+      ],
+      "tags": ["genogram", "ekomapa", "systemy rodzinne"],
+      "reviewStatus": "do_weryfikacji"
+    }
+  ]
+}

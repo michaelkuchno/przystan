@@ -1,0 +1,597 @@
+{
+  "levels": [
+    {
+      "id": "universal",
+      "title": "Universal prevention",
+      "description": "Addressed to a whole population (e.g. all pupils in a class or school) regardless of their level of risk. It aims to strengthen protective factors and delay initiation before problems appear.",
+      "examples": [
+        "life-skills programme for grades 5–8",
+        "normative education correcting beliefs about how common substance use is",
+        "work on school climate and bonds with adults",
+        "parenting-skills workshops open to all parents"
+      ]
+    },
+    {
+      "id": "selective",
+      "title": "Selective prevention",
+      "description": "Addressed to groups at increased risk because of their life situation or environment (e.g. children from families with alcohol problems, young people in care), even though individuals do not yet show problems.",
+      "examples": [
+        "socio-therapeutic groups in a day-care centre for children from families with alcohol problems",
+        "family-strengthening programme for families in crisis",
+        "mentoring for young people in a youth educational centre",
+        "alternative activities (sport, volunteering) in a high-risk neighbourhood"
+      ]
+    },
+    {
+      "id": "indicated",
+      "title": "Indicated prevention",
+      "description": "Addressed to individuals who already show early signs of problems (e.g. experimenting with substances, truancy, risky behaviour) but do not meet criteria for addiction. It aims to stop the problem from developing.",
+      "examples": [
+        "brief motivational intervention after an incident at school",
+        "early-intervention programme for young people using cannabis",
+        "individual educational work with the pupil and parents",
+        "support group for young people after first contact with the family court"
+      ]
+    }
+  ],
+  "riskFactors": [
+    {
+      "id": "rf-early-behaviour",
+      "domain": "individual",
+      "text": "early and persistent problem behaviour (aggression, impulsivity)"
+    },
+    {
+      "id": "rf-favourable-attitudes",
+      "domain": "individual",
+      "text": "favourable attitudes towards substance use"
+    },
+    {
+      "id": "rf-early-initiation",
+      "domain": "individual",
+      "text": "early initiation of substance use"
+    },
+    {
+      "id": "rf-sensation-seeking",
+      "domain": "individual",
+      "text": "strong need for stimulation and sensation seeking"
+    },
+    {
+      "id": "rf-emotional-difficulties",
+      "domain": "individual",
+      "text": "emotional difficulties and lack of ways to cope with stress"
+    },
+    {
+      "id": "rf-family-use",
+      "domain": "family",
+      "text": "substance use by parents or siblings and permissive attitudes at home"
+    },
+    {
+      "id": "rf-poor-monitoring",
+      "domain": "family",
+      "text": "poor parental monitoring and unclear rules"
+    },
+    {
+      "id": "rf-family-conflict",
+      "domain": "family",
+      "text": "family conflict and violence"
+    },
+    {
+      "id": "rf-school-failure",
+      "domain": "school",
+      "text": "academic failure, especially from the early grades"
+    },
+    {
+      "id": "rf-low-bonding",
+      "domain": "school",
+      "text": "low bonding with school and low commitment to learning"
+    },
+    {
+      "id": "rf-peer-use",
+      "domain": "peers",
+      "text": "friends who use substances"
+    },
+    {
+      "id": "rf-peer-rejection",
+      "domain": "peers",
+      "text": "rejection by peers"
+    },
+    {
+      "id": "rf-availability",
+      "domain": "community",
+      "text": "easy availability of alcohol, tobacco and drugs"
+    },
+    {
+      "id": "rf-community-norms",
+      "domain": "community",
+      "text": "community norms favourable to substance use"
+    },
+    {
+      "id": "rf-deprivation",
+      "domain": "community",
+      "text": "poverty, neighbourhood disorganisation and lack of leisure opportunities"
+    }
+  ],
+  "protectiveFactors": [
+    {
+      "id": "pf-self-regulation",
+      "domain": "individual",
+      "text": "ability to regulate emotions and control impulses"
+    },
+    {
+      "id": "pf-social-skills",
+      "domain": "individual",
+      "text": "social skills, including assertiveness"
+    },
+    {
+      "id": "pf-self-efficacy",
+      "domain": "individual",
+      "text": "self-efficacy and positive self-image"
+    },
+    {
+      "id": "pf-goals",
+      "domain": "individual",
+      "text": "plans and goals for the future"
+    },
+    {
+      "id": "pf-values",
+      "domain": "individual",
+      "text": "beliefs and values that do not favour substance use"
+    },
+    {
+      "id": "pf-family-bond",
+      "domain": "family",
+      "text": "strong, warm bond with at least one parent or carer"
+    },
+    {
+      "id": "pf-clear-rules",
+      "domain": "family",
+      "text": "clear rules and consistent, caring supervision"
+    },
+    {
+      "id": "pf-family-communication",
+      "domain": "family",
+      "text": "open communication in the family"
+    },
+    {
+      "id": "pf-school-bond",
+      "domain": "school",
+      "text": "bonding with school and with at least one teacher"
+    },
+    {
+      "id": "pf-school-success",
+      "domain": "school",
+      "text": "experiencing success and recognition at school"
+    },
+    {
+      "id": "pf-school-climate",
+      "domain": "school",
+      "text": "safe, supportive school climate with clear norms"
+    },
+    {
+      "id": "pf-prosocial-peers",
+      "domain": "peers",
+      "text": "friends with prosocial interests"
+    },
+    {
+      "id": "pf-peer-belonging",
+      "domain": "peers",
+      "text": "sense of belonging to a group without pressure to use"
+    },
+    {
+      "id": "pf-community-opportunities",
+      "domain": "community",
+      "text": "access to after-school activities, sport and volunteering"
+    },
+    {
+      "id": "pf-trusted-adults",
+      "domain": "community",
+      "text": "available, trusted adults outside the family (mentors, coaches, educators)"
+    }
+  ],
+  "strategies": [
+    {
+      "id": "normativeEducation",
+      "title": "Normative education",
+      "description": "Correcting overestimated beliefs about how many peers use substances, using reliable local or national survey data.",
+      "evidence": "strong"
+    },
+    {
+      "id": "lifeSkills",
+      "title": "Life-skills development",
+      "description": "Interactive training of personal and social skills: decision-making, coping with stress, communication, assertiveness and refusal.",
+      "evidence": "strong"
+    },
+    {
+      "id": "parentPrograms",
+      "title": "Parent and family programmes",
+      "description": "Regular sessions strengthening parenting skills, monitoring, communication and family bonds, often with children taking part.",
+      "evidence": "strong"
+    },
+    {
+      "id": "classroomManagement",
+      "title": "Classroom management and school climate",
+      "description": "Whole-school and teacher-level action building clear norms, mutual respect and a sense of belonging (e.g. programmes such as the Good Behaviour Game).",
+      "evidence": "strong"
+    },
+    {
+      "id": "environmental",
+      "title": "Environmental strategies",
+      "description": "Changing the environment: enforcing bans on sales to minors, limiting availability, school substance policies, local regulations.",
+      "evidence": "moderate"
+    },
+    {
+      "id": "mentoring",
+      "title": "Mentoring",
+      "description": "Regular, long-term meetings of a young person with a trained adult mentor who offers support and a role model.",
+      "evidence": "moderate"
+    },
+    {
+      "id": "briefIntervention",
+      "title": "Brief intervention",
+      "description": "A short, structured conversation (often in the spirit of motivational interviewing) with a person showing risky behaviour.",
+      "evidence": "moderate"
+    },
+    {
+      "id": "peerLed",
+      "title": "Peer-led programmes",
+      "description": "Sessions run by trained peer leaders under adult supervision; effectiveness depends on the quality of training and structure.",
+      "evidence": "moderate"
+    },
+    {
+      "id": "alternatives",
+      "title": "Alternatives",
+      "description": "Offering attractive activities (sport, arts, volunteering); works mainly when combined with skills development and relationships with adults.",
+      "evidence": "limited"
+    },
+    {
+      "id": "informationOnly",
+      "title": "Information only",
+      "description": "Lectures and leaflets about the harms of substances without work on skills and norms; may increase knowledge but do not change behaviour.",
+      "evidence": "limited"
+    },
+    {
+      "id": "scareTactics",
+      "title": "Scare tactics and fear appeals",
+      "description": "Graphic images, stories of “victims” and exaggerated accounts of harms; may arouse curiosity, resistance or the belief that “it doesn't apply to me”.",
+      "evidence": "harmful"
+    },
+    {
+      "id": "unstructuredDialogue",
+      "title": "Unstructured discussion groups about substances",
+      "description": "Free-form talks about substance experiences in a group of high-risk young people; may reinforce norms favourable to use.",
+      "evidence": "harmful"
+    }
+  ],
+  "goodPractice": [
+    {
+      "id": "gp-interactive",
+      "kind": "do",
+      "text": "Use interactive methods (small-group work, role-play, discussion).",
+      "rationale": "Interactive programmes show clearly better results than lecture-based ones because they allow skills to be practised.",
+      "sources": [
+        {
+          "authors": "Tobler N.S., Roona M.R., Ochshorn P., Marshall D.G., Streke A.V., Stackpole K.M.",
+          "year": 2000,
+          "title": "School-based adolescent drug prevention programs: 1998 meta-analysis",
+          "publisher": "Journal of Primary Prevention, 20(4), 275–336"
+        },
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        }
+      ]
+    },
+    {
+      "id": "gp-long-term",
+      "kind": "do",
+      "text": "Plan long-term action – a series of sessions with booster sessions.",
+      "rationale": "Effects last longer when a programme runs over several months and is repeated in later years.",
+      "sources": [
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        },
+        {
+          "authors": "Ostaszewski K.",
+          "year": 2003,
+          "title": "Skuteczność profilaktyki używania substancji psychoaktywnych. Podstawowe zagadnienia",
+          "publisher": "Wydawnictwo Naukowe Scholar, Warszawa"
+        }
+      ]
+    },
+    {
+      "id": "gp-multi-component",
+      "kind": "do",
+      "text": "Combine components: pupils, parents, school, local community.",
+      "rationale": "Multi-component programmes address many risk factors at once.",
+      "sources": [
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        },
+        {
+          "authors": "EMCDDA",
+          "year": 2019,
+          "title": "European Prevention Curriculum: a handbook for decision-makers, opinion-makers and policy-makers in science-based prevention of substance use",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        }
+      ]
+    },
+    {
+      "id": "gp-parents",
+      "kind": "do",
+      "text": "Involve parents and carers.",
+      "rationale": "Strengthening family bonds, monitoring and communication is among the best-documented strategies.",
+      "sources": [
+        {
+          "authors": "Kumpfer K.L., Alvarado R.",
+          "year": 2003,
+          "title": "Family-strengthening approaches for the prevention of youth problem behaviors",
+          "publisher": "American Psychologist, 58(6–7), 457–465"
+        },
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        }
+      ]
+    },
+    {
+      "id": "gp-needs",
+      "kind": "do",
+      "text": "Base the programme on an assessment of the needs and resources of the specific setting.",
+      "rationale": "Without an assessment it is easy to target factors that are not present in the group.",
+      "sources": [
+        {
+          "authors": "EMCDDA",
+          "year": 2011,
+          "title": "European drug prevention quality standards: a manual for prevention professionals",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        },
+        {
+          "authors": "Gaś Z.B.",
+          "year": 2006,
+          "title": "Profilaktyka w szkole",
+          "publisher": "WSiP, Warszawa"
+        }
+      ]
+    },
+    {
+      "id": "gp-development",
+      "kind": "do",
+      "text": "Adjust content and methods to age and developmental stage.",
+      "rationale": "The same content may be effective at one age and useless or harmful at another.",
+      "sources": [
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        },
+        {
+          "authors": "EMCDDA",
+          "year": 2019,
+          "title": "European Prevention Curriculum: a handbook for decision-makers, opinion-makers and policy-makers in science-based prevention of substance use",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        }
+      ]
+    },
+    {
+      "id": "gp-factors",
+      "kind": "do",
+      "text": "Target specific risk and protective factors.",
+      "rationale": "The risk and protective factor model makes it possible to link activities clearly to the expected change.",
+      "sources": [
+        {
+          "authors": "Hawkins J.D., Catalano R.F., Miller J.Y.",
+          "year": 1992,
+          "title": "Risk and protective factors for alcohol and other drug problems in adolescence and early adulthood: Implications for substance abuse prevention",
+          "publisher": "Psychological Bulletin, 112(1), 64–105"
+        },
+        {
+          "authors": "Ostaszewski K.",
+          "year": 2003,
+          "title": "Skuteczność profilaktyki używania substancji psychoaktywnych. Podstawowe zagadnienia",
+          "publisher": "Wydawnictwo Naukowe Scholar, Warszawa"
+        }
+      ]
+    },
+    {
+      "id": "gp-evaluation",
+      "kind": "do",
+      "text": "Plan evaluation from the start (indicators, pre/post measurement).",
+      "rationale": "Evaluation shows whether a programme works and allows it to be improved.",
+      "sources": [
+        {
+          "authors": "EMCDDA",
+          "year": 2011,
+          "title": "European drug prevention quality standards: a manual for prevention professionals",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        },
+        {
+          "authors": "EMCDDA",
+          "year": 2019,
+          "title": "European Prevention Curriculum: a handbook for decision-makers, opinion-makers and policy-makers in science-based prevention of substance use",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        }
+      ]
+    },
+    {
+      "id": "gp-fidelity",
+      "kind": "do",
+      "text": "Deliver the programme as designed and train those who deliver it.",
+      "rationale": "Quality and fidelity of implementation clearly affect outcomes.",
+      "sources": [
+        {
+          "authors": "Durlak J.A., DuPre E.P.",
+          "year": 2008,
+          "title": "Implementation matters: A review of research on the influence of implementation on program outcomes and the factors affecting implementation",
+          "publisher": "American Journal of Community Psychology, 41, 327–350"
+        },
+        {
+          "authors": "EMCDDA",
+          "year": 2011,
+          "title": "European drug prevention quality standards: a manual for prevention professionals",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        }
+      ]
+    },
+    {
+      "id": "gp-scare",
+      "kind": "avoid",
+      "text": "Avoid scare tactics and graphic images.",
+      "rationale": "Fear appeals do not reduce use and may provoke resistance or curiosity.",
+      "sources": [
+        {
+          "authors": "Werch C.E., Owen D.M.",
+          "year": 2002,
+          "title": "Iatrogenic effects of alcohol and drug prevention programs",
+          "publisher": "Journal of Studies on Alcohol, 63(5), 581–590"
+        },
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        }
+      ]
+    },
+    {
+      "id": "gp-one-off",
+      "kind": "avoid",
+      "text": "Avoid one-off talks and assemblies.",
+      "rationale": "A single session gives no time to learn skills and does not produce lasting effects.",
+      "sources": [
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        },
+        {
+          "authors": "Ostaszewski K.",
+          "year": 2003,
+          "title": "Skuteczność profilaktyki używania substancji psychoaktywnych. Podstawowe zagadnienia",
+          "publisher": "Wydawnictwo Naukowe Scholar, Warszawa"
+        }
+      ]
+    },
+    {
+      "id": "gp-testimonies",
+      "kind": "avoid",
+      "text": "Do not base a programme only on testimonies of “victims” or people in recovery.",
+      "rationale": "Such sessions may unintentionally suggest that one can recover without great loss, or create the distance of “that's not about me”.",
+      "sources": [
+        {
+          "authors": "EMCDDA",
+          "year": 2019,
+          "title": "European Prevention Curriculum: a handbook for decision-makers, opinion-makers and policy-makers in science-based prevention of substance use",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        },
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        }
+      ]
+    },
+    {
+      "id": "gp-info-only",
+      "kind": "avoid",
+      "text": "Avoid programmes based only on giving information.",
+      "rationale": "Knowledge about harms alone does not translate into behaviour change.",
+      "sources": [
+        {
+          "authors": "Tobler N.S., Roona M.R., Ochshorn P., Marshall D.G., Streke A.V., Stackpole K.M.",
+          "year": 2000,
+          "title": "School-based adolescent drug prevention programs: 1998 meta-analysis",
+          "publisher": "Journal of Primary Prevention, 20(4), 275–336"
+        },
+        {
+          "authors": "Ostaszewski K.",
+          "year": 2003,
+          "title": "Skuteczność profilaktyki używania substancji psychoaktywnych. Podstawowe zagadnienia",
+          "publisher": "Wydawnictwo Naukowe Scholar, Warszawa"
+        }
+      ]
+    },
+    {
+      "id": "gp-moralising",
+      "kind": "avoid",
+      "text": "Avoid moralising and judging.",
+      "rationale": "Moralising weakens the relationship and trust, and young people easily reject it.",
+      "sources": [
+        {
+          "authors": "Gaś Z.B.",
+          "year": 2006,
+          "title": "Profilaktyka w szkole",
+          "publisher": "WSiP, Warszawa"
+        },
+        {
+          "authors": "EMCDDA",
+          "year": 2019,
+          "title": "European Prevention Curriculum: a handbook for decision-makers, opinion-makers and policy-makers in science-based prevention of substance use",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        }
+      ]
+    },
+    {
+      "id": "gp-grouping",
+      "kind": "avoid",
+      "text": "Avoid grouping only high-risk young people together without strong structure.",
+      "rationale": "Groups made up only of young people with problem behaviour may reinforce that behaviour (so-called peer contagion).",
+      "sources": [
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        },
+        {
+          "authors": "Werch C.E., Owen D.M.",
+          "year": 2002,
+          "title": "Iatrogenic effects of alcohol and drug prevention programs",
+          "publisher": "Journal of Studies on Alcohol, 63(5), 581–590"
+        }
+      ]
+    }
+  ],
+  "standards": {
+    "title": "Quality standards and the system of recommended programmes in Poland",
+    "paragraphs": [
+      "Poland has a System of Recommended Prevention and Mental Health Promotion Programmes. It was set up jointly by the institutions responsible for prevention: the former National Bureau for Drug Prevention (KBPN) and the State Agency for Prevention of Alcohol-Related Problems (PARPA) – merged in 2022 into the National Centre for Prevention of Addictions (KCPU) – together with the Centre for Education Development (ORE) and the Institute of Psychiatry and Neurology (IPiN).",
+      "Programmes submitted to the system are assessed by experts against shared quality criteria, including: being based on needs assessment and theory, clearly defined goals, appropriate methods, developed materials (manual, session plans), training of implementers and evaluation results. Depending on the strength of evidence, a programme may receive one of several recommendation levels (e.g. promising, good practice, model programme).",
+      "Recommended programmes are published in the online “Database of Recommended Programmes”. Schools and local authorities can choose programmes from it for the school's educational and prevention programme and for municipal programmes on prevention and solving addiction problems. Examples from the database include “Unplugged”, the “Strengthening Families Programme 10–14”, “School for Parents and Educators”, “Zippy's Friends” and “Fantastic Opportunities”.",
+      "When designing your own programme it is worth using the same criteria and the European Drug Prevention Quality Standards (EDPQS), which describe the whole project cycle: from needs assessment through planning and delivery to evaluation and dissemination.",
+      "Institution names, recommendation levels, the list of programmes and the current address of the database should be checked against the sources before use in coursework."
+    ],
+    "reviewStatus": "do_weryfikacji"
+  },
+  "wizardHints": {
+    "needs": "Gather data about the setting: surveys, talks with pupils, teachers and parents, school or municipal data. Describe problems but also resources (people, places, readiness for change).",
+    "target": "Define who the programme is for, their age and how many people it will reach. The prevention level follows from the group's level of risk, not from the topic.",
+    "factors": "Choose a few risk factors to weaken and protective factors to strengthen – those confirmed by the assessment. Fewer, well-chosen ones work better.",
+    "goals": "Write one general goal and several specific, measurable objectives (e.g. “participants can refuse under pressure – increase on a self-rating scale”).",
+    "strategies": "Choose strategies with proven effectiveness and interactive methods. You can attach a session plan from the session builder to each strategy.",
+    "schedule": "Plan the series of sessions over time (ideally several months with booster sessions), list implementers, venues, materials and budget.",
+    "evaluation": "Assign an indicator and a measurement method to each objective. Measure before and after the programme; also collect feedback from participants and implementers."
+  },
+  "indicatorExamples": [
+    "percentage of participants stating an intention not to start drinking alcohol (pre/post)",
+    "change in pupils' estimates of the percentage of peers who use e-cigarettes",
+    "mean score on a refusal-skills scale (self-rating 1–5)",
+    "number of parents who completed at least 80% of sessions",
+    "participant attendance at sessions",
+    "sense of school bonding in a short survey (pre/post)",
+    "number of substance-related incidents reported at school during the school year",
+    "rating of sessions by participants and implementers (survey after each module)"
+  ]
+}

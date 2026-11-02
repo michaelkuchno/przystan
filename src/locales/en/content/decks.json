@@ -1,0 +1,867 @@
+{
+  "decks": [
+    {
+      "id": "deck-resocialization",
+      "title": "Resocialization – concepts and theories",
+      "module": "resocialization",
+      "cards": [
+        {
+          "id": "res-01",
+          "front": "Resocialization – definition",
+          "back": "A process of planned educational interventions with socially maladjusted people, aimed at changing attitudes and behaviour so that they can fulfil social roles independently and constructively."
+        },
+        {
+          "id": "res-02",
+          "front": "Social maladjustment – whose concepts and what is it?",
+          "back": "A concept developed in Polish resocialization pedagogy by, among others, Czesław Czapów and Lesław Pytka. It denotes a relatively persistent pattern of norm-violating behaviour that hampers the fulfilment of social roles."
+        },
+        {
+          "id": "res-03",
+          "front": "Creative resocialization – author and essence",
+          "back": "A concept by Marek Konopczyński. It uses creative activities (e.g. theatre, music, sport, art) to develop the person's potential and build a new, prosocial identity."
+        },
+        {
+          "id": "res-04",
+          "front": "Resource-based (strengths) vs deficit approach",
+          "back": "The deficit approach focuses on shortcomings and disorders, whereas the resource-based approach builds interventions on strengths, interests and support available in the person's environment."
+        },
+        {
+          "id": "res-05",
+          "front": "Social readaptation",
+          "back": "Re-adjustment of a person to independent life in society after a period of isolation, e.g. after leaving prison or an institution – covering housing, work and relationships, among others."
+        },
+        {
+          "id": "res-06",
+          "front": "Post-penitentiary support",
+          "back": "Support for people leaving prison and their families (e.g. housing, material, vocational, legal), intended to ease readaptation and reduce reoffending."
+        },
+        {
+          "id": "res-07",
+          "front": "Labelling theory – authors",
+          "back": "Edwin Lemert and Howard Becker. Social reaction and attaching a 'deviant' label can entrench deviant behaviour and reshape the person's identity."
+        },
+        {
+          "id": "res-08",
+          "front": "Primary and secondary deviance",
+          "back": "Lemert's distinction: primary deviance is incidental norm-breaking that does not affect identity; secondary deviance arises when the person adopts the label and organises behaviour around it."
+        },
+        {
+          "id": "res-09",
+          "front": "Differential association theory – author",
+          "back": "Edwin Sutherland. Criminal behaviour – its techniques, motives and rationalisations – is learned through interaction within close personal groups."
+        },
+        {
+          "id": "res-10",
+          "front": "Anomie (strain) theory – author and modes of adaptation",
+          "back": "Robert K. Merton. Tension between cultural goals and available institutional means leads to modes of adaptation: conformity, innovation, ritualism, retreatism and rebellion."
+        },
+        {
+          "id": "res-11",
+          "front": "Social bond theory – author and elements",
+          "back": "Travis Hirschi. Bonds to society protect against offending: attachment, commitment (to conventional goals), involvement (in conventional activities) and belief (acceptance of norms)."
+        },
+        {
+          "id": "res-12",
+          "front": "Social learning theory – author",
+          "back": "Albert Bandura. Behaviours, including aggression, are acquired through observing and imitating models, among other ways, and maintained by reinforcement."
+        },
+        {
+          "id": "res-13",
+          "front": "RNR model – authors and principles",
+          "back": "Don Andrews and James Bonta. Principles: risk (intensity matched to risk level), need (targeting criminogenic needs) and responsivity (methods matched to the person's abilities and learning style)."
+        },
+        {
+          "id": "res-14",
+          "front": "Criminogenic needs",
+          "back": "Dynamic – i.e. changeable – risk factors linked to offending, e.g. pro-criminal attitudes, associating with people who offend, substance use, unemployment."
+        },
+        {
+          "id": "res-15",
+          "front": "Static vs dynamic risk factors",
+          "back": "Static factors cannot change (e.g. age at first offence, criminal history); dynamic factors can be changed through intervention (e.g. attitudes, skills, environment), so they are the target of resocialization work."
+        },
+        {
+          "id": "res-16",
+          "front": "Good Lives Model – author and essence",
+          "back": "Tony Ward. It assumes people pursue primary goods (e.g. relationships, competence, autonomy) and that work should help them achieve these prosocially, not merely reduce risk."
+        },
+        {
+          "id": "res-17",
+          "front": "Desistance – what is it?",
+          "back": "The gradual process of ceasing offending and sustaining a crime-free life. Shadd Maruna described the role of identity narratives (the 'redemption script') in this process."
+        },
+        {
+          "id": "res-18",
+          "front": "Aggression Replacement Training (ART) – author and components",
+          "back": "A programme developed by Arnold P. Goldstein and colleagues. Three components: prosocial skills training, anger control training and moral reasoning training."
+        },
+        {
+          "id": "res-19",
+          "front": "Restorative justice",
+          "back": "An approach (developed by Howard Zehr, among others) in which the response to crime focuses on repairing harm and relationships with the involvement of victim, offender and community, e.g. through mediation."
+        },
+        {
+          "id": "res-20",
+          "front": "Systems of serving a prison sentence (Poland)",
+          "back": "The Polish Executive Penal Code provides three systems: programmed influence, therapeutic and ordinary."
+        },
+        {
+          "id": "res-21",
+          "front": "Programmed influence system",
+          "back": "A system in which a person serving a sentence, with their consent, follows an individual programme prepared with their participation (e.g. education, work, therapy, family contact)."
+        },
+        {
+          "id": "res-22",
+          "front": "Resocialization assessment – aims",
+          "back": "Identifying problems and deficits as well as the strengths of the person and their environment, explaining the mechanisms of maladjustment, and formulating a prognosis and basis for an individual plan."
+        },
+        {
+          "id": "res-23",
+          "front": "Probation officer (kurator sądowy) – role",
+          "back": "Enforces court decisions and carries out supervision, combining monitoring with educational, resocialization and support activities; Poland has family and adult probation officers."
+        },
+        {
+          "id": "res-24",
+          "front": "Youth educational centre (MOW)",
+          "back": "An education-system facility for socially maladjusted children and adolescents, placed there by a family court decision; it combines schooling with educational interventions."
+        },
+        {
+          "id": "res-25",
+          "front": "Youth sociotherapy centre (MOS)",
+          "back": "An education facility for children and adolescents at risk of social maladjustment who need sociotherapy and special organisation of learning."
+        },
+        {
+          "id": "res-26",
+          "front": "Correctional facility vs juvenile shelter",
+          "back": "A correctional facility (zakład poprawczy) carries out a court-ordered correctional measure; a juvenile shelter (schronisko) is for temporary placement while proceedings are ongoing."
+        },
+        {
+          "id": "res-27",
+          "front": "Prison subculture ('second life')",
+          "back": "An informal system of norms, hierarchies and rituals among people in custody that can hinder resocialization efforts and foster violence."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-prevention",
+      "title": "Prevention – levels, factors, strategies",
+      "module": "prevention",
+      "cards": [
+        {
+          "id": "prev-01",
+          "front": "Universal prevention",
+          "back": "Activities addressed to whole populations (e.g. all pupils in a class) regardless of individual risk; the aim is to prevent or delay initiation."
+        },
+        {
+          "id": "prev-02",
+          "front": "Selective prevention",
+          "back": "Activities for groups at elevated risk because of their life situation or environment (e.g. children from families with alcohol problems), before problems appear."
+        },
+        {
+          "id": "prev-03",
+          "front": "Indicated prevention",
+          "back": "Activities for individuals already showing early signs or risk behaviours (e.g. experimenting with substances) but without a diagnosis of dependence."
+        },
+        {
+          "id": "prev-04",
+          "front": "Who proposed the universal/selective/indicated classification?",
+          "back": "Robert Gordon (1983); it was popularised by, among others, the 1994 Institute of Medicine report."
+        },
+        {
+          "id": "prev-05",
+          "front": "Primary, secondary and tertiary prevention",
+          "back": "Older classification: primary prevents the problem from occurring, secondary detects and limits it early, tertiary prevents worsening and relapse and supports reintegration."
+        },
+        {
+          "id": "prev-06",
+          "front": "Risk factors",
+          "back": "Characteristics of a person or their environment that increase the likelihood of problem behaviour, e.g. family conflict, school failure, peers who use substances, easy access to substances."
+        },
+        {
+          "id": "prev-07",
+          "front": "Protective factors",
+          "back": "Characteristics of a person or environment that reduce the likelihood of problem behaviour or buffer risk factors, e.g. strong bond with parents, interest in school, prosocial norms and groups, social skills."
+        },
+        {
+          "id": "prev-08",
+          "front": "Resilience",
+          "back": "The capacity for positive adaptation and healthy development despite adverse circumstances; strengthening its factors is one of the goals of prevention."
+        },
+        {
+          "id": "prev-09",
+          "front": "Problem behaviour theory – author",
+          "back": "Richard Jessor. Risk behaviours (e.g. substance use, early sexual initiation, truancy) tend to co-occur and serve developmental functions for young people, so it is worth addressing their shared determinants."
+        },
+        {
+          "id": "prev-10",
+          "front": "Prevention strategies – list them",
+          "back": "Commonly listed: information, education (skill-building), alternatives, intervention, harm reduction, and environmental and policy change."
+        },
+        {
+          "id": "prev-11",
+          "front": "Effectiveness of information-only strategies",
+          "back": "Providing knowledge about harm alone usually does not change behaviour, and fear-based messages can be ineffective or counterproductive; information works better as part of a broader programme."
+        },
+        {
+          "id": "prev-12",
+          "front": "Normative education",
+          "back": "Correcting young people's beliefs that substance use among peers is more common and accepted than it really is."
+        },
+        {
+          "id": "prev-13",
+          "front": "Social influence model in prevention",
+          "back": "Programmes that teach recognising and coping with peer, media and advertising pressure (e.g. assertive refusal), often combined with normative education."
+        },
+        {
+          "id": "prev-14",
+          "front": "Life skills (WHO)",
+          "back": "Abilities for positive behaviour and coping with challenges, e.g. decision-making, problem-solving, critical thinking, communication, coping with stress and emotions."
+        },
+        {
+          "id": "prev-15",
+          "front": "Unplugged",
+          "back": "A school-based universal substance-use prevention programme for pupils aged about 12–14, based on the social influence model and life skills; delivered as interactive lessons."
+        },
+        {
+          "id": "prev-16",
+          "front": "Recommendation system for prevention programmes (Poland)",
+          "back": "A joint system of central institutions (incl. KCPU and ORE) that assesses programmes for quality and evidence of effectiveness; recommended programmes are listed in a database for schools and local governments."
+        },
+        {
+          "id": "prev-17",
+          "front": "European Drug Prevention Quality Standards (EDPQS)",
+          "back": "Standards developed under the auspices of the EMCDDA describing the prevention project cycle: from needs assessment, through planning and delivery, to evaluation."
+        },
+        {
+          "id": "prev-18",
+          "front": "Features of effective prevention programmes",
+          "back": "Based on needs assessment and theory, interactive methods, adequate intensity and continuity, age- and culture-appropriateness, involvement of parents and community, and evaluation."
+        },
+        {
+          "id": "prev-19",
+          "front": "Process vs outcome evaluation",
+          "back": "Process evaluation checks how a programme was delivered (reach, fidelity, reception); outcome evaluation assesses whether intended changes in participants were achieved."
+        },
+        {
+          "id": "prev-20",
+          "front": "Harm reduction",
+          "back": "An approach that reduces the health and social consequences of substance use without requiring abstinence as a condition of help, e.g. needle and syringe programmes or opioid agonist treatment."
+        },
+        {
+          "id": "prev-21",
+          "front": "Environmental prevention",
+          "back": "Changing the conditions in which people make decisions, e.g. limiting the physical and economic availability of alcohol, enforcing bans on sales to minors, shaping local norms."
+        },
+        {
+          "id": "prev-22",
+          "front": "Brief intervention – FRAMES",
+          "back": "Elements of a brief intervention: Feedback, Responsibility, Advice, Menu of options, Empathy, Self-efficacy."
+        },
+        {
+          "id": "prev-23",
+          "front": "Early intervention",
+          "back": "Prompt recognition of the first signs of a problem (e.g. first episodes of use) and taking adequate action before the problem becomes entrenched."
+        },
+        {
+          "id": "prev-24",
+          "front": "Peer education",
+          "back": "Trained young leaders, supported by adults, run activities among their peers, drawing on their credibility and normative influence."
+        },
+        {
+          "id": "prev-25",
+          "front": "Health promotion – document and definition",
+          "back": "The WHO Ottawa Charter (1986): health promotion is the process of enabling people to increase control over, and to improve, their health."
+        },
+        {
+          "id": "prev-26",
+          "front": "Alternatives strategy",
+          "back": "Offering attractive, prosocial ways of meeting needs (e.g. adventure, recognition, belonging) – sport, volunteering, creative activities – best combined with other strategies."
+        },
+        {
+          "id": "prev-27",
+          "front": "Needs assessment before a prevention programme",
+          "back": "Identifying problems, risk and protective factors and resources in a group or community; it guides the choice of prevention level, goals and methods and provides a baseline for evaluation."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-addiction",
+      "title": "Addiction – mechanisms, change, relapse",
+      "module": "addiction",
+      "cards": [
+        {
+          "id": "add-01",
+          "front": "Substance dependence in ICD-11 – three core features",
+          "back": "Impaired control over use; increasing precedence of use over other activities and obligations despite harm; physiological features (tolerance, withdrawal). Usually at least two are required for the diagnosis."
+        },
+        {
+          "id": "add-02",
+          "front": "Harmful pattern of use",
+          "back": "A pattern of substance use that causes damage to physical or mental health (and in ICD-11 also harm to others), without meeting the criteria for dependence."
+        },
+        {
+          "id": "add-03",
+          "front": "Tolerance",
+          "back": "A state in which increasing amounts of a substance are needed to achieve the same effect, or the same amount produces a weaker effect."
+        },
+        {
+          "id": "add-04",
+          "front": "Withdrawal syndrome",
+          "back": "A cluster of physical and psychological symptoms that appear after stopping or reducing a substance used long-term; some (e.g. with alcohol) can be life-threatening and need medical care."
+        },
+        {
+          "id": "add-05",
+          "front": "Craving",
+          "back": "A strong desire or urge to use a substance, often triggered by cues associated with use; its appearance is not a failure but a signal to apply coping strategies."
+        },
+        {
+          "id": "add-06",
+          "front": "Psychological mechanisms of addiction – author and names",
+          "back": "Jerzy Mellibruda: the mechanism of addictive emotion regulation, the mechanism of illusions and denial, and the mechanism of a scattered and split self."
+        },
+        {
+          "id": "add-07",
+          "front": "Biopsychosocial model of addiction",
+          "back": "A view in which biological (e.g. genetic, neurobiological), psychological (e.g. emotion regulation) and social (e.g. family, environment, availability) factors jointly shape the development and maintenance of addiction."
+        },
+        {
+          "id": "add-08",
+          "front": "Reward system and addiction",
+          "back": "Substances and some behaviours strongly activate the brain's reward system (incl. the mesolimbic pathway, dopamine), which promotes learning of cue–use associations and weakens control."
+        },
+        {
+          "id": "add-09",
+          "front": "Transtheoretical Model (TTM) – authors",
+          "back": "James Prochaska and Carlo DiClemente. It describes behaviour change as moving through stages: precontemplation, contemplation, preparation, action and maintenance (with possible relapse)."
+        },
+        {
+          "id": "add-10",
+          "front": "TTM – precontemplation",
+          "back": "The person does not intend to change in the foreseeable future (typically the next 6 months) and often sees no problem; building rapport, accurate information and non-confrontational dialogue help."
+        },
+        {
+          "id": "add-11",
+          "front": "TTM – contemplation",
+          "back": "The person recognises the problem and considers change but is ambivalent – seeing both benefits and costs of change; exploring ambivalence and building motivation help."
+        },
+        {
+          "id": "add-12",
+          "front": "TTM – preparation",
+          "back": "The person intends to take action soon (typically within a month) and often takes first steps; jointly developing a concrete change plan helps."
+        },
+        {
+          "id": "add-13",
+          "front": "TTM – action and maintenance",
+          "back": "In action the person actively changes behaviour; in maintenance (after about 6 months) they consolidate change and prevent relapse. Support focuses on coping skills and reinforcing gains."
+        },
+        {
+          "id": "add-14",
+          "front": "Relapse in the TTM",
+          "back": "Relapse is seen as a common part of the change process rather than failure; the person may return to an earlier stage and use the experience in the next attempt."
+        },
+        {
+          "id": "add-15",
+          "front": "Relapse Prevention (RP) model – authors",
+          "back": "G. Alan Marlatt and Judith Gordon. A cognitive-behavioural model: relapse results from the interplay of high-risk situations, coping skills, self-efficacy and outcome expectancies."
+        },
+        {
+          "id": "add-16",
+          "front": "Lapse vs relapse",
+          "back": "A lapse is a single episode of use after a period of abstinence or reduction; relapse is a return to the previous problematic pattern. Responding well to a lapse can prevent relapse."
+        },
+        {
+          "id": "add-17",
+          "front": "Abstinence Violation Effect (AVE)",
+          "back": "Marlatt's term for a reaction to a lapse: guilt and attributing it to stable, internal causes ('I'm weak, I can't do it'), which increases the risk of a lapse turning into relapse."
+        },
+        {
+          "id": "add-18",
+          "front": "High-risk situations – most common categories (Marlatt)",
+          "back": "Negative emotional states, interpersonal conflict and social pressure; others include positive emotions, testing personal control and craving."
+        },
+        {
+          "id": "add-19",
+          "front": "Seemingly irrelevant decisions",
+          "back": "Small choices that seem unrelated to use (e.g. a route home past a former drinking place) but gradually bring the person closer to a high-risk situation."
+        },
+        {
+          "id": "add-20",
+          "front": "Self-efficacy in relapse prevention",
+          "back": "Albert Bandura's concept: a person's belief that they can cope with a specific difficult situation; higher self-efficacy is associated with lower relapse risk."
+        },
+        {
+          "id": "add-21",
+          "front": "Relapse warning signs – whose model?",
+          "back": "Terence Gorski (CENAPS model) described relapse as a process in which changes in thinking, emotions and behaviour precede a return to use; people learn to recognise and interrupt them."
+        },
+        {
+          "id": "add-22",
+          "front": "MBRP – what is it?",
+          "back": "Mindfulness-Based Relapse Prevention (Sarah Bowen, Neha Chawla, G. Alan Marlatt) combines relapse prevention with mindfulness practice, teaching people to observe craving and emotions without reacting automatically."
+        },
+        {
+          "id": "add-23",
+          "front": "Behavioural addictions in ICD-11",
+          "back": "In the group of disorders due to addictive behaviours, ICD-11 lists gambling disorder and gaming disorder."
+        },
+        {
+          "id": "add-24",
+          "front": "Other behaviours described as behavioural addictions",
+          "back": "E.g. problematic internet and social media use, compulsive buying or work; they have no separate ICD-11 category, and compulsive sexual behaviour disorder is classified there as an impulse control disorder."
+        },
+        {
+          "id": "add-25",
+          "front": "Minnesota model",
+          "back": "A model of addiction treatment combining professional (mainly group) therapy with the 12-step programme; the goal is abstinence and people are encouraged to join mutual-help groups."
+        },
+        {
+          "id": "add-26",
+          "front": "Mutual-help groups – example and origin",
+          "back": "Alcoholics Anonymous was founded in 1935 in the USA; it is based on the 12 steps and mutual support. Similar fellowships exist for other addictions (e.g. NA, GA) and for families (Al-Anon)."
+        },
+        {
+          "id": "add-27",
+          "front": "Dual diagnosis",
+          "back": "Co-occurrence of substance use disorders and other mental disorders (e.g. depression, anxiety); it requires integrated, coordinated care."
+        },
+        {
+          "id": "add-28",
+          "front": "Reduced drinking as a goal",
+          "back": "For some people (especially without severe dependence) the goal may be reducing and controlling drinking rather than full abstinence; the goal is set individually together with a specialist."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-law",
+      "title": "Law – legal framework (Poland)",
+      "module": "law",
+      "cards": [
+        {
+          "id": "law-01",
+          "front": "Act on Upbringing in Sobriety and Counteracting Alcoholism – date",
+          "back": "Act of 26 October 1982; it governs, among other things, prevention and resolving alcohol problems, rules on alcohol sales and advertising, and compulsory treatment."
+        },
+        {
+          "id": "law-02",
+          "front": "Act on Counteracting Drug Addiction – date",
+          "back": "Act of 29 July 2005; it governs prevention, treatment, rehabilitation and harm reduction, as well as substance control and criminal liability."
+        },
+        {
+          "id": "law-03",
+          "front": "Act on Supporting and Resocializing Juveniles – when did it enter into force?",
+          "back": "1 September 2022. It replaced the 1982 Act on Juvenile Proceedings."
+        },
+        {
+          "id": "law-04",
+          "front": "Act on Supporting and Resocializing Juveniles – who it covers",
+          "back": "It covers, among others, preventing and addressing demoralisation of persons under 18 and proceedings for punishable acts committed by persons aged 10 to under 17."
+        },
+        {
+          "id": "law-05",
+          "front": "Measures for juveniles – examples",
+          "back": "E.g. a reprimand, an obligation to behave in a specific way, responsible parental supervision, probation officer supervision, placement in a youth educational centre (MOW), and as a correctional measure – placement in a correctional facility."
+        },
+        {
+          "id": "law-06",
+          "front": "Act on Counteracting Domestic Violence",
+          "back": "Act of 29 July 2005, renamed by a 2023 amendment (previously: on counteracting family violence), which broadened the definition of violence, e.g. to include economic violence and cyberviolence."
+        },
+        {
+          "id": "law-07",
+          "front": "'Blue Card' (Niebieska Karta) procedure",
+          "back": "A procedure for intervening where domestic violence is reasonably suspected; it is initiated by a representative of an authorised service by completing the 'Blue Card – A' form."
+        },
+        {
+          "id": "law-08",
+          "front": "Who can initiate the Blue Card procedure?",
+          "back": "Representatives of: social assistance units, municipal commissions for solving alcohol problems, the Police, education and healthcare."
+        },
+        {
+          "id": "law-09",
+          "front": "Interdisciplinary team and diagnostic-support group",
+          "back": "The municipality appoints an interdisciplinary team to counter domestic violence; individual cases are handled by diagnostic-support groups (since 2023, replacing working groups)."
+        },
+        {
+          "id": "law-10",
+          "front": "Measures protecting a person experiencing domestic violence – examples",
+          "back": "E.g. an order to leave the shared home immediately and a restraining order, which may be issued by the Police (or Military Police) and then reviewed by a court."
+        },
+        {
+          "id": "law-11",
+          "front": "KCPU – what is it and since when?",
+          "back": "The National Centre for Counteracting Addictions, operating since 1 January 2022; it took over the tasks of PARPA and the National Bureau for Drug Prevention and is responsible for policy on substance and behavioural addictions."
+        },
+        {
+          "id": "law-12",
+          "front": "PARPA and KBPN",
+          "back": "The State Agency for Solving Alcohol Problems and the National Bureau for Drug Prevention – central institutions dissolved at the end of 2021, whose tasks were taken over by KCPU."
+        },
+        {
+          "id": "law-13",
+          "front": "GKRPA – tasks",
+          "back": "The municipal commission for solving alcohol problems initiates prevention activities, gives opinions on alcohol sales licences as to compliance with municipal council resolutions, and takes steps towards court-ordered treatment."
+        },
+        {
+          "id": "law-14",
+          "front": "Municipal programme for prevention and solving alcohol problems – funding",
+          "back": "The municipality runs it as its own task; it is funded from fees for alcohol sales licences."
+        },
+        {
+          "id": "law-15",
+          "front": "Compulsory addiction treatment – for whom?",
+          "back": "For persons who, in connection with alcohol misuse, cause the breakdown of family life or demoralisation of minors, evade work, or systematically disturb public peace or order."
+        },
+        {
+          "id": "law-16",
+          "front": "Compulsory treatment – who decides and on whose request?",
+          "back": "The district court competent for the person's place of residence, usually at the request of the municipal commission for solving alcohol problems or a prosecutor, with expert opinions."
+        },
+        {
+          "id": "law-17",
+          "front": "Alcohol sales – basic prohibitions",
+          "back": "Selling or serving alcoholic beverages is prohibited to persons under 18, to persons whose behaviour indicates intoxication, and on credit or as a pledge."
+        },
+        {
+          "id": "law-18",
+          "front": "Alcohol advertising in Poland",
+          "back": "Advertising and promotion of alcoholic beverages is generally prohibited, except for beer, which may be advertised subject to statutory restrictions."
+        },
+        {
+          "id": "law-19",
+          "front": "Possession of narcotic drugs",
+          "back": "The Act on Counteracting Drug Addiction criminalises possession of narcotic and psychotropic substances; in certain cases (e.g. a small amount for personal use) proceedings may be discontinued."
+        },
+        {
+          "id": "law-20",
+          "front": "'Treatment instead of punishment' in the drug act",
+          "back": "The act provides mechanisms allowing a dependent person facing criminal proceedings to undertake treatment, which may affect the proceedings, e.g. lead to their suspension."
+        },
+        {
+          "id": "law-21",
+          "front": "Act on Probation Officers",
+          "back": "Act of 27 July 2001; it sets out the organisation of the court probation service and the rights and duties of family and adult probation officers."
+        },
+        {
+          "id": "law-22",
+          "front": "Executive Penal Code – what does it regulate?",
+          "back": "Enforcement of criminal judgments, including imprisonment (and the systems for serving it), restriction of liberty, probation supervision and post-penitentiary assistance."
+        },
+        {
+          "id": "law-23",
+          "front": "Electronic monitoring",
+          "back": "A way of serving a prison sentence (in specified cases) outside prison, at the convicted person's place of residence, with electronic monitoring of their whereabouts."
+        },
+        {
+          "id": "law-24",
+          "front": "Social Assistance Act",
+          "back": "Act of 12 March 2004; it defines the tasks and forms of social assistance and the institutions, including municipal social assistance centres and county family support centres (PCPR)."
+        },
+        {
+          "id": "law-25",
+          "front": "Mental Health Protection Act",
+          "back": "Act of 19 August 1994; it governs, among other things, the provision of psychiatric care, including admission to hospital without consent in situations specified by the act."
+        },
+        {
+          "id": "law-26",
+          "front": "Child protection standards",
+          "back": "Following a 2023 amendment, schools, facilities and other organisations working with children must adopt standards protecting minors from harm (from 2024)."
+        },
+        {
+          "id": "law-27",
+          "front": "Juvenile justice – which court?",
+          "back": "Juvenile cases are heard by the family court (the family and juvenile division of the district court)."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-mi",
+      "title": "Motivational Interviewing (MI)",
+      "module": "mi",
+      "cards": [
+        {
+          "id": "mi-01",
+          "front": "Motivational Interviewing – authors",
+          "back": "William R. Miller and Stephen Rollnick."
+        },
+        {
+          "id": "mi-02",
+          "front": "Motivational Interviewing – definition",
+          "back": "A collaborative, goal-oriented style of conversation with particular attention to the language of change, strengthening personal motivation and commitment by eliciting the person's own reasons."
+        },
+        {
+          "id": "mi-03",
+          "front": "Spirit of MI – elements",
+          "back": "Partnership, acceptance, compassion (commitment to the person's welfare) and evocation; in the fourth edition (2023) evocation was replaced by empowerment."
+        },
+        {
+          "id": "mi-04",
+          "front": "Partnership in the spirit of MI",
+          "back": "Working 'with' rather than 'on' the person: both are experts – the practitioner in knowledge, the person in their own life."
+        },
+        {
+          "id": "mi-05",
+          "front": "Acceptance in the spirit of MI – four aspects",
+          "back": "Absolute worth, accurate empathy, autonomy support and affirmation (recognising strengths and efforts)."
+        },
+        {
+          "id": "mi-06",
+          "front": "Evocation",
+          "back": "Assumes that motivation and resources for change already exist within the person; the practitioner's task is to draw them out rather than insert their own arguments."
+        },
+        {
+          "id": "mi-07",
+          "front": "The four processes of MI",
+          "back": "Engaging (building the relationship), focusing (agreeing on direction), evoking (drawing out motivation for change) and planning (developing commitment and a plan)."
+        },
+        {
+          "id": "mi-08",
+          "front": "OARS – what does it stand for?",
+          "back": "Open questions, Affirmations, Reflections and Summaries – the core MI skills."
+        },
+        {
+          "id": "mi-09",
+          "front": "Open questions",
+          "back": "Questions inviting broader answers and reflection (e.g. 'What makes you think about changing?'), as opposed to closed questions answered with 'yes/no' or briefly."
+        },
+        {
+          "id": "mi-10",
+          "front": "Affirmation",
+          "back": "Genuine recognition of the person's specific strengths, values or efforts (e.g. 'Despite a hard week you came – that shows it matters to you'), rather than general praise."
+        },
+        {
+          "id": "mi-11",
+          "front": "Simple vs complex reflection",
+          "back": "A simple reflection repeats or slightly rephrases what was said; a complex reflection adds meaning, e.g. names a feeling or implied sense, and usually moves the conversation forward more."
+        },
+        {
+          "id": "mi-12",
+          "front": "Double-sided reflection",
+          "back": "Reflects both sides of ambivalence, e.g. 'On the one hand drinking helps you relax, and on the other you worry about your health'; best ending with the change side."
+        },
+        {
+          "id": "mi-13",
+          "front": "Amplified reflection",
+          "back": "Reflecting a sustain-talk statement in a slightly exaggerated form, without sarcasm, which often prompts the person to balance their position and voice change talk."
+        },
+        {
+          "id": "mi-14",
+          "front": "Types of summaries in MI",
+          "back": "Collecting (gather several statements), linking (connect a current statement with an earlier one) and transitional (close one part of the conversation and move to the next)."
+        },
+        {
+          "id": "mi-15",
+          "front": "Change talk – DARN-CAT",
+          "back": "Preparatory: Desire, Ability, Reasons, Need; mobilising: Commitment, Activation, Taking steps."
+        },
+        {
+          "id": "mi-16",
+          "front": "Preparatory vs mobilising change talk",
+          "back": "Preparatory talk expresses motivation ('I'd like to', 'I could', 'I should'); mobilising talk signals moving into action ('I will', 'I'm ready', 'this week I already…')."
+        },
+        {
+          "id": "mi-17",
+          "front": "Sustain talk",
+          "back": "Statements favouring keeping the behaviour unchanged (e.g. 'Drinking doesn't harm me'); a natural part of ambivalence, not resistance to be overcome."
+        },
+        {
+          "id": "mi-18",
+          "front": "Discord",
+          "back": "Tension in the relationship between practitioner and person (e.g. arguing, interrupting, disengaging); in newer MI editions it replaced part of the meaning of 'resistance' and signals the practitioner to change approach."
+        },
+        {
+          "id": "mi-19",
+          "front": "Righting reflex",
+          "back": "The helper's natural urge to persuade, advise and 'fix' the problem; it usually prompts an ambivalent person to defend the status quo, so MI practitioners resist it."
+        },
+        {
+          "id": "mi-20",
+          "front": "Rulers (importance and confidence scales)",
+          "back": "Asking for a 0–10 rating of how important change is and how confident the person is, then: 'Why this number and not lower?' and 'What would help raise it by one point?'."
+        },
+        {
+          "id": "mi-21",
+          "front": "Elicit–Provide–Elicit (E-P-E)",
+          "back": "A way of sharing information in MI: ask what the person knows or wants to know, provide information (with permission, neutrally), ask what they make of it."
+        },
+        {
+          "id": "mi-22",
+          "front": "Ambivalence in MI",
+          "back": "Simultaneously feeling motivation for and against change; seen as a normal step on the way to change, to be explored rather than fought."
+        },
+        {
+          "id": "mi-23",
+          "front": "Developing discrepancy",
+          "back": "Helping the person see the gap between current behaviour and their important values and goals, which can strengthen motivation to change."
+        },
+        {
+          "id": "mi-24",
+          "front": "The four MI principles from earlier editions",
+          "back": "Expressing empathy, developing discrepancy, rolling with resistance (avoiding argumentation) and supporting self-efficacy."
+        },
+        {
+          "id": "mi-25",
+          "front": "Conversational traps in MI – examples",
+          "back": "The question-answer trap, expert trap, labelling trap, premature focus trap, blaming trap and chat trap – they hinder engagement."
+        },
+        {
+          "id": "mi-26",
+          "front": "Techniques for evoking change talk – examples",
+          "back": "Evocative questions, rulers, querying extremes ('What's the worst that could happen?'), looking back and looking forward, and exploring values and goals."
+        },
+        {
+          "id": "mi-27",
+          "front": "MITI",
+          "back": "Motivational Interviewing Treatment Integrity – a tool for coding recorded sessions to assess MI fidelity and develop practitioner skills."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-family",
+      "title": "Family – codependency, roles, tools",
+      "module": "family",
+      "cards": [
+        {
+          "id": "fam-01",
+          "front": "Codependency",
+          "back": "A persistent pattern of thoughts, emotions and behaviours in a family member that develops through long-term life with an addicted person (e.g. excessive control, taking over responsibility, self-neglect); understood as adaptation to chronic stress, not an illness."
+        },
+        {
+          "id": "fam-02",
+          "front": "Typical behaviours of relatives of a person with an alcohol problem",
+          "back": "Controlling drinking, hiding the problem from others, making excuses, taking over duties, cushioning the consequences of drinking – which may unintentionally maintain the problem."
+        },
+        {
+          "id": "fam-03",
+          "front": "Children's roles in a family with alcohol problems – author",
+          "back": "Sharon Wegscheider-Cruse: the family hero, scapegoat, lost child and mascot; alongside them the 'enabler' role (often the drinking person's partner) is described."
+        },
+        {
+          "id": "fam-04",
+          "front": "The family hero role",
+          "back": "Often the eldest child: responsible, high-achieving, a source of family pride, but often at the cost of their own needs and emotions."
+        },
+        {
+          "id": "fam-05",
+          "front": "The scapegoat role",
+          "back": "A child who, through difficult behaviour (rebellion, school problems), draws the family's attention and tension, diverting it from the drinking problem."
+        },
+        {
+          "id": "fam-06",
+          "front": "The lost child role",
+          "back": "A withdrawn, quiet, 'invisible' child who avoids conflict and causes no trouble but may be isolated and overlooked."
+        },
+        {
+          "id": "fam-07",
+          "front": "The mascot role",
+          "back": "A child who relieves tension through humour and clowning; draws attention and lightens the mood but may struggle to express real feelings."
+        },
+        {
+          "id": "fam-08",
+          "front": "'Don't talk, don't trust, don't feel' – author",
+          "back": "Claudia Black described these unwritten rules of families with alcohol problems, which teach children silence about the problem, mistrust and suppressing feelings."
+        },
+        {
+          "id": "fam-09",
+          "front": "ACoA (Adult Children of Alcoholics)",
+          "back": "Adults who grew up in families with alcohol problems, whose childhood experiences may affect adult functioning; it is not a diagnosis. Described by, among others, Janet Woititz."
+        },
+        {
+          "id": "fam-10",
+          "front": "CRAFT – what it stands for and authors",
+          "back": "Community Reinforcement and Family Training – an approach developed by Robert J. Meyers and colleagues (incl. Jane Ellen Smith, Brenda L. Wolfe) for relatives of people who refuse treatment."
+        },
+        {
+          "id": "fam-11",
+          "front": "CRAFT – goals",
+          "back": "Improving the well-being and functioning of family members, reducing the person's substance use and increasing the chance that they will enter treatment."
+        },
+        {
+          "id": "fam-12",
+          "front": "CRAFT – key techniques",
+          "back": "Functional analysis of use, positive communication, rewarding substance-free behaviour, allowing natural consequences of use, self-care, safety planning and choosing the moment to invite treatment."
+        },
+        {
+          "id": "fam-13",
+          "front": "CRAFT vs confrontational (Johnson) intervention",
+          "back": "In comparative studies CRAFT led to treatment entry more often than confrontational intervention or referral to Al-Anon, while placing less strain on the relationship."
+        },
+        {
+          "id": "fam-14",
+          "front": "Safety in family work",
+          "back": "Where there is violence in the family, the safety of those experiencing it (safety plan, Blue Card procedure) comes before work on the drinking person's motivation."
+        },
+        {
+          "id": "fam-15",
+          "front": "Stress–strain–coping–support model",
+          "back": "A model by Jim Orford and colleagues: living with a relative who uses substances causes stress and strain; family members cope by engaging, tolerating or withdrawing; social support buffers the effects."
+        },
+        {
+          "id": "fam-16",
+          "front": "5-Step Method",
+          "back": "A brief intervention for family members (Copello, Orford, Velleman et al.): listening, providing information, exploring coping, developing social support and arranging further help."
+        },
+        {
+          "id": "fam-17",
+          "front": "Genogram",
+          "back": "A graphic record of family structure, usually covering at least three generations, with key events and relationships; the notation was popularised by Monica McGoldrick and Randy Gerson."
+        },
+        {
+          "id": "fam-18",
+          "front": "Genogram – basic symbols",
+          "back": "A square stands for a male, a circle for a female, an X in the symbol for death; horizontal lines connect partners, vertical lines lead to children, and special lines show relationship quality (e.g. closeness, conflict)."
+        },
+        {
+          "id": "fam-19",
+          "front": "Ecomap – author and purpose",
+          "back": "Ann Hartman (1978). It shows the family in the context of its environment – institutions, people and groups – revealing sources of support and stress and the flow of resources."
+        },
+        {
+          "id": "fam-20",
+          "front": "Ecomap – line conventions",
+          "back": "A solid line means a strong, supportive tie, a dashed line a weak one, and a hatched line a stressful or conflictual relationship; arrows show the direction of energy or resource flow."
+        },
+        {
+          "id": "fam-21",
+          "front": "Systemic approach to the family",
+          "back": "The family is seen as a system of interconnected people; one member's problem affects everyone and may serve a function in maintaining the system's balance."
+        },
+        {
+          "id": "fam-22",
+          "front": "Family homeostasis – who coined it",
+          "back": "Don D. Jackson. The family's tendency to maintain its existing balance, even if dysfunctional, which can make change difficult."
+        },
+        {
+          "id": "fam-23",
+          "front": "Family boundaries – author and types",
+          "back": "Salvador Minuchin (structural therapy): boundaries can be clear, rigid (fostering disengagement) or diffuse (fostering enmeshment)."
+        },
+        {
+          "id": "fam-24",
+          "front": "Parentification",
+          "back": "Role reversal in which a child takes on duties and emotional responsibility appropriate for adults; the concept was introduced by Iván Böszörményi-Nagy."
+        },
+        {
+          "id": "fam-25",
+          "front": "Circumplex Model – author and dimensions",
+          "back": "David H. Olson. It describes family functioning along the dimensions of cohesion and flexibility, with communication as a facilitating dimension."
+        },
+        {
+          "id": "fam-26",
+          "front": "Mutual help for families",
+          "back": "Al-Anon – a fellowship for relatives of people with alcohol problems; Alateen – for teenagers. They offer support regardless of whether the drinking person enters treatment."
+        },
+        {
+          "id": "fam-27",
+          "front": "Protective factors for children in families with alcohol problems",
+          "back": "E.g. at least one stable, supportive adult, predictable family rituals, age-appropriate accurate information about the problem and support outside the home (school, day-care centre, group)."
+        }
+      ],
+      "builtIn": true
+    }
+  ]
+}

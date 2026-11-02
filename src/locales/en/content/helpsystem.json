@@ -1,0 +1,919 @@
+{
+  "intro": "This guide maps the Polish system of help for people with addiction problems, their families and people experiencing violence. It covers treatment (mostly funded by the National Health Fund, NFZ), municipal and county tasks, social welfare, the justice system, education, self-help and the central agency. The referral wizard suggests possible paths – the decision always rests with the professional. Names, competences and numbers may change: check the local institution's current details before referring.",
+  "institutions": [
+    {
+      "id": "addictionClinic",
+      "name": "Outpatient addiction clinic (poradnia leczenia uzależnień)",
+      "category": "treatment",
+      "role": "Outpatient individual and group therapy for people with alcohol, drug and behavioural addictions, as well as therapy for codependent people and family members.",
+      "forWhom": "Adults, and teenagers in clinics with a youth programme (with parents involved).",
+      "howToAccess": "Funded by the National Health Fund (NFZ), no referral needed; call or come in to book an appointment.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "inpatientUnit",
+      "name": "Inpatient addiction treatment ward or centre (oddział/ośrodek stacjonarny)",
+      "category": "treatment",
+      "role": "Residential therapy lasting several weeks; detoxification wards (treatment of withdrawal) exist separately.",
+      "forWhom": "People for whom outpatient care is not enough or who need distance from their environment.",
+      "howToAccess": "Usually after a consultation at a clinic; the centre sets admission dates, often with a waiting list.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "dayCentre",
+      "name": "Day-care addiction treatment unit (oddział dzienny)",
+      "category": "treatment",
+      "role": "Intensive daytime therapy over several weeks, without overnight stay.",
+      "forWhom": "People who can live at home but need more than weekly sessions.",
+      "howToAccess": "Funded by NFZ, after assessment – usually via a clinic.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "rehabCentre",
+      "name": "Rehabilitation centre for people dependent on psychoactive substances (ośrodek rehabilitacyjny)",
+      "category": "treatment",
+      "role": "Long-term residential therapy (usually several months), often as a therapeutic community; some centres serve young people.",
+      "forWhom": "People dependent mainly on drugs, including young people.",
+      "howToAccess": "Direct contact with the centre or via a clinic; detox is often required before admission.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "hostel",
+      "name": "Hostel for people in addiction recovery",
+      "category": "treatment",
+      "role": "Temporary accommodation after completing residential therapy, with continued therapy and support towards independence.",
+      "forWhom": "People after treatment who have no safe place to return to.",
+      "howToAccess": "Usually on request of the treatment centre or clinic; places are limited.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "consultationPoint",
+      "name": "Municipal consultation point (punkt konsultacyjny)",
+      "category": "local",
+      "role": "First contact: information, motivational conversation, family support, help for people experiencing violence, onward referral.",
+      "forWhom": "People with alcohol, drug or behavioural problems, their relatives, people experiencing violence.",
+      "howToAccess": "Free, no referral; address and hours from the municipal office or its website.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "gkrpa",
+      "name": "Municipal Commission for Solving Alcohol Problems (GKRPA)",
+      "category": "local",
+      "role": "Runs prevention, motivates people to seek treatment, handles proceedings on mandatory addiction treatment and may file a petition with the court; may start the \"Blue Card\" procedure.",
+      "forWhom": "People with alcohol problems, their families, and neighbours or institutions reporting a problem.",
+      "howToAccess": "A written report to the commission at the municipal/city office (can be filed by family or an institution).",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "interdisciplinaryTeam",
+      "name": "Interdisciplinary team for counteracting domestic violence (zespół interdyscyplinarny)",
+      "category": "local",
+      "role": "Coordinates help in domestic violence cases; receives Blue Cards, sets up diagnostic-and-support groups, plans and monitors help.",
+      "forWhom": "Families and individuals for whom the Blue Card procedure has been started.",
+      "howToAccess": "Usually via the institution starting the procedure; also contactable through the social welfare centre.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "socialWelfare",
+      "name": "Social welfare centre (ośrodek pomocy społecznej, OPS/MOPS)",
+      "category": "social",
+      "role": "Social work, benefits and in-kind aid, social contracts, family assistants, referral to shelters and services; part of the Blue Card procedure.",
+      "forWhom": "Residents in difficult life situations, incl. people with addiction, experiencing homelessness or leaving prison.",
+      "howToAccess": "Report in person or by phone to the centre for the place of residence; a social worker conducts an interview.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "pcpr",
+      "name": "County Family Support Centre (powiatowe centrum pomocy rodzinie, PCPR)",
+      "category": "social",
+      "role": "County tasks: foster care, support for young people leaving care institutions, support for people with disabilities, often crisis intervention.",
+      "forWhom": "Foster families, young people becoming independent (e.g. after MOW, MOS), families in crisis.",
+      "howToAccess": "Direct contact at the PCPR office (in large cities its tasks are performed by the municipal social welfare centre).",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "crisisCentre",
+      "name": "Crisis intervention centre (ośrodek interwencji kryzysowej, OIK)",
+      "category": "social",
+      "role": "Immediate psychological, social and legal help in a crisis; often shelter places for people experiencing violence.",
+      "forWhom": "People and families in acute crisis: violence, sudden loss, a suicide attempt in the family, loss of housing.",
+      "howToAccess": "No referral, regardless of income; many centres operate round the clock.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "homelessShelter",
+      "name": "Shelter, night shelter and warming centre for people experiencing homelessness",
+      "category": "social",
+      "role": "Temporary shelter, meals, social work; some shelters run programmes for leaving homelessness and support addiction treatment.",
+      "forWhom": "People experiencing homelessness, including those under the influence of alcohol (warming centres, night shelters).",
+      "howToAccess": "Via the social welfare centre (referral to a shelter); night shelters and warming centres – directly; in winter also via municipal police and police.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "familyProbation",
+      "name": "Family probation officer (kurator rodzinny)",
+      "category": "justice",
+      "role": "Carries out family court orders: supervision of juveniles and families, supervision in addiction treatment cases; conducts social background inquiries.",
+      "forWhom": "Juveniles, families with limited parental authority, people ordered to undergo addiction treatment.",
+      "howToAccess": "Assigned by the court; contact via the probation team at the district court.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "adultProbation",
+      "name": "Adult probation officer (kurator dla dorosłych)",
+      "category": "justice",
+      "role": "Supervises convicted people (e.g. suspended sentence, conditional early release), monitors obligations including therapy; supports readaptation.",
+      "forWhom": "Convicted people on probation and people leaving prison.",
+      "howToAccess": "Assigned by the court; contact via the probation team at the district court.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "familyCourt",
+      "name": "Family court (family and juvenile division of the district court, sąd rodzinny)",
+      "category": "justice",
+      "role": "Rules on juvenile cases (educational and correctional measures), parental authority, foster care and mandatory addiction treatment.",
+      "forWhom": "Juveniles and their families, children at risk, people with alcohol problems (on petition from GKRPA or a prosecutor).",
+      "howToAccess": "A written petition or notice to the district court for the place of residence; anyone aware of a child at risk may file it.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "police",
+      "name": "Police (112)",
+      "category": "justice",
+      "role": "Intervention in danger, detaining a perpetrator, orders to leave the home and not to approach the victim; starting a Blue Card.",
+      "forWhom": "Anyone whose life, health or property is in danger.",
+      "howToAccess": "Emergency number 112 – 24/7; for non-urgent matters – the local station or community officer.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "readaptationCentre",
+      "name": "Post-penitentiary help and social readaptation services",
+      "category": "justice",
+      "role": "Help for people leaving prison and their families: counselling, in-kind aid, transitional housing, employment support; run by NGOs among others, often funded by the Justice Fund.",
+      "forWhom": "People leaving prison or pre-trial detention and their relatives.",
+      "howToAccess": "Information from the prison educator, the probation officer or social welfare; a current list of providers on the Ministry of Justice websites.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "counsellingCentre",
+      "name": "Psychological and pedagogical counselling centre (poradnia psychologiczno-pedagogiczna, PPP)",
+      "category": "education",
+      "role": "Assessment, therapy and consultations for children, adolescents and parents; issues opinions and statements (e.g. on special educational needs); supports schools in prevention.",
+      "forWhom": "Children and young people until the end of schooling, their parents and teachers.",
+      "howToAccess": "Free, no referral; a parent (or adult pupil) books an appointment at the local centre.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "schoolPedagogue",
+      "name": "School pedagogue and psychologist (pedagog szkolny)",
+      "category": "education",
+      "role": "First line of support at school: conversation, contact with parents, intervention, a psychological-pedagogical support plan, referral to counselling; carrying out school prevention.",
+      "forWhom": "Pupils, their parents and teachers.",
+      "howToAccess": "Directly at school; a pupil can come alone.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "youthCentres",
+      "name": "Youth sociotherapy centre (MOS) and youth educational centre (MOW)",
+      "category": "education",
+      "role": "MOS: schooling and sociotherapy for young people at risk of social maladjustment. MOW: schooling and resocialization for socially maladjusted young people placed by a court.",
+      "forWhom": "School-age children and adolescents.",
+      "howToAccess": "MOS – with parental consent, based on a counselling centre statement, via the county office; MOW – based on a family court order, referral under current education regulations.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "juvenileFacilities",
+      "name": "Juvenile shelter and correctional facility (schronisko dla nieletnich, zakład poprawczy)",
+      "category": "justice",
+      "role": "Shelter – temporary placement during proceedings; correctional facility – carrying out a correctional measure for juveniles who committed punishable acts. Facilities of the Ministry of Justice.",
+      "forWhom": "Juveniles in family court proceedings.",
+      "howToAccess": "Only by court order.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "aa",
+      "name": "Alcoholics Anonymous (AA)",
+      "category": "selfHelp",
+      "role": "Self-help fellowship based on the 12 steps; open and closed meetings.",
+      "forWhom": "People who want to stop drinking; relatives and professionals may attend open meetings.",
+      "howToAccess": "Free, no registration; meeting list on the website of AA in Poland.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "na",
+      "name": "Narcotics Anonymous (NA)",
+      "category": "selfHelp",
+      "role": "12-step self-help fellowship for people addicted to substances.",
+      "forWhom": "People who want to stop using drugs or other substances.",
+      "howToAccess": "Free, no registration; meeting list on the NA Poland website.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "alAnon",
+      "name": "Al-Anon and Alateen",
+      "category": "selfHelp",
+      "role": "Self-help groups for families and friends of people with alcohol problems; Alateen – for teenagers.",
+      "forWhom": "Partners, parents, adult children and teenage children of people who drink.",
+      "howToAccess": "Free, no registration; group list on the Al-Anon Poland website.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ga",
+      "name": "Gamblers Anonymous (Anonimowi Hazardziści, AH)",
+      "category": "selfHelp",
+      "role": "12-step self-help fellowship for people with gambling problems.",
+      "forWhom": "People who want to stop gambling.",
+      "howToAccess": "Free; meetings in larger cities and online.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "helplines",
+      "name": "Helplines and support lines (telefony zaufania)",
+      "category": "phone",
+      "role": "Anonymous conversation, emotional support, information on help – e.g. 116 123, 116 111, 800 120 002 (Blue Line).",
+      "forWhom": "Anyone in crisis, people with addictions, relatives, children and young people, people experiencing violence.",
+      "howToAccess": "By phone, some also via chat or e-mail; numbers in the \"Crisis help\" section.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "kcpu",
+      "name": "National Centre for Counteracting Addictions (Krajowe Centrum Przeciwdziałania Uzależnieniom, KCPU)",
+      "category": "central",
+      "role": "State body supervised by the Minister of Health, operating since 1 January 2022; it took over the tasks of the former PARPA (alcohol agency) and the former National Bureau for Drug Prevention. Responsible for policy on alcohol, drugs and behavioural addictions: prevention programmes, training, certification, recommendations, support for local governments.",
+      "forWhom": "Professionals, local governments, schools, organisations; indirectly – all residents.",
+      "howToAccess": "The KCPU website (materials, database of recommended programmes, information on training and certification).",
+      "reviewStatus": "do_weryfikacji"
+    }
+  ],
+  "referral": {
+    "questions": [
+      {
+        "id": "age",
+        "text": "How old is the person concerned?",
+        "options": [
+          {
+            "id": "minor",
+            "label": "Minor (under 18)"
+          },
+          {
+            "id": "adult",
+            "label": "Adult"
+          }
+        ]
+      },
+      {
+        "id": "problem",
+        "text": "What is the main problem?",
+        "options": [
+          {
+            "id": "alcohol",
+            "label": "Alcohol"
+          },
+          {
+            "id": "drugs",
+            "label": "Drugs / other substances"
+          },
+          {
+            "id": "behavioural",
+            "label": "Behavioural addiction (gambling, gaming, internet)"
+          },
+          {
+            "id": "codependency",
+            "label": "Relative of a person with addiction (codependency)"
+          },
+          {
+            "id": "violence",
+            "label": "Domestic violence"
+          }
+        ]
+      },
+      {
+        "id": "context",
+        "text": "In what context does the situation arise?",
+        "options": [
+          {
+            "id": "school",
+            "label": "School"
+          },
+          {
+            "id": "justice",
+            "label": "Justice system (court, probation, proceedings)"
+          },
+          {
+            "id": "postPenitentiary",
+            "label": "After leaving prison or an institution"
+          },
+          {
+            "id": "homeless",
+            "label": "Homelessness"
+          },
+          {
+            "id": "family",
+            "label": "Family"
+          },
+          {
+            "id": "none",
+            "label": "No specific context"
+          }
+        ]
+      },
+      {
+        "id": "urgency",
+        "text": "How urgent is the situation?",
+        "options": [
+          {
+            "id": "crisis",
+            "label": "Crisis – danger now"
+          },
+          {
+            "id": "planned",
+            "label": "Planned help"
+          }
+        ]
+      }
+    ],
+    "rules": [
+      {
+        "id": "crisisAny",
+        "title": "Crisis – danger now",
+        "when": {
+          "urgency": ["crisis"]
+        },
+        "institutionIds": ["police", "crisisCentre", "helplines"],
+        "steps": [
+          "If life or health is at risk (incl. suicidal thoughts, overdose) call 112.",
+          "Do not leave the person alone if safe to stay; remove access to dangerous objects and substances.",
+          "Once immediate danger is over – contact a crisis intervention centre or helpline (116 123; for young people 116 111).",
+          "Write down what happened and inform your supervisor according to your institution's procedure."
+        ],
+        "note": "This path takes priority over all others."
+      },
+      {
+        "id": "violenceCrisis",
+        "title": "Domestic violence – immediate danger",
+        "when": {
+          "problem": ["violence"],
+          "urgency": ["crisis"]
+        },
+        "institutionIds": [
+          "police",
+          "crisisCentre",
+          "socialWelfare",
+          "interdisciplinaryTeam"
+        ],
+        "steps": [
+          "Call 112 – the police can order the person using violence to leave the home immediately and not to approach.",
+          "Secure a safe place for the person experiencing violence (and children) – if needed, shelter at a crisis centre.",
+          "Start, or ask for, the Blue Card procedure (form A, handing over form B).",
+          "If a child is in immediate danger, a social worker with the police and a health professional can take the child to safety – notify social welfare."
+        ]
+      },
+      {
+        "id": "violenceAny",
+        "title": "Domestic violence – help plan",
+        "when": {
+          "problem": ["violence"]
+        },
+        "institutionIds": [
+          "interdisciplinaryTeam",
+          "socialWelfare",
+          "consultationPoint",
+          "crisisCentre",
+          "helplines"
+        ],
+        "steps": [
+          "Talk with the person in private; record facts without judgement.",
+          "Start the Blue Card procedure or inform an authorised institution (social welfare, police, GKRPA, school, health care).",
+          "Make a safety plan with the person (key numbers, documents, a safe place).",
+          "Point to the Blue Line 800 120 002 and the municipal consultation point."
+        ],
+        "note": "Do not suggest mediation or joint meetings with the person using violence."
+      },
+      {
+        "id": "violenceMinor",
+        "title": "Violence against a child or teenager",
+        "when": {
+          "age": ["minor"],
+          "problem": ["violence"]
+        },
+        "institutionIds": [
+          "schoolPedagogue",
+          "socialWelfare",
+          "interdisciplinaryTeam",
+          "familyCourt",
+          "helplines"
+        ],
+        "steps": [
+          "Receive what the child says calmly; do not promise secrecy or interrogate.",
+          "Complete \"Blue Card – A\" (where possible with a non-offending parent) and send it to the interdisciplinary team.",
+          "If the child's welfare is at risk, notify the family court; if a crime is suspected – the police or prosecutor.",
+          "Give the child the number 116 111."
+        ]
+      },
+      {
+        "id": "minorSubstanceSchool",
+        "title": "Minor + substances + school",
+        "when": {
+          "age": ["minor"],
+          "problem": ["alcohol", "drugs"],
+          "context": ["school"]
+        },
+        "institutionIds": [
+          "schoolPedagogue",
+          "counsellingCentre",
+          "consultationPoint",
+          "addictionClinic"
+        ],
+        "steps": [
+          "The pedagogue talks with the pupil (without shaming) and promptly informs the parents under the school procedure.",
+          "Meeting with parents: agreements, a contract, a suggested consultation at a counselling centre or youth addiction clinic.",
+          "If parents do not cooperate or behaviour indicates demoralisation – notify the family court.",
+          "If possession or dealing is suspected – police, according to the school procedure."
+        ]
+      },
+      {
+        "id": "minorJustice",
+        "title": "Minor in court proceedings",
+        "when": {
+          "age": ["minor"],
+          "context": ["justice"]
+        },
+        "institutionIds": [
+          "familyCourt",
+          "familyProbation",
+          "youthCentres",
+          "juvenileFacilities",
+          "counsellingCentre"
+        ],
+        "steps": [
+          "Find out which measures the family court has imposed or is considering (e.g. probation supervision, MOW).",
+          "Work with the family probation officer; agree a joint plan.",
+          "Bring in therapy (youth clinic, counselling centre) and the family."
+        ]
+      },
+      {
+        "id": "minorAlcohol",
+        "title": "Teenager and alcohol",
+        "when": {
+          "age": ["minor"],
+          "problem": ["alcohol"]
+        },
+        "institutionIds": [
+          "consultationPoint",
+          "counsellingCentre",
+          "addictionClinic",
+          "alAnon"
+        ],
+        "steps": [
+          "A motivational conversation with the teenager and a meeting with parents.",
+          "Consultation at a consultation point or counselling centre; with heavy drinking – an addiction clinic with a youth programme.",
+          "If a parent drinks – suggest an Alateen group."
+        ]
+      },
+      {
+        "id": "minorDrugs",
+        "title": "Teenager and drugs",
+        "when": {
+          "age": ["minor"],
+          "problem": ["drugs"]
+        },
+        "institutionIds": [
+          "addictionClinic",
+          "rehabCentre",
+          "consultationPoint",
+          "counsellingCentre"
+        ],
+        "steps": [
+          "Assess the level of involvement (experimenting, harmful use, dependence) – without labelling.",
+          "Consultation at a youth clinic; with dependence – a youth rehabilitation centre.",
+          "Support for parents (e.g. a CRAFT-based programme, parent groups)."
+        ]
+      },
+      {
+        "id": "minorPostInstitution",
+        "title": "Teenager after leaving an institution",
+        "when": {
+          "age": ["minor"],
+          "context": ["postPenitentiary"]
+        },
+        "institutionIds": [
+          "familyProbation",
+          "pcpr",
+          "schoolPedagogue",
+          "counsellingCentre"
+        ],
+        "steps": [
+          "Check whether probation supervision was ordered – and contact the officer.",
+          "Plan the return to school and afternoon activities (day-care centre, probation day centre, sport).",
+          "Support towards independence (PCPR) for the young person leaving the facility."
+        ]
+      },
+      {
+        "id": "minorHomeless",
+        "title": "Teenager without a safe place to live",
+        "when": {
+          "age": ["minor"],
+          "context": ["homeless"]
+        },
+        "institutionIds": ["police", "socialWelfare", "pcpr", "familyCourt"],
+        "steps": [
+          "Child without care – ensure safety, notify the police or social welfare.",
+          "Social welfare and the PCPR organise family support or (emergency) foster care.",
+          "The family court decides on care and possible measures regarding the parents."
+        ]
+      },
+      {
+        "id": "adultAlcohol",
+        "title": "Adult with an alcohol problem",
+        "when": {
+          "age": ["adult"],
+          "problem": ["alcohol"]
+        },
+        "institutionIds": [
+          "addictionClinic",
+          "dayCentre",
+          "inpatientUnit",
+          "aa",
+          "consultationPoint"
+        ],
+        "steps": [
+          "A motivational conversation; agree together what the person wants.",
+          "An addiction clinic (NFZ, no referral) as the first step; with withdrawal symptoms – a detox ward.",
+          "Depending on need: day unit or residential therapy, then continued care at the clinic.",
+          "Suggest an AA meeting (an open one – you can go together)."
+        ]
+      },
+      {
+        "id": "adultAlcoholFamily",
+        "title": "Alcohol in the family – refusing treatment",
+        "when": {
+          "age": ["adult"],
+          "problem": ["alcohol"],
+          "context": ["family"]
+        },
+        "institutionIds": [
+          "gkrpa",
+          "consultationPoint",
+          "alAnon",
+          "familyCourt"
+        ],
+        "steps": [
+          "Support for relatives: consultation point, family therapy at a clinic, Al-Anon.",
+          "If drinking causes family breakdown, demoralisation of minors, evasion of work or disturbing public order – a report to the GKRPA.",
+          "The GKRPA invites the person to talk, may refer for expert examination and petition the court for mandatory treatment.",
+          "If there is violence in the family – the Blue Card procedure in parallel."
+        ]
+      },
+      {
+        "id": "adultDrugs",
+        "title": "Adult who uses drugs",
+        "when": {
+          "age": ["adult"],
+          "problem": ["drugs"]
+        },
+        "institutionIds": [
+          "addictionClinic",
+          "rehabCentre",
+          "dayCentre",
+          "na",
+          "consultationPoint"
+        ],
+        "steps": [
+          "A motivational conversation and harm-reduction information (e.g. risks of mixing substances).",
+          "An addiction clinic; if needed – detox, then a rehabilitation centre or day unit.",
+          "The NA fellowship as long-term support."
+        ]
+      },
+      {
+        "id": "afterSentenceSubstances",
+        "title": "Person after a sentence or leaving prison + alcohol/drugs",
+        "when": {
+          "age": ["adult"],
+          "problem": ["alcohol", "drugs"],
+          "context": ["postPenitentiary", "justice"]
+        },
+        "institutionIds": [
+          "adultProbation",
+          "readaptationCentre",
+          "addictionClinic",
+          "hostel",
+          "socialWelfare",
+          "aa",
+          "na"
+        ],
+        "steps": [
+          "Clarify obligations from the judgement (e.g. a therapy obligation) and contact the probation officer.",
+          "Book the first appointment at an addiction clinic, ideally before release or in the first week.",
+          "Secure housing (family, hostel, transitional housing) and documents; social welfare – immediate aid.",
+          "Warn about overdose risk after abstinence (lower tolerance)."
+        ]
+      },
+      {
+        "id": "postPenitentiaryAny",
+        "title": "Person leaving prison – readaptation",
+        "when": {
+          "age": ["adult"],
+          "context": ["postPenitentiary"]
+        },
+        "institutionIds": [
+          "readaptationCentre",
+          "socialWelfare",
+          "adultProbation"
+        ],
+        "steps": [
+          "Readaptation plan: documents, registration, health insurance, housing, work.",
+          "Use post-penitentiary help (organisations funded by the Justice Fund, social welfare).",
+          "Strengthen family relationships and the support network."
+        ]
+      },
+      {
+        "id": "justiceAdult",
+        "title": "Adult under supervision or in proceedings",
+        "when": {
+          "age": ["adult"],
+          "context": ["justice"]
+        },
+        "institutionIds": [
+          "adultProbation",
+          "addictionClinic",
+          "consultationPoint"
+        ],
+        "steps": [
+          "Cooperation with the probation officer: clear goals and telling the client what is reported to the court.",
+          "If substances are involved – check whether treatment can replace or supplement punishment (e.g. mechanisms of the drug act).",
+          "Refer to therapy or correctional-educational programmes."
+        ]
+      },
+      {
+        "id": "homelessSubstances",
+        "title": "Homelessness + alcohol/drugs",
+        "when": {
+          "age": ["adult"],
+          "problem": ["alcohol", "drugs"],
+          "context": ["homeless"]
+        },
+        "institutionIds": [
+          "homelessShelter",
+          "socialWelfare",
+          "addictionClinic",
+          "inpatientUnit",
+          "hostel",
+          "aa"
+        ],
+        "steps": [
+          "Shelter and safety first (especially in winter: night shelter, warming centre).",
+          "Social welfare: social work, shelter referral, help with documents and insurance.",
+          "Offer treatment without preconditions: clinic, detox, residential therapy, then a hostel.",
+          "Outreach and regular contact build trust."
+        ]
+      },
+      {
+        "id": "homelessAny",
+        "title": "Homelessness",
+        "when": {
+          "age": ["adult"],
+          "context": ["homeless"]
+        },
+        "institutionIds": ["homelessShelter", "socialWelfare", "crisisCentre"],
+        "steps": [
+          "Find out where the person will spend the coming night.",
+          "Contact the social welfare centre for the place of stay.",
+          "With violence or sudden loss of housing – crisis intervention centre."
+        ]
+      },
+      {
+        "id": "behavioural",
+        "title": "Behavioural addiction (gambling, gaming, internet)",
+        "when": {
+          "problem": ["behavioural"]
+        },
+        "institutionIds": [
+          "addictionClinic",
+          "consultationPoint",
+          "ga",
+          "helplines"
+        ],
+        "steps": [
+          "A motivational conversation; review of costs (money, sleep, relationships, school/work).",
+          "Consultation at an addiction clinic or consultation point.",
+          "For gambling – Gamblers Anonymous, limiting access to money, debt support."
+        ]
+      },
+      {
+        "id": "behaviouralMinor",
+        "title": "Teenager, gaming and the internet",
+        "when": {
+          "age": ["minor"],
+          "problem": ["behavioural"]
+        },
+        "institutionIds": [
+          "schoolPedagogue",
+          "counsellingCentre",
+          "consultationPoint"
+        ],
+        "steps": [
+          "Talk with the teenager and parents about the function of gaming (boredom, escape, social contact).",
+          "Shared rules for device use and alternative activities.",
+          "Consultation at a counselling centre."
+        ]
+      },
+      {
+        "id": "codependency",
+        "title": "Relative of a person with addiction",
+        "when": {
+          "problem": ["codependency"]
+        },
+        "institutionIds": [
+          "consultationPoint",
+          "addictionClinic",
+          "alAnon",
+          "socialWelfare"
+        ],
+        "steps": [
+          "Listen and name the burden; stress that the relative is entitled to help for themselves.",
+          "Therapy for codependent people at a clinic (NFZ) or support at a consultation point.",
+          "Al-Anon groups; CRAFT elements if the relative wants to motivate the person towards treatment.",
+          "Check safety – is there violence at home?"
+        ]
+      },
+      {
+        "id": "codependencyMinor",
+        "title": "Child from a family with alcohol or drug problems",
+        "when": {
+          "age": ["minor"],
+          "problem": ["codependency"]
+        },
+        "institutionIds": [
+          "schoolPedagogue",
+          "counsellingCentre",
+          "alAnon",
+          "socialWelfare"
+        ],
+        "steps": [
+          "Give the child regular contact with a trusted adult at school.",
+          "Suggest sociotherapy or a day-care centre; for teenagers – Alateen.",
+          "Assess whether the child is safe and cared for; if in doubt – social welfare, Blue Card, family court."
+        ]
+      }
+    ]
+  },
+  "legal": [
+    {
+      "id": "alcoholAct",
+      "title": "Act on Upbringing in Sobriety and Counteracting Alcoholism (ustawa o wychowaniu w trzeźwości…, 1982)",
+      "summary": "The core law on alcohol policy: sets municipal tasks, rules on alcohol sales and advertising, funding of prevention and the procedure for mandatory addiction treatment.",
+      "keyPoints": [
+        "The municipality runs a municipal programme for preventing and solving alcohol problems (it may be combined with drug prevention), funded by fees for alcohol sale licences.",
+        "The municipality appoints the GKRPA and runs consultation points.",
+        "Addiction treatment is voluntary in principle; the exception is a court order.",
+        "Procedure: report to the GKRPA → interview with the person → examination by experts (psychologist, psychiatrist) → GKRPA petition to the district court → the court may order inpatient or outpatient treatment and appoint probation supervision.",
+        "Grounds: dependence plus at least one of: family breakdown, demoralisation of minors, evasion of work, systematic disturbance of public peace or order."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "drugAct",
+      "title": "Act on Counteracting Drug Addiction (ustawa o przeciwdziałaniu narkomanii, 2005)",
+      "summary": "Regulates prevention, treatment, rehabilitation and reintegration of people dependent on drugs, as well as substance control and penal provisions. It contains \"treatment instead of punishment\" mechanisms.",
+      "keyPoints": [
+        "Treatment is voluntary; for minors parents or the family court may decide.",
+        "A prosecutor may suspend proceedings against a dependent person who undergoes treatment (art. 72).",
+        "Proceedings concerning possession of a small amount for personal use may be discontinued (art. 62a).",
+        "The court may oblige a dependent convicted person to undergo treatment, and time in treatment may count towards the sentence.",
+        "Municipalities carry out drug prevention tasks within their municipal programme."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "juvenileAct",
+      "title": "Act on Supporting and Resocialising Juveniles (ustawa o wspieraniu i resocjalizacji nieletnich, 2022)",
+      "summary": "In force since 1 September 2022, replacing the 1982 Juvenile Proceedings Act. It sets rules for preventing demoralisation, family court proceedings and carrying out measures for juveniles.",
+      "keyPoints": [
+        "The juvenile's welfare is the guiding principle; measures are matched to needs and situation.",
+        "The act sets a lower age limit in demoralisation cases (10 years) and liability for punishable acts from age 13.",
+        "A school head may, with the consent of parents and the pupil, apply an educational measure (e.g. admonition, warning, apology) in specified cases.",
+        "Educational measures (e.g. probation supervision, MOW), correctional measure (correctional facility), juvenile shelter as an interim measure.",
+        "Mediation is possible in juvenile cases."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "violenceAct",
+      "title": "Act on Counteracting Domestic Violence (2005, amended 2023)",
+      "summary": "Originally the Act on Counteracting Family Violence; the 2023 amendment changed its title and widened protection. It regulates the Blue Card procedure, municipal and county tasks and measures protecting people experiencing violence.",
+      "keyPoints": [
+        "The definition covers physical, psychological, sexual and economic violence and violence using electronic communication.",
+        "Protection also covers former spouses and partners and people sharing a household; a child witness is a person experiencing violence.",
+        "The municipality appoints an interdisciplinary team; diagnostic-and-support groups replaced working groups.",
+        "The police can order immediate departure from the shared home and prohibit approaching.",
+        "Starting the Blue Card procedure does not require the consent of the person experiencing violence."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "publicHealthAct",
+      "title": "Public Health Act (2015) and the National Health Programme",
+      "summary": "The Public Health Act sets the framework for the National Health Programme (Narodowy Program Zdrowia, NPZ), adopted by the Council of Ministers for several years. The NPZ covers prevention of alcohol, drug, tobacco and behavioural addictions and sets directions for local governments.",
+      "keyPoints": [
+        "The NPZ is adopted by Council of Ministers regulation for successive periods (e.g. 2021–2025) – check the current edition.",
+        "Municipal prevention programmes should be consistent with NPZ goals.",
+        "Prevention funding comes from alcohol licence fees (municipalities) and central funds, among others.",
+        "Programmes with proven effectiveness (recommended programmes) are promoted."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "kcpu",
+      "title": "National Centre for Counteracting Addictions (KCPU)",
+      "summary": "Since 1 January 2022 the KCPU has been the central body responsible for addiction policy. It replaced two former bodies: the State Agency for Solving Alcohol Problems (PARPA) and the National Bureau for Drug Prevention – these names now refer only to historical institutions.",
+      "keyPoints": [
+        "Supervised by the minister responsible for health.",
+        "Covers alcohol, drugs and behavioural addictions in a single body.",
+        "Carries out NPZ tasks, supports and advises local governments, runs a database of recommended programmes.",
+        "Runs the training and certification system for, among others, addiction therapy specialists and instructors – relevant for the planned career path."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    }
+  ],
+  "crisis": [
+    {
+      "id": "ch143",
+      "country": "CH",
+      "number": "143",
+      "name": "Die Dargebotene Hand / La Main Tendue",
+      "description": "Round-the-clock anonymous helpline in Switzerland for adults in crisis (also chat).",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch147",
+      "country": "CH",
+      "number": "147",
+      "name": "Pro Juventute – line for children and young people",
+      "description": "Free, confidential help for children and young people in Switzerland: phone, chat, text.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch144",
+      "country": "CH",
+      "number": "144",
+      "name": "Ambulance (Switzerland)",
+      "description": "Immediate danger to life or health, incl. poisoning or overdose.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch117",
+      "country": "CH",
+      "number": "117",
+      "name": "Police (Switzerland)",
+      "description": "Threats to safety, violence.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "pl116123",
+      "country": "PL",
+      "number": "116 123",
+      "name": "Crisis helpline for adults",
+      "description": "Emotional support for adults in crisis.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "pl116111",
+      "country": "PL",
+      "number": "116 111",
+      "name": "Helpline for children and young people",
+      "description": "Free, anonymous help for children and teenagers (also chat).",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "pl800120002",
+      "country": "PL",
+      "number": "800 120 002",
+      "name": "Blue Line (Niebieska Linia) – helpline for people experiencing domestic violence",
+      "description": "Support and information for people experiencing domestic violence, their relatives and witnesses.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "pl800702222",
+      "country": "PL",
+      "number": "800 70 2222",
+      "name": "Support Centre for people in mental health crisis",
+      "description": "Round-the-clock support line for adults in mental health crisis.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "pl112",
+      "country": "PL",
+      "number": "112",
+      "name": "Emergency number 112",
+      "description": "Immediate danger to life, health or safety: ambulance, police, fire service. Works across the EU.",
+      "reviewStatus": "do_weryfikacji"
+    }
+  ],
+  "countryNote": "The institutions and laws described here concern Poland; crisis numbers are given for Switzerland and Poland."
+}

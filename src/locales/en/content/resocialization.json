@@ -1,0 +1,430 @@
+{
+  "cards": [
+    {
+      "id": "resocializationConcepts",
+      "section": "resocialization",
+      "title": "Concepts of resocialization",
+      "essence": "Resocialization is purposeful educational work with socially maladjusted people, aimed at a lasting change in attitudes and behaviour and at independent, norm-abiding functioning in society. Polish tradition (Cz. Czapów, L. Pytka) stresses that it is not about control alone but about development: rebuilding bonds, social competences and a sense of agency. Today educational, therapeutic and community-based approaches are combined.",
+      "whenToUse": [
+        "Planning an individual programme for a young person in care or a person under supervision.",
+        "Justifying the choice of methods in records and in academic work.",
+        "Team discussions on whether actions are educational or merely disciplinary."
+      ],
+      "techniques": [
+        "Pedagogical assessment: resources, deficits, environment, risk and protective factors.",
+        "Influence through the educator and the relationship (role model, trust, consistency).",
+        "Work in three areas: cognitive (norms, values), emotional and behavioural.",
+        "Involving the family and local community in the change process."
+      ],
+      "phrases": [
+        "What is already working in your life that we can build on?",
+        "I want you to leave here with something truly yours – a skill, a passion, people."
+      ],
+      "pitfalls": [
+        "Equating resocialization with punishment and isolation alone.",
+        "Focusing only on deficits and labelling the person.",
+        "No plan for the time after leaving the institution."
+      ],
+      "sources": [
+        {
+          "authors": "Czapów Cz.",
+          "year": 1978,
+          "title": "Wychowanie resocjalizujące. Elementy metodyki i diagnostyki",
+          "publisher": "PWN"
+        },
+        {
+          "authors": "Pytka L.",
+          "year": 2000,
+          "title": "Pedagogika resocjalizacyjna. Wybrane zagadnienia teoretyczne, diagnostyczne i metodyczne",
+          "publisher": "Wydawnictwo APS"
+        },
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["resocialization", "theory", "pedagogy"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "creativeResocialization",
+      "section": "resocialization",
+      "title": "Creative resocialization (M. Konopczyński)",
+      "essence": "Marek Konopczyński's concept holds that change happens mainly by developing potentials and building a new social identity, rather than by correcting deficits. It uses creative activities (theatre, music, sport, art, media) in which the young person succeeds, gains new roles and positive feedback from others. An identity of \"someone who can do something\" gradually replaces a deviant identity.",
+      "whenToUse": [
+        "Work with young people in youth educational and sociotherapy centres, day-care centres and correctional facilities.",
+        "When classic methods (talks, reward-and-punishment systems) bring no effect.",
+        "When building motivation and self-worth."
+      ],
+      "techniques": [
+        "Assessing the young person's interests and hidden abilities.",
+        "Culture-based methods: resocialization through theatre, music, art, sport.",
+        "Public presentation of results (performance, exhibition, competition) – an experience of recognition.",
+        "Gradually transferring new roles to life outside the institution."
+      ],
+      "phrases": [
+        "I saw you lead the rehearsal – the others listened to you. How was that?",
+        "What would you like to learn if there were no limits?"
+      ],
+      "pitfalls": [
+        "Treating creative activities as time-fillers without an educational aim.",
+        "Imposing an activity instead of starting from the young person's interests.",
+        "No continuation after leaving the institution."
+      ],
+      "sources": [
+        {
+          "authors": "Konopczyński M.",
+          "year": 2006,
+          "title": "Metody twórczej resocjalizacji. Teoria i praktyka wychowawcza",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["creative resocialization", "youth", "identity"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "socialMaladjustment",
+      "section": "resocialization",
+      "title": "Social maladjustment",
+      "essence": "Social maladjustment is an entrenched pattern of behaviour and attitudes in conflict with social norms and role expectations (e.g. pupil, family member). Cz. Czapów and L. Pytka describe it as a graded phenomenon: from being at risk, through early signs, to entrenched demoralisation. Assessment considers individual, family, school, peer and community factors.",
+      "whenToUse": [
+        "Pedagogical assessment of a child or teenager with behavioural difficulties.",
+        "Choosing the level of intervention: prevention, sociotherapy, resocialization.",
+        "Preparing an opinion for a school, counselling centre or family court."
+      ],
+      "techniques": [
+        "Observing behaviour in various settings and from various informants (school, home, group).",
+        "Social background interview and document review.",
+        "Distinguishing behavioural disorder from a reaction to crisis or abuse.",
+        "Mapping risk and protective factors."
+      ],
+      "phrases": [
+        "When does this behaviour get worse, and when is it absent?",
+        "I am describing behaviour, not judging you as a person."
+      ],
+      "pitfalls": [
+        "Labelling (\"demoralised\") instead of describing behaviour.",
+        "Overlooking violence or addiction in the family as background to behaviour.",
+        "Assessment based on a single source of information."
+      ],
+      "sources": [
+        {
+          "authors": "Czapów Cz.",
+          "year": 1978,
+          "title": "Wychowanie resocjalizujące. Elementy metodyki i diagnostyki",
+          "publisher": "PWN"
+        },
+        {
+          "authors": "Pytka L.",
+          "year": 2000,
+          "title": "Pedagogika resocjalizacyjna. Wybrane zagadnienia teoretyczne, diagnostyczne i metodyczne",
+          "publisher": "Wydawnictwo APS"
+        },
+        {
+          "authors": "Wysocka E.",
+          "year": 2008,
+          "title": "Diagnoza w resocjalizacji",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["social maladjustment", "assessment", "demoralisation"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "sociotherapy",
+      "section": "resocialization",
+      "title": "Sociotherapy",
+      "essence": "Sociotherapy is a form of help for children and adolescents with behavioural problems or at risk of social maladjustment, usually run in groups. Its core is corrective experience: in a safe group the participant experiences relationships differently than before (e.g. being listened to instead of rejected). It combines therapeutic, educational (new skills) and developmental aims.",
+      "whenToUse": [
+        "Sociotherapy day-care centres, youth sociotherapy centres, schools, counselling centres.",
+        "Children from families with alcohol problems or violence.",
+        "Peer relationship difficulties, aggression, withdrawal."
+      ],
+      "techniques": [
+        "Group contract and rules agreed together.",
+        "Exercises, games and drama creating corrective experiences.",
+        "Social skills training and recognising emotions.",
+        "A fixed session structure: warm-up, main part, debrief, closing."
+      ],
+      "phrases": [
+        "What did you feel when the group listened to you?",
+        "In this group everyone has the right to say \"pass\"."
+      ],
+      "pitfalls": [
+        "Running sessions like a form-class lesson, without experience and debrief.",
+        "A group that is too large or made up only of very challenging participants.",
+        "No cooperation with parents and school."
+      ],
+      "sources": [
+        {
+          "authors": "Sawicka K. (red.)",
+          "year": 1998,
+          "title": "Socjoterapia",
+          "publisher": "Centrum Metodyczne Pomocy Psychologiczno-Pedagogicznej"
+        },
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["sociotherapy", "group", "children"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "openEnvironment",
+      "section": "resocialization",
+      "title": "Work in the open environment",
+      "essence": "Resocialization in the open environment takes place without isolation – where the person lives, studies, works and in the local community. It includes probation supervision, day-care centres, youth clubs, probation day centres (ośrodki kuratorskie), mediation and correctional programmes. It assumes that change lasts longer when it happens in the person's natural surroundings with their support network.",
+      "whenToUse": [
+        "When isolation is not necessary or would be harmful (especially for young people).",
+        "After leaving an institution – as continuation of work.",
+        "In selective and indicated prevention."
+      ],
+      "techniques": [
+        "Mapping community resources (ecomap): people, institutions, places.",
+        "Cooperation with the probation officer, school, social welfare centre and NGOs.",
+        "Correctional-educational programmes and skills training.",
+        "Encouraging local activity (volunteering, sport, culture)."
+      ],
+      "phrases": [
+        "Who in your neighbourhood matters to you and could help?",
+        "Let's find a place where you can spend afternoons differently than before."
+      ],
+      "pitfalls": [
+        "Working alone, without a network of cooperating institutions.",
+        "Ignoring the influence of the local peer group.",
+        "Reducing the work to formal control."
+      ],
+      "sources": [
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        },
+        {
+          "authors": "Pytka L.",
+          "year": 2000,
+          "title": "Pedagogika resocjalizacyjna. Wybrane zagadnienia teoretyczne, diagnostyczne i metodyczne",
+          "publisher": "Wydawnictwo APS"
+        }
+      ],
+      "tags": ["open environment", "local community", "probation"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "streetworking",
+      "section": "resocialization",
+      "title": "Streetworking (outreach)",
+      "essence": "Streetworking means reaching people where they are (streets, yards, stations, hangouts) instead of waiting for them to come to an institution. It addresses e.g. young people at risk of exclusion, people experiencing homelessness and people who use substances. Voluntary contact, building trust and accompanying people on their way to help are key.",
+      "whenToUse": [
+        "When a group does not use traditional forms of help.",
+        "In harm-reduction and indicated-prevention programmes.",
+        "In work with people experiencing homelessness, especially in winter."
+      ],
+      "techniques": [
+        "Regular presence in the same places and at the same times.",
+        "Contact without preconditions; information, conversation, small practical help.",
+        "Accompanying (e.g. going together to a clinic or social welfare centre).",
+        "Working in pairs, supervision and clear safety rules."
+      ],
+      "phrases": [
+        "I am here on Thursdays. If you want to talk, you know where to find me.",
+        "I don't need to know anything about you. I can tell you where the nearest warm place is."
+      ],
+      "pitfalls": [
+        "Moralising and pushing for quick change.",
+        "Making promises that cannot be kept.",
+        "Working without team support and supervision."
+      ],
+      "sources": [
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["outreach", "homelessness", "harm reduction"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "readaptation",
+      "section": "resocialization",
+      "title": "Readaptation and post-penitentiary help",
+      "essence": "Social readaptation is the process of returning to life in society after a period of isolation (prison, institution). Post-penitentiary help covers support before and after release: documents, housing or shelter, work, addiction treatment, family relationships. Help is provided by the prison service, probation officers, social welfare centres and NGOs; some activities are funded by the Victims and Post-Penitentiary Assistance Fund – Justice Fund (Fundusz Sprawiedliwości), based on the Executive Penal Code.",
+      "whenToUse": [
+        "Preparing a person leaving prison for release.",
+        "The first weeks after release – the period of highest risk of relapse and reoffending.",
+        "People on conditional early release under probation supervision."
+      ],
+      "techniques": [
+        "A readaptation plan with deadlines: documents, registration, health insurance, housing, work, treatment.",
+        "Contacting institutions before release.",
+        "Strengthening the support network (family, self-help group, mentor).",
+        "A relapse-prevention plan for the first days after release."
+      ],
+      "phrases": [
+        "What must be sorted out in the first week for you to feel safe?",
+        "Who will be waiting for you at the gate?"
+      ],
+      "pitfalls": [
+        "Starting to plan only on the day of release.",
+        "Stigmatising language (\"ex-con\") instead of \"a person leaving prison\".",
+        "Overlooking addiction treatment and the risk of overdose after a period of abstinence."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 1997,
+          "title": "Ustawa z dnia 6 czerwca 1997 r. – Kodeks karny wykonawczy"
+        },
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["readaptation", "post-penitentiary help", "prison"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "mediation",
+      "section": "resocialization",
+      "title": "Mediation and restorative justice",
+      "essence": "Mediation is a voluntary and confidential process in which an impartial mediator helps parties to a conflict communicate and reach a solution. Victim–offender mediation grows from restorative justice (H. Zehr): instead of asking only \"what punishment?\", it asks \"what harm was done and how can it be repaired?\". In Poland it is available, among others, in criminal and juvenile cases, and the court may take its outcome into account.",
+      "whenToUse": [
+        "School and peer conflicts (peer mediation).",
+        "Juvenile cases and minor offences when both parties consent.",
+        "Family conflicts – excluding situations of violence where there is a power imbalance."
+      ],
+      "techniques": [
+        "Preliminary meetings with each party separately.",
+        "Joint meeting: listening, naming the harm, seeking redress.",
+        "Writing down the agreement and monitoring its fulfilment.",
+        "Family group conferences and restorative circles as related forms."
+      ],
+      "phrases": [
+        "What would putting this right mean for you?",
+        "My role is not to judge who is right but to help you talk."
+      ],
+      "pitfalls": [
+        "Pressuring parties to agree or to apologise.",
+        "Mediation in domestic violence with a strong power imbalance.",
+        "Combining the role of mediator with that of an educator who assesses one party."
+      ],
+      "sources": [
+        {
+          "authors": "Zehr H.",
+          "year": 1990,
+          "title": "Changing Lenses: A New Focus for Crime and Justice",
+          "publisher": "Herald Press"
+        },
+        {
+          "authors": "Czarnecka-Dzialuk B., Wójcik D.",
+          "year": 2001,
+          "title": "Mediacja. Nieletni sprawcy i ich ofiary",
+          "publisher": "Wydawnictwo Akademickie Żak"
+        }
+      ],
+      "tags": ["mediation", "restorative justice", "conflict"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "probation",
+      "section": "resocialization",
+      "title": "Court probation (kuratela)",
+      "essence": "Court probation officers (professional and volunteer) carry out court orders in the community. Family probation officers work e.g. with juveniles, families with limited parental authority and people ordered to undergo addiction treatment. Adult probation officers supervise convicted people, e.g. those with suspended sentences or on conditional early release. Their work combines monitoring obligations with educational and supportive action.",
+      "whenToUse": [
+        "A person under supervision – cooperation between the pedagogue and the probation officer.",
+        "A juvenile with probation supervision as an educational measure.",
+        "Preparing a social background report for the court."
+      ],
+      "techniques": [
+        "Agreeing clear rules and obligations from the court order with the client.",
+        "Combining monitoring with motivational interviewing.",
+        "Referring to therapy, correctional programmes, social assistance.",
+        "Probation day centres for youth as afternoon activities."
+      ],
+      "phrases": [
+        "The court set the obligations – let's talk about how you can fit them into your week.",
+        "My role is also to help, not only to check."
+      ],
+      "pitfalls": [
+        "Reducing contact to formal signatures and checks.",
+        "Unclear limits of confidentiality – the client must know what is reported to the court.",
+        "Excessive caseloads as a systemic barrier."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 2001,
+          "title": "Ustawa z dnia 27 lipca 2001 r. o kuratorach sądowych"
+        },
+        {
+          "authors": "Sejm RP",
+          "year": 1997,
+          "title": "Ustawa z dnia 6 czerwca 1997 r. – Kodeks karny wykonawczy"
+        },
+        {
+          "authors": "Sejm RP",
+          "year": 2022,
+          "title": "Ustawa z dnia 9 czerwca 2022 r. o wspieraniu i resocjalizacji nieletnich"
+        }
+      ],
+      "tags": ["probation officer", "supervision", "court"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "juvenileInstitutions",
+      "section": "resocialization",
+      "title": "Juvenile institutions: MOW, MOS, shelter, correctional facility",
+      "essence": "The youth system has several levels. A youth sociotherapy centre (młodzieżowy ośrodek socjoterapii, MOS) is an educational facility for children and adolescents at risk of social maladjustment, admitted voluntarily with parental consent. A youth educational centre (młodzieżowy ośrodek wychowawczy, MOW) admits socially maladjusted young people placed there by a family court order as an educational measure. A juvenile shelter (schronisko dla nieletnich) is for temporary placement during proceedings, and a correctional facility (zakład poprawczy) carries out the correctional measure imposed on juveniles who committed punishable acts; both are supervised by the Minister of Justice. The rules are set by the Act on Supporting and Resocialising Juveniles (in force since 1 September 2022) and the Education Law.",
+      "whenToUse": [
+        "Choosing a path for a teenager: from counselling and MOS, through MOW, to a correctional facility.",
+        "Explaining to parents the difference between a voluntary and a court-ordered placement.",
+        "Planning a young person's return home and to school."
+      ],
+      "techniques": [
+        "Exhausting milder forms first (counselling, sociotherapy, probation supervision).",
+        "Cooperation between the institution and the family from the first day.",
+        "An individual resocialization programme and regular progress reviews.",
+        "Preparation for independence (support from the county family support centre, PCPR)."
+      ],
+      "phrases": [
+        "This centre is not a punishment – it is a place where you can get back to school and start again.",
+        "What would you like your first weekend at home to look like?"
+      ],
+      "pitfalls": [
+        "Confusing MOS (voluntary, sociotherapy) with MOW (court order).",
+        "Using the threat of an institution as an educational method.",
+        "No work with the family the young person returns to."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 2022,
+          "title": "Ustawa z dnia 9 czerwca 2022 r. o wspieraniu i resocjalizacji nieletnich"
+        },
+        {
+          "authors": "Sejm RP",
+          "year": 2016,
+          "title": "Ustawa z dnia 14 grudnia 2016 r. – Prawo oświatowe"
+        },
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["juveniles", "MOW", "MOS", "correctional facility"],
+      "reviewStatus": "do_weryfikacji"
+    }
+  ]
+}

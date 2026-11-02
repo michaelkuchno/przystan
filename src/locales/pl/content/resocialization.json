@@ -1,0 +1,430 @@
+{
+  "cards": [
+    {
+      "id": "resocializationConcepts",
+      "section": "resocialization",
+      "title": "Koncepcje resocjalizacji",
+      "essence": "Resocjalizacja to celowe oddziaływanie wychowawcze wobec osób niedostosowanych społecznie, które ma doprowadzić do trwałej zmiany postaw i zachowań oraz do samodzielnego, zgodnego z normami funkcjonowania w społeczeństwie. W polskiej tradycji (Cz. Czapów, L. Pytka) podkreśla się, że nie chodzi o samą kontrolę, ale o rozwój: odbudowę więzi, kompetencji społecznych i poczucia sprawstwa. Współcześnie łączy się podejście wychowawcze, terapeutyczne i środowiskowe.",
+      "whenToUse": [
+        "Planowanie indywidualnego programu pracy z wychowankiem lub osobą pod dozorem.",
+        "Uzasadnianie doboru metod w dokumentacji i na zajęciach akademickich.",
+        "Rozmowa zespołu o tym, czy działania są wychowawcze, czy tylko dyscyplinujące."
+      ],
+      "techniques": [
+        "Diagnoza pedagogiczna: zasoby, deficyty, środowisko, czynniki ryzyka i chroniące.",
+        "Oddziaływanie przez osobę wychowawcy i relację (wzór, zaufanie, konsekwencja).",
+        "Praca nad trzema obszarami: poznawczym (normy, wartości), emocjonalnym i behawioralnym.",
+        "Włączanie rodziny i społeczności lokalnej w proces zmiany."
+      ],
+      "phrases": [
+        "Co już działa w twoim życiu i na czym możemy budować?",
+        "Chcę, żebyś po wyjściu stąd miał coś, co jest naprawdę twoje – umiejętność, pasję, ludzi."
+      ],
+      "pitfalls": [
+        "Utożsamianie resocjalizacji z karaniem i samą izolacją.",
+        "Skupienie wyłącznie na deficytach i etykietowanie osoby.",
+        "Brak planu na czas po opuszczeniu placówki."
+      ],
+      "sources": [
+        {
+          "authors": "Czapów Cz.",
+          "year": 1978,
+          "title": "Wychowanie resocjalizujące. Elementy metodyki i diagnostyki",
+          "publisher": "PWN"
+        },
+        {
+          "authors": "Pytka L.",
+          "year": 2000,
+          "title": "Pedagogika resocjalizacyjna. Wybrane zagadnienia teoretyczne, diagnostyczne i metodyczne",
+          "publisher": "Wydawnictwo APS"
+        },
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["resocjalizacja", "teoria", "pedagogika"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "creativeResocialization",
+      "section": "resocialization",
+      "title": "Twórcza resocjalizacja (M. Konopczyński)",
+      "essence": "Koncepcja Marka Konopczyńskiego zakłada, że zmiana następuje przede wszystkim przez rozwój potencjałów i budowanie nowej tożsamości społecznej, a nie przez korygowanie deficytów. Wykorzystuje się działania twórcze (teatr, muzyka, sport, plastyka, media), w których wychowanek odnosi sukces, zyskuje nowe role i pozytywny odbiór otoczenia. Tak budowana tożsamość „kogoś, kto coś potrafi” wypiera tożsamość dewiacyjną.",
+      "whenToUse": [
+        "Praca z młodzieżą w MOW, MOS, świetlicach i zakładach poprawczych.",
+        "Gdy klasyczne metody (pogadanka, system kar i nagród) nie przynoszą efektu.",
+        "Przy budowaniu motywacji i poczucia własnej wartości."
+      ],
+      "techniques": [
+        "Diagnoza zainteresowań i ukrytych zdolności wychowanka.",
+        "Metody kulturotechniczne: resocjalizacja przez teatr, muzykę, plastykę, sport.",
+        "Publiczna prezentacja efektów (spektakl, wystawa, zawody) – doświadczenie uznania.",
+        "Stopniowe przenoszenie nowych ról do życia poza placówką."
+      ],
+      "phrases": [
+        "Widziałam, jak prowadziłeś próbę – inni cię słuchali. Jak to było?",
+        "Czego chciałbyś się nauczyć, gdyby nie było żadnych ograniczeń?"
+      ],
+      "pitfalls": [
+        "Traktowanie zajęć twórczych jako „zapychacza czasu” bez celu wychowawczego.",
+        "Narzucanie formy aktywności zamiast wyjścia od zainteresowań wychowanka.",
+        "Brak kontynuacji po opuszczeniu placówki."
+      ],
+      "sources": [
+        {
+          "authors": "Konopczyński M.",
+          "year": 2006,
+          "title": "Metody twórczej resocjalizacji. Teoria i praktyka wychowawcza",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["twórcza resocjalizacja", "młodzież", "tożsamość"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "socialMaladjustment",
+      "section": "resocialization",
+      "title": "Niedostosowanie społeczne",
+      "essence": "Niedostosowanie społeczne to utrwalony wzorzec zachowań i postaw pozostających w konflikcie z normami społecznymi i oczekiwaniami ról (np. ucznia, członka rodziny). Cz. Czapów i L. Pytka opisują je jako zjawisko stopniowalne: od zagrożenia niedostosowaniem, przez wczesne objawy, po utrwaloną demoralizację. W diagnozie bierze się pod uwagę czynniki indywidualne, rodzinne, szkolne, rówieśnicze i środowiskowe.",
+      "whenToUse": [
+        "Diagnoza pedagogiczna dziecka lub nastolatka z trudnościami w zachowaniu.",
+        "Dobór poziomu interwencji: profilaktyka, socjoterapia, resocjalizacja.",
+        "Przygotowanie opinii dla szkoły, poradni lub sądu rodzinnego."
+      ],
+      "techniques": [
+        "Obserwacja zachowań w różnych sytuacjach i od różnych osób (szkoła, dom, grupa).",
+        "Wywiad środowiskowy i analiza dokumentów.",
+        "Rozróżnienie: zaburzenia zachowania vs. reakcja na kryzys lub krzywdzenie.",
+        "Mapowanie czynników ryzyka i czynników chroniących."
+      ],
+      "phrases": [
+        "Kiedy to zachowanie się nasila, a kiedy go nie ma?",
+        "Opisuję zachowanie, a nie oceniam ciebie jako osoby."
+      ],
+      "pitfalls": [
+        "Etykietowanie („zdemoralizowany”) zamiast opisu zachowań.",
+        "Pomijanie przemocy lub uzależnienia w rodzinie jako tła zachowań.",
+        "Diagnoza na podstawie jednego źródła informacji."
+      ],
+      "sources": [
+        {
+          "authors": "Czapów Cz.",
+          "year": 1978,
+          "title": "Wychowanie resocjalizujące. Elementy metodyki i diagnostyki",
+          "publisher": "PWN"
+        },
+        {
+          "authors": "Pytka L.",
+          "year": 2000,
+          "title": "Pedagogika resocjalizacyjna. Wybrane zagadnienia teoretyczne, diagnostyczne i metodyczne",
+          "publisher": "Wydawnictwo APS"
+        },
+        {
+          "authors": "Wysocka E.",
+          "year": 2008,
+          "title": "Diagnoza w resocjalizacji",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["niedostosowanie społeczne", "diagnoza", "demoralizacja"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "sociotherapy",
+      "section": "resocialization",
+      "title": "Socjoterapia",
+      "essence": "Socjoterapia to forma pomocy dzieciom i młodzieży z zaburzeniami zachowania lub zagrożonym niedostosowaniem społecznym, prowadzona zwykle w grupie. Jej podstawą są doświadczenia korygujące: uczestnik w bezpiecznej grupie przeżywa relacje inaczej niż dotychczas (np. jest wysłuchany zamiast odrzucony). Łączy cele terapeutyczne, edukacyjne (nowe umiejętności) i rozwojowe.",
+      "whenToUse": [
+        "Świetlice socjoterapeutyczne, MOS, szkoły, poradnie.",
+        "Dzieci z rodzin z problemem alkoholowym lub przemocą.",
+        "Trudności w relacjach rówieśniczych, agresja, wycofanie."
+      ],
+      "techniques": [
+        "Kontrakt i zasady grupy ustalane wspólnie.",
+        "Ćwiczenia, gry i dramy wywołujące doświadczenia korygujące.",
+        "Trening umiejętności społecznych i rozpoznawania emocji.",
+        "Stała struktura spotkań: rozgrzewka, część główna, omówienie, zakończenie."
+      ],
+      "phrases": [
+        "Co czułeś, kiedy grupa cię wysłuchała?",
+        "W tej grupie każdy ma prawo powiedzieć „pas”."
+      ],
+      "pitfalls": [
+        "Prowadzenie zajęć jak lekcji wychowawczej, bez przeżycia i omówienia.",
+        "Zbyt liczna lub zbyt jednorodna „trudna” grupa.",
+        "Brak współpracy z rodzicami i szkołą."
+      ],
+      "sources": [
+        {
+          "authors": "Sawicka K. (red.)",
+          "year": 1998,
+          "title": "Socjoterapia",
+          "publisher": "Centrum Metodyczne Pomocy Psychologiczno-Pedagogicznej"
+        },
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["socjoterapia", "grupa", "dzieci"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "openEnvironment",
+      "section": "resocialization",
+      "title": "Praca w środowisku otwartym",
+      "essence": "Resocjalizacja w środowisku otwartym odbywa się bez izolacji – w miejscu zamieszkania, szkole, pracy i społeczności lokalnej. Obejmuje m.in. nadzór i dozór kuratorski, świetlice, kluby młodzieżowe, ośrodki kuratorskie, mediację i programy korekcyjne. Zakłada, że zmiana jest trwalsza, gdy zachodzi w naturalnym otoczeniu osoby i przy udziale jej sieci wsparcia.",
+      "whenToUse": [
+        "Gdy izolacja nie jest konieczna lub jest szkodliwa (zwłaszcza u młodzieży).",
+        "Po opuszczeniu placówki – jako kontynuacja oddziaływań.",
+        "W profilaktyce selektywnej i wskazującej."
+      ],
+      "techniques": [
+        "Mapa zasobów środowiska (ekomapa): ludzie, instytucje, miejsca.",
+        "Współpraca z kuratorem, szkołą, OPS i organizacjami pozarządowymi.",
+        "Programy korekcyjno-edukacyjne i trening umiejętności.",
+        "Animowanie aktywności lokalnej (wolontariat, sport, kultura)."
+      ],
+      "phrases": [
+        "Kto w twojej okolicy jest dla ciebie ważny i może pomóc?",
+        "Spróbujmy znaleźć miejsce, w którym możesz spędzać popołudnia inaczej niż dotąd."
+      ],
+      "pitfalls": [
+        "Działanie w pojedynkę, bez sieci współpracy instytucji.",
+        "Ignorowanie wpływu grupy rówieśniczej w okolicy.",
+        "Sprowadzanie pracy do formalnej kontroli."
+      ],
+      "sources": [
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        },
+        {
+          "authors": "Pytka L.",
+          "year": 2000,
+          "title": "Pedagogika resocjalizacyjna. Wybrane zagadnienia teoretyczne, diagnostyczne i metodyczne",
+          "publisher": "Wydawnictwo APS"
+        }
+      ],
+      "tags": ["środowisko otwarte", "społeczność lokalna", "kurator"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "streetworking",
+      "section": "resocialization",
+      "title": "Streetworking (praca na ulicy)",
+      "essence": "Streetworking to wychodzenie do ludzi tam, gdzie przebywają (ulica, podwórka, dworce, miejsca spotkań), zamiast oczekiwania, że sami zgłoszą się do instytucji. Adresatami są m.in. młodzież zagrożona wykluczeniem, osoby w kryzysie bezdomności i osoby używające substancji. Kluczowe są dobrowolność, budowanie zaufania i towarzyszenie w dotarciu do pomocy.",
+      "whenToUse": [
+        "Gdy grupa nie korzysta z tradycyjnych form pomocy.",
+        "W programach redukcji szkód i profilaktyki wskazującej.",
+        "W pracy z osobami w kryzysie bezdomności, zwłaszcza zimą."
+      ],
+      "techniques": [
+        "Regularna obecność w tych samych miejscach i porach.",
+        "Kontakt bez warunków wstępnych; informacja, rozmowa, drobna pomoc.",
+        "Towarzyszenie (np. pójście razem do poradni lub OPS).",
+        "Praca w parach, superwizja i jasne zasady bezpieczeństwa."
+      ],
+      "phrases": [
+        "Jestem tu w czwartki. Jeśli będziesz chciał pogadać, wiesz, gdzie mnie szukać.",
+        "Nie muszę niczego od ciebie wiedzieć. Mogę powiedzieć, gdzie jest najbliższe ciepłe miejsce."
+      ],
+      "pitfalls": [
+        "Moralizowanie i naciskanie na szybką zmianę.",
+        "Składanie obietnic, których nie da się dotrzymać.",
+        "Praca bez wsparcia zespołu i superwizji."
+      ],
+      "sources": [
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["streetworking", "bezdomność", "redukcja szkód"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "readaptation",
+      "section": "resocialization",
+      "title": "Readaptacja i pomoc postpenitencjarna",
+      "essence": "Readaptacja społeczna to proces powrotu do życia w społeczeństwie po okresie izolacji (zakład karny, placówka). Pomoc postpenitencjarna obejmuje wsparcie przed i po zwolnieniu: dokumenty, mieszkanie lub schronienie, praca, leczenie uzależnienia, relacje rodzinne. Pomocy udzielają m.in. służba więzienna, kuratorzy, ośrodki pomocy społecznej i organizacje pozarządowe, a część działań jest finansowana z Funduszu Pomocy Pokrzywdzonym oraz Pomocy Postpenitencjarnej – Funduszu Sprawiedliwości (podstawa w Kodeksie karnym wykonawczym).",
+      "whenToUse": [
+        "Przygotowanie osoby opuszczającej zakład karny do zwolnienia.",
+        "Pierwsze tygodnie po wyjściu – okres najwyższego ryzyka nawrotu i powrotu do przestępstwa.",
+        "Osoby po warunkowym przedterminowym zwolnieniu pod dozorem kuratora."
+      ],
+      "techniques": [
+        "Plan readaptacji z terminami: dokumenty, meldunek, ubezpieczenie, mieszkanie, praca, leczenie.",
+        "Kontakt z instytucjami jeszcze przed zwolnieniem.",
+        "Wzmacnianie sieci wsparcia (rodzina, grupa samopomocowa, mentor).",
+        "Plan zapobiegania nawrotom dla pierwszych dni na wolności."
+      ],
+      "phrases": [
+        "Co musi być załatwione w pierwszym tygodniu, żebyś czuł się bezpiecznie?",
+        "Kto będzie na ciebie czekał przy bramie?"
+      ],
+      "pitfalls": [
+        "Rozpoczynanie planowania dopiero w dniu zwolnienia.",
+        "Stygmatyzujący język („były więzień”) zamiast „osoba opuszczająca zakład karny”.",
+        "Pominięcie leczenia uzależnienia i ryzyka przedawkowania po okresie abstynencji."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 1997,
+          "title": "Ustawa z dnia 6 czerwca 1997 r. – Kodeks karny wykonawczy"
+        },
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["readaptacja", "pomoc postpenitencjarna", "zakład karny"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "mediation",
+      "section": "resocialization",
+      "title": "Mediacja i sprawiedliwość naprawcza",
+      "essence": "Mediacja to dobrowolny i poufny proces, w którym bezstronny mediator pomaga stronom konfliktu porozumieć się i wypracować rozwiązanie. Mediacja między pokrzywdzonym a sprawcą wyrasta z idei sprawiedliwości naprawczej (H. Zehr): zamiast pytać tylko „jaka kara?”, pyta się „jaka szkoda powstała i jak ją naprawić?”. W Polsce jest możliwa m.in. w sprawach karnych i w sprawach nieletnich, a jej wynik sąd może uwzględnić.",
+      "whenToUse": [
+        "Konflikty szkolne i rówieśnicze (mediacje rówieśnicze).",
+        "Sprawy nieletnich i drobne przestępstwa, gdy obie strony wyrażają zgodę.",
+        "Konflikty rodzinne – z wyłączeniem sytuacji przemocy, gdy jest nierównowaga sił."
+      ],
+      "techniques": [
+        "Spotkania wstępne z każdą stroną osobno.",
+        "Wspólne spotkanie: wysłuchanie, nazwanie szkody, poszukiwanie zadośćuczynienia.",
+        "Spisanie ugody i monitorowanie jej wykonania.",
+        "Konferencje grupy rodzinnej i kręgi naprawcze jako formy pokrewne."
+      ],
+      "phrases": [
+        "Co dla ciebie byłoby naprawieniem tej sytuacji?",
+        "Moją rolą nie jest ocenianie, kto ma rację, ale pomoc w rozmowie."
+      ],
+      "pitfalls": [
+        "Wywieranie presji na zgodę lub na przeprosiny.",
+        "Mediacja w sytuacji przemocy domowej z dużą nierównowagą sił.",
+        "Łączenie roli mediatora z rolą wychowawcy oceniającego stronę."
+      ],
+      "sources": [
+        {
+          "authors": "Zehr H.",
+          "year": 1990,
+          "title": "Changing Lenses: A New Focus for Crime and Justice",
+          "publisher": "Herald Press"
+        },
+        {
+          "authors": "Czarnecka-Dzialuk B., Wójcik D.",
+          "year": 2001,
+          "title": "Mediacja. Nieletni sprawcy i ich ofiary",
+          "publisher": "Wydawnictwo Akademickie Żak"
+        }
+      ],
+      "tags": ["mediacja", "sprawiedliwość naprawcza", "konflikt"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "probation",
+      "section": "resocialization",
+      "title": "Kuratela sądowa",
+      "essence": "Kuratorzy sądowi (zawodowi i społeczni) wykonują orzeczenia sądu w środowisku otwartym. Kuratorzy rodzinni pracują m.in. z nieletnimi, rodzinami z ograniczoną władzą rodzicielską i osobami zobowiązanymi do leczenia odwykowego. Kuratorzy dla dorosłych sprawują dozór nad osobami skazanymi m.in. z warunkowym zawieszeniem kary lub warunkowo przedterminowo zwolnionymi. Ich praca łączy kontrolę wykonywania obowiązków z działaniami wychowawczymi i pomocowymi.",
+      "whenToUse": [
+        "Osoba pod dozorem lub nadzorem – współpraca pedagoga z kuratorem.",
+        "Nieletni z nadzorem kuratora jako środkiem wychowawczym.",
+        "Przygotowanie wywiadu środowiskowego dla sądu."
+      ],
+      "techniques": [
+        "Ustalenie z podopiecznym jasnych zasad i obowiązków wynikających z orzeczenia.",
+        "Łączenie kontroli z dialogiem motywującym.",
+        "Kierowanie do terapii, programów korekcyjnych, pomocy społecznej.",
+        "Ośrodki kuratorskie dla młodzieży jako forma zajęć popołudniowych."
+      ],
+      "phrases": [
+        "Sąd określił obowiązki – porozmawiajmy, jak możesz je wypełnić w swoim tygodniu.",
+        "Moją rolą jest też pomóc, nie tylko sprawdzać."
+      ],
+      "pitfalls": [
+        "Sprowadzenie kontaktu do formalnych podpisów i kontroli.",
+        "Niejasne granice poufności – podopieczny musi wiedzieć, co trafia do sądu.",
+        "Zbyt duża liczba spraw na kuratora jako bariera systemowa."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 2001,
+          "title": "Ustawa z dnia 27 lipca 2001 r. o kuratorach sądowych"
+        },
+        {
+          "authors": "Sejm RP",
+          "year": 1997,
+          "title": "Ustawa z dnia 6 czerwca 1997 r. – Kodeks karny wykonawczy"
+        },
+        {
+          "authors": "Sejm RP",
+          "year": 2022,
+          "title": "Ustawa z dnia 9 czerwca 2022 r. o wspieraniu i resocjalizacji nieletnich"
+        }
+      ],
+      "tags": ["kurator", "dozór", "sąd"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "juvenileInstitutions",
+      "section": "resocialization",
+      "title": "Placówki dla nieletnich: MOW, MOS, schronisko, zakład poprawczy",
+      "essence": "System dla młodzieży jest wielopoziomowy. Młodzieżowy ośrodek socjoterapii (MOS) to placówka oświatowa dla dzieci i młodzieży zagrożonych niedostosowaniem społecznym, przyjmowanych dobrowolnie, za zgodą rodziców. Młodzieżowy ośrodek wychowawczy (MOW) przyjmuje młodzież niedostosowaną społecznie umieszczoną postanowieniem sądu rodzinnego jako środek wychowawczy. Schronisko dla nieletnich służy tymczasowemu umieszczeniu na czas postępowania, a zakład poprawczy wykonuje środek poprawczy orzekany wobec nieletnich sprawców czynów karalnych; obie placówki podlegają Ministrowi Sprawiedliwości. Zasady określa ustawa o wspieraniu i resocjalizacji nieletnich (od 1 września 2022 r.) oraz Prawo oświatowe.",
+      "whenToUse": [
+        "Dobór ścieżki dla nastolatka: od poradni i MOS, przez MOW, po zakład poprawczy.",
+        "Rozmowa z rodzicami o różnicy między placówką dobrowolną a orzeczoną przez sąd.",
+        "Planowanie powrotu wychowanka do domu i szkoły."
+      ],
+      "techniques": [
+        "Wcześniejsze wyczerpanie łagodniejszych form (poradnia, socjoterapia, nadzór kuratora).",
+        "Współpraca placówki z rodziną od pierwszego dnia pobytu.",
+        "Indywidualny program resocjalizacyjny i regularna ocena postępów.",
+        "Przygotowanie do usamodzielnienia (wsparcie PCPR)."
+      ],
+      "phrases": [
+        "Ten ośrodek nie jest karą – to miejsce, w którym masz szansę wrócić do szkoły i zacząć od nowa.",
+        "Jak chciałbyś, żeby wyglądał twój pierwszy weekend w domu?"
+      ],
+      "pitfalls": [
+        "Mylenie MOS (dobrowolny, socjoterapia) z MOW (orzeczenie sądu).",
+        "Straszenie placówką jako metoda wychowawcza.",
+        "Brak pracy z rodziną, do której wychowanek wraca."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 2022,
+          "title": "Ustawa z dnia 9 czerwca 2022 r. o wspieraniu i resocjalizacji nieletnich"
+        },
+        {
+          "authors": "Sejm RP",
+          "year": 2016,
+          "title": "Ustawa z dnia 14 grudnia 2016 r. – Prawo oświatowe"
+        },
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["nieletni", "MOW", "MOS", "zakład poprawczy"],
+      "reviewStatus": "do_weryfikacji"
+    }
+  ]
+}

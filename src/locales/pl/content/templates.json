@@ -1,0 +1,729 @@
+{
+  "ingredients": [
+    {
+      "id": "welcomeContract",
+      "title": "Powitanie i ustalenie zasad współpracy",
+      "category": "opening",
+      "minutes": 10,
+      "description": "Przedstaw się, wyjaśnij cel i czas spotkania, zasady poufności i jej granice. Zapytaj, czego podopieczny oczekuje."
+    },
+    {
+      "id": "checkInRound",
+      "title": "Runda na początek",
+      "category": "opening",
+      "minutes": 10,
+      "description": "Każdy uczestnik w jednym–dwóch zdaniach mówi, z czym dziś przychodzi. Prowadzący nie komentuje, tylko dziękuje."
+    },
+    {
+      "id": "moodWeather",
+      "title": "Pogoda nastroju",
+      "category": "opening",
+      "minutes": 5,
+      "description": "Uczestnicy opisują swój nastrój jako pogodę (słońce, mgła, burza). Dobre dla młodzieży i grup, które niechętnie mówią o emocjach."
+    },
+    {
+      "id": "haltCheckIn",
+      "title": "Check-in HALT",
+      "category": "opening",
+      "minutes": 5,
+      "description": "Szybkie sprawdzenie: czy jestem głodny, zły, samotny, zmęczony? Pomaga zauważyć stany zwiększające ryzyko nawrotu.",
+      "toolId": "halt"
+    },
+    {
+      "id": "openQuestions",
+      "title": "Pytania otwarte i odzwierciedlenia",
+      "category": "mi",
+      "minutes": 10,
+      "description": "Zadawaj pytania, na które nie da się odpowiedzieć „tak/nie”, i odzwierciedlaj usłyszane treści. Proporcja: więcej odzwierciedleń niż pytań."
+    },
+    {
+      "id": "readinessRuler",
+      "title": "Linijka gotowości",
+      "category": "mi",
+      "minutes": 10,
+      "description": "Podopieczny zaznacza na skali 0–10, jak ważna jest dla niego zmiana i jak bardzo wierzy, że da radę. Dopytaj: „Dlaczego tyle, a nie mniej?”.",
+      "toolId": "readinessRuler"
+    },
+    {
+      "id": "decisionalBalance",
+      "title": "Balans decyzyjny",
+      "category": "mi",
+      "minutes": 15,
+      "description": "Wspólnie wypełnijcie macierz: zyski i koszty obecnego zachowania oraz zmiany. Zakończ podsumowaniem tego, co przemawia za zmianą.",
+      "toolId": "decisionalBalance"
+    },
+    {
+      "id": "elicitChangeTalk",
+      "title": "Wywoływanie języka zmiany",
+      "category": "mi",
+      "minutes": 10,
+      "description": "Pytaj o pragnienia, możliwości, powody i potrzebę zmiany („Co byłoby lepsze, gdyby…?”). Wzmacniaj każdą wypowiedź o zmianie."
+    },
+    {
+      "id": "lookingForward",
+      "title": "Spojrzenie w przyszłość",
+      "category": "mi",
+      "minutes": 10,
+      "description": "Zapytaj, jak może wyglądać życie za rok, jeśli nic się nie zmieni, i jak – jeśli zmiana się uda. Nie oceniaj odpowiedzi."
+    },
+    {
+      "id": "changePlan",
+      "title": "Plan zmiany",
+      "category": "mi",
+      "minutes": 10,
+      "description": "Gdy podopieczny jest gotowy, spiszcie razem: co chcę zmienić, dlaczego, jakie pierwsze kroki, kto mi pomoże, po czym poznam postęp."
+    },
+    {
+      "id": "chainAnalysis",
+      "title": "Analiza łańcuchowa",
+      "category": "cbt",
+      "minutes": 20,
+      "description": "Odtwórzcie krok po kroku konkretną sytuację: wyzwalacz, myśli, emocje, zachowanie, konsekwencje. Szukajcie ogniw, w których można było postąpić inaczej.",
+      "toolId": "chainAnalysis"
+    },
+    {
+      "id": "thoughtRecord",
+      "title": "Dziennik myśli",
+      "category": "cbt",
+      "minutes": 15,
+      "description": "Zapiszcie sytuację, automatyczną myśl, emocję i jej siłę. Rozpoznajcie zniekształcenie i poszukajcie bardziej wyważonej myśli.",
+      "toolId": "thoughtRecord"
+    },
+    {
+      "id": "triggerMap",
+      "title": "Mapa wyzwalaczy",
+      "category": "cbt",
+      "minutes": 15,
+      "description": "Podopieczny zaznacza osoby, miejsca, stany i sytuacje, które wywołują chęć użycia. Do najsilniejszych dobierzcie sposoby radzenia sobie.",
+      "toolId": "triggerMap"
+    },
+    {
+      "id": "scalingQuestions",
+      "title": "Skalowanie i pytanie o cud",
+      "category": "cbt",
+      "minutes": 10,
+      "description": "Zapytaj, gdzie na skali 0–10 jest dziś podopieczny i co pozwoliłoby przesunąć się o jeden punkt. Możesz dodać pytanie o cud.",
+      "toolId": "scaling"
+    },
+    {
+      "id": "refusalSkills",
+      "title": "Trening odmawiania",
+      "category": "skills",
+      "minutes": 20,
+      "description": "Omówcie kroki asertywnej odmowy (jasne „nie”, uzasadnienie bez tłumaczenia się, propozycja alternatywy, wyjście z sytuacji) i przećwiczcie je.",
+      "toolId": "socialSkills"
+    },
+    {
+      "id": "assertivenessDrill",
+      "title": "Komunikat asertywny „ja”",
+      "category": "skills",
+      "minutes": 15,
+      "description": "Uczestnicy ćwiczą formułę: „Kiedy…, czuję…, ponieważ…, chciałbym/chciałabym…”. Pracujcie na przykładach z ich życia."
+    },
+    {
+      "id": "rolePlay",
+      "title": "Odgrywanie ról z kartą sytuacji",
+      "category": "skills",
+      "minutes": 25,
+      "description": "Wylosujcie kartę sytuacji, rozdzielcie role i obserwatorów. Po scence omówcie, co zadziałało, i powtórzcie z poprawkami.",
+      "toolId": "socialSkills"
+    },
+    {
+      "id": "problemSolving",
+      "title": "Rozwiązywanie problemów krok po kroku",
+      "category": "skills",
+      "minutes": 15,
+      "description": "Zdefiniujcie problem, wypiszcie możliwe rozwiązania bez oceniania, oceńcie plusy i minusy, wybierzcie jedno i zaplanujcie pierwszy krok."
+    },
+    {
+      "id": "groupContract",
+      "title": "Kontrakt grupowy",
+      "category": "group",
+      "minutes": 15,
+      "description": "Grupa wspólnie ustala zasady (np. poufność, mówienie od siebie, prawo do „pas”). Zasady zapisuje się i wszyscy je akceptują."
+    },
+    {
+      "id": "energiser",
+      "title": "Rozgrzewka ruchowa",
+      "category": "group",
+      "minutes": 5,
+      "description": "Krótka zabawa ruchowa (np. „Zamiana miejsc – kto lubi…”), która rozładowuje napięcie i ożywia grupę."
+    },
+    {
+      "id": "trustExercise",
+      "title": "Ćwiczenie na zaufanie",
+      "category": "group",
+      "minutes": 15,
+      "description": "Ćwiczenie w parach budujące zaufanie (np. prowadzenie osoby z zamkniętymi oczami). Zawsze z możliwością rezygnacji i omówieniem."
+    },
+    {
+      "id": "groupDiscussion",
+      "title": "Dyskusja w małych grupach",
+      "category": "group",
+      "minutes": 20,
+      "description": "Podziel grupę na 3–4 osobowe zespoły z konkretnym pytaniem i czasem. Zespoły prezentują wnioski na forum."
+    },
+    {
+      "id": "genogram",
+      "title": "Genogram rodziny",
+      "category": "family",
+      "minutes": 25,
+      "description": "Narysujcie razem drzewo rodziny na trzy pokolenia, zaznaczając relacje, ważne wydarzenia i wzorce (np. picie, przemoc, zasoby)."
+    },
+    {
+      "id": "familyCommunication",
+      "title": "Ćwiczenie komunikacji w rodzinie",
+      "category": "family",
+      "minutes": 20,
+      "description": "Członkowie rodziny na zmianę mówią o jednej sprawie, a drugi parafrazuje, zanim odpowie. Prowadzący pilnuje, by mówić o sobie, nie oskarżać."
+    },
+    {
+      "id": "supportMap",
+      "title": "Mapa wsparcia",
+      "category": "family",
+      "minutes": 15,
+      "description": "Podopieczny umieszcza wokół siebie osoby i instytucje, które mogą pomóc, w zależności od bliskości. Szukajcie luk i nowych źródeł wsparcia.",
+      "toolId": "supportMap"
+    },
+    {
+      "id": "familyStrengths",
+      "title": "Mocne strony rodziny",
+      "category": "family",
+      "minutes": 10,
+      "description": "Każdy członek rodziny wymienia jedną rzecz, którą ceni w rodzinie, i jedną, którą robią razem dobrze."
+    },
+    {
+      "id": "normativeQuiz",
+      "title": "Quiz normatywny",
+      "category": "prevention",
+      "minutes": 15,
+      "description": "Uczniowie szacują, jaki odsetek rówieśników pije lub pali, a potem porównują to z danymi z badań. Omówcie, skąd biorą się różnice."
+    },
+    {
+      "id": "mythsFacts",
+      "title": "Mity i fakty",
+      "category": "prevention",
+      "minutes": 15,
+      "description": "Zespoły dostają stwierdzenia o substancjach i decydują: mit czy fakt. Prowadzący wyjaśnia rzeczowo, bez straszenia."
+    },
+    {
+      "id": "lifeSkillsScenario",
+      "title": "Scenka z umiejętności życiowych",
+      "category": "prevention",
+      "minutes": 20,
+      "description": "Grupy pracują nad krótką historią rówieśnika w trudnej sytuacji (impreza, presja, stres przed sprawdzianem) i proponują rozwiązania."
+    },
+    {
+      "id": "mediaLiteracy",
+      "title": "Analiza reklamy",
+      "category": "prevention",
+      "minutes": 15,
+      "description": "Uczniowie analizują reklamę alkoholu lub e-papierosów: do kogo jest skierowana, co obiecuje, czego nie mówi."
+    },
+    {
+      "id": "breathing",
+      "title": "Ćwiczenie oddechowe",
+      "category": "relaxation",
+      "minutes": 5,
+      "description": "Prowadzone oddychanie w stałym rytmie (np. 4–4–4–4) przez kilka minut. Dobre na początek, po trudnej części lub na koniec.",
+      "toolId": "breathing"
+    },
+    {
+      "id": "grounding",
+      "title": "Uziemienie 5-4-3-2-1",
+      "category": "relaxation",
+      "minutes": 5,
+      "description": "Podopieczny wymienia 5 rzeczy, które widzi, 4, których dotyka, 3, które słyszy, 2, które czuje węchem, i 1 smak. Pomaga wrócić do „tu i teraz”.",
+      "toolId": "grounding"
+    },
+    {
+      "id": "urgeSurfing",
+      "title": "Surfowanie na fali głodu",
+      "category": "relaxation",
+      "minutes": 10,
+      "description": "Podopieczny ocenia głód 0–10, obserwuje go jak falę, która rośnie i opada, oddychając spokojnie, a potem ocenia ponownie.",
+      "toolId": "urgeSurfing"
+    },
+    {
+      "id": "summary",
+      "title": "Podsumowanie",
+      "category": "closing",
+      "minutes": 5,
+      "description": "Podsumuj najważniejsze wątki i ustalenia własnymi słowami, a potem zapytaj, czy czegoś brakuje."
+    },
+    {
+      "id": "homework",
+      "title": "Zadanie do wykonania",
+      "category": "closing",
+      "minutes": 5,
+      "description": "Ustalcie razem jedno małe, konkretne zadanie na czas do następnego spotkania (np. zapisywanie wyzwalaczy)."
+    },
+    {
+      "id": "feedbackRound",
+      "title": "Runda zamykająca",
+      "category": "closing",
+      "minutes": 10,
+      "description": "Każdy kończy zdanie: „Dziś zabieram ze sobą…”. Można dodać krótką ocenę zajęć na skali."
+    },
+    {
+      "id": "nextSteps",
+      "title": "Ustalenie kolejnego kroku",
+      "category": "closing",
+      "minutes": 5,
+      "description": "Ustalcie termin następnego spotkania i to, co się wydarzy do tego czasu. Przypomnij o kontaktach w kryzysie."
+    }
+  ],
+  "sessionTemplates": [
+    {
+      "id": "firstMeeting",
+      "title": "Pierwsze spotkanie",
+      "goal": "Nawiązanie relacji, ustalenie zasad współpracy i wstępne rozpoznanie sytuacji podopiecznego.",
+      "audience": "Spotkanie indywidualne, młodzież lub dorośli",
+      "items": [
+        {
+          "ingredientId": "welcomeContract",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "openQuestions",
+          "minutes": 20
+        },
+        {
+          "ingredientId": "supportMap",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "summary",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "nextSteps",
+          "minutes": 5
+        }
+      ]
+    },
+    {
+      "id": "motivationalInterview",
+      "title": "Rozmowa motywująca",
+      "goal": "Wzmocnienie motywacji do zmiany przez badanie ambiwalencji i wywoływanie języka zmiany.",
+      "audience": "Spotkanie indywidualne",
+      "items": [
+        {
+          "ingredientId": "haltCheckIn",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "openQuestions",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "readinessRuler",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "decisionalBalance",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "elicitChangeTalk",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "summary",
+          "minutes": 5
+        }
+      ]
+    },
+    {
+      "id": "chainAnalysis",
+      "title": "Analiza łańcuchowa",
+      "goal": "Zrozumienie przebiegu konkretnego incydentu (np. nawrotu) i znalezienie punktów, w których można zareagować inaczej.",
+      "audience": "Spotkanie indywidualne, po incydencie lub nawrocie",
+      "items": [
+        {
+          "ingredientId": "checkInRound",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "chainAnalysis",
+          "minutes": 25
+        },
+        {
+          "ingredientId": "triggerMap",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "breathing",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "homework",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "summary",
+          "minutes": 5
+        }
+      ]
+    },
+    {
+      "id": "sociotherapy",
+      "title": "Zajęcia socjoterapeutyczne",
+      "goal": "Korygowanie doświadczeń w relacjach i ćwiczenie umiejętności społecznych w bezpiecznej grupie.",
+      "audience": "Grupa 8–12 osób, młodzież",
+      "items": [
+        {
+          "ingredientId": "checkInRound",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "energiser",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "trustExercise",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "groupDiscussion",
+          "minutes": 20
+        },
+        {
+          "ingredientId": "rolePlay",
+          "minutes": 20
+        },
+        {
+          "ingredientId": "feedbackRound",
+          "minutes": 10
+        }
+      ]
+    },
+    {
+      "id": "socialSkills",
+      "title": "Trening umiejętności społecznych",
+      "goal": "Nauka i przećwiczenie wybranej umiejętności (odmawiania, asertywności, rozwiązywania konfliktów).",
+      "audience": "Grupa lub spotkanie indywidualne",
+      "items": [
+        {
+          "ingredientId": "moodWeather",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "assertivenessDrill",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "refusalSkills",
+          "minutes": 20
+        },
+        {
+          "ingredientId": "rolePlay",
+          "minutes": 25
+        },
+        {
+          "ingredientId": "homework",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "feedbackRound",
+          "minutes": 5
+        }
+      ]
+    },
+    {
+      "id": "familySession",
+      "title": "Sesja z rodziną",
+      "goal": "Poprawa komunikacji w rodzinie, rozpoznanie zasobów i ustalenie wspólnych kroków wsparcia.",
+      "audience": "Podopieczny z członkami rodziny",
+      "items": [
+        {
+          "ingredientId": "welcomeContract",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "familyStrengths",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "genogram",
+          "minutes": 20
+        },
+        {
+          "ingredientId": "familyCommunication",
+          "minutes": 20
+        },
+        {
+          "ingredientId": "summary",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "nextSteps",
+          "minutes": 5
+        }
+      ]
+    },
+    {
+      "id": "classPrevention",
+      "title": "Zajęcia profilaktyczne w klasie",
+      "goal": "Korekta przekonań normatywnych i ćwiczenie umiejętności podejmowania decyzji – w formie interaktywnej, bez straszenia.",
+      "audience": "Klasa szkolna (45 minut)",
+      "items": [
+        {
+          "ingredientId": "energiser",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "normativeQuiz",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "lifeSkillsScenario",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "feedbackRound",
+          "minutes": 10
+        }
+      ]
+    },
+    {
+      "id": "relapsePrevention",
+      "title": "Zapobieganie nawrotom",
+      "goal": "Rozpoznanie sytuacji wysokiego ryzyka i przećwiczenie sposobów radzenia sobie z głodem.",
+      "audience": "Spotkanie indywidualne lub grupa",
+      "items": [
+        {
+          "ingredientId": "haltCheckIn",
+          "minutes": 5
+        },
+        {
+          "ingredientId": "triggerMap",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "urgeSurfing",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "thoughtRecord",
+          "minutes": 15
+        },
+        {
+          "ingredientId": "changePlan",
+          "minutes": 10
+        },
+        {
+          "ingredientId": "summary",
+          "minutes": 5
+        }
+      ]
+    }
+  ],
+  "sociotherapy": {
+    "title": "Program socjoterapeutyczny „Razem łatwiej” – szablon",
+    "goals": [
+      "budowanie poczucia bezpieczeństwa i przynależności w grupie",
+      "rozpoznawanie i nazywanie emocji oraz sposobów ich wyrażania",
+      "rozwijanie umiejętności komunikacji, współpracy i asertywności",
+      "ćwiczenie konstruktywnego rozwiązywania konfliktów",
+      "wzmacnianie poczucia własnej wartości i doświadczanie sukcesu"
+    ],
+    "groupRules": [
+      "To, co mówimy w grupie, zostaje w grupie (z wyjątkiem sytuacji zagrożenia).",
+      "Mówimy od siebie i o sobie.",
+      "Słuchamy, nie przerywamy.",
+      "Nie oceniamy i nie wyśmiewamy innych.",
+      "Każdy ma prawo powiedzieć „pas”.",
+      "Przychodzimy punktualnie i trzeźwi."
+    ],
+    "cycle": [
+      {
+        "no": 1,
+        "title": "Poznajmy się",
+        "aims": "Integracja i ustalenie kontraktu grupowego.",
+        "activities": [
+          "runda imion z gestem",
+          "kontrakt grupowy",
+          "runda zamykająca"
+        ]
+      },
+      {
+        "no": 2,
+        "title": "Ja i moje mocne strony",
+        "aims": "Budowanie pozytywnego obrazu siebie.",
+        "activities": [
+          "plakat „Moje mocne strony”",
+          "informacje zwrotne od grupy",
+          "runda zamykająca"
+        ]
+      },
+      {
+        "no": 3,
+        "title": "Emocje – co czuję?",
+        "aims": "Rozpoznawanie i nazywanie emocji.",
+        "activities": [
+          "pogoda nastroju",
+          "kalambury emocji",
+          "rozmowa o tym, gdzie w ciele czujemy emocje"
+        ]
+      },
+      {
+        "no": 4,
+        "title": "Złość i jak sobie z nią radzić",
+        "aims": "Poznanie bezpiecznych sposobów wyrażania złości.",
+        "activities": [
+          "termometr złości",
+          "ćwiczenie oddechowe",
+          "lista sposobów na ochłonięcie"
+        ]
+      },
+      {
+        "no": 5,
+        "title": "Komunikacja",
+        "aims": "Ćwiczenie aktywnego słuchania i komunikatu „ja”.",
+        "activities": [
+          "głuchy telefon",
+          "ćwiczenie parafrazy w parach",
+          "komunikat asertywny „ja”"
+        ]
+      },
+      {
+        "no": 6,
+        "title": "Asertywność i odmawianie",
+        "aims": "Ćwiczenie odmawiania i obrony własnych granic.",
+        "activities": ["trening odmawiania", "odgrywanie ról z kartą sytuacji"]
+      },
+      {
+        "no": 7,
+        "title": "Presja grupy",
+        "aims": "Rozpoznawanie presji i sposobów zachowania niezależności.",
+        "activities": [
+          "scenka z umiejętności życiowych",
+          "dyskusja w małych grupach",
+          "quiz normatywny"
+        ]
+      },
+      {
+        "no": 8,
+        "title": "Konflikty",
+        "aims": "Ćwiczenie konstruktywnego rozwiązywania sporów.",
+        "activities": [
+          "rozwiązywanie problemów krok po kroku",
+          "odgrywanie ról: konflikt"
+        ]
+      },
+      {
+        "no": 9,
+        "title": "Zaufanie i współpraca",
+        "aims": "Doświadczenie współpracy i wzajemnego wsparcia.",
+        "activities": [
+          "ćwiczenie na zaufanie",
+          "zadanie zespołowe (np. wspólna budowla)",
+          "omówienie"
+        ]
+      },
+      {
+        "no": 10,
+        "title": "Pożegnanie i co dalej",
+        "aims": "Podsumowanie, docenienie zmian, zamknięcie grupy.",
+        "activities": [
+          "list do siebie za pół roku",
+          "„gorące krzesło” z pozytywnymi informacjami zwrotnymi",
+          "ewaluacja zajęć"
+        ]
+      }
+    ]
+  },
+  "readaptationAreas": [
+    {
+      "id": "housing",
+      "title": "Mieszkanie",
+      "items": [
+        "ustalić, gdzie podopieczny zamieszka w pierwszych dniach",
+        "sprawdzić możliwość powrotu do rodziny lub mieszkania",
+        "w razie potrzeby złożyć wniosek o miejsce w schronisku, noclegowni lub mieszkaniu treningowym/wspomaganym",
+        "złożyć wniosek o lokal z zasobu gminy (mieszkanie socjalne)",
+        "ustalić zadłużenia czynszowe i możliwość ich spłaty lub odpracowania"
+      ]
+    },
+    {
+      "id": "documents",
+      "title": "Dokumenty",
+      "items": [
+        "dowód osobisty – wyrobić lub odebrać",
+        "zameldowanie (meldunek) pod aktualnym adresem",
+        "zaświadczenie o zwolnieniu i opinia z zakładu lub placówki",
+        "świadectwa szkolne, dyplomy, zaświadczenia o kursach",
+        "historia zatrudnienia i dokumenty z ZUS (np. do ustalenia stażu pracy)",
+        "legitymacja lub orzeczenie o niepełnosprawności – jeśli dotyczy"
+      ]
+    },
+    {
+      "id": "workEducation",
+      "title": "Praca i edukacja",
+      "items": [
+        "rejestracja w powiatowym urzędzie pracy jako osoba bezrobotna lub poszukująca pracy",
+        "przygotowanie CV i przećwiczenie rozmowy o pracę",
+        "rozpoznanie ofert dla osób opuszczających zakłady karne (np. spółdzielnie socjalne, centra integracji społecznej)",
+        "kontynuacja nauki lub kursu zawodowego",
+        "plan finansowy na pierwszy miesiąc"
+      ]
+    },
+    {
+      "id": "health",
+      "title": "Zdrowie i leczenie uzależnienia",
+      "items": [
+        "ubezpieczenie zdrowotne w NFZ – sprawdzić lub zgłosić (np. przez urząd pracy lub OPS)",
+        "wybrać lekarza podstawowej opieki zdrowotnej",
+        "umówić wizytę w poradni leczenia uzależnień lub kontynuację terapii",
+        "kontakt z grupą wsparcia lub wspólnotą samopomocową (np. AA, NA)",
+        "plan zapobiegania nawrotom na pierwsze tygodnie",
+        "kontynuacja zaleconego leczenia zgodnie z dokumentacją od lekarza"
+      ]
+    },
+    {
+      "id": "relations",
+      "title": "Relacje",
+      "items": [
+        "ustalić, z kim z rodziny i bliskich można się kontaktować",
+        "zaplanować rozmowę z rodziną o zasadach i oczekiwaniach",
+        "rozpoznać relacje zwiększające ryzyko powrotu do przestępczości lub używania",
+        "kontakty z dziećmi – sprawdzić ustalenia sądu",
+        "znaleźć co najmniej jedną zaufaną osobę do kontaktu w kryzysie"
+      ]
+    },
+    {
+      "id": "institutional",
+      "title": "Wsparcie instytucjonalne",
+      "items": [
+        "kontakt z kuratorem sądowym (jeśli orzeczono dozór) – termin pierwszego spotkania",
+        "wizyta w ośrodku pomocy społecznej (OPS/MOPS) – zasiłek, pomoc rzeczowa, praca socjalna",
+        "sprawdzić możliwość pomocy z Funduszu Sprawiedliwości (pomoc postpenitencjarna)",
+        "kontakt z organizacją pozarządową wspierającą osoby po wyjściu z zakładu",
+        "bezpłatna pomoc prawna – sprawy długów, alimentów, kar",
+        "lista telefonów i adresów z godzinami przyjęć"
+      ]
+    }
+  ],
+  "familySupport": {
+    "goalExamples": [
+      "rodzina zna dostępne formy pomocy i wie, gdzie się zgłosić",
+      "rodzice ustalają wspólne, jasne zasady w domu",
+      "członkowie rodziny rozmawiają o trudnościach bez obwiniania",
+      "osoba bliska dba o własne zdrowie i odpoczynek",
+      "rodzina ma plan bezpieczeństwa na wypadek kryzysu lub przemocy",
+      "rodzina wzmacnia trzeźwe zachowania bliskiej osoby (podejście CRAFT)",
+      "dziecko ma regularny kontakt z zaufanym dorosłym spoza domu"
+    ],
+    "supportExamples": [
+      "konsultacje w punkcie konsultacyjnym gminy",
+      "grupa wsparcia dla osób bliskich (np. Al-Anon, grupy przy poradniach)",
+      "terapia dla osób współuzależnionych w poradni leczenia uzależnień",
+      "warsztaty umiejętności wychowawczych",
+      "świetlica socjoterapeutyczna dla dzieci",
+      "asystent rodziny z ośrodka pomocy społecznej",
+      "procedura „Niebieskie Karty” i zespół interdyscyplinarny w przypadku przemocy",
+      "poradnia psychologiczno-pedagogiczna"
+    ]
+  }
+}
