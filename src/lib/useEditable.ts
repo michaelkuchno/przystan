@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { save } from './store';
+import { onRevert, save } from './store';
 import type { RecordKind, RecordMap } from '@/domain/types';
 
 /**
@@ -36,6 +36,20 @@ export function useEditable<K extends RecordKind>(kind: K, initial: RecordMap[K]
       }
     },
     [autosave, flush],
+  );
+
+  // an earlier version was restored from the history: it replaces the draft
+  useEffect(
+    () =>
+      onRevert((id, value) => {
+        if (id !== latest.current.id) return;
+        clearTimeout(timer.current);
+        timer.current = undefined;
+        latest.current = value as RecordMap[K];
+        setDraft(value as RecordMap[K]);
+        setStatus('saved');
+      }),
+    [],
   );
 
   // save pending changes on unmount

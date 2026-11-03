@@ -34,7 +34,9 @@ AUDIT / AUDIT-C / DUDIT, kreator programu profilaktycznego z ewaluacją i PDF, s
 i kreator skierowania (**Polska lub Szwajcaria – ustawienie „Kraj pracy”**), baza wiedzy, symulator
 rozmowy motywującej, fiszki i tryb egzaminu, **dzienniczek praktyk**, **notatnik i superwizja**,
 **anonimowe studium przypadku (PDF)**, tryb szkoleniowy z fikcyjnymi przypadkami (PL i CH), tryb
-prezentacji na rzutnik, opcjonalne **odblokowanie biometrią**.
+prezentacji na rzutnik, opcjonalne **odblokowanie biometrią**, **historia zmian z przywracaniem
+poprzednich wersji, kosz (30 dni) i dziennik audytu** odporny na manipulację (kontrola integralności,
+raport PDF / CSV dla kontroli, eksport danych osoby zgodnie z RODO).
 
 ## Kurzfassung (Deutsch)
 
@@ -51,6 +53,9 @@ Gerät.
 - **Aktualisieren ohne Datenverlust:** Die Web-App aktualisiert sich selbst («Neue Version
   verfügbar» → **Aktualisieren**). Beim APK die neue Datei **über** die alte installieren – nicht
   deinstallieren. Vorher eine **Datensicherung** erstellen (Einstellungen → Datensicherung).
+- **Verlauf und Protokoll:** jede Änderung lässt sich auf eine frühere Version zurücksetzen,
+  Gelöschtes bleibt 30 Tage im Papierkorb, das Änderungsprotokoll ist gegen Manipulation gesichert
+  und als PDF / CSV exportierbar (Einstellungen → Verlauf und Protokoll).
 - Sprache und Arbeitsland: beim ersten Start oder in den **Einstellungen**. Inhalte, die noch
   geprüft werden müssen, sind entsprechend markiert (siehe `docs/CONTENT_REVIEW.md`).
 
@@ -91,7 +96,9 @@ AUDIT / AUDIT-C / DUDIT · prevention programme wizard with evaluation and PDF �
 referral wizard (**Poland or Switzerland – canton of Bern**) · knowledge base · motivational
 interviewing simulator · flashcards and exam mode · **placement log** · **notebook and supervision** ·
 **anonymous case study (PDF)** · training mode with fictional cases (PL and CH) · presentation mode ·
-optional **biometric unlock** (Android Keystore / passkey with WebAuthn PRF).
+optional **biometric unlock** (Android Keystore / passkey with WebAuthn PRF) · **change history with restore,
+30-day trash and a tamper-evident audit log** (HMAC chain, integrity check, PDF / CSV export for
+inspections, per-person GDPR data export).
 
 ### Local preview (Windows)
 

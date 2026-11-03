@@ -2,6 +2,8 @@
  * Platform helpers: haptics and file export/sharing for Web (PWA) and Android (Capacitor).
  */
 import { Capacitor } from '@capacitor/core';
+import { logEvent, type AuditAction } from './audit';
+import { activeSpace } from './store';
 
 export const isNative = () => Capacitor.isNativePlatform();
 
@@ -39,7 +41,26 @@ export type ExportResult = 'shared' | 'downloaded' | 'cancelled';
  *  - iOS/Android PWA: Web Share with files when available;
  *  - desktop: regular download.
  */
-export async function exportFile(name: string, blob: Blob, title?: string): Promise<ExportResult> {
+export async function exportFile(
+  name: string,
+  blob: Blob,
+  title?: string,
+  audit?: { action: AuditAction; details?: Record<string, unknown> },
+): Promise<ExportResult> {
+  const res = await saveOrShare(name, blob, title);
+  if (res !== 'cancelled') {
+    // every file that leaves the app is recorded (fictional training data is not)
+    const action = audit?.action ?? (name.endsWith('.przystan') ? 'backup.export' : 'data.export');
+    await logEvent({
+      action,
+      space: action === 'data.export' ? activeSpace() : '',
+      details: { file: name, size: blob.size, via: res, ...audit?.details },
+    }).catch(() => undefined);
+  }
+  return res;
+}
+
+async function saveOrShare(name: string, blob: Blob, title?: string): Promise<ExportResult> {
   if (isNative()) {
     const { Filesystem, Directory } = await import('@capacitor/filesystem');
     const { Share } = await import('@capacitor/share');
@@ -108,6 +129,8 @@ export function slug(s: string): string {
 export function syncSystemBars(dark: boolean) {
   if (!isNative()) return;
   void import('@capacitor/core')
-    .then(({ SystemBars, SystemBarsStyle }) => SystemBars.setStyle({ style: dark ? SystemBarsStyle.Dark : SystemBarsStyle.Light }))
+    .then(({ SystemBars, SystemBarsStyle }) =>
+      SystemBars.setStyle({ style: dark ? SystemBarsStyle.Dark : SystemBarsStyle.Light }),
+    )
     .catch(() => undefined);
 }

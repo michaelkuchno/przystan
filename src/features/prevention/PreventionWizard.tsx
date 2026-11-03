@@ -390,7 +390,7 @@ function Wizard({ program }: { program: PreventionProgram }) {
           >
             {t('exportPdf')}
           </Button>
-          <SaveStatus status={status} />
+          <SaveStatus status={status} history={{ kind: 'prevention', id: draft.id }} />
         </div>
       </nav>
       <div className="min-w-0">

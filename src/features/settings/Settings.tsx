@@ -12,6 +12,8 @@ import {
   BookMarked,
   ChevronRight,
   Loader2,
+  History,
+  ArchiveRestore,
 } from 'lucide-react';
 import { Page, PageHeader, Notice } from '@/components/ui/page';
 import { Button, Card, SectionTitle } from '@/components/ui/core';
@@ -28,7 +30,9 @@ import { exportFile, pickTextFile, todayIso } from '@/lib/platform';
 import { WrongPasswordError } from '@/lib/crypto';
 import { fmtDate } from '@/lib/format';
 import { onLanguageChanged, openSpace, seedDemo, switchMode } from '@/app/session';
-import { clearStore } from '@/lib/store';
+import { clearStore, storeVersion, useStore } from '@/lib/store';
+import { logEvent } from '@/lib/audit';
+import { listTrash } from '@/lib/history';
 
 const APP_VERSION = __APP_VERSION__;
 
@@ -52,6 +56,17 @@ export default function Settings() {
   const [oldPw, setOldPw] = useState('');
   const [newPw, setNewPw] = useState('');
   const [newPw2, setNewPw2] = useState('');
+  const tick = useStore(storeVersion);
+  const [trashN, setTrashN] = useState<number | null>(null);
+  useEffect(() => {
+    let alive = true;
+    void listTrash()
+      .then((x) => alive && setTrashN(x.length))
+      .catch(() => undefined);
+    return () => {
+      alive = false;
+    };
+  }, [tick, prefs.mode]);
 
   const setLang = async (lang: Lang) => {
     await setPrefs({ lang });
@@ -101,6 +116,7 @@ export default function Settings() {
     setBusy(true);
     try {
       await changePassword(oldPw, newPw);
+      await logEvent({ action: 'password.change' });
       setPwOpen(false);
       setOldPw('');
       setNewPw('');
@@ -242,6 +258,28 @@ export default function Settings() {
           >
             {t('backup.import')}
           </Button>
+        </div>
+      </Card>
+
+      <SectionTitle id="audit">{t('audit:section')}</SectionTitle>
+      <Card className="space-y-3">
+        <p className="text-sm leading-relaxed">{t('audit:sectionText')}</p>
+        <div className="divide-y divide-line overflow-hidden rounded-2xl border border-line">
+          {[
+            { to: '/audit', icon: History, label: t('audit:logLink'), extra: '' },
+            { to: '/trash', icon: ArchiveRestore, label: t('audit:trashLink'), extra: trashN ? String(trashN) : '' },
+          ].map((l) => (
+            <Link key={l.to} to={l.to} className="flex min-h-14 items-center gap-3 px-4 hover:bg-surface-2">
+              <l.icon className="size-5 text-primary" aria-hidden />
+              <span className="flex-1">{l.label}</span>
+              {l.extra && (
+                <span className="rounded-full bg-surface-2 px-2 py-0.5 text-xs font-semibold tabular-nums" aria-label={l.extra}>
+                  {l.extra}
+                </span>
+              )}
+              <ChevronRight className="size-5 text-muted" aria-hidden />
+            </Link>
+          ))}
         </div>
       </Card>
 

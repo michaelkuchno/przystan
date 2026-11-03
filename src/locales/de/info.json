@@ -35,6 +35,10 @@
         "a": "Die Daten können nicht wiederhergestellt werden – das ist der Preis echter Verschlüsselung. Erstelle deshalb regelmässig verschlüsselte Backups."
       },
       {
+        "q": "Änderungsverlauf und Protokoll",
+        "a": "Im Praxismodus wird bei jeder Änderung die vorherige Version verschlüsselt aufbewahrt (Sie können sie wiederherstellen), gelöschte Einträge bleiben 30 Tage im Papierkorb. Das Protokoll zeichnet Vorgänge mit den Daten, Entsperrungen und Dateiexporte auf. Die Einträge sind verkettet signiert mit einem Schlüssel, der nur mit dem Passwort verfügbar ist; Änderungen oder Löschungen werden daher erkannt (Einstellungen → Verlauf und Protokoll → Integritätsprüfung). Bei endgültiger Löschung verschwindet auch der Verlauf, im Protokoll bleibt nur der Hinweis auf die Löschung, ohne Namen. Die Datenauskunft zu einer Person (DSG/DSGVO) finden Sie in deren Profil."
+      },
+      {
         "q": "Daten über die Personen, mit denen ich arbeite",
         "a": "Es handelt sich um besonders schützenswerte Daten (DSGVO in Polen, nDSG in der Schweiz). Verwende standardmässig Codes statt Namen und führe Aufzeichnungen gemäss den Regeln deiner Organisation und der beruflichen Schweigepflicht. PDF-Berichte enthalten weder Code noch Namen der Person."
       },

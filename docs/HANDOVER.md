@@ -30,6 +30,15 @@ Wersja **1.1.0**. Repozytorium: https://github.com/michaelkuchno/przystan (konto
       ma być niewidoczna.
 - [ ] Eksport PDF (dzienniczek praktyk, studium przypadku) – arkusz udostępniania.
 
+**Wersja 1.2 – historia i audyt (oba telefony):**
+- [ ] Aktualizacja 1.1.x → 1.2.0 zachowuje dane (migracja bazy do wersji 3).
+- [ ] Notatka: zmiana treści, potem Historia → „Przywróć tę wersję” – treść wraca od razu.
+- [ ] Usunięcie osoby → Ustawienia → Historia i audyt → Kosz → Przywróć (wraca z diagnozą, spotkaniami…).
+- [ ] Dziennik audytu → Sprawdź teraz: „Integralność potwierdzona”; Raport PDF i CSV otwierają się
+      (CSV w Excelu z polskimi znakami).
+- [ ] Profil osoby → Eksport danych (RODO): plik JSON udostępnia się / zapisuje.
+- [ ] Kopia zapasowa z 1.2.0 przywrócona na drugim urządzeniu: historia i dziennik są na miejscu.
+
 ## 2. Weryfikacja treści
 
 Lista: [`docs/CONTENT_REVIEW.md`](CONTENT_REVIEW.md) – w szczególności nowa sekcja 12

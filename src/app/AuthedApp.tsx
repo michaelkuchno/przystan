@@ -42,6 +42,8 @@ const PracticeLog = lazy(() => import('@/features/practice/PracticeLog'));
 const NotesList = lazy(() => import('@/features/notes/NotesList'));
 const NoteEditor = lazy(() => import('@/features/notes/NoteEditor'));
 const CaseStudy = lazy(() => import('@/features/casestudy/CaseStudy'));
+const AuditLog = lazy(() => import('@/features/audit/AuditLog'));
+const Trash = lazy(() => import('@/features/audit/Trash'));
 
 function PageFallback() {
   return (
@@ -96,6 +98,8 @@ export default function AuthedApp({ overlay }: { overlay?: ReactNode }) {
                   <Route path="/learn/exam" element={<Exam />} />
                   <Route path="/learn/deck/:id" element={<DeckEditor />} />
                   <Route path="/settings" element={<Settings />} />
+                  <Route path="/audit" element={<AuditLog />} />
+                  <Route path="/trash" element={<Trash />} />
                   <Route path="/info/:page" element={<InfoPage />} />
                   <Route path="/crisis" element={<Crisis />} />
                   <Route path="/more" element={<More />} />

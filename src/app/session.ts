@@ -96,8 +96,9 @@ export function useAutoLock(): { shielded: boolean } {
     const events = ['pointerdown', 'keydown', 'scroll', 'touchstart'] as const;
     events.forEach((e) => window.addEventListener(e, reset, { passive: true }));
     reset();
-    // cleanup of soft-deleted rows whose undo window has passed
-    const purge = setInterval(() => void purgeDeleted(60_000), 60_000);
+    // permanent deletion of records that have been in the trash longer than TRASH_DAYS
+    void purgeDeleted().catch(() => undefined);
+    const purge = setInterval(() => void purgeDeleted().catch(() => undefined), 3_600_000);
     return () => {
       clearTimeout(timer);
       clearInterval(purge);

@@ -12,8 +12,16 @@
 import { Capacitor, registerPlugin } from '@capacitor/core';
 import { db } from '../db';
 import { fromB64, randomBytes, toB64, unwrapRaw, importDek, type Cipher } from '../crypto';
-import { readVault, _setKey } from '../vault';
-import { afterBioSuccess, afterFailure, afterPasswordUnlock, bioBlock, MAX_FAILURES, type BioBlock, type BioState } from './policy';
+import { readVault, _setKey, noteFailedUnlock } from '../vault';
+import {
+  afterBioSuccess,
+  afterFailure,
+  afterPasswordUnlock,
+  bioBlock,
+  MAX_FAILURES,
+  type BioBlock,
+  type BioState,
+} from './policy';
 import { keyFromPrf, unwrapDek, wrapDek } from './wrap';
 
 export type { BioBlock, BioState };
@@ -104,8 +112,7 @@ export async function bioAvailability(): Promise<BioAvailability> {
     }
   }
   const PKC = window.PublicKeyCredential as
-    | (typeof PublicKeyCredential & { getClientCapabilities?: () => Promise<Record<string, boolean>> })
-    | undefined;
+    (typeof PublicKeyCredential & { getClientCapabilities?: () => Promise<Record<string, boolean>> }) | undefined;
   if (!PKC) return { kind: 'webauthn', available: false, reason: 'noWebAuthn' };
   if (!window.isSecureContext) return { kind: 'webauthn', available: false, reason: 'insecure' };
   // Safari (iOS 18 home-screen apps) may under-report both of these – they only warn; creating the
@@ -351,7 +358,7 @@ export async function unlockWithBiometric(texts: PromptTexts, now = Date.now(), 
     }
     const latest = (await readBio()) ?? s;
     await writeBio(afterBioSuccess(latest));
-    _setKey(dek);
+    _setKey(dek, 'biometric');
   } catch (e) {
     if (!(e instanceof BioError)) throw e;
     if (e.code === 'invalidated') {
@@ -362,6 +369,7 @@ export async function unlockWithBiometric(texts: PromptTexts, now = Date.now(), 
     } else if (e.failedAttempts) {
       // only fingers / faces that were actually presented and not recognised count towards the 5
       await writeBio(afterFailure(s, e.failedAttempts));
+      await noteFailedUnlock('biometric');
     } else if (e.code === 'failed' && s.kind === 'webauthn') {
       // WebAuthn returned a PRF result that does not open the key – a real failed attempt
       await writeBio(afterFailure(s, 1));

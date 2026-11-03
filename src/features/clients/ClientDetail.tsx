@@ -1,12 +1,15 @@
 import { lazy, Suspense } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Pencil, Trash2, FileDown, CalendarPlus, BookOpenText, NotebookText } from 'lucide-react';
+import { Pencil, Trash2, FileDown, CalendarPlus, BookOpenText, NotebookText, FileJson } from 'lucide-react';
 import { Page, PageHeader } from '@/components/ui/page';
 import { Badge, Button, ButtonLink, EmptyState, Avatar, Skeleton } from '@/components/ui/core';
 import { Tabs, useConfirm } from '@/components/ui/overlay';
 import { useToast } from '@/components/ui/toast';
-import { useStore, get, remove } from '@/lib/store';
+import { useStore, get, remove, activeSpace } from '@/lib/store';
+import { HistoryButton } from '@/features/audit/HistorySheet';
+import { exportPerson } from '@/lib/history';
+import { exportFile, todayIso, slug } from '@/lib/platform';
 import { Overview } from './tabs/Overview';
 import { clientReportPdf } from '@/lib/reports';
 
@@ -110,12 +113,37 @@ export default function ClientDetail() {
             <ButtonLink to={`/case-study/${client.id}`} variant="secondary" size="sm" icon={<BookOpenText className="size-4" />}>
               {t('casestudy:open')}
             </ButtonLink>
-            <ButtonLink to={`/notes/new?client=${client.id}`} variant="secondary" size="sm" icon={<NotebookText className="size-4" />}>
+            <ButtonLink
+              to={`/notes/new?client=${client.id}`}
+              variant="secondary"
+              size="sm"
+              icon={<NotebookText className="size-4" />}
+            >
               {t('notes:newForClient')}
             </ButtonLink>
             <ButtonLink to={`/clients/${client.id}/edit`} variant="secondary" size="sm" icon={<Pencil className="size-4" />}>
               {t('common:edit')}
             </ButtonLink>
+            <HistoryButton kind="client" id={client.id} />
+            {activeSpace() === 'practice' && (
+              <Button
+                variant="secondary"
+                size="sm"
+                icon={<FileJson className="size-4" />}
+                onClick={async () => {
+                  const data = await exportPerson(client.id, __APP_VERSION__);
+                  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+                  const r = await exportFile(
+                    `przystan-dane-${slug(client.code) || 'osoba'}-${todayIso()}.json`,
+                    blob,
+                    t('audit:person.export'),
+                  );
+                  if (r !== 'cancelled') toast({ text: t('audit:person.done'), tone: 'ok' });
+                }}
+              >
+                {t('audit:person.export')}
+              </Button>
+            )}
             <Button variant="ghost" size="sm" onClick={() => void del()} aria-label={t('common:delete')}>
               <Trash2 className="size-4" />
             </Button>

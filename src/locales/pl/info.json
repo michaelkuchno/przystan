@@ -35,6 +35,10 @@
         "a": "Danych nie da się odzyskać – to cena prawdziwego szyfrowania. Dlatego rób regularnie zaszyfrowaną kopię zapasową."
       },
       {
+        "q": "Historia zmian i dziennik audytu",
+        "a": "Każda zmiana w trybie praktycznym zapisuje zaszyfrowaną poprzednią wersję (możesz ją przywrócić), a usunięte wpisy trafiają na 30 dni do kosza. Dziennik audytu rejestruje operacje na danych, odblokowania i eksporty plików. Wpisy są podpisane łańcuchowo kluczem dostępnym tylko po podaniu hasła, więc ich zmiana lub usunięcie zostanie wykryte (Ustawienia → Historia i audyt → Kontrola integralności). Po trwałym usunięciu wpisu znika też jego historia, a w dzienniku zostaje tylko informacja o usunięciu, bez nazwy. Eksport danych jednej osoby (art. 15 i 20 RODO) jest w jej profilu."
+      },
+      {
         "q": "Dane osób, z którymi pracuję",
         "a": "To dane szczególnie chronione (RODO w Polsce, nDSG w Szwajcarii). Domyślnie używaj kodów zamiast imion i nazwisk, prowadź dokumentację zgodnie z zasadami placówki i tajemnicą zawodową. Raporty PDF nie zawierają kodu ani imienia osoby."
       },

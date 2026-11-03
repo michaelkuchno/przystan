@@ -66,7 +66,7 @@ function Editor({ note, isNew }: { note: Note; isNew: boolean }) {
         back="/notes"
         eyebrow={sup ? t('filter.supervision') : t('filter.note')}
         title={draft.title || (isNew ? (sup ? t('newSupervision') : t('new')) : t('untitled'))}
-        actions={<SaveStatus status={status} />}
+        actions={<SaveStatus status={status} history={{ kind: 'note', id: draft.id }} />}
       />
       <div className="space-y-4">
         <Card className="space-y-4">
@@ -113,7 +113,10 @@ function Editor({ note, isNew }: { note: Note; isNew: boolean }) {
                     checked={task.done}
                     aria-label={task.title}
                     onChange={(e) =>
-                      update((d) => ({ ...d, tasks: d.tasks?.map((x) => (x.id === task.id ? { ...x, done: e.target.checked } : x)) }))
+                      update((d) => ({
+                        ...d,
+                        tasks: d.tasks?.map((x) => (x.id === task.id ? { ...x, done: e.target.checked } : x)),
+                      }))
                     }
                   />
                   <span className={`min-w-0 flex-1 basis-40 ${task.done ? 'text-muted line-through' : ''}`}>{task.title}</span>

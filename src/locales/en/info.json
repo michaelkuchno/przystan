@@ -35,6 +35,10 @@
         "a": "The data cannot be recovered – that is the price of real encryption. So make regular encrypted backups."
       },
       {
+        "q": "Change history and audit log",
+        "a": "In practice mode every change keeps the previous version encrypted (you can restore it), and deleted entries stay in the trash for 30 days. The audit log records operations on the data, unlocks and file exports. Entries are chain-signed with a key available only with the password, so changing or removing them is detected (Settings → History and audit → Integrity check). When an entry is deleted permanently its history goes too, and the log keeps only a note of the deletion, without the name. The export of one person's data (GDPR art. 15 and 20) is in their profile."
+      },
+      {
         "q": "Data about the people I work with",
         "a": "This is special-category data (GDPR in Poland, nDSG in Switzerland). Use codes instead of names by default and keep records in line with your organisation's rules and professional confidentiality. PDF reports contain no code or name of the person."
       },

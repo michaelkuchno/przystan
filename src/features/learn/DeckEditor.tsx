@@ -24,7 +24,7 @@ function Editor({ deck }: { deck: Deck }) {
         <div className="flex-1">
           <TextField label={t('deckTitle')} value={draft.title} onChange={(v) => update({ title: v })} />
         </div>
-        <SaveStatus status={status} />
+        <SaveStatus status={status} history={{ kind: 'deck', id: draft.id }} />
       </Card>
       {draft.cards.map((c, i) => (
         <Card key={c.id} className="grid gap-2 sm:grid-cols-[1fr_1.4fr_auto]">

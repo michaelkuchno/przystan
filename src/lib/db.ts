@@ -5,6 +5,8 @@
  *  1 – records(id, kind, space, clientId, updatedAt), meta(key), prefs(key)
  *  2 – compound index [space+kind] for faster per-module queries;
  *      `deletedAt` column for undo (soft delete) – existing rows get deletedAt = 0.
+ *  3 – `versions` (encrypted snapshots for history / revert) and `audit`
+ *      (append-only, HMAC-chained audit log). See docs/DECISIONS.md D-049.
  */
 import Dexie, { type EntityTable } from 'dexie';
 import type { Cipher } from './crypto';
@@ -22,18 +24,62 @@ export interface StoredRecord {
   data: Cipher;
 }
 
+/** One saved state of a record (encrypted snapshot of the whole record). */
+export interface VersionRow {
+  seq?: number;
+  recordId: string;
+  kind: RecordKind;
+  space: Space;
+  clientId: string;
+  /** Epoch ms of the last write folded into this version. */
+  at: number;
+  /** Epoch ms of the first write of this version (edits within a short window are folded). */
+  startedAt: number;
+  op: VersionOp;
+  /** Lock epoch (unlock session) the version was written in. */
+  session: number;
+  data: Cipher;
+}
+
+export type VersionOp = 'create' | 'update' | 'revert' | 'import';
+
+/**
+ * Audit log entry. Metadata (time, action, ids) is plain – the same as already
+ * visible in `records`; human readable details are encrypted. `mac` chains the
+ * entries (HMAC-SHA256 over the previous mac + this entry incl. `detailsHash`),
+ * so details can be redacted (GDPR erasure) without breaking verification.
+ */
+export interface AuditRow {
+  seq?: number;
+  id: string;
+  at: number;
+  action: string;
+  space: Space | '';
+  kind: RecordKind | '';
+  recordId: string;
+  clientId: string;
+  details: Cipher | null;
+  /** SHA-256 (base64) of the encrypted details ('' when none). */
+  detailsHash: string;
+  /** true when details were erased after permanent deletion of the record. */
+  redacted?: boolean;
+  mac: string;
+}
+
 export interface MetaRow {
   key: string;
   value: unknown;
 }
 
 export const DB_NAME = 'przystan';
-export const DB_VERSION = 2;
+export const DB_VERSION = 3;
 
 export class PrzystanDB extends Dexie {
   records!: EntityTable<StoredRecord, 'id'>;
   meta!: EntityTable<MetaRow, 'key'>;
   prefs!: EntityTable<MetaRow, 'key'>;
+  versions!: EntityTable<VersionRow, 'seq'>;
+  audit!: EntityTable<AuditRow, 'seq'>;
 
   constructor(name = DB_NAME) {
     super(name);
@@ -61,6 +107,11 @@ export function defineSchema(db: Dexie, upTo = DB_VERSION) {
           if (r.deletedAt === undefined) r.deletedAt = 0;
         });
     });
+  if (upTo < 3) return;
+  db.version(3).stores({
+    versions: '++seq, recordId, clientId, space, at',
+    audit: '++seq, &id, at, recordId, clientId, action',
+  });
 }
 
 export let db = new PrzystanDB();

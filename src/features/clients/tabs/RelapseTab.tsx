@@ -19,7 +19,7 @@ function Editor({ plan }: { plan: RelapsePlan }) {
     <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-2">
         <p className="flex-1 text-sm text-muted">{t('relapse.intro')}</p>
-        <SaveStatus status={status} />
+        <SaveStatus status={status} history={{ kind: 'relapsePlan', id: draft.id }} />
         <Button
           variant="soft"
           size="sm"

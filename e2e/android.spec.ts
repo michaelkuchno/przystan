@@ -56,6 +56,8 @@ const ROUTES = [
   '#/notes',
   '#/notes/new?type=supervision',
   '#/case-study/demo-01',
+  '#/audit',
+  '#/trash',
   '#/clients/demo-01/measurements',
   '#/tools/supportMap',
   '#/tools/decisionalBalance',
@@ -116,7 +118,8 @@ test('nothing overlaps the system bars and no horizontal scrolling @android', as
             range.selectNodeContents(n);
             for (const r of range.getClientRects()) tops.add(Math.round(r.top));
           }
-          if (rc.width > 0 && rc.width < 80 && tops.size >= 3) out.push(`squeezed text (${Math.round(rc.width)} px): "${own.slice(0, 30)}"`);
+          if (rc.width > 0 && rc.width < 80 && tops.size >= 3)
+            out.push(`squeezed text (${Math.round(rc.width)} px): "${own.slice(0, 30)}"`);
         }
         return out;
       },
@@ -138,7 +141,8 @@ test('onboarding and lock screen stay clear of the system bars @android', async 
         const vh = window.innerHeight;
         const out: string[] = [];
         const vw = window.visualViewport?.width ?? window.innerWidth;
-        if (document.documentElement.scrollWidth > vw + 1) out.push(`horizontal scroll ${document.documentElement.scrollWidth} > ${vw}`);
+        if (document.documentElement.scrollWidth > vw + 1)
+          out.push(`horizontal scroll ${document.documentElement.scrollWidth} > ${vw}`);
         for (const el of document.querySelectorAll('button, a, h1, input')) {
           const rc = el.getBoundingClientRect();
           if (rc.height === 0) continue;

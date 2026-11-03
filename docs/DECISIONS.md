@@ -347,3 +347,51 @@ pokazują powód (status `BiometricManager` – brak odcisku, tylko słaba biome
 albo błąd wtyczki / brak WebAuthn) i dane diagnostyczne. Na iOS deklaracje Safari
 (`isUserVerifyingPlatformAuthenticatorAvailable`, `getClientCapabilities`) są tylko ostrzeżeniem –
 o wyniku decyduje próba utworzenia passkeya. Etykieta Androida: „biometrią (odcisk palca)”.
+
+## D-049 Historia zmian, kosz i dziennik audytu (1.2.0)
+Cel: przypadkowa zmiana lub usunięcie nie może oznaczać utraty danych, a na żądanie kontroli
+(NFZ / KCPU, sąd, inspektor ochrony danych) trzeba umieć pokazać, kto i kiedy co zrobił
+(zasada rozliczalności, art. 5 ust. 2 i art. 32 RODO; nDSG art. 8).
+
+- **Wersje.** Każdy zapis rekordu w trybie praktycznym zapisuje w tej samej transakcji
+  zaszyfrowany obraz całego rekordu (tabela `versions`, AAD `v|id|kind|space`, nie da się go
+  podmienić z rekordem). Zmiany w ciągu 5 minut w tej samej sesji odblokowania łączą się w jedną
+  wersję (autozapis co 600 ms nie zalewa historii), a zapisy bez zmiany treści są pomijane.
+  Przywrócenie wersji tworzy nową wersję „przywrócenie”, więc też je można cofnąć. Otwarte edytory
+  dostają przywróconą treść (`onRevert`). Bez historii: `cardState` (postęp fiszek – zmienia się
+  przy każdej karcie, bez wartości dokumentacyjnej) i cały tryb szkoleniowy (dane fikcyjne).
+- **Kosz.** Usunięcie przenosi rekord (u osoby – wraz ze wszystkimi jej rekordami) do kosza na
+  30 dni (wcześniej 60 s na „Cofnij”). Potem, albo na żądanie („Usuń trwale”), rekord znika
+  razem z wersjami. To realizuje prawo do usunięcia danych – kosz i historia nie trzymają danych
+  w nieskończoność.
+- **Dziennik audytu** (tabela `audit`, tylko dopisywanie): tworzenie, zmiana, przywrócenie wersji,
+  import, usunięcie, przywrócenie z kosza, trwałe usunięcie, odblokowanie (hasło / biometria),
+  nieudane próby odblokowania (licznik jawny, przenoszony do dziennika przy następnym
+  odblokowaniu, bo bez hasła nie ma klucza), zmiana hasła, włączenie / wyłączenie biometrii,
+  każdy plik wychodzący z aplikacji (PDF, JSON, CSV, kopia), przywrócenie kopii, eksport dziennika.
+  Blokowania nie zapisujemy – po zablokowaniu nie ma już klucza.
+- **Ochrona przed manipulacją.** Wpisy tworzą łańcuch HMAC-SHA256 (poprzedni MAC + metadane +
+  skrót zaszyfrowanych szczegółów). Klucz HMAC jest losowy, zaszyfrowany kluczem danych, więc bez
+  hasła nie da się podrobić, zmienić, przestawić ani usunąć wpisu. Podpisana „głowa” (ostatni
+  wpis) wykrywa ucięcie końcówki. Ograniczenie: osoba znająca hasło i mająca dostęp do bazy może
+  przebudować łańcuch – to dziennik wykrywający manipulację, nie notarialny znacznik czasu.
+- **Szczegóły zaszyfrowane, metadane jawne** (czas, rodzaj operacji i rekordu, identyfikatory –
+  te same, które już są jawne w `records`). Po trwałym usunięciu szczegóły (np. kod osoby)
+  starszych wpisów o tym rekordzie są wymazywane (`redacted`); łańcuch nadal się weryfikuje, bo
+  podpisany jest skrót szczegółów, a nie same szczegóły.
+- **Kopia zapasowa – format 2**: zawiera kosz, wersje, dziennik, zaszyfrowany klucz audytu i
+  głowę łańcucha, więc po przywróceniu historia i dziennik trwają dalej (pierwszym nowym wpisem jest
+  „przywrócono kopię”). Pliki w formacie 1 nadal działają – dziennik zaczyna się wtedy od nowa.
+- **Kontrola integralności** (Ustawienia → Historia i audyt): odszyfrowuje wszystkie rekordy i
+  wersje oraz weryfikuje łańcuch. **Eksport dla kontroli**: PDF (poziomo, z oświadczeniem
+  o integralności) i CSV (UTF-8 z BOM, średnik – otwiera się w Excelu). **Eksport danych osoby**
+  (art. 15 i 20 RODO): JSON z rekordami, historią i wpisami dziennika tej osoby.
+- „Usuń wszystkie dane” nadal usuwa wszystko, także dziennik – to świadoma decyzja właściciela
+  urządzenia (dane i tak przestają istnieć).
+
+## D-050 Zakres „profesjonalizacji” w 1.2.0
+Z propozycji wdrożone teraz: historia z przywracaniem, kosz, dziennik audytu z weryfikacją,
+eksport PDF/CSV dla kontroli, eksport danych osoby, wpis w „Prywatności”. Odłożone (wymagają
+decyzji właściciela lub serwera): podpis kwalifikowany / zewnętrzny znacznik czasu dziennika,
+wielu użytkowników na jednym urządzeniu z rolami, automatyczna kopia do chmury, polityka retencji
+dokumentacji konfigurowana per placówka (np. 20 lat dla dokumentacji medycznej).

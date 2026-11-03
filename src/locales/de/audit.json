@@ -1,0 +1,199 @@
+{
+  "section": "Verlauf und Protokoll",
+  "sectionText": "Jede Änderung Ihrer Daten wird aufgezeichnet: Sie können zu einer früheren Version zurückkehren, einen gelöschten Eintrag aus dem Papierkorb wiederherstellen und das Protokoll einer Aufsicht oder Datenschutzstelle vorlegen.",
+  "logLink": "Änderungsprotokoll",
+  "trashLink": "Papierkorb",
+  "log": {
+    "title": "Änderungsprotokoll",
+    "intro": "Chronologische Aufzeichnung der Vorgänge mit den Daten im Praxismodus: Erstellen, Ändern, Löschen, Wiederherstellen, Entsperren, Exporte und Sicherungen. Einträge lassen sich nicht unbemerkt ändern oder entfernen (HMAC-Signaturkette). Übungsdaten (DEMO) werden nicht protokolliert.",
+    "empty": "Keine Einträge.",
+    "search": "Im Protokoll suchen",
+    "count_one": "{{count}} Eintrag",
+    "count_other": "{{count}} Einträge",
+    "showMore": "Mehr anzeigen",
+    "redacted": "Details gelöscht (DSG/DSGVO)",
+    "filters": {
+      "all": "Alle",
+      "changes": "Datenänderungen",
+      "deletions": "Löschungen",
+      "sessions": "Anmeldungen",
+      "exports": "Exporte und Sicherungen"
+    }
+  },
+  "actions": {
+    "vault": {
+      "setup": "Datenschutz eingerichtet (Passwort)"
+    },
+    "session": {
+      "unlock": "App entsperrt",
+      "unlockFailed": "Fehlgeschlagene Entsperrversuche"
+    },
+    "password": {
+      "change": "Passwort geändert"
+    },
+    "biometric": {
+      "enable": "Biometrisches Entsperren aktiviert",
+      "disable": "Biometrisches Entsperren deaktiviert"
+    },
+    "record": {
+      "create": "Erstellt",
+      "update": "Geändert",
+      "revert": "Frühere Version wiederhergestellt",
+      "import": "Importiert",
+      "delete": "In den Papierkorb verschoben",
+      "restore": "Aus dem Papierkorb wiederhergestellt",
+      "purge": "Endgültig gelöscht"
+    },
+    "data": {
+      "export": "Datei exportiert"
+    },
+    "backup": {
+      "export": "Sicherung erstellt",
+      "restore": "Sicherung wiederhergestellt"
+    },
+    "audit": {
+      "export": "Protokoll exportiert",
+      "verify": "Integrität geprüft"
+    }
+  },
+  "detail": {
+    "method": {
+      "password": "mit Passwort",
+      "biometric": "biometrisch",
+      "setup": "bei der Einrichtung",
+      "restore": "aus Sicherung"
+    },
+    "failed": "{{count}} × (zuletzt {{date}})",
+    "related": "mit zugehörigen Einträgen: {{count}}",
+    "versionFrom": "Version vom {{date}}",
+    "file": "Datei {{file}}",
+    "backupFrom": "Sicherung vom {{date}}, Datensätze: {{records}}",
+    "integrity": "Ergebnis: {{result}}"
+  },
+  "kinds": {
+    "client": "{{Client}}",
+    "diagnosis": "Abklärung",
+    "ipr": "Individueller Plan",
+    "relapsePlan": "Rückfallpräventionsplan",
+    "meeting": "Termin",
+    "measurement": "Messung",
+    "event": "Ereignis auf der Zeitachse",
+    "genogram": "Genogramm / Ökokarte",
+    "recipe": "Ablaufplan",
+    "prevention": "Präventionsprogramm",
+    "readaptation": "Wiedereingliederungsplan",
+    "familyPlan": "Arbeit mit Angehörigen",
+    "task": "Aufgabe",
+    "deck": "Lernkartenstapel",
+    "cardState": "Lernfortschritt",
+    "simRun": "Simulatorgespräch",
+    "practice": "Praktikumseintrag",
+    "note": "Notiz"
+  },
+  "history": {
+    "title": "Änderungsverlauf",
+    "button": "Verlauf",
+    "intro": "Gespeicherte Versionen, neueste zuerst. Änderungen innerhalb von 5 Minuten in einer Sitzung bilden eine Version.",
+    "empty": "Keine gespeicherten Versionen. Der Verlauf umfasst Änderungen ab App-Version 1.2.",
+    "current": "Aktuell",
+    "op": {
+      "create": "Erstellt",
+      "update": "Geändert",
+      "revert": "Version wiederhergestellt",
+      "import": "Import"
+    },
+    "changes": "Geänderte Felder",
+    "noChanges": "Erste gespeicherte Version.",
+    "restore": "Diese Version wiederherstellen",
+    "restoreConfirm": "Diese Version wiederherstellen?",
+    "restoreText": "Diese Version wird zum aktuellen Inhalt. Der jetzige Inhalt bleibt im Verlauf, auch dieser Schritt lässt sich also rückgängig machen.",
+    "restored": "Version vom {{date}} wiederhergestellt",
+    "unreadable": "Diese Version kann nicht gelesen werden.",
+    "otherSpace": "Diese Version gehört zum anderen Modus (Praxis / Übung)."
+  },
+  "fields": {
+    "code": "Kürzel / Initialen",
+    "fullName": "Vollständiger Name",
+    "title": "Titel",
+    "body": "Text",
+    "notes": "Notizen",
+    "date": "Datum",
+    "status": "Status",
+    "stage": "Veränderungsstadium",
+    "goal": "Ziel",
+    "problems": "Problembereiche",
+    "tags": "Schlagwörter",
+    "pinned": "Angeheftet",
+    "strengths": "Ressourcen",
+    "supportNetwork": "Unterstützungsnetz",
+    "family": "Familie",
+    "education": "Ausbildung / Arbeit",
+    "keyDates": "Wichtige Daten",
+    "context": "Arbeitsfeld",
+    "ageGroup": "Altersgruppe",
+    "age": "Alter",
+    "sex": "Geschlecht",
+    "conclusions": "Schlussfolgerungen",
+    "tasks": "Aufgaben",
+    "goals": "Ziele",
+    "areas": "Bereiche",
+    "description": "Beschreibung",
+    "clientId": "Zugeordnete Person",
+    "items": "Elemente",
+    "cards": "Karten"
+  },
+  "trash": {
+    "title": "Papierkorb",
+    "intro": "Gelöschte Einträge bleiben hier {{days}} Tage, danach werden sie endgültig gelöscht (mit ihrem Änderungsverlauf). Im Protokoll bleibt nur der Hinweis auf die endgültige Löschung, ohne Namen.",
+    "empty": "Der Papierkorb ist leer.",
+    "deletedOn": "gelöscht {{date}}",
+    "purgeIn": "endgültige Löschung: {{date}}",
+    "related": "+ zugehörige Einträge: {{count}}",
+    "restore": "Wiederherstellen",
+    "restored": "Wiederhergestellt",
+    "purge": "Endgültig löschen",
+    "purgeConfirm": "Endgültig löschen?",
+    "purgeText": "Der Eintrag und sein gesamter Änderungsverlauf werden unwiderruflich gelöscht.",
+    "purged": "Endgültig gelöscht",
+    "emptyAll": "Papierkorb leeren",
+    "emptyConfirm": "Papierkorb leeren?",
+    "emptyText": "Alle Einträge im Papierkorb und ihr Änderungsverlauf werden unwiderruflich gelöscht.",
+    "emptied": "Papierkorb geleert",
+    "untitled": "(ohne Titel)"
+  },
+  "integrity": {
+    "title": "Integritätsprüfung",
+    "text": "Prüft, ob sich alle Daten und Versionen entschlüsseln lassen und ob Protokolleinträge geändert, entfernt oder hinzugefügt wurden.",
+    "run": "Jetzt prüfen",
+    "running": "Prüfung läuft…",
+    "ok": "Integrität bestätigt",
+    "okText": "Protokolleinträge: {{entries}}, Datensätze: {{records}}, Versionen: {{versions}} – ohne Befund.",
+    "bad": "Abweichung festgestellt",
+    "badAudit": "Das Protokoll wurde ausserhalb der App verändert (Eintrag Nr. {{seq}}: {{reason}}).",
+    "reason": {
+      "mac": "Signatur stimmt nicht",
+      "details": "Details verändert",
+      "head": "letzte Einträge fehlen"
+    },
+    "badRecords": "Nicht lesbare Datensätze oder Versionen: {{count}}. Stellen Sie die Daten aus einer Sicherung wieder her."
+  },
+  "export": {
+    "pdf": "PDF-Bericht",
+    "csv": "CSV",
+    "pdfTitle": "Änderungsprotokoll",
+    "pdfSubtitle": "Przystań {{version}} · erstellt {{date}} · Praxismodus",
+    "pdfIntegrityOk": "Integrität der Eintragskette: bestätigt (Einträge: {{entries}}).",
+    "pdfIntegrityBad": "Integrität der Eintragskette: ABWEICHUNG bei Eintrag Nr. {{seq}}.",
+    "pdfNote": "Lokal auf dem Gerät geführtes Protokoll. Die Einträge sind verkettet signiert (HMAC-SHA256) mit einem Schlüssel, der nur mit dem Passwort verfügbar ist. Personen sind mit selbst vergebenen Pseudonymen bezeichnet.",
+    "colTime": "Zeit",
+    "colAction": "Vorgang",
+    "colObject": "Objekt",
+    "colDetails": "Details",
+    "colNo": "Nr.",
+    "done": "Protokoll exportiert"
+  },
+  "person": {
+    "export": "Datenauskunft (DSG/DSGVO)",
+    "done": "Datendatei bereit"
+  }
+}

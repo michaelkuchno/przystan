@@ -35,7 +35,7 @@ export function ReadaptationEditor({ plan }: { plan: ReadaptationPlan }) {
             />
           </div>
         </div>
-        <SaveStatus status={status} />
+        <SaveStatus status={status} history={{ kind: 'readaptation', id: draft.id }} />
         <Button
           variant="soft"
           size="sm"

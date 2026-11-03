@@ -13,7 +13,14 @@ import { practiceTotals } from '@/features/practice/practice';
 import { exportFile, slug, todayIso, type ExportResult } from './platform';
 import { fmtDate } from './format';
 import { getPrefs } from './prefs';
-import { DIAGNOSIS_AREAS, type PracticeEntry, type PreventionProgram, type ReadaptationPlan, type Recipe, type RelapsePlan } from '@/domain/types';
+import {
+  DIAGNOSIS_AREAS,
+  type PracticeEntry,
+  type PreventionProgram,
+  type ReadaptationPlan,
+  type Recipe,
+  type RelapsePlan,
+} from '@/domain/types';
 import type { PreventionFile, TemplatesFile } from '@/content/types';
 
 const t = (k: string, o?: Record<string, unknown>) => i18n.t(k, o ?? {});
@@ -404,9 +411,24 @@ export async function practiceLogPdf(entries: PracticeEntry[], goal: number): Pr
         widths: ['*', '*', '*'],
         body: [
           [
-            { stack: [{ text: t('practice:pdf.total'), style: 'label' }, { text: `${totals.hours} h`, bold: true, fontSize: 14 }] },
-            { stack: [{ text: t('practice:goal'), style: 'label' }, { text: `${goal} h`, fontSize: 14 }] },
-            { stack: [{ text: t('practice:pdf.entries'), style: 'label' }, { text: String(rows.length), fontSize: 14 }] },
+            {
+              stack: [
+                { text: t('practice:pdf.total'), style: 'label' },
+                { text: `${totals.hours} h`, bold: true, fontSize: 14 },
+              ],
+            },
+            {
+              stack: [
+                { text: t('practice:goal'), style: 'label' },
+                { text: `${goal} h`, fontSize: 14 },
+              ],
+            },
+            {
+              stack: [
+                { text: t('practice:pdf.entries'), style: 'label' },
+                { text: String(rows.length), fontSize: 14 },
+              ],
+            },
           ],
         ],
       },
@@ -420,10 +442,12 @@ export async function practiceLogPdf(entries: PracticeEntry[], goal: number): Pr
         headerRows: 1,
         widths: [58, 30, 80, '*'],
         body: [
-          [t('practice:fields.date'), 'h', t('practice:fields.activity'), t('practice:pdf.descriptionAndReflections')].map((x) => ({
-            text: x,
-            style: 'label',
-          })),
+          [t('practice:fields.date'), 'h', t('practice:fields.activity'), t('practice:pdf.descriptionAndReflections')].map(
+            (x) => ({
+              text: x,
+              style: 'label',
+            }),
+          ),
           ...rows.map((e) => [
             fmtDate(e.date, { day: '2-digit', month: '2-digit', year: 'numeric' }),
             String(e.hours),
@@ -431,7 +455,15 @@ export async function practiceLogPdf(entries: PracticeEntry[], goal: number): Pr
             {
               stack: [
                 clean(e.description) || '—',
-                ...(e.reflections ? [{ text: `${t('practice:fields.reflections')}: ${clean(e.reflections)}`, italics: true, margin: [0, 3, 0, 0] }] : []),
+                ...(e.reflections
+                  ? [
+                      {
+                        text: `${t('practice:fields.reflections')}: ${clean(e.reflections)}`,
+                        italics: true,
+                        margin: [0, 3, 0, 0],
+                      },
+                    ]
+                  : []),
               ],
             },
           ]),
@@ -442,8 +474,18 @@ export async function practiceLogPdf(entries: PracticeEntry[], goal: number): Pr
     { text: t('practice:pdf.note'), style: 'muted', margin: [0, 12, 0, 0] },
     {
       columns: [
-        { stack: [{ text: '\n\n………………………………………', alignment: 'center' }, { text: t('practice:pdf.student'), style: 'muted', alignment: 'center' }] },
-        { stack: [{ text: '\n\n………………………………………', alignment: 'center' }, { text: t('practice:pdf.supervisor'), style: 'muted', alignment: 'center' }] },
+        {
+          stack: [
+            { text: '\n\n………………………………………', alignment: 'center' },
+            { text: t('practice:pdf.student'), style: 'muted', alignment: 'center' },
+          ],
+        },
+        {
+          stack: [
+            { text: '\n\n………………………………………', alignment: 'center' },
+            { text: t('practice:pdf.supervisor'), style: 'muted', alignment: 'center' },
+          ],
+        },
       ],
       margin: [0, 24, 0, 0],
     },
@@ -460,4 +502,54 @@ export async function caseStudyPdf(title: string, sections: { title: string; tex
     { text: t('casestudy:pdfNote'), style: 'muted', margin: [0, 16, 0, 0] },
   ];
   return render(base(title, t('casestudy:pdfSubtitle'), content, t('casestudy:pdfFooter')), t('casestudy:fileName'));
+}
+
+/* --------------------------------------------------------------- audit log */
+
+export interface AuditPdfRow {
+  seq: number;
+  time: string;
+  action: string;
+  object: string;
+  detail: string;
+}
+
+/** Audit log for an inspection: integrity statement + table of all entries (docs/DECISIONS.md D-049). */
+export async function auditLogPdf(rows: AuditPdfRow[], integrity: string, version: string): Promise<ExportResult> {
+  const title = t('audit:export.pdfTitle');
+  const subtitle = t('audit:export.pdfSubtitle', { version, date: new Date().toLocaleString() });
+  const head = ['colNo', 'colTime', 'colAction', 'colObject', 'colDetails'].map((k) => ({
+    text: t(`audit:export.${k}`),
+    style: 'label',
+  }));
+  const body = rows.map((r) => [
+    { text: String(r.seq), style: 'muted' },
+    { text: r.time, noWrap: true },
+    r.action,
+    r.object,
+    { text: r.detail, style: 'muted' },
+  ]);
+  const content: Content[] = [
+    { text: integrity, bold: true, margin: [0, 0, 0, 6] },
+    { text: t('audit:export.pdfNote'), style: 'muted', margin: [0, 0, 0, 12] },
+    {
+      table: { headerRows: 1, widths: [24, 78, '*', '*', '*'], body: [head, ...body] },
+      layout: {
+        hLineColor: () => COLORS.line,
+        vLineWidth: () => 0,
+        hLineWidth: (i: number) => (i === 1 ? 1 : 0.5),
+        paddingTop: () => 3,
+        paddingBottom: () => 3,
+      },
+      fontSize: 8.5,
+    },
+  ];
+  const doc = base(title, subtitle, content, `Przystań ${version} · ${title}`);
+  doc.pageOrientation = 'landscape';
+  const pm = await pdfMake();
+  const blob = await pm.createPdf(doc).getBlob();
+  return exportFile(`przystan-audyt-${todayIso()}.pdf`, blob, title, {
+    action: 'audit.export',
+    details: { format: 'pdf', entries: rows.length },
+  });
 }

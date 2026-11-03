@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Play, Save, Trash2 } from 'lucide-react';
@@ -7,7 +7,8 @@ import { Button, ButtonLink, Card } from '@/components/ui/core';
 import { Chips, ListEditor, SelectField, TextField, Field, TextInput } from '@/components/ui/form';
 import { useConfirm } from '@/components/ui/overlay';
 import { useToast } from '@/components/ui/toast';
-import { all, get, remove, save, uid, useStore } from '@/lib/store';
+import { all, get, onRevert, remove, save, uid, useStore } from '@/lib/store';
+import { HistoryButton } from '@/features/audit/HistorySheet';
 import { nowLocalIso, toLocalInput } from '@/lib/format';
 import { NOTE_FIELDS, type Meeting, type NoteType } from '@/domain/types';
 import { haptic } from '@/lib/platform';
@@ -67,6 +68,9 @@ export default function MeetingEditor() {
   );
   const client = get('client', m.clientId);
 
+  // a version restored from the history replaces the form content
+  useEffect(() => onRevert((id, v) => id === m.id && setM(v as Meeting)), [m.id]);
+
   const submit = async (thenLive = false) => {
     await save('meeting', m);
     void haptic('success');
@@ -80,11 +84,15 @@ export default function MeetingEditor() {
         back
         title={existing ? t('edit') : t('new')}
         actions={
-          existing &&
-          m.status === 'planned' && (
-            <ButtonLink to={`/meetings/${m.id}/live`} icon={<Play className="size-4" />}>
-              {t('startLive')}
-            </ButtonLink>
+          existing && (
+            <>
+              {m.status === 'planned' && (
+                <ButtonLink to={`/meetings/${m.id}/live`} icon={<Play className="size-4" />}>
+                  {t('startLive')}
+                </ButtonLink>
+              )}
+              <HistoryButton kind="meeting" id={m.id} />
+            </>
           )
         }
       />

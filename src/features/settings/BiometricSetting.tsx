@@ -6,6 +6,7 @@ import { Field, Switch, TextInput } from '@/components/ui/form';
 import { Sheet } from '@/components/ui/overlay';
 import { useToast } from '@/components/ui/toast';
 import { WrongPasswordError } from '@/lib/crypto';
+import { logEvent } from '@/lib/audit';
 import {
   BioError,
   bioAvailability,
@@ -112,6 +113,7 @@ export function BiometricSetting() {
         }
         session.current = null;
         setEnabled(true);
+        void logEvent({ action: 'biometric.enable' });
         close();
         toast({ text: t('bio.enabled'), tone: 'ok' });
       })
@@ -141,6 +143,7 @@ export function BiometricSetting() {
           } else {
             void disableBiometric().then(() => {
               setEnabled(false);
+              void logEvent({ action: 'biometric.disable' });
               toast({ text: t('bio.disabled'), tone: 'info' });
             });
           }

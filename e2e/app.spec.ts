@@ -264,12 +264,17 @@ test('no horizontal scrolling at phone width on any screen', async ({ page }) =>
     '#/notes',
     '#/notes/new?type=supervision',
     '#/case-study/demo-01',
+    '#/audit',
+    '#/trash',
   ];
   const overflow: string[] = [];
   for (const r of routes) {
     await go(page, r);
     await page.waitForTimeout(350);
-    const w = await page.evaluate(() => [document.documentElement.scrollWidth, window.visualViewport?.width ?? window.innerWidth]);
+    const w = await page.evaluate(() => [
+      document.documentElement.scrollWidth,
+      window.visualViewport?.width ?? window.innerWidth,
+    ]);
     if (w[0]! > w[1]! + 1) overflow.push(`${r}: ${w[0]} > ${w[1]}`);
   }
   expect(overflow).toEqual([]);
@@ -298,6 +303,8 @@ test('main screens have no serious accessibility violations', async ({ page }) =
     '#/notes',
     '#/notes/new?type=supervision',
     '#/case-study/demo-01',
+    '#/audit',
+    '#/trash',
   ];
   const problems: string[] = [];
   for (const r of routes) {

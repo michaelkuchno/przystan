@@ -1,0 +1,199 @@
+{
+  "section": "History and audit",
+  "sectionText": "Every change to your data is recorded: you can go back to an earlier version, recover a deleted entry from the trash and show the audit log to an inspection or a data protection officer.",
+  "logLink": "Audit log",
+  "trashLink": "Trash",
+  "log": {
+    "title": "Audit log",
+    "intro": "Chronological record of operations on the data in practice mode: creating, changing, deleting, restoring, unlocking, exports and backups. Entries cannot be changed or removed without detection (HMAC signature chain). Training data (DEMO) is not recorded.",
+    "empty": "No entries.",
+    "search": "Search the log",
+    "count_one": "{{count}} entry",
+    "count_other": "{{count}} entries",
+    "showMore": "Show more",
+    "redacted": "details erased (GDPR)",
+    "filters": {
+      "all": "All",
+      "changes": "Data changes",
+      "deletions": "Deletions",
+      "sessions": "Sign-ins",
+      "exports": "Exports and backups"
+    }
+  },
+  "actions": {
+    "vault": {
+      "setup": "Data protection set up (password)"
+    },
+    "session": {
+      "unlock": "App unlocked",
+      "unlockFailed": "Failed unlock attempts"
+    },
+    "password": {
+      "change": "Password changed"
+    },
+    "biometric": {
+      "enable": "Biometric unlock enabled",
+      "disable": "Biometric unlock disabled"
+    },
+    "record": {
+      "create": "Created",
+      "update": "Changed",
+      "revert": "Earlier version restored",
+      "import": "Imported",
+      "delete": "Moved to trash",
+      "restore": "Restored from trash",
+      "purge": "Permanently deleted"
+    },
+    "data": {
+      "export": "File exported"
+    },
+    "backup": {
+      "export": "Backup created",
+      "restore": "Backup restored"
+    },
+    "audit": {
+      "export": "Audit log exported",
+      "verify": "Integrity checked"
+    }
+  },
+  "detail": {
+    "method": {
+      "password": "with password",
+      "biometric": "with biometrics",
+      "setup": "during setup",
+      "restore": "from backup"
+    },
+    "failed": "{{count}} × (last {{date}})",
+    "related": "together with related entries: {{count}}",
+    "versionFrom": "version of {{date}}",
+    "file": "file {{file}}",
+    "backupFrom": "backup of {{date}}, records: {{records}}",
+    "integrity": "result: {{result}}"
+  },
+  "kinds": {
+    "client": "{{Client}}",
+    "diagnosis": "Assessment",
+    "ipr": "Individual plan",
+    "relapsePlan": "Relapse prevention plan",
+    "meeting": "Session",
+    "measurement": "Measurement",
+    "event": "Timeline event",
+    "genogram": "Genogram / ecomap",
+    "recipe": "Activity plan",
+    "prevention": "Prevention programme",
+    "readaptation": "Reintegration plan",
+    "familyPlan": "Family work",
+    "task": "Task",
+    "deck": "Flashcard deck",
+    "cardState": "Flashcard progress",
+    "simRun": "Simulator conversation",
+    "practice": "Placement log entry",
+    "note": "Note"
+  },
+  "history": {
+    "title": "Change history",
+    "button": "History",
+    "intro": "Saved versions, newest first. Changes within 5 minutes in one session form one version.",
+    "empty": "No saved versions. History covers changes since app version 1.2.",
+    "current": "Current",
+    "op": {
+      "create": "Created",
+      "update": "Changed",
+      "revert": "Version restored",
+      "import": "Import"
+    },
+    "changes": "Changed fields",
+    "noChanges": "First saved version.",
+    "restore": "Restore this version",
+    "restoreConfirm": "Restore this version?",
+    "restoreText": "This version becomes the current content. The current content stays in the history, so this can be undone too.",
+    "restored": "Version of {{date}} restored",
+    "unreadable": "This version cannot be read.",
+    "otherSpace": "This version belongs to the other mode (practice / training)."
+  },
+  "fields": {
+    "code": "Code / initials",
+    "fullName": "Full name",
+    "title": "Title",
+    "body": "Text",
+    "notes": "Notes",
+    "date": "Date",
+    "status": "Status",
+    "stage": "Stage of change",
+    "goal": "Goal",
+    "problems": "Problems",
+    "tags": "Tags",
+    "pinned": "Pinned",
+    "strengths": "Strengths",
+    "supportNetwork": "Support network",
+    "family": "Family",
+    "education": "Education / work",
+    "keyDates": "Key dates",
+    "context": "Work setting",
+    "ageGroup": "Age group",
+    "age": "Age",
+    "sex": "Sex",
+    "conclusions": "Conclusions",
+    "tasks": "Tasks",
+    "goals": "Goals",
+    "areas": "Areas",
+    "description": "Description",
+    "clientId": "Linked person",
+    "items": "Items",
+    "cards": "Cards"
+  },
+  "trash": {
+    "title": "Trash",
+    "intro": "Deleted entries are kept here for {{days}} days, then they are deleted permanently (with their change history). The audit log keeps only a note of the permanent deletion, without the name.",
+    "empty": "The trash is empty.",
+    "deletedOn": "deleted {{date}}",
+    "purgeIn": "permanent deletion: {{date}}",
+    "related": "+ related entries: {{count}}",
+    "restore": "Restore",
+    "restored": "Restored",
+    "purge": "Delete permanently",
+    "purgeConfirm": "Delete permanently?",
+    "purgeText": "The entry and its whole change history will be deleted and cannot be recovered.",
+    "purged": "Permanently deleted",
+    "emptyAll": "Empty trash",
+    "emptyConfirm": "Empty the trash?",
+    "emptyText": "All entries in the trash and their change history will be deleted and cannot be recovered.",
+    "emptied": "Trash emptied",
+    "untitled": "(untitled)"
+  },
+  "integrity": {
+    "title": "Integrity check",
+    "text": "Checks that all data and versions can be decrypted and that no audit log entries were changed, removed or added.",
+    "run": "Check now",
+    "running": "Checking…",
+    "ok": "Integrity confirmed",
+    "okText": "Log entries: {{entries}}, records: {{records}}, versions: {{versions}} – no issues.",
+    "bad": "Mismatch found",
+    "badAudit": "The audit log was changed outside the app (entry no. {{seq}}: {{reason}}).",
+    "reason": {
+      "mac": "signature does not match",
+      "details": "details changed",
+      "head": "latest entries missing"
+    },
+    "badRecords": "Records or versions that cannot be read: {{count}}. Restore your data from a backup."
+  },
+  "export": {
+    "pdf": "PDF report",
+    "csv": "CSV",
+    "pdfTitle": "Audit log",
+    "pdfSubtitle": "Przystań {{version}} · generated {{date}} · practice mode",
+    "pdfIntegrityOk": "Integrity of the entry chain: confirmed (entries: {{entries}}).",
+    "pdfIntegrityBad": "Integrity of the entry chain: MISMATCH at entry no. {{seq}}.",
+    "pdfNote": "Log kept locally on the device. Entries are chain-signed (HMAC-SHA256) with a key available only with the password. People are identified by pseudonyms given by the user.",
+    "colTime": "Time",
+    "colAction": "Operation",
+    "colObject": "Object",
+    "colDetails": "Details",
+    "colNo": "No.",
+    "done": "Audit log exported"
+  },
+  "person": {
+    "export": "Data export (GDPR)",
+    "done": "Data file ready"
+  }
+}

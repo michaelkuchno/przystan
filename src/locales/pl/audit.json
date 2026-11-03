@@ -1,0 +1,201 @@
+{
+  "section": "Historia i audyt",
+  "sectionText": "Każda zmiana Twoich danych jest zapisywana: możesz wrócić do poprzedniej wersji, odzyskać usunięty wpis z kosza i pokazać dziennik audytu kontroli lub inspektorowi ochrony danych.",
+  "logLink": "Dziennik audytu",
+  "trashLink": "Kosz",
+  "log": {
+    "title": "Dziennik audytu",
+    "intro": "Chronologiczny zapis operacji na danych w trybie praktycznym: tworzenie, zmiany, usuwanie, przywracanie, odblokowania, eksporty i kopie zapasowe. Wpisów nie da się zmienić ani usunąć bez wykrycia (łańcuch podpisów HMAC). Dane szkoleniowe (DEMO) nie są rejestrowane.",
+    "empty": "Brak wpisów.",
+    "search": "Szukaj w dzienniku",
+    "count_one": "{{count}} wpis",
+    "count_few": "{{count}} wpisy",
+    "count_many": "{{count}} wpisów",
+    "count_other": "{{count}} wpisu",
+    "showMore": "Pokaż więcej",
+    "redacted": "szczegóły usunięte (RODO)",
+    "filters": {
+      "all": "Wszystko",
+      "changes": "Zmiany danych",
+      "deletions": "Usunięcia",
+      "sessions": "Logowania",
+      "exports": "Eksporty i kopie"
+    }
+  },
+  "actions": {
+    "vault": {
+      "setup": "Utworzono zabezpieczenie danych (hasło)"
+    },
+    "session": {
+      "unlock": "Odblokowano aplikację",
+      "unlockFailed": "Nieudane próby odblokowania"
+    },
+    "password": {
+      "change": "Zmieniono hasło"
+    },
+    "biometric": {
+      "enable": "Włączono odblokowanie biometrią",
+      "disable": "Wyłączono odblokowanie biometrią"
+    },
+    "record": {
+      "create": "Utworzono",
+      "update": "Zmieniono",
+      "revert": "Przywrócono wcześniejszą wersję",
+      "import": "Zaimportowano",
+      "delete": "Przeniesiono do kosza",
+      "restore": "Przywrócono z kosza",
+      "purge": "Usunięto trwale"
+    },
+    "data": {
+      "export": "Wyeksportowano plik"
+    },
+    "backup": {
+      "export": "Utworzono kopię zapasową",
+      "restore": "Przywrócono kopię zapasową"
+    },
+    "audit": {
+      "export": "Wyeksportowano dziennik audytu",
+      "verify": "Sprawdzono integralność"
+    }
+  },
+  "detail": {
+    "method": {
+      "password": "hasłem",
+      "biometric": "biometrią",
+      "setup": "przy konfiguracji",
+      "restore": "z kopii"
+    },
+    "failed": "{{count}} × (ostatnia {{date}})",
+    "related": "razem z powiązanymi wpisami: {{count}}",
+    "versionFrom": "wersja z {{date}}",
+    "file": "plik {{file}}",
+    "backupFrom": "kopia z {{date}}, rekordów: {{records}}",
+    "integrity": "wynik: {{result}}"
+  },
+  "kinds": {
+    "client": "{{Client}}",
+    "diagnosis": "Diagnoza",
+    "ipr": "IPR",
+    "relapsePlan": "Plan zapobiegania nawrotom",
+    "meeting": "Spotkanie",
+    "measurement": "Pomiar",
+    "event": "Wydarzenie na osi czasu",
+    "genogram": "Genogram / ekomapa",
+    "recipe": "Scenariusz zajęć",
+    "prevention": "Program profilaktyczny",
+    "readaptation": "Plan readaptacji",
+    "familyPlan": "Praca z rodziną",
+    "task": "Zadanie",
+    "deck": "Talia fiszek",
+    "cardState": "Postęp fiszek",
+    "simRun": "Rozmowa w symulatorze",
+    "practice": "Wpis w dzienniczku praktyk",
+    "note": "Notatka"
+  },
+  "history": {
+    "title": "Historia zmian",
+    "button": "Historia",
+    "intro": "Zapisane wersje, od najnowszej. Zmiany w ciągu 5 minut w jednej sesji tworzą jedną wersję.",
+    "empty": "Brak zapisanych wersji. Historia obejmuje zmiany od wersji 1.2 aplikacji.",
+    "current": "Obecna",
+    "op": {
+      "create": "Utworzenie",
+      "update": "Zmiana",
+      "revert": "Przywrócenie wersji",
+      "import": "Import"
+    },
+    "changes": "Zmienione pola",
+    "noChanges": "Pierwsza zapisana wersja.",
+    "restore": "Przywróć tę wersję",
+    "restoreConfirm": "Przywrócić tę wersję?",
+    "restoreText": "Ta wersja stanie się aktualną treścią. Obecna treść zostaje w historii, więc tę operację też można cofnąć.",
+    "restored": "Przywrócono wersję z {{date}}",
+    "unreadable": "Nie można odczytać tej wersji.",
+    "otherSpace": "Ta wersja należy do innego trybu (praktyczny / szkoleniowy)."
+  },
+  "fields": {
+    "code": "Kod / inicjały",
+    "fullName": "Imię i nazwisko",
+    "title": "Tytuł",
+    "body": "Treść",
+    "notes": "Notatki",
+    "date": "Data",
+    "status": "Status",
+    "stage": "Etap zmiany",
+    "goal": "Cel",
+    "problems": "Problemy",
+    "tags": "Tagi",
+    "pinned": "Przypięte",
+    "strengths": "Zasoby",
+    "supportNetwork": "Sieć wsparcia",
+    "family": "Rodzina",
+    "education": "Edukacja / praca",
+    "keyDates": "Ważne daty",
+    "context": "Kontekst pracy",
+    "ageGroup": "Grupa wiekowa",
+    "age": "Wiek",
+    "sex": "Płeć",
+    "conclusions": "Wnioski",
+    "tasks": "Zadania",
+    "goals": "Cele",
+    "areas": "Obszary",
+    "description": "Opis",
+    "clientId": "Powiązanie z osobą",
+    "items": "Elementy",
+    "cards": "Karty"
+  },
+  "trash": {
+    "title": "Kosz",
+    "intro": "Usunięte wpisy są tu przechowywane przez {{days}} dni, potem znikają trwale (razem z historią zmian). W dzienniku audytu zostaje tylko informacja o trwałym usunięciu, bez nazwy.",
+    "empty": "Kosz jest pusty.",
+    "deletedOn": "usunięto {{date}}",
+    "purgeIn": "trwałe usunięcie: {{date}}",
+    "related": "+ powiązane wpisy: {{count}}",
+    "restore": "Przywróć",
+    "restored": "Przywrócono",
+    "purge": "Usuń trwale",
+    "purgeConfirm": "Usunąć trwale?",
+    "purgeText": "Wpis i cała jego historia zmian zostaną usunięte bez możliwości odzyskania.",
+    "purged": "Usunięto trwale",
+    "emptyAll": "Opróżnij kosz",
+    "emptyConfirm": "Opróżnić kosz?",
+    "emptyText": "Wszystkie wpisy z kosza i ich historia zmian zostaną usunięte bez możliwości odzyskania.",
+    "emptied": "Kosz opróżniony",
+    "untitled": "(bez nazwy)"
+  },
+  "integrity": {
+    "title": "Kontrola integralności",
+    "text": "Sprawdza, czy wszystkie dane i wersje dają się odszyfrować oraz czy nikt nie zmienił, nie usunął ani nie dopisał wpisów dziennika audytu.",
+    "run": "Sprawdź teraz",
+    "running": "Sprawdzanie…",
+    "ok": "Integralność potwierdzona",
+    "okText": "Wpisy dziennika: {{entries}}, rekordy: {{records}}, wersje: {{versions}} – bez zastrzeżeń.",
+    "bad": "Wykryto niezgodność",
+    "badAudit": "Dziennik audytu został zmieniony poza aplikacją (wpis nr {{seq}}: {{reason}}).",
+    "reason": {
+      "mac": "podpis się nie zgadza",
+      "details": "zmienione szczegóły",
+      "head": "brakuje ostatnich wpisów"
+    },
+    "badRecords": "Nie można odczytać rekordów lub wersji: {{count}}. Przywróć dane z kopii zapasowej."
+  },
+  "export": {
+    "pdf": "Raport PDF",
+    "csv": "CSV",
+    "pdfTitle": "Dziennik audytu",
+    "pdfSubtitle": "Przystań {{version}} · wygenerowano {{date}} · tryb praktyczny",
+    "pdfIntegrityOk": "Integralność łańcucha wpisów: potwierdzona (wpisów: {{entries}}).",
+    "pdfIntegrityBad": "Integralność łańcucha wpisów: NIEZGODNOŚĆ przy wpisie nr {{seq}}.",
+    "pdfNote": "Dziennik prowadzony lokalnie na urządzeniu. Wpisy są podpisane łańcuchowo (HMAC-SHA256) kluczem dostępnym tylko po podaniu hasła. Osoby są oznaczone pseudonimami nadanymi przez użytkownika.",
+    "colTime": "Czas",
+    "colAction": "Operacja",
+    "colObject": "Obiekt",
+    "colDetails": "Szczegóły",
+    "colNo": "Nr",
+    "done": "Dziennik wyeksportowany"
+  },
+  "person": {
+    "export": "Eksport danych (RODO)",
+    "done": "Plik z danymi gotowy"
+  }
+}

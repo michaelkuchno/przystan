@@ -43,7 +43,7 @@ function Editor({ ipr }: { ipr: Ipr }) {
           <div className="text-xs text-muted">{t('ipr.overall')}</div>
           <div className="font-serif text-3xl font-semibold text-primary">{avg}%</div>
         </div>
-        <SaveStatus status={status} />
+        <SaveStatus status={status} history={{ kind: 'ipr', id: draft.id }} />
       </Card>
 
       {draft.goals.map((g, i) => (

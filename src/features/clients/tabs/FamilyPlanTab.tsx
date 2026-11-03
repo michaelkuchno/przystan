@@ -20,7 +20,7 @@ function Editor({ plan }: { plan: FamilyPlan }) {
     <div className="space-y-4">
       <div className="flex items-center justify-between gap-2">
         <p className="text-sm text-muted">{t('familyPlan.intro')}</p>
-        <SaveStatus status={status} />
+        <SaveStatus status={status} history={{ kind: 'familyPlan', id: draft.id }} />
       </div>
       <div className="grid gap-4 md:grid-cols-2">
         <Card>

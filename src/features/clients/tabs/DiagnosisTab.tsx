@@ -44,7 +44,7 @@ function Editor({ diagnosis, previous }: { diagnosis: Diagnosis; previous?: Diag
         <Card>
           <div className="flex items-center justify-between">
             <h3 className="font-semibold">{t('diagnosis.chart')}</h3>
-            <SaveStatus status={status} />
+            <SaveStatus status={status} history={{ kind: 'diagnosis', id: draft.id }} />
           </div>
           <DiagnosisRadar
             data={data}
