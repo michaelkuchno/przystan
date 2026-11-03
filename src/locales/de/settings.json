@@ -76,7 +76,7 @@
   "country": "Arbeitsland",
   "countryHint": "Hilfesystem, «Wohin vermitteln?», rechtliche Grundlagen, Notfallnummern und DEMO-Fälle.",
   "bio": {
-    "labelAndroid": "Mit Fingerabdruck oder Gesicht entsperren",
+    "labelAndroid": "Entsperren mit Biometrie (Fingerabdruck)",
     "labelPasskey": "Mit Face ID / Touch ID entsperren (Passkey)",
     "hint": "Optional. Das Passwort braucht es trotzdem alle 7 Tage, nach 5 Fehlversuchen und wenn die Biometrie im System geändert wurde.",
     "enableTitle": "Biometrisches Entsperren aktivieren",
@@ -90,6 +90,23 @@
     "promptEnable": "Bestätigen, um biometrisches Entsperren zu aktivieren",
     "stepPrompt": "Passwort korrekt. Tippe auf die Schaltfläche unten und bestätige mit Fingerabdruck, Gesicht oder Face ID.",
     "stepConfirm": "Der Passkey wurde erstellt. Bestätige noch einmal, um abzuschliessen.",
-    "confirm": "Bestätigen"
+    "confirm": "Bestätigen",
+    "unavailableTitle": "Auf diesem Gerät nicht verfügbar",
+    "reason": {
+      "noneEnrolled": "in den Handy-Einstellungen ist kein Fingerabdruck registriert. Füge einen hinzu (Einstellungen → Sicherheit → Biometrie) und komm zurück.",
+      "weakOnly": "es ist nur eine weniger sichere Biometrie registriert (meist Gesichtserkennung). Füge in den Handy-Einstellungen einen Fingerabdruck hinzu.",
+      "noHardware": "das Handy hat keinen Biometrie-Sensor.",
+      "hwUnavailable": "der Biometrie-Sensor ist vorübergehend nicht verfügbar. Versuche es später.",
+      "updateRequired": "das System braucht ein Sicherheitsupdate.",
+      "unsupported": "diese Android-Version unterstützt keine starke Biometrie.",
+      "unknown": "das System hat keinen Grund angegeben.",
+      "plugin": "das Biometrie-Modul der App antwortet nicht (App-Fehler – bitte die Angaben unten weitergeben).",
+      "noWebAuthn": "der Browser unterstützt keine Passkeys.",
+      "insecure": "die App ist nicht über eine sichere Verbindung (https) geöffnet."
+    },
+    "warning": {
+      "noPlatformAuthenticator": "Der Browser meldet kein Face ID / Touch ID – versuche es trotzdem.",
+      "noPrf": "Der Browser meldet eine fehlende Funktion (PRF) – versuche es trotzdem; bei einem Fehler erscheint eine Meldung."
+    }
   }
 }

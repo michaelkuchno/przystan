@@ -131,11 +131,10 @@ test('anonymous case study: preview without identifiers and PDF', async ({ page 
   expect(file.suggestedFilename()).toMatch(/^studium-przypadku-\d{4}-\d{2}-\d{2}\.pdf$/);
 });
 
-test('backup reminder on the dashboard; biometric option hidden without WebAuthn PRF', async ({ page }) => {
-  // a browser that explicitly reports no PRF support: the option must not be offered
+test('backup reminder on the dashboard; biometric option explains why it is unavailable', async ({ page }) => {
+  // a browser without WebAuthn: the option is shown with the reason instead of being hidden
   await page.addInitScript(() => {
-    const PKC = window.PublicKeyCredential as unknown as { getClientCapabilities?: () => Promise<Record<string, boolean>> } | undefined;
-    if (PKC) PKC.getClientCapabilities = async () => ({ 'extension:prf': false });
+    Object.defineProperty(window, 'PublicKeyCredential', { value: undefined, configurable: true });
   });
   await onboard(page, 'practice');
   await go(page, '#/clients/new');
@@ -150,7 +149,23 @@ test('backup reminder on the dashboard; biometric option hidden without WebAuthn
   await expect(page.getByText('Czas na kopię zapasową')).toHaveCount(0);
   await go(page, '#/settings');
   await expect(page.getByRole('heading', { name: 'Bezpieczeństwo' })).toBeVisible();
-  await expect(page.getByText(/Odblokowanie (odciskiem|Face ID)/)).toHaveCount(0);
+  await expect(page.getByText(/Niedostępne na tym urządzeniu: przeglądarka nie obsługuje kluczy dostępu/)).toBeVisible();
+  await expect(page.getByRole('switch', { name: /Odblokowanie Face ID/ })).toHaveCount(0);
+});
+
+test('biometric option stays available (with a warning) when the browser reports no PRF', async ({ page }) => {
+  await page.addInitScript(() => {
+    const PKC = window.PublicKeyCredential as unknown as {
+      getClientCapabilities?: () => Promise<Record<string, boolean>>;
+      isUserVerifyingPlatformAuthenticatorAvailable: () => Promise<boolean>;
+    };
+    PKC.getClientCapabilities = async () => ({ 'extension:prf': false });
+    PKC.isUserVerifyingPlatformAuthenticatorAvailable = async () => true;
+  });
+  await onboard(page, 'practice');
+  await go(page, '#/settings');
+  await expect(page.getByRole('switch', { name: /Odblokowanie Face ID/ })).toBeVisible();
+  await expect(page.getByText(/brak potrzebnej funkcji \(PRF\)/)).toBeVisible();
 });
 
 test('biometric option is offered with a platform authenticator unless PRF is explicitly unsupported', async ({ page }) => {

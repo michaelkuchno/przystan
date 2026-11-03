@@ -80,7 +80,7 @@
   "country": "Kraj pracy",
   "countryHint": "System pomocy, „Gdzie skierować?”, podstawy prawne, numery kryzysowe i przypadki DEMO.",
   "bio": {
-    "labelAndroid": "Odblokowanie odciskiem palca lub twarzą",
+    "labelAndroid": "Odblokowanie biometrią (odcisk palca)",
     "labelPasskey": "Odblokowanie Face ID / Touch ID (klucz dostępu)",
     "hint": "Opcjonalne. Hasło będzie i tak potrzebne co 7 dni, po 5 nieudanych próbach i po zmianie biometrii w systemie.",
     "enableTitle": "Włącz odblokowanie biometrią",
@@ -94,6 +94,23 @@
     "promptEnable": "Potwierdź, aby włączyć odblokowanie biometrią",
     "stepPrompt": "Hasło poprawne. Dotknij przycisku poniżej i potwierdź odciskiem palca, twarzą lub Face ID.",
     "stepConfirm": "Klucz dostępu został utworzony. Potwierdź jeszcze raz, aby dokończyć.",
-    "confirm": "Potwierdź"
+    "confirm": "Potwierdź",
+    "unavailableTitle": "Niedostępne na tym urządzeniu",
+    "reason": {
+      "noneEnrolled": "w ustawieniach telefonu nie zarejestrowano odcisku palca. Dodaj go (Ustawienia → Zabezpieczenia → Biometria) i wróć tutaj.",
+      "weakOnly": "zarejestrowana jest tylko biometria o niższym poziomie bezpieczeństwa (zwykle rozpoznawanie twarzy). Dodaj odcisk palca w ustawieniach telefonu.",
+      "noHardware": "telefon nie ma czytnika biometrycznego.",
+      "hwUnavailable": "czytnik biometryczny jest chwilowo niedostępny. Spróbuj później.",
+      "updateRequired": "system wymaga aktualizacji zabezpieczeń.",
+      "unsupported": "ta wersja Androida nie obsługuje silnej biometrii.",
+      "unknown": "system nie podał przyczyny.",
+      "plugin": "moduł biometrii aplikacji nie odpowiada (błąd aplikacji – przekaż poniższe dane).",
+      "noWebAuthn": "przeglądarka nie obsługuje kluczy dostępu (passkey).",
+      "insecure": "aplikacja nie jest otwarta przez bezpieczne połączenie (https)."
+    },
+    "warning": {
+      "noPlatformAuthenticator": "Przeglądarka nie zgłasza Face ID / Touch ID – spróbuj mimo to.",
+      "noPrf": "Przeglądarka zgłasza brak potrzebnej funkcji (PRF) – spróbuj mimo to; jeśli się nie uda, zobaczysz komunikat."
+    }
   }
 }

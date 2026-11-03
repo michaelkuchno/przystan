@@ -55,26 +55,84 @@ async function writeBio(s: BioState | undefined) {
   else await db.meta.delete(META_KEY);
 }
 
-/** Which biometric method this device offers (null = hide the option). */
-export async function bioSupport(): Promise<BioState['kind'] | null> {
-  try {
-    if (Capacitor.isNativePlatform()) {
-      if (Capacitor.getPlatform() !== 'android') return null;
-      return (await Native.isAvailable()).available ? 'android' : null;
+/**
+ * Availability with a reason, for Settings: the option is always shown (instead of silently
+ * hidden) so the user can see why biometric unlock is not possible on this device.
+ *  - reason: why it is unavailable (Android BiometricManager status, missing WebAuthn, …)
+ *  - warning: available, but the browser reported something that may make it fail (iOS)
+ *  - detail: raw diagnostic data (status codes, error message)
+ */
+export interface BioAvailability {
+  kind: BioState['kind'] | null;
+  available: boolean;
+  reason?:
+    | 'noneEnrolled'
+    | 'weakOnly'
+    | 'noHardware'
+    | 'hwUnavailable'
+    | 'updateRequired'
+    | 'unsupported'
+    | 'unknown'
+    | 'plugin'
+    | 'noWebAuthn'
+    | 'insecure';
+  warning?: 'noPlatformAuthenticator' | 'noPrf';
+  detail?: string;
+}
+
+// androidx.biometric BiometricManager status codes
+const ANDROID_STATUS: Record<number, BioAvailability['reason']> = {
+  1: 'hwUnavailable',
+  11: 'noneEnrolled',
+  12: 'noHardware',
+  15: 'updateRequired',
+  [-2]: 'unsupported',
+  [-1]: 'unknown',
+};
+
+export async function bioAvailability(): Promise<BioAvailability> {
+  if (Capacitor.isNativePlatform()) {
+    if (Capacitor.getPlatform() !== 'android') return { kind: null, available: false };
+    try {
+      const r = (await Native.isAvailable()) as { available: boolean; status?: number; weakStatus?: number; sdk?: number };
+      const detail = `status ${r.status}, weak ${r.weakStatus}, SDK ${r.sdk}`;
+      if (r.available) return { kind: 'android', available: true, detail };
+      const reason = r.weakStatus === 0 ? 'weakOnly' : (ANDROID_STATUS[r.status ?? -1] ?? 'unknown');
+      return { kind: 'android', available: false, reason, detail };
+    } catch (e) {
+      return { kind: 'android', available: false, reason: 'plugin', detail: String((e as Error)?.message ?? e) };
     }
-    const PKC = window.PublicKeyCredential as
-      | (typeof PublicKeyCredential & { getClientCapabilities?: () => Promise<Record<string, boolean>> })
-      | undefined;
-    if (!PKC || !window.isSecureContext) return null;
-    if (!(await PKC.isUserVerifyingPlatformAuthenticatorAvailable())) return null;
-    // Hide only when the browser explicitly says "no PRF". Safari does not always list the
-    // extension, so otherwise the creation of the passkey decides (prf.enabled) – see continueEnable().
-    const caps = await PKC.getClientCapabilities?.().catch(() => undefined);
-    if (caps && caps['extension:prf'] === false) return null;
-    return 'webauthn';
-  } catch {
-    return null;
   }
+  const PKC = window.PublicKeyCredential as
+    | (typeof PublicKeyCredential & { getClientCapabilities?: () => Promise<Record<string, boolean>> })
+    | undefined;
+  if (!PKC) return { kind: 'webauthn', available: false, reason: 'noWebAuthn' };
+  if (!window.isSecureContext) return { kind: 'webauthn', available: false, reason: 'insecure' };
+  // Safari (iOS 18 home-screen apps) may under-report both of these – they only warn; creating the
+  // passkey decides (prf.enabled) in continueEnable().
+  let warning: BioAvailability['warning'];
+  const details: string[] = [];
+  try {
+    const uv = await PKC.isUserVerifyingPlatformAuthenticatorAvailable();
+    details.push(`platform authenticator: ${uv}`);
+    if (!uv) warning = 'noPlatformAuthenticator';
+  } catch (e) {
+    details.push(`platform authenticator: ${String(e)}`);
+  }
+  try {
+    const caps = await PKC.getClientCapabilities?.();
+    details.push(`prf: ${caps ? String(caps['extension:prf']) : 'n/a'}`);
+    if (caps && caps['extension:prf'] === false) warning ??= 'noPrf';
+  } catch (e) {
+    details.push(`capabilities: ${String(e)}`);
+  }
+  return { kind: 'webauthn', available: true, warning, detail: details.join(', ') };
+}
+
+/** Which biometric method this device offers (null = not possible). */
+export async function bioSupport(): Promise<BioState['kind'] | null> {
+  const a = await bioAvailability();
+  return a.available ? a.kind : null;
 }
 
 /** Block reason for an already read state (lock screen). */

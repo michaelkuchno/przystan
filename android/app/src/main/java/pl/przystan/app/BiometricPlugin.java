@@ -39,10 +39,15 @@ public class BiometricPlugin extends Plugin {
 
     @PluginMethod
     public void isAvailable(PluginCall call) {
-        int status = BiometricManager.from(getContext()).canAuthenticate(AUTHENTICATORS);
+        BiometricManager bm = BiometricManager.from(getContext());
+        int status = bm.canAuthenticate(AUTHENTICATORS);
+        // diagnostics: weak-only biometrics (e.g. One UI face recognition) cannot protect a Keystore key
+        int weak = bm.canAuthenticate(BiometricManager.Authenticators.BIOMETRIC_WEAK);
         JSObject ret = new JSObject();
         ret.put("available", status == BiometricManager.BIOMETRIC_SUCCESS);
         ret.put("status", status);
+        ret.put("weakStatus", weak);
+        ret.put("sdk", Build.VERSION.SDK_INT);
         call.resolve(ret);
     }
 

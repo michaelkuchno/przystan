@@ -338,3 +338,12 @@ Na życzenie właściciela wszystko w zakładce Actions jest po angielsku: workf
 `run-name` (niezależny od opisu commitu), opisy commitów od wersji 1.1.1 są po angielsku, a stare
 uruchomienia z polskimi tytułami usunięto. README ma sekcje PL / EN / DE, opis repozytorium jest po
 angielsku. Dokumentacja w `docs/` pozostaje po polsku.
+
+## D-048 Biometria: diagnostyka zamiast ukrywania (1.1.2)
+Zgłoszenie po 1.1.1: na Androidzie (APK) i iPhonie (iOS 18+) opcja biometrii w ogóle się nie
+pokazuje. Aplikacja ukrywała ją po cichu, gdy wykrywanie zwracało „niedostępne”, więc nie było
+wiadomo dlaczego. Teraz opcja jest zawsze widoczna: gdy biometria nie jest możliwa, Ustawienia
+pokazują powód (status `BiometricManager` – brak odcisku, tylko słaba biometria, brak czytnika…,
+albo błąd wtyczki / brak WebAuthn) i dane diagnostyczne. Na iOS deklaracje Safari
+(`isUserVerifyingPlatformAuthenticatorAvailable`, `getClientCapabilities`) są tylko ostrzeżeniem –
+o wyniku decyduje próba utworzenia passkeya. Etykieta Androida: „biometrią (odcisk palca)”.

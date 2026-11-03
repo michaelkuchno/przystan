@@ -76,7 +76,7 @@
   "country": "Country of work",
   "countryHint": "Help system, “Where to refer?”, legal basis, crisis numbers and DEMO cases.",
   "bio": {
-    "labelAndroid": "Unlock with fingerprint or face",
+    "labelAndroid": "Biometric unlock (fingerprint)",
     "labelPasskey": "Unlock with Face ID / Touch ID (passkey)",
     "hint": "Optional. The password is still required every 7 days, after 5 failed attempts and after the biometrics on the device change.",
     "enableTitle": "Enable biometric unlock",
@@ -90,6 +90,23 @@
     "promptEnable": "Confirm to enable biometric unlock",
     "stepPrompt": "Password accepted. Tap the button below and confirm with your fingerprint, face or Face ID.",
     "stepConfirm": "The passkey was created. Confirm once more to finish.",
-    "confirm": "Confirm"
+    "confirm": "Confirm",
+    "unavailableTitle": "Not available on this device",
+    "reason": {
+      "noneEnrolled": "no fingerprint is enrolled in the phone settings. Add one (Settings → Security → Biometrics) and come back.",
+      "weakOnly": "only a lower-security biometric is enrolled (usually face recognition). Add a fingerprint in the phone settings.",
+      "noHardware": "the phone has no biometric sensor.",
+      "hwUnavailable": "the biometric sensor is temporarily unavailable. Try again later.",
+      "updateRequired": "the system needs a security update.",
+      "unsupported": "this Android version does not support strong biometrics.",
+      "unknown": "the system gave no reason.",
+      "plugin": "the app’s biometric module does not respond (app error – please pass on the details below).",
+      "noWebAuthn": "the browser does not support passkeys.",
+      "insecure": "the app is not opened over a secure connection (https)."
+    },
+    "warning": {
+      "noPlatformAuthenticator": "The browser does not report Face ID / Touch ID – try anyway.",
+      "noPrf": "The browser reports a missing feature (PRF) – try anyway; you will see a message if it fails."
+    }
   }
 }

@@ -8,25 +8,26 @@ import { useToast } from '@/components/ui/toast';
 import { WrongPasswordError } from '@/lib/crypto';
 import {
   BioError,
-  bioSupport,
+  bioAvailability,
   cancelEnable,
   continueEnable,
   disableBiometric,
   readBio,
   startEnable,
-  type BioState,
+  type BioAvailability,
   type EnableSession,
 } from '@/lib/biometric';
 
 /**
- * Settings → Security: optional biometric unlock. Hidden when the device cannot do it.
+ * Settings → Security: optional biometric unlock. When the device cannot do it, the option says
+ * why (status / error) instead of being hidden.
  * Enabling: 1) password (checked, unlocks a copy of the data key), 2) a separate tap that opens
  * the system prompt – Safari only allows Face ID / Touch ID directly from a tap.
  */
 export function BiometricSetting() {
   const { t } = useTranslation('settings');
   const toast = useToast();
-  const [kind, setKind] = useState<BioState['kind'] | null>(null);
+  const [avail, setAvail] = useState<BioAvailability | null>(null);
   const [enabled, setEnabled] = useState(false);
   const [open, setOpen] = useState(false);
   const [pw, setPw] = useState('');
@@ -39,10 +40,10 @@ export function BiometricSetting() {
   useEffect(() => {
     let alive = true;
     void (async () => {
-      const k = await bioSupport();
+      const a = await bioAvailability();
       const s = await readBio();
       if (!alive) return;
-      setKind(k);
+      setAvail(a);
       setEnabled(!!s);
     })();
     return () => {
@@ -53,7 +54,22 @@ export function BiometricSetting() {
   // never keep the key copy in memory longer than needed
   useEffect(() => () => cancelEnable(session.current), []);
 
-  if (!kind) return null;
+  if (!avail?.kind) return null;
+  const kind = avail.kind;
+  const label = t(kind === 'android' ? 'bio.labelAndroid' : 'bio.labelPasskey');
+
+  // not possible on this device: say why instead of hiding the option
+  if (!avail.available && !enabled)
+    return (
+      <div className="rounded-xl border border-line p-3" role="status">
+        <div className="font-medium">{label}</div>
+        <p className="mt-1 text-sm text-muted">
+          {t('bio.unavailableTitle')}: {t(`bio.reason.${avail.reason ?? 'unknown'}`)}
+        </p>
+        {avail.detail && <p className="mt-1 text-xs text-muted">{avail.detail}</p>}
+      </div>
+    );
+  const hint = avail.warning ? `${t('bio.hint')} ${t(`bio.warning.${avail.warning}`)}` : t('bio.hint');
 
   const texts = { title: t('bio.promptTitle'), subtitle: t('bio.promptEnable'), cancel: t('common:cancel') };
 
@@ -114,8 +130,8 @@ export function BiometricSetting() {
   return (
     <>
       <Switch
-        label={t(kind === 'android' ? 'bio.labelAndroid' : 'bio.labelPasskey')}
-        description={t('bio.hint')}
+        label={label}
+        description={hint}
         checked={enabled}
         onChange={(on) => {
           if (on) {
