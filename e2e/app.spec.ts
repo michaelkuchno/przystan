@@ -137,12 +137,16 @@ test('demo mode with case studies and the MI simulator', async ({ page }) => {
   await go(page, '#/simulator');
   await page.getByRole('link').filter({ hasText: 'Kacper' }).first().click();
   await page.getByRole('button', { name: 'Rozpocznij rozmowę' }).click();
-  for (let i = 0; i < 8; i++) {
-    const opts = page.locator('main button.block');
-    if ((await opts.count()) === 0) break;
-    await opts.first().click();
+  const summary = page.getByRole('heading', { name: 'Podsumowanie' });
+  for (let i = 0; i < 12 && !(await summary.isVisible()); i++) {
+    // after the last answer the options animate out – a click on a vanishing option is not an error
+    await page
+      .locator('main button.block')
+      .first()
+      .click({ timeout: 3_000 })
+      .catch(() => undefined);
   }
-  await expect(page.getByRole('heading', { name: 'Podsumowanie' })).toBeVisible();
+  await expect(summary).toBeVisible();
 });
 
 test('works offline after the first visit', async ({ page, context }) => {
