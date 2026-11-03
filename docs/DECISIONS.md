@@ -170,7 +170,7 @@ Do repozytorium trafiło 2895 plików tymczasowych profili Chrome z Lighthouse
 niedozwolone w Windows, więc checkout się nie udawał). Git for Windows nie przyjmuje tych ścieżek
 do indeksu nawet z `core.protectNTFS=false`, więc `git rm --cached` nie mogło zadziałać. Zamiast
 tego zbudowano drzewo bez tych katalogów (`git mktree`), wczytano je do indeksu i zatwierdzono
-(commit `26b248e`). Historia nie została przepisana – starsze commity nadal je zawierają.
+(commit `b211e58`; przed przepisaniem historii `26b248e`). Później usunięto je z całej historii (D-044).
 Lighthouse uruchamia się teraz przez `npm run lighthouse` (`scripts/lighthouse.mjs`), który
 tworzy profil Chrome w katalogu tymczasowym systemu (`os.tmpdir()`) i usuwa go po zakończeniu.
 `.gitignore` blokuje `C:*`, `**/lighthouse.*/` i `lighthouse-report`.
@@ -295,3 +295,14 @@ jednoznaczny schemat zamiast ręcznego licznika.
 `npm ci` przy braku `node_modules`, `npm run build`, `vite preview --host`, adresy IPv4 kart
 Wi-Fi/Ethernet (bez wirtualnych). Przez http na IP PWA i service worker nie działają (brak secure
 context) – to wyłącznie podgląd układu.
+
+## D-044 Usunięcie artefaktów Lighthouse z całej historii
+Na życzenie właściciela usunięto katalogi `C:\Users\...\lighthouse.*` ze wszystkich commitów
+(uzupełnienie D-027). `git filter-repo` wymaga Pythona (na tej maszynie go nie ma), a
+`git filter-branch --index-filter` nie działa na Windows dla tych ścieżek, więc zastosowano ten
+sam mechanizm co filter-repo: `git fast-export --all` → filtr strumienia (Node, odrzuca zmiany
+plików o ścieżkach zaczynających się od `C:`) → `git fast-import` do nowego repozytorium. Weryfikacja
+przed wypchnięciem: 25 commitów, identyczni autorzy, daty i opisy, identyczne drzewa poza ścieżkami
+`C:`, drzewo HEAD bit w bit takie samo. Wypchnięto `main`, `v1.0.0`, `v1.1.0` przez
+`--force-with-lease`; Release'y GitHub (powiązane z nazwą tagu) i plik APK zostały. Paczka repo:
+8,6 MB → 2,1 MB. Kopia historii sprzed zmiany: bundle w katalogu tymczasowym sesji.

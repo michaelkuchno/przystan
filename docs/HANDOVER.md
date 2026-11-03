@@ -57,10 +57,11 @@ Po uzyskaniu zgody definicję narzędzia dodaje się w `src/lib/screening/instru
 
 ## 5. Historia repozytorium
 
-Starsze commity (przed `26b248e`) zawierają katalogi `C:\Users\...\lighthouse.*` z niedozwolonymi
-w Windows nazwami – checkout takiego commitu na Windows się nie powiedzie (D-027). Usunięcie ich
-z całej historii wymagałoby przepisania historii (`git filter-repo`) i force-pusha – nie zrobiono
-tego bez decyzji właściciela.
+Katalogi `C:\Users\...\lighthouse.*` zostały usunięte z **całej** historii (D-044) – każdy commit
+i tag da się teraz pobrać na Windows. Historia została przepisana (zmieniły się hashe od commitu
+„Etap 14” wzwyż, także tagów `v1.0.0` i `v1.1.0`). **Inne istniejące klony repozytorium trzeba
+pobrać od nowa** (albo `git fetch --force --tags && git reset --hard origin/main`), nie wolno z nich
+robić push starej historii.
 
 ---
 
