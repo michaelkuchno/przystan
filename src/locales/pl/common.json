@@ -29,7 +29,15 @@
     "password": "Hasło",
     "unlock": "Odblokuj",
     "wrong": "Nieprawidłowe hasło. Spróbuj ponownie.",
-    "forgot": "Hasła nie da się odzyskać – bez niego dane pozostaną zaszyfrowane. Możesz odtworzyć dane z kopii zapasowej po ponownej instalacji."
+    "forgot": "Hasła nie da się odzyskać – bez niego dane pozostaną zaszyfrowane. Możesz odtworzyć dane z kopii zapasowej po ponownej instalacji.",
+    "bioUnlock": "Odblokuj biometrią",
+    "bioPrompt": "Odblokuj dane",
+    "usePassword": "Użyj hasła",
+    "bioChanged": "Biometria w systemie została zmieniona – odblokowanie biometrią wyłączono. Wpisz hasło i włącz je ponownie w Ustawieniach.",
+    "bioLockout": "Zbyt wiele prób. Wpisz hasło.",
+    "bioFailed": "Nie rozpoznano. Spróbuj ponownie lub wpisz hasło.",
+    "bioTooMany": "Po 5 nieudanych próbach biometrii wymagane jest hasło.",
+    "bioExpired": "Co 7 dni wymagane jest hasło – potem znów możesz używać biometrii."
   },
   "mode": {
     "switch": "Przełącz tryb praktyczny / szkoleniowy",
@@ -70,7 +78,9 @@
     "crisis": "Pomoc w kryzysie",
     "search": "Szukaj",
     "privacy": "Prywatność",
-    "about": "O aplikacji"
+    "about": "O aplikacji",
+    "practice": "Dzienniczek praktyk",
+    "notes": "Notatnik"
   },
   "navHint": {
     "screening": "AUDIT, AUDIT-C, DUDIT",
@@ -85,6 +95,8 @@
     "settings": "Język, motyw, kopia",
     "crisis": "Telefony 24/7",
     "privacy": "Gdzie są dane",
-    "about": "Wersja i zastrzeżenia"
+    "about": "Wersja i zastrzeżenia",
+    "practice": "Godziny, wpisy, PDF dla opiekuna",
+    "notes": "Notatki i superwizja"
   }
 }

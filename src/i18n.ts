@@ -6,6 +6,7 @@ import type { Lang, Term } from '@/lib/prefs';
 const bundles: Record<string, () => Promise<{ default: Record<string, Record<string, unknown>> }>> = {
   pl: () => import('./locales/pl'),
   en: () => import('./locales/en'),
+  de: () => import('./locales/de'),
 };
 
 async function loadLanguage(lang: string): Promise<Record<string, Record<string, unknown>>> {
@@ -66,11 +67,28 @@ const TERMS: Record<Lang, Record<Term, Record<string, string>>> = {
     wychowanek: { client: 'resident', Client: 'Resident', clients: 'residents', Clients: 'Residents' },
     uczestnik: { client: 'participant', Client: 'Participant', clients: 'participants', Clients: 'Participants' },
   },
+  // Swiss usage: gender-inclusive slash forms; the forms do not change with the case here
+  de: {
+    podopieczny: { client: 'Klient/in', Client: 'Klient/in', clients: 'Klient/innen', Clients: 'Klient/innen' },
+    klient: { client: 'Klient/in', Client: 'Klient/in', clients: 'Klient/innen', Clients: 'Klient/innen' },
+    wychowanek: {
+      client: 'Jugendliche/r',
+      Client: 'Jugendliche/r',
+      clients: 'Jugendliche',
+      Clients: 'Jugendliche',
+    },
+    uczestnik: {
+      client: 'Teilnehmer/in',
+      Client: 'Teilnehmer/in',
+      clients: 'Teilnehmer/innen',
+      Clients: 'Teilnehmer/innen',
+    },
+  },
 };
 
 export function termVars(lang: Lang, term: Term): Record<string, string> {
   const v = TERMS[lang][term];
-  // EN has no cases – reuse the base forms
+  // EN / DE: no case forms needed – reuse the base forms
   return {
     clientGen: v.client!,
     clientsGen: v.clients!,

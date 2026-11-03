@@ -4,7 +4,12 @@
   "forClient": "Dla: {{code}}",
   "notFound": "Nie znaleziono narzędzia",
   "chartable": "Wynik na wykresie",
-  "groups": { "motivation": "Motywacja", "coping": "Radzenie sobie", "cognitive": "Myśli i wyzwalacze", "skills": "Umiejętności i wsparcie" },
+  "groups": {
+    "motivation": "Motywacja",
+    "coping": "Radzenie sobie",
+    "cognitive": "Myśli i wyzwalacze",
+    "skills": "Umiejętności i wsparcie"
+  },
   "names": {
     "urgeSurfing": "Surfowanie na fali głodu",
     "readinessRuler": "Linijka gotowości",
@@ -48,7 +53,11 @@
     "wentDown": "Fala opadła – głód jest jak fala: rośnie, osiąga szczyt i opada.",
     "stayed": "Czasem fala potrzebuje więcej czasu. To też ważna informacja."
   },
-  "ruler": { "importance": "Na ile to ważne?", "confidence": "Na ile wierzysz, że dasz radę?", "readiness": "Na ile jesteś gotowy/a zacząć?" },
+  "ruler": {
+    "importance": "Na ile to ważne?",
+    "confidence": "Na ile wierzysz, że dasz radę?",
+    "readiness": "Na ile jesteś gotowy/a zacząć?"
+  },
   "balance": {
     "prosStatus": "Korzyści z obecnego zachowania",
     "consStatus": "Koszty obecnego zachowania",

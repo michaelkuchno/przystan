@@ -156,14 +156,8 @@
           "Meeting old friends on the estate",
           "Boredom at the weekend, no plan for the day"
         ],
-        "triggers": [
-          "Shouting and a sense of injustice",
-          "The smell of cannabis, messages from the old group"
-        ],
-        "warningSigns": [
-          "I lock myself in my room and stop replying",
-          "The thought “once won’t hurt”"
-        ],
+        "triggers": ["Shouting and a sense of injustice", "The smell of cannabis, messages from the old group"],
+        "warningSigns": ["I lock myself in my room and stop replying", "The thought “once won’t hurt”"],
         "copingStrategies": [
           "Going to grandma’s or to the pitch",
           "Urge surfing – 10 minutes",
@@ -190,10 +184,7 @@
           "date": "@-84T11:00",
           "durationMin": 50,
           "status": "done",
-          "agenda": [
-            "Getting to know each other and working rules",
-            "History of use and family situation"
-          ],
+          "agenda": ["Getting to know each other and working rules", "History of use and family situation"],
           "quickNotes": "",
           "noteType": "observation",
           "note": {
@@ -229,10 +220,7 @@
           "date": "@-56T11:00",
           "durationMin": 50,
           "status": "done",
-          "agenda": [
-            "Responding to anger – training",
-            "Role-playing a scene from home"
-          ],
+          "agenda": ["Responding to anger – training", "Role-playing a scene from home"],
           "quickNotes": "",
           "noteType": "dap",
           "note": {
@@ -248,10 +236,7 @@
           "date": "@-27T11:00",
           "durationMin": 50,
           "status": "done",
-          "agenda": [
-            "What happened during the pass",
-            "Chain analysis of the lapse"
-          ],
+          "agenda": ["What happened during the pass", "Chain analysis of the lapse"],
           "quickNotes": "",
           "noteType": "dap",
           "note": {
@@ -284,10 +269,7 @@
           "date": "@0T10:00",
           "durationMin": 50,
           "status": "planned",
-          "agenda": [
-            "What I tell the judge about my progress",
-            "Worries about the session"
-          ],
+          "agenda": ["What I tell the judge about my progress", "Worries about the session"],
           "quickNotes": "",
           "noteType": "dap",
           "note": {},
@@ -300,10 +282,7 @@
           "date": "@+7T15:00",
           "durationMin": 90,
           "status": "planned",
-          "agenda": [
-            "Rules during the pass",
-            "Plan for difficult situations at home"
-          ],
+          "agenda": ["Rules during the pass", "Plan for difficult situations at home"],
           "quickNotes": "",
           "noteType": "dap",
           "note": {},
@@ -641,11 +620,7 @@
           "No rules on device use, phone in the bedroom at night",
           "Gaming as her main source of feeling competent"
         ],
-        "protectiveFactors": [
-          "Artistic talent",
-          "An involved mother",
-          "Previously good school results"
-        ],
+        "protectiveFactors": ["Artistic talent", "An involved mother", "Previously good school results"],
         "resources": "The school art club, a common room with board games, the counselling centre, her mum’s readiness to agree on rules.",
         "conclusions": "Excessive gaming serves as an escape from loneliness and a sense of failure. Goal: restoring sleep and daily rhythm, gradual return to offline peer contact, without a total gaming ban."
       },
@@ -701,18 +676,9 @@
         "evaluation": ""
       },
       "relapsePlan": {
-        "highRiskSituations": [
-          "Evenings when mum works a night shift",
-          "A bad grade or an unpleasant situation in class"
-        ],
-        "triggers": [
-          "Game notifications and time-limited events",
-          "Feeling lonely"
-        ],
-        "warningSigns": [
-          "“One more round” after 10 p.m.",
-          "Skipping the club and going out"
-        ],
+        "highRiskSituations": ["Evenings when mum works a night shift", "A bad grade or an unpleasant situation in class"],
+        "triggers": ["Game notifications and time-limited events", "Feeling lonely"],
+        "warningSigns": ["“One more round” after 10 p.m.", "Skipping the club and going out"],
         "copingStrategies": [
           "Drawing before bed instead of gaming",
           "Game notifications turned off",
@@ -739,10 +705,7 @@
           "date": "@-48T12:40",
           "durationMin": 45,
           "status": "done",
-          "agenda": [
-            "Reason for referral (class teacher)",
-            "What a typical day looks like"
-          ],
+          "agenda": ["Reason for referral (class teacher)", "What a typical day looks like"],
           "quickNotes": "",
           "noteType": "observation",
           "note": {
@@ -827,10 +790,7 @@
           "date": "@+3T12:40",
           "durationMin": 45,
           "status": "planned",
-          "agenda": [
-            "Weekend debrief",
-            "Preparing for the counselling appointment"
-          ],
+          "agenda": ["Weekend debrief", "Preparing for the counselling appointment"],
           "quickNotes": "",
           "noteType": "dap",
           "note": {},
@@ -860,10 +820,7 @@
           "payload": {
             "prosChange": ["I’ll be rested", "Fewer arguments with mum"],
             "consChange": ["I’ll lose my place in the game team"],
-            "prosStatus": [
-              "In the game I feel good at something",
-              "I don’t think about school"
-            ],
+            "prosStatus": ["In the game I feel good at something", "I don’t think about school"],
             "consStatus": ["Being late and bad grades", "Headaches"]
           }
         },
@@ -1104,15 +1061,8 @@
           "Friday evening alone at home",
           "Meeting old mates outside the shop"
         ],
-        "triggers": [
-          "Feeling that “nobody will hire me anyway”",
-          "Tension after talking to his ex-wife"
-        ],
-        "warningSigns": [
-          "Skipping a meeting",
-          "Anger and irritability towards his sister",
-          "Poor sleep for several nights"
-        ],
+        "triggers": ["Feeling that “nobody will hire me anyway”", "Tension after talking to his ex-wife"],
+        "warningSigns": ["Skipping a meeting", "Anger and irritability towards his sister", "Poor sleep for several nights"],
         "copingStrategies": [
           "Calling his AA sponsor",
           "Walking his sister’s dog, HALT check",
@@ -1135,10 +1085,7 @@
             "contact": "probation service team"
           }
         ],
-        "supportPlaces": [
-          "AA meeting at the parish (Tue, Fri)",
-          "Sober social club"
-        ],
+        "supportPlaces": ["AA meeting at the parish (Tue, Fri)", "Sober social club"],
         "lapsePlan": "I stop drinking as soon as I can, call my sponsor and talk about it at the next meeting. A lapse does not cancel what I have achieved."
       },
       "readaptation": {
@@ -1237,11 +1184,7 @@
           "date": "@-11T13:30",
           "durationMin": 50,
           "status": "done",
-          "agenda": [
-            "What happened",
-            "HALT",
-            "Updating the relapse prevention plan"
-          ],
+          "agenda": ["What happened", "HALT", "Updating the relapse prevention plan"],
           "quickNotes": "",
           "noteType": "dap",
           "note": {
@@ -1707,10 +1650,7 @@
           "Cold, rainy days with nothing to do"
         ],
         "triggers": ["Thoughts about his son", "Leg pain"],
-        "warningSigns": [
-          "Skipping lunch at the soup kitchen",
-          "Coming back after 8 p.m."
-        ],
+        "warningSigns": ["Skipping lunch at the soup kitchen", "Coming back after 8 p.m."],
         "copingStrategies": [
           "Day centre and the Social Integration Centre workshop",
           "Talking with the shelter worker",
@@ -1728,11 +1668,7 @@
             "contact": ""
           }
         ],
-        "supportPlaces": [
-          "Day centre",
-          "Medical point",
-          "Consultation point at the shelter"
-        ],
+        "supportPlaces": ["Day centre", "Medical point", "Consultation point at the shelter"],
         "lapsePlan": "If I drink, I don’t come back to the shelter intoxicated but go to the warming centre, and the next day I talk to the shelter worker. I don’t lose support because of it."
       },
       "meetings": [
@@ -1863,16 +1799,10 @@
             "tool": "decisionalBalance"
           },
           "payload": {
-            "prosChange": [
-              "My leg will heal",
-              "Maybe my son will get in touch"
-            ],
+            "prosChange": ["My leg will heal", "Maybe my son will get in touch"],
             "consChange": ["I don’t know how to get through the evenings"],
             "prosStatus": ["It keeps me warm and helps me forget"],
-            "consStatus": [
-              "Falls and shame",
-              "Risk of losing my place at the shelter"
-            ]
+            "consStatus": ["Falls and shame", "Risk of losing my place at the shelter"]
           }
         },
         {
@@ -2041,11 +1971,7 @@
           "The belief that after supervision ends “nobody checks”",
           "Lack of sleep"
         ],
-        "protectiveFactors": [
-          "A steady job",
-          "A supportive brother",
-          "Sport as a source of satisfaction"
-        ],
+        "protectiveFactors": ["A steady job", "A supportive brother", "Sport as a source of satisfaction"],
         "resources": "An early intervention group at the addiction clinic, the probation service team, a drug helpline.",
         "conclusions": "The approaching end of supervision is the moment to move from external to internal motivation. A plan for the post-supervision period and work with weekend cravings are needed."
       },
@@ -2101,25 +2027,10 @@
         "evaluation": ""
       },
       "relapsePlan": {
-        "highRiskSituations": [
-          "Birthday parties and weekend nights out with the old group",
-          "Friday after a late shift"
-        ],
-        "triggers": [
-          "Tiredness and a need to “recharge”",
-          "Loneliness after the break-up",
-          "Messages from a dealer"
-        ],
-        "warningSigns": [
-          "The thought “after supervision I’m allowed”",
-          "Skipping the gym",
-          "Contact with old party friends"
-        ],
-        "copingStrategies": [
-          "Urge surfing",
-          "Dealer’s number blocked",
-          "Weekend training with his brother"
-        ],
+        "highRiskSituations": ["Birthday parties and weekend nights out with the old group", "Friday after a late shift"],
+        "triggers": ["Tiredness and a need to “recharge”", "Loneliness after the break-up", "Messages from a dealer"],
+        "warningSigns": ["The thought “after supervision I’m allowed”", "Skipping the gym", "Contact with old party friends"],
+        "copingStrategies": ["Urge surfing", "Dealer’s number blocked", "Weekend training with his brother"],
         "supportPeople": [
           {
             "id": "sp1",
@@ -2239,10 +2150,7 @@
           "date": "@+3T17:00",
           "durationMin": 50,
           "status": "planned",
-          "agenda": [
-            "Weekend plan",
-            "Preparing for the probation officer meeting"
-          ],
+          "agenda": ["Weekend plan", "Preparing for the probation officer meeting"],
           "quickNotes": "",
           "noteType": "dap",
           "note": {},
@@ -2281,11 +2189,7 @@
             "tool": "decisionalBalance"
           },
           "payload": {
-            "prosChange": [
-              "I’ll keep my job",
-              "Better health and fitness",
-              "My brother will trust me"
-            ],
+            "prosChange": ["I’ll keep my job", "Better health and fitness", "My brother will trust me"],
             "consChange": ["Boring weekends", "I’ll lose some friends"],
             "prosStatus": ["Energy at parties"],
             "consStatus": ["Comedowns and no sleep", "The court case"]
@@ -2586,21 +2490,9 @@
         "evaluation": ""
       },
       "relapsePlan": {
-        "highRiskSituations": [
-          "Payday",
-          "Matches on TV",
-          "An argument about money"
-        ],
-        "triggers": [
-          "Betting adverts",
-          "A letter from a debt collector",
-          "The thought “one big win will solve everything”"
-        ],
-        "warningSigns": [
-          "Checking the odds “just out of curiosity”",
-          "Hiding small expenses",
-          "Avoiding the GA meeting"
-        ],
+        "highRiskSituations": ["Payday", "Matches on TV", "An argument about money"],
+        "triggers": ["Betting adverts", "A letter from a debt collector", "The thought “one big win will solve everything”"],
+        "warningSigns": ["Checking the odds “just out of curiosity”", "Hiding small expenses", "Avoiding the GA meeting"],
         "copingStrategies": [
           "Calling a GA friend",
           "Thought record – challenging “I’ll win it back”",
@@ -2754,10 +2646,7 @@
           },
           "payload": {
             "prosChange": ["Peace at home", "Sleep", "Repaying the debts"],
-            "consChange": [
-              "Boredom and no adrenaline",
-              "Losing the chance to “win it back”"
-            ],
+            "consChange": ["Boredom and no adrenaline", "Losing the chance to “win it back”"],
             "prosStatus": ["Excitement and hope of winning"],
             "consStatus": ["Debts", "Lying to his wife", "Insomnia"]
           }
@@ -3241,10 +3130,7 @@
           "date": "@0T16:00",
           "durationMin": 60,
           "status": "planned",
-          "agenda": [
-            "How the son experiences the situation at home",
-            "Joint agreements for difficult evenings"
-          ],
+          "agenda": ["How the son experiences the situation at home", "Joint agreements for difficult evenings"],
           "quickNotes": "",
           "noteType": "dap",
           "note": {},
@@ -3285,11 +3171,7 @@
             "tool": "supportMap"
           },
           "payload": {
-            "people": [
-              "Sister – very close",
-              "Friend from work – close",
-              "Support group – new"
-            ]
+            "people": ["Sister – very close", "Friend from work – close", "Support group – new"]
           }
         },
         {
@@ -3647,10 +3529,7 @@
           "date": "@-21T08:55",
           "durationMin": 45,
           "status": "done",
-          "agenda": [
-            "Refusal techniques",
-            "Role plays: pressure at a party and online"
-          ],
+          "agenda": ["Refusal techniques", "Role plays: pressure at a party and online"],
           "quickNotes": "",
           "noteType": "observation",
           "note": {
@@ -3710,10 +3589,7 @@
           "date": "@0T08:55",
           "durationMin": 45,
           "status": "planned",
-          "agenda": [
-            "Recap of refusal techniques",
-            "Case study: the class chat"
-          ],
+          "agenda": ["Recap of refusal techniques", "Case study: the class chat"],
           "quickNotes": "",
           "noteType": "dap",
           "note": {},
@@ -3726,10 +3602,7 @@
           "date": "@+21T17:30",
           "durationMin": 60,
           "status": "planned",
-          "agenda": [
-            "Evaluation results",
-            "How to talk to a teenager about e-cigarettes and screens"
-          ],
+          "agenda": ["Evaluation results", "How to talk to a teenager about e-cigarettes and screens"],
           "quickNotes": "",
           "noteType": "dap",
           "note": {},
@@ -3993,6 +3866,1729 @@
           ]
         }
       ]
+    },
+    {
+      "id": "demo-ch-01",
+      "country": "CH",
+      "client": {
+        "code": "LM-17",
+        "sex": "male",
+        "ageGroup": "teen",
+        "age": 17,
+        "context": "clinic",
+        "problems": ["cannabis", "alcohol"],
+        "goal": "harmReduction",
+        "stage": "contemplation",
+        "status": "active",
+        "strengths": "Friendly and skilled with customers (praised by his workplace trainer), played floorball (Unihockey) in a club for six years, reliably looks after his younger sister, has a sense of humour and learns quickly.",
+        "supportNetwork": "His mother (involved, but not very available because of shift work), his workplace trainer (Berufsbildnerin) at the training company, the school social worker at the vocational school, his former floorball coach, a fellow apprentice who does not smoke cannabis. The social worker assigned by the youth prosecutor’s office (Jugendanwaltschaft Region Bern-Mittelland).",
+        "family": "Lives with his mother (a nurse working shifts) and his sister (14) in Bern-Bethlehem. His parents separated eight years ago; his father lives in Thun, contact every few weeks. His father used to drink heavily. Arguments at home are mostly about going out and money.",
+        "education": "Apprenticeship as a retail specialist (Detailhandelsfachmann EFZ, 2nd year) in a sports shop in Bern city centre, one day a week at vocational school. In the last two months he was late or called in sick five times on a Monday; his vocational school grades dropped from 4.8 to 4.1 (Swiss scale: 6 = best, 4 = pass).",
+        "keyDates": [
+          {
+            "id": "kd1",
+            "label": "Confirmation of attendance sent to the youth prosecutor’s office",
+            "date": "@+12"
+          },
+          {
+            "id": "kd2",
+            "label": "Progress review at the training company (training report)",
+            "date": "@+25"
+          },
+          {
+            "id": "kd3",
+            "label": "Last of the four ordered counselling sessions",
+            "date": "@+30"
+          }
+        ]
+      },
+      "diagnosis": {
+        "date": "@-40",
+        "areas": {
+          "family": {
+            "score": 3,
+            "notes": "A solid relationship with his mother but little time together; conflicts about going out and money. An ambivalent relationship with his father."
+          },
+          "schoolWork": {
+            "score": 3,
+            "notes": "Rated well with customers; lateness and absences on Mondays, declining concentration. The training company has announced a meeting about whether the apprenticeship will continue."
+          },
+          "peers": {
+            "score": 2,
+            "notes": "A new circle of friends since starting the apprenticeship; spends weekends almost only with friends who smoke cannabis and drink. Contact with his former floorball teammates has faded."
+          },
+          "leisure": {
+            "score": 2,
+            "notes": "Gave up floorball a year ago. Free time: parties, hanging out by the Aare river, gaming."
+          },
+          "health": {
+            "score": 3,
+            "notes": "Hardly sleeps at weekends, tired and irritable on Mondays. No physical illness; once vomited and briefly collapsed after mixing substances (not hospitalised)."
+          },
+          "substanceUse": {
+            "score": 2,
+            "notes": "Has smoked cannabis since 15, currently almost every weekend and sometimes on weekday evenings. Binge drinking at weekends (beer, vodka), often combined with cannabis."
+          },
+          "riskBehaviour": {
+            "score": 2,
+            "notes": "Damage to property while intoxicated, walking home alone at night, once got into a car with a friend who had been drinking."
+          },
+          "justice": {
+            "score": 3,
+            "notes": "First proceedings at the youth prosecutor’s office for damage to property and drug use. Penal order: a personal service (persönliche Leistung) in the form of four counselling sessions at Berner Gesundheit; the damage is being paid via the family."
+          }
+        },
+        "riskFactors": [
+          "A peer group that regularly mixes substances",
+          "Little structure at weekends, his mother often on night shifts",
+          "Addiction in the family (father)",
+          "Cannabis as a way of dealing with stress and boredom",
+          "Risk of losing his apprenticeship"
+        ],
+        "protectiveFactors": [
+          "Motivation to finish his apprenticeship",
+          "A good relationship with his workplace trainer",
+          "A sporting past and contact with his coach",
+          "A sense of responsibility towards his sister"
+        ],
+        "resources": "Youth counselling at Berner Gesundheit, school social work at the vocational school, the local floorball club, apprenticeship counselling by the cantonal Office of Secondary and Vocational Education (MBA) in case of conflicts in the apprenticeship.",
+        "conclusions": "Risky weekend mixing of substances with first consequences for his apprenticeship and with the justice system. Luca wants to keep his apprenticeship but does not see cannabis as a problem. Goal: harm reduction (no use on weekdays, no mixing), securing the apprenticeship, building leisure without substances; keep the question of abstinence open and raise it regularly."
+      },
+      "ipr": {
+        "startDate": "@-38",
+        "reviewDate": "@+20",
+        "goals": [
+          {
+            "id": "g1",
+            "title": "Keep the apprenticeship",
+            "specific": "Get to work on time, Mondays included.",
+            "measurable": "At most one late arrival a month (feedback from his workplace trainer).",
+            "achievable": "Alarm clock outside his room, Sunday evening without substances.",
+            "relevant": "The apprenticeship is Luca’s most important goal of his own.",
+            "timeBound": "Until the progress review at the training company.",
+            "actions": [
+              {
+                "id": "a1",
+                "text": "Prepare a joint meeting with the workplace trainer",
+                "responsible": "Luca, addiction counsellor",
+                "due": "@-20",
+                "done": true
+              },
+              {
+                "id": "a2",
+                "text": "Sunday evening plan (dinner at home, phone away from 11 p.m.)",
+                "responsible": "Luca",
+                "done": false
+              }
+            ],
+            "progress": 50,
+            "reviewNotes": "One late arrival in the last three weeks; his workplace trainer reports he is more present on the shop floor."
+          },
+          {
+            "id": "g2",
+            "title": "Use less and more safely",
+            "specific": "No cannabis from Sunday evening to Friday, never alcohol and cannabis at the same time.",
+            "measurable": "Use diary; self-rating in sessions.",
+            "achievable": "He chooses the rules himself; refusal strategies practised.",
+            "relevant": "Mixing substances led to the incident and to his collapse.",
+            "timeBound": "6 weeks, then review.",
+            "actions": [
+              {
+                "id": "a3",
+                "text": "Keep a use diary in the app",
+                "responsible": "Luca",
+                "done": false
+              },
+              {
+                "id": "a4",
+                "text": "Role play: saying no without losing face",
+                "responsible": "Addiction counsellor",
+                "due": "@-14",
+                "done": true
+              }
+            ],
+            "progress": 40,
+            "reviewNotes": "Mostly no use on weekdays; one weekend with mixed use (see chain analysis)."
+          },
+          {
+            "id": "g3",
+            "title": "Leisure without substances",
+            "specific": "Go to floorball training once a week.",
+            "measurable": "Attendance according to the coach.",
+            "achievable": "The coach has invited him; Thursday evening training fits with his apprenticeship.",
+            "relevant": "Sport used to give him structure and friends who did not use.",
+            "actions": [
+              {
+                "id": "a5",
+                "text": "Call the coach",
+                "responsible": "Luca",
+                "done": true
+              }
+            ],
+            "progress": 60,
+            "reviewNotes": "At training for three weeks, missed once."
+          }
+        ],
+        "evaluation": ""
+      },
+      "relapsePlan": {
+        "highRiskSituations": [
+          "Saturday night when his mother is on a night shift",
+          "Parties with the group from the station",
+          "After an argument at home or stress at work"
+        ],
+        "triggers": ["Friends offering a joint", "Boredom on Sundays", "Payday (apprentice wage)"],
+        "warningSigns": [
+          "He cancels training",
+          "He plans a night out without a way home",
+          "The thought: “Nothing matters tonight anyway”"
+        ],
+        "copingStrategies": [
+          "Decide before going out: either beer or nothing – never both",
+          "Go out with Noah and go home together",
+          "Under pressure: “I’ve got training tomorrow”",
+          "A fixed plan on Sundays (bike ride, family, training)"
+        ],
+        "supportPeople": [
+          {
+            "id": "sp1",
+            "name": "Mum",
+            "contact": ""
+          },
+          {
+            "id": "sp2",
+            "name": "Noah (fellow apprentice)",
+            "contact": ""
+          },
+          {
+            "id": "sp3",
+            "name": "Addiction counsellor, Berner Gesundheit",
+            "contact": "Appointment every two weeks, Wednesday"
+          }
+        ],
+        "supportPlaces": ["Floorball club", "School social work at the vocational school", "Emergency: ambulance 144"],
+        "lapsePlan": "If I mix again, I say so at the next session instead of hiding it. We look together at what happened and adjust the rules. One slip doesn’t mean everything is lost."
+      },
+      "meetings": [
+        {
+          "type": "individual",
+          "date": "@-42T16:15",
+          "durationMin": 50,
+          "status": "done",
+          "title": "First session",
+          "agenda": [
+            "Clarify the mandate from the youth prosecutor’s office",
+            "Luca’s view of the incident",
+            "Screening (DUDIT, AUDIT-C)"
+          ],
+          "quickNotes": "",
+          "noteType": "observation",
+          "note": {
+            "situation": "First session at Berner Gesundheit youth counselling; the youth prosecutor’s office has ordered four counselling sessions. Luca arrives on time, “but only because I have to”.",
+            "behaviour": "Curt at first, hood up; opens up when the talk turns to his apprenticeship and floorball. Plays down the incident (“One mirror, that’s all”).",
+            "emotions": "Anger at the police; underneath, shame towards his mother and fear for his apprenticeship.",
+            "relations": "Describes his friends as “the only ones who don’t get on my nerves”; respects his workplace trainer.",
+            "strengths": "Honest when he feels taken seriously; a clear wish to finish his apprenticeship.",
+            "conclusions": "Name the mandated context openly (what goes to the youth prosecutor’s office and what doesn’t). Don’t argue about “addiction”; start from the apprenticeship as his own goal."
+          },
+          "toolsUsed": [],
+          "homework": "Until next time, note down on which days he used."
+        },
+        {
+          "type": "individual",
+          "date": "@-28T16:15",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Use diary", "Pros and cons"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Used on 3 of 10 weekdays, mixed use on both weekends. Decisional balance completed; readiness 5/10.",
+            "assessment": "First change talk: “On Mondays I’m a wreck, and my boss notices.” Ambivalence between belonging to the group and the apprenticeship. Moving into contemplation.",
+            "plan": "Let him formulate his own rules; prepare the meeting with his workplace trainer."
+          },
+          "toolsUsed": ["decisionalBalance", "readinessRuler"],
+          "homework": "Write down two weekend rules he feels able to keep."
+        },
+        {
+          "type": "family",
+          "date": "@-14T17:30",
+          "durationMin": 60,
+          "status": "done",
+          "title": "Session with his mother",
+          "agenda": ["Weekend rules", "Safety when going out"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Joint session with his mother. Agreement: a way home sorted before going out, a text at midnight, Sunday dinner at home. Role play on turning down offers.",
+            "assessment": "His mother responds with fewer bans than Luca expected; both seem relieved. Luca himself suggests going back to training.",
+            "plan": "Contact the floorball coach; review the agreement in two weeks."
+          },
+          "toolsUsed": ["socialSkills"],
+          "homework": "Call the coach."
+        },
+        {
+          "type": "individual",
+          "date": "@-5T16:15",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Slip at the weekend", "Chain analysis", "Follow-up screening"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "A week ago, after an argument with his mother, he mixed beer and joints and felt sick afterwards. Still on time for work on Monday. DUDIT and AUDIT-C (last 4 weeks) clearly lower than at the first session.",
+            "assessment": "He raises the slip himself – a sign of trust. Trigger: the argument and the feeling “nothing matters tonight”. Self-efficacy is growing (training, punctuality).",
+            "plan": "Add to the relapse plan (after an argument, first call Noah or go for a bike ride); go through the attendance confirmation for the youth prosecutor’s office together with Luca."
+          },
+          "toolsUsed": ["chainAnalysis", "urgeSurfing"],
+          "homework": "After the next argument, try one alternative from the plan."
+        },
+        {
+          "type": "individual",
+          "date": "@+4T16:15",
+          "durationMin": 50,
+          "status": "planned",
+          "agenda": [
+            "Read the attendance confirmation for the youth prosecutor’s office together",
+            "Prepare for the progress review at the training company"
+          ],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": [],
+          "homework": ""
+        }
+      ],
+      "measurements": [
+        {
+          "date": "@-42",
+          "source": {
+            "kind": "screening",
+            "instrument": "DUDIT"
+          },
+          "answers": [2, 1, 1, 2, 1, 1, 1, 0, 1, 0, 2],
+          "note": "Refers to the last 12 months.",
+          "score": 14,
+          "band": "problems"
+        },
+        {
+          "date": "@-42",
+          "source": {
+            "kind": "screening",
+            "instrument": "AUDIT-C"
+          },
+          "answers": [2, 2, 2],
+          "score": 6,
+          "band": "positive"
+        },
+        {
+          "date": "@-28",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 5,
+          "payload": {
+            "importance": 6,
+            "confidence": 4,
+            "readiness": 5
+          }
+        },
+        {
+          "date": "@-28",
+          "source": {
+            "kind": "tool",
+            "tool": "decisionalBalance"
+          },
+          "payload": {
+            "prosChange": ["I keep my apprenticeship", "Less stress with mum", "Fit for floorball again"],
+            "consChange": ["I might be the boring one at weekends"],
+            "prosStatus": ["Switching off after a stressful week", "Belonging"],
+            "consStatus": [
+              "Wrecked on Mondays",
+              "The proceedings at the youth prosecutor’s office",
+              "Money for weed and for the damage"
+            ]
+          }
+        },
+        {
+          "date": "@-5",
+          "source": {
+            "kind": "tool",
+            "tool": "chainAnalysis"
+          },
+          "payload": {
+            "trigger": "An argument with his mother about money on Saturday afternoon",
+            "thoughts": "“Nothing matters tonight anyway”, “The others are allowed to”",
+            "emotions": "Anger, feeling hurt",
+            "behaviour": "Drank beer with the group near the station while smoking joints",
+            "consequences": "Nausea, fear his mother would notice; shame on Sunday",
+            "alternative": "After an argument, first a bike ride or a call to Noah; if going out, only one substance and a clear way home"
+          }
+        },
+        {
+          "date": "@-5",
+          "source": {
+            "kind": "tool",
+            "tool": "urgeSurfing"
+          },
+          "scoreBefore": 6,
+          "score": 3
+        },
+        {
+          "date": "@-5",
+          "source": {
+            "kind": "screening",
+            "instrument": "DUDIT"
+          },
+          "answers": [1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 2],
+          "note": "Follow-up measurement, refers to the last 4 weeks.",
+          "score": 7,
+          "band": "problems"
+        },
+        {
+          "date": "@-5",
+          "source": {
+            "kind": "screening",
+            "instrument": "AUDIT-C"
+          },
+          "answers": [1, 1, 1],
+          "note": "Refers to the last 4 weeks.",
+          "score": 3,
+          "band": "negative"
+        }
+      ],
+      "events": [
+        {
+          "date": "@-52",
+          "type": "other",
+          "title": "Incident in the old town",
+          "note": "Kicked off a car mirror after mixing substances; police, report to the youth prosecutor’s office."
+        },
+        {
+          "date": "@-45",
+          "type": "court",
+          "title": "Penal order from the youth prosecutor’s office",
+          "note": "Personal service: four counselling sessions at Berner Gesundheit; compensation for the damage."
+        },
+        {
+          "date": "@-28",
+          "type": "stageChange",
+          "title": "Stage: contemplation",
+          "note": "First reasons of his own for change (apprenticeship, Monday tiredness)."
+        },
+        {
+          "date": "@-19",
+          "type": "milestone",
+          "title": "Back at floorball training",
+          "note": "First training after a year’s break."
+        },
+        {
+          "date": "@-12",
+          "type": "lapse",
+          "title": "Mixed use after an argument",
+          "note": "Alcohol and cannabis on one evening; raised by himself in counselling."
+        }
+      ],
+      "genogram": {
+        "nodes": [
+          {
+            "id": "n1",
+            "label": "LM-17",
+            "kind": "male",
+            "x": 250,
+            "y": 200,
+            "isClient": true
+          },
+          {
+            "id": "n2",
+            "label": "Mother (44)",
+            "kind": "female",
+            "x": 330,
+            "y": 60
+          },
+          {
+            "id": "n3",
+            "label": "Father (47)",
+            "kind": "male",
+            "x": 170,
+            "y": 60,
+            "substance": true,
+            "note": "Used to drink heavily"
+          },
+          {
+            "id": "n4",
+            "label": "Sister (14)",
+            "kind": "female",
+            "x": 400,
+            "y": 200
+          },
+          {
+            "id": "n5",
+            "label": "Weekend group",
+            "kind": "group",
+            "x": 90,
+            "y": 330,
+            "substance": true
+          },
+          {
+            "id": "n6",
+            "label": "Noah",
+            "kind": "male",
+            "x": 250,
+            "y": 340
+          },
+          {
+            "id": "n7",
+            "label": "Training company",
+            "kind": "institution",
+            "x": 420,
+            "y": 340
+          },
+          {
+            "id": "n8",
+            "label": "Youth prosecutor’s office",
+            "kind": "institution",
+            "x": 560,
+            "y": 200
+          },
+          {
+            "id": "n9",
+            "label": "Floorball club",
+            "kind": "group",
+            "x": 560,
+            "y": 340
+          }
+        ],
+        "edges": [
+          {
+            "id": "e1",
+            "from": "n3",
+            "to": "n2",
+            "type": "conflict"
+          },
+          {
+            "id": "e2",
+            "from": "n2",
+            "to": "n1",
+            "type": "strong"
+          },
+          {
+            "id": "e3",
+            "from": "n3",
+            "to": "n1",
+            "type": "weak"
+          },
+          {
+            "id": "e4",
+            "from": "n1",
+            "to": "n4",
+            "type": "strong"
+          },
+          {
+            "id": "e5",
+            "from": "n5",
+            "to": "n1",
+            "type": "stressful"
+          },
+          {
+            "id": "e6",
+            "from": "n6",
+            "to": "n1",
+            "type": "support"
+          },
+          {
+            "id": "e7",
+            "from": "n7",
+            "to": "n1",
+            "type": "support"
+          },
+          {
+            "id": "e8",
+            "from": "n8",
+            "to": "n1",
+            "type": "stressful"
+          },
+          {
+            "id": "e9",
+            "from": "n9",
+            "to": "n1",
+            "type": "support"
+          }
+        ]
+      }
+    },
+    {
+      "id": "demo-ch-02",
+      "country": "CH",
+      "client": {
+        "code": "RB-42",
+        "sex": "male",
+        "ageGroup": "adult",
+        "age": 42,
+        "context": "clinic",
+        "problems": ["alcohol"],
+        "goal": "abstinence",
+        "stage": "action",
+        "status": "active",
+        "strengths": "Has worked for the same company for 18 years and is highly valued professionally, practically skilled, a loving father, used to be active in the volunteer fire brigade. Keeps to agreements when they are clear.",
+        "supportNetwork": "His wife (supportive but exhausted), his GP, an addiction counsellor at Berner Gesundheit, his line manager, a childhood friend, an AA meeting in Bern (recently).",
+        "family": "Married, two children (13 and 10), lives in Köniz near Bern. His wife works 60% in retail. His father was alcohol-dependent and died at 61. His wife has threatened to separate if nothing changes.",
+        "education": "Trained as a plumber (Sanitärinstallateur EFZ), 18 years with the same installation company, most recently as a service technician with a company van. After smelling of alcohol on a building site and several Monday absences he received a written warning; the company van was temporarily withdrawn.",
+        "keyDates": [
+          {
+            "id": "kd1",
+            "label": "Review meeting with his line manager and HR",
+            "date": "@+20"
+          },
+          {
+            "id": "kd2",
+            "label": "Liver function check at the GP",
+            "date": "@+10"
+          },
+          {
+            "id": "kd3",
+            "label": "Review of the three-month abstinence period",
+            "date": "@+35"
+          }
+        ]
+      },
+      "diagnosis": {
+        "date": "@-54",
+        "areas": {
+          "family": {
+            "score": 2,
+            "notes": "Tension in the marriage, his wife carries almost all responsibility; the children withdraw when he has been drinking. At the same time a strong bond."
+          },
+          "schoolWork": {
+            "score": 2,
+            "notes": "Written warning, company van withdrawn; afraid of losing his job. Still valued professionally."
+          },
+          "peers": {
+            "score": 3,
+            "notes": "After-work beers with colleagues as a ritual; a childhood friend without an alcohol problem."
+          },
+          "leisure": {
+            "score": 2,
+            "notes": "Free time mostly in front of the TV with beer; gave up the fire brigade three years ago."
+          },
+          "health": {
+            "score": 2,
+            "notes": "Raised liver values (GGT), sleep problems, high blood pressure. Outpatient detox with his GP completed without problems."
+          },
+          "substanceUse": {
+            "score": 2,
+            "notes": "Increasing use for about eight years, most recently 6–8 glasses of beer (Stange, 3 dl) a day plus spirits at weekends. Morning tremor before detox."
+          },
+          "riskBehaviour": {
+            "score": 3,
+            "notes": "Twice drove to work with residual alcohol (not stopped); no driving licence withdrawal."
+          },
+          "justice": {
+            "score": 5,
+            "notes": "No proceedings."
+          }
+        },
+        "riskFactors": [
+          "Family history (alcohol-dependent father)",
+          "Drinking culture at work",
+          "Stress from overtime and on-call duty (Pikettdienst)",
+          "Few leisure activities without alcohol"
+        ],
+        "protectiveFactors": [
+          "A stable job and recognition",
+          "A committed wife and his children as motivation",
+          "A good relationship with his GP",
+          "Willingness to try a period of abstinence"
+        ],
+        "resources": "Outpatient addiction counselling at Berner Gesundheit, his GP, counselling for relatives for his wife, AA meetings in Bern; an information meeting at the Klinik Südhang (residential addiction clinic) as an option if outpatient treatment is not enough.",
+        "conclusions": "Alcohol dependence with consequences for health, work and family. After outpatient detox: a self-chosen three-month abstinence period, followed by a joint reassessment. Involve the employer as far as the client consents; support his wife in her own right."
+      },
+      "ipr": {
+        "startDate": "@-50",
+        "reviewDate": "@+35",
+        "goals": [
+          {
+            "id": "g1",
+            "title": "Three-month abstinence period",
+            "specific": "No alcohol for 12 weeks.",
+            "measurable": "Self-monitoring record, liver values at the GP.",
+            "achievable": "Outpatient detox completed; relapse plan, weekly counselling.",
+            "relevant": "Health and family are his most important reasons.",
+            "timeBound": "Until the review in five weeks.",
+            "actions": [
+              {
+                "id": "a1",
+                "text": "Complete outpatient detox with the GP",
+                "responsible": "Client, GP",
+                "due": "@-48",
+                "done": true
+              },
+              {
+                "id": "a2",
+                "text": "Remove beer from the fridge and cellar",
+                "responsible": "Client, wife",
+                "due": "@-45",
+                "done": true
+              },
+              {
+                "id": "a3",
+                "text": "Attend an AA meeting and reflect on it",
+                "responsible": "Client",
+                "done": false
+              }
+            ],
+            "progress": 65,
+            "reviewNotes": "Abstinent for seven weeks apart from one slip."
+          },
+          {
+            "id": "g2",
+            "title": "Keep his job",
+            "specific": "No alcohol-related absences, an open conversation with his manager.",
+            "measurable": "Feedback at the review meeting; company van returned.",
+            "achievable": "His manager is well-disposed; attendance at counselling is confirmed with his consent.",
+            "relevant": "The job secures the family income.",
+            "timeBound": "By the review meeting.",
+            "actions": [
+              {
+                "id": "a4",
+                "text": "Confirmation of attendance to the employer (release from confidentiality for this purpose only)",
+                "responsible": "Addiction counsellor",
+                "due": "@-40",
+                "done": true
+              },
+              {
+                "id": "a5",
+                "text": "Find an alternative to after-work beers with colleagues",
+                "responsible": "Client",
+                "done": false
+              }
+            ],
+            "progress": 50,
+            "reviewNotes": "No more absences; the after-work ritual remains difficult."
+          },
+          {
+            "id": "g3",
+            "title": "Ease the strain on the family",
+            "specific": "One activity a week with the children; his wife uses counselling of her own.",
+            "measurable": "Weekly plan, feedback in the couple session.",
+            "achievable": "Weekends are free; the children want to go on bike rides.",
+            "relevant": "He does not want to become like his father.",
+            "actions": [
+              {
+                "id": "a6",
+                "text": "Refer his wife to counselling for relatives",
+                "responsible": "Addiction counsellor",
+                "due": "@-35",
+                "done": true
+              }
+            ],
+            "progress": 55,
+            "reviewNotes": "Three bike rides with the children; his wife has attended two counselling appointments."
+          }
+        ],
+        "evaluation": ""
+      },
+      "relapsePlan": {
+        "highRiskSituations": [
+          "Friday after work with colleagues",
+          "On-call weekends with stress and call-outs",
+          "Family celebrations with alcohol",
+          "Arguments with his wife"
+        ],
+        "triggers": [
+          "Thirst after work on the building site",
+          "The smell of beer",
+          "Feeling he has failed",
+          "Football matches on TV"
+        ],
+        "warningSigns": [
+          "He buys beer “for guests”",
+          "He cancels counselling",
+          "His sleep gets worse again",
+          "The thought: “One beer isn’t a problem”"
+        ],
+        "copingStrategies": [
+          "After work: alcohol-free beer or mineral water, head home after 20 minutes",
+          "Ride out the craving wave (urge surfing)",
+          "Call his childhood friend",
+          "A bike ride or work in his own workshop"
+        ],
+        "supportPeople": [
+          {
+            "id": "sp1",
+            "name": "Wife",
+            "contact": ""
+          },
+          {
+            "id": "sp2",
+            "name": "Thomas, childhood friend",
+            "contact": ""
+          },
+          {
+            "id": "sp3",
+            "name": "Addiction counsellor, Berner Gesundheit",
+            "contact": "Appointment every Tuesday"
+          },
+          {
+            "id": "sp4",
+            "name": "GP",
+            "contact": "Practice in Köniz"
+          }
+        ],
+        "supportPlaces": ["AA meeting in Bern", "Berner Gesundheit, Bern", "Die Dargebotene Hand (helpline), phone 143"],
+        "lapsePlan": "If I drink, I stop after the first glass, tell my wife the same day and call my counsellor the next day. A slip is a signal to adjust the plan – not a reason to give up. If I get withdrawal symptoms, I go to my GP."
+      },
+      "meetings": [
+        {
+          "type": "individual",
+          "date": "@-54T17:30",
+          "durationMin": 60,
+          "status": "done",
+          "title": "First session",
+          "agenda": ["Reason for coming (warning, GP)", "AUDIT", "Goals"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Referred by his GP after raised liver values and the warning at work. Daily drinking for years; AUDIT 20 points. Outpatient detox has started.",
+            "assessment": "High distress (job, marriage), but shame and fear of the label “alcoholic”. Initially wants to “just drink less”.",
+            "plan": "Openly discuss the choice between controlled drinking and abstinence; decisional balance at the next appointment."
+          },
+          "toolsUsed": [],
+          "homework": "Keep a drinking diary after detox."
+        },
+        {
+          "type": "individual",
+          "date": "@-47T17:30",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Decisional balance", "Deciding on a goal"],
+          "quickNotes": "",
+          "noteType": "progress",
+          "note": {
+            "goal": "Clarify the goal for the coming months.",
+            "course": "Worked through a decisional balance. He talks about his father and says: “I don’t want to end up like that.”",
+            "observations": "Clear change talk; physically much better after detox.",
+            "agreements": "Self-chosen three-month abstinence period; confirmation of attendance to the employer.",
+            "nextStep": "Couple session with his wife."
+          },
+          "toolsUsed": ["decisionalBalance", "readinessRuler"],
+          "homework": "Remove alcohol from the house."
+        },
+        {
+          "type": "family",
+          "date": "@-33T18:00",
+          "durationMin": 60,
+          "status": "done",
+          "title": "Couple session",
+          "agenda": ["His wife’s expectations", "Relapse plan"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "His wife describes years of checking up on him and of fear. Went through the relapse plan together; she no longer wants to be “the police officer”.",
+            "assessment": "Both are exhausted but connected. His wife needs support of her own.",
+            "plan": "Referral to counselling for relatives; a weekly activity with the children."
+          },
+          "toolsUsed": ["supportMap"],
+          "homework": "Plan the first bike ride with the children."
+        },
+        {
+          "type": "individual",
+          "date": "@-14T17:30",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Slip at the company party", "Chain analysis"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Drank three beers at the company party, then stopped and told his wife the same evening. Abstinent again since. AUDIT-C (last 4 weeks) 2 points.",
+            "assessment": "The relapse plan worked – a short slip instead of a return to old patterns. His shame is great, but his self-efficacy has still grown.",
+            "plan": "Add a strategy for events with alcohol; prepare the conversation with his manager."
+          },
+          "toolsUsed": ["chainAnalysis", "halt"],
+          "homework": "Write an exit plan for the next party."
+        },
+        {
+          "type": "individual",
+          "date": "@+5T17:30",
+          "durationMin": 50,
+          "status": "planned",
+          "agenda": ["Preparing the review meeting", "Interim review of the abstinence period"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": [],
+          "homework": ""
+        }
+      ],
+      "measurements": [
+        {
+          "date": "@-54",
+          "source": {
+            "kind": "screening",
+            "instrument": "AUDIT"
+          },
+          "answers": [3, 2, 3, 2, 2, 1, 2, 1, 0, 2],
+          "note": "Refers to the 12 months before detox.",
+          "score": 20,
+          "band": "zone4"
+        },
+        {
+          "date": "@-47",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 7,
+          "payload": {
+            "importance": 9,
+            "confidence": 5,
+            "readiness": 7
+          }
+        },
+        {
+          "date": "@-47",
+          "source": {
+            "kind": "tool",
+            "tool": "decisionalBalance"
+          },
+          "payload": {
+            "prosChange": ["Health (liver, sleep)", "I keep my job", "My children aren’t scared any more"],
+            "consChange": ["Finishing work without a beer feels empty", "My colleagues tease me"],
+            "prosStatus": ["Relaxing after work", "It’s just part of things"],
+            "consStatus": ["The warning", "Arguments with my wife", "I’m becoming like my father"]
+          }
+        },
+        {
+          "date": "@-33",
+          "source": {
+            "kind": "tool",
+            "tool": "supportMap"
+          },
+          "payload": {
+            "people": [
+              "Wife – very close, but strained",
+              "Thomas, childhood friend – close",
+              "GP – supportive",
+              "Line manager – well-disposed"
+            ]
+          }
+        },
+        {
+          "date": "@-14",
+          "source": {
+            "kind": "tool",
+            "tool": "chainAnalysis"
+          },
+          "payload": {
+            "trigger": "Company party with free beer, colleagues raising their glasses to him",
+            "thoughts": "“If I don’t drink with them, everyone will know”",
+            "emotions": "Insecurity, shame, tension",
+            "behaviour": "Drank three beers, then stopped and went home by bus",
+            "consequences": "Poor sleep, guilt; an open talk with his wife the same evening",
+            "alternative": "Talk to someone he trusts at work beforehand, hold an alcohol-free drink, leave after an hour"
+          }
+        },
+        {
+          "date": "@-14",
+          "source": {
+            "kind": "tool",
+            "tool": "halt"
+          },
+          "score": 3,
+          "payload": {
+            "hungry": true,
+            "angry": false,
+            "lonely": true,
+            "tired": true
+          }
+        },
+        {
+          "date": "@-14",
+          "source": {
+            "kind": "screening",
+            "instrument": "AUDIT-C"
+          },
+          "answers": [1, 1, 0],
+          "note": "Refers to the last 4 weeks (one slip).",
+          "score": 2,
+          "band": "negative"
+        },
+        {
+          "date": "@-3",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 8,
+          "payload": {
+            "importance": 9,
+            "confidence": 7,
+            "readiness": 8
+          }
+        }
+      ],
+      "events": [
+        {
+          "date": "@-60",
+          "type": "work",
+          "title": "Written warning",
+          "note": "After smelling of alcohol on the building site; company van temporarily withdrawn."
+        },
+        {
+          "date": "@-55",
+          "type": "other",
+          "title": "Referral by the GP",
+          "note": "Raised liver values, start of outpatient detox."
+        },
+        {
+          "date": "@-48",
+          "type": "milestone",
+          "title": "Outpatient detox completed",
+          "note": "Without complications."
+        },
+        {
+          "date": "@-47",
+          "type": "stageChange",
+          "title": "Stage: action",
+          "note": "Self-chosen three-month abstinence period."
+        },
+        {
+          "date": "@-16",
+          "type": "lapse",
+          "title": "Slip at the company party",
+          "note": "Three beers, talked about openly the same evening."
+        },
+        {
+          "date": "@-7",
+          "type": "work",
+          "title": "Company van returned",
+          "note": "His manager acknowledges the change."
+        }
+      ],
+      "genogram": {
+        "nodes": [
+          {
+            "id": "n1",
+            "label": "RB-42",
+            "kind": "male",
+            "x": 250,
+            "y": 200,
+            "isClient": true
+          },
+          {
+            "id": "n2",
+            "label": "Wife (40)",
+            "kind": "female",
+            "x": 400,
+            "y": 200
+          },
+          {
+            "id": "n3",
+            "label": "Son (13)",
+            "kind": "male",
+            "x": 290,
+            "y": 340
+          },
+          {
+            "id": "n4",
+            "label": "Daughter (10)",
+            "kind": "female",
+            "x": 410,
+            "y": 340
+          },
+          {
+            "id": "n5",
+            "label": "Father",
+            "kind": "male",
+            "x": 180,
+            "y": 60,
+            "deceased": true,
+            "substance": true,
+            "note": "Alcohol-dependent, died at 61"
+          },
+          {
+            "id": "n6",
+            "label": "Mother (68)",
+            "kind": "female",
+            "x": 320,
+            "y": 60
+          },
+          {
+            "id": "n7",
+            "label": "Employer",
+            "kind": "institution",
+            "x": 90,
+            "y": 340
+          },
+          {
+            "id": "n8",
+            "label": "AA meeting",
+            "kind": "group",
+            "x": 540,
+            "y": 90
+          },
+          {
+            "id": "n9",
+            "label": "Berner Gesundheit",
+            "kind": "institution",
+            "x": 540,
+            "y": 250
+          }
+        ],
+        "edges": [
+          {
+            "id": "e1",
+            "from": "n5",
+            "to": "n6",
+            "type": "family"
+          },
+          {
+            "id": "e2",
+            "from": "n5",
+            "to": "n1",
+            "type": "stressful"
+          },
+          {
+            "id": "e3",
+            "from": "n6",
+            "to": "n1",
+            "type": "family"
+          },
+          {
+            "id": "e4",
+            "from": "n1",
+            "to": "n2",
+            "type": "stressful"
+          },
+          {
+            "id": "e5",
+            "from": "n2",
+            "to": "n3",
+            "type": "strong"
+          },
+          {
+            "id": "e6",
+            "from": "n2",
+            "to": "n4",
+            "type": "strong"
+          },
+          {
+            "id": "e7",
+            "from": "n1",
+            "to": "n3",
+            "type": "family"
+          },
+          {
+            "id": "e8",
+            "from": "n1",
+            "to": "n4",
+            "type": "strong"
+          },
+          {
+            "id": "e9",
+            "from": "n7",
+            "to": "n1",
+            "type": "stressful"
+          },
+          {
+            "id": "e10",
+            "from": "n8",
+            "to": "n1",
+            "type": "support"
+          },
+          {
+            "id": "e11",
+            "from": "n9",
+            "to": "n1",
+            "type": "support"
+          }
+        ]
+      }
+    },
+    {
+      "id": "demo-ch-03",
+      "country": "CH",
+      "client": {
+        "code": "SK-29",
+        "sex": "female",
+        "ageGroup": "youngAdult",
+        "age": 29,
+        "context": "probation",
+        "problems": ["opioids", "stimulants", "gambling"],
+        "goal": "harmReduction",
+        "stage": "preparation",
+        "status": "active",
+        "strengths": "Has kept reliably to her opioid agonist treatment for three years, is creative (sews bags), reflective, deeply loves her daughter and has good relationships with addiction services staff.",
+        "supportNetwork": "Her probation officer (Bewährungs- und Vollzugsdienste, BVD – the cantonal probation service), her GP (opioid agonist treatment authorised by the cantonal medical office), a social worker at the Sozialdienst (social services) of the City of Bern, the Kontakt- und Anlaufstelle (K&A – low-threshold contact centre with a supervised consumption room), her mother (a cautious reconciliation), a friend from the sewing workshop.",
+        "family": "Single, one daughter (6) who lives with her father in Burgdorf. Contact every other weekend, currently supervised (arranged by the KESB – child and adult protection authority). Her mother lives in Langenthal; no contact with her brother (32) for years. Her father left the family early on.",
+        "education": "Dropped out of a hairdressing apprenticeship, then worked in catering. Without paid work for four years, supported by social services; works two half-days a week in an employment programme (sewing workshop).",
+        "keyDates": [
+          {
+            "id": "kd1",
+            "label": "Visiting weekend with her daughter",
+            "date": "@+9"
+          },
+          {
+            "id": "kd2",
+            "label": "Second appointment at the Berner Schuldenberatung (debt counselling)",
+            "date": "@+14"
+          },
+          {
+            "id": "kd3",
+            "label": "Six-monthly probation report",
+            "date": "@+45"
+          }
+        ]
+      },
+      "diagnosis": {
+        "date": "@-58",
+        "areas": {
+          "family": {
+            "score": 2,
+            "notes": "A strong bond with her daughter, supervised contact; shame towards her mother, contact being cautiously rebuilt."
+          },
+          "schoolWork": {
+            "score": 2,
+            "notes": "No paid work; she attends the employment programme reliably and it gives her a daily structure."
+          },
+          "peers": {
+            "score": 2,
+            "notes": "Many contacts from the drug scene; one friend from the sewing workshop who does not use."
+          },
+          "leisure": {
+            "score": 3,
+            "notes": "Sewing, walks along the Aare; in the evenings hours of online casino gambling on her phone."
+          },
+          "health": {
+            "score": 3,
+            "notes": "Stable on slow-release oral morphine; hepatitis C successfully treated. Lack of sleep after gambling nights, weight loss when using cocaine."
+          },
+          "substanceUse": {
+            "score": 2,
+            "notes": "No heroin for three years. Cocaine (snorted, sometimes smoked) once or twice a month, usually after winning or losing at gambling. No additional benzodiazepine use."
+          },
+          "riskBehaviour": {
+            "score": 2,
+            "notes": "Online gambling with debts of around CHF 14,000 (consumer loan, health insurance premiums, debt enforcement proceedings). Thefts in the past to finance it."
+          },
+          "justice": {
+            "score": 2,
+            "notes": "Suspended prison sentence for repeated theft and fraud; two-year probation period with probation assistance and directives (continuing opioid agonist treatment, debt counselling)."
+          }
+        },
+        "riskFactors": [
+          "Gambling to regulate emotions and as a supposed way out of debt",
+          "Cocaine as a reward or comfort after gambling",
+          "Contacts in the drug scene",
+          "Financial hardship and debt enforcement",
+          "Loneliness on unstructured evenings"
+        ],
+        "protectiveFactors": [
+          "Stable opioid agonist treatment",
+          "Her daughter as a strong motivation",
+          "Daily structure in the employment programme",
+          "A trusting relationship with her probation officer"
+        ],
+        "resources": "Probation service (BVD), social services of the City of Bern, Berner Schuldenberatung (debt counselling), the K&A contact centre with a supervised consumption room and basic medical care, a gambling self-exclusion (Spielsperre) via the casinos, gambling counselling at Berner Gesundheit.",
+        "conclusions": "Stable in opioid agonist treatment, but gambling and episodic cocaine use put her finances, probation and contact with her daughter at risk. Goal: harm reduction (safer use, no cocaine before visiting weekends), self-exclusion and debt restructuring, strengthening her role as a mother. Accompany the directives transparently and without moralising."
+      },
+      "ipr": {
+        "startDate": "@-55",
+        "reviewDate": "@+45",
+        "goals": [
+          {
+            "id": "g1",
+            "title": "Stop gambling",
+            "specific": "Apply for self-exclusion and not use foreign online casinos.",
+            "measurable": "Exclusion confirmed; bank statements without gambling transactions.",
+            "achievable": "The exclusion applies to all licensed casinos in Switzerland, online too; social services help with the budget.",
+            "relevant": "Debt is her biggest source of stress.",
+            "timeBound": "Exclusion within two weeks; monthly review afterwards.",
+            "actions": [
+              {
+                "id": "a1",
+                "text": "Apply for self-exclusion",
+                "responsible": "Client",
+                "due": "@-36",
+                "done": true
+              },
+              {
+                "id": "a2",
+                "text": "Delete gambling apps and install a blocker",
+                "responsible": "Client, probation officer",
+                "due": "@-30",
+                "done": true
+              },
+              {
+                "id": "a3",
+                "text": "Make an appointment with gambling counselling",
+                "responsible": "Client",
+                "done": false
+              }
+            ],
+            "progress": 60,
+            "reviewNotes": "Self-exclusion active; gambled once on a foreign site, reported it herself."
+          },
+          {
+            "id": "g2",
+            "title": "Sort out her debts",
+            "specific": "List all debts and draw up a repayment plan with the Berner Schuldenberatung.",
+            "measurable": "Complete list of debts; repayment plan discussed.",
+            "achievable": "The health insurance premium reduction is sorted; the documents have been collected.",
+            "relevant": "Debt enforcement increases the pressure to gamble.",
+            "timeBound": "Within six weeks.",
+            "actions": [
+              {
+                "id": "a4",
+                "text": "Order an extract from the debt enforcement register",
+                "responsible": "Client",
+                "due": "@-25",
+                "done": true
+              },
+              {
+                "id": "a5",
+                "text": "Discuss the repayment plan with debt counselling",
+                "responsible": "Client, social services social worker",
+                "due": "@+14",
+                "done": false
+              }
+            ],
+            "progress": 45,
+            "reviewNotes": "Documents complete, first appointment has taken place."
+          },
+          {
+            "id": "g3",
+            "title": "Use more safely and be there for her daughter",
+            "specific": "No cocaine in the 72 hours before a visiting weekend; if she uses, then not alone but at the K&A.",
+            "measurable": "Visiting weekends take place as planned; self-monitoring record.",
+            "achievable": "She knows the K&A well; the visiting dates are fixed.",
+            "relevant": "Contact with her daughter is her most important goal.",
+            "actions": [
+              {
+                "id": "a6",
+                "text": "Pick up naloxone nasal spray at the K&A and practise using it",
+                "responsible": "Client",
+                "due": "@-40",
+                "done": true
+              }
+            ],
+            "progress": 55,
+            "reviewNotes": "Two visiting weekends with no use beforehand; one slip during the week."
+          }
+        ],
+        "evaluation": ""
+      },
+      "relapsePlan": {
+        "highRiskSituations": [
+          "Evenings alone in the flat with her phone",
+          "The days after her basic allowance is paid out",
+          "Running into acquaintances from the scene near the station",
+          "After a difficult visiting weekend"
+        ],
+        "triggers": [
+          "Casino adverts and bonus messages",
+          "A letter from the debt enforcement office",
+          "Feeling like a bad mother",
+          "A win – “now I’ll celebrate”"
+        ],
+        "warningSigns": [
+          "She looks at casino sites again, “just to look”",
+          "She avoids the sewing workshop",
+          "She withdraws cash that isn’t in the budget",
+          "Lack of sleep"
+        ],
+        "copingStrategies": [
+          "Weekly budget in cash, leave the card at home",
+          "When the urge to gamble comes, call her friend or go to the K&A instead of staying alone",
+          "Check the thought “I can win it back” with a thought record",
+          "If cocaine, then never alone and with naloxone at hand"
+        ],
+        "supportPeople": [
+          {
+            "id": "sp1",
+            "name": "Probation officer",
+            "contact": "BVD, appointment every two weeks"
+          },
+          {
+            "id": "sp2",
+            "name": "Mira, friend (sewing workshop)",
+            "contact": ""
+          },
+          {
+            "id": "sp3",
+            "name": "Mother",
+            "contact": "Phone call on Sundays"
+          }
+        ],
+        "supportPlaces": [
+          "Kontakt- und Anlaufstelle (K&A) Bern",
+          "Employment programme (sewing workshop)",
+          "Die Dargebotene Hand (helpline), phone 143"
+        ],
+        "lapsePlan": "If I have gambled or taken cocaine, I talk about it openly at the next appointment. My probation officer has explained what she has to pass on and what she doesn’t. We look at what triggered it, and I keep taking my substitution medication as prescribed. If I mix substances, I am not alone and I have naloxone with me."
+      },
+      "meetings": [
+        {
+          "type": "individual",
+          "date": "@-58T10:00",
+          "durationMin": 60,
+          "status": "done",
+          "title": "First probation meeting",
+          "agenda": ["Sentence, directives and the role of probation", "Life situation", "DUDIT"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Start of probation after a suspended prison sentence. Directives: continue opioid agonist treatment and debt counselling. DUDIT in the dependence range (referring to the year before the sentence). Talks openly about online gambling.",
+            "assessment": "Stable in opioid agonist treatment; gambling is currently the greatest risk. Cautious trust; afraid that everything “goes to the KESB”.",
+            "plan": "Clarify roles and information flows (probation – social services – KESB); decisional balance on gambling."
+          },
+          "toolsUsed": [],
+          "homework": "Collect all debt letters in one folder."
+        },
+        {
+          "type": "individual",
+          "date": "@-44T10:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Gambling", "Support network"],
+          "quickNotes": "",
+          "noteType": "progress",
+          "note": {
+            "goal": "Look at the gambling without judging.",
+            "course": "Completed a decisional balance on gambling and a support map. She says she often takes cocaine after losses “so as not to feel anything”.",
+            "observations": "A lot of shame; clear change talk when her daughter comes up.",
+            "agreements": "Information on self-exclusion; she will decide by the next appointment.",
+            "nextStep": "Thought record on typical gambling thoughts."
+          },
+          "toolsUsed": ["decisionalBalance", "supportMap"],
+          "homework": "Read the information on self-exclusion."
+        },
+        {
+          "type": "individual",
+          "date": "@-30T10:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Self-exclusion", "Thought record"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {
+            "data": "Self-exclusion applied for. Thought record on the idea “I can win it back”. Gambling apps deleted.",
+            "assessment": "Moving into preparation; she recognises “chasing” losses. Cocaine remains linked to days of losses.",
+            "plan": "First appointment at debt counselling; a plan for safer use before visiting weekends."
+          },
+          "toolsUsed": ["thoughtRecord"],
+          "homework": "Order the debt enforcement register extract."
+        },
+        {
+          "type": "individual",
+          "date": "@-10T10:00",
+          "durationMin": 50,
+          "status": "done",
+          "agenda": ["Slip", "Follow-up screening"],
+          "quickNotes": "",
+          "noteType": "observation",
+          "note": {
+            "situation": "Appointment after a slip: cocaine one evening after a letter from the debt enforcement office; she reports it herself.",
+            "behaviour": "Arrives on time, looks tired; speaks openly, apologises several times.",
+            "emotions": "Shame, fear for contact with her daughter, but also pride that she did not gamble.",
+            "relations": "Called her friend from the sewing workshop after using; her mother visited her on Sunday.",
+            "strengths": "Honesty, used her emergency plan (did not use alone, had naloxone), kept to the self-exclusion.",
+            "conclusions": "Acknowledge the slip as harm reduction in action; open letters from authorities together in future. The follow-up screening shows a decrease."
+          },
+          "toolsUsed": ["readinessRuler", "chainAnalysis"],
+          "homework": "Take new letters from the debt enforcement office to social services unopened."
+        },
+        {
+          "type": "individual",
+          "date": "@+6T10:00",
+          "durationMin": 50,
+          "status": "planned",
+          "agenda": ["Preparing the visiting weekend", "Debrief on debt counselling"],
+          "quickNotes": "",
+          "noteType": "dap",
+          "note": {},
+          "toolsUsed": [],
+          "homework": ""
+        }
+      ],
+      "measurements": [
+        {
+          "date": "@-58",
+          "source": {
+            "kind": "screening",
+            "instrument": "DUDIT"
+          },
+          "answers": [4, 3, 2, 3, 2, 3, 2, 2, 2, 2, 2],
+          "note": "Refers to the year before the sentence; the prescribed substitution medication is not counted.",
+          "score": 31,
+          "band": "dependence"
+        },
+        {
+          "date": "@-44",
+          "source": {
+            "kind": "tool",
+            "tool": "decisionalBalance"
+          },
+          "payload": {
+            "prosChange": ["No new debts", "I sleep again", "Visits with my daughter are safer"],
+            "consChange": ["Evenings are empty and boring", "No more hope of the big win"],
+            "prosStatus": ["Excitement and distraction", "Briefly feeling everything will be fine"],
+            "consStatus": ["Debts and enforcement proceedings", "Cocaine after losses", "I lie to everyone"]
+          }
+        },
+        {
+          "date": "@-44",
+          "source": {
+            "kind": "tool",
+            "tool": "supportMap"
+          },
+          "payload": {
+            "people": [
+              "Daughter – very important",
+              "Probation officer – trusting",
+              "Mira, friend – close",
+              "Mother – cautious, getting better",
+              "Social worker at social services – matter-of-fact"
+            ]
+          }
+        },
+        {
+          "date": "@-30",
+          "source": {
+            "kind": "tool",
+            "tool": "thoughtRecord"
+          },
+          "payload": {
+            "situation": "A bonus message from an online casino in the evening",
+            "thought": "“With 50 francs I can win back last week’s bill”",
+            "distortion": "Illusion of control",
+            "alternative": "The game is designed so that the casino wins. Every stake increases my debt – I’ll pay the bill using the debt counselling plan."
+          }
+        },
+        {
+          "date": "@-10",
+          "source": {
+            "kind": "tool",
+            "tool": "chainAnalysis"
+          },
+          "payload": {
+            "trigger": "A letter from the debt enforcement office on Friday evening",
+            "thoughts": "“I’ll never manage”, “I’m a bad mother”",
+            "emotions": "Panic, shame, hopelessness",
+            "behaviour": "Bought cocaine from an acquaintance and used it with him (had naloxone, did not gamble)",
+            "consequences": "A sleepless night, money for food missing; relief at not having gambled",
+            "alternative": "Don’t open letters alone in the evening; call Mira; look at it with social services on Monday"
+          }
+        },
+        {
+          "date": "@-10",
+          "source": {
+            "kind": "tool",
+            "tool": "readinessRuler"
+          },
+          "score": 7,
+          "payload": {
+            "importance": 9,
+            "confidence": 5,
+            "readiness": 7
+          }
+        },
+        {
+          "date": "@-10",
+          "source": {
+            "kind": "screening",
+            "instrument": "DUDIT"
+          },
+          "answers": [3, 2, 2, 2, 1, 2, 1, 1, 1, 2, 2],
+          "note": "Refers to the last 3 months.",
+          "score": 23,
+          "band": "problems"
+        }
+      ],
+      "events": [
+        {
+          "date": "@-95",
+          "type": "court",
+          "title": "Judgment of the Bern-Mittelland Regional Court",
+          "note": "Suspended prison sentence, two-year probation period, probation assistance and directives."
+        },
+        {
+          "date": "@-58",
+          "type": "other",
+          "title": "Start of probation",
+          "note": "First meeting at the probation service (BVD)."
+        },
+        {
+          "date": "@-34",
+          "type": "milestone",
+          "title": "Self-exclusion active",
+          "note": "Applies to all licensed casinos in Switzerland, online too."
+        },
+        {
+          "date": "@-30",
+          "type": "stageChange",
+          "title": "Stage: preparation",
+          "note": "Concrete steps against gambling."
+        },
+        {
+          "date": "@-20",
+          "type": "milestone",
+          "title": "First debt counselling appointment",
+          "note": "Debts of around CHF 14,000 recorded."
+        },
+        {
+          "date": "@-12",
+          "type": "lapse",
+          "title": "Cocaine after a debt enforcement letter",
+          "note": "Reported by herself; not alone, had naloxone, no gambling."
+        }
+      ],
+      "genogram": {
+        "nodes": [
+          {
+            "id": "n1",
+            "label": "SK-29",
+            "kind": "female",
+            "x": 250,
+            "y": 200,
+            "isClient": true
+          },
+          {
+            "id": "n2",
+            "label": "Mother (55)",
+            "kind": "female",
+            "x": 320,
+            "y": 60
+          },
+          {
+            "id": "n3",
+            "label": "Father",
+            "kind": "male",
+            "x": 180,
+            "y": 60,
+            "note": "Left the family early on"
+          },
+          {
+            "id": "n4",
+            "label": "Brother (32)",
+            "kind": "male",
+            "x": 90,
+            "y": 200
+          },
+          {
+            "id": "n5",
+            "label": "Daughter (6)",
+            "kind": "female",
+            "x": 250,
+            "y": 340
+          },
+          {
+            "id": "n6",
+            "label": "Daughter’s father (31)",
+            "kind": "male",
+            "x": 400,
+            "y": 340
+          },
+          {
+            "id": "n7",
+            "label": "KESB",
+            "kind": "institution",
+            "x": 540,
+            "y": 340
+          },
+          {
+            "id": "n8",
+            "label": "Probation service (BVD)",
+            "kind": "institution",
+            "x": 540,
+            "y": 200
+          },
+          {
+            "id": "n9",
+            "label": "K&A / street work",
+            "kind": "institution",
+            "x": 540,
+            "y": 60
+          },
+          {
+            "id": "n10",
+            "label": "Acquaintances from the scene",
+            "kind": "group",
+            "x": 90,
+            "y": 340,
+            "substance": true
+          }
+        ],
+        "edges": [
+          {
+            "id": "e1",
+            "from": "n3",
+            "to": "n2",
+            "type": "family"
+          },
+          {
+            "id": "e2",
+            "from": "n3",
+            "to": "n1",
+            "type": "cutoff"
+          },
+          {
+            "id": "e3",
+            "from": "n2",
+            "to": "n1",
+            "type": "weak"
+          },
+          {
+            "id": "e4",
+            "from": "n4",
+            "to": "n1",
+            "type": "cutoff"
+          },
+          {
+            "id": "e5",
+            "from": "n1",
+            "to": "n5",
+            "type": "strong"
+          },
+          {
+            "id": "e6",
+            "from": "n6",
+            "to": "n5",
+            "type": "strong"
+          },
+          {
+            "id": "e7",
+            "from": "n1",
+            "to": "n6",
+            "type": "conflict"
+          },
+          {
+            "id": "e8",
+            "from": "n7",
+            "to": "n1",
+            "type": "stressful"
+          },
+          {
+            "id": "e9",
+            "from": "n8",
+            "to": "n1",
+            "type": "support"
+          },
+          {
+            "id": "e10",
+            "from": "n9",
+            "to": "n1",
+            "type": "support"
+          },
+          {
+            "id": "e11",
+            "from": "n10",
+            "to": "n1",
+            "type": "stressful"
+          }
+        ]
+      }
     }
   ]
 }

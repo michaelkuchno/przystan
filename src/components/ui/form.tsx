@@ -133,8 +133,10 @@ export function Chips<T extends string>({
   onChange,
   multiple,
   className,
+  hint,
 }: {
   label?: string;
+  hint?: string;
   options: { value: T; label: string }[];
   value: T[] | T;
   onChange: (v: T[]) => void;
@@ -145,6 +147,7 @@ export function Chips<T extends string>({
   return (
     <fieldset className={className}>
       {label && <legend className="mb-1.5 text-sm font-medium">{label}</legend>}
+      {hint && <p className="-mt-1 mb-2 text-xs text-muted">{hint}</p>}
       <div className="flex flex-wrap gap-2" role={multiple ? 'group' : 'radiogroup'}>
         {options.map((o) => {
           const on = selected.includes(o.value);

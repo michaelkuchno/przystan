@@ -1,0 +1,18 @@
+{
+  "title": "Familie",
+  "subtitle": "Co-Abhängigkeit, Kinder aus alkoholbelasteten Familien, Gewalt, CRAFT",
+  "tabs": {
+    "knowledge": "Wissen",
+    "violence": "Häusliche Gewalt",
+    "tools": "Werkzeuge und Pläne"
+  },
+  "violenceUrgent": "Wenn jemand in unmittelbarer Gefahr ist – ruf 112 an. Unterstützung und Beratung (Polen):",
+  "toolsIntro": "Das Genogramm / die Ecomap und den Unterstützungsplan für die Familie führst du im Profil einer bestimmten Person (Tabs «Genogramm» und «Familie»). Hier siehst du alle an einem Ort.",
+  "genograms": "Genogramme und Ecomaps",
+  "noGenograms": "Noch keine Genogramme",
+  "plans": "Unterstützungspläne für Familien",
+  "noPlans": "Noch keine Unterstützungspläne für Familien",
+  "nodes_one": "{{count}} Element",
+  "nodes_other": "{{count}} Elemente",
+  "violenceUrgent_CH": "Wenn jemand unmittelbar in Gefahr ist – 117 oder 112 anrufen. Unterstützung und Beratung (Schweiz):"
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Hilfesystem",
+  "subtitle": "Wohin vermitteln – Institutionen, Wege, Rechtsgrundlagen (Polen)",
+  "tabs": {
+    "referral": "Vermittlungshilfe",
+    "map": "Systemkarte",
+    "law": "Rechtsgrundlagen",
+    "crisis": "Krisentelefone"
+  },
+  "question": "Frage {{n}} von {{total}}",
+  "restart": "Neu beginnen",
+  "bestMatch": "Beste Übereinstimmung",
+  "alsoConsider": "Ebenfalls prüfen",
+  "steps": "Schritte",
+  "institutions": "Institutionen",
+  "wizardNote": "Die Wege sind Orientierungshilfen. Prüfe lokale Regelungen und Verfügbarkeit – entscheide gemeinsam mit der Person und deinem Team.",
+  "forWhom": "Für wen",
+  "howToAccess": "Zugang",
+  "cat": {
+    "all": "Alle",
+    "central": "Zentrale Behörde",
+    "treatment": "Suchtbehandlung",
+    "social": "Sozialhilfe",
+    "justice": "Justiz",
+    "education": "Bildung",
+    "local": "Gemeinde / Kanton",
+    "selfHelp": "Selbsthilfegruppen",
+    "phone": "Telefonhilfe"
+  },
+  "lawNote": "Eine kurze Zusammenfassung in eigenen Worten – kein Ersatz für den Gesetzestext. Es handelt sich um polnische Gesetze; prüfe den aktuellen Rechtsstand (z. B. isap.sejm.gov.pl).",
+  "stateAsOf": "Stand: {{date}}",
+  "country": {
+    "PL": "Polen",
+    "CH": "Schweiz"
+  },
+  "call": "{{number}} anrufen – {{name}}",
+  "crisisTitle": "Krisenhilfe",
+  "crisisSubtitle": "Bei Lebensgefahr ruf 112 (PL) oder 144 (CH) an. Nummern vor der Verwendung prüfen.",
+  "subtitle_CH": "Wohin vermitteln – Angebote, Wege, rechtliche Grundlagen (Schweiz, Kanton Bern)"
+}

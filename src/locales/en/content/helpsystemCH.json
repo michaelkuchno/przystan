@@ -1,0 +1,828 @@
+{
+  "intro": "This guide maps the Swiss system of help for people with addiction problems, their relatives and people experiencing violence – with a focus on the German-speaking canton of Bern. Swiss drug policy rests on four pillars: prevention, therapy, harm reduction and law enforcement (repression); they are anchored in the Narcotics Act and complemented by the federal National Strategy on Addiction. The Confederation sets the legal framework and coordinates (Federal Office of Public Health), while the cantons are responsible for addiction services on the ground. In the canton of Bern, the Health, Social and Integration Directorate (GSI) steers and funds addiction services through service contracts with providers such as Berner Gesundheit, Contact and the Blue Cross; the basis is the cantonal addiction-services concept (Suchthilfekonzept) and the Act on Social Services Provision (SLG). Municipalities contribute through social services, school social work and youth work. The referral wizard suggests possible paths – the decision always rests with the professional. Names, competences and services change: check the local provider's current details before referring.",
+  "institutions": [
+    {
+      "id": "chBag",
+      "name": "Federal Office of Public Health (Bundesamt für Gesundheit, BAG)",
+      "category": "central",
+      "role": "Federal authority coordinating national addiction policy: National Strategy on Addiction, federal implementation of the Narcotics Act, licences (e.g. cannabis pilot trials, heroin-assisted treatment), funding of national projects and monitoring.",
+      "forWhom": "Professionals, cantons and organisations – no counselling for individuals.",
+      "howToAccess": "Information, background reports and fact sheets are publicly available; individual cases are handled by cantonal and municipal services.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chSuchtSchweiz",
+      "name": "Sucht Schweiz (Addiction Switzerland)",
+      "category": "central",
+      "role": "National centre of expertise (foundation) for prevention and research on alcohol, tobacco, illegal drugs, gambling and digital media; information material for young people, parents, schools and professionals, and studies such as the HBSC school survey.",
+      "forWhom": "Professionals, teachers, parents, young people and people affected who want information.",
+      "howToAccess": "Brochures and teaching material mostly free; telephone information for people seeking advice and referral to regional services.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chInfodrog",
+      "name": "Infodrog – Swiss Coordination and Expertise Centre for Addiction",
+      "category": "central",
+      "role": "Centre working on behalf of the BAG that links knowledge and services in addiction support and harm reduction; runs the online directory of addiction services (Suchtindex) and the technical side of the SafeZone.ch counselling platform, promotes quality (QuaTheDA) and coordinates drug-checking alerts.",
+      "forWhom": "Professionals looking for a suitable service or for further training.",
+      "howToAccess": "The service directory is freely available online (search by region, substance, type of service); conferences and publications are public.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chSafeZone",
+      "name": "SafeZone.ch – online addiction counselling",
+      "category": "phone",
+      "role": "National platform for anonymous online counselling on addiction (mail, chat, self-tests, information), supported by the Confederation, cantons and providers; counselling by professionals from regional addiction services.",
+      "forWhom": "People affected, relatives, young people and professionals – especially when going to a counselling centre still feels like too big a step.",
+      "howToAccess": "Free and anonymous online; no registration with any authority.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chBernerGesundheit",
+      "name": "Berner Gesundheit (foundation for health promotion and addiction)",
+      "category": "treatment",
+      "role": "On behalf of the canton of Bern: outpatient addiction counselling and therapy for people affected and relatives (alcohol, drugs, medication, gambling, digital media), early detection and early intervention, prevention and sex education in schools, advice for professionals; regional centres across the canton.",
+      "forWhom": "Young people and adults with addiction issues, parents and relatives, schools, municipalities and companies.",
+      "howToAccess": "Direct registration without referral, by phone or online; counselling is confidential and generally free for residents of the canton of Bern (check current rules).",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chBlauesKreuz",
+      "name": "Blue Cross Bern-Solothurn-Fribourg (Blaues Kreuz)",
+      "category": "treatment",
+      "role": "Services for alcohol and addiction counselling, counselling for relatives, group and leisure activities and prevention projects for young people; the Blue Cross has a long tradition in alcohol support.",
+      "forWhom": "People with alcohol problems and other addiction issues and their relatives.",
+      "howToAccess": "Direct registration; confidential counselling, free for residents of the canton of Bern according to the provider.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chContact",
+      "name": "Contact – Foundation for Addiction Support (contact and drop-in centres)",
+      "category": "local",
+      "role": "Harm reduction and survival support on behalf of the canton: contact and drop-in centres with consumption rooms (incl. Bern, Biel, Thun), sterile equipment, street work, counselling, housing and work programmes, support during substitution treatment.",
+      "forWhom": "Adults who use illegal substances, often in precarious circumstances.",
+      "howToAccess": "Low-threshold: drop-in centres without appointment during opening hours; check access rules (e.g. age, place of residence) in advance; counselling free.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chDrugChecking",
+      "name": "Drug Checking Bern (Contact)",
+      "category": "local",
+      "role": "Chemical analysis of substances brought in, combined with a mandatory counselling conversation; warnings about dangerous samples are circulated nationally.",
+      "forWhom": "Adults who use party drugs or other substances and want to reduce risks.",
+      "howToAccess": "Anonymous and usually free at fixed times at a permanent site in Bern, sometimes also mobile at events; check location and times in advance.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chResidential",
+      "name": "Residential addiction treatment (e.g. Klinik Südhang, therapeutic communities)",
+      "category": "treatment",
+      "role": "Specialist addiction clinics for detoxification and rehabilitation, and socio-therapeutic facilities for longer residential therapy, often with work and independent-living training and aftercare.",
+      "forWhom": "People for whom outpatient help is not enough, who need distance from their environment or want to build stability after detox.",
+      "howToAccess": "Usually via a GP, psychiatry or addiction counselling; clinic stays covered by health insurance, socio-therapeutic programmes partly by social assistance or a cantonal cost guarantee (clarify indication and funding in advance).",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chGp",
+      "name": "GPs (Hausärzt/innen) and substitution treatment (opioid agonist therapy)",
+      "category": "treatment",
+      "role": "First medical point of contact: assessment, treatment of related illnesses, outpatient detox, prescription of methadone, buprenorphine etc. as opioid agonist therapy; heroin-assisted treatment is provided in specialised centres.",
+      "forWhom": "All adults; people with opioid dependence; young people via paediatricians and GPs.",
+      "howToAccess": "Appointment at the practice; costs covered by compulsory health insurance (deductible and co-payment); substitution requires a cantonal licence, which the doctor obtains.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chUpd",
+      "name": "University Psychiatric Services Bern (UPD), incl. child and adolescent psychiatry",
+      "category": "treatment",
+      "role": "Basic psychiatric care and specialised services for the Bern region: psychiatric emergency service, addiction psychiatry (outpatient and inpatient), treatment of dual diagnoses, child and adolescent psychiatry; in other parts of the canton regional psychiatric services take on this role.",
+      "forWhom": "People in mental health crisis, with addiction and mental illness, children and young people needing psychiatric treatment.",
+      "howToAccess": "In an emergency around the clock via the psychiatric emergency service or emergency department; otherwise referral by a GP or a service; costs covered by health insurance.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chKesb",
+      "name": "KESB – Child and Adult Protection Authority",
+      "category": "social",
+      "role": "Interdisciplinary specialist authority that investigates and orders measures when a child's welfare is at risk or an adult needs protection (e.g. deputyship, instructions, placement, involuntary placement for care); organised regionally in the canton of Bern.",
+      "forWhom": "Children and young people whose welfare is at risk, and adults lacking capacity or in need of protection.",
+      "howToAccess": "Risk report (Gefährdungsmeldung) in writing or by phone to the regionally competent KESB – by professionals, relatives or the people concerned; anonymous professional advice beforehand is often possible.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chSozialdienst",
+      "name": "Municipal social services (incl. social assistance and debt counselling)",
+      "category": "social",
+      "role": "Financial and personal social assistance, advice on housing, work and money problems, assessments on behalf of the KESB, running deputyships; referral to debt counselling and addiction services.",
+      "forWhom": "Residents of the municipality in social or financial hardship, and their families.",
+      "howToAccess": "Registration with the social services of the municipality of residence (often regional services); counselling free, social assistance after a means test.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chSchulsozialarbeit",
+      "name": "School social work (Schulsozialarbeit)",
+      "category": "education",
+      "role": "Social workers based at school: counselling for pupils, parents and teachers, early detection of risks (including substance use), crisis intervention, networking with services and the KESB.",
+      "forWhom": "Pupils, parents and teachers at the school.",
+      "howToAccess": "Directly at the school, no third-party referral; free; service and organisation depend on the municipality.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chErziehungsberatung",
+      "name": "Child and Family Guidance Service of the Canton of Bern (Erziehungsberatung)",
+      "category": "education",
+      "role": "Cantonal service for questions of upbringing, development and family: counselling for parents and children, psychological assessments, support in strained family situations.",
+      "forWhom": "Children, young people, parents and carers; including families with a parent affected by addiction.",
+      "howToAccess": "Direct registration by parents or young people, also on the school's suggestion; free.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chJugendanwaltschaft",
+      "name": "Juvenile Prosecutor's Office of the Canton of Bern (Jugendanwaltschaft)",
+      "category": "justice",
+      "role": "Investigates offences by young people (10–18), decides most cases itself and carries out protective measures and sentences under juvenile criminal law; works with social workers and services.",
+      "forWhom": "Young people in criminal proceedings and their parents.",
+      "howToAccess": "Proceedings start with a complaint or police report; professionals can share information and support options with the case manager.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chBvd",
+      "name": "Probation and Enforcement Services (BVD), Office for Correctional Services, Canton of Bern",
+      "category": "justice",
+      "role": "Enforcement of criminal sentences and measures, probation support, monitoring of conditions (e.g. addiction treatment, abstinence checks), sentence planning and support for reintegration after custody.",
+      "forWhom": "Adults with a suspended sentence, conditions, measures (e.g. addiction treatment under Art. 60 of the Criminal Code) or after conditional release.",
+      "howToAccess": "Assignment by a court or enforcement authority; professionals contact the case manager with the client's consent.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chPolice",
+      "name": "Bern Cantonal Police (Kantonspolizei Bern)",
+      "category": "justice",
+      "role": "Danger prevention and criminal prosecution; intervenes in domestic violence (can order removal from the home and a no-contact order), forwards reports to the KESB and victim support; youth service and prevention.",
+      "forWhom": "Anyone in acute danger and victims of crime.",
+      "howToAccess": "Emergency number 117 or 112; non-urgent matters at a police station.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chOpferhilfe",
+      "name": "Victim support services (canton of Bern: Lantana, Vista) and women's shelters",
+      "category": "social",
+      "role": "Counselling, protection and financial support (e.g. legal or therapy costs, emergency accommodation) for victims of crime under the Victim Support Act, especially in domestic and sexual violence; women's shelters provide safe places.",
+      "forWhom": "Adults, children and young people affected by violence, and relatives.",
+      "howToAccess": "Directly, confidential and free, also without filing a complaint; women's shelters admit around the clock (ask about availability).",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chGassenarbeit",
+      "name": "Street work, emergency night shelters and day centres",
+      "category": "local",
+      "role": "Outreach social work in public spaces, emergency night shelters, soup kitchens and day centres; survival support, relationship building and referral to social services, medical care and addiction services (in Bern incl. church-run and city services).",
+      "forWhom": "Homeless people and people affected by poverty, often with addiction or mental health problems.",
+      "howToAccess": "Low-threshold, no appointment; night shelters for a small fee or with a cost guarantee from social services.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chAa",
+      "name": "Alcoholics Anonymous (AA)",
+      "category": "selfHelp",
+      "role": "Self-help fellowship based on the twelve-step programme; regular meetings in many municipalities.",
+      "forWhom": "People who want to stop drinking.",
+      "howToAccess": "Free, no registration; relatives and professionals may attend open meetings.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chNa",
+      "name": "Narcotics Anonymous (NA)",
+      "category": "selfHelp",
+      "role": "Self-help fellowship for people with drug dependence, based on the twelve-step programme.",
+      "forWhom": "People who want to get or stay clean.",
+      "howToAccess": "Free, no registration; meetings in larger towns (incl. Bern), some also online.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chAlAnon",
+      "name": "Al-Anon and Alateen",
+      "category": "selfHelp",
+      "role": "Self-help groups for relatives and friends of people with alcohol problems; Alateen for young people.",
+      "forWhom": "Partners, parents, children and other relatives.",
+      "howToAccess": "Free, no registration; group directory via the Swiss Al-Anon service office.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chSelbsthilfe",
+      "name": "Selbsthilfe Schweiz and the regional self-help centre in Bern",
+      "category": "selfHelp",
+      "role": "Referral to and support in setting up self-help groups on many topics, including addiction, relatives, gambling and mental health.",
+      "forWhom": "People affected and relatives looking for exchange with others.",
+      "howToAccess": "Free information and referral through the regional self-help centre.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chDargeboteneHand",
+      "name": "Die Dargebotene Hand (phone 143)",
+      "category": "phone",
+      "role": "Anonymous phone and online counselling around the clock for people in crisis, with worries or suicidal thoughts.",
+      "forWhom": "Adults (and anyone who needs someone to talk to).",
+      "howToAccess": "Phone 143, chat and mail; anonymous and confidential, a call costs at most a small basic fee.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chProJuventute",
+      "name": "Pro Juventute – Counselling + Help 147",
+      "category": "phone",
+      "role": "Round-the-clock counselling for children and young people by phone, chat, text and mail – on family, school, violence, addiction, sexuality and suicidal thoughts; separate service for parents.",
+      "forWhom": "Children and young people throughout Switzerland.",
+      "howToAccess": "Phone 147, free, confidential; does not appear on the phone bill.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chSosSpielsucht",
+      "name": "SOS-Spielsucht and specialist gambling counselling",
+      "category": "phone",
+      "role": "Switzerland-wide helpline and online counselling on gambling, sports betting and online casinos; information on self-exclusion and referral to cantonal services (in the canton of Bern incl. Berner Gesundheit).",
+      "forWhom": "Gamblers, relatives and professionals.",
+      "howToAccess": "Free, anonymous helpline and online counselling; onward referral to the regional service.",
+      "reviewStatus": "do_weryfikacji"
+    }
+  ],
+  "referral": {
+    "questions": [
+      {
+        "id": "age",
+        "text": "How old is the person concerned?",
+        "options": [
+          {
+            "id": "minor",
+            "label": "Minor (under 18)"
+          },
+          {
+            "id": "adult",
+            "label": "Adult"
+          }
+        ]
+      },
+      {
+        "id": "problem",
+        "text": "What is the main problem?",
+        "options": [
+          {
+            "id": "alcohol",
+            "label": "Alcohol"
+          },
+          {
+            "id": "drugs",
+            "label": "Drugs / other substances"
+          },
+          {
+            "id": "behavioural",
+            "label": "Behavioural addiction (gambling, gaming, internet)"
+          },
+          {
+            "id": "codependency",
+            "label": "Relative of a person with addiction"
+          },
+          {
+            "id": "violence",
+            "label": "Domestic violence"
+          }
+        ]
+      },
+      {
+        "id": "context",
+        "text": "In what context does the situation arise?",
+        "options": [
+          {
+            "id": "school",
+            "label": "School"
+          },
+          {
+            "id": "justice",
+            "label": "Justice (juvenile prosecutor, public prosecutor, probation)"
+          },
+          {
+            "id": "childProtection",
+            "label": "Child protection (child's welfare at risk, KESB)"
+          },
+          {
+            "id": "afterPrison",
+            "label": "After custody or residential care"
+          },
+          {
+            "id": "homeless",
+            "label": "Homelessness"
+          },
+          {
+            "id": "family",
+            "label": "Family"
+          },
+          {
+            "id": "none",
+            "label": "No specific context"
+          }
+        ]
+      },
+      {
+        "id": "urgency",
+        "text": "How urgent is the situation?",
+        "options": [
+          {
+            "id": "crisis",
+            "label": "Crisis – danger now"
+          },
+          {
+            "id": "planned",
+            "label": "Planned help"
+          }
+        ]
+      }
+    ],
+    "rules": [
+      {
+        "id": "chCrisisAny",
+        "title": "Crisis – danger now",
+        "when": {
+          "urgency": ["crisis"]
+        },
+        "institutionIds": ["chPolice", "chUpd", "chDargeboteneHand", "chProJuventute"],
+        "steps": [
+          "If life or health is at risk (including suicidal thoughts with a concrete plan, poisoning, overdose) call 144 immediately; for violence or threats 117; 112 also works.",
+          "Stay with the person if it is safe for you; remove dangerous objects and substances.",
+          "In a mental health crisis without immediate danger to life: contact the psychiatric emergency service or the on-call doctor.",
+          "After the acute phase: offer 143 (adults) or 147 (children and young people) as someone to talk to, and agree on follow-up.",
+          "Write down what happened and inform your supervisor according to your institution's procedure."
+        ],
+        "note": "This path takes priority over all others."
+      },
+      {
+        "id": "chOverdoseCrisis",
+        "title": "Poisoning or overdose",
+        "when": {
+          "problem": ["alcohol", "drugs"],
+          "urgency": ["crisis"]
+        },
+        "institutionIds": ["chUpd", "chGp", "chContact"],
+        "steps": [
+          "Call 144 – say what and how much was probably taken.",
+          "Check consciousness and breathing; if unconscious but breathing, recovery position; if not breathing, CPR as instructed by the ambulance service.",
+          "If an opioid overdose is suspected: use naloxone if available and you are trained.",
+          "Do not leave the person alone, do not give food or drink, and keep any remaining substance for the paramedics.",
+          "Afterwards: arrange follow-up with a GP, addiction psychiatry or a drop-in centre."
+        ],
+        "note": "Getting help comes first – fear of police or punishment must not delay the call."
+      },
+      {
+        "id": "chViolenceCrisis",
+        "title": "Domestic violence – immediate danger",
+        "when": {
+          "problem": ["violence"],
+          "urgency": ["crisis"]
+        },
+        "institutionIds": ["chPolice", "chOpferhilfe", "chKesb"],
+        "steps": [
+          "Call 117 – the police can remove the person using violence from the home and order a ban on returning and on contact.",
+          "Secure a safe place for the person experiencing violence and the children (e.g. women's shelter, emergency accommodation).",
+          "Point to the victim support service; it helps even without a criminal complaint.",
+          "If children are affected, the police inform the KESB; check whether you also have to file a risk report yourself."
+        ]
+      },
+      {
+        "id": "chViolenceAny",
+        "title": "Domestic violence – help plan",
+        "when": {
+          "problem": ["violence"]
+        },
+        "institutionIds": ["chOpferhilfe", "chPolice", "chSozialdienst", "chDargeboteneHand"],
+        "steps": [
+          "Talk with the person in private; record facts without judgement.",
+          "Refer to the victim support service (confidential, free, also without a complaint).",
+          "Make a safety plan with the person (key numbers, documents, a safe place).",
+          "Check whether alcohol or drugs play a role, and offer the person using violence a perpetrator programme or addiction counselling – separately from the person affected."
+        ],
+        "note": "Do not suggest joint meetings or mediation with the person using violence while there is danger."
+      },
+      {
+        "id": "chViolenceMinor",
+        "title": "Violence against a child or teenager",
+        "when": {
+          "age": ["minor"],
+          "problem": ["violence"]
+        },
+        "institutionIds": ["chKesb", "chSchulsozialarbeit", "chOpferhilfe", "chProJuventute", "chErziehungsberatung"],
+        "steps": [
+          "Listen calmly, do not promise secrecy and do not ask leading questions – questioning is for specialist services and the police.",
+          "Write down word for word what the child said, with date and situation.",
+          "If the child's welfare is at risk: risk report to the KESB (professionals in regular contact with children have a duty to report unless they are bound by professional secrecy); if a crime is suspected, also the police.",
+          "Involve a child protection group or specialist advice if you are unsure, and give the child the number 147."
+        ]
+      },
+      {
+        "id": "chChildProtection",
+        "title": "Child's welfare at risk (e.g. parents with addiction)",
+        "when": {
+          "context": ["childProtection"]
+        },
+        "institutionIds": ["chKesb", "chSozialdienst", "chErziehungsberatung", "chBernerGesundheit"],
+        "steps": [
+          "Describe concretely what you observe (care, supervision, school attendance, substance use in front of the children) – separately from assumptions.",
+          "If it does not endanger the child, talk openly with the parents about your concern and possible help.",
+          "If unsure, get anonymous professional advice from the KESB or a child protection service.",
+          "If voluntary help is not enough, send a written risk report to the regionally competent KESB and usually inform the parents.",
+          "At the same time, refer the parents to addiction and parenting counselling."
+        ],
+        "note": "A risk report is not a criminal procedure: the KESB investigates and orders only as much as necessary."
+      },
+      {
+        "id": "chMinorSubstanceSchool",
+        "title": "Teenager using substances – situation at school",
+        "when": {
+          "age": ["minor"],
+          "problem": ["alcohol", "drugs"],
+          "context": ["school"]
+        },
+        "institutionIds": ["chSchulsozialarbeit", "chBernerGesundheit", "chErziehungsberatung", "chSafeZone"],
+        "steps": [
+          "Assess the acute situation (danger? intoxication?) and ensure safety.",
+          "Have a calm conversation with the teenager about observations, not blame; involve school social work.",
+          "Inform the parents, unless there are signs this would endanger the child.",
+          "Use the school's early detection and early intervention procedure and refer to Berner Gesundheit's youth counselling.",
+          "Follow the school's crisis plan; a police report is not automatically required – clarify this with the head teacher."
+        ],
+        "note": "Under Art. 3c of the Narcotics Act, professionals may report addiction-related risks in young people to a treatment or social welfare service."
+      },
+      {
+        "id": "chMinorJustice",
+        "title": "Teenager in juvenile criminal proceedings",
+        "when": {
+          "age": ["minor"],
+          "context": ["justice"]
+        },
+        "institutionIds": ["chJugendanwaltschaft", "chBernerGesundheit", "chKesb", "chSchulsozialarbeit"],
+        "steps": [
+          "Clarify with the teenager and the parents which office is handling the case and whether a protective measure already exists.",
+          "With consent, contact the case manager at the juvenile prosecutor's office and share your assessment and ongoing support.",
+          "For substance issues, suggest an assessment or counselling at an addiction service (it can be ordered as an instruction or outpatient treatment).",
+          "Ensure continuity between school, family and justice; avoid duplication with a KESB measure."
+        ]
+      },
+      {
+        "id": "chMinorSubstance",
+        "title": "Teenager using alcohol or drugs",
+        "when": {
+          "age": ["minor"],
+          "problem": ["alcohol", "drugs"]
+        },
+        "institutionIds": ["chBernerGesundheit", "chSafeZone", "chProJuventute", "chUpd", "chGp"],
+        "steps": [
+          "Have a motivational conversation: what does the teenager see as the problem, and what as the benefit of using?",
+          "Involve the parents – with the teenager's consent or when the risk requires it; young people with capacity of judgement can also use counselling on their own.",
+          "Refer to Berner Gesundheit's youth and parent counselling; SafeZone.ch is a low-threshold first step.",
+          "If there are mental health symptoms (depression, self-harm, psychosis), refer to child and adolescent psychiatry or a paediatrician.",
+          "If the child's welfare is seriously at risk, consider a risk report to the KESB."
+        ]
+      },
+      {
+        "id": "chMinorHomeless",
+        "title": "Teenager without a safe home",
+        "when": {
+          "age": ["minor"],
+          "context": ["homeless"]
+        },
+        "institutionIds": ["chKesb", "chProJuventute", "chSozialdienst", "chOpferhilfe"],
+        "steps": [
+          "First secure a safe place to sleep for the coming night (emergency shelter for young people, trusted adults).",
+          "Find out why the teenager is not at home (violence? conflict? thrown out?).",
+          "Inform the KESB or, if urgent outside office hours, the police – minors need a responsible authority.",
+          "Give the number 147 and agree on the next contact."
+        ]
+      },
+      {
+        "id": "chAdultAlcohol",
+        "title": "Adult with an alcohol problem",
+        "when": {
+          "age": ["adult"],
+          "problem": ["alcohol"]
+        },
+        "institutionIds": ["chBernerGesundheit", "chBlauesKreuz", "chGp", "chResidential", "chAa"],
+        "steps": [
+          "Have a motivational conversation and agree on the goal together (abstinence or controlled drinking).",
+          "Refer to outpatient addiction counselling (Berner Gesundheit, Blue Cross) – no referral needed.",
+          "With withdrawal symptoms or heavy drinking: medical assessment by a GP; unsupervised withdrawal can be dangerous.",
+          "Depending on need, inpatient detox or rehabilitation, followed by outpatient aftercare.",
+          "Suggest attending an open AA meeting."
+        ]
+      },
+      {
+        "id": "chAdultAlcoholFamily",
+        "title": "Alcohol problem in the family",
+        "when": {
+          "age": ["adult"],
+          "problem": ["alcohol"],
+          "context": ["family"]
+        },
+        "institutionIds": ["chBernerGesundheit", "chBlauesKreuz", "chAlAnon", "chErziehungsberatung"],
+        "steps": [
+          "Offer help for the person drinking and, separately, for the relatives – both are entitled to their own counselling.",
+          "Ask about children in the household and their care and safety.",
+          "Point relatives to relatives' counselling and Al-Anon, children and teenagers to Alateen or 147.",
+          "If there is violence: follow the domestic violence path; if the child's welfare is at risk: consider a risk report to the KESB."
+        ]
+      },
+      {
+        "id": "chAdultDrugs",
+        "title": "Adult with a drug problem",
+        "when": {
+          "age": ["adult"],
+          "problem": ["drugs"]
+        },
+        "institutionIds": ["chBernerGesundheit", "chGp", "chContact", "chResidential", "chNa"],
+        "steps": [
+          "In a motivational conversation, clarify substances, patterns of use and the person's goals.",
+          "Refer to outpatient addiction counselling; with opioid dependence to a doctor or a centre for opioid agonist therapy.",
+          "Address harm reduction (safer use, avoiding risky mixing, naloxone, drug checking).",
+          "If the person wants abstinence: plan inpatient detox and follow-up therapy, including funding.",
+          "Mention NA as a self-help option."
+        ]
+      },
+      {
+        "id": "chHarmReduction",
+        "title": "Harm reduction for drug use",
+        "when": {
+          "age": ["adult"],
+          "problem": ["drugs"],
+          "context": ["homeless", "none"]
+        },
+        "institutionIds": ["chContact", "chDrugChecking", "chGassenarbeit", "chGp"],
+        "steps": [
+          "Accept that the person does not (yet) want to stop, and start with safety and health.",
+          "Point to the contact and drop-in centre: supervised use in a hygienic setting, sterile equipment, basic medical care.",
+          "For party drugs: mention drug checking (analysis plus counselling).",
+          "Inform about overdose risks (loss of tolerance after custody or detox, mixing substances) and about substitution treatment."
+        ],
+        "note": "Harm reduction is a pillar of Swiss drug policy in its own right and does not contradict therapy."
+      },
+      {
+        "id": "chJusticeAdult",
+        "title": "Adult in criminal proceedings or on probation",
+        "when": {
+          "age": ["adult"],
+          "context": ["justice"]
+        },
+        "institutionIds": ["chBvd", "chBernerGesundheit", "chSozialdienst"],
+        "steps": [
+          "Clarify which authority is responsible (public prosecutor, court, probation and enforcement services) and which conditions apply.",
+          "Get the client's consent before exchanging information with the justice system.",
+          "Support compliance with conditions (e.g. addiction counselling, abstinence checks) and document progress.",
+          "Pay attention to the basics: housing, income, debts, work."
+        ]
+      },
+      {
+        "id": "chAfterPrisonSubstances",
+        "title": "Addiction after custody or with a court condition",
+        "when": {
+          "age": ["adult"],
+          "problem": ["alcohol", "drugs"],
+          "context": ["afterPrison", "justice"]
+        },
+        "institutionIds": ["chBvd", "chBernerGesundheit", "chResidential", "chGp", "chSozialdienst"],
+        "steps": [
+          "Plan the transition before release: appointment with addiction counselling or a doctor, uninterrupted continuation of substitution.",
+          "Stress the increased overdose risk after custody (reduced tolerance).",
+          "Coordinate with the probation and enforcement services if a measure (e.g. under Art. 60 of the Criminal Code) or a condition applies.",
+          "Sort out housing, health insurance and basic income with social services."
+        ]
+      },
+      {
+        "id": "chAfterPrisonAny",
+        "title": "Reintegration after custody or residential care",
+        "when": {
+          "age": ["adult"],
+          "context": ["afterPrison"]
+        },
+        "institutionIds": ["chBvd", "chSozialdienst", "chGassenarbeit"],
+        "steps": [
+          "Check whether probation support is in place and, with consent, get in touch.",
+          "Secure the basics: accommodation, ID, health insurance, income or social assistance.",
+          "Connect the person with work integration and a social network.",
+          "Agree on fixed next appointments – the first weeks carry a particularly high risk of relapse."
+        ]
+      },
+      {
+        "id": "chHomelessAny",
+        "title": "Homelessness",
+        "when": {
+          "age": ["adult"],
+          "context": ["homeless"]
+        },
+        "institutionIds": ["chGassenarbeit", "chSozialdienst", "chContact"],
+        "steps": [
+          "Secure a place to sleep (night shelter) and basic needs (food, clothing, medical help).",
+          "Register the person with social services or clarify which municipality is responsible.",
+          "Involve street work to build a reliable relationship.",
+          "If the person uses substances, offer harm reduction without making help conditional on abstinence."
+        ]
+      },
+      {
+        "id": "chGambling",
+        "title": "Gambling and other behavioural addictions",
+        "when": {
+          "problem": ["behavioural"]
+        },
+        "institutionIds": ["chSosSpielsucht", "chBernerGesundheit", "chSafeZone", "chSozialdienst", "chSelbsthilfe"],
+        "steps": [
+          "Ask about type, frequency and financial consequences (debts, loans, debt enforcement).",
+          "Refer to specialist counselling on gambling or digital media (Berner Gesundheit) or to SOS-Spielsucht.",
+          "Inform about self-exclusion: it can be requested from casinos and online providers and applies throughout Switzerland.",
+          "With debts: involve debt counselling; point relatives to their own counselling."
+        ]
+      },
+      {
+        "id": "chBehaviouralMinor",
+        "title": "Teenager with problematic gaming or online behaviour",
+        "when": {
+          "age": ["minor"],
+          "problem": ["behavioural"]
+        },
+        "institutionIds": ["chBernerGesundheit", "chSchulsozialarbeit", "chErziehungsberatung", "chProJuventute"],
+        "steps": [
+          "Talk with the teenager about the benefits and costs of screen time without judging.",
+          "Involve the parents: agree on rules together, create alternatives.",
+          "Watch for accompanying problems (school absenteeism, withdrawal, anxiety, depression) and refer to child and adolescent psychiatry if needed.",
+          "Use Berner Gesundheit's digital media counselling; for gambling or sports betting under 18, also point out youth protection rules."
+        ]
+      },
+      {
+        "id": "chRelatives",
+        "title": "Relatives of a person with addiction",
+        "when": {
+          "problem": ["codependency"]
+        },
+        "institutionIds": ["chBernerGesundheit", "chBlauesKreuz", "chAlAnon", "chSelbsthilfe", "chSafeZone"],
+        "steps": [
+          "Acknowledge the relative's burden and worries.",
+          "Offer counselling for relatives – regardless of whether the person with addiction wants help.",
+          "Point to self-help groups (Al-Anon, relatives' groups) and online counselling.",
+          "Ask about violence and safety; if children live in the household, consider their situation too."
+        ]
+      },
+      {
+        "id": "chRelativesMinor",
+        "title": "Child or teenager with a parent affected by addiction",
+        "when": {
+          "age": ["minor"],
+          "problem": ["codependency"]
+        },
+        "institutionIds": ["chSchulsozialarbeit", "chProJuventute", "chBernerGesundheit", "chKesb", "chAlAnon"],
+        "steps": [
+          "Relieve the child: they are not to blame and not responsible for the parent's addiction.",
+          "Clarify care and safety at home; if the child's welfare is at risk, file a risk report with the KESB.",
+          "Refer to age-appropriate services (groups for children from families affected by addiction, Alateen, 147).",
+          "Where possible, involve the parent who does not use."
+        ]
+      }
+    ]
+  },
+  "legal": [
+    {
+      "id": "chBetmg",
+      "title": "Narcotics Act (Betäubungsmittelgesetz, BetmG, SR 812.121)",
+      "summary": "Federal act on narcotics and psychotropic substances: anchors the four-pillar policy and regulates prevention, treatment, harm reduction and penalties.",
+      "keyPoints": [
+        "The four pillars of prevention, therapy, harm reduction and law enforcement have been anchored in law since the 2008 partial revision (in force since 2011).",
+        "The cantons are responsible for prevention, treatment and harm reduction; the Confederation coordinates and supports.",
+        "Professionals in education, social work, health, justice and police may report existing or impending addiction-related disorders, especially in children and young people, to a treatment or social welfare service (Art. 3c).",
+        "Substitution and heroin-assisted treatment require a licence (cantonal or from the BAG).",
+        "Consumption is punishable (fine); dealing and production are punished much more severely.",
+        "Pilot trials of regulated cannabis supply are permitted for a limited period (check: current status of the trials and of parliamentary work on cannabis regulation)."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chCannabisFine",
+      "title": "Cannabis: fixed fine and small quantities (Narcotics Act Art. 19b, 28b ff.)",
+      "summary": "Rules on small quantities of cannabis for adults: fixed-penalty procedure for consumption and no penalty for possessing a small quantity for own use.",
+      "keyPoints": [
+        "Adults caught using cannabis can be given a fixed fine of 100 francs – without criminal proceedings or a record.",
+        "Preparing only a small quantity for one's own use is not punishable (Art. 19b); for cannabis, up to 10 grams counts as small.",
+        "The Federal Supreme Court ruled that mere possession of up to 10 grams by adults may not be fined (check: practice of the Bern cantonal police).",
+        "The fixed-fine procedure does not apply to minors – they are reported to the juvenile prosecutor.",
+        "Supplying minors remains punishable; cannabis with less than 1% THC (CBD) is not considered a narcotic."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chAlcoholYouth",
+      "title": "Youth protection for alcohol and tobacco (food law, Alcohol Act, Tobacco Products Act)",
+      "summary": "Federal age limits for selling alcohol and tobacco, plus cantonal additions such as test purchases.",
+      "keyPoints": [
+        "Beer, wine and cider (fermented drinks) may not be sold to under-16s (food law).",
+        "Spirits, alcopops and spirit-based aperitifs may not be sold to under-18s (Alcohol Act).",
+        "Some cantons have stricter rules; the canton of Bern applies 16/18 (check: cantonal hospitality act).",
+        "Tobacco and nicotine products incl. e-cigarettes: Switzerland-wide minimum age of 18 since the Tobacco Products Act came into force (check: date October 2024).",
+        "Alcohol test purchases with young people are permitted and used to check sales (check: legal basis in the canton of Bern)."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chJstg",
+      "title": "Juvenile Criminal Law Act (JStG) and Juvenile Criminal Procedure Code (JStPO)",
+      "summary": "Juvenile criminal law for people aged 10 to 18 at the time of the offence; protection and education come first.",
+      "keyPoints": [
+        "Criminal responsibility from age 10; what counts is the age at the time of the offence.",
+        "Protective measures: supervision, personal support, outpatient treatment (e.g. addiction treatment) and placement; they depend on need, not on the seriousness of the offence.",
+        "Penalties: reprimand, personal service, fine and deprivation of liberty (fine and deprivation of liberty only from age 15).",
+        "Protective measures can continue beyond age 18 (check: maximum age 25).",
+        "In the canton of Bern, the juvenile prosecutor investigates and decides most cases itself; mediation is possible."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chZgbKesr",
+      "title": "Child and adult protection law (Civil Code Art. 307 ff., 314c–314d, 360 ff.)",
+      "summary": "Regulates measures to protect children and adults in need of protection, and the rights and duties to report to the KESB.",
+      "keyPoints": [
+        "If a child's welfare is at risk and the parents do not remedy it themselves, the KESB takes appropriate measures (Art. 307 ff.), e.g. instructions, deputyship (Art. 308) or removal of the right to determine the child's residence (Art. 310).",
+        "Right to report: anyone may report to the KESB if a child's integrity appears to be at risk (Art. 314c).",
+        "Duty to report: professionals in medicine, psychology, care, childcare, education, social counselling, religion and sport who have regular professional contact with children must report concrete indications if they cannot help themselves (Art. 314d); those bound by professional secrecy have a right to report.",
+        "The duty to report is also fulfilled if the professional informs their supervisor (check: the institution's internal rules).",
+        "Adult protection: deputyships tailored to need; involuntary placement for care (Art. 426) in cases of severe neglect, mental disorder or addiction when no other help is possible."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chBgs",
+      "title": "Gambling Act (Geldspielgesetz, BGS, SR 935.51)",
+      "summary": "Federal act on gambling (since 2019): regulates casinos, lotteries, sports betting and online offers and requires providers and cantons to protect players.",
+      "keyPoints": [
+        "Casinos and large lottery and betting operators must implement a social concept (early detection, information, staff training).",
+        "Exclusion: players can exclude themselves; providers must exclude players at risk; the exclusion applies Switzerland-wide to casinos and online offers.",
+        "Online gambling is legal only with licensed Swiss providers; unlicensed sites are blocked.",
+        "The cantons must offer measures for prevention and counselling for excessive gambling (check: Art. 85 BGS).",
+        "Access to casinos and online casinos only from age 18; for lotteries and sports betting the cantons set the minimum age (check: canton of Bern)."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chBernSlg",
+      "title": "Canton of Bern: Act on Social Services Provision (SLG) and Social Assistance Act (SHG)",
+      "summary": "Cantonal laws on which addiction services in the canton of Bern are organised and funded.",
+      "keyPoints": [
+        "The SLG (passed by the cantonal parliament in 2021, in force since 2022) regulates social services provision, including health promotion and addiction services, previously regulated in the Social Assistance Act.",
+        "The canton (GSI) steers addiction services and funds them through service contracts with providers; details are set out in the ordinance (SLV).",
+        "The canton of Bern's addiction-services concept describes services along the four pillars (check: current version or successor strategy).",
+        "Individual social assistance from municipalities follows the Social Assistance Act (SHG) and the SKOS guidelines; a full revision of the SHG is under way (check: status and entry into force).",
+        "Residential addiction treatment is paid, depending on the programme, by health insurance, social assistance or cantonal funds – clarify a cost guarantee in advance."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    }
+  ],
+  "crisis": [
+    {
+      "id": "ch143",
+      "country": "CH",
+      "number": "143",
+      "name": "Die Dargebotene Hand",
+      "description": "Anonymous help around the clock for adults in crisis and with suicidal thoughts – phone, chat and mail.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch147",
+      "country": "CH",
+      "number": "147",
+      "name": "Pro Juventute – counselling and help for children and young people",
+      "description": "Free, confidential round-the-clock counselling by phone, chat and text.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch144",
+      "country": "CH",
+      "number": "144",
+      "name": "Ambulance",
+      "description": "Immediate danger to life or health, incl. poisoning and overdose.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch117",
+      "country": "CH",
+      "number": "117",
+      "name": "Police emergency",
+      "description": "Threats to safety, violence, domestic violence.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch112",
+      "country": "CH",
+      "number": "112",
+      "name": "European emergency number",
+      "description": "Also works in Switzerland and connects to the emergency centre – also from abroad or with a foreign SIM card.",
+      "reviewStatus": "do_weryfikacji"
+    }
+  ],
+  "countryNote": "This content concerns Switzerland, with a focus on the canton of Bern; check services and responsibilities locally."
+}

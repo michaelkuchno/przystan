@@ -16,6 +16,7 @@
     "recipe": "Recipe",
     "prevention": "Programme",
     "tool": "Tool",
-    "template": "Session template"
+    "template": "Session template",
+    "note": "Note"
   }
 }

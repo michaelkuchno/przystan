@@ -1,5 +1,5 @@
 import type { ContentBundle } from '@/content/types';
-import type { Client, Meeting, PreventionProgram, Recipe } from '@/domain/types';
+import type { Client, Meeting, Note, PreventionProgram, Recipe } from '@/domain/types';
 
 export interface SearchHit {
   id: string;
@@ -14,7 +14,8 @@ export interface SearchHit {
     | 'recipe'
     | 'prevention'
     | 'tool'
-    | 'template';
+    | 'template'
+    | 'note';
   title: string;
   snippet: string;
   to: string;
@@ -44,10 +45,21 @@ interface Doc {
 
 export function buildDocs(
   content: ContentBundle,
-  data: { clients: Client[]; meetings: Meeting[]; recipes: Recipe[]; programs: PreventionProgram[] },
+  data: { clients: Client[]; meetings: Meeting[]; recipes: Recipe[]; programs: PreventionProgram[]; notes?: Note[] },
   toolNames: Record<string, string>,
+  country: 'PL' | 'CH' = 'PL',
 ): Doc[] {
+  const help = country === 'CH' ? content.helpsystemCH : content.helpsystem;
   const docs: Doc[] = [];
+  // private notes (omitted by the caller in presentation mode)
+  for (const n of data.notes ?? [])
+    docs.push({
+      id: n.id,
+      kind: 'note',
+      title: n.title || n.conclusions?.slice(0, 60) || n.body.slice(0, 60),
+      body: [n.body, n.conclusions ?? '', n.role ?? '', n.tags.join(' '), ...(n.tasks ?? []).map((x) => x.title)].join(' '),
+      to: `/notes/${n.id}`,
+    });
   for (const c of [...content.knowledge.cards, ...content.resocialization.cards, ...content.family.cards])
     docs.push({
       id: c.id,
@@ -56,9 +68,9 @@ export function buildDocs(
       body: [c.essence, ...c.whenToUse, ...c.techniques, ...c.phrases, ...c.pitfalls, ...c.tags].join(' '),
       to: `/knowledge/${c.id}`,
     });
-  for (const i of content.helpsystem.institutions)
+  for (const i of help.institutions)
     docs.push({ id: i.id, kind: 'institution', title: i.name, body: `${i.role} ${i.forWhom} ${i.howToAccess}`, to: '/help/map' });
-  for (const l of content.helpsystem.legal)
+  for (const l of help.legal)
     docs.push({ id: l.id, kind: 'legal', title: l.title, body: `${l.summary} ${l.keyPoints.join(' ')}`, to: '/help/law' });
   for (const s of content.scenarios.scenarios)
     docs.push({

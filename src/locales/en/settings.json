@@ -3,9 +3,18 @@
   "appearance": "Appearance and language",
   "language": "Language",
   "term": "Terminology",
-  "terms": { "podopieczny": "service user", "klient": "client", "wychowanek": "resident", "uczestnik": "participant" },
+  "terms": {
+    "podopieczny": "service user",
+    "klient": "client",
+    "wychowanek": "resident",
+    "uczestnik": "participant"
+  },
   "theme": "Theme",
-  "themes": { "system": "System", "light": "Light", "dark": "Dark" },
+  "themes": {
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark"
+  },
   "textSize": "Text size",
   "presentation": "Presentation mode",
   "presentationHint": "Larger text, hidden person codes, arrow key navigation ← → (university projector).",
@@ -63,5 +72,21 @@
   "danger": "Danger zone",
   "wipe": "Delete all data",
   "wipeText": "Permanently deletes all data and the password from this device.",
-  "wipeConfirm": "This cannot be undone. Make sure you have a backup."
+  "wipeConfirm": "This cannot be undone. Make sure you have a backup.",
+  "country": "Country of work",
+  "countryHint": "Help system, “Where to refer?”, legal basis, crisis numbers and DEMO cases.",
+  "bio": {
+    "labelAndroid": "Unlock with fingerprint or face",
+    "labelPasskey": "Unlock with Face ID / Touch ID (passkey)",
+    "hint": "Optional. The password is still required every 7 days, after 5 failed attempts and after the biometrics on the device change.",
+    "enableTitle": "Enable biometric unlock",
+    "enableText": "Enter your password – a copy of the data key will be protected by this device’s biometrics. Turning it off deletes this copy.",
+    "enable": "Enable",
+    "enabled": "Biometric unlock enabled",
+    "disabled": "Biometric unlock disabled, key deleted",
+    "unsupported": "This device or browser does not support secure biometric unlock (the PRF extension is required).",
+    "error": "Could not enable biometrics. Please try again.",
+    "promptTitle": "Przystań",
+    "promptEnable": "Confirm to enable biometric unlock"
+  }
 }

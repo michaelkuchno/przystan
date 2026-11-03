@@ -1,0 +1,22 @@
+{
+  "title": "Suche",
+  "placeholder": "Alle Module durchsuchen…",
+  "hint": "Durchsucht Wissensbasis, Institutionen, Recht, Szenarien, Lernkarten, Werkzeuge und deine eigenen Daten (verschlüsselt, lokal durchsucht).",
+  "noResults": "Keine Ergebnisse",
+  "results_one": "{{count}} Ergebnis",
+  "results_other": "{{count}} Ergebnisse",
+  "kind": {
+    "client": "{{Client}}",
+    "meeting": "Gespräch",
+    "knowledge": "Wissen",
+    "institution": "Institution",
+    "legal": "Recht",
+    "scenario": "Simulator",
+    "card": "Lernkarte",
+    "recipe": "Rezept",
+    "prevention": "Programm",
+    "tool": "Werkzeug",
+    "template": "Vorlage für Einheit",
+    "note": "Notiz"
+  }
+}

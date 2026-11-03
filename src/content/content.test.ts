@@ -14,10 +14,10 @@ import { DIAGNOSIS_AREAS, PROBLEMS, STAGES, WORK_CONTEXTS, type InstrumentId, ty
 
 const files = import.meta.glob<{ default: unknown }>('../locales/*/content/*.json', { eager: true });
 
-function load(lang: 'pl' | 'en'): Partial<ContentBundle> {
+function load(lang: 'pl' | 'en' | 'de'): Partial<ContentBundle> {
   const out: Record<string, unknown> = {};
   for (const [path, mod] of Object.entries(files)) {
-    const m = path.match(/locales\/(pl|en)\/content\/(\w+)\.json$/);
+    const m = path.match(/locales\/(pl|en|de)\/content\/(\w+)\.json$/);
     if (m && m[1] === lang) out[m[2]!] = mod.default;
   }
   return out as Partial<ContentBundle>;
@@ -25,6 +25,7 @@ function load(lang: 'pl' | 'en'): Partial<ContentBundle> {
 
 const pl = load('pl');
 const en = load('en');
+const de = load('de');
 
 /** String values under these keys are identifiers and must be equal in both languages. */
 const ID_KEYS = new Set([
@@ -133,22 +134,31 @@ const ALLOW_EMPTY = new Set([
 ]);
 
 describe.each(CONTENT_KINDS)('content: %s', (kind: ContentKind) => {
-  it('exists in both languages', () => {
+  it('exists in all languages', () => {
     expect(pl[kind], `missing src/locales/pl/content/${kind}.json`).toBeDefined();
     expect(en[kind], `missing src/locales/en/content/${kind}.json`).toBeDefined();
+    expect(de[kind], `missing src/locales/de/content/${kind}.json`).toBeDefined();
   });
 
-  it('has identical structure and identifiers in PL and EN', () => {
-    if (!pl[kind] || !en[kind]) return;
-    const errors: string[] = [];
-    compare(pl[kind], en[kind], kind, undefined, errors);
-    expect(errors).toEqual([]);
+  it('has identical structure and identifiers in PL, EN and DE', () => {
+    for (const other of [pl, de]) {
+      if (!other[kind] || !en[kind]) continue;
+      const errors: string[] = [];
+      compare(other[kind], en[kind], kind, undefined, errors);
+      expect(errors).toEqual([]);
+    }
+  });
+
+  it('uses Swiss spelling in German (ss, never ß)', () => {
+    const json = JSON.stringify(de[kind] ?? {});
+    expect(json.match(/.{0,30}ß.{0,30}/g) ?? []).toEqual([]);
   });
 
   it('has no empty texts', () => {
     for (const [lang, bundle] of [
       ['pl', pl],
       ['en', en],
+      ['de', de],
     ] as const) {
       const out: string[] = [];
       emptyStrings(bundle[kind], `${lang}.${kind}`, out, ALLOW_EMPTY);
@@ -195,9 +205,10 @@ describe.runIf(has('knowledge'))('knowledge cards', () => {
   });
 });
 
-describe.runIf(has('helpsystem'))('help system', () => {
-  it('referral rules point to existing institutions and valid answers', () => {
-    const h = pl.helpsystem!;
+describe.each(['helpsystem', 'helpsystemCH'] as const)('help system: %s', (kind) => {
+  const help = () => pl[kind]!;
+  it.runIf(has(kind))('referral rules point to existing institutions and valid answers', () => {
+    const h = help();
     const inst = new Set(h.institutions.map((i) => i.id));
     expect(unique([...inst])).toBe(true);
     const answers = new Map(h.referral.questions.map((q) => [q.id, new Set(q.options.map((o) => o.id))]));
@@ -210,13 +221,17 @@ describe.runIf(has('helpsystem'))('help system', () => {
     }
   });
 
-  it('contains the crisis numbers from the specification', () => {
-    const nums = pl.helpsystem!.crisis.map((c) => c.number.replace(/\s/g, ''));
-    for (const n of ['143', '147', '144', '116123', '116111', '800120002', '112']) expect(nums).toContain(n);
+  it.runIf(has(kind))('contains the crisis numbers of its country', () => {
+    const country = kind === 'helpsystemCH' ? 'CH' : 'PL';
+    const nums = help()
+      .crisis.filter((c) => c.country === country)
+      .map((c) => c.number.replace(/\s/g, ''));
+    const required = country === 'CH' ? ['143', '147', '144', '117', '112'] : ['116123', '116111', '800120002', '112'];
+    for (const n of required) expect(nums).toContain(n);
   });
 
-  it('every referral answer combination yields at least one path', () => {
-    const h = pl.helpsystem!;
+  it.runIf(has(kind))('every referral answer combination yields at least one path', () => {
+    const h = help();
     const qs = h.referral.questions;
     const combos: Record<string, string>[] = [{}];
     for (const q of qs) {
@@ -304,10 +319,12 @@ describe.runIf(has('decks'))('decks', () => {
 });
 
 describe.runIf(has('demo'))('demo cases', () => {
-  it('has at least 8 cases incl. one group', () => {
+  it('has at least 8 Polish cases incl. one group and at least 3 Swiss cases', () => {
     const c = pl.demo!.cases;
-    expect(c.length).toBeGreaterThanOrEqual(8);
-    expect(c.some((x) => x.client.isGroup)).toBe(true);
+    const polish = c.filter((x) => !x.country);
+    expect(polish.length).toBeGreaterThanOrEqual(8);
+    expect(polish.some((x) => x.client.isGroup)).toBe(true);
+    expect(c.filter((x) => x.country === 'CH').length).toBeGreaterThanOrEqual(3);
     expect(unique(c.map((x) => x.id))).toBe(true);
   });
 

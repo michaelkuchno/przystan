@@ -6,7 +6,8 @@ import { Compass, RotateCcw, Siren, ListOrdered, Building2, Scale } from 'lucide
 import { Page, PageHeader, Notice, ReviewBadge } from '@/components/ui/page';
 import { Card, Badge, Button, SectionTitle } from '@/components/ui/core';
 import { Tabs } from '@/components/ui/overlay';
-import { useContent } from '@/content/ContentProvider';
+import { useHelpSystem } from '@/content/ContentProvider';
+import { usePrefs } from '@/lib/prefs';
 import { findPaths, type ReferralAnswers } from '@/lib/referral';
 import { cn } from '@/components/ui/cn';
 import type { Institution, InstitutionCategory } from '@/content/types';
@@ -37,7 +38,7 @@ function InstitutionCard({ i }: { i: Institution }) {
 
 function Wizard() {
   const { t } = useTranslation('help');
-  const help = useContent('helpsystem');
+  const help = useHelpSystem();
   const [answers, setAnswers] = useState<ReferralAnswers>({});
   const qs = help.referral.questions;
   const current = qs.find((q) => !answers[q.id]);
@@ -150,9 +151,10 @@ const CATS: InstitutionCategory[] = ['central', 'treatment', 'social', 'justice'
 
 export default function HelpSystem() {
   const { t } = useTranslation('help');
+  const { country } = usePrefs();
   const { tab = 'referral' } = useParams();
   const nav = useNavigate();
-  const help = useContent('helpsystem');
+  const help = useHelpSystem();
   const [cat, setCat] = useState<InstitutionCategory | 'all'>('all');
 
   const tabs = [
@@ -230,7 +232,7 @@ export default function HelpSystem() {
 
   return (
     <Page wide>
-      <PageHeader title={t('title')} subtitle={t('subtitle')} />
+      <PageHeader title={t('title')} subtitle={t('subtitle', { context: country })} />
       {help.countryNote && <Notice className="mb-4">{help.countryNote}</Notice>}
       <Tabs tabs={tabs} value={tab} onChange={(v) => nav(`/help/${v}`, { replace: true })} />
     </Page>

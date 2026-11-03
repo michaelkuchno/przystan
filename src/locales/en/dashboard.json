@@ -1,9 +1,18 @@
 {
-  "greeting": { "morning": "Good morning", "day": "Good afternoon", "evening": "Good evening" },
+  "greeting": {
+    "morning": "Good morning",
+    "day": "Good afternoon",
+    "evening": "Good evening"
+  },
   "intro_one": "You are currently working with {{count}} person.",
   "intro_other": "You are currently working with {{count}} people.",
   "demoIntro": "Training mode – fictional case studies for learning and presenting.",
-  "quick": { "client": "New {{client}}", "meeting": "New session", "tools": "Tools", "prevention": "Prevention" },
+  "quick": {
+    "client": "New {{client}}",
+    "meeting": "New session",
+    "tools": "Tools",
+    "prevention": "Prevention"
+  },
   "today": "Today",
   "seeAll": "All",
   "start": "Start",
@@ -13,13 +22,34 @@
   "noAttention": "Nothing needs particular attention right now.",
   "attentionNote": "Indicators come from transparent rules (e.g. craving up by ≥ 2 points, a missed session in the last 14 days). They are supportive only – the decision is always yours.",
   "rules": {
-    "cravingRise": { "title": "Rising craving", "why": "Craving rose from {{from}} to {{to}} /10 (measured {{date}})." },
-    "cravingHigh": { "title": "High craving", "why": "Last measurement: {{value}}/10." },
-    "screeningWorse": { "title": "Worse screening result", "why": "{{instrument}}: score rose from {{from}} to {{to}}." },
-    "missedMeeting": { "title": "Missed session", "why": "The session on {{date}} did not take place." },
-    "keyDateSoon": { "title": "Upcoming deadline", "why": "{{label}} – {{date}} (in {{days}} days)." },
-    "noContact": { "title": "No recent contact", "why": "No contact for {{days}} days and no session planned." },
-    "iprReviewOverdue": { "title": "Plan review overdue", "why": "The review date passed on {{date}}." }
+    "cravingRise": {
+      "title": "Rising craving",
+      "why": "Craving rose from {{from}} to {{to}} /10 (measured {{date}})."
+    },
+    "cravingHigh": {
+      "title": "High craving",
+      "why": "Last measurement: {{value}}/10."
+    },
+    "screeningWorse": {
+      "title": "Worse screening result",
+      "why": "{{instrument}}: score rose from {{from}} to {{to}}."
+    },
+    "missedMeeting": {
+      "title": "Missed session",
+      "why": "The session on {{date}} did not take place."
+    },
+    "keyDateSoon": {
+      "title": "Upcoming deadline",
+      "why": "{{label}} – {{date}} (in {{days}} days)."
+    },
+    "noContact": {
+      "title": "No recent contact",
+      "why": "No contact for {{days}} days and no session planned."
+    },
+    "iprReviewOverdue": {
+      "title": "Plan review overdue",
+      "why": "The review date passed on {{date}}."
+    }
   },
   "tasks": {
     "title": "Tasks",
@@ -32,5 +62,17 @@
   "learned": "flashcards mastered",
   "dueCards_one": "{{count}} to review",
   "dueCards_other": "{{count}} to review",
-  "simulatorTeaser": { "title": "Motivational interviewing simulator", "text": "Practise reflections and open questions with a virtual conversation partner." }
+  "simulatorTeaser": {
+    "title": "Motivational interviewing simulator",
+    "text": "Practise reflections and open questions with a virtual conversation partner."
+  },
+  "backup": {
+    "title": "Time for a backup",
+    "never": "You have no backup yet. Without one, losing your phone means losing your data.",
+    "days_one": "Last backup: {{count}} day ago.",
+    "days_other": "Last backup: {{count}} days ago.",
+    "later": "Tomorrow",
+    "now": "Back up now"
+  },
+  "supervisionTasks": "Supervision tasks"
 }

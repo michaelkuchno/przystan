@@ -8,10 +8,12 @@ import { SaveStatus } from '@/components/SaveStatus';
 import { useStore, forClient, save, uid } from '@/lib/store';
 import { useEditable } from '@/lib/useEditable';
 import { useContent } from '@/content/ContentProvider';
+import { usePrefs } from '@/lib/prefs';
 import type { Client, FamilyPlan } from '@/domain/types';
 
 function Editor({ plan }: { plan: FamilyPlan }) {
   const { t } = useTranslation('clients');
+  const { country } = usePrefs();
   const fs = useContent('templates').familySupport;
   const { draft, update, status } = useEditable('familyPlan', plan);
   return (
@@ -66,7 +68,7 @@ function Editor({ plan }: { plan: FamilyPlan }) {
           onChange={(v) => update({ safetyNotes: v })}
         />
         <Notice tone="accent" icon={<ShieldAlert aria-hidden />}>
-          {t('familyPlan.violence')}{' '}
+          {t('familyPlan.violence', { context: country })}{' '}
           <Link className="font-semibold underline" to="/family/violence">
             {t('familyPlan.violenceLink')}
           </Link>

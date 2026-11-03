@@ -29,7 +29,15 @@
     "password": "Password",
     "unlock": "Unlock",
     "wrong": "Wrong password. Please try again.",
-    "forgot": "The password cannot be recovered – without it the data stays encrypted. After reinstalling you can restore data from a backup."
+    "forgot": "The password cannot be recovered – without it the data stays encrypted. After reinstalling you can restore data from a backup.",
+    "bioUnlock": "Unlock with biometrics",
+    "bioPrompt": "Unlock your data",
+    "usePassword": "Use password",
+    "bioChanged": "The biometrics on this device changed – biometric unlock was turned off. Enter your password and enable it again in Settings.",
+    "bioLockout": "Too many attempts. Enter your password.",
+    "bioFailed": "Not recognised. Try again or enter your password.",
+    "bioTooMany": "After 5 failed biometric attempts the password is required.",
+    "bioExpired": "The password is required every 7 days – afterwards you can use biometrics again."
   },
   "mode": {
     "switch": "Switch between practice and training mode",
@@ -70,7 +78,9 @@
     "crisis": "Crisis help",
     "search": "Search",
     "privacy": "Privacy",
-    "about": "About"
+    "about": "About",
+    "practice": "Placement log",
+    "notes": "Notebook"
   },
   "navHint": {
     "screening": "AUDIT, AUDIT-C, DUDIT",
@@ -85,6 +95,8 @@
     "settings": "Language, theme, backup",
     "crisis": "24/7 hotlines",
     "privacy": "Where data lives",
-    "about": "Version & disclaimers"
+    "about": "Version & disclaimers",
+    "practice": "Hours, entries, PDF for supervisor",
+    "notes": "Notes and supervision"
   }
 }

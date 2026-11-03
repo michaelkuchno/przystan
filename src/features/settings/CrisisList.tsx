@@ -2,20 +2,22 @@ import { useTranslation } from 'react-i18next';
 import { Phone } from 'lucide-react';
 import { ReviewBadge } from '@/components/ui/notice';
 import { Card } from '@/components/ui/core';
-import { useContent } from '@/content/ContentProvider';
+import { crisisFor, useContent } from '@/content/ContentProvider';
+import { usePrefs } from '@/lib/prefs';
 
 export function CrisisList() {
   const { t } = useTranslation('help');
-  const crisis = useContent('helpsystem').crisis;
+  const content = useContent();
+  const { country: mine } = usePrefs();
+  // the country of work first
+  const order = mine === 'CH' ? (['CH', 'PL'] as const) : (['PL', 'CH'] as const);
   return (
     <div className="space-y-5">
-      {(['PL', 'CH'] as const).map((country) => (
+      {order.map((country) => (
         <section key={country}>
           <h2 className="mb-2 font-sans text-sm font-semibold tracking-wider text-muted uppercase">{t(`country.${country}`)}</h2>
           <div className="grid gap-2 sm:grid-cols-2">
-            {crisis
-              .filter((c) => c.country === country)
-              .map((c) => (
+            {crisisFor(content, country).map((c) => (
                 <Card key={c.id} className="flex flex-wrap items-center gap-3 p-3 sm:p-3">
                   <a
                     href={`tel:${c.number.replace(/\s/g, '')}`}

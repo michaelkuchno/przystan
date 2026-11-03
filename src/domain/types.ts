@@ -412,6 +412,63 @@ export interface SimulatorRun {
   sustainTalk: number;
 }
 
+/* ------------------------------------------------------------ practice log */
+
+export type PracticeActivity = 'observation' | 'individual' | 'group' | 'prevention' | 'documentation' | 'teamMeeting' | 'supervision' | 'other';
+export const PRACTICE_ACTIVITIES: PracticeActivity[] = [
+  'observation',
+  'individual',
+  'group',
+  'prevention',
+  'documentation',
+  'teamMeeting',
+  'supervision',
+  'other',
+];
+
+/** Dzienniczek praktyk – one entry per day / activity. Contains no identifying data of clients. */
+export interface PracticeEntry {
+  id: string;
+  date: string;
+  /** Placement (placówka), e.g. "Poradnia profilaktyki, Bern". */
+  place: string;
+  hours: number;
+  activity: PracticeActivity;
+  description: string;
+  reflections: string;
+  updatedAt: string;
+}
+
+/* ------------------------------------------------------- notes & supervision */
+
+export interface NoteTask {
+  id: string;
+  title: string;
+  due?: string;
+  done: boolean;
+}
+
+/** Private notebook entry; type 'supervision' = supervision / consultation record. */
+export interface Note {
+  id: string;
+  type: 'note' | 'supervision';
+  title: string;
+  body: string;
+  tags: string[];
+  pinned: boolean;
+  /** Optional links (ids) – a note may belong to a client, a meeting or a prevention programme. */
+  clientId?: string;
+  meetingId?: string;
+  programId?: string;
+  /** Supervision only: date, the other person's role (no names), conclusions, tasks. */
+  date?: string;
+  role?: string;
+  conclusions?: string;
+  tasks?: NoteTask[];
+  createdAt: string;
+  updatedAt: string;
+}
+
 /** Map of every record kind to its type. */
 export interface RecordMap {
   client: Client;
@@ -430,6 +487,8 @@ export interface RecordMap {
   deck: Deck;
   cardState: CardState;
   simRun: SimulatorRun;
+  practice: PracticeEntry;
+  note: Note;
 }
 
 export type RecordKind = keyof RecordMap;
@@ -450,4 +509,6 @@ export const RECORD_KINDS: RecordKind[] = [
   'deck',
   'cardState',
   'simRun',
+  'practice',
+  'note',
 ];

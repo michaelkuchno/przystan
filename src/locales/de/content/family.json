@@ -1,0 +1,264 @@
+{
+  "cards": [
+    {
+      "id": "codependency",
+      "section": "family",
+      "title": "Co-Abhängigkeit",
+      "essence": "Co-Abhängigkeit beschreibt, wie eine nahestehende Person (meist Partner/in oder Elternteil) funktioniert, nachdem sie lange mit der Sucht eines anderen Menschen gelebt hat. Typische Anzeichen: Das Leben dreht sich um das Trinken oder den Konsum der anderen Person, Kontrollieren, Verheimlichen des Problems, Übernehmen von Verantwortung, Vernachlässigen eigener Bedürfnisse, chronischer Stress und Schuldgefühle. Sie ist weder die Schuld noch die Krankheit der Angehörigen, sondern eine verständliche Reaktion auf eine lang andauernde Krise – und ein Zustand, aus dem man sich mit Unterstützung lösen kann.",
+      "whenToUse": [
+        "Kontakt mit Partner/in oder Elternteil einer Person mit Alkohol- oder Drogenproblem.",
+        "Wenn Angehörige Hilfe „für jemand anderen“ suchen und dabei selbst erschöpft sind.",
+        "Wenn Gewalt im Zusammenhang mit der Sucht vermutet wird."
+      ],
+      "techniques": [
+        "Psychoedukation: Mechanismen von Sucht und Co-Abhängigkeit.",
+        "Eigene Verantwortung von der Verantwortung der anderen Person unterscheiden; das „Retten“ loslassen.",
+        "Vermittlung in eine Therapie für co-abhängige Angehörige an einer Suchtfachstelle und zu Al-Anon-Gruppen.",
+        "Einschätzung der Sicherheit und bei Bedarf Einleitung des „Blaue Karte“-Verfahrens (Niebieska Karta, Polen)."
+      ],
+      "phrases": [
+        "Ich sehe, wie viel Kraft Sie investieren, damit die Familie funktioniert. Wer kümmert sich um Sie?",
+        "Sie haben sein Trinken nicht verursacht, und Sie müssen es nicht kontrollieren, um Hilfe zu verdienen."
+      ],
+      "pitfalls": [
+        "Den Angehörigen die Schuld geben („Sie treiben ihn ja dazu“).",
+        "Co-Abhängigkeit als medizinische Diagnose oder Etikett behandeln.",
+        "Gewalt und Sicherheitsrisiken übersehen."
+      ],
+      "sources": [
+        {
+          "authors": "Mellibruda J., Sobolewska-Mellibruda Z.",
+          "year": 2006,
+          "title": "Integracyjna psychoterapia uzależnień. Teoria i praktyka",
+          "publisher": "Instytut Psychologii Zdrowia PTP"
+        },
+        {
+          "authors": "Cierpiałkowska L.",
+          "year": 2000,
+          "title": "Alkoholizm. Przyczyny, leczenie, profilaktyka",
+          "publisher": "Wydawnictwo Naukowe UAM"
+        }
+      ],
+      "tags": ["Co-Abhängigkeit", "Familie", "Al-Anon"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "childrenAlcoholFamilies",
+      "section": "family",
+      "title": "Kinder aus Familien mit Alkoholproblemen (EKA)",
+      "essence": "Kinder, die in einer Familie mit Alkoholproblemen aufwachsen, leben mit Unberechenbarkeit, oft mit Scham und Angst, und erleben häufig Gewalt oder Vernachlässigung. Die Familienregeln „nicht reden, nicht vertrauen, nicht fühlen“ erschweren es, Hilfe zu suchen. S. Wegscheider-Cruse beschrieb typische Rollen: Held/in, Sündenbock, verlorenes Kind und Maskottchen (Clown). Im Erwachsenenalter erkennen manche bei sich Schwierigkeiten, die als „Erwachsene Kinder von Alkoholikern“ (EKA; engl. ACoA, poln. DDA) oder „Erwachsene Kinder aus dysfunktionalen Familien“ (poln. DDD) beschrieben werden – Begriffe aus Selbsthilfe und Psychotherapie, keine Diagnosen.",
+      "whenToUse": [
+        "Schüler/in mit plötzlicher Verhaltensänderung, Rückzug, übermässigem Verantwortungsgefühl oder Aggression.",
+        "Planung von Soziotherapie und Tagesstrukturangeboten.",
+        "Arbeit mit Erwachsenen, die von einer schwierigen Kindheit in einer Familie mit Alkoholproblemen erzählen."
+      ],
+      "techniques": [
+        "Eine sichere, verlässliche Beziehung zu einer erwachsenen Person ausserhalb der Familie.",
+        "Altersgerechte Psychoedukation: „Es ist nicht deine Schuld.“",
+        "Soziotherapie, Tagesstätten, Alateen-Gruppen; für Erwachsene EKA-Gruppen und Psychotherapie.",
+        "Einschätzung der Sicherheit des Kindes und Zusammenarbeit mit Sozialdienst, Beratungsstelle und bei Bedarf dem Familiengericht."
+      ],
+      "phrases": [
+        "Viele Kinder erleben zu Hause Ähnliches. Es ist nicht deine Schuld, und du musst damit nicht allein klarkommen.",
+        "Du kannst mir so viel erzählen, wie du möchtest. Wenn ich jemanden informieren muss, sage ich es dir vorher."
+      ],
+      "pitfalls": [
+        "Dem Kind absolute Verschwiegenheit versprechen, die nicht eingehalten werden kann.",
+        "Dem Kind eine Rolle anheften („du bist der Sündenbock“), statt mit ihrer Funktion zu arbeiten.",
+        "Den Elternteil vor dem Kind kritisieren."
+      ],
+      "sources": [
+        {
+          "authors": "Wegscheider-Cruse S.",
+          "year": 1981,
+          "title": "Another Chance: Hope and Health for the Alcoholic Family",
+          "publisher": "Science and Behavior Books"
+        },
+        {
+          "authors": "Woititz J.G.",
+          "year": 1983,
+          "title": "Adult Children of Alcoholics",
+          "publisher": "Health Communications"
+        },
+        {
+          "authors": "Cierpiałkowska L.",
+          "year": 2000,
+          "title": "Alkoholizm. Przyczyny, leczenie, profilaktyka",
+          "publisher": "Wydawnictwo Naukowe UAM"
+        }
+      ],
+      "tags": ["EKA", "Kinder", "Familienrollen"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "domesticViolence",
+      "section": "family",
+      "title": "Häusliche Gewalt – erkennen und Hilfewege",
+      "essence": "Das polnische Gesetz zur Bekämpfung häuslicher Gewalt (ustawa o przeciwdziałaniu przemocy domowej, 2023 revidiert) umfasst körperliche, psychische, sexuelle und wirtschaftliche Gewalt sowie Gewalt mittels elektronischer Kommunikation – gegen Familienmitglieder, aber auch gegen ehemalige Partner/innen und Personen im gemeinsamen Haushalt. Ein Kind, das Zeuge von Gewalt wird, gilt als gewaltbetroffene Person. Die Hilfe ist lokal organisiert: das interdisziplinäre Team der Gemeinde (zespół interdyscyplinarny), das Sozialhilfezentrum, die Anlaufstelle, das Kriseninterventionszentrum, die Polizei (112) und die Hotline „Blaue Linie“ (Niebieska Linia, 800 120 002). Die Polizei kann die gewaltausübende Person sofort aus der Wohnung weisen und ihr verbieten, sich der betroffenen Person zu nähern.",
+      "whenToUse": [
+        "Wenn Klient/innen, Schüler/innen oder Angehörige Gewalt offenlegen oder sichtbare Anzeichen bestehen.",
+        "Wenn Sucht in der Familie mit Streit, Drohungen oder finanzieller Kontrolle einhergeht.",
+        "In jeder Situation unmittelbarer Gefahr für Leben oder Gesundheit – sofort 112 anrufen."
+      ],
+      "techniques": [
+        "Sicherheit zuerst: Besteht unmittelbare Gefahr? Wenn ja – 112 anrufen.",
+        "Ein ruhiges Gespräch unter vier Augen, ohne Anwesenheit der mutmasslich gewaltausübenden Person.",
+        "Fakten dokumentieren (was, wann, Wortlaut der Person, sichtbare Verletzungen) – ohne zu werten.",
+        "Das „Blaue Karte“-Verfahren in der eigenen Institution einleiten und die vorgesetzte Person informieren.",
+        "Ein Sicherheitsplan und Informationen, wo es Hilfe gibt (Krisenzentrum, Sozialhilfe, Blaue Linie).",
+        "Bei Verdacht auf eine Straftat – Meldung an Polizei oder Staatsanwaltschaft, entsprechend der Pflicht der Institution."
+      ],
+      "phrases": [
+        "Danke, dass Sie mir das erzählt haben. Was passiert, ist nicht Ihre Schuld.",
+        "Es ist meine Aufgabe, für Ihre Sicherheit zu sorgen. Ich sage Ihnen, was ich jetzt tun werde und wen ich um Hilfe bitte."
+      ],
+      "pitfalls": [
+        "Ein gemeinsames Gespräch oder eine Mediation mit der gewaltbetroffenen und der gewaltausübenden Person führen.",
+        "Handeln aufschieben, „bis man sicher ist“ – das Verfahren beginnt bei begründetem Verdacht.",
+        "Ein Kind selbst befragen; Befragungen wiederholen.",
+        "Gewalt mit Alkohol entschuldigen („das ist halt das Trinken“)."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 2005,
+          "title": "Ustawa z dnia 29 lipca 2005 r. o przeciwdziałaniu przemocy domowej (tytuł i treść po nowelizacji z 2023 r.)"
+        },
+        {
+          "authors": "Herman J.L.",
+          "year": 1992,
+          "title": "Trauma and Recovery",
+          "publisher": "Basic Books"
+        }
+      ],
+      "tags": ["häusliche Gewalt", "Sicherheit", "Verfahren"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "blueCard",
+      "section": "family",
+      "title": "Das Verfahren „Blaue Karte“ (Niebieska Karta) Schritt für Schritt",
+      "essence": "Das Verfahren „Blaue Karten“ (Niebieskie Karty) ist in Polen ein strukturiertes Vorgehen der Institutionen bei Verdacht auf häusliche Gewalt. Eingeleitet wird es unter anderem von Vertreter/innen der Sozialhilfe, der Gemeindekommission für Alkoholprobleme, der Polizei, des Bildungs- und des Gesundheitswesens, indem sie das Formular „Blaue Karte – A“ ausfüllen. Die gewaltbetroffene Person erhält das Formular „B“ mit Informationen zu ihren Rechten und zu Hilfsangeboten. Die Karte geht an das interdisziplinäre Team, das eine Diagnose- und Unterstützungsgruppe bildet und die Hilfe plant. Für die Einleitung ist keine Zustimmung der gewaltbetroffenen Person nötig.",
+      "whenToUse": [
+        "Eine Schulpädagogin, ein Schulpädagoge oder eine Betreuungsperson hat einen begründeten Verdacht auf Gewalt gegen eine/n Schüler/in oder in deren Familie.",
+        "Eine erwachsene Person legt in einer Beratung Gewalt offen.",
+        "Gewalt durch eine Person mit Alkoholproblem – parallel zum Vorgehen der Gemeindekommission für Alkoholprobleme."
+      ],
+      "techniques": [
+        "1. Sicherheit gewährleisten; bei Gefahr 112 anrufen.",
+        "2. Formular „A“ im Beisein der gewaltbetroffenen Person ausfüllen (wenn möglich); bei einem Kind – wenn möglich mit einem Elternteil oder einer Betreuungsperson, die nicht der Gewalt verdächtigt wird.",
+        "3. Der Person das Formular „B“ übergeben (nicht einem Kind – es erhält der nicht gewaltausübende Elternteil oder die Betreuungsperson).",
+        "4. Formular „A“ umgehend an die vorsitzende Person des interdisziplinären Teams senden (die Frist ist per Verordnung geregelt), eine Kopie aufbewahren.",
+        "5. In der Diagnose- und Unterstützungsgruppe mitarbeiten und den vereinbarten Hilfeplan umsetzen.",
+        "6. Bei Verdacht auf eine Straftat – Polizei oder Staatsanwaltschaft informieren."
+      ],
+      "phrases": [
+        "Ich fülle diese Karte aus, damit verschiedene Stellen zusammenarbeiten können, um Sie zu schützen.",
+        "Hier finden Sie Informationen, wo Sie Hilfe bekommen – auch rund um die Uhr."
+      ],
+      "pitfalls": [
+        "Das Verfahren von der Zustimmung oder „Bereitschaft“ der gewaltbetroffenen Person abhängig machen.",
+        "Die gewaltbetroffene und die gewaltausübende Person zum selben Treffen einladen.",
+        "Veraltete Formulare verwenden – die aktuellen Vorlagen prüfen (Verordnung von 2023)."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 2005,
+          "title": "Ustawa z dnia 29 lipca 2005 r. o przeciwdziałaniu przemocy domowej (tytuł i treść po nowelizacji z 2023 r.)"
+        },
+        {
+          "authors": "Rada Ministrów",
+          "year": 2023,
+          "title": "Rozporządzenie w sprawie procedury „Niebieskie Karty” oraz wzorów formularzy"
+        }
+      ],
+      "tags": ["Blaue Karte", "Verfahren", "Schule"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "craft",
+      "section": "family",
+      "title": "CRAFT – Community Reinforcement and Family Training",
+      "essence": "CRAFT (Community Reinforcement and Family Training, R.J. Meyers, J.E. Smith) ist ein Programm für Angehörige einer Person, die eine Behandlung ablehnt. Es vermittelt ihnen, statt zu konfrontieren, zu bitten oder zu drohen, nüchternes Verhalten zu verstärken, natürliche Folgen des Trinkens oder Konsums zuzulassen, die Kommunikation zu verbessern und für sich selbst zu sorgen. Studien zeigen, dass CRAFT häufiger zum Behandlungseintritt führt als konfrontative Interventionen und das Wohlbefinden der Familie verbessert.",
+      "whenToUse": [
+        "Angehörige suchen Hilfe, während die betroffene Person den Kontakt zu einer Fachstelle ablehnt.",
+        "Eltern von Jugendlichen, die Substanzen konsumieren.",
+        "Wenn in der Familie keine Gewalt die Sicherheit bedroht (Sicherheit zuerst)."
+      ],
+      "techniques": [
+        "Funktionale Analyse des Trinkens oder Konsums: Auslöser und Folgen.",
+        "Positive Kommunikation: kurz, konkret, Ich-Botschaften, mit Empathie.",
+        "Nüchternheit belohnen und nicht vor Konsequenzen abschirmen.",
+        "Den richtigen Moment wählen, um eine Behandlung vorzuschlagen; Sicherheitsplan; Selbstfürsorge."
+      ],
+      "phrases": [
+        "Wenn ich einen nüchternen Abend bemerke, kann ich ihm sagen, dass ich gern mit ihm rede.",
+        "Ich mache mir Sorgen um dich. Wenn du mit jemandem reden möchtest – ich habe eine Fachstelle gefunden und kann mitkommen."
+      ],
+      "pitfalls": [
+        "CRAFT mit einer konfrontativen „Intervention“ oder einem Ultimatum verwechseln.",
+        "Es bei akuter Gewalt ohne Sicherheitsplan einsetzen.",
+        "Die Familie für das Ergebnis verantwortlich machen."
+      ],
+      "sources": [
+        {
+          "authors": "Smith J.E., Meyers R.J.",
+          "year": 2004,
+          "title": "Motivating Substance Abusers to Enter Treatment: Working with Family Members",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Meyers R.J., Wolfe B.L.",
+          "year": 2004,
+          "title": "Get Your Loved One Sober: Alternatives to Nagging, Pleading, and Threatening",
+          "publisher": "Hazelden"
+        }
+      ],
+      "tags": ["CRAFT", "Familie", "Motivation"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "familySystems",
+      "section": "family",
+      "title": "Die Familie als System: Genogramm und Ökogramm",
+      "essence": "Der systemische Ansatz betrachtet die Familie als Ganzes, in dem das Problem einer Person (z. B. Sucht, das Verhalten eines Jugendlichen) eine Funktion innerhalb von Beziehungen, Rollen und Grenzen hat. Ein Genogramm ist eine Darstellung von mindestens drei Generationen mit Beziehungen, wichtigen Ereignissen und wiederkehrenden Mustern (z. B. Sucht, Gewalt). Ein Ökogramm (Ecomap, A. Hartman) zeigt die Verbindungen der Familie zu ihrem Umfeld: Schule, Arbeit, Institutionen, Freundeskreis – und macht Ressourcen und Belastungen sichtbar.",
+      "whenToUse": [
+        "Erste Treffen mit einer Familie – die Geschichte auf zugängliche Weise erfassen.",
+        "Planung von Unterstützung und einem Hilfenetz (Ökogramm).",
+        "Besprechen generationenübergreifender Suchtmuster."
+      ],
+      "techniques": [
+        "Das Genogramm gemeinsam mit der Klientin, dem Klienten oder der Familie zeichnen.",
+        "Beziehungen (eng, konflikthaft, abgebrochen) und kritische Ereignisse markieren.",
+        "Ein Ökogramm vor und nach der Intervention – Veränderungen im Unterstützungsnetz zeigen.",
+        "Zirkuläre Fragen: „Wer merkt als Erstes, dass…?“."
+      ],
+      "phrases": [
+        "Wer in der Familie macht sich darüber am meisten Sorgen, und wer am wenigsten?",
+        "Zeichnen wir auf, wer um dich herum ist – wer hilft und wer zusätzlich belastet."
+      ],
+      "pitfalls": [
+        "Das Genogramm wie ein Verhör behandeln – die Familie bestimmt das Tempo.",
+        "Schuldige suchen, statt Muster zu verstehen.",
+        "Sensible Daten ohne Einwilligung und Schutz aufbewahren."
+      ],
+      "sources": [
+        {
+          "authors": "McGoldrick M., Gerson R., Petry S.",
+          "year": 2008,
+          "title": "Genograms: Assessment and Intervention (3rd ed.)",
+          "publisher": "W.W. Norton"
+        },
+        {
+          "authors": "Hartman A.",
+          "year": 1978,
+          "title": "Diagrammatic Assessment of Family Relationships",
+          "publisher": "Social Casework"
+        }
+      ],
+      "tags": ["Genogramm", "Ökogramm", "Familiensystem"],
+      "reviewStatus": "do_weryfikacji"
+    }
+  ]
+}

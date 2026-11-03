@@ -38,6 +38,10 @@ const Settings = lazy(() => import('@/features/settings/Settings'));
 const InfoPage = lazy(() => import('@/features/settings/InfoPage'));
 const More = lazy(() => import('@/features/more/More'));
 const Search = lazy(() => import('@/features/search/Search'));
+const PracticeLog = lazy(() => import('@/features/practice/PracticeLog'));
+const NotesList = lazy(() => import('@/features/notes/NotesList'));
+const NoteEditor = lazy(() => import('@/features/notes/NoteEditor'));
+const CaseStudy = lazy(() => import('@/features/casestudy/CaseStudy'));
 
 function PageFallback() {
   return (
@@ -79,6 +83,10 @@ export default function AuthedApp({ overlay }: { overlay?: ReactNode }) {
                   <Route path="/resocialization/:tab?" element={<Resocialization />} />
                   <Route path="/family/:tab?" element={<Family />} />
                   <Route path="/help/:tab?" element={<HelpSystem />} />
+                  <Route path="/practice" element={<PracticeLog />} />
+                  <Route path="/case-study/:id" element={<CaseStudy />} />
+                  <Route path="/notes" element={<NotesList />} />
+                  <Route path="/notes/:id" element={<NoteEditor />} />
                   <Route path="/knowledge" element={<Knowledge />} />
                   <Route path="/knowledge/:id" element={<KnowledgeCardPage />} />
                   <Route path="/simulator" element={<SimulatorList />} />

@@ -1,0 +1,16 @@
+{
+  "title": "Resozialisierung und Wiedereingliederung",
+  "subtitle": "Konzepte, Wiedereingliederungspläne und ein soziotherapeutisches Programm",
+  "tabs": {
+    "knowledge": "Wissenskarten",
+    "readaptation": "Wiedereingliederungspläne",
+    "sociotherapy": "Soziotherapeutisches Programm"
+  },
+  "readaptationIntro": "Einen Wiedereingliederungsplan für eine Person, die eine Einrichtung oder den Strafvollzug verlässt, erstellst du in ihrem Profil (Reiter «Wiedereingliederung») – anhand einer Vorlage zu Wohnen, Dokumenten, Arbeit und Ausbildung, Gesundheit und Suchtbehandlung, Beziehungen und institutioneller Unterstützung.",
+  "noPlans": "Noch keine Wiedereingliederungspläne",
+  "noPlansText": "Öffne das Profil einer Person und wähle den Reiter «Wiedereingliederung».",
+  "progress": "{{done}} von {{total}} erledigt",
+  "goals": "Ziele",
+  "rules": "Gruppenregeln",
+  "cycle": "Ablauf der Sitzungsreihe"
+}

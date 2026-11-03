@@ -1,0 +1,92 @@
+{
+  "title": "Einstellungen",
+  "appearance": "Darstellung und Sprache",
+  "language": "Sprache",
+  "term": "Bezeichnung",
+  "terms": {
+    "podopieczny": "Klient/in (Betreuung)",
+    "klient": "Klient/in (Beratung)",
+    "wychowanek": "Jugendliche/r (Einrichtung)",
+    "uczestnik": "Teilnehmer/in"
+  },
+  "theme": "Farbschema",
+  "themes": {
+    "system": "System",
+    "light": "Hell",
+    "dark": "Dunkel"
+  },
+  "textSize": "Schriftgrösse",
+  "presentation": "Präsentationsmodus",
+  "presentationHint": "Grössere Schrift, ausgeblendete Personencodes, Navigation mit Pfeiltasten ← → (Beamer im Hörsaal).",
+  "mode": "Arbeitsmodus",
+  "modes": {
+    "practice": "Praxis",
+    "demo": "Übung (DEMO)",
+    "practiceText": "Echte Arbeit – verschlüsselte Akten der Menschen, mit denen du arbeitest.",
+    "demoText": "Fiktive Fallbeispiele. Änderungen im DEMO-Modus wirken sich nicht auf die Praxisdaten aus."
+  },
+  "resetDemo": "Demodaten zurücksetzen",
+  "resetDemoText": "Die Übungsfälle werden in ihren Ausgangszustand zurückversetzt (in der aktuellen Sprache).",
+  "demoReset": "Demodaten zurückgesetzt",
+  "security": "Sicherheit",
+  "autoLock": "Automatische Sperre bei Inaktivität",
+  "autoLockHint": "Die App sperrt sich ausserdem immer, wenn sie in den Hintergrund wechselt.",
+  "password": {
+    "change": "Passwort ändern",
+    "old": "Aktuelles Passwort",
+    "new": "Neues Passwort",
+    "repeat": "Neues Passwort wiederholen",
+    "save": "Passwort ändern",
+    "note": "Merk dir das neue Passwort – es kann nicht wiederhergestellt werden. Ältere Sicherungen lassen sich weiterhin mit dem Passwort öffnen, das bei ihrer Erstellung galt.",
+    "tooShort": "Das Passwort muss mindestens 6 Zeichen haben.",
+    "mismatch": "Die Passwörter stimmen nicht überein.",
+    "wrong": "Das aktuelle Passwort ist falsch.",
+    "changed": "Passwort geändert"
+  },
+  "backup": {
+    "title": "Sicherung",
+    "text": "Die Daten existieren nur auf diesem Gerät. Handy verloren, App deinstalliert oder Browserdaten gelöscht = Daten verloren. Erstelle regelmässig Sicherungen und bewahre die Datei sicher auf. Die Datei ist mit deinem Passwort verschlüsselt.",
+    "last": "Letzte Sicherung: {{date}}",
+    "never": "Noch keine Sicherung erstellt.",
+    "export": "Sicherung erstellen",
+    "import": "Aus Sicherung wiederherstellen",
+    "importText": "Gib das Passwort ein, das bei der Erstellung der Sicherung galt.",
+    "password": "Passwort der Sicherung",
+    "replaceWarning": "Beim Wiederherstellen werden alle aktuellen Daten durch die Sicherung ersetzt. Das Passwort der Sicherung wird zum App-Passwort.",
+    "restore": "Wiederherstellen",
+    "done_one": "Sicherung bereit ({{count}} Eintrag)",
+    "done_other": "Sicherung bereit ({{count}} Einträge)",
+    "restored_one": "{{count}} Eintrag wiederhergestellt",
+    "restored_other": "{{count}} Einträge wiederhergestellt",
+    "errors": {
+      "invalid-file": "Das ist keine gültige Przystań-Sicherungsdatei.",
+      "unsupported-version": "Die Sicherung stammt aus einer neueren App-Version – bitte aktualisiere die App.",
+      "wrong-password": "Falsches Passwort der Sicherung.",
+      "corrupted": "Die Sicherungsdatei ist beschädigt. Deine aktuellen Daten sind unverändert."
+    }
+  },
+  "info": "Informationen",
+  "about": "Über die App",
+  "privacy": "Datenschutz",
+  "sources": "Quellen",
+  "danger": "Gefahrenbereich",
+  "wipe": "Alle Daten löschen",
+  "wipeText": "Löscht alle Daten und das Passwort endgültig von diesem Gerät.",
+  "wipeConfirm": "Das kann nicht rückgängig gemacht werden. Stell sicher, dass du eine Sicherung hast.",
+  "country": "Arbeitsland",
+  "countryHint": "Hilfesystem, «Wohin vermitteln?», rechtliche Grundlagen, Notfallnummern und DEMO-Fälle.",
+  "bio": {
+    "labelAndroid": "Mit Fingerabdruck oder Gesicht entsperren",
+    "labelPasskey": "Mit Face ID / Touch ID entsperren (Passkey)",
+    "hint": "Optional. Das Passwort braucht es trotzdem alle 7 Tage, nach 5 Fehlversuchen und wenn die Biometrie im System geändert wurde.",
+    "enableTitle": "Biometrisches Entsperren aktivieren",
+    "enableText": "Gib dein Passwort ein – eine Kopie des Datenschlüssels wird mit der Biometrie dieses Geräts geschützt. Beim Ausschalten wird diese Kopie gelöscht.",
+    "enable": "Aktivieren",
+    "enabled": "Biometrisches Entsperren aktiviert",
+    "disabled": "Biometrisches Entsperren deaktiviert, Schlüssel gelöscht",
+    "unsupported": "Dieses Gerät oder dieser Browser unterstützt kein sicheres biometrisches Entsperren (PRF-Erweiterung erforderlich).",
+    "error": "Biometrie konnte nicht aktiviert werden. Bitte versuche es erneut.",
+    "promptTitle": "Przystań",
+    "promptEnable": "Bestätigen, um biometrisches Entsperren zu aktivieren"
+  }
+}

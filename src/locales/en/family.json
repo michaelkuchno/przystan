@@ -1,7 +1,11 @@
 {
   "title": "Family",
   "subtitle": "Co-dependency, children of families with alcohol problems, violence, CRAFT",
-  "tabs": { "knowledge": "Knowledge", "violence": "Domestic violence", "tools": "Tools and plans" },
+  "tabs": {
+    "knowledge": "Knowledge",
+    "violence": "Domestic violence",
+    "tools": "Tools and plans"
+  },
   "violenceUrgent": "If someone is in immediate danger – call 112. Support and advice (Poland):",
   "toolsIntro": "You keep the genogram / ecomap and the family support plan in the profile of a specific person (“Genogram” and “Family” tabs). Here you see them all in one place.",
   "genograms": "Genograms and ecomaps",
@@ -9,5 +13,6 @@
   "plans": "Family support plans",
   "noPlans": "No family support plans yet",
   "nodes_one": "{{count}} element",
-  "nodes_other": "{{count}} elements"
+  "nodes_other": "{{count}} elements",
+  "violenceUrgent_CH": "If someone is in immediate danger – call 117 or 112. Support and advice (Switzerland):"
 }

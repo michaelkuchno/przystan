@@ -29,11 +29,26 @@
   "modules": {
     "title": "What's inside",
     "text": "One consistent space for working with many people, designing prevention and studying.",
-    "clients": { "title": "{{Clients}}", "text": "Educational assessment, individual plan, relapse prevention plan, timeline, genogram." },
-    "tools": { "title": "Tools to use together", "text": "Urge surfing, readiness ruler, chain analysis, HALT and more." },
-    "prevention": { "title": "Prevention", "text": "Prevention programme builder with evaluation and PDF export." },
-    "simulator": { "title": "Conversation simulator", "text": "Motivational interviewing practice with feedback." },
-    "learn": { "title": "Study", "text": "Spaced-repetition flashcards and exam practice." },
+    "clients": {
+      "title": "{{Clients}}",
+      "text": "Educational assessment, individual plan, relapse prevention plan, timeline, genogram."
+    },
+    "tools": {
+      "title": "Tools to use together",
+      "text": "Urge surfing, readiness ruler, chain analysis, HALT and more."
+    },
+    "prevention": {
+      "title": "Prevention",
+      "text": "Prevention programme builder with evaluation and PDF export."
+    },
+    "simulator": {
+      "title": "Conversation simulator",
+      "text": "Motivational interviewing practice with feedback."
+    },
+    "learn": {
+      "title": "Study",
+      "text": "Spaced-repetition flashcards and exam practice."
+    },
     "disclaimer": "Harbor supports work and study. It does not make medical diagnoses or decisions on behalf of a professional – all indicators and suggestions are supportive only."
   },
   "mode": {
@@ -44,5 +59,7 @@
     "practice": "Practice mode",
     "practiceText": "Real work – an empty, encrypted space for the people you work with.",
     "changeLater": "You can switch mode at any time in the header or in settings."
-  }
+  },
+  "country": "Country of work",
+  "countryHint": "It determines the help system, legal basis, crisis numbers and training cases. Independent of the language – you can change it in Settings."
 }

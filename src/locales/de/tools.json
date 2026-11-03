@@ -1,0 +1,149 @@
+{
+  "title": "Werkzeuge",
+  "subtitle": "Zur gemeinsamen Nutzung mit der Person, mit der du arbeitest – auf Handy, Tablet oder Beamer",
+  "forClient": "Für: {{code}}",
+  "notFound": "Werkzeug nicht gefunden",
+  "chartable": "Ergebnis im Diagramm",
+  "groups": {
+    "motivation": "Motivation",
+    "coping": "Bewältigung",
+    "cognitive": "Gedanken und Auslöser",
+    "skills": "Fertigkeiten und Unterstützung"
+  },
+  "names": {
+    "urgeSurfing": "Urge Surfing",
+    "readinessRuler": "Bereitschaftslineal",
+    "decisionalBalance": "Entscheidungswaage",
+    "chainAnalysis": "Kettenanalyse",
+    "halt": "HALT – kurzer Check-in",
+    "thoughtRecord": "Gedankenprotokoll",
+    "scaling": "Skalierung und Wunderfrage",
+    "triggerMap": "Auslöserkarte",
+    "supportMap": "Unterstützungskarte",
+    "grounding": "Erdung 5-4-3-2-1",
+    "breathing": "Atemübung",
+    "socialSkills": "Training sozialer Kompetenzen"
+  },
+  "showClient": "Anzeigen für {{client}}",
+  "exitShow": "Vollbild schliessen",
+  "version": "Formulierung",
+  "youth": "Jugendliche",
+  "adult": "Erwachsene",
+  "saveFor": "Ergebnis in Akte speichern",
+  "noSave": "— nicht speichern —",
+  "note": "Notiz",
+  "saveResult": "Ergebnis speichern",
+  "saveUse": "Nutzung speichern",
+  "saved": "Ergebnis in der Akte gespeichert",
+  "chooseClientHint": "Wähle eine Person, um das Ergebnis zu speichern. Ohne Auswahl kannst du das Werkzeug frei nutzen.",
+  "next": "Weiter",
+  "again": "Nochmals",
+  "start": "Start",
+  "pause": "Pause",
+  "all": "Alle",
+  "stepOf": "Schritt {{n}} von {{total}}",
+  "urge": {
+    "before": "Wie stark ist das Verlangen gerade?",
+    "after": "Wie stark ist das Verlangen jetzt – nach der Übung?",
+    "none": "keines",
+    "max": "am stärksten",
+    "start": "Los geht's",
+    "finish": "Beenden",
+    "change": "Veränderung der Intensität",
+    "wentDown": "Die Welle ist abgeflacht – Verlangen ist wie eine Welle: Es steigt an, erreicht einen Höhepunkt und ebbt ab.",
+    "stayed": "Manchmal braucht die Welle mehr Zeit. Auch das ist eine nützliche Information."
+  },
+  "ruler": {
+    "importance": "Wie wichtig ist es dir?",
+    "confidence": "Wie zuversichtlich bist du, dass du es schaffst?",
+    "readiness": "Wie bereit bist du, anzufangen?"
+  },
+  "balance": {
+    "prosStatus": "Vorteile des jetzigen Verhaltens",
+    "consStatus": "Nachteile des jetzigen Verhaltens",
+    "prosChange": "Vorteile einer Veränderung",
+    "consChange": "Nachteile einer Veränderung",
+    "scale": "Gewicht der Gründe",
+    "status": "Keine Veränderung",
+    "change": "Richtung Veränderung",
+    "note": "Das ist kein Test – die Anzahl der Gründe entscheidet nicht. Wichtig ist, was dieser Person am meisten bedeutet."
+  },
+  "chain": {
+    "trigger": "Auslöser",
+    "thoughts": "Gedanken",
+    "emotions": "Gefühle",
+    "behaviour": "Verhalten",
+    "consequences": "Folgen",
+    "breakPoint": "Wo könnte die Kette unterbrochen werden?",
+    "breakPointHint": "An welchem Glied – und wie hättest du anders reagieren können?"
+  },
+  "halt": {
+    "hungry": "Hungrig",
+    "angry": "Wütend",
+    "lonely": "Einsam",
+    "tired": "Müde",
+    "level0": "Gar nicht",
+    "level1": "Ein wenig",
+    "level2": "Ziemlich",
+    "level3": "Sehr"
+  },
+  "thought": {
+    "situation": "Situation",
+    "thought": "Automatischer Gedanke",
+    "emotion": "Gefühl",
+    "intensityBefore": "Intensität des Gefühls (vorher)",
+    "distortions": "Kognitive Verzerrungen",
+    "evidenceFor": "Was spricht für diesen Gedanken?",
+    "evidenceAgainst": "Was spricht dagegen?",
+    "alternative": "Alternativer Gedanke",
+    "intensityAfter": "Intensität des Gefühls (nachher)"
+  },
+  "scaling": {
+    "miracleAnswer": "Was wäre anders? Woran würdest du es merken?",
+    "where": "Wo stehst du heute auf einer Skala von 0–10?",
+    "zero": "am schlechtesten",
+    "ten": "das Wunder ist geschehen",
+    "already": "Was macht es zu einer {{n}} und nicht weniger?",
+    "plusOne": "Woran wirst du merken, dass du bei {{n}} bist?"
+  },
+  "rings": {
+    "me": "ICH",
+    "triggerStrong": "Stark",
+    "triggerMid": "Mittel",
+    "triggerWeak": "Schwach",
+    "supportClose": "Am nächsten",
+    "supportMid": "Wichtig",
+    "supportFar": "Weiter weg",
+    "tapToMove": "Tippen zum Verschieben",
+    "help": "Tippe auf ein Element der Karte, um es näher zur Mitte oder weiter weg zu verschieben.",
+    "addTrigger": "Auslöser hinzufügen…",
+    "addSupport": "Person oder Ort hinzufügen…"
+  },
+  "grounding": { "done": "Gut gemacht. Du bist im Hier und Jetzt." },
+  "breath": {
+    "ready": "Bereit?",
+    "inhale": "Einatmen",
+    "hold": "Halten",
+    "exhale": "Ausatmen",
+    "holdAfter": "Pause",
+    "cycles_one": "{{count}} Zyklus",
+    "cycles_other": "{{count}} Zyklen"
+  },
+  "skills": {
+    "back": "Alle Karten",
+    "roles": "Rollen",
+    "steps": "Schritte",
+    "tips": "Tipps",
+    "rating": "Wie ist es gelaufen? (Selbsteinschätzung)",
+    "hard": "schwierig",
+    "easy": "angenehm",
+    "type": {
+      "refusal": "Nein sagen",
+      "peerPressure": "Gruppendruck",
+      "conflict": "Konflikt",
+      "jobInterview": "Vorstellungsgespräch",
+      "askingForHelp": "Um Hilfe bitten",
+      "criticism": "Kritik"
+    }
+  }
+}

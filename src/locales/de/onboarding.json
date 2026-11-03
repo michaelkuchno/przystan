@@ -1,0 +1,65 @@
+{
+  "progress": "Schritt {{step}} von {{total}}",
+  "language": "Sprache",
+  "welcome": {
+    "title": "Willkommen bei Przystań",
+    "text": "Ein Arbeits- und Lernwerkzeug für Sozialpädagog/innen und Suchtfachpersonen. Wähle eine Sprache – du kannst sie jederzeit in den Einstellungen ändern.",
+    "offline": "Przystań funktioniert zu 100 % offline. Nichts wird ins Internet gesendet – deine Daten bleiben nur auf diesem Gerät."
+  },
+  "password": {
+    "title": "Passwort festlegen",
+    "text": "Das Passwort verschlüsselt alle Daten (AES-256). Du gibst es bei jedem Öffnen der App und nach der automatischen Sperre ein.",
+    "label": "Passwort oder PIN (mind. 6 Zeichen)",
+    "hint": "Am besten eignen sich einige Wörter oder ein längerer Satz.",
+    "repeat": "Passwort wiederholen",
+    "strength0": "Zu kurz",
+    "strength1": "Schwach – mach es länger oder vielfältiger",
+    "strength2": "Mittel",
+    "strength3": "Gut",
+    "strength4": "Sehr gut",
+    "lossTitle": "Passwort verloren = Daten verloren.",
+    "lossText": "Es gibt keine Möglichkeit, das Passwort wiederherzustellen, und keine Hintertür. Bewahre es sicher auf und erstelle regelmässig Sicherungen.",
+    "ack": "Ich verstehe, dass ich meine Daten ohne das Passwort nicht wiederherstellen kann.",
+    "ackRequired": "Bitte bestätige, dass du verstehst, wie das Passwort funktioniert.",
+    "tooShort": "Das Passwort muss mindestens 6 Zeichen haben.",
+    "mismatch": "Die Passwörter stimmen nicht überein.",
+    "create": "Verschlüsseln und weiter",
+    "creating": "Schlüssel wird erstellt…"
+  },
+  "modules": {
+    "title": "Was drin ist",
+    "text": "Ein einheitlicher Raum für die Arbeit mit vielen Menschen, für Präventionsplanung und fürs Lernen.",
+    "clients": {
+      "title": "{{Clients}}",
+      "text": "Sozialpädagogische Abklärung, individueller Förderplan, Rückfallprophylaxeplan, Zeitstrahl, Genogramm."
+    },
+    "tools": {
+      "title": "Werkzeuge für die gemeinsame Arbeit",
+      "text": "Urge Surfing, Bereitschaftslineal, Verhaltensanalyse (Kettenanalyse), HALT und mehr."
+    },
+    "prevention": {
+      "title": "Prävention",
+      "text": "Baukasten für Präventionsprogramme mit Evaluation und PDF-Export."
+    },
+    "simulator": {
+      "title": "Gesprächssimulator",
+      "text": "Übung in Motivierender Gesprächsführung mit Feedback."
+    },
+    "learn": {
+      "title": "Lernen",
+      "text": "Lernkarten mit verteilter Wiederholung und Prüfungsvorbereitung."
+    },
+    "disclaimer": "Przystań unterstützt Arbeit und Studium. Die App stellt keine medizinischen Diagnosen und trifft keine Entscheidungen anstelle einer Fachperson – alle Hinweise und Vorschläge dienen nur der Unterstützung."
+  },
+  "mode": {
+    "title": "Womit beginnst du?",
+    "text": "Die beiden Modi sind vollständig getrennt.",
+    "demo": "Übungsmodus (DEMO)",
+    "demoText": "Fiktive, realistische Fallbeispiele – ideal für Unterricht, Praktika und Präsentationen an der Hochschule.",
+    "practice": "Praxismodus",
+    "practiceText": "Echte Arbeit – ein leerer, verschlüsselter Bereich für die Menschen, mit denen du arbeitest.",
+    "changeLater": "Du kannst den Modus jederzeit in der Kopfzeile oder in den Einstellungen wechseln."
+  },
+  "country": "Arbeitsland",
+  "countryHint": "Davon hängen Hilfesystem, rechtliche Grundlagen, Notfallnummern und Übungsfälle ab. Unabhängig von der Sprache – du kannst es in den Einstellungen ändern."
+}

@@ -4,7 +4,8 @@ import { Network, HeartHandshake, ShieldAlert, Phone } from 'lucide-react';
 import { Page, PageHeader, Notice } from '@/components/ui/page';
 import { Card, List, ListRow, Avatar, EmptyState } from '@/components/ui/core';
 import { Tabs } from '@/components/ui/overlay';
-import { useContent } from '@/content/ContentProvider';
+import { crisisFor, useContent } from '@/content/ContentProvider';
+import { usePrefs } from '@/lib/prefs';
 import { useStore, all, get } from '@/lib/store';
 import { KnowledgeTile, KnowledgeCardView } from '@/features/knowledge/KnowledgeCardView';
 
@@ -13,7 +14,8 @@ export default function Family() {
   const { tab = 'knowledge' } = useParams();
   const nav = useNavigate();
   const { cards } = useContent('family');
-  const crisis = useContent('helpsystem').crisis.filter((c) => c.country === 'PL');
+  const { country } = usePrefs();
+  const crisis = crisisFor(useContent(), country);
   const genos = useStore(() => all('genogram'));
   const plans = useStore(() => all('familyPlan'));
   const violence = cards.find((c) => /violence|przemoc|niebiesk|blue/i.test(`${c.id} ${c.tags.join(' ')}`));
@@ -36,7 +38,7 @@ export default function Family() {
       content: (
         <div className="space-y-4">
           <Notice tone="accent" icon={<ShieldAlert aria-hidden />}>
-            <strong>{t('violenceUrgent')}</strong>
+            <strong>{t('violenceUrgent', { context: country })}</strong>
             <div className="mt-2 flex flex-wrap gap-2">
               {crisis.map((c) => (
                 <a

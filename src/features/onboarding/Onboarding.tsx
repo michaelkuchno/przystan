@@ -20,7 +20,8 @@ import { Field, TextInput } from '@/components/ui/form';
 import { Notice } from '@/components/ui/notice';
 import { cn } from '@/components/ui/cn';
 import { Logo } from '@/components/Logo';
-import { setPrefs, usePrefs, type Lang } from '@/lib/prefs';
+import { setPrefs, usePrefs, LANGS, COUNTRIES, type Lang } from '@/lib/prefs';
+import { LANG_META } from '@/lib/langs';
 import { changeLanguage } from '@/i18n';
 import { setupVault } from '@/lib/vault';
 import { passwordStrength } from '@/lib/crypto';
@@ -95,23 +96,49 @@ export function Onboarding({ hasVault, onDone }: { hasVault: boolean; onDone: ()
                 {t('welcome.title')}
               </h1>
               <p className="mt-3 text-muted">{t('welcome.text')}</p>
-              <div className="mt-8 grid grid-cols-2 gap-3" role="radiogroup" aria-label={t('language')}>
-                {(['pl', 'en'] as const).map((l) => (
+              <div className="mt-8 grid gap-3 sm:grid-cols-3" role="radiogroup" aria-label={t('language')}>
+                {LANGS.map((l) => (
                   <button
                     key={l}
                     type="button"
                     role="radio"
                     aria-checked={prefs.lang === l}
                     onClick={() => void pickLang(l)}
+                    lang={l}
                     className={cn(
-                      'min-h-20 rounded-2xl border-2 px-4 text-left transition',
+                      'flex min-h-16 items-center gap-3 rounded-2xl border-2 px-4 py-2 text-left transition',
                       prefs.lang === l ? 'border-primary bg-surface shadow' : 'border-line bg-surface/60',
                     )}
                   >
-                    <div className="text-2xl" aria-hidden>
-                      {l === 'pl' ? '🇵🇱' : '🇬🇧'}
-                    </div>
-                    <div className="font-semibold">{l === 'pl' ? 'Polski' : 'English'}</div>
+                    <span className="text-2xl" aria-hidden>
+                      {LANG_META[l].flag}
+                    </span>
+                    <span className="font-semibold">{LANG_META[l].name}</span>
+                  </button>
+                ))}
+              </div>
+
+              <h2 className="mt-8 font-sans text-base font-semibold" id="ob-country">
+                {t('country')}
+              </h2>
+              <p className="mt-1 text-sm text-muted">{t('countryHint')}</p>
+              <div className="mt-3 grid grid-cols-2 gap-3" role="radiogroup" aria-labelledby="ob-country">
+                {COUNTRIES.map((c) => (
+                  <button
+                    key={c}
+                    type="button"
+                    role="radio"
+                    aria-checked={prefs.country === c}
+                    onClick={() => void setPrefs({ country: c })}
+                    className={cn(
+                      'flex min-h-14 items-center gap-2 rounded-2xl border-2 px-3 py-2 text-left transition',
+                      prefs.country === c ? 'border-primary bg-surface shadow' : 'border-line bg-surface/60',
+                    )}
+                  >
+                    <span className="text-xl" aria-hidden>
+                      {c === 'PL' ? '🇵🇱' : '🇨🇭'}
+                    </span>
+                    <span className="font-semibold">{t(`help:country.${c}`)}</span>
                   </button>
                 ))}
               </div>

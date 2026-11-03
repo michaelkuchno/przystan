@@ -29,11 +29,26 @@
   "modules": {
     "title": "Co znajdziesz w środku",
     "text": "Jedna spójna przestrzeń do pracy z wieloma osobami, projektowania profilaktyki i nauki.",
-    "clients": { "title": "{{Clients}}", "text": "Diagnoza pedagogiczna, IPR, plan zapobiegania nawrotom, oś czasu, genogram." },
-    "tools": { "title": "Narzędzia do pracy razem", "text": "Surfowanie na fali głodu, linijka gotowości, analiza łańcuchowa, HALT i inne." },
-    "prevention": { "title": "Profilaktyka", "text": "Kreator programu profilaktycznego z ewaluacją i eksportem PDF." },
-    "simulator": { "title": "Symulator rozmowy", "text": "Trening dialogu motywującego z informacją zwrotną." },
-    "learn": { "title": "Nauka", "text": "Fiszki z powtórkami i tryb przygotowania do egzaminu." },
+    "clients": {
+      "title": "{{Clients}}",
+      "text": "Diagnoza pedagogiczna, IPR, plan zapobiegania nawrotom, oś czasu, genogram."
+    },
+    "tools": {
+      "title": "Narzędzia do pracy razem",
+      "text": "Surfowanie na fali głodu, linijka gotowości, analiza łańcuchowa, HALT i inne."
+    },
+    "prevention": {
+      "title": "Profilaktyka",
+      "text": "Kreator programu profilaktycznego z ewaluacją i eksportem PDF."
+    },
+    "simulator": {
+      "title": "Symulator rozmowy",
+      "text": "Trening dialogu motywującego z informacją zwrotną."
+    },
+    "learn": {
+      "title": "Nauka",
+      "text": "Fiszki z powtórkami i tryb przygotowania do egzaminu."
+    },
     "disclaimer": "Przystań wspiera pracę i naukę. Nie stawia diagnoz medycznych i nie podejmuje decyzji za specjalistę – wszystkie wskaźniki i podpowiedzi mają charakter pomocniczy."
   },
   "mode": {
@@ -44,5 +59,7 @@
     "practice": "Tryb praktyczny",
     "practiceText": "Prawdziwa praca – pusta, zaszyfrowana przestrzeń na dane osób, z którymi pracujesz.",
     "changeLater": "Tryb zmienisz w każdej chwili w nagłówku lub w ustawieniach."
-  }
+  },
+  "country": "Kraj pracy",
+  "countryHint": "Od niego zależą system pomocy, podstawy prawne, numery kryzysowe i przypadki szkoleniowe. Niezależny od języka – zmienisz go w Ustawieniach."
 }

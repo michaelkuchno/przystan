@@ -1,7 +1,12 @@
 {
   "title": "Help system",
   "subtitle": "Where to refer – institutions, pathways, legal basis (Poland)",
-  "tabs": { "referral": "Referral guide", "map": "System map", "law": "Legal basis", "crisis": "Crisis lines" },
+  "tabs": {
+    "referral": "Referral guide",
+    "map": "System map",
+    "law": "Legal basis",
+    "crisis": "Crisis lines"
+  },
   "question": "Question {{n}} of {{total}}",
   "restart": "Start over",
   "bestMatch": "Best match",
@@ -24,8 +29,12 @@
   },
   "lawNote": "A short summary in our own words – not a substitute for the statute. These are Polish laws; check the current legal status (e.g. isap.sejm.gov.pl).",
   "stateAsOf": "As of: {{date}}",
-  "country": { "PL": "Poland", "CH": "Switzerland" },
+  "country": {
+    "PL": "Poland",
+    "CH": "Switzerland"
+  },
   "call": "Call {{number}} – {{name}}",
   "crisisTitle": "Crisis help",
-  "crisisSubtitle": "If life is in danger call 112 (PL) or 144 (CH). Numbers to be verified before use."
+  "crisisSubtitle": "If life is in danger call 112 (PL) or 144 (CH). Numbers to be verified before use.",
+  "subtitle_CH": "Where to refer – institutions, pathways, legal basis (Switzerland, canton of Bern)"
 }

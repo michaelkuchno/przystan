@@ -13,5 +13,10 @@
   "relapseTitle": "Mój plan zapobiegania nawrotom",
   "relapseSubtitle": "Karta do noszenia przy sobie",
   "crisisLine": "W kryzysie: 116 123 (wsparcie emocjonalne dla dorosłych), 116 111 (dzieci i młodzież), 112 (zagrożenie życia). Szwajcaria: 143, 147, 144.",
-  "readaptationTitle": "Plan readaptacji"
+  "readaptationTitle": "Plan readaptacji",
+  "crisisLine_CH": "W kryzysie (Szwajcaria): 143 (Die Dargebotene Hand), 147 (dzieci i młodzież), 144 (pogotowie), 117 (policja), 112. Polska: 116 123, 116 111.",
+  "anon": {
+    "person": "[osoba]",
+    "removed": "[usunięto]"
+  }
 }

@@ -1,6 +1,7 @@
 import i18n from '@/i18n';
 
-const locale = () => (i18n.language === 'en' ? 'en-GB' : 'pl-PL');
+const LOCALES: Record<string, string> = { pl: 'pl-PL', en: 'en-GB', de: 'de-CH' };
+export const locale = () => LOCALES[i18n.language] ?? 'pl-PL';
 
 /** Parses "YYYY-MM-DD" as local date (not UTC) and full ISO timestamps as-is. */
 export function parseDate(iso: string): Date {

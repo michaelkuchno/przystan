@@ -1,0 +1,828 @@
+{
+  "intro": "Dieser Wegweiser ordnet das Schweizer Hilfesystem für Menschen mit Suchtproblemen, ihre Angehörigen und Menschen, die Gewalt erleben – mit Fokus auf den deutschsprachigen Kanton Bern. Die Schweizer Drogenpolitik beruht auf vier Säulen: Prävention, Therapie, Schadensminderung und Repression; sie sind im Betäubungsmittelgesetz verankert und werden durch die Nationale Strategie Sucht des Bundes ergänzt. Der Bund setzt den gesetzlichen Rahmen und koordiniert (Bundesamt für Gesundheit), die Kantone sind für die Suchthilfe vor Ort zuständig. Im Kanton Bern steuert und finanziert die Gesundheits-, Sozial- und Integrationsdirektion (GSI) die Suchthilfe über Leistungsverträge mit Fachstellen wie der Berner Gesundheit, Contact oder dem Blauen Kreuz; Grundlage sind das Suchthilfekonzept des Kantons und das Gesetz über die sozialen Leistungsangebote (SLG). Die Gemeinden tragen mit Sozialdiensten, Schulsozialarbeit und Jugendarbeit bei. Der Zuweisungsassistent schlägt mögliche Wege vor – die Entscheidung trifft immer die Fachperson. Namen, Zuständigkeiten und Angebote ändern sich: Prüfe vor einer Zuweisung die aktuellen Angaben der Stelle vor Ort.",
+  "institutions": [
+    {
+      "id": "chBag",
+      "name": "Bundesamt für Gesundheit (BAG)",
+      "category": "central",
+      "role": "Bundesbehörde, die die nationale Suchtpolitik koordiniert: Nationale Strategie Sucht, Vollzug des Betäubungsmittelgesetzes auf Bundesebene, Bewilligungen (z. B. Pilotversuche mit Cannabis, heroingestützte Behandlung), Finanzierung nationaler Projekte und Monitoring.",
+      "forWhom": "Fachpersonen, Kantone und Organisationen – keine Beratung von Einzelpersonen.",
+      "howToAccess": "Informationen, Grundlagenberichte und Faktenblätter sind öffentlich zugänglich; für Einzelfälle sind die kantonalen und kommunalen Stellen zuständig.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chSuchtSchweiz",
+      "name": "Sucht Schweiz",
+      "category": "central",
+      "role": "Nationales Kompetenzzentrum (Stiftung) für Prävention und Forschung zu Alkohol, Tabak, illegalen Drogen, Geldspiel und digitalen Medien; Informationsmaterial für Jugendliche, Eltern, Schulen und Fachleute sowie Studien wie die Schülerbefragung HBSC.",
+      "forWhom": "Fachpersonen, Lehrpersonen, Eltern, Jugendliche und Betroffene, die sich informieren möchten.",
+      "howToAccess": "Broschüren und Unterrichtsmaterial meist kostenlos; telefonische Auskünfte für Ratsuchende und Verweis an regionale Fachstellen.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chInfodrog",
+      "name": "Infodrog – Schweizerische Koordinations- und Fachstelle Sucht",
+      "category": "central",
+      "role": "Im Auftrag des BAG tätige Fachstelle, die Wissen und Angebote in Suchthilfe und Schadensminderung vernetzt; betreibt das Online-Verzeichnis der Suchthilfeangebote (Suchtindex) und technisch die Beratungsplattform SafeZone.ch, fördert Qualität (QuaTheDA) und koordiniert Drug-Checking-Warnungen.",
+      "forWhom": "Fachpersonen, die ein passendes Angebot suchen oder sich weiterbilden wollen.",
+      "howToAccess": "Das Angebotsverzeichnis ist frei online nutzbar (Suche nach Region, Substanz, Angebotsart); Fachtagungen und Publikationen sind öffentlich.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chSafeZone",
+      "name": "SafeZone.ch – Online-Suchtberatung",
+      "category": "phone",
+      "role": "Nationale Plattform für anonyme Online-Beratung zu Suchtfragen (Mail, Chat, Selbsttests, Informationen), getragen von Bund, Kantonen und Fachstellen; Beratung durch Fachpersonen regionaler Suchtfachstellen.",
+      "forWhom": "Betroffene, Angehörige, Jugendliche und Fachpersonen – besonders, wenn der Weg in eine Beratungsstelle (noch) zu gross ist.",
+      "howToAccess": "Kostenlos und anonym online; keine Anmeldung bei einer Behörde nötig.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chBernerGesundheit",
+      "name": "Berner Gesundheit (Stiftung für Gesundheitsförderung und Suchtfragen)",
+      "category": "treatment",
+      "role": "Im Auftrag des Kantons Bern: ambulante Suchtberatung und -therapie für Betroffene und Angehörige (Alkohol, Drogen, Medikamente, Geldspiel, digitale Medien), Früherkennung und Frühintervention, Prävention und Sexualpädagogik in Schulen, Beratung von Fachpersonen; regionale Zentren im ganzen Kanton.",
+      "forWhom": "Jugendliche und Erwachsene mit Suchtfragen, Eltern und Angehörige, Schulen, Gemeinden und Betriebe.",
+      "howToAccess": "Direkte Anmeldung ohne Überweisung, telefonisch oder online; Beratung vertraulich und für Personen mit Wohnsitz im Kanton Bern in der Regel kostenlos (aktuelle Regelung prüfen).",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chBlauesKreuz",
+      "name": "Blaues Kreuz Bern-Solothurn-Freiburg",
+      "category": "treatment",
+      "role": "Fachstellen für Alkohol- und Suchtberatung, Angehörigenberatung, Gruppen- und Freizeitangebote sowie Präventionsprojekte für Jugendliche; das Blaue Kreuz hat eine lange Tradition in der Alkoholhilfe.",
+      "forWhom": "Menschen mit Alkoholproblemen und anderen Suchtfragen sowie ihre Angehörigen.",
+      "howToAccess": "Direkte Anmeldung; Beratung vertraulich, für Personen mit Wohnsitz im Kanton Bern gemäss eigenen Angaben kostenlos.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chContact",
+      "name": "Contact – Stiftung für Suchthilfe (Kontakt- und Anlaufstellen)",
+      "category": "local",
+      "role": "Schadensminderung und Überlebenshilfe im Auftrag des Kantons: Kontakt- und Anlaufstellen mit Konsumräumen (u. a. Bern, Biel, Thun), Abgabe von sterilem Material, Gassenarbeit, Beratung, Wohn- und Arbeitsangebote, Begleitung in Substitution.",
+      "forWhom": "Erwachsene, die illegale Substanzen konsumieren, oft in prekären Lebenslagen.",
+      "howToAccess": "Niederschwellig: Kontakt- und Anlaufstellen ohne Termin während der Öffnungszeiten; Zutrittsregeln (z. B. Alter, Wohnsitz) vorab prüfen; Beratung kostenlos.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chDrugChecking",
+      "name": "Drug Checking Bern (Contact)",
+      "category": "local",
+      "role": "Chemische Analyse von mitgebrachten Substanzen, kombiniert mit einem obligatorischen Beratungsgespräch; Warnungen vor gefährlichen Proben werden national verbreitet.",
+      "forWhom": "Erwachsene, die Partydrogen oder andere Substanzen konsumieren und Risiken senken wollen.",
+      "howToAccess": "Anonym und meist kostenlos zu festen Zeiten an einem stationären Standort in Bern, teils auch mobil an Veranstaltungen; Standort und Zeiten vorab prüfen.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chResidential",
+      "name": "Stationäre Suchttherapie (z. B. Klinik Südhang, therapeutische Wohngemeinschaften)",
+      "category": "treatment",
+      "role": "Suchtfachkliniken für Entzug und Entwöhnung sowie sozialtherapeutische Einrichtungen für längere stationäre Therapie, oft mit Arbeits- und Wohntraining und Nachsorge.",
+      "forWhom": "Menschen, für die ambulante Hilfe nicht reicht, die Distanz zum Umfeld brauchen oder nach einem Entzug Stabilität aufbauen wollen.",
+      "howToAccess": "Meist über Hausärzt/in, Psychiatrie oder Suchtberatung; Klinikaufenthalte über die Krankenversicherung, sozialtherapeutische Angebote teils über Sozialhilfe bzw. Kostengutsprache des Kantons (Indikation und Finanzierung vorab klären).",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chGp",
+      "name": "Hausärzt/innen und Substitutionsbehandlung (Opioidagonistentherapie)",
+      "category": "treatment",
+      "role": "Erste medizinische Anlaufstelle: Abklärung, Behandlung von Folgeerkrankungen, ambulanter Entzug, Verschreibung von Methadon, Buprenorphin u. a. im Rahmen einer Opioidagonistentherapie; heroingestützte Behandlung erfolgt in spezialisierten Zentren.",
+      "forWhom": "Alle Erwachsenen; Menschen mit Opioidabhängigkeit; Jugendliche über Kinder- und Hausärzt/innen.",
+      "howToAccess": "Termin in der Praxis; Kosten über die obligatorische Krankenversicherung (Franchise und Selbstbehalt); Substitution braucht eine kantonale Bewilligung, die die Ärztin bzw. der Arzt einholt.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chUpd",
+      "name": "Universitäre Psychiatrische Dienste Bern (UPD), inkl. Kinder- und Jugendpsychiatrie",
+      "category": "treatment",
+      "role": "Psychiatrische Grundversorgung und Spezialangebote für die Region Bern: Notfallpsychiatrie, Suchtpsychiatrie (ambulant und stationär), Behandlung von Doppeldiagnosen, Kinder- und Jugendpsychiatrie; in anderen Regionen des Kantons übernehmen regionale psychiatrische Dienste diese Aufgabe.",
+      "forWhom": "Menschen in psychischen Krisen, mit Sucht und psychischer Erkrankung, Kinder und Jugendliche mit psychiatrischem Behandlungsbedarf.",
+      "howToAccess": "Im Notfall rund um die Uhr über den psychiatrischen Notfalldienst bzw. das Notfallzentrum; sonst Zuweisung durch Hausärzt/in oder Fachstelle; Kosten über die Krankenversicherung.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chKesb",
+      "name": "KESB – Kindes- und Erwachsenenschutzbehörde",
+      "category": "social",
+      "role": "Interdisziplinäre Fachbehörde, die bei Gefährdung des Kindeswohls oder bei Schutzbedarf von Erwachsenen abklärt und Massnahmen anordnet (z. B. Beistandschaft, Weisungen, Platzierung, fürsorgerische Unterbringung); im Kanton Bern regional organisiert.",
+      "forWhom": "Kinder und Jugendliche, deren Wohl gefährdet ist, sowie urteilsunfähige oder schutzbedürftige Erwachsene.",
+      "howToAccess": "Gefährdungsmeldung schriftlich oder telefonisch an die regional zuständige KESB – durch Fachpersonen, Angehörige oder Betroffene selbst; vorgängige anonyme Fachberatung ist oft möglich.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chSozialdienst",
+      "name": "Sozialdienst der Gemeinde (inkl. Sozialhilfe und Schuldenberatung)",
+      "category": "social",
+      "role": "Wirtschaftliche und persönliche Sozialhilfe, Beratung bei Wohnungs-, Arbeits- und Finanzproblemen, Abklärungen im Auftrag der KESB, Führung von Beistandschaften; Vermittlung an Schuldenberatung und Suchtfachstellen.",
+      "forWhom": "Einwohner/innen der Gemeinde in sozialen oder finanziellen Notlagen und ihre Familien.",
+      "howToAccess": "Anmeldung beim Sozialdienst der Wohngemeinde (oft regionale Sozialdienste); Beratung kostenlos, Sozialhilfe nach Bedarfsprüfung.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chSchulsozialarbeit",
+      "name": "Schulsozialarbeit",
+      "category": "education",
+      "role": "Sozialarbeiter/innen an der Schule: Beratung von Schüler/innen, Eltern und Lehrpersonen, Früherkennung von Gefährdungen (auch Konsum), Krisenintervention, Vernetzung mit Fachstellen und KESB.",
+      "forWhom": "Schüler/innen, Eltern und Lehrpersonen der jeweiligen Schule.",
+      "howToAccess": "Direkt im Schulhaus, ohne Anmeldung über Dritte; kostenlos; Angebot und Organisation je nach Gemeinde.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chErziehungsberatung",
+      "name": "Erziehungsberatung des Kantons Bern",
+      "category": "education",
+      "role": "Kantonale Fachstelle für Fragen zu Erziehung, Entwicklung und Familie: Beratung von Eltern und Kindern, psychologische Abklärungen, Unterstützung in belasteten Familiensituationen.",
+      "forWhom": "Kinder, Jugendliche, Eltern und Bezugspersonen; auch Familien mit einem suchtbelasteten Elternteil.",
+      "howToAccess": "Direkte Anmeldung durch Eltern oder Jugendliche, auch auf Hinweis der Schule; kostenlos.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chJugendanwaltschaft",
+      "name": "Jugendanwaltschaft des Kantons Bern",
+      "category": "justice",
+      "role": "Untersucht Straftaten von Jugendlichen (10–18 Jahre), urteilt in den meisten Fällen selbst und vollzieht Schutzmassnahmen und Strafen nach dem Jugendstrafrecht; arbeitet mit Sozialarbeiter/innen und Fachstellen zusammen.",
+      "forWhom": "Jugendliche in einem Strafverfahren und ihre Eltern.",
+      "howToAccess": "Das Verfahren wird durch Anzeige oder Polizeirapport eröffnet; Fachpersonen können der fallführenden Person Informationen und Hilfsangebote einbringen.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chBvd",
+      "name": "Bewährungs- und Vollzugsdienste (BVD), Amt für Justizvollzug Kanton Bern",
+      "category": "justice",
+      "role": "Vollzug von Strafurteilen und Massnahmen, Bewährungshilfe, Kontrolle von Weisungen (z. B. Suchtbehandlung, Abstinenzkontrollen), Vollzugsplanung und Unterstützung bei der Wiedereingliederung nach dem Freiheitsentzug.",
+      "forWhom": "Erwachsene mit bedingter Strafe, Weisungen, Massnahmen (z. B. Suchtbehandlung nach Art. 60 StGB) oder nach bedingter Entlassung.",
+      "howToAccess": "Zuweisung durch Gericht oder Vollzugsbehörde; Fachpersonen nehmen mit Zustimmung der Klient/in Kontakt zur fallverantwortlichen Person auf.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chPolice",
+      "name": "Kantonspolizei Bern",
+      "category": "justice",
+      "role": "Gefahrenabwehr und Strafverfolgung; interveniert bei häuslicher Gewalt (kann Wegweisung und Fernhaltung verfügen), leitet Meldungen an KESB und Opferhilfe weiter; Jugenddienst und Präventionsangebote.",
+      "forWhom": "Alle Menschen in akuter Gefahr sowie Betroffene von Straftaten.",
+      "howToAccess": "Notruf 117 oder 112; nicht dringende Anliegen auf einem Polizeiposten.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chOpferhilfe",
+      "name": "Opferhilfe-Beratungsstellen (Kanton Bern: Lantana, Vista) und Frauenhäuser",
+      "category": "social",
+      "role": "Beratung, Schutz und finanzielle Unterstützung (z. B. Anwalts- oder Therapiekosten, Notunterkunft) für Opfer von Straftaten nach dem Opferhilfegesetz, insbesondere bei häuslicher und sexueller Gewalt; Frauenhäuser bieten Schutzplätze.",
+      "forWhom": "Gewaltbetroffene Erwachsene, Kinder und Jugendliche sowie Angehörige.",
+      "howToAccess": "Direkt, vertraulich und kostenlos, auch ohne Strafanzeige; Frauenhäuser nehmen rund um die Uhr auf (Platzsituation erfragen).",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chGassenarbeit",
+      "name": "Gassenarbeit, Notschlafstellen und Tagestreffpunkte",
+      "category": "local",
+      "role": "Aufsuchende Soziale Arbeit im öffentlichen Raum, Notschlafstellen, Gassenküchen und Tagestreffs; Überlebenshilfe, Beziehungsaufbau und Vermittlung an Sozialdienst, Medizin und Suchthilfe (in Bern u. a. kirchliche und städtische Angebote).",
+      "forWhom": "Obdachlose und armutsbetroffene Menschen, oft mit Sucht- oder psychischen Problemen.",
+      "howToAccess": "Niederschwellig, ohne Termin; Notschlafstellen gegen geringen Beitrag oder Kostengutsprache des Sozialdienstes.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chAa",
+      "name": "Anonyme Alkoholiker (AA)",
+      "category": "selfHelp",
+      "role": "Selbsthilfegemeinschaft nach dem Zwölf-Schritte-Programm; regelmässige Meetings in vielen Gemeinden.",
+      "forWhom": "Menschen, die mit dem Trinken aufhören möchten.",
+      "howToAccess": "Kostenlos, ohne Anmeldung; offene Meetings können auch Angehörige und Fachpersonen besuchen.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chNa",
+      "name": "Narcotics Anonymous (NA)",
+      "category": "selfHelp",
+      "role": "Selbsthilfegemeinschaft für Menschen mit Drogenabhängigkeit nach dem Zwölf-Schritte-Programm.",
+      "forWhom": "Menschen, die clean werden oder bleiben möchten.",
+      "howToAccess": "Kostenlos, ohne Anmeldung; Meetings in grösseren Städten (u. a. Bern), teils auch online.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chAlAnon",
+      "name": "Al-Anon und Alateen",
+      "category": "selfHelp",
+      "role": "Selbsthilfegruppen für Angehörige und Freund/innen von Menschen mit Alkoholproblemen; Alateen für Jugendliche.",
+      "forWhom": "Partner/innen, Eltern, Kinder und andere Angehörige.",
+      "howToAccess": "Kostenlos, ohne Anmeldung; Gruppenverzeichnis über die Schweizer Al-Anon-Dienststelle.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chSelbsthilfe",
+      "name": "Selbsthilfe Schweiz und regionales Selbsthilfezentrum Bern",
+      "category": "selfHelp",
+      "role": "Vermittlung und Gründungsbegleitung von Selbsthilfegruppen zu vielen Themen, auch Sucht, Angehörige, Geldspiel und psychische Gesundheit.",
+      "forWhom": "Betroffene und Angehörige, die den Austausch mit anderen suchen.",
+      "howToAccess": "Kostenlose Auskunft und Vermittlung durch das regionale Selbsthilfezentrum.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chDargeboteneHand",
+      "name": "Die Dargebotene Hand (Telefon 143)",
+      "category": "phone",
+      "role": "Anonyme Telefon- und Onlineberatung rund um die Uhr für Menschen in Krisen, mit Sorgen oder Suizidgedanken.",
+      "forWhom": "Erwachsene (und alle, die jemanden zum Reden brauchen).",
+      "howToAccess": "Telefon 143, Chat und Mail; anonym und vertraulich, Anruf kostet höchstens einen geringen Grundtarif.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chProJuventute",
+      "name": "Pro Juventute – Beratung + Hilfe 147",
+      "category": "phone",
+      "role": "Beratung rund um die Uhr für Kinder und Jugendliche per Telefon, Chat, SMS und Mail – zu Familie, Schule, Gewalt, Sucht, Sexualität und Suizidgedanken; separates Angebot für Eltern.",
+      "forWhom": "Kinder und Jugendliche in der ganzen Schweiz.",
+      "howToAccess": "Telefon 147, kostenlos, vertraulich; erscheint nicht auf der Telefonrechnung.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chSosSpielsucht",
+      "name": "SOS-Spielsucht und Fachberatung Geldspiel",
+      "category": "phone",
+      "role": "Gesamtschweizerische Helpline und Online-Beratung zu Glücksspiel, Sportwetten und Online-Casinos; Informationen zu Spielsperren und Vermittlung an kantonale Fachstellen (im Kanton Bern u. a. Berner Gesundheit).",
+      "forWhom": "Spielende, Angehörige und Fachpersonen.",
+      "howToAccess": "Kostenlose, anonyme Helpline und Online-Beratung; Weitervermittlung an die regionale Fachstelle.",
+      "reviewStatus": "do_weryfikacji"
+    }
+  ],
+  "referral": {
+    "questions": [
+      {
+        "id": "age",
+        "text": "Wie alt ist die betroffene Person?",
+        "options": [
+          {
+            "id": "minor",
+            "label": "Minderjährig (unter 18)"
+          },
+          {
+            "id": "adult",
+            "label": "Erwachsen"
+          }
+        ]
+      },
+      {
+        "id": "problem",
+        "text": "Worum geht es hauptsächlich?",
+        "options": [
+          {
+            "id": "alcohol",
+            "label": "Alkohol"
+          },
+          {
+            "id": "drugs",
+            "label": "Drogen / andere Substanzen"
+          },
+          {
+            "id": "behavioural",
+            "label": "Verhaltenssucht (Geldspiel, Gaming, Internet)"
+          },
+          {
+            "id": "codependency",
+            "label": "Angehörige einer suchtkranken Person"
+          },
+          {
+            "id": "violence",
+            "label": "Häusliche Gewalt"
+          }
+        ]
+      },
+      {
+        "id": "context",
+        "text": "In welchem Kontext zeigt sich die Situation?",
+        "options": [
+          {
+            "id": "school",
+            "label": "Schule"
+          },
+          {
+            "id": "justice",
+            "label": "Justiz (Jugendanwaltschaft, Staatsanwaltschaft, Bewährungshilfe)"
+          },
+          {
+            "id": "childProtection",
+            "label": "Kindesschutz (Kindeswohl gefährdet, KESB)"
+          },
+          {
+            "id": "afterPrison",
+            "label": "Nach Haft oder Heimaufenthalt"
+          },
+          {
+            "id": "homeless",
+            "label": "Obdachlosigkeit"
+          },
+          {
+            "id": "family",
+            "label": "Familie"
+          },
+          {
+            "id": "none",
+            "label": "Kein besonderer Kontext"
+          }
+        ]
+      },
+      {
+        "id": "urgency",
+        "text": "Wie dringend ist die Situation?",
+        "options": [
+          {
+            "id": "crisis",
+            "label": "Krise – akute Gefahr"
+          },
+          {
+            "id": "planned",
+            "label": "Geplante Hilfe"
+          }
+        ]
+      }
+    ],
+    "rules": [
+      {
+        "id": "chCrisisAny",
+        "title": "Krise – akute Gefahr",
+        "when": {
+          "urgency": ["crisis"]
+        },
+        "institutionIds": ["chPolice", "chUpd", "chDargeboteneHand", "chProJuventute"],
+        "steps": [
+          "Bei Gefahr für Leben oder Gesundheit (auch Suizidgedanken mit konkretem Plan, Vergiftung, Überdosis) sofort 144 anrufen; bei Gewalt oder Bedrohung 117; 112 funktioniert ebenfalls.",
+          "Bleib bei der Person, wenn das für dich sicher ist; entferne gefährliche Gegenstände und Substanzen.",
+          "Bei einer psychischen Krise ohne unmittelbare Lebensgefahr: psychiatrischen Notfalldienst bzw. Notfallarzt kontaktieren.",
+          "Nach der akuten Phase: 143 (Erwachsene) oder 147 (Kinder und Jugendliche) als Gesprächsangebot nennen und eine Anschlusslösung vereinbaren.",
+          "Halte fest, was geschehen ist, und informiere deine Vorgesetzten nach dem Ablauf deiner Institution."
+        ],
+        "note": "Dieser Weg hat Vorrang vor allen anderen."
+      },
+      {
+        "id": "chOverdoseCrisis",
+        "title": "Vergiftung oder Überdosis",
+        "when": {
+          "problem": ["alcohol", "drugs"],
+          "urgency": ["crisis"]
+        },
+        "institutionIds": ["chUpd", "chGp", "chContact"],
+        "steps": [
+          "Ruf 144 an – sag, was und wie viel vermutlich konsumiert wurde.",
+          "Prüfe Bewusstsein und Atmung; bei Bewusstlosigkeit mit Atmung stabile Seitenlage, ohne Atmung Herz-Lungen-Wiederbelebung nach Anleitung der Sanität.",
+          "Bei Verdacht auf Opioid-Überdosis: Naloxon verwenden, falls vorhanden und du darin geschult bist.",
+          "Lass die Person nicht allein, gib ihr nichts zu trinken oder zu essen und bewahre Reste der Substanz für die Sanität auf.",
+          "Danach: Anschluss an Hausärzt/in, Suchtpsychiatrie oder Kontakt- und Anlaufstelle organisieren."
+        ],
+        "note": "Hilfe zu holen hat Vorrang – die Sorge vor Polizei oder Strafe darf die Alarmierung nicht verzögern."
+      },
+      {
+        "id": "chViolenceCrisis",
+        "title": "Häusliche Gewalt – akute Gefahr",
+        "when": {
+          "problem": ["violence"],
+          "urgency": ["crisis"]
+        },
+        "institutionIds": ["chPolice", "chOpferhilfe", "chKesb"],
+        "steps": [
+          "Ruf 117 an – die Polizei kann die gewaltausübende Person aus der Wohnung wegweisen und ein Rückkehr- und Kontaktverbot verfügen.",
+          "Sorge für einen sicheren Ort für die gewaltbetroffene Person und die Kinder (z. B. Frauenhaus, Notunterkunft).",
+          "Weise auf die Opferhilfe-Beratungsstelle hin; sie hilft auch ohne Strafanzeige.",
+          "Sind Kinder betroffen, meldet die Polizei dies der KESB; kläre, ob du zusätzlich selbst eine Gefährdungsmeldung machen musst."
+        ]
+      },
+      {
+        "id": "chViolenceAny",
+        "title": "Häusliche Gewalt – Hilfeplan",
+        "when": {
+          "problem": ["violence"]
+        },
+        "institutionIds": ["chOpferhilfe", "chPolice", "chSozialdienst", "chDargeboteneHand"],
+        "steps": [
+          "Sprich unter vier Augen mit der Person; dokumentiere Fakten ohne Wertung.",
+          "Vermittle an die Opferhilfe-Beratungsstelle (vertraulich, kostenlos, auch ohne Anzeige).",
+          "Erarbeite mit der Person einen Sicherheitsplan (wichtige Nummern, Dokumente, sicherer Ort).",
+          "Kläre, ob Alkohol oder Drogen eine Rolle spielen, und biete für die gewaltausübende Person Lernprogramme bzw. Suchtberatung an – getrennt von der Betroffenen."
+        ],
+        "note": "Keine gemeinsamen Gespräche oder Mediation mit der gewaltausübenden Person vorschlagen, solange Gefahr besteht."
+      },
+      {
+        "id": "chViolenceMinor",
+        "title": "Gewalt gegen ein Kind oder eine/n Jugendliche/n",
+        "when": {
+          "age": ["minor"],
+          "problem": ["violence"]
+        },
+        "institutionIds": ["chKesb", "chSchulsozialarbeit", "chOpferhilfe", "chProJuventute", "chErziehungsberatung"],
+        "steps": [
+          "Hör ruhig zu, versprich keine Geheimhaltung und stelle keine Suggestivfragen – die Befragung ist Sache von Fachstellen und Polizei.",
+          "Dokumentiere wörtlich, was das Kind gesagt hat, mit Datum und Situation.",
+          "Bei Gefährdung des Kindeswohls: Gefährdungsmeldung an die KESB (Fachpersonen mit regelmässigem Kontakt zu Kindern sind meldepflichtig, sofern sie nicht dem Berufsgeheimnis unterstehen); bei Verdacht auf eine Straftat zusätzlich Polizei.",
+          "Bezieh die Kinderschutzgruppe bzw. Fachberatung zum Kindesschutz ein, wenn du unsicher bist, und nenne dem Kind die Nummer 147."
+        ]
+      },
+      {
+        "id": "chChildProtection",
+        "title": "Kindeswohl gefährdet (z. B. suchtkranke Eltern)",
+        "when": {
+          "context": ["childProtection"]
+        },
+        "institutionIds": ["chKesb", "chSozialdienst", "chErziehungsberatung", "chBernerGesundheit"],
+        "steps": [
+          "Beschreibe konkret, was du beobachtest (Versorgung, Aufsicht, Schulbesuch, Konsum in Anwesenheit der Kinder) – getrennt von Vermutungen.",
+          "Sprich, wenn es die Sicherheit des Kindes nicht gefährdet, offen mit den Eltern über deine Sorge und über mögliche Hilfen.",
+          "Hol bei Unsicherheit eine anonyme Fachberatung bei der KESB oder einer Kinderschutzfachstelle ein.",
+          "Reicht freiwillige Hilfe nicht aus, mach eine schriftliche Gefährdungsmeldung an die regional zuständige KESB und informiere die Eltern in der Regel darüber.",
+          "Vermittle den Eltern parallel Sucht- und Erziehungsberatung."
+        ],
+        "note": "Die Gefährdungsmeldung ist kein Strafverfahren: Die KESB klärt ab und ordnet nur so viel an wie nötig."
+      },
+      {
+        "id": "chMinorSubstanceSchool",
+        "title": "Jugendliche/r konsumiert – Situation in der Schule",
+        "when": {
+          "age": ["minor"],
+          "problem": ["alcohol", "drugs"],
+          "context": ["school"]
+        },
+        "institutionIds": ["chSchulsozialarbeit", "chBernerGesundheit", "chErziehungsberatung", "chSafeZone"],
+        "steps": [
+          "Kläre die akute Situation (Gefahr? Intoxikation?) und sorge für Sicherheit.",
+          "Führe mit der/dem Jugendlichen ein ruhiges Gespräch über Beobachtungen, nicht über Schuld; bezieh die Schulsozialarbeit ein.",
+          "Informiere die Eltern, ausser es gibt Hinweise, dass dies das Kind gefährdet.",
+          "Nutze das Früherkennungs- und Frühinterventions-Vorgehen der Schule und vermittle an die Jugendberatung der Berner Gesundheit.",
+          "Halte dich an das Krisenkonzept der Schule; eine Polizeimeldung ist nicht automatisch erforderlich – kläre das mit der Schulleitung."
+        ],
+        "note": "Nach BetmG Art. 3c dürfen Fachleute suchtbedingte Gefährdungen bei Jugendlichen einer Behandlungs- oder Sozialhilfestelle melden."
+      },
+      {
+        "id": "chMinorJustice",
+        "title": "Jugendliche/r im Jugendstrafverfahren",
+        "when": {
+          "age": ["minor"],
+          "context": ["justice"]
+        },
+        "institutionIds": ["chJugendanwaltschaft", "chBernerGesundheit", "chKesb", "chSchulsozialarbeit"],
+        "steps": [
+          "Kläre mit der/dem Jugendlichen und den Eltern, welche Stelle das Verfahren führt und ob bereits eine Schutzmassnahme besteht.",
+          "Nimm mit Einverständnis Kontakt zur fallführenden Person der Jugendanwaltschaft auf und bring deine Einschätzung und laufende Hilfen ein.",
+          "Schlage bei Suchtthemen eine Abklärung oder Beratung bei einer Suchtfachstelle vor (kann als Weisung oder ambulante Behandlung angeordnet werden).",
+          "Sorge für Kontinuität zwischen Schule, Familie und Justiz; vermeide Doppelspurigkeit mit einer KESB-Massnahme."
+        ]
+      },
+      {
+        "id": "chMinorSubstance",
+        "title": "Jugendliche/r mit Alkohol- oder Drogenkonsum",
+        "when": {
+          "age": ["minor"],
+          "problem": ["alcohol", "drugs"]
+        },
+        "institutionIds": ["chBernerGesundheit", "chSafeZone", "chProJuventute", "chUpd", "chGp"],
+        "steps": [
+          "Führe ein motivierendes Gespräch: Was erlebt die/der Jugendliche als Problem, was als Nutzen des Konsums?",
+          "Bezieh die Eltern ein – mit Einverständnis der/des Jugendlichen oder wenn die Gefährdung es erfordert; urteilsfähige Jugendliche können eine Beratung auch selbst in Anspruch nehmen.",
+          "Vermittle an die Jugend- und Elternberatung der Berner Gesundheit; als niederschwelliger Einstieg eignet sich SafeZone.ch.",
+          "Bei psychischen Begleitsymptomen (Depression, Selbstverletzung, Psychose) an Kinder- und Jugendpsychiatrie oder Kinderärzt/in weiterweisen.",
+          "Bei ernsthafter Gefährdung des Kindeswohls an eine Gefährdungsmeldung an die KESB denken."
+        ]
+      },
+      {
+        "id": "chMinorHomeless",
+        "title": "Jugendliche/r ohne sicheres Zuhause",
+        "when": {
+          "age": ["minor"],
+          "context": ["homeless"]
+        },
+        "institutionIds": ["chKesb", "chProJuventute", "chSozialdienst", "chOpferhilfe"],
+        "steps": [
+          "Sorge zuerst für einen sicheren Schlafplatz für die kommende Nacht (Notunterkunft für Jugendliche, Vertrauenspersonen).",
+          "Kläre, warum die/der Jugendliche nicht zu Hause ist (Gewalt? Konflikt? Rauswurf?).",
+          "Informiere die KESB bzw. bei Dringlichkeit ausserhalb der Bürozeiten die Polizei – Minderjährige brauchen eine verantwortliche Stelle.",
+          "Nenne die Nummer 147 und vereinbare einen nächsten Kontakt."
+        ]
+      },
+      {
+        "id": "chAdultAlcohol",
+        "title": "Erwachsene Person mit Alkoholproblem",
+        "when": {
+          "age": ["adult"],
+          "problem": ["alcohol"]
+        },
+        "institutionIds": ["chBernerGesundheit", "chBlauesKreuz", "chGp", "chResidential", "chAa"],
+        "steps": [
+          "Führe ein motivierendes Gespräch und kläre gemeinsam das Ziel (Abstinenz oder kontrollierter Konsum).",
+          "Vermittle an eine ambulante Suchtberatung (Berner Gesundheit, Blaues Kreuz) – ohne Überweisung möglich.",
+          "Bei Entzugssymptomen oder hohem Konsum: medizinische Abklärung bei der Hausärztin bzw. dem Hausarzt; ein unbegleiteter Entzug kann gefährlich sein.",
+          "Je nach Bedarf stationärer Entzug bzw. Entwöhnung, danach ambulante Nachsorge.",
+          "Biete den Besuch eines offenen AA-Meetings an."
+        ]
+      },
+      {
+        "id": "chAdultAlcoholFamily",
+        "title": "Alkoholproblem in der Familie",
+        "when": {
+          "age": ["adult"],
+          "problem": ["alcohol"],
+          "context": ["family"]
+        },
+        "institutionIds": ["chBernerGesundheit", "chBlauesKreuz", "chAlAnon", "chErziehungsberatung"],
+        "steps": [
+          "Biete Hilfe für die konsumierende Person und, getrennt davon, für die Angehörigen an – beide haben Anspruch auf eigene Beratung.",
+          "Frag nach Kindern im Haushalt und deren Versorgung und Sicherheit.",
+          "Weise Angehörige auf Angehörigenberatung und Al-Anon hin, Kinder und Jugendliche auf Alateen bzw. 147.",
+          "Bei Gewalt: Weg «Häusliche Gewalt» befolgen; bei gefährdetem Kindeswohl: Gefährdungsmeldung an die KESB prüfen."
+        ]
+      },
+      {
+        "id": "chAdultDrugs",
+        "title": "Erwachsene Person mit Drogenproblem",
+        "when": {
+          "age": ["adult"],
+          "problem": ["drugs"]
+        },
+        "institutionIds": ["chBernerGesundheit", "chGp", "chContact", "chResidential", "chNa"],
+        "steps": [
+          "Kläre in einem motivierenden Gespräch Substanzen, Konsummuster und Ziele der Person.",
+          "Vermittle an die ambulante Suchtberatung; bei Opioidabhängigkeit an eine Ärztin bzw. einen Arzt oder ein Zentrum für Opioidagonistentherapie.",
+          "Sprich Schadensminderung an (Safer Use, keine Mischkonsum-Experimente, Naloxon, Drug Checking).",
+          "Bei Wunsch nach Abstinenz: stationären Entzug und anschliessende Therapie planen, inklusive Finanzierung.",
+          "Nenne NA als Selbsthilfeangebot."
+        ]
+      },
+      {
+        "id": "chHarmReduction",
+        "title": "Schadensminderung bei Drogenkonsum",
+        "when": {
+          "age": ["adult"],
+          "problem": ["drugs"],
+          "context": ["homeless", "none"]
+        },
+        "institutionIds": ["chContact", "chDrugChecking", "chGassenarbeit", "chGp"],
+        "steps": [
+          "Akzeptiere, dass die Person aktuell (noch) nicht aufhören will, und setze bei Sicherheit und Gesundheit an.",
+          "Weise auf die Kontakt- und Anlaufstelle hin: begleiteter Konsum in hygienischer Umgebung, steriles Material, medizinische Erstversorgung.",
+          "Bei Partydrogen: auf Drug Checking hinweisen (Analyse plus Beratung).",
+          "Informiere über Überdosis-Risiken (Toleranzverlust nach Haft oder Entzug, Mischkonsum) und über Substitutionsbehandlung."
+        ],
+        "note": "Schadensminderung ist eine eigene Säule der Schweizer Drogenpolitik und kein Widerspruch zu Therapie."
+      },
+      {
+        "id": "chJusticeAdult",
+        "title": "Erwachsene Person im Strafverfahren oder unter Bewährungshilfe",
+        "when": {
+          "age": ["adult"],
+          "context": ["justice"]
+        },
+        "institutionIds": ["chBvd", "chBernerGesundheit", "chSozialdienst"],
+        "steps": [
+          "Kläre, welche Behörde zuständig ist (Staatsanwaltschaft, Gericht, Bewährungs- und Vollzugsdienste) und welche Weisungen gelten.",
+          "Hol das Einverständnis der Klient/in ein, bevor du Informationen mit der Justiz austauschst.",
+          "Unterstütze die Erfüllung von Weisungen (z. B. Suchtberatung, Abstinenzkontrollen) und dokumentiere Fortschritte.",
+          "Achte auf soziale Grundlagen: Wohnung, Einkommen, Schulden, Arbeit."
+        ]
+      },
+      {
+        "id": "chAfterPrisonSubstances",
+        "title": "Sucht nach Haft oder mit justizieller Weisung",
+        "when": {
+          "age": ["adult"],
+          "problem": ["alcohol", "drugs"],
+          "context": ["afterPrison", "justice"]
+        },
+        "institutionIds": ["chBvd", "chBernerGesundheit", "chResidential", "chGp", "chSozialdienst"],
+        "steps": [
+          "Plane den Übergang vor der Entlassung: Termin bei Suchtberatung bzw. Ärztin/Arzt, Fortführung einer Substitution ohne Unterbruch.",
+          "Weise eindringlich auf das erhöhte Überdosisrisiko nach der Haft hin (verminderte Toleranz).",
+          "Koordiniere mit den Bewährungs- und Vollzugsdiensten, wenn eine Massnahme (z. B. nach Art. 60 StGB) oder Weisung besteht.",
+          "Kläre Wohnung, Krankenversicherung und Existenzsicherung mit dem Sozialdienst."
+        ]
+      },
+      {
+        "id": "chAfterPrisonAny",
+        "title": "Wiedereingliederung nach Haft oder Heimaufenthalt",
+        "when": {
+          "age": ["adult"],
+          "context": ["afterPrison"]
+        },
+        "institutionIds": ["chBvd", "chSozialdienst", "chGassenarbeit"],
+        "steps": [
+          "Kläre, ob eine Bewährungshilfe läuft, und nimm mit Einverständnis Kontakt auf.",
+          "Sichere die Grundlagen: Unterkunft, Ausweis, Krankenversicherung, Einkommen bzw. Sozialhilfe.",
+          "Stelle die Verbindung zu Arbeitsintegration und sozialem Netz her.",
+          "Vereinbare feste nächste Termine – die ersten Wochen sind besonders rückfallgefährdet."
+        ]
+      },
+      {
+        "id": "chHomelessAny",
+        "title": "Obdachlosigkeit",
+        "when": {
+          "age": ["adult"],
+          "context": ["homeless"]
+        },
+        "institutionIds": ["chGassenarbeit", "chSozialdienst", "chContact"],
+        "steps": [
+          "Sorge für einen Schlafplatz (Notschlafstelle) und Grundversorgung (Essen, Kleidung, medizinische Hilfe).",
+          "Melde die Person beim Sozialdienst an bzw. kläre, welche Gemeinde zuständig ist.",
+          "Bezieh die Gassenarbeit ein, um eine verlässliche Beziehung aufzubauen.",
+          "Biete bei Konsum Schadensminderung an, ohne Hilfe von Abstinenz abhängig zu machen."
+        ]
+      },
+      {
+        "id": "chGambling",
+        "title": "Geldspiel und andere Verhaltenssüchte",
+        "when": {
+          "problem": ["behavioural"]
+        },
+        "institutionIds": ["chSosSpielsucht", "chBernerGesundheit", "chSafeZone", "chSozialdienst", "chSelbsthilfe"],
+        "steps": [
+          "Erfrage Art, Häufigkeit und finanzielle Folgen (Schulden, Kredite, Betreibungen).",
+          "Vermittle an die Fachberatung Geldspiel bzw. digitale Medien (Berner Gesundheit) oder an SOS-Spielsucht.",
+          "Informiere über die Spielsperre: Sie kann bei Casinos und Online-Anbietern selbst beantragt werden und gilt schweizweit.",
+          "Bei Schulden: Schuldenberatung einbeziehen; Angehörige auf eigene Beratung hinweisen."
+        ]
+      },
+      {
+        "id": "chBehaviouralMinor",
+        "title": "Jugendliche/r mit problematischem Gaming oder Online-Verhalten",
+        "when": {
+          "age": ["minor"],
+          "problem": ["behavioural"]
+        },
+        "institutionIds": ["chBernerGesundheit", "chSchulsozialarbeit", "chErziehungsberatung", "chProJuventute"],
+        "steps": [
+          "Sprich mit der/dem Jugendlichen über Nutzen und Kosten der Bildschirmzeit, ohne zu verurteilen.",
+          "Bezieh die Eltern ein: Regeln gemeinsam vereinbaren, Alternativen schaffen.",
+          "Achte auf Begleitprobleme (Schulabsentismus, Rückzug, Angst, Depression) und weise bei Bedarf an die Kinder- und Jugendpsychiatrie weiter.",
+          "Nutze die Beratung für digitale Medien der Berner Gesundheit; bei Geldspiel oder Sportwetten unter 18 auch auf den Jugendschutz hinweisen."
+        ]
+      },
+      {
+        "id": "chRelatives",
+        "title": "Angehörige einer suchtkranken Person",
+        "when": {
+          "problem": ["codependency"]
+        },
+        "institutionIds": ["chBernerGesundheit", "chBlauesKreuz", "chAlAnon", "chSelbsthilfe", "chSafeZone"],
+        "steps": [
+          "Würdige die Belastung und die Sorgen der angehörigen Person.",
+          "Biete Angehörigenberatung an – unabhängig davon, ob die betroffene Person selbst Hilfe will.",
+          "Weise auf Selbsthilfegruppen (Al-Anon, Angehörigengruppen) und Online-Beratung hin.",
+          "Frag nach Gewalt und Sicherheit; leben Kinder im Haushalt, deren Situation mitbedenken."
+        ]
+      },
+      {
+        "id": "chRelativesMinor",
+        "title": "Kind oder Jugendliche/r mit suchtkrankem Elternteil",
+        "when": {
+          "age": ["minor"],
+          "problem": ["codependency"]
+        },
+        "institutionIds": ["chSchulsozialarbeit", "chProJuventute", "chBernerGesundheit", "chKesb", "chAlAnon"],
+        "steps": [
+          "Entlaste das Kind: Es ist nicht schuld und nicht verantwortlich für die Sucht der Eltern.",
+          "Kläre Versorgung und Sicherheit zu Hause; bei Gefährdung des Kindeswohls Gefährdungsmeldung an die KESB.",
+          "Vermittle altersgerechte Angebote (Gruppen für Kinder aus suchtbelasteten Familien, Alateen, 147).",
+          "Bezieh, wenn möglich, den nicht konsumierenden Elternteil ein."
+        ]
+      }
+    ]
+  },
+  "legal": [
+    {
+      "id": "chBetmg",
+      "title": "Betäubungsmittelgesetz (BetmG, SR 812.121)",
+      "summary": "Bundesgesetz über die Betäubungsmittel und die psychotropen Stoffe: verankert die Vier-Säulen-Politik, regelt Prävention, Behandlung, Schadensminderung und Strafbestimmungen.",
+      "keyPoints": [
+        "Die vier Säulen Prävention, Therapie, Schadensminderung und Repression sind seit der Teilrevision von 2008 (in Kraft seit 2011) gesetzlich verankert.",
+        "Kantone sind für Prävention, Behandlung und Schadensminderung zuständig; der Bund koordiniert und unterstützt.",
+        "Fachpersonen aus Erziehung, Sozialarbeit, Gesundheit, Justiz und Polizei dürfen vorliegende oder drohende suchtbedingte Störungen, besonders bei Kindern und Jugendlichen, einer Behandlungs- oder Sozialhilfestelle melden (Art. 3c).",
+        "Substitutions- und heroingestützte Behandlungen brauchen eine Bewilligung (kantonal bzw. beim BAG).",
+        "Der Konsum ist strafbar (Busse); Handel und Herstellung werden deutlich strenger bestraft.",
+        "Pilotversuche zur regulierten Abgabe von Cannabis sind befristet erlaubt (prüfen: aktueller Stand der Versuche und der parlamentarischen Arbeiten zur Cannabisregulierung)."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chCannabisFine",
+      "title": "Cannabis: Ordnungsbusse und geringfügige Menge (BetmG Art. 19b, 28b ff.)",
+      "summary": "Regeln für den Umgang mit kleinen Mengen Cannabis bei Erwachsenen: Ordnungsbussenverfahren für den Konsum und Straflosigkeit des Besitzes einer geringfügigen Menge zum Eigenkonsum.",
+      "keyPoints": [
+        "Erwachsene, die beim Cannabiskonsum erwischt werden, können mit einer Ordnungsbusse von 100 Franken bestraft werden – ohne Strafverfahren und Eintrag.",
+        "Wer nur eine geringfügige Menge zum Eigenkonsum vorbereitet, bleibt straflos (Art. 19b); bei Cannabis gelten bis 10 Gramm als geringfügig.",
+        "Das Bundesgericht hat entschieden, dass der blosse Besitz bis 10 Gramm bei Erwachsenen nicht gebüsst werden darf (prüfen: Praxis der Kantonspolizei Bern).",
+        "Für Minderjährige gilt das Ordnungsbussenverfahren nicht – sie werden der Jugendanwaltschaft gemeldet.",
+        "Abgabe an Minderjährige bleibt strafbar; Cannabis mit weniger als 1 % THC (CBD) gilt nicht als Betäubungsmittel."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chAlcoholYouth",
+      "title": "Jugendschutz bei Alkohol und Tabak (Lebensmittelrecht, Alkoholgesetz, Tabakproduktegesetz)",
+      "summary": "Bundesrechtliche Altersgrenzen für die Abgabe von Alkohol und Tabak sowie kantonale Ergänzungen, etwa zu Testkäufen.",
+      "keyPoints": [
+        "Bier, Wein und Apfelwein (vergorene Getränke) dürfen nicht an unter 16-Jährige abgegeben werden (Lebensmittelrecht).",
+        "Spirituosen, Alcopops und Aperitifs auf Spirituosenbasis dürfen nicht an unter 18-Jährige abgegeben werden (Alkoholgesetz).",
+        "Einzelne Kantone kennen strengere Regeln; im Kanton Bern gelten 16/18 (prüfen: kantonales Gastgewerbegesetz).",
+        "Tabak- und Nikotinprodukte inkl. E-Zigaretten: schweizweite Abgabealtersgrenze 18 seit Inkrafttreten des Tabakproduktegesetzes (prüfen: Datum Oktober 2024).",
+        "Alkoholtestkäufe mit Jugendlichen sind zulässig und werden zur Kontrolle des Verkaufs eingesetzt (prüfen: Rechtsgrundlage im Kanton Bern)."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chJstg",
+      "title": "Jugendstrafgesetz (JStG) und Jugendstrafprozessordnung (JStPO)",
+      "summary": "Jugendstrafrecht für Personen, die bei der Tat zwischen 10 und 18 Jahre alt waren; im Vordergrund stehen Schutz und Erziehung.",
+      "keyPoints": [
+        "Strafmündigkeit ab 10 Jahren; massgebend ist das Alter zum Zeitpunkt der Tat.",
+        "Schutzmassnahmen: Aufsicht, persönliche Betreuung, ambulante Behandlung (z. B. Suchtbehandlung) und Unterbringung; sie richten sich nach dem Bedarf, nicht nach der Schwere der Tat.",
+        "Strafen: Verweis, persönliche Leistung, Busse und Freiheitsentzug (Busse und Freiheitsentzug erst ab 15 Jahren).",
+        "Schutzmassnahmen können über das 18. Altersjahr hinaus dauern (prüfen: Höchstalter 25).",
+        "Im Kanton Bern untersucht und urteilt die Jugendanwaltschaft in den meisten Fällen selbst; Mediation ist möglich."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chZgbKesr",
+      "title": "Kindes- und Erwachsenenschutzrecht (ZGB Art. 307 ff., 314c–314d, 360 ff.)",
+      "summary": "Regelt Massnahmen zum Schutz von Kindern und schutzbedürftigen Erwachsenen sowie die Melderechte und -pflichten gegenüber der KESB.",
+      "keyPoints": [
+        "Ist das Kindeswohl gefährdet und sorgen die Eltern nicht selbst für Abhilfe, trifft die KESB geeignete Massnahmen (Art. 307 ff.), z. B. Weisungen, Beistandschaft (Art. 308) oder Aufhebung des Aufenthaltsbestimmungsrechts (Art. 310).",
+        "Melderecht: Jede Person kann der KESB melden, wenn die Integrität eines Kindes gefährdet erscheint (Art. 314c).",
+        "Meldepflicht: Fachpersonen aus Medizin, Psychologie, Pflege, Betreuung, Erziehung, Bildung, Sozialberatung, Religion und Sport, die beruflich regelmässig mit Kindern Kontakt haben, müssen bei konkreten Hinweisen melden, wenn sie nicht selbst helfen können (Art. 314d); wer dem Berufsgeheimnis untersteht, hat ein Melderecht.",
+        "Die Meldepflicht gilt auch als erfüllt, wenn die Fachperson ihre vorgesetzte Person informiert (prüfen: interne Regelung der Institution).",
+        "Erwachsenenschutz: Beistandschaften nach Bedarf; fürsorgerische Unterbringung (Art. 426) bei schwerer Verwahrlosung, psychischer Störung oder Sucht, wenn keine andere Hilfe möglich ist."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chBgs",
+      "title": "Geldspielgesetz (BGS, SR 935.51)",
+      "summary": "Bundesgesetz über Geldspiele (seit 2019): regelt Spielbanken, Lotterien, Sportwetten und Online-Angebote und verpflichtet Anbieter und Kantone zum Spielerschutz.",
+      "keyPoints": [
+        "Spielbanken und grosse Lotterie- und Wettanbieter müssen ein Sozialkonzept umsetzen (Früherkennung, Information, Schulung des Personals).",
+        "Spielsperre: Spielende können sich selbst sperren lassen; Anbieter müssen gefährdete Personen sperren; die Sperre gilt schweizweit für Casinos und Online-Angebote.",
+        "Online-Geldspiele sind nur über bewilligte Schweizer Anbieter legal; nicht bewilligte Seiten werden gesperrt.",
+        "Die Kantone müssen Massnahmen zur Prävention und Beratung bei exzessivem Geldspiel anbieten (prüfen: Art. 85 BGS).",
+        "Zugang zu Spielbanken und Online-Casinos erst ab 18 Jahren; für Lotterien und Sportwetten regeln die Kantone das Mindestalter (prüfen: Kanton Bern)."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "chBernSlg",
+      "title": "Kanton Bern: Gesetz über die sozialen Leistungsangebote (SLG) und Sozialhilfegesetz (SHG)",
+      "summary": "Kantonale Grundlagen, auf denen die Suchthilfe im Kanton Bern organisiert und finanziert wird.",
+      "keyPoints": [
+        "Das SLG (vom Grossen Rat 2021 beschlossen, in Kraft seit 2022) regelt die sozialen Leistungsangebote, darunter Gesundheitsförderung und Suchthilfe, die früher im Sozialhilfegesetz geregelt waren.",
+        "Der Kanton (GSI) steuert die Suchthilfe und finanziert die Angebote über Leistungsverträge mit Trägerschaften; Details regelt die Verordnung (SLV).",
+        "Das Suchthilfekonzept des Kantons Bern beschreibt die Angebote entlang der vier Säulen (prüfen: aktuelle Fassung bzw. Nachfolgestrategie).",
+        "Die individuelle Sozialhilfe der Gemeinden richtet sich nach dem Sozialhilfegesetz (SHG) und den SKOS-Richtlinien; eine Totalrevision des SHG ist im Gang (prüfen: Stand und Inkrafttreten).",
+        "Kosten für stationäre Suchttherapie werden je nach Angebot über Krankenversicherung, Sozialhilfe oder kantonale Mittel getragen – Kostengutsprache vorab klären."
+      ],
+      "stateAsOf": "2026-11",
+      "reviewStatus": "do_weryfikacji"
+    }
+  ],
+  "crisis": [
+    {
+      "id": "ch143",
+      "country": "CH",
+      "number": "143",
+      "name": "Die Dargebotene Hand",
+      "description": "Anonyme Hilfe rund um die Uhr für Erwachsene in Krisen und bei Suizidgedanken – Telefon, Chat und Mail.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch147",
+      "country": "CH",
+      "number": "147",
+      "name": "Pro Juventute – Beratung + Hilfe für Kinder und Jugendliche",
+      "description": "Kostenlose, vertrauliche Beratung rund um die Uhr per Telefon, Chat und SMS.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch144",
+      "country": "CH",
+      "number": "144",
+      "name": "Sanitätsnotruf",
+      "description": "Akute Gefahr für Leben oder Gesundheit, inkl. Vergiftung und Überdosis.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch117",
+      "country": "CH",
+      "number": "117",
+      "name": "Polizeinotruf",
+      "description": "Bedrohung der Sicherheit, Gewalt, häusliche Gewalt.",
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch112",
+      "country": "CH",
+      "number": "112",
+      "name": "Europäische Notrufnummer",
+      "description": "Funktioniert auch in der Schweiz und leitet an die Notrufzentrale weiter – auch aus dem Ausland oder mit ausländischer SIM-Karte.",
+      "reviewStatus": "do_weryfikacji"
+    }
+  ],
+  "countryNote": "Die Inhalte betreffen die Schweiz mit Fokus auf den Kanton Bern; prüfe Angebote und Zuständigkeiten vor Ort."
+}

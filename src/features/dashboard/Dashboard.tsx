@@ -30,6 +30,7 @@ import { useToast } from '@/components/ui/toast';
 import { cn } from '@/components/ui/cn';
 import { useContent } from '@/content/ContentProvider';
 import { isDue } from '@/lib/srs';
+import { BackupBanner, SupervisionTasks } from './DashboardExtras';
 
 export function useAttention(): AttentionFlag[] {
   const clients = useStore(() => all('client'));
@@ -180,6 +181,8 @@ export function Dashboard() {
         <p className="mt-1 text-muted">{prefs.mode === 'demo' ? t('demoIntro') : t('intro', { count: active })}</p>
       </div>
 
+      <BackupBanner />
+
       <div className="grid gap-3 sm:grid-cols-4">
         {[
           { to: '/clients/new', icon: Users, label: t('quick.client') },
@@ -303,6 +306,7 @@ export function Dashboard() {
             </span>
           </SectionTitle>
           <Tasks />
+          <SupervisionTasks />
 
           <SectionTitle>
             <span className="inline-flex items-center gap-2">

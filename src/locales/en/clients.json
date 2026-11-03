@@ -10,7 +10,11 @@
   "showResults_one": "Show {{count}} result",
   "showResults_other": "Show {{count}} results",
   "sort": "Sort",
-  "sortBy": { "code": "Code (A–Z)", "updated": "Recently changed", "stage": "Stage of change" },
+  "sortBy": {
+    "code": "Code (A–Z)",
+    "updated": "Recently changed",
+    "stage": "Stage of change"
+  },
   "attention_one": "{{count}} flag",
   "attention_other": "{{count}} flags",
   "emptyTitle": "No {{clients}} yet",
@@ -101,7 +105,13 @@
       "riskBehaviour": "Risk behaviour",
       "justice": "Justice system"
     },
-    "level": { "1": "serious difficulties", "2": "considerable difficulties", "3": "moderate", "4": "good", "5": "very good" },
+    "level": {
+      "1": "serious difficulties",
+      "2": "considerable difficulties",
+      "3": "moderate",
+      "4": "good",
+      "5": "very good"
+    },
     "risk": "Risk factors",
     "protective": "Protective factors",
     "resources": "Resources",
@@ -170,7 +180,11 @@
     "title": "Title",
     "note": "Description",
     "lapseNote": "Describe a lapse without judgement – as information about a high-risk situation and a chance to learn.",
-    "kind": { "event": "Event", "meeting": "Session", "measurement": "Measure" },
+    "kind": {
+      "event": "Event",
+      "meeting": "Session",
+      "measurement": "Measure"
+    },
     "type": {
       "court": "Court hearing",
       "pass": "Leave / pass",
@@ -202,7 +216,13 @@
     "deleteEdge": "Delete relationship",
     "legend": "Legend",
     "legendSymbols": "□ male · ○ female · ◇ person · rectangle – institution · ellipse – group · shaded half – substance problem · ✕ – deceased",
-    "kind": { "female": "Female", "male": "Male", "person": "Person", "institution": "Institution", "group": "Group" },
+    "kind": {
+      "female": "Female",
+      "male": "Male",
+      "person": "Person",
+      "institution": "Institution",
+      "group": "Group"
+    },
     "edge": {
       "family": "Kinship",
       "strong": "Strong, close",
@@ -242,6 +262,7 @@
     "safety": "Safety",
     "safetyHint": "Is anyone in the family experiencing violence? What are the safety arrangements?",
     "violence": "In Poland, domestic violence is handled through the “Blue Card” (Niebieska Karta) procedure.",
-    "violenceLink": "See the procedure and help paths"
+    "violenceLink": "See the procedure and help paths",
+    "violence_CH": "In Switzerland, domestic violence: police (117), victim support centres (Opferhilfe) and – if a child’s welfare is at risk – a report to the KESB."
   }
 }

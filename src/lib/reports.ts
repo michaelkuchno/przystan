@@ -7,10 +7,13 @@
  */
 import type { Content, TDocumentDefinitions } from 'pdfmake/interfaces';
 import i18n from '@/i18n';
-import { get, forClient } from './store';
+import { get, forClient, all } from './store';
+import { anonymize } from './anonymize';
+import { practiceTotals } from '@/features/practice/practice';
 import { exportFile, slug, todayIso, type ExportResult } from './platform';
 import { fmtDate } from './format';
-import { DIAGNOSIS_AREAS, type PreventionProgram, type ReadaptationPlan, type Recipe, type RelapsePlan } from '@/domain/types';
+import { getPrefs } from './prefs';
+import { DIAGNOSIS_AREAS, type PracticeEntry, type PreventionProgram, type ReadaptationPlan, type Recipe, type RelapsePlan } from '@/domain/types';
 import type { PreventionFile, TemplatesFile } from '@/content/types';
 
 const t = (k: string, o?: Record<string, unknown>) => i18n.t(k, o ?? {});
@@ -233,7 +236,7 @@ export async function relapseCardPdf(p: RelapsePlan): Promise<ExportResult> {
       fillColor: '#f5e0d6',
       margin: [0, 16, 0, 0],
     },
-    { text: t('reports:crisisLine'), style: 'muted', margin: [0, 14, 0, 0] },
+    { text: t('reports:crisisLine', { context: getPrefs().country }), style: 'muted', margin: [0, 14, 0, 0] },
   ];
   return render(base(t('reports:relapseTitle'), t('reports:relapseSubtitle'), content), t('reports:relapseTitle'));
 }
@@ -377,4 +380,84 @@ export async function preventionPdf(p: PreventionProgram, content: PreventionFil
     base(p.title || t('prevention:untitled'), `${t('prevention:pdfSubtitle')} · ${p.targetGroup}`, body),
     p.title || 'program',
   );
+}
+
+/* --------------------------------------------------------- shared: anonymization */
+
+/** Identifying data of every client in the current space, for anonymize(). */
+export function anonymizer() {
+  const names = all('client').flatMap((c) => [c.code, c.fullName ?? ''].filter(Boolean));
+  const opts = { names, person: t('reports:anon.person'), removed: t('reports:anon.removed') };
+  return (s: string | undefined) => anonymize(s ?? '', opts).text;
+}
+
+/* --------------------------------------------------------- practice log */
+
+/** Practice log for the placement supervisor. Free texts pass through anonymize(). */
+export async function practiceLogPdf(entries: PracticeEntry[], goal: number): Promise<ExportResult> {
+  const clean = anonymizer();
+  const totals = practiceTotals(entries, goal);
+  const rows = [...entries].sort((a, b) => a.date.localeCompare(b.date));
+  const content: Content[] = [
+    {
+      table: {
+        widths: ['*', '*', '*'],
+        body: [
+          [
+            { stack: [{ text: t('practice:pdf.total'), style: 'label' }, { text: `${totals.hours} h`, bold: true, fontSize: 14 }] },
+            { stack: [{ text: t('practice:goal'), style: 'label' }, { text: `${goal} h`, fontSize: 14 }] },
+            { stack: [{ text: t('practice:pdf.entries'), style: 'label' }, { text: String(rows.length), fontSize: 14 }] },
+          ],
+        ],
+      },
+      layout: 'noBorders',
+      fillColor: COLORS.soft,
+      margin: [0, 0, 0, 8],
+    },
+    { text: totals.byActivity.map(([a, h]) => `${t(`practice:activity.${a}`)}: ${h} h`).join(' · '), style: 'muted' },
+    ...section(t('practice:pdf.entriesTitle'), {
+      table: {
+        headerRows: 1,
+        widths: [58, 30, 80, '*'],
+        body: [
+          [t('practice:fields.date'), 'h', t('practice:fields.activity'), t('practice:pdf.descriptionAndReflections')].map((x) => ({
+            text: x,
+            style: 'label',
+          })),
+          ...rows.map((e) => [
+            fmtDate(e.date, { day: '2-digit', month: '2-digit', year: 'numeric' }),
+            String(e.hours),
+            { stack: [t(`practice:activity.${e.activity}`), { text: clean(e.place), style: 'muted' }] },
+            {
+              stack: [
+                clean(e.description) || '—',
+                ...(e.reflections ? [{ text: `${t('practice:fields.reflections')}: ${clean(e.reflections)}`, italics: true, margin: [0, 3, 0, 0] }] : []),
+              ],
+            },
+          ]),
+        ],
+      },
+      layout: 'lightHorizontalLines',
+    } as Content),
+    { text: t('practice:pdf.note'), style: 'muted', margin: [0, 12, 0, 0] },
+    {
+      columns: [
+        { stack: [{ text: '\n\n………………………………………', alignment: 'center' }, { text: t('practice:pdf.student'), style: 'muted', alignment: 'center' }] },
+        { stack: [{ text: '\n\n………………………………………', alignment: 'center' }, { text: t('practice:pdf.supervisor'), style: 'muted', alignment: 'center' }] },
+      ],
+      margin: [0, 24, 0, 0],
+    },
+  ];
+  return render(base(t('practice:pdf.title'), t('practice:pdf.subtitle'), content), t('practice:pdf.title'));
+}
+
+/* --------------------------------------------------------- anonymous case study */
+
+/** Exports the reviewed (already anonymized and possibly edited) case study sections. */
+export async function caseStudyPdf(title: string, sections: { title: string; text: string }[]): Promise<ExportResult> {
+  const content: Content[] = [
+    ...sections.flatMap((s) => section(s.title, { text: s.text.trim() || '—' })),
+    { text: t('casestudy:pdfNote'), style: 'muted', margin: [0, 16, 0, 0] },
+  ];
+  return render(base(title, t('casestudy:pdfSubtitle'), content, t('casestudy:pdfFooter')), t('casestudy:fileName'));
 }

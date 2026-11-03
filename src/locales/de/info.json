@@ -1,0 +1,54 @@
+{
+  "about": {
+    "title": "Über die App",
+    "version": "Version {{v}}",
+    "disclaimerTitle": "Wichtig:",
+    "disclaimer": "Przystań ist ein Werkzeug zur Unterstützung von Arbeit und Studium. Die App stellt keine medizinischen Diagnosen und trifft keine Entscheidungen anstelle einer Fachperson. Alle Hinweise, Interpretationen und Vorschläge dienen nur der Unterstützung. Fachliche und rechtliche Inhalte sowie Telefonnummern mit der Markierung «Zu prüfen» müssen vor dem Einsatz in der Praxis überprüft werden.",
+    "paragraphs": [
+      "Przystań wurde für Sozialpädagog/innen und angehende Suchttherapeut/innen entwickelt – für die Arbeit in Fachstellen, Einrichtungen, Gefängnissen und Jugendheimen, in der Bewährungshilfe, an Schulen und im Gemeinwesen.",
+      "Die Perspektive ist pädagogisch und auf Resozialisierung ausgerichtet: Wir setzen bei Stärken und Ressourcen an, verwenden eine nicht stigmatisierende Sprache und verstehen Ausrutscher als Information, nicht als Scheitern.",
+      "Die App funktioniert vollständig offline, ohne Konten, Server oder Gebühren. Alle Daten werden verschlüsselt und nur auf diesem Gerät gespeichert."
+    ]
+  },
+  "privacy": {
+    "title": "Datenschutz",
+    "lead": "Kurz gesagt: Alles bleibt auf diesem Gerät und ist mit deinem Passwort verschlüsselt.",
+    "items": [
+      {
+        "q": "Wo werden die Daten gespeichert?",
+        "a": "Nur auf diesem Gerät, in der lokalen Datenbank des Browsers (IndexedDB) oder in der Android-App. Es gibt keinen Server, kein Konto und keine Synchronisierung."
+      },
+      {
+        "q": "Wird etwas ins Internet gesendet?",
+        "a": "Nein. Die App enthält keine Analyse-, Werbe- oder Tracking-Funktionen und stellt keine Netzwerkanfragen. Internet wird nur zum Herunterladen von PWA-Updates benötigt."
+      },
+      {
+        "q": "Wie werden die Daten geschützt?",
+        "a": "Der Inhalt jedes Eintrags wird mit AES-256-GCM verschlüsselt. Der Schlüssel wird aus deinem Passwort abgeleitet (PBKDF2, 600 000 Iterationen, zufälliges Salt) und nur im Arbeitsspeicher gehalten, solange die App entsperrt ist."
+      },
+      {
+        "q": "Was passiert, wenn die App gesperrt wird?",
+        "a": "Der Schlüssel wird aus dem Arbeitsspeicher entfernt und die Inhalte werden ausgeblendet. Die App sperrt sich nach Inaktivität und immer, wenn sie in den Hintergrund wechselt."
+      },
+      {
+        "q": "Was, wenn ich mein Passwort vergesse?",
+        "a": "Die Daten können nicht wiederhergestellt werden – das ist der Preis echter Verschlüsselung. Erstelle deshalb regelmässig verschlüsselte Backups."
+      },
+      {
+        "q": "Daten über die Personen, mit denen ich arbeite",
+        "a": "Es handelt sich um besonders schützenswerte Daten (DSGVO in Polen, nDSG in der Schweiz). Verwende standardmässig Codes statt Namen und führe Aufzeichnungen gemäss den Regeln deiner Organisation und der beruflichen Schweigepflicht. PDF-Berichte enthalten weder Code noch Namen der Person."
+      },
+      {
+        "q": "Was ist nicht verschlüsselt?",
+        "a": "Nur technische Kennungen, der Eintragstyp und das Änderungsdatum (für die Indexierung) sowie die Darstellungseinstellungen. Sie enthalten keine Personendaten."
+      }
+    ]
+  },
+  "sources": {
+    "title": "Quellen",
+    "screening": "Screening-Instrumente",
+    "literature_one": "Literatur ({{count}} Titel)",
+    "literature_other": "Literatur ({{count}} Titel)",
+    "fonts": "Schriften: Inter und Fraunces (SIL Open Font License), in der App enthalten. Icons: Lucide (ISC)."
+  }
+}

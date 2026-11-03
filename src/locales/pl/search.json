@@ -18,6 +18,7 @@
     "recipe": "Przepis",
     "prevention": "Program",
     "tool": "Narzędzie",
-    "template": "Szablon zajęć"
+    "template": "Szablon zajęć",
+    "note": "Notatka"
   }
 }

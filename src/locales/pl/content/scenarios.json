@@ -4619,6 +4619,1269 @@
         }
       ],
       "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch-bern-apprentice-cannabis",
+      "country": "CH",
+      "title": "Jan, uczeń zawodu w Bernie – marihuana w przerwie",
+      "context": "school",
+      "audience": "youth",
+      "persona": {
+        "name": "Jan",
+        "age": 16,
+        "description": "Uczeń pierwszego roku w zawodzie logistyka (Logistiker EFZ) w centrum dystrybucyjnym pod Bernem. Mistrz szkolący (Lehrmeister) przyłapał go w przerwie na paleniu marihuany za magazynem i odesłał do pedagoga szkolnego (Schulsozialarbeit) w szkole zawodowej. Wysportowany, zamknięty w sobie, boi się utraty miejsca nauki."
+      },
+      "intro": "Wtorek, dzień zajęć w szkole zawodowej. Zadzwonił do ciebie mistrz szkolący Jana: wczoraj w przerwie przyłapał go na paleniu marihuany i oczekuje, że Jan „ogarnie to z pedagogiem szkolnym” – inaczej porozmawiają o umowie o naukę zawodu. Jan siedzi naprzeciwko ciebie, z rękami skrzyżowanymi na piersi i telefonem w dłoni.",
+      "start": "n1",
+      "nodes": [
+        {
+          "id": "n1",
+          "client": "Wiem, po co tu jestem. Szef totalnie przesadza. Jeden joint w przerwie – inni też to robią, tylko ich nie przyłapali.",
+          "talk": "sustain",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n1-a",
+              "text": "Palenie trawki na terenie firmy to nie drobiazg. Ryzykujesz swoje miejsce nauki.",
+              "category": "confront",
+              "feedback": "Pouczanie i straszenie konsekwencjami wywołuje opór – Jan będzie się bronił, zamiast się zastanowić.",
+              "alliance": -2,
+              "next": "n2b"
+            },
+            {
+              "id": "n1-b",
+              "text": "Czyli wczoraj paliłeś?",
+              "category": "closedQuestion",
+              "feedback": "Pytanie zamknięte o coś, co już wiadomo, brzmi jak przesłuchanie i pozwala tylko na „tak” lub „nie”.",
+              "alliance": 0,
+              "next": "n2b"
+            },
+            {
+              "id": "n1-c",
+              "text": "Masz poczucie, że robi się z tego większą sprawę, niż jest.",
+              "category": "simpleReflection",
+              "feedback": "Proste odzwierciedlenie oddaje jego punkt widzenia bez oceniania – Jan czuje się wysłuchany, a nie oskarżony.",
+              "alliance": 1,
+              "next": "n2a"
+            },
+            {
+              "id": "n1-d",
+              "text": "Jak wczorajszy dzień wyglądał z twojej perspektywy?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte oddaje mu głos i zaprasza jego perspektywę – partnerstwo zamiast kontroli.",
+              "alliance": 1,
+              "next": "n2a"
+            }
+          ]
+        },
+        {
+          "id": "n2a",
+          "client": "Przerwy są długie, a w magazynie jest ciężko. Po jaraniu stres znika. Przecież robię swoją robotę, nigdy się nie spóźniam.",
+          "talk": "neutral",
+          "mood": "calm",
+          "options": [
+            {
+              "id": "n2a-a",
+              "text": "Praca jest dla ciebie ważna, a palenie pomaga ci teraz radzić sobie z presją w magazynie.",
+              "category": "complexReflection",
+              "feedback": "Złożone odzwierciedlenie łączy jego rzetelność z funkcją, jaką pełni używanie – wzmacnia relację i otwiera temat zmiany.",
+              "alliance": 2,
+              "next": "n3a"
+            },
+            {
+              "id": "n2a-b",
+              "text": "Co dokładnie jest takie ciężkie w magazynie?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte posuwa rozmowę naprzód, ale pomija jego dumę z własnej pracy.",
+              "alliance": 1,
+              "next": "n3b"
+            },
+            {
+              "id": "n2a-c",
+              "text": "To znajdź inny sposób, żeby się wyluzować w przerwie, na przykład słuchaj muzyki.",
+              "category": "adviseWithoutPermission",
+              "feedback": "Nieproszona rada przychodzi za wcześnie. Jan słyszy: kolejny dorosły, który mówi mi, co mam robić.",
+              "alliance": -1,
+              "next": "n3c"
+            }
+          ]
+        },
+        {
+          "id": "n2b",
+          "client": "No dobra, paliłem. I co teraz? Powiesz szefowi? Przecież wszyscy trzymacie razem.",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [
+            {
+              "id": "n2b-a",
+              "text": "Boisz się, że wszystko, co tu powiesz, trafi do mistrza.",
+              "category": "simpleReflection",
+              "feedback": "Odzwierciedlenie traktuje jego lęk poważnie, zamiast się tłumaczyć – napięcie spada.",
+              "alliance": 1,
+              "next": "n3b"
+            },
+            {
+              "id": "n2b-b",
+              "text": "Zanim cokolwiek powiesz, chcesz wiedzieć, po czyjej jestem stronie.",
+              "category": "complexReflection",
+              "feedback": "Złożone odzwierciedlenie nazywa nieufność kryjącą się za złością. To dobry moment, by otwarcie wyjaśnić zasady poufności i ich granice.",
+              "alliance": 2,
+              "next": "n3b"
+            },
+            {
+              "id": "n2b-c",
+              "text": "Nie jesteś w sytuacji, żeby stawiać warunki. Jesteś tu, bo nawaliłeś.",
+              "category": "confront",
+              "feedback": "Obwinianie pogłębia dysonans – rozmowa zamienia się w walkę o władzę.",
+              "alliance": -2,
+              "next": "n3c"
+            }
+          ]
+        },
+        {
+          "id": "n3a",
+          "client": "No, w sumie tak. Bardzo chcę skończyć tę naukę. Ale szczerze, palę też wieczorami i rano czasem naprawdę nie kontaktuję.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n3a-a",
+              "text": "Co jeszcze zauważasz, kiedy rano nie kontaktujesz?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte o skutki, które sam poruszył, wywołuje kolejne wypowiedzi na rzecz zmiany.",
+              "alliance": 2,
+              "next": "n4a"
+            },
+            {
+              "id": "n3a-b",
+              "text": "Mocne, że mówisz o tym tak otwarcie. Dokładnie przyglądasz się temu, ile znaczy dla ciebie ta nauka.",
+              "category": "affirmation",
+              "feedback": "Szczere docenienie jego otwartości wzmacnia poczucie własnej skuteczności.",
+              "alliance": 1,
+              "next": "n4a"
+            },
+            {
+              "id": "n3a-c",
+              "text": "To przestań też wieczorami. Nauka jest ważniejsza.",
+              "category": "adviseWithoutPermission",
+              "feedback": "„Po prostu przestań” lekceważy trudność i odbiera mu inicjatywę – zaczyna się bronić, zamiast planować.",
+              "alliance": -1,
+              "next": "n4b"
+            }
+          ]
+        },
+        {
+          "id": "n3b",
+          "client": "Nie wiem. Wszyscy w moim wieku palą. Zresztą trawka jest teraz prawie legalna, w Bernie jest nawet jakiś pilotaż.",
+          "talk": "neutral",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n3b-a",
+              "text": "Z jednej strony palenie to dla ciebie normalna sprawa, z drugiej siedzisz tu, bo może cię kosztować coś, co jest dla ciebie ważne.",
+              "category": "complexReflection",
+              "feedback": "Dwustronne odzwierciedlenie pokazuje ambiwalencję bez naciskania – Jan sam może przechylić się w stronę zmiany.",
+              "alliance": 2,
+              "next": "n4a"
+            },
+            {
+              "id": "n3b-b",
+              "text": "Co by się zmieniło, gdybyś przestał palić w przerwach?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte zaprasza go do przemyślenia alternatywy z jego własnej perspektywy.",
+              "alliance": 1,
+              "next": "n4a"
+            },
+            {
+              "id": "n3b-c",
+              "text": "Czyli palisz, bo wszyscy palą?",
+              "category": "closedQuestion",
+              "feedback": "Pytanie zamknięte z wbudowaną odpowiedzią brzmi jak pułapka – Jan raczej się zamknie.",
+              "alliance": 0,
+              "next": "n4b"
+            },
+            {
+              "id": "n3b-d",
+              "text": "Ten pilotaż jest tylko dla dorosłych. A w twoim wieku trawka szkodzi mózgowi, przecież wiesz.",
+              "category": "moralize",
+              "feedback": "Fakty podane jako reprymenda i moralizowanie zwykle wzmacniają u młodych argumenty za używaniem.",
+              "alliance": -2,
+              "next": "n4b"
+            }
+          ]
+        },
+        {
+          "id": "n3c",
+          "client": "No właśnie. Ciągle to samo. Mogę już iść? O drugiej mam znowu lekcje.",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [
+            {
+              "id": "n3c-a",
+              "text": "Jeśli teraz wyjdziesz, powiem mistrzowi, że nie współpracujesz.",
+              "category": "confront",
+              "feedback": "Nacisk i groźby są sprzeczne z duchem dialogu motywującego – rozmowa kończy się, zanim się zaczęła.",
+              "alliance": -2,
+              "next": "end_poor"
+            },
+            {
+              "id": "n3c-b",
+              "text": "Masz dość tego, że wszyscy mówią ci, co masz robić.",
+              "category": "simpleReflection",
+              "feedback": "Odzwierciedlenie jego zniecierpliwienia i rezygnacja z rad to najprostszy sposób na naprawę relacji.",
+              "alliance": 1,
+              "next": "n4b"
+            },
+            {
+              "id": "n3c-c",
+              "text": "Dobrze, że mówisz wprost, co cię wkurza. Nie chcę ci prawić kazań – ciekawi mnie, jak ty to widzisz.",
+              "category": "affirmation",
+              "feedback": "Docenienie jego szczerości i podkreślenie autonomii zmniejsza dysonans.",
+              "alliance": 1,
+              "next": "n4b"
+            }
+          ]
+        },
+        {
+          "id": "n4a",
+          "client": "Jestem po prostu wolniejszy, a w zeszłym tygodniu narobiłem błędów przy kompletowaniu zamówień. Szef to zauważył. Nie chcę, żeby myślał, że jestem jakimś ćpunem, z którego nie ma pożytku.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n4a-a",
+              "text": "Znam kilka rzeczy, które pomogły innym uczniom w podobnej sytuacji. Chcesz posłuchać?",
+              "category": "adviseWithPermission",
+              "feedback": "Pytanie o zgodę przed udzieleniem informacji szanuje autonomię i zwiększa szansę, że rada zostanie przyjęta.",
+              "alliance": 1,
+              "next": "n5a"
+            },
+            {
+              "id": "n4a-b",
+              "text": "Co mogłoby być pierwszym krokiem, żeby szef znowu zobaczył, co potrafisz?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte o kroki prowadzi od powodów do planowania – a pomysł pozostaje jego.",
+              "alliance": 2,
+              "next": "n5a"
+            },
+            {
+              "id": "n4a-c",
+              "text": "To najlepiej jutro przeproś szefa i obiecaj, że już nie będziesz palić.",
+              "category": "adviseWithoutPermission",
+              "feedback": "Gotowe rozwiązanie z zewnątrz odbiera mu odpowiedzialność – może się zgodzić tylko po to, żeby mieć spokój.",
+              "alliance": -1,
+              "next": "n5b"
+            }
+          ]
+        },
+        {
+          "id": "n4b",
+          "client": "Dobra, może palę za dużo. Ale bez tego po takim dniu bym zwariował. A kumple też palą.",
+          "talk": "sustain",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n4b-a",
+              "text": "Palenie to teraz jedyna rzecz, która niezawodnie pomaga ci po długim dniu.",
+              "category": "complexReflection",
+              "feedback": "Odzwierciedlenie trafia w sedno – i robi miejsce na szukanie innych rozwiązań.",
+              "alliance": 2,
+              "next": "n5b"
+            },
+            {
+              "id": "n4b-b",
+              "text": "No widzisz, sam przyznajesz: masz problem z uzależnieniem.",
+              "category": "confront",
+              "feedback": "Wykorzystanie jego przyznania się do przyklejenia etykiety sprawia, że milknie. Do zmiany etykieta nie jest potrzebna.",
+              "alliance": -2,
+              "next": "end_poor"
+            },
+            {
+              "id": "n4b-c",
+              "text": "Co pomagało ci po ciężkim dniu, zanim zacząłeś palić?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte zachęca go do znalezienia własnych alternatyw.",
+              "alliance": 1,
+              "next": "n5a"
+            }
+          ]
+        },
+        {
+          "id": "n5a",
+          "client": "Kiedyś codziennie jeździłem do pracy rowerem i grałem w piłkę. Może w przerwie mógłbym po prostu wychodzić z Eliasem, on nie pali.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n5a-a",
+              "text": "Podsumuję: nauka zawodu jest dla ciebie ważna, zauważasz, że rano jesteś wolniejszy i popełniasz błędy, i sam masz dwa pomysły – rower i przerwy z Eliasem. Czy dobrze to rozumiem?",
+              "category": "summary",
+              "feedback": "Podsumowanie zbiera jego wypowiedzi na rzecz zmiany – Jan jeszcze raz słyszy własne argumenty.",
+              "alliance": 2,
+              "next": "n6"
+            },
+            {
+              "id": "n5a-b",
+              "text": "To konkretne pomysły i wychodzą od ciebie. Widać, że całkiem dobrze wiesz, co ci służy.",
+              "category": "affirmation",
+              "feedback": "Docenienie jego pomysłów wzmacnia zaangażowanie.",
+              "alliance": 1,
+              "next": "n6"
+            },
+            {
+              "id": "n5a-c",
+              "text": "Super. I najlepiej od razu usuń numer dilera i przestań chodzić na przerwy z resztą.",
+              "category": "adviseWithoutPermission",
+              "feedback": "Lista poleceń w chwili, gdy zaczyna planować, przejmuje inicjatywę i osłabia jego zaangażowanie.",
+              "alliance": -1,
+              "next": "end_mixed"
+            }
+          ]
+        },
+        {
+          "id": "n5b",
+          "client": "Nie wiem, czy dam radę. Ale może mógłbym coś zmienić.",
+          "talk": "neutral",
+          "mood": "calm",
+          "options": [
+            {
+              "id": "n5b-a",
+              "text": "Co pomogłoby ci spróbować?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte wspiera rodzącą się gotowość i zostawia mu wybór drogi.",
+              "alliance": 1,
+              "next": "n6"
+            },
+            {
+              "id": "n5b-b",
+              "text": "„Może” to za mało. Z takim podejściem szybko stracisz miejsce nauki.",
+              "category": "moralize",
+              "feedback": "Groźby i moralizowanie duszą kruchą gotowość do zmiany.",
+              "alliance": -2,
+              "next": "end_poor"
+            },
+            {
+              "id": "n5b-c",
+              "text": "Jesteś rozdarty: palenie pomaga ci się wyluzować i należy do bycia z kumplami – a jednocześnie chcesz skończyć naukę i coś zmienić, nawet jeśli to tylko mały krok.",
+              "category": "summary",
+              "feedback": "Podsumowanie w formie dwustronnego odzwierciedlenia, które kończy się jego wypowiedziami na rzecz zmiany, wzmacnia je.",
+              "alliance": 2,
+              "next": "n6"
+            }
+          ]
+        },
+        {
+          "id": "n6",
+          "client": "Dobra. W tym tygodniu nie palę w przerwach i wychodzę z Eliasem. Wieczorami zobaczę. Niczego nie obiecuję.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n6-a",
+              "text": "Ale obiecujesz mi, że w firmie już nigdy nie będziesz palić, tak?",
+              "category": "closedQuestion",
+              "feedback": "Wymuszanie obietnicy zamienia jego decyzję w przyrzeczenie złożone dorosłemu – a to łatwo prowadzi do wstydu i ukrywania.",
+              "alliance": -1,
+              "next": "end_mixed"
+            },
+            {
+              "id": "n6-b",
+              "text": "A jeśli w przerwie kumpel i tak poczęstuje cię jointem – jak chcesz zareagować?",
+              "category": "openQuestion",
+              "feedback": "Pytanie o trudny moment pomaga mu przygotować własny plan na sytuacje ryzyka.",
+              "alliance": 1,
+              "next": "end_good"
+            },
+            {
+              "id": "n6-c",
+              "text": "Doceniam, że szczerze mówisz, na co się czujesz gotowy. To dobry początek.",
+              "category": "affirmation",
+              "feedback": "Docenienie jego szczerości i realistycznego celu wzmacnia zaangażowanie bez nacisku.",
+              "alliance": 2,
+              "next": "end_good"
+            }
+          ]
+        },
+        {
+          "id": "end_good",
+          "client": "Dzięki, że nie lecisz od razu do szefa. Możemy pogadać jeszcze raz w przyszłym tygodniu?",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [],
+          "ending": {
+            "title": "Własny plan",
+            "text": "Jan sformułował własne powody i pierwszy krok, a relacja się wzmocniła. Następnie wspólnie ustalacie, co przekażecie mistrzowi – przejrzyście i za zgodą Jana.",
+            "quality": "good"
+          }
+        },
+        {
+          "id": "end_mixed",
+          "client": "No dobra, zrobię tak. Mogę już iść?",
+          "talk": "neutral",
+          "mood": "calm",
+          "options": [],
+          "ending": {
+            "title": "Zgoda bez przekonania",
+            "text": "Pojawiły się wypowiedzi na rzecz zmiany, ale na końcu inicjatywę przejął specjalista. Jan zgadza się raczej po to, żeby mieć spokój, niż z własnego przekonania.",
+            "quality": "mixed"
+          }
+        },
+        {
+          "id": "end_poor",
+          "client": "Daj spokój. Powiem szefowi, że tu byłem. Nic więcej nie muszę.",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [],
+          "ending": {
+            "title": "Dysonans",
+            "text": "Konfrontacja i pouczanie sprawiły, że Jan bronił palenia, zamiast przyglądać się zmianie. Następnym razem zacznij od odzwierciedlenia jego punktu widzenia i wyjaśnienia zasad poufności.",
+            "quality": "poor"
+          }
+        }
+      ],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch-bern-parent-alcohol",
+      "country": "CH",
+      "title": "Sandra w ośrodku pomocy społecznej – wino po rozstaniu",
+      "context": "community",
+      "audience": "adult",
+      "persona": {
+        "name": "Sandra",
+        "age": 38,
+        "description": "Matka dwojga dzieci (8 i 11 lat), od pół roku po rozstaniu i od tego czasu korzysta ze wsparcia ośrodka pomocy społecznej (Sozialdienst). Dawniej asystentka stomatologiczna, obecnie w programie integracji zawodowej. Od rozstania niemal co wieczór pije wino, gdy dzieci już śpią."
+      },
+      "intro": "Sozialdienst miasta Berna, rutynowa rozmowa dotycząca wsparcia. Pod koniec Sandra nagle mówi, że martwi się, bo wieczorami pije „za dużo”. Potem urywa i patrzy na zegar. Jesteś pracownikiem socjalnym prowadzącym jej sprawę.",
+      "start": "n1",
+      "nodes": [
+        {
+          "id": "n1",
+          "client": "Proszę zapomnieć, co powiedziałam. To nic takiego. Po prostu wypijam kieliszek wina, kiedy dzieci są w łóżku. Wiele osób tak robi.",
+          "talk": "sustain",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n1-a",
+              "text": "Czy pije Pani codziennie wieczorem?",
+              "category": "closedQuestion",
+              "feedback": "Zamknięte pytanie o częstotliwość brzmi w tym momencie jak kontrola – raczej się wycofa.",
+              "alliance": 0,
+              "next": "n2b"
+            },
+            {
+              "id": "n1-b",
+              "text": "A jednak Pani o tym wspomniała. Co Panią do tego skłoniło?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte nawiązuje do tego, że sama poruszyła temat – bez nacisku i z szacunkiem dla jej tempa.",
+              "alliance": 1,
+              "next": "n2a"
+            },
+            {
+              "id": "n1-c",
+              "text": "Pewnie nie kończy się na jednym kieliszku, inaczej by Pani o tym nie wspomniała.",
+              "category": "confront",
+              "feedback": "Podważanie jej słów wywołuje wstyd i wycofanie – raczej zacznie bagatelizować temat.",
+              "alliance": -2,
+              "next": "n2b"
+            },
+            {
+              "id": "n1-d",
+              "text": "Wymknęło się to Pani, a teraz nie jest Pani pewna, czy dobrze było o tym mówić.",
+              "category": "simpleReflection",
+              "feedback": "Odzwierciedlenie wychwytuje jej niepewność i oddaje jej kontrolę nad rozmową.",
+              "alliance": 1,
+              "next": "n2a"
+            }
+          ]
+        },
+        {
+          "id": "n2a",
+          "client": "Od rozstania tak to wygląda. W dzień funkcjonuję dla dzieci, a wieczorem jest tak cicho. Wtedy z jednego kieliszka robi się butelka.",
+          "talk": "neutral",
+          "mood": "sad",
+          "options": [
+            {
+              "id": "n2a-a",
+              "text": "Ile pije Pani w typowy wieczór?",
+              "category": "openQuestion",
+              "feedback": "Pytanie o ilość jest uzasadnione, ale pomija uczucie, którym właśnie się podzieliła – rozmowa staje się bardziej rzeczowa, ale płytsza.",
+              "alliance": 1,
+              "next": "n3b"
+            },
+            {
+              "id": "n2a-b",
+              "text": "Przez cały dzień trzyma Pani wszystko w ryzach, a wino jest teraz tym, co pomaga przetrwać wieczorną samotność.",
+              "category": "complexReflection",
+              "feedback": "Złożone odzwierciedlenie nazywa samotność stojącą za piciem i pośrednio docenia jej wysiłek – pogłębia relację.",
+              "alliance": 2,
+              "next": "n3a"
+            },
+            {
+              "id": "n2a-c",
+              "text": "To powinna Pani coś zaplanować na wieczory, na przykład zapisać się na kurs albo zadzwonić do przyjaciółki.",
+              "category": "adviseWithoutPermission",
+              "feedback": "Dobra rada bez pytania o zgodę przychodzi za wcześnie – czuje się pouczana, a nie zrozumiana.",
+              "alliance": -1,
+              "next": "n3c"
+            }
+          ]
+        },
+        {
+          "id": "n2b",
+          "client": "No właśnie, dlatego ludzie nic nie mówią. Czy to teraz trafi do moich akt? Zgłosicie mnie do KESB?",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [
+            {
+              "id": "n2b-a",
+              "text": "Dzieci są dla Pani najważniejsze i właśnie dlatego przeraża Panią myśl, że wtrąci się jakiś urząd.",
+              "category": "complexReflection",
+              "feedback": "Złożone odzwierciedlenie łączy jej lęk z troską o dzieci. Potem jest miejsce, by uczciwie wyjaśnić, kiedy zgłoszenie do KESB w ogóle wchodziłoby w grę.",
+              "alliance": 2,
+              "next": "n3b"
+            },
+            {
+              "id": "n2b-b",
+              "text": "Jeśli w domu są dzieci, muszę traktować takie rzeczy poważnie. To mój obowiązek.",
+              "category": "confront",
+              "feedback": "Powoływanie się na obowiązek, zanim sytuacja zostanie wyjaśniona, potwierdza jej najgorsze obawy – zamknie się.",
+              "alliance": -2,
+              "next": "n3c"
+            },
+            {
+              "id": "n2b-c",
+              "text": "Boi się Pani, że Pani szczerość zostanie wykorzystana przeciwko Pani.",
+              "category": "simpleReflection",
+              "feedback": "Odzwierciedlenie traktuje jej lęk poważnie, bez tłumaczenia się – napięcie spada.",
+              "alliance": 1,
+              "next": "n3b"
+            }
+          ]
+        },
+        {
+          "id": "n3a",
+          "client": "Tak. I nie chcę, żeby córka mnie taką widziała. W zeszłym tygodniu zapytała, dlaczego rano jestem zawsze taka zmęczona.",
+          "talk": "change",
+          "mood": "sad",
+          "options": [
+            {
+              "id": "n3a-a",
+              "text": "To najlepiej całkiem odstawić wino, dla dobra dzieci.",
+              "category": "adviseWithoutPermission",
+              "feedback": "„Dla dobra dzieci” pogłębia poczucie winy i odbiera jej decyzję – wstyd rzadko jest dobrym motorem zmiany.",
+              "alliance": -1,
+              "next": "n4b"
+            },
+            {
+              "id": "n3a-b",
+              "text": "Co wywołało w Pani to pytanie córki?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte pogłębia jej własną troskę i wywołuje kolejne wypowiedzi na rzecz zmiany.",
+              "alliance": 2,
+              "next": "n4a"
+            },
+            {
+              "id": "n3a-c",
+              "text": "Widać, jak bardzo jest Pani uważna na dzieci – nawet w czasie, który dla Pani samej jest bardzo trudny.",
+              "category": "affirmation",
+              "feedback": "Docenienie wzmacnia jej obraz siebie jako troskliwej matki, nie pomijając trudności.",
+              "alliance": 1,
+              "next": "n4a"
+            }
+          ]
+        },
+        {
+          "id": "n3b",
+          "client": "Nie wiem. Codziennie rano punktualnie odprowadzam dzieci do szkoły i chodzę na program integracji. Przy nich nigdy nie jestem pijana.",
+          "talk": "neutral",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n3b-a",
+              "text": "Dzieci zauważają więcej, niż się wydaje. Alkohol w rodzinie zawsze zostawia ślad.",
+              "category": "moralize",
+              "feedback": "Moralizowanie pogłębia wstyd i obronę – zacznie bronić swojego zachowania.",
+              "alliance": -2,
+              "next": "n4b"
+            },
+            {
+              "id": "n3b-b",
+              "text": "Bardzo się Pani stara, żeby dzieci niczego nie zauważyły – a mimo to coś w tym tak Panią niepokoi, że dziś Pani o tym wspomniała.",
+              "category": "complexReflection",
+              "feedback": "Dwustronne odzwierciedlenie docenia jej wysiłek i delikatnie kieruje uwagę na jej własny niepokój.",
+              "alliance": 2,
+              "next": "n4a"
+            },
+            {
+              "id": "n3b-c",
+              "text": "Czyli ma Pani wszystko pod kontrolą?",
+              "category": "closedQuestion",
+              "feedback": "Pytanie zamknięte zachęca, by odpowiedziała „tak” i zamknęła temat.",
+              "alliance": 0,
+              "next": "n4b"
+            },
+            {
+              "id": "n3b-d",
+              "text": "Co najbardziej Panią niepokoi, kiedy myśli Pani o swoich wieczorach?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte zaprasza ją do nazwania własnych powodów do zmiany.",
+              "alliance": 1,
+              "next": "n4a"
+            }
+          ]
+        },
+        {
+          "id": "n3c",
+          "client": "Sama to wiem. Nie powinnam była nic mówić. Możemy wrócić do formularzy?",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [
+            {
+              "id": "n3c-a",
+              "text": "Teraz żałuje Pani, że w ogóle o tym wspomniała.",
+              "category": "simpleReflection",
+              "feedback": "Odzwierciedlenie przyjmuje jej żal bez dopytywania – drzwi pozostają otwarte.",
+              "alliance": 1,
+              "next": "n4b"
+            },
+            {
+              "id": "n3c-b",
+              "text": "Nie, ten temat jest zbyt ważny. Jeśli nie chce Pani o tym rozmawiać, trzeba będzie to odnotować.",
+              "category": "confront",
+              "feedback": "Nacisk i groźba wpisu do akt niszczą zaufanie – już nigdy nie poruszy tego tematu.",
+              "alliance": -2,
+              "next": "end_poor"
+            },
+            {
+              "id": "n3c-c",
+              "text": "Wspomnienie o tym w ogóle wymagało odwagi. To Pani decyduje, czy i jak daleko będziemy o tym rozmawiać.",
+              "category": "affirmation",
+              "feedback": "Docenienie jej odwagi i podkreślenie autonomii zmniejsza dysonans.",
+              "alliance": 1,
+              "next": "n4b"
+            }
+          ]
+        },
+        {
+          "id": "n4a",
+          "client": "Boję się, że stanę się taka jak moja matka. Ona też piła. Chcę, żeby moje dzieci miały matkę, na której mogą polegać.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n4a-a",
+              "text": "Jaki mógłby być pierwszy mały krok w tym kierunku, na który się Pani czuje gotowa?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte o krok prowadzi od powodów do planowania – a krok pozostaje jej.",
+              "alliance": 2,
+              "next": "n5a"
+            },
+            {
+              "id": "n4a-b",
+              "text": "To od razu zapiszę Panią do Berner Gesundheit, znam tam kogoś.",
+              "category": "adviseWithoutPermission",
+              "feedback": "Specjalista przejmuje kolejny krok – w dobrej wierze, ale Sandra traci decyzję o własnej drodze.",
+              "alliance": -1,
+              "next": "n5b"
+            },
+            {
+              "id": "n4a-c",
+              "text": "W Bernie jest poradnia, która zajmuje się właśnie takimi sprawami – poufnie i niezależnie od Sozialdienst. Czy chce Pani usłyszeć o niej więcej?",
+              "category": "adviseWithPermission",
+              "feedback": "Pytanie o zgodę przed udzieleniem informacji szanuje jej autonomię – a niezależność od Sozialdienst traktuje jej lęk poważnie.",
+              "alliance": 1,
+              "next": "n5a"
+            }
+          ]
+        },
+        {
+          "id": "n4b",
+          "client": "Może piję trochę za dużo, tak. Ale bez wina nie mogę zasnąć. A kto inny mi pomoże wieczorem?",
+          "talk": "sustain",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n4b-a",
+              "text": "Co dawniej Pani pomagało, kiedy było Pani źle?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte zachęca ją do sięgnięcia po własne zasoby.",
+              "alliance": 1,
+              "next": "n5a"
+            },
+            {
+              "id": "n4b-b",
+              "text": "Wino jest teraz jedyną pomocą w najtrudniejszych godzinach dnia – rezygnacja z niego bez niczego w zamian wydaje się niemożliwa.",
+              "category": "complexReflection",
+              "feedback": "Odzwierciedlenie trafia w sedno jej ambiwalencji i robi miejsce na wspólne szukanie alternatyw.",
+              "alliance": 2,
+              "next": "n5b"
+            },
+            {
+              "id": "n4b-c",
+              "text": "Jeśli nie może Pani zasnąć bez alkoholu, to już jest Pani uzależniona. Musi to Pani przyjąć do wiadomości.",
+              "category": "confront",
+              "feedback": "Przyklejanie etykiety zamienia ambiwalencję w walkę – zacznie się sprzeciwiać albo zamilknie.",
+              "alliance": -2,
+              "next": "end_poor"
+            }
+          ]
+        },
+        {
+          "id": "n5a",
+          "client": "Kiedyś dużo rozmawiałam przez telefon z siostrą. I lubiłam biegać nad Aare. Może mogłabym porozmawiać z kimś, kto zna się na alkoholu – ale nie tutaj, w Sozialdienst.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n5a-a",
+              "text": "Dobrze, to proszę jeszcze dziś zadzwonić do Berner Gesundheit i najlepiej od razu odstawić wino.",
+              "category": "adviseWithoutPermission",
+              "feedback": "Polecenia w chwili, gdy sama zaczyna planować, przejmują inicjatywę i osłabiają jej zaangażowanie.",
+              "alliance": -1,
+              "next": "end_mixed"
+            },
+            {
+              "id": "n5a-b",
+              "text": "Pozwolę sobie podsumować: od rozstania wieczory są samotne, a wino pomaga je przetrwać – ale martwi się Pani o dzieci i nie chce stać się taka jak Pani matka. I ma Pani własne pomysły: siostra, bieganie i rozmowa w poradni poza Sozialdienst. Czy dobrze to rozumiem?",
+              "category": "summary",
+              "feedback": "Podsumowanie zbiera jej wypowiedzi na rzecz zmiany i własne pomysły – Sandra jeszcze raz słyszy swoje powody.",
+              "alliance": 2,
+              "next": "n6"
+            },
+            {
+              "id": "n5a-c",
+              "text": "Dobrze Pani wie, co kiedyś dawało Pani siłę. I to całkiem zrozumiałe, że chce Pani do tego miejsca poza Sozialdienst.",
+              "category": "affirmation",
+              "feedback": "Docenienie wzmacnia jej zasoby i szanuje jej potrzebę granic.",
+              "alliance": 1,
+              "next": "n6"
+            }
+          ]
+        },
+        {
+          "id": "n5b",
+          "client": "Nie wiem, czy potrafię coś zmienić. Ale tak jak teraz też nie chcę dalej żyć.",
+          "talk": "neutral",
+          "mood": "calm",
+          "options": [
+            {
+              "id": "n5b-a",
+              "text": "Z jednej strony wino jest teraz Pani wieczornym oparciem, z drugiej czuje Pani, że nie chce tak dalej – przede wszystkim ze względu na dzieci.",
+              "category": "summary",
+              "feedback": "Podsumowanie w formie dwustronnego odzwierciedlenia, kończące się jej wypowiedziami na rzecz zmiany, wzmacnia je.",
+              "alliance": 2,
+              "next": "n6"
+            },
+            {
+              "id": "n5b-b",
+              "text": "Co pomogłoby Pani odważyć się na pierwszą próbę?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte wspiera rodzącą się gotowość i zostawia jej wybór drogi.",
+              "alliance": 1,
+              "next": "n6"
+            },
+            {
+              "id": "n5b-c",
+              "text": "Odpowiada Pani za dwoje dzieci. Właściwie nie może sobie Pani pozwolić na takie wahanie.",
+              "category": "moralize",
+              "feedback": "Moralizowanie odpowiedzialnością matki dusi kruchą gotowość i pogłębia wstyd.",
+              "alliance": -2,
+              "next": "end_poor"
+            }
+          ]
+        },
+        {
+          "id": "n6",
+          "client": "Chyba zadzwonię do tej poradni. I zapytam siostrę, czy czasem mogłaby do mnie wieczorem dzwonić. Ale nie chcę, żeby to wszystko trafiło do moich akt.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n6-a",
+              "text": "To dwa jasne kroki, które Pani sama wybrała. To pokazuje, ile ma Pani siły mimo wszystko.",
+              "category": "affirmation",
+              "feedback": "Docenienie kroków, które sama wybrała, wzmacnia zaangażowanie bez nacisku.",
+              "alliance": 2,
+              "next": "end_good"
+            },
+            {
+              "id": "n6-b",
+              "text": "I obiecuje mi Pani, że do następnego spotkania będzie Pani mniej pić?",
+              "category": "closedQuestion",
+              "feedback": "Wymuszanie obietnicy zamienia jej decyzję w zobowiązanie wobec Sozialdienst – a to łatwo prowadzi do wstydu i ukrywania.",
+              "alliance": -1,
+              "next": "end_mixed"
+            },
+            {
+              "id": "n6-c",
+              "text": "Co Pani zdaniem powinno się znaleźć w aktach – a co wolałaby Pani zachować dla siebie? Przyjrzyjmy się temu razem.",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte traktuje poważnie jej troskę o prywatność i czyni ją partnerką w dokumentowaniu – wzmacnia zaufanie i zaangażowanie.",
+              "alliance": 1,
+              "next": "end_good"
+            }
+          ]
+        },
+        {
+          "id": "end_good",
+          "client": "Dziękuję, że nikt mnie tu nie ocenił. Dam znać, kiedy będę miała termin.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [],
+          "ending": {
+            "title": "Pierwszy krok",
+            "text": "Sandra sformułowała własne powody i kroki i sama decyduje o skorzystaniu z poradni. Jej obawy dotyczące akt potraktowano poważnie – to wzmacnia współpracę w Sozialdienst.",
+            "quality": "good"
+          }
+        },
+        {
+          "id": "end_mixed",
+          "client": "Tak, spróbuję. Możemy teraz zająć się formularzami?",
+          "talk": "neutral",
+          "mood": "guarded",
+          "options": [],
+          "ending": {
+            "title": "Zgoda pod presją",
+            "text": "Sandra się otworzyła, ale na końcu ton nadawały polecenia i obietnice. Nie wiadomo, czy zrobi krok w stronę poradni.",
+            "quality": "mixed"
+          }
+        },
+        {
+          "id": "end_poor",
+          "client": "Chyba się pomyliłam. Na przyszłość wolę nic nie mówić.",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [],
+          "ending": {
+            "title": "Utrata zaufania",
+            "text": "Konfrontacja i powoływanie się na obowiązki pogłębiły wstyd Sandry i jej lęk przed KESB. Prawdopodobnie już nie wróci do tego tematu. Lepiej: najpierw odzwierciedlić jej obawy i przejrzyście wyjaśnić, kiedy zgłoszenie w ogóle wchodziłoby w grę.",
+            "quality": "poor"
+          }
+        }
+      ],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch-bern-gassenarbeit",
+      "country": "CH",
+      "title": "Marco na Schützenmatte – pierwszy kontakt w streetworkingu",
+      "context": "streetwork",
+      "audience": "adult",
+      "persona": {
+        "name": "Marco",
+        "age": 41,
+        "description": "Często siedzi z psem na Schützenmatte, niedaleko Reitschule (alternatywnego centrum kultury przy dworcu w Bernie). Od wielu lat używa heroiny, obecnie także kokainy, w iniekcjach; wcześniej był w leczeniu substytucyjnym. Nieufny wobec urzędów, uprzejmy, gdy traktuje się go z szacunkiem."
+      },
+      "intro": "Późne popołudnie na Schützenmatte. Jesteś w terenie jako streetworker, razem z drugą osobą z zespołu. Marco siedzi z psem na murku; znacie się tylko z widzenia. Przedstawiasz się i pytasz, czy możecie chwilę porozmawiać.",
+      "start": "n1",
+      "nodes": [
+        {
+          "id": "n1",
+          "client": "Streetworking, aha. Mów mi na ty, tu nikt nie mówi „pan”. Ale niczego nie potrzebuję. Mam się dobrze i nie chcę pracowników socjalnych, którzy mnie gdzieś odsyłają.",
+          "talk": "sustain",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n1-a",
+              "text": "Nie masz ochoty, żeby ktoś ci mówił, dokąd masz iść.",
+              "category": "simpleReflection",
+              "feedback": "Proste odzwierciedlenie szanuje jego granicę – dokładnie to buduje zaufanie na ulicy.",
+              "alliance": 1,
+              "next": "n2a"
+            },
+            {
+              "id": "n1-b",
+              "text": "Używasz teraz czegoś?",
+              "category": "closedQuestion",
+              "feedback": "Bezpośrednie pytanie o używanie przy pierwszym kontakcie brzmi jak kontrola – na ulicy najpierw liczy się relacja.",
+              "alliance": 0,
+              "next": "n2b"
+            },
+            {
+              "id": "n1-c",
+              "text": "No cóż, nie wygląda to tu najlepiej. Powinieneś bardziej o siebie dbać.",
+              "category": "moralize",
+              "feedback": "Nieproszone oceny przy pierwszym kontakcie brzmią protekcjonalnie – Marco się odgrodzi.",
+              "alliance": -2,
+              "next": "n2b"
+            },
+            {
+              "id": "n1-d",
+              "text": "Jak ci się tu ostatnio żyje?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte interesuje się jego codziennością, a nie problemem – to pełne szacunku otwarcie.",
+              "alliance": 1,
+              "next": "n2a"
+            }
+          ]
+        },
+        {
+          "id": "n2a",
+          "client": "Tak sobie. Odkąd przeganiają ludzi spod dworca, wszyscy są tutaj. Więcej stresu, więcej policji. A pies potrzebuje spokoju.",
+          "talk": "neutral",
+          "mood": "calm",
+          "options": [
+            {
+              "id": "n2a-a",
+              "text": "Widać, że twój pies jest zadbany. Dobrze się nim opiekujesz.",
+              "category": "affirmation",
+              "feedback": "Docenienie jest szczere i otwiera drzwi, ale pozostaje na powierzchni – rozmowa toczy się dalej, nie pogłębiając się.",
+              "alliance": 1,
+              "next": "n3b"
+            },
+            {
+              "id": "n2a-b",
+              "text": "Dbasz nie tylko o siebie, ale też o psa – a teraz trudno znaleźć spokojne miejsce dla was obu.",
+              "category": "complexReflection",
+              "feedback": "Złożone odzwierciedlenie dostrzega jego odpowiedzialność i obciążenie – Marco czuje się zauważony jako człowiek.",
+              "alliance": 2,
+              "next": "n3a"
+            },
+            {
+              "id": "n2a-c",
+              "text": "To chodź w dzień do punktu kontaktowego, tam jest spokojniej.",
+              "category": "adviseWithoutPermission",
+              "feedback": "Propozycja bez pytania o zgodę potwierdza dokładnie to, czego się obawiał: że ktoś chce go gdzieś odesłać.",
+              "alliance": -1,
+              "next": "n3c"
+            }
+          ]
+        },
+        {
+          "id": "n2b",
+          "client": "No widzisz, o tym mówię. Ledwo człowiek gdzieś usiądzie, zaraz ktoś przychodzi i czegoś chce. Powiesz teraz policji, co robię?",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [
+            {
+              "id": "n2b-a",
+              "text": "Jestem tu, żeby pomóc. Jeśli tak reagujesz, robi się trudno.",
+              "category": "confront",
+              "feedback": "Tłumaczenie się i obwinianie go za atmosferę pogłębia dysonans.",
+              "alliance": -2,
+              "next": "n3c"
+            },
+            {
+              "id": "n2b-b",
+              "text": "Masz dość tego, że ciągle ktoś cię kontroluje.",
+              "category": "simpleReflection",
+              "feedback": "Odzwierciedlenie przyjmuje jego złość bez obrony – napięcie spada.",
+              "alliance": 1,
+              "next": "n3b"
+            },
+            {
+              "id": "n2b-c",
+              "text": "Spotkałeś już wielu, którzy czegoś od ciebie chcieli – i chcesz wiedzieć, czy ja też jestem kimś takim.",
+              "category": "complexReflection",
+              "feedback": "Złożone odzwierciedlenie nazywa jego nieufność. Potem łatwiej wyjaśnić, że streetworking jest dobrowolny i poufny.",
+              "alliance": 2,
+              "next": "n3b"
+            }
+          ]
+        },
+        {
+          "id": "n3a",
+          "client": "No. Jak mam być szczery, jestem zmęczony. Pies to jedyne, co jeszcze robię dobrze. W zeszłym tygodniu miałem ropień na ręce i dalej się nie zagoił.",
+          "talk": "change",
+          "mood": "sad",
+          "options": [
+            {
+              "id": "n3a-a",
+              "text": "Jesteś zmęczony, a ręka cię niepokoi.",
+              "category": "simpleReflection",
+              "feedback": "Odzwierciedlenie pozostaje przy jego przeżyciach i pozwala mu nadać tempo.",
+              "alliance": 1,
+              "next": "n4a"
+            },
+            {
+              "id": "n3a-b",
+              "text": "Z ropniem musisz od razu jechać do szpitala, to może być groźne.",
+              "category": "adviseWithoutPermission",
+              "feedback": "Troska jest uzasadniona, ale polecenie go pomija. Lepiej: najpierw zapytać, czy chce informacji.",
+              "alliance": -1,
+              "next": "n4b"
+            },
+            {
+              "id": "n3a-c",
+              "text": "Jak teraz radzisz sobie z tą ręką?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte nawiązuje do jego własnej troski i zachęca, by opowiedział więcej o ryzyku.",
+              "alliance": 2,
+              "next": "n4a"
+            }
+          ]
+        },
+        {
+          "id": "n3b",
+          "client": "Czego ty właściwie ode mnie chcesz? Jestem na ulicy od dwudziestu lat. Wiem, jak to działa.",
+          "talk": "neutral",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n3b-a",
+              "text": "Co byłoby dla ciebie teraz pomocne – jeśli w ogóle coś?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte zostawia jemu decyzję, czy i czego potrzebuje – autonomia zamiast katalogu ofert.",
+              "alliance": 1,
+              "next": "n4a"
+            },
+            {
+              "id": "n3b-b",
+              "text": "Dwadzieścia lat to długo. Nie chcesz w końcu czegoś zmienić?",
+              "category": "moralize",
+              "feedback": "To pytanie brzmi jak wyrzut – Marco słyszy, że ktoś ocenia jego życie.",
+              "alliance": -2,
+              "next": "n4b"
+            },
+            {
+              "id": "n3b-c",
+              "text": "Znasz to miejsce lepiej niż większość tych, którzy chcą z tobą rozmawiać – i sam decydujesz, czego od nas potrzebujesz.",
+              "category": "complexReflection",
+              "feedback": "Złożone odzwierciedlenie docenia jego doświadczenie i podkreśla autonomię – rozbraja nieufność.",
+              "alliance": 2,
+              "next": "n4a"
+            },
+            {
+              "id": "n3b-d",
+              "text": "Znasz punkt kontaktowy K&A?",
+              "category": "closedQuestion",
+              "feedback": "Pytanie zamknięte od razu przeskakuje do oferty – po dwudziestu latach na ulicy i tak ją zna, a rozmowa się zacina.",
+              "alliance": 0,
+              "next": "n4b"
+            }
+          ]
+        },
+        {
+          "id": "n3c",
+          "client": "Wszyscy jesteście tacy sami. Po prostu daj mi spokój.",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [
+            {
+              "id": "n3c-a",
+              "text": "Dzięki, że mówisz to jasno. Szanujemy to. Często tu bywamy, gdybyś kiedyś czegoś potrzebował.",
+              "category": "affirmation",
+              "feedback": "Uszanowanie jego granicy i pozostawienie otwartej oferty zostawia drzwi otwarte na późniejszy kontakt.",
+              "alliance": 1,
+              "next": "n4b"
+            },
+            {
+              "id": "n3c-b",
+              "text": "Dziś po prostu chcesz mieć spokój.",
+              "category": "simpleReflection",
+              "feedback": "Odzwierciedlenie akceptuje jego życzenie i zdejmuje presję z sytuacji.",
+              "alliance": 1,
+              "next": "n4b"
+            },
+            {
+              "id": "n3c-c",
+              "text": "Nie dam ci spokoju, kiedy się wykańczasz.",
+              "category": "confront",
+              "feedback": "Zatrzymywanie go wbrew jego woli przeczy dobrowolności streetworkingu – kontakt się urywa.",
+              "alliance": -2,
+              "next": "end_poor"
+            }
+          ]
+        },
+        {
+          "id": "n4a",
+          "client": "Czasem daję sobie w żyłę na zewnątrz, kiedy punkt jest zamknięty. Wtedy biorę, co mam. Wiem, że to nie jest dobre dla ręki. A ostatnio… kumpel prawie się nie obudził.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n4a-a",
+              "text": "Co musiałoby się zmienić, żeby było bezpieczniej dla ciebie i twojej ręki?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte zachęca go do samodzielnego wymyślenia sposobów redukcji szkód.",
+              "alliance": 2,
+              "next": "n5a"
+            },
+            {
+              "id": "n4a-b",
+              "text": "To koniecznie musisz wrócić do leczenia substytucyjnego, wtedy to się skończy.",
+              "category": "adviseWithoutPermission",
+              "feedback": "Duży krok przychodzi za wcześnie i z zewnątrz – Marco znów czuje, że ktoś go „gdzieś odsyła”.",
+              "alliance": -1,
+              "next": "n5b"
+            },
+            {
+              "id": "n4a-c",
+              "text": "Mamy przy sobie czysty sprzęt i nalokson, mogę ci pokazać, jak go użyć. Chcesz?",
+              "category": "adviseWithPermission",
+              "feedback": "Konkretna oferta z pytaniem o zgodę – dokładnie to, co w streetworkingu może ratować życie, bez traktowania z góry.",
+              "alliance": 1,
+              "next": "n5a"
+            }
+          ]
+        },
+        {
+          "id": "n4b",
+          "client": "Nie potrzebuję lekarza. I tak patrzą na mnie jak na śmiecia. A psa nie mam gdzie zostawić.",
+          "talk": "sustain",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n4b-a",
+              "text": "Masz złe doświadczenia, a dopóki nie możesz zabrać psa, pomoc w ogóle nie wchodzi w grę.",
+              "category": "complexReflection",
+              "feedback": "Odzwierciedlenie trafia w dwie prawdziwe przeszkody – wstyd i odpowiedzialność za psa – i robi miejsce na rozwiązania.",
+              "alliance": 2,
+              "next": "n5b"
+            },
+            {
+              "id": "n4b-b",
+              "text": "Gdzie kiedyś poczułeś, że dobrze cię potraktowano?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte szuka pozytywnych wyjątków i wzmacnia jego własne zasoby.",
+              "alliance": 1,
+              "next": "n5a"
+            },
+            {
+              "id": "n4b-c",
+              "text": "Nie możesz tak dalej. Ręka zrobi się zakażona, jeśli nic nie zrobisz.",
+              "category": "confront",
+              "feedback": "Nacisk i straszenie potwierdzają jego doświadczenia ze specjalistami – wycofuje się.",
+              "alliance": -2,
+              "next": "end_poor"
+            }
+          ]
+        },
+        {
+          "id": "n5a",
+          "client": "W punkcie jest pielęgniarka, która jest w porządku. Nigdy nie patrzyła na mnie krzywo. A psa można przywiązać na zewnątrz. Może pójdę jutro, z powodu ręki.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n5a-a",
+              "text": "Dobrze, i od razu zapytaj tam o miejsce w programie substytucyjnym i o mieszkanie.",
+              "category": "adviseWithoutPermission",
+              "feedback": "Kolejne zadania w chwili, gdy planuje własny krok, przytłaczają go i osłabiają zaangażowanie.",
+              "alliance": -1,
+              "next": "end_mixed"
+            },
+            {
+              "id": "n5a-b",
+              "text": "Dokładnie wiesz, gdzie dobrze cię traktują. To dobry pomysł i wychodzi od ciebie.",
+              "category": "affirmation",
+              "feedback": "Docenienie jego własnego pomysłu wzmacnia zaangażowanie.",
+              "alliance": 1,
+              "next": "n6"
+            },
+            {
+              "id": "n5a-c",
+              "text": "Podsumuję: pies jest dla ciebie bardzo ważny, jesteś zmęczony, ręka cię niepokoi, a po tym, co stało się z kumplem, chcesz używać bezpieczniej. I znasz w punkcie pielęgniarkę, której ufasz. Zgadza się?",
+              "category": "summary",
+              "feedback": "Podsumowanie zbiera jego wypowiedzi na rzecz zmiany – Marco jeszcze raz słyszy własne powody.",
+              "alliance": 2,
+              "next": "n6"
+            }
+          ]
+        },
+        {
+          "id": "n5b",
+          "client": "Nie wiem. Może. Jeśli to nie będzie zbyt skomplikowane.",
+          "talk": "neutral",
+          "mood": "calm",
+          "options": [
+            {
+              "id": "n5b-a",
+              "text": "Wiesz, wielu by się ucieszyło z takiej oferty. Nie powinieneś jej odrzucać.",
+              "category": "moralize",
+              "feedback": "Moralizowanie zamienia ofertę w obowiązek wdzięczności – niszczy jego kruchą gotowość.",
+              "alliance": -2,
+              "next": "end_poor"
+            },
+            {
+              "id": "n5b-b",
+              "text": "Z jednej strony masz złe doświadczenia z lekarzami i urzędami i nie chcesz zostawiać psa samego – z drugiej czujesz, że ręka i używanie na zewnątrz cię niepokoją.",
+              "category": "summary",
+              "feedback": "Podsumowanie w formie dwustronnego odzwierciedlenia, kończące się jego niepokojem, wzmacnia wypowiedzi na rzecz zmiany.",
+              "alliance": 2,
+              "next": "n6"
+            },
+            {
+              "id": "n5b-c",
+              "text": "Co by ci to ułatwiło?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte traktuje jego warunek poważnie i zachęca, by sam wskazał rozwiązania.",
+              "alliance": 1,
+              "next": "n6"
+            }
+          ]
+        },
+        {
+          "id": "n6",
+          "client": "Dobra. Daj mi ten nalokson i sprzęt. A jutro może pójdę do punktu z tą ręką. Ale tylko jeśli pies może iść ze mną.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n6-a",
+              "text": "Jak możemy cię jutro najlepiej wesprzeć, żeby udało się z ręką i z psem?",
+              "category": "openQuestion",
+              "feedback": "Pytanie otwarte czyni go autorem kolejnego kroku i proponuje towarzyszenie bez naciskania.",
+              "alliance": 1,
+              "next": "end_good"
+            },
+            {
+              "id": "n6-b",
+              "text": "Obiecujesz mi, że jutro naprawdę pójdziesz?",
+              "category": "closedQuestion",
+              "feedback": "Wymuszanie obietnicy zamienia jego decyzję w dług wobec ciebie – osłabia zaufanie.",
+              "alliance": -1,
+              "next": "end_mixed"
+            },
+            {
+              "id": "n6-c",
+              "text": "To ważny krok – dla ciebie i dla twoich kumpli. Z naloksonem możesz w nagłej sytuacji nawet uratować komuś życie.",
+              "category": "affirmation",
+              "feedback": "Docenienie podkreśla jego kompetencje i odpowiedzialność – wzmacnia poczucie własnej wartości i zaangażowanie.",
+              "alliance": 2,
+              "next": "end_good"
+            }
+          ]
+        },
+        {
+          "id": "end_good",
+          "client": "Dobra. Jesteście w porządku. Jak jutro wpadniecie, może tu będę.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [],
+          "ending": {
+            "title": "Zbudowane zaufanie",
+            "text": "Pierwszy kontakt kończy się czystym sprzętem, naloksonem i możliwym kolejnym krokiem do punktu kontaktowego. W streetworkingu to duży sukces: Marco sam decyduje, co przyjmuje.",
+            "quality": "good"
+          }
+        },
+        {
+          "id": "end_mixed",
+          "client": "Zobaczymy. Muszę już iść.",
+          "talk": "neutral",
+          "mood": "guarded",
+          "options": [],
+          "ending": {
+            "title": "Kontakt na krawędzi",
+            "text": "Marco był otwarty, ale warunki i oczekiwania osłabiły zaufanie. Kolejny kontakt jest możliwy, ale niepewny.",
+            "quality": "mixed"
+          }
+        },
+        {
+          "id": "end_poor",
+          "client": "Dajcie mi spokój. Chodź, idziemy.",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [],
+          "ending": {
+            "title": "Zerwany kontakt",
+            "text": "Marco odszedł z psem. W streetworkingu jeden zły pierwszy kontakt może na długo zamknąć dostęp – także do innych osób ze sceny.",
+            "quality": "poor"
+          }
+        }
+      ],
+      "reviewStatus": "do_weryfikacji"
     }
   ]
 }

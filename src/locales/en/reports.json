@@ -11,5 +11,10 @@
   "relapseTitle": "My relapse prevention plan",
   "relapseSubtitle": "A card to keep with you",
   "crisisLine": "In crisis (Poland): 116 123 (emotional support for adults), 116 111 (children and young people), 112 (emergency). Switzerland: 143, 147, 144.",
-  "readaptationTitle": "Re-entry plan"
+  "readaptationTitle": "Re-entry plan",
+  "crisisLine_CH": "In crisis (Switzerland): 143 (Die Dargebotene Hand), 147 (children and young people), 144 (ambulance), 117 (police), 112. Poland: 116 123, 116 111.",
+  "anon": {
+    "person": "[person]",
+    "removed": "[removed]"
+  }
 }

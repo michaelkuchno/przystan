@@ -3,9 +3,18 @@
   "appearance": "Wygląd i język",
   "language": "Język",
   "term": "Nazewnictwo",
-  "terms": { "podopieczny": "podopieczny", "klient": "klient", "wychowanek": "wychowanek", "uczestnik": "uczestnik" },
+  "terms": {
+    "podopieczny": "podopieczny",
+    "klient": "klient",
+    "wychowanek": "wychowanek",
+    "uczestnik": "uczestnik"
+  },
   "theme": "Motyw",
-  "themes": { "system": "Systemowy", "light": "Jasny", "dark": "Ciemny" },
+  "themes": {
+    "system": "Systemowy",
+    "light": "Jasny",
+    "dark": "Ciemny"
+  },
   "textSize": "Rozmiar tekstu",
   "presentation": "Tryb prezentacji",
   "presentationHint": "Większa czcionka, ukryte kody osób, nawigacja strzałkami ← → (rzutnik na uczelni).",
@@ -67,5 +76,21 @@
   "danger": "Strefa zagrożenia",
   "wipe": "Usuń wszystkie dane",
   "wipeText": "Trwale usuwa wszystkie dane i hasło z tego urządzenia.",
-  "wipeConfirm": "Tej operacji nie można cofnąć. Upewnij się, że masz kopię zapasową."
+  "wipeConfirm": "Tej operacji nie można cofnąć. Upewnij się, że masz kopię zapasową.",
+  "country": "Kraj pracy",
+  "countryHint": "System pomocy, „Gdzie skierować?”, podstawy prawne, numery kryzysowe i przypadki DEMO.",
+  "bio": {
+    "labelAndroid": "Odblokowanie odciskiem palca lub twarzą",
+    "labelPasskey": "Odblokowanie Face ID / Touch ID (klucz dostępu)",
+    "hint": "Opcjonalne. Hasło będzie i tak potrzebne co 7 dni, po 5 nieudanych próbach i po zmianie biometrii w systemie.",
+    "enableTitle": "Włącz odblokowanie biometrią",
+    "enableText": "Wpisz hasło – kopia klucza danych zostanie zabezpieczona biometrią tego urządzenia. Wyłączenie usuwa tę kopię.",
+    "enable": "Włącz",
+    "enabled": "Odblokowanie biometrią włączone",
+    "disabled": "Odblokowanie biometrią wyłączone, klucz usunięty",
+    "unsupported": "To urządzenie lub przeglądarka nie obsługuje bezpiecznego odblokowania biometrią (wymagane rozszerzenie PRF).",
+    "error": "Nie udało się włączyć biometrii. Spróbuj ponownie.",
+    "promptTitle": "Przystań",
+    "promptEnable": "Potwierdź, aby włączyć odblokowanie biometrią"
+  }
 }

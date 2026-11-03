@@ -1,0 +1,597 @@
+{
+  "levels": [
+    {
+      "id": "universal",
+      "title": "Universelle Prävention",
+      "description": "Richtet sich an eine ganze Bevölkerungsgruppe (z. B. alle Schüler/innen einer Klasse oder Schule), unabhängig von ihrem Risiko. Ziel ist es, Schutzfaktoren zu stärken und den Einstieg in den Konsum hinauszuzögern, bevor Probleme auftreten.",
+      "examples": [
+        "Lebenskompetenzprogramm für die 5.–8. Klasse",
+        "normative Aufklärung, die falsche Vorstellungen über die Verbreitung von Substanzkonsum korrigiert",
+        "Arbeit am Schulklima und an der Beziehung zu Erwachsenen",
+        "Elternkurse zur Erziehungskompetenz, offen für alle Eltern"
+      ]
+    },
+    {
+      "id": "selective",
+      "title": "Selektive Prävention",
+      "description": "Richtet sich an Gruppen mit erhöhtem Risiko aufgrund ihrer Lebenssituation oder ihres Umfelds (z. B. Kinder aus alkoholbelasteten Familien, fremdplatzierte Jugendliche), auch wenn die Einzelnen noch keine Probleme zeigen.",
+      "examples": [
+        "soziotherapeutische Gruppen in einer Tagesstätte für Kinder aus alkoholbelasteten Familien",
+        "Programm zur Stärkung von Familien in Krisen",
+        "Mentoring für Jugendliche in einem Jugendheim",
+        "alternative Freizeitangebote (Sport, Freiwilligenarbeit) in einem belasteten Quartier"
+      ]
+    },
+    {
+      "id": "indicated",
+      "title": "Indizierte Prävention",
+      "description": "Richtet sich an Einzelpersonen, die bereits erste Anzeichen von Problemen zeigen (z. B. Probierkonsum, Schulschwänzen, riskantes Verhalten), aber die Kriterien einer Abhängigkeit nicht erfüllen. Ziel ist es, die Entwicklung des Problems zu stoppen.",
+      "examples": [
+        "motivierende Kurzintervention nach einem Vorfall in der Schule",
+        "Frühinterventionsprogramm für cannabiskonsumierende Jugendliche",
+        "individuelle pädagogische Arbeit mit dem/der Schüler/in und den Eltern",
+        "Unterstützungsgruppe für Jugendliche nach dem ersten Kontakt mit dem Familiengericht"
+      ]
+    }
+  ],
+  "riskFactors": [
+    {
+      "id": "rf-early-behaviour",
+      "domain": "individual",
+      "text": "frühes und anhaltendes Problemverhalten (Aggression, Impulsivität)"
+    },
+    {
+      "id": "rf-favourable-attitudes",
+      "domain": "individual",
+      "text": "positive Einstellungen gegenüber Substanzkonsum"
+    },
+    {
+      "id": "rf-early-initiation",
+      "domain": "individual",
+      "text": "früher Einstieg in den Substanzkonsum"
+    },
+    {
+      "id": "rf-sensation-seeking",
+      "domain": "individual",
+      "text": "starkes Bedürfnis nach Stimulation und Suche nach intensiven Erlebnissen (Sensation Seeking)"
+    },
+    {
+      "id": "rf-emotional-difficulties",
+      "domain": "individual",
+      "text": "emotionale Schwierigkeiten und fehlende Strategien im Umgang mit Stress"
+    },
+    {
+      "id": "rf-family-use",
+      "domain": "family",
+      "text": "Substanzkonsum von Eltern oder Geschwistern und eine tolerante Haltung zu Hause"
+    },
+    {
+      "id": "rf-poor-monitoring",
+      "domain": "family",
+      "text": "geringe elterliche Aufsicht und unklare Regeln"
+    },
+    {
+      "id": "rf-family-conflict",
+      "domain": "family",
+      "text": "Konflikte und Gewalt in der Familie"
+    },
+    {
+      "id": "rf-school-failure",
+      "domain": "school",
+      "text": "schulischer Misserfolg, besonders ab den ersten Schuljahren"
+    },
+    {
+      "id": "rf-low-bonding",
+      "domain": "school",
+      "text": "geringe Bindung an die Schule und wenig Lernengagement"
+    },
+    {
+      "id": "rf-peer-use",
+      "domain": "peers",
+      "text": "Freund/innen, die Substanzen konsumieren"
+    },
+    {
+      "id": "rf-peer-rejection",
+      "domain": "peers",
+      "text": "Ablehnung durch Gleichaltrige"
+    },
+    {
+      "id": "rf-availability",
+      "domain": "community",
+      "text": "leichte Verfügbarkeit von Alkohol, Tabak und Drogen"
+    },
+    {
+      "id": "rf-community-norms",
+      "domain": "community",
+      "text": "Normen im Umfeld, die Substanzkonsum begünstigen"
+    },
+    {
+      "id": "rf-deprivation",
+      "domain": "community",
+      "text": "Armut, desorganisiertes Wohnumfeld und fehlende Freizeitmöglichkeiten"
+    }
+  ],
+  "protectiveFactors": [
+    {
+      "id": "pf-self-regulation",
+      "domain": "individual",
+      "text": "Fähigkeit, Emotionen zu regulieren und Impulse zu kontrollieren"
+    },
+    {
+      "id": "pf-social-skills",
+      "domain": "individual",
+      "text": "soziale Kompetenzen, einschliesslich Selbstbehauptung"
+    },
+    {
+      "id": "pf-self-efficacy",
+      "domain": "individual",
+      "text": "Selbstwirksamkeit und ein positives Selbstbild"
+    },
+    {
+      "id": "pf-goals",
+      "domain": "individual",
+      "text": "Pläne und Ziele für die Zukunft"
+    },
+    {
+      "id": "pf-values",
+      "domain": "individual",
+      "text": "Überzeugungen und Werte, die Substanzkonsum nicht begünstigen"
+    },
+    {
+      "id": "pf-family-bond",
+      "domain": "family",
+      "text": "starke, warme Bindung an mindestens einen Elternteil oder eine Bezugsperson"
+    },
+    {
+      "id": "pf-clear-rules",
+      "domain": "family",
+      "text": "klare Regeln und konsequente, fürsorgliche Aufsicht"
+    },
+    {
+      "id": "pf-family-communication",
+      "domain": "family",
+      "text": "offene Kommunikation in der Familie"
+    },
+    {
+      "id": "pf-school-bond",
+      "domain": "school",
+      "text": "Bindung an die Schule und an mindestens eine Lehrperson"
+    },
+    {
+      "id": "pf-school-success",
+      "domain": "school",
+      "text": "Erfolgserlebnisse und Anerkennung in der Schule"
+    },
+    {
+      "id": "pf-school-climate",
+      "domain": "school",
+      "text": "sicheres, unterstützendes Schulklima mit klaren Normen"
+    },
+    {
+      "id": "pf-prosocial-peers",
+      "domain": "peers",
+      "text": "Freund/innen mit prosozialen Interessen"
+    },
+    {
+      "id": "pf-peer-belonging",
+      "domain": "peers",
+      "text": "Zugehörigkeit zu einer Gruppe ohne Konsumdruck"
+    },
+    {
+      "id": "pf-community-opportunities",
+      "domain": "community",
+      "text": "Zugang zu ausserschulischen Angeboten, Sport und Freiwilligenarbeit"
+    },
+    {
+      "id": "pf-trusted-adults",
+      "domain": "community",
+      "text": "erreichbare, vertrauenswürdige Erwachsene ausserhalb der Familie (Mentor/innen, Trainer/innen, Pädagog/innen)"
+    }
+  ],
+  "strategies": [
+    {
+      "id": "normativeEducation",
+      "title": "Normative Aufklärung",
+      "description": "Korrektur überschätzter Vorstellungen darüber, wie viele Gleichaltrige Substanzen konsumieren – anhand verlässlicher lokaler oder nationaler Befragungsdaten.",
+      "evidence": "strong"
+    },
+    {
+      "id": "lifeSkills",
+      "title": "Förderung von Lebenskompetenzen",
+      "description": "Interaktives Training persönlicher und sozialer Kompetenzen: Entscheidungen treffen, mit Stress umgehen, kommunizieren, sich behaupten und Nein sagen.",
+      "evidence": "strong"
+    },
+    {
+      "id": "parentPrograms",
+      "title": "Eltern- und Familienprogramme",
+      "description": "Regelmässige Treffen zur Stärkung von Erziehungskompetenz, Aufsicht, Kommunikation und familiärer Bindung, oft unter Einbezug der Kinder.",
+      "evidence": "strong"
+    },
+    {
+      "id": "classroomManagement",
+      "title": "Klassenführung und Schulklima",
+      "description": "Massnahmen auf Ebene der ganzen Schule und der Lehrpersonen, die klare Normen, gegenseitigen Respekt und Zugehörigkeit fördern (z. B. Programme wie das Good Behavior Game).",
+      "evidence": "strong"
+    },
+    {
+      "id": "environmental",
+      "title": "Verhältnisprävention (Umweltstrategien)",
+      "description": "Veränderung des Umfelds: Durchsetzung des Abgabeverbots an Minderjährige, Einschränkung der Verfügbarkeit, schulische Regeln zum Substanzkonsum, lokale Vorschriften.",
+      "evidence": "moderate"
+    },
+    {
+      "id": "mentoring",
+      "title": "Mentoring",
+      "description": "Regelmässige, längerfristige Treffen einer jungen Person mit einer geschulten erwachsenen Mentorin oder einem Mentor, die/der Unterstützung bietet und Vorbild ist.",
+      "evidence": "moderate"
+    },
+    {
+      "id": "briefIntervention",
+      "title": "Kurzintervention",
+      "description": "Ein kurzes, strukturiertes Gespräch (oft im Sinne der Motivierenden Gesprächsführung) mit einer Person, die riskantes Verhalten zeigt.",
+      "evidence": "moderate"
+    },
+    {
+      "id": "peerLed",
+      "title": "Peer-Programme",
+      "description": "Von geschulten Peer-Leader/innen unter Aufsicht Erwachsener geleitete Einheiten; die Wirksamkeit hängt von der Qualität der Schulung und der Struktur ab.",
+      "evidence": "moderate"
+    },
+    {
+      "id": "alternatives",
+      "title": "Alternativangebote",
+      "description": "Attraktive Aktivitäten anbieten (Sport, Kunst, Freiwilligenarbeit); wirkt vor allem in Kombination mit Kompetenzförderung und Beziehungen zu Erwachsenen.",
+      "evidence": "limited"
+    },
+    {
+      "id": "informationOnly",
+      "title": "Reine Informationsvermittlung",
+      "description": "Vorträge und Flyer über die Schäden von Substanzen ohne Arbeit an Kompetenzen und Normen; können das Wissen erhöhen, verändern aber das Verhalten nicht.",
+      "evidence": "limited"
+    },
+    {
+      "id": "scareTactics",
+      "title": "Abschreckung und Angstappelle",
+      "description": "Drastische Bilder, Geschichten von „Opfern“ und übertriebene Darstellungen der Schäden; können Neugier, Widerstand oder die Überzeugung „das betrifft mich nicht“ auslösen.",
+      "evidence": "harmful"
+    },
+    {
+      "id": "unstructuredDialogue",
+      "title": "Unstrukturierte Diskussionsgruppen über Substanzen",
+      "description": "Freie Gespräche über Konsumerfahrungen in einer Gruppe hochbelasteter Jugendlicher; können konsumfreundliche Normen verstärken.",
+      "evidence": "harmful"
+    }
+  ],
+  "goodPractice": [
+    {
+      "id": "gp-interactive",
+      "kind": "do",
+      "text": "Setze interaktive Methoden ein (Kleingruppenarbeit, Rollenspiel, Diskussion).",
+      "rationale": "Interaktive Programme zeigen deutlich bessere Ergebnisse als vortragsbasierte, weil sie das Einüben von Kompetenzen ermöglichen.",
+      "sources": [
+        {
+          "authors": "Tobler N.S., Roona M.R., Ochshorn P., Marshall D.G., Streke A.V., Stackpole K.M.",
+          "year": 2000,
+          "title": "School-based adolescent drug prevention programs: 1998 meta-analysis",
+          "publisher": "Journal of Primary Prevention, 20(4), 275–336"
+        },
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        }
+      ]
+    },
+    {
+      "id": "gp-long-term",
+      "kind": "do",
+      "text": "Plane längerfristig – eine Reihe von Einheiten mit Auffrischungseinheiten (Booster Sessions).",
+      "rationale": "Die Wirkung hält länger an, wenn ein Programm über mehrere Monate läuft und in späteren Jahren wiederholt wird.",
+      "sources": [
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        },
+        {
+          "authors": "Ostaszewski K.",
+          "year": 2003,
+          "title": "Skuteczność profilaktyki używania substancji psychoaktywnych. Podstawowe zagadnienia",
+          "publisher": "Wydawnictwo Naukowe Scholar, Warszawa"
+        }
+      ]
+    },
+    {
+      "id": "gp-multi-component",
+      "kind": "do",
+      "text": "Kombiniere mehrere Komponenten: Schüler/innen, Eltern, Schule, Gemeinde.",
+      "rationale": "Mehrkomponentenprogramme setzen gleichzeitig an vielen Risikofaktoren an.",
+      "sources": [
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        },
+        {
+          "authors": "EMCDDA",
+          "year": 2019,
+          "title": "European Prevention Curriculum: a handbook for decision-makers, opinion-makers and policy-makers in science-based prevention of substance use",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        }
+      ]
+    },
+    {
+      "id": "gp-parents",
+      "kind": "do",
+      "text": "Beziehe Eltern und Bezugspersonen ein.",
+      "rationale": "Die Stärkung familiärer Bindung, Aufsicht und Kommunikation gehört zu den am besten belegten Strategien.",
+      "sources": [
+        {
+          "authors": "Kumpfer K.L., Alvarado R.",
+          "year": 2003,
+          "title": "Family-strengthening approaches for the prevention of youth problem behaviors",
+          "publisher": "American Psychologist, 58(6–7), 457–465"
+        },
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        }
+      ]
+    },
+    {
+      "id": "gp-needs",
+      "kind": "do",
+      "text": "Stütze das Programm auf eine Analyse der Bedürfnisse und Ressourcen des konkreten Umfelds.",
+      "rationale": "Ohne Bedarfsanalyse zielt man leicht auf Faktoren, die in der Gruppe gar nicht vorhanden sind.",
+      "sources": [
+        {
+          "authors": "EMCDDA",
+          "year": 2011,
+          "title": "European drug prevention quality standards: a manual for prevention professionals",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        },
+        {
+          "authors": "Gaś Z.B.",
+          "year": 2006,
+          "title": "Profilaktyka w szkole",
+          "publisher": "WSiP, Warszawa"
+        }
+      ]
+    },
+    {
+      "id": "gp-development",
+      "kind": "do",
+      "text": "Passe Inhalte und Methoden an Alter und Entwicklungsstand an.",
+      "rationale": "Derselbe Inhalt kann in einem Alter wirksam und in einem anderen nutzlos oder sogar schädlich sein.",
+      "sources": [
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        },
+        {
+          "authors": "EMCDDA",
+          "year": 2019,
+          "title": "European Prevention Curriculum: a handbook for decision-makers, opinion-makers and policy-makers in science-based prevention of substance use",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        }
+      ]
+    },
+    {
+      "id": "gp-factors",
+      "kind": "do",
+      "text": "Setze gezielt an bestimmten Risiko- und Schutzfaktoren an.",
+      "rationale": "Das Modell der Risiko- und Schutzfaktoren erlaubt es, Massnahmen klar mit der erwarteten Veränderung zu verknüpfen.",
+      "sources": [
+        {
+          "authors": "Hawkins J.D., Catalano R.F., Miller J.Y.",
+          "year": 1992,
+          "title": "Risk and protective factors for alcohol and other drug problems in adolescence and early adulthood: Implications for substance abuse prevention",
+          "publisher": "Psychological Bulletin, 112(1), 64–105"
+        },
+        {
+          "authors": "Ostaszewski K.",
+          "year": 2003,
+          "title": "Skuteczność profilaktyki używania substancji psychoaktywnych. Podstawowe zagadnienia",
+          "publisher": "Wydawnictwo Naukowe Scholar, Warszawa"
+        }
+      ]
+    },
+    {
+      "id": "gp-evaluation",
+      "kind": "do",
+      "text": "Plane die Evaluation von Anfang an (Indikatoren, Vorher-/Nachher-Messung).",
+      "rationale": "Die Evaluation zeigt, ob ein Programm wirkt, und ermöglicht seine Verbesserung.",
+      "sources": [
+        {
+          "authors": "EMCDDA",
+          "year": 2011,
+          "title": "European drug prevention quality standards: a manual for prevention professionals",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        },
+        {
+          "authors": "EMCDDA",
+          "year": 2019,
+          "title": "European Prevention Curriculum: a handbook for decision-makers, opinion-makers and policy-makers in science-based prevention of substance use",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        }
+      ]
+    },
+    {
+      "id": "gp-fidelity",
+      "kind": "do",
+      "text": "Setze das Programm wie konzipiert um und schule die Durchführenden.",
+      "rationale": "Qualität und Programmtreue der Umsetzung beeinflussen die Ergebnisse deutlich.",
+      "sources": [
+        {
+          "authors": "Durlak J.A., DuPre E.P.",
+          "year": 2008,
+          "title": "Implementation matters: A review of research on the influence of implementation on program outcomes and the factors affecting implementation",
+          "publisher": "American Journal of Community Psychology, 41, 327–350"
+        },
+        {
+          "authors": "EMCDDA",
+          "year": 2011,
+          "title": "European drug prevention quality standards: a manual for prevention professionals",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        }
+      ]
+    },
+    {
+      "id": "gp-scare",
+      "kind": "avoid",
+      "text": "Verzichte auf Abschreckung und drastische Bilder.",
+      "rationale": "Angstappelle verringern den Konsum nicht und können Widerstand oder Neugier wecken.",
+      "sources": [
+        {
+          "authors": "Werch C.E., Owen D.M.",
+          "year": 2002,
+          "title": "Iatrogenic effects of alcohol and drug prevention programs",
+          "publisher": "Journal of Studies on Alcohol, 63(5), 581–590"
+        },
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        }
+      ]
+    },
+    {
+      "id": "gp-one-off",
+      "kind": "avoid",
+      "text": "Verzichte auf einmalige Vorträge und Grossveranstaltungen.",
+      "rationale": "Eine einzelne Einheit lässt keine Zeit, Kompetenzen zu erlernen, und erzielt keine nachhaltige Wirkung.",
+      "sources": [
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        },
+        {
+          "authors": "Ostaszewski K.",
+          "year": 2003,
+          "title": "Skuteczność profilaktyki używania substancji psychoaktywnych. Podstawowe zagadnienia",
+          "publisher": "Wydawnictwo Naukowe Scholar, Warszawa"
+        }
+      ]
+    },
+    {
+      "id": "gp-testimonies",
+      "kind": "avoid",
+      "text": "Stütze ein Programm nicht nur auf Erfahrungsberichte von „Opfern“ oder Menschen in Genesung.",
+      "rationale": "Solche Einheiten können ungewollt vermitteln, dass man ohne grosse Verluste wieder herauskommt, oder Distanz im Sinne von „das betrifft mich nicht“ erzeugen.",
+      "sources": [
+        {
+          "authors": "EMCDDA",
+          "year": 2019,
+          "title": "European Prevention Curriculum: a handbook for decision-makers, opinion-makers and policy-makers in science-based prevention of substance use",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        },
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        }
+      ]
+    },
+    {
+      "id": "gp-info-only",
+      "kind": "avoid",
+      "text": "Verzichte auf Programme, die nur auf Informationsvermittlung beruhen.",
+      "rationale": "Wissen über Schäden allein führt nicht zu Verhaltensänderung.",
+      "sources": [
+        {
+          "authors": "Tobler N.S., Roona M.R., Ochshorn P., Marshall D.G., Streke A.V., Stackpole K.M.",
+          "year": 2000,
+          "title": "School-based adolescent drug prevention programs: 1998 meta-analysis",
+          "publisher": "Journal of Primary Prevention, 20(4), 275–336"
+        },
+        {
+          "authors": "Ostaszewski K.",
+          "year": 2003,
+          "title": "Skuteczność profilaktyki używania substancji psychoaktywnych. Podstawowe zagadnienia",
+          "publisher": "Wydawnictwo Naukowe Scholar, Warszawa"
+        }
+      ]
+    },
+    {
+      "id": "gp-moralising",
+      "kind": "avoid",
+      "text": "Verzichte auf Moralisieren und Verurteilen.",
+      "rationale": "Moralisieren schwächt Beziehung und Vertrauen, und Jugendliche lehnen es schnell ab.",
+      "sources": [
+        {
+          "authors": "Gaś Z.B.",
+          "year": 2006,
+          "title": "Profilaktyka w szkole",
+          "publisher": "WSiP, Warszawa"
+        },
+        {
+          "authors": "EMCDDA",
+          "year": 2019,
+          "title": "European Prevention Curriculum: a handbook for decision-makers, opinion-makers and policy-makers in science-based prevention of substance use",
+          "publisher": "Publications Office of the European Union, Luxembourg"
+        }
+      ]
+    },
+    {
+      "id": "gp-grouping",
+      "kind": "avoid",
+      "text": "Fasse nicht ausschliesslich hochbelastete Jugendliche ohne klare Struktur in einer Gruppe zusammen.",
+      "rationale": "Gruppen, die nur aus Jugendlichen mit Problemverhalten bestehen, können dieses Verhalten verstärken (sogenannte Peer-Ansteckung, „peer contagion“).",
+      "sources": [
+        {
+          "authors": "UNODC, WHO",
+          "year": 2018,
+          "title": "International Standards on Drug Use Prevention. Second updated edition",
+          "publisher": "United Nations Office on Drugs and Crime, Vienna"
+        },
+        {
+          "authors": "Werch C.E., Owen D.M.",
+          "year": 2002,
+          "title": "Iatrogenic effects of alcohol and drug prevention programs",
+          "publisher": "Journal of Studies on Alcohol, 63(5), 581–590"
+        }
+      ]
+    }
+  ],
+  "standards": {
+    "title": "Qualitätsstandards und das System empfohlener Programme in Polen",
+    "paragraphs": [
+      "In Polen gibt es das „System Rekomendacji Programów Profilaktycznych i Promocji Zdrowia Psychicznego“ (System empfohlener Programme für Prävention und Förderung der psychischen Gesundheit). Es wurde gemeinsam von den für Prävention zuständigen Institutionen aufgebaut: dem früheren KBPN (Krajowe Biuro ds. Przeciwdziałania Narkomanii, Nationales Büro für Drogenprävention) und der PARPA (Państwowa Agencja Rozwiązywania Problemów Alkoholowych, Staatliche Agentur zur Lösung von Alkoholproblemen) – 2022 zum KCPU (Krajowe Centrum Przeciwdziałania Uzależnieniom, Nationales Zentrum für Suchtprävention) zusammengelegt – sowie dem ORE (Ośrodek Rozwoju Edukacji, Zentrum für Bildungsentwicklung) und dem IPiN (Instytut Psychiatrii i Neurologii, Institut für Psychiatrie und Neurologie).",
+      "Die eingereichten Programme werden von Expert/innen nach gemeinsamen Qualitätskriterien beurteilt, u. a.: Grundlage in Bedarfsanalyse und Theorie, klar definierte Ziele, geeignete Methoden, ausgearbeitete Materialien (Manual, Ablaufpläne der Einheiten), Schulung der Durchführenden und Evaluationsergebnisse. Je nach Stärke der Evidenz kann ein Programm eine von mehreren Empfehlungsstufen erhalten (z. B. vielversprechendes Programm, Programm guter Praxis, Modellprogramm).",
+      "Empfohlene Programme werden in der Online-Datenbank „Baza Programów Rekomendowanych“ (Datenbank empfohlener Programme) veröffentlicht. Schulen und Gemeinden können daraus Programme für das schulische Erziehungs- und Präventionsprogramm sowie für die kommunalen Programme zur Prävention und Lösung von Suchtproblemen auswählen. Beispiele aus der Datenbank sind „Unplugged“, das „Strengthening Families Programme 10–14“ (poln. „Program Wzmacniania Rodziny“), „Szkoła dla Rodziców i Wychowawców“ (Schule für Eltern und Erziehende), „Przyjaciele Zippiego“ (Zippy's Friends) und „Fantastyczne Możliwości“ (Fantastische Möglichkeiten).",
+      "Bei der Entwicklung eines eigenen Programms lohnt es sich, dieselben Kriterien sowie die Europäischen Qualitätsstandards für die Suchtprävention (EDPQS) zu nutzen. Sie beschreiben den gesamten Projektzyklus: von der Bedarfsanalyse über Planung und Umsetzung bis zu Evaluation und Verbreitung.",
+      "Namen der Institutionen, Empfehlungsstufen, die Programmliste und die aktuelle Adresse der Datenbank sollten vor der Verwendung in Studienarbeiten anhand der Quellen überprüft werden."
+    ],
+    "reviewStatus": "do_weryfikacji"
+  },
+  "wizardHints": {
+    "needs": "Sammle Daten über das Umfeld: Befragungen, Gespräche mit Schüler/innen, Lehrpersonen und Eltern, Daten von Schule oder Gemeinde. Beschreibe Probleme, aber auch Ressourcen (Menschen, Orte, Veränderungsbereitschaft).",
+    "target": "Lege fest, für wen das Programm ist, wie alt die Teilnehmenden sind und wie viele Personen es erreichen soll. Die Präventionsebene ergibt sich aus dem Risiko der Gruppe, nicht aus dem Thema.",
+    "factors": "Wähle einige Risikofaktoren, die du schwächen, und Schutzfaktoren, die du stärken willst – jene, die die Bedarfsanalyse bestätigt hat. Wenige, gut gewählte Faktoren wirken besser.",
+    "goals": "Formuliere ein übergeordnetes Ziel und mehrere konkrete, messbare Teilziele (z. B. „Die Teilnehmenden können unter Druck Nein sagen – Zunahme auf einer Selbsteinschätzungsskala“).",
+    "strategies": "Wähle Strategien mit nachgewiesener Wirksamkeit und interaktive Methoden. Du kannst jeder Strategie einen Ablaufplan aus dem Sitzungsbaukasten zuordnen.",
+    "schedule": "Plane die Reihe der Einheiten über die Zeit (idealerweise mehrere Monate mit Auffrischungseinheiten) und halte Durchführende, Orte, Materialien und Budget fest.",
+    "evaluation": "Ordne jedem Teilziel einen Indikator und eine Messmethode zu. Miss vor und nach dem Programm; hole auch Rückmeldungen von Teilnehmenden und Durchführenden ein."
+  },
+  "indicatorExamples": [
+    "Anteil der Teilnehmenden, die angeben, nicht mit dem Alkoholtrinken beginnen zu wollen (vorher/nachher)",
+    "Veränderung der Schätzung der Schüler/innen, wie viel Prozent der Gleichaltrigen E-Zigaretten nutzen",
+    "Mittelwert auf einer Skala zur Ablehnungskompetenz (Selbsteinschätzung 1–5)",
+    "Anzahl der Eltern, die mindestens 80 % der Einheiten besucht haben",
+    "Anwesenheit der Teilnehmenden bei den Einheiten",
+    "Schulverbundenheit in einer Kurzbefragung (vorher/nachher)",
+    "Anzahl der im Schuljahr an der Schule gemeldeten Vorfälle im Zusammenhang mit Substanzen",
+    "Bewertung der Einheiten durch Teilnehmende und Durchführende (Befragung nach jedem Modul)"
+  ]
+}

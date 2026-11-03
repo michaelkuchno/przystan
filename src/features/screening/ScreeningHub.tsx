@@ -4,7 +4,7 @@ import { ClipboardList, Info } from 'lucide-react';
 import { Page, PageHeader, Notice } from '@/components/ui/page';
 import { CardLink, Badge, Card, SectionTitle } from '@/components/ui/core';
 import { INSTRUMENTS, INSTRUMENT_IDS, EXCLUDED_INSTRUMENTS } from '@/lib/screening/instruments';
-import { PL_INSTRUMENTS } from '@/lib/screening/pl';
+import { needsOfficialText } from '@/lib/screening/official';
 import { usePrefs } from '@/lib/prefs';
 
 export default function ScreeningHub() {
@@ -33,7 +33,7 @@ export default function ScreeningHub() {
                   <div className="mt-2 flex flex-wrap gap-1.5">
                     <Badge>{t('items', { count: inst.items.length })}</Badge>
                     <Badge>{t(`population.${inst.population}`)}</Badge>
-                    {lang === 'pl' && !PL_INSTRUMENTS[id] && <Badge tone="warn">{t('todoPl')}</Badge>}
+                    {needsOfficialText(lang, id) && <Badge tone="warn">{t('todoPl')}</Badge>}
                   </div>
                 </div>
               </div>

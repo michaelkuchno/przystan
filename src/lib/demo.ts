@@ -65,3 +65,11 @@ export function buildDemoRecords(cases: DemoCase[], today = toIsoDate(new Date()
   }
   return items;
 }
+
+/**
+ * Demo cases for the country of work: cases with `country: 'CH'` are set in Switzerland,
+ * cases without a country are set in Poland (institutions, laws, places).
+ */
+export function demoCasesFor(cases: DemoCase[], country: 'PL' | 'CH'): DemoCase[] {
+  return cases.filter((c) => (c.country ?? 'PL') === country);
+}

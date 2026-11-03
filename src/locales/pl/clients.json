@@ -14,7 +14,11 @@
   "showResults_many": "Pokaż {{count}} wyników",
   "showResults_other": "Pokaż {{count}} wyniku",
   "sort": "Sortowanie",
-  "sortBy": { "code": "Kod (A–Z)", "updated": "Ostatnio zmienione", "stage": "Etap zmiany" },
+  "sortBy": {
+    "code": "Kod (A–Z)",
+    "updated": "Ostatnio zmienione",
+    "stage": "Etap zmiany"
+  },
   "attention_one": "{{count}} uwaga",
   "attention_few": "{{count}} uwagi",
   "attention_many": "{{count}} uwag",
@@ -107,7 +111,13 @@
       "riskBehaviour": "Zachowania ryzykowne",
       "justice": "Wymiar sprawiedliwości"
     },
-    "level": { "1": "poważne trudności", "2": "znaczne trudności", "3": "umiarkowane", "4": "dobre", "5": "bardzo dobre" },
+    "level": {
+      "1": "poważne trudności",
+      "2": "znaczne trudności",
+      "3": "umiarkowane",
+      "4": "dobre",
+      "5": "bardzo dobre"
+    },
     "risk": "Czynniki ryzyka",
     "protective": "Czynniki chroniące",
     "resources": "Zasoby",
@@ -176,7 +186,11 @@
     "title": "Tytuł",
     "note": "Opis",
     "lapseNote": "Nawrót opisuj bez oceniania – jako informację o sytuacji wysokiego ryzyka i okazję do nauki.",
-    "kind": { "event": "Wydarzenie", "meeting": "Spotkanie", "measurement": "Pomiar" },
+    "kind": {
+      "event": "Wydarzenie",
+      "meeting": "Spotkanie",
+      "measurement": "Pomiar"
+    },
     "type": {
       "court": "Rozprawa / sąd",
       "pass": "Przepustka",
@@ -208,7 +222,13 @@
     "deleteEdge": "Usuń relację",
     "legend": "Legenda",
     "legendSymbols": "□ mężczyzna · ○ kobieta · ◇ osoba · prostokąt – instytucja · elipsa – grupa · zacieniona połowa – problem z substancją · ✕ – osoba zmarła",
-    "kind": { "female": "Kobieta", "male": "Mężczyzna", "person": "Osoba", "institution": "Instytucja", "group": "Grupa" },
+    "kind": {
+      "female": "Kobieta",
+      "male": "Mężczyzna",
+      "person": "Osoba",
+      "institution": "Instytucja",
+      "group": "Grupa"
+    },
     "edge": {
       "family": "Pokrewieństwo",
       "strong": "Silna, bliska",
@@ -248,6 +268,7 @@
     "safety": "Bezpieczeństwo",
     "safetyHint": "Czy ktoś w rodzinie doświadcza przemocy? Jakie są ustalenia bezpieczeństwa?",
     "violence": "W sytuacji przemocy w rodzinie obowiązuje procedura „Niebieskie Karty”.",
-    "violenceLink": "Zobacz procedurę i ścieżki pomocy"
+    "violenceLink": "Zobacz procedurę i ścieżki pomocy",
+    "violence_CH": "W sytuacji przemocy w rodzinie: policja (117), ośrodki pomocy ofiarom (Opferhilfe), a gdy zagrożone jest dobro dziecka – zgłoszenie do KESB."
   }
 }

@@ -22,6 +22,8 @@ import {
   Scale,
   ChefHat,
   Settings as SettingsIcon,
+  NotebookText,
+  NotebookPen,
 } from 'lucide-react';
 import { cn } from '@/components/ui/cn';
 import { IconButton, Badge } from '@/components/ui/core';
@@ -47,6 +49,8 @@ export const SECONDARY_NAV = [
   { to: '/knowledge', key: 'knowledge', icon: BookOpen },
   { to: '/simulator', key: 'simulator', icon: MessagesSquare },
   { to: '/learn', key: 'learn', icon: GraduationCap },
+  { to: '/notes', key: 'notes', icon: NotebookText },
+  { to: '/practice', key: 'practice', icon: NotebookPen },
   { to: '/settings', key: 'settings', icon: SettingsIcon },
 ] as const;
 

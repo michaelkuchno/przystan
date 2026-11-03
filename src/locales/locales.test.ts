@@ -36,11 +36,20 @@ const en = keys('en');
 describe('UI locales', () => {
   it('have the same namespaces', () => {
     expect(Object.keys(res.pl!).sort()).toEqual(Object.keys(res.en!).sort());
+    expect(Object.keys(res.de!).sort()).toEqual(Object.keys(res.en!).sort());
   });
 
-  it('have the same keys in PL and EN', () => {
+  it('have the same keys in PL, EN and DE', () => {
+    const de = keys('de');
     expect([...pl].filter((k) => !en.has(k))).toEqual([]);
     expect([...en].filter((k) => !pl.has(k))).toEqual([]);
+    expect([...en].filter((k) => !de.has(k))).toEqual([]);
+    expect([...de].filter((k) => !en.has(k))).toEqual([]);
+  });
+
+  it('use Swiss spelling in German (ss, never ß)', () => {
+    const json = JSON.stringify(res.de);
+    expect(json.match(/.{0,30}ß.{0,30}/g) ?? []).toEqual([]);
   });
 
   it('define every key used in the source code', () => {

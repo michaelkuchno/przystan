@@ -1,0 +1,69 @@
+{
+  "title": "Screening-Instrumente",
+  "subtitle": "Automatische Auswertung und Interpretation der Grenzwerte nach offiziellen Quellen",
+  "disclaimerTitle": "Das sind Screening-Instrumente, keine Diagnose.",
+  "disclaimer": "Das Ergebnis zeigt nur, ob eine umfassendere Abklärung sinnvoll ist. Eine Abhängigkeitsdiagnose stellt eine Ärztin, ein Arzt oder eine qualifizierte Fachperson.",
+  "about": {
+    "AUDIT": "Alkoholkonsum – 10 Fragen, WHO",
+    "AUDIT-C": "Kurzform des AUDIT – 3 Fragen zum Konsum",
+    "DUDIT": "Konsum anderer Substanzen als Alkohol – 11 Fragen"
+  },
+  "items_one": "{{count}} Frage",
+  "items_other": "{{count}} Fragen",
+  "population": {
+    "adult": "Erwachsene",
+    "adolescentAdult": "Jugendliche und Erwachsene"
+  },
+  "todoPl": "TODO: offizielle DE-Fassung",
+  "todoPlText": "Noch keine offizielle, validierte deutsche Fassung in der App. Angezeigt wird das englische Original. Validierte Instrumente übersetzen wir nicht selbst – offizielle deutsche Fassung einfügen (src/lib/screening/de.ts).",
+  "excludedTitle": "Nicht aufgenommene Instrumente",
+  "excludedText": "{{list}} wurden nicht aufgenommen, weil ihr Lizenzstatus die freie Nutzung in einer App nicht eindeutig erlaubt (Details in docs/DECISIONS.md). Sie können ergänzt werden, sobald die Autor/innen zustimmen.",
+  "notFound": "Instrument nicht gefunden",
+  "client": "{{Client}}",
+  "noClient": "— nicht speichern (Übung) —",
+  "sexForNorms": "Geschlecht (für die Grenzwerte)",
+  "sexNote": "Geschlecht nicht angegeben – es wird der strengere Grenzwert für Männer verwendet.",
+  "progress": "Beantwortet: {{answered}}/{{total}}",
+  "reset": "Leeren",
+  "save": "In Akte speichern",
+  "saved": "Ergebnis gespeichert",
+  "incomplete": "Beantworte alle Fragen",
+  "source": "Quelle",
+  "licence": "Lizenz",
+  "bands": {
+    "AUDIT": {
+      "zone1": "Zone I – geringes Risiko",
+      "zone2": "Zone II – riskanter Konsum",
+      "zone3": "Zone III – schädlicher Konsum",
+      "zone4": "Zone IV – mögliche Abhängigkeit"
+    },
+    "AUDIT-C": {
+      "negative": "Screening negativ",
+      "positive": "Screening positiv – riskanter Konsum",
+      "high": "Hoher Wert"
+    },
+    "DUDIT": {
+      "negative": "Unter dem Grenzwert",
+      "problems": "Wahrscheinlich drogenbezogene Probleme",
+      "dependence": "Wahrscheinliche Abhängigkeit"
+    }
+  },
+  "bandHints": {
+    "AUDIT": {
+      "zone1": "WHO: Aufklärung über Alkohol.",
+      "zone2": "WHO: einfache Beratung.",
+      "zone3": "WHO: einfache Beratung plus Kurzintervention und weitere Verlaufsbeobachtung.",
+      "zone4": "WHO: Überweisung an eine Fachperson zur diagnostischen Abklärung und Behandlung."
+    },
+    "AUDIT-C": {
+      "negative": "Aufgrund des Konsums kein Hinweis auf weitere Abklärung.",
+      "positive": "Erwäge den vollständigen AUDIT und ein Gespräch über den Alkoholkonsum.",
+      "high": "Vollständiger AUDIT und eine fachliche Beratung sind empfehlenswert."
+    },
+    "DUDIT": {
+      "negative": "Unter dem geschlechtsspezifischen Grenzwert (≥ 6 Männer, ≥ 2 Frauen).",
+      "problems": "Weitere Abklärung (z. B. DUDIT-E) und ein motivierendes Gespräch sind empfehlenswert.",
+      "dependence": "Wert ≥ 25 – eine Abklärung bei einer Suchtfachstelle ist empfehlenswert."
+    }
+  }
+}

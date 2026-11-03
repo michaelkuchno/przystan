@@ -1,0 +1,24 @@
+{
+  "title": "Wissen",
+  "subtitle_one": "{{count}} Karte – evidenzbasierte Ansätze, Resozialisierung, Familie",
+  "subtitle_other": "{{count}} Karten – evidenzbasierte Ansätze, Resozialisierung, Familie",
+  "search": "Wissensbasis durchsuchen…",
+  "all": "Alle",
+  "statusAll": "Jeder Status",
+  "noResults": "Keine Ergebnisse",
+  "notFound": "Karte nicht gefunden",
+  "sections": {
+    "approaches": "Therapeutische Ansätze",
+    "criteria": "Kriterien und Klassifikationen",
+    "resocialization": "Resozialisierung",
+    "family": "Familie",
+    "law": "Recht",
+    "prevention": "Prävention"
+  },
+  "whenToUse": "Wann einsetzen",
+  "techniques": "Zentrale Techniken",
+  "phrases": "Beispielformulierungen",
+  "pitfalls": "Häufige Fehler",
+  "sources": "Quellen",
+  "ownWords": "In eigenen Worten verfasst auf Grundlage der angegebenen Quellen. Keine Empfehlungen zur Medikamentendosierung."
+}

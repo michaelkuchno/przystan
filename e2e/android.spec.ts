@@ -52,6 +52,10 @@ const ROUTES = [
   '#/more',
   '#/search',
   '#/crisis',
+  '#/practice',
+  '#/notes',
+  '#/notes/new?type=supervision',
+  '#/case-study/demo-01',
 ];
 
 test.beforeEach(async ({ page }, info) => {

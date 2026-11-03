@@ -1,0 +1,867 @@
+{
+  "decks": [
+    {
+      "id": "deck-resocialization",
+      "title": "Resozialisierung – Begriffe und Theorien",
+      "module": "resocialization",
+      "cards": [
+        {
+          "id": "res-01",
+          "front": "Resozialisierung – Definition",
+          "back": "Ein Prozess geplanter erzieherischer Interventionen bei sozial fehlangepassten Menschen mit dem Ziel, Einstellungen und Verhalten so zu verändern, dass sie soziale Rollen selbstständig und konstruktiv erfüllen können."
+        },
+        {
+          "id": "res-02",
+          "front": "Soziale Fehlanpassung (niedostosowanie społeczne) – wessen Konzept und was bedeutet es?",
+          "back": "Ein Konzept, das in der polnischen Resozialisierungspädagogik u. a. von Czesław Czapów und Lesław Pytka entwickelt wurde. Es bezeichnet ein relativ dauerhaftes Muster normverletzenden Verhaltens, das die Erfüllung sozialer Rollen erschwert."
+        },
+        {
+          "id": "res-03",
+          "front": "Kreative Resozialisierung – Autor und Kern",
+          "back": "Ein Konzept von Marek Konopczyński. Es nutzt kreative Tätigkeiten (z. B. Theater, Musik, Sport, Kunst), um die Potenziale der Person zu entwickeln und eine neue, prosoziale Identität aufzubauen."
+        },
+        {
+          "id": "res-04",
+          "front": "Ressourcenorientierter (stärkenorientierter) vs. defizitorientierter Ansatz",
+          "back": "Der defizitorientierte Ansatz konzentriert sich auf Mängel und Störungen, der ressourcenorientierte Ansatz stützt Interventionen auf Stärken, Interessen und die im Umfeld der Person verfügbare Unterstützung."
+        },
+        {
+          "id": "res-05",
+          "front": "Soziale Readaptation (Wiedereingliederung)",
+          "back": "Die erneute Anpassung einer Person an ein selbstständiges Leben in der Gesellschaft nach einer Zeit der Isolation, z. B. nach der Entlassung aus dem Gefängnis oder einer Einrichtung – u. a. in Bezug auf Wohnen, Arbeit und Beziehungen."
+        },
+        {
+          "id": "res-06",
+          "front": "Postpenitentiäre Hilfe (Entlassenenhilfe)",
+          "back": "Unterstützung für Menschen, die aus dem Gefängnis entlassen werden, und ihre Familien (z. B. Wohnen, materielle, berufliche, rechtliche Hilfe), um die Wiedereingliederung zu erleichtern und Rückfälle in Straftaten zu verringern."
+        },
+        {
+          "id": "res-07",
+          "front": "Etikettierungsansatz (Labeling-Theorie) – Autoren",
+          "back": "Edwin Lemert und Howard Becker. Die soziale Reaktion und das Anheften eines „abweichenden“ Etiketts können abweichendes Verhalten verfestigen und die Identität der Person umformen."
+        },
+        {
+          "id": "res-08",
+          "front": "Primäre und sekundäre Devianz",
+          "back": "Unterscheidung nach Lemert: Primäre Devianz ist gelegentliches Normbrechen, das die Identität nicht berührt; sekundäre Devianz entsteht, wenn die Person das Etikett übernimmt und ihr Verhalten danach ausrichtet."
+        },
+        {
+          "id": "res-09",
+          "front": "Theorie der differenziellen Assoziation – Autor",
+          "back": "Edwin Sutherland. Kriminelles Verhalten – seine Techniken, Motive und Rechtfertigungen – wird in der Interaktion in engen persönlichen Gruppen gelernt."
+        },
+        {
+          "id": "res-10",
+          "front": "Anomietheorie (Strain-Theorie) – Autor und Anpassungsformen",
+          "back": "Robert K. Merton. Die Spannung zwischen kulturellen Zielen und verfügbaren institutionellen Mitteln führt zu Anpassungsformen: Konformität, Innovation, Ritualismus, Rückzug und Rebellion."
+        },
+        {
+          "id": "res-11",
+          "front": "Theorie der sozialen Bindung – Autor und Elemente",
+          "back": "Travis Hirschi. Bindungen an die Gesellschaft schützen vor Straffälligkeit: emotionale Bindung (attachment), Verpflichtung gegenüber konventionellen Zielen (commitment), Einbindung in konventionelle Aktivitäten (involvement) und Glaube an Normen (belief)."
+        },
+        {
+          "id": "res-12",
+          "front": "Theorie des sozialen Lernens – Autor",
+          "back": "Albert Bandura. Verhaltensweisen, auch Aggression, werden u. a. durch Beobachtung und Nachahmung von Modellen erworben und durch Verstärkung aufrechterhalten."
+        },
+        {
+          "id": "res-13",
+          "front": "RNR-Modell – Autoren und Prinzipien",
+          "back": "Don Andrews und James Bonta. Prinzipien: Risiko (Intensität angepasst an das Risikoniveau), Bedarf (Ausrichtung auf kriminogene Faktoren) und Ansprechbarkeit (Methoden angepasst an Fähigkeiten und Lernstil der Person)."
+        },
+        {
+          "id": "res-14",
+          "front": "Kriminogene Faktoren (criminogenic needs)",
+          "back": "Dynamische – also veränderbare – Risikofaktoren, die mit Straffälligkeit zusammenhängen, z. B. prokriminelle Einstellungen, Kontakt zu straffälligen Personen, Substanzkonsum, Arbeitslosigkeit."
+        },
+        {
+          "id": "res-15",
+          "front": "Statische vs. dynamische Risikofaktoren",
+          "back": "Statische Faktoren sind unveränderbar (z. B. Alter bei der ersten Straftat, Vorstrafen); dynamische Faktoren lassen sich durch Interventionen verändern (z. B. Einstellungen, Fertigkeiten, Umfeld) und sind daher das Ziel der Resozialisierungsarbeit."
+        },
+        {
+          "id": "res-16",
+          "front": "Good Lives Model – Autor und Kern",
+          "back": "Tony Ward. Es geht davon aus, dass Menschen nach primären Gütern streben (z. B. Beziehungen, Kompetenz, Autonomie) und dass die Arbeit ihnen helfen soll, diese auf prosoziale Weise zu erreichen – nicht nur das Risiko zu senken."
+        },
+        {
+          "id": "res-17",
+          "front": "Desistance – was ist das?",
+          "back": "Der allmähliche Prozess des Abstandnehmens von Straftaten und der Aufrechterhaltung eines straffreien Lebens. Shadd Maruna beschrieb dabei die Rolle von Identitätserzählungen (das „redemption script“, Erlösungsskript)."
+        },
+        {
+          "id": "res-18",
+          "front": "Aggression Replacement Training (ART) – Autor und Komponenten",
+          "back": "Ein Programm, das von Arnold P. Goldstein und Kollegen entwickelt wurde. Drei Komponenten: Training prosozialer Fertigkeiten, Ärgerkontrolltraining und Training des moralischen Urteilens."
+        },
+        {
+          "id": "res-19",
+          "front": "Restorative Justice (wiedergutmachende Gerechtigkeit)",
+          "back": "Ein Ansatz (u. a. von Howard Zehr entwickelt), bei dem sich die Reaktion auf eine Straftat auf die Wiedergutmachung von Schaden und Beziehungen konzentriert – unter Beteiligung von Opfer, Täter/in und Gemeinschaft, z. B. durch Mediation."
+        },
+        {
+          "id": "res-20",
+          "front": "Vollzugssysteme der Freiheitsstrafe (Polen)",
+          "back": "Das polnische Strafvollzugsgesetzbuch (Kodeks karny wykonawczy) sieht drei Systeme vor: das System der programmierten Einwirkung, das therapeutische und das gewöhnliche System."
+        },
+        {
+          "id": "res-21",
+          "front": "System der programmierten Einwirkung",
+          "back": "Ein System, in dem eine verurteilte Person mit ihrer Zustimmung ein individuelles Programm verfolgt, das unter ihrer Mitwirkung erstellt wurde (z. B. Bildung, Arbeit, Therapie, Familienkontakte)."
+        },
+        {
+          "id": "res-22",
+          "front": "Resozialisierungsdiagnostik – Ziele",
+          "back": "Erfassen von Problemen und Defiziten sowie der Stärken der Person und ihres Umfelds, Erklären der Mechanismen der Fehlanpassung sowie Formulieren einer Prognose und Grundlage für einen individuellen Plan."
+        },
+        {
+          "id": "res-23",
+          "front": "Bewährungshelfer/in (kurator sądowy, Polen) – Rolle",
+          "back": "Vollzieht gerichtliche Entscheidungen und führt Aufsichten durch, wobei Kontrolle mit erzieherischen, resozialisierenden und unterstützenden Tätigkeiten verbunden wird; in Polen gibt es Familien- und Erwachsenenbewährungshelfer/innen."
+        },
+        {
+          "id": "res-24",
+          "front": "MOW (Jugenderziehungszentrum, Polen)",
+          "back": "Eine Einrichtung des Bildungssystems für sozial fehlangepasste Kinder und Jugendliche, die durch Entscheid des Familiengerichts eingewiesen werden; sie verbindet Schulunterricht mit erzieherischen Interventionen."
+        },
+        {
+          "id": "res-25",
+          "front": "MOS (Jugend-Soziotherapiezentrum, Polen)",
+          "back": "Eine Bildungseinrichtung für Kinder und Jugendliche, die von sozialer Fehlanpassung bedroht sind und Soziotherapie sowie eine besondere Organisation des Lernens benötigen."
+        },
+        {
+          "id": "res-26",
+          "front": "Erziehungsanstalt vs. Jugendunterkunft (Polen)",
+          "back": "Eine Erziehungsanstalt (zakład poprawczy) vollzieht eine gerichtlich angeordnete Besserungsmassnahme; eine Jugendunterkunft (schronisko dla nieletnich) dient der vorläufigen Unterbringung während eines laufenden Verfahrens."
+        },
+        {
+          "id": "res-27",
+          "front": "Gefängnissubkultur („zweites Leben“)",
+          "back": "Ein informelles System von Normen, Hierarchien und Ritualen unter inhaftierten Personen, das Resozialisierungsbemühungen behindern und Gewalt begünstigen kann."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-prevention",
+      "title": "Prävention – Ebenen, Faktoren, Strategien",
+      "module": "prevention",
+      "cards": [
+        {
+          "id": "prev-01",
+          "front": "Universelle Prävention",
+          "back": "Massnahmen für ganze Bevölkerungsgruppen (z. B. alle Schüler/innen einer Klasse) unabhängig vom individuellen Risiko; Ziel ist es, den Einstieg zu verhindern oder hinauszuzögern."
+        },
+        {
+          "id": "prev-02",
+          "front": "Selektive Prävention",
+          "back": "Massnahmen für Gruppen mit erhöhtem Risiko aufgrund ihrer Lebenssituation oder ihres Umfelds (z. B. Kinder aus Familien mit Alkoholproblemen), bevor Probleme auftreten."
+        },
+        {
+          "id": "prev-03",
+          "front": "Indizierte Prävention",
+          "back": "Massnahmen für Einzelpersonen, die bereits erste Anzeichen oder Risikoverhalten zeigen (z. B. Experimentieren mit Substanzen), aber keine Abhängigkeitsdiagnose haben."
+        },
+        {
+          "id": "prev-04",
+          "front": "Wer hat die Einteilung universell/selektiv/indiziert vorgeschlagen?",
+          "back": "Robert Gordon (1983); verbreitet wurde sie u. a. durch den Bericht des Institute of Medicine von 1994."
+        },
+        {
+          "id": "prev-05",
+          "front": "Primär-, Sekundär- und Tertiärprävention",
+          "back": "Ältere Einteilung: Primärprävention verhindert das Entstehen des Problems, Sekundärprävention erkennt und begrenzt es frühzeitig, Tertiärprävention verhindert Verschlechterung und Rückfall und unterstützt die Wiedereingliederung."
+        },
+        {
+          "id": "prev-06",
+          "front": "Risikofaktoren",
+          "back": "Merkmale einer Person oder ihres Umfelds, die die Wahrscheinlichkeit von Problemverhalten erhöhen, z. B. Familienkonflikte, schulisches Scheitern, konsumierende Gleichaltrige, leichter Zugang zu Substanzen."
+        },
+        {
+          "id": "prev-07",
+          "front": "Schutzfaktoren",
+          "back": "Merkmale einer Person oder ihres Umfelds, die die Wahrscheinlichkeit von Problemverhalten verringern oder Risikofaktoren abpuffern, z. B. starke Bindung an die Eltern, Interesse an der Schule, prosoziale Normen und Gruppen, soziale Kompetenzen."
+        },
+        {
+          "id": "prev-08",
+          "front": "Resilienz",
+          "back": "Die Fähigkeit zu positiver Anpassung und gesunder Entwicklung trotz widriger Umstände; die Stärkung ihrer Faktoren ist eines der Ziele der Prävention."
+        },
+        {
+          "id": "prev-09",
+          "front": "Problemverhaltenstheorie – Autor",
+          "back": "Richard Jessor. Risikoverhaltensweisen (z. B. Substanzkonsum, früher Beginn sexueller Aktivität, Schulschwänzen) treten oft gemeinsam auf und erfüllen für junge Menschen Entwicklungsfunktionen; deshalb lohnt es sich, ihre gemeinsamen Ursachen anzugehen."
+        },
+        {
+          "id": "prev-10",
+          "front": "Präventionsstrategien – nenne sie",
+          "back": "Häufig genannt: Information, Edukation (Kompetenzförderung), Alternativen, Intervention, Schadensminderung sowie Veränderung von Umfeld und Politik (Verhältnisprävention)."
+        },
+        {
+          "id": "prev-11",
+          "front": "Wirksamkeit reiner Informationsstrategien",
+          "back": "Wissen über Schäden allein verändert das Verhalten meist nicht, und abschreckende Botschaften können unwirksam oder sogar kontraproduktiv sein; Information wirkt besser als Teil eines umfassenderen Programms."
+        },
+        {
+          "id": "prev-12",
+          "front": "Normative Edukation",
+          "back": "Korrektur der Annahme junger Menschen, dass Substanzkonsum unter Gleichaltrigen verbreiteter und akzeptierter sei, als er tatsächlich ist."
+        },
+        {
+          "id": "prev-13",
+          "front": "Modell des sozialen Einflusses in der Prävention",
+          "back": "Programme, die lehren, Druck von Gleichaltrigen, Medien und Werbung zu erkennen und damit umzugehen (z. B. selbstsicheres Ablehnen), oft kombiniert mit normativer Edukation."
+        },
+        {
+          "id": "prev-14",
+          "front": "Lebenskompetenzen (Life Skills, WHO)",
+          "back": "Fähigkeiten für positives Verhalten und den Umgang mit Herausforderungen, z. B. Entscheidungen treffen, Probleme lösen, kritisches Denken, Kommunikation, Umgang mit Stress und Emotionen."
+        },
+        {
+          "id": "prev-15",
+          "front": "Unplugged",
+          "back": "Ein schulisches universelles Präventionsprogramm zum Substanzkonsum für Schüler/innen von etwa 12–14 Jahren, basierend auf dem Modell des sozialen Einflusses und auf Lebenskompetenzen; durchgeführt in interaktiven Lektionen."
+        },
+        {
+          "id": "prev-16",
+          "front": "Empfehlungssystem für Präventionsprogramme (Polen)",
+          "back": "Ein gemeinsames System zentraler Institutionen (u. a. KCPU – Nationales Zentrum für Suchtprävention, und ORE – Zentrum für Bildungsentwicklung, Polen), das Programme auf Qualität und Wirksamkeitsnachweise prüft; empfohlene Programme werden in einer Datenbank für Schulen und Gemeinden aufgeführt."
+        },
+        {
+          "id": "prev-17",
+          "front": "Europäische Qualitätsstandards für die Suchtprävention (EDPQS)",
+          "back": "Unter der Schirmherrschaft der EMCDDA entwickelte Standards, die den Zyklus eines Präventionsprojekts beschreiben: von der Bedarfsanalyse über Planung und Durchführung bis zur Evaluation."
+        },
+        {
+          "id": "prev-18",
+          "front": "Merkmale wirksamer Präventionsprogramme",
+          "back": "Grundlage in Bedarfsanalyse und Theorie, interaktive Methoden, ausreichende Intensität und Kontinuität, Alters- und Kulturangemessenheit, Einbezug von Eltern und Gemeinschaft sowie Evaluation."
+        },
+        {
+          "id": "prev-19",
+          "front": "Prozess- vs. Ergebnisevaluation",
+          "back": "Die Prozessevaluation prüft, wie ein Programm umgesetzt wurde (Reichweite, Programmtreue, Akzeptanz); die Ergebnisevaluation beurteilt, ob die angestrebten Veränderungen bei den Teilnehmer/innen erreicht wurden."
+        },
+        {
+          "id": "prev-20",
+          "front": "Schadensminderung (Harm Reduction)",
+          "back": "Ein Ansatz, der die gesundheitlichen und sozialen Folgen des Substanzkonsums verringert, ohne Abstinenz als Bedingung für Hilfe zu verlangen, z. B. Spritzenabgabeprogramme oder Opioidagonistentherapie."
+        },
+        {
+          "id": "prev-21",
+          "front": "Verhältnisprävention (strukturelle Prävention)",
+          "back": "Veränderung der Bedingungen, unter denen Menschen Entscheidungen treffen, z. B. Einschränkung der physischen und wirtschaftlichen Verfügbarkeit von Alkohol, Durchsetzung von Verkaufsverboten an Minderjährige, Gestaltung lokaler Normen."
+        },
+        {
+          "id": "prev-22",
+          "front": "Kurzintervention – FRAMES",
+          "back": "Elemente einer Kurzintervention: Feedback (Rückmeldung), Responsibility (Eigenverantwortung), Advice (Rat), Menu of options (Auswahl an Möglichkeiten), Empathy (Empathie), Self-efficacy (Selbstwirksamkeit)."
+        },
+        {
+          "id": "prev-23",
+          "front": "Früherkennung und Frühintervention",
+          "back": "Rasches Erkennen erster Anzeichen eines Problems (z. B. erste Konsumepisoden) und angemessenes Handeln, bevor sich das Problem verfestigt."
+        },
+        {
+          "id": "prev-24",
+          "front": "Peer-Education",
+          "back": "Geschulte junge Leader/innen führen, von Erwachsenen unterstützt, Aktivitäten unter Gleichaltrigen durch und nutzen dabei ihre Glaubwürdigkeit und ihren normativen Einfluss."
+        },
+        {
+          "id": "prev-25",
+          "front": "Gesundheitsförderung – Dokument und Definition",
+          "back": "Die Ottawa-Charta der WHO (1986): Gesundheitsförderung ist der Prozess, Menschen zu befähigen, mehr Kontrolle über ihre Gesundheit zu gewinnen und sie zu verbessern."
+        },
+        {
+          "id": "prev-26",
+          "front": "Strategie der Alternativen",
+          "back": "Attraktive, prosoziale Wege anbieten, Bedürfnisse zu erfüllen (z. B. Abenteuer, Anerkennung, Zugehörigkeit) – Sport, Freiwilligenarbeit, kreative Tätigkeiten –, am besten kombiniert mit anderen Strategien."
+        },
+        {
+          "id": "prev-27",
+          "front": "Bedarfsanalyse vor einem Präventionsprogramm",
+          "back": "Erfassen von Problemen, Risiko- und Schutzfaktoren sowie Ressourcen in einer Gruppe oder Gemeinschaft; sie leitet die Wahl der Präventionsebene, der Ziele und Methoden und liefert eine Ausgangsbasis für die Evaluation."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-addiction",
+      "title": "Sucht – Mechanismen, Veränderung, Rückfall",
+      "module": "addiction",
+      "cards": [
+        {
+          "id": "add-01",
+          "front": "Substanzabhängigkeit in der ICD-11 – drei Kernmerkmale",
+          "back": "Beeinträchtigte Kontrolle über den Konsum; zunehmender Vorrang des Konsums vor anderen Aktivitäten und Pflichten trotz Schäden; physiologische Merkmale (Toleranz, Entzug). Für die Diagnose sind in der Regel mindestens zwei erforderlich."
+        },
+        {
+          "id": "add-02",
+          "front": "Schädliches Konsummuster",
+          "back": "Ein Muster des Substanzkonsums, das die körperliche oder psychische Gesundheit schädigt (in der ICD-11 auch Schäden für andere), ohne die Kriterien einer Abhängigkeit zu erfüllen."
+        },
+        {
+          "id": "add-03",
+          "front": "Toleranz",
+          "back": "Ein Zustand, in dem zunehmende Mengen einer Substanz nötig sind, um dieselbe Wirkung zu erzielen, oder dieselbe Menge eine schwächere Wirkung hat."
+        },
+        {
+          "id": "add-04",
+          "front": "Entzugssyndrom",
+          "back": "Eine Gruppe körperlicher und psychischer Symptome, die nach Absetzen oder Reduzieren einer langfristig konsumierten Substanz auftreten; manche (z. B. bei Alkohol) können lebensbedrohlich sein und erfordern ärztliche Betreuung."
+        },
+        {
+          "id": "add-05",
+          "front": "Craving (Suchtdruck)",
+          "back": "Ein starkes Verlangen oder Drang, eine Substanz zu konsumieren, oft ausgelöst durch Reize, die mit dem Konsum verbunden sind; sein Auftreten ist kein Versagen, sondern ein Signal, Bewältigungsstrategien anzuwenden."
+        },
+        {
+          "id": "add-06",
+          "front": "Psychologische Suchtmechanismen – Autor und Bezeichnungen",
+          "back": "Jerzy Mellibruda: der Mechanismus der süchtigen Emotionsregulation, der Mechanismus der Illusionen und Verleugnung sowie der Mechanismus des zerstreuten und gespaltenen Selbst."
+        },
+        {
+          "id": "add-07",
+          "front": "Biopsychosoziales Suchtmodell",
+          "back": "Eine Sichtweise, nach der biologische (z. B. genetische, neurobiologische), psychologische (z. B. Emotionsregulation) und soziale Faktoren (z. B. Familie, Umfeld, Verfügbarkeit) gemeinsam Entstehung und Aufrechterhaltung einer Sucht prägen."
+        },
+        {
+          "id": "add-08",
+          "front": "Belohnungssystem und Sucht",
+          "back": "Substanzen und manche Verhaltensweisen aktivieren das Belohnungssystem des Gehirns stark (u. a. mesolimbische Bahn, Dopamin), was das Lernen von Reiz-Konsum-Verknüpfungen fördert und die Kontrolle schwächt."
+        },
+        {
+          "id": "add-09",
+          "front": "Transtheoretisches Modell (TTM) – Autoren",
+          "back": "James Prochaska und Carlo DiClemente. Es beschreibt Verhaltensänderung als Durchlaufen von Stadien: Absichtslosigkeit, Absichtsbildung, Vorbereitung, Handlung und Aufrechterhaltung (mit möglichem Rückfall)."
+        },
+        {
+          "id": "add-10",
+          "front": "TTM – Absichtslosigkeit (Precontemplation)",
+          "back": "Die Person beabsichtigt in absehbarer Zeit (typischerweise in den nächsten 6 Monaten) keine Veränderung und sieht oft kein Problem; hilfreich sind Beziehungsaufbau, sachliche Information und ein nicht konfrontativer Dialog."
+        },
+        {
+          "id": "add-11",
+          "front": "TTM – Absichtsbildung (Contemplation)",
+          "back": "Die Person erkennt das Problem und erwägt eine Veränderung, ist aber ambivalent – sie sieht sowohl Vorteile als auch Kosten der Veränderung; hilfreich sind das Erkunden der Ambivalenz und der Aufbau von Motivation."
+        },
+        {
+          "id": "add-12",
+          "front": "TTM – Vorbereitung (Preparation)",
+          "back": "Die Person beabsichtigt, bald zu handeln (typischerweise innerhalb eines Monats), und unternimmt oft erste Schritte; hilfreich ist die gemeinsame Erarbeitung eines konkreten Veränderungsplans."
+        },
+        {
+          "id": "add-13",
+          "front": "TTM – Handlung und Aufrechterhaltung",
+          "back": "In der Handlungsphase verändert die Person aktiv ihr Verhalten; in der Aufrechterhaltung (nach etwa 6 Monaten) festigt sie die Veränderung und beugt Rückfällen vor. Die Unterstützung konzentriert sich auf Bewältigungsfertigkeiten und das Festigen des Erreichten."
+        },
+        {
+          "id": "add-14",
+          "front": "Rückfall im TTM",
+          "back": "Ein Rückfall gilt als häufiger Teil des Veränderungsprozesses und nicht als Scheitern; die Person kann in ein früheres Stadium zurückkehren und die Erfahrung beim nächsten Versuch nutzen."
+        },
+        {
+          "id": "add-15",
+          "front": "Rückfallprophylaxe-Modell (Relapse Prevention, RP) – Autoren",
+          "back": "G. Alan Marlatt und Judith Gordon. Ein kognitiv-behaviorales Modell: Ein Rückfall entsteht aus dem Zusammenspiel von Hochrisikosituationen, Bewältigungsfertigkeiten, Selbstwirksamkeit und Wirkungserwartungen."
+        },
+        {
+          "id": "add-16",
+          "front": "Ausrutscher (Lapse) vs. Rückfall (Relapse)",
+          "back": "Ein Ausrutscher ist eine einzelne Konsumepisode nach einer Phase der Abstinenz oder Reduktion; ein Rückfall ist die Rückkehr zum früheren problematischen Muster. Ein guter Umgang mit einem Ausrutscher kann einen Rückfall verhindern."
+        },
+        {
+          "id": "add-17",
+          "front": "Abstinenzverletzungseffekt (AVE)",
+          "back": "Marlatts Begriff für eine Reaktion auf einen Ausrutscher: Schuldgefühle und das Zuschreiben an stabile, innere Ursachen („Ich bin schwach, ich schaffe es nicht“), was das Risiko erhöht, dass aus dem Ausrutscher ein Rückfall wird."
+        },
+        {
+          "id": "add-18",
+          "front": "Hochrisikosituationen – häufigste Kategorien (Marlatt)",
+          "back": "Negative emotionale Zustände, zwischenmenschliche Konflikte und sozialer Druck; weitere sind positive Emotionen, das Testen der eigenen Kontrolle und Craving."
+        },
+        {
+          "id": "add-19",
+          "front": "Scheinbar irrelevante Entscheidungen",
+          "back": "Kleine Entscheidungen, die scheinbar nichts mit dem Konsum zu tun haben (z. B. ein Heimweg an einem früheren Trinkort vorbei), die Person aber allmählich näher an eine Hochrisikosituation bringen."
+        },
+        {
+          "id": "add-20",
+          "front": "Selbstwirksamkeit in der Rückfallprophylaxe",
+          "back": "Konzept von Albert Bandura: die Überzeugung einer Person, eine bestimmte schwierige Situation bewältigen zu können; höhere Selbstwirksamkeit geht mit geringerem Rückfallrisiko einher."
+        },
+        {
+          "id": "add-21",
+          "front": "Rückfall-Warnsignale – wessen Modell?",
+          "back": "Terence Gorski (CENAPS-Modell) beschrieb den Rückfall als Prozess, in dem Veränderungen im Denken, Fühlen und Verhalten der Rückkehr zum Konsum vorausgehen; Betroffene lernen, sie zu erkennen und zu unterbrechen."
+        },
+        {
+          "id": "add-22",
+          "front": "MBRP – was ist das?",
+          "back": "Mindfulness-Based Relapse Prevention (achtsamkeitsbasierte Rückfallprophylaxe; Sarah Bowen, Neha Chawla, G. Alan Marlatt) verbindet Rückfallprophylaxe mit Achtsamkeitspraxis und lehrt, Craving und Emotionen zu beobachten, ohne automatisch zu reagieren."
+        },
+        {
+          "id": "add-23",
+          "front": "Verhaltenssüchte in der ICD-11",
+          "back": "In der Gruppe der Störungen durch Verhaltenssüchte nennt die ICD-11 die Glücksspielstörung (Gambling Disorder) und die Computerspielstörung (Gaming Disorder)."
+        },
+        {
+          "id": "add-24",
+          "front": "Weitere als Verhaltenssüchte beschriebene Verhaltensweisen",
+          "back": "Z. B. problematische Internet- und Social-Media-Nutzung, Kaufsucht oder Arbeitssucht; sie haben in der ICD-11 keine eigene Kategorie, und die zwanghafte Sexualverhaltensstörung wird dort den Impulskontrollstörungen zugeordnet."
+        },
+        {
+          "id": "add-25",
+          "front": "Minnesota-Modell",
+          "back": "Ein Modell der Suchtbehandlung, das professionelle (hauptsächlich Gruppen-)Therapie mit dem 12-Schritte-Programm verbindet; Ziel ist die Abstinenz, und die Betroffenen werden ermutigt, sich Selbsthilfegruppen anzuschliessen."
+        },
+        {
+          "id": "add-26",
+          "front": "Selbsthilfegruppen – Beispiel und Ursprung",
+          "back": "Die Anonymen Alkoholiker wurden 1935 in den USA gegründet; sie beruhen auf den 12 Schritten und gegenseitiger Unterstützung. Ähnliche Gemeinschaften gibt es für andere Süchte (z. B. NA, GA) und für Angehörige (Al-Anon)."
+        },
+        {
+          "id": "add-27",
+          "front": "Doppeldiagnose (Komorbidität)",
+          "back": "Gleichzeitiges Auftreten von Substanzkonsumstörungen und anderen psychischen Störungen (z. B. Depression, Angst); sie erfordert eine integrierte, koordinierte Behandlung."
+        },
+        {
+          "id": "add-28",
+          "front": "Reduziertes Trinken als Ziel",
+          "back": "Für manche Menschen (besonders ohne schwere Abhängigkeit) kann das Ziel eher in der Reduktion und Kontrolle des Trinkens (kontrollierter Konsum) als in vollständiger Abstinenz liegen; das Ziel wird individuell gemeinsam mit einer Fachperson festgelegt."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-law",
+      "title": "Recht – rechtlicher Rahmen (Polen)",
+      "module": "law",
+      "cards": [
+        {
+          "id": "law-01",
+          "front": "Gesetz über die Erziehung zur Nüchternheit und die Bekämpfung des Alkoholismus (Polen) – Datum",
+          "back": "Gesetz vom 26. Oktober 1982 (ustawa o wychowaniu w trzeźwości i przeciwdziałaniu alkoholizmowi); es regelt u. a. die Prävention und Lösung von Alkoholproblemen, die Regeln für Verkauf und Werbung von Alkohol sowie die Zwangsbehandlung."
+        },
+        {
+          "id": "law-02",
+          "front": "Gesetz über die Bekämpfung der Drogensucht (Polen) – Datum",
+          "back": "Gesetz vom 29. Juli 2005 (ustawa o przeciwdziałaniu narkomanii); es regelt Prävention, Behandlung, Rehabilitation und Schadensminderung sowie die Kontrolle von Substanzen und die strafrechtliche Verantwortlichkeit."
+        },
+        {
+          "id": "law-03",
+          "front": "Gesetz über die Unterstützung und Resozialisierung Minderjähriger (Polen) – wann trat es in Kraft?",
+          "back": "Am 1. September 2022. Es ersetzte das Gesetz über das Verfahren in Jugendsachen von 1982."
+        },
+        {
+          "id": "law-04",
+          "front": "Gesetz über die Unterstützung und Resozialisierung Minderjähriger – wen es betrifft",
+          "back": "Es umfasst u. a. die Verhütung und Bekämpfung der Demoralisierung von Personen unter 18 Jahren sowie Verfahren wegen strafbarer Handlungen, die von Personen im Alter von 10 bis unter 17 Jahren begangen wurden."
+        },
+        {
+          "id": "law-05",
+          "front": "Massnahmen für Minderjährige – Beispiele",
+          "back": "Z. B. Verwarnung, Verpflichtung zu einem bestimmten Verhalten, verantwortliche Aufsicht der Eltern, Aufsicht durch eine/n Bewährungshelfer/in (kurator), Unterbringung in einem MOW (Jugenderziehungszentrum) und als Besserungsmassnahme die Unterbringung in einer Erziehungsanstalt (zakład poprawczy)."
+        },
+        {
+          "id": "law-06",
+          "front": "Gesetz über die Bekämpfung häuslicher Gewalt (Polen)",
+          "back": "Gesetz vom 29. Juli 2005, durch eine Novelle von 2023 umbenannt (zuvor: über die Bekämpfung von Gewalt in der Familie); die Novelle erweiterte die Definition von Gewalt, z. B. um wirtschaftliche Gewalt und Cybergewalt."
+        },
+        {
+          "id": "law-07",
+          "front": "Verfahren „Blaue Karte“ (Niebieska Karta)",
+          "back": "Ein Verfahren zur Intervention bei begründetem Verdacht auf häusliche Gewalt; es wird von einer Vertreterin oder einem Vertreter eines befugten Dienstes durch Ausfüllen des Formulars „Niebieska Karta – A“ eingeleitet."
+        },
+        {
+          "id": "law-08",
+          "front": "Wer kann das Verfahren „Blaue Karte“ einleiten?",
+          "back": "Vertreter/innen von: Stellen der Sozialhilfe, kommunalen Kommissionen zur Lösung von Alkoholproblemen, der Polizei, des Bildungswesens und des Gesundheitswesens."
+        },
+        {
+          "id": "law-09",
+          "front": "Interdisziplinäres Team und diagnostisch-unterstützende Gruppe",
+          "back": "Die Gemeinde setzt ein interdisziplinäres Team zur Bekämpfung häuslicher Gewalt ein; einzelne Fälle bearbeiten diagnostisch-unterstützende Gruppen (seit 2023 anstelle der früheren Arbeitsgruppen)."
+        },
+        {
+          "id": "law-10",
+          "front": "Massnahmen zum Schutz einer von häuslicher Gewalt betroffenen Person – Beispiele",
+          "back": "Z. B. die Anordnung, die gemeinsame Wohnung sofort zu verlassen, und ein Annäherungsverbot; sie können von der Polizei (oder Militärpolizei) erlassen und anschliessend von einem Gericht überprüft werden."
+        },
+        {
+          "id": "law-11",
+          "front": "KCPU – was ist das und seit wann?",
+          "back": "Das Nationale Zentrum für Suchtbekämpfung (Krajowe Centrum Przeciwdziałania Uzależnieniom, Polen), tätig seit dem 1. Januar 2022; es übernahm die Aufgaben von PARPA und des Nationalen Büros für Drogenprävention und ist für die Politik zu Substanz- und Verhaltenssüchten zuständig."
+        },
+        {
+          "id": "law-12",
+          "front": "PARPA und KBPN",
+          "back": "Die Staatliche Agentur zur Lösung von Alkoholproblemen (PARPA) und das Nationale Büro für Drogenprävention (KBPN) – zentrale polnische Institutionen, die Ende 2021 aufgelöst wurden; ihre Aufgaben übernahm das KCPU."
+        },
+        {
+          "id": "law-13",
+          "front": "GKRPA – Aufgaben",
+          "back": "Die kommunale Kommission zur Lösung von Alkoholproblemen (gminna komisja rozwiązywania problemów alkoholowych, Polen) initiiert Präventionsmassnahmen, nimmt zu Alkoholverkaufsbewilligungen hinsichtlich ihrer Übereinstimmung mit Beschlüssen des Gemeinderats Stellung und leitet Schritte zu einer gerichtlich angeordneten Behandlung ein."
+        },
+        {
+          "id": "law-14",
+          "front": "Kommunales Programm zur Prävention und Lösung von Alkoholproblemen – Finanzierung",
+          "back": "Die Gemeinde führt es als eigene Aufgabe durch; finanziert wird es aus den Gebühren für Alkoholverkaufsbewilligungen."
+        },
+        {
+          "id": "law-15",
+          "front": "Zwangsweise Suchtbehandlung – für wen?",
+          "back": "Für Personen, die im Zusammenhang mit Alkoholmissbrauch den Zerfall des Familienlebens oder die Demoralisierung Minderjähriger verursachen, sich der Arbeit entziehen oder systematisch die öffentliche Ruhe oder Ordnung stören."
+        },
+        {
+          "id": "law-16",
+          "front": "Zwangsbehandlung – wer entscheidet und auf wessen Antrag?",
+          "back": "Das für den Wohnort der Person zuständige Bezirksgericht (sąd rejonowy), meist auf Antrag der kommunalen Kommission zur Lösung von Alkoholproblemen oder der Staatsanwaltschaft, gestützt auf Gutachten."
+        },
+        {
+          "id": "law-17",
+          "front": "Alkoholverkauf – grundlegende Verbote",
+          "back": "Verboten ist der Verkauf oder Ausschank alkoholischer Getränke an Personen unter 18 Jahren, an Personen, deren Verhalten auf Trunkenheit hindeutet, sowie auf Kredit oder gegen Pfand."
+        },
+        {
+          "id": "law-18",
+          "front": "Alkoholwerbung in Polen",
+          "back": "Werbung und Verkaufsförderung für alkoholische Getränke sind grundsätzlich verboten, ausgenommen Bier, für das unter gesetzlichen Einschränkungen geworben werden darf."
+        },
+        {
+          "id": "law-19",
+          "front": "Besitz von Betäubungsmitteln",
+          "back": "Das Gesetz über die Bekämpfung der Drogensucht stellt den Besitz von Betäubungsmitteln und psychotropen Substanzen unter Strafe; in bestimmten Fällen (z. B. bei einer geringen Menge zum Eigenkonsum) kann das Verfahren eingestellt werden."
+        },
+        {
+          "id": "law-20",
+          "front": "„Behandlung statt Strafe“ im Drogengesetz",
+          "back": "Das Gesetz sieht Mechanismen vor, die es einer abhängigen Person, gegen die ein Strafverfahren läuft, ermöglichen, eine Behandlung aufzunehmen; dies kann das Verfahren beeinflussen, z. B. zu dessen Aussetzung führen."
+        },
+        {
+          "id": "law-21",
+          "front": "Gesetz über die Bewährungshelfer/innen (Polen)",
+          "back": "Gesetz vom 27. Juli 2001 (ustawa o kuratorach sądowych); es legt die Organisation der gerichtlichen Bewährungshilfe sowie die Rechte und Pflichten der Familien- und Erwachsenenbewährungshelfer/innen fest."
+        },
+        {
+          "id": "law-22",
+          "front": "Strafvollzugsgesetzbuch (Kodeks karny wykonawczy) – was regelt es?",
+          "back": "Die Vollstreckung strafrechtlicher Urteile, darunter Freiheitsstrafe (und die Systeme ihres Vollzugs), Freiheitsbeschränkung, Bewährungsaufsicht und Entlassenenhilfe (postpenitentiäre Hilfe)."
+        },
+        {
+          "id": "law-23",
+          "front": "Elektronische Überwachung",
+          "back": "Eine Form des Vollzugs einer Freiheitsstrafe (in bestimmten Fällen) ausserhalb des Gefängnisses, am Wohnort der verurteilten Person, mit elektronischer Überwachung ihres Aufenthaltsorts."
+        },
+        {
+          "id": "law-24",
+          "front": "Sozialhilfegesetz (Polen)",
+          "back": "Gesetz vom 12. März 2004 (ustawa o pomocy społecznej); es bestimmt die Aufgaben und Formen der Sozialhilfe sowie die Institutionen, darunter die kommunalen Sozialhilfezentren (OPS) und die Kreiszentren für Familienhilfe (PCPR)."
+        },
+        {
+          "id": "law-25",
+          "front": "Gesetz über den Schutz der psychischen Gesundheit (Polen)",
+          "back": "Gesetz vom 19. August 1994 (ustawa o ochronie zdrowia psychicznego); es regelt u. a. die psychiatrische Versorgung, einschliesslich der Aufnahme in ein Spital ohne Einwilligung in den im Gesetz bestimmten Situationen."
+        },
+        {
+          "id": "law-26",
+          "front": "Kinderschutzstandards",
+          "back": "Seit einer Novelle von 2023 müssen Schulen, Einrichtungen und andere Organisationen, die mit Kindern arbeiten, Standards zum Schutz Minderjähriger vor Schaden einführen (ab 2024)."
+        },
+        {
+          "id": "law-27",
+          "front": "Jugendgerichtsbarkeit – welches Gericht?",
+          "back": "Jugendsachen werden vom Familiengericht verhandelt (Abteilung für Familien- und Jugendsachen des Bezirksgerichts, sąd rejonowy)."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-mi",
+      "title": "Motivierende Gesprächsführung (MI)",
+      "module": "mi",
+      "cards": [
+        {
+          "id": "mi-01",
+          "front": "Motivierende Gesprächsführung – Autoren",
+          "back": "William R. Miller und Stephen Rollnick."
+        },
+        {
+          "id": "mi-02",
+          "front": "Motivierende Gesprächsführung – Definition",
+          "back": "Ein partnerschaftlicher, zielorientierter Gesprächsstil mit besonderer Aufmerksamkeit für die Sprache der Veränderung, der die persönliche Motivation und Verbindlichkeit stärkt, indem er die eigenen Gründe der Person hervorruft."
+        },
+        {
+          "id": "mi-03",
+          "front": "Haltung (Spirit) der MI – Elemente",
+          "back": "Partnerschaft, Akzeptanz, Mitgefühl (Einsatz für das Wohl der Person) und Evokation; in der vierten Auflage (2023) wurde Evokation durch Empowerment ersetzt."
+        },
+        {
+          "id": "mi-04",
+          "front": "Partnerschaft in der MI-Haltung",
+          "back": "Arbeiten „mit“ der Person statt „an“ ihr: Beide sind Expert/innen – die Fachperson für Wissen, die Person für ihr eigenes Leben."
+        },
+        {
+          "id": "mi-05",
+          "front": "Akzeptanz in der MI-Haltung – vier Aspekte",
+          "back": "Absoluter Wert, akkurate Empathie, Unterstützung der Autonomie und Würdigung (Anerkennen von Stärken und Bemühungen)."
+        },
+        {
+          "id": "mi-06",
+          "front": "Evokation",
+          "back": "Geht davon aus, dass Motivation und Ressourcen für Veränderung bereits in der Person vorhanden sind; Aufgabe der Fachperson ist es, sie hervorzulocken, statt eigene Argumente einzubringen."
+        },
+        {
+          "id": "mi-07",
+          "front": "Die vier Prozesse der MI",
+          "back": "Beziehungsaufbau (Engaging), Fokussieren (Richtung vereinbaren), Evozieren (Veränderungsmotivation hervorrufen) und Planen (Verbindlichkeit und einen Plan entwickeln)."
+        },
+        {
+          "id": "mi-08",
+          "front": "OARS – wofür steht das?",
+          "back": "Open questions (offene Fragen), Affirmations (Würdigungen), Reflections (Reflexionen) und Summaries (Zusammenfassungen) – die Kernfertigkeiten der MI."
+        },
+        {
+          "id": "mi-09",
+          "front": "Offene Fragen",
+          "back": "Fragen, die zu ausführlicheren Antworten und zum Nachdenken einladen (z. B. „Was bringt Sie dazu, über eine Veränderung nachzudenken?“), im Gegensatz zu geschlossenen Fragen, die mit „ja/nein“ oder kurz beantwortet werden."
+        },
+        {
+          "id": "mi-10",
+          "front": "Würdigung (Affirmation)",
+          "back": "Echte Anerkennung konkreter Stärken, Werte oder Bemühungen der Person (z. B. „Trotz einer harten Woche sind Sie gekommen – das zeigt, dass es Ihnen wichtig ist“), statt allgemeinem Lob."
+        },
+        {
+          "id": "mi-11",
+          "front": "Einfache vs. komplexe Reflexion",
+          "back": "Eine einfache Reflexion wiederholt das Gesagte oder formuliert es leicht um; eine komplexe Reflexion fügt Bedeutung hinzu, z. B. benennt sie ein Gefühl oder einen mitgemeinten Sinn, und bringt das Gespräch meist stärker voran."
+        },
+        {
+          "id": "mi-12",
+          "front": "Zweiseitige Reflexion",
+          "back": "Spiegelt beide Seiten der Ambivalenz, z. B. „Einerseits hilft Ihnen das Trinken, sich zu entspannen, andererseits machen Sie sich Sorgen um Ihre Gesundheit“; am besten endet sie mit der Seite der Veränderung."
+        },
+        {
+          "id": "mi-13",
+          "front": "Verstärkte Reflexion",
+          "back": "Eine Aussage der Beibehaltungssprache wird in leicht übertriebener Form – ohne Sarkasmus – gespiegelt, was die Person oft dazu bringt, ihre Position auszugleichen und Veränderungssprache zu äussern."
+        },
+        {
+          "id": "mi-14",
+          "front": "Arten von Zusammenfassungen in der MI",
+          "back": "Sammelnde (mehrere Aussagen bündeln), verknüpfende (eine aktuelle Aussage mit einer früheren verbinden) und überleitende (einen Gesprächsteil abschliessen und zum nächsten übergehen)."
+        },
+        {
+          "id": "mi-15",
+          "front": "Veränderungssprache – DARN-CAT",
+          "back": "Vorbereitend: Desire (Wunsch), Ability (Fähigkeit), Reasons (Gründe), Need (Notwendigkeit); mobilisierend: Commitment (Verpflichtung), Activation (Aktivierung), Taking steps (erste Schritte)."
+        },
+        {
+          "id": "mi-16",
+          "front": "Vorbereitende vs. mobilisierende Veränderungssprache",
+          "back": "Vorbereitende Sprache drückt Motivation aus („Ich möchte“, „Ich könnte“, „Ich sollte“); mobilisierende Sprache signalisiert den Übergang ins Handeln („Ich werde“, „Ich bin bereit“, „Diese Woche habe ich schon …“)."
+        },
+        {
+          "id": "mi-17",
+          "front": "Beibehaltungssprache (Sustain Talk)",
+          "back": "Aussagen zugunsten der Beibehaltung des Verhaltens (z. B. „Das Trinken schadet mir nicht“); ein natürlicher Teil der Ambivalenz, kein Widerstand, der überwunden werden muss."
+        },
+        {
+          "id": "mi-18",
+          "front": "Dissonanz (Discord)",
+          "back": "Spannung in der Beziehung zwischen Fachperson und Person (z. B. Streiten, Unterbrechen, Rückzug); in neueren MI-Auflagen ersetzte sie einen Teil der Bedeutung von „Widerstand“ und signalisiert der Fachperson, ihr Vorgehen zu ändern."
+        },
+        {
+          "id": "mi-19",
+          "front": "Korrekturreflex (Righting Reflex)",
+          "back": "Der natürliche Drang Helfender, zu überzeugen, Ratschläge zu geben und das Problem zu „reparieren“; er bringt eine ambivalente Person meist dazu, den Status quo zu verteidigen, deshalb widerstehen MI-Praktiker/innen ihm."
+        },
+        {
+          "id": "mi-20",
+          "front": "Skalen (Wichtigkeit und Zuversicht)",
+          "back": "Bitte um eine Einschätzung von 0–10, wie wichtig die Veränderung ist und wie zuversichtlich die Person ist, dann: „Warum diese Zahl und nicht eine tiefere?“ und „Was würde helfen, sie um einen Punkt zu erhöhen?“."
+        },
+        {
+          "id": "mi-21",
+          "front": "Elicit–Provide–Elicit (E-P-E)",
+          "back": "Eine Art, in der MI Informationen zu vermitteln: erfragen, was die Person weiss oder wissen möchte, Information geben (mit Erlaubnis, neutral), erfragen, was sie daraus macht."
+        },
+        {
+          "id": "mi-22",
+          "front": "Ambivalenz in der MI",
+          "back": "Gleichzeitiges Erleben von Motivation für und gegen eine Veränderung; gilt als normaler Schritt auf dem Weg zur Veränderung, der erkundet statt bekämpft werden soll."
+        },
+        {
+          "id": "mi-23",
+          "front": "Diskrepanz entwickeln",
+          "back": "Der Person helfen, die Kluft zwischen dem aktuellen Verhalten und ihren wichtigen Werten und Zielen zu erkennen, was die Veränderungsmotivation stärken kann."
+        },
+        {
+          "id": "mi-24",
+          "front": "Die vier MI-Prinzipien aus früheren Auflagen",
+          "back": "Empathie ausdrücken, Diskrepanz entwickeln, mit dem Widerstand gehen (Argumentieren vermeiden) und Selbstwirksamkeit fördern."
+        },
+        {
+          "id": "mi-25",
+          "front": "Gesprächsfallen in der MI – Beispiele",
+          "back": "Frage-Antwort-Falle, Expertenfalle, Etikettierungsfalle, Falle des vorschnellen Fokussierens, Schuldzuweisungsfalle und Plauderfalle – sie erschweren den Beziehungsaufbau."
+        },
+        {
+          "id": "mi-26",
+          "front": "Techniken zum Hervorrufen von Veränderungssprache – Beispiele",
+          "back": "Evozierende Fragen, Skalen, Extreme erfragen („Was wäre das Schlimmste, das passieren könnte?“), Zurückblicken und Vorausschauen sowie Werte und Ziele erkunden."
+        },
+        {
+          "id": "mi-27",
+          "front": "MITI",
+          "back": "Motivational Interviewing Treatment Integrity – ein Instrument zur Kodierung aufgezeichneter Gespräche, um die MI-Treue zu beurteilen und die Fertigkeiten von Fachpersonen weiterzuentwickeln."
+        }
+      ],
+      "builtIn": true
+    },
+    {
+      "id": "deck-family",
+      "title": "Familie – Co-Abhängigkeit, Rollen, Werkzeuge",
+      "module": "family",
+      "cards": [
+        {
+          "id": "fam-01",
+          "front": "Co-Abhängigkeit",
+          "back": "Ein dauerhaftes Muster von Gedanken, Gefühlen und Verhaltensweisen bei einem Familienmitglied, das sich durch langes Zusammenleben mit einer suchtkranken Person entwickelt (z. B. übermässige Kontrolle, Übernahme von Verantwortung, Vernachlässigung der eigenen Person); verstanden als Anpassung an chronischen Stress, nicht als Krankheit."
+        },
+        {
+          "id": "fam-02",
+          "front": "Typische Verhaltensweisen Angehöriger einer Person mit Alkoholproblem",
+          "back": "Das Trinken kontrollieren, das Problem vor anderen verbergen, Entschuldigungen finden, Pflichten übernehmen, die Folgen des Trinkens abfedern – was das Problem unbeabsichtigt aufrechterhalten kann."
+        },
+        {
+          "id": "fam-03",
+          "front": "Rollen von Kindern in Familien mit Alkoholproblemen – Autorin",
+          "back": "Sharon Wegscheider-Cruse: der Held / die Heldin der Familie, der Sündenbock, das verlorene Kind und das Maskottchen; daneben wird die Rolle des „Zuhelfers“ (Enabler, oft die Partnerin oder der Partner der trinkenden Person) beschrieben."
+        },
+        {
+          "id": "fam-04",
+          "front": "Die Rolle des Familienhelden",
+          "back": "Oft das älteste Kind: verantwortungsbewusst, leistungsstark, Stolz der Familie, aber oft auf Kosten der eigenen Bedürfnisse und Gefühle."
+        },
+        {
+          "id": "fam-05",
+          "front": "Die Rolle des Sündenbocks",
+          "back": "Ein Kind, das durch schwieriges Verhalten (Rebellion, Schulprobleme) die Aufmerksamkeit und Spannung der Familie auf sich zieht und sie vom Alkoholproblem ablenkt."
+        },
+        {
+          "id": "fam-06",
+          "front": "Die Rolle des verlorenen Kindes",
+          "back": "Ein zurückgezogenes, stilles, „unsichtbares“ Kind, das Konflikten ausweicht und keine Probleme macht, aber isoliert und übersehen werden kann."
+        },
+        {
+          "id": "fam-07",
+          "front": "Die Rolle des Maskottchens",
+          "back": "Ein Kind, das Spannungen durch Humor und Clownerie abbaut; es zieht Aufmerksamkeit auf sich und hebt die Stimmung, kann aber Mühe haben, echte Gefühle auszudrücken."
+        },
+        {
+          "id": "fam-08",
+          "front": "„Rede nicht, traue nicht, fühle nicht“ – Autorin",
+          "back": "Claudia Black beschrieb diese ungeschriebenen Regeln von Familien mit Alkoholproblemen, die Kinder lehren, über das Problem zu schweigen, zu misstrauen und Gefühle zu unterdrücken."
+        },
+        {
+          "id": "fam-09",
+          "front": "EKA (Erwachsene Kinder von Alkoholiker/innen, ACoA)",
+          "back": "Erwachsene, die in Familien mit Alkoholproblemen aufgewachsen sind und deren Kindheitserfahrungen das Funktionieren im Erwachsenenalter beeinflussen können; es ist keine Diagnose. Beschrieben u. a. von Janet Woititz."
+        },
+        {
+          "id": "fam-10",
+          "front": "CRAFT – wofür es steht und Autoren",
+          "back": "Community Reinforcement and Family Training – ein von Robert J. Meyers und Kolleg/innen (u. a. Jane Ellen Smith, Brenda L. Wolfe) entwickelter Ansatz für Angehörige von Menschen, die eine Behandlung ablehnen."
+        },
+        {
+          "id": "fam-11",
+          "front": "CRAFT – Ziele",
+          "back": "Verbesserung des Wohlbefindens und Funktionierens der Familienmitglieder, Verringerung des Substanzkonsums der Person und Erhöhung der Chance, dass sie eine Behandlung aufnimmt."
+        },
+        {
+          "id": "fam-12",
+          "front": "CRAFT – zentrale Techniken",
+          "back": "Funktionale Analyse des Konsums, positive Kommunikation, Belohnen von substanzfreiem Verhalten, natürliche Konsequenzen des Konsums zulassen, Selbstfürsorge, Sicherheitsplanung und den richtigen Moment wählen, um zur Behandlung einzuladen."
+        },
+        {
+          "id": "fam-13",
+          "front": "CRAFT vs. konfrontative Intervention (Johnson)",
+          "back": "In Vergleichsstudien führte CRAFT häufiger zur Aufnahme einer Behandlung als die konfrontative Intervention oder die Verweisung an Al-Anon und belastete die Beziehung dabei weniger."
+        },
+        {
+          "id": "fam-14",
+          "front": "Sicherheit in der Arbeit mit Familien",
+          "back": "Wenn in der Familie Gewalt vorkommt, hat die Sicherheit der Betroffenen (Sicherheitsplan, Verfahren „Blaue Karte“) Vorrang vor der Arbeit an der Motivation der trinkenden Person."
+        },
+        {
+          "id": "fam-15",
+          "front": "Stress-Belastung-Bewältigung-Unterstützung-Modell",
+          "back": "Ein Modell von Jim Orford und Kolleg/innen: Das Zusammenleben mit einem/einer Angehörigen, der/die Substanzen konsumiert, verursacht Stress und Belastung; Familienmitglieder bewältigen dies, indem sie sich engagieren, es hinnehmen oder sich zurückziehen; soziale Unterstützung puffert die Auswirkungen ab."
+        },
+        {
+          "id": "fam-16",
+          "front": "5-Schritte-Methode (5-Step Method)",
+          "back": "Eine Kurzintervention für Familienmitglieder (Copello, Orford, Velleman u. a.): Zuhören, Informationen geben, Bewältigungsweisen erkunden, soziale Unterstützung entwickeln und weitere Hilfe organisieren."
+        },
+        {
+          "id": "fam-17",
+          "front": "Genogramm",
+          "back": "Eine grafische Darstellung der Familienstruktur, meist über mindestens drei Generationen, mit wichtigen Ereignissen und Beziehungen; die Notation wurde von Monica McGoldrick und Randy Gerson verbreitet."
+        },
+        {
+          "id": "fam-18",
+          "front": "Genogramm – Grundsymbole",
+          "back": "Ein Quadrat steht für eine männliche Person, ein Kreis für eine weibliche, ein X im Symbol für einen Todesfall; waagrechte Linien verbinden Partner/innen, senkrechte Linien führen zu Kindern, und besondere Linien zeigen die Beziehungsqualität (z. B. Nähe, Konflikt)."
+        },
+        {
+          "id": "fam-19",
+          "front": "Ökogramm (Ecomap) – Autorin und Zweck",
+          "back": "Ann Hartman (1978). Es zeigt die Familie im Kontext ihres Umfelds – Institutionen, Personen und Gruppen – und macht Quellen von Unterstützung und Stress sowie den Fluss von Ressourcen sichtbar."
+        },
+        {
+          "id": "fam-20",
+          "front": "Ökogramm – Linienkonventionen",
+          "back": "Eine durchgezogene Linie bedeutet eine starke, unterstützende Verbindung, eine gestrichelte eine schwache und eine schraffierte eine belastende oder konfliktreiche Beziehung; Pfeile zeigen die Richtung des Energie- oder Ressourcenflusses."
+        },
+        {
+          "id": "fam-21",
+          "front": "Systemischer Ansatz zur Familie",
+          "back": "Die Familie wird als System miteinander verbundener Personen gesehen; das Problem eines Mitglieds betrifft alle und kann eine Funktion für die Aufrechterhaltung des Gleichgewichts im System erfüllen."
+        },
+        {
+          "id": "fam-22",
+          "front": "Familienhomöostase – wer prägte den Begriff?",
+          "back": "Don D. Jackson. Die Tendenz der Familie, ihr bestehendes Gleichgewicht zu bewahren, auch wenn es dysfunktional ist, was Veränderung erschweren kann."
+        },
+        {
+          "id": "fam-23",
+          "front": "Familiengrenzen – Autor und Arten",
+          "back": "Salvador Minuchin (strukturelle Familientherapie): Grenzen können klar, starr (begünstigen Loslösung/Desengagement) oder diffus (begünstigen Verstrickung) sein."
+        },
+        {
+          "id": "fam-24",
+          "front": "Parentifizierung",
+          "back": "Rollenumkehr, bei der ein Kind Pflichten und emotionale Verantwortung übernimmt, die Erwachsenen zukommen; der Begriff wurde von Iván Böszörményi-Nagy eingeführt."
+        },
+        {
+          "id": "fam-25",
+          "front": "Circumplex-Modell – Autor und Dimensionen",
+          "back": "David H. Olson. Es beschreibt das Funktionieren der Familie entlang der Dimensionen Kohäsion und Flexibilität, mit Kommunikation als unterstützender Dimension."
+        },
+        {
+          "id": "fam-26",
+          "front": "Selbsthilfe für Angehörige",
+          "back": "Al-Anon – eine Gemeinschaft für Angehörige von Menschen mit Alkoholproblemen; Alateen – für Jugendliche. Sie bieten Unterstützung unabhängig davon, ob die trinkende Person eine Behandlung aufnimmt."
+        },
+        {
+          "id": "fam-27",
+          "front": "Schutzfaktoren für Kinder in Familien mit Alkoholproblemen",
+          "back": "Z. B. mindestens eine stabile, unterstützende erwachsene Bezugsperson, vorhersehbare Familienrituale, altersgerechte, zutreffende Informationen über das Problem und Unterstützung ausserhalb der Familie (Schule, Tagesbetreuung, Gruppe)."
+        }
+      ],
+      "builtIn": true
+    }
+  ]
+}

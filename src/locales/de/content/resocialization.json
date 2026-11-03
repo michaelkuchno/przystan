@@ -1,0 +1,427 @@
+{
+  "cards": [
+    {
+      "id": "resocializationConcepts",
+      "section": "resocialization",
+      "title": "Konzepte der Resozialisierung",
+      "essence": "Resozialisierung ist zielgerichtete pädagogische Arbeit mit sozial unangepassten Menschen, die eine dauerhafte Veränderung von Einstellungen und Verhalten sowie ein selbstständiges, normkonformes Leben in der Gesellschaft anstrebt. Die polnische Tradition (Cz. Czapów, L. Pytka; poln. pedagogika resocjalizacyjna) betont, dass es nicht nur um Kontrolle geht, sondern um Entwicklung: Beziehungen wieder aufbauen, soziale Kompetenzen stärken, Selbstwirksamkeit erleben. Heute werden pädagogische, therapeutische und gemeinwesenorientierte Ansätze kombiniert.",
+      "whenToUse": [
+        "Planung eines individuellen Programms für Jugendliche in einer Einrichtung oder für Personen unter Aufsicht.",
+        "Begründung der Methodenwahl in der Dokumentation und in wissenschaftlichen Arbeiten.",
+        "Teamdiskussionen darüber, ob Massnahmen pädagogisch oder bloss disziplinierend sind."
+      ],
+      "techniques": [
+        "Pädagogische Diagnostik: Ressourcen, Defizite, Umfeld, Risiko- und Schutzfaktoren.",
+        "Wirkung über die erziehende Person und die Beziehung (Vorbild, Vertrauen, Konsequenz).",
+        "Arbeit in drei Bereichen: kognitiv (Normen, Werte), emotional und verhaltensbezogen.",
+        "Familie und lokales Umfeld in den Veränderungsprozess einbeziehen."
+      ],
+      "phrases": [
+        "Was funktioniert in deinem Leben schon, worauf wir aufbauen können?",
+        "Ich möchte, dass du von hier etwas mitnimmst, das wirklich dir gehört – eine Fähigkeit, eine Leidenschaft, Menschen."
+      ],
+      "pitfalls": [
+        "Resozialisierung mit Strafe und Isolation gleichsetzen.",
+        "Sich nur auf Defizite konzentrieren und die Person etikettieren.",
+        "Kein Plan für die Zeit nach dem Austritt aus der Einrichtung."
+      ],
+      "sources": [
+        {
+          "authors": "Czapów Cz.",
+          "year": 1978,
+          "title": "Wychowanie resocjalizujące. Elementy metodyki i diagnostyki",
+          "publisher": "PWN"
+        },
+        {
+          "authors": "Pytka L.",
+          "year": 2000,
+          "title": "Pedagogika resocjalizacyjna. Wybrane zagadnienia teoretyczne, diagnostyczne i metodyczne",
+          "publisher": "Wydawnictwo APS"
+        },
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["Resozialisierung", "Theorie", "Pädagogik"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "creativeResocialization",
+      "section": "resocialization",
+      "title": "Kreative Resozialisierung (M. Konopczyński)",
+      "essence": "Nach dem Konzept von Marek Konopczyński geschieht Veränderung vor allem durch die Entwicklung von Potenzialen und den Aufbau einer neuen sozialen Identität – nicht durch das Korrigieren von Defiziten. Es nutzt kreative Tätigkeiten (Theater, Musik, Sport, Kunst, Medien), in denen Jugendliche Erfolg haben, neue Rollen übernehmen und positive Rückmeldungen erhalten. Eine Identität als „jemand, der etwas kann“ ersetzt nach und nach eine abweichende Identität.",
+      "whenToUse": [
+        "Arbeit mit Jugendlichen in Jugenderziehungs- und Soziotherapiezentren, Tagesstätten und Jugendstrafeinrichtungen.",
+        "Wenn klassische Methoden (Gespräche, Belohnungs- und Strafsysteme) keine Wirkung zeigen.",
+        "Beim Aufbau von Motivation und Selbstwert."
+      ],
+      "techniques": [
+        "Interessen und verborgene Fähigkeiten der Jugendlichen erfassen.",
+        "Kulturbasierte Methoden: Resozialisierung durch Theater, Musik, Kunst, Sport.",
+        "Öffentliche Präsentation der Ergebnisse (Aufführung, Ausstellung, Wettbewerb) – eine Erfahrung von Anerkennung.",
+        "Neue Rollen schrittweise ins Leben ausserhalb der Einrichtung übertragen."
+      ],
+      "phrases": [
+        "Ich habe gesehen, wie du die Probe geleitet hast – die anderen haben dir zugehört. Wie war das für dich?",
+        "Was würdest du gern lernen, wenn es keine Grenzen gäbe?"
+      ],
+      "pitfalls": [
+        "Kreative Aktivitäten als Zeitvertreib ohne pädagogisches Ziel behandeln.",
+        "Eine Aktivität aufzwingen, statt bei den Interessen der Jugendlichen anzusetzen.",
+        "Keine Fortsetzung nach dem Austritt aus der Einrichtung."
+      ],
+      "sources": [
+        {
+          "authors": "Konopczyński M.",
+          "year": 2006,
+          "title": "Metody twórczej resocjalizacji. Teoria i praktyka wychowawcza",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["kreative Resozialisierung", "Jugendliche", "Identität"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "socialMaladjustment",
+      "section": "resocialization",
+      "title": "Soziale Unangepasstheit",
+      "essence": "Soziale Unangepasstheit (poln. niedostosowanie społeczne) ist ein verfestigtes Verhaltens- und Einstellungsmuster, das im Widerspruch zu sozialen Normen und Rollenerwartungen steht (z. B. als Schüler/in, als Familienmitglied). Cz. Czapów und L. Pytka beschreiben sie als abgestuftes Phänomen: von Gefährdung über erste Anzeichen bis zur verfestigten Demoralisierung (Verwahrlosung). Die Diagnostik berücksichtigt individuelle, familiäre, schulische, Peer- und Umfeldfaktoren.",
+      "whenToUse": [
+        "Pädagogische Diagnostik bei Kindern oder Jugendlichen mit Verhaltensschwierigkeiten.",
+        "Wahl der Interventionsebene: Prävention, Soziotherapie, Resozialisierung.",
+        "Erstellung einer Stellungnahme für Schule, Beratungsstelle oder Familiengericht."
+      ],
+      "techniques": [
+        "Verhalten in verschiedenen Settings und aus der Sicht verschiedener Auskunftspersonen beobachten (Schule, Zuhause, Gruppe).",
+        "Sozialanamnese und Aktenstudium.",
+        "Eine Verhaltensstörung von einer Reaktion auf Krise oder Misshandlung unterscheiden.",
+        "Risiko- und Schutzfaktoren erfassen."
+      ],
+      "phrases": [
+        "Wann wird dieses Verhalten stärker, und wann tritt es nicht auf?",
+        "Ich beschreibe Verhalten – ich beurteile nicht dich als Person."
+      ],
+      "pitfalls": [
+        "Etikettieren („verwahrlost“, „demoralisiert“), statt Verhalten zu beschreiben.",
+        "Gewalt oder Sucht in der Familie als Hintergrund des Verhaltens übersehen.",
+        "Eine Einschätzung, die auf nur einer Informationsquelle beruht."
+      ],
+      "sources": [
+        {
+          "authors": "Czapów Cz.",
+          "year": 1978,
+          "title": "Wychowanie resocjalizujące. Elementy metodyki i diagnostyki",
+          "publisher": "PWN"
+        },
+        {
+          "authors": "Pytka L.",
+          "year": 2000,
+          "title": "Pedagogika resocjalizacyjna. Wybrane zagadnienia teoretyczne, diagnostyczne i metodyczne",
+          "publisher": "Wydawnictwo APS"
+        },
+        {
+          "authors": "Wysocka E.",
+          "year": 2008,
+          "title": "Diagnoza w resocjalizacji",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["soziale Unangepasstheit", "Diagnostik", "Demoralisierung"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "sociotherapy",
+      "section": "resocialization",
+      "title": "Soziotherapie",
+      "essence": "Soziotherapie (poln. socjoterapia) ist eine meist in Gruppen durchgeführte Hilfeform für Kinder und Jugendliche mit Verhaltensproblemen oder mit dem Risiko sozialer Unangepasstheit. Ihr Kern ist die korrigierende Erfahrung: In einer sicheren Gruppe erleben die Teilnehmenden Beziehungen anders als bisher (z. B. gehört statt abgelehnt zu werden). Sie verbindet therapeutische, pädagogische (neue Fähigkeiten) und entwicklungsfördernde Ziele.",
+      "whenToUse": [
+        "Soziotherapeutische Tagesstätten, Jugend-Soziotherapiezentren, Schulen, Beratungsstellen.",
+        "Kinder aus Familien mit Alkoholproblemen oder Gewalt.",
+        "Schwierigkeiten in Gleichaltrigenbeziehungen, Aggression, Rückzug."
+      ],
+      "techniques": [
+        "Gemeinsam vereinbarter Gruppenvertrag und Regeln.",
+        "Übungen, Spiele und Rollenspiele, die korrigierende Erfahrungen ermöglichen.",
+        "Training sozialer Kompetenzen und Erkennen von Gefühlen.",
+        "Eine feste Sitzungsstruktur: Einstieg, Hauptteil, Auswertung, Abschluss."
+      ],
+      "phrases": [
+        "Was hast du gespürt, als die Gruppe dir zugehört hat?",
+        "In dieser Gruppe hat jede und jeder das Recht, „passe“ zu sagen."
+      ],
+      "pitfalls": [
+        "Sitzungen wie eine Klassenstunde führen – ohne Erfahrung und Auswertung.",
+        "Eine zu grosse Gruppe oder eine, die nur aus sehr herausfordernden Teilnehmenden besteht.",
+        "Keine Zusammenarbeit mit Eltern und Schule."
+      ],
+      "sources": [
+        {
+          "authors": "Sawicka K. (red.)",
+          "year": 1998,
+          "title": "Socjoterapia",
+          "publisher": "Centrum Metodyczne Pomocy Psychologiczno-Pedagogicznej"
+        },
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["Soziotherapie", "Gruppe", "Kinder"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "openEnvironment",
+      "section": "resocialization",
+      "title": "Arbeit im offenen Umfeld",
+      "essence": "Resozialisierung im offenen Umfeld findet ohne Isolation statt – dort, wo die Person lebt, lernt, arbeitet, und im lokalen Gemeinwesen. Dazu gehören Bewährungsaufsicht, Tagesstätten, Jugendtreffs, Tageszentren der Bewährungshilfe (ośrodki kuratorskie, Polen), Mediation und Korrekturprogramme. Die Annahme: Veränderung hält länger, wenn sie im natürlichen Umfeld der Person und mit ihrem Unterstützungsnetz geschieht.",
+      "whenToUse": [
+        "Wenn Isolation nicht nötig ist oder schaden würde (besonders bei Jugendlichen).",
+        "Nach dem Austritt aus einer Einrichtung – als Fortsetzung der Arbeit.",
+        "In der selektiven und indizierten Prävention."
+      ],
+      "techniques": [
+        "Ressourcen im Umfeld erfassen (Ökogramm): Menschen, Institutionen, Orte.",
+        "Zusammenarbeit mit Bewährungshilfe, Schule, Sozialhilfezentrum und NGOs.",
+        "Korrektur- und Bildungsprogramme sowie Kompetenztrainings.",
+        "Lokales Engagement fördern (Freiwilligenarbeit, Sport, Kultur)."
+      ],
+      "phrases": [
+        "Wer in deiner Umgebung ist dir wichtig und könnte helfen?",
+        "Lass uns einen Ort finden, an dem du deine Nachmittage anders verbringen kannst als bisher."
+      ],
+      "pitfalls": [
+        "Allein arbeiten, ohne Netz kooperierender Institutionen.",
+        "Den Einfluss der lokalen Peergroup ignorieren.",
+        "Die Arbeit auf formale Kontrolle reduzieren."
+      ],
+      "sources": [
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        },
+        {
+          "authors": "Pytka L.",
+          "year": 2000,
+          "title": "Pedagogika resocjalizacyjna. Wybrane zagadnienia teoretyczne, diagnostyczne i metodyczne",
+          "publisher": "Wydawnictwo APS"
+        }
+      ],
+      "tags": ["offenes Umfeld", "Gemeinwesen", "Bewährungshilfe"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "streetworking",
+      "section": "resocialization",
+      "title": "Gassenarbeit (aufsuchende Arbeit)",
+      "essence": "Gassenarbeit (Streetwork) bedeutet, Menschen dort zu erreichen, wo sie sich aufhalten (Strassen, Hinterhöfe, Bahnhöfe, Treffpunkte), statt darauf zu warten, dass sie in eine Institution kommen. Sie richtet sich z. B. an Jugendliche mit Ausgrenzungsrisiko, obdachlose Menschen und Menschen, die Substanzen konsumieren. Zentral sind Freiwilligkeit des Kontakts, Vertrauensaufbau und das Begleiten auf dem Weg zur Hilfe.",
+      "whenToUse": [
+        "Wenn eine Gruppe herkömmliche Hilfsangebote nicht nutzt.",
+        "In Programmen der Schadensminderung und der indizierten Prävention.",
+        "In der Arbeit mit obdachlosen Menschen, besonders im Winter."
+      ],
+      "techniques": [
+        "Regelmässige Präsenz an denselben Orten zu denselben Zeiten.",
+        "Kontakt ohne Vorbedingungen; Information, Gespräch, kleine praktische Hilfe.",
+        "Begleitung (z. B. gemeinsam zur Fachstelle oder zum Sozialdienst gehen).",
+        "Arbeit zu zweit, Supervision und klare Sicherheitsregeln."
+      ],
+      "phrases": [
+        "Ich bin donnerstags hier. Wenn du reden willst, weisst du, wo du mich findest.",
+        "Ich muss nichts über dich wissen. Ich kann dir sagen, wo der nächste warme Ort ist."
+      ],
+      "pitfalls": [
+        "Moralisieren und auf schnelle Veränderung drängen.",
+        "Versprechen machen, die nicht gehalten werden können.",
+        "Ohne Rückhalt im Team und ohne Supervision arbeiten."
+      ],
+      "sources": [
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["Gassenarbeit", "Obdachlosigkeit", "Schadensminderung"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "readaptation",
+      "section": "resocialization",
+      "title": "Wiedereingliederung und Entlassenenhilfe",
+      "essence": "Soziale Wiedereingliederung (Readaptation) ist der Prozess der Rückkehr ins gesellschaftliche Leben nach einer Zeit der Isolation (Gefängnis, Einrichtung). Die Entlassenenhilfe (poln. pomoc postpenitencjarna) umfasst Unterstützung vor und nach der Entlassung: Dokumente, Wohnung oder Notunterkunft, Arbeit, Suchtbehandlung, Familienbeziehungen. Hilfe leisten in Polen der Strafvollzugsdienst, die Bewährungshilfe, Sozialhilfezentren und NGOs; ein Teil der Angebote wird aus dem Fonds für Opferhilfe und Entlassenenhilfe – Justizfonds (Fundusz Sprawiedliwości) finanziert, gestützt auf das Strafvollzugsgesetzbuch (Kodeks karny wykonawczy).",
+      "whenToUse": [
+        "Vorbereitung einer Person auf die Entlassung aus dem Gefängnis.",
+        "Die ersten Wochen nach der Entlassung – die Zeit mit dem höchsten Risiko für Rückfall und erneute Straffälligkeit.",
+        "Personen, die bedingt vorzeitig entlassen wurden und unter Bewährungsaufsicht stehen."
+      ],
+      "techniques": [
+        "Ein Wiedereingliederungsplan mit Fristen: Dokumente, Anmeldung, Krankenversicherung, Wohnen, Arbeit, Behandlung.",
+        "Kontakte zu Institutionen schon vor der Entlassung herstellen.",
+        "Das Unterstützungsnetz stärken (Familie, Selbsthilfegruppe, Mentor/in).",
+        "Ein Rückfallprophylaxe-Plan für die ersten Tage nach der Entlassung."
+      ],
+      "phrases": ["Was muss in der ersten Woche geregelt sein, damit Sie sich sicher fühlen?", "Wer wird am Tor auf Sie warten?"],
+      "pitfalls": [
+        "Erst am Tag der Entlassung mit der Planung beginnen.",
+        "Stigmatisierende Sprache („Ex-Knacki“) statt „eine Person, die aus dem Gefängnis entlassen wird“.",
+        "Suchtbehandlung und das Überdosisrisiko nach einer Abstinenzphase übersehen."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 1997,
+          "title": "Ustawa z dnia 6 czerwca 1997 r. – Kodeks karny wykonawczy"
+        },
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["Wiedereingliederung", "Entlassenenhilfe", "Gefängnis"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "mediation",
+      "section": "resocialization",
+      "title": "Mediation und Restorative Justice",
+      "essence": "Mediation ist ein freiwilliger und vertraulicher Prozess, in dem eine unparteiische mediierende Person den Konfliktparteien hilft, miteinander zu kommunizieren und eine Lösung zu finden. Der Täter-Opfer-Ausgleich wurzelt in der Restorative Justice (wiedergutmachende Gerechtigkeit, H. Zehr): Statt nur „welche Strafe?“ wird gefragt „welcher Schaden ist entstanden und wie kann er wiedergutgemacht werden?“. In Polen ist Mediation unter anderem in Straf- und Jugendsachen möglich, und das Gericht kann ihr Ergebnis berücksichtigen.",
+      "whenToUse": [
+        "Konflikte in der Schule und unter Gleichaltrigen (Peer-Mediation).",
+        "Jugendsachen und leichte Delikte, wenn beide Parteien zustimmen.",
+        "Familienkonflikte – ausgenommen Gewaltsituationen mit Machtungleichgewicht."
+      ],
+      "techniques": [
+        "Vorgespräche mit jeder Partei einzeln.",
+        "Gemeinsames Treffen: zuhören, den Schaden benennen, Wiedergutmachung suchen.",
+        "Die Vereinbarung schriftlich festhalten und ihre Umsetzung begleiten.",
+        "Familienrat (Family Group Conference) und restorative Kreise als verwandte Formen."
+      ],
+      "phrases": [
+        "Was würde Wiedergutmachung für Sie bedeuten?",
+        "Meine Rolle ist nicht zu entscheiden, wer recht hat, sondern Ihnen zu helfen, miteinander zu reden."
+      ],
+      "pitfalls": [
+        "Parteien zu einer Einigung oder Entschuldigung drängen.",
+        "Mediation bei häuslicher Gewalt mit starkem Machtungleichgewicht.",
+        "Die Rolle der mediierenden Person mit jener einer erziehenden Person verbinden, die eine Partei beurteilt."
+      ],
+      "sources": [
+        {
+          "authors": "Zehr H.",
+          "year": 1990,
+          "title": "Changing Lenses: A New Focus for Crime and Justice",
+          "publisher": "Herald Press"
+        },
+        {
+          "authors": "Czarnecka-Dzialuk B., Wójcik D.",
+          "year": 2001,
+          "title": "Mediacja. Nieletni sprawcy i ich ofiary",
+          "publisher": "Wydawnictwo Akademickie Żak"
+        }
+      ],
+      "tags": ["Mediation", "Restorative Justice", "Konflikt"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "probation",
+      "section": "resocialization",
+      "title": "Gerichtliche Bewährungshilfe (kuratela, Polen)",
+      "essence": "In Polen setzen gerichtliche Bewährungshelfer/innen (kuratorzy sądowi – hauptamtlich und ehrenamtlich) gerichtliche Anordnungen im Lebensumfeld um. Familienbewährungshelfer/innen arbeiten z. B. mit Jugendlichen, mit Familien mit eingeschränkter elterlicher Sorge und mit Personen, denen eine Suchtbehandlung auferlegt wurde. Bewährungshelfer/innen für Erwachsene beaufsichtigen verurteilte Personen, z. B. mit bedingter Strafe oder nach bedingter vorzeitiger Entlassung. Ihre Arbeit verbindet die Kontrolle von Auflagen mit pädagogischer und unterstützender Tätigkeit.",
+      "whenToUse": [
+        "Eine Person unter Aufsicht – Zusammenarbeit zwischen Pädagog/in und Bewährungshelfer/in.",
+        "Jugendliche mit Bewährungsaufsicht als Erziehungsmassnahme.",
+        "Erstellung eines Sozialberichts für das Gericht."
+      ],
+      "techniques": [
+        "Klare Regeln und die Auflagen aus dem Gerichtsentscheid mit der Klientin, dem Klienten besprechen.",
+        "Kontrolle mit Motivierender Gesprächsführung verbinden.",
+        "Vermittlung in Therapie, Korrekturprogramme, Sozialhilfe.",
+        "Tageszentren der Bewährungshilfe für Jugendliche als Nachmittagsangebot."
+      ],
+      "phrases": [
+        "Das Gericht hat die Auflagen festgelegt – reden wir darüber, wie du sie in deine Woche einbauen kannst.",
+        "Meine Aufgabe ist auch zu helfen, nicht nur zu kontrollieren."
+      ],
+      "pitfalls": [
+        "Den Kontakt auf formale Unterschriften und Kontrollen reduzieren.",
+        "Unklare Grenzen der Vertraulichkeit – die Klient/innen müssen wissen, was dem Gericht berichtet wird.",
+        "Zu hohe Fallzahlen als systemische Hürde."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 2001,
+          "title": "Ustawa z dnia 27 lipca 2001 r. o kuratorach sądowych"
+        },
+        {
+          "authors": "Sejm RP",
+          "year": 1997,
+          "title": "Ustawa z dnia 6 czerwca 1997 r. – Kodeks karny wykonawczy"
+        },
+        {
+          "authors": "Sejm RP",
+          "year": 2022,
+          "title": "Ustawa z dnia 9 czerwca 2022 r. o wspieraniu i resocjalizacji nieletnich"
+        }
+      ],
+      "tags": ["Bewährungshelfer/in", "Aufsicht", "Gericht"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "juvenileInstitutions",
+      "section": "resocialization",
+      "title": "Jugendeinrichtungen in Polen: MOW, MOS, Jugendheim, Besserungsanstalt",
+      "essence": "Das polnische Jugendsystem hat mehrere Stufen. Ein Jugend-Soziotherapiezentrum (młodzieżowy ośrodek socjoterapii, MOS) ist eine Bildungseinrichtung für Kinder und Jugendliche mit dem Risiko sozialer Unangepasstheit; die Aufnahme erfolgt freiwillig mit Zustimmung der Eltern. Ein Jugenderziehungszentrum (młodzieżowy ośrodek wychowawczy, MOW) nimmt sozial unangepasste Jugendliche auf, die per Beschluss des Familiengerichts als Erziehungsmassnahme eingewiesen wurden. Ein Jugendheim für vorläufige Unterbringung (schronisko dla nieletnich) dient der vorübergehenden Unterbringung während des Verfahrens, und eine Besserungsanstalt (zakład poprawczy) vollzieht die Besserungsmassnahme für Jugendliche, die eine strafbare Handlung begangen haben; beide unterstehen dem Justizministerium. Die Regeln legen das Gesetz über die Unterstützung und Resozialisierung Jugendlicher (ustawa o wspieraniu i resocjalizacji nieletnich, in Kraft seit 1. September 2022) und das Bildungsgesetz (Prawo oświatowe) fest.",
+      "whenToUse": [
+        "Wahl eines Wegs für Jugendliche: von Beratung und MOS über MOW bis zur Besserungsanstalt.",
+        "Eltern den Unterschied zwischen freiwilliger und gerichtlich angeordneter Unterbringung erklären.",
+        "Die Rückkehr der Jugendlichen nach Hause und in die Schule planen."
+      ],
+      "techniques": [
+        "Zuerst mildere Formen ausschöpfen (Beratung, Soziotherapie, Bewährungsaufsicht).",
+        "Zusammenarbeit zwischen Einrichtung und Familie ab dem ersten Tag.",
+        "Ein individuelles Resozialisierungsprogramm und regelmässige Überprüfung der Fortschritte.",
+        "Vorbereitung auf die Selbstständigkeit (Unterstützung durch das Kreiszentrum für Familienhilfe, PCPR)."
+      ],
+      "phrases": [
+        "Dieses Zentrum ist keine Strafe – es ist ein Ort, an dem du wieder in die Schule zurückfinden und neu anfangen kannst.",
+        "Wie soll dein erstes Wochenende zu Hause aussehen?"
+      ],
+      "pitfalls": [
+        "MOS (freiwillig, Soziotherapie) mit MOW (Gerichtsbeschluss) verwechseln.",
+        "Die Drohung mit einer Einrichtung als Erziehungsmethode einsetzen.",
+        "Keine Arbeit mit der Familie, in die die Jugendlichen zurückkehren."
+      ],
+      "sources": [
+        {
+          "authors": "Sejm RP",
+          "year": 2022,
+          "title": "Ustawa z dnia 9 czerwca 2022 r. o wspieraniu i resocjalizacji nieletnich"
+        },
+        {
+          "authors": "Sejm RP",
+          "year": 2016,
+          "title": "Ustawa z dnia 14 grudnia 2016 r. – Prawo oświatowe"
+        },
+        {
+          "authors": "Urban B., Stanik J.M. (red.)",
+          "year": 2007,
+          "title": "Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2",
+          "publisher": "Wydawnictwo Naukowe PWN"
+        }
+      ],
+      "tags": ["Jugendliche", "MOW", "MOS", "Besserungsanstalt"],
+      "reviewStatus": "do_weryfikacji"
+    }
+  ]
+}

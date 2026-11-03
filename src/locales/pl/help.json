@@ -1,7 +1,12 @@
 {
   "title": "System pomocy",
   "subtitle": "Gdzie skierować – instytucje, ścieżki, podstawy prawne",
-  "tabs": { "referral": "Kreator skierowania", "map": "Mapa systemu", "law": "Podstawy prawne", "crisis": "Telefony kryzysowe" },
+  "tabs": {
+    "referral": "Kreator skierowania",
+    "map": "Mapa systemu",
+    "law": "Podstawy prawne",
+    "crisis": "Telefony kryzysowe"
+  },
   "question": "Pytanie {{n}} z {{total}}",
   "restart": "Od nowa",
   "bestMatch": "Najlepiej dopasowane",
@@ -24,8 +29,12 @@
   },
   "lawNote": "Opis własnymi słowami, w skrócie – nie zastępuje tekstu ustawy. Sprawdź aktualny stan prawny (np. isap.sejm.gov.pl).",
   "stateAsOf": "Stan: {{date}}",
-  "country": { "PL": "Polska", "CH": "Szwajcaria" },
+  "country": {
+    "PL": "Polska",
+    "CH": "Szwajcaria"
+  },
   "call": "Zadzwoń {{number}} – {{name}}",
   "crisisTitle": "Pomoc w kryzysie",
-  "crisisSubtitle": "W sytuacji zagrożenia życia dzwoń 112 (PL) lub 144 (CH). Numery do weryfikacji przed użyciem."
+  "crisisSubtitle": "W sytuacji zagrożenia życia dzwoń 112 (PL) lub 144 (CH). Numery do weryfikacji przed użyciem.",
+  "subtitle_CH": "Gdzie skierować – instytucje, ścieżki, podstawy prawne (Szwajcaria, kanton Berno)"
 }

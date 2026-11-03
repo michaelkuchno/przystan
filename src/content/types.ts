@@ -254,6 +254,8 @@ export interface ScenarioNode {
 
 export interface Scenario {
   id: string;
+  /** Set in Switzerland ('CH'); absent = Poland. Shown with a badge; listed first for that country. */
+  country?: 'CH';
   title: string;
   context: WorkContext;
   audience: 'youth' | 'adult';
@@ -282,6 +284,8 @@ export interface DecksFile {
  */
 export interface DemoCase {
   id: string;
+  /** Set in Switzerland ('CH'); absent = Poland. Only cases of the user's country of work are seeded. */
+  country?: 'CH';
   client: Omit<Client, 'id' | 'createdAt' | 'updatedAt'>;
   diagnosis?: Omit<Diagnosis, 'id' | 'clientId'>;
   ipr?: Omit<Ipr, 'id' | 'clientId'>;
@@ -304,7 +308,10 @@ export interface ContentBundle {
   knowledge: KnowledgeFile;
   resocialization: KnowledgeFile;
   family: KnowledgeFile;
+  /** Polish help system (+ Polish crisis numbers). */
   helpsystem: HelpSystemFile;
+  /** Swiss help system (canton of Bern) + Swiss crisis numbers. */
+  helpsystemCH: HelpSystemFile;
   prevention: PreventionFile;
   templates: TemplatesFile;
   tools: ToolsFile;
@@ -319,6 +326,7 @@ export const CONTENT_KINDS: ContentKind[] = [
   'resocialization',
   'family',
   'helpsystem',
+  'helpsystemCH',
   'prevention',
   'templates',
   'tools',

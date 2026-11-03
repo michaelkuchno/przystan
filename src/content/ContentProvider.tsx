@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from 'react';
-import type { ContentBundle, ContentKind, ReviewStatus } from './types';
+import type { ContentBundle, ContentKind, CrisisNumber, HelpSystemFile, ReviewStatus } from './types';
 import { CONTENT_KINDS } from './types';
-import type { Lang } from '@/lib/prefs';
+import type { Country, Lang } from '@/lib/prefs';
 import { usePrefs } from '@/lib/prefs';
 
 const loaders = import.meta.glob<{ default: unknown }>('../locales/*/content/*.json');
@@ -77,4 +77,19 @@ export function useContent(kind?: ContentKind) {
 export function useReviewStatus(id: string, fallback: ReviewStatus): ReviewStatus {
   const { review } = usePrefs();
   return review[id] ?? fallback;
+}
+
+/** Help system of a country of work: Poland or Switzerland (canton of Bern). */
+export function helpFor(b: ContentBundle, country: Country): HelpSystemFile {
+  return country === 'CH' ? b.helpsystemCH : b.helpsystem;
+}
+
+/** Crisis numbers of both countries; each country's numbers come from its own help system. */
+export function crisisFor(b: ContentBundle, country: Country): CrisisNumber[] {
+  return helpFor(b, country).crisis.filter((c) => c.country === country);
+}
+
+export function useHelpSystem(): HelpSystemFile {
+  const { country } = usePrefs();
+  return helpFor(useContent(), country);
 }

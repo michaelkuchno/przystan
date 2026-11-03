@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {
   Download,
@@ -18,9 +18,11 @@ import { Button, Card, SectionTitle } from '@/components/ui/core';
 import { Chips, Field, TextInput, Switch } from '@/components/ui/form';
 import { Sheet, useConfirm } from '@/components/ui/overlay';
 import { useToast } from '@/components/ui/toast';
-import { usePrefs, setPrefs, type Lang, type Term, type Theme } from '@/lib/prefs';
+import { usePrefs, setPrefs, LANGS, COUNTRIES, type Country, type Lang, type Term, type Theme } from '@/lib/prefs';
+import { LANG_META } from '@/lib/langs';
 import { changeLanguage, setTerm } from '@/i18n';
 import { changePassword, wipeAll } from '@/lib/vault';
+import { BiometricSetting } from './BiometricSetting';
 import { createBackup, restoreBackup, serializeBackup, BackupError } from '@/lib/backup';
 import { exportFile, pickTextFile, todayIso } from '@/lib/platform';
 import { WrongPasswordError } from '@/lib/crypto';
@@ -31,6 +33,13 @@ import { clearStore } from '@/lib/store';
 const APP_VERSION = __APP_VERSION__;
 
 export default function Settings() {
+  const [params] = useSearchParams();
+  // dashboard backup reminder → jump to the backup section
+  useEffect(() => {
+    if (params.get('section') !== 'backup') return;
+    const id = setTimeout(() => document.getElementById('backup')?.scrollIntoView({ block: 'start' }), 150);
+    return () => clearTimeout(id);
+  }, [params]);
   const { t } = useTranslation('settings');
   const prefs = usePrefs();
   const toast = useToast();
@@ -47,6 +56,11 @@ export default function Settings() {
   const setLang = async (lang: Lang) => {
     await setPrefs({ lang });
     await changeLanguage(lang, prefs.term);
+    await onLanguageChanged();
+  };
+
+  const setCountry = async (country: Country) => {
+    await setPrefs({ country });
     await onLanguageChanged();
   };
 
@@ -109,10 +123,14 @@ export default function Settings() {
           label={t('language')}
           value={prefs.lang}
           onChange={(v) => v[0] && void setLang(v[0])}
-          options={[
-            { value: 'pl', label: 'Polski' },
-            { value: 'en', label: 'English' },
-          ]}
+          options={LANGS.map((l) => ({ value: l, label: LANG_META[l].name }))}
+        />
+        <Chips
+          label={t('country')}
+          hint={t('countryHint')}
+          value={prefs.country}
+          onChange={(v) => v[0] && void setCountry(v[0])}
+          options={COUNTRIES.map((c) => ({ value: c, label: t(`help:country.${c}`) }))}
         />
         <Chips
           label={t('term')}
@@ -198,9 +216,10 @@ export default function Settings() {
         >
           {t('password.change')}
         </Button>
+        <BiometricSetting />
       </Card>
 
-      <SectionTitle>{t('backup.title')}</SectionTitle>
+      <SectionTitle id="backup">{t('backup.title')}</SectionTitle>
       <Card className="space-y-4">
         <p className="text-sm leading-relaxed">{t('backup.text')}</p>
         <p className="text-sm text-muted">

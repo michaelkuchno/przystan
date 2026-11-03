@@ -1,0 +1,60 @@
+{
+  "context": {
+    "clinic": "Ambulante Fachstelle / Beratungsstelle",
+    "residential": "Stationäre Einrichtung / Tageszentrum",
+    "prison": "Gefängnis / Untersuchungshaft",
+    "juvenile": "Jugendheim / Massnahmenzentrum für Jugendliche",
+    "probation": "Bewährungshilfe",
+    "school": "Schule / Jugendtreff",
+    "community": "Gemeinwesen / Sozialdienst",
+    "streetwork": "Gassenarbeit",
+    "homeless": "Einrichtung für obdachlose Menschen",
+    "crisis": "Krisenintervention / Notfallversorgung"
+  },
+  "problem": {
+    "alcohol": "Alkohol",
+    "cannabis": "Cannabis",
+    "stimulants": "Stimulanzien",
+    "opioids": "Opioide",
+    "sedatives": "Beruhigungs- / Schlafmittel",
+    "nps": "Neue psychoaktive Substanzen",
+    "nicotine": "Nikotin",
+    "gambling": "Glücksspiel",
+    "gaming": "Digitales Spielen (Gaming)",
+    "internet": "Internet / soziale Medien",
+    "shopping": "Kaufsucht",
+    "codependency": "Co-Abhängigkeit",
+    "other": "Anderes"
+  },
+  "stage": {
+    "precontemplation": "Absichtslosigkeit",
+    "contemplation": "Absichtsbildung",
+    "preparation": "Vorbereitung",
+    "action": "Handlung",
+    "maintenance": "Aufrechterhaltung",
+    "recurrence": "Rückfall"
+  },
+  "goal": {
+    "abstinence": "Abstinenz",
+    "harmReduction": "Schadensminderung",
+    "undecided": "Noch zu vereinbaren"
+  },
+  "status": {
+    "active": "Aktiv",
+    "paused": "Pausiert",
+    "closed": "Abgeschlossen"
+  },
+  "ageGroup": {
+    "child": "Kind",
+    "teen": "Jugendliche/r",
+    "youngAdult": "Junge/r Erwachsene/r",
+    "adult": "Erwachsene/r",
+    "senior": "Ältere/r Erwachsene/r"
+  },
+  "sex": {
+    "female": "Weiblich",
+    "male": "Männlich",
+    "other": "Divers",
+    "unspecified": "Keine Angabe"
+  }
+}

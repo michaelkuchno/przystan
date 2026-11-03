@@ -1,11 +1,20 @@
 {
-  "greeting": { "morning": "Dzień dobry", "day": "Dzień dobry", "evening": "Dobry wieczór" },
+  "greeting": {
+    "morning": "Dzień dobry",
+    "day": "Dzień dobry",
+    "evening": "Dobry wieczór"
+  },
   "intro_one": "Pracujesz obecnie z {{count}} osobą.",
   "intro_few": "Pracujesz obecnie z {{count}} osobami.",
   "intro_many": "Pracujesz obecnie z {{count}} osobami.",
   "intro_other": "Pracujesz obecnie z {{count}} osobami.",
   "demoIntro": "Tryb szkoleniowy – fikcyjne studia przypadków do nauki i prezentacji.",
-  "quick": { "client": "Nowy {{client}}", "meeting": "Nowe spotkanie", "tools": "Narzędzia", "prevention": "Profilaktyka" },
+  "quick": {
+    "client": "Nowy {{client}}",
+    "meeting": "Nowe spotkanie",
+    "tools": "Narzędzia",
+    "prevention": "Profilaktyka"
+  },
   "today": "Dzisiaj",
   "seeAll": "Wszystkie",
   "start": "Rozpocznij",
@@ -15,13 +24,34 @@
   "noAttention": "Nic nie wymaga teraz szczególnej uwagi.",
   "attentionNote": "Wskaźniki wynikają z jawnych reguł (np. wzrost głodu o ≥ 2 pkt, opuszczone spotkanie w ciągu 14 dni). Mają charakter pomocniczy – decyzję zawsze podejmujesz Ty.",
   "rules": {
-    "cravingRise": { "title": "Wzrost głodu", "why": "Głód wzrósł z {{from}} do {{to}} /10 (pomiar {{date}})." },
-    "cravingHigh": { "title": "Wysoki poziom głodu", "why": "Ostatni pomiar: {{value}}/10." },
-    "screeningWorse": { "title": "Gorszy wynik przesiewowy", "why": "{{instrument}}: wynik wzrósł z {{from}} do {{to}}." },
-    "missedMeeting": { "title": "Opuszczone spotkanie", "why": "Spotkanie {{date}} nie odbyło się." },
-    "keyDateSoon": { "title": "Zbliżający się termin", "why": "{{label}} – {{date}} (za {{days}} dni)." },
-    "noContact": { "title": "Dawno bez kontaktu", "why": "Brak kontaktu od {{days}} dni i brak zaplanowanego spotkania." },
-    "iprReviewOverdue": { "title": "Przegląd IPR po terminie", "why": "Termin przeglądu minął {{date}}." }
+    "cravingRise": {
+      "title": "Wzrost głodu",
+      "why": "Głód wzrósł z {{from}} do {{to}} /10 (pomiar {{date}})."
+    },
+    "cravingHigh": {
+      "title": "Wysoki poziom głodu",
+      "why": "Ostatni pomiar: {{value}}/10."
+    },
+    "screeningWorse": {
+      "title": "Gorszy wynik przesiewowy",
+      "why": "{{instrument}}: wynik wzrósł z {{from}} do {{to}}."
+    },
+    "missedMeeting": {
+      "title": "Opuszczone spotkanie",
+      "why": "Spotkanie {{date}} nie odbyło się."
+    },
+    "keyDateSoon": {
+      "title": "Zbliżający się termin",
+      "why": "{{label}} – {{date}} (za {{days}} dni)."
+    },
+    "noContact": {
+      "title": "Dawno bez kontaktu",
+      "why": "Brak kontaktu od {{days}} dni i brak zaplanowanego spotkania."
+    },
+    "iprReviewOverdue": {
+      "title": "Przegląd IPR po terminie",
+      "why": "Termin przeglądu minął {{date}}."
+    }
   },
   "tasks": {
     "title": "Zadania",
@@ -36,5 +66,19 @@
   "dueCards_few": "{{count}} do powtórki",
   "dueCards_many": "{{count}} do powtórki",
   "dueCards_other": "{{count}} do powtórki",
-  "simulatorTeaser": { "title": "Symulator rozmowy motywującej", "text": "Przećwicz odzwierciedlenia i pytania otwarte z wirtualnym rozmówcą." }
+  "simulatorTeaser": {
+    "title": "Symulator rozmowy motywującej",
+    "text": "Przećwicz odzwierciedlenia i pytania otwarte z wirtualnym rozmówcą."
+  },
+  "backup": {
+    "title": "Czas na kopię zapasową",
+    "never": "Nie masz jeszcze żadnej kopii zapasowej. Bez niej utrata telefonu oznacza utratę danych.",
+    "days_one": "Ostatnia kopia zapasowa: {{count}} dzień temu.",
+    "days_few": "Ostatnia kopia zapasowa: {{count}} dni temu.",
+    "days_many": "Ostatnia kopia zapasowa: {{count}} dni temu.",
+    "days_other": "Ostatnia kopia zapasowa: {{count}} dnia temu.",
+    "later": "Jutro",
+    "now": "Zrób kopię"
+  },
+  "supervisionTasks": "Zadania z superwizji"
 }

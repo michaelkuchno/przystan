@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Pencil, Trash2, FileDown, CalendarPlus } from 'lucide-react';
+import { Pencil, Trash2, FileDown, CalendarPlus, BookOpenText, NotebookText } from 'lucide-react';
 import { Page, PageHeader } from '@/components/ui/page';
 import { Badge, Button, ButtonLink, EmptyState, Avatar, Skeleton } from '@/components/ui/core';
 import { Tabs, useConfirm } from '@/components/ui/overlay';
@@ -107,6 +107,12 @@ export default function ClientDetail() {
             >
               {t('report')}
             </Button>
+            <ButtonLink to={`/case-study/${client.id}`} variant="secondary" size="sm" icon={<BookOpenText className="size-4" />}>
+              {t('casestudy:open')}
+            </ButtonLink>
+            <ButtonLink to={`/notes/new?client=${client.id}`} variant="secondary" size="sm" icon={<NotebookText className="size-4" />}>
+              {t('notes:newForClient')}
+            </ButtonLink>
             <ButtonLink to={`/clients/${client.id}/edit`} variant="secondary" size="sm" icon={<Pencil className="size-4" />}>
               {t('common:edit')}
             </ButtonLink>

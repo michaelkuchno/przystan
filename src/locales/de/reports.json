@@ -1,0 +1,20 @@
+{
+  "footer": "Przystań · Arbeitsdokument · Indikatoren dienen nur der Unterstützung",
+  "footerAnon": "Bericht ohne identifizierende Daten · Freitextfelder auf Namen prüfen · nur unterstützend",
+  "clientTitle": "Bericht zur unterstützenden Arbeit",
+  "area": "Bereich",
+  "notes": "Beobachtungen",
+  "tool": "Instrument",
+  "result": "Ergebnis",
+  "meetingsDone_one": "{{count}} Gespräch durchgeführt.",
+  "meetingsDone_other": "{{count}} Gespräche durchgeführt.",
+  "relapseTitle": "Mein Rückfallprophylaxeplan",
+  "relapseSubtitle": "Eine Karte zum Mitnehmen",
+  "crisisLine": "In der Krise (Polen): 116 123 (emotionale Unterstützung für Erwachsene), 116 111 (Kinder und Jugendliche), 112 (Notruf). Schweiz: 143, 147, 144.",
+  "readaptationTitle": "Plan für die Wiedereingliederung",
+  "crisisLine_CH": "In der Krise (Schweiz): 143 (Die Dargebotene Hand), 147 (Kinder und Jugendliche), 144 (Sanität), 117 (Polizei), 112. Polen: 116 123, 116 111.",
+  "anon": {
+    "person": "[Person]",
+    "removed": "[entfernt]"
+  }
+}

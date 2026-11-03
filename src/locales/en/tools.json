@@ -4,7 +4,12 @@
   "forClient": "For: {{code}}",
   "notFound": "Tool not found",
   "chartable": "Result on chart",
-  "groups": { "motivation": "Motivation", "coping": "Coping", "cognitive": "Thoughts and triggers", "skills": "Skills and support" },
+  "groups": {
+    "motivation": "Motivation",
+    "coping": "Coping",
+    "cognitive": "Thoughts and triggers",
+    "skills": "Skills and support"
+  },
   "names": {
     "urgeSurfing": "Urge surfing",
     "readinessRuler": "Readiness ruler",
@@ -48,7 +53,11 @@
     "wentDown": "The wave went down – craving is like a wave: it rises, peaks and falls.",
     "stayed": "Sometimes the wave needs more time. That is useful information too."
   },
-  "ruler": { "importance": "How important is it?", "confidence": "How confident are you that you can do it?", "readiness": "How ready are you to start?" },
+  "ruler": {
+    "importance": "How important is it?",
+    "confidence": "How confident are you that you can do it?",
+    "readiness": "How ready are you to start?"
+  },
   "balance": {
     "prosStatus": "Benefits of the current behaviour",
     "consStatus": "Costs of the current behaviour",

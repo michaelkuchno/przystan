@@ -4619,6 +4619,1269 @@
         }
       ],
       "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch-bern-apprentice-cannabis",
+      "country": "CH",
+      "title": "Jan, an apprentice in Bern – cannabis at work",
+      "context": "school",
+      "audience": "youth",
+      "persona": {
+        "name": "Jan",
+        "age": 16,
+        "description": "A first-year apprentice logistics operator (Logistiker EFZ) at a distribution centre near Bern. His supervisor (Lehrmeister) caught him smoking cannabis behind the warehouse during a break and sent him to the school social worker at his vocational school. Sporty, closed off, afraid of losing his apprenticeship."
+      },
+      "intro": "Tuesday, a school day at the vocational school. Jan’s supervisor phoned you: he caught Jan smoking cannabis during yesterday’s break and expects Jan to “sort it out with the school social worker” – otherwise they’ll talk about his apprenticeship contract. Jan sits opposite you, arms crossed, phone in hand.",
+      "start": "n1",
+      "nodes": [
+        {
+          "id": "n1",
+          "client": "I know why I’m here. My boss is totally overreacting. One joint on a break – others do it too, they just don’t get caught.",
+          "talk": "sustain",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n1-a",
+              "text": "Smoking weed on company premises is no small thing. You’re putting your apprenticeship at risk.",
+              "category": "confront",
+              "feedback": "Lecturing and pointing to consequences triggers resistance – Jan will defend himself instead of reflecting.",
+              "alliance": -2,
+              "next": "n2b"
+            },
+            {
+              "id": "n1-b",
+              "text": "So you smoked weed yesterday?",
+              "category": "closedQuestion",
+              "feedback": "A closed question about something already known sounds like an interrogation and only allows yes or no.",
+              "alliance": 0,
+              "next": "n2b"
+            },
+            {
+              "id": "n1-c",
+              "text": "You feel this is being made into a bigger deal than it is.",
+              "category": "simpleReflection",
+              "feedback": "A simple reflection captures his view without judging – Jan feels heard rather than accused.",
+              "alliance": 1,
+              "next": "n2a"
+            },
+            {
+              "id": "n1-d",
+              "text": "How did yesterday look from your side?",
+              "category": "openQuestion",
+              "feedback": "The open question gives him the floor and invites his perspective – partnership instead of control.",
+              "alliance": 1,
+              "next": "n2a"
+            }
+          ]
+        },
+        {
+          "id": "n2a",
+          "client": "The breaks are long, and the warehouse is tough. After a joint the stress is gone. I do my job, I’m never late.",
+          "talk": "neutral",
+          "mood": "calm",
+          "options": [
+            {
+              "id": "n2a-a",
+              "text": "Your work matters to you, and right now smoking helps you cope with the pressure in the warehouse.",
+              "category": "complexReflection",
+              "feedback": "The complex reflection links his reliability with what the substance does for him – it strengthens the relationship and opens up the topic of change.",
+              "alliance": 2,
+              "next": "n3a"
+            },
+            {
+              "id": "n2a-b",
+              "text": "What exactly is so tough in the warehouse?",
+              "category": "openQuestion",
+              "feedback": "The open question moves the talk on, but misses his pride in his own work.",
+              "alliance": 1,
+              "next": "n3b"
+            },
+            {
+              "id": "n2a-c",
+              "text": "Then find another way to wind down on your break, like listening to music.",
+              "category": "adviseWithoutPermission",
+              "feedback": "Unasked-for advice comes too early. Jan hears: yet another adult telling me what to do.",
+              "alliance": -1,
+              "next": "n3c"
+            }
+          ]
+        },
+        {
+          "id": "n2b",
+          "client": "Yeah, OK, I did. So what? Are you going to tell my boss now? You’re all in it together anyway.",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [
+            {
+              "id": "n2b-a",
+              "text": "You’re worried that everything you say here will end up with your supervisor.",
+              "category": "simpleReflection",
+              "feedback": "The reflection takes his fear seriously instead of justifying yourself – the tension drops.",
+              "alliance": 1,
+              "next": "n3b"
+            },
+            {
+              "id": "n2b-b",
+              "text": "Before you tell me anything, you want to know whose side I’m on.",
+              "category": "complexReflection",
+              "feedback": "The complex reflection names the mistrust behind the anger. A good moment to explain confidentiality and its limits openly.",
+              "alliance": 2,
+              "next": "n3b"
+            },
+            {
+              "id": "n2b-c",
+              "text": "You’re in no position to make demands. You’re here because you messed up.",
+              "category": "confront",
+              "feedback": "Blaming deepens the discord – the conversation becomes a power struggle.",
+              "alliance": -2,
+              "next": "n3c"
+            }
+          ]
+        },
+        {
+          "id": "n3a",
+          "client": "Yeah, kind of. I really want to finish the apprenticeship. But honestly, I smoke in the evenings too, and sometimes I’m really not awake in the morning.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n3a-a",
+              "text": "What else do you notice when you’re not awake in the morning?",
+              "category": "openQuestion",
+              "feedback": "An open question about consequences he raised himself evokes more change talk.",
+              "alliance": 2,
+              "next": "n4a"
+            },
+            {
+              "id": "n3a-b",
+              "text": "It’s impressive that you say that so openly. You’re taking a good look at how much the apprenticeship means to you.",
+              "category": "affirmation",
+              "feedback": "Genuinely affirming his openness strengthens his self-efficacy.",
+              "alliance": 1,
+              "next": "n4a"
+            },
+            {
+              "id": "n3a-c",
+              "text": "Then just stop in the evenings too. The apprenticeship comes first.",
+              "category": "adviseWithoutPermission",
+              "feedback": "“Just stop” dismisses the difficulty and takes the initiative away from him – he defends himself instead of planning.",
+              "alliance": -1,
+              "next": "n4b"
+            }
+          ]
+        },
+        {
+          "id": "n3b",
+          "client": "No idea. Everyone my age smokes. And weed is almost legal now, there’s even some kind of trial in Bern.",
+          "talk": "neutral",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n3b-a",
+              "text": "On the one hand smoking is just part of life for you; on the other, you’re sitting here because it could cost you something that matters to you.",
+              "category": "complexReflection",
+              "feedback": "A double-sided reflection shows the ambivalence without pushing – Jan can tip towards change himself.",
+              "alliance": 2,
+              "next": "n4a"
+            },
+            {
+              "id": "n3b-b",
+              "text": "What would change if you stopped smoking on your breaks?",
+              "category": "openQuestion",
+              "feedback": "The open question invites him to think through an alternative from his own perspective.",
+              "alliance": 1,
+              "next": "n4a"
+            },
+            {
+              "id": "n3b-c",
+              "text": "So you smoke because everyone does?",
+              "category": "closedQuestion",
+              "feedback": "A closed question with a built-in answer feels like a trap – Jan is likely to shut down.",
+              "alliance": 0,
+              "next": "n4b"
+            },
+            {
+              "id": "n3b-d",
+              "text": "The pilot trial is only for adults. And at your age weed harms your brain, you know that.",
+              "category": "moralize",
+              "feedback": "Facts used as a reprimand, plus moralising, usually strengthen a young person’s arguments for using.",
+              "alliance": -2,
+              "next": "n4b"
+            }
+          ]
+        },
+        {
+          "id": "n3c",
+          "client": "Right. Same old story. Can I go? I’ve got class again at two.",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [
+            {
+              "id": "n3c-a",
+              "text": "If you leave now, I’ll tell your supervisor you’re not cooperating.",
+              "category": "confront",
+              "feedback": "Pressure and threats contradict the spirit of MI – the conversation is over before it has started.",
+              "alliance": -2,
+              "next": "end_poor"
+            },
+            {
+              "id": "n3c-b",
+              "text": "You’re fed up with everyone telling you what to do.",
+              "category": "simpleReflection",
+              "feedback": "Reflecting his impatience and dropping the advice is the simplest way to repair the relationship.",
+              "alliance": 1,
+              "next": "n4b"
+            },
+            {
+              "id": "n3c-c",
+              "text": "Good that you say straight out what annoys you. I don’t want to lecture you – I’m interested in how you see it.",
+              "category": "affirmation",
+              "feedback": "Valuing his honesty and emphasising his autonomy reduces the discord.",
+              "alliance": 1,
+              "next": "n4b"
+            }
+          ]
+        },
+        {
+          "id": "n4a",
+          "client": "I’m just slower, and last week I made mistakes picking orders. My boss noticed. I don’t want him to think I’m a stoner who’s useless.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n4a-a",
+              "text": "I know a few things that have helped other apprentices in a situation like this. Do you want to hear them?",
+              "category": "adviseWithPermission",
+              "feedback": "Asking permission before giving information respects autonomy and makes it more likely the advice lands.",
+              "alliance": 1,
+              "next": "n5a"
+            },
+            {
+              "id": "n4a-b",
+              "text": "What would be a first step so that your boss sees again what you can do?",
+              "category": "openQuestion",
+              "feedback": "An open question about steps moves from reasons to planning – and the idea stays his.",
+              "alliance": 2,
+              "next": "n5a"
+            },
+            {
+              "id": "n4a-c",
+              "text": "Then the best thing is to apologise to your boss tomorrow and promise not to smoke any more.",
+              "category": "adviseWithoutPermission",
+              "feedback": "A ready-made solution from outside takes away his responsibility – he may agree just to be left alone.",
+              "alliance": -1,
+              "next": "n5b"
+            }
+          ]
+        },
+        {
+          "id": "n4b",
+          "client": "OK, maybe I smoke too much. But without it I’d go mad after a day like that. And my mates do it too.",
+          "talk": "sustain",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n4b-a",
+              "text": "Right now, smoking is the only thing that reliably helps you after a long day.",
+              "category": "complexReflection",
+              "feedback": "The reflection hits what it is really about – and makes room to look for other solutions.",
+              "alliance": 2,
+              "next": "n5b"
+            },
+            {
+              "id": "n4b-b",
+              "text": "See, you admit it yourself: you’ve got an addiction problem.",
+              "category": "confront",
+              "feedback": "Using his admission to label him shuts him down. Change doesn’t need a label.",
+              "alliance": -2,
+              "next": "end_poor"
+            },
+            {
+              "id": "n4b-c",
+              "text": "Before you started smoking, what used to help you after a tough day?",
+              "category": "openQuestion",
+              "feedback": "The open question invites him to come up with his own alternatives.",
+              "alliance": 1,
+              "next": "n5a"
+            }
+          ]
+        },
+        {
+          "id": "n5a",
+          "client": "I used to cycle to work every day and play football. Maybe on my break I could just go out with Elias, he doesn’t smoke.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n5a-a",
+              "text": "Let me sum up: the apprenticeship matters to you, you notice you’re slower in the mornings and make mistakes, and you’ve come up with two ideas yourself – cycling and taking your break with Elias. Is that right?",
+              "category": "summary",
+              "feedback": "The summary gathers his change talk together – Jan hears his own arguments once more.",
+              "alliance": 2,
+              "next": "n6"
+            },
+            {
+              "id": "n5a-b",
+              "text": "Those are concrete ideas, and they come from you. You clearly know quite well what’s good for you.",
+              "category": "affirmation",
+              "feedback": "Affirming his ideas strengthens his commitment.",
+              "alliance": 1,
+              "next": "n6"
+            },
+            {
+              "id": "n5a-c",
+              "text": "Great. And you’d better delete your dealer’s number right away and stop taking breaks with the others.",
+              "category": "adviseWithoutPermission",
+              "feedback": "A list of instructions just as he starts planning takes over the initiative and weakens his commitment.",
+              "alliance": -1,
+              "next": "end_mixed"
+            }
+          ]
+        },
+        {
+          "id": "n5b",
+          "client": "I don’t know if I can manage. But maybe I could change something.",
+          "talk": "neutral",
+          "mood": "calm",
+          "options": [
+            {
+              "id": "n5b-a",
+              "text": "What would help you give it a try?",
+              "category": "openQuestion",
+              "feedback": "The open question supports his emerging readiness and leaves the choice of how to him.",
+              "alliance": 1,
+              "next": "n6"
+            },
+            {
+              "id": "n5b-b",
+              "text": "“Maybe” isn’t enough. With that attitude you’ll soon lose your apprenticeship.",
+              "category": "moralize",
+              "feedback": "Threats and moralising choke off a fragile readiness to change.",
+              "alliance": -2,
+              "next": "end_poor"
+            },
+            {
+              "id": "n5b-c",
+              "text": "You’re torn: smoking helps you wind down and is part of being with your mates – and at the same time you want to make it through the apprenticeship and change something, even if it’s just a small step.",
+              "category": "summary",
+              "feedback": "A summary built as a double-sided reflection that ends on his change talk strengthens it.",
+              "alliance": 2,
+              "next": "n6"
+            }
+          ]
+        },
+        {
+          "id": "n6",
+          "client": "OK. This week I won’t smoke on my breaks and I’ll go out with Elias. The evenings, we’ll see. I can’t promise anything.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n6-a",
+              "text": "But you promise me you’ll never smoke at work again, right?",
+              "category": "closedQuestion",
+              "feedback": "Extracting a promise turns his decision into a pledge to an adult – which easily leads to shame and hiding.",
+              "alliance": -1,
+              "next": "end_mixed"
+            },
+            {
+              "id": "n6-b",
+              "text": "And if a mate offers you a joint on your break anyway – how do you want to react?",
+              "category": "openQuestion",
+              "feedback": "Asking about a difficult moment helps him develop his own plan for risky situations.",
+              "alliance": 1,
+              "next": "end_good"
+            },
+            {
+              "id": "n6-c",
+              "text": "I appreciate that you’re honest about what you feel able to do. That’s a good start.",
+              "category": "affirmation",
+              "feedback": "Affirming his honesty and realistic goal strengthens commitment without pressure.",
+              "alliance": 2,
+              "next": "end_good"
+            }
+          ]
+        },
+        {
+          "id": "end_good",
+          "client": "Thanks for not running straight to my boss. Can we talk again next week?",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [],
+          "ending": {
+            "title": "A plan of his own",
+            "text": "Jan put his own reasons and a first step into words, and the relationship has grown stronger. Next, you agree together what his supervisor will be told – transparently and with Jan’s consent.",
+            "quality": "good"
+          }
+        },
+        {
+          "id": "end_mixed",
+          "client": "Yeah, OK, I’ll do it. Can I go now?",
+          "talk": "neutral",
+          "mood": "calm",
+          "options": [],
+          "ending": {
+            "title": "Agreement without conviction",
+            "text": "There was some change talk, but at the end the professional took over. Jan agrees more to be left alone than out of his own conviction.",
+            "quality": "mixed"
+          }
+        },
+        {
+          "id": "end_poor",
+          "client": "Forget it. I’ll just tell my boss I came here. That’s all I have to do.",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [],
+          "ending": {
+            "title": "Discord",
+            "text": "Confrontation and lecturing led Jan to defend smoking instead of exploring change. Next time, start by reflecting his view and clarifying confidentiality.",
+            "quality": "poor"
+          }
+        }
+      ],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch-bern-parent-alcohol",
+      "country": "CH",
+      "title": "Sandra at social services – wine after the separation",
+      "context": "community",
+      "audience": "adult",
+      "persona": {
+        "name": "Sandra",
+        "age": 38,
+        "description": "Mother of two children (8 and 11), separated six months ago and supported by social services (Sozialdienst) since then. Formerly a dental assistant, now in an integration programme. Since the separation she has been drinking wine almost every evening once the children are asleep."
+      },
+      "intro": "Social services of the City of Bern, a routine review meeting about her support. Towards the end, Sandra suddenly says she is worried because she drinks “too much” in the evenings. Then she breaks off and looks at the clock. You are the social worker responsible for her case.",
+      "start": "n1",
+      "nodes": [
+        {
+          "id": "n1",
+          "client": "Forget what I said. It’s not that bad. I just have a glass of wine when the children are in bed. Lots of people do.",
+          "talk": "sustain",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n1-a",
+              "text": "Do you drink every evening?",
+              "category": "closedQuestion",
+              "feedback": "A closed question about frequency feels like a check-up at this moment – she is likely to withdraw.",
+              "alliance": 0,
+              "next": "n2b"
+            },
+            {
+              "id": "n1-b",
+              "text": "You did bring it up, though. What made you mention it?",
+              "category": "openQuestion",
+              "feedback": "The open question picks up on the fact that she raised the topic herself – without pressure and respecting her pace.",
+              "alliance": 1,
+              "next": "n2a"
+            },
+            {
+              "id": "n1-c",
+              "text": "It’s probably not just one glass, though, or you wouldn’t have mentioned it.",
+              "category": "confront",
+              "feedback": "Contradicting her statement triggers shame and withdrawal – she is more likely to play the topic down.",
+              "alliance": -2,
+              "next": "n2b"
+            },
+            {
+              "id": "n1-d",
+              "text": "It slipped out, and now you’re unsure whether it was wise to talk about it.",
+              "category": "simpleReflection",
+              "feedback": "The reflection picks up her uncertainty and gives her back control over the conversation.",
+              "alliance": 1,
+              "next": "n2a"
+            }
+          ]
+        },
+        {
+          "id": "n2a",
+          "client": "It’s been like this since the separation. During the day I function for the children, and in the evening it’s so quiet. Then one glass turns into a bottle.",
+          "talk": "neutral",
+          "mood": "sad",
+          "options": [
+            {
+              "id": "n2a-a",
+              "text": "How much do you drink on a typical evening?",
+              "category": "openQuestion",
+              "feedback": "The question about quantity is legitimate, but it skips over the feeling she has just shared – the talk becomes more factual but less deep.",
+              "alliance": 1,
+              "next": "n3b"
+            },
+            {
+              "id": "n2a-b",
+              "text": "All day you hold everything together, and right now the wine is what gets you through the loneliness in the evening.",
+              "category": "complexReflection",
+              "feedback": "The complex reflection names the loneliness behind the drinking and indirectly acknowledges how much she manages – it deepens the relationship.",
+              "alliance": 2,
+              "next": "n3a"
+            },
+            {
+              "id": "n2a-c",
+              "text": "Then you should plan something for the evenings, for example take a course or call a friend.",
+              "category": "adviseWithoutPermission",
+              "feedback": "Well-meant advice without permission comes too early – she feels lectured rather than understood.",
+              "alliance": -1,
+              "next": "n3c"
+            }
+          ]
+        },
+        {
+          "id": "n2b",
+          "client": "You see, that’s exactly why people don’t say anything. Are you going to put that in my file now? Will you report me to the KESB?",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [
+            {
+              "id": "n2b-a",
+              "text": "Your children are the most important thing to you, and that’s exactly why the thought of an authority getting involved frightens you.",
+              "category": "complexReflection",
+              "feedback": "The complex reflection links her fear to her care for her children. Afterwards there is room to explain honestly when a report to the KESB would even be an issue.",
+              "alliance": 2,
+              "next": "n3b"
+            },
+            {
+              "id": "n2b-b",
+              "text": "When children live in the household, I have to take something like this seriously. It’s my duty.",
+              "category": "confront",
+              "feedback": "Invoking duty before the situation has been clarified confirms her worst fear – she will close up.",
+              "alliance": -2,
+              "next": "n3c"
+            },
+            {
+              "id": "n2b-c",
+              "text": "You’re afraid your openness will be used against you.",
+              "category": "simpleReflection",
+              "feedback": "The reflection takes her fear seriously without becoming defensive – the tension drops.",
+              "alliance": 1,
+              "next": "n3b"
+            }
+          ]
+        },
+        {
+          "id": "n3a",
+          "client": "Yes. And I don’t want my daughter to see me like that. Last week she asked why I’m always so tired in the mornings.",
+          "talk": "change",
+          "mood": "sad",
+          "options": [
+            {
+              "id": "n3a-a",
+              "text": "Then it’s best to stop the wine completely, for the children’s sake.",
+              "category": "adviseWithoutPermission",
+              "feedback": "“For the children’s sake” increases her guilt and takes the decision away from her – shame is rarely a good engine for change.",
+              "alliance": -1,
+              "next": "n4b"
+            },
+            {
+              "id": "n3a-b",
+              "text": "What did your daughter’s question stir up in you?",
+              "category": "openQuestion",
+              "feedback": "The open question deepens her own concern and evokes further change talk.",
+              "alliance": 2,
+              "next": "n4a"
+            },
+            {
+              "id": "n3a-c",
+              "text": "It’s clear how attentive you are to your children – even at a time that is very hard for you yourself.",
+              "category": "affirmation",
+              "feedback": "The affirmation strengthens her image of herself as a caring mother without glossing over the difficulty.",
+              "alliance": 1,
+              "next": "n4a"
+            }
+          ]
+        },
+        {
+          "id": "n3b",
+          "client": "I don’t know. I get the children to school on time every morning, and I go to the integration programme. I’m never drunk in front of them.",
+          "talk": "neutral",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n3b-a",
+              "text": "Children notice more than you think. Alcohol in a family always leaves its mark.",
+              "category": "moralize",
+              "feedback": "Moralising increases shame and defensiveness – she will defend her behaviour.",
+              "alliance": -2,
+              "next": "n4b"
+            },
+            {
+              "id": "n3b-b",
+              "text": "You go to great lengths so the children don’t notice anything – and yet something about it bothers you so much that you brought it up today.",
+              "category": "complexReflection",
+              "feedback": "The double-sided reflection acknowledges her effort and gently turns towards her own concern.",
+              "alliance": 2,
+              "next": "n4a"
+            },
+            {
+              "id": "n3b-c",
+              "text": "So you have everything under control?",
+              "category": "closedQuestion",
+              "feedback": "The closed question invites her to say yes and close the topic.",
+              "alliance": 0,
+              "next": "n4b"
+            },
+            {
+              "id": "n3b-d",
+              "text": "When you think about your evenings, what worries you most?",
+              "category": "openQuestion",
+              "feedback": "The open question invites her to name her own reasons for change.",
+              "alliance": 1,
+              "next": "n4a"
+            }
+          ]
+        },
+        {
+          "id": "n3c",
+          "client": "I know that myself. I shouldn’t have said anything. Can we get back to the forms?",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [
+            {
+              "id": "n3c-a",
+              "text": "Right now you regret bringing it up.",
+              "category": "simpleReflection",
+              "feedback": "The reflection acknowledges her regret without pressing – the door stays open.",
+              "alliance": 1,
+              "next": "n4b"
+            },
+            {
+              "id": "n3c-b",
+              "text": "No, this topic is too important. If you don’t want to talk about it, I’ll have to make a note of that.",
+              "category": "confront",
+              "feedback": "Pressure and the threat of the file destroy trust – she will never raise the topic again.",
+              "alliance": -2,
+              "next": "end_poor"
+            },
+            {
+              "id": "n3c-c",
+              "text": "It took courage to mention it at all. You decide whether and how far we talk about it.",
+              "category": "affirmation",
+              "feedback": "Acknowledging her courage and emphasising her autonomy reduces the discord.",
+              "alliance": 1,
+              "next": "n4b"
+            }
+          ]
+        },
+        {
+          "id": "n4a",
+          "client": "I’m afraid of becoming like my mother. She drank too. I want my children to have a mother they can rely on.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n4a-a",
+              "text": "What would be a first small step in that direction that you feel able to take?",
+              "category": "openQuestion",
+              "feedback": "An open question about a step moves from reasons to planning – and the step stays hers.",
+              "alliance": 2,
+              "next": "n5a"
+            },
+            {
+              "id": "n4a-b",
+              "text": "Then I’ll sign you up with Berner Gesundheit right away, I know someone there.",
+              "category": "adviseWithoutPermission",
+              "feedback": "The professional takes over the next step – well meant, but Sandra loses the decision about her own path.",
+              "alliance": -1,
+              "next": "n5b"
+            },
+            {
+              "id": "n4a-c",
+              "text": "In Bern there is a specialist service for exactly these questions – confidential and independent of social services. Would you like me to tell you more about it?",
+              "category": "adviseWithPermission",
+              "feedback": "Asking permission before giving information respects her autonomy – and the independence from social services takes her fear seriously.",
+              "alliance": 1,
+              "next": "n5a"
+            }
+          ]
+        },
+        {
+          "id": "n4b",
+          "client": "Maybe I drink a bit too much, yes. But without the wine I can’t fall asleep. And who else is going to help me in the evenings?",
+          "talk": "sustain",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n4b-a",
+              "text": "What used to help you in the past when you were feeling bad?",
+              "category": "openQuestion",
+              "feedback": "The open question invites her to connect with her own resources.",
+              "alliance": 1,
+              "next": "n5a"
+            },
+            {
+              "id": "n4b-b",
+              "text": "Right now the wine is your only help in the hardest hours of the day – giving it up without having anything else seems impossible.",
+              "category": "complexReflection",
+              "feedback": "The reflection hits the core of her ambivalence and makes room to look for alternatives together.",
+              "alliance": 2,
+              "next": "n5b"
+            },
+            {
+              "id": "n4b-c",
+              "text": "If you can’t fall asleep without alcohol, you’re already dependent. You need to accept that.",
+              "category": "confront",
+              "feedback": "Pinning a label on her turns ambivalence into a fight – she will argue back or fall silent.",
+              "alliance": -2,
+              "next": "end_poor"
+            }
+          ]
+        },
+        {
+          "id": "n5a",
+          "client": "I used to talk to my sister on the phone a lot. And I liked running along the Aare. Maybe I could talk to someone who knows about alcohol – but not here at social services.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n5a-a",
+              "text": "Good, then call Berner Gesundheit today and ideally stop the wine from now on.",
+              "category": "adviseWithoutPermission",
+              "feedback": "Instructions, just as she starts planning herself, take over the initiative and weaken her commitment.",
+              "alliance": -1,
+              "next": "end_mixed"
+            },
+            {
+              "id": "n5a-b",
+              "text": "Let me sum up: since the separation the evenings have been lonely and the wine gets you through – but you’re worried about your children and don’t want to become like your mother. And you have ideas of your own: your sister, running, and talking to a specialist service outside social services. Have I understood that correctly?",
+              "category": "summary",
+              "feedback": "The summary gathers her change talk and her own ideas – Sandra hears her reasons once more.",
+              "alliance": 2,
+              "next": "n6"
+            },
+            {
+              "id": "n5a-c",
+              "text": "You know exactly what used to give you strength. And it makes good sense that you want a place outside social services for this.",
+              "category": "affirmation",
+              "feedback": "The affirmation strengthens her resources and respects her wish for a boundary.",
+              "alliance": 1,
+              "next": "n6"
+            }
+          ]
+        },
+        {
+          "id": "n5b",
+          "client": "I don’t know if I can change anything. But I don’t want to carry on like this either.",
+          "talk": "neutral",
+          "mood": "calm",
+          "options": [
+            {
+              "id": "n5b-a",
+              "text": "On the one hand the wine is your support in the evenings right now; on the other, you realise you don’t want to carry on like this – above all because of your children.",
+              "category": "summary",
+              "feedback": "A summary built as a double-sided reflection that ends on her change talk strengthens it.",
+              "alliance": 2,
+              "next": "n6"
+            },
+            {
+              "id": "n5b-b",
+              "text": "What would help you dare to make a first attempt?",
+              "category": "openQuestion",
+              "feedback": "The open question supports her emerging readiness and leaves the choice of how to her.",
+              "alliance": 1,
+              "next": "n6"
+            },
+            {
+              "id": "n5b-c",
+              "text": "You’re responsible for two children. You can’t really afford to hesitate like this.",
+              "category": "moralize",
+              "feedback": "Moralising about her responsibility as a mother chokes off a fragile readiness and deepens her shame.",
+              "alliance": -2,
+              "next": "end_poor"
+            }
+          ]
+        },
+        {
+          "id": "n6",
+          "client": "I think I’ll call that specialist service. And I’ll ask my sister if she can ring me in the evenings now and then. But I don’t want all of this in my file.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n6-a",
+              "text": "Those are two clear steps you’ve chosen yourself. It shows how much strength you have despite everything.",
+              "category": "affirmation",
+              "feedback": "Affirming the steps she chose herself strengthens commitment without pressure.",
+              "alliance": 2,
+              "next": "end_good"
+            },
+            {
+              "id": "n6-b",
+              "text": "And you promise me you’ll drink less before our next appointment?",
+              "category": "closedQuestion",
+              "feedback": "Extracting a promise turns her decision into an obligation towards social services – which easily leads to shame and hiding.",
+              "alliance": -1,
+              "next": "end_mixed"
+            },
+            {
+              "id": "n6-c",
+              "text": "From your point of view, what should go in the file – and what would you rather keep to yourself? Let’s look at it together.",
+              "category": "openQuestion",
+              "feedback": "The open question takes her concern about privacy seriously and makes her a partner in the documentation – it strengthens trust and commitment.",
+              "alliance": 1,
+              "next": "end_good"
+            }
+          ]
+        },
+        {
+          "id": "end_good",
+          "client": "Thank you for not judging me. I’ll let you know when I have the appointment.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [],
+          "ending": {
+            "title": "A first step",
+            "text": "Sandra put her own reasons and steps into words and decides for herself about counselling. Her concern about the file was taken seriously – which strengthens the working relationship at social services.",
+            "quality": "good"
+          }
+        },
+        {
+          "id": "end_mixed",
+          "client": "Yes, I’ll try. Can we do the forms now?",
+          "talk": "neutral",
+          "mood": "guarded",
+          "options": [],
+          "ending": {
+            "title": "Agreement under pressure",
+            "text": "Sandra opened up, but at the end instructions and promises set the tone. Whether she takes the step towards counselling remains uncertain.",
+            "quality": "mixed"
+          }
+        },
+        {
+          "id": "end_poor",
+          "client": "I must have been wrong about you. In future I’d rather not say anything.",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [],
+          "ending": {
+            "title": "Broken trust",
+            "text": "Confrontation and references to duty increased Sandra’s shame and her fear of the KESB. She will probably not raise the topic again. Better: reflect her concern first and explain transparently when a report would even be an issue.",
+            "quality": "poor"
+          }
+        }
+      ],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ch-bern-gassenarbeit",
+      "country": "CH",
+      "title": "Marco at the Schützenmatte – first contact in street work",
+      "context": "streetwork",
+      "audience": "adult",
+      "persona": {
+        "name": "Marco",
+        "age": 41,
+        "description": "Often sits with his dog at the Schützenmatte near the Reitschule (an alternative cultural centre by Bern station). Has used heroin for many years, currently cocaine too, and injects; used to be in opioid agonist treatment. Distrustful of authorities, polite when treated with respect."
+      },
+      "intro": "Late afternoon at the Schützenmatte. You are out as a street worker with a colleague. Marco is sitting on a wall with his dog; you only know each other by sight. You introduce yourself and ask whether you can talk for a moment.",
+      "start": "n1",
+      "nodes": [
+        {
+          "id": "n1",
+          "client": "Street work, right. No need to be formal, nobody is around here. But I don’t need anything. I’m fine, and I don’t want social workers sending me off somewhere.",
+          "talk": "sustain",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n1-a",
+              "text": "You’re not keen on anyone telling you where to go.",
+              "category": "simpleReflection",
+              "feedback": "The simple reflection respects his boundary – exactly what builds trust on the street.",
+              "alliance": 1,
+              "next": "n2a"
+            },
+            {
+              "id": "n1-b",
+              "text": "Are you using at the moment?",
+              "category": "closedQuestion",
+              "feedback": "A direct question about drug use at first contact feels like a check – on the street, the relationship comes first.",
+              "alliance": 0,
+              "next": "n2b"
+            },
+            {
+              "id": "n1-c",
+              "text": "Well, things don’t really look that good here. You should take better care of yourself.",
+              "category": "moralize",
+              "feedback": "Unasked-for judgements at first contact come across as condescending – Marco will shut you out.",
+              "alliance": -2,
+              "next": "n2b"
+            },
+            {
+              "id": "n1-d",
+              "text": "How have things been for you here lately?",
+              "category": "openQuestion",
+              "feedback": "The open question shows interest in his everyday life rather than his problem – a respectful way in.",
+              "alliance": 1,
+              "next": "n2a"
+            }
+          ]
+        },
+        {
+          "id": "n2a",
+          "client": "So-so. Since they started moving people on at the station, everyone’s here. More stress, more police. And the dog needs some peace.",
+          "talk": "neutral",
+          "mood": "calm",
+          "options": [
+            {
+              "id": "n2a-a",
+              "text": "You can see your dog is well looked after. You take good care of him.",
+              "category": "affirmation",
+              "feedback": "The affirmation is genuine and opens a door, but stays on the surface – the talk continues without going deeper.",
+              "alliance": 1,
+              "next": "n3b"
+            },
+            {
+              "id": "n2a-b",
+              "text": "You’re looking out not just for yourself but for the dog too – and right now it’s hard to find a quiet place for the two of you.",
+              "category": "complexReflection",
+              "feedback": "The complex reflection recognises his sense of responsibility and the strain he is under – Marco feels seen as a person.",
+              "alliance": 2,
+              "next": "n3a"
+            },
+            {
+              "id": "n2a-c",
+              "text": "Then go to the contact centre during the day, it’s quieter there.",
+              "category": "adviseWithoutPermission",
+              "feedback": "A suggestion without permission confirms exactly what he feared: that someone wants to send him somewhere.",
+              "alliance": -1,
+              "next": "n3c"
+            }
+          ]
+        },
+        {
+          "id": "n2b",
+          "client": "See, that’s what I mean. As soon as you sit down somewhere, someone turns up wanting something. Are you going to tell the police what I do now?",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [
+            {
+              "id": "n2b-a",
+              "text": "I’m here to help. If you react like that, it gets difficult.",
+              "category": "confront",
+              "feedback": "Justifying yourself and blaming him for the mood deepens the discord.",
+              "alliance": -2,
+              "next": "n3c"
+            },
+            {
+              "id": "n2b-b",
+              "text": "You’ve had enough of being checked up on.",
+              "category": "simpleReflection",
+              "feedback": "The reflection takes in his anger without becoming defensive – the tension drops.",
+              "alliance": 1,
+              "next": "n3b"
+            },
+            {
+              "id": "n2b-c",
+              "text": "You’ve met plenty of people who wanted something from you – and you want to know whether I’m another one.",
+              "category": "complexReflection",
+              "feedback": "The complex reflection names his mistrust. Afterwards it is easier to explain that street work is voluntary and confidential.",
+              "alliance": 2,
+              "next": "n3b"
+            }
+          ]
+        },
+        {
+          "id": "n3a",
+          "client": "Yeah. To be honest, I’m tired. The dog is the only thing I still do right. Last week I had an abscess on my arm, it’s still not healed.",
+          "talk": "change",
+          "mood": "sad",
+          "options": [
+            {
+              "id": "n3a-a",
+              "text": "You’re tired, and your arm is worrying you.",
+              "category": "simpleReflection",
+              "feedback": "The reflection stays with his experience and lets him set the pace.",
+              "alliance": 1,
+              "next": "n4a"
+            },
+            {
+              "id": "n3a-b",
+              "text": "With an abscess you need to go to hospital straight away, it can get dangerous.",
+              "category": "adviseWithoutPermission",
+              "feedback": "The concern is justified, but the order overrides him. Better: ask first whether he would like information.",
+              "alliance": -1,
+              "next": "n4b"
+            },
+            {
+              "id": "n3a-c",
+              "text": "How are you dealing with your arm at the moment?",
+              "category": "openQuestion",
+              "feedback": "The open question connects with his own concern and invites him to say more about his risks.",
+              "alliance": 2,
+              "next": "n4a"
+            }
+          ]
+        },
+        {
+          "id": "n3b",
+          "client": "What do you actually want from me? I’ve been on the street for twenty years. I know how things work.",
+          "talk": "neutral",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n3b-a",
+              "text": "What would be helpful to you right now – if anything?",
+              "category": "openQuestion",
+              "feedback": "The open question leaves it to him whether he needs anything and what – autonomy instead of a catalogue of services.",
+              "alliance": 1,
+              "next": "n4a"
+            },
+            {
+              "id": "n3b-b",
+              "text": "Twenty years is a long time. Don’t you finally want to change something?",
+              "category": "moralize",
+              "feedback": "The question sounds like a reproach – Marco hears his life being judged.",
+              "alliance": -2,
+              "next": "n4b"
+            },
+            {
+              "id": "n3b-c",
+              "text": "You know your way around here better than most people who want to talk to you – and you decide for yourself what you need from us.",
+              "category": "complexReflection",
+              "feedback": "The complex reflection honours his experience and emphasises his autonomy – it defuses the mistrust.",
+              "alliance": 2,
+              "next": "n4a"
+            },
+            {
+              "id": "n3b-d",
+              "text": "Do you know the contact and drop-in centre (K&A)?",
+              "category": "closedQuestion",
+              "feedback": "The closed question jumps straight to a service – after twenty years on the street he knows it anyway, and the talk stalls.",
+              "alliance": 0,
+              "next": "n4b"
+            }
+          ]
+        },
+        {
+          "id": "n3c",
+          "client": "You’re all exactly the same. Just leave me alone.",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [
+            {
+              "id": "n3c-a",
+              "text": "Thanks for saying it clearly. We respect that. We’re often around here if you need something later on.",
+              "category": "affirmation",
+              "feedback": "Honouring his boundary and leaving an open offer keeps the door open for later contact.",
+              "alliance": 1,
+              "next": "n4b"
+            },
+            {
+              "id": "n3c-b",
+              "text": "Today you just want to be left in peace.",
+              "category": "simpleReflection",
+              "feedback": "The reflection accepts his wish and takes the pressure out of the situation.",
+              "alliance": 1,
+              "next": "n4b"
+            },
+            {
+              "id": "n3c-c",
+              "text": "I won’t leave you alone while you’re destroying yourself.",
+              "category": "confront",
+              "feedback": "Holding on to him against his will contradicts the voluntary nature of street work – the contact breaks off.",
+              "alliance": -2,
+              "next": "end_poor"
+            }
+          ]
+        },
+        {
+          "id": "n4a",
+          "client": "Sometimes I inject outside when the contact centre is closed. Then I use whatever I’ve got. I know that’s not good for my arm. And last time … a mate almost didn’t wake up.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n4a-a",
+              "text": "What would need to be different to make it safer for you and your arm?",
+              "category": "openQuestion",
+              "feedback": "The open question invites him to come up with his own harm reduction ideas.",
+              "alliance": 2,
+              "next": "n5a"
+            },
+            {
+              "id": "n4a-b",
+              "text": "Then you absolutely have to go back into opioid agonist treatment, then this will stop.",
+              "category": "adviseWithoutPermission",
+              "feedback": "The big step comes too early and from outside – Marco feels he is being “sent somewhere” again.",
+              "alliance": -1,
+              "next": "n5b"
+            },
+            {
+              "id": "n4a-c",
+              "text": "We’ve got clean equipment and naloxone with us, and I can show you how to use it. Would you like that?",
+              "category": "adviseWithPermission",
+              "feedback": "A concrete offer with permission – exactly what can save lives in street work without being patronising.",
+              "alliance": 1,
+              "next": "n5a"
+            }
+          ]
+        },
+        {
+          "id": "n4b",
+          "client": "I don’t need a doctor. They look at me like I’m dirt anyway. And I can’t leave the dog anywhere.",
+          "talk": "sustain",
+          "mood": "guarded",
+          "options": [
+            {
+              "id": "n4b-a",
+              "text": "You’ve had bad experiences, and as long as you can’t take the dog with you, getting help is out of the question.",
+              "category": "complexReflection",
+              "feedback": "The reflection hits the two real obstacles – shame and responsibility for the dog – and makes room for solutions.",
+              "alliance": 2,
+              "next": "n5b"
+            },
+            {
+              "id": "n4b-b",
+              "text": "Where have you felt well treated at some point in the past?",
+              "category": "openQuestion",
+              "feedback": "The open question looks for positive exceptions and strengthens his own resources.",
+              "alliance": 1,
+              "next": "n5a"
+            },
+            {
+              "id": "n4b-c",
+              "text": "You can’t go on like this. Your arm will get infected if you don’t do anything.",
+              "category": "confront",
+              "feedback": "Pressure and threats confirm his experience of professionals – he withdraws.",
+              "alliance": -2,
+              "next": "end_poor"
+            }
+          ]
+        },
+        {
+          "id": "n5a",
+          "client": "There’s a nurse at the contact centre who’s OK. She’s never looked at me funny. And you can tie the dog up outside. Maybe I’ll go tomorrow, because of my arm.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n5a-a",
+              "text": "Good, and while you’re there ask straight away about a place in opioid agonist treatment and about housing.",
+              "category": "adviseWithoutPermission",
+              "feedback": "More tasks, just as he plans a step of his own, overwhelm him and weaken his commitment.",
+              "alliance": -1,
+              "next": "end_mixed"
+            },
+            {
+              "id": "n5a-b",
+              "text": "You know exactly where you get treated well. That’s a good idea, and it comes from you.",
+              "category": "affirmation",
+              "feedback": "Affirming his own idea strengthens his commitment.",
+              "alliance": 1,
+              "next": "n6"
+            },
+            {
+              "id": "n5a-c",
+              "text": "Let me sum up: your dog matters enormously to you, you’re tired, your arm worries you, and after what happened to your mate you want to use more safely. And you know a nurse at the contact centre you trust. Is that right?",
+              "category": "summary",
+              "feedback": "The summary gathers his change talk – Marco hears his own reasons once more.",
+              "alliance": 2,
+              "next": "n6"
+            }
+          ]
+        },
+        {
+          "id": "n5b",
+          "client": "I don’t know. Maybe. If it’s not too complicated.",
+          "talk": "neutral",
+          "mood": "calm",
+          "options": [
+            {
+              "id": "n5b-a",
+              "text": "You know, lots of people would be glad of an offer like this. You shouldn’t turn it down.",
+              "category": "moralize",
+              "feedback": "Moralising turns an offer into an obligation to be grateful – it destroys his tentative readiness.",
+              "alliance": -2,
+              "next": "end_poor"
+            },
+            {
+              "id": "n5b-b",
+              "text": "On the one hand you’ve had bad experiences with doctors and authorities and don’t want to leave the dog alone – on the other, you notice that your arm and using outdoors are worrying you.",
+              "category": "summary",
+              "feedback": "A summary built as a double-sided reflection that ends on his concern strengthens change talk.",
+              "alliance": 2,
+              "next": "n6"
+            },
+            {
+              "id": "n5b-c",
+              "text": "What would make it easier for you?",
+              "category": "openQuestion",
+              "feedback": "The open question takes his condition seriously and invites him to name solutions himself.",
+              "alliance": 1,
+              "next": "n6"
+            }
+          ]
+        },
+        {
+          "id": "n6",
+          "client": "OK. Give me the naloxone and the equipment. And tomorrow maybe I’ll go to the contact centre about my arm. But only if the dog can come along.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [
+            {
+              "id": "n6-a",
+              "text": "How can we best support you tomorrow so that it works out with your arm and the dog?",
+              "category": "openQuestion",
+              "feedback": "The open question makes him the planner of his next step and offers support without pushing.",
+              "alliance": 1,
+              "next": "end_good"
+            },
+            {
+              "id": "n6-b",
+              "text": "Do you promise me you’ll really go tomorrow?",
+              "category": "closedQuestion",
+              "feedback": "Extracting a promise turns his decision into a debt he owes you – it weakens trust.",
+              "alliance": -1,
+              "next": "end_mixed"
+            },
+            {
+              "id": "n6-c",
+              "text": "That’s an important step – for you and for your mates. With the naloxone you could even save a life in an emergency.",
+              "category": "affirmation",
+              "feedback": "The affirmation emphasises his competence and responsibility – it strengthens his self-worth and commitment.",
+              "alliance": 2,
+              "next": "end_good"
+            }
+          ]
+        },
+        {
+          "id": "end_good",
+          "client": "OK. You two are all right. If you come by tomorrow, I might be here.",
+          "talk": "change",
+          "mood": "hopeful",
+          "options": [],
+          "ending": {
+            "title": "Trust built",
+            "text": "The first contact ends with clean equipment, naloxone and a possible next step to the contact centre. In street work that is a big success: Marco decides for himself what he accepts.",
+            "quality": "good"
+          }
+        },
+        {
+          "id": "end_mixed",
+          "client": "We’ll see. I’ve got to go now.",
+          "talk": "neutral",
+          "mood": "guarded",
+          "options": [],
+          "ending": {
+            "title": "Contact on the edge",
+            "text": "Marco was open, but conditions and expectations weakened his trust. Another contact is possible but uncertain.",
+            "quality": "mixed"
+          }
+        },
+        {
+          "id": "end_poor",
+          "client": "Leave me alone. Come on, boy, we’re going.",
+          "talk": "sustain",
+          "mood": "angry",
+          "options": [],
+          "ending": {
+            "title": "Contact broken off",
+            "text": "Marco has left with his dog. In street work one bad first contact can close off access for a long time – to other people on the scene as well.",
+            "quality": "poor"
+          }
+        }
+      ],
+      "reviewStatus": "do_weryfikacji"
     }
   ]
 }

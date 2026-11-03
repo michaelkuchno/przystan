@@ -8,12 +8,17 @@ import type { Space } from '@/domain/types';
 import type { ReviewStatus } from '@/content/types';
 import { syncSystemBars } from './platform';
 
-export type Lang = 'pl' | 'en';
+export type Lang = 'pl' | 'en' | 'de';
+export const LANGS: Lang[] = ['pl', 'en', 'de'];
+/** Country of work – independent of the language. Drives the help system, laws, crisis numbers and demo cases. */
+export type Country = 'PL' | 'CH';
+export const COUNTRIES: Country[] = ['PL', 'CH'];
 export type Theme = 'light' | 'dark' | 'system';
 export type Term = 'podopieczny' | 'klient' | 'wychowanek' | 'uczestnik';
 
 export interface Prefs {
   lang: Lang;
+  country: Country;
   theme: Theme;
   /** 1, 1.125, 1.25, 1.375 */
   textScale: number;
@@ -27,15 +32,29 @@ export interface Prefs {
   /** Content review overrides, by content id. */
   review: Record<string, ReviewStatus>;
   lastBackupAt?: string;
+  /** Practice log: required hours (default 90). */
+  practiceGoalH: number;
+  /** Dismissed backup reminder until this ISO timestamp. */
+  backupReminderSnoozedUntil?: string;
 }
 
-function systemLang(): Lang {
-  const l = (typeof navigator !== 'undefined' && navigator.language) || 'pl';
-  return l.toLowerCase().startsWith('pl') ? 'pl' : 'en';
+const navLang = () => ((typeof navigator !== 'undefined' && navigator.language) || 'pl').toLowerCase();
+
+/** Default language: the system language if supported (pl, de), otherwise English. */
+export function systemLang(l = navLang()): Lang {
+  if (l.startsWith('pl')) return 'pl';
+  if (l.startsWith('de') || l.startsWith('gsw')) return 'de';
+  return 'en';
+}
+
+/** Default country of work: Switzerland for a Swiss locale or German, otherwise Poland. */
+export function systemCountry(l = navLang()): Country {
+  return /-ch$/.test(l) || l.startsWith('de') || l.startsWith('gsw') ? 'CH' : 'PL';
 }
 
 export const defaultPrefs = (): Prefs => ({
   lang: systemLang(),
+  country: systemCountry(),
   theme: 'system',
   textScale: 1,
   term: 'podopieczny',
@@ -45,6 +64,7 @@ export const defaultPrefs = (): Prefs => ({
   privacyNoticeSeen: false,
   presentation: false,
   review: {},
+  practiceGoalH: 90,
 });
 
 let prefs: Prefs = defaultPrefs();

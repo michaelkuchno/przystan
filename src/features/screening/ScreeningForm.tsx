@@ -8,7 +8,7 @@ import { Button, Card, EmptyState, Badge } from '@/components/ui/core';
 import { SelectField } from '@/components/ui/form';
 import { useToast } from '@/components/ui/toast';
 import { INSTRUMENTS } from '@/lib/screening/instruments';
-import { PL_INSTRUMENTS } from '@/lib/screening/pl';
+import { officialText } from '@/lib/screening/official';
 import { scoreInstrument } from '@/lib/screening/score';
 import { all, get, save, uid, useStore } from '@/lib/store';
 import { usePrefs } from '@/lib/prefs';
@@ -46,8 +46,9 @@ export default function ScreeningForm() {
       </Page>
     );
 
-  const pl = lang === 'pl' ? PL_INSTRUMENTS[inst.id] : null;
-  const showTodo = lang === 'pl' && !pl;
+  // official validated wording in the UI language (PL / DE), otherwise the English original
+  const pl = officialText(lang, inst.id);
+  const showTodo = lang !== 'en' && !pl;
   const answered = answers.filter((a) => a !== undefined).length;
 
   const submit = async () => {
@@ -109,7 +110,7 @@ export default function ScreeningForm() {
                     <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-surface-2 text-sm font-semibold">
                       {i + 1}
                     </span>
-                    <span lang={pl ? 'pl' : 'en'}>{text}</span>
+                    <span lang={pl ? lang : 'en'}>{text}</span>
                   </legend>
                   <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3" role="radiogroup">
                     {item.options.map((o, j) => (
@@ -131,7 +132,7 @@ export default function ScreeningForm() {
                             : 'border-line bg-surface hover:bg-surface-2',
                         )}
                       >
-                        <span lang={pl ? 'pl' : 'en'}>{pl?.items[i]?.options[j] ?? o.label}</span>
+                        <span lang={pl ? lang : 'en'}>{pl?.items[i]?.options[j] ?? o.label}</span>
                         <span className="text-xs opacity-70">{o.points}</span>
                       </button>
                     ))}

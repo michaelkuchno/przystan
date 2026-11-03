@@ -1,0 +1,78 @@
+{
+  "greeting": {
+    "morning": "Guten Morgen",
+    "day": "Guten Tag",
+    "evening": "Guten Abend"
+  },
+  "intro_one": "Du arbeitest zurzeit mit {{count}} Person.",
+  "intro_other": "Du arbeitest zurzeit mit {{count}} Personen.",
+  "demoIntro": "Übungsmodus – erfundene Fallbeispiele zum Lernen und Präsentieren.",
+  "quick": {
+    "client": "Neu: {{client}}",
+    "meeting": "Neues Gespräch",
+    "tools": "Werkzeuge",
+    "prevention": "Prävention"
+  },
+  "today": "Heute",
+  "seeAll": "Alle",
+  "start": "Start",
+  "noMeetingsToday": "Heute keine Gespräche",
+  "noMeetingsTodayText": "Plane ein Gespräch oder nutze die Werkzeuge und Lernmodule.",
+  "attention": "Beachtenswert",
+  "noAttention": "Zurzeit braucht nichts besondere Aufmerksamkeit.",
+  "attentionNote": "Die Hinweise beruhen auf transparenten Regeln (z. B. Craving um ≥ 2 Punkte gestiegen, ein verpasstes Gespräch in den letzten 14 Tagen). Sie dienen nur der Unterstützung – die Entscheidung liegt immer bei dir.",
+  "rules": {
+    "cravingRise": {
+      "title": "Steigendes Craving",
+      "why": "Das Craving stieg von {{from}} auf {{to}} /10 (gemessen am {{date}})."
+    },
+    "cravingHigh": {
+      "title": "Hohes Craving",
+      "why": "Letzte Messung: {{value}}/10."
+    },
+    "screeningWorse": {
+      "title": "Schlechteres Screening-Ergebnis",
+      "why": "{{instrument}}: Punktzahl stieg von {{from}} auf {{to}}."
+    },
+    "missedMeeting": {
+      "title": "Verpasstes Gespräch",
+      "why": "Das Gespräch am {{date}} hat nicht stattgefunden."
+    },
+    "keyDateSoon": {
+      "title": "Bevorstehender Termin",
+      "why": "{{label}} – {{date}} (in {{days}} Tagen)."
+    },
+    "noContact": {
+      "title": "Kein aktueller Kontakt",
+      "why": "Seit {{days}} Tagen kein Kontakt und kein Gespräch geplant."
+    },
+    "iprReviewOverdue": {
+      "title": "Planüberprüfung überfällig",
+      "why": "Das Überprüfungsdatum ist am {{date}} verstrichen."
+    }
+  },
+  "tasks": {
+    "title": "Aufgaben",
+    "new": "Neue Aufgabe…",
+    "add": "Aufgabe hinzufügen",
+    "empty": "Noch keine Aufgaben. Füge oben die erste hinzu.",
+    "deleted": "Aufgabe gelöscht"
+  },
+  "learning": "Lernfortschritt",
+  "learned": "Lernkarten beherrscht",
+  "dueCards_one": "{{count}} zu wiederholen",
+  "dueCards_other": "{{count}} zu wiederholen",
+  "simulatorTeaser": {
+    "title": "Simulator für Motivierende Gesprächsführung",
+    "text": "Übe Reflexionen und offene Fragen mit einem virtuellen Gesprächspartner."
+  },
+  "backup": {
+    "title": "Zeit für eine Datensicherung",
+    "never": "Du hast noch keine Datensicherung. Ohne sie gehen bei Verlust des Handys alle Daten verloren.",
+    "days_one": "Letzte Datensicherung: vor {{count}} Tag.",
+    "days_other": "Letzte Datensicherung: vor {{count}} Tagen.",
+    "later": "Morgen",
+    "now": "Jetzt sichern"
+  },
+  "supervisionTasks": "Aufgaben aus der Supervision"
+}

@@ -1,0 +1,1014 @@
+{
+  "cards": [
+    {
+      "id": "mi-core",
+      "section": "approaches",
+      "title": "Motivierende Gesprächsführung – Haltung und Prozesse",
+      "essence": "Motivierende Gesprächsführung (MI) ist ein partnerschaftlicher Gesprächsstil, der die eigene Motivation und Selbstverpflichtung eines Menschen zur Veränderung stärkt. Grundlage ist die MI-Haltung („Spirit“): Partnerschaftlichkeit, Akzeptanz, Mitgefühl und Evokation – Ressourcen hervorlocken statt etwas hineinlegen. Das Gespräch durchläuft vier Prozesse: Beziehungsaufbau, Fokussierung, Evokation und Planung. Die Fachperson argumentiert nicht; sie hilft der Klientin, dem Klienten, die eigenen Gründe für eine Veränderung zu hören.",
+      "whenToUse": [
+        "Wenn die Klientin, der Klient ambivalent ist – sich gleichzeitig verändern möchte und nicht möchte.",
+        "In den ersten Gesprächen, besonders wenn der Kontakt auferlegt ist (Gericht, Bewährungshilfe, Schule, Familie).",
+        "Als Einstieg, der das Engagement vor anderen Therapien oder Korrekturprogrammen erhöht.",
+        "Wenn bisheriges Ratgeben und Überzeugen Widerstand ausgelöst hat."
+      ],
+      "techniques": [
+        "Beziehungsaufbau (Engaging): die Beziehung und ein gemeinsames Verständnis der Situation aufbauen.",
+        "Fokussierung (Focusing): gemeinsam die Richtung des Gesprächs wählen (z. B. Trinken, Schulabsentismus, Kontakt zur Bewährungshilfe).",
+        "Evokation (Evoking): Veränderungssprache hervorlocken und verstärken.",
+        "Planung (Planning): wenn die Bereitschaft wächst, gemeinsam konkrete Schritte vereinbaren.",
+        "Autonomie unterstützen: betonen, dass die Entscheidung bei der Klientin, beim Klienten liegt.",
+        "Diskrepanz entwickeln zwischen dem aktuellen Verhalten und den Werten und Zielen der Person."
+      ],
+      "phrases": [
+        "Bevor ich etwas vorschlage, möchte ich verstehen, wie Sie das sehen.",
+        "Es ist Ihre Entscheidung, was Sie damit machen – ich kann Ihnen helfen, es anzuschauen.",
+        "Was ist Ihnen im Leben am wichtigsten, und wie passt das Trinken dazu?",
+        "Wenn in einem Jahr etwas anders wäre – was wäre das?",
+        "Darf ich Ihnen eine Information weitergeben, die ich aus der Arbeit mit anderen Menschen kenne?"
+      ],
+      "pitfalls": [
+        "Der Korrekturreflex – vorschnell Ratschläge geben, bevor die Person eigene Gründe für eine Veränderung äussert.",
+        "MI als Trickkiste zum „Überzeugen“ behandeln; ohne die Haltung wirken die Techniken nicht.",
+        "Zur Planung springen, bevor die Person bereit ist.",
+        "Die Expertenrolle einnehmen, als wüsste man besser, was die Person braucht."
+      ],
+      "sources": [
+        {
+          "authors": "Miller W.R., Rollnick S.",
+          "year": 2014,
+          "title": "Dialog motywujący. Jak pomóc ludziom w zmianie",
+          "publisher": "Wydawnictwo Uniwersytetu Jagiellońskiego"
+        },
+        {
+          "authors": "Miller W.R., Rollnick S.",
+          "year": 2023,
+          "title": "Motivational Interviewing: Helping People Change and Grow (4th ed.)",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Miller W.R., Rose G.S.",
+          "year": 2009,
+          "title": "Toward a theory of motivational interviewing. American Psychologist, 64(6)"
+        },
+        {
+          "authors": "Miller W.R., Forcehimes A.A., Zweben A.",
+          "year": 2014,
+          "title": "Terapia uzależnień. Podręcznik dla profesjonalistów",
+          "publisher": "Wydawnictwo Uniwersytetu Jagiellońskiego"
+        }
+      ],
+      "tags": ["Motivierende Gesprächsführung", "Motivation", "Ambivalenz", "Gespräch"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "mi-oars",
+      "section": "approaches",
+      "title": "Motivierende Gesprächsführung – OARS-Fertigkeiten",
+      "essence": "OARS sind die vier grundlegenden Kommunikationsfertigkeiten der Motivierenden Gesprächsführung: offene Fragen (Open questions), Würdigung (Affirmations), Reflexionen (Reflections) und Zusammenfassungen (Summaries). Sie sind der „Motor“ jedes Gesprächs, in allen vier MI-Prozessen. Gute Praxis: mehr reflektieren als fragen (etwa mindestens zwei Reflexionen pro Frage).",
+      "whenToUse": [
+        "In jedem Gespräch mit Klient/innen – vom Erstkontakt bis zum Abschluss der Arbeit.",
+        "Wenn das Gespräch zum Verhör wird (eine Reihe geschlossener Fragen).",
+        "Wenn viele Informationen geordnet werden müssen und die Person sich gehört fühlen soll.",
+        "In der Supervision und bei der Selbsteinschätzung aufgezeichneter Gespräche (z. B. MITI-Kodierung)."
+      ],
+      "techniques": [
+        "Offene Fragen: beginnen mit „wie“, „was“, „auf welche Weise“, „erzählen Sie von…“.",
+        "Würdigung: konkrete Stärken, Bemühungen und Werte anerkennen statt allgemein loben.",
+        "Einfache Reflexion: das Gesagte wiederholen oder umschreiben.",
+        "Komplexe Reflexion: Bedeutung oder Gefühl ergänzen oder „den Absatz weiterführen“.",
+        "Zweiseitige Reflexion: beide Seiten der Ambivalenz nebeneinanderstellen („einerseits… und andererseits…“).",
+        "Sammelnde, verknüpfende und überleitende Zusammenfassungen, die ein Thema abschliessen und weiterführen."
+      ],
+      "phrases": [
+        "Wie sieht ein typisches Wochenende bei Ihnen aus?",
+        "Trotz allem sind Sie heute zum Termin gekommen – das hat Sie Kraft gekostet.",
+        "Sie machen sich Sorgen, dass die Kinder anfangen, etwas zu merken.",
+        "Einerseits hilft Ihnen das Trinken abzuschalten, und andererseits streiten Sie zu Hause immer öfter.",
+        "Ich fasse zusammen, was ich gehört habe: … Habe ich etwas vergessen?"
+      ],
+      "pitfalls": [
+        "Drei Fragen hintereinander ohne Reflexion – die Person fühlt sich ausgefragt.",
+        "Würdigungen, die wie ein Urteil klingen („super, braver Junge“), statt eine konkrete Handlung anzuerkennen.",
+        "Reflexionen als Fragen formuliert (steigende Intonation) – das schwächt die Empathie.",
+        "Papageien – die Worte der Person nur wörtlich wiederholen, ohne zu vertiefen."
+      ],
+      "sources": [
+        {
+          "authors": "Miller W.R., Rollnick S.",
+          "year": 2014,
+          "title": "Dialog motywujący. Jak pomóc ludziom w zmianie",
+          "publisher": "Wydawnictwo Uniwersytetu Jagiellońskiego"
+        },
+        {
+          "authors": "Miller W.R., Rollnick S.",
+          "year": 2013,
+          "title": "Motivational Interviewing: Helping People Change (3rd ed.)",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Rosengren D.B.",
+          "year": 2018,
+          "title": "Building Motivational Interviewing Skills: A Practitioner Workbook (2nd ed.)",
+          "publisher": "Guilford Press"
+        }
+      ],
+      "tags": ["OARS", "Reflexionen", "offene Fragen", "Kommunikation", "Motivierende Gesprächsführung"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "mi-darncat",
+      "section": "approaches",
+      "title": "Motivierende Gesprächsführung – Veränderungssprache (DARN-CAT)",
+      "essence": "Veränderungssprache (Change Talk) ist alles, was die Person zugunsten einer Veränderung sagt. DARN beschreibt die vorbereitende Veränderungssprache: Wunsch (Desire), Fähigkeit (Ability), Gründe (Reasons) und Notwendigkeit (Need). CAT beschreibt die mobilisierende Veränderungssprache: Selbstverpflichtung (Commitment), Aktivierung (Activation) und erste Schritte (Taking steps). Studien deuten darauf hin, dass besonders die Stärke der Selbstverpflichtungssprache mit späterer Verhaltensänderung zusammenhängt.",
+      "whenToUse": [
+        "Im Prozess der Evokation, sobald der Fokus des Gesprächs vereinbart ist.",
+        "Wenn die Person einzelne Aussagen zugunsten einer Veränderung macht, die es wert sind, vertieft zu werden.",
+        "Bei der Einschätzung, ob die Person für die Planung bereit ist.",
+        "Mit Jugendlichen – um ihre eigenen Gründe hervorzulocken statt jener der Erwachsenen."
+      ],
+      "techniques": [
+        "Veränderungssprache erkennen und mit einer Reflexion oder einer Bitte um Vertiefung reagieren.",
+        "Evozierende Fragen: „Was möchten Sie anders haben?“, „Wie könnten Sie das schaffen?“.",
+        "Skalen für Wichtigkeit und Zuversicht (0–10), mit der Frage, warum nicht ein tieferer Wert.",
+        "Zurück- und Vorausschauen: „Wie war es früher…?“, „Wie wird es in 5 Jahren sein, wenn sich nichts ändert?“.",
+        "Nach Extremen fragen: „Was ist das Schlimmste, das passieren könnte?“.",
+        "Werte und Ziele der Person erkunden."
+      ],
+      "phrases": [
+        "Du hast gesagt, du möchtest das Vertrauen deiner Mutter zurückgewinnen. Erzähl mir mehr darüber.",
+        "Auf einer Skala von 0 bis 10: Wie wichtig ist es Ihnen, weniger zu spielen? Warum 5 und nicht 2?",
+        "Was haben Sie in dieser Sache schon geschafft?",
+        "Was sind die drei wichtigsten Gründe, es zu versuchen?",
+        "Was könnte ein erster, kleiner Schritt in dieser Woche sein?"
+      ],
+      "pitfalls": [
+        "Veränderungssprache überhören und zur nächsten Frage übergehen.",
+        "Erklärungen erzwingen („Versprechen Sie mir, dass…“), statt Selbstverpflichtung hervorzulocken.",
+        "Beibehaltungssprache verstärken mit Fragen wie „Warum wollen Sie nicht aufhören?“.",
+        "Vorbereitende Sprache (DARN) mit Handlungsbereitschaft (CAT) verwechseln."
+      ],
+      "sources": [
+        {
+          "authors": "Miller W.R., Rollnick S.",
+          "year": 2014,
+          "title": "Dialog motywujący. Jak pomóc ludziom w zmianie",
+          "publisher": "Wydawnictwo Uniwersytetu Jagiellońskiego"
+        },
+        {
+          "authors": "Amrhein P.C., Miller W.R., Yahne C.E., Palmer M., Fulcher L.",
+          "year": 2003,
+          "title": "Client commitment language during motivational interviewing predicts drug use outcomes. Journal of Consulting and Clinical Psychology, 71(5)"
+        },
+        {
+          "authors": "Miller W.R., Rollnick S.",
+          "year": 2013,
+          "title": "Motivational Interviewing: Helping People Change (3rd ed.)",
+          "publisher": "Guilford Press"
+        }
+      ],
+      "tags": ["DARN-CAT", "Veränderungssprache", "Selbstverpflichtung", "Motivierende Gesprächsführung"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "mi-discord",
+      "section": "approaches",
+      "title": "Motivierende Gesprächsführung – Beibehaltungssprache und Dissonanz",
+      "essence": "Was früher „Widerstand“ genannt wurde, wird in der MI heute in zwei Phänomene unterteilt. Beibehaltungssprache (Sustain Talk) ist alles, was die Person zugunsten des bisherigen Verhaltens sagt – ein natürlicher Teil der Ambivalenz. Dissonanz (Discord) ist ein Zeichen von Spannung in der Beziehung: Streiten, Unterbrechen, Abwerten, Rückzug. Beides ist eine Rückmeldung an die Fachperson und erfordert meist eine Änderung des eigenen Stils statt eines „Durchbrechens“ bei der Person.",
+      "whenToUse": [
+        "Wenn die Person das Problem herunterspielt oder das bisherige Verhalten verteidigt.",
+        "Wenn das Gespräch zum Streit wird oder die Person verstummt und sich zurückzieht.",
+        "Mit Klient/innen, deren Kontakt auferlegt ist (Bewährungshilfe, Gericht, Gefängnis, stationäre Einrichtung).",
+        "Wenn die Fachperson spürt, dass sie die Person dorthin „zieht“, wo sie nicht hin will."
+      ],
+      "techniques": [
+        "Einfache oder verstärkte (leicht übertriebene) Reflexion der Beibehaltungssprache.",
+        "Zweiseitige Reflexion – beide Seiten der Ambivalenz anerkennen.",
+        "Autonomie und Wahlfreiheit betonen: „Niemand kann das für Sie entscheiden.“",
+        "Umdeuten (Reframing): der Aussage eine neue, positive Bedeutung geben.",
+        "Fokus verschieben oder „seitwärts ausweichen“ – sich für eine Weile von einem heiklen Thema entfernen.",
+        "Sich entschuldigen und Verantwortung für Spannungen in der Beziehung übernehmen."
+      ],
+      "phrases": [
+        "Sie sehen hier kein Problem und haben es satt, dass alle an Ihnen herumnörgeln.",
+        "Es klingt, als hätte ich zu viel Druck gemacht – entschuldigen Sie. Gehen wir zurück zu dem, was Ihnen wichtig ist.",
+        "Sie entscheiden, ob und was Sie verändern. Diese Macht habe ich nicht.",
+        "Einerseits nervt Sie die Aufsicht sehr, und andererseits möchten Sie mit dem Gericht abschliessen.",
+        "Es ist Ihnen wichtig, dass Ihnen niemand vorschreibt, wie Sie Ihr Leben leben sollen."
+      ],
+      "pitfalls": [
+        "Konfrontieren und Argumentieren („Es ist doch offensichtlich, dass Sie abhängig sind“) – das verstärkt die Dissonanz.",
+        "Die Person etikettieren („er ist in der Verleugnung“, „anspruchsvoll“).",
+        "Dissonanz als Eigenschaft der Person behandeln statt als etwas, das in der Beziehung geschieht.",
+        "Sarkasmus in verstärkten Reflexionen – das klingt nach Spott statt nach Empathie."
+      ],
+      "sources": [
+        {
+          "authors": "Miller W.R., Rollnick S.",
+          "year": 2013,
+          "title": "Motivational Interviewing: Helping People Change (3rd ed.)",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Miller W.R., Rollnick S.",
+          "year": 2014,
+          "title": "Dialog motywujący. Jak pomóc ludziom w zmianie",
+          "publisher": "Wydawnictwo Uniwersytetu Jagiellońskiego"
+        },
+        {
+          "authors": "Rosengren D.B.",
+          "year": 2018,
+          "title": "Building Motivational Interviewing Skills: A Practitioner Workbook (2nd ed.)",
+          "publisher": "Guilford Press"
+        }
+      ],
+      "tags": ["Dissonanz", "Widerstand", "Beibehaltungssprache", "Beziehung", "Motivierende Gesprächsführung"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "ttm",
+      "section": "approaches",
+      "title": "Transtheoretisches Modell (Stadien der Veränderung)",
+      "essence": "Das Transtheoretische Modell von Prochaska und DiClemente beschreibt Verhaltensänderung als Prozess, der Stadien durchläuft: Absichtslosigkeit, Absichtsbildung, Vorbereitung, Handlung und Aufrechterhaltung. Rückfall gilt als häufiger Teil des Zyklus, nicht als Versagen. Das Modell hilft, Interventionen an die aktuelle Veränderungsbereitschaft anzupassen, und zeigt, welche Veränderungsprozesse zu welchem Stadium passen.",
+      "whenToUse": [
+        "In der pädagogischen Diagnostik – um die Veränderungsbereitschaft in einem bestimmten Bereich einzuschätzen.",
+        "Bei der Planung eines individuellen Programms, damit die Ziele zum Stadium passen.",
+        "Wenn eine Person nach einem Rückfall zurückkommt und die Erfahrung normalisiert werden soll.",
+        "In Prävention und Bildung – um die Botschaft auf die Zielgruppe abzustimmen."
+      ],
+      "techniques": [
+        "Absichtslosigkeit: Beziehung aufbauen, Rückmeldung ohne Druck, Bewusstsein fördern.",
+        "Absichtsbildung: mit Ambivalenz arbeiten, Entscheidungswaage, Veränderungssprache.",
+        "Vorbereitung: ein gemeinsamer Plan, kleine Schritte, Selbstwirksamkeit stärken.",
+        "Handlung: Stimuluskontrolle, alternatives Verhalten, soziale Unterstützung, Fortschritte belohnen.",
+        "Aufrechterhaltung: Rückfallprophylaxe, einen Lebensstil ohne Substanz oder Problemverhalten aufbauen.",
+        "Das Stadium für jedes Problem separat einschätzen (z. B. können Alkohol und Glücksspiel in verschiedenen Stadien sein)."
+      ],
+      "phrases": [
+        "Wie sehr denken Sie überhaupt darüber nach, etwas an Ihrem Trinken zu verändern?",
+        "Es klingt, als würden Sie Vor- und Nachteile abwägen – das ist völlig normal.",
+        "Was müsste passieren, damit Ihnen das wichtiger wird?",
+        "Ein Rückfall löscht nicht aus, was Sie schon erreicht haben. Was haben wir daraus gelernt?"
+      ],
+      "pitfalls": [
+        "Die Stadien als starre Schubladen behandeln und der Person ein Etikett „aufkleben“.",
+        "Jemandem in der Absichtslosigkeit Handlung vorschlagen (z. B. Abstinenz ab morgen).",
+        "Das Stadium mit allgemeiner Motivation gleichsetzen, statt es für ein bestimmtes Verhalten einzuschätzen.",
+        "Den Einfluss des Umfelds (Familie, Peers, rechtliche Situation) auf die Bereitschaft ignorieren."
+      ],
+      "sources": [
+        {
+          "authors": "Prochaska J.O., DiClemente C.C.",
+          "year": 1983,
+          "title": "Stages and processes of self-change of smoking: Toward an integrative model of change. Journal of Consulting and Clinical Psychology, 51(3)"
+        },
+        {
+          "authors": "Prochaska J.O., DiClemente C.C., Norcross J.C.",
+          "year": 1992,
+          "title": "In search of how people change: Applications to addictive behaviors. American Psychologist, 47(9)"
+        },
+        {
+          "authors": "Prochaska J.O., Norcross J.C., DiClemente C.C.",
+          "year": 1994,
+          "title": "Changing for Good",
+          "publisher": "William Morrow"
+        },
+        {
+          "authors": "Miller W.R., Forcehimes A.A., Zweben A.",
+          "year": 2014,
+          "title": "Terapia uzależnień. Podręcznik dla profesjonalistów",
+          "publisher": "Wydawnictwo Uniwersytetu Jagiellońskiego"
+        }
+      ],
+      "tags": ["Stadien der Veränderung", "Bereitschaft", "Prochaska", "Rückfall"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "cbt",
+      "section": "approaches",
+      "title": "Kognitive Verhaltenstherapie bei Suchterkrankungen",
+      "essence": "Der kognitiv-verhaltenstherapeutische Ansatz (KVT) versteht Substanzkonsum und Problemverhalten als erlernte Muster, die durch Auslöser, Überzeugungen und Konsequenzen aufrechterhalten werden. Die Arbeit besteht aus einer funktionalen Analyse dieser Muster, der Veränderung konsumfördernder Überzeugungen und dem Training konkreter Bewältigungsfertigkeiten. Sie ist strukturiert, zielorientiert und arbeitet mit Hausaufgaben.",
+      "whenToUse": [
+        "Wenn die Person handlungsbereit ist und lernen möchte, mit Versuchungen umzugehen.",
+        "Wenn wiederkehrende Risikosituationen und automatische „erlaubende“ Gedanken auftreten.",
+        "In Einzel- und Gruppenarbeit, auch in Gefängnissen und Wiedereingliederungszentren.",
+        "Als Ergänzung zur Motivierenden Gesprächsführung, sobald sich Motivation gebildet hat."
+      ],
+      "techniques": [
+        "Funktionale Analyse: Auslöser – Gedanken – Gefühle – Verhalten – Konsequenzen (kurz- und langfristig).",
+        "Konsumfördernde Überzeugungen erkennen und hinterfragen („Ich habe es verdient“, „eins schadet nicht“).",
+        "Umgang mit Suchtdruck (Craving): aufschieben, ablenken, „Urge Surfing“ (auf der Welle reiten).",
+        "Ablehnungsfertigkeiten und Selbstsicherheitstraining.",
+        "Problemlösetraining und Tagesplanung, inklusive angenehmer Aktivitäten.",
+        "„Scheinbar irrelevante Entscheidungen“ erkennen, die zu Risikosituationen führen.",
+        "Hausaufgaben und ein Selbstbeobachtungstagebuch."
+      ],
+      "phrases": [
+        "Gehen wir das letzte Mal, als du zum Cannabis gegriffen hast, Schritt für Schritt durch.",
+        "Welcher Gedanke kam auf, kurz bevor Sie beschlossen haben, in den Laden zu gehen?",
+        "Was sagt Ihnen dieser Gedanke, und was spricht dafür und was dagegen?",
+        "Suchtdruck ist wie eine Welle – er steigt an, erreicht einen Höhepunkt und ebbt ab. Was können Sie in diesen 20 Minuten tun?",
+        "Lass uns üben, wie du deinen Kollegen Nein sagst, wenn sie dir wieder etwas anbieten."
+      ],
+      "pitfalls": [
+        "Belehren statt gemeinsam entdecken – die Person steigt aus.",
+        "Zu schnell zu Techniken übergehen, ohne Beziehung und Motivation aufzubauen.",
+        "Hausaufgaben geben und sie danach nie besprechen.",
+        "Den sozialen Kontext (Umfeld, Armut, Gewalt) ignorieren und das Problem auf „falsche Gedanken“ reduzieren."
+      ],
+      "sources": [
+        {
+          "authors": "Beck A.T., Wright F.D., Newman C.F., Liese B.S.",
+          "year": 1993,
+          "title": "Cognitive Therapy of Substance Abuse",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Carroll K.M.",
+          "year": 1998,
+          "title": "A Cognitive-Behavioral Approach: Treating Cocaine Addiction (NIDA Therapy Manuals for Drug Addiction, Manual 1)",
+          "publisher": "National Institute on Drug Abuse"
+        },
+        {
+          "authors": "Monti P.M., Kadden R.M., Rohsenow D.J., Cooney N.L., Abrams D.B.",
+          "year": 2002,
+          "title": "Treating Alcohol Dependence: A Coping Skills Training Guide (2nd ed.)",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Miller W.R., Forcehimes A.A., Zweben A.",
+          "year": 2014,
+          "title": "Terapia uzależnień. Podręcznik dla profesjonalistów",
+          "publisher": "Wydawnictwo Uniwersytetu Jagiellońskiego"
+        }
+      ],
+      "tags": ["KVT", "funktionale Analyse", "Gedanken", "Fertigkeiten", "Suchtdruck"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "relapse-prevention",
+      "section": "approaches",
+      "title": "Rückfallprophylaxe (Marlatt & Gordon)",
+      "essence": "Das Rückfallpräventionsmodell von Marlatt und Gordon geht davon aus, dass ein Rückfall ein Prozess ist, der lange vor dem erneuten Konsum beginnt; Risikosituationen und die Fähigkeit, sie zu bewältigen, spielen dabei eine zentrale Rolle. Das Modell unterscheidet einen einmaligen „Ausrutscher“ (Lapse) von einer vollständigen Rückkehr zum alten Muster (Relapse). Ein wichtiger Mechanismus ist der „Abstinenzverletzungseffekt“ – Schuldgefühle und Alles-oder-nichts-Denken, die aus einem Ausrutscher einen Rückfall machen.",
+      "whenToUse": [
+        "Nachdem Abstinenz oder Reduktion erreicht wurde – in der Phase der Aufrechterhaltung.",
+        "Vor Zeiten erhöhten Risikos: Entlassung aus dem Gefängnis, Ende einer stationären Behandlung, Ferien.",
+        "Nach einem Ausrutscher oder Rückfall – um zu analysieren und zu lernen statt zu beschuldigen.",
+        "In Programmen der sozialen Wiedereingliederung und in der Bewährungshilfe."
+      ],
+      "techniques": [
+        "Landkarte der Risikosituationen: negative Gefühle, Konflikte, sozialer Druck, gute Stimmung, Kontrolle austesten.",
+        "Ein Bewältigungsplan für jede Risikosituation, plus Üben der Fertigkeiten.",
+        "Warnzeichen und „scheinbar irrelevante Entscheidungen“ erkennen.",
+        "Arbeit mit dem Abstinenzverletzungseffekt: einen Ausrutscher als Lernerfahrung umdeuten.",
+        "Lebensstil-Balance: „Müssen“ versus „Wollen“, gesunde Belohnungen.",
+        "Ein schriftlicher Notfallplan: wen ich anrufe, wohin ich gehe, was ich in der ersten Stunde tue.",
+        "Achtsamkeit (MBRP) als Weg, Suchtdruck wahrzunehmen, ohne automatisch zu reagieren."
+      ],
+      "phrases": [
+        "Welche Situationen werden für Sie nach dem Austritt aus dem Zentrum am schwierigsten sein?",
+        "Was sind die ersten Anzeichen, dass Sie sich einer gefährlichen Situation nähern?",
+        "Ein Ausrutscher muss nicht die Rückkehr zum alten Trinken bedeuten. Was können Sie jetzt sofort tun?",
+        "Schreiben wir auf, wen Sie anrufen, wenn starker Suchtdruck kommt.",
+        "Was in Ihrer Woche ist nur Pflicht, und was macht Ihnen Freude?"
+      ],
+      "pitfalls": [
+        "Einen Ausrutscher als Katastrophe behandeln und die Person beschämen.",
+        "Ein vager Plan („Ich meide schlechte Situationen“) statt konkreter Schritte.",
+        "Sich nur auf Vermeidung konzentrieren, ohne einen befriedigenden Lebensstil aufzubauen.",
+        "Den Plan nicht anpassen, wenn sich die Lebenssituation der Person verändert."
+      ],
+      "sources": [
+        {
+          "authors": "Marlatt G.A., Gordon J.R. (red./eds.)",
+          "year": 1985,
+          "title": "Relapse Prevention: Maintenance Strategies in the Treatment of Addictive Behaviors",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Marlatt G.A., Donovan D.M. (red./eds.)",
+          "year": 2005,
+          "title": "Relapse Prevention: Maintenance Strategies in the Treatment of Addictive Behaviors (2nd ed.)",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Witkiewitz K., Marlatt G.A.",
+          "year": 2004,
+          "title": "Relapse prevention for alcohol and drug problems: That was Zen, this is Tao. American Psychologist, 59(4)"
+        },
+        {
+          "authors": "Bowen S., Chawla N., Marlatt G.A.",
+          "year": 2011,
+          "title": "Mindfulness-Based Relapse Prevention for Addictive Behaviors: A Clinician’s Guide",
+          "publisher": "Guilford Press"
+        }
+      ],
+      "tags": ["Rückfall", "Risikosituationen", "Marlatt", "Notfallplan", "Aufrechterhaltung"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "sfbt",
+      "section": "approaches",
+      "title": "Lösungsorientierte Kurztherapie (SFBT)",
+      "essence": "Die lösungsorientierte Kurztherapie, entwickelt von Steve de Shazer und Insoo Kim Berg, verlagert die Aufmerksamkeit von der Problemanalyse auf die Konstruktion von Lösungen. Sie geht davon aus, dass die Person Ressourcen hat und dass es in ihrem Leben bereits Ausnahmen gibt – Momente, in denen das Problem kleiner ist. Das Gespräch konzentriert sich auf die bevorzugte Zukunft, kleine Schritte und das, was schon funktioniert. Es ist ein kurzer Ansatz und funktioniert auch gut ausserhalb des Therapiezimmers.",
+      "whenToUse": [
+        "Wenn die Person entmutigt ist und nur auf Misserfolge schaut.",
+        "In kurzen Kontakten: Krisenintervention, Soziale Arbeit, Schule, Bewährungshilfe.",
+        "Wenn die Person das Etikett „Sucht“ ablehnt, aber möchte, dass es besser wird.",
+        "Um in einem individuellen Programm konkrete, messbare Ziele zu formulieren."
+      ],
+      "techniques": [
+        "Die Wunderfrage: Wie sähe der Tag aus, wenn das Problem über Nacht verschwunden wäre?",
+        "Nach Ausnahmen suchen: Wann war das Problem kleiner oder nicht da, und was war damals anders?",
+        "Skalierungsfragen (0–10) zu Fortschritt, Zuversicht und Motivation.",
+        "Bewältigungsfragen: Wie haben Sie es geschafft, eine schwere Zeit durchzustehen?",
+        "Auf Fakten gestützte Komplimente und eine Aufgabe am Ende der Sitzung.",
+        "Ziele positiv und konkret formulieren („was Sie stattdessen tun werden“)."
+      ],
+      "phrases": [
+        "Angenommen, über Nacht geschieht ein Wunder und das Problem ist weg. Woran würden Sie es am Morgen merken?",
+        "Wann ist es Ihnen das letzte Mal gelungen, nicht zu spielen, obwohl Sie wollten? Wie haben Sie das gemacht?",
+        "Wo stehen Sie heute auf einer Skala von 0 bis 10? Was macht es zu einer 3 und nicht zu einer 0?",
+        "Woran würden Sie merken, dass Sie einen Punkt höher sind?",
+        "Wie haben Sie es geschafft, diese schwere Woche durchzustehen?"
+      ],
+      "pitfalls": [
+        "Die Wunderfrage mechanisch stellen, ohne Beziehung und Gespür für den richtigen Zeitpunkt.",
+        "Risiken übersehen (z. B. Suizidrisiko, Gewalt), um „auf Lösungen zu fokussieren“.",
+        "Erzwungener Optimismus, der schwierige Gefühle der Person entwertet.",
+        "Zu grosse Ziele oder Ziele als Abwesenheit formuliert („nicht trinken“) statt als Vorhandensein eines neuen Verhaltens."
+      ],
+      "sources": [
+        {
+          "authors": "de Shazer S.",
+          "year": 1985,
+          "title": "Keys to Solution in Brief Therapy",
+          "publisher": "W.W. Norton"
+        },
+        {
+          "authors": "Berg I.K., Miller S.D.",
+          "year": 1992,
+          "title": "Working with the Problem Drinker: A Solution-Focused Approach",
+          "publisher": "W.W. Norton"
+        },
+        {
+          "authors": "De Jong P., Berg I.K.",
+          "year": 2013,
+          "title": "Interviewing for Solutions (4th ed.)",
+          "publisher": "Brooks/Cole"
+        }
+      ],
+      "tags": ["Lösungen", "Wunderfrage", "Ausnahmen", "Skalierung", "Ressourcen"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "group-tsf",
+      "section": "approaches",
+      "title": "Gruppentherapie und Zwölf-Schritte-Förderung",
+      "essence": "Gruppenarbeit ist die wichtigste Hilfeform in der polnischen Suchtbehandlung und in der sozialen Rehabilitation. Die Gruppe bietet Unterstützung, Zugehörigkeit, Lernen von anderen und das Üben sozialer Kompetenzen; Yalom beschrieb diese Mechanismen als therapeutische Wirkfaktoren. Die Zwölf-Schritte-Förderung (Twelve-Step Facilitation, TSF) ist ein strukturierter Ansatz, der der Person hilft, Selbsthilfegemeinschaften (AA, NA, Al-Anon) kennenzulernen und sich darin zu engagieren. Studien zeigen, dass die Teilnahme an Zwölf-Schritte-Gruppen anhaltende Abstinenz unterstützt.",
+      "whenToUse": [
+        "In Suchtbehandlungszentren, ambulanten Fachstellen, Gefängnissen und Jugendeinrichtungen.",
+        "Wenn die Person isoliert ist und Unterstützung von Menschen mit ähnlicher Erfahrung braucht.",
+        "Bei der Vorbereitung auf das Behandlungsende – um langfristige Unterstützung sicherzustellen (Gemeinschaften).",
+        "Wenn das Ziel ein Training sozialer Kompetenzen und Feedback ist."
+      ],
+      "techniques": [
+        "Einen Vertrag und Gruppenregeln vereinbaren (Vertraulichkeit, Respekt, von sich selbst sprechen).",
+        "Therapeutische Wirkfaktoren nutzen: Hoffnung wecken, Universalität, Altruismus, interpersonelles Lernen.",
+        "Blitzlichtrunden, Feedback, Rollenspiele, Arbeit an realen Situationen der Mitglieder.",
+        "TSF: die ersten Schritte besprechen, zum Besuch von Meetings ermutigen und eine/n Sponsor/in finden.",
+        "Das erste Meeting gemeinsam vorbereiten und danach nachbesprechen.",
+        "Über Gruppen für Angehörige (Al-Anon, Alateen) und andere Selbsthilfegruppen informieren."
+      ],
+      "phrases": [
+        "Wer hier kennt das Gefühl, von dem Marek spricht?",
+        "Wie war es für Sie, das Feedback der Gruppe zu hören?",
+        "Was ist Ihnen bei Ihrem ersten Meeting aufgefallen?",
+        "Niemand muss dem zustimmen – mich interessiert, welche Teile für Sie nützlich sind.",
+        "Wer könnte ausserhalb der Gruppe Ihre Unterstützungsperson sein?"
+      ],
+      "pitfalls": [
+        "Ein konfrontativer, beschämender Stil („heisser Stuhl“) – besonders schädlich für Menschen mit Traumata.",
+        "Die Zwölf-Schritte-Ideologie Menschen aufdrängen, zu denen sie nicht passt, statt Alternativen aufzuzeigen.",
+        "Nicht reagieren, wenn Gruppenregeln verletzt werden oder eine Person dominiert.",
+        "Gruppentherapie mit einem AA-Meeting gleichsetzen – es sind verschiedene Formate mit verschiedenen Zielen."
+      ],
+      "sources": [
+        {
+          "authors": "Yalom I.D., Leszcz M.",
+          "year": 2005,
+          "title": "The Theory and Practice of Group Psychotherapy (5th ed.)",
+          "publisher": "Basic Books"
+        },
+        {
+          "authors": "Nowinski J., Baker S., Carroll K.",
+          "year": 1992,
+          "title": "Twelve Step Facilitation Therapy Manual (Project MATCH Monograph Series, Vol. 1)",
+          "publisher": "National Institute on Alcohol Abuse and Alcoholism"
+        },
+        {
+          "authors": "Kelly J.F., Humphreys K., Ferri M.",
+          "year": 2020,
+          "title": "Alcoholics Anonymous and other 12-step programs for alcohol use disorder. Cochrane Database of Systematic Reviews"
+        },
+        {
+          "authors": "Project MATCH Research Group",
+          "year": 1997,
+          "title": "Matching alcoholism treatments to client heterogeneity: Project MATCH posttreatment drinking outcomes. Journal of Studies on Alcohol, 58(1)"
+        }
+      ],
+      "tags": ["Gruppe", "zwölf Schritte", "Selbsthilfe", "Gemeinschaft", "Soziotherapie"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "cra",
+      "section": "approaches",
+      "title": "Gemeindeorientierter Verstärkungsansatz (CRA)",
+      "essence": "Der Community Reinforcement Approach (gemeindeorientierter Verstärkungsansatz) beruht auf der Idee, dass ein Leben ohne Substanz lohnender sein muss als ein Leben mit ihr. Die Arbeit stärkt systematisch die Belohnungen durch Arbeit, Beziehungen, Familie, Freizeit und soziale Aktivität, die mit dem Konsum konkurrieren. CRA verbindet funktionale Analyse, Fertigkeitentraining und Hilfe bei praktischen Lebensfragen – was gut zur Perspektive der sozialen Rehabilitation passt.",
+      "whenToUse": [
+        "Wenn die Person ausser dem Konsum wenige Quellen der Zufriedenheit hat (Arbeitslosigkeit, Einsamkeit, keine Beschäftigung).",
+        "In der sozialen Wiedereingliederung: nach der Entlassung aus dem Gefängnis, in Angeboten für obdachlose Menschen.",
+        "Wenn die Person Abstinenz probeweise ausprobieren möchte statt „für immer“.",
+        "Mit Paaren oder Familien, wenn Beziehungen zu einer Quelle der Verstärkung werden können."
+      ],
+      "techniques": [
+        "Funktionale Analyse des Konsums und gesunder Verhaltensweisen.",
+        "Abstinenz auf Probe (Sobriety Sampling): ein vereinbarter, zeitlich begrenzter Zeitraum ohne Substanz.",
+        "Zufriedenheitsskala über verschiedene Lebensbereiche und gemeinsame Zielsetzung.",
+        "Berufsberatung und Hilfe bei der Suche nach Arbeit und Beschäftigung.",
+        "Kommunikations- und Problemlösetraining, Paartherapie.",
+        "Substanzfreie Freizeit und Aktivitäten planen (Treffpunkt, Hobbys, Sport)."
+      ],
+      "phrases": [
+        "Auf einer Skala von 1 bis 10: Wie zufrieden sind Sie mit Arbeit, Beziehungen, Freizeit?",
+        "Was könnte Ihnen den gleichen Kick geben wie das Trinken, aber ohne die Kosten?",
+        "Sollen wir zwei Wochen ohne Cannabis ausprobieren – als Experiment, nicht als Urteil?",
+        "Wer in Ihrem Umfeld unterstützt die Veränderung, und wer erschwert sie?"
+      ],
+      "pitfalls": [
+        "Sich nur auf Verbote konzentrieren, statt alternative Belohnungsquellen aufzubauen.",
+        "Reale Hürden ignorieren (kein Ausweis, keine Wohnung, keine Arbeit) – CRA erfordert praktische Unterstützung.",
+        "Lebensziele aufzwingen, statt sie gemeinsam festzulegen."
+      ],
+      "sources": [
+        {
+          "authors": "Hunt G.M., Azrin N.H.",
+          "year": 1973,
+          "title": "A community-reinforcement approach to alcoholism. Behaviour Research and Therapy, 11(1)"
+        },
+        {
+          "authors": "Meyers R.J., Smith J.E.",
+          "year": 1995,
+          "title": "Clinical Guide to Alcohol Treatment: The Community Reinforcement Approach",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Miller W.R., Forcehimes A.A., Zweben A.",
+          "year": 2014,
+          "title": "Terapia uzależnień. Podręcznik dla profesjonalistów",
+          "publisher": "Wydawnictwo Uniwersytetu Jagiellońskiego"
+        }
+      ],
+      "tags": ["Gemeindeorientierte Verstärkung", "CRA", "Lebensstil", "Wiedereingliederung", "Belohnungen"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "craft",
+      "section": "approaches",
+      "title": "CRAFT – Arbeit mit Angehörigen einer konsumierenden Person",
+      "essence": "CRAFT (Community Reinforcement and Family Training) ist ein Programm für Angehörige einer Person, die Substanzen konsumiert und eine Behandlung ablehnt. Es vermittelt Angehörigen, substanzfreies Verhalten zu verstärken, den Konsum nicht mehr zu belohnen, auf die eigene Sicherheit und das eigene Wohlbefinden zu achten und einen guten Moment zu wählen, um die Person zur Behandlung einzuladen. In Studien führte CRAFT häufiger zum Behandlungseintritt als eine konfrontative „Intervention“ oder der alleinige Besuch von Al-Anon.",
+      "whenToUse": [
+        "Wenn ein Elternteil, eine Partnerin, ein Partner oder eine andere nahestehende Person zur Fachperson kommt und die konsumierende Person Hilfe ablehnt.",
+        "Wenn Schreien, Bitten, Drohungen oder Rückzug die Familie prägen und nicht wirken.",
+        "Wenn Angehörige erschöpft sind und auch für sich selbst sorgen müssen.",
+        "Nicht als erster Schritt bei Gewalt zu Hause – dann hat die Sicherheit Vorrang."
+      ],
+      "techniques": [
+        "Funktionale Analyse des Konsums aus Sicht der Angehörigen: Auslöser, Muster, Folgen.",
+        "Einschätzung des Gewaltrisikos und ein Sicherheitsplan.",
+        "Training positiver Kommunikation (kurz, konkret, Ich-Botschaften, Hilfe anbieten).",
+        "Substanzfreies Verhalten verstärken und die natürlichen Folgen des Konsums eintreten lassen.",
+        "Für das eigene Leben und die eigenen Bedürfnisse der Angehörigen sorgen.",
+        "Die Einladung zur Behandlung vorbereiten und einen guten Moment wählen (z. B. nach einem schwierigen Ereignis, in einem Moment der Reue)."
+      ],
+      "phrases": [
+        "Was passiert normalerweise, kurz bevor Ihr Sohn weggeht und berauscht zurückkommt?",
+        "Machen wir aus „Du bist schon wieder betrunken!“ einen Satz, der sagt, was Sie fühlen und was Sie brauchen.",
+        "Wenn Ihr Mann nüchtern ist – was könnten Sie tun, damit diese Zeit für Sie beide angenehm ist?",
+        "Gibt es etwas, das Sie tun und das ihm das Trinken unbeabsichtigt erleichtert?",
+        "Was haben Sie in letzter Zeit nur für sich selbst getan?"
+      ],
+      "pitfalls": [
+        "Der Familie die Schuld am Problem geben oder andeuten, die Angehörigen „müssten“ die konsumierende Person heilen.",
+        "Die Einschätzung von Gewalt und Sicherheit überspringen.",
+        "Das Aufhören mit dem „Retten“ mit Bestrafung oder Entzug von Zuwendung verwechseln.",
+        "Sich nur auf die konsumierende Person konzentrieren und die Bedürfnisse der Angehörigen vernachlässigen."
+      ],
+      "sources": [
+        {
+          "authors": "Meyers R.J., Wolfe B.L.",
+          "year": 2004,
+          "title": "Get Your Loved One Sober: Alternatives to Nagging, Pleading, and Threatening",
+          "publisher": "Hazelden"
+        },
+        {
+          "authors": "Smith J.E., Meyers R.J.",
+          "year": 2004,
+          "title": "Motivating Substance Abusers to Enter Treatment: Working with Family Members",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Miller W.R., Meyers R.J., Tonigan J.S.",
+          "year": 1999,
+          "title": "Engaging the unmotivated in treatment for alcohol problems: A comparison of three strategies for intervention through family members. Journal of Consulting and Clinical Psychology, 67(5)"
+        }
+      ],
+      "tags": ["CRAFT", "Familie", "Angehörige", "Kommunikation", "Behandlungseintritt"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "contingency-management",
+      "section": "approaches",
+      "title": "Kontingenzmanagement",
+      "essence": "Kontingenzmanagement ist ein verhaltenstherapeutischer Ansatz, bei dem die Person unmittelbare, greifbare Belohnungen für ein objektiv überprüftes Zielverhalten erhält, z. B. ein negatives Testergebnis oder die Anwesenheit. Es gehört zu den Methoden mit der stärksten Evidenz, besonders beim Konsum von Stimulanzien. Zentrale Prinzipien sind Unmittelbarkeit, Vorhersehbarkeit und ein steigender Belohnungswert für aufeinanderfolgende Erfolge.",
+      "whenToUse": [
+        "Wenn Anwesenheit, Pünktlichkeit oder das Erledigen von Aufgaben verbessert werden sollen.",
+        "In Settings mit Anreizsystemen (Jugendheime, Behandlungszentren, Wiedereingliederungsprogramme).",
+        "Mit Jugendlichen, die ferne Vorteile wenig motivieren.",
+        "In Kombination mit KVT oder CRA, um deren Wirkung zu verstärken."
+      ],
+      "techniques": [
+        "Das Zielverhalten und die Art seiner Überprüfung klar definieren.",
+        "Unmittelbar nach dem Verhalten belohnen, zu Beginn des Programms bei jedem Erfolg.",
+        "Steigender Belohnungswert für aufeinanderfolgende Erfolge und ein „Reset“ nach einem Misserfolg.",
+        "Losverfahren (Fishbowl), das die Programmkosten senkt.",
+        "Gutscheine für Dinge oder Aktivitäten, die einen neuen Lebensstil unterstützen.",
+        "Äussere Belohnungen schrittweise ausschleichen und zu natürlichen Verstärkern übergehen."
+      ],
+      "phrases": [
+        "Für jede Woche mit voller Anwesenheit bekommst du einen Punkt – nach fünf Punkten wählst du eine Belohnung.",
+        "Das ist schon deine dritte Ziehung in Folge – du siehst, es funktioniert.",
+        "Diese Woche hat es nicht geklappt, wir beginnen wieder neu zu zählen. Was hilft dir beim nächsten Mal?",
+        "Was wäre für dich eine wirklich wertvolle Belohnung?"
+      ],
+      "pitfalls": [
+        "Verzögerte oder inkonsequente Belohnungen – sie schwächen die Wirkung.",
+        "Strafen statt Belohnungen einsetzen oder Grundrechte entziehen.",
+        "Ziele, die nicht überprüfbar oder für den Anfang zu schwierig sind.",
+        "Das Programm abrupt beenden, ohne zu natürlichen Verstärkern überzugehen."
+      ],
+      "sources": [
+        {
+          "authors": "Higgins S.T., Silverman K., Heil S.H. (red./eds.)",
+          "year": 2008,
+          "title": "Contingency Management in Substance Abuse Treatment",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Petry N.M.",
+          "year": 2000,
+          "title": "A comprehensive guide to the application of contingency management procedures in clinical settings. Drug and Alcohol Dependence, 58(1–2)"
+        },
+        {
+          "authors": "Petry N.M.",
+          "year": 2012,
+          "title": "Contingency Management for Substance Abuse Treatment: A Guide to Implementing This Evidence-Based Practice",
+          "publisher": "Routledge"
+        }
+      ],
+      "tags": ["Verstärkung", "Belohnungen", "verhaltenstherapeutisch", "Motivation", "Anreizsystem"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "dbt-skills",
+      "section": "approaches",
+      "title": "DBT-Fertigkeiten",
+      "essence": "Die Dialektisch-Behaviorale Therapie (DBT) von Marsha Linehan verbindet verhaltenstherapeutische Techniken mit Akzeptanz und Achtsamkeit. Das Fertigkeitentraining (Skills-Training) umfasst vier Module: Achtsamkeit, Stresstoleranz, Emotionsregulation und zwischenmenschliche Fertigkeiten. Bei Suchterkrankungen ist DBT besonders hilfreich für Menschen mit starker emotionaler Dysregulation, impulsivem Verhalten und Selbstverletzung. Pädagogische Fachpersonen können ausgewählte Fertigkeiten vermitteln; eine vollständige DBT erfordert ein ausgebildetes Team.",
+      "whenToUse": [
+        "Wenn der Konsum vor allem dazu dient, intensive Gefühle zu „löschen“.",
+        "Bei Klient/innen mit Impulsivität, Wutausbrüchen, Selbstverletzung (in Zusammenarbeit mit Fachärzt/innen und Therapeut/innen).",
+        "In Jugendeinrichtungen und Gefängnissen – als Training der Emotionsregulation.",
+        "Wenn die Person schnelle Wege braucht, eine Krise ohne Konsum zu überstehen."
+      ],
+      "techniques": [
+        "Achtsamkeit: beobachten, beschreiben, teilnehmen, nicht wertend.",
+        "Stresstoleranz: Fertigkeiten zum Überstehen von Krisen (z. B. TIPP, STOP, Ablenkung, Selbstberuhigung über die Sinne).",
+        "Radikale Akzeptanz dessen, was sich nicht ändern lässt.",
+        "Emotionsregulation: Gefühle benennen, entgegengesetztes Handeln, für den Körper sorgen (Schlaf, Ernährung).",
+        "Zwischenmenschliche Fertigkeiten: um etwas bitten und Nein sagen, ohne Beziehung und Selbstachtung zu verlieren.",
+        "Verhaltensanalyse (Kettenanalyse) der Verhaltensweisen, die zu Konsum oder Selbstverletzung führen.",
+        "Dialektische Abstinenz: volle Abstinenz anstreben und nach einem Ausrutscher schnell zurückkehren."
+      ],
+      "phrases": [
+        "Wie stark ist diese Wut gerade, von 0 bis 100?",
+        "Bevor du etwas tust – STOP: anhalten, einen Schritt zurücktreten, beobachten, achtsam weitermachen.",
+        "Deine Reaktion ist verständlich, wenn man bedenkt, was du erlebt hast. Suchen wir einen Weg, der dich weniger kostet.",
+        "Was kannst du in den nächsten 10 Minuten tun, um die Situation nicht zu verschlimmern?",
+        "Gehen wir Glied für Glied durch, was passiert ist, bevor du zu den Tabletten gegriffen hast."
+      ],
+      "pitfalls": [
+        "Fertigkeiten vermitteln, ohne Gefühle zu validieren – die Person fühlt sich unverstanden.",
+        "Einzelne Übungen „DBT“ nennen, ohne entsprechende Ausbildung und Struktur.",
+        "Fertigkeiten erst mitten in der Krise einführen, ohne sie vorher geübt zu haben.",
+        "Das Suizidrisiko herunterspielen – es erfordert eine sofortige Abklärung durch eine Fachperson."
+      ],
+      "sources": [
+        {
+          "authors": "Linehan M.M.",
+          "year": 2015,
+          "title": "DBT Skills Training Manual (2nd ed.)",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Linehan M.M., Schmidt H., Dimeff L.A., Craft J.C., Kanter J., Comtois K.A.",
+          "year": 1999,
+          "title": "Dialectical behavior therapy for patients with borderline personality disorder and drug-dependence. American Journal on Addictions, 8(4)"
+        },
+        {
+          "authors": "Dimeff L.A., Linehan M.M.",
+          "year": 2008,
+          "title": "Dialectical behavior therapy for substance abusers. Addiction Science & Clinical Practice, 4(2)"
+        }
+      ],
+      "tags": ["DBT", "Gefühle", "Achtsamkeit", "Krise", "Regulation"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "harm-reduction",
+      "section": "approaches",
+      "title": "Schadensminderung",
+      "essence": "Schadensminderung (Harm Reduction) ist ein Ansatz, der die gesundheitlichen, sozialen und rechtlichen Schäden im Zusammenhang mit Substanzkonsum oder Risikoverhalten verringern will – ohne sofortige Abstinenz zu verlangen. Er beruht auf Pragmatismus, Respekt und darauf, Menschen dort abzuholen, wo sie stehen. Er umfasst Angebote im Gemeinwesen (z. B. Spritzentausch, aufsuchende Arbeit, Opioid-Agonisten-Therapie) ebenso wie individuelle Arbeit an risikoärmerem Konsum und kontrolliertem Trinken.",
+      "whenToUse": [
+        "Wenn die Person nicht zur Abstinenz bereit ist, das Risiko aber verringert werden kann.",
+        "In der Gassenarbeit, mit obdachlosen Menschen, in Programmen nach der Haftentlassung.",
+        "Wenn das Ziel ist, den Kontakt zu halten und schrittweise Motivation für weitere Veränderungen aufzubauen.",
+        "Bei Menschen mit hohem Überdosisrisiko (z. B. direkt nach der Entlassung aus dem Gefängnis)."
+      ],
+      "techniques": [
+        "Gemeinsam mit der Person ihre eigenen Ziele festlegen – von risikoärmerem Konsum bis zur Abstinenz.",
+        "Aufklärung über Risiken: Mischkonsum, verringerte Toleranz nach einer Pause, Konsum allein.",
+        "Über Spritzentausch, Drug Checking und die Verfügbarkeit von Naloxon informieren.",
+        "Kontrolliertes Trinken: ein Plan, ein Tagebuch, Grenzen, alkoholfreie Tage (vgl. „Guided Self-Change“ nach Sobell).",
+        "Vermittlung in eine Opioid-Agonisten-Therapie und andere Angebote ohne Abstinenzanforderung.",
+        "Vertrauen und kontinuierlichen Kontakt als Wert an sich aufbauen."
+      ],
+      "phrases": [
+        "Wir müssen nicht sofort über das Aufhören reden. Was könnte Ihren Konsum wenigstens ein bisschen sicherer machen?",
+        "Nach einer Pause verträgt Ihr Körper weniger – das ist eine Zeit mit besonderem Überdosisrisiko.",
+        "Gibt es jemanden, der bei Ihnen sein könnte, falls etwas schiefgeht?",
+        "Welche Veränderungen wären für Sie im nächsten Monat realistisch?"
+      ],
+      "pitfalls": [
+        "Schadensminderung als „Erlaubnis zum Drogenkonsum“ verstehen – es ist ein Ansatz, der Leben und Gesundheit schützt.",
+        "Abstinenz zur Bedingung für Hilfe machen, was den Kontakt abbrechen lässt.",
+        "Ratschläge zur Dosierung von Substanzen oder Medikamenten geben – das übersteigt die Kompetenzen pädagogischer Fachpersonen.",
+        "Die lokalen Angebote nicht kennen, an die vermittelt werden kann."
+      ],
+      "sources": [
+        {
+          "authors": "Marlatt G.A. (red./ed.)",
+          "year": 1998,
+          "title": "Harm Reduction: Pragmatic Strategies for Managing High-Risk Behaviors",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Marlatt G.A., Larimer M.E., Witkiewitz K. (red./eds.)",
+          "year": 2012,
+          "title": "Harm Reduction: Pragmatic Strategies for Managing High-Risk Behaviors (2nd ed.)",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Tatarsky A. (red./ed.)",
+          "year": 2002,
+          "title": "Harm Reduction Psychotherapy: A New Treatment for Drug and Alcohol Problems",
+          "publisher": "Jason Aronson"
+        },
+        {
+          "authors": "Rhodes T., Hedrich D. (red./eds.)",
+          "year": 2010,
+          "title": "Harm reduction: evidence, impacts and challenges (EMCDDA Monographs 10)",
+          "publisher": "European Monitoring Centre for Drugs and Drug Addiction"
+        }
+      ],
+      "tags": ["Schadensminderung", "Sicherheit", "Konsumreduktion", "aufsuchende Arbeit", "Gesundheit"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "behavioural-addictions",
+      "section": "approaches",
+      "title": "Verhaltenssüchte (Glücksspiel, Internet, Gaming, Kaufen)",
+      "essence": "Verhaltenssüchte sind verfestigte Verhaltensmuster – etwa Glücksspiel, Gaming, Internetnutzung oder Kaufen –, die trotz Schäden ausser Kontrolle geraten. Die ICD-11 kennt die Glücksspielstörung (6C50) und die Computerspielstörung (Gaming Disorder, 6C51); andere Formen werden vor allem in der Forschung beschrieben oder den Störungen der Impulskontrolle zugeordnet. Die Hilfe stützt sich meist auf Motivierende Gesprächsführung, KVT und Familienarbeit; beim Internet ist das Ziel eine kontrollierte Nutzung statt vollständiger Abstinenz.",
+      "whenToUse": [
+        "Wenn die Person die Kontrolle über die für das Verhalten aufgewendete Zeit oder das Geld verliert.",
+        "Wenn Schulden, Lügen, Familienkonflikte oder ein Leistungsabfall in Schule oder Arbeit auftreten.",
+        "In Schulen und Jugendtreffs – mit Jugendlichen, die Games und soziale Medien übermässig nutzen.",
+        "Wenn es gemeinsam mit Substanzkonsum, Depression oder ADHS auftritt."
+      ],
+      "techniques": [
+        "Selbstbeobachtung: ein Tagebuch über Zeit, Ausgaben, Gefühle vor und nach dem Verhalten.",
+        "Stimuluskontrolle: Websites und Apps sperren, Zugang zu Bargeld begrenzen, Selbstsperre bei Plattformen.",
+        "Arbeit mit glücksspieltypischen Denkverzerrungen (Kontrollillusion, „Verlusten hinterherjagen“, Spielerfehlschluss).",
+        "Alternative Aktivitäten und Quellen der Zufriedenheit aufbauen.",
+        "Ein Schuldenplan und Kontakt zur Schuldenberatung, Unterstützung für die Familie.",
+        "Familienvereinbarungen zur Gerätenutzung (bei Jugendlichen), ausgehandelt statt aufgezwungen."
+      ],
+      "phrases": [
+        "Wie viel Zeit und Geld hat das Gamen letzte Woche gekostet?",
+        "Was spürst du normalerweise kurz bevor du das Spiel startest?",
+        "Wenn Sie denken „jetzt hole ich es zurück“ – was passiert dann meistens?",
+        "Was könnte es Ihnen erschweren, in Momenten grösster Versuchung Wetten abzuschliessen?",
+        "Wie möchtest du dein Handy nutzen, damit du es im Griff hast und nicht umgekehrt?"
+      ],
+      "pitfalls": [
+        "Intensives, aber unproblematisches Gamen oder Internetnutzung pathologisieren.",
+        "Finanzielle und rechtliche Fragen ignorieren, die oft am dringendsten sind.",
+        "Jugendlichen Geräte zur Strafe wegnehmen, ohne über die Funktion des Verhaltens zu sprechen.",
+        "Das Suizidrisiko bei Menschen mit Glücksspielproblemen und hohen Schulden unterschätzen."
+      ],
+      "sources": [
+        {
+          "authors": "Griffiths M.D.",
+          "year": 2005,
+          "title": "A “components” model of addiction within a biopsychosocial framework. Journal of Substance Use, 10(4)"
+        },
+        {
+          "authors": "Blaszczynski A., Nower L.",
+          "year": 2002,
+          "title": "A pathways model of problem and pathological gambling. Addiction, 97(5)"
+        },
+        {
+          "authors": "Petry N.M.",
+          "year": 2005,
+          "title": "Pathological Gambling: Etiology, Comorbidity, and Treatment",
+          "publisher": "American Psychological Association"
+        },
+        {
+          "authors": "Kuss D.J., Griffiths M.D.",
+          "year": 2012,
+          "title": "Internet gaming addiction: A systematic review of empirical research. International Journal of Mental Health and Addiction, 10(2)"
+        }
+      ],
+      "tags": ["Glücksspiel", "Gaming", "Internet", "Kaufsucht", "Verhaltenssüchte"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "adolescents",
+      "section": "approaches",
+      "title": "Substanzkonsum bei Jugendlichen",
+      "essence": "Bei jungen Menschen ist Substanzkonsum oft Teil eines breiteren Musters von Risikoverhalten und hängt mit der Entwicklung, den Beziehungen zu Gleichaltrigen sowie der familiären und schulischen Situation zusammen. Das jugendliche Gehirn ist besonders anfällig für Schäden, und ein früher Konsumbeginn erhöht das Risiko späterer Probleme. Wirksame Hilfe verbindet die Arbeit mit den Jugendlichen (Motivierende Gesprächsführung, Fertigkeitentraining) mit der Arbeit mit Familie und Umfeld und berücksichtigt Risiko- und Schutzfaktoren.",
+      "whenToUse": [
+        "In Schulen, Jugendtreffs, Jugendheimen, Jugendeinrichtungen und in der familienbezogenen Bewährungshilfe.",
+        "Wenn der Konsum mit Schulabsentismus, Konflikten mit dem Gesetz oder familiären Problemen einhergeht.",
+        "Zur Früherkennung und Frühintervention bei Jugendlichen, die mit Substanzen experimentieren.",
+        "Bei der Planung von Prävention auf selektiver und indizierter Ebene."
+      ],
+      "techniques": [
+        "An Jugendliche angepasste Motivierende Gesprächsführung: kürzere Aussagen, Respekt vor der Autonomie, kein Moralisieren.",
+        "Risiko- und Schutzfaktoren in den Bereichen Person, Familie, Schule, Peers und Gemeinwesen einschätzen.",
+        "Familienarbeit: Beaufsichtigung, klare Regeln, Stärkung von Bindung und Kommunikation.",
+        "Lebenskompetenztraining: Umgang mit Stress, Nein sagen, Konflikte lösen.",
+        "Einbindung in prosoziale Aktivitäten und Aufbau von Beziehungen zu unterstützenden Erwachsenen.",
+        "Kurzintervention und faktenbasierte Rückmeldung, ohne Abschreckung."
+      ],
+      "phrases": [
+        "Ich bin nicht hier, um dich zu verurteilen. Mich interessiert, wie du das siehst.",
+        "Was bringt dir das Kiffen mit deinen Kollegen? Und was nervt dich daran?",
+        "Welche Erwachsenen stehen auf deiner Seite?",
+        "Was hast du für das nächste Jahr vor, und wie passt das, was gerade passiert, dazu?",
+        "Wenn du etwas ändern möchtest – wer könnte dir dabei helfen?"
+      ],
+      "pitfalls": [
+        "Abschreckung und Moralisieren – bei Jugendlichen verstärken sie meist den Widerstand.",
+        "Behandlungsmodelle und Etiketten für Erwachsene („Junkie“) auf Jugendliche übertragen.",
+        "Die Familie aussen vor lassen oder umgekehrt nur mit den Eltern über den Kopf der Jugendlichen hinweg sprechen.",
+        "Unklare Regeln zur Vertraulichkeit – Jugendliche sollen wissen, was wann an Erwachsene weitergegeben wird."
+      ],
+      "sources": [
+        {
+          "authors": "Hawkins J.D., Catalano R.F., Miller J.Y.",
+          "year": 1992,
+          "title": "Risk and protective factors for alcohol and other drug problems in adolescence and early adulthood: Implications for substance abuse prevention. Psychological Bulletin, 112(1)"
+        },
+        {
+          "authors": "Naar-King S., Suarez M.",
+          "year": 2011,
+          "title": "Motivational Interviewing with Adolescents and Young Adults",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Jessor R., Jessor S.L.",
+          "year": 1977,
+          "title": "Problem Behavior and Psychosocial Development: A Longitudinal Study of Youth",
+          "publisher": "Academic Press"
+        }
+      ],
+      "tags": ["Jugendliche", "Risikofaktoren", "Schutzfaktoren", "Familie", "Frühintervention"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "co-occurring",
+      "section": "approaches",
+      "title": "Komorbide Störungen (Doppeldiagnose)",
+      "essence": "Viele Menschen mit Substanzproblemen haben zusätzlich andere psychische Erkrankungen, z. B. Depression, Angststörungen, PTBS, ADHS, Persönlichkeitsstörungen oder psychotische Störungen. Die Probleme verstärken sich gegenseitig: Die Substanz kann ein Versuch der „Selbstmedikation“ sein und gleichzeitig die psychische Gesundheit verschlechtern. Die besten Ergebnisse erzielt ein integrierter Ansatz, bei dem beide Probleme parallel von zusammenarbeitenden Fachpersonen behandelt werden. Pädagogische Fachpersonen diagnostizieren keine psychischen Störungen, erkennen aber Warnzeichen und vermitteln an Fachpersonen.",
+      "whenToUse": [
+        "Wenn neben dem Konsum Anzeichen von Niedergeschlagenheit, Angst, Trauma oder Denkstörungen sichtbar sind.",
+        "Wenn sich die psychische Verfassung nach einer Abstinenzphase nicht bessert oder verschlechtert.",
+        "In Gefängnissen, Notunterkünften und Angeboten für obdachlose Menschen, wo Komorbidität häufig ist.",
+        "Bei der Planung der Zusammenarbeit mit Psychiater/in, Psycholog/in und ambulanten psychiatrischen Diensten."
+      ],
+      "techniques": [
+        "Screening auf Warnzeichen und Vermittlung zur fachlichen Abklärung.",
+        "Einschätzung des Suizidrisikos und ein Sicherheitsplan bei jedem Anzeichen von Gefahr.",
+        "Stufenweise Arbeit: Engagement, Überzeugung (Motivation), aktive Behandlung, Rückfallprophylaxe.",
+        "Psychoedukation darüber, wie sich Substanzen und Symptome gegenseitig beeinflussen.",
+        "Integrierte Programme, z. B. Seeking Safety bei Trauma und Substanzkonsum.",
+        "Koordination im Team und ein gemeinsamer Unterstützungsplan."
+      ],
+      "phrases": [
+        "Mir fällt auf, dass Sie oft Schlaflosigkeit und Angst erwähnen. Wie wirkt sich das Trinken darauf aus?",
+        "Viele Menschen nehmen eine Substanz, um sich – wenigstens für einen Moment – Erleichterung zu verschaffen. Kennen Sie das auch?",
+        "Haben Sie manchmal Gedanken, dass das Leben nicht lebenswert ist?",
+        "Ich möchte, dass sich auch eine Ärztin oder ein Arzt das anschaut – darf ich Ihnen helfen, einen Termin zu vereinbaren?"
+      ],
+      "pitfalls": [
+        "Die Person „hin- und herschicken“: zuerst Abstinenz, dann Psychiatrie – und umgekehrt.",
+        "Selbst psychiatrische Diagnosen stellen oder Medikamente kommentieren.",
+        "Alle Symptome der Substanz zuschreiben oder umgekehrt den Konsum übersehen.",
+        "Nicht auf Anzeichen eines Suizidrisikos reagieren."
+      ],
+      "sources": [
+        {
+          "authors": "Mueser K.T., Noordsy D.L., Drake R.E., Fox L.",
+          "year": 2003,
+          "title": "Integrated Treatment for Dual Disorders: A Guide to Effective Practice",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Najavits L.M.",
+          "year": 2002,
+          "title": "Seeking Safety: A Treatment Manual for PTSD and Substance Abuse",
+          "publisher": "Guilford Press"
+        },
+        {
+          "authors": "Khantzian E.J.",
+          "year": 1997,
+          "title": "The self-medication hypothesis of substance use disorders: A reconsideration and recent applications. Harvard Review of Psychiatry, 4(5)"
+        }
+      ],
+      "tags": ["Doppeldiagnose", "psychische Gesundheit", "Trauma", "Zusammenarbeit", "Vermittlung"],
+      "reviewStatus": "do_weryfikacji"
+    },
+    {
+      "id": "dependence-criteria",
+      "section": "criteria",
+      "title": "Abhängigkeitskriterien – ICD-11 und DSM-5-TR (Übersicht)",
+      "essence": "Die ICD-11 beschreibt in der Gruppe „Störungen durch Substanzgebrauch oder Verhaltenssüchte“ für jede Substanzklasse (6C40 Alkohol, 6C41 Cannabis, 6C43 Opioide, 6C45 Kokain, 6C4A Nikotin und weitere) eine Episode schädlichen Gebrauchs, ein schädliches Gebrauchsmuster und die Abhängigkeit; Glücksspiel (6C50) und Computerspiele (6C51) sind separat aufgeführt. Abhängigkeit beruht in der ICD-11 auf drei Merkmalen: beeinträchtigte Kontrolle, zunehmender Vorrang des Konsums vor anderen Lebensbereichen und physiologische Merkmale (Toleranz, Entzug); in der Regel liegen mindestens zwei davon über etwa 12 Monate vor. Das DSM-5-TR verwendet eine einzige Kategorie, die „Substanzgebrauchsstörung“, mit 11 Kriterien in vier Gruppen und stuft den Schweregrad nach der Anzahl erfüllter Kriterien ab (leicht, mittel, schwer). Diese Übersicht dient der Bildung – eine Diagnose stellt eine Ärztin, ein Arzt oder eine qualifizierte klinische Fachperson.",
+      "whenToUse": [
+        "Beim Lernen und Ordnen von Wissen über diagnostische Klassifikationen.",
+        "Beim Lesen medizinischer Unterlagen und im Gespräch mit Ärzt/innen oder Psycholog/innen.",
+        "Beim Verfassen einer pädagogischen Einschätzung – als Hintergrund, nicht als Ersatz für eine medizinische Diagnose.",
+        "Wenn Klient/innen oder Angehörigen erklärt wird, wie sich schädlicher Gebrauch von Abhängigkeit unterscheidet."
+      ],
+      "techniques": [
+        "ICD-11 – beeinträchtigte Kontrolle: Schwierigkeiten, auf den Konsum zu verzichten oder Menge, Dauer oder Umstände zu begrenzen, oft mit starkem Verlangen.",
+        "ICD-11 – zunehmender Vorrang: Der Konsum verdrängt Pflichten, Interessen und Beziehungen und wird trotz Schäden fortgesetzt.",
+        "ICD-11 – physiologische Merkmale: Toleranz, Entzugserscheinungen, Konsum zur Linderung des Entzugs.",
+        "DSM-5-TR – vier Kriteriengruppen: beeinträchtigte Kontrolle, soziale Beeinträchtigung, riskanter Konsum, pharmakologische Kriterien.",
+        "DSM-5-TR – Schweregrad: 2–3 Kriterien leicht, 4–5 mittel, 6 oder mehr schwer (innerhalb von 12 Monaten).",
+        "In Polen wird in der Praxis noch weitgehend die ICD-10 verwendet (F10–F19, Abhängigkeitssyndrom F1x.2) – die ICD-11 wird eingeführt."
+      ],
+      "phrases": [
+        "Eine Abhängigkeitsdiagnose stellt eine Ärztin oder ein Arzt – ich kann Ihnen helfen anzuschauen, wie sich das Trinken auf Ihr Leben auswirkt.",
+        "Abhängigkeit ist keine Willensschwäche; sie ist eine Erkrankung, die behandelt werden kann.",
+        "Schädlicher Gebrauch bedeutet, dass das Trinken bereits Schaden verursacht – das heisst aber nicht unbedingt Abhängigkeit.",
+        "Trinken Sie manchmal mehr oder länger, als Sie geplant hatten?"
+      ],
+      "pitfalls": [
+        "Eine pädagogische Fachperson stellt eine medizinische Diagnose – das übersteigt ihre Kompetenzen.",
+        "Die Kriterien als Bestanden/Nicht-bestanden-Test verwenden, ohne ganzheitliche Einschätzung.",
+        "Die Klassifikationen vermischen: ICD-11 und DSM-5-TR unterscheiden sich in Schwellenwerten und Kriterienstruktur.",
+        "Etikettieren („Alkoholiker“, „Süchtiger“) statt einer Sprache, die das Problem und die Person beschreibt."
+      ],
+      "sources": [
+        {
+          "authors": "World Health Organization",
+          "year": 2022,
+          "title": "ICD-11: International Classification of Diseases, 11th Revision (chapter 06: disorders due to substance use or addictive behaviours)",
+          "publisher": "WHO"
+        },
+        {
+          "authors": "American Psychiatric Association",
+          "year": 2022,
+          "title": "Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision (DSM-5-TR)",
+          "publisher": "American Psychiatric Association Publishing"
+        },
+        {
+          "authors": "Saunders J.B., Degenhardt L., Reed G.M., Poznyak V.",
+          "year": 2019,
+          "title": "Alcohol use disorders in ICD-11: Past, present, and future. Alcoholism: Clinical and Experimental Research, 43(8)"
+        }
+      ],
+      "tags": ["Kriterien", "ICD-11", "DSM-5-TR", "Diagnose", "Klassifikation"],
+      "reviewStatus": "do_weryfikacji"
+    }
+  ]
+}
