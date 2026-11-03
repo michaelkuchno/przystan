@@ -18,3 +18,5 @@ android/keystore.properties
 
 # Artefakty Lighthouse zapisane omyłkowo pod ścieżką Windows (niedozwolone nazwy)
 C:*
+**/lighthouse.*/
+lighthouse-report

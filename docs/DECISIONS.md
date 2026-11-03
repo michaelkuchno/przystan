@@ -159,3 +159,18 @@ niewłaściwa i trudna do odwrócenia, dlatego ten krok czeka na decyzję właś
 Formularze dokumentacji (diagnoza, IPR, plany, genogram, przepisy, programy) zapisują się
 automatycznie po 600 ms bez pisania, ze wskaźnikiem „Zapisano”. Usunięcia są „miękkie”
 z możliwością cofnięcia przez ok. minutę.
+
+---
+
+# Wersja 1.1
+
+## D-027 Naprawa repozytorium na Windows i profil Lighthouse
+Do repozytorium trafiło 2895 plików tymczasowych profili Chrome z Lighthouse
+(`C:\Users\...\AppData\Local\lighthouse.*` – nazwy z dwukropkiem i odwrotnym ukośnikiem są
+niedozwolone w Windows, więc checkout się nie udawał). Git for Windows nie przyjmuje tych ścieżek
+do indeksu nawet z `core.protectNTFS=false`, więc `git rm --cached` nie mogło zadziałać. Zamiast
+tego zbudowano drzewo bez tych katalogów (`git mktree`), wczytano je do indeksu i zatwierdzono
+(commit `26b248e`). Historia nie została przepisana – starsze commity nadal je zawierają.
+Lighthouse uruchamia się teraz przez `npm run lighthouse` (`scripts/lighthouse.mjs`), który
+tworzy profil Chrome w katalogu tymczasowym systemu (`os.tmpdir()`) i usuwa go po zakończeniu.
+`.gitignore` blokuje `C:*`, `**/lighthouse.*/` i `lighthouse-report`.
