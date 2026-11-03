@@ -15,3 +15,6 @@ android/local.properties
 android/keystore.properties
 *.jks
 *.keystore
+
+# Artefakty Lighthouse zapisane omyłkowo pod ścieżką Windows (niedozwolone nazwy)
+C:*
