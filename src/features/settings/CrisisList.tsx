@@ -16,7 +16,7 @@ export function CrisisList() {
             {crisis
               .filter((c) => c.country === country)
               .map((c) => (
-                <Card key={c.id} className="flex items-center gap-3 p-3 sm:p-3">
+                <Card key={c.id} className="flex flex-wrap items-center gap-3 p-3 sm:p-3">
                   <a
                     href={`tel:${c.number.replace(/\s/g, '')}`}
                     className="flex min-h-14 min-w-[7.5rem] items-center justify-center gap-2 rounded-2xl bg-accent px-3 font-serif text-xl font-semibold text-white dark:text-black"
@@ -25,7 +25,7 @@ export function CrisisList() {
                     <Phone className="size-4" aria-hidden />
                     {c.number}
                   </a>
-                  <div className="min-w-0 flex-1">
+                  <div className="min-w-0 flex-1 basis-48">
                     <div className="font-semibold">{c.name}</div>
                     <div className="text-sm text-muted">{c.description}</div>
                     <div className="mt-1">

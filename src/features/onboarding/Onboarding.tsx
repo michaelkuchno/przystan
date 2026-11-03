@@ -252,7 +252,7 @@ export function Onboarding({ hasVault, onDone }: { hasVault: boolean; onDone: ()
         </section>
 
         {step !== 'mode' && (
-          <div className="mt-8 flex items-center gap-3">
+          <div className="mt-8 flex flex-wrap items-center gap-3">
             {i > 0 && step !== 'modules' && (
               <Button variant="ghost" onClick={prev} icon={<ArrowLeft className="size-4" />}>
                 {t('common:back')}

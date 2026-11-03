@@ -6,6 +6,7 @@ import './styles/index.css';
 import { initI18n } from './i18n';
 import { applyTheme, loadPrefs, subscribePrefs, getPrefs } from './lib/prefs';
 import { requestPersistentStorage } from './lib/db';
+import { initViewport } from './lib/viewport';
 import { App } from './app/App';
 
 async function boot() {
@@ -15,6 +16,7 @@ async function boot() {
   window.matchMedia?.('(prefers-color-scheme: dark)').addEventListener?.('change', () => applyTheme(getPrefs()));
   await initI18n(prefs.lang, prefs.term);
   void requestPersistentStorage();
+  initViewport();
   createRoot(document.getElementById('root')!).render(
     <StrictMode>
       <App />

@@ -302,7 +302,7 @@ function Editor({ recipe }: { recipe: Recipe }) {
             onChange={(v) => v[0] && setCat(v[0])}
             options={[{ value: 'all' as const, label: t('all') }, ...cats.map((c) => ({ value: c, label: t(`cat.${c}`) }))]}
           />
-          <ul className="max-h-[60vh] space-y-2 overflow-y-auto pr-1">
+          <ul className="max-h-[60dvh] space-y-2 overflow-y-auto pr-1">
             {shown.map((ing) => (
               <li key={ing.id}>
                 <button
@@ -314,7 +314,7 @@ function Editor({ recipe }: { recipe: Recipe }) {
                   aria-label={t('addIngredient', { name: ing.title })}
                 >
                   <div className="flex items-center gap-2">
-                    <span className={cn('rounded-full px-2 py-0.5 text-[0.7rem] font-semibold', CAT_TONE[ing.category])}>
+                    <span className={cn('rounded-full px-2 py-0.5 text-[length:calc(0.7rem*var(--fs-body))] font-semibold', CAT_TONE[ing.category])}>
                       {t(`cat.${ing.category}`)}
                     </span>
                     <span className="text-xs text-muted">{ing.minutes} min</span>

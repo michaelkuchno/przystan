@@ -17,14 +17,14 @@ export function ReviewBadge({ id, status }: { id: string; status: ReviewStatus }
       type="button"
       onClick={toggle}
       className={cn(
-        'inline-flex min-h-8 items-center gap-1 rounded-full px-2.5 text-xs font-medium transition',
+        'inline-flex min-h-8 max-w-full min-w-0 items-center gap-1 rounded-full px-2.5 text-left text-xs font-medium transition',
         verified ? 'bg-ok-soft text-ok' : 'bg-warn-soft text-warn',
       )}
       aria-pressed={verified}
       title={t('review.toggle')}
     >
-      {verified ? <ShieldCheck className="size-3.5" aria-hidden /> : <ShieldQuestion className="size-3.5" aria-hidden />}
-      {verified ? t('review.verified') : t('review.toVerify')}
+      {verified ? <ShieldCheck className="size-3.5 shrink-0" aria-hidden /> : <ShieldQuestion className="size-3.5 shrink-0" aria-hidden />}
+      <span>{verified ? t('review.verified') : t('review.toVerify')}</span>
     </button>
   );
 }

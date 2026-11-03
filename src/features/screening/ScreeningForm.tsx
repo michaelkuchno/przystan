@@ -143,7 +143,7 @@ export default function ScreeningForm() {
         })}
       </ol>
 
-      <motion.div layout className="sticky bottom-[calc(4.5rem+env(safe-area-inset-bottom))] z-10 mt-5 lg:bottom-4">
+      <motion.div layout className="sticky bottom-[calc(var(--tabbar-h)+0.5rem)] z-10 mt-5 lg:bottom-4">
         <Card className="flex flex-wrap items-center gap-4 shadow-xl">
           <div>
             <div className="text-xs text-muted">{t('progress', { answered, total: inst.items.length })}</div>
@@ -156,7 +156,7 @@ export default function ScreeningForm() {
             <div className="font-semibold">{t(`bands.${inst.id}.${result.band.id}`)}</div>
             <div className="text-sm">{t(`bandHints.${inst.id}.${result.band.id}`)}</div>
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <Button variant="ghost" icon={<RotateCcw className="size-4" />} onClick={() => setAnswers([])}>
               {t('reset')}
             </Button>

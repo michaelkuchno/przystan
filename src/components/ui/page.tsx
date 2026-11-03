@@ -16,7 +16,7 @@ export function Page({ children, className, wide }: { children: ReactNode; class
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.22, ease: 'easeOut' }}
       className={cn(
-        'mx-auto w-full px-4 pt-4 pb-28 focus:outline-none sm:px-6 lg:pb-12',
+        'mx-auto w-full px-4 pt-4 pb-[calc(2rem+var(--tabbar-h))] focus:outline-none sm:px-6 lg:pb-12',
         wide ? 'max-w-6xl' : 'max-w-4xl',
         className,
       )}

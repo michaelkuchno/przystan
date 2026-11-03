@@ -89,7 +89,7 @@ function Editor({ diagnosis, previous }: { diagnosis: Diagnosis; previous?: Diag
           const v = draft.areas[a];
           return (
             <div key={a} className="rounded-2xl p-2 hover:bg-surface-2/60">
-              <div className="flex items-center justify-between gap-2">
+              <div className="flex flex-wrap items-center justify-between gap-x-2 gap-y-1">
                 <label htmlFor={`area-${a}`} className="font-medium">
                   {t(`diagnosis.areas.${a}`)}
                 </label>

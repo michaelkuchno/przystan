@@ -174,3 +174,48 @@ tego zbudowano drzewo bez tych katalogów (`git mktree`), wczytano je do indeksu
 Lighthouse uruchamia się teraz przez `npm run lighthouse` (`scripts/lighthouse.mjs`), który
 tworzy profil Chrome w katalogu tymczasowym systemu (`os.tmpdir()`) i usuwa go po zakończeniu.
 `.gitignore` blokuje `C:*`, `**/lighthouse.*/` i `lighthouse-report`.
+
+## D-028 Edge-to-edge na Androidzie: jedno źródło insetów
+Przy targetSdk 36 Android wymusza edge-to-edge. Capacitor 8 ma wbudowaną wtyczkę SystemBars;
+ustawiono `insetsHandling: 'css'` i `initialViewportFitValueHint: 'cover'` (`capacitor.config.ts`).
+Wtyczka wstrzykuje `--safe-area-inset-*` (w Android WebView < 140 `env(safe-area-inset-*)` zwraca 0),
+a przy starszym WebView sama dodaje padding. W CSS jedynym źródłem prawdy są zmienne
+`--inset-top/right/bottom/left` = `var(--safe-area-inset-*, env(safe-area-inset-*, 0px))`;
+nagłówek, dolna nawigacja, toasty, arkusze dialogowe, pasek aktualizacji, widok „pokaż
+podopiecznemu” i stopka formularza przesiewowego używają tylko ich (oraz `--tabbar-h`).
+Kolor ikon pasków systemowych podąża za motywem aplikacji (`SystemBars.setStyle`), a nie systemu.
+
+## D-029 Duża czcionka systemowa: skalowany tekst, nie cały układ
+Domyślnie WebView stosuje skalę czcionki systemu przez `textZoom`, co powiększa tylko część bloków
+tekstu i rozjeżdża układ. `MainActivity` ustawia `textZoom = 100` i przekazuje efektywną skalę dla
+tekstu podstawowego (16 sp → dp, więc z nieliniowym skalowaniem Androida 14+) do CSS jako
+`--os-font-scale`. Jak w natywnym Androidzie (sp vs dp) skalowany jest **tylko tekst**: tokeny
+`--text-*` Tailwinda; duże nagłówki rosną słabiej (jak nieliniowe skalowanie Androida). Odstępy,
+pola dotyku i szerokości zostają, dzięki czemu przy 200 % na ekranie 360 px nadal jest miejsce na
+treść. Ustawienie „Rozmiar tekstu” w aplikacji nadal skaluje cały układ (`--text-scale`).
+Globalnie: elementy siatki i `flex-1` mogą się zwężać (`min-width: 0`), długie słowa się łamią,
+w przyciskach także w środku słowa. Etykiety dolnej nawigacji i plakietka trybu w nagłówku
+rosną do limitu i się obcinają (pełna nazwa zostaje w nazwie dostępnej).
+
+## D-030 Brak wymuszonego trybu ciemnego
+`WebSettingsCompat.setAlgorithmicDarkeningAllowed(false)` i `android:forceDarkAllowed=false`
+w motywie – aplikacja ma własny motyw ciemny, a One UI nie może odwracać jej kolorów.
+
+## D-031 Klawiatura ekranowa
+`src/lib/viewport.ts` porównuje widoczną wysokość z największą zmierzoną dla danej szerokości.
+Gdy fokus jest w polu edycyjnym, a widok zmalał o > 150 px, ustawia `html[data-keyboard=open]`.
+Wtedy dolna nawigacja jest ukryta, a pole przewijane na środek widoku. Na Androidzie okno
+zmniejsza wtyczka SystemBars (padding o wysokość IME), w iOS/przeglądarce `visualViewport`.
+Pozostałe `vh` zamieniono na `dvh`.
+
+## D-032 Testy profili Androida
+Projekty Playwright `android-360` (360×780), `android-412` (412×915) i `android-large-font`
+(360×780, skala 2,0) wstrzykują typowe insety One UI. Szerokość porównywana jest
+z `visualViewport.width`, a nie z `innerWidth`: w mobilnym Chromium element szerszy od ekranu
+poszerza layout viewport, więc wcześniejszy test (`scrollWidth > innerWidth`) nie wykrywał
+przepełnień. Poprawiony test ujawnił i naprawiono istniejące przepełnienia (diagnoza, chipy
+„Do weryfikacji”, lista telefonów kryzysowych).
+
+## D-033 Końce linii
+`.gitattributes` wymusza LF (poza `*.bat`, `*.ps1`). Bez tego przy `core.autocrlf=true` na
+Windows skrypty `.sh` i `gradlew` dostałyby CRLF.

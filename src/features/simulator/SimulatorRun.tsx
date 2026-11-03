@@ -291,7 +291,7 @@ function Stat({ label, value, hint, good }: { label: string; value: React.ReactN
     <div className={cn('rounded-2xl p-3', good ? 'bg-ok-soft' : 'bg-surface-2')}>
       <div className="text-xs text-muted">{label}</div>
       <div className="font-serif text-2xl font-semibold">{value}</div>
-      <div className="text-[0.7rem] text-muted">{hint}</div>
+      <div className="text-[length:calc(0.7rem*var(--fs-body))] text-muted">{hint}</div>
     </div>
   );
 }

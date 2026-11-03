@@ -14,7 +14,7 @@ export function KnowledgeCardView({ card }: { card: KnowledgeCard }) {
           {icon}
           {title}
         </h3>
-        <ul className="space-y-1.5 text-[0.95rem] leading-relaxed">
+        <ul className="space-y-1.5 text-[length:calc(0.95rem*var(--fs-body))] leading-relaxed">
           {items.map((x) => (
             <li key={x} className="flex gap-2">
               <span className="text-muted" aria-hidden>

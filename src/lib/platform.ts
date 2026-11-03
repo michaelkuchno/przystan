@@ -103,3 +103,11 @@ export function slug(s: string): string {
     .toLowerCase()
     .slice(0, 60);
 }
+
+/** Android app: status/navigation bar icons follow the app theme, not the system theme. */
+export function syncSystemBars(dark: boolean) {
+  if (!isNative()) return;
+  void import('@capacitor/core')
+    .then(({ SystemBars, SystemBarsStyle }) => SystemBars.setStyle({ style: dark ? SystemBarsStyle.Dark : SystemBarsStyle.Light }))
+    .catch(() => undefined);
+}

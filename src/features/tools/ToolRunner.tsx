@@ -100,7 +100,7 @@ export default function ToolRunner() {
         <Card className="min-h-80">
           <div
             className={
-              show ? 'safe-top safe-bottom fixed inset-0 z-[90] overflow-y-auto bg-bg px-5 py-6 text-[1.1rem]' : undefined
+              show ? 'safe-top safe-bottom safe-x fixed inset-0 z-[90] overflow-y-auto bg-bg px-5 py-6 text-[length:calc(1.1rem*var(--fs-body))]' : undefined
             }
             {...(show ? { role: 'dialog', 'aria-modal': true, 'aria-label': t(`names.${meta.id}`) } : {})}
           >

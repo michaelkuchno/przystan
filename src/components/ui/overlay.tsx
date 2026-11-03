@@ -32,7 +32,7 @@ export function Sheet({
         <Dialog.Overlay className="fixed inset-0 z-50 bg-black/40 backdrop-blur-[2px] data-[state=open]:animate-in" />
         <Dialog.Content
           className={cn(
-            'fixed inset-x-0 bottom-0 z-50 flex max-h-[92dvh] flex-col rounded-t-3xl border border-line bg-surface shadow-2xl sm:inset-auto sm:top-1/2 sm:left-1/2 sm:w-full sm:-translate-x-1/2 sm:-translate-y-1/2 sm:rounded-3xl',
+            'fixed inset-x-0 bottom-0 z-50 flex max-h-[calc(100dvh-var(--inset-top)-1rem)] flex-col rounded-t-3xl border border-line bg-surface shadow-2xl sm:inset-auto sm:top-1/2 sm:left-1/2 sm:w-full sm:-translate-x-1/2 sm:-translate-y-1/2 sm:rounded-3xl',
             wide ? 'sm:max-w-3xl' : 'sm:max-w-lg',
           )}
           {...(description ? {} : { 'aria-describedby': undefined })}
@@ -49,7 +49,7 @@ export function Sheet({
               <X className="size-5" />
             </Dialog.Close>
           </div>
-          <div className="flex-1 overflow-y-auto px-5 py-4">{children}</div>
+          <div className={cn('flex-1 overflow-y-auto px-5 pt-4', footer ? 'pb-4' : 'pb-[calc(1rem+var(--inset-bottom))]')}>{children}</div>
           {footer && <div className="safe-bottom flex flex-wrap justify-end gap-2 border-t border-line px-5 py-3">{footer}</div>}
         </Dialog.Content>
       </Dialog.Portal>

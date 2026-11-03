@@ -20,6 +20,21 @@ Stan: **wszystkie etapy 1–15 zakończone**, poza publikacją na GitHubie (wyma
 | 14 | Dostępność (axe bez błędów poważnych), brak poziomego przewijania, Lighthouse ≥ 90 | ✅ |
 | 15 | Podpisany APK, workflowy CI / Pages / APK, dokumentacja | ✅ (publikacja: czeka) |
 
+## Wersja 1.1
+
+| Punkt | Zakres | Status |
+|---|---|---|
+| 0 | Naprawa repo na Windows (artefakty Lighthouse), profil Lighthouse poza projektem, `npm ci`, `gh` na koncie michaelkuchno | ✅ |
+| 1 | Układ na Androidzie: edge-to-edge (SystemBars, insety jako zmienne CSS), duża czcionka (skalowany tekst), bez wymuszonego trybu ciemnego, klawiatura, testy 3 profili Androida | ✅ |
+| 2 | Wersja niemiecka (DE) i ustawienie „Kraj pracy” (PL/CH) | ⏳ |
+| 3 | Odblokowanie biometrią (Android Keystore / WebAuthn PRF) | ⏳ |
+| 4 | Dzienniczek praktyk | ⏳ |
+| 5 | Notatnik i superwizja | ⏳ |
+| 6 | Studium przypadku – anonimowy PDF | ⏳ |
+| 7 | Przypomnienie o kopii zapasowej | ⏳ |
+| 8 | Podgląd lokalny (`scripts/start-local.ps1`) | ⏳ |
+| 9 | Wersja 1.1.0, Pages, Release z APK, README | ⏳ |
+
 ## Jakość (ostatni przebieg)
 
 - `npm run lint` – 0 błędów, 0 ostrzeżeń; `npm run typecheck` – 0 błędów

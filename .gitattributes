@@ -1,0 +1,9 @@
+# LF everywhere (shell scripts and gradlew break with CRLF); Windows-only scripts keep CRLF
+* text=auto eol=lf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.png binary
+*.jpg binary
+*.jks binary
+*.ttf binary
+*.woff2 binary

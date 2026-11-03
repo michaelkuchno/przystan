@@ -130,7 +130,7 @@ export function Shell({ children }: { children: ReactNode }) {
               end={'end' in n ? n.end : false}
               className={({ isActive }) =>
                 cn(
-                  'flex min-h-11 items-center gap-3 rounded-xl px-3 text-[0.95rem] transition',
+                  'flex min-h-11 items-center gap-3 rounded-xl px-3 text-[length:calc(0.95rem*var(--fs-body))] transition',
                   isActive ? 'bg-primary-soft font-semibold text-primary-soft-fg' : 'text-fg/80 hover:bg-surface-2',
                 )
               }
@@ -152,7 +152,7 @@ export function Shell({ children }: { children: ReactNode }) {
       </aside>
 
       {/* Header */}
-      <header className="safe-top sticky top-0 z-20 border-b border-line/70 bg-bg/85 backdrop-blur-md">
+      <header className="safe-top safe-x sticky top-0 z-20 border-b border-line/70 bg-bg/85 backdrop-blur-md">
         <div className="mx-auto flex h-14 max-w-6xl items-center gap-1 px-3 sm:px-5">
           <NavLink to="/" className="mr-1 flex items-center gap-2 lg:hidden" aria-label={t('nav.dashboard')}>
             <Logo className="size-8" />
@@ -160,16 +160,21 @@ export function Shell({ children }: { children: ReactNode }) {
           <button
             type="button"
             onClick={() => void switchMode(demo ? 'practice' : 'demo')}
-            className="min-h-11 rounded-full px-1"
+            className="flex min-h-11 min-w-0 shrink items-center rounded-full px-1"
             title={t('mode.switch')}
           >
+            {/* header chrome: the label grows with the system font only up to a cap, then truncates */}
             {demo ? (
-              <Badge tone="accent" className="text-[0.8rem] font-bold tracking-wider">
-                DEMO · {t('mode.demoShort')}
+              <Badge
+                tone="accent"
+                className="max-w-full min-w-0 text-[length:min(calc(0.8rem*var(--fs-body)),1.05rem)] font-bold tracking-wider"
+              >
+                <span className="truncate">DEMO · {t('mode.demoShort')}</span>
               </Badge>
             ) : (
-              <Badge tone="primary">
-                <ShieldCheck className="size-3.5" aria-hidden /> {t('mode.practiceShort')}
+              <Badge tone="primary" className="max-w-full min-w-0 text-[length:min(var(--text-xs),1rem)]">
+                <ShieldCheck className="size-3.5 shrink-0" aria-hidden />
+                <span className="truncate">{t('mode.practiceShort')}</span>
               </Badge>
             )}
           </button>
@@ -204,7 +209,7 @@ export function Shell({ children }: { children: ReactNode }) {
       {/* Bottom tab bar (phones / tablets) */}
       <nav
         aria-label={t('nav.label')}
-        className="safe-bottom fixed inset-x-0 bottom-0 z-30 border-t border-line bg-surface/95 backdrop-blur-md lg:hidden"
+        className="safe-bottom safe-x hide-on-keyboard fixed inset-x-0 bottom-0 z-30 border-t border-line bg-surface/95 backdrop-blur-md lg:hidden"
       >
         <div className="mx-auto grid max-w-xl grid-cols-5">
           {MAIN_NAV.map((n) => (
@@ -214,7 +219,7 @@ export function Shell({ children }: { children: ReactNode }) {
               end={'end' in n ? n.end : false}
               className={({ isActive }) =>
                 cn(
-                  'flex min-h-16 flex-col items-center justify-center gap-0.5 text-[0.7rem] font-medium transition',
+                  'flex h-[var(--tabbar-item-h)] min-w-0 flex-col items-center justify-center gap-0.5 px-0.5 text-[length:var(--tabbar-label)] leading-tight font-medium transition',
                   isActive ? 'text-primary' : 'text-muted',
                 )
               }
@@ -223,13 +228,13 @@ export function Shell({ children }: { children: ReactNode }) {
                 <>
                   <span
                     className={cn(
-                      'flex h-8 w-14 items-center justify-center rounded-full transition',
+                      'flex h-[min(2rem,44px)] w-[min(3.5rem,64px)] max-w-full shrink-0 items-center justify-center rounded-full transition',
                       isActive && 'bg-primary-soft',
                     )}
                   >
                     <n.icon className="size-5" aria-hidden />
                   </span>
-                  {t(`nav.${n.key}`)}
+                  <span className="block max-w-full truncate">{t(`nav.${n.key}`)}</span>
                 </>
               )}
             </NavLink>

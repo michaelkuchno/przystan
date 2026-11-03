@@ -9,6 +9,15 @@ const config: CapacitorConfig = {
     allowMixedContent: false,
     backgroundColor: '#f6f1ea',
   },
+  plugins: {
+    // Edge-to-edge (targetSdk 36): Capacitor injects --safe-area-inset-* CSS variables,
+    // because env(safe-area-inset-*) is 0 in Android WebView < 140. See src/styles/index.css.
+    SystemBars: {
+      insetsHandling: 'css',
+      initialViewportFitValueHint: 'cover',
+      style: 'DEFAULT',
+    },
+  },
 };
 
 export default config;

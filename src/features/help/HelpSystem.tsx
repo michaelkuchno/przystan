@@ -16,7 +16,7 @@ function InstitutionCard({ i }: { i: Institution }) {
   const { t } = useTranslation('help');
   return (
     <Card className="space-y-2">
-      <div className="flex items-start justify-between gap-2">
+      <div className="flex flex-wrap items-start justify-between gap-2">
         <h3 className="font-sans text-base font-semibold">{i.name}</h3>
         <ReviewBadge id={i.id} status={i.reviewStatus} />
       </div>
@@ -209,7 +209,7 @@ export default function HelpSystem() {
             <Card key={l.id}>
               <div className="flex flex-wrap items-start justify-between gap-2">
                 <h3 className="font-sans text-lg font-semibold">{l.title}</h3>
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2">
                   <Badge>{t('stateAsOf', { date: l.stateAsOf })}</Badge>
                   <ReviewBadge id={l.id} status={l.reviewStatus} />
                 </div>

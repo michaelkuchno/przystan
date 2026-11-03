@@ -12,7 +12,7 @@ function PwaUpdate() {
   } = useRegisterSW({ immediate: true });
   if (!needRefresh) return null;
   return (
-    <div className="fixed inset-x-0 top-[calc(env(safe-area-inset-top)+0.5rem)] z-[70] flex justify-center px-4" role="status">
+    <div className="fixed inset-x-0 top-[calc(var(--inset-top)+0.5rem)] z-[70] flex justify-center px-4" role="status">
       <div className="flex w-full max-w-md items-center gap-3 rounded-2xl border border-line bg-surface px-4 py-3 shadow-xl">
         <span className="flex-1 text-sm">{t('update.ready')}</span>
         <Button size="sm" variant="ghost" onClick={() => setNeedRefresh(false)}>

@@ -37,6 +37,50 @@
   --chart-3: #44637d;
   --chart-4: #b08a2e;
   color-scheme: light;
+
+  /*
+   * Safe-area insets – the single source of truth for every edge-to-edge element.
+   * On Android, Capacitor's SystemBars plugin (insetsHandling: 'css') injects --safe-area-inset-*,
+   * because env(safe-area-inset-*) is 0 in Android WebView < 140. Elsewhere (iOS, PWA, browsers)
+   * the env() fallback applies. Never use env(safe-area-inset-*) directly – use these variables.
+   */
+  --inset-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px));
+  --inset-right: var(--safe-area-inset-right, env(safe-area-inset-right, 0px));
+  --inset-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
+  --inset-left: var(--safe-area-inset-left, env(safe-area-inset-left, 0px));
+  /*
+   * Android system font size (--os-font-scale, injected by MainActivity, which sets WebView
+   * textZoom to 100). Like native Android (sp vs dp) it scales TEXT only – spacing, touch
+   * targets and widths stay put, so a 360 px phone at 200 % still has room for content.
+   * Like Android 14+ non-linear scaling, large text grows less than body text.
+   * The in-app "text size" setting (--text-scale) scales the root font-size (whole layout).
+   */
+  --os: var(--os-font-scale, 1);
+  --fs-body: var(--os);
+  --fs-lg: calc(1 + (var(--os) - 1) * 0.8);
+  --fs-xl: calc(1 + (var(--os) - 1) * 0.65);
+  --fs-2xl: calc(1 + (var(--os) - 1) * 0.5);
+  --fs-3xl: calc(1 + (var(--os) - 1) * 0.35);
+  --fs-4xl: calc(1 + (var(--os) - 1) * 0.25);
+  /*
+   * Bottom tab bar: grows with the text size only up to a cap, so five tabs keep fitting on a
+   * 360 px phone with the largest font (labels then truncate; each tab keeps its accessible name).
+   */
+  --tabbar-item-h: min(4rem, 88px);
+  --tabbar-label: min(calc(0.7rem * var(--fs-body)), 15px);
+  /* height of the bottom tab bar incl. its inset (0 on desktop and while the keyboard is open) */
+  --tabbar-h: calc(var(--tabbar-item-h) + 1px + var(--inset-bottom));
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --tabbar-h: 0px;
+  }
+}
+
+/* on-screen keyboard open (set by src/lib/viewport.ts): the tab bar is hidden */
+:root[data-keyboard='open'] {
+  --tabbar-h: 0px;
 }
 
 [data-theme='dark'] {
@@ -102,23 +146,53 @@
   --color-focus: var(--focus);
 
   --radius-card: 1.25rem;
+
+  /* text sizes follow the Android system font size (see --fs-* above); line heights are ratios */
+  --text-xs: calc(0.75rem * var(--fs-body));
+  --text-sm: calc(0.875rem * var(--fs-body));
+  --text-base: calc(1rem * var(--fs-body));
+  --text-lg: calc(1.125rem * var(--fs-lg));
+  --text-xl: calc(1.25rem * var(--fs-xl));
+  --text-2xl: calc(1.5rem * var(--fs-2xl));
+  --text-3xl: calc(1.875rem * var(--fs-3xl));
+  --text-4xl: calc(2.25rem * var(--fs-4xl));
+  --text-5xl: calc(3rem * var(--fs-4xl));
+  --text-6xl: calc(3.75rem * var(--fs-4xl));
   --shadow-card: var(--shadow);
 }
 
 html {
+  /* in-app text size setting (whole layout); the Android system font size: see --os above */
   font-size: calc(100% * var(--text-scale, 1));
   /* keep focused / scrolled-to elements clear of the sticky header and the bottom tab bar */
-  scroll-padding-top: calc(4.5rem + env(safe-area-inset-top));
-  scroll-padding-bottom: calc(6rem + env(safe-area-inset-bottom));
+  scroll-padding-top: calc(4.5rem + var(--inset-top));
+  scroll-padding-bottom: calc(2rem + var(--tabbar-h));
   -webkit-text-size-adjust: 100%;
   background: var(--bg);
 }
 
 body {
   @apply bg-bg text-fg font-sans antialiased;
+  font-size: calc(1rem * var(--fs-body));
+  /* long words (German compounds, URLs) wrap instead of widening the page */
+  overflow-wrap: break-word;
   min-height: 100dvh;
   overscroll-behavior-y: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+/*
+ * Large text must never widen the page: grid items and flexible flex items may shrink below
+ * their content width (the default `min-width: auto` lets long content push the layout wider).
+ */
+.grid > *,
+.flex-1 {
+  min-width: 0;
+}
+/* a single long word in a button may break rather than push the row wider (200 % text) */
+button,
+[role='button'] {
+  overflow-wrap: anywhere;
 }
 
 h1,
@@ -142,14 +216,17 @@ h3 {
 }
 
 .safe-top {
-  padding-top: env(safe-area-inset-top);
+  padding-top: var(--inset-top);
 }
 .safe-bottom {
-  padding-bottom: env(safe-area-inset-bottom);
+  padding-bottom: var(--inset-bottom);
 }
 .safe-x {
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
+  padding-left: var(--inset-left);
+  padding-right: var(--inset-right);
+}
+:root[data-keyboard='open'] .hide-on-keyboard {
+  display: none;
 }
 
 /* Recipe cards (kreator zajęć) – subtle "kitchen card" look */

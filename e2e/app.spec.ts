@@ -261,7 +261,7 @@ test('no horizontal scrolling at phone width on any screen', async ({ page }) =>
   for (const r of routes) {
     await go(page, r);
     await page.waitForTimeout(350);
-    const w = await page.evaluate(() => [document.documentElement.scrollWidth, window.innerWidth]);
+    const w = await page.evaluate(() => [document.documentElement.scrollWidth, window.visualViewport?.width ?? window.innerWidth]);
     if (w[0]! > w[1]! + 1) overflow.push(`${r}: ${w[0]} > ${w[1]}`);
   }
   expect(overflow).toEqual([]);

@@ -16,13 +16,13 @@ const variants: Record<Variant, string> = {
 };
 const sizes: Record<Size, string> = {
   sm: 'min-h-11 px-3 text-sm gap-1.5',
-  md: 'min-h-11 px-4 text-[0.95rem] gap-2',
+  md: 'min-h-11 px-4 text-[length:calc(0.95rem*var(--fs-body))] gap-2',
   lg: 'min-h-13 px-6 text-base gap-2',
 };
 
 export const buttonClass = (variant: Variant = 'primary', size: Size = 'md', extra?: string) =>
   cn(
-    'inline-flex items-center justify-center rounded-xl font-medium transition-[background,transform,opacity] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none select-none',
+    'inline-flex max-w-full min-w-0 items-center justify-center rounded-xl text-center font-medium [overflow-wrap:anywhere] transition-[background,transform,opacity] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none select-none',
     variants[variant],
     sizes[size],
     extra,

@@ -6,6 +6,7 @@ import { useSyncExternalStore } from 'react';
 import { db } from './db';
 import type { Space } from '@/domain/types';
 import type { ReviewStatus } from '@/content/types';
+import { syncSystemBars } from './platform';
 
 export type Lang = 'pl' | 'en';
 export type Theme = 'light' | 'dark' | 'system';
@@ -92,4 +93,5 @@ export function applyTheme(p: Prefs) {
   root.lang = p.lang;
   const meta = document.querySelector('meta[name="theme-color"]');
   meta?.setAttribute('content', dark ? '#151816' : '#f6f1ea');
+  syncSystemBars(dark);
 }
