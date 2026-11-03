@@ -172,6 +172,9 @@ Plik: `src/locales/{pl,en}/content/scenarios.json`
 | `codependency-mother` | Grażyna – żona pijącego męża | clinic |
 | `residential-leaving` | Patryk chce przerwać terapię | residential |
 | `streetwork-first-contact` | Kuba – pierwszy kontakt w streetworku | streetwork |
+| `ch-bern-apprentice-cannabis` | Jan, uczeń zawodu w Bernie – marihuana w przerwie | school |
+| `ch-bern-parent-alcohol` | Sandra w ośrodku pomocy społecznej – wino po rozstaniu | community |
+| `ch-bern-gassenarbeit` | Marco na Schützenmatte – pierwszy kontakt w streetworkingu | streetwork |
 
 Sprawdź klasyfikację odpowiedzi (`category`, MITI) i komentarze (`feedback`).
 
@@ -188,9 +191,85 @@ Plik: `src/locales/{pl,en}/content/decks.json`
 
 ## 11. Dane szkoleniowe (DEMO)
 
-Plik: `src/locales/{pl,en}/content/demo.json` – 8 fikcyjnych przypadków. Sprawdź realizm i język (bez stygmatyzacji).
+Plik: `src/locales/{pl,en}/content/demo.json` – 11 fikcyjnych przypadków. Sprawdź realizm i język (bez stygmatyzacji).
 
-## 12. Niepewności zgłoszone podczas przygotowania treści
+## 12. Wersja 1.1 – Szwajcaria (kanton Berno) i język niemiecki
+
+Wszystkie nowe treści mają `reviewStatus: "do_weryfikacji"`. Szwajcarskie treści istnieją w PL, EN i DE (wersją wzorcową jest DE).
+Tekst niemiecki: pisownia szwajcarska (ss zamiast ß – pilnują tego testy), forma „du” w interfejsie.
+
+### 12.1 Szwajcarski system pomocy – `src/locales/{pl,en,de}/content/helpsystemCH.json`
+
+| Kraj | Numer | Nazwa | id |
+|---|---|---|---|
+| CH | **143** | Die Dargebotene Hand (telefon zaufania) | `ch143` |
+| CH | **147** | Pro Juventute – telefon zaufania dla dzieci i młodzieży | `ch147` |
+| CH | **144** | Pogotowie ratunkowe (Sanitätsnotruf) | `ch144` |
+| CH | **117** | Policja (Polizeinotruf) | `ch117` |
+| CH | **112** | Europejski numer alarmowy | `ch112` |
+
+Numery CH są też w karcie PDF planu nawrotów: `reports.json` → `crisisLine_CH`.
+
+| id | Podstawa prawna | Stan na |
+|---|---|---|
+| `chBetmg` | Betäubungsmittelgesetz, BetmG (federalna ustawa o środkach odurzających, SR 812.121) | 2026-11 |
+| `chCannabisFine` | Konopie: mandat (Ordnungsbusse) i nieznaczna ilość (BetmG art. 19b, 28b i n.) | 2026-11 |
+| `chAlcoholYouth` | Ochrona małoletnich – alkohol i tytoń (prawo żywnościowe, Alkoholgesetz, Tabakproduktegesetz) | 2026-11 |
+| `chJstg` | Jugendstrafgesetz, JStG (ustawa o prawie karnym nieletnich) i Jugendstrafprozessordnung, JStPO (procedura karna nieletnich) | 2026-11 |
+| `chZgbKesr` | Prawo ochrony dzieci i dorosłych (szwajcarski kodeks cywilny ZGB, art. 307 i n., 314c–314d, 360 i n.) | 2026-11 |
+| `chBgs` | Geldspielgesetz, BGS (federalna ustawa o grach pieniężnych, SR 935.51) | 2026-11 |
+| `chBernSlg` | Kanton Berno: Gesetz über die sozialen Leistungsangebote, SLG (ustawa o świadczeniach społecznych) i Sozialhilfegesetz, SHG (ustawa o pomocy społecznej) | 2026-11 |
+
+| id | Instytucja | Kategoria |
+|---|---|---|
+| `chBag` | Bundesamt für Gesundheit, BAG (Federalny Urząd Zdrowia Publicznego) | central |
+| `chSuchtSchweiz` | Sucht Schweiz (krajowe centrum ds. uzależnień) | central |
+| `chInfodrog` | Infodrog (szwajcarskie centrum koordynacji i wiedzy o uzależnieniach) | central |
+| `chSafeZone` | SafeZone.ch – poradnictwo online w sprawach uzależnień | phone |
+| `chBernerGesundheit` | Berner Gesundheit (fundacja ds. promocji zdrowia i uzależnień, kanton Berno) | treatment |
+| `chBlauesKreuz` | Blaues Kreuz Bern-Solothurn-Freiburg (Niebieski Krzyż) | treatment |
+| `chContact` | Contact – Stiftung für Suchthilfe (fundacja pomocy w uzależnieniach; punkty kontaktowe) | local |
+| `chDrugChecking` | Drug Checking Bern (badanie substancji, Contact) | local |
+| `chResidential` | Stacjonarna terapia uzależnień (np. Klinik Südhang, wspólnoty terapeutyczne) | treatment |
+| `chGp` | Lekarze rodzinni (Hausärzt/innen) i leczenie substytucyjne (terapia agonistami opioidowymi) | treatment |
+| `chUpd` | Universitäre Psychiatrische Dienste Bern, UPD (Uniwersyteckie Służby Psychiatryczne w Bernie), w tym psychiatria dzieci i młodzieży | treatment |
+| `chKesb` | KESB – Kindes- und Erwachsenenschutzbehörde (urząd ochrony dzieci i dorosłych) | social |
+| `chSozialdienst` | Sozialdienst – gminne służby społeczne (w tym pomoc społeczna i poradnictwo zadłużeniowe) | social |
+| `chSchulsozialarbeit` | Schulsozialarbeit (praca socjalna w szkole) | education |
+| `chErziehungsberatung` | Erziehungsberatung des Kantons Bern (kantonalna poradnia wychowawcza) | education |
+| `chJugendanwaltschaft` | Jugendanwaltschaft des Kantons Bern (prokuratura ds. nieletnich kantonu Berno) | justice |
+| `chBvd` | Bewährungs- und Vollzugsdienste, BVD (służby kuratorskie i wykonawcze), Urząd Wykonania Kar kantonu Berno | justice |
+| `chPolice` | Kantonspolizei Bern (policja kantonu Berno) | justice |
+| `chOpferhilfe` | Opferhilfe – poradnie pomocy ofiarom przestępstw (kanton Berno: Lantana, Vista) i domy dla kobiet (Frauenhäuser) | social |
+| `chGassenarbeit` | Gassenarbeit (praca uliczna), noclegownie i dzienne punkty spotkań | local |
+| `chAa` | Anonimowi Alkoholicy (AA, Anonyme Alkoholiker) | selfHelp |
+| `chNa` | Anonimowi Narkomani (NA, Narcotics Anonymous) | selfHelp |
+| `chAlAnon` | Al-Anon i Alateen | selfHelp |
+| `chSelbsthilfe` | Selbsthilfe Schweiz i regionalne centrum samopomocy w Bernie | selfHelp |
+| `chDargeboteneHand` | Die Dargebotene Hand (telefon zaufania 143) | phone |
+| `chProJuventute` | Pro Juventute – Beratung + Hilfe 147 (telefon zaufania dla dzieci i młodzieży) | phone |
+| `chSosSpielsucht` | SOS-Spielsucht (pomoc w uzależnieniu od hazardu) i specjalistyczne poradnictwo hazardowe | phone |
+
+Kreator skierowania (CH): 22 reguł, pytania: age, problem, context, urgency.
+
+### 12.2 Szwajcarskie przypadki DEMO i scenariusze symulatora
+
+- DEMO `demo-ch-01` – LM-17 (clinic, cannabis, alcohol)
+- DEMO `demo-ch-02` – RB-42 (clinic, alcohol)
+- DEMO `demo-ch-03` – SK-29 (probation, opioids, stimulants, gambling)
+- Symulator `ch-bern-apprentice-cannabis` – Jan, uczeń zawodu w Bernie – marihuana w przerwie
+- Symulator `ch-bern-parent-alcohol` – Sandra w ośrodku pomocy społecznej – wino po rozstaniu
+- Symulator `ch-bern-gassenarbeit` – Marco na Schützenmatte – pierwszy kontakt w streetworkingu
+
+### 12.3 Narzędzia przesiewowe po niemiecku
+
+AUDIT, AUDIT-C i DUDIT: **TODO: oficjalna wersja DE** – do czasu wstawienia oficjalnej, walidowanej wersji niemieckiej (`src/lib/screening/de.ts`) aplikacja pokazuje oryginał angielski ze znacznikiem TODO.
+
+### 12.4 Tłumaczenie niemieckie (wszystkie pliki `src/locales/de/`)
+
+Całość przetłumaczona z EN/PL (interfejs, baza wiedzy, fiszki, narzędzia, symulator, przypadki DEMO, polski system pomocy po niemiecku). Polskie instytucje i ustawy zachowały polskie nazwy z niemieckim objaśnieniem. Sporne terminy – w sekcji 13.
+
+## 13. Niepewności zgłoszone podczas przygotowania treści
 
 ## knowledge.json
 - Lata wydań polskich WUJ: Miller & Rollnick „Dialog motywujący” (2014), Miller, Forcehimes, Zweben „Terapia uzależnień” (2014).
@@ -220,3 +299,113 @@ Plik: `src/locales/{pl,en}/content/demo.json` – 8 fikcyjnych przypadków. Spra
 
 ## decks.json
 - Talia „Prawo”: mechanizm „leczenie zamiast karania” i procedura zobowiązania do leczenia opisane ogólnie.
+
+
+# Wersja 1.1 – tłumaczenie DE i treści szwajcarskie
+
+## de/content/helpsystem.json (polski system pomocy po niemiecku)
+- „pedagog szkolny” → „Schulpädagog/in … (vergleichbar mit der Schulsozialarbeit)” – porównanie przybliżone.
+- „PPP” → „vergleichbar mit einem schulpsychologischen Dienst” – porównanie przybliżone.
+- „demoralizacja” → „Demoralisierung (Verwahrlosung)” – brak dokładnego odpowiednika.
+- „kurator” → „Bewährungshelfer/in” / „Familienbewährungshelfer/in”; zakres inny niż szwajcarska Bewährungshilfe.
+- „zakład poprawczy” / „schronisko dla nieletnich” → „Besserungsanstalt” / „Jugendheim” – archaiczne brzmienie.
+- Niemieckie tytuły ustaw to tłumaczenia własne (polskie tytuły w nawiasach).
+- „Anonyme Spieler/innen” (Anonimowi Hazardziści) – nazwa niemieckojęzycznych grup niepotwierdzona.
+- 144 „Sanitätsnotruf (Schweiz)”, 147 „Beratung für Kinder und Jugendliche” – sprawdzić oficjalne nazwy.
+- „dzielnicowy” → „Quartierpolizist/in”.
+## de/content/decks.json (fiszki)
+- res-02: „niedostosowanie społeczne” → „soziale Fehlanpassung” (rozważyć „Dissozialität”/„Verhaltensauffälligkeit”).
+- res-26: „zakład poprawczy” → „Erziehungsanstalt”, „schronisko dla nieletnich” → „Jugendunterkunft” – terminy opisowe.
+- res-20/21, law-22: „System der programmierten Einwirkung” – tłumaczenie dosłowne.
+- res-23, law-05, law-21: „kurator sądowy” → „Bewährungshelfer/in” (polska rola szersza).
+- law-01…27: niemieckie nazwy polskich ustaw i instytucji (GKRPA, KCPU, PARPA, KBPN, Niebieska Karta, PCPR, OPS) – tłumaczenia robocze.
+- law-10: wyrażenie dla nakazu opuszczenia mieszkania – sformułowanie własne.
+- prev-16: ORE → „Zentrum für Bildungsentwicklung”; prev-21: „Verhältnisprävention (strukturelle Prävention)”.
+- add-16: lapse → „Ausrutscher” (alternatywa „Vorfall”); mi-19: righting reflex → „Korrekturreflex” (alt. „Reparaturreflex”).
+- fam-09: skrót „EKA” dla ACoA mało rozpowszechniony; fam-27: świetlica → „Tagesbetreuung”.
+## de/content/scenarios.json – scenariusze 7–11
+- Patryk (23, terapia stacjonarna): „Sie”; w szwajcarskiej terapii stacjonarnej z młodymi dorosłymi często „du” – do decyzji.
+- Kuba (19, streetwork): „du”; „Gassenarbeiter/in einer Stiftung”.
+- Polskie realia opisane szwajcarskimi terminami: Notschlafstelle, Tagestreff, Wärmestube, Gassenarztpraxis, Spital, Staplerausweis, Abendschule – sprawdzić, czy akceptowalne dla polskiego kontekstu.
+- Terapia stacjonarna: Gemeinschaftssitzung, Bezugstherapeut, „Austritt auf eigenen Wunsch”.
+- Natalia: „Informatik-Fachschule (Technikum)”, „versetzungsgefährdet”.
+- Neutralne płciowo przeróbki zakończeń („Wieder eine erwachsene Person gegen sie”, „Jungs, mit der Person kann man reden.”).
+## de/content/prevention.json, templates.json, tools.json
+- Standardy profilaktyki: pełne polskie nazwy KBPN/PARPA/KCPU/ORE/IPiN z niemieckimi objaśnieniami; nazwa systemu rekomendacji zrekonstruowana; poziomy „vielversprechendes Programm / Programm guter Praxis / Modellprogramm” – sprawdzić z oficjalnymi.
+- „environmental strategies” → „Verhältnisprävention (Umweltstrategien)”.
+- Socjoterapia „Razem łatwiej” → „Gemeinsam geht's leichter”.
+- Readaptacja: polskie terminy (meldunek, ZUS, NFZ, PUP, CIS, OPS/MOPS, Fundusz Sprawiedliwości, kurator, mieszkanie socjalne/treningowe) z niemieckimi objaśnieniami – sprawdzić.
+- Narzędzia: ogólne terminy niemieckie (Bewährungshelfer/in, Sozialdienst, Heim/Einrichtung, Schulsozialarbeiter/in); urge surfing → „Suchtdruck-Surfen”; chain analysis → „Verhaltensanalyse (Kettenanalyse)”.
+## de/content/scenarios.json – scenariusze 1–6
+- Kacper: „MOW (Jugenderziehungszentrum, Polen)”, przepustka → „Wochenendurlaub”, zakład poprawczy → „geschlossene Einrichtung”.
+- Damian: kurator → „Bewährungshelferin”; wyrok w zawieszeniu → „bedingte Strafe” (termin szwajcarski) – sprawdzić względem polskiego prawa.
+- Marek: MOPS → „Sozialhilfezentrum”; „Abstinenznachweise”.
+- Andrzej: „Zwangsbehandlung”, „Entzugsklinik”.
+- Zuzia: pedagog szkolny → „Schulsozialarbeit”; klasa liceum → „erstes Jahr der Oberstufe”; autokar → „Bus” (szwajc. „Car”).
+- Tomasz: chwilówki → „Sofortkredite”, samowykluczenie → „Spielsperre”, GA → „Anonyme Spieler”.
+## de/content/knowledge.json, family.json, resocialization.json
+- EKA (ACoA); role Wegscheider-Cruse: „Held/in, Sündenbock, verlorenes Kind, Maskottchen (Clown)”.
+- ICD-11: „Störungen durch Substanzgebrauch oder Verhaltenssüchte” – oficjalnie (BfArM) być może „…oder abhängig machende Verhaltensweisen”; 6C51 „Computerspielstörung” – sprawdzić.
+- DSM-5-TR: „leicht / mittel / schwer” (wyd. niem. może mieć „mittelgradig”).
+- Procesy MI: „Beziehungsaufbau, Fokussierung, Evokation, Planung” (w niem. wydaniu być może „Hervorrufen”).
+- CRA → „Gemeindeorientierter Verstärkungsansatz” (rzadko używane); TSF → „Zwölf-Schritte-Förderung” (nieustalony termin).
+- „Soziale Unangepasstheit”, „Demoralisierung/Verwahrlosung”, „Besserungsanstalt”, „Kreiszentrum für Familienhilfe (PCPR)”, „Entlassenenhilfe”, „Justizfonds”, „Tageszentren der Bewährungshilfe” – opisowe tłumaczenia polskich pojęć.
+- „Soziotherapie” – w krajach niemieckojęzycznych także świadczenie psychiatryczne; ryzyko pomyłki.
+## de/content/demo.json (8 przypadków polskich)
+- przepustka → „Urlaub / Wochenendurlaub” (alt. „Ausgang”); wychowawca → „Erzieher”/„Sozialpädagoge”; key worker → „Bezugsperson”.
+- kurator → „Bewährungshelfer des Gerichts”.
+- IPR → „individueller Förderplan (IPR)”.
+- Przypadek 2: dopisano objaśnienie polskiej skali ocen 1–6.
+- schronisko/ogrzewalnia/świetlica/jadłodajnia → „Notunterkunft”, „Wärmestube”, „Tagestreff”, „Gassenküche” – szwajcarskie odpowiedniki.
+- Kwoty w PLN („polnische Złoty”).
+- Przypadek 7: objaśnienie „Niebieska Karta” – sformułowanie własne; przypadek 8: formy żeńskie/męskie wybrane arbitralnie.
+## helpsystemCH.json (NOWE – szwajcarski system pomocy, kanton Berno; PL/EN/DE)
+- Czy Suchthilfekonzept kantonu Berno (GSI, 2011) jest nadal aktualny / czy ma następcę.
+- SLG (uchwalona 9.3.2021, w mocy od 1.1.2022 – założenie); czy SLV nadal reguluje finansowanie Suchthilfe.
+- Stan całkowitej rewizji Sozialhilfegesetz kantonu Berno (konsultacje 2024, cel 2026).
+- Nationale Strategie Sucht – czy przedłużona po 2024 (np. do 2028) i obecna nazwa.
+- Infodrog: czy katalog nadal nazywa się „Suchtindex”; czy SafeZone.ch prowadzi Infodrog.
+- Czy poradnictwo Berner Gesundheit i Blaues Kreuz jest bezpłatne dla mieszkańców kantonu; obecna nazwa „Blaues Kreuz Bern-Solothurn-Freiburg”.
+- Kontakt- und Anlaufstellen (Contact) w Bernie/Biel/Thun i zasady dostępu.
+- Drug Checking Bern: lokalizacja, godziny, odpłatność.
+- Klinik Südhang jako przykład terapii stacjonarnej – aktualność.
+- Substytucja: zezwolenie kantonalne czy zgłoszenie (po zmianie BetmVV 2023); rola Kantonsarztamt; ośrodek HeGeBe w Bernie.
+- UPD Bern – dostęp do psychiatrycznego dyżuru; regionalne służby psychiatryczne.
+- KESB w kantonie Berno: liczba regionalnych KESB, możliwość anonimowej porady.
+- Erziehungsberatung kantonu Berno – nazwa i bezpłatność; Opferhilfe Bern („Lantana”, „Vista”).
+- Uprawnienia policji Berno przy przemocy domowej (Wegweisung, Fernhaltung, czas trwania).
+- BVD (Amt für Justizvollzug) – nazwa i organizacja; Jugendanwaltschaft Bern – zakres decyzji, mediacja.
+- JStG: środki do 25. r.ż.; grzywna i pozbawienie wolności od 15 lat.
+- Konopie: Ordnungsbusse CHF 100; orzeczenie Sądu Federalnego (do 10 g dorośli bez grzywny); limit 1% THC dla CBD; stan projektów pilotażowych i prac parlamentarnych.
+- BetmG art. 3c (Melderecht) – dokładne brzmienie.
+- Alkohol: 16 lat (napoje fermentowane, prawo żywnościowe) / 18 lat (napoje spirytusowe) – numery artykułów; zakupy testowe w Bernie.
+- Ustawa o wyrobach tytoniowych: 18 lat w całym kraju od 1.10.2024.
+- ZGB art. 314d – lista zawodów i czy poinformowanie przełożonego wypełnia obowiązek; art. 426 (FU).
+- BGS: art. 85; minimalny wiek dla loterii/zakładów; zasięg wykluczenia z gier (kasyna i online).
+- SOS-Spielsucht jako krajowa linia, Berner Gesundheit jako poradnia hazardowa w Bernie.
+- 143: koszt połączenia; 147: brak na rachunku, SMS, serwis dla rodziców.
+- Selbsthilfe Schweiz i regionalne centrum samopomocy w Bernie; Al-Anon/Alateen, NA w Bernie.
+- Terminy „Fachberatung Geldspiel”, „Kinderschutzgruppe” – ogólne, sprawdzić lokalne nazewnictwo.
+## de/*.json (interfejs)
+- Nazwa aplikacji w DE: w tekstach zostawiono angielskie „Harbor” – do decyzji (np. „Przystań” jak w nagłówku PDF).
+- Nazewnictwo podopiecznego w DE: „Klient/in (Betreuung)”, „Klient/in (Beratung)”, „Jugendliche/r (Einrichtung)”, „Teilnehmer/in”.
+- Readaptacja → „Wiedereingliederung”.
+- AUDIT: strefy „riskanter / schädlicher Konsum”, „mögliche Abhängigkeit” oraz poziomy interwencji WHO („einfache Beratung”, „Kurzintervention”) – sformułowania własne, porównać z oficjalną wersją niemiecką.
+- Poradnia leczenia uzależnień → „Suchtfachstelle”; diagnoza pedagogiczna → „Sozialpädagogische Abklärung”; IPR → „individueller Förderplan”.
+- Narzędzia: „Bereitschaftslineal”, „Entscheidungswaage”, „Nein sagen”; „Anzeigen für {{client}}”.
+- Symulator: sojusz → „Arbeitsbündnis/Arbeitsbeziehung”, afirmacja → „Würdigung”.
+- Nazwa aplikacji w DE ujednolicona na „Przystań” (alternatywa: „Hafen”).
+- „sesja” → „Gespräch”; „Sitzungsrezepte”, „Sitzungsbaukasten”.
+- Formy bez rodzajnika przy {{client}}: sprawdzić w aplikacji „Das ist die/der {{client}}” (genogram) i „Neu: {{client}}” (pulpit).
+- enums.context: juvenile → „Jugendheim / Massnahmenzentrum für Jugendliche”, probation → „Bewährungshilfe” (terminy szwajcarskie dla polskiego kontekstu).
+- enums.sex: „Divers”, „Keine Angabe”; help.cat local → „Gemeinde / Kanton”.
+- Prywatność: tekst wspomina DSGVO (jak EN); dla Szwajcarii właściwa nDSG; „besonders schützenswerte Daten” to termin nDSG.
+## Szwajcarskie przypadki DEMO (demo-ch-01…03) i scenariusze symulatora (ch-bern-*) – NOWE, PL/EN/DE
+- Jugendanwaltschaft: „persönliche Leistung” (art. 23 JStG) jako sesje w Berner Gesundheit nakazane Strafbefehl przy pierwszym czynie.
+- Nazwy: „Jugendanwaltschaft Region Bern-Mittelland”, „Regionalgericht Bern-Mittelland”, „Bewährungs- und Vollzugsdienste (BVD)”, „Berner Schuldenberatung”, „Ausbildungsberatung des Mittelschul- und Berufsbildungsamts (MBA)”.
+- Leczenie agonistami opioidowymi u lekarza rodzinnego „mit Bewilligung des Kantonsarztamts”.
+- Spielsperre obejmuje wszystkie licencjonowane kasyna, także online.
+- K&A Bern: pokój konsumpcji, pielęgniarka, podstawowa opieka medyczna; Klinik Südhang; pilotażowy program konopny w Bernie (tylko dorośli).
+- Szwajcarska skala ocen (6 najlepsza, 4 dostateczna), „Stange” = 3 dl piwa, Pikettdienst.
+- KESB i nadzorowane kontakty z dzieckiem rodziców niebędących małżeństwem.
+- Forma zwracania się: „Sie” w Sozialdienst, „du” w Gassenarbeit – potwierdzić praktykę w Bernie.

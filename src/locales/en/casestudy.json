@@ -1,0 +1,31 @@
+{
+  "open": "Case study",
+  "title": "Anonymous case study",
+  "subtitle": "Assessment, programme, course and evaluation – without identifying data",
+  "defaultTitle": "Case study",
+  "titleLabel": "Document title",
+  "anonNotice_one": "{{count}} fragment with identifying data was removed automatically (codes, names, contacts, addresses, exact dates). Read the preview and correct it before exporting.",
+  "anonNotice_other": "{{count}} fragments with identifying data were removed automatically (codes, names, contacts, addresses, exact dates). Read the preview and correct it before exporting.",
+  "reviewHint": "Automatic removal cannot catch everything (e.g. names of towns, schools or rare biographical details). You are responsible for the anonymisation – check the text before exporting.",
+  "export": "Export PDF",
+  "person": "Person",
+  "date": "Date",
+  "measure": "Measure",
+  "relapse": "Relapse prevention plan",
+  "meetingsCount_one": "{{count}} session held.",
+  "meetingsCount_other": "{{count}} sessions held.",
+  "meeting": "Session {{n}}",
+  "events": "Key events",
+  "none": "No data.",
+  "sections": {
+    "profile": "Case description",
+    "diagnosis": "Assessment",
+    "programme": "Intervention programme",
+    "course": "Course",
+    "evaluation": "Evaluation"
+  },
+  "pdfSubtitle": "Anonymised – for training and supervision",
+  "pdfFooter": "Przystań · case study (anonymous)",
+  "pdfNote": "Identifying data were removed or changed. Dates are given to the month.",
+  "fileName": "case-study"
+}

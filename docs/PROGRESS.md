@@ -1,4 +1,4 @@
-# Postęp prac
+| 7 | Przypomnienie o kopii zapasowej (baner > 7 dni) | ✅ || 6 | Anonimowe studium przypadku: automatyczna anonimizacja, podgląd z edycją, PDF | ✅ || 5 | Notatnik i superwizja: tagi, wyszukiwanie, przypinanie, przypisania, zadania na Pulpicie, ukryte w prezentacji | ✅ || 4 | Dzienniczek praktyk: wpisy, licznik godzin (cel 90 h), PDF dla opiekuna z anonimizacją | ✅ || 3 | Odblokowanie biometrią: Android Keystore (własna wtyczka) / WebAuthn PRF, zasady hasła, testy | ✅ || 2 | Wersja niemiecka (DE, pisownia szwajcarska) i „Kraj pracy” PL/CH: szwajcarski system pomocy, prawo, numery, 3 przypadki DEMO, 3 scenariusze | ✅ |# Postęp prac
 
 Stan: **wszystkie etapy 1–15 zakończone**, poza publikacją na GitHubie (wymaga decyzji o koncie – patrz `HANDOVER.md`).
 
@@ -26,12 +26,12 @@ Stan: **wszystkie etapy 1–15 zakończone**, poza publikacją na GitHubie (wyma
 |---|---|---|
 | 0 | Naprawa repo na Windows (artefakty Lighthouse), profil Lighthouse poza projektem, `npm ci`, `gh` na koncie michaelkuchno | ✅ |
 | 1 | Układ na Androidzie: edge-to-edge (SystemBars, insety jako zmienne CSS), duża czcionka (skalowany tekst), bez wymuszonego trybu ciemnego, klawiatura, testy 3 profili Androida | ✅ |
-| 2 | Wersja niemiecka (DE) i ustawienie „Kraj pracy” (PL/CH) | ⏳ |
-| 3 | Odblokowanie biometrią (Android Keystore / WebAuthn PRF) | ⏳ |
-| 4 | Dzienniczek praktyk | ⏳ |
-| 5 | Notatnik i superwizja | ⏳ |
-| 6 | Studium przypadku – anonimowy PDF | ⏳ |
-| 7 | Przypomnienie o kopii zapasowej | ⏳ |
+| 2 | Wersja niemiecka (DE, pisownia szwajcarska) i „Kraj pracy” PL/CH: szwajcarski system pomocy, prawo, numery, 3 przypadki DEMO, 3 scenariusze | ✅ |
+| 3 | Odblokowanie biometrią: Android Keystore (własna wtyczka) / WebAuthn PRF, zasady hasła, testy | ✅ (wymaga testu na urządzeniu) |
+| 4 | Dzienniczek praktyk: wpisy, licznik godzin (cel 90 h), PDF dla opiekuna z anonimizacją | ✅ |
+| 5 | Notatnik i superwizja: tagi, wyszukiwanie, przypinanie, przypisania, zadania na Pulpicie, ukryte w prezentacji | ✅ |
+| 6 | Anonimowe studium przypadku: automatyczna anonimizacja, podgląd z edycją, PDF | ✅ |
+| 7 | Przypomnienie o kopii zapasowej (baner > 7 dni) | ✅ |
 | 8 | Podgląd lokalny (`scripts/start-local.ps1`) | ⏳ |
 | 9 | Wersja 1.1.0, Pages, Release z APK, README | ⏳ |
 

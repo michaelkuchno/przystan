@@ -1,0 +1,48 @@
+{
+  "title": "Placement log",
+  "subtitle": "Placement entries, hour counter and a PDF for your supervisor",
+  "add": "Add entry",
+  "edit": "Edit entry",
+  "saved": "Entry saved",
+  "deleted": "Entry deleted",
+  "deleteConfirm": "Delete this entry?",
+  "exportPdf": "PDF for supervisor",
+  "progress": "Hours completed",
+  "goal": "Goal (h)",
+  "remaining": "{{h}} h to go",
+  "done": "Goal reached – congratulations!",
+  "privacy": "The log describes your work, not the people you work with: do not enter names, codes or anything that could identify them. On PDF export, known codes and contact details are also removed automatically.",
+  "emptyTitle": "No entries yet",
+  "emptyText": "Record every placement day: setting, hours, type of activity, description and reflections.",
+  "fields": {
+    "date": "Date",
+    "hours": "Hours",
+    "place": "Placement",
+    "placeHint": "Name and town of the organisation",
+    "activity": "Type of activity",
+    "description": "Description",
+    "noIdentifiers": "No identifying data about service users.",
+    "reflections": "Reflections"
+  },
+  "activity": {
+    "observation": "Observation",
+    "individual": "Individual work",
+    "group": "Group session",
+    "prevention": "Prevention session",
+    "documentation": "Documentation",
+    "teamMeeting": "Team meeting",
+    "supervision": "Supervision / consultation",
+    "other": "Other"
+  },
+  "pdf": {
+    "title": "Placement log",
+    "subtitle": "Summary for the placement supervisor",
+    "total": "Total",
+    "entries": "Entries",
+    "entriesTitle": "Placement record",
+    "descriptionAndReflections": "Description and reflections",
+    "note": "This document contains no identifying data about the people worked with (codes, names and contact details were removed automatically).",
+    "student": "Student’s signature",
+    "supervisor": "Supervisor’s signature"
+  }
+}

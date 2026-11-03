@@ -1,0 +1,31 @@
+{
+  "open": "Fallstudie",
+  "title": "Anonyme Fallstudie",
+  "subtitle": "Abklärung, Förderplan, Verlauf und Evaluation – ohne identifizierende Angaben",
+  "defaultTitle": "Fallstudie",
+  "titleLabel": "Titel des Dokuments",
+  "anonNotice_one": "{{count}} Stelle mit identifizierenden Angaben wurde automatisch entfernt (Codes, Namen, Kontakte, Adressen, genaue Daten). Lies die Vorschau und korrigiere sie vor dem Export.",
+  "anonNotice_other": "{{count}} Stellen mit identifizierenden Angaben wurden automatisch entfernt (Codes, Namen, Kontakte, Adressen, genaue Daten). Lies die Vorschau und korrigiere sie vor dem Export.",
+  "reviewHint": "Die automatische Entfernung erkennt nicht alles (z. B. Ortsnamen, Schulen oder seltene biografische Details). Für die Anonymisierung bist du verantwortlich – prüfe den Text vor dem Export.",
+  "export": "PDF exportieren",
+  "person": "Person",
+  "date": "Datum",
+  "measure": "Messgrösse",
+  "relapse": "Rückfallprophylaxe-Plan",
+  "meetingsCount_one": "{{count}} durchgeführtes Gespräch.",
+  "meetingsCount_other": "{{count}} durchgeführte Gespräche.",
+  "meeting": "Gespräch {{n}}",
+  "events": "Wichtige Ereignisse",
+  "none": "Keine Angaben.",
+  "sections": {
+    "profile": "Fallbeschreibung",
+    "diagnosis": "Abklärung",
+    "programme": "Förder- und Interventionsplan",
+    "course": "Verlauf",
+    "evaluation": "Evaluation"
+  },
+  "pdfSubtitle": "Anonymisiert – für Ausbildung und Supervision",
+  "pdfFooter": "Przystań · Fallstudie (anonym)",
+  "pdfNote": "Identifizierende Angaben wurden entfernt oder verändert. Daten sind auf den Monat genau angegeben.",
+  "fileName": "fallstudie"
+}

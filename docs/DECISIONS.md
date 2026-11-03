@@ -219,3 +219,67 @@ przepełnień. Poprawiony test ujawnił i naprawiono istniejące przepełnienia 
 ## D-033 Końce linii
 `.gitattributes` wymusza LF (poza `*.bat`, `*.ps1`). Bez tego przy `core.autocrlf=true` na
 Windows skrypty `.sh` i `gradlew` dostałyby CRLF.
+
+## D-034 Wersja niemiecka (DE) – pisownia i terminologia szwajcarska
+Trzeci język `de` (interfejs, wszystkie treści, symulator, fiszki, baza wiedzy, PDF). Pisownia
+szwajcarska: „ss” zamiast „ß” – testy (`content.test.ts`, `locales.test.ts`) odrzucają „ß”.
+Terminologia: Soziale Arbeit, Sozialpädagogik, Suchtberatung, Klient/in (formy z ukośnikiem; bez
+odmiany przez przypadki, więc zmienne `{{client}}` nie wymagają form fleksyjnych). Interfejs używa
+„du”; w dialogach symulatora rejestr zależy od sytuacji (młodzież – „du”, dorośli – „Sie”).
+Polskie treści przetłumaczono wiernie (polskie instytucje i ustawy z niemieckim objaśnieniem), bez
+„uszwajcarszczania”. Domyślny język = język systemu (pl → PL, de/gsw → DE, inne → EN). Nazwa
+aplikacji w DE: „Przystań” (jak w PDF). Tłumaczenie przygotowano równolegle w kilku częściach;
+spójność struktury pilnuje `scripts/check-locale-shape.mjs` i testy treści.
+
+## D-035 Kraj pracy niezależny od języka
+Nowe ustawienie `country: 'PL' | 'CH'` (onboarding i Ustawienia; domyślnie CH dla locale `*-CH`
+i języka niemieckiego, inaczej PL). Od niego zależą: system pomocy i „Gdzie skierować?” (nowy rodzaj
+treści `helpsystemCH` obok `helpsystem` – polski), podstawy prawne, numery kryzysowe (kraj pracy
+pierwszy; każdy kraj z własnego pliku), przypadki DEMO (`DemoCase.country`; zmiana kraju w trybie
+DEMO wczytuje przypadki ponownie, jak zmiana języka – D-024), kolejność scenariuszy symulatora
+(`Scenario.country`, plakietka kraju) oraz teksty zależne od kraju przez kontekst i18next
+(`klucz_CH`: linia kryzysowa w PDF, przemoc w rodzinie, podtytuł systemu pomocy).
+
+## D-036 Narzędzia przesiewowe po niemiecku
+Jak w PL nie tłumaczymy samodzielnie narzędzi walidowanych: `src/lib/screening/de.ts` ma puste
+miejsca na oficjalne wersje DE (AUDIT, AUDIT-C, DUDIT); do tego czasu – oryginał angielski
+z widocznym znacznikiem „TODO: offizielle DE-Fassung”. Wspólna funkcja `officialText()`.
+
+## D-037 Odblokowanie biometrią
+Opcjonalne, w Ustawieniach → Bezpieczeństwo. Hasło zawsze działa.
+- **Android**: własna wtyczka `PrzystanBiometric` (`BiometricPlugin.java`, `androidx.biometric`
+  – darmowe, utrzymywane przez Google; bez zewnętrznych pluginów). Klucz AES-256-GCM w Android
+  Keystore z `setUserAuthenticationRequired(true)` i `setInvalidatedByBiometricEnrollment(true)`,
+  użycie tylko przez `BiometricPrompt` + `CryptoObject` (silna biometria, każdorazowo). Szyfruje
+  kopię DEK. Zmiana biometrii w systemie → `KeyPermanentlyInvalidatedException` → opcja wyłączana,
+  wymagane hasło.
+- **iOS / PWA**: passkey (WebAuthn) z rozszerzeniem PRF; wynik PRF → HKDF-SHA256 → klucz AES-GCM
+  opakowujący kopię DEK. Opcja widoczna tylko, gdy `getClientCapabilities()` deklaruje
+  `extension:prf` i jest platformowy uwierzytelniacz; przy braku PRF przy tworzeniu – błąd, opcja
+  się nie włącza.
+- Hasło wymagane: przy włączaniu (odszyfrowuje DEK do opakowania), po zmianie biometrii (Android),
+  po 5 nieudanych próbach, co 7 dni (`src/lib/biometric/policy.ts`). Wyłączenie usuwa opakowany
+  klucz (i klucz z Keystore). Przywrócenie kopii zapasowej (inny DEK) usuwa ustawienie biometrii.
+- Na iOS (WebAuthn) nie da się wykryć zmiany biometrii – chroni zasada 7 dni.
+
+## D-038 Dzienniczek praktyk, notatnik i superwizja
+Nowe rodzaje zaszyfrowanych rekordów `practice` i `note` (automatycznie w kopii zapasowej).
+Cel godzin w preferencjach (`practiceGoalH`, domyślnie 90). Notatki: typ `note` / `supervision`
+(data, rola osoby bez danych osobowych, wnioski, zadania); otwarte zadania z superwizji na Pulpicie;
+notatki w wyszukiwarce globalnej; w trybie prezentacji lista, edytor, zadania i wyniki wyszukiwania
+notatek są ukryte.
+
+## D-039 Anonimizacja w eksportach (dzienniczek, studium przypadku)
+`src/lib/anonymize.ts` (best effort): kody i imiona/nazwiska osób (także formy odmienione – polska
+fleksja), osoby wspierające i imiona z genogramu, e-maile, telefony PL/CH, PESEL, AHV, IBAN, adresy,
+kody pocztowe; dokładne daty → miesiąc i rok. Studium przypadku ma **podgląd z edycją** i wyłączaniem
+sekcji przed eksportem, z jasną informacją, że odpowiedzialność za anonimizację ma użytkownik.
+
+## D-040 Przypomnienie o kopii
+Baner na Pulpicie (tylko tryb praktyczny, gdy są dane), gdy ostatnia kopia jest starsza niż 7 dni
+lub nie było żadnej; „Jutro” odkłada przypomnienie o 24 h; „Zrób kopię” prowadzi do sekcji kopii.
+
+## D-041 Commity punktów 2–7
+Punkty 2–7 powstawały równolegle (wspólne pliki: preferencje, typy, teksty). Zatwierdzono je
+w osobnych commitach według grup plików; pełna weryfikacja (lint, typecheck, testy jednostkowe
+i E2E) dotyczy stanu po ostatnim z nich – pośrednie commity nie były testowane osobno.

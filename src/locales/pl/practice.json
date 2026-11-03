@@ -1,0 +1,48 @@
+{
+  "title": "Dzienniczek praktyk",
+  "subtitle": "Wpisy z praktyk, licznik godzin i PDF dla opiekuna",
+  "add": "Dodaj wpis",
+  "edit": "Edytuj wpis",
+  "saved": "Wpis zapisany",
+  "deleted": "Wpis usunięty",
+  "deleteConfirm": "Usunąć ten wpis?",
+  "exportPdf": "PDF dla opiekuna",
+  "progress": "Zrealizowane godziny",
+  "goal": "Cel (h)",
+  "remaining": "Pozostało {{h}} h",
+  "done": "Cel osiągnięty – gratulacje!",
+  "privacy": "Dzienniczek opisuje Twoją pracę, nie podopiecznych: nie wpisuj imion, kodów ani innych danych pozwalających ich rozpoznać. Przy eksporcie PDF znane kody i dane kontaktowe są dodatkowo usuwane automatycznie.",
+  "emptyTitle": "Brak wpisów",
+  "emptyText": "Zapisuj każdy dzień praktyk: placówkę, godziny, rodzaj zajęć, opis i wnioski.",
+  "fields": {
+    "date": "Data",
+    "hours": "Liczba godzin",
+    "place": "Placówka",
+    "placeHint": "Nazwa i miejscowość placówki",
+    "activity": "Rodzaj zajęć",
+    "description": "Opis",
+    "noIdentifiers": "Bez danych identyfikujących podopiecznych.",
+    "reflections": "Wnioski"
+  },
+  "activity": {
+    "observation": "Obserwacja",
+    "individual": "Praca indywidualna",
+    "group": "Zajęcia grupowe",
+    "prevention": "Zajęcia profilaktyczne",
+    "documentation": "Dokumentacja",
+    "teamMeeting": "Zespół / narada",
+    "supervision": "Superwizja / konsultacja",
+    "other": "Inne"
+  },
+  "pdf": {
+    "title": "Dzienniczek praktyk",
+    "subtitle": "Zestawienie dla opiekuna praktyk",
+    "total": "Razem",
+    "entries": "Wpisów",
+    "entriesTitle": "Przebieg praktyk",
+    "descriptionAndReflections": "Opis i wnioski",
+    "note": "Dokument nie zawiera danych identyfikujących osób, z którymi pracowano (kody, imiona i dane kontaktowe usunięto automatycznie).",
+    "student": "Podpis praktykanta / praktykantki",
+    "supervisor": "Podpis opiekuna praktyk"
+  }
+}

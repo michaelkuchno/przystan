@@ -1,0 +1,48 @@
+{
+  "title": "Praktikumsjournal",
+  "subtitle": "Einträge, Stundenzähler und PDF für die Praxisanleitung",
+  "add": "Eintrag hinzufügen",
+  "edit": "Eintrag bearbeiten",
+  "saved": "Eintrag gespeichert",
+  "deleted": "Eintrag gelöscht",
+  "deleteConfirm": "Diesen Eintrag löschen?",
+  "exportPdf": "PDF für Praxisanleitung",
+  "progress": "Geleistete Stunden",
+  "goal": "Ziel (h)",
+  "remaining": "Noch {{h}} h",
+  "done": "Ziel erreicht – gratuliere!",
+  "privacy": "Das Journal beschreibt deine Arbeit, nicht die Klient/innen: Trage keine Namen, Codes oder andere Angaben ein, die sie erkennbar machen. Beim PDF-Export werden bekannte Codes und Kontaktdaten zusätzlich automatisch entfernt.",
+  "emptyTitle": "Noch keine Einträge",
+  "emptyText": "Halte jeden Praktikumstag fest: Einrichtung, Stunden, Art der Tätigkeit, Beschreibung und Reflexion.",
+  "fields": {
+    "date": "Datum",
+    "hours": "Stunden",
+    "place": "Praktikumsort",
+    "placeHint": "Name und Ort der Einrichtung",
+    "activity": "Art der Tätigkeit",
+    "description": "Beschreibung",
+    "noIdentifiers": "Ohne Angaben, die Klient/innen identifizieren.",
+    "reflections": "Reflexion"
+  },
+  "activity": {
+    "observation": "Beobachtung",
+    "individual": "Einzelarbeit",
+    "group": "Gruppenangebot",
+    "prevention": "Präventionsangebot",
+    "documentation": "Dokumentation",
+    "teamMeeting": "Teamsitzung",
+    "supervision": "Supervision / Fallbesprechung",
+    "other": "Anderes"
+  },
+  "pdf": {
+    "title": "Praktikumsjournal",
+    "subtitle": "Übersicht für die Praxisanleitung",
+    "total": "Total",
+    "entries": "Einträge",
+    "entriesTitle": "Praktikumsverlauf",
+    "descriptionAndReflections": "Beschreibung und Reflexion",
+    "note": "Das Dokument enthält keine Angaben, die betreute Personen identifizieren (Codes, Namen und Kontaktdaten wurden automatisch entfernt).",
+    "student": "Unterschrift Praktikant/in",
+    "supervisor": "Unterschrift Praxisanleitung"
+  }
+}
