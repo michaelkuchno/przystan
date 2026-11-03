@@ -86,11 +86,12 @@ export async function createVault(password: string, iterations = PBKDF2_ITERATIO
   return { vault, dek };
 }
 
-async function importDek(raw: Uint8Array<ArrayBuffer>): Promise<CryptoKey> {
+export async function importDek(raw: Uint8Array<ArrayBuffer>): Promise<CryptoKey> {
   return crypto.subtle.importKey('raw', raw, { name: 'AES-GCM' }, false, ['encrypt', 'decrypt']);
 }
 
-async function unwrapRaw(password: string, vault: WrappedVault): Promise<Uint8Array<ArrayBuffer>> {
+/** Raw DEK bytes (caller must wipe them with fill(0)); throws WrongPasswordError. */
+export async function unwrapRaw(password: string, vault: WrappedVault): Promise<Uint8Array<ArrayBuffer>> {
   const kek = await deriveKek(password, fromB64(vault.salt), vault.iterations);
   try {
     return new Uint8Array(await decryptBytes(kek, vault.wrappedDek, 'przystan-dek'));

@@ -104,6 +104,8 @@ export async function restoreBackup(text: string, password: string): Promise<{ r
     await db.records.clear();
     await db.records.bulkPut(b.records.map((r) => ({ ...r, deletedAt: 0 })));
     await db.meta.put({ key: 'vault', value: b.vault });
+    // the restored vault has another data key: biometric unlock must be set up again
+    await db.meta.delete('bio');
   });
   _setKey(key);
   return { records: b.records.length };

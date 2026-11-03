@@ -11,6 +11,8 @@ import { Skeleton } from '@/components/ui/core';
 import { unlock } from '@/lib/vault';
 import { WrongPasswordError } from '@/lib/crypto';
 import { haptic } from '@/lib/platform';
+import { notePasswordUnlock } from '@/lib/biometric';
+import { BiometricUnlock } from './BiometricUnlock';
 
 export function LockScreen() {
   const { t } = useTranslation();
@@ -31,6 +33,7 @@ export function LockScreen() {
     setError(false);
     try {
       await unlock(pw);
+      void notePasswordUnlock();
       void haptic('success');
     } catch (e) {
       if (e instanceof WrongPasswordError) {
@@ -82,6 +85,7 @@ export function LockScreen() {
           {busy ? <Loader2 className="size-5 animate-spin" aria-hidden /> : <LockKeyhole className="size-5" aria-hidden />}
           {t('lock.unlock')}
         </Button>
+        <BiometricUnlock />
         <p className="mt-6 text-xs text-muted">{t('lock.forgot')}</p>
       </form>
       <button
