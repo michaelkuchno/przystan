@@ -38,16 +38,16 @@ export default function DecisionalBalance({ aud, onResult }: ToolProps) {
       <div className="rounded-2xl border border-line p-4" aria-live="polite">
         <div className="mb-2 text-sm font-medium">{t('balance.scale')}</div>
         <div className="flex items-center gap-3 text-sm">
-          <span className="w-24 text-right text-accent">
+          <span className="w-20 shrink-0 text-right text-accent sm:w-24">
             {t('balance.status')} ({forStatus})
           </span>
-          <div className="relative h-3 flex-1 rounded-full bg-surface-3">
+          <div className="relative h-3 min-w-0 flex-1 rounded-full bg-surface-3">
             <div
               className="absolute top-1/2 size-5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-surface bg-primary shadow transition-all"
               style={{ left: `${forChange + forStatus ? (forChange / (forChange + forStatus)) * 100 : 50}%` }}
             />
           </div>
-          <span className="w-24 text-primary">
+          <span className="w-20 shrink-0 text-primary sm:w-24">
             {t('balance.change')} ({forChange})
           </span>
         </div>

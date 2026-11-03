@@ -234,14 +234,14 @@ export function Dashboard() {
                   <Link
                     key={m.id}
                     to={m.status === 'planned' ? `/meetings/${m.id}/live` : `/meetings/${m.id}`}
-                    className="flex items-center gap-4 rounded-2xl border border-line bg-surface p-4 shadow-sm transition hover:border-primary/40"
+                    className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-2xl border border-line bg-surface p-4 shadow-sm transition hover:border-primary/40"
                   >
                     <div className="w-14 text-center">
                       <div className="font-serif text-xl font-semibold">{fmtTime(m.date)}</div>
                       <div className="text-xs text-muted">{m.durationMin} min</div>
                     </div>
                     {c && <Avatar label={c.code} tone={c.isGroup ? 'blue' : 'primary'} />}
-                    <div className="min-w-0 flex-1">
+                    <div className="min-w-0 flex-1 basis-32">
                       <div className="truncate font-medium">
                         <span className="pii">{c?.code ?? m.title ?? t('meetings:untitled')}</span>
                       </div>

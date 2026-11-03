@@ -37,7 +37,8 @@
     "bioLockout": "Zu viele Versuche. Gib dein Passwort ein.",
     "bioFailed": "Nicht erkannt. Versuche es erneut oder gib dein Passwort ein.",
     "bioTooMany": "Nach 5 Fehlversuchen mit Biometrie ist das Passwort nötig.",
-    "bioExpired": "Alle 7 Tage ist das Passwort nötig – danach kannst du wieder Biometrie verwenden."
+    "bioExpired": "Alle 7 Tage ist das Passwort nötig – danach kannst du wieder Biometrie verwenden.",
+    "bioUnavailable": "Biometrie ist gerade nicht verfügbar. Versuche es erneut oder gib dein Passwort ein."
   },
   "mode": {
     "switch": "Zwischen Praxis- und Übungsmodus wechseln",

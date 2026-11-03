@@ -1,4 +1,5 @@
 name: Android APK
+run-name: "Android APK · ${{ github.ref_name }}"
 
 # Builds the signed APK. The keystore is stored as repository secrets:
 #   PRZYSTAN_KEYSTORE_BASE64, PRZYSTAN_KEYSTORE_PASSWORD, PRZYSTAN_KEY_ALIAS, PRZYSTAN_KEY_PASSWORD

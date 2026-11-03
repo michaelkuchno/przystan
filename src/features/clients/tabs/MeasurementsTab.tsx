@@ -101,7 +101,7 @@ export default function MeasurementsTab({ client }: { client: Client }) {
         <h3 className="px-4 pt-4 font-semibold">{t('measurements.history')}</h3>
         <ul className="divide-y divide-line">
           {[...ms].reverse().map((m) => (
-            <li key={m.id} className="flex items-center gap-3 px-4 py-2.5">
+            <li key={m.id} className="flex flex-wrap items-center gap-x-3 gap-y-1 px-4 py-2.5">
               <span className="w-24 shrink-0 text-sm text-muted">{fmtDate(m.date)}</span>
               <span className="flex-1 font-medium">
                 {m.source.kind === 'screening' ? m.source.instrument : t(`tools:names.${m.source.tool}`)}

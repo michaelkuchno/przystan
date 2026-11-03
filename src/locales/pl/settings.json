@@ -91,6 +91,9 @@
     "unsupported": "To urządzenie lub przeglądarka nie obsługuje bezpiecznego odblokowania biometrią (wymagane rozszerzenie PRF).",
     "error": "Nie udało się włączyć biometrii. Spróbuj ponownie.",
     "promptTitle": "Przystań",
-    "promptEnable": "Potwierdź, aby włączyć odblokowanie biometrią"
+    "promptEnable": "Potwierdź, aby włączyć odblokowanie biometrią",
+    "stepPrompt": "Hasło poprawne. Dotknij przycisku poniżej i potwierdź odciskiem palca, twarzą lub Face ID.",
+    "stepConfirm": "Klucz dostępu został utworzony. Potwierdź jeszcze raz, aby dokończyć.",
+    "confirm": "Potwierdź"
   }
 }

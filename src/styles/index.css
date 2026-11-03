@@ -185,14 +185,23 @@ body {
  * Large text must never widen the page: grid items and flexible flex items may shrink below
  * their content width (the default `min-width: auto` lets long content push the layout wider).
  */
-.grid > *,
-.flex-1 {
-  min-width: 0;
-}
-/* a single long word in a button may break rather than push the row wider (200 % text) */
-button,
-[role='button'] {
-  overflow-wrap: anywhere;
+/*
+ * In the base layer, so utilities (min-w-0, …) can still override them locally.
+ * A flexible text column may shrink, but not below ~5rem (unless its container is narrower):
+ * with min-width 0 it was squeezed to a few letters next to buttons and badges.
+ */
+@layer base {
+  .grid > * {
+    min-width: 0;
+  }
+  .flex-1:not(:empty) {
+    min-width: min(100%, 5rem);
+  }
+  /* a single long word in a button may break rather than push the row wider (200 % text) */
+  button,
+  [role='button'] {
+    overflow-wrap: anywhere;
+  }
 }
 
 h1,

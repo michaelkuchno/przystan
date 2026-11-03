@@ -36,7 +36,7 @@ const Native = registerPlugin<NativeBiometric>('PrzystanBiometric');
 /** Errors the UI can explain. */
 export class BioError extends Error {
   constructor(
-    readonly code: 'cancelled' | 'failed' | 'invalidated' | 'lockout' | 'unsupported' | 'blocked',
+    readonly code: 'cancelled' | 'failed' | 'invalidated' | 'lockout' | 'unavailable' | 'unsupported' | 'blocked',
     readonly failedAttempts = 0,
   ) {
     super(code);
@@ -66,13 +66,20 @@ export async function bioSupport(): Promise<BioState['kind'] | null> {
       | (typeof PublicKeyCredential & { getClientCapabilities?: () => Promise<Record<string, boolean>> })
       | undefined;
     if (!PKC || !window.isSecureContext) return null;
-    const caps = await PKC.getClientCapabilities?.();
-    if (!caps?.['extension:prf']) return null;
     if (!(await PKC.isUserVerifyingPlatformAuthenticatorAvailable())) return null;
+    // Hide only when the browser explicitly says "no PRF". Safari does not always list the
+    // extension, so otherwise the creation of the passkey decides (prf.enabled) – see continueEnable().
+    const caps = await PKC.getClientCapabilities?.().catch(() => undefined);
+    if (caps && caps['extension:prf'] === false) return null;
     return 'webauthn';
   } catch {
     return null;
   }
+}
+
+/** Block reason for an already read state (lock screen). */
+export function bioBlockOf(s: BioState | undefined, now = Date.now()): BioBlock {
+  return bioBlock(s, now);
 }
 
 /** Current block reason for the lock screen (null = biometric unlock can be offered). */
@@ -122,39 +129,84 @@ async function webauthnCreate(userName: string, salt: Uint8Array<ArrayBuffer>): 
   })) as PublicKeyCredential | null;
   if (!cred) throw new BioError('cancelled');
   const ext = cred.getClientExtensionResults() as { prf?: { enabled?: boolean } };
-  if (!ext.prf?.enabled) throw new BioError('unsupported');
-  return { id: toB64(cred.rawId), prf: prfFirst(cred) };
+  const prf = prfFirst(cred);
+  if (!ext.prf?.enabled && !prf) throw new BioError('unsupported');
+  return { id: toB64(cred.rawId), prf };
 }
 
 /* ------------------------------------------------------------------ enable / disable */
 
 /**
- * Enables biometric unlock. The password is required (it releases the DEK copy to wrap).
- * Throws WrongPasswordError for a wrong password, BioError otherwise.
+ * Enabling happens in steps, because Safari only allows Face ID / Touch ID (WebAuthn) as the
+ * direct result of a tap – slow work (PBKDF2 of the password) before it would make Safari refuse:
+ *  1. startEnable(password) – checks the password and keeps a copy of the data key in memory;
+ *  2. continueEnable(session) – call it straight from a button tap; on iOS it may return
+ *     'confirm' when the passkey did not return the PRF result yet – then call it once more
+ *     from another tap ("Confirm with Face ID");
+ *  3. cancelEnable(session) – wipes the key copy if the user gives up.
  */
-export async function enableBiometric(password: string, texts: PromptTexts, now = Date.now()): Promise<void> {
+export interface EnableSession {
+  kind: BioState['kind'];
+  raw: Uint8Array<ArrayBuffer>;
+  salt?: Uint8Array<ArrayBuffer>;
+  credentialId?: string;
+}
+
+/** Step 1. Throws WrongPasswordError for a wrong password, BioError('unsupported') without support. */
+export async function startEnable(password: string): Promise<EnableSession> {
   const kind = await bioSupport();
   if (!kind) throw new BioError('unsupported');
   const vault = await readVault();
   if (!vault) throw new Error('no-vault');
-  const raw = await unwrapRaw(password, vault);
-  try {
-    let state: BioState;
-    const stamp = new Date(now).toISOString();
-    if (kind === 'android') {
-      const wrapped = await nativeCall(() => Native.encrypt({ ...texts, data: toB64(raw) }));
-      state = { kind, wrapped, enabledAt: stamp, lastPasswordAt: stamp, failures: 0 };
-    } else {
-      const salt = randomBytes(32);
-      const created = await webauthnCreate(texts.title, salt);
-      // some authenticators return the PRF result only on get(), not on create()
-      const prf = created.prf ?? (await webauthnGetPrf(created.id, salt));
-      const wrapped = await wrapDek(await keyFromPrf(prf, salt), raw);
-      state = { kind, wrapped, credentialId: created.id, prfSalt: toB64(salt), enabledAt: stamp, lastPasswordAt: stamp, failures: 0 };
-    }
+  return { kind, raw: await unwrapRaw(password, vault) };
+}
+
+export function cancelEnable(s: EnableSession | null | undefined) {
+  s?.raw.fill(0);
+}
+
+/** Step 2 (and 3 on iOS). Must run synchronously from a user gesture – no awaits before the prompt. */
+export async function continueEnable(sess: EnableSession, texts: PromptTexts, now = Date.now()): Promise<'done' | 'confirm'> {
+  const stamp = new Date(now).toISOString();
+  const save = async (state: BioState) => {
     await writeBio(state);
-  } finally {
-    raw.fill(0);
+    cancelEnable(sess);
+    return 'done' as const;
+  };
+  if (sess.kind === 'android') {
+    const wrapped = await nativeCall(() => Native.encrypt({ ...texts, data: toB64(sess.raw) }));
+    return save({ kind: 'android', wrapped, enabledAt: stamp, lastPasswordAt: stamp, failures: 0 });
+  }
+  let prf: ArrayBuffer | undefined;
+  if (!sess.credentialId) {
+    sess.salt = randomBytes(32);
+    const created = await webauthnCall(() => webauthnCreate(texts.title, sess.salt!));
+    sess.credentialId = created.id;
+    prf = created.prf;
+    // the passkey exists but did not evaluate PRF on creation (common on iOS) – ask for one more tap
+    if (!prf) return 'confirm';
+  } else {
+    prf = await webauthnCall(() => webauthnGetPrf(sess.credentialId!, sess.salt!));
+  }
+  const wrapped = await wrapDek(await keyFromPrf(prf, sess.salt!), sess.raw);
+  return save({
+    kind: 'webauthn',
+    wrapped,
+    credentialId: sess.credentialId,
+    prfSalt: toB64(sess.salt!),
+    enabledAt: stamp,
+    lastPasswordAt: stamp,
+    failures: 0,
+  });
+}
+
+/** WebAuthn errors → BioError (NotAllowedError = cancelled / not recognised / no gesture). */
+async function webauthnCall<T>(fn: () => Promise<T>): Promise<T> {
+  try {
+    return await withPrompt(fn);
+  } catch (e) {
+    if (e instanceof BioError) throw e;
+    throw new BioError((e as DOMException)?.name === 'NotAllowedError' ? 'cancelled' : 'unavailable');
   }
 }
 
@@ -179,25 +231,48 @@ export async function notePasswordUnlock(now = Date.now()): Promise<void> {
 
 /* ------------------------------------------------------------------ unlock */
 
-async function nativeCall<T>(fn: () => Promise<T>): Promise<T> {
+/**
+ * While the system biometric prompt is open the app is briefly "hidden" (Android pauses the
+ * activity, iOS shows a system sheet). The auto-lock must ignore that, otherwise it locks the app
+ * in the middle of enabling or unlocking – see useAutoLock().
+ */
+let promptActive = 0;
+export function isBioPromptActive(): boolean {
+  return promptActive > 0;
+}
+async function withPrompt<T>(fn: () => Promise<T>): Promise<T> {
+  promptActive++;
   try {
     return await fn();
+  } finally {
+    // the "visible again" event arrives just after the prompt closes
+    setTimeout(() => promptActive--, 1500);
+  }
+}
+
+async function nativeCall<T>(fn: () => Promise<T>): Promise<T> {
+  try {
+    return await withPrompt(fn);
   } catch (e) {
     const err = e as { code?: string; message?: string; data?: { failedAttempts?: number } };
     const code = (err.code ?? err.message ?? '') as BioError['code'];
     const failed = err.data?.failedAttempts ?? 0;
-    if (['cancelled', 'failed', 'invalidated', 'lockout'].includes(code)) throw new BioError(code, failed);
-    throw new BioError('failed', failed);
+    if (['cancelled', 'failed', 'invalidated', 'lockout', 'unavailable'].includes(code)) throw new BioError(code, failed);
+    // any other error (prompt could not be shown, app in background, …) is not a failed attempt
+    throw new BioError('unavailable', failed);
   }
 }
 
 /**
  * Unlocks with biometrics. On success the vault is unlocked.
  * Throws BioError: 'blocked' (password needed), 'invalidated' (biometrics changed – switched off),
- * 'cancelled', 'failed', 'lockout'.
+ * 'cancelled', 'failed', 'lockout', 'unavailable'.
+ *
+ * Pass the state read in advance (`preloaded`) when calling from a tap: Safari allows Face ID only
+ * as the direct result of a user gesture, so nothing may be awaited before the WebAuthn call.
  */
-export async function unlockWithBiometric(texts: PromptTexts, now = Date.now()): Promise<void> {
-  const s = await readBio();
+export async function unlockWithBiometric(texts: PromptTexts, now = Date.now(), preloaded?: BioState): Promise<void> {
+  const s = preloaded ?? (await readBio());
   if (bioBlock(s, now) || !s) throw new BioError('blocked');
   try {
     let dek: CryptoKey;
@@ -209,14 +284,7 @@ export async function unlockWithBiometric(texts: PromptTexts, now = Date.now()):
       if (res.failedAttempts) await writeBio(afterFailure(s, res.failedAttempts));
     } else {
       const salt = fromB64(s.prfSalt!);
-      let prf: ArrayBuffer;
-      try {
-        prf = await webauthnGetPrf(s.credentialId!, salt);
-      } catch (e) {
-        if (e instanceof BioError) throw e;
-        // NotAllowedError = cancelled or not recognised (WebAuthn does not tell them apart)
-        throw new BioError((e as DOMException)?.name === 'NotAllowedError' ? 'cancelled' : 'failed');
-      }
+      const prf = await webauthnCall(() => webauthnGetPrf(s.credentialId!, salt));
       try {
         dek = await unwrapDek(await keyFromPrf(prf, salt), s.wrapped);
       } catch {
@@ -233,10 +301,12 @@ export async function unlockWithBiometric(texts: PromptTexts, now = Date.now()):
       await disableBiometric();
     } else if (e.code === 'lockout') {
       await writeBio({ ...s, failures: MAX_FAILURES });
-    } else if (e.code === 'failed') {
-      await writeBio(afterFailure(s, e.failedAttempts || 1));
     } else if (e.failedAttempts) {
+      // only fingers / faces that were actually presented and not recognised count towards the 5
       await writeBio(afterFailure(s, e.failedAttempts));
+    } else if (e.code === 'failed' && s.kind === 'webauthn') {
+      // WebAuthn returned a PRF result that does not open the key – a real failed attempt
+      await writeBio(afterFailure(s, 1));
     }
     throw e;
   }

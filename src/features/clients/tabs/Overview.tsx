@@ -7,6 +7,7 @@ import { useAttention, AttentionItem } from '@/features/dashboard/Dashboard';
 import { useStore, forClient } from '@/lib/store';
 import { fmtDate, fmtDateTime } from '@/lib/format';
 import { todayIso } from '@/lib/platform';
+import { cn } from '@/components/ui/cn';
 import type { Client } from '@/domain/types';
 
 export function Overview({ client }: { client: Client }) {
@@ -82,9 +83,9 @@ export function Overview({ client }: { client: Client }) {
               {[...client.keyDates]
                 .sort((a, b) => a.date.localeCompare(b.date))
                 .map((k) => (
-                  <li key={k.id} className="flex justify-between gap-3">
+                  <li key={k.id} className="flex flex-wrap justify-between gap-x-3">
                     <span>{k.label}</span>
-                    <span className={k.date >= today ? 'font-medium' : 'text-muted'}>{fmtDate(k.date)}</span>
+                    <span className={cn('shrink-0 whitespace-nowrap', k.date >= today ? 'font-medium' : 'text-muted')}>{fmtDate(k.date)}</span>
                   </li>
                 ))}
             </ul>

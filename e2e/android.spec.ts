@@ -56,6 +56,10 @@ const ROUTES = [
   '#/notes',
   '#/notes/new?type=supervision',
   '#/case-study/demo-01',
+  '#/clients/demo-01/measurements',
+  '#/tools/supportMap',
+  '#/tools/decisionalBalance',
+  '#/prevention',
 ];
 
 test.beforeEach(async ({ page }, info) => {
@@ -95,6 +99,25 @@ test('nothing overlaps the system bars and no horizontal scrolling @android', as
         const last = main?.lastElementChild?.getBoundingClientRect();
         if (last && last.bottom > navTop + 0.5) out.push(`end of page hidden under the tab bar (${last.bottom} > ${navTop})`);
         window.scrollTo(0, 0);
+        // text squeezed into a narrow column (a few letters per line) next to buttons / badges
+        for (const el of document.querySelectorAll('#main *')) {
+          const own = [...el.childNodes]
+            .filter((n) => n.nodeType === 3)
+            .map((n) => n.textContent ?? '')
+            .join('')
+            .trim();
+          if (own.length < 8) continue;
+          const rc = el.getBoundingClientRect();
+          // count rendered lines of the element's own text (its box may be stretched by the row)
+          const tops = new Set<number>();
+          for (const n of el.childNodes) {
+            if (n.nodeType !== 3) continue;
+            const range = document.createRange();
+            range.selectNodeContents(n);
+            for (const r of range.getClientRects()) tops.add(Math.round(r.top));
+          }
+          if (rc.width > 0 && rc.width < 80 && tops.size >= 3) out.push(`squeezed text (${Math.round(rc.width)} px): "${own.slice(0, 30)}"`);
+        }
         return out;
       },
       { top: m.insetTop, bottom: m.insetBottom },

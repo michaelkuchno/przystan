@@ -48,7 +48,8 @@ export function PageHeader({
           <ArrowLeft className="size-5" />
         </IconButton>
       )}
-      <div className="min-w-0 flex-1">
+      {/* the title keeps at least ~16rem; actions wrap below it on narrow screens */}
+      <div className="min-w-0 flex-1 basis-64">
         {eyebrow && <div className="mb-1 text-xs font-semibold tracking-wider text-accent uppercase">{eyebrow}</div>}
         <h1 className="text-2xl leading-tight font-semibold sm:text-3xl">{title}</h1>
         {subtitle && <p className="mt-1 text-muted">{subtitle}</p>}

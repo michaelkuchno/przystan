@@ -153,7 +153,7 @@ export default function ScreeningForm() {
               <span className="text-lg text-muted">/{inst.maxScore}</span>
             </div>
           </div>
-          <div className={cn('flex-1 rounded-2xl px-4 py-3', TONES[result.band.severity])} aria-live="polite">
+          <div className={cn('min-w-0 flex-1 basis-48 rounded-2xl px-4 py-3', TONES[result.band.severity])} aria-live="polite">
             <div className="font-semibold">{t(`bands.${inst.id}.${result.band.id}`)}</div>
             <div className="text-sm">{t(`bandHints.${inst.id}.${result.band.id}`)}</div>
           </div>

@@ -87,6 +87,9 @@
     "unsupported": "Dieses Gerät oder dieser Browser unterstützt kein sicheres biometrisches Entsperren (PRF-Erweiterung erforderlich).",
     "error": "Biometrie konnte nicht aktiviert werden. Bitte versuche es erneut.",
     "promptTitle": "Przystań",
-    "promptEnable": "Bestätigen, um biometrisches Entsperren zu aktivieren"
+    "promptEnable": "Bestätigen, um biometrisches Entsperren zu aktivieren",
+    "stepPrompt": "Passwort korrekt. Tippe auf die Schaltfläche unten und bestätige mit Fingerabdruck, Gesicht oder Face ID.",
+    "stepConfirm": "Der Passkey wurde erstellt. Bestätige noch einmal, um abzuschliessen.",
+    "confirm": "Bestätigen"
   }
 }

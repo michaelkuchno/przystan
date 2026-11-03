@@ -37,7 +37,8 @@
     "bioLockout": "Too many attempts. Enter your password.",
     "bioFailed": "Not recognised. Try again or enter your password.",
     "bioTooMany": "After 5 failed biometric attempts the password is required.",
-    "bioExpired": "The password is required every 7 days – afterwards you can use biometrics again."
+    "bioExpired": "The password is required every 7 days – afterwards you can use biometrics again.",
+    "bioUnavailable": "Biometrics are not available right now. Try again or enter your password."
   },
   "mode": {
     "switch": "Switch between practice and training mode",

@@ -132,10 +132,10 @@ test('anonymous case study: preview without identifiers and PDF', async ({ page 
 });
 
 test('backup reminder on the dashboard; biometric option hidden without WebAuthn PRF', async ({ page }) => {
-  // a browser without the PRF extension (e.g. older Safari): the option must not be offered
+  // a browser that explicitly reports no PRF support: the option must not be offered
   await page.addInitScript(() => {
     const PKC = window.PublicKeyCredential as unknown as { getClientCapabilities?: () => Promise<Record<string, boolean>> } | undefined;
-    if (PKC) PKC.getClientCapabilities = async () => ({});
+    if (PKC) PKC.getClientCapabilities = async () => ({ 'extension:prf': false });
   });
   await onboard(page, 'practice');
   await go(page, '#/clients/new');
@@ -153,13 +153,14 @@ test('backup reminder on the dashboard; biometric option hidden without WebAuthn
   await expect(page.getByText(/Odblokowanie (odciskiem|Face ID)/)).toHaveCount(0);
 });
 
-test('biometric option is offered when WebAuthn PRF and a platform authenticator are available', async ({ page }) => {
+test('biometric option is offered with a platform authenticator unless PRF is explicitly unsupported', async ({ page }) => {
   await page.addInitScript(() => {
     const PKC = window.PublicKeyCredential as unknown as {
       getClientCapabilities?: () => Promise<Record<string, boolean>>;
       isUserVerifyingPlatformAuthenticatorAvailable: () => Promise<boolean>;
     };
-    PKC.getClientCapabilities = async () => ({ 'extension:prf': true });
+    // like Safari: PRF works, but getClientCapabilities() does not list it – the option must still appear
+    PKC.getClientCapabilities = async () => ({});
     PKC.isUserVerifyingPlatformAuthenticatorAvailable = async () => true;
   });
   await onboard(page, 'practice');
@@ -167,7 +168,13 @@ test('biometric option is offered when WebAuthn PRF and a platform authenticator
   const sw = page.getByRole('switch', { name: /Odblokowanie Face ID/ });
   await expect(sw).toBeVisible();
   await sw.click();
-  // enabling requires the password
+  // step 1: the password is required; step 2 (a separate tap) opens the system prompt
   await expect(page.getByRole('dialog', { name: 'Włącz odblokowanie biometrią' })).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Włącz', exact: true })).toBeDisabled();
+  await expect(page.getByRole('button', { name: 'Dalej', exact: true })).toBeDisabled();
+  await page.getByLabel('Obecne hasło').fill('złe-hasło');
+  await page.getByRole('button', { name: 'Dalej', exact: true }).click();
+  await expect(page.getByText('Obecne hasło jest nieprawidłowe.')).toBeVisible({ timeout: 15_000 });
+  await page.getByLabel('Obecne hasło').fill(PASSWORD);
+  await page.getByRole('button', { name: 'Dalej', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Włącz', exact: true })).toBeEnabled({ timeout: 15_000 });
 });

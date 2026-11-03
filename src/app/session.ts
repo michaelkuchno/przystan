@@ -10,6 +10,7 @@ import { buildDemoRecords, demoCasesFor } from '@/lib/demo';
 import { loadContent } from '@/content/ContentProvider';
 import type { Space } from '@/domain/types';
 import { db } from '@/lib/db';
+import { isBioPromptActive } from '@/lib/biometric';
 
 export function useLockEpoch(): number {
   return useSyncExternalStore(onLockChange, lockEpoch, lockEpoch);
@@ -66,7 +67,8 @@ export function useAutoLock(): { shielded: boolean } {
     const onVis = () => {
       if (document.visibilityState === 'hidden') {
         setShielded(true);
-        if (isUnlocked()) lockNow();
+        // the system biometric prompt briefly hides the page – that is not leaving the app
+        if (isUnlocked() && !isBioPromptActive()) lockNow();
       } else {
         setShielded(false);
       }

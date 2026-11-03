@@ -1,5 +1,7 @@
 # Przystań / Harbor
 
+**[Polski](#pobierz)** · **[English](#english)** · **[Deutsch](#kurzfassung-deutsch)**
+
 Aplikacja do pracy i nauki dla pedagoga resocjalizacyjnego, specjalisty ds. uzależnień i pracownika
 socjalnego (**PL / EN / DE**, Polska i Szwajcaria). Działa **w 100% offline**, bez kont, serwerów
 i opłat, na **iPhonie** (PWA) i **Androidzie** (PWA albo plik APK). Wszystkie dane są szyfrowane
@@ -51,6 +53,73 @@ Gerät.
   deinstallieren. Vorher eine **Datensicherung** erstellen (Einstellungen → Datensicherung).
 - Sprache und Arbeitsland: beim ersten Start oder in den **Einstellungen**. Inhalte, die noch
   geprüft werden müssen, sind entsprechend markiert (siehe `docs/CONTENT_REVIEW.md`).
+
+## English
+
+**Przystań (Harbor)** is a work and study app for social rehabilitation educators, addiction
+specialists and social workers – in **Polish, English and German**, with **Poland or Switzerland**
+as the country of work. It runs **100 % offline**, with no accounts, servers or fees, on
+**iPhone** (PWA) and **Android** (PWA or APK). All data is encrypted (AES-256-GCM) and never leaves
+the device.
+
+> Przystań supports work and learning. **It does not make medical diagnoses or decisions on the
+> practitioner's behalf** – all indicators and suggestions are only an aid.
+
+### Download
+
+| | Link | How |
+|---|---|---|
+| **iPhone / iPad / computer (PWA)** | **https://michaelkuchno.github.io/przystan/** | Open in **Safari** → **Share** → **Add to Home Screen** → **Add**. Always start it from the icon. |
+| **Android (APK)** | **https://github.com/michaelkuchno/przystan/releases/latest** | Download `przystan-<version>.apk` from *Assets* and install it (allow installs from this source when Android asks). |
+| **Android (PWA)** | https://michaelkuchno.github.io/przystan/ | Chrome → menu **⋮** → **Install app**. |
+
+### Updating without losing data
+
+- **PWA:** updates itself – when opened online it shows “A new version is available” → **Update**.
+  Data stays in the browser.
+- **APK:** install the newer file **over** the current version (do not uninstall – uninstalling
+  deletes the data). Every APK is signed with the same key.
+- Make a **backup** before updating (Settings → Backup). The dashboard reminds you when the last
+  backup is older than 7 days.
+
+### What's inside
+
+Dashboard with “needs attention” hints · service users (pedagogical assessment with radar chart,
+individual plan, relapse-prevention plan, timeline, genogram / eco-map, re-entry and family support
+plans) · sessions with a live session mode · session builder (“recipes”) · 12 interactive tools ·
+AUDIT / AUDIT-C / DUDIT · prevention programme wizard with evaluation and PDF · help system and
+referral wizard (**Poland or Switzerland – canton of Bern**) · knowledge base · motivational
+interviewing simulator · flashcards and exam mode · **placement log** · **notebook and supervision** ·
+**anonymous case study (PDF)** · training mode with fictional cases (PL and CH) · presentation mode ·
+optional **biometric unlock** (Android Keystore / passkey with WebAuthn PRF).
+
+### Local preview (Windows)
+
+```powershell
+.\scripts\start-local.ps1
+# if running scripts is blocked:
+powershell -ExecutionPolicy Bypass -File .\scripts\start-local.ps1
+```
+
+Builds the app, starts `vite preview --host` and prints a local link (e.g. http://localhost:4173/)
+and a Wi-Fi link for a phone on the same network. Over plain http on an IP address the PWA cannot be
+installed and the service worker does not run – it is a layout preview only.
+
+### For developers
+
+```bash
+npm ci
+npm run dev          # dev server
+npm run check        # lint + typecheck + unit tests + build
+npx playwright test  # E2E tests (after npm run build), incl. Android profiles and large system font
+npm run apk          # signed APK → release/ (Android SDK + JDK 21 + keystore)
+```
+
+Content lives in JSON files with an identical structure in all languages:
+`src/locales/{pl,en,de}/content/*.json` (German uses Swiss spelling – no “ß”). `npm test` checks
+that the languages match. Decisions, progress, hand-over notes and the content review list are in
+`docs/` (written in Polish). Releases: tag `v<version>` → the “Android APK” workflow builds the signed
+APK and attaches it to the GitHub Release; every push to `main` redeploys the PWA to GitHub Pages.
 
 ---
 

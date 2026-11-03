@@ -37,7 +37,8 @@
     "bioLockout": "Zbyt wiele prób. Wpisz hasło.",
     "bioFailed": "Nie rozpoznano. Spróbuj ponownie lub wpisz hasło.",
     "bioTooMany": "Po 5 nieudanych próbach biometrii wymagane jest hasło.",
-    "bioExpired": "Co 7 dni wymagane jest hasło – potem znów możesz używać biometrii."
+    "bioExpired": "Co 7 dni wymagane jest hasło – potem znów możesz używać biometrii.",
+    "bioUnavailable": "Biometria jest teraz niedostępna. Spróbuj ponownie albo wpisz hasło."
   },
   "mode": {
     "switch": "Przełącz tryb praktyczny / szkoleniowy",

@@ -1,4 +1,5 @@
 name: Deploy PWA to GitHub Pages
+run-name: "Deploy PWA to GitHub Pages · ${{ github.ref_name }}"
 
 on:
   push:

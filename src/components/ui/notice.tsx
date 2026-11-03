@@ -17,7 +17,7 @@ export function ReviewBadge({ id, status }: { id: string; status: ReviewStatus }
       type="button"
       onClick={toggle}
       className={cn(
-        'inline-flex min-h-8 max-w-full min-w-0 items-center gap-1 rounded-full px-2.5 text-left text-xs font-medium transition',
+        'inline-flex min-h-8 max-w-full shrink-0 items-center gap-1 rounded-full px-2.5 text-left text-xs font-medium transition',
         verified ? 'bg-ok-soft text-ok' : 'bg-warn-soft text-warn',
       )}
       aria-pressed={verified}

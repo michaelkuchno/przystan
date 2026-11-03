@@ -306,3 +306,35 @@ przed wypchnięciem: 25 commitów, identyczni autorzy, daty i opisy, identyczne 
 `C:`, drzewo HEAD bit w bit takie samo. Wypchnięto `main`, `v1.0.0`, `v1.1.0` przez
 `--force-with-lease`; Release'y GitHub (powiązane z nazwą tagu) i plik APK zostały. Paczka repo:
 8,6 MB → 2,1 MB. Kopia historii sprzed zmiany: bundle w katalogu tymczasowym sesji.
+
+## D-045 Poprawki biometrii (1.1.1)
+Zgłoszenie: „zawsze trzeba wpisywać hasło”. Przyczyny i poprawki:
+- Android: po zejściu aplikacji do tła ekran blokady montował się, gdy strona była niewidoczna, i od
+  razu otwierał okno biometrii; system go nie pokazywał, a błąd liczył się jako nieudana próba – po
+  kilku wyjściach z aplikacji działała zasada „5 nieudanych prób”. Teraz okno otwiera się samo tylko,
+  gdy aplikacja jest widoczna (raz na każdy powrót), a nieudaną próbą jest wyłącznie nierozpoznany
+  palec / twarz (`failedAttempts` z `onAuthenticationFailed`) albo zły wynik PRF; błędy systemowe →
+  `unavailable` (nie liczone).
+- Okno biometrii chwilowo ukrywa stronę – auto-blokada ignoruje to (`isBioPromptActive()`),
+  wcześniej mogła zablokować aplikację w trakcie włączania.
+- iOS: opcja była ukryta, jeśli Safari nie deklaruje PRF w `getClientCapabilities()`; teraz ukryta
+  tylko przy jawnym „nie” – resztę rozstrzyga utworzenie passkeya (`prf.enabled`). Safari wymaga
+  wywołania WebAuthn bezpośrednio z gestu, a wcześniej przed nim liczono PBKDF2 hasła i czytano bazę.
+  Włączanie ma teraz kroki (hasło → osobne dotknięcie „Włącz” → ewentualnie „Potwierdź”, gdy passkey
+  nie zwrócił PRF przy tworzeniu), a ekran blokady wczytuje stan zawczasu.
+- Na Samsungu zwykle działa tylko odcisk palca (rozpoznawanie twarzy One UI to słaba biometria –
+  klasa 3 jest wymagana do odblokowania klucza w Keystore).
+
+## D-046 Ściśnięty tekst (1.1.1)
+Globalne `min-width: 0` dla `.flex-1` (D-029) pozwalało zwęzić kolumnę tekstu do kilku liter obok
+przycisków (np. nagłówek „Mapa wsparcia”). Teraz: reguły globalne w `@layer base` (klasy narzędziowe
+mogą je nadpisać), `.flex-1:not(:empty)` ma `min-width: min(100%, 5rem)`, a wiersze z przyciskami
+i plakietkami (nagłówek strony, `ListRow`, karta spotkania, pomiary, pasek AUDIT, tytuł sekcji, daty)
+zawijają się zamiast ściskać tekst. Test E2E profili Androida wykrywa tekst węższy niż 80 px
+zawinięty na ≥ 3 linie.
+
+## D-047 GitHub po angielsku
+Na życzenie właściciela wszystko w zakładce Actions jest po angielsku: workflowy mają stały
+`run-name` (niezależny od opisu commitu), opisy commitów od wersji 1.1.1 są po angielsku, a stare
+uruchomienia z polskimi tytułami usunięto. README ma sekcje PL / EN / DE, opis repozytorium jest po
+angielsku. Dokumentacja w `docs/` pozostaje po polsku.

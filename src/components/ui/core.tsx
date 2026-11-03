@@ -134,7 +134,7 @@ export function Badge({ tone = 'neutral', className, children }: { tone?: Tone; 
 
 export function SectionTitle({ children, action, id }: { children: ReactNode; action?: ReactNode; id?: string }) {
   return (
-    <div className="mt-6 mb-3 flex items-center justify-between gap-2">
+    <div className="mt-6 mb-3 flex flex-wrap items-center justify-between gap-2">
       <h2 id={id} className="text-lg font-semibold">
         {children}
       </h2>
@@ -186,7 +186,7 @@ export function ListRow({
   const inner = (
     <>
       {leading && <div className="shrink-0">{leading}</div>}
-      <div className="min-w-0 flex-1">
+      <div className="min-w-0 flex-1 basis-32">
         <div className="truncate font-medium">{title}</div>
         {subtitle && <div className="mt-0.5 text-sm text-muted">{subtitle}</div>}
       </div>
@@ -194,7 +194,8 @@ export function ListRow({
       {to && <ChevronRight className="size-5 shrink-0 text-muted transition group-hover:translate-x-0.5" aria-hidden />}
     </>
   );
-  const cls = cn('group flex min-h-14 items-center gap-3 px-4 py-3', className);
+  // trailing badges wrap below the text instead of squeezing it (large system font)
+  const cls = cn('group flex min-h-14 flex-wrap items-center gap-x-3 gap-y-1 px-4 py-3', className);
   return to ? (
     <Link to={to} className={cn(cls, 'hover:bg-surface-2')}>
       {inner}

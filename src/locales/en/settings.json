@@ -87,6 +87,9 @@
     "unsupported": "This device or browser does not support secure biometric unlock (the PRF extension is required).",
     "error": "Could not enable biometrics. Please try again.",
     "promptTitle": "Przystań",
-    "promptEnable": "Confirm to enable biometric unlock"
+    "promptEnable": "Confirm to enable biometric unlock",
+    "stepPrompt": "Password accepted. Tap the button below and confirm with your fingerprint, face or Face ID.",
+    "stepConfirm": "The passkey was created. Confirm once more to finish.",
+    "confirm": "Confirm"
   }
 }
