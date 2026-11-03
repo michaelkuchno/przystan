@@ -283,3 +283,15 @@ lub nie było żadnej; „Jutro” odkłada przypomnienie o 24 h; „Zrób kopi�
 Punkty 2–7 powstawały równolegle (wspólne pliki: preferencje, typy, teksty). Zatwierdzono je
 w osobnych commitach według grup plików; pełna weryfikacja (lint, typecheck, testy jednostkowe
 i E2E) dotyczy stanu po ostatnim z nich – pośrednie commity nie były testowane osobno.
+
+## D-042 Wersja 1.1.0 i versionCode
+`versionCode` jest wyliczany w `android/app/build.gradle` z `package.json`
+(`major·10000 + minor·100 + patch`): 1.0.0 → 10000, 1.1.0 → 10100. Wymóg „versionCode +1” rozumiany
+jako „większy od poprzedniego” (warunek aktualizacji APK bez odinstalowania) – zachowano istniejący,
+jednoznaczny schemat zamiast ręcznego licznika.
+
+## D-043 Podgląd lokalny
+`scripts/start-local.ps1` (UTF-8 z BOM, by Windows PowerShell 5.1 poprawnie pokazywał polskie znaki):
+`npm ci` przy braku `node_modules`, `npm run build`, `vite preview --host`, adresy IPv4 kart
+Wi-Fi/Ethernet (bez wirtualnych). Przez http na IP PWA i service worker nie działają (brak secure
+context) – to wyłącznie podgląd układu.

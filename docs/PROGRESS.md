@@ -1,6 +1,6 @@
 | 7 | Przypomnienie o kopii zapasowej (baner > 7 dni) | ✅ || 6 | Anonimowe studium przypadku: automatyczna anonimizacja, podgląd z edycją, PDF | ✅ || 5 | Notatnik i superwizja: tagi, wyszukiwanie, przypinanie, przypisania, zadania na Pulpicie, ukryte w prezentacji | ✅ || 4 | Dzienniczek praktyk: wpisy, licznik godzin (cel 90 h), PDF dla opiekuna z anonimizacją | ✅ || 3 | Odblokowanie biometrią: Android Keystore (własna wtyczka) / WebAuthn PRF, zasady hasła, testy | ✅ || 2 | Wersja niemiecka (DE, pisownia szwajcarska) i „Kraj pracy” PL/CH: szwajcarski system pomocy, prawo, numery, 3 przypadki DEMO, 3 scenariusze | ✅ |# Postęp prac
 
-Stan: **wszystkie etapy 1–15 zakończone**, poza publikacją na GitHubie (wymaga decyzji o koncie – patrz `HANDOVER.md`).
+Stan: **wersja 1.1.0 opublikowana** (PWA na GitHub Pages, APK w GitHub Releases). Etapy 1–15 (wersja 1.0) i punkty 0–9 (wersja 1.1) zakończone.
 
 | Etap | Zakres | Status |
 |---|---|---|
@@ -32,20 +32,23 @@ Stan: **wszystkie etapy 1–15 zakończone**, poza publikacją na GitHubie (wyma
 | 5 | Notatnik i superwizja: tagi, wyszukiwanie, przypinanie, przypisania, zadania na Pulpicie, ukryte w prezentacji | ✅ |
 | 6 | Anonimowe studium przypadku: automatyczna anonimizacja, podgląd z edycją, PDF | ✅ |
 | 7 | Przypomnienie o kopii zapasowej (baner > 7 dni) | ✅ |
-| 8 | Podgląd lokalny (`scripts/start-local.ps1`) | ⏳ |
-| 9 | Wersja 1.1.0, Pages, Release z APK, README | ⏳ |
+| 8 | Podgląd lokalny (`scripts/start-local.ps1`): build, `vite preview --host`, link lokalny i Wi-Fi | ✅ |
+| 9 | Wersja 1.1.0 (versionCode 10100), Pages, Release „Przystań 1.1.0” z podpisanym APK, README z sekcją „Pobierz” i skrótem DE | ✅ |
 
-## Jakość (ostatni przebieg)
+## Jakość (ostatni przebieg, wersja 1.1.0)
 
 - `npm run lint` – 0 błędów, 0 ostrzeżeń; `npm run typecheck` – 0 błędów
-- `npm test` – 118 testów jednostkowych ✅
-- `npx playwright test` – 11 scenariuszy E2E ✅ (onboarding, podopieczny z diagnozą, spotkanie z narzędziem
-  i badaniem przesiewowym, program profilaktyczny z PDF, zmiana języka, DEMO + symulator, offline,
-  kopia zapasowa i przywrócenie, tryb prezentacji, brak poziomego przewijania, dostępność)
-- Lighthouse (mobile): Performance 91–92, Accessibility 100, Best Practices 100, SEO 100; PWA: manifest
-  + service worker z pełnym precache (Lighthouse 12 nie ma już osobnej kategorii PWA)
+- `npm test` – **175 testów jednostkowych** ✅ (w tym struktura treści PL/EN/DE, pisownia bez „ß”, biometria –
+  opakowanie DEK i zasady hasła, anonimizacja, dzienniczek, notatnik, studium przypadku, przypomnienie o kopii)
+- `npx playwright test` – **28 testów E2E** ✅: dotychczasowe scenariusze, profile Androida (360×780, 412×915,
+  duża czcionka 200 %: paski systemowe, poziome przewijanie, klawiatura), wersja niemiecka + Szwajcaria,
+  kraj pracy niezależny od języka, dzienniczek z PDF, superwizja z zadaniem na Pulpicie, notatki ukryte
+  w trybie prezentacji, studium przypadku bez identyfikatorów, baner kopii, widoczność opcji biometrii
+- GitHub Actions: CI, Pages i podpisany APK (z natywną wtyczką biometrii) – zielone
+- Lighthouse (mobile, wersja 1.0): Performance 91–92, Accessibility 100, Best Practices 100, SEO 100
+  (`npm run lighthouse`)
 
 ## Wznawianie
 
-Polecenie „kontynuuj według docs/PROGRESS.md” – kolejny krok: publikacja (sekcja „Do zrobienia”
-w `HANDOVER.md`), następnie ewentualne poprawki po weryfikacji treści (`CONTENT_REVIEW.md`).
+Polecenie „kontynuuj według docs/PROGRESS.md” – kolejne kroki: ręczna weryfikacja na urządzeniach
+(`HANDOVER.md`, sekcja 1) i poprawki po weryfikacji treści (`CONTENT_REVIEW.md`, sekcje 12–13).

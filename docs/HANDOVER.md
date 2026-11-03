@@ -1,32 +1,50 @@
-# HANDOVER – co zostało do zrobienia ręcznie
+# HANDOVER – stan projektu i co zostało do zrobienia ręcznie
 
-Wszystko poza publikacją jest gotowe i przetestowane. Podpisany plik APK leży w
-`release/przystan-1.0.0.apk` (lokalnie, poza gitem).
+Wersja **1.1.0**. Repozytorium: https://github.com/michaelkuchno/przystan (konto `michaelkuchno`).
 
-## 1. Publikacja na GitHubie (repozytorium + PWA na GitHub Pages)
+| Co | Gdzie |
+|---|---|
+| PWA (iPhone / Android / komputer) | https://michaelkuchno.github.io/przystan/ – aktualizuje się przy każdym pushu na `main` (workflow „Deploy PWA to GitHub Pages”) |
+| APK (Android) | https://github.com/michaelkuchno/przystan/releases/latest – workflow „Android APK” po tagu `v*` buduje podpisany APK i dołącza go do Release |
+| Podgląd lokalny | `scripts/start-local.ps1` (patrz README) |
 
-Nie została wykonana automatycznie: na tym komputerze `gh` jest zalogowane na **konto służbowe**,
-a projekt jest prywatny (patrz `DECISIONS.md`, D-025).
+## 1. Weryfikacja na urządzeniach (nie da się jej zautomatyzować)
 
-```bash
-gh auth login                 # zaloguj się na konto, które ma być właścicielem projektu
-cd ~/projects/przystan
-bash scripts/publish.sh       # tworzy publiczne repo, włącza Pages, ustawia sekrety keystore, robi push
-```
+**Samsung Galaxy (One UI, Android 15/16, APK):**
+- [ ] Nagłówek nie wchodzi pod pasek stanu, a dolna nawigacja pod pasek gestów / przyciski
+      (oba tryby nawigacji systemowej), także w poziomie (wycięcie aparatu).
+- [ ] Ustawienia → Wyświetlacz → Rozmiar czcionki na maksimum: tekst rośnie, układ się nie rozjeżdża,
+      nie ma przewijania w poziomie (D-029).
+- [ ] Tryb ciemny systemu + „Tryb ciemny dla aplikacji” One UI: aplikacja nie jest odwracana;
+      ikony pasków systemowych czytelne w jasnym i ciemnym motywie aplikacji.
+- [ ] Klawiatura: pola formularzy (np. nowy podopieczny, notatka, logowanie) nie są zasłaniane,
+      dolna nawigacja chowa się przy pisaniu.
+- [ ] Biometria: włączenie (wymaga hasła), odblokowanie odciskiem/twarzą, „Użyj hasła”;
+      dodanie nowego odcisku w systemie → aplikacja wyłącza biometrię i prosi o hasło;
+      5 nieudanych prób → hasło. Zrzuty ekranu nadal zablokowane (FLAG_SECURE).
+- [ ] Aktualizacja: instalacja APK 1.1.0 **na** 1.0.0 zachowuje dane.
 
-Po ok. 2–3 minutach PWA będzie pod adresem `https://<login>.github.io/przystan/`
-(postęp: `gh run list`). Ten adres wysyłasz do instalacji na iPhonie.
+**iPhone (Safari, PWA z ekranu początkowego):**
+- [ ] Wycięcie / Dynamic Island i pasek domowy – bez nakładania się.
+- [ ] Face ID / Touch ID (passkey z PRF, iOS 18+): włączenie, odblokowanie; na starszym iOS opcja
+      ma być niewidoczna.
+- [ ] Eksport PDF (dzienniczek praktyk, studium przypadku) – arkusz udostępniania.
 
-> Wolisz konto służbowe? Skrypt pokazuje login i pyta o zgodę przed czymkolwiek.
+## 2. Weryfikacja treści
 
-## 2. Wysłanie APK mailem
+Lista: [`docs/CONTENT_REVIEW.md`](CONTENT_REVIEW.md) – w szczególności nowa sekcja 12
+(szwajcarski system pomocy kantonu Berno, podstawy prawne ze stanem na 2026-11, numery 143 / 147 /
+144 / 117 / 112, przypadki i scenariusze z Berna) oraz sekcja 13 (sporne terminy w tłumaczeniu
+niemieckim). Najlepiej, by część szwajcarską przejrzała osoba pracująca w Suchthilfe w Bernie.
 
-Załącz plik `release/przystan-1.0.0.apk` (≈ 6 MB). Uwaga: Gmail blokuje niektóre załączniki
-wykonywalne – jeśli tak się stanie, wyślij link do pliku z Dysku Google albo pobierz APK
-z zakładki *Actions → Android APK → Artifacts* (po publikacji, workflow uruchamiany ręcznie
-lub tagiem `v1.0.0`).
+## 3. Oficjalne wersje narzędzi przesiewowych
 
-## 3. Opcjonalnie: zgody na dodatkowe narzędzia przesiewowe
+- **PL:** wstaw oficjalne polskie wersje AUDIT / AUDIT-C / DUDIT w `src/lib/screening/pl.ts`.
+- **DE:** wstaw oficjalne, walidowane wersje niemieckie w `src/lib/screening/de.ts`
+  (np. AUDIT w wersji używanej przez Sucht Schweiz; DUDIT – tekst i zgoda autorów).
+Do tego czasu aplikacja pokazuje oryginał angielski z widocznym znacznikiem „TODO”.
+
+## 4. Opcjonalnie: zgody na dodatkowe narzędzia przesiewowe
 
 | Narzędzie | Do kogo napisać |
 |---|---|
@@ -35,16 +53,14 @@ lub tagiem `v1.0.0`).
 | FTND | Prawa autorskie / zgoda autora (K.O. Fagerström) |
 | PGSI | Canadian Centre on Substance Use and Addiction (CCSA) |
 
-Po uzyskaniu zgody definicję narzędzia dodaje się w `src/lib/screening/instruments.ts`
-(pozycje, punktacja, progi) – reszta aplikacji obsłuży je automatycznie.
+Po uzyskaniu zgody definicję narzędzia dodaje się w `src/lib/screening/instruments.ts`.
 
-Oficjalne **polskie** wersje AUDIT / AUDIT-C / DUDIT wstaw w `src/lib/screening/pl.ts`
-(do tego czasu aplikacja pokazuje oryginał angielski z widocznym znacznikiem „TODO”).
+## 5. Historia repozytorium
 
-## 4. Weryfikacja treści
-
-Lista wszystkich treści merytorycznych, prawnych i numerów telefonów do sprawdzenia:
-[`docs/CONTENT_REVIEW.md`](CONTENT_REVIEW.md).
+Starsze commity (przed `26b248e`) zawierają katalogi `C:\Users\...\lighthouse.*` z niedozwolonymi
+w Windows nazwami – checkout takiego commitu na Windows się nie powiedzie (D-027). Usunięcie ich
+z całej historii wymagałoby przepisania historii (`git filter-repo`) i force-pusha – nie zrobiono
+tego bez decyzji właściciela.
 
 ---
 
@@ -55,11 +71,10 @@ Klucz podpisu APK – **ten sam klucz jest potrzebny do każdej przyszłej aktua
 
 | Co | Gdzie |
 |---|---|
-| Keystore | `~/przystan-keystore/przystan-release.jks` |
-| Hasła (store/key), alias | `~/przystan-keystore/keystore.properties` |
+| Keystore i hasła | sekrety repozytorium GitHub `PRZYSTAN_KEYSTORE_BASE64`, `PRZYSTAN_KEYSTORE_PASSWORD`, `PRZYSTAN_KEY_ALIAS`, `PRZYSTAN_KEY_PASSWORD` (używa ich workflow „Android APK”) |
+| Kopia lokalna | `~/przystan-keystore/` na komputerze, na którym klucz utworzono (**na obecnym komputerze z Windows go nie ma**) |
 | Odcisk SHA-256 certyfikatu | `D1:7B:A3:C6:5D:C8:22:10:B6:79:67:10:91:16:80:88:88:74:9C:8F:ED:CB:8F:89:E9:8B:B4:A6:64:2A:8F:92` |
 
-Hasła celowo **nie** są zapisane w tym pliku, bo repozytorium może być publiczne (D-020).
-Zrób kopię katalogu `~/przystan-keystore/` w menedżerze haseł lub na zaszyfrowanym nośniku.
-Po uruchomieniu `scripts/publish.sh` keystore jest też zapisany jako sekrety repozytorium
-(`PRZYSTAN_KEYSTORE_*`) – GitHub Actions zbuduje nim APK.
+Sekretów GitHub nie da się odczytać – jeśli nie masz kopii `~/przystan-keystore/` (plik `.jks`
+i hasła) w menedżerze haseł lub na zaszyfrowanym nośniku, zrób ją z komputera, na którym klucz
+powstał. Hasła celowo **nie** są zapisane w repozytorium (D-020).

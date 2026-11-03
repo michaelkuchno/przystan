@@ -142,6 +142,8 @@ test('backup reminder on the dashboard; biometric option hidden without WebAuthn
   await page.getByRole('button', { name: 'Rozumiem' }).click();
   await page.getByLabel('Kod / inicjały').fill('ZZ-01');
   await page.getByRole('button', { name: 'Zapisz' }).click();
+  // the form navigates to the profile once saved – wait for it before leaving
+  await expect(page.getByRole('heading', { name: 'ZZ-01' })).toBeVisible();
   await go(page, '#/');
   await expect(page.getByText('Czas na kopię zapasową')).toBeVisible();
   await page.getByRole('button', { name: 'Jutro' }).click();
