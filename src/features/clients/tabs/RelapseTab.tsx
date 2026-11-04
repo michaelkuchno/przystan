@@ -9,6 +9,23 @@ import { useEditable } from '@/lib/useEditable';
 import { useContent } from '@/content/ContentProvider';
 import { relapseCardPdf } from '@/lib/reports';
 import type { Client, RelapsePlan } from '@/domain/types';
+import type { TFunction } from 'i18next';
+import { MaterialButton } from '@/features/ai/MaterialSheet';
+
+/** Template for client material – without support persons and contacts (identifying data). */
+function relapseMaterial(p: RelapsePlan, t: TFunction): string {
+  const sec = (label: string, items: string[]) => (items.length ? [label, ...items.map((x) => '- ' + x)].join('\n') : '');
+  return [
+    sec(t('relapse.highRisk'), p.highRiskSituations),
+    sec(t('relapse.triggers'), p.triggers),
+    sec(t('relapse.warning'), p.warningSigns),
+    sec(t('relapse.coping'), p.copingStrategies),
+    sec(t('relapse.places'), p.supportPlaces),
+    p.lapsePlan ? t('relapse.lapsePlan') + '\n' + p.lapsePlan : '',
+  ]
+    .filter(Boolean)
+    .join('\n\n');
+}
 
 function Editor({ plan }: { plan: RelapsePlan }) {
   const { t } = useTranslation('clients');
@@ -32,6 +49,7 @@ function Editor({ plan }: { plan: RelapsePlan }) {
         >
           {t('relapse.export')}
         </Button>
+        <MaterialButton source={relapseMaterial(draft, t)} title={t('relapse.materialTitle')} />
       </div>
       <div className="grid gap-4 md:grid-cols-2">
         <Card>

@@ -12,6 +12,8 @@ import { fmtDate } from '@/lib/format';
 import { todayIso } from '@/lib/platform';
 import { PRACTICE_ACTIVITIES, type PracticeEntry } from '@/domain/types';
 import { practiceTotals } from './practice';
+import { DictateButton } from '@/features/ai/DictateButton';
+import { appendText } from '@/features/ai/text';
 
 const empty = (place = ''): PracticeEntry => ({
   id: uid(),
@@ -206,6 +208,7 @@ export default function PracticeLog() {
               value={draft.description}
               onChange={(v) => setDraft({ ...draft, description: v })}
             />
+            <DictateButton sensitivity="client" onText={(x) => setDraft((d) => d && { ...d, description: appendText(d.description, x) })} />
             <TextField
               label={t('fields.reflections')}
               multiline
@@ -213,6 +216,7 @@ export default function PracticeLog() {
               value={draft.reflections}
               onChange={(v) => setDraft({ ...draft, reflections: v })}
             />
+            <DictateButton sensitivity="client" onText={(x) => setDraft((d) => d && { ...d, reflections: appendText(d.reflections, x) })} />
           </div>
         )}
       </Sheet>

@@ -56,6 +56,10 @@
     "audit": {
       "export": "Wyeksportowano dziennik audytu",
       "verify": "Sprawdzono integralność"
+    },
+    "ai": {
+      "settings": "Zmieniono ustawienia asystenta AI",
+      "cloudSend": "Wysłano tekst do chmury AI (po zgodzie)"
     }
   },
   "detail": {
@@ -70,7 +74,8 @@
     "versionFrom": "wersja z {{date}}",
     "file": "plik {{file}}",
     "backupFrom": "kopia z {{date}}, rekordów: {{records}}",
-    "integrity": "wynik: {{result}}"
+    "integrity": "wynik: {{result}}",
+    "cloudSend": "zadanie {{task}}, {{chars}} znaków, zamieniono {{replaced}}"
   },
   "kinds": {
     "client": "{{Client}}",

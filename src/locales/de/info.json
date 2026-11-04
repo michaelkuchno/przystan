@@ -20,7 +20,7 @@
       },
       {
         "q": "Wird etwas ins Internet gesendet?",
-        "a": "Nein. Die App enthält keine Analyse-, Werbe- oder Tracking-Funktionen und stellt keine Netzwerkanfragen. Internet wird nur zum Herunterladen von PWA-Updates benötigt."
+        "a": "Nein – ausser du schaltest den optionalen KI-Assistenten selbst ein (standardmässig aus). Die App enthält keine Analyse-, Werbe- oder Tracking-Funktionen. Internet braucht es für PWA-Updates und, mit eingeschalteter KI, für Google Gemini (mit deinem Schlüssel) oder das einmalige Laden lokaler Modelle. Personendaten gehen nie automatisch in die Cloud (Einstellungen → KI-Assistent → «Wie die KI funktioniert»)."
       },
       {
         "q": "Wie werden die Daten geschützt?",

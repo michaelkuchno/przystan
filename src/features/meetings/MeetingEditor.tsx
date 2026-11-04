@@ -12,6 +12,9 @@ import { HistoryButton } from '@/features/audit/HistorySheet';
 import { nowLocalIso, toLocalInput } from '@/lib/format';
 import { NOTE_FIELDS, type Meeting, type NoteType } from '@/domain/types';
 import { haptic } from '@/lib/platform';
+import { DictateButton } from '@/features/ai/DictateButton';
+import { OrganizeButton } from '@/features/ai/OrganizeSheet';
+import { appendText } from '@/features/ai/text';
 
 export function NoteForm({ m, onChange }: { m: Meeting; onChange: (m: Meeting) => void }) {
   const { t } = useTranslation('meetings');
@@ -166,6 +169,26 @@ export default function MeetingEditor() {
         )}
         <Card className="space-y-4">
           <TextField multiline label={t('quickNotes')} value={m.quickNotes} onChange={(v) => setM({ ...m, quickNotes: v })} />
+          <div className="flex flex-wrap gap-2">
+            <DictateButton sensitivity="client" onText={(x) => setM({ ...m, quickNotes: appendText(m.quickNotes, x) })} />
+            <OrganizeButton
+              source={m.quickNotes}
+              initial={m.noteType}
+              onApplyFields={(type, fields) =>
+                setM({
+                  ...m,
+                  status: m.status === 'planned' ? 'done' : m.status,
+                  noteType: type,
+                  note: Object.fromEntries(
+                    Object.entries({ ...(type === m.noteType ? m.note : {}), ...fields }).map(([k, v]) => [
+                      k,
+                      type === m.noteType && m.note[k]?.trim() && fields[k] ? appendText(m.note[k]!, v) : v,
+                    ]),
+                  ),
+                })
+              }
+            />
+          </div>
           <TextField multiline label={t('homework')} value={m.homework} onChange={(v) => setM({ ...m, homework: v })} />
         </Card>
 

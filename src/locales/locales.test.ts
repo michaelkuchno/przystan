@@ -64,7 +64,8 @@ describe('UI locales', () => {
     const missing: string[] = [];
     for (const f of files) {
       const s = readFileSync(f, 'utf8');
-      const def = s.match(/useTranslation\(\s*'(\w+)'/)?.[1] ?? 'common';
+      // default namespace: useTranslation('ns') or the first of useTranslation(['ns', …])
+      const def = s.match(/useTranslation\(\s*\[?\s*'(\w+)'/)?.[1] ?? 'common';
       const re = /\bt\(\s*(['`])((?:(?!\1).)+)\1/g;
       let x: RegExpExecArray | null;
       while ((x = re.exec(s))) {

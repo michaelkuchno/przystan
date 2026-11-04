@@ -169,7 +169,8 @@
     "personContact": "Kontakt",
     "places": "Anlaufstellen",
     "lapsePlan": "Plan für einen Ausrutscher",
-    "lapsePlanHint": "Was tue ich nach einem einmaligen Rückfall ins alte Verhalten? Ohne Verurteilung – es ist eine Information, aus der man lernen kann."
+    "lapsePlanHint": "Was tue ich nach einem einmaligen Rückfall ins alte Verhalten? Ohne Verurteilung – es ist eine Information, aus der man lernen kann.",
+    "materialTitle": "Mein Plan – Version für die Person"
   },
   "timeline": {
     "intro": "Gespräche, Messungen und wichtige Ereignisse an einem Ort.",

@@ -1,4 +1,4 @@
-import { lazy, Suspense, type ReactNode } from 'react';
+import { lazy, Suspense, useEffect, useState, type ReactNode } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { MotionConfig } from 'framer-motion';
 import { RequireContent } from '@/content/ContentProvider';
@@ -8,6 +8,8 @@ import { Skeleton } from '@/components/ui/core';
 import { Shell } from './Shell';
 import { Dashboard } from '@/features/dashboard/Dashboard';
 import Crisis from '@/features/settings/Crisis';
+import i18n, { ensureLazyNamespaces } from '@/i18n';
+import { usePrefs } from '@/lib/prefs';
 
 const ClientsList = lazy(() => import('@/features/clients/ClientsList'));
 const ClientForm = lazy(() => import('@/features/clients/ClientForm'));
@@ -44,6 +46,12 @@ const NoteEditor = lazy(() => import('@/features/notes/NoteEditor'));
 const CaseStudy = lazy(() => import('@/features/casestudy/CaseStudy'));
 const AuditLog = lazy(() => import('@/features/audit/AuditLog'));
 const Trash = lazy(() => import('@/features/audit/Trash'));
+const AiSettings = lazy(() => import('@/features/ai/AiSettings'));
+const AiInfo = lazy(() => import('@/features/ai/AiInfo'));
+const Ask = lazy(() => import('@/features/ai/Ask'));
+const SimulatorLive = lazy(() => import('@/features/simulator/SimulatorLive'));
+const GenerateCards = lazy(() => import('@/features/learn/GenerateCards'));
+const OpenExam = lazy(() => import('@/features/learn/OpenExam'));
 
 function PageFallback() {
   return (
@@ -55,6 +63,20 @@ function PageFallback() {
   );
 }
 
+/** UI strings loaded after unlocking (AI assistant) – kept out of the start-up bundle. */
+function RequireLazyStrings({ children }: { children: ReactNode }) {
+  const { lang } = usePrefs();
+  const [ready, setReady] = useState(() => i18n.hasResourceBundle(lang, 'ai'));
+  useEffect(() => {
+    let alive = true;
+    void ensureLazyNamespaces(lang).then(() => alive && setReady(true));
+    return () => {
+      alive = false;
+    };
+  }, [lang]);
+  return ready ? <>{children}</> : <PageFallback />;
+}
+
 /** Everything after unlocking – loaded as a separate chunk. */
 export default function AuthedApp({ overlay }: { overlay?: ReactNode }) {
   return (
@@ -63,50 +85,58 @@ export default function AuthedApp({ overlay }: { overlay?: ReactNode }) {
         <ConfirmProvider>
           <Shell>
             <RequireContent fallback={<PageFallback />}>
-              <Suspense fallback={<PageFallback />}>
-                <Routes>
-                  <Route path="/" element={<Dashboard />} />
-                  <Route path="/clients" element={<ClientsList />} />
-                  <Route path="/clients/new" element={<ClientForm />} />
-                  <Route path="/clients/:id/edit" element={<ClientForm />} />
-                  <Route path="/clients/:id/:tab?" element={<ClientDetail />} />
-                  <Route path="/meetings" element={<MeetingsList />} />
-                  <Route path="/meetings/new" element={<MeetingEditor />} />
-                  <Route path="/meetings/:id" element={<MeetingEditor />} />
-                  <Route path="/meetings/:id/live" element={<MeetingLive />} />
-                  <Route path="/recipes" element={<RecipesList />} />
-                  <Route path="/recipes/:id" element={<RecipeEditor />} />
-                  <Route path="/tools" element={<ToolsHub />} />
-                  <Route path="/tools/:tool" element={<ToolRunner />} />
-                  <Route path="/screening" element={<ScreeningHub />} />
-                  <Route path="/screening/:instrument" element={<ScreeningForm />} />
-                  <Route path="/prevention" element={<PreventionList />} />
-                  <Route path="/prevention/:id" element={<PreventionWizard />} />
-                  <Route path="/resocialization/:tab?" element={<Resocialization />} />
-                  <Route path="/family/:tab?" element={<Family />} />
-                  <Route path="/help/:tab?" element={<HelpSystem />} />
-                  <Route path="/practice" element={<PracticeLog />} />
-                  <Route path="/case-study/:id" element={<CaseStudy />} />
-                  <Route path="/notes" element={<NotesList />} />
-                  <Route path="/notes/:id" element={<NoteEditor />} />
-                  <Route path="/knowledge" element={<Knowledge />} />
-                  <Route path="/knowledge/:id" element={<KnowledgeCardPage />} />
-                  <Route path="/simulator" element={<SimulatorList />} />
-                  <Route path="/simulator/:id" element={<SimulatorRun />} />
-                  <Route path="/learn" element={<Learn />} />
-                  <Route path="/learn/study/:deck" element={<Study />} />
-                  <Route path="/learn/exam" element={<Exam />} />
-                  <Route path="/learn/deck/:id" element={<DeckEditor />} />
-                  <Route path="/settings" element={<Settings />} />
-                  <Route path="/audit" element={<AuditLog />} />
-                  <Route path="/trash" element={<Trash />} />
-                  <Route path="/info/:page" element={<InfoPage />} />
-                  <Route path="/crisis" element={<Crisis />} />
-                  <Route path="/more" element={<More />} />
-                  <Route path="/search" element={<Search />} />
-                  <Route path="*" element={<Navigate to="/" replace />} />
-                </Routes>
-              </Suspense>
+              <RequireLazyStrings>
+                <Suspense fallback={<PageFallback />}>
+                  <Routes>
+                    <Route path="/" element={<Dashboard />} />
+                    <Route path="/clients" element={<ClientsList />} />
+                    <Route path="/clients/new" element={<ClientForm />} />
+                    <Route path="/clients/:id/edit" element={<ClientForm />} />
+                    <Route path="/clients/:id/:tab?" element={<ClientDetail />} />
+                    <Route path="/meetings" element={<MeetingsList />} />
+                    <Route path="/meetings/new" element={<MeetingEditor />} />
+                    <Route path="/meetings/:id" element={<MeetingEditor />} />
+                    <Route path="/meetings/:id/live" element={<MeetingLive />} />
+                    <Route path="/recipes" element={<RecipesList />} />
+                    <Route path="/recipes/:id" element={<RecipeEditor />} />
+                    <Route path="/tools" element={<ToolsHub />} />
+                    <Route path="/tools/:tool" element={<ToolRunner />} />
+                    <Route path="/screening" element={<ScreeningHub />} />
+                    <Route path="/screening/:instrument" element={<ScreeningForm />} />
+                    <Route path="/prevention" element={<PreventionList />} />
+                    <Route path="/prevention/:id" element={<PreventionWizard />} />
+                    <Route path="/resocialization/:tab?" element={<Resocialization />} />
+                    <Route path="/family/:tab?" element={<Family />} />
+                    <Route path="/help/:tab?" element={<HelpSystem />} />
+                    <Route path="/practice" element={<PracticeLog />} />
+                    <Route path="/case-study/:id" element={<CaseStudy />} />
+                    <Route path="/notes" element={<NotesList />} />
+                    <Route path="/notes/:id" element={<NoteEditor />} />
+                    <Route path="/knowledge" element={<Knowledge />} />
+                    <Route path="/knowledge/:id" element={<KnowledgeCardPage />} />
+                    <Route path="/simulator" element={<SimulatorList />} />
+                    <Route path="/simulator/:id" element={<SimulatorRun />} />
+                    <Route path="/simulator/:id/live" element={<SimulatorLive />} />
+                    <Route path="/learn" element={<Learn />} />
+                    <Route path="/learn/study/:deck" element={<Study />} />
+                    <Route path="/learn/exam" element={<Exam />} />
+                    <Route path="/learn/exam-open" element={<OpenExam />} />
+                    <Route path="/learn/generate" element={<GenerateCards />} />
+                    <Route path="/learn/deck/:id" element={<DeckEditor />} />
+                    <Route path="/settings" element={<Settings />} />
+                    <Route path="/settings/ai" element={<AiSettings />} />
+                    <Route path="/ai/info" element={<AiInfo />} />
+                    <Route path="/ask" element={<Ask />} />
+                    <Route path="/audit" element={<AuditLog />} />
+                    <Route path="/trash" element={<Trash />} />
+                    <Route path="/info/:page" element={<InfoPage />} />
+                    <Route path="/crisis" element={<Crisis />} />
+                    <Route path="/more" element={<More />} />
+                    <Route path="/search" element={<Search />} />
+                    <Route path="*" element={<Navigate to="/" replace />} />
+                  </Routes>
+                </Suspense>
+              </RequireLazyStrings>
             </RequireContent>
           </Shell>
           {overlay}

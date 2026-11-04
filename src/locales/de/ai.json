@@ -1,0 +1,324 @@
+{
+  "name": "KI-Assistent",
+  "badge": "Hilfsmittel – prüfen",
+  "where": {
+    "cloud": "Gemini (Cloud)",
+    "device": "Modell auf dem Gerät",
+    "fake": "Test"
+  },
+  "generated": "Von KI erstellt · {{where}}",
+  "working": "Die KI arbeitet…",
+  "cancel": "Abbrechen",
+  "retry": "Erneut versuchen",
+  "apply": "Übernehmen",
+  "discard": "Verwerfen",
+  "copy": "Kopieren",
+  "copied": "Kopiert",
+  "close": "Schliessen",
+  "crisis": {
+    "title": "Der Text könnte Lebensgefahr oder Gewalt betreffen",
+    "text": "Die KI beurteilt kein Risiko. Wenn jemand in Gefahr ist, wende dich sofort an die Notrufnummern:",
+    "all": "Alle Notrufnummern"
+  },
+  "errors": {
+    "noKey": "Kein Gemini-Schlüssel. Füge ihn unter Einstellungen → KI-Assistent hinzu.",
+    "badKey": "Der Gemini-Schlüssel wurde abgelehnt. Prüfe ihn unter Einstellungen → KI-Assistent.",
+    "rateLimit": "Das Limit des kostenlosen Gemini-Kontingents ist erreicht. Bitte versuche es gleich noch einmal.",
+    "rateLimitWait": "Das Limit des kostenlosen Gemini-Kontingents ist erreicht. Versuche es in etwa {{min}} Min. erneut (das Tageslimit wird täglich zurückgesetzt).",
+    "network": "Keine Internetverbindung. Cloud-Funktionen gehen nur online.",
+    "format": "Die KI hat in einem unerwarteten Format geantwortet. Bitte versuche es noch einmal.",
+    "blocked": "Der KI-Anbieter hat diese Antwort blockiert (Sicherheitsfilter). Formuliere den Text um.",
+    "unavailable": "Diese KI-Funktion ist im Moment nicht verfügbar.",
+    "privacy": "Senden blockiert: Personendaten dürfen nicht ohne Vorschau und Zustimmung in die Cloud.",
+    "server": "Der KI-Server hat einen Fehler gemeldet. Bitte versuche es gleich noch einmal.",
+    "aborted": "Abgebrochen."
+  },
+  "route": {
+    "off": "Der KI-Assistent ist ausgeschaltet. Du kannst ihn unter Einstellungen → KI-Assistent einschalten.",
+    "presentation": "Im Präsentationsmodus arbeitet die KI nur mit Demodaten.",
+    "clientLocalOnly": "Personendaten werden nur auf dem Gerät verarbeitet. Lade ein lokales Modell herunter oder erlaube in den Einstellungen das Senden nach Pseudonymisierung.",
+    "noLocalLlm": "Lokaler Modus: Diese Funktion braucht das lokale Sprachmodell (Einstellungen → KI-Assistent)."
+  },
+  "enable": "KI-Einstellungen",
+  "preview": {
+    "title": "Vorschau: Was in die Cloud geht",
+    "lead": "Genau dieser Text wird an Google Gemini gesendet. Identifizierende Angaben wurden durch Platzhalter ersetzt; nach der Antwort werden sie auf dem Gerät wiederhergestellt.",
+    "replaced_one": "{{count}} Stelle ersetzt.",
+    "replaced_other": "{{count}} Stellen ersetzt.",
+    "check": "Prüfe, ob keine Namen, Orte oder Details übrig sind, an denen man die Person erkennen könnte. Falls doch: abbrechen und den Ausgangstext anpassen.",
+    "send": "Diesen Text senden",
+    "consent": "Die Zustimmung gilt nur für diese eine Anfrage."
+  },
+  "dictate": {
+    "start": "Diktieren",
+    "stop": "Diktat beenden",
+    "working": "Sprache wird erkannt…",
+    "recording": "Aufnahme läuft… (max. 2 Min.)",
+    "denied": "Kein Zugriff auf das Mikrofon. Erlaube ihn in den Browser- oder Telefoneinstellungen.",
+    "unavailable": "Zum Diktieren braucht es das Spracherkennungsmodell (Einstellungen → KI-Assistent).",
+    "local": "Die Aufnahme wird auf dem Gerät erkannt und nicht gespeichert.",
+    "cloud": "Die Aufnahme wird nur zur Spracherkennung an Gemini gesendet."
+  },
+  "explain": {
+    "simpler": "Einfacher erklären",
+    "example": "Beispiel geben",
+    "title": "KI-Erklärung"
+  },
+  "settings": {
+    "title": "KI-Assistent",
+    "subtitle": "Optionale, kostenlose KI-Funktionen. Standardmässig aus – ohne KI funktioniert die App vollständig offline.",
+    "info": "Wie die KI funktioniert und was wo verarbeitet wird",
+    "mode": "Modus",
+    "modes": {
+      "off": "Aus",
+      "offText": "Keine KI-Funktionen und kein Netzwerkverkehr.",
+      "local": "Lokal",
+      "localText": "Nur aufs Gerät geladene Modelle. Nichts verlässt das Telefon.",
+      "cloud": "Cloud (Gemini)",
+      "cloudText": "Google Gemini mit deinem eigenen kostenlosen Schlüssel. Personendaten – standardmässig nur lokal."
+    },
+    "cloud": "Google Gemini",
+    "key": "Gemini-API-Schlüssel",
+    "keyHint": "Der Schlüssel wird zusammen mit deinen Daten verschlüsselt und nicht ins Backup übernommen.",
+    "keySet": "Schlüssel gespeichert (…{{tail}})",
+    "keyInvalid": "Das sieht nicht wie ein Gemini-Schlüssel aus (beginnt mit «AIza», 39 Zeichen).",
+    "save": "Schlüssel speichern",
+    "test": "Verbindung prüfen",
+    "testOk": "Verbindung funktioniert",
+    "remove": "Schlüssel entfernen",
+    "removed": "Schlüssel entfernt",
+    "howTo": "So bekommst du kostenlos einen Schlüssel",
+    "howToSteps": [
+      "Öffne aistudio.google.com/apikey und melde dich mit einem Google-Konto an.",
+      "Akzeptiere die Bedingungen – Google AI Studio erstellt automatisch ein Projekt und einen Schlüssel (für das Gratiskontingent braucht es keine Karte).",
+      "Kopiere den Schlüssel (beginnt mit «AIza») und füge ihn oben ein.",
+      "Die Limits des Gratiskontingents siehst du in AI Studio. Sind sie erreicht, bittet dich die App, es später erneut zu versuchen."
+    ],
+    "model": "Modell",
+    "modelHint": "Flash – bessere Qualität. Flash-Lite – schneller, höhere Gratislimits.",
+    "clientData": "Senden von Personendaten nach Pseudonymisierung erlauben",
+    "clientDataText": "Standardmässig aus. Wenn eingeschaltet, zeigt jede Anfrage mit Personendaten den genauen Text und braucht deine Zustimmung. Das lokale Modell hat immer Vorrang.",
+    "voice": "Antworten der simulierten Person vorlesen",
+    "voiceText": "Sprachausgabe des Systems (auf dem Gerät).",
+    "local": "Lokale Modelle",
+    "localLead": "Werden erst nach deiner Zustimmung heruntergeladen und in einem separaten App-Speicher abgelegt. WLAN empfohlen.",
+    "device": "Dein Gerät",
+    "deviceWebgpu": "WebGPU: {{v}}",
+    "deviceMemory": "Arbeitsspeicher: ca. {{gb}} GB",
+    "deviceFree": "Freier Speicher: ca. {{mb}} MB",
+    "yes": "ja",
+    "no": "nein",
+    "models": {
+      "embed": "Semantische Suche",
+      "embedText": "multilingual‑e5‑small: «Wissensbasis fragen» versteht Fragen auf DE/PL/EN, auch im lokalen Modus.",
+      "whisper": "Diktieren (Whisper)",
+      "whisperText": "whisper‑base: Spracherkennung auf dem Gerät in Notizen, Gesprächen, im Praktikumsjournal und in der Supervision.",
+      "llm": "Lokales Sprachmodell",
+      "llmText": "Qwen3 1.7B über WebLLM: «Ordnen», Supervisionsfragen und Erklärungen ohne Cloud. Braucht WebGPU (iPhone mit iOS 26, neuere Android-Telefone). Tiefere Qualität als Gemini."
+    },
+    "size": "ca. {{mb}} MB",
+    "sizeGb": "ca. {{gb}} GB",
+    "download": "Herunterladen",
+    "downloading": "Wird geladen… {{pct}} %",
+    "ready": "Heruntergeladen",
+    "delete": "Löschen",
+    "deleteAll": "Alle Modelle löschen",
+    "deleted": "Modelle gelöscht",
+    "consentTitle": "Modell «{{name}}» herunterladen?",
+    "consentText": "Es werden ca. {{size}} von Hugging Face (Modelle) und jsDelivr (Laufzeit) geladen. WLAN wird empfohlen. Das Modell kommt in einen separaten App-Cache; du kannst es jederzeit löschen. Danach funktioniert es ohne Internet – deine Daten verlassen das Gerät nicht.",
+    "consentOk": "Herunterladen",
+    "downloadFailed": "Das Modell konnte nicht geladen werden: {{msg}}",
+    "unsupported": {
+      "noWasm": "Der Browser unterstützt kein WebAssembly.",
+      "noWebgpu": "Dieses Gerät oder dieser Browser unterstützt kein WebGPU (iPhone: iOS 26 nötig).",
+      "noF16": "Der Grafikchip unterstützt die vom Modell benötigten 16-Bit-Berechnungen nicht.",
+      "lowMemory": "Zu wenig Arbeitsspeicher für das Modell.",
+      "noSpace": "Zu wenig freier Speicher auf dem Gerät."
+    }
+  },
+  "info": {
+    "title": "KI in Przystań",
+    "lead": "Die KI ist optional und standardmässig aus. Solange sie aus ist, stellt die App keine einzige Netzwerkanfrage.",
+    "sections": [
+      {
+        "q": "Was wird auf dem Gerät verarbeitet?",
+        "a": "Im lokalen Modus alles: semantische Suche (Modell e5), Diktieren (Whisper) und – falls heruntergeladen – ein kleines Sprachmodell (Qwen3 über WebLLM). Die Modelle werden einmal geladen und laufen danach offline. Der Suchindex (auch deiner Notizen) ist zusammen mit deinen Daten verschlüsselt."
+      },
+      {
+        "q": "Was geht in die Cloud (Gemini)?",
+        "a": "Nur im Cloud-Modus und nur: die Fachinhalte der App (Wissenskarten, Lernkarten, Szenarien), deine Antworten im Simulator und in der Prüfung sowie Lerntexte, die du selbst einfügst. Notizen, Klientenprofile, Gespräche, Diagnosen, Ergebnisse und Supervision werden nie automatisch gesendet."
+      },
+      {
+        "q": "Und die Daten der Menschen, mit denen ich arbeite?",
+        "a": "Standardmässig nur auf dem Gerät. Erlaubst du das Senden in den Einstellungen, wird der Text zuerst pseudonymisiert (Namen, Daten, Adressen, Telefonnummern, AHV/PESEL, Namen von Einrichtungen → Platzhalter), du siehst genau, was gesendet wird, und stimmst jeder Anfrage einzeln zu. Die Platzhalter werden auf dem Gerät wiederhergestellt."
+      },
+      {
+        "q": "Verwendet Google diese Daten?",
+        "a": "Gemäss den Zusätzlichen Nutzungsbedingungen der Gemini API (gültig seit 23.03.2026, geprüft am 04.11.2026) gelten für Nutzende im EWR, in der Schweiz und im Vereinigten Königreich die Regeln der bezahlten Dienste auch im Gratiskontingent: Google verwendet Prompts und Antworten nicht zur Verbesserung seiner Produkte. Trotzdem sendet Przystań keine Personendaten. Der Schlüssel gehört dir – du nutzt die Gemini API in eigenem Namen zu den Bedingungen von Google."
+      },
+      {
+        "q": "Was macht die KI nicht?",
+        "a": "Sie stellt keine Diagnosen, beurteilt kein Risiko (Suizid, Gewalt, Rückfall) und ersetzt keine Supervision. Jede Antwort ist mit «Hilfsmittel – prüfen» markiert. Deutet ein Text auf Gefahr hin, zeigt die App die Notrufnummern."
+      },
+      {
+        "q": "Wie schalte ich die KI aus und lösche die Modelle?",
+        "a": "Einstellungen → KI-Assistent → Modus «Aus». Dort entfernst du auch den Schlüssel und die geladenen Modelle («Alle Modelle löschen»)."
+      }
+    ],
+    "terms": "Nutzungsbedingungen der Gemini API",
+    "checked": "Stand 04.11.2026"
+  },
+  "ask": {
+    "title": "Wissensbasis fragen",
+    "subtitle": "Fragen in Alltagssprache – Antworten nur aus den Inhalten der App, mit Links zu den Quellen",
+    "placeholder": "z. B. Wie reagiere ich auf Widerstand im Gespräch mit Jugendlichen?",
+    "ask": "Fragen",
+    "search": "Suchen",
+    "answer": "Antwort",
+    "sources": "Quellen",
+    "related": "Ähnlichste Inhalte",
+    "notKnown": "In den Inhalten der App habe ich keine Antwort gefunden. Siehe die nächstliegenden Quellen unten.",
+    "indexing": "Suchindex wird vorbereitet… {{pct}} %",
+    "keyword": "Stichwortsuche (lade das Modell für die semantische Suche herunter, damit Fragen besser verstanden werden).",
+    "notesLocal": "Deine Notizen werden nur auf dem Gerät durchsucht und gehen nie in die Cloud.",
+    "noLlm": "Ohne Sprachmodell zeige ich die passendsten Inhaltsabschnitte.",
+    "empty": "Gib eine Frage ein.",
+    "navHint": "Fragen in Alltagssprache",
+    "kind": {
+      "knowledge": "Wissenskarte",
+      "institution": "Institution",
+      "legal": "Recht",
+      "card": "Lernkarte",
+      "tool": "Werkzeug",
+      "note": "Notiz",
+      "scenario": "Szenario",
+      "template": "Vorlage"
+    }
+  },
+  "sim": {
+    "live": "Live mit KI",
+    "liveText": "Antworte mit eigenen Worten – geschrieben oder gesprochen. Die KI spielt die Person und bewertet jede Äusserung.",
+    "requiresCloud": "Der Live-Modus braucht die Cloud (Gemini). Das kleine lokale Modell führt dieses Gespräch nicht glaubwürdig genug.",
+    "placeholder": "Deine Äusserung…",
+    "send": "Senden",
+    "turnsLeft_one": "Noch {{count}} Äusserung",
+    "turnsLeft_other": "Noch {{count}} Äusserungen",
+    "finish": "Gespräch beenden",
+    "ended": "Gesprächsende",
+    "coach": "Kommentar",
+    "better": "Stärkere Variante",
+    "voice": "Vorlesen",
+    "summaryNote": "Der Verlauf wurde zum Lernen gespeichert (ohne Personendaten). Die KI-Bewertung ist ein Hilfsmittel – vergleiche sie mit den MITI-Kategorien.",
+    "notice": "Die Person ist fiktiv. Gib keine Daten realer Personen ein.",
+    "choice": "Version mit Antwortauswahl"
+  },
+  "learn": {
+    "generate": "Lernkarten aus Notizen",
+    "generateText": "Füge Vorlesungsnotizen ein oder öffne eine TXT-/PDF-Datei – die KI schlägt Lernkarten und Prüfungsfragen zum Durchsehen vor.",
+    "paste": "Lerntext",
+    "file": "Datei öffnen (TXT, PDF)",
+    "fileRead": "{{chars}} Zeichen aus {{name}} gelesen (Text auf dem Gerät extrahiert).",
+    "fileError": "Die Datei konnte nicht gelesen werden.",
+    "noClient": "Füge keine Daten der Menschen ein, mit denen du arbeitest – dieser Text kann in die Cloud gesendet werden.",
+    "run": "Lernkarten vorschlagen",
+    "cards": "Vorgeschlagene Lernkarten",
+    "questions": "Prüfungsfragen",
+    "front": "Vorderseite",
+    "back": "Rückseite",
+    "question": "Frage",
+    "answer": "Musterantwort",
+    "include": "Ins Deck aufnehmen",
+    "deck": "Deck",
+    "newDeck": "Neues Deck: {{title}}",
+    "deckTitle": "Meine Notizen {{date}}",
+    "save": "Im Deck speichern",
+    "saved_one": "{{count}} Lernkarte gespeichert",
+    "saved_other": "{{count}} Lernkarten gespeichert",
+    "openExam": "Offene Fragen mit KI-Bewertung",
+    "openExamText": "Du antwortest mit eigenen Worten, die KI bewertet nach einem Raster und zeigt eine Musterantwort.",
+    "openTitle": "Prüfung – offene Fragen",
+    "source": "Quelle der Fragen",
+    "sourceDecks": "Lernkarten",
+    "sourceKnowledge": "Wissenskarten",
+    "yourAnswer": "Deine Antwort",
+    "check": "Antwort bewerten",
+    "next": "Nächste Frage",
+    "score": "Ergebnis",
+    "verdict": {
+      "good": "Gute Antwort",
+      "partial": "Teilweise",
+      "insufficient": "Ungenügend"
+    },
+    "covered": "Berücksichtigt",
+    "missing": "Fehlt",
+    "modelAnswer": "Musterantwort",
+    "tip": "Tipp",
+    "reference": "Referenzmaterial"
+  },
+  "organize": {
+    "button": "Ordnen",
+    "title": "Notiz ordnen",
+    "lead": "Die KI bringt Rohnotizen in das gewählte Format. Es ist nur ein Vorschlag – ohne deine Zustimmung wird nichts überschrieben.",
+    "format": "Format",
+    "run": "Vorschlagen",
+    "applyFields": "In die Notiz einfügen",
+    "applyText": "Am Ende der Notiz anfügen",
+    "empty": "Schreibe oder diktiere zuerst die Notizen."
+  },
+  "recipe": {
+    "propose": "Ablauf vorschlagen",
+    "title": "Vorgeschlagener Ablauf",
+    "age": "Alter / Gruppe",
+    "goal": "Ziel",
+    "duration": "Dauer (Min.)",
+    "level": "Präventionsebene",
+    "levels": {
+      "universal": "Universell",
+      "selective": "Selektiv",
+      "indicated": "Indiziert"
+    },
+    "run": "Vorschlagen",
+    "apply": "Schritte in den Baukasten übernehmen",
+    "applied_one": "{{count}} Schritt hinzugefügt",
+    "applied_other": "{{count}} Schritte hinzugefügt",
+    "total": "Total: {{min}} Min."
+  },
+  "prevention": {
+    "propose": "Mit KI vorschlagen",
+    "title": "Programmvorschlag",
+    "lead": "Auf Basis von Zielgruppe, Bedarf und Präventionsebene. Prüfe den Vorschlag und übernimm, was passt.",
+    "apply": "Ins Programm übernehmen",
+    "goal": "Gesamtziel",
+    "specificGoals": "Teilziele",
+    "strategies": "Strategien",
+    "riskFactors": "Risikofaktoren",
+    "protectiveFactors": "Schutzfaktoren"
+  },
+  "practice": {
+    "title": "Check der guten Praxis",
+    "ok": "Keine typischen Präventionsfehler gefunden.",
+    "fear": "Abschreckung (z. B. «Tod», «du ruinierst dein Leben») – wirkt in der Prävention nicht und kann das Gegenteil bewirken.",
+    "exUser": "Erfahrungsbericht ehemals Abhängiger als Hauptmethode – gute Praxis rät von solchen Einzelauftritten ab.",
+    "oneOff": "Einmaliger Vortrag – wirksame Programme sind interaktiv und über längere Zeit verteilt.",
+    "info": "Detaillierte Infos zu Substanzen und Konsumformen – kann Neugier wecken; besser auf Kompetenzen und Normen fokussieren.",
+    "moral": "Moralisieren statt Kompetenzen fördern – ersetze es durch Übungen (Nein sagen, Umgang mit Gefühlen)."
+  },
+  "material": {
+    "button": "Material anpassen",
+    "title": "Material für {{client}}",
+    "lead": "Eine aus dem Plan erstellte Version ohne identifizierende Angaben. Prüfe sie vor der Weitergabe.",
+    "plain": "Einfache Sprache",
+    "youth": "Für Jugendliche",
+    "translate": "Übersetzung",
+    "to": "Zielsprache",
+    "run": "Version erstellen",
+    "share": "Teilen"
+  },
+  "supervision": {
+    "button": "Reflexionsfragen",
+    "title": "Fragen für die Supervision",
+    "lead": "Die KI stellt Fragen, die helfen, den Fall aus verschiedenen Blickwinkeln zu sehen. Sie deutet nicht und gibt keine Lösungen.",
+    "run": "Fragen vorschlagen",
+    "insert": "In die Notiz einfügen"
+  }
+}

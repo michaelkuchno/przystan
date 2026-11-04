@@ -2,49 +2,22 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { AnimatePresence, motion } from 'framer-motion';
-import { RotateCcw, ThumbsUp, ThumbsDown, MinusCircle, Play, HeartHandshake, TrendingUp } from 'lucide-react';
+import { Sparkles, RotateCcw, ThumbsUp, ThumbsDown, MinusCircle, Play, HeartHandshake, TrendingUp } from 'lucide-react';
 import { Page, PageHeader, ReviewBadge } from '@/components/ui/page';
-import { Button, Card, EmptyState, Badge } from '@/components/ui/core';
+import { Button, ButtonLink, Card, EmptyState, Badge } from '@/components/ui/core';
+import { usePrefs } from '@/lib/prefs';
 import { useContent } from '@/content/ContentProvider';
 import { save, uid } from '@/lib/store';
 import { haptic } from '@/lib/platform';
 import { todayIso } from '@/lib/platform';
 import { cn } from '@/components/ui/cn';
 import { computeStats, isConsistent, isInconsistent, type SimStep } from './sim';
+import { Bar, MOOD_EMOJI, StatsGrid } from './simUi';
 import type { Scenario, ScenarioNode } from '@/content/types';
 
-const MOOD_EMOJI: Record<ScenarioNode['mood'], string> = { calm: '🙂', guarded: '😐', angry: '😠', sad: '😔', hopeful: '😌' };
-
-function Bar({ label, value, icon, tone }: { label: string; value: number; icon: React.ReactNode; tone: 'primary' | 'blue' }) {
-  return (
-    <div>
-      <div className="mb-1 flex items-center justify-between text-xs font-medium">
-        <span className="flex items-center gap-1.5">
-          {icon}
-          {label}
-        </span>
-        <span className="tabular-nums">{Math.round(value)}%</span>
-      </div>
-      <div
-        className="h-2.5 overflow-hidden rounded-full bg-surface-3"
-        role="meter"
-        aria-label={label}
-        aria-valuenow={Math.round(value)}
-        aria-valuemin={0}
-        aria-valuemax={100}
-      >
-        <motion.div
-          className={cn('h-full rounded-full', tone === 'primary' ? 'bg-primary' : 'bg-blue')}
-          animate={{ width: `${value}%` }}
-          transition={{ type: 'spring', stiffness: 120, damping: 18 }}
-        />
-      </div>
-    </div>
-  );
-}
-
 function Run({ scenario }: { scenario: Scenario }) {
-  const { t } = useTranslation('simulator');
+  const { t } = useTranslation(['simulator', 'ai']);
+  const aiMode = usePrefs().ai.mode;
   const nodes = useMemo(() => new Map(scenario.nodes.map((n) => [n.id, n])), [scenario]);
   const [started, setStarted] = useState(false);
   const [steps, setSteps] = useState<SimStep[]>([]);
@@ -103,9 +76,22 @@ function Run({ scenario }: { scenario: Scenario }) {
         </h2>
         <p className="mt-1 text-muted">{scenario.persona.description}</p>
         <p className="mt-4 leading-relaxed">{scenario.intro}</p>
-        <Button size="lg" className="mt-6" icon={<Play className="size-5" />} onClick={() => setStarted(true)}>
-          {t('start')}
-        </Button>
+        <div className="mt-6 flex flex-wrap justify-center gap-2">
+          <Button size="lg" icon={<Play className="size-5" />} onClick={() => setStarted(true)}>
+            {t('start')}
+          </Button>
+          {aiMode !== 'off' && (
+            <ButtonLink
+              size="lg"
+              variant="soft"
+              to={`/simulator/${scenario.id}/live`}
+              icon={<Sparkles className="size-5" aria-hidden />}
+            >
+              {t('ai:sim.live')}
+            </ButtonLink>
+          )}
+        </div>
+        {aiMode !== 'off' && <p className="mt-3 text-sm text-muted">{t('ai:sim.liveText')}</p>}
       </Card>
     );
 
@@ -152,32 +138,7 @@ function Run({ scenario }: { scenario: Scenario }) {
               </Card>
               <Card>
                 <h3 className="mb-3 text-lg font-semibold">{t('summary')}</h3>
-                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-                  <Stat
-                    label={t('stats.rq')}
-                    value={stats.rq ?? '–'}
-                    hint={t('stats.rqHint')}
-                    good={stats.rq !== null && stats.rq >= 1}
-                  />
-                  <Stat
-                    label={t('stats.open')}
-                    value={stats.pctOpen !== null ? `${stats.pctOpen}%` : '–'}
-                    hint={t('stats.openHint')}
-                    good={stats.pctOpen !== null && stats.pctOpen >= 50}
-                  />
-                  <Stat
-                    label={t('stats.complex')}
-                    value={stats.pctComplex !== null ? `${stats.pctComplex}%` : '–'}
-                    hint={t('stats.complexHint')}
-                    good={stats.pctComplex !== null && stats.pctComplex >= 40}
-                  />
-                  <Stat
-                    label={t('stats.inconsistent')}
-                    value={stats.miInconsistent}
-                    hint={t('stats.inconsistentHint')}
-                    good={stats.miInconsistent === 0}
-                  />
-                </div>
+                <StatsGrid stats={stats} />
               </Card>
               <Card>
                 <h3 className="mb-3 text-lg font-semibold">{t('decisions')}</h3>
@@ -283,16 +244,6 @@ function ClientBubble({ node, name }: { node: ScenarioNode; name: string }) {
         <div className="leading-relaxed">{node.client}</div>
       </div>
     </motion.div>
-  );
-}
-
-function Stat({ label, value, hint, good }: { label: string; value: React.ReactNode; hint: string; good: boolean }) {
-  return (
-    <div className={cn('rounded-2xl p-3', good ? 'bg-ok-soft' : 'bg-surface-2')}>
-      <div className="text-xs text-muted">{label}</div>
-      <div className="font-serif text-2xl font-semibold">{value}</div>
-      <div className="text-[length:calc(0.7rem*var(--fs-body))] text-muted">{hint}</div>
-    </div>
   );
 }
 

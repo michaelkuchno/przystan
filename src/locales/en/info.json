@@ -20,7 +20,7 @@
       },
       {
         "q": "Is anything sent to the internet?",
-        "a": "No. The app contains no analytics, ads or trackers and makes no network requests. Internet is only needed to download PWA updates."
+        "a": "No – unless you turn on the optional AI assistant yourself (off by default). The app contains no analytics, ads or trackers. Internet is needed to download PWA updates and, with AI on, for Google Gemini (with your own key) or a one-time download of local models. Data about people never goes to the cloud automatically (Settings → AI assistant → “How AI works”)."
       },
       {
         "q": "How is the data protected?",

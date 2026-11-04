@@ -12,6 +12,8 @@ import { haptic } from '@/lib/platform';
 import { NoteForm } from './MeetingEditor';
 import { cn } from '@/components/ui/cn';
 import type { Meeting, ToolId } from '@/domain/types';
+import { DictateButton } from '@/features/ai/DictateButton';
+import { appendText } from '@/features/ai/text';
 
 const QUICK_TOOLS: ToolId[] = [
   'readinessRuler',
@@ -204,6 +206,9 @@ export default function MeetingLive() {
               value={m.quickNotes}
               onChange={(e) => persist({ ...m, quickNotes: e.target.value })}
             />
+            <div className="mt-2">
+              <DictateButton sensitivity="client" onText={(x) => persist({ ...m, quickNotes: appendText(m.quickNotes, x) })} />
+            </div>
           </Card>
           <Card>
             <label htmlFor="hw" className="mb-2 block text-lg font-semibold">

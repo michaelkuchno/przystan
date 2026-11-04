@@ -17,6 +17,8 @@ import { preventionPdf } from '@/lib/reports';
 import { recipeFromTemplate } from '@/features/recipes/RecipesList';
 import { cn } from '@/components/ui/cn';
 import type { PreventionProgram } from '@/domain/types';
+import { ProposePrevention } from '@/features/ai/ProposePrevention';
+import { PracticeCheck } from '@/features/ai/PracticeCheck';
 
 const STEPS = ['needs', 'target', 'factors', 'goals', 'strategies', 'schedule', 'evaluation'] as const;
 type StepId = (typeof STEPS)[number];
@@ -402,6 +404,10 @@ function Wizard({ program }: { program: PreventionProgram }) {
           <div className="mt-3 mb-5 flex gap-2 rounded-2xl bg-blue-soft p-3 text-sm">
             <Lightbulb className="mt-0.5 size-4 shrink-0 text-blue" aria-hidden />
             <span>{c.wizardHints[step]}</span>
+          </div>
+          <div className="mb-4 space-y-3">
+            <ProposePrevention program={draft} onApply={(patch) => update(patch)} />
+            <PracticeCheck text={[draft.needs, draft.generalGoal, ...draft.specificGoals, ...draft.schedule.map((x) => x.activity)].join('\n')} />
           </div>
           <AnimatePresence mode="wait">
             <motion.div

@@ -9,6 +9,7 @@ import { all, save } from '@/lib/store';
 import { isDue, newCardState, review, type Grade } from '@/lib/srs';
 import { todayIso, haptic } from '@/lib/platform';
 import { useDecks, shuffle } from './decks';
+import { ExplainButtons } from '@/features/ai/ExplainButtons';
 import { cn } from '@/components/ui/cn';
 
 export default function Study() {
@@ -138,6 +139,11 @@ export default function Study() {
               </motion.div>
             )}
           </AnimatePresence>
+          {flipped && (
+            <div className="mt-4 flex justify-center">
+              <ExplainButtons title={card.front} text={card.back} />
+            </div>
+          )}
         </div>
       )}
     </Page>

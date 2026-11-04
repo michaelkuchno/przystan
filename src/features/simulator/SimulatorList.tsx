@@ -12,7 +12,9 @@ export default function SimulatorList() {
   const runs = useStore(() => all('simRun'));
   const { country } = usePrefs();
   // scenarios set in the country of work first (stable order otherwise)
-  const ordered = [...scenarios].sort((a, b) => Number((b.country ?? 'PL') === country) - Number((a.country ?? 'PL') === country));
+  const ordered = [...scenarios].sort(
+    (a, b) => Number((b.country ?? 'PL') === country) - Number((a.country ?? 'PL') === country),
+  );
   return (
     <Page wide>
       <PageHeader title={t('title')} subtitle={t('subtitle')} />
@@ -35,9 +37,7 @@ export default function SimulatorList() {
               </div>
               <p className="mt-2 line-clamp-3 text-sm">{s.intro}</p>
               <div className="mt-3 flex flex-wrap gap-1.5">
-                <Badge tone={(s.country ?? 'PL') === 'CH' ? 'accent' : 'neutral'}>
-                  {t(`help:country.${s.country ?? 'PL'}`)}
-                </Badge>
+                <Badge tone={(s.country ?? 'PL') === 'CH' ? 'accent' : 'neutral'}>{t(`help:country.${s.country ?? 'PL'}`)}</Badge>
                 <Badge tone="blue">
                   <MessagesSquare className="size-3" aria-hidden /> {t(`audience.${s.audience}`)}
                 </Badge>

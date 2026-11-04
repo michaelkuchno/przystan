@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Quote, CheckCircle2, AlertTriangle, Wrench, BookMarked, Clock } from 'lucide-react';
 import { Card, Badge } from '@/components/ui/core';
 import { ReviewBadge } from '@/components/ui/page';
+import { ExplainButtons } from '@/features/ai/ExplainButtons';
 import type { KnowledgeCard } from '@/content/types';
 
 export function KnowledgeCardView({ card }: { card: KnowledgeCard }) {
@@ -37,6 +38,7 @@ export function KnowledgeCardView({ card }: { card: KnowledgeCard }) {
       <Card className="border-primary/25 bg-primary-soft/40">
         <p className="font-serif text-lg leading-relaxed">{card.essence}</p>
       </Card>
+      <ExplainButtons title={card.title} text={[card.essence, ...card.whenToUse, ...card.techniques, ...card.pitfalls].join('\n')} />
       <div className="grid gap-4 md:grid-cols-2">
         {block(<Clock className="size-4 text-blue" aria-hidden />, t('whenToUse'), card.whenToUse)}
         {block(<Wrench className="size-4 text-primary" aria-hidden />, t('techniques'), card.techniques)}

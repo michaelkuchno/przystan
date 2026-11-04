@@ -169,7 +169,8 @@
     "personContact": "Contact",
     "places": "Places of support",
     "lapsePlan": "Plan for a lapse",
-    "lapsePlanHint": "What will I do after a one-off return to the behaviour? No judgement – it is information to learn from."
+    "lapsePlanHint": "What will I do after a one-off return to the behaviour? No judgement – it is information to learn from.",
+    "materialTitle": "My plan – version for the person"
   },
   "timeline": {
     "intro": "Sessions, measurements and important events in one place.",

@@ -1,0 +1,332 @@
+{
+  "name": "Asystent AI",
+  "badge": "Pomocnicze – zweryfikuj",
+  "where": {
+    "cloud": "Gemini (chmura)",
+    "device": "model na urządzeniu",
+    "fake": "test"
+  },
+  "generated": "Wygenerowane przez AI · {{where}}",
+  "working": "AI pracuje…",
+  "cancel": "Anuluj",
+  "retry": "Spróbuj ponownie",
+  "apply": "Zastosuj",
+  "discard": "Odrzuć",
+  "copy": "Kopiuj",
+  "copied": "Skopiowano",
+  "close": "Zamknij",
+  "crisis": {
+    "title": "Tekst może dotyczyć zagrożenia życia lub przemocy",
+    "text": "AI nie ocenia ryzyka. Jeśli ktoś jest w niebezpieczeństwie, skorzystaj od razu z numerów pomocy:",
+    "all": "Wszystkie numery pomocy"
+  },
+  "errors": {
+    "noKey": "Brak klucza Gemini. Dodaj go w Ustawieniach → Asystent AI.",
+    "badKey": "Klucz Gemini został odrzucony. Sprawdź go w Ustawieniach → Asystent AI.",
+    "rateLimit": "Przekroczono limit darmowego pakietu Gemini. Spróbuj ponownie za chwilę.",
+    "rateLimitWait": "Przekroczono limit darmowego pakietu Gemini. Spróbuj ponownie za ok. {{min}} min (limit dzienny odnawia się codziennie).",
+    "network": "Brak połączenia z internetem. Funkcje w chmurze działają tylko online.",
+    "format": "AI zwróciła odpowiedź w nieoczekiwanym formacie. Spróbuj ponownie.",
+    "blocked": "Dostawca AI zablokował tę odpowiedź (filtry bezpieczeństwa). Przeformułuj tekst.",
+    "unavailable": "Ta funkcja AI jest teraz niedostępna.",
+    "privacy": "Zablokowano wysyłkę: dane osoby nie mogą trafić do chmury bez podglądu i zgody.",
+    "server": "Serwer AI odpowiedział błędem. Spróbuj ponownie za chwilę.",
+    "aborted": "Przerwano."
+  },
+  "route": {
+    "off": "Asystent AI jest wyłączony. Możesz go włączyć w Ustawieniach → Asystent AI.",
+    "presentation": "W trybie prezentacji AI działa tylko na danych demo.",
+    "clientLocalOnly": "Dane osób są przetwarzane tylko na urządzeniu. Pobierz model lokalny albo zezwól w ustawieniach na wysyłkę po pseudonimizacji.",
+    "noLocalLlm": "Tryb lokalny: ta funkcja wymaga lokalnego modelu językowego (Ustawienia → Asystent AI)."
+  },
+  "enable": "Ustawienia AI",
+  "preview": {
+    "title": "Podgląd wysyłki do chmury",
+    "lead": "Tak dokładnie wygląda tekst, który zostanie wysłany do Google Gemini. Dane identyfikujące zamieniono na zamienniki; po odpowiedzi zostaną lokalnie przywrócone.",
+    "replaced_one": "Zamieniono {{count}} fragment.",
+    "replaced_few": "Zamieniono {{count}} fragmenty.",
+    "replaced_many": "Zamieniono {{count}} fragmentów.",
+    "replaced_other": "Zamieniono {{count}} fragmentu.",
+    "check": "Sprawdź, czy w tekście nie zostały imiona, nazwy miejsc ani szczegóły pozwalające rozpoznać osobę. Jeśli tak – anuluj i popraw tekst źródłowy.",
+    "send": "Wyślij ten tekst",
+    "consent": "Zgoda dotyczy tylko tego jednego zapytania."
+  },
+  "dictate": {
+    "start": "Dyktuj",
+    "stop": "Zakończ dyktowanie",
+    "working": "Rozpoznawanie mowy…",
+    "recording": "Nagrywanie… (maks. 2 min)",
+    "denied": "Brak dostępu do mikrofonu. Zezwól na niego w ustawieniach przeglądarki lub telefonu.",
+    "unavailable": "Dyktowanie wymaga pobrania modelu rozpoznawania mowy (Ustawienia → Asystent AI).",
+    "local": "Nagranie jest rozpoznawane na urządzeniu i nie jest zapisywane.",
+    "cloud": "Nagranie jest wysyłane do Gemini wyłącznie w celu rozpoznania mowy."
+  },
+  "explain": {
+    "simpler": "Wytłumacz prościej",
+    "example": "Podaj przykład",
+    "title": "Wyjaśnienie AI"
+  },
+  "settings": {
+    "title": "Asystent AI",
+    "subtitle": "Opcjonalne, bezpłatne funkcje AI. Domyślnie wyłączone – bez AI aplikacja działa w pełni offline.",
+    "info": "Jak działa AI i co gdzie jest przetwarzane",
+    "mode": "Tryb",
+    "modes": {
+      "off": "Wyłączony",
+      "offText": "Żadnych funkcji AI i żadnego ruchu sieciowego.",
+      "local": "Lokalny",
+      "localText": "Tylko modele pobrane na urządzenie. Nic nie wychodzi z telefonu.",
+      "cloud": "Chmura (Gemini)",
+      "cloudText": "Google Gemini z Twoim darmowym kluczem. Dane osób – domyślnie tylko lokalnie."
+    },
+    "cloud": "Google Gemini",
+    "key": "Klucz API Gemini",
+    "keyHint": "Klucz jest zaszyfrowany razem z Twoimi danymi i nie trafia do kopii zapasowej.",
+    "keySet": "Klucz zapisany (…{{tail}})",
+    "keyInvalid": "To nie wygląda na klucz Gemini (zaczyna się od „AIza”, 39 znaków).",
+    "save": "Zapisz klucz",
+    "test": "Sprawdź połączenie",
+    "testOk": "Połączenie działa",
+    "remove": "Usuń klucz",
+    "removed": "Klucz usunięty",
+    "howTo": "Jak bezpłatnie uzyskać klucz",
+    "howToSteps": [
+      "Otwórz aistudio.google.com/apikey i zaloguj się kontem Google.",
+      "Zaakceptuj warunki – Google AI Studio samo utworzy projekt i klucz (w darmowym pakiecie nie podajesz karty).",
+      "Skopiuj klucz (zaczyna się od „AIza”) i wklej go powyżej.",
+      "Limity darmowego pakietu widzisz w AI Studio. Po ich przekroczeniu aplikacja poprosi, by spróbować później."
+    ],
+    "model": "Model",
+    "modelHint": "Flash – lepsza jakość. Flash-Lite – szybszy, wyższe limity darmowe.",
+    "clientData": "Zezwalaj na wysyłkę danych osób po pseudonimizacji",
+    "clientDataText": "Domyślnie wyłączone. Po włączeniu każde zapytanie z danymi osoby pokaże dokładny tekst do wysłania i wymaga zgody. Model lokalny ma zawsze pierwszeństwo.",
+    "voice": "Czytaj na głos wypowiedzi rozmówcy w symulatorze",
+    "voiceText": "Synteza mowy systemu (na urządzeniu).",
+    "local": "Modele lokalne",
+    "localLead": "Pobierane dopiero po Twojej zgodzie, przechowywane w osobnej pamięci aplikacji. Zalecane Wi‑Fi.",
+    "device": "Twoje urządzenie",
+    "deviceWebgpu": "WebGPU: {{v}}",
+    "deviceMemory": "Pamięć: ok. {{gb}} GB",
+    "deviceFree": "Wolne miejsce: ok. {{mb}} MB",
+    "yes": "tak",
+    "no": "nie",
+    "models": {
+      "embed": "Wyszukiwanie semantyczne",
+      "embedText": "Model multilingual‑e5‑small: „Zapytaj bazę wiedzy” rozumie pytania w PL/DE/EN, także w trybie lokalnym.",
+      "whisper": "Dyktowanie (Whisper)",
+      "whisperText": "Model whisper‑base: rozpoznawanie mowy na urządzeniu w notatkach, spotkaniach, dzienniczku i superwizji.",
+      "llm": "Lokalny model językowy",
+      "llmText": "Qwen3 1.7B przez WebLLM: „Uporządkuj”, pytania do superwizji i wyjaśnienia bez chmury. Wymaga WebGPU (iPhone z iOS 26, nowsze telefony z Androidem). Jakość niższa niż Gemini."
+    },
+    "size": "ok. {{mb}} MB",
+    "sizeGb": "ok. {{gb}} GB",
+    "download": "Pobierz",
+    "downloading": "Pobieranie… {{pct}}%",
+    "ready": "Pobrany",
+    "delete": "Usuń",
+    "deleteAll": "Usuń wszystkie modele",
+    "deleted": "Modele usunięte",
+    "consentTitle": "Pobrać model „{{name}}”?",
+    "consentText": "Zostanie pobrane ok. {{size}} z serwerów Hugging Face (modele) i jsDelivr (środowisko uruchomieniowe). Zalecamy Wi‑Fi. Model trafi do osobnej pamięci podręcznej aplikacji; w każdej chwili możesz go usunąć. Po pobraniu działa bez internetu – Twoje dane nie opuszczają urządzenia.",
+    "consentOk": "Pobierz",
+    "downloadFailed": "Nie udało się pobrać modelu: {{msg}}",
+    "unsupported": {
+      "noWasm": "Przeglądarka nie obsługuje WebAssembly.",
+      "noWebgpu": "To urządzenie lub przeglądarka nie obsługuje WebGPU (iPhone: wymagany iOS 26).",
+      "noF16": "Karta graficzna nie obsługuje obliczeń 16‑bitowych wymaganych przez model.",
+      "lowMemory": "Za mało pamięci RAM do uruchomienia modelu.",
+      "noSpace": "Za mało wolnego miejsca na urządzeniu."
+    }
+  },
+  "info": {
+    "title": "AI w Przystani",
+    "lead": "AI jest opcjonalna i domyślnie wyłączona. Gdy jest wyłączona, aplikacja nie wysyła żadnych zapytań do sieci.",
+    "sections": [
+      {
+        "q": "Co jest przetwarzane na urządzeniu?",
+        "a": "W trybie Lokalnym wszystko: wyszukiwanie semantyczne (model e5), dyktowanie (Whisper) i – jeśli pobierzesz – mały model językowy (Qwen3 przez WebLLM). Modele pobiera się raz, potem działają offline. Indeks wyszukiwania (także Twoich notatek) jest zaszyfrowany razem z danymi."
+      },
+      {
+        "q": "Co trafia do chmury (Gemini)?",
+        "a": "Tylko w trybie Chmura i tylko: treści merytoryczne aplikacji (karty wiedzy, fiszki, scenariusze), Twoje odpowiedzi w symulatorze i egzaminie oraz teksty do nauki, które sam wkleisz. Notatki, profile osób, spotkania, diagnozy, wyniki i superwizja nigdy nie są wysyłane automatycznie."
+      },
+      {
+        "q": "A dane osób, z którymi pracuję?",
+        "a": "Domyślnie tylko na urządzeniu. Jeśli w ustawieniach zezwolisz na wysyłkę, tekst jest najpierw pseudonimizowany (imiona, nazwiska, daty, adresy, telefony, PESEL/AHV, nazwy placówek → zamienniki), widzisz dokładnie to, co zostanie wysłane, i zgadzasz się na każde zapytanie osobno. Zamienniki są przywracane lokalnie."
+      },
+      {
+        "q": "Czy Google używa tych danych?",
+        "a": "Według Dodatkowych warunków Gemini API (obowiązujących od 23.03.2026, sprawdzone 04.11.2026) dla użytkowników w EOG, Szwajcarii i Wielkiej Brytanii zasady usług płatnych obowiązują także w darmowym pakiecie: Google nie używa promptów ani odpowiedzi do ulepszania swoich produktów. Mimo to Przystań nie wysyła danych osobowych. Klucz jest Twój – korzystasz z Gemini API we własnym imieniu, na warunkach Google."
+      },
+      {
+        "q": "Czego AI nie robi?",
+        "a": "Nie stawia diagnoz, nie ocenia ryzyka (samobójstwa, przemocy, nawrotu) i nie zastępuje superwizji. Każda odpowiedź jest oznaczona „Pomocnicze – zweryfikuj”. Gdy tekst wskazuje na zagrożenie, aplikacja pokazuje numery pomocy kryzysowej."
+      },
+      {
+        "q": "Jak wyłączyć AI i usunąć modele?",
+        "a": "Ustawienia → Asystent AI → tryb „Wyłączony”. Tam też usuniesz klucz i pobrane modele („Usuń wszystkie modele”)."
+      }
+    ],
+    "terms": "Warunki Gemini API",
+    "checked": "Stan na 04.11.2026"
+  },
+  "ask": {
+    "title": "Zapytaj bazę wiedzy",
+    "subtitle": "Pytania zwykłym językiem – odpowiedzi tylko na podstawie treści aplikacji, z odnośnikami do źródeł",
+    "placeholder": "np. Jak reagować na opór w rozmowie z nastolatkiem?",
+    "ask": "Zapytaj",
+    "search": "Szukaj",
+    "answer": "Odpowiedź",
+    "sources": "Źródła",
+    "related": "Najbliższe treści",
+    "notKnown": "Nie znalazłem odpowiedzi w treściach aplikacji. Zobacz najbliższe źródła poniżej.",
+    "indexing": "Przygotowuję indeks wyszukiwania… {{pct}}%",
+    "keyword": "Wyszukiwanie słów kluczowych (pobierz model wyszukiwania semantycznego, by lepiej rozumieć pytania).",
+    "notesLocal": "Twoje notatki są przeszukiwane tylko na urządzeniu i nigdy nie trafiają do chmury.",
+    "noLlm": "Bez modelu językowego pokazuję najbliższe fragmenty treści.",
+    "empty": "Wpisz pytanie.",
+    "kind": {
+      "knowledge": "Karta wiedzy",
+      "institution": "Instytucja",
+      "legal": "Prawo",
+      "card": "Fiszka",
+      "tool": "Narzędzie",
+      "note": "Notatka",
+      "scenario": "Scenariusz",
+      "template": "Szablon zajęć"
+    },
+    "navHint": "Pytania zwykłym językiem"
+  },
+  "sim": {
+    "live": "Na żywo z AI",
+    "liveText": "Odpowiadaj własnymi słowami – tekstem lub głosem. AI gra rozmówcę i ocenia każdą wypowiedź.",
+    "requiresCloud": "Tryb „na żywo” wymaga Chmury (Gemini). Mały model lokalny nie prowadzi tej rozmowy wystarczająco wiarygodnie.",
+    "placeholder": "Twoja wypowiedź…",
+    "send": "Wyślij",
+    "turnsLeft_one": "Została {{count}} wypowiedź",
+    "turnsLeft_few": "Zostały {{count}} wypowiedzi",
+    "turnsLeft_many": "Zostało {{count}} wypowiedzi",
+    "turnsLeft_other": "Zostało {{count}} wypowiedzi",
+    "finish": "Zakończ rozmowę",
+    "ended": "Koniec rozmowy",
+    "coach": "Komentarz",
+    "better": "Mocniejsza wersja",
+    "voice": "Czytaj na głos",
+    "summaryNote": "Przebieg zapisany do nauki (bez danych osobowych). Ocena AI jest pomocnicza – porównaj ją z kategoriami MITI.",
+    "notice": "Postać jest fikcyjna. Nie wpisuj danych prawdziwych osób.",
+    "choice": "Wersja z wyborem odpowiedzi"
+  },
+  "learn": {
+    "generate": "Fiszki z notatek",
+    "generateText": "Wklej notatki z zajęć lub wczytaj plik TXT/PDF – AI zaproponuje fiszki i pytania egzaminacyjne do przejrzenia.",
+    "paste": "Tekst do nauki",
+    "file": "Wczytaj plik (TXT, PDF)",
+    "fileRead": "Wczytano {{chars}} znaków z pliku {{name}} (tekst wyciągnięty na urządzeniu).",
+    "fileError": "Nie udało się odczytać pliku.",
+    "noClient": "Nie wklejaj danych osób, z którymi pracujesz – ten tekst może zostać wysłany do chmury.",
+    "run": "Zaproponuj fiszki",
+    "cards": "Proponowane fiszki",
+    "questions": "Pytania egzaminacyjne",
+    "front": "Przód",
+    "back": "Tył",
+    "question": "Pytanie",
+    "answer": "Odpowiedź wzorcowa",
+    "include": "Dodaj do talii",
+    "deck": "Talia",
+    "newDeck": "Nowa talia: {{title}}",
+    "deckTitle": "Moje notatki {{date}}",
+    "save": "Zapisz w talii",
+    "saved_one": "Zapisano {{count}} fiszkę",
+    "saved_few": "Zapisano {{count}} fiszki",
+    "saved_many": "Zapisano {{count}} fiszek",
+    "saved_other": "Zapisano {{count}} fiszki",
+    "openExam": "Pytania otwarte z oceną AI",
+    "openExamText": "Odpowiadasz własnymi słowami, AI ocenia według rubryki i pokazuje odpowiedź wzorcową.",
+    "openTitle": "Egzamin – pytania otwarte",
+    "source": "Źródło pytań",
+    "sourceDecks": "Fiszki",
+    "sourceKnowledge": "Karty wiedzy",
+    "yourAnswer": "Twoja odpowiedź",
+    "check": "Oceń odpowiedź",
+    "next": "Następne pytanie",
+    "score": "Wynik",
+    "verdict": {
+      "good": "Dobra odpowiedź",
+      "partial": "Częściowo",
+      "insufficient": "Niewystarczająco"
+    },
+    "covered": "Uwzględnione",
+    "missing": "Brakuje",
+    "modelAnswer": "Odpowiedź wzorcowa",
+    "tip": "Wskazówka",
+    "reference": "Materiał referencyjny"
+  },
+  "organize": {
+    "button": "Uporządkuj",
+    "title": "Uporządkuj notatkę",
+    "lead": "AI przekształci surowe notatki w wybrany format. To tylko propozycja – nic nie zostanie nadpisane bez Twojej zgody.",
+    "format": "Format",
+    "run": "Zaproponuj",
+    "applyFields": "Wstaw do notatki",
+    "applyText": "Dodaj na końcu notatki",
+    "empty": "Najpierw wpisz lub podyktuj notatki."
+  },
+  "recipe": {
+    "propose": "Zaproponuj scenariusz",
+    "title": "Propozycja scenariusza zajęć",
+    "age": "Wiek / grupa",
+    "goal": "Cel",
+    "duration": "Czas (min)",
+    "level": "Poziom profilaktyki",
+    "run": "Zaproponuj",
+    "apply": "Dodaj kroki do kreatora",
+    "applied_one": "Dodano {{count}} krok",
+    "applied_few": "Dodano {{count}} kroki",
+    "applied_many": "Dodano {{count}} kroków",
+    "applied_other": "Dodano {{count}} kroku",
+    "total": "Razem: {{min}} min",
+    "levels": {
+      "universal": "Uniwersalna",
+      "selective": "Selektywna",
+      "indicated": "Wskazująca"
+    }
+  },
+  "prevention": {
+    "propose": "Zaproponuj z AI",
+    "title": "Propozycja programu",
+    "lead": "Na podstawie grupy docelowej, potrzeb i poziomu profilaktyki. Przejrzyj i dodaj wybrane elementy.",
+    "apply": "Dodaj do programu",
+    "goal": "Cel ogólny",
+    "specificGoals": "Cele szczegółowe",
+    "strategies": "Strategie",
+    "riskFactors": "Czynniki ryzyka",
+    "protectiveFactors": "Czynniki chroniące"
+  },
+  "practice": {
+    "title": "Kontrola dobrych praktyk",
+    "ok": "Nie znaleziono typowych błędów profilaktyki.",
+    "fear": "Straszenie konsekwencjami (np. „śmierć”, „zniszczysz sobie życie”) – w profilaktyce nie działa i może przynieść odwrotny skutek.",
+    "exUser": "Świadectwo byłego użytkownika jako główna metoda – dobre praktyki odradzają takie jednorazowe wystąpienia.",
+    "oneOff": "Jednorazowa pogadanka / wykład – skuteczne programy są interaktywne i rozłożone w czasie.",
+    "info": "Szczegółowe informacje o substancjach i sposobach używania – mogą budzić ciekawość, lepiej skupić się na umiejętnościach i normach.",
+    "moral": "Moralizowanie zamiast rozwijania umiejętności – zamień na ćwiczenia (odmawianie, radzenie sobie z emocjami)."
+  },
+  "material": {
+    "button": "Dostosuj materiał",
+    "title": "Materiał dla {{client}}",
+    "lead": "Wersja generowana z treści planu bez danych identyfikujących. Sprawdź ją przed przekazaniem.",
+    "plain": "Prostym językiem",
+    "youth": "Dla młodzieży",
+    "translate": "Tłumaczenie",
+    "to": "Język docelowy",
+    "run": "Utwórz wersję",
+    "share": "Udostępnij"
+  },
+  "supervision": {
+    "button": "Pytania refleksyjne",
+    "title": "Pytania do superwizji",
+    "lead": "AI zada pytania pomagające spojrzeć na przypadek z różnych stron. Nie interpretuje i nie daje rozwiązań.",
+    "run": "Zaproponuj pytania",
+    "insert": "Dodaj do notatki"
+  }
+}

@@ -15,6 +15,10 @@ import { todayIso } from '@/lib/platform';
 import { fmtDate } from '@/lib/format';
 import type { Note } from '@/domain/types';
 import { parseTags } from './notes';
+import { DictateButton } from '@/features/ai/DictateButton';
+import { OrganizeButton } from '@/features/ai/OrganizeSheet';
+import { SupervisionQuestions } from '@/features/ai/SupervisionQuestions';
+import { appendText } from '@/features/ai/text';
 
 function newNote(type: Note['type'], tag: string, clientId?: string, meetingId?: string, programId?: string): Note {
   const now = new Date().toISOString();
@@ -98,6 +102,16 @@ function Editor({ note, isNew }: { note: Note; isNew: boolean }) {
             value={draft.body}
             onChange={(v) => update({ body: v })}
           />
+          <div className="flex flex-wrap gap-2">
+            <DictateButton sensitivity="client" onText={(x) => update({ body: appendText(draft.body, x) })} />
+            <OrganizeButton source={draft.body} onAppendText={(x) => update({ body: appendText(draft.body, x) })} />
+            {sup && (
+              <SupervisionQuestions
+                caseText={[draft.body, draft.conclusions ?? ''].join('\n')}
+                onInsert={(x) => update({ conclusions: appendText(draft.conclusions ?? '', x) })}
+              />
+            )}
+          </div>
         </Card>
 
         {sup && (

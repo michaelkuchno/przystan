@@ -175,7 +175,8 @@
     "personContact": "Kontakt",
     "places": "Miejsca wsparcia",
     "lapsePlan": "Plan na wypadek „poślizgu”",
-    "lapsePlanHint": "Co zrobię, jeśli dojdzie do jednorazowego powrotu do zachowania? Bez oceniania – jako informacja do nauki."
+    "lapsePlanHint": "Co zrobię, jeśli dojdzie do jednorazowego powrotu do zachowania? Bez oceniania – jako informacja do nauki.",
+    "materialTitle": "Mój plan – wersja dla osoby"
   },
   "timeline": {
     "intro": "Spotkania, pomiary i ważne wydarzenia w jednym miejscu.",

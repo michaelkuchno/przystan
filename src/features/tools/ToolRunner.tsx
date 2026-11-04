@@ -12,6 +12,7 @@ import { useContent } from '@/content/ContentProvider';
 import { TOOL_META, type Audience, type ToolProps, type ToolResult } from './registry';
 import type { ToolId } from '@/domain/types';
 import { IconButton } from '@/components/ui/core';
+import { MaterialButton } from '@/features/ai/MaterialSheet';
 
 const COMPONENTS: Record<ToolId, React.LazyExoticComponent<(p: ToolProps) => React.ReactNode>> = {
   urgeSurfing: lazy(() => import('./tools/UrgeSurfing')),
@@ -91,9 +92,12 @@ export default function ToolRunner() {
         title={t(`names.${meta.id}`)}
         subtitle={intros[meta.id]?.[aud]}
         actions={
-          <Button variant="soft" icon={<Maximize2 className="size-4" />} onClick={() => setShow(true)}>
-            {t('showClient')}
-          </Button>
+          <>
+            <MaterialButton sensitivity="content" title={t(`names.${meta.id}`)} source={`${t(`names.${meta.id}`)}: ${intros[meta.id]?.[aud] ?? ''}`} />
+            <Button variant="soft" icon={<Maximize2 className="size-4" />} onClick={() => setShow(true)}>
+              {t('showClient')}
+            </Button>
+          </>
         }
       />
       <div className="grid gap-4 lg:grid-cols-[1fr_18rem]">

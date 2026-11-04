@@ -410,6 +410,8 @@ export interface SimulatorRun {
   alliance: number;
   changeTalk: number;
   sustainTalk: number;
+  /** Live (AI) mode: the conversation, for learning. Fictional persona – no personal data. */
+  live?: { user: string; reply: string; category: string; feedback: string }[];
 }
 
 /* ------------------------------------------------------------ practice log */

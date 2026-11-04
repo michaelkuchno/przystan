@@ -1,8 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { GraduationCap, Plus, Upload, FileQuestion, Pencil } from 'lucide-react';
+import { GraduationCap, Plus, Upload, FileQuestion, Pencil, Sparkles } from 'lucide-react';
 import { Page, PageHeader } from '@/components/ui/page';
-import { Button, ButtonLink, Card, Badge, SectionTitle, IconButton } from '@/components/ui/core';
+import { Button, ButtonLink, Card, CardLink, Badge, SectionTitle, IconButton } from '@/components/ui/core';
+import { usePrefs } from '@/lib/prefs';
 import { useToast } from '@/components/ui/toast';
 import { useStore, all, save, uid } from '@/lib/store';
 import { isDue } from '@/lib/srs';
@@ -10,7 +11,8 @@ import { todayIso, pickTextFile } from '@/lib/platform';
 import { useDecks, parseDeckImport } from './decks';
 
 export default function Learn() {
-  const { t } = useTranslation('learn');
+  const { t } = useTranslation(['learn', 'ai']);
+  const aiMode = usePrefs().ai.mode;
   const nav = useNavigate();
   const toast = useToast();
   const decks = useDecks();
@@ -90,6 +92,25 @@ export default function Learn() {
           );
         })}
       </div>
+      {aiMode !== 'off' && (
+        <>
+          <SectionTitle>{t('ai:name')}</SectionTitle>
+          <div className="grid gap-3 sm:grid-cols-2">
+            <CardLink to="/learn/generate">
+              <div className="flex items-center gap-2 font-semibold">
+                <Sparkles className="size-4 text-primary" aria-hidden /> {t('ai:learn.generate')}
+              </div>
+              <p className="mt-1 text-sm text-muted">{t('ai:learn.generateText')}</p>
+            </CardLink>
+            <CardLink to="/learn/exam-open">
+              <div className="flex items-center gap-2 font-semibold">
+                <Sparkles className="size-4 text-primary" aria-hidden /> {t('ai:learn.openExam')}
+              </div>
+              <p className="mt-1 text-sm text-muted">{t('ai:learn.openExamText')}</p>
+            </CardLink>
+          </div>
+        </>
+      )}
       <SectionTitle>{t('custom')}</SectionTitle>
       <div className="flex flex-wrap gap-2">
         <Button variant="secondary" icon={<Plus className="size-4" />} onClick={() => void createDeck()}>

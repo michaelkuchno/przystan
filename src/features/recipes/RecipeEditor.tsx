@@ -17,6 +17,8 @@ import { haptic } from '@/lib/platform';
 import { cn } from '@/components/ui/cn';
 import type { Recipe, RecipeItem } from '@/domain/types';
 import type { Ingredient, IngredientCategory } from '@/content/types';
+import { ProposeLesson } from '@/features/ai/ProposeLesson';
+import { PracticeCheck } from '@/features/ai/PracticeCheck';
 
 const CAT_TONE: Record<IngredientCategory, string> = {
   opening: 'bg-blue-soft text-blue',
@@ -147,6 +149,19 @@ function Editor({ recipe }: { recipe: Recipe }) {
               onChange={(v) => update({ audience: v })}
             />
           </div>
+          <ProposeLesson
+            goal={draft.goal}
+            audience={draft.audience}
+            minutes={draft.durationMin}
+            onApply={(plan) =>
+              update((d) => ({
+                ...d,
+                title: d.title.trim() ? d.title : plan.title || d.title,
+                items: [...d.items, ...plan.steps.map((st) => ({ id: uid(), ingredientId: 'custom', title: st.title, minutes: st.minutes, note: st.description }))],
+              }))
+            }
+          />
+          <PracticeCheck text={[draft.goal, ...draft.items.map((i) => `${i.title} ${i.note}`)].join('\n')} />
         </Card>
 
         <Card>

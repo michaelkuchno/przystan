@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {
+  Sparkles,
   Download,
   Upload,
   KeyRound,
@@ -259,6 +260,18 @@ export default function Settings() {
             {t('backup.import')}
           </Button>
         </div>
+      </Card>
+
+      <SectionTitle id="ai">{t('ai:name')}</SectionTitle>
+      <Card className="p-0 sm:p-0">
+        <Link to="/settings/ai" className="flex min-h-14 items-center gap-3 px-4 py-3 hover:bg-surface-2">
+          <Sparkles className="size-5 text-primary" aria-hidden />
+          <span className="flex-1">
+            <span className="block">{t('ai:settings.title')}</span>
+            <span className="block text-sm text-muted">{t(`ai:settings.modes.${prefs.ai.mode}`)}</span>
+          </span>
+          <ChevronRight className="size-5 text-muted" aria-hidden />
+        </Link>
       </Card>
 
       <SectionTitle id="audit">{t('audit:section')}</SectionTitle>

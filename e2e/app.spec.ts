@@ -266,6 +266,12 @@ test('no horizontal scrolling at phone width on any screen', async ({ page }) =>
     '#/case-study/demo-01',
     '#/audit',
     '#/trash',
+    '#/settings/ai',
+    '#/ai/info',
+    '#/ask',
+    '#/learn/generate',
+    '#/learn/exam-open',
+    '#/simulator/mow-cannabis/live',
   ];
   const overflow: string[] = [];
   for (const r of routes) {
@@ -305,6 +311,12 @@ test('main screens have no serious accessibility violations', async ({ page }) =
     '#/case-study/demo-01',
     '#/audit',
     '#/trash',
+    '#/settings/ai',
+    '#/ai/info',
+    '#/ask',
+    '#/learn/generate',
+    '#/learn/exam-open',
+    '#/simulator/mow-cannabis/live',
   ];
   const problems: string[] = [];
   for (const r of routes) {

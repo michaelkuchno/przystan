@@ -111,8 +111,23 @@ export async function initI18n(lang: Lang, term: Term) {
   });
 }
 
+/**
+ * Namespaces needed only after unlocking (the optional AI assistant) – kept out of the start-up
+ * bundle so they do not delay the first paint. Loaded together with the content (ContentProvider).
+ */
+const lazyBundles = import.meta.glob<{ default: Record<string, unknown> }>('./locales/*/ai.json');
+let lazyWanted = false;
+
+export async function ensureLazyNamespaces(lang: string) {
+  lazyWanted = true;
+  if (i18n.hasResourceBundle(lang, 'ai')) return;
+  const load = lazyBundles[`./locales/${lang}/ai.json`] ?? lazyBundles['./locales/pl/ai.json']!;
+  i18n.addResourceBundle(lang, 'ai', (await load()).default, true, true);
+}
+
 export async function changeLanguage(lang: Lang, term: Term) {
   await ensureLanguage(lang);
+  if (lazyWanted) await ensureLazyNamespaces(lang);
   i18n.options.interpolation = { ...i18n.options.interpolation, defaultVariables: termVars(lang, term) };
   await i18n.changeLanguage(lang);
 }

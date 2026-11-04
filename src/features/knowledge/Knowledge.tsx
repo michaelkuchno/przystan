@@ -2,7 +2,8 @@ import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Search } from 'lucide-react';
 import { Page, PageHeader } from '@/components/ui/page';
-import { EmptyState } from '@/components/ui/core';
+import { ButtonLink, EmptyState } from '@/components/ui/core';
+import { MessageCircleQuestion } from 'lucide-react';
 import { TextInput, Chips } from '@/components/ui/form';
 import { useContent } from '@/content/ContentProvider';
 import { KnowledgeTile } from './KnowledgeCardView';
@@ -15,9 +16,10 @@ export function useAllCards(): KnowledgeCard[] {
 }
 
 export default function Knowledge() {
-  const { t } = useTranslation('knowledge');
+  const { t } = useTranslation(['knowledge', 'ai']);
   const cards = useAllCards();
-  const { review } = usePrefs();
+  const { review, ai } = usePrefs();
+  const aiOn = ai.mode !== 'off';
   const [q, setQ] = useState('');
   const [section, setSection] = useState<string>('all');
   const [status, setStatus] = useState<'all' | 'do_weryfikacji' | 'zweryfikowane'>('all');
@@ -34,7 +36,17 @@ export default function Knowledge() {
 
   return (
     <Page wide>
-      <PageHeader title={t('title')} subtitle={t('subtitle', { count: cards.length })} />
+      <PageHeader
+        title={t('title')}
+        subtitle={t('subtitle', { count: cards.length })}
+        actions={
+          aiOn ? (
+            <ButtonLink to="/ask" variant="soft" icon={<MessageCircleQuestion className="size-4" aria-hidden />}>
+              {t('ai:ask.title')}
+            </ButtonLink>
+          ) : undefined
+        }
+      />
       <div className="relative mb-3">
         <Search className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted" aria-hidden />
         <label htmlFor="k-search" className="sr-only">

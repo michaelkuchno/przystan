@@ -20,7 +20,7 @@
       },
       {
         "q": "Czy coś jest wysyłane do internetu?",
-        "a": "Nie. Aplikacja nie zawiera analityki, reklam ani trackerów i nie wykonuje żadnych zapytań sieciowych. Internet jest potrzebny tylko do pobrania aktualizacji PWA."
+        "a": "Nie – dopóki sam nie włączysz opcjonalnego asystenta AI (domyślnie wyłączony). Aplikacja nie zawiera analityki, reklam ani trackerów. Internet jest potrzebny do pobrania aktualizacji PWA, a po włączeniu AI – do Google Gemini (z Twoim kluczem) lub jednorazowego pobrania modeli lokalnych. Dane osób nie trafiają do chmury automatycznie (Ustawienia → Asystent AI → „Jak działa AI”)."
       },
       {
         "q": "Jak dane są chronione?",

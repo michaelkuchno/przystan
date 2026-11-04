@@ -62,6 +62,12 @@ const ROUTES = [
   '#/tools/supportMap',
   '#/tools/decisionalBalance',
   '#/prevention',
+  '#/settings/ai',
+  '#/ai/info',
+  '#/ask',
+  '#/learn/generate',
+  '#/learn/exam-open',
+  '#/simulator/mow-cannabis/live',
 ];
 
 test.beforeEach(async ({ page }, info) => {
