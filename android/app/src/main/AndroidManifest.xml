@@ -32,9 +32,13 @@
     </application>
 
     <!--
-      The app never uses the network (strict CSP: connect-src 'self', no remote code).
-      INTERNET is kept only because the Capacitor WebView serves the bundled app from
-      https://localhost; see docs/DECISIONS.md D-021.
+      Without the optional AI assistant the app never uses the network (CSP, no remote code).
+      INTERNET is needed because the Capacitor WebView serves the bundled app from
+      https://localhost (D-021) and – only when the user turns the AI assistant on – for
+      Google Gemini and the one-time download of local models (D-051, D-057).
     -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Optional dictation (AI assistant): requested only when the user taps "Dictate" -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 </manifest>

@@ -31,7 +31,7 @@ const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
  * Nowak → Nowaka, Nowakowi; Ewa → Ewy, Ewie, Ewą; Tomek → Tomka; Kowalski → Kowalskiego.
  * Codes (digits, hyphens) and short tokens (≤ 3 letters) match only exactly.
  */
-function namePattern(token: string): string {
+export function namePattern(token: string): string {
   if (!/^[\p{L}]+$/u.test(token)) return escape(token);
   const lower = token.toLowerCase();
   // 3-letter names inflect only when they end in a vowel (Ewa → Ewy); "Jan" must not match "Janusz"

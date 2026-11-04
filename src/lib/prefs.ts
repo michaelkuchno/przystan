@@ -7,6 +7,7 @@ import { db } from './db';
 import type { Space } from '@/domain/types';
 import type { ReviewStatus } from '@/content/types';
 import { syncSystemBars } from './platform';
+import { defaultAiPrefs, type AiPrefs } from './ai/settings';
 
 export type Lang = 'pl' | 'en' | 'de';
 export const LANGS: Lang[] = ['pl', 'en', 'de'];
@@ -36,6 +37,8 @@ export interface Prefs {
   practiceGoalH: number;
   /** Dismissed backup reminder until this ISO timestamp. */
   backupReminderSnoozedUntil?: string;
+  /** Optional AI assistant (docs/AI.md). Off by default. */
+  ai: AiPrefs;
 }
 
 const navLang = () => ((typeof navigator !== 'undefined' && navigator.language) || 'pl').toLowerCase();
@@ -65,6 +68,7 @@ export const defaultPrefs = (): Prefs => ({
   presentation: false,
   review: {},
   practiceGoalH: 90,
+  ai: defaultAiPrefs(),
 });
 
 let prefs: Prefs = defaultPrefs();
@@ -73,7 +77,10 @@ const subs = new Set<() => void>();
 export async function loadPrefs(): Promise<Prefs> {
   try {
     const row = await db.prefs.get('prefs');
-    if (row) prefs = { ...defaultPrefs(), ...(row.value as Partial<Prefs>) };
+    if (row) {
+      const v = row.value as Partial<Prefs>;
+      prefs = { ...defaultPrefs(), ...v, ai: { ...defaultAiPrefs(), ...v.ai } };
+    }
   } catch {
     /* private mode etc. – keep defaults */
   }

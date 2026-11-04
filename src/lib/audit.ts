@@ -44,7 +44,9 @@ export type AuditAction =
   | 'backup.export'
   | 'backup.restore'
   | 'audit.export'
-  | 'audit.verify';
+  | 'audit.verify'
+  | 'ai.settings'
+  | 'ai.cloudSend';
 
 export interface AuditInput {
   action: AuditAction;
