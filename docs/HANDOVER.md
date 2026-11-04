@@ -1,6 +1,6 @@
 # HANDOVER – stan projektu i co zostało do zrobienia ręcznie
 
-Wersja **1.1.0**. Repozytorium: https://github.com/michaelkuchno/przystan (konto `michaelkuchno`).
+Wersja **1.3.0**. Repozytorium: https://github.com/michaelkuchno/przystan (konto `michaelkuchno`).
 
 | Co | Gdzie |
 |---|---|
@@ -39,9 +39,30 @@ Wersja **1.1.0**. Repozytorium: https://github.com/michaelkuchno/przystan (konto
 - [ ] Profil osoby → Eksport danych (RODO): plik JSON udostępnia się / zapisuje.
 - [ ] Kopia zapasowa z 1.2.0 przywrócona na drugim urządzeniu: historia i dziennik są na miejscu.
 
+**Wersja 1.3 – asystent AI (oba telefony):**
+- [ ] Aktualizacja 1.2.0 → 1.3.0 zachowuje dane; AI jest domyślnie **wyłączona**, aplikacja działa
+      offline jak wcześniej (tryb samolotowy).
+- [ ] Ustawienia → Asystent AI → Chmura: wklejenie darmowego klucza z aistudio.google.com/apikey,
+      „Sprawdź połączenie” → „Połączenie działa”.
+- [ ] Symulator → scenariusz → „Na żywo z AI”: 3–4 wypowiedzi (także podyktowane), ocena każdej,
+      „Czytaj na głos” (głos polski / niemiecki), podsumowanie ze statystykami.
+- [ ] Nauka → „Fiszki z notatek” z pliku **PDF** (wybór pliku na iPhonie i Androidzie), zapis w talii;
+      „Pytania otwarte z oceną AI”; karta wiedzy → „Wytłumacz prościej”.
+- [ ] Modele lokalne (Wi‑Fi): „Wyszukiwanie semantyczne” i „Dyktowanie (Whisper)” – pobranie z paskiem
+      postępu, potem w trybie samolotowym: „Zapytaj bazę wiedzy” i dyktowanie notatki działają.
+      **Android:** przy pierwszym „Dyktuj” system pyta o mikrofon.
+- [ ] Lokalny model językowy (Qwen3 1.7B, ok. 1,1 GB): na iPhonie z iOS 26 i na Samsungu – czy przycisk
+      „Pobierz” jest dostępny (WebGPU), czy model się ładuje, ile trwa „Uporządkuj” i czy aplikacja nie
+      jest zamykana z braku pamięci. Jeśli tak – zanotować model telefonu (do decyzji D-054).
+- [ ] Spotkanie z notatkami → „Uporządkuj” w trybie Chmura **bez** zgody na dane osób: komunikat
+      „tylko na urządzeniu”; po włączeniu zgody: podgląd bez imion / telefonów, „Wyślij ten tekst”,
+      wpis w dzienniku audytu.
+- [ ] „Usuń wszystkie modele” zwalnia miejsce (Ustawienia telefonu → pamięć aplikacji / Safari).
+
 ## 2. Weryfikacja treści
 
-Lista: [`docs/CONTENT_REVIEW.md`](CONTENT_REVIEW.md) – w szczególności nowa sekcja 12
+Lista: [`docs/CONTENT_REVIEW.md`](CONTENT_REVIEW.md) – w szczególności sekcja 14 (prompty systemowe
+asystenta AI i przykładowe odpowiedzi), sekcja 12
 (szwajcarski system pomocy kantonu Berno, podstawy prawne ze stanem na 2026-11, numery 143 / 147 /
 144 / 117 / 112, przypadki i scenariusze z Berna) oraz sekcja 13 (sporne terminy w tłumaczeniu
 niemieckim). Najlepiej, by część szwajcarską przejrzała osoba pracująca w Suchthilfe w Bernie.

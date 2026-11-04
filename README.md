@@ -5,7 +5,8 @@
 Aplikacja do pracy i nauki dla pedagoga resocjalizacyjnego, specjalisty ds. uzależnień i pracownika
 socjalnego (**PL / EN / DE**, Polska i Szwajcaria). Działa **w 100% offline**, bez kont, serwerów
 i opłat, na **iPhonie** (PWA) i **Androidzie** (PWA albo plik APK). Wszystkie dane są szyfrowane
-i zostają wyłącznie na urządzeniu.
+i zostają wyłącznie na urządzeniu. Od wersji 1.3 jest też **opcjonalny, bezpłatny asystent AI**
+(domyślnie wyłączony) – szczegóły niżej i w [`docs/AI.md`](docs/AI.md).
 
 ## Pobierz
 
@@ -38,6 +39,16 @@ prezentacji na rzutnik, opcjonalne **odblokowanie biometrią**, **historia zmian
 poprzednich wersji, kosz (30 dni) i dziennik audytu** odporny na manipulację (kontrola integralności,
 raport PDF / CSV dla kontroli, eksport danych osoby zgodnie z RODO).
 
+**Asystent AI (opcjonalny, od 1.3):** Ustawienia → Asystent AI → *Wyłączony* (domyślnie, zero ruchu
+sieciowego) / *Lokalny* (modele na urządzeniu) / *Chmura* (Google Gemini z Twoim **darmowym kluczem**
+z https://aistudio.google.com/apikey). Symulator rozmowy **„na żywo”** (wolne odpowiedzi tekstem lub głosem,
+ocena każdej wypowiedzi), fiszki z notatek i PDF, egzamin z pytaniami otwartymi i oceną, „Wytłumacz prościej”,
+**„Zapytaj bazę wiedzy”** z odnośnikami do źródeł, **dyktowanie** i „Uporządkuj” w notatkach (lokalnie),
+propozycje zajęć i programów profilaktycznych z kontrolą dobrych praktyk, materiały prostym językiem
+i tłumaczenia, pytania do superwizji. **Dane osób nie trafiają do chmury automatycznie** – tylko
+po pseudonimizacji, podglądzie dokładnego tekstu i zgodzie (domyślnie wyłączone). Każda odpowiedź
+jest oznaczona „Pomocnicze – zweryfikuj”. Szczegóły: [`docs/AI.md`](docs/AI.md).
+
 ## Kurzfassung (Deutsch)
 
 **Przystań** ist eine App für Soziale Arbeit, Sozialpädagogik und Suchtberatung – auf Deutsch
@@ -56,6 +67,11 @@ Gerät.
 - **Verlauf und Protokoll:** jede Änderung lässt sich auf eine frühere Version zurücksetzen,
   Gelöschtes bleibt 30 Tage im Papierkorb, das Änderungsprotokoll ist gegen Manipulation gesichert
   und als PDF / CSV exportierbar (Einstellungen → Verlauf und Protokoll).
+- **KI-Assistent (optional, ab 1.3):** Einstellungen → KI-Assistent → *Aus* (Standard, kein
+  Netzwerkverkehr) / *Lokal* (Modelle auf dem Gerät) / *Cloud* (Google Gemini mit eigenem **Gratis-Schlüssel**).
+  Live-Gesprächssimulator, Lernkarten aus Notizen, offene Prüfungsfragen mit Bewertung, «Wissensbasis
+  fragen», Diktieren und «Ordnen» von Notizen, Vorschläge für Präventionsprogramme. **Personendaten gehen
+  nie automatisch in die Cloud** – nur pseudonymisiert, mit Vorschau und Zustimmung (standardmässig aus).
 - Sprache und Arbeitsland: beim ersten Start oder in den **Einstellungen**. Inhalte, die noch
   geprüft werden müssen, sind entsprechend markiert (siehe `docs/CONTENT_REVIEW.md`).
 
@@ -98,7 +114,13 @@ interviewing simulator · flashcards and exam mode · **placement log** · **not
 **anonymous case study (PDF)** · training mode with fictional cases (PL and CH) · presentation mode ·
 optional **biometric unlock** (Android Keystore / passkey with WebAuthn PRF) · **change history with restore,
 30-day trash and a tamper-evident audit log** (HMAC chain, integrity check, PDF / CSV export for
-inspections, per-person GDPR data export).
+inspections, per-person GDPR data export) · **optional, free AI assistant** (off by default; local
+models or Google Gemini with your own free key): live MI simulator with free answers (typed or spoken),
+flashcards from notes / PDF, open exam questions with grading, “Ask the knowledge base” with source links,
+dictation and “Organise” for notes (on the device), session and prevention-programme proposals with a
+good-practice check, plain-language and translated client material, supervision questions. Data about
+people never goes to the cloud automatically – only pseudonymised, after a preview and consent
+(see [`docs/AI.md`](docs/AI.md)).
 
 ### Local preview (Windows)
 

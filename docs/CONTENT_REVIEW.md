@@ -409,3 +409,41 @@ Całość przetłumaczona z EN/PL (interfejs, baza wiedzy, fiszki, narzędzia, s
 - Szwajcarska skala ocen (6 najlepsza, 4 dostateczna), „Stange” = 3 dl piwa, Pikettdienst.
 - KESB i nadzorowane kontakty z dzieckiem rodziców niebędących małżeństwem.
 - Forma zwracania się: „Sie” w Sozialdienst, „du” w Gassenarbeit – potwierdzić praktykę w Bernie.
+
+## 14. Asystent AI – prompty systemowe i przykładowe odpowiedzi (NOWE w 1.3.0)
+
+Plik: `src/lib/ai/prompts.ts` (instrukcje po angielsku, język odpowiedzi ustawiany jawnie).
+Zasady wspólne (`BASE`) dla wszystkich zadań poza symulatorem:
+
+1. Brak diagnoz, brak oceny ryzyka (samobójstwa, przemocy, nawrotu, recydywy), brak rekomendacji
+   leków – odesłanie do specjalisty i procedury.
+2. Odpowiedź jest materiałem pomocniczym dla profesjonalisty.
+3. Zamienniki w nawiasach kwadratowych („[Osoba A]”) zostają bez zmian, AI nie zgaduje danych.
+4. Przy sygnałach zagrożenia życia / samookaleczenia / przemocy – jedno zdanie o natychmiastowym
+   kontakcie z pomocą kryzysową, bez oceny ryzyka.
+5. Praktyki oparte na dowodach (MI, CBT, zapobieganie nawrotom, standardy profilaktyki); bez
+   wymyślania przepisów, liczb i źródeł.
+6. Zwięźle, z szacunkiem, język bez stygmatyzacji („osoba używająca substancji”, nie „narkoman”).
+
+| Zadanie | Co sprawdzić merytorycznie | Przykład oczekiwanej odpowiedzi (skrót) |
+|---|---|---|
+| `simulator` (symulator „na żywo”) | Czy definicje kategorii odpowiadają MITI 4.2.1 (w aplikacji „inspirowane MITI”); czy reguła „element niezgodny z MI wygrywa” jest właściwa; czy rozmówca nie „mięknie” za szybko; czy limit 1–3 zdań jest realistyczny. | Trener: „Moralizowanie – »powinieneś« budzi opór.” Lepsza wersja: „Z jednej strony palenie cię uspokaja, z drugiej martwią cię oceny.” Rozmówca: „No i co z tego? Każdy w MOW pali.” (`sustain`, `angry`) |
+| `explain` | Czy „prościej” nie zniekształca treści karty; czy przykłady są realistyczne i anonimowe. | „Refleksja złożona to powiedzenie na głos tego, co osoba czuje lub myśli, choć tego nie nazwała…” |
+| `flashcards` | Czy fiszki i pytania nie dodają treści spoza notatek. | Przód: „Co oznacza skrót OARS?” Tył: „Pytania otwarte, afirmacje, refleksje, podsumowania.” |
+| `grade` | Progi 75 / 40 % (dobra / częściowa / niewystarczająca); czy ocena uznaje poprawne myśli wyrażone innymi słowami. | 60 % – „Częściowo”: uwzględniono definicję, brakuje przykładu z praktyki. |
+| `ask` | Czy odpowiada tylko na podstawie źródeł i przyznaje „nie wiem”. | „Według karty [1] w pracy z oporem pomaga odzwierciedlenie dwustronne…” |
+| `organize` | Czy pola przebieg / DAP / obserwacja są wypełniane bez interpretacji i bez dopisywania faktów. | DAP – Dane: „[Osoba A] przyszedł punktualnie, mówił o konflikcie z wychowawcą…” Ocena: tylko opis, bez diagnozy. |
+| `lessonPlan` | Zgodność z zaleceniami (interaktywność, umiejętności, normy, bez straszenia, bez jednorazowych pogadanek, bez instrukcji używania substancji). | Rozgrywka 10 min → scenki odmawiania 25 min → runda refleksji 10 min. |
+| `prevention` | Cele SMART; strategie z dowodami (EUPC / EDPQS, rekomendacje KCPU, Sucht Schweiz); czynniki ryzyka i chroniące adekwatne do grupy. | Cel szczegółowy: „Do czerwca 80 % uczniów kl. 7 potrafi odmówić w 3 scenkach.” |
+| `material` | Czy wersja prostym językiem / dla młodzieży nie zmienia kroków planu i numerów telefonów; jakość tłumaczenia PL/DE/EN. | „Kiedy czujesz silną ochotę: 1. Odczekaj 15 minut. 2. Zadzwoń do …” |
+| `supervision` | Czy pytania są refleksyjne, otwarte i nie zawierają interpretacji ani rozwiązań. | „Co czujesz, kiedy myślisz o ostatnim spotkaniu z [Osoba A]?” „Jakie mocne strony widzisz u [Osoba A]?” |
+
+Do weryfikacji także:
+- lista sygnałów kryzysu (`src/lib/ai/crisis.ts`, PL/DE/EN) – celowo nadwrażliwa;
+- reguły kontroli dobrych praktyk (`src/lib/ai/goodPractice.ts`) i ich opisy (`ai.json` → `practice`);
+- teksty ekranu „AI w Przystani” (`ai.json` → `info`), zwłaszcza fragment o warunkach Gemini API
+  (stan na 04.11.2026 – przy zmianie warunków Google zaktualizować datę i treść).
+
+Uwaga: przykłady w tabeli to oczekiwany kształt odpowiedzi, nie zapis odpowiedzi modelu. Po
+uzyskaniu klucza warto zrobić próbę na 5–10 typowych wypowiedziach w każdym zadaniu
+(PL i DE) i odnotować tu wyniki.

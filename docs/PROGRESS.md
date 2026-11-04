@@ -1,6 +1,7 @@
 # Postęp prac
 
-Stan: **wersja 1.2.0 opublikowana** (PWA na GitHub Pages, APK w GitHub Releases). Etapy 1–15 (1.0), punkty 0–9 (1.1) i historia z audytem (1.2) zakończone.
+Stan: **wersja 1.3.0** – opcjonalny asystent AI (D-051…D-058, `docs/AI.md`). Etapy 1–15 (1.0), punkty 0–9 (1.1),
+historia z audytem (1.2) i asystent AI (1.3) zakończone.
 
 | Etap | Zakres | Status |
 |---|---|---|
@@ -48,20 +49,39 @@ Stan: **wersja 1.2.0 opublikowana** (PWA na GitHub Pages, APK w GitHub Releases)
 | 7 | Testy: 18 jednostkowych (w tym próby manipulacji), 4 E2E, nowe ekrany w testach przewijania / a11y / Androida | ✅ |
 | 8 | Wersja 1.2.0, Pages, Release z APK | ✅ |
 
-## Jakość (ostatni przebieg, wersja 1.2.0)
+## Wersja 1.3 – asystent AI (D-051…D-058, docs/AI.md)
+
+| Punkt | Zakres | Status |
+|---|---|---|
+| 1 | Architektura `src/lib/ai`: AiProvider (generate / stream / structured), Embedder, Transcriber; tryby Wyłączony / Lokalny / Chmura; Gemini REST z własnym kluczem (zaszyfrowany), obsługa 429; Transformers.js (e5, Whisper) i WebLLM (Qwen3 1.7B) w workerach, pobieranie po zgodzie, wykrywanie możliwości, usuwanie modeli; CSP | ✅ |
+| 2 | Prywatność: strażnik wrażliwości, pseudonimizacja PL/DE z przywracaniem, podgląd dokładnego tekstu + jednorazowa zgoda, wpis w dzienniku audytu, tryb prezentacji tylko na demo, ekran „AI w Przystani”, oznaczenie „Pomocnicze – zweryfikuj”, numery kryzysowe przy sygnałach | ✅ |
+| 3 | Symulator „na żywo”: wolne odpowiedzi tekstem / głosem, ocena MITI + lepsza wersja, paski, statystyki, głos rozmówcy, limit 12, zapis przebiegu | ✅ |
+| 4 | Asystent nauki: fiszki z notatek / TXT / PDF, egzamin z pytaniami otwartymi i oceną, „Wytłumacz prościej / podaj przykład” | ✅ |
+| 5 | „Zapytaj bazę wiedzy”: wyszukiwanie semantyczne (indeks lokalny, zaszyfrowany, przyrostowy), odpowiedzi z odnośnikami, „nie wiem”, notatki tylko lokalnie | ✅ |
+| 6 | Dyktowanie (notatki, spotkania, tryb spotkania, dzienniczek, superwizja) i „Uporządkuj” (przebieg / DAP / obserwacja) jako propozycja | ✅ |
+| 7 | Kreatory: propozycja scenariusza zajęć i programu profilaktycznego + kontrola dobrych praktyk; materiały prostym językiem / dla młodzieży / tłumaczenie (plan nawrotów, karty narzędzi); pytania do superwizji | ✅ |
+| 8 | Testy, leniwe ładowanie (kod modeli poza prekeszem PWA), dokumentacja, wersja 1.3.0 | ✅ |
+
+## Jakość (ostatni przebieg, wersja 1.3.0)
 
 - `npm run lint` – 0 błędów, 0 ostrzeżeń; `npm run typecheck` – 0 błędów
-- `npm test` – **193 testy jednostkowe** ✅ (w tym struktura treści PL/EN/DE, pisownia bez „ß”, biometria –
-  opakowanie DEK i zasady hasła, anonimizacja, dzienniczek, notatnik, studium przypadku, przypomnienie o kopii)
-- `npx playwright test` – **33 testy E2E** ✅: historia z przywróceniem wersji, kosz i trwałe usunięcie, dziennik z kontrolą integralności i eksportem PDF/CSV, eksport danych osoby, dotychczasowe scenariusze, profile Androida (360×780, 412×915,
-  duża czcionka 200 %: paski systemowe, poziome przewijanie, klawiatura), wersja niemiecka + Szwajcaria,
-  kraj pracy niezależny od języka, dzienniczek z PDF, superwizja z zadaniem na Pulpicie, notatki ukryte
-  w trybie prezentacji, studium przypadku bez identyfikatorów, baner kopii, widoczność opcji biometrii
-- GitHub Actions: CI, Pages i podpisany APK (z natywną wtyczką biometrii) – zielone
-- Lighthouse (mobile, wersja 1.0): Performance 91–92, Accessibility 100, Best Practices 100, SEO 100
-  (`npm run lighthouse`)
+- `npm test` – **233 testy jednostkowe** ✅ (+40 w 1.3: parser odpowiedzi modelu i walidacja JSON przy błędnym
+  formacie, pseudonimizacja PL/DE z przywracaniem, strażnik prywatności i jednorazowe zgody, Gemini – nagłówek klucza,
+  structured output, 429 z RetryInfo, błędy, SSE; brak ruchu sieciowego w trybie Wyłączony, zaszyfrowany klucz i indeks,
+  wyszukiwanie semantyczne, kontrola dobrych praktyk, statystyki symulatora, sygnały kryzysu, zabezpieczenia Whispera)
+- `npx playwright test` – **44 testy E2E** ✅ (+11 w 1.3 z fałszywym providerem: zero żądań sieciowych przy wyłączonej AI,
+  ustawienia i zgoda na pobranie modelu, symulator „na żywo”, tryb lokalny bez czatu, wyjaśnienia / fiszki / egzamin,
+  „Zapytaj”, dane osób tylko lokalnie i podgląd pseudonimizacji + wpis w dzienniku, dyktowanie i pytania do superwizji
+  z numerami kryzysowymi, propozycja zajęć z kontrolą dobrych praktyk, tryb prezentacji, a11y i przewijanie ekranów AI;
+  nowe ekrany dodane do testów a11y, przewijania i profili Androida)
+- `npm run e2e:ai-real` (ręcznie, prawdziwe usługi) – 3/3 ✅: Gemini (CORS, błędny klucz → czytelny komunikat),
+  model e5 pobrany po zgodzie i wyszukiwanie semantyczne **offline**, Whisper pobrany i rozpoznawanie **offline**
+- Lighthouse (mobile, lokalnie, 3 przebiegi): 1.3.0 – Performance 90–92, Accessibility 100, Best Practices 100, SEO 100;
+  ten sam rozkład co 1.2.0 na tej samej maszynie (start ładuje te same pliki, +0,25 kB gzip). Teksty AI i kod modeli
+  ładują się dopiero po odblokowaniu / użyciu.
+- GitHub Actions: CI, Pages i podpisany APK – patrz wydanie 1.3.0
 
 ## Wznawianie
 
-Polecenie „kontynuuj według docs/PROGRESS.md” – kolejne kroki: ręczna weryfikacja na urządzeniach
+Polecenie „kontynuuj według docs/PROGRESS.md” – kolejne kroki: ręczna weryfikacja AI na telefonach (`HANDOVER.md`, „Wersja 1.3”), próba promptów z prawdziwym kluczem i wpis wyników do `CONTENT_REVIEW.md` sekcja 14, ręczna weryfikacja na urządzeniach
 (`HANDOVER.md`, sekcja 1) i poprawki po weryfikacji treści (`CONTENT_REVIEW.md`, sekcje 12–13).

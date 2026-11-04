@@ -395,3 +395,118 @@ eksport PDF/CSV dla kontroli, eksport danych osoby, wpis w „Prywatności”. O
 decyzji właściciela lub serwera): podpis kwalifikowany / zewnętrzny znacznik czasu dziennika,
 wielu użytkowników na jednym urządzeniu z rolami, automatyczna kopia do chmury, polityka retencji
 dokumentacji konfigurowana per placówka (np. 20 lat dla dokumentacji medycznej).
+
+## D-051 Asystent AI – architektura i tryby (1.3.0)
+- AI jest opcjonalna, domyślnie **wyłączona**; trzy tryby: Wyłączony / Lokalny / Chmura (Gemini).
+  W trybie Wyłączony żaden moduł AI nie tworzy providera i nie wysyła zapytań – sprawdza to test
+  E2E rejestrujący każde żądanie sieciowe oraz test jednostkowy (`fetch` nie jest wywoływany).
+  Przyciski AI są wtedy ukryte, więc interfejs jest taki jak w 1.2.
+- Warstwa `src/lib/ai` z interfejsem `AiProvider` (generate, stream, structured), osobno
+  `Embedder` i `Transcriber` (tylko lokalnie albo Gemini dla mowy bez danych osób). Zadania
+  (`tasks.ts`) mają schemat JSON i walidator niezależny od dostawcy, więc ten sam kod działa
+  z Gemini, lokalnym modelem i fałszywym providerem testowym.
+- Gemini przez **REST `generateContent`** i `fetch`, nie przez SDK `@google/genai`: SDK ciągnie
+  zależności z Node (google-auth-library, ws, protobufjs), a potrzebujemy jednego endpointu.
+  Nowe Interactions API Google odrzuca w przeglądarce nagłówek `Api-Revision` (preflight 403,
+  sprawdzone 04.11.2026), a klasyczne `generateContent` ma CORS także dla `capacitor://localhost`
+  i `https://localhost` (sprawdzone też z aplikacji: `npm run e2e:ai-real`). Klucz tylko
+  w nagłówku `x-goog-api-key`, nigdy w URL.
+- Model domyślny `gemini-3.8-flash` (thinking „low” – „minimal” nie jest obsługiwane),
+  alternatywa `gemini-3.5-flash-lite`. Obie z darmowym pakietem i structured output.
+  `gemini-2.5-*` są wycofywane 01.12.2026 – świadomie ich nie używamy.
+- 429: ponowienie maks. 2× tylko, gdy `RetryInfo.retryDelay` ≤ 20 s; dłuższe oczekiwanie (limit
+  dzienny) → komunikat z liczbą minut. 5xx/408: 2 ponowienia z backoffem. 400/403 bez ponowień.
+
+## D-052 Klucz Gemini użytkownika
+Każdy używa **własnego, darmowego klucza** (bring-your-own-key). Aplikacja nie ma serwera ani
+wspólnego klucza – nie ma kosztów, a użytkownik jest stroną umowy z Google. Klucz jest
+szyfrowany kluczem danych (AES-GCM, AAD `ai:gemini-key`) w `db.meta`, w pamięci tylko po
+odblokowaniu i **poza kopią zapasową** (kopia może trafić na inny dysk – klucz to dostęp do
+konta Google). Uwaga prawna: Dodatkowe warunki Gemini API (obowiązujące od 23.03.2026) mówią,
+że udostępniając „API Clients” użytkownikom w EOG/CH/UK należy korzystać z usług płatnych.
+Przy modelu „własny klucz” to użytkownik jest klientem API i korzysta z niego we własnym imieniu
+– to nasza interpretacja, nie opinia prawna; informujemy o tym na ekranie „AI w Przystani”.
+
+## D-053 Prywatność: dane osób tylko lokalnie, chmura wyłącznie po pseudonimizacji i zgodzie
+Każde zapytanie ma wrażliwość `content` / `study` / `client`. Strażnik (`guard.ts`):
+- `client` (profil, notatki, spotkania, diagnoza, wyniki, superwizja, dzienniczek, plan nawrotów)
+  → model lokalny; jeśli go nie ma – chmura **tylko** gdy w ustawieniach włączono „Zezwalaj na
+  wysyłkę danych osób” (domyślnie wyłączone). Wtedy tekst jest pseudonimizowany, użytkownik
+  widzi **dokładnie** tekst wysyłany do Gemini (prompt systemowy + treść) i zgadza się na to
+  jedno zapytanie. Zgoda to obiekt-token wydany przez podgląd, związany z dokładnym tekstem
+  i jednorazowy – inny tekst, ponowne użycie albo podrobiony token są blokowane (testy).
+- Pseudonimizacja zamiast anonimizacji: stałe zamienniki („[Osoba A]”) pozwalają przywrócić
+  czytelną odpowiedź lokalnie, a mapa nie opuszcza urządzenia. Lista częstych imion PL/DE/CH
+  łapie osoby, których aplikacja nie zna. To siatka bezpieczeństwa – podstawą jest podgląd.
+- Każda wysyłka po zgodzie trafia do dziennika audytu (`ai.cloudSend`: zadanie, liczba znaków,
+  liczba zamian – bez treści).
+- Tryb prezentacji: AI na danych osób tylko w trybie szkoleniowym (dane demo).
+- Notatki są w wyszukiwaniu semantycznym tylko lokalnie; do Gemini w „Zapytaj” trafiają wyłącznie
+  treści merytoryczne aplikacji.
+- Dyktowanie danych osób – tylko Whisper na urządzeniu. Nagranie nie jest zapisywane.
+- Teksty do nauki (fiszki z notatek, symulator, egzamin) mają wrażliwość `study`: idą do chmury
+  bez pseudonimizacji (np. nazwiska autorów teorii muszą zostać), z widocznym ostrzeżeniem, by nie
+  wklejać danych osób, i ze sprawdzaniem sygnałów kryzysu.
+
+## D-054 Modele lokalne
+- Wyszukiwanie: `Xenova/multilingual-e5-small` q8 (118 MB) – najlżejszy dobry model
+  wielojęzyczny; `embeddinggemma-300m` (≈ 200–300 MB) odrzucony ze względu na rozmiar na telefonie.
+- Dyktowanie: `onnx-community/whisper-base` q8 (77 MB). `whisper-tiny` jest za słaby dla
+  polskiego, `whisper-small` (≈ 250 MB) zbyt ciężki dla telefonu w przeglądarce.
+- LLM: `Qwen3-1.7B-q4f16_1-MLC` (WebLLM; ≈ 2 GB VRAM, flaga „low resource”) – najlepsza znana
+  nam jakość PL/DE wśród modeli mieszczących się w pamięci iPhone’a; 3–4B (Qwen3-4B, gemma-4-E2B)
+  ryzykują zamknięcie karty Safari. Tylko z WebGPU i `shader-f16` (iOS 26+, Chrome/WebView
+  Android 12+ z Adreno/Mali). Myślenie Qwen3 wyłączone (`enable_thinking: false`), bloki
+  `<think>` są usuwane.
+- Pobieranie wyłącznie po świadomej zgodzie (rozmiar, zalecenie Wi‑Fi), z paskiem postępu,
+  do osobnej pamięci `przystan-ai-models` (WebLLM: `webllm/*`), przycisk „Usuń wszystkie modele”.
+  Poza pobieraniem Transformers.js działa z `allowRemoteModels = false` – po pobraniu nic nie
+  wychodzi z urządzenia (test na prawdziwym modelu w trybie offline: `npm run e2e:ai-real`).
+- Wykrywanie możliwości (WebAssembly, WebGPU, f16, pamięć, wolne miejsce): niedostępny model ma
+  wyłączony przycisk i wyjaśnienie.
+- Plik wasm ONNX Runtime (27 MB) nie trafia do paczki ani APK: wtyczka Vite podmienia odwołanie
+  na przypiętą wersję z jsDelivr, a worker pobiera go raz (z pierwszym modelem) do tej samej
+  pamięci i podaje jako `wasmBinary`. Klej `.mjs` (53 kB) jest w `public/ort/` – test pilnuje
+  zgodności z zainstalowaną wersją.
+
+## D-055 Granice merytoryczne AI
+Prompty systemowe (`prompts.ts`, przegląd w `CONTENT_REVIEW.md` sekcja 14) zabraniają diagnoz,
+oceny ryzyka (samobójstwa, przemocy, nawrotu, recydywy) i rekomendacji leków; nakazują
+zachowanie zamienników, język bez stygmatyzacji i odwoływanie się do praktyk opartych na
+dowodach. Instrukcje są po angielsku (małe modele lokalne trzymają się ich najlepiej), język
+odpowiedzi jest ustawiany jawnie (DE: pisownia szwajcarska). Każda odpowiedź ma oznaczenie
+„Pomocnicze – zweryfikuj” i źródło (chmura / urządzenie). Wykrywanie sygnałów kryzysu jest
+lokalne, celowo nadwrażliwe i pokazuje tylko numery pomocy – nigdy nie jest prezentowane jako
+ocena ryzyka. AI niczego nie nadpisuje sama: „Uporządkuj”, propozycje kreatorów i pytania do
+superwizji są dopisywane dopiero po kliknięciu, a „Wstaw do notatki” dopisuje do istniejących pól.
+
+## D-056 Symulator „na żywo”
+Jedno wywołanie na wypowiedź zwraca naraz klasyfikację (kategorie inspirowane MITI jak w
+obecnym symulatorze, sojusz −2…+2, komentarz, lepsza wersja) i odpowiedź rozmówcy (tekst, typ
+wypowiedzi, nastrój) – połowa zapytań względem dwóch osobnych wywołań, co ma znaczenie przy
+limitach darmowego pakietu. Statystyki liczy ten sam kod co w symulatorze z wyborem (`statsFrom`).
+Limit 12 wypowiedzi. Głos rozmówcy: `speechSynthesis` (lokalnie). Przebieg zapisywany do nauki
+w `simRun.live` (postać fikcyjna). **Tryb lokalny nie prowadzi rozmowy „na żywo”**: model 1,7B
+nie gra wiarygodnie roli z oporem i ambiwalencją przy jednoczesnej poprawnej klasyfikacji MITI
+w JSON – pokazujemy, że ta funkcja wymaga Chmury, a symulator z wyborem odpowiedzi działa bez
+zmian. Do ponownej oceny, gdy w WebLLM pojawi się mocniejszy model mieszczący się w telefonie.
+
+## D-057 CSP i Android
+`connect-src` rozszerzone tylko o: `https://generativelanguage.googleapis.com`,
+`https://huggingface.co`, `https://*.hf.co` (przekierowania CDN modeli: cdn-lfs, xet),
+`https://cdn.jsdelivr.net` (wasm ONNX), `https://raw.githubusercontent.com` (biblioteki modeli
+WebLLM). `script-src` bez zmian (`'self' 'wasm-unsafe-eval'`) – żaden zdalny skrypt nie jest
+wykonywany jako JS. Android: `RECORD_AUDIO` + `MODIFY_AUDIO_SETTINGS` (dyktowanie; zgoda systemu
+pytana dopiero przy pierwszym „Dyktuj”, obsługuje to `BridgeWebChromeClient` Capacitora).
+Dostępność WebGPU w WebView zależy od wersji Chrome WebView na telefonie.
+
+## D-058 Wydajność i PWA
+Cały kod AI jest ładowany leniwie (dynamic import, osobne workery). Biblioteki modeli
+(Transformers.js ≈ 0,5 MB, WebLLM ≈ 6 MB, pdf.js ≈ 1,8 MB) są w plikach `lazy-ai-*` **poza
+prekeszem** service workera (prekesz rośnie o ≈ 100 kB interfejsu AI), a po pierwszym użyciu
+trafiają do pamięci `przystan-ai-code` (CacheFirst), więc działają też offline. APK rośnie
+o ≈ 14 MB (pliki są lokalne w paczce, bez pobierania). Start aplikacji i pierwszy widok nie
+ładują nic z AI – także teksty interfejsu AI (`ai.json`, ≈ 6 kB gzip) są poza paczką językową
+startu i ładują się po odblokowaniu (`ensureLazyNamespaces`); pierwsza wersja z nimi w paczce
+startowej opóźniała FCP w Lighthouse o ≈ 0,5 s. Lighthouse 1.3.0 = 1.2.0 (90–92) na tej samej maszynie. Kontrola dobrych praktyk w kreatorach (lokalne reguły) jest widoczna tylko
+z włączonym asystentem – bez AI interfejs pozostaje taki jak w 1.2.
