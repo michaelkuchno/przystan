@@ -30,6 +30,14 @@ const RULES: Record<PracticeWarning, RegExp[]> = {
   moral: [/moralizow|powinni[śs]cie wstydzi|grzech/iu, /moralisier/iu, /moraliz/iu],
 };
 
+/**
+ * Negated mentions are good practice, not a problem: "bez straszenia", "nie moralizujemy",
+ * "ohne Abschreckung", "avoid scare tactics" – they are removed before the check.
+ */
+const NEGATED =
+  /(?<![\p{L}])(?:bez|nie|unika\p{L}*|zamiast|ohne|kein\p{L}*|vermeid\p{L}*|statt|avoid\p{L}*|no|not|without|instead of)\s+(?:\p{L}+\s+){0,3}?\p{L}*(?:strasz|przera[żz]|szokuj|abschreck|schock|angst|scare|fear|shock|moraliz|moralisier|pogadank|vortr|lecture)\p{L}*/giu;
+
 export function checkPractice(text: string): PracticeWarning[] {
-  return (Object.keys(RULES) as PracticeWarning[]).filter((k) => RULES[k].some((re) => re.test(text)));
+  const t = text.replace(NEGATED, ' ');
+  return (Object.keys(RULES) as PracticeWarning[]).filter((k) => RULES[k].some((re) => re.test(t)));
 }

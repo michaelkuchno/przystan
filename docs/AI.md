@@ -44,7 +44,7 @@ Twarde reguły są w kodzie (`src/lib/ai/guard.ts`) i w testach (`src/lib/ai/ai.
 
 1. Otwórz https://aistudio.google.com/apikey i zaloguj się kontem Google.
 2. Zaakceptuj warunki – AI Studio samo tworzy projekt i klucz (w darmowym pakiecie nie podaje się karty).
-3. Skopiuj klucz (zaczyna się od `AIza`) i wklej w Ustawienia → Asystent AI → „Klucz API Gemini”.
+3. Skopiuj klucz (zaczyna się od `AQ.` – nowy format – albo `AIza`) i wklej w Ustawienia → Asystent AI → „Klucz API Gemini”.
 4. „Sprawdź połączenie”.
 
 Klucz jest szyfrowany kluczem danych (AES-GCM, jak wszystkie dane), trzymany w pamięci tylko po
@@ -55,15 +55,17 @@ go wpisać ponownie.
 
 | Zastosowanie | Model | Uwagi |
 |---|---|---|
-| Chmura – domyślny | `gemini-3.8-flash` (thinking: low) | darmowy pakiet; najlepsza jakość PL/DE |
-| Chmura – alternatywa | `gemini-3.5-flash-lite` (thinking: minimal) | szybszy, wyższe limity darmowe |
+| Chmura – domyślny (od 1.3.1) | `gemini-3.5-flash-lite` (thinking: minimal) | szybki, wyższe limity darmowe; jakość PL/DE sprawdzona na prawdziwym kluczu (05.11.2026) |
+| Chmura – do wyboru | `gemini-3.8-flash` (thinking: low) | lepsza jakość, ale w darmowym pakiecie **tylko 20 zapytań dziennie** |
 | Wyszukiwanie semantyczne | `Xenova/multilingual-e5-small` (q8, ok. 118 MB) | ok. 100 języków, 384 wymiary |
 | Dyktowanie | `onnx-community/whisper-base` (q8, ok. 77 MB) | wielojęzyczny; kompromis jakość / telefon |
 | Lokalny model językowy | `Qwen3-1.7B-q4f16_1-MLC` (WebLLM, ok. 1,1 GB, ok. 2 GB VRAM) | tylko z WebGPU i shader-f16; iPhone: iOS 26 |
 | Środowisko ONNX | `onnxruntime-web` 1.31.0-dev (plik wasm ok. 27 MB z jsDelivr) | pobierane z pierwszym modelem |
 
 Limity darmowego pakietu Gemini Google pokazuje tylko w AI Studio (nie są publikowane w
-dokumentacji) – aplikacja ich nie zakłada. Przy błędzie 429 ponawia zapytanie, gdy serwer prosi o
+dokumentacji). Z komunikatu błędu: `gemini-3.8-flash` – 20 zapytań dziennie (05.11.2026). Każdy model
+ma osobny limit, więc po wyczerpaniu limitu albo przy przeciążeniu (503) aplikacja sama przechodzi na
+drugi model. Zapytanie bez odpowiedzi przez 90 s kończy się komunikatem (nie wisi w nieskończoność). Przy błędzie 429 ponawia zapytanie, gdy serwer prosi o
 krótkie oczekiwanie (≤ 20 s, maks. 2 razy), w przeciwnym razie pokazuje czytelny komunikat
 („spróbuj za ok. N min”). Symulator „na żywo” ma limit 12 wypowiedzi na rozmowę.
 

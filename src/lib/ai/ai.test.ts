@@ -275,6 +275,57 @@ describe('Gemini provider', () => {
     expect(sleep).toHaveBeenCalledWith(3000);
   });
 
+  it('a hanging request ends with a timeout error instead of waiting forever', async () => {
+    const fetchImpl = vi.fn(
+      (_u: string, init: RequestInit) =>
+        new Promise<Response>((_r, reject) =>
+          init.signal!.addEventListener('abort', () => reject(new DOMException('aborted', 'AbortError'))),
+        ),
+    );
+    const g = new GeminiProvider({ apiKey: 'k', model: 'm', fetchImpl: fetchImpl as unknown as typeof fetch, timeoutMs: 30 });
+    await expect(g.generate({ system: 's', prompt: 'p' })).rejects.toMatchObject({ code: 'timeout' });
+    // a user cancel stays a cancel
+    const ctrl = new AbortController();
+    const p = new GeminiProvider({
+      apiKey: 'k',
+      model: 'm',
+      fetchImpl: fetchImpl as unknown as typeof fetch,
+      timeoutMs: 10_000,
+    }).generate({
+      system: 's',
+      prompt: 'p',
+      signal: ctrl.signal,
+    });
+    ctrl.abort();
+    await expect(p).rejects.toMatchObject({ code: 'aborted' });
+  });
+
+  it('an overloaded model (503) falls back to the lighter model after one retry', async () => {
+    const busy = { error: { code: 503, status: 'UNAVAILABLE', message: 'This model is currently experiencing high demand.' } };
+    const fetchImpl = vi
+      .fn()
+      .mockResolvedValueOnce(err(503, busy))
+      .mockResolvedValueOnce(err(503, busy))
+      .mockResolvedValueOnce(ok('Lite'));
+    const g = new GeminiProvider({
+      apiKey: 'k',
+      model: 'gemini-3.8-flash',
+      fallbackModel: 'gemini-3.5-flash-lite',
+      fetchImpl,
+      sleep: async () => undefined,
+    });
+    expect(await g.generate({ system: 's', prompt: 'p' })).toBe('Lite');
+    const urls = fetchImpl.mock.calls.map((c) => String(c[0]));
+    expect(urls[0]).toContain('gemini-3.8-flash:');
+    expect(urls[1]).toContain('gemini-3.8-flash:');
+    expect(urls[2]).toContain('gemini-3.5-flash-lite:');
+    expect(g.model).toBe('gemini-3.5-flash-lite');
+    // the lighter model gets its own thinking level
+    expect(
+      JSON.parse((fetchImpl.mock.calls[2] as unknown as [string, RequestInit])[1].body as string).generationConfig.thinkingConfig,
+    ).toBeTruthy();
+  });
+
   it('a long quota wait becomes a readable rate-limit error (no endless retries)', async () => {
     const daily = { error: { code: 429, message: 'daily', details: [{ '@type': 'x.RetryInfo', retryDelay: '3600s' }] } };
     const fetchImpl = vi.fn(async () => err(429, daily));
@@ -288,7 +339,8 @@ describe('Gemini provider', () => {
       'badKey',
     );
     expect(errorFrom(403, { error: { status: 'PERMISSION_DENIED' } }).code).toBe('badKey');
-    expect(errorFrom(503, {}).code).toBe('server');
+    expect(errorFrom(503, {}).code).toBe('busy');
+    expect(errorFrom(500, {}).code).toBe('server');
     expect(parseRetryDelay({ error: { details: [{ '@type': 'google.rpc.RetryInfo', retryDelay: '1.5s' }] } })).toBe(2);
     const net = new GeminiProvider({ apiKey: 'k', model: 'm', fetchImpl: async () => Promise.reject(new TypeError('offline')) });
     await expect(net.generate({ system: 's', prompt: 'p' })).rejects.toMatchObject({ code: 'network' });
@@ -362,5 +414,38 @@ describe('Whisper output safeguards', () => {
     expect(rms(new Float32Array(100))).toBe(0);
     expect(maxTokensFor(16000 * 3)).toBe(40);
     expect(maxTokensFor(16000 * 600)).toBe(440);
+  });
+});
+
+describe('Gemini daily quota', () => {
+  it('a used-up daily quota of one model switches to the other model', async () => {
+    const daily = {
+      error: {
+        code: 429,
+        message: 'Quota exceeded for metric: generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash',
+        details: [{ '@type': 'type.googleapis.com/google.rpc.RetryInfo', retryDelay: '84392s' }],
+      },
+    };
+    const fetchImpl = vi.fn().mockResolvedValueOnce(err(429, daily)).mockResolvedValueOnce(ok('from lite'));
+    const g = new GeminiProvider({
+      apiKey: 'k',
+      model: 'gemini-3.8-flash',
+      fallbackModel: 'gemini-3.5-flash-lite',
+      fetchImpl,
+      sleep: async () => undefined,
+    });
+    expect(await g.generate({ system: 's', prompt: 'p' })).toBe('from lite');
+    expect(String(fetchImpl.mock.calls[1]![0])).toContain('gemini-3.5-flash-lite:');
+    // both quotas gone → readable error with the wait time
+    const both = vi.fn(async () => err(429, daily));
+    const g2 = new GeminiProvider({
+      apiKey: 'k',
+      model: 'gemini-3.8-flash',
+      fallbackModel: 'gemini-3.5-flash-lite',
+      fetchImpl: both,
+      sleep: async () => undefined,
+    });
+    await expect(g2.generate({ system: 's', prompt: 'p' })).rejects.toMatchObject({ code: 'rateLimit', retryAfterS: 84392 });
+    expect(both).toHaveBeenCalledTimes(2);
   });
 });

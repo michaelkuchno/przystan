@@ -85,7 +85,12 @@ function CloudSettings() {
     try {
       const key = await loadApiKey();
       if (!key) throw new AiError('noKey');
-      if (!fakeEnabled()) await new GeminiProvider({ apiKey: key, model: ai.model }).ping();
+      if (!fakeEnabled())
+        await new GeminiProvider({
+          apiKey: key,
+          model: ai.model,
+          fallbackModel: GEMINI_MODELS.find((m) => m.id !== ai.model)?.id,
+        }).ping();
       toast({ text: t('settings.testOk'), tone: 'ok' });
     } catch (e) {
       setError(e instanceof AiError ? e : new AiError('server', String(e)));
@@ -117,7 +122,7 @@ function CloudSettings() {
             autoComplete="off"
             spellCheck={false}
             className="min-w-0 flex-1 basis-56 font-mono"
-            placeholder="AIza…"
+            placeholder="AQ.… / AIza…"
             value={draft}
             onChange={(e) => setDraft(e.target.value)}
           />
@@ -149,7 +154,7 @@ function CloudSettings() {
         label={t('settings.model')}
         hint={t('settings.modelHint')}
         value={ai.model}
-        onChange={(v) => void setAi({ model: v })}
+        onChange={(v) => void setAi({ model: v, modelChosen: true })}
         options={GEMINI_MODELS.map((m) => ({ value: m.id, label: m.label }))}
       />
       <Switch

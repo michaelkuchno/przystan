@@ -32,5 +32,14 @@ export async function deleteApiKey(): Promise<void> {
   cached = null;
 }
 
-/** Shape check only (Google API keys: "AIza" + 35 chars). */
-export const looksLikeApiKey = (k: string) => /^AIza[0-9A-Za-z_-]{35}$/.test(k.trim());
+/**
+ * Shape check only – the real check is "Test connection". Google AI Studio issues keys in two
+ * formats: the classic "AIza…" (39 chars) and the newer "AQ.…" (≈ 50 chars).
+ * Accepted: either prefix, or any 30–200 characters of [A-Za-z0-9._-] (future formats).
+ */
+export function looksLikeApiKey(k: string): boolean {
+  const key = k.trim();
+  if (/^AIza[0-9A-Za-z_-]{35}$/.test(key)) return true;
+  if (/^AQ\.[0-9A-Za-z_.-]{20,}$/.test(key)) return true;
+  return /^[0-9A-Za-z][0-9A-Za-z._-]{29,199}$/.test(key);
+}

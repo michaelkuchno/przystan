@@ -62,7 +62,18 @@ export interface Transcriber {
 export class AiError extends Error {
   constructor(
     public code:
-      'noKey' | 'badKey' | 'rateLimit' | 'network' | 'format' | 'blocked' | 'unavailable' | 'privacy' | 'aborted' | 'server',
+      | 'noKey'
+      | 'badKey'
+      | 'rateLimit'
+      | 'network'
+      | 'timeout'
+      | 'format'
+      | 'blocked'
+      | 'unavailable'
+      | 'privacy'
+      | 'aborted'
+      | 'busy'
+      | 'server',
     message?: string,
     public retryAfterS?: number,
   ) {

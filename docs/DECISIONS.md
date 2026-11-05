@@ -510,3 +510,23 @@ o ≈ 14 MB (pliki są lokalne w paczce, bez pobierania). Start aplikacji i pier
 startu i ładują się po odblokowaniu (`ensureLazyNamespaces`); pierwsza wersja z nimi w paczce
 startowej opóźniała FCP w Lighthouse o ≈ 0,5 s. Lighthouse 1.3.0 = 1.2.0 (90–92) na tej samej maszynie. Kontrola dobrych praktyk w kreatorach (lokalne reguły) jest widoczna tylko
 z włączonym asystentem – bez AI interfejs pozostaje taki jak w 1.2.
+
+## D-059 Gemini w praktyce: format klucza, limity, przeciążenia (1.3.1)
+Pierwsza próba na prawdziwym, darmowym kluczu (05.11.2026) pokazała trzy rzeczy, których nie było
+w dokumentacji:
+- **Format klucza.** Google AI Studio wydaje teraz klucze `AQ.…` (ok. 50 znaków), a nie tylko
+  `AIza…`. Walidacja w 1.3.0 przyjmowała wyłącznie `AIza` i blokowała zapis klucza. Teraz przyjmuje
+  oba formaty i każdy inny ciąg 30–200 znaków `[A-Za-z0-9._-]` (na przyszłe formaty). Prawdziwym
+  sprawdzeniem jest „Sprawdź połączenie”. Nagłówek `x-goog-api-key` działa z oboma formatami.
+- **Limity.** `gemini-3.8-flash` ma w darmowym pakiecie tylko **20 zapytań dziennie** – jedna rozmowa
+  w symulatorze „na żywo” zużyłaby większość. Domyślnym modelem jest więc `gemini-3.5-flash-lite`
+  (jakość PL/DE we wszystkich 9 zadaniach sprawdzona testem `src/lib/ai/gemini.real.test.ts`).
+  Ustawienie modelu, którego użytkownik nie wybrał sam, przechodzi na nowy domyślny (`modelChosen`).
+- **Przeciążenia i limity.** Oba modele zwracały okresowo 503 „high demand”. Każdy model ma osobny
+  limit, więc przy 503 (po jednym ponowieniu) albo wyczerpanym limicie dziennym aplikacja sama
+  przełącza się na drugi model. Gdy oba zawiodą: czytelny komunikat („model przeciążony” albo „limit
+  odnowi się za ok. N godz.”). Każde zapytanie ma limit 90 s – wcześniej zerwane połączenie mogło
+  zostawić „AI pracuje…” bez końca.
+- Kontrola dobrych praktyk dawała fałszywy alarm na zdaniach z zaprzeczeniem („bez straszenia”,
+  „ohne Abschreckung”, „avoid scare tactics”) – zaprzeczenia są teraz pomijane (testy na
+  prawdziwej odpowiedzi modelu).

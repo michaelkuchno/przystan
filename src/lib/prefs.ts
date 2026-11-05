@@ -7,7 +7,7 @@ import { db } from './db';
 import type { Space } from '@/domain/types';
 import type { ReviewStatus } from '@/content/types';
 import { syncSystemBars } from './platform';
-import { defaultAiPrefs, type AiPrefs } from './ai/settings';
+import { DEFAULT_MODEL, defaultAiPrefs, type AiPrefs } from './ai/settings';
 
 export type Lang = 'pl' | 'en' | 'de';
 export const LANGS: Lang[] = ['pl', 'en', 'de'];
@@ -80,6 +80,8 @@ export async function loadPrefs(): Promise<Prefs> {
     if (row) {
       const v = row.value as Partial<Prefs>;
       prefs = { ...defaultPrefs(), ...v, ai: { ...defaultAiPrefs(), ...v.ai } };
+      // a default that was never chosen follows the current default model (1.3.1: Flash-Lite)
+      if (!prefs.ai.modelChosen) prefs.ai.model = DEFAULT_MODEL;
     }
   } catch {
     /* private mode etc. – keep defaults */

@@ -59,14 +59,16 @@ export function AiErrorView({ error, onRetry }: { error: AiError; onRetry?: () =
     error.code === 'unavailable' && ['off', 'presentation', 'clientLocalOnly', 'noLocalLlm'].includes(error.message)
       ? t(`route.${error.message}`)
       : error.code === 'rateLimit' && error.retryAfterS && error.retryAfterS > 60
-        ? t('errors.rateLimitWait', { min: Math.ceil(error.retryAfterS / 60) })
+        ? error.retryAfterS > 2 * 3600
+          ? t('errors.rateLimitDaily', { h: Math.ceil(error.retryAfterS / 3600) })
+          : t('errors.rateLimitWait', { min: Math.ceil(error.retryAfterS / 60) })
         : t(`errors.${error.code}`);
   const toSettings = ['noKey', 'badKey'].includes(error.code) || error.code === 'unavailable';
   return (
     <Notice tone="warn">
       <p role="alert">{msg}</p>
       <div className="mt-2 flex flex-wrap gap-2">
-        {onRetry && ['rateLimit', 'network', 'format', 'server'].includes(error.code) && (
+        {onRetry && ['rateLimit', 'network', 'timeout', 'format', 'busy', 'server'].includes(error.code) && (
           <Button size="sm" variant="secondary" onClick={onRetry}>
             {t('retry')}
           </Button>

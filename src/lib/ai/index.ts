@@ -17,6 +17,7 @@ import {
 import { FakeProvider, fakeEmbedder, fakeEnabled, fakeTranscriber } from './fake';
 import { GeminiProvider } from './gemini';
 import { loadApiKey } from './key';
+import { GEMINI_MODELS } from './settings';
 
 export { AiError } from './types';
 export type { Route } from './guard';
@@ -47,7 +48,8 @@ export const fakeProvider = () => (fake ??= new FakeProvider());
 async function cloud(): Promise<GeminiProvider> {
   const key = await loadApiKey();
   if (!key) throw new AiError('noKey');
-  return new GeminiProvider({ apiKey: key, model: getPrefs().ai.model });
+  const model = getPrefs().ai.model;
+  return new GeminiProvider({ apiKey: key, model, fallbackModel: GEMINI_MODELS.find((m) => m.id !== model)?.id });
 }
 
 /** Wraps a cloud provider so every request is checked by the privacy guard first. */

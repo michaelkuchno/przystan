@@ -11,7 +11,7 @@ test('real Gemini endpoint: CORS works and a wrong key is reported', async ({ pa
   await onboard(page, 'demo');
   await go(page, '#/settings/ai');
   await page.getByRole('radio', { name: /Chmura/ }).click();
-  await page.getByLabel('Klucz API Gemini').fill(`AIza${'B'.repeat(35)}`);
+  await page.getByLabel('Klucz API Gemini').fill(`AQ.Ab${'B'.repeat(46)}`);
   await page.getByRole('button', { name: 'Zapisz klucz' }).click();
   await page.getByRole('button', { name: 'Sprawdź połączenie' }).click();
   await expect(page.getByText(/Klucz Gemini został odrzucony/)).toBeVisible({ timeout: 30_000 });
@@ -87,4 +87,22 @@ test('real Whisper: download with consent, transcription runs on the device', as
   await expect(page.getByRole('button', { name: 'Dyktuj' })).toBeVisible({ timeout: 180_000 });
   await expect(page.getByText(/Dyktowanie wymaga|Serwer AI/)).toHaveCount(0);
   console.log('WHISPER RESULT:', await page.getByLabel('Treść').inputValue(), 'ERRORS:', errors.join(' | '));
+});
+
+test('real Gemini key (AQ.… format) in the app: test connection and one live simulator turn', async ({ page }) => {
+  const key = process.env.GEMINI_KEY;
+  test.skip(!key, 'set GEMINI_KEY to run');
+  await onboard(page, 'demo');
+  await go(page, '#/settings/ai');
+  await page.getByRole('radio', { name: /Chmura/ }).click();
+  await page.getByLabel('Klucz API Gemini').fill(key!);
+  await expect(page.getByText('To nie wygląda na klucz Gemini')).toHaveCount(0);
+  await page.getByRole('button', { name: 'Zapisz klucz' }).click();
+  await page.getByRole('button', { name: 'Sprawdź połączenie' }).click();
+  await expect(page.getByText('Połączenie działa')).toBeVisible({ timeout: 120_000 });
+  await go(page, '#/simulator/mow-cannabis/live');
+  await page.getByLabel('Twoja odpowiedź:').fill('Brzmi, że z jednej strony to cię odpręża, a z drugiej masz przez to kłopoty.');
+  await page.getByRole('button', { name: 'Wyślij' }).click();
+  await expect(page.getByTestId('live-verdict').first()).toBeVisible({ timeout: 180_000 });
+  console.log('LIVE VERDICT:', await page.getByTestId('live-verdict').first().innerText());
 });

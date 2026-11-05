@@ -71,7 +71,12 @@ describe('Gemini key storage', () => {
     await setupVault('secret-123', 1000);
     const key = 'AIza' + 'x'.repeat(35);
     expect(looksLikeApiKey(key)).toBe(true);
+    // newer AI Studio format ("AQ.…"), as issued in November 2026
+    expect(looksLikeApiKey('AQ.Ab0Fake00' + 'x'.repeat(40))).toBe(true);
+    expect(looksLikeApiKey('  AQ.Ab0Fake00' + 'y'.repeat(40) + '  ')).toBe(true);
     expect(looksLikeApiKey('sk-123')).toBe(false);
+    expect(looksLikeApiKey('not-a-key')).toBe(false);
+    expect(looksLikeApiKey('AQ.Ab0F ake00' + 'x'.repeat(40))).toBe(false);
     await saveApiKey(key);
     const raw = JSON.stringify(await db.meta.get('aiKey'));
     expect(raw).not.toContain('xxxxxxxx');
@@ -121,6 +126,13 @@ describe('good-practice check (prevention)', () => {
     expect(checkPractice('Jednorazowa pogadanka w auli')).toContain('oneOff');
     expect(checkPractice('Wir zeigen Schockbilder zur Abschreckung')).toContain('fear');
     expect(checkPractice('Trening umiejętności odmawiania w scenkach, 6 spotkań')).toEqual([]);
+    // negated mentions are good practice (real Gemini answer, 05.11.2026)
+    expect(checkPractice('Prowadzący prezentuje strategie asertywnej odmowy bez używania taktyk straszenia.')).toEqual([]);
+    expect(checkPractice('Nie moralizujemy, unikamy straszenia.')).toEqual([]);
+    expect(checkPractice('Interaktiv, ohne Abschreckung und ohne Moralisieren.')).toEqual([]);
+    expect(checkPractice('Interactive sessions, avoid scare tactics.')).toEqual([]);
+    // …but a real scare tactic in the same text is still found
+    expect(checkPractice('Bez wykładu. Pokażemy zdjęcia płuc, żeby przestraszyć.')).toContain('fear');
   });
 });
 

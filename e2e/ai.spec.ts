@@ -63,7 +63,7 @@ test('AI settings: modes, key check, local models need consent', async ({ page }
   await page.getByLabel('Klucz API Gemini').fill('not-a-key');
   await expect(page.getByText('To nie wygląda na klucz Gemini')).toBeVisible();
   await expect(page.getByRole('button', { name: 'Zapisz klucz' })).toBeDisabled();
-  await page.getByLabel('Klucz API Gemini').fill(`AIza${'A'.repeat(35)}`);
+  await page.getByLabel('Klucz API Gemini').fill(`AQ.Ab${'A'.repeat(46)}`);
   await page.getByRole('button', { name: 'Zapisz klucz' }).click();
   await expect(page.getByText(/Klucz zapisany \(…AAAA\)/)).toBeVisible();
   // client data in the cloud is off by default

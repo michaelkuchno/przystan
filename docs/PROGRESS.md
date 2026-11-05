@@ -1,6 +1,6 @@
 # Postęp prac
 
-Stan: **wersja 1.3.0** – opcjonalny asystent AI (D-051…D-058, `docs/AI.md`). Etapy 1–15 (1.0), punkty 0–9 (1.1),
+Stan: **wersja 1.3.1** – opcjonalny asystent AI (D-051…D-059, `docs/AI.md`); 1.3.1: klucze `AQ.…`, Flash-Lite domyślnie, przełączanie modeli przy limicie / przeciążeniu, limit czasu 90 s. Etapy 1–15 (1.0), punkty 0–9 (1.1),
 historia z audytem (1.2) i asystent AI (1.3) zakończone.
 
 | Etap | Zakres | Status |
@@ -62,10 +62,10 @@ historia z audytem (1.2) i asystent AI (1.3) zakończone.
 | 7 | Kreatory: propozycja scenariusza zajęć i programu profilaktycznego + kontrola dobrych praktyk; materiały prostym językiem / dla młodzieży / tłumaczenie (plan nawrotów, karty narzędzi); pytania do superwizji | ✅ |
 | 8 | Testy, leniwe ładowanie (kod modeli poza prekeszem PWA), dokumentacja, wersja 1.3.0 | ✅ |
 
-## Jakość (ostatni przebieg, wersja 1.3.0)
+## Jakość (ostatni przebieg, wersja 1.3.1)
 
 - `npm run lint` – 0 błędów, 0 ostrzeżeń; `npm run typecheck` – 0 błędów
-- `npm test` – **233 testy jednostkowe** ✅ (+40 w 1.3: parser odpowiedzi modelu i walidacja JSON przy błędnym
+- `npm test` – **236 testów jednostkowych** ✅ (+43 w 1.3: parser odpowiedzi modelu i walidacja JSON przy błędnym
   formacie, pseudonimizacja PL/DE z przywracaniem, strażnik prywatności i jednorazowe zgody, Gemini – nagłówek klucza,
   structured output, 429 z RetryInfo, błędy, SSE; brak ruchu sieciowego w trybie Wyłączony, zaszyfrowany klucz i indeks,
   wyszukiwanie semantyczne, kontrola dobrych praktyk, statystyki symulatora, sygnały kryzysu, zabezpieczenia Whispera)
@@ -76,6 +76,9 @@ historia z audytem (1.2) i asystent AI (1.3) zakończone.
   nowe ekrany dodane do testów a11y, przewijania i profili Androida)
 - `npm run e2e:ai-real` (ręcznie, prawdziwe usługi) – 3/3 ✅: Gemini (CORS, błędny klucz → czytelny komunikat),
   model e5 pobrany po zgodzie i wyszukiwanie semantyczne **offline**, Whisper pobrany i rozpoznawanie **offline**
+- `GEMINI_KEY=… npx vitest run src/lib/ai/gemini.real.test.ts` (ręcznie, prawdziwy darmowy klucz `AQ.…`) – 5/5 ✅:
+  wszystkie zadania AI (symulator, fiszki, ocena, „Zapytaj” z „nie wiem”, DAP, superwizja, zajęcia, program w DE,
+  wyjaśnienie strumieniowe, tłumaczenie z zachowaniem numerów) na `gemini-3.5-flash-lite`
 - Lighthouse (mobile, lokalnie, 3 przebiegi): 1.3.0 – Performance 90–92, Accessibility 100, Best Practices 100, SEO 100;
   ten sam rozkład co 1.2.0 na tej samej maszynie (start ładuje te same pliki, +0,25 kB gzip). Teksty AI i kod modeli
   ładują się dopiero po odblokowaniu / użyciu.

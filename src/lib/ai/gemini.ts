@@ -11,6 +11,8 @@ import { parseJson } from './parse';
 import { GEMINI_MODELS } from './settings';
 
 export const GEMINI_HOST = 'https://generativelanguage.googleapis.com';
+/** Max wait for the response headers of one request (answers usually take 2–20 s). */
+export const REQUEST_TIMEOUT_MS = 90_000;
 
 type Fetch = typeof fetch;
 
@@ -26,6 +28,13 @@ export interface GeminiOptions {
   fetchImpl?: Fetch;
   /** Waits between retries (tests use 0). */
   sleep?: (ms: number) => Promise<void>;
+  /**
+   * Used when the model is overloaded (503 "high demand") even after a retry – e.g. Flash → Flash-Lite.
+   * Google reports such spikes as temporary; switching keeps the feature usable.
+   */
+  fallbackModel?: string;
+  /** Overrides REQUEST_TIMEOUT_MS (tests). */
+  timeoutMs?: number;
 }
 
 const wait = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
@@ -47,6 +56,7 @@ export function errorFrom(status: number, body: unknown): AiError {
     return new AiError('badKey', msg);
   if (status === 400 && /api key/i.test(msg)) return new AiError('badKey', msg);
   if (status === 400 && /location is not supported|user location/i.test(msg)) return new AiError('unavailable', msg);
+  if (status === 503) return new AiError('busy', msg);
   if (status >= 500 || status === 408) return new AiError('server', msg);
   return new AiError('server', msg);
 }
@@ -63,14 +73,17 @@ export class GeminiProvider implements AiProvider {
   readonly where = 'cloud' as const;
   private fetch: Fetch;
   private sleep: (ms: number) => Promise<void>;
+  /** The model actually used (changes to the fallback after an overload). */
+  model: string;
 
   constructor(private o: GeminiOptions) {
     this.fetch = o.fetchImpl ?? ((...a) => fetch(...a));
     this.sleep = o.sleep ?? wait;
+    this.model = o.model;
   }
 
   private body(req: GenerateRequest, json?: Record<string, unknown>, extra?: Part[]) {
-    const thinking = GEMINI_MODELS.find((m) => m.id === this.o.model)?.thinking ?? 'low';
+    const thinking = GEMINI_MODELS.find((m) => m.id === this.model)?.thinking ?? 'low';
     return {
       systemInstruction: { parts: [{ text: req.system }] },
       contents: contents(req, extra),
@@ -88,21 +101,39 @@ export class GeminiProvider implements AiProvider {
     let attempt = 0;
     for (;;) {
       let res: Response;
+      // a hanging connection must not keep the UI waiting forever
+      const timer = new AbortController();
+      const timeout = setTimeout(() => timer.abort(), this.o.timeoutMs ?? REQUEST_TIMEOUT_MS);
+      const onAbort = () => timer.abort();
+      signal?.addEventListener('abort', onAbort);
       try {
-        res = await this.fetch(`${GEMINI_HOST}/v1beta/models/${encodeURIComponent(this.o.model)}:${path}`, {
+        res = await this.fetch(`${GEMINI_HOST}/v1beta/models/${encodeURIComponent(this.model)}:${path}`, {
           method: 'POST',
           headers: { 'content-type': 'application/json', 'x-goog-api-key': this.o.apiKey },
           body: JSON.stringify(body),
-          signal,
+          signal: timer.signal,
         });
       } catch (e) {
         if (signal?.aborted) throw new AiError('aborted');
+        if (timer.signal.aborted) throw new AiError('timeout');
         throw new AiError('network', String(e));
+      } finally {
+        clearTimeout(timeout);
+        signal?.removeEventListener('abort', onAbort);
       }
       if (res.ok) return res;
       const data: unknown = await res.json().catch(() => ({}));
       const err = errorFrom(res.status, data);
-      const retryable = err.code === 'server' || (err.code === 'rateLimit' && (err.retryAfterS ?? 2) <= 20);
+      // overloaded model (one retry first) or its daily free quota used up → the fallback model (once)
+      const overloaded = res.status === 503 && attempt >= 1;
+      const quotaGone = err.code === 'rateLimit' && (err.retryAfterS ?? 0) > 20;
+      if ((overloaded || quotaGone) && this.o.fallbackModel && this.model !== this.o.fallbackModel) {
+        this.model = this.o.fallbackModel;
+        attempt = 0;
+        continue;
+      }
+      const retryable =
+        err.code === 'server' || err.code === 'busy' || (err.code === 'rateLimit' && (err.retryAfterS ?? 2) <= 20);
       if (!retryable || attempt >= 2) throw err;
       attempt++;
       await this.sleep(err.code === 'rateLimit' ? (err.retryAfterS ?? 2) * 1000 : 1000 * 2 ** attempt);
