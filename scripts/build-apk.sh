@@ -13,5 +13,6 @@ npx cap sync android
 (cd android && ./gradlew --no-daemon -q assembleRelease)
 mkdir -p release
 cp android/app/build/outputs/apk/release/app-release.apk "release/przystan-$VERSION.apk"
+"$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --print-certs "release/przystan-$VERSION.apk" | grep -E "SHA-1|SHA-256" || true
 "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify "release/przystan-$VERSION.apk"
 echo "APK: release/przystan-$VERSION.apk"

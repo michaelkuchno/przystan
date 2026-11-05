@@ -19,6 +19,7 @@ public class MainActivity extends BridgeActivity {
         // app-local plugins must be registered before the bridge starts
         registerPlugin(BiometricPlugin.class);
         registerPlugin(SmsPlugin.class);
+        registerPlugin(GooglePlugin.class);
         super.onCreate(savedInstanceState);
         // Sensitive data: hide content in the app switcher and block screenshots.
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);

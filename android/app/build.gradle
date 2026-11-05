@@ -60,6 +60,8 @@ dependencies {
     implementation "androidx.core:core-splashscreen:$coreSplashScreenVersion"
     implementation "androidx.webkit:webkit:$androidxWebkitVersion"
     implementation "androidx.biometric:biometric:1.1.0"
+    // Gmail sending from the user's own account (GooglePlugin, AuthorizationClient)
+    implementation "com.google.android.gms:play-services-auth:21.3.0"
     implementation project(':capacitor-android')
     testImplementation "junit:junit:$junitVersion"
     androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
