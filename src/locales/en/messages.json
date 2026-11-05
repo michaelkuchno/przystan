@@ -1,0 +1,182 @@
+{
+  "title": "Messages",
+  "subtitle": "E-mails and SMS from templates and with AI help – sent with your own mail and phone",
+  "navHint": "E-mail, SMS, contacts",
+  "tabs": { "compose": "New", "history": "Sent and drafts", "contacts": "Contacts" },
+  "channel": { "email": "E-mail", "sms": "SMS" },
+  "to": "To",
+  "toEmail": "E-mail address",
+  "toPhone": "Phone number",
+  "toName": "Recipient's name",
+  "fromContacts": "From contacts",
+  "noContact": "— type it in —",
+  "client": "Concerns",
+  "noClient": "— nobody —",
+  "template": "Template",
+  "noTemplate": "— no template —",
+  "subject": "Subject",
+  "body": "Message",
+  "smsCount": "{{chars}} characters · {{segments}} SMS",
+  "smsUnicode": "(special characters – shorter SMS)",
+  "personal": "This text contains no data about people (e.g. a letter to a school about a programme)",
+  "personalText": "Then the cloud AI works without pseudonymisation. Leave it off if the message is about a specific person.",
+  "invalidEmail": "Check the e-mail address.",
+  "invalidPhone": "Check the phone number.",
+  "send": {
+    "mailApp": "Open in the mail app",
+    "smsApp": "Open in the SMS app",
+    "emailjs": "Send now (EmailJS)",
+    "copy": "Copy",
+    "share": "Share",
+    "draft": "Save draft",
+    "hint": "You send the message yourself – from your own mail or phone. Przystań has no server and sends nothing on your behalf without your tap.",
+    "long": "The text is long – some mail apps cut such messages. Use “Copy” and paste the text into an e-mail.",
+    "sentEmailJs": "Sent with EmailJS",
+    "handedOff": "Handed over to the app – send it there",
+    "copied": "Text copied",
+    "savedDraft": "Draft saved",
+    "failed": "Could not send: {{msg}}"
+  },
+  "ai": {
+    "title": "AI help",
+    "write": "Write with AI",
+    "writeHint": "Say what the message should contain (e.g. “remind about the meeting on Thursday at 10, ask for confirmation”).",
+    "instruction": "What do you want to say?",
+    "reply": "Reply to an e-mail",
+    "incoming": "Received e-mail (paste the text)",
+    "intention": "What do you want to answer? (optional)",
+    "intentionHint": "e.g. “I agree to a meeting but cannot share details of the therapy”",
+    "useKnowledge": "Use knowledge from the app (knowledge cards, help system, law)",
+    "useClient": "Include basic information about the person (stage of change, goal, context – nothing identifying)",
+    "recipient": "Recipient",
+    "tone": "Tone",
+    "tones": { "formal": "Formal", "neutral": "Neutral", "warm": "Warm" },
+    "run": "Prepare a draft",
+    "apply": "Insert into the message",
+    "useSms": "Insert the SMS version",
+    "cautions": "Watch out for",
+    "improve": "Improve the draft",
+    "shorter": "Shorter",
+    "formal": "More formal",
+    "warmer": "Warmer",
+    "simpler": "Simpler",
+    "translate": "Translate into…",
+    "draft": "AI draft",
+    "empty": "First write a text or an instruction."
+  },
+  "roles": {
+    "client": "Person I work with",
+    "guardian": "Parent / legal guardian",
+    "family": "Family",
+    "school": "School",
+    "court": "Court",
+    "probation": "Probation officer / service",
+    "institution": "Institution (counselling, centre, social services…)",
+    "colleague": "Colleague",
+    "supervisor": "Supervisor",
+    "other": "Other"
+  },
+  "history": {
+    "empty": "No messages.",
+    "draft": "Draft",
+    "sent": "Sent",
+    "via": {
+      "mailApp": "via the mail app",
+      "smsApp": "via the SMS app",
+      "emailjs": "via EmailJS",
+      "copy": "copied",
+      "share": "shared"
+    },
+    "open": "Open",
+    "duplicate": "Use again",
+    "delete": "Delete",
+    "replyTo": "Reply to a message"
+  },
+  "contacts": {
+    "add": "New contact",
+    "edit": "Contact",
+    "empty": "No contacts. Add addresses you often write to (school, probation officer, parent).",
+    "name": "Name",
+    "role": "Role",
+    "email": "E-mail",
+    "phone": "Phone",
+    "org": "Institution / organisation",
+    "client": "Related person",
+    "notes": "Notes",
+    "write": "Write",
+    "saved": "Contact saved",
+    "deleted": "Contact deleted",
+    "privacy": "Contacts are encrypted like all data. Store only what you need for your work."
+  },
+  "entry": {
+    "message": "Message",
+    "reminder": "Reminder",
+    "reminderHint": "SMS or e-mail reminding about this meeting",
+    "calendar": "Add to calendar",
+    "calendarAll": "Export to calendar",
+    "emailReferral": "Send by e-mail",
+    "invite": "Invitation e-mail"
+  },
+  "placeholders": { "date": "date", "time": "time", "signature": "signature", "program": "programme name" },
+  "templates": {
+    "meetingReminder": {
+      "title": "Meeting reminder",
+      "subject": "Reminder: meeting on {{date}} at {{time}}",
+      "body": "Hello{{recipientComma}},\n\njust a reminder of our meeting on {{date}} at {{time}}{{placeIn}}.\nIf the time does not suit you, please let me know and we will find another one.\n\nKind regards\n{{signature}}",
+      "sms": "Hello, a reminder of our meeting on {{date}} at {{time}}{{placeIn}}. If you can't come, please let me know. {{me}}"
+    },
+    "meetingChange": {
+      "title": "Meeting rescheduled",
+      "subject": "New time for our meeting",
+      "body": "Hello{{recipientComma}},\n\nunfortunately I have to move our meeting planned for {{date}} at {{time}}. I suggest [new time]. Please confirm or suggest another time.\n\nSorry for the change and kind regards\n{{signature}}",
+      "sms": "Hello, I need to move our meeting on {{date}} {{time}}. I suggest [new time] – please confirm. {{me}}"
+    },
+    "missedMeeting": {
+      "title": "After a missed meeting",
+      "subject": "Our meeting on {{date}}",
+      "body": "Hello{{recipientComma}},\n\nwe did not see each other on {{date}} – I hope everything is fine. I am happy to arrange a new time. Please get in touch whenever it suits you.\n\nKind regards\n{{signature}}",
+      "sms": "Hello, we didn't see each other on {{date}}. I hope you're OK – let me know when we can meet. {{me}}"
+    },
+    "guardianInfo": {
+      "title": "To a parent / guardian – invitation to cooperate",
+      "subject": "Invitation to a meeting",
+      "body": "Dear [name],\n\nI would like to invite you to a conversation about supporting [child's name]. The aim is to agree together how we can help – not to judge. I suggest [date] at [place].\n\nI will discuss the details of my work with [child's name] in person, respecting confidentiality.\n\nKind regards\n{{signature}}"
+    },
+    "schoolOpinion": {
+      "title": "To a school – request for a report",
+      "subject": "Request for a report on a pupil",
+      "body": "Dear colleagues,\n\nfor [purpose, e.g. preparing a support plan] I kindly ask for a short report on the pupil [initials, class]: attendance, relationships with peers, strengths, difficulties and the support provided so far.\n\nThe parent's/guardian's consent to share information [is available / is attached]. Please send the report by [date] via [official channel].\n\nKind regards\n{{signature}}"
+    },
+    "referral": {
+      "title": "Referral to an institution",
+      "subject": "Referral / request for an appointment",
+      "body": "Dear colleagues,\n\nI am writing to ask for a consultation / admission for a person I work with (with their consent). I will share the key information by phone or in a secure way.\n\n[referral text]\n\nPlease let me know about possible dates and the documents needed.\n\nKind regards\n{{signature}}"
+    },
+    "courtReport": {
+      "title": "To a court / probation officer – information",
+      "subject": "Information regarding [case number]",
+      "body": "Dear [name],\n\nin response to your request of [date] I am sending information within the scope you asked for: [attendance, activities – facts and dates].\n\nA more detailed report requires a written form – if needed I will prepare it through the official channel.\n\nKind regards\n{{signature}}"
+    },
+    "supervisionRequest": {
+      "title": "Request for supervision",
+      "subject": "Request for a supervision appointment",
+      "body": "Hello{{recipientComma}},\n\nI would like to arrange a supervision session. It concerns my work with [Person A] – [briefly, nothing identifying: what I find difficult]. Would [date] suit you?\n\nKind regards\n{{signature}}"
+    },
+    "preventionInvite": {
+      "title": "Invitation to a prevention programme",
+      "subject": "Invitation: {{program}}",
+      "body": "Dear all,\n\nI would like to invite you to the prevention programme “{{program}}”. The programme is interactive, builds social skills and follows evidence-based prevention recommendations. Planned dates: [dates]. For parents we plan [an information evening].\n\nI am happy to answer any questions.\n\nKind regards\n{{signature}}"
+    },
+    "acknowledge": {
+      "title": "Confirmation of receipt",
+      "subject": "Re: [subject]",
+      "body": "Hello{{recipientComma}},\n\nthank you for your message – I confirm I have received it. I will reply by [date].\n\nKind regards\n{{signature}}",
+      "sms": "Hello, thank you for your message – I'll get back to you by [date]. {{me}}"
+    },
+    "thanks": {
+      "title": "Thank you for the cooperation",
+      "subject": "Thank you for working together",
+      "body": "Hello{{recipientComma}},\n\nthank you for our cooperation and [a concrete example]. It really helps our work.\n\nWarm regards\n{{signature}}"
+    }
+  }
+}

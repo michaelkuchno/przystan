@@ -20,7 +20,7 @@
       },
       {
         "q": "Wird etwas ins Internet gesendet?",
-        "a": "Nein – ausser du schaltest den optionalen KI-Assistenten selbst ein (standardmässig aus). Die App enthält keine Analyse-, Werbe- oder Tracking-Funktionen. Internet braucht es für PWA-Updates und, mit eingeschalteter KI, für Google Gemini (mit deinem Schlüssel) oder das einmalige Laden lokaler Modelle. Personendaten gehen nie automatisch in die Cloud (Einstellungen → KI-Assistent → «Wie die KI funktioniert»)."
+        "a": "Nein – ausser du schaltest den optionalen KI-Assistenten selbst ein (standardmässig aus). Die App enthält keine Analyse-, Werbe- oder Tracking-Funktionen. Internet braucht es für PWA-Updates und, mit eingeschalteter KI, für Google Gemini (mit deinem Schlüssel) oder das einmalige Laden lokaler Modelle. Personendaten gehen nie automatisch in die Cloud (Einstellungen → KI-Assistent → «Wie die KI funktioniert»). Optional, wenn du EmailJS selbst einrichtest, sendet die App E-Mails über dein Konto (z. B. die Tagesübersicht an dich – standardmässig ohne Details). E-Mails und SMS an andere Personen sendest du immer selbst aus deiner Mail- oder SMS-App."
       },
       {
         "q": "Wie werden die Daten geschützt?",

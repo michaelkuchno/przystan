@@ -530,3 +530,53 @@ w dokumentacji:
 - Kontrola dobrych praktyk dawała fałszywy alarm na zdaniach z zaprzeczeniem („bez straszenia”,
   „ohne Abschreckung”, „avoid scare tactics”) – zaprzeczenia są teraz pomijane (testy na
   prawdziwej odpowiedzi modelu).
+
+## D-060 Powiadomienia bez serwera (1.4.0)
+Przystań nie ma serwera i nie będzie go mieć (koszt, odpowiedzialność za dane, D-001). Powiadomienia
+są więc liczone i planowane na urządzeniu: po odblokowaniu i po każdej zmianie danych (z opóźnieniem
+1,5 s) silnik (`src/lib/notify/engine.ts`) wylicza terminy (spotkania, zadania, przeglądy IPR, ważne
+daty, „Do zwrócenia uwagi”, kopia) i:
+- na Androidzie planuje je w systemie (`@capacitor/local-notifications` 8.3.1, `allowWhileIdle`) – działają
+  przy zamkniętej aplikacji; maks. 60 najbliższych, plan odtwarzany po każdym uruchomieniu;
+- w przeglądarce / PWA pokazuje powiadomienie przy otwarciu (Notification Triggers porzucono, iOS nie
+  ma planowania bez push – sprawdzone 05.11.2026), a na przypomnienia przy zamkniętej aplikacji
+  proponuje **eksport do kalendarza** (.ics z alarmami VALARM; na iPhonie to jedyna darmowa droga).
+Domyślnie wyłączone. Treść: „bez szczegółów” (domyślnie) albo „z kodami” – nigdy imiona; etykieta
+nie jest nawet przekazywana do tłumaczeń (test).
+
+## D-061 E-mail: ręcznie przez aplikację poczty, automatycznie przez własne EmailJS
+- Ręcznie: `mailto:` (RFC 6068, CRLF) otwiera aplikację poczty użytkownika – wysyła on sam, ze swojego
+  konta, bez pośredników. Przy długiej treści (> ok. 1800 znaków) ostrzeżenie i „Kopiuj”.
+- Automatycznie (podsumowanie dnia do siebie, „Wyślij teraz”): **EmailJS z własnym, darmowym kontem
+  użytkownika** (200 e-maili/mies.) – jedyna sprawdzona usługa wysyłki z przeglądarki bez własnego
+  serwera. Wysyłka tylko przy otwartej, odblokowanej aplikacji. Dane EmailJS szyfrowane jak klucz Gemini.
+  Odrzucone: SMTP z przeglądarki (niemożliwe), Gmail API (OAuth wymaga zarejestrowanej aplikacji i
+  domeny), własny serwer (koszt, dane).
+
+## D-062 SMS: tylko ręcznie
+Bramki SMS (Twilio, SMSAPI, Vonage, Swisscom) są płatne; darmowe „bramki operatorów” nie działają
+w PL / CH. Dlatego SMS są przygotowywane w Przystani (szablon / AI, licznik segmentów, polskie znaki)
+i przekazywane do aplikacji SMS telefonu (`sms:numer?&body=` – działa na iOS i Androidzie). Koszt jest
+w ramach abonamentu użytkownika. Push przez ntfy / Telegram odrzucone – publiczne tematy i obcy
+pośrednik dla treści dotyczących osób.
+
+## D-063 AI przy korespondencji
+Szablony (11, PL/EN/DE, konwencje krajowe: „Z poważaniem”, „Freundliche Grüsse”) + AI: napisz,
+odpowiedz na e-mail, popraw. Model dostaje `COMMS_GUIDE` – zasady korespondencji w pracy
+resocjalizacyjnej i terapii uzależnień (poufność, RODO/nDSG, tajemnica zawodowa, nieujawnianie statusu
+klienta, małoletni, sąd/kurator/KESB tylko w zakresie zapytania i bez ocen, deeskalacja, sygnały
+zagrożenia → kontakt osobisty i numery pomocy, procedury jak Niebieska Karta / zgłoszenie do KESB do
+sprawdzenia przez specjalistę, struktura e-maila, zasady SMS) oraz – w odpowiedzi – pytania i prośby z
+otrzymanego e-maila, intencję specjalisty, wiedzę z aplikacji (3 najbliższe karty / instytucje / przepisy,
+lokalnie wyszukane) i opcjonalnie nieidentyfikujące podsumowanie osoby (etap zmiany, cel, kontekst).
+Wynik: temat, treść, wersja SMS, „Na co uważać”. Wiadomości o osobach mają wrażliwość `client`
+(pseudonimizacja + podgląd + zgoda); przełącznik „nie zawiera danych osób” dla pism np. do szkoły o
+programie. Podpis nie wychodzi do AI – „[podpis]” jest podmieniany lokalnie. Sprawdzone na prawdziwym
+Gemini (odpowiedź zaniepokojonej matce: bez szczegółów terapii, propozycja rozmowy, uwagi o poufności).
+
+## D-064 Kontakty, historia wiadomości, audyt
+Nowe rodzaje rekordów `contact` i `message` – zaszyfrowane, z historią zmian i koszem jak wszystkie
+dane. Wiadomość „wysłana” = przekazana do aplikacji poczty / SMS, EmailJS, schowka albo udostępniona
+(Przystań nie wie, czy użytkownik faktycznie nacisnął „Wyślij” w aplikacji poczty – status mówi
+„przekazano”). Dziennik audytu: `message.send` (kanał, sposób – bez treści i adresata), `notify.settings`.
+Teksty interfejsu powiadomień i wiadomości ładują się po odblokowaniu (jak AI, D-058) – start bez zmian.

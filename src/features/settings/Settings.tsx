@@ -3,6 +3,8 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {
   Sparkles,
+  BellRing,
+  Mail,
   Download,
   Upload,
   KeyRound,
@@ -270,6 +272,25 @@ export default function Settings() {
             <span className="block">{t('ai:settings.title')}</span>
             <span className="block text-sm text-muted">{t(`ai:settings.modes.${prefs.ai.mode}`)}</span>
           </span>
+          <ChevronRight className="size-5 text-muted" aria-hidden />
+        </Link>
+      </Card>
+
+      <SectionTitle id="notify">{t('notify:title')}</SectionTitle>
+      <Card className="divide-y divide-line p-0 sm:p-0">
+        <Link to="/settings/notify" className="flex min-h-14 items-center gap-3 px-4 py-3 hover:bg-surface-2">
+          <BellRing className="size-5 text-primary" aria-hidden />
+          <span className="flex-1">
+            <span className="block">{t('notify:enabled')}</span>
+            <span className="block text-sm text-muted">
+              {prefs.notify.enabled ? t('notify:statusOn') : t('notify:statusOff')}
+            </span>
+          </span>
+          <ChevronRight className="size-5 text-muted" aria-hidden />
+        </Link>
+        <Link to="/messages" className="flex min-h-14 items-center gap-3 px-4 py-3 hover:bg-surface-2">
+          <Mail className="size-5 text-primary" aria-hidden />
+          <span className="flex-1">{t('messages:title')}</span>
           <ChevronRight className="size-5 text-muted" aria-hidden />
         </Link>
       </Card>

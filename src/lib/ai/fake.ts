@@ -75,6 +75,12 @@ const ANSWERS: Record<string, (req: GenerateRequest) => unknown> = {
     riskFactors: ['FAKE: Presja rówieśnicza'],
     protectiveFactors: ['FAKE: Więź ze szkołą'],
   }),
+  message: () => ({
+    subject: 'FAKE: Odpowiedź w sprawie spotkania',
+    body: 'Dzień dobry,\n\nFAKE: dziękuję za wiadomość. Proponuję rozmowę telefoniczną [data].\n\nZ poważaniem\n[podpis]',
+    sms: 'FAKE: Przypominam o spotkaniu [data]. Przystań',
+    cautions: ['FAKE: uzupełnij datę'],
+  }),
   supervision: () => ({
     questions: ['FAKE: Co czujesz, myśląc o tej sytuacji?', 'FAKE: Jakie mocne strony widzisz u [Osoba A]?'],
   }),

@@ -2,7 +2,12 @@ import { describe, expect, it } from 'vitest';
 import type { TFunction } from 'i18next';
 import { buildCaseStudy, identifyingNames, type CaseData } from './build';
 
-const t = ((k: string, o?: Record<string, unknown>) => (k.startsWith('reports:anon.person') ? '[osoba]' : k.startsWith('reports:anon') ? '[usunięto]' : `${k}${o?.count ?? o?.n ?? ''}`)) as unknown as TFunction;
+const t = ((k: string, o?: Record<string, unknown>) =>
+  k.startsWith('reports:anon.person')
+    ? '[osoba]'
+    : k.startsWith('reports:anon')
+      ? '[usunięto]'
+      : `${k}${o?.count ?? o?.n ?? ''}`) as unknown as TFunction;
 
 const data: CaseData = {
   client: {
@@ -79,7 +84,18 @@ describe('anonymous case study', () => {
   it('removes names, contact data, addresses and exact dates from every section', () => {
     const { sections, replaced } = buildCaseStudy(data, t);
     const all = sections.map((s) => s.text).join('\n');
-    for (const bad of ['KW-16', 'Kacper', 'Wiśniewski', 'Ewa', 'Tomek', 'Nowak', '600 123 456', 'Długa 5', '2026-03-14', '2026-03-12'])
+    for (const bad of [
+      'KW-16',
+      'Kacper',
+      'Wiśniewski',
+      'Ewa',
+      'Tomek',
+      'Nowak',
+      '600 123 456',
+      'Długa 5',
+      '2026-03-14',
+      '2026-03-12',
+    ])
       expect(all, bad).not.toContain(bad);
     expect(replaced).toBeGreaterThanOrEqual(8);
     expect(all).toContain('DUDIT: 18 (2026-01) → 9 (2026-04)');
@@ -87,6 +103,12 @@ describe('anonymous case study', () => {
   });
 
   it('keeps the five sections in order', () => {
-    expect(buildCaseStudy(data, t).sections.map((s) => s.id)).toEqual(['profile', 'diagnosis', 'programme', 'course', 'evaluation']);
+    expect(buildCaseStudy(data, t).sections.map((s) => s.id)).toEqual([
+      'profile',
+      'diagnosis',
+      'programme',
+      'course',
+      'evaluation',
+    ]);
   });
 });

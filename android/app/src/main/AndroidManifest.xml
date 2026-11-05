@@ -41,4 +41,6 @@
     <!-- Optional dictation (AI assistant): requested only when the user taps "Dictate" -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- Optional reminders (Settings → Notifications): exact times, only after the user enables them -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
 </manifest>

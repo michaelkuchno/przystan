@@ -157,7 +157,16 @@ function Editor({ recipe }: { recipe: Recipe }) {
               update((d) => ({
                 ...d,
                 title: d.title.trim() ? d.title : plan.title || d.title,
-                items: [...d.items, ...plan.steps.map((st) => ({ id: uid(), ingredientId: 'custom', title: st.title, minutes: st.minutes, note: st.description }))],
+                items: [
+                  ...d.items,
+                  ...plan.steps.map((st) => ({
+                    id: uid(),
+                    ingredientId: 'custom',
+                    title: st.title,
+                    minutes: st.minutes,
+                    note: st.description,
+                  })),
+                ],
               }))
             }
           />

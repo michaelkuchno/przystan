@@ -93,7 +93,11 @@ export default function ToolRunner() {
         subtitle={intros[meta.id]?.[aud]}
         actions={
           <>
-            <MaterialButton sensitivity="content" title={t(`names.${meta.id}`)} source={`${t(`names.${meta.id}`)}: ${intros[meta.id]?.[aud] ?? ''}`} />
+            <MaterialButton
+              sensitivity="content"
+              title={t(`names.${meta.id}`)}
+              source={`${t(`names.${meta.id}`)}: ${intros[meta.id]?.[aud] ?? ''}`}
+            />
             <Button variant="soft" icon={<Maximize2 className="size-4" />} onClick={() => setShow(true)}>
               {t('showClient')}
             </Button>
@@ -104,7 +108,9 @@ export default function ToolRunner() {
         <Card className="min-h-80">
           <div
             className={
-              show ? 'safe-top safe-bottom safe-x fixed inset-0 z-[90] overflow-y-auto bg-bg px-5 py-6 text-[length:calc(1.1rem*var(--fs-body))]' : undefined
+              show
+                ? 'safe-top safe-bottom safe-x fixed inset-0 z-[90] overflow-y-auto bg-bg px-5 py-6 text-[length:calc(1.1rem*var(--fs-body))]'
+                : undefined
             }
             {...(show ? { role: 'dialog', 'aria-modal': true, 'aria-label': t(`names.${meta.id}`) } : {})}
           >

@@ -81,7 +81,8 @@
     "privacy": "Prywatność",
     "about": "O aplikacji",
     "practice": "Dzienniczek praktyk",
-    "notes": "Notatnik"
+    "notes": "Notatnik",
+    "messages": "Wiadomości"
   },
   "navHint": {
     "screening": "AUDIT, AUDIT-C, DUDIT",
@@ -98,6 +99,7 @@
     "privacy": "Gdzie są dane",
     "about": "Wersja i zastrzeżenia",
     "practice": "Godziny, wpisy, PDF dla opiekuna",
-    "notes": "Notatki i superwizja"
+    "notes": "Notatki i superwizja",
+    "messages": "E-mail, SMS, kontakty"
   }
 }

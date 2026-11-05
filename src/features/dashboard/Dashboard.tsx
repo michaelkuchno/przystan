@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { lazy, Suspense, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
@@ -31,6 +31,8 @@ import { cn } from '@/components/ui/cn';
 import { useContent } from '@/content/ContentProvider';
 import { isDue } from '@/lib/srs';
 import { BackupBanner, SupervisionTasks } from './DashboardExtras';
+
+const TodayCard = lazy(() => import('@/features/notify/TodayCard'));
 
 export function useAttention(): AttentionFlag[] {
   const clients = useStore(() => all('client'));
@@ -182,6 +184,11 @@ export function Dashboard() {
       </div>
 
       <BackupBanner />
+      {prefs.notify.enabled && (
+        <Suspense fallback={null}>
+          <TodayCard />
+        </Suspense>
+      )}
 
       <div className="grid gap-3 sm:grid-cols-4">
         {[

@@ -447,3 +447,21 @@ Do weryfikacji także:
 Uwaga: przykłady w tabeli to oczekiwany kształt odpowiedzi, nie zapis odpowiedzi modelu. Po
 uzyskaniu klucza warto zrobić próbę na 5–10 typowych wypowiedziach w każdym zadaniu
 (PL i DE) i odnotować tu wyniki.
+
+## 15. Wiadomości i powiadomienia – szablony i wytyczne AI (NOWE w 1.4.0)
+
+- **Wytyczne korespondencji dla AI** (`src/lib/ai/commsPrompts.ts`, `COMMS_GUIDE`): sprawdzić zgodność z
+  RODO / nDSG i tajemnicą zawodową, zasady wobec rodziców małoletnich, sądu / kuratora / KESB /
+  Jugendanwaltschaft, procedury przy zagrożeniu (Niebieska Karta, zgłoszenie do KESB) – czy opis
+  „do sprawdzenia przez specjalistę” jest wystarczający; konwencje grzecznościowe PL / DE-CH / EN.
+- **Szablony** (`src/locales/{pl,en,de}/messages.json` → `templates`): przypomnienie, zmiana terminu,
+  po nieobecności (bez oceniania), rodzic, szkoła (zgoda opiekuna), skierowanie, sąd / kurator (tylko
+  zakres zapytania), superwizja (bez danych identyfikujących), zaproszenie do programu, potwierdzenie,
+  podziękowanie. W SMS celowo bez treści wrażliwych. Forma „ty / Pan(i)” w SMS do młodzieży – do decyzji.
+- **Teksty powiadomień** (`notify.json` → `line`, `remind`, `digest`) – czy „bez szczegółów” wystarczy
+  na ekranie blokady w placówce.
+- Przykład z prawdziwego Gemini (05.11.2026, Flash-Lite), odpowiedź do matki pytającej o palenie syna:
+  „Rozumiem Pani niepokój, jednak szczegóły dotyczące przebiegu naszych spotkań oraz kwestii zdrowotnych
+  mogą być omawiane wyłącznie bezpośrednio, z poszanowaniem prywatności i zaufania [Osoba A]. Zapraszam
+  Panią na rozmowę telefoniczną…”; uwagi: „Nie przekazywano przez e-mail informacji o stosowaniu
+  substancji…”.

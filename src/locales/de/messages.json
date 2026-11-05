@@ -1,0 +1,182 @@
+{
+  "title": "Nachrichten",
+  "subtitle": "E-Mails und SMS aus Vorlagen und mit KI-Hilfe – gesendet über deine eigene Mail und dein Telefon",
+  "navHint": "E-Mail, SMS, Kontakte",
+  "tabs": { "compose": "Neu", "history": "Gesendet und Entwürfe", "contacts": "Kontakte" },
+  "channel": { "email": "E-Mail", "sms": "SMS" },
+  "to": "An",
+  "toEmail": "E-Mail-Adresse",
+  "toPhone": "Telefonnummer",
+  "toName": "Name der Empfängerin / des Empfängers",
+  "fromContacts": "Aus den Kontakten",
+  "noContact": "— von Hand eingeben —",
+  "client": "Betrifft",
+  "noClient": "— niemanden —",
+  "template": "Vorlage",
+  "noTemplate": "— ohne Vorlage —",
+  "subject": "Betreff",
+  "body": "Text",
+  "smsCount": "{{chars}} Zeichen · {{segments}} SMS",
+  "smsUnicode": "(Sonderzeichen – kürzere SMS)",
+  "personal": "Dieser Text enthält keine Personendaten (z. B. Schreiben an eine Schule zu einem Programm)",
+  "personalText": "Dann arbeitet die Cloud-KI ohne Pseudonymisierung. Aus lassen, wenn es um eine bestimmte Person geht.",
+  "invalidEmail": "E-Mail-Adresse prüfen.",
+  "invalidPhone": "Telefonnummer prüfen.",
+  "send": {
+    "mailApp": "In der Mail-App öffnen",
+    "smsApp": "In der SMS-App öffnen",
+    "emailjs": "Jetzt senden (EmailJS)",
+    "copy": "Kopieren",
+    "share": "Teilen",
+    "draft": "Entwurf speichern",
+    "hint": "Du sendest die Nachricht selbst – aus deiner eigenen Mail oder deinem Telefon. Przystań hat keinen Server und sendet nichts in deinem Namen ohne deinen Klick.",
+    "long": "Der Text ist lang – manche Mail-Apps kürzen solche Nachrichten. «Kopieren» verwenden und in eine E-Mail einfügen.",
+    "sentEmailJs": "Über EmailJS gesendet",
+    "handedOff": "An die App übergeben – dort senden",
+    "copied": "Text kopiert",
+    "savedDraft": "Entwurf gespeichert",
+    "failed": "Senden fehlgeschlagen: {{msg}}"
+  },
+  "ai": {
+    "title": "KI-Hilfe",
+    "write": "Mit KI schreiben",
+    "writeHint": "Schreib, was die Nachricht enthalten soll (z. B. «an das Gespräch am Donnerstag um 10 Uhr erinnern, um Bestätigung bitten»).",
+    "instruction": "Was möchtest du mitteilen?",
+    "reply": "Auf eine E-Mail antworten",
+    "incoming": "Erhaltene E-Mail (Text einfügen)",
+    "intention": "Was möchtest du antworten? (optional)",
+    "intentionHint": "z. B. «Ich bin mit einem Gespräch einverstanden, kann aber keine Details der Beratung weitergeben»",
+    "useKnowledge": "Wissen aus der App verwenden (Wissenskarten, Hilfesystem, Recht)",
+    "useClient": "Grundangaben zur Person einbeziehen (Veränderungsphase, Ziel, Kontext – nichts Identifizierendes)",
+    "recipient": "Empfänger/in",
+    "tone": "Ton",
+    "tones": { "formal": "Förmlich", "neutral": "Neutral", "warm": "Warm" },
+    "run": "Entwurf vorbereiten",
+    "apply": "In die Nachricht übernehmen",
+    "useSms": "SMS-Version übernehmen",
+    "cautions": "Worauf achten",
+    "improve": "Entwurf verbessern",
+    "shorter": "Kürzer",
+    "formal": "Förmlicher",
+    "warmer": "Wärmer",
+    "simpler": "Einfacher",
+    "translate": "Übersetzen in…",
+    "draft": "KI-Entwurf",
+    "empty": "Zuerst einen Text oder eine Anweisung schreiben."
+  },
+  "roles": {
+    "client": "Person, mit der ich arbeite",
+    "guardian": "Elternteil / gesetzliche Vertretung",
+    "family": "Familie",
+    "school": "Schule",
+    "court": "Gericht",
+    "probation": "Bewährungsdienst / Jugendanwaltschaft",
+    "institution": "Institution (Fachstelle, Sozialdienst, KESB…)",
+    "colleague": "Kollegin / Kollege",
+    "supervisor": "Supervisor/in",
+    "other": "Andere"
+  },
+  "history": {
+    "empty": "Keine Nachrichten.",
+    "draft": "Entwurf",
+    "sent": "Gesendet",
+    "via": {
+      "mailApp": "über die Mail-App",
+      "smsApp": "über die SMS-App",
+      "emailjs": "über EmailJS",
+      "copy": "kopiert",
+      "share": "geteilt"
+    },
+    "open": "Öffnen",
+    "duplicate": "Erneut verwenden",
+    "delete": "Löschen",
+    "replyTo": "Antwort auf eine Nachricht"
+  },
+  "contacts": {
+    "add": "Neuer Kontakt",
+    "edit": "Kontakt",
+    "empty": "Keine Kontakte. Füge Adressen hinzu, an die du oft schreibst (Schule, Bewährungsdienst, Eltern).",
+    "name": "Name",
+    "role": "Rolle",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "org": "Institution / Organisation",
+    "client": "Zugehörige Person",
+    "notes": "Notizen",
+    "write": "Schreiben",
+    "saved": "Kontakt gespeichert",
+    "deleted": "Kontakt gelöscht",
+    "privacy": "Kontakte sind wie alle Daten verschlüsselt. Speichere nur, was du für die Arbeit brauchst."
+  },
+  "entry": {
+    "message": "Nachricht",
+    "reminder": "Erinnerung",
+    "reminderHint": "SMS oder E-Mail mit einer Erinnerung an dieses Gespräch",
+    "calendar": "In den Kalender",
+    "calendarAll": "Kalender-Export",
+    "emailReferral": "Per E-Mail senden",
+    "invite": "Einladung per E-Mail"
+  },
+  "placeholders": { "date": "Datum", "time": "Uhrzeit", "signature": "Signatur", "program": "Name des Programms" },
+  "templates": {
+    "meetingReminder": {
+      "title": "Erinnerung an ein Gespräch",
+      "subject": "Erinnerung: Gespräch am {{date}} um {{time}}",
+      "body": "Guten Tag{{recipientSpace}}\n\nIch erinnere Sie an unser Gespräch am {{date}} um {{time}} Uhr{{placeIn}}.\nFalls der Termin nicht passt, melden Sie sich bitte – wir finden einen anderen.\n\nFreundliche Grüsse\n{{signature}}",
+      "sms": "Guten Tag, Erinnerung an unser Gespräch am {{date}} um {{time}}{{placeIn}}. Falls es nicht klappt, bitte kurz melden. {{me}}"
+    },
+    "meetingChange": {
+      "title": "Termin verschieben",
+      "subject": "Neuer Termin für unser Gespräch",
+      "body": "Guten Tag{{recipientSpace}}\n\nLeider muss ich unser Gespräch vom {{date}} um {{time}} Uhr verschieben. Ich schlage [neuer Termin] vor. Bitte bestätigen Sie mir den Termin oder schlagen Sie einen anderen vor.\n\nEntschuldigen Sie die Änderung – freundliche Grüsse\n{{signature}}",
+      "sms": "Guten Tag, ich muss unser Gespräch vom {{date}} {{time}} verschieben. Vorschlag: [neuer Termin] – bitte bestätigen. {{me}}"
+    },
+    "missedMeeting": {
+      "title": "Nach einem verpassten Gespräch",
+      "subject": "Unser Gespräch vom {{date}}",
+      "body": "Guten Tag{{recipientSpace}}\n\nWir haben uns am {{date}} nicht gesehen – ich hoffe, es ist alles in Ordnung. Gerne vereinbare ich einen neuen Termin. Melden Sie sich, wann es Ihnen passt.\n\nFreundliche Grüsse\n{{signature}}",
+      "sms": "Guten Tag, wir haben uns am {{date}} verpasst. Ich hoffe, alles ist ok – melde/melden Sie sich, wann wir uns sehen können. {{me}}"
+    },
+    "guardianInfo": {
+      "title": "An Eltern – Einladung zur Zusammenarbeit",
+      "subject": "Einladung zu einem Gespräch",
+      "body": "Guten Tag Frau / Herr [Name]\n\nGerne lade ich Sie zu einem Gespräch darüber ein, wie wir [Name des Kindes] unterstützen können. Es geht um gemeinsame Abmachungen, nicht um Bewertungen. Ich schlage [Termin] in [Ort] vor.\n\nEinzelheiten meiner Arbeit mit [Name des Kindes] bespreche ich persönlich und unter Wahrung der Schweigepflicht.\n\nFreundliche Grüsse\n{{signature}}"
+    },
+    "schoolOpinion": {
+      "title": "An eine Schule – Bitte um Bericht",
+      "subject": "Bitte um einen kurzen Schulbericht",
+      "body": "Guten Tag\n\nFür [Zweck, z. B. die Erstellung eines Förderplans] bitte ich Sie um einen kurzen Bericht über die Schülerin / den Schüler [Initialen, Klasse]: Anwesenheit, Beziehungen zu Gleichaltrigen, Stärken, Schwierigkeiten und bisherige Unterstützung.\n\nDie Einwilligung der Eltern zum Informationsaustausch [liegt vor / ist beigelegt]. Bitte senden Sie den Bericht bis [Datum] auf dem [offiziellen] Weg.\n\nFreundliche Grüsse\n{{signature}}"
+    },
+    "referral": {
+      "title": "Zuweisung an eine Institution",
+      "subject": "Zuweisung / Bitte um einen Termin",
+      "body": "Guten Tag\n\nIch melde mich mit der Bitte um eine Abklärung / Aufnahme einer Person, mit der ich arbeite (mit ihrer Einwilligung). Die wichtigsten Angaben gebe ich telefonisch oder auf sicherem Weg weiter.\n\n[Text der Zuweisung]\n\nBitte teilen Sie mir mögliche Termine und die nötigen Unterlagen mit.\n\nFreundliche Grüsse\n{{signature}}"
+    },
+    "courtReport": {
+      "title": "An Gericht / Bewährungsdienst – Information",
+      "subject": "Information zu [Ihr Zeichen]",
+      "body": "Guten Tag Frau / Herr [Name]\n\nAuf Ihre Anfrage vom [Datum] sende ich Ihnen die Informationen im gewünschten Umfang: [Anwesenheit, Massnahmen – Fakten und Daten].\n\nEin ausführlicher Bericht erfordert die schriftliche Form – bei Bedarf erstelle ich ihn auf dem offiziellen Weg.\n\nFreundliche Grüsse\n{{signature}}"
+    },
+    "supervisionRequest": {
+      "title": "Bitte um Supervision",
+      "subject": "Anfrage für einen Supervisionstermin",
+      "body": "Guten Tag{{recipientSpace}}\n\nIch möchte gerne einen Supervisionstermin vereinbaren. Es geht um meine Arbeit mit [Person A] – [kurz, ohne identifizierende Angaben: was mir schwerfällt]. Würde Ihnen [Termin] passen?\n\nFreundliche Grüsse\n{{signature}}"
+    },
+    "preventionInvite": {
+      "title": "Einladung zu einem Präventionsprogramm",
+      "subject": "Einladung: {{program}}",
+      "body": "Guten Tag\n\nGerne lade ich Sie zum Präventionsprogramm «{{program}}» ein. Das Programm ist interaktiv, stärkt soziale Kompetenzen und folgt den Empfehlungen der evidenzbasierten Prävention. Geplante Termine: [Termine]. Für die Eltern ist [ein Informationsabend] vorgesehen.\n\nFür Fragen stehe ich gerne zur Verfügung.\n\nFreundliche Grüsse\n{{signature}}"
+    },
+    "acknowledge": {
+      "title": "Empfangsbestätigung",
+      "subject": "AW: [Betreff]",
+      "body": "Guten Tag{{recipientSpace}}\n\nBesten Dank für Ihre Nachricht – ich bestätige den Empfang. Ich melde mich bis [Datum].\n\nFreundliche Grüsse\n{{signature}}",
+      "sms": "Guten Tag, danke für die Nachricht – ich melde mich bis [Datum]. {{me}}"
+    },
+    "thanks": {
+      "title": "Dank für die Zusammenarbeit",
+      "subject": "Danke für die Zusammenarbeit",
+      "body": "Guten Tag{{recipientSpace}}\n\nHerzlichen Dank für die bisherige Zusammenarbeit und [ein konkretes Beispiel]. Das hilft unserer Arbeit sehr.\n\nHerzliche Grüsse\n{{signature}}"
+    }
+  }
+}

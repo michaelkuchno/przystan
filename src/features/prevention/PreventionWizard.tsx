@@ -19,6 +19,7 @@ import { cn } from '@/components/ui/cn';
 import type { PreventionProgram } from '@/domain/types';
 import { ProposePrevention } from '@/features/ai/ProposePrevention';
 import { PracticeCheck } from '@/features/ai/PracticeCheck';
+import { WriteButton } from '@/features/messages/entry';
 
 const STEPS = ['needs', 'target', 'factors', 'goals', 'strategies', 'schedule', 'evaluation'] as const;
 type StepId = (typeof STEPS)[number];
@@ -407,7 +408,9 @@ function Wizard({ program }: { program: PreventionProgram }) {
           </div>
           <div className="mb-4 space-y-3">
             <ProposePrevention program={draft} onApply={(patch) => update(patch)} />
-            <PracticeCheck text={[draft.needs, draft.generalGoal, ...draft.specificGoals, ...draft.schedule.map((x) => x.activity)].join('\n')} />
+            <PracticeCheck
+              text={[draft.needs, draft.generalGoal, ...draft.specificGoals, ...draft.schedule.map((x) => x.activity)].join('\n')}
+            />
           </div>
           <AnimatePresence mode="wait">
             <motion.div
@@ -484,7 +487,19 @@ export default function PreventionWizard() {
   const program = useStore(() => get('prevention', id));
   return (
     <Page wide>
-      <PageHeader back="/prevention" eyebrow={t('wizard')} title={program?.title || t('untitled')} />
+      <PageHeader
+        back="/prevention"
+        eyebrow={t('wizard')}
+        title={program?.title || t('untitled')}
+        actions={
+          program && (
+            <WriteButton
+              to={`/messages/new?channel=email&template=preventionInvite&program=${encodeURIComponent(program.title || '')}`}
+              label={t('messages:entry.invite')}
+            />
+          )
+        }
+      />
       {program ? <Wizard key={program.id} program={program} /> : <EmptyState title={t('notFound')} />}
     </Page>
   );

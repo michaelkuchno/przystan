@@ -81,7 +81,8 @@
     "privacy": "Datenschutz",
     "about": "Über die App",
     "practice": "Praktikumsjournal",
-    "notes": "Notizbuch"
+    "notes": "Notizbuch",
+    "messages": "Nachrichten"
   },
   "navHint": {
     "screening": "AUDIT, AUDIT-C, DUDIT",
@@ -98,6 +99,7 @@
     "privacy": "Wo die Daten liegen",
     "about": "Version & Hinweise",
     "practice": "Stunden, Einträge, PDF für Praxisanleitung",
-    "notes": "Notizen und Supervision"
+    "notes": "Notizen und Supervision",
+    "messages": "E-Mail, SMS, Kontakte"
   }
 }

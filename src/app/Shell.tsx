@@ -24,6 +24,7 @@ import {
   Settings as SettingsIcon,
   NotebookText,
   NotebookPen,
+  Mail,
 } from 'lucide-react';
 import { cn } from '@/components/ui/cn';
 import { IconButton, Badge } from '@/components/ui/core';
@@ -51,6 +52,7 @@ export const SECONDARY_NAV = [
   { to: '/learn', key: 'learn', icon: GraduationCap },
   { to: '/notes', key: 'notes', icon: NotebookText },
   { to: '/practice', key: 'practice', icon: NotebookPen },
+  { to: '/messages', key: 'messages', icon: Mail },
   { to: '/settings', key: 'settings', icon: SettingsIcon },
 ] as const;
 

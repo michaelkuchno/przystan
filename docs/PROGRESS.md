@@ -1,6 +1,6 @@
 # Postęp prac
 
-Stan: **wersja 1.3.1** – opcjonalny asystent AI (D-051…D-059, `docs/AI.md`); 1.3.1: klucze `AQ.…`, Flash-Lite domyślnie, przełączanie modeli przy limicie / przeciążeniu, limit czasu 90 s. Etapy 1–15 (1.0), punkty 0–9 (1.1),
+Stan: **wersja 1.4.0** – powiadomienia, wiadomości e-mail / SMS z AI (D-060…D-064, `docs/NOTIFICATIONS.md`); 1.3: asystent AI (D-051…D-059, `docs/AI.md`).
 historia z audytem (1.2) i asystent AI (1.3) zakończone.
 
 | Etap | Zakres | Status |
@@ -62,14 +62,28 @@ historia z audytem (1.2) i asystent AI (1.3) zakończone.
 | 7 | Kreatory: propozycja scenariusza zajęć i programu profilaktycznego + kontrola dobrych praktyk; materiały prostym językiem / dla młodzieży / tłumaczenie (plan nawrotów, karty narzędzi); pytania do superwizji | ✅ |
 | 8 | Testy, leniwe ładowanie (kod modeli poza prekeszem PWA), dokumentacja, wersja 1.3.0 | ✅ |
 
-## Jakość (ostatni przebieg, wersja 1.3.1)
+## Wersja 1.4 – powiadomienia i wiadomości (D-060…D-064, docs/NOTIFICATIONS.md)
+
+| Punkt | Zakres | Status |
+|---|---|---|
+| 1 | Silnik przypomnień: spotkania (N min przed, wieczór wcześniej), zadania (też z superwizji), przegląd IPR, ważne daty, „Do zwrócenia uwagi”, kopia; podsumowanie dnia; prywatność treści | ✅ |
+| 2 | Kanały: powiadomienia systemowe (Android zaplanowane, PWA przy otwarciu), kalendarz .ics z alarmami, e-mail do siebie przez własne EmailJS | ✅ |
+| 3 | Wiadomości: e-mail / SMS, 11 szablonów PL/EN/DE, kontakty, historia, szkice, przekazanie do aplikacji poczty / SMS, EmailJS, kopiuj, udostępnij | ✅ |
+| 4 | AI: napisz, odpowiedz na e-mail (wytyczne korespondencji, wiedza z aplikacji, podsumowanie osoby), popraw; pseudonimizacja i zgoda, podpis lokalnie | ✅ |
+| 5 | Wejścia: spotkanie, lista spotkań, profil osoby, kreator skierowania, program profilaktyczny, pulpit „Na dziś”, Ustawienia, Więcej | ✅ |
+| 6 | Android: plugin powiadomień, ikona, dokładne godziny; CSP + EmailJS; audyt; testy; wersja 1.4.0 | ✅ |
+
+## Jakość (ostatni przebieg, wersja 1.4.0)
 
 - `npm run lint` – 0 błędów, 0 ostrzeżeń; `npm run typecheck` – 0 błędów
-- `npm test` – **236 testów jednostkowych** ✅ (+43 w 1.3: parser odpowiedzi modelu i walidacja JSON przy błędnym
+- `npm test` – **250 testów jednostkowych** ✅ (1.4: +14 – terminy i przypomnienia, podsumowanie bez szczegółów,
+  .ics RFC 5545, mailto / sms, szablony, EmailJS, walidacja szkiców AI i wytyczne korespondencji; 1.3: +43 – parser odpowiedzi modelu i walidacja JSON przy błędnym
   formacie, pseudonimizacja PL/DE z przywracaniem, strażnik prywatności i jednorazowe zgody, Gemini – nagłówek klucza,
   structured output, 429 z RetryInfo, błędy, SSE; brak ruchu sieciowego w trybie Wyłączony, zaszyfrowany klucz i indeks,
   wyszukiwanie semantyczne, kontrola dobrych praktyk, statystyki symulatora, sygnały kryzysu, zabezpieczenia Whispera)
-- `npx playwright test` – **44 testy E2E** ✅ (+11 w 1.3 z fałszywym providerem: zero żądań sieciowych przy wyłączonej AI,
+- `npx playwright test` – **49 testów E2E** ✅ (1.4: +5 – przypomnienie SMS ze spotkania, kontakty i e-mail z szablonu
+  z wpisem w dzienniku, odpowiedź AI na e-mail z pseudonimizacją, powiadomienia + karta „Na dziś” + eksport .ics,
+  a11y i przewijanie nowych ekranów; 1.3: +11 z fałszywym providerem: zero żądań sieciowych przy wyłączonej AI,
   ustawienia i zgoda na pobranie modelu, symulator „na żywo”, tryb lokalny bez czatu, wyjaśnienia / fiszki / egzamin,
   „Zapytaj”, dane osób tylko lokalnie i podgląd pseudonimizacji + wpis w dzienniku, dyktowanie i pytania do superwizji
   z numerami kryzysowymi, propozycja zajęć z kontrolą dobrych praktyk, tryb prezentacji, a11y i przewijanie ekranów AI;
@@ -79,6 +93,7 @@ historia z audytem (1.2) i asystent AI (1.3) zakończone.
 - `GEMINI_KEY=… npx vitest run src/lib/ai/gemini.real.test.ts` (ręcznie, prawdziwy darmowy klucz `AQ.…`) – 5/5 ✅:
   wszystkie zadania AI (symulator, fiszki, ocena, „Zapytaj” z „nie wiem”, DAP, superwizja, zajęcia, program w DE,
   wyjaśnienie strumieniowe, tłumaczenie z zachowaniem numerów) na `gemini-3.5-flash-lite`
+- Lighthouse 1.4.0: Performance 89–90, Accessibility / Best Practices / SEO 100 (ten sam zakres co 1.2–1.3).
 - Lighthouse (mobile, lokalnie, 3 przebiegi): 1.3.0 – Performance 90–92, Accessibility 100, Best Practices 100, SEO 100;
   ten sam rozkład co 1.2.0 na tej samej maszynie (start ładuje te same pliki, +0,25 kB gzip). Teksty AI i kod modeli
   ładują się dopiero po odblokowaniu / użyciu.

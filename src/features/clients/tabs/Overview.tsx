@@ -85,7 +85,9 @@ export function Overview({ client }: { client: Client }) {
                 .map((k) => (
                   <li key={k.id} className="flex flex-wrap justify-between gap-x-3">
                     <span>{k.label}</span>
-                    <span className={cn('shrink-0 whitespace-nowrap', k.date >= today ? 'font-medium' : 'text-muted')}>{fmtDate(k.date)}</span>
+                    <span className={cn('shrink-0 whitespace-nowrap', k.date >= today ? 'font-medium' : 'text-muted')}>
+                      {fmtDate(k.date)}
+                    </span>
                   </li>
                 ))}
             </ul>

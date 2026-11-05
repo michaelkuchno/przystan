@@ -8,8 +8,10 @@ import { Skeleton } from '@/components/ui/core';
 import { Shell } from './Shell';
 import { Dashboard } from '@/features/dashboard/Dashboard';
 import Crisis from '@/features/settings/Crisis';
-import i18n, { ensureLazyNamespaces } from '@/i18n';
+import { ensureLazyNamespaces, lazyReady } from '@/i18n';
 import { usePrefs } from '@/lib/prefs';
+import { subscribe } from '@/lib/store';
+import { useTranslation } from 'react-i18next';
 
 const ClientsList = lazy(() => import('@/features/clients/ClientsList'));
 const ClientForm = lazy(() => import('@/features/clients/ClientForm'));
@@ -48,6 +50,8 @@ const AuditLog = lazy(() => import('@/features/audit/AuditLog'));
 const Trash = lazy(() => import('@/features/audit/Trash'));
 const AiSettings = lazy(() => import('@/features/ai/AiSettings'));
 const AiInfo = lazy(() => import('@/features/ai/AiInfo'));
+const Messages = lazy(() => import('@/features/messages/Messages'));
+const NotifySettings = lazy(() => import('@/features/notify/NotifySettings'));
 const Ask = lazy(() => import('@/features/ai/Ask'));
 const SimulatorLive = lazy(() => import('@/features/simulator/SimulatorLive'));
 const GenerateCards = lazy(() => import('@/features/learn/GenerateCards'));
@@ -66,7 +70,7 @@ function PageFallback() {
 /** UI strings loaded after unlocking (AI assistant) – kept out of the start-up bundle. */
 function RequireLazyStrings({ children }: { children: ReactNode }) {
   const { lang } = usePrefs();
-  const [ready, setReady] = useState(() => i18n.hasResourceBundle(lang, 'ai'));
+  const [ready, setReady] = useState(() => lazyReady(lang));
   useEffect(() => {
     let alive = true;
     void ensureLazyNamespaces(lang).then(() => alive && setReady(true));
@@ -75,6 +79,32 @@ function RequireLazyStrings({ children }: { children: ReactNode }) {
     };
   }, [lang]);
   return ready ? <>{children}</> : <PageFallback />;
+}
+
+/**
+ * Notifications (docs/NOTIFICATIONS.md): re-plans reminders after unlocking and – debounced – after
+ * every data change; sends the daily summary when due. Loaded lazily, does nothing when turned off.
+ */
+function NotificationRunner() {
+  const { t } = useTranslation();
+  const enabled = usePrefs().notify.enabled;
+  useEffect(() => {
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const run = () => {
+      clearTimeout(timer);
+      timer = setTimeout(
+        () => void import('@/lib/notify/engine').then((m) => m.runNotifications(t)).catch(() => undefined),
+        1500,
+      );
+    };
+    run();
+    const unsub = enabled ? subscribe(run) : () => undefined;
+    return () => {
+      clearTimeout(timer);
+      unsub();
+    };
+  }, [enabled, t]);
+  return null;
 }
 
 /** Everything after unlocking – loaded as a separate chunk. */
@@ -86,6 +116,7 @@ export default function AuthedApp({ overlay }: { overlay?: ReactNode }) {
           <Shell>
             <RequireContent fallback={<PageFallback />}>
               <RequireLazyStrings>
+                <NotificationRunner />
                 <Suspense fallback={<PageFallback />}>
                   <Routes>
                     <Route path="/" element={<Dashboard />} />
@@ -125,6 +156,8 @@ export default function AuthedApp({ overlay }: { overlay?: ReactNode }) {
                     <Route path="/learn/deck/:id" element={<DeckEditor />} />
                     <Route path="/settings" element={<Settings />} />
                     <Route path="/settings/ai" element={<AiSettings />} />
+                    <Route path="/settings/notify" element={<NotifySettings />} />
+                    <Route path="/messages/:tab?" element={<Messages />} />
                     <Route path="/ai/info" element={<AiInfo />} />
                     <Route path="/ask" element={<Ask />} />
                     <Route path="/audit" element={<AuditLog />} />

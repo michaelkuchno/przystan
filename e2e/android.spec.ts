@@ -68,6 +68,9 @@ const ROUTES = [
   '#/learn/generate',
   '#/learn/exam-open',
   '#/simulator/mow-cannabis/live',
+  '#/messages',
+  '#/messages/contacts',
+  '#/settings/notify',
 ];
 
 test.beforeEach(async ({ page }, info) => {

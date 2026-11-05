@@ -1,0 +1,198 @@
+{
+  "title": "Wiadomości",
+  "subtitle": "E-maile i SMS-y z szablonów i z pomocą AI – wysyłane przez Twoją pocztę i telefon",
+  "navHint": "E-mail, SMS, kontakty",
+  "tabs": {
+    "compose": "Nowa",
+    "history": "Wysłane i szkice",
+    "contacts": "Kontakty"
+  },
+  "channel": {
+    "email": "E-mail",
+    "sms": "SMS"
+  },
+  "to": "Do",
+  "toEmail": "Adres e-mail",
+  "toPhone": "Numer telefonu",
+  "toName": "Imię / nazwa adresata",
+  "fromContacts": "Z kontaktów",
+  "noContact": "— wpisz ręcznie —",
+  "client": "Dotyczy osoby",
+  "noClient": "— nie dotyczy —",
+  "template": "Szablon",
+  "noTemplate": "— bez szablonu —",
+  "subject": "Temat",
+  "body": "Treść",
+  "smsCount": "{{chars}} znaków · {{segments}} SMS",
+  "smsUnicode": "(polskie znaki – krótsze SMS-y)",
+  "personal": "Ten tekst nie zawiera danych osób (np. pismo do szkoły o programie)",
+  "personalText": "Wtedy AI w chmurze działa bez pseudonimizacji. Zostaw wyłączone, jeśli wiadomość dotyczy konkretnej osoby.",
+  "invalidEmail": "Sprawdź adres e-mail.",
+  "invalidPhone": "Sprawdź numer telefonu.",
+  "send": {
+    "mailApp": "Otwórz w aplikacji poczty",
+    "smsApp": "Otwórz w aplikacji SMS",
+    "emailjs": "Wyślij teraz (EmailJS)",
+    "copy": "Kopiuj",
+    "share": "Udostępnij",
+    "draft": "Zapisz szkic",
+    "hint": "Wiadomość wysyłasz sam(a) – z własnej poczty lub telefonu. Przystań nie ma serwera i niczego nie wysyła w Twoim imieniu bez Twojego kliknięcia.",
+    "long": "Treść jest długa – niektóre aplikacje poczty obcinają takie wiadomości. Użyj „Kopiuj” i wklej treść w e-mailu.",
+    "sentEmailJs": "Wysłano przez EmailJS",
+    "handedOff": "Przekazano do aplikacji – wyślij tam wiadomość",
+    "copied": "Skopiowano treść",
+    "savedDraft": "Zapisano szkic",
+    "failed": "Nie udało się wysłać: {{msg}}"
+  },
+  "ai": {
+    "title": "Pomoc AI",
+    "write": "Napisz z AI",
+    "writeHint": "Napisz, co ma zawierać wiadomość (np. „przypomnij o spotkaniu w czwartek o 10, poproś o potwierdzenie”).",
+    "instruction": "Co chcesz przekazać?",
+    "reply": "Odpowiedz na e-mail",
+    "incoming": "Otrzymany e-mail (wklej treść)",
+    "intention": "Co chcesz odpowiedzieć? (opcjonalnie)",
+    "intentionHint": "np. „zgadzam się na spotkanie, ale nie mogę przekazać szczegółów terapii”",
+    "useKnowledge": "Użyj wiedzy z aplikacji (karty wiedzy, system pomocy, prawo)",
+    "useClient": "Uwzględnij podstawowe informacje o osobie (etap zmiany, cel, kontekst – bez danych identyfikujących)",
+    "recipient": "Adresat",
+    "tone": "Ton",
+    "tones": {
+      "formal": "Formalny",
+      "neutral": "Neutralny",
+      "warm": "Ciepły"
+    },
+    "run": "Przygotuj szkic",
+    "apply": "Wstaw do wiadomości",
+    "useSms": "Wstaw wersję SMS",
+    "cautions": "Na co uważać",
+    "improve": "Popraw szkic",
+    "shorter": "Krócej",
+    "formal": "Bardziej formalnie",
+    "warmer": "Cieplej",
+    "simpler": "Prościej",
+    "translate": "Przetłumacz na…",
+    "draft": "Szkic AI",
+    "empty": "Najpierw wpisz treść albo instrukcję."
+  },
+  "roles": {
+    "client": "Osoba, z którą pracuję",
+    "guardian": "Rodzic / opiekun prawny",
+    "family": "Rodzina",
+    "school": "Szkoła",
+    "court": "Sąd",
+    "probation": "Kurator / służba probacji",
+    "institution": "Instytucja (poradnia, ośrodek, MOPS…)",
+    "colleague": "Współpracownik",
+    "supervisor": "Superwizor",
+    "other": "Inny"
+  },
+  "history": {
+    "empty": "Brak wiadomości.",
+    "draft": "Szkic",
+    "sent": "Wysłano",
+    "via": {
+      "mailApp": "przez aplikację poczty",
+      "smsApp": "przez aplikację SMS",
+      "emailjs": "przez EmailJS",
+      "copy": "skopiowano",
+      "share": "udostępniono"
+    },
+    "open": "Otwórz",
+    "duplicate": "Użyj ponownie",
+    "delete": "Usuń",
+    "replyTo": "Odpowiedź na wiadomość"
+  },
+  "contacts": {
+    "add": "Nowy kontakt",
+    "edit": "Kontakt",
+    "empty": "Brak kontaktów. Dodaj adresy, pod które często piszesz (szkoła, kurator, rodzic).",
+    "name": "Imię i nazwisko / nazwa",
+    "role": "Rola",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "org": "Instytucja / organizacja",
+    "client": "Powiązana osoba",
+    "notes": "Uwagi",
+    "write": "Napisz",
+    "saved": "Zapisano kontakt",
+    "deleted": "Usunięto kontakt",
+    "privacy": "Kontakty są zaszyfrowane jak wszystkie dane. Zapisuj tylko to, czego potrzebujesz do pracy."
+  },
+  "entry": {
+    "message": "Wiadomość",
+    "reminder": "Przypomnienie",
+    "reminderHint": "SMS lub e-mail z przypomnieniem o tym spotkaniu",
+    "calendar": "Do kalendarza",
+    "calendarAll": "Eksport do kalendarza",
+    "emailReferral": "Wyślij e-mailem",
+    "invite": "Zaproszenie e-mail"
+  },
+  "templates": {
+    "meetingReminder": {
+      "title": "Przypomnienie o spotkaniu",
+      "subject": "Przypomnienie: spotkanie {{date}} o {{time}}",
+      "body": "Dzień dobry{{recipientComma}}\n\nprzypominam o naszym spotkaniu {{date}} o godz. {{time}}{{placeIn}}.\nJeśli termin nie pasuje, proszę o informację – ustalimy inny.\n\nPozdrawiam\n{{signature}}",
+      "sms": "Dzień dobry, przypominam o spotkaniu {{date}} o {{time}}{{placeIn}}. Jeśli nie możesz/nie może Pan(i) przyjść, daj/proszę dać znać. {{me}}"
+    },
+    "meetingChange": {
+      "title": "Zmiana terminu spotkania",
+      "subject": "Zmiana terminu spotkania",
+      "body": "Dzień dobry{{recipientComma}}\n\nniestety muszę zmienić termin naszego spotkania zaplanowanego na {{date}}, godz. {{time}}. Proponuję [nowy termin]. Proszę o potwierdzenie albo inną propozycję.\n\nPrzepraszam za zmianę i pozdrawiam\n{{signature}}",
+      "sms": "Dzień dobry, muszę przełożyć spotkanie z {{date}} {{time}}. Proponuję [nowy termin] – proszę o potwierdzenie. {{me}}"
+    },
+    "missedMeeting": {
+      "title": "Po nieobecności na spotkaniu",
+      "subject": "Nasze spotkanie {{date}}",
+      "body": "Dzień dobry{{recipientComma}}\n\nnie widzieliśmy się {{date}} – mam nadzieję, że wszystko w porządku. Chętnie umówię nowy termin. Proszę o kontakt, kiedy będzie Pani/Panu wygodnie.\n\nPozdrawiam\n{{signature}}",
+      "sms": "Dzień dobry, nie widzieliśmy się {{date}}. Mam nadzieję, że wszystko OK – daj/proszę dać znać, kiedy możemy się spotkać. {{me}}"
+    },
+    "guardianInfo": {
+      "title": "Do rodzica / opiekuna – zaproszenie do współpracy",
+      "subject": "Zaproszenie na rozmowę",
+      "body": "Szanowna Pani / Szanowny Panie{{recipientComma}}\n\nzwracam się z zaproszeniem na rozmowę o wspieraniu [imię dziecka]. Spotkanie służy wspólnemu ustaleniu, jak możemy pomóc – nie ocenianiu. Proponuję [termin] w [miejsce].\n\nSzczegóły pracy z [imię dziecka] omówię osobiście, z poszanowaniem zasady poufności.\n\nZ poważaniem\n{{signature}}"
+    },
+    "schoolOpinion": {
+      "title": "Do szkoły – prośba o opinię",
+      "subject": "Prośba o opinię o uczniu/uczennicy",
+      "body": "Szanowni Państwo,\n\nw związku z [cel, np. przygotowaniem diagnozy pedagogicznej / planu wsparcia] uprzejmie proszę o opinię o funkcjonowaniu ucznia/uczennicy [inicjały, klasa] w szkole: frekwencja, relacje z rówieśnikami, mocne strony, trudności oraz dotychczasowe formy pomocy.\n\nZgodę rodzica/opiekuna na wymianę informacji [posiadam / załączam]. Opinię proszę przesłać do [termin] drogą [służbową / pisemną].\n\nZ poważaniem\n{{signature}}"
+    },
+    "referral": {
+      "title": "Skierowanie do instytucji",
+      "subject": "Skierowanie / prośba o przyjęcie",
+      "body": "Szanowni Państwo,\n\nzwracam się z prośbą o konsultację / przyjęcie osoby, z którą pracuję (za jej zgodą). Najważniejsze informacje przekażę telefonicznie lub w bezpiecznej formie.\n\n[treść skierowania]\n\nProszę o informację o możliwym terminie i wymaganych dokumentach.\n\nZ poważaniem\n{{signature}}"
+    },
+    "courtReport": {
+      "title": "Do sądu / kuratora – przekazanie informacji",
+      "subject": "Informacja w sprawie [sygn. akt]",
+      "body": "Szanowna Pani / Szanowny Panie,\n\nw odpowiedzi na prośbę z dnia [data] przekazuję informację w zakresie, o który Państwo prosili: [frekwencja na spotkaniach, realizowane działania – fakty i daty].\n\nObszerniejsza opinia wymaga formy pisemnej – w razie potrzeby przygotuję ją w trybie służbowym.\n\nZ poważaniem\n{{signature}}"
+    },
+    "supervisionRequest": {
+      "title": "Prośba o superwizję",
+      "subject": "Prośba o termin superwizji",
+      "body": "Dzień dobry{{recipientComma}}\n\nchciał(a)bym umówić superwizję. Chodzi o pracę z [Osoba A] – [krótko, bez danych identyfikujących: z czym mam trudność]. Czy pasowałby [termin]?\n\nPozdrawiam\n{{signature}}"
+    },
+    "preventionInvite": {
+      "title": "Zaproszenie do programu profilaktycznego",
+      "subject": "Zaproszenie: {{program}}",
+      "body": "Szanowni Państwo,\n\nzapraszam do udziału w programie profilaktycznym „{{program}}”. Program jest interaktywny, rozwija umiejętności społeczne i opiera się na zaleceniach profilaktyki opartej na dowodach. Planowane terminy: [terminy]. Dla rodziców przewidujemy [spotkanie informacyjne].\n\nChętnie odpowiem na pytania.\n\nZ poważaniem\n{{signature}}"
+    },
+    "acknowledge": {
+      "title": "Potwierdzenie otrzymania",
+      "subject": "Re: [temat]",
+      "body": "Dzień dobry{{recipientComma}}\n\ndziękuję za wiadomość – potwierdzam jej otrzymanie. Odpowiem do [termin].\n\nPozdrawiam\n{{signature}}",
+      "sms": "Dzień dobry, dziękuję za wiadomość – odezwę się do [termin]. {{me}}"
+    },
+    "thanks": {
+      "title": "Podziękowanie za współpracę",
+      "subject": "Dziękuję za współpracę",
+      "body": "Dzień dobry{{recipientComma}}\n\ndziękuję za dotychczasową współpracę i [konkretny przykład]. To realnie pomaga w naszej pracy.\n\nPozdrawiam serdecznie\n{{signature}}"
+    }
+  },
+  "placeholders": {
+    "date": "data",
+    "time": "godzina",
+    "signature": "podpis",
+    "program": "nazwa programu"
+  }
+}

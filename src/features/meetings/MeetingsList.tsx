@@ -8,6 +8,7 @@ import { useStore, all, get } from '@/lib/store';
 import { fmtDate, fmtTime } from '@/lib/format';
 import { todayIso } from '@/lib/platform';
 import type { Meeting } from '@/domain/types';
+import { CalendarExportButton } from '@/features/messages/entry';
 
 const STATUS_TONE = { planned: 'primary', done: 'ok', missed: 'warn', cancelled: 'neutral' } as const;
 
@@ -63,6 +64,7 @@ export default function MeetingsList() {
         subtitle={t('subtitle')}
         actions={
           <>
+            <CalendarExportButton />
             <ButtonLink to="/recipes" variant="secondary" icon={<ChefHat className="size-4" />}>
               {t('recipes')}
             </ButtonLink>

@@ -262,3 +262,29 @@ export function validateQuestions(v: unknown): string[] {
   if (!q.length) throw new Error('empty');
   return q;
 }
+
+/* --------------------------------------------------------- e-mail / SMS */
+
+export interface DraftMessage {
+  subject: string;
+  body: string;
+  sms: string;
+  cautions: string[];
+}
+
+export const messageSchema = S('message', {
+  subject: T,
+  body: T,
+  sms: T,
+  cautions: LIST,
+});
+
+export function validateMessage(v: unknown): DraftMessage {
+  const o = obj(v);
+  return {
+    subject: optStr(o.subject, 200),
+    body: str(o.body, 'body', 8000),
+    sms: optStr(o.sms, 480),
+    cautions: strList(o.cautions, 6),
+  };
+}

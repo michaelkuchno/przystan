@@ -81,7 +81,8 @@
     "privacy": "Privacy",
     "about": "About",
     "practice": "Placement log",
-    "notes": "Notebook"
+    "notes": "Notebook",
+    "messages": "Messages"
   },
   "navHint": {
     "screening": "AUDIT, AUDIT-C, DUDIT",
@@ -98,6 +99,7 @@
     "privacy": "Where data lives",
     "about": "Version & disclaimers",
     "practice": "Hours, entries, PDF for supervisor",
-    "notes": "Notes and supervision"
+    "notes": "Notes and supervision",
+    "messages": "E-mail, SMS, contacts"
   }
 }

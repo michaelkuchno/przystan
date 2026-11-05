@@ -1,6 +1,6 @@
 # HANDOVER – stan projektu i co zostało do zrobienia ręcznie
 
-Wersja **1.3.0**. Repozytorium: https://github.com/michaelkuchno/przystan (konto `michaelkuchno`).
+Wersja **1.4.0**. Repozytorium: https://github.com/michaelkuchno/przystan (konto `michaelkuchno`).
 
 | Co | Gdzie |
 |---|---|
@@ -59,9 +59,22 @@ Wersja **1.3.0**. Repozytorium: https://github.com/michaelkuchno/przystan (konto
       wpis w dzienniku audytu.
 - [ ] „Usuń wszystkie modele” zwalnia miejsce (Ustawienia telefonu → pamięć aplikacji / Safari).
 
+**Wersja 1.4 – powiadomienia i wiadomości:**
+- [ ] Android: Ustawienia → Powiadomienia i wiadomości → włącz → zgoda systemu; „Pokaż próbne
+      powiadomienie”; zaplanuj spotkanie za 70 min z przypomnieniem 60 min → powiadomienie przy
+      **zamkniętej** aplikacji; „Dokładne godziny” → ustawienia Androida.
+- [ ] iPhone: „Eksportuj terminy do kalendarza” → plik otwiera się w Kalendarzu („Dodaj wszystkie”),
+      alarmy są widoczne; ponowny eksport po zmianie terminu aktualizuje wpis.
+- [ ] Spotkanie → „Przypomnienie” → SMS: aplikacja SMS otwiera się z numerem i treścią (iPhone i Samsung).
+- [ ] Wiadomości → e-mail z szablonu → „Otwórz w aplikacji poczty”: Gmail / Mail / Outlook mają temat,
+      treść z polskimi znakami i podziałem linii.
+- [ ] EmailJS: konfiguracja wg docs/NOTIFICATIONS.md → „Wyślij próbny e-mail do siebie” (PWA i APK –
+      w APK sprawdzić, czy EmailJS nie zwraca 403; wtedy w EmailJS Account → Security zezwolić na API).
+- [ ] Podsumowanie dnia po godzinie z ustawień: powiadomienie + e-mail (raz dziennie).
+
 ## 2. Weryfikacja treści
 
-Lista: [`docs/CONTENT_REVIEW.md`](CONTENT_REVIEW.md) – w szczególności sekcja 14 (prompty systemowe
+Lista: [`docs/CONTENT_REVIEW.md`](CONTENT_REVIEW.md) – w szczególności sekcja 15 (wytyczne AI do korespondencji i szablony e-mail / SMS), sekcja 14 (prompty systemowe
 asystenta AI i przykładowe odpowiedzi), sekcja 12
 (szwajcarski system pomocy kantonu Berno, podstawy prawne ze stanem na 2026-11, numery 143 / 147 /
 144 / 117 / 112, przypadki i scenariusze z Berna) oraz sekcja 13 (sporne terminy w tłumaczeniu

@@ -60,6 +60,12 @@
     "ai": {
       "settings": "Zmieniono ustawienia asystenta AI",
       "cloudSend": "Wysłano tekst do chmury AI (po zgodzie)"
+    },
+    "message": {
+      "send": "Wysłano / przekazano wiadomość"
+    },
+    "notify": {
+      "settings": "Zmieniono ustawienia powiadomień i wiadomości"
     }
   },
   "detail": {
@@ -75,7 +81,8 @@
     "file": "plik {{file}}",
     "backupFrom": "kopia z {{date}}, rekordów: {{records}}",
     "integrity": "wynik: {{result}}",
-    "cloudSend": "zadanie {{task}}, {{chars}} znaków, zamieniono {{replaced}}"
+    "cloudSend": "zadanie {{task}}, {{chars}} znaków, zamieniono {{replaced}}",
+    "messageSend": "{{channel}} przez {{via}}"
   },
   "kinds": {
     "client": "{{Client}}",
@@ -95,7 +102,9 @@
     "cardState": "Postęp fiszek",
     "simRun": "Rozmowa w symulatorze",
     "practice": "Wpis w dzienniczku praktyk",
-    "note": "Notatka"
+    "note": "Notatka",
+    "contact": "Kontakt",
+    "message": "Wiadomość"
   },
   "history": {
     "title": "Historia zmian",

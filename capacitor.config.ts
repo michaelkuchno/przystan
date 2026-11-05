@@ -17,6 +17,11 @@ const config: CapacitorConfig = {
       initialViewportFitValueHint: 'cover',
       style: 'DEFAULT',
     },
+    // Reminders (docs/NOTIFICATIONS.md): monochrome status-bar icon, brand colour
+    LocalNotifications: {
+      smallIcon: 'ic_stat_przystan',
+      iconColor: '#4f6f5c',
+    },
   },
 };
 

@@ -12,6 +12,7 @@ import { exportPerson } from '@/lib/history';
 import { exportFile, todayIso, slug } from '@/lib/platform';
 import { Overview } from './tabs/Overview';
 import { clientReportPdf } from '@/lib/reports';
+import { WriteButton } from '@/features/messages/entry';
 
 const DiagnosisTab = lazy(() => import('./tabs/DiagnosisTab'));
 const IprTab = lazy(() => import('./tabs/IprTab'));
@@ -99,6 +100,7 @@ export default function ClientDetail() {
             >
               {t('newMeeting')}
             </ButtonLink>
+            <WriteButton to={`/messages/new?client=${client.id}`} />
             <Button
               variant="secondary"
               size="sm"

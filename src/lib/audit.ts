@@ -46,7 +46,9 @@ export type AuditAction =
   | 'audit.export'
   | 'audit.verify'
   | 'ai.settings'
-  | 'ai.cloudSend';
+  | 'ai.cloudSend'
+  | 'message.send'
+  | 'notify.settings';
 
 export interface AuditInput {
   action: AuditAction;

@@ -471,6 +471,74 @@ export interface Note {
   updatedAt: string;
 }
 
+
+/* ------------------------------------------------------ messages & contacts */
+
+export type ContactRole =
+  | 'client'
+  | 'guardian'
+  | 'family'
+  | 'school'
+  | 'court'
+  | 'probation'
+  | 'institution'
+  | 'colleague'
+  | 'supervisor'
+  | 'other';
+export const CONTACT_ROLES: ContactRole[] = [
+  'client',
+  'guardian',
+  'family',
+  'school',
+  'court',
+  'probation',
+  'institution',
+  'colleague',
+  'supervisor',
+  'other',
+];
+
+/** Address book entry (encrypted like every record). */
+export interface Contact {
+  id: string;
+  name: string;
+  role: ContactRole;
+  email: string;
+  phone: string;
+  /** Organisation / institution (school, court, centre…). */
+  org: string;
+  /** The person this contact belongs to (e.g. the guardian of a client). */
+  clientId?: string;
+  notes: string;
+  updatedAt: string;
+}
+
+export type MessageChannel = 'email' | 'sms';
+/** How a message left the app: own mail/SMS app, EmailJS, clipboard or the share sheet. */
+export type MessageVia = 'mailApp' | 'smsApp' | 'emailjs' | 'copy' | 'share';
+
+/** E-mail or SMS written in Przystań (draft or handed over for sending). */
+export interface Message {
+  id: string;
+  channel: MessageChannel;
+  /** Recipient address / phone number (free text when not from the address book). */
+  to: string;
+  toName: string;
+  contactId?: string;
+  clientId?: string;
+  meetingId?: string;
+  subject: string;
+  body: string;
+  /** Incoming e-mail this message answers (kept with the reply for documentation). */
+  replyTo?: string;
+  templateId?: string;
+  status: 'draft' | 'sent';
+  via?: MessageVia;
+  sentAt?: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
 /** Map of every record kind to its type. */
 export interface RecordMap {
   client: Client;
@@ -491,6 +559,8 @@ export interface RecordMap {
   simRun: SimulatorRun;
   practice: PracticeEntry;
   note: Note;
+  contact: Contact;
+  message: Message;
 }
 
 export type RecordKind = keyof RecordMap;
@@ -513,4 +583,6 @@ export const RECORD_KINDS: RecordKind[] = [
   'simRun',
   'practice',
   'note',
+  'contact',
+  'message',
 ];

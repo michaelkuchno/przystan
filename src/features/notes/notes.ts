@@ -2,12 +2,7 @@ import type { Note, NoteTask } from '@/domain/types';
 
 /** Lower case without diacritics (incl. Polish ł and German ß, which NFD does not decompose). */
 export const norm = (s: string) =>
-  s
-    .toLocaleLowerCase()
-    .normalize('NFD')
-    .replace(/\p{M}/gu, '')
-    .replace(/ł/g, 'l')
-    .replace(/ß/g, 'ss');
+  s.toLocaleLowerCase().normalize('NFD').replace(/\p{M}/gu, '').replace(/ł/g, 'l').replace(/ß/g, 'ss');
 
 /** Parses "tag1, #tag2  tag3" → unique, trimmed tags without "#". */
 export function parseTags(input: string): string[] {
@@ -27,7 +22,9 @@ export function filterNotes(notes: Note[], q: string, type: 'all' | Note['type']
     .filter((n) => !tag || n.tags.some((x) => norm(x) === norm(tag)))
     .filter((n) => {
       if (!words.length) return true;
-      const hay = norm([n.title, n.body, n.tags.join(' '), n.role ?? '', n.conclusions ?? '', ...(n.tasks ?? []).map((t) => t.title)].join(' '));
+      const hay = norm(
+        [n.title, n.body, n.tags.join(' '), n.role ?? '', n.conclusions ?? '', ...(n.tasks ?? []).map((t) => t.title)].join(' '),
+      );
       return words.every((w) => hay.includes(w));
     })
     .sort((a, b) => Number(b.pinned) - Number(a.pinned) || (b.date ?? b.updatedAt).localeCompare(a.date ?? a.updatedAt));

@@ -15,6 +15,7 @@ import { haptic } from '@/lib/platform';
 import { DictateButton } from '@/features/ai/DictateButton';
 import { OrganizeButton } from '@/features/ai/OrganizeSheet';
 import { appendText } from '@/features/ai/text';
+import { MeetingComms } from '@/features/messages/entry';
 
 export function NoteForm({ m, onChange }: { m: Meeting; onChange: (m: Meeting) => void }) {
   const { t } = useTranslation('meetings');
@@ -94,6 +95,7 @@ export default function MeetingEditor() {
                   {t('startLive')}
                 </ButtonLink>
               )}
+              <MeetingComms meeting={m} />
               <HistoryButton kind="meeting" id={m.id} />
             </>
           )

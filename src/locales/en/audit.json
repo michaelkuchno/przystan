@@ -58,6 +58,12 @@
     "ai": {
       "settings": "Changed AI assistant settings",
       "cloudSend": "Sent text to the cloud AI (with consent)"
+    },
+    "message": {
+      "send": "Message sent / handed over"
+    },
+    "notify": {
+      "settings": "Changed notification and message settings"
     }
   },
   "detail": {
@@ -73,7 +79,8 @@
     "file": "file {{file}}",
     "backupFrom": "backup of {{date}}, records: {{records}}",
     "integrity": "result: {{result}}",
-    "cloudSend": "task {{task}}, {{chars}} characters, {{replaced}} replaced"
+    "cloudSend": "task {{task}}, {{chars}} characters, {{replaced}} replaced",
+    "messageSend": "{{channel}} via {{via}}"
   },
   "kinds": {
     "client": "{{Client}}",
@@ -93,7 +100,9 @@
     "cardState": "Flashcard progress",
     "simRun": "Simulator conversation",
     "practice": "Placement log entry",
-    "note": "Note"
+    "note": "Note",
+    "contact": "Contact",
+    "message": "Message"
   },
   "history": {
     "title": "Change history",

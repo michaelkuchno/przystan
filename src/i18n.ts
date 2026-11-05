@@ -112,17 +112,23 @@ export async function initI18n(lang: Lang, term: Term) {
 }
 
 /**
- * Namespaces needed only after unlocking (the optional AI assistant) – kept out of the start-up
- * bundle so they do not delay the first paint. Loaded together with the content (ContentProvider).
+ * Namespaces needed only after unlocking (AI assistant, notifications, messages) – kept out of
+ * the start-up bundle so they do not delay the first paint. Loaded by AuthedApp after unlocking.
  */
-const lazyBundles = import.meta.glob<{ default: Record<string, unknown> }>('./locales/*/ai.json');
+export const LAZY_NAMESPACES = ['ai', 'notify', 'messages'] as const;
+const lazyBundles = import.meta.glob<{ default: Record<string, unknown> }>('./locales/*/{ai,notify,messages}.json');
 let lazyWanted = false;
+
+export const lazyReady = (lang: string) => LAZY_NAMESPACES.every((ns) => i18n.hasResourceBundle(lang, ns));
 
 export async function ensureLazyNamespaces(lang: string) {
   lazyWanted = true;
-  if (i18n.hasResourceBundle(lang, 'ai')) return;
-  const load = lazyBundles[`./locales/${lang}/ai.json`] ?? lazyBundles['./locales/pl/ai.json']!;
-  i18n.addResourceBundle(lang, 'ai', (await load()).default, true, true);
+  await Promise.all(
+    LAZY_NAMESPACES.filter((ns) => !i18n.hasResourceBundle(lang, ns)).map(async (ns) => {
+      const load = lazyBundles[`./locales/${lang}/${ns}.json`] ?? lazyBundles[`./locales/pl/${ns}.json`]!;
+      i18n.addResourceBundle(lang, ns, (await load()).default, true, true);
+    }),
+  );
 }
 
 export async function changeLanguage(lang: Lang, term: Term) {

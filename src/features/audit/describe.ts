@@ -17,7 +17,9 @@ export function matchesFilter(e: AuditEntry, f: AuditFilter): boolean {
       e.action === 'password.change' ||
       e.action === 'vault.setup'
     );
-  return e.action.endsWith('.export') || e.action === 'backup.restore' || e.action === 'ai.cloudSend';
+  return (
+    e.action.endsWith('.export') || e.action === 'backup.restore' || e.action === 'ai.cloudSend' || e.action === 'message.send'
+  );
 }
 
 /** Local date and time with seconds-free precision, e.g. "3 lis 2026, 14:05". */
@@ -49,7 +51,9 @@ export function describeEntry(t: TFunction, e: AuditEntry): { action: string; ob
   if (e.action === 'backup.restore' && typeof d.createdAt === 'string')
     parts.push(t('audit:detail.backupFrom', { date: fmtDateTime(Date.parse(d.createdAt)), records: d.records }));
   if (typeof d.setting === 'string') parts.push(`${d.setting}: ${String(d.value)}`);
-  if (e.action === 'ai.cloudSend') parts.push(t('audit:detail.cloudSend', { chars: d.chars, replaced: d.replaced, task: d.task }));
+  if (e.action === 'message.send') parts.push(t('audit:detail.messageSend', { channel: d.channel, via: d.via }));
+  if (e.action === 'ai.cloudSend')
+    parts.push(t('audit:detail.cloudSend', { chars: d.chars, replaced: d.replaced, task: d.task }));
   if (typeof d.result === 'string') parts.push(t('audit:detail.integrity', { result: d.result }));
   return { action, object, detail: parts.join(' · ') };
 }

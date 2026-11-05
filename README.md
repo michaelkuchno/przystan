@@ -49,6 +49,13 @@ i tłumaczenia, pytania do superwizji. **Dane osób nie trafiają do chmury auto
 po pseudonimizacji, podglądzie dokładnego tekstu i zgodzie (domyślnie wyłączone). Każda odpowiedź
 jest oznaczona „Pomocnicze – zweryfikuj”. Szczegóły: [`docs/AI.md`](docs/AI.md).
 
+**Powiadomienia i wiadomości (od 1.4):** przypomnienia o spotkaniach, zadaniach, przeglądach IPR,
+ważnych datach i sprawach „Do zwrócenia uwagi” (Android – także przy zamkniętej aplikacji; iPhone – przez
+eksport do kalendarza), podsumowanie dnia (powiadomienie, opcjonalnie e-mail przez własne darmowe
+EmailJS), **e-maile i SMS-y** z szablonów i z AI (także **odpowiedź na otrzymany e-mail**), kontakty
+i historia. Wysyłasz przez własną pocztę i telefon – bez serwera i bez kosztów. Szczegóły:
+[`docs/NOTIFICATIONS.md`](docs/NOTIFICATIONS.md).
+
 ## Kurzfassung (Deutsch)
 
 **Przystań** ist eine App für Soziale Arbeit, Sozialpädagogik und Suchtberatung – auf Deutsch
@@ -72,6 +79,9 @@ Gerät.
   Live-Gesprächssimulator, Lernkarten aus Notizen, offene Prüfungsfragen mit Bewertung, «Wissensbasis
   fragen», Diktieren und «Ordnen» von Notizen, Vorschläge für Präventionsprogramme. **Personendaten gehen
   nie automatisch in die Cloud** – nur pseudonymisiert, mit Vorschau und Zustimmung (standardmässig aus).
+- **Erinnerungen und Nachrichten (ab 1.4):** Erinnerungen an Gespräche, Aufgaben und wichtige Termine
+  (Android auch bei geschlossener App, iPhone über Kalender-Export), Tagesübersicht, E-Mails und SMS aus
+  Vorlagen und mit KI (auch Antworten auf erhaltene E-Mails) – gesendet über die eigene Mail und das Telefon.
 - Sprache und Arbeitsland: beim ersten Start oder in den **Einstellungen**. Inhalte, die noch
   geprüft werden müssen, sind entsprechend markiert (siehe `docs/CONTENT_REVIEW.md`).
 
@@ -120,7 +130,10 @@ flashcards from notes / PDF, open exam questions with grading, “Ask the knowle
 dictation and “Organise” for notes (on the device), session and prevention-programme proposals with a
 good-practice check, plain-language and translated client material, supervision questions. Data about
 people never goes to the cloud automatically – only pseudonymised, after a preview and consent
-(see [`docs/AI.md`](docs/AI.md)).
+(see [`docs/AI.md`](docs/AI.md)) · **reminders and messages** (1.4): reminders for meetings,
+tasks, reviews and key dates (Android also when the app is closed, iPhone via calendar export), a daily
+summary, e-mails and SMS from templates and with AI (including replies to received e-mails) sent with
+your own mail and phone (see [`docs/NOTIFICATIONS.md`](docs/NOTIFICATIONS.md)).
 
 ### Local preview (Windows)
 

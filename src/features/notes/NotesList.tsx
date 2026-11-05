@@ -44,7 +44,10 @@ export default function NotesList() {
         <>
           <Notice className="mb-4">{t('privacy')}</Notice>
           <div className="relative mb-3">
-            <SearchIcon className="pointer-events-none absolute top-1/2 left-3.5 size-4 -translate-y-1/2 text-muted" aria-hidden />
+            <SearchIcon
+              className="pointer-events-none absolute top-1/2 left-3.5 size-4 -translate-y-1/2 text-muted"
+              aria-hidden
+            />
             <TextInput
               type="search"
               className="pl-10"

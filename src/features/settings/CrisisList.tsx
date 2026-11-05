@@ -18,24 +18,24 @@ export function CrisisList() {
           <h2 className="mb-2 font-sans text-sm font-semibold tracking-wider text-muted uppercase">{t(`country.${country}`)}</h2>
           <div className="grid gap-2 sm:grid-cols-2">
             {crisisFor(content, country).map((c) => (
-                <Card key={c.id} className="flex flex-wrap items-center gap-3 p-3 sm:p-3">
-                  <a
-                    href={`tel:${c.number.replace(/\s/g, '')}`}
-                    className="flex min-h-14 min-w-[7.5rem] items-center justify-center gap-2 rounded-2xl bg-accent px-3 font-serif text-xl font-semibold text-white dark:text-black"
-                    aria-label={t('call', { number: c.number, name: c.name })}
-                  >
-                    <Phone className="size-4" aria-hidden />
-                    {c.number}
-                  </a>
-                  <div className="min-w-0 flex-1 basis-48">
-                    <div className="font-semibold">{c.name}</div>
-                    <div className="text-sm text-muted">{c.description}</div>
-                    <div className="mt-1">
-                      <ReviewBadge id={c.id} status={c.reviewStatus} />
-                    </div>
+              <Card key={c.id} className="flex flex-wrap items-center gap-3 p-3 sm:p-3">
+                <a
+                  href={`tel:${c.number.replace(/\s/g, '')}`}
+                  className="flex min-h-14 min-w-[7.5rem] items-center justify-center gap-2 rounded-2xl bg-accent px-3 font-serif text-xl font-semibold text-white dark:text-black"
+                  aria-label={t('call', { number: c.number, name: c.name })}
+                >
+                  <Phone className="size-4" aria-hidden />
+                  {c.number}
+                </a>
+                <div className="min-w-0 flex-1 basis-48">
+                  <div className="font-semibold">{c.name}</div>
+                  <div className="text-sm text-muted">{c.description}</div>
+                  <div className="mt-1">
+                    <ReviewBadge id={c.id} status={c.reviewStatus} />
                   </div>
-                </Card>
-              ))}
+                </div>
+              </Card>
+            ))}
           </div>
         </section>
       ))}

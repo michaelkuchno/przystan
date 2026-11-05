@@ -12,6 +12,7 @@ import { findPaths, type ReferralAnswers } from '@/lib/referral';
 import { cn } from '@/components/ui/cn';
 import type { Institution, InstitutionCategory } from '@/content/types';
 import { CrisisList } from '@/features/settings/Crisis';
+import { WriteButton } from '@/features/messages/entry';
 
 function InstitutionCard({ i }: { i: Institution }) {
   const { t } = useTranslation('help');
@@ -37,7 +38,7 @@ function InstitutionCard({ i }: { i: Institution }) {
 }
 
 function Wizard() {
-  const { t } = useTranslation('help');
+  const { t } = useTranslation(['help', 'messages']);
   const help = useHelpSystem();
   const [answers, setAnswers] = useState<ReferralAnswers>({});
   const qs = help.referral.questions;
@@ -136,6 +137,24 @@ function Wizard() {
                       <div className="text-muted">{i.role}</div>
                     </div>
                   ))}
+                </div>
+                <div className="mt-3">
+                  <WriteButton
+                    to="/messages/new?channel=email"
+                    state={{
+                      subject: p.rule.title,
+                      body: [
+                        p.rule.title,
+                        '',
+                        `${t('steps')}:`,
+                        ...p.rule.steps.map((s) => `- ${s}`),
+                        '',
+                        `${t('institutions')}:`,
+                        ...p.institutions.map((i) => `- ${i.name} (${i.role})`),
+                      ].join('\n'),
+                    }}
+                    label={t('messages:entry.emailReferral')}
+                  />
                 </div>
               </Card>
             </motion.div>

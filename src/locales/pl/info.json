@@ -20,7 +20,7 @@
       },
       {
         "q": "Czy coś jest wysyłane do internetu?",
-        "a": "Nie – dopóki sam nie włączysz opcjonalnego asystenta AI (domyślnie wyłączony). Aplikacja nie zawiera analityki, reklam ani trackerów. Internet jest potrzebny do pobrania aktualizacji PWA, a po włączeniu AI – do Google Gemini (z Twoim kluczem) lub jednorazowego pobrania modeli lokalnych. Dane osób nie trafiają do chmury automatycznie (Ustawienia → Asystent AI → „Jak działa AI”)."
+        "a": "Nie – dopóki sam nie włączysz opcjonalnego asystenta AI (domyślnie wyłączony). Aplikacja nie zawiera analityki, reklam ani trackerów. Internet jest potrzebny do pobrania aktualizacji PWA, a po włączeniu AI – do Google Gemini (z Twoim kluczem) lub jednorazowego pobrania modeli lokalnych. Dane osób nie trafiają do chmury automatycznie (Ustawienia → Asystent AI → „Jak działa AI”). Opcjonalnie, jeśli sam skonfigurujesz EmailJS, aplikacja wysyła przez Twoje konto e-maile (np. podsumowanie dnia do Ciebie – domyślnie bez szczegółów). Wiadomości e-mail i SMS do innych osób wysyłasz zawsze sam z aplikacji poczty lub SMS."
       },
       {
         "q": "Jak dane są chronione?",

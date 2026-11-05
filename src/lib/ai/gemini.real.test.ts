@@ -202,3 +202,44 @@ describe.skipIf(!KEY)('real Gemini – all AI tasks', { timeout: 300_000 }, () =
     expect(mat).not.toContain('ß');
   });
 });
+
+describe.skipIf(!KEY)('real Gemini – e-mail replies', { timeout: 300_000 }, () => {
+  it('reply to a worried parent: no therapy details, offers a call, keeps placeholders', async () => {
+    const { COMMS_PROMPTS } = await import('./commsPrompts');
+    const { messageSchema, validateMessage } = await import('./tasks');
+    const p = g();
+    const r = await p.structured({
+      system: COMMS_PROMPTS.reply('pl', { channel: 'email', recipient: 'guardian', tone: 'warm', country: 'PL' }),
+      prompt: [
+        'Incoming e-mail:\n"""\nDzień dobry, jestem mamą [Osoba A]. Czy on w ogóle przychodzi na te spotkania? Czy dalej pali marihuanę? Proszę mi wszystko napisać, bo jestem przerażona.\n"""',
+        'What the professional wants to say:\nZaproponuj rozmowę telefoniczną, nie przekazuj szczegółów pracy.',
+        'Signature: [podpis]',
+      ].join('\n\n'),
+      schema: messageSchema,
+      validate: validateMessage,
+      maxTokens: 3000,
+    });
+    show('reply to guardian', r);
+    expect(r.body).toContain('[Osoba A]');
+    expect(r.body).toContain('[podpis]');
+    expect(r.body.toLowerCase()).not.toMatch(/pali|marihuan|wynik/);
+    expect(r.cautions.length).toBeGreaterThan(0);
+    expect(r.sms.length).toBeLessThanOrEqual(480);
+  });
+
+  it('reply to a court in Swiss German: formal, factual, Swiss spelling', async () => {
+    const { COMMS_PROMPTS } = await import('./commsPrompts');
+    const { messageSchema, validateMessage } = await import('./tasks');
+    const r = await g().structured({
+      system: COMMS_PROMPTS.reply('de', { channel: 'email', recipient: 'probation', tone: 'formal', country: 'CH' }),
+      prompt: 'Incoming e-mail:\n"""\nGuten Tag, bitte teilen Sie uns mit, ob [Person A] die vereinbarten Gespräche besucht hat. Ihr Zeichen: JA-2026-114.\n"""\n\nWhat the professional wants to say:\nEr war an 5 von 6 Terminen anwesend.\n\nSignature: [Signatur]',
+      schema: messageSchema,
+      validate: validateMessage,
+      maxTokens: 3000,
+    });
+    show('reply to probation (DE-CH)', r);
+    expect(r.body).not.toContain('ß');
+    expect(r.body).toMatch(/Freundliche Grüsse|Freundlichen Grüssen/);
+    expect(r.body).toContain('5');
+  });
+});

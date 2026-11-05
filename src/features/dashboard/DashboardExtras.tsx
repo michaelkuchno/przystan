@@ -76,10 +76,15 @@ export function SupervisionTasks() {
         <ul className="divide-y divide-line">
           {open.slice(0, 6).map(({ note, task }) => (
             <li key={`${note.id}-${task.id}`}>
-              <Link to={`/notes/${note.id}`} className="flex min-h-11 flex-wrap items-center gap-x-3 gap-y-0.5 rounded-xl px-3 py-2 hover:bg-surface-2">
+              <Link
+                to={`/notes/${note.id}`}
+                className="flex min-h-11 flex-wrap items-center gap-x-3 gap-y-0.5 rounded-xl px-3 py-2 hover:bg-surface-2"
+              >
                 <span className="min-w-0 flex-1 basis-40 font-medium">{task.title}</span>
                 {task.due && (
-                  <span className={cn('text-sm', task.due < today ? 'font-semibold text-danger' : 'text-muted')}>{fmtDate(task.due)}</span>
+                  <span className={cn('text-sm', task.due < today ? 'font-semibold text-danger' : 'text-muted')}>
+                    {fmtDate(task.due)}
+                  </span>
                 )}
               </Link>
             </li>

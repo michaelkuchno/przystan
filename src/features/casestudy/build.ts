@@ -84,28 +84,30 @@ export function buildCaseStudy(d: CaseData, t: TFunction): { sections: CaseSecti
           return area && `${t(`clients:diagnosis.areas.${a}`)}: ${area.score}/5${area.notes ? ` – ${clean(area.notes)}` : ''}`;
         }),
         dx.riskFactors.length > 0 && `\n${t('clients:diagnosis.risk')}:\n${list(dx.riskFactors.map(clean)).join('\n')}`,
-        dx.protectiveFactors.length > 0 && `${t('clients:diagnosis.protective')}:\n${list(dx.protectiveFactors.map(clean)).join('\n')}`,
+        dx.protectiveFactors.length > 0 &&
+          `${t('clients:diagnosis.protective')}:\n${list(dx.protectiveFactors.map(clean)).join('\n')}`,
         dx.resources && `${t('clients:diagnosis.resources')}: ${clean(dx.resources)}`,
         dx.conclusions && `\n${t('clients:diagnosis.conclusions')}: ${clean(dx.conclusions)}`,
       ])
     : t('casestudy:none');
 
-  const programme = lines([
-    ...(d.ipr?.goals ?? []).map((g, i) =>
-      lines([
-        `${i + 1}. ${clean(g.title)}`,
-        g.specific && `   ${clean(g.specific)}`,
-        g.measurable && `   ${t('casestudy:measure')}: ${clean(g.measurable)}`,
-        ...g.actions.map((a) => `   – ${clean(a.text)}`),
-      ]),
-    ),
-    d.relapse &&
-      lines([
-        `\n${t('casestudy:relapse')}:`,
-        ...list(d.relapse.highRiskSituations.map(clean)),
-        ...list(d.relapse.copingStrategies.map(clean)),
-      ]),
-  ]) || t('casestudy:none');
+  const programme =
+    lines([
+      ...(d.ipr?.goals ?? []).map((g, i) =>
+        lines([
+          `${i + 1}. ${clean(g.title)}`,
+          g.specific && `   ${clean(g.specific)}`,
+          g.measurable && `   ${t('casestudy:measure')}: ${clean(g.measurable)}`,
+          ...g.actions.map((a) => `   – ${clean(a.text)}`),
+        ]),
+      ),
+      d.relapse &&
+        lines([
+          `\n${t('casestudy:relapse')}:`,
+          ...list(d.relapse.highRiskSituations.map(clean)),
+          ...list(d.relapse.copingStrategies.map(clean)),
+        ]),
+    ]) || t('casestudy:none');
 
   const done = d.meetings.filter((m) => m.status === 'done').sort((a, b) => a.date.localeCompare(b.date));
   const course = lines([
@@ -132,15 +134,16 @@ export function buildCaseStudy(d: CaseData, t: TFunction): { sections: CaseSecti
   for (const m of [...d.measurements].sort((a, b) => a.date.localeCompare(b.date)))
     if (m.source.kind === 'screening' && m.score !== undefined)
       screenings.set(m.source.instrument, [...(screenings.get(m.source.instrument) ?? []), m]);
-  const evaluation = lines([
-    ...[...screenings.entries()].map(([inst, ms]) =>
-      ms.length > 1
-        ? `${inst}: ${ms[0]!.score} (${monthYear(ms[0]!.date)}) → ${ms.at(-1)!.score} (${monthYear(ms.at(-1)!.date)})`
-        : `${inst}: ${ms[0]!.score} (${monthYear(ms[0]!.date)})`,
-    ),
-    ...(d.ipr?.goals ?? []).map((g) => `${clean(g.title)}: ${g.progress}%${g.reviewNotes ? ` – ${clean(g.reviewNotes)}` : ''}`),
-    d.ipr?.evaluation && `\n${clean(d.ipr.evaluation)}`,
-  ]) || t('casestudy:none');
+  const evaluation =
+    lines([
+      ...[...screenings.entries()].map(([inst, ms]) =>
+        ms.length > 1
+          ? `${inst}: ${ms[0]!.score} (${monthYear(ms[0]!.date)}) → ${ms.at(-1)!.score} (${monthYear(ms.at(-1)!.date)})`
+          : `${inst}: ${ms[0]!.score} (${monthYear(ms[0]!.date)})`,
+      ),
+      ...(d.ipr?.goals ?? []).map((g) => `${clean(g.title)}: ${g.progress}%${g.reviewNotes ? ` – ${clean(g.reviewNotes)}` : ''}`),
+      d.ipr?.evaluation && `\n${clean(d.ipr.evaluation)}`,
+    ]) || t('casestudy:none');
 
   const sections: CaseSection[] = [
     { id: 'profile', title: t('casestudy:sections.profile'), text: profile },

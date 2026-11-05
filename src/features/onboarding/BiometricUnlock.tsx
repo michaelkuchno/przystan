@@ -2,7 +2,15 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Fingerprint, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/core';
-import { BioError, bioBlockOf, isBioPromptActive, readBio, unlockWithBiometric, type BioBlock, type BioState } from '@/lib/biometric';
+import {
+  BioError,
+  bioBlockOf,
+  isBioPromptActive,
+  readBio,
+  unlockWithBiometric,
+  type BioBlock,
+  type BioState,
+} from '@/lib/biometric';
 import { haptic } from '@/lib/platform';
 
 /**
@@ -32,7 +40,11 @@ export function BiometricUnlock() {
       setBusy(true);
       setMsg(null);
       // no await before this call: the prompt must open within the tap
-      unlockWithBiometric({ title: t('appName'), subtitle: t('lock.bioPrompt'), cancel: t('lock.usePassword') }, Date.now(), state)
+      unlockWithBiometric(
+        { title: t('appName'), subtitle: t('lock.bioPrompt'), cancel: t('lock.usePassword') },
+        Date.now(),
+        state,
+      )
         .then(() => void haptic('success'))
         .catch(async (e: unknown) => {
           if (!(e instanceof BioError)) throw e;

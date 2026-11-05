@@ -21,7 +21,12 @@ describe('notebook', () => {
 
   it('searches title, body, tags and tasks, ignoring case and diacritics', () => {
     const a = note({ title: 'Opór w rozmowie', tags: ['MI'] });
-    const b = note({ type: 'supervision', title: 'Superwizja', conclusions: 'Więcej odzwierciedleń', tasks: [{ id: '1', title: 'Przeczytać rozdział', done: false }] });
+    const b = note({
+      type: 'supervision',
+      title: 'Superwizja',
+      conclusions: 'Więcej odzwierciedleń',
+      tasks: [{ id: '1', title: 'Przeczytać rozdział', done: false }],
+    });
     expect(filterNotes([a, b], 'opor', 'all', null)).toEqual([a]);
     expect(filterNotes([a, b], 'odzwierciedlen', 'all', null)).toEqual([b]);
     expect(filterNotes([a, b], 'rozdzial', 'all', null)).toEqual([b]);

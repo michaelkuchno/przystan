@@ -58,6 +58,12 @@
     "ai": {
       "settings": "KI-Assistent: Einstellungen geändert",
       "cloudSend": "Text an die Cloud-KI gesendet (mit Zustimmung)"
+    },
+    "message": {
+      "send": "Nachricht gesendet / übergeben"
+    },
+    "notify": {
+      "settings": "Einstellungen für Erinnerungen und Nachrichten geändert"
     }
   },
   "detail": {
@@ -73,7 +79,8 @@
     "file": "Datei {{file}}",
     "backupFrom": "Sicherung vom {{date}}, Datensätze: {{records}}",
     "integrity": "Ergebnis: {{result}}",
-    "cloudSend": "Aufgabe {{task}}, {{chars}} Zeichen, {{replaced}} ersetzt"
+    "cloudSend": "Aufgabe {{task}}, {{chars}} Zeichen, {{replaced}} ersetzt",
+    "messageSend": "{{channel}} über {{via}}"
   },
   "kinds": {
     "client": "{{Client}}",
@@ -93,7 +100,9 @@
     "cardState": "Lernfortschritt",
     "simRun": "Simulatorgespräch",
     "practice": "Praktikumseintrag",
-    "note": "Notiz"
+    "note": "Notiz",
+    "contact": "Kontakt",
+    "message": "Nachricht"
   },
   "history": {
     "title": "Änderungsverlauf",

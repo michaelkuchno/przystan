@@ -39,7 +39,11 @@ export default function PracticeLog() {
 
   const saveDraft = async () => {
     if (!draft) return;
-    await save('practice', { ...draft, hours: Math.max(0, Math.round(draft.hours * 4) / 4), updatedAt: new Date().toISOString() });
+    await save('practice', {
+      ...draft,
+      hours: Math.max(0, Math.round(draft.hours * 4) / 4),
+      updatedAt: new Date().toISOString(),
+    });
     setDraft(null);
     toast({ text: t('saved'), tone: 'ok' });
   };
@@ -61,7 +65,12 @@ export default function PracticeLog() {
         subtitle={t('subtitle')}
         actions={
           <>
-            <Button variant="secondary" icon={<FileDown className="size-4" />} disabled={busy || !entries.length} onClick={() => void exportPdf()}>
+            <Button
+              variant="secondary"
+              icon={<FileDown className="size-4" />}
+              disabled={busy || !entries.length}
+              onClick={() => void exportPdf()}
+            >
               {t('exportPdf')}
             </Button>
             <Button icon={<Plus className="size-4" />} onClick={() => setDraft(empty(sorted[0]?.place))}>
@@ -182,7 +191,12 @@ export default function PracticeLog() {
         {draft && (
           <div className="space-y-4">
             <div className="grid gap-4 sm:grid-cols-2">
-              <TextField label={t('fields.date')} type="date" value={draft.date} onChange={(v) => setDraft({ ...draft, date: v })} />
+              <TextField
+                label={t('fields.date')}
+                type="date"
+                value={draft.date}
+                onChange={(v) => setDraft({ ...draft, date: v })}
+              />
               <TextField
                 label={t('fields.hours')}
                 type="number"
@@ -193,7 +207,12 @@ export default function PracticeLog() {
                 onChange={(v) => setDraft({ ...draft, hours: Number(v.replace(',', '.')) || 0 })}
               />
             </div>
-            <TextField label={t('fields.place')} hint={t('fields.placeHint')} value={draft.place} onChange={(v) => setDraft({ ...draft, place: v })} />
+            <TextField
+              label={t('fields.place')}
+              hint={t('fields.placeHint')}
+              value={draft.place}
+              onChange={(v) => setDraft({ ...draft, place: v })}
+            />
             <SelectField
               label={t('fields.activity')}
               value={draft.activity}
@@ -208,7 +227,10 @@ export default function PracticeLog() {
               value={draft.description}
               onChange={(v) => setDraft({ ...draft, description: v })}
             />
-            <DictateButton sensitivity="client" onText={(x) => setDraft((d) => d && { ...d, description: appendText(d.description, x) })} />
+            <DictateButton
+              sensitivity="client"
+              onText={(x) => setDraft((d) => d && { ...d, description: appendText(d.description, x) })}
+            />
             <TextField
               label={t('fields.reflections')}
               multiline
@@ -216,7 +238,10 @@ export default function PracticeLog() {
               value={draft.reflections}
               onChange={(v) => setDraft({ ...draft, reflections: v })}
             />
-            <DictateButton sensitivity="client" onText={(x) => setDraft((d) => d && { ...d, reflections: appendText(d.reflections, x) })} />
+            <DictateButton
+              sensitivity="client"
+              onText={(x) => setDraft((d) => d && { ...d, reflections: appendText(d.reflections, x) })}
+            />
           </div>
         )}
       </Sheet>
