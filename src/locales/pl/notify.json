@@ -157,7 +157,7 @@
     "error": {
       "noClientId": "Najpierw wpisz identyfikator klienta OAuth.",
       "popup": "Przeglądarka zablokowała okno logowania Google – zezwól na wyskakujące okna.",
-      "denied": "Logowanie Google przerwane lub odmówiono uprawnień.",
+      "denied": "Logowanie Google przerwane lub odmówiono uprawnień ({{msg}}).",
       "auth": "Google nie wydał uprawnienia ({{msg}}). Sprawdź konfigurację w Google Cloud.",
       "send": "Gmail odrzucił wiadomość: {{msg}}",
       "network": "Brak połączenia z Google.",
@@ -166,7 +166,7 @@
   },
   "sms": {
     "title": "SMS-y bezpośrednio z aplikacji",
-    "phoneOn": "Ten telefon może wysyłać SMS-y prosto z Przystani – z Twojej karty SIM, w ramach Twojego abonamentu. Przy pierwszym SMS-ie Android zapyta o zgodę.",
+    "phoneOn": "Ten telefon może wysyłać SMS-y prosto z Przystani – z Twojej karty SIM, w ramach Twojego abonamentu. Przy pierwszym SMS-ie Android zapyta o zgodę. Na Androidzie 13+ może być potrzebne jednorazowe odblokowanie – instrukcja poniżej.",
     "phoneNoSim": "To urządzenie nie ma modułu SMS.",
     "phoneWeb": "Bezpośrednia wysyłka z karty SIM działa w aplikacji na Androida (APK). Na iPhonie i w przeglądarce SMS otworzy się w aplikacji Wiadomości z gotową treścią.",
     "testNumber": "Numer do próby (np. Twój)",
@@ -174,7 +174,7 @@
     "testBody": "Próbny SMS z Przystani.",
     "testOk": "Wysłano próbny SMS",
     "error": {
-      "DENIED": "Brak zgody na wysyłanie SMS – włącz ją w Ustawieniach telefonu → Aplikacje → Przystań → Uprawnienia.",
+      "DENIED": "Android odmówił dostępu do SMS – zobacz „Jak to odblokować” poniżej.",
       "UNAVAILABLE": "To urządzenie nie może wysyłać SMS.",
       "INVALID": "Sprawdź numer i treść.",
       "FAILED": "Nie udało się wysłać SMS: {{msg}}"
@@ -191,6 +191,15 @@
       "Na telefonie z Androidem zainstaluj „SMS Gateway for Android” (sms-gate.app, GitHub capcom6/android-sms-gateway).",
       "W aplikacji włącz „Cloud server” i uruchom usługę – pojawi się login i hasło.",
       "Wpisz je powyżej i wyślij próbny SMS."
-    ]
+    ],
+    "deniedHowTo": "Android odmawia dostępu do SMS? Jak to odblokować",
+    "deniedLead": "Android 13 i nowsze blokują uprawnienie SMS w aplikacjach zainstalowanych spoza Sklepu Play (komunikat „Aplikacji odmówiono dostępu do SMS” / „Ustawienie z ograniczeniami”). To zabezpieczenie systemu – trzeba je raz odblokować ręcznie:",
+    "deniedSteps": [
+      "Stuknij „Otwórz ustawienia aplikacji” poniżej (albo Ustawienia → Aplikacje → Przystań).",
+      "W prawym górnym rogu stuknij ⋮ → „Zezwól na ustawienia z ograniczeniami” i potwierdź PIN-em lub odciskiem palca. (Ta opcja pojawia się dopiero po pierwszej odmowie – jeśli jej nie ma, wyślij najpierw próbny SMS.)",
+      "Uprawnienia → SMS → „Zezwalaj”.",
+      "Wróć do Przystani i wyślij SMS ponownie."
+    ],
+    "openSettings": "Otwórz ustawienia aplikacji"
   }
 }

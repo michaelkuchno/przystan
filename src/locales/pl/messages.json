@@ -57,18 +57,20 @@
     "gmailError": {
       "noClientId": "Gmail nie jest skonfigurowany – Ustawienia → Powiadomienia i wiadomości.",
       "popup": "Przeglądarka zablokowała okno Google – zezwól na wyskakujące okna.",
-      "denied": "Logowanie Google przerwane.",
+      "denied": "Logowanie Google przerwane ({{msg}}).",
       "auth": "Google nie wydał uprawnienia: {{msg}}",
       "send": "Gmail odrzucił wiadomość: {{msg}}",
       "network": "Brak połączenia z Google.",
       "unavailable": "Gmail jest teraz niedostępny."
     },
     "phoneError": {
-      "DENIED": "Brak zgody na SMS – zezwól w ustawieniach telefonu.",
+      "DENIED": "Android odmówił Przystani dostępu do SMS",
       "UNAVAILABLE": "To urządzenie nie wysyła SMS.",
       "INVALID": "Sprawdź numer i treść.",
       "FAILED": "Nie udało się wysłać SMS: {{msg}}"
-    }
+    },
+    "phoneDeniedHelp": "Android blokuje SMS w aplikacjach spoza Sklepu Play. W ustawieniach aplikacji: ⋮ (prawy górny róg) → „Zezwól na ustawienia z ograniczeniami” → potwierdź → Uprawnienia → SMS → Zezwalaj. Potem wyślij ponownie.",
+    "openSettings": "Otwórz ustawienia aplikacji"
   },
   "ai": {
     "title": "Pomoc AI",

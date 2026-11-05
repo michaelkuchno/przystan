@@ -153,7 +153,7 @@
     "error": {
       "noClientId": "Zuerst die OAuth-Client-ID eintragen.",
       "popup": "Der Browser hat das Google-Anmeldefenster blockiert – Pop-ups erlauben.",
-      "denied": "Google-Anmeldung abgebrochen oder Berechtigung verweigert.",
+      "denied": "Google-Anmeldung abgebrochen oder Berechtigung verweigert ({{msg}}).",
       "auth": "Google hat die Berechtigung nicht erteilt ({{msg}}). Einrichtung in Google Cloud prüfen.",
       "send": "Gmail hat die Nachricht abgelehnt: {{msg}}",
       "network": "Keine Verbindung zu Google.",
@@ -162,7 +162,7 @@
   },
   "sms": {
     "title": "SMS direkt aus der App",
-    "phoneOn": "Dieses Telefon kann SMS direkt aus Przystań senden – von deiner SIM-Karte, im Rahmen deines Abos. Android fragt beim ersten SMS nach der Erlaubnis.",
+    "phoneOn": "Dieses Telefon kann SMS direkt aus Przystań senden – von deiner SIM-Karte, im Rahmen deines Abos. Android fragt beim ersten SMS nach der Erlaubnis. Unter Android 13+ ist eventuell eine einmalige Freigabe nötig – siehe unten.",
     "phoneNoSim": "Dieses Gerät kann keine SMS senden.",
     "phoneWeb": "Das direkte Senden von der SIM funktioniert in der Android-App (APK). Auf dem iPhone und im Browser öffnet sich die SMS mit vorbereitetem Text in der Nachrichten-App.",
     "testNumber": "Nummer für einen Test (z. B. deine)",
@@ -170,7 +170,7 @@
     "testBody": "Test-SMS von Przystań.",
     "testOk": "Test-SMS gesendet",
     "error": {
-      "DENIED": "Keine Erlaubnis zum SMS-Senden – in den Telefoneinstellungen → Apps → Przystań → Berechtigungen erlauben.",
+      "DENIED": "Android hat den SMS-Zugriff verweigert – siehe «So geben Sie ihn frei» unten.",
       "UNAVAILABLE": "Dieses Gerät kann keine SMS senden.",
       "INVALID": "Nummer und Text prüfen.",
       "FAILED": "Die SMS konnte nicht gesendet werden: {{msg}}"
@@ -187,6 +187,15 @@
       "Auf einem Android-Telefon «SMS Gateway for Android» installieren (sms-gate.app, GitHub capcom6/android-sms-gateway).",
       "In der App «Cloud server» einschalten und den Dienst starten – Benutzername und Passwort erscheinen.",
       "Oben eintragen und eine Test-SMS senden."
-    ]
+    ],
+    "deniedHowTo": "Android verweigert den SMS-Zugriff? So geben Sie ihn frei",
+    "deniedLead": "Android 13 und neuer sperren die SMS-Berechtigung für Apps, die nicht aus dem Play Store installiert wurden («App wurde Zugriff auf SMS verweigert» / «Eingeschränkte Einstellung»). Das ist ein Schutz des Systems – einmalig von Hand freigeben:",
+    "deniedSteps": [
+      "Unten auf «App-Einstellungen öffnen» tippen (oder Einstellungen → Apps → Przystań).",
+      "Oben rechts auf ⋮ → «Eingeschränkte Einstellungen zulassen» tippen und mit PIN oder Fingerabdruck bestätigen. (Die Option erscheint erst nach der ersten Ablehnung – fehlt sie, zuerst eine Test-SMS senden.)",
+      "Berechtigungen → SMS → «Zulassen».",
+      "Zurück zu Przystań und die SMS erneut senden."
+    ],
+    "openSettings": "App-Einstellungen öffnen"
   }
 }

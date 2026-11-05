@@ -1,6 +1,6 @@
 # Postęp prac
 
-Stan: **wersja 1.5.0** – wysyłka prosto z Gmaila i SMS z telefonu / darmowej bramki (D-065, D-066), moduł Studia – nauka do egzaminów WSHE Brzeg (D-067…D-069, `docs/STUDIES.md`); 1.4: powiadomienia, wiadomości e-mail / SMS z AI (D-060…D-064, `docs/NOTIFICATIONS.md`); 1.3: asystent AI (D-051…D-059, `docs/AI.md`).
+Stan: **wersja 1.5.1** – instrukcja i przycisk do odblokowania SMS na Androidzie 13+ (D-070); 1.5.0: wysyłka prosto z Gmaila i SMS z telefonu / darmowej bramki (D-065, D-066), moduł Studia – nauka do egzaminów WSHE Brzeg (D-067…D-069, `docs/STUDIES.md`); 1.4: powiadomienia, wiadomości e-mail / SMS z AI (D-060…D-064, `docs/NOTIFICATIONS.md`); 1.3: asystent AI (D-051…D-059, `docs/AI.md`).
 historia z audytem (1.2) i asystent AI (1.3) zakończone.
 
 | Etap | Zakres | Status |

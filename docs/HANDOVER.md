@@ -78,6 +78,8 @@ Wersja **1.4.0**. Repozytorium: https://github.com/michaelkuchno/przystan (konto
 - [ ] iPhone (PWA z ekranu początkowego): czy okno logowania Google wraca do aplikacji; jeśli nie – Safari lub EmailJS.
 - [ ] APK: „Wyślij z tego telefonu” → zgoda SEND_SMS (Android 13+: ewentualnie „Zezwól na ustawienia
       z ograniczeniami” w informacjach o aplikacji) → SMS dociera; Play Protect może ostrzec przy instalacji.
+- [ ] 1.5.1: po odmowie SMS → „Otwórz ustawienia aplikacji” otwiera „Informacje o aplikacji”; po „Zezwól na
+      ustawienia z ograniczeniami” i zgodzie SMS wychodzi.
 - [ ] Bramka SMS Gateway for Android: login/hasło → „Wyślij próbny SMS”.
 - [ ] Studia: wybór semestru, ukrycie / dodanie przedmiotów zgodnie z planem z dziekanatu WSHE,
       fiszki, egzamin próbny, „Zapytaj” z prawdziwym kluczem Gemini (gdy wróci dzienny limit).

@@ -101,5 +101,9 @@ Jednorazowo w Google Cloud (tym samym kontem Google; wystarczy projekt z kluczem
 
 ### SMS
 - Android (APK): „Wyślij z tego telefonu” – z karty SIM; zgoda Androida przy pierwszym SMS-ie.
+  **Android 13+ („Aplikacji odmówiono dostępu do SMS” / „App wurde Zugriff auf SMS verweigert”):** system blokuje
+  uprawnienie SMS w aplikacjach spoza Sklepu Play. Odblokowanie (raz): Ustawienia → Aplikacje → Przystań
+  (w Przystani przycisk „Otwórz ustawienia aplikacji”) → ⋮ → „Zezwól na ustawienia z ograniczeniami” →
+  potwierdź → Uprawnienia → SMS → Zezwalaj (D-070).
 - Bramka: na dowolnym telefonie z Androidem aplikacja **SMS Gateway for Android** (sms-gate.app) →
   „Cloud server” → login i hasło → wpisać w Przystani (działa z aplikacji na Androida).

@@ -57,18 +57,20 @@
     "gmailError": {
       "noClientId": "Gmail is not set up – Settings → Notifications and messages.",
       "popup": "The browser blocked the Google window – allow pop-ups.",
-      "denied": "Google sign-in cancelled.",
+      "denied": "Google sign-in cancelled ({{msg}}).",
       "auth": "Google did not grant the permission: {{msg}}",
       "send": "Gmail rejected the message: {{msg}}",
       "network": "No connection to Google.",
       "unavailable": "Gmail is not available right now."
     },
     "phoneError": {
-      "DENIED": "No SMS permission – allow it in the phone settings.",
+      "DENIED": "Android denied Przystań access to SMS",
       "UNAVAILABLE": "This device cannot send SMS.",
       "INVALID": "Check the number and the text.",
       "FAILED": "The SMS could not be sent: {{msg}}"
-    }
+    },
+    "phoneDeniedHelp": "Android blocks SMS for apps installed outside the Play Store. In app settings: ⋮ (top right) → \"Allow restricted settings\" → confirm → Permissions → SMS → Allow. Then send again.",
+    "openSettings": "Open app settings"
   },
   "ai": {
     "title": "AI help",

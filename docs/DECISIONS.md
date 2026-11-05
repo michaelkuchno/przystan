@@ -637,3 +637,13 @@ Cel dzienny (15 fiszek / pytań), seria dni, pierścień gotowości przedmiotu (
 fiszki, najlepszy egzamin próbny), odliczanie do egzaminu, karta na pulpicie, życzliwe komunikaty
 po egzaminie próbnym. Własne materiały mają pierwszeństwo w wynikach wyszukiwania (×1,5). Teksty
 modułu ładują się po odblokowaniu (start bez zmian).
+
+## D-070 Zablokowane uprawnienie SMS na Androidzie 13+ (1.5.1)
+Na telefonie użytkownika Android pokazał „App wurde Zugriff auf SMS verweigert”: od Androida 13
+uprawnienia SMS aplikacji zainstalowanych spoza Sklepu Play są „ustawieniem z ograniczeniami”. To
+zabezpieczenie systemu – aplikacja nie może (i nie powinna) go obchodzić. Rozwiązanie: po odmowie
+Przystań pokazuje instrukcję (⋮ → „Zezwól na ustawienia z ograniczeniami” → Uprawnienia → SMS) i
+przycisk otwierający ekran „Informacje o aplikacji” (`ACTION_APPLICATION_DETAILS_SETTINGS`); ta sama
+instrukcja jest stale w Ustawieniach → Powiadomienia i wiadomości. Alternatywy bez zgody: bramka SMS
+Gateway albo aplikacja Wiadomości. Przy okazji komunikat o przerwanym logowaniu Google pokazuje
+techniczny powód od Google (ułatwia diagnozę konfiguracji OAuth).

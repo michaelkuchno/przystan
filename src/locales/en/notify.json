@@ -153,7 +153,7 @@
     "error": {
       "noClientId": "First enter the OAuth client ID.",
       "popup": "The browser blocked the Google sign-in window – allow pop-ups.",
-      "denied": "Google sign-in was cancelled or the permission was refused.",
+      "denied": "Google sign-in was cancelled or the permission was refused ({{msg}}).",
       "auth": "Google did not grant the permission ({{msg}}). Check the Google Cloud setup.",
       "send": "Gmail rejected the message: {{msg}}",
       "network": "No connection to Google.",
@@ -162,7 +162,7 @@
   },
   "sms": {
     "title": "SMS directly from the app",
-    "phoneOn": "This phone can send SMS directly from Przystań – from your SIM card, within your plan. Android asks for permission with the first SMS.",
+    "phoneOn": "This phone can send SMS directly from Przystań – from your SIM card, within your plan. Android asks for permission with the first SMS. On Android 13+ it may need a one-time unlock – see below.",
     "phoneNoSim": "This device cannot send SMS.",
     "phoneWeb": "Direct sending from the SIM works in the Android app (APK). On the iPhone and in the browser the SMS opens in the Messages app with the text ready.",
     "testNumber": "Number for a test (e.g. yours)",
@@ -170,7 +170,7 @@
     "testBody": "Test SMS from Przystań.",
     "testOk": "Test SMS sent",
     "error": {
-      "DENIED": "No permission to send SMS – allow it in phone Settings → Apps → Przystań → Permissions.",
+      "DENIED": "Android denied SMS access – see \"How to allow it\" below.",
       "UNAVAILABLE": "This device cannot send SMS.",
       "INVALID": "Check the number and the text.",
       "FAILED": "The SMS could not be sent: {{msg}}"
@@ -187,6 +187,15 @@
       "On an Android phone install “SMS Gateway for Android” (sms-gate.app, GitHub capcom6/android-sms-gateway).",
       "In the app turn on “Cloud server” and start the service – a username and password appear.",
       "Enter them above and send a test SMS."
-    ]
+    ],
+    "deniedHowTo": "Android denies SMS access? How to allow it",
+    "deniedLead": "Android 13 and newer block the SMS permission for apps installed outside the Play Store (\"App was denied access to SMS\" / \"Restricted setting\"). This is a system safeguard – allow it once by hand:",
+    "deniedSteps": [
+      "Tap \"Open app settings\" below (or Settings → Apps → Przystań).",
+      "Tap ⋮ in the top-right corner → \"Allow restricted settings\" and confirm with your PIN or fingerprint. (This option appears only after the first refusal – if it is missing, send a test SMS first.)",
+      "Permissions → SMS → \"Allow\".",
+      "Return to Przystań and send the SMS again."
+    ],
+    "openSettings": "Open app settings"
   }
 }

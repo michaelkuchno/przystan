@@ -12,7 +12,7 @@ import { useToast } from '@/components/ui/toast';
 import { isNative } from '@/lib/platform';
 import { saveSecrets, type CommsSecrets } from '@/lib/notify/secrets';
 import { connectGoogle, connectedEmail, GmailError, sendGmail } from '@/lib/notify/gmail';
-import { nativeSmsAvailable, sendNativeSms, SmsSendError } from '@/lib/notify/nativeSms';
+import { nativeSmsAvailable, openSmsSettings, sendNativeSms, SmsSendError } from '@/lib/notify/nativeSms';
 import { sendViaSmsGate, smsGateReady } from '@/lib/notify/smsGateway';
 import { logEvent } from '@/lib/audit';
 
@@ -25,6 +25,7 @@ export function DirectSending({ s, setS }: { s: CommsSecrets; setS: (s: CommsSec
   const toast = useToast();
   const [phone, setPhone] = useState(false);
   const [testNumber, setTestNumber] = useState('');
+  const [smsHelpOpen, setSmsHelpOpen] = useState(false);
   const [email, setEmail] = useState(connectedEmail() ?? s.google?.email);
   const native = isNative();
 
@@ -83,6 +84,7 @@ export function DirectSending({ s, setS }: { s: CommsSecrets; setS: (s: CommsSec
       await sendNativeSms(testNumber, t('sms.testBody'));
       toast({ text: t('sms.testOk'), tone: 'ok' });
     } catch (e) {
+      if (e instanceof SmsSendError && e.code === 'DENIED') setSmsHelpOpen(true);
       toast({
         text: t(`sms.error.${e instanceof SmsSendError ? e.code : 'FAILED'}`, {
           msg: e instanceof Error ? e.message : String(e),
@@ -179,6 +181,25 @@ export function DirectSending({ s, setS }: { s: CommsSecrets; setS: (s: CommsSec
           >
             {t('sms.testPhone')}
           </Button>
+        )}
+        {phone && (
+          <details
+            className="rounded-2xl bg-surface-2 p-3 text-sm"
+            open={smsHelpOpen}
+            onToggle={(e) => setSmsHelpOpen(e.currentTarget.open)}
+            data-testid="sms-permission-help"
+          >
+            <summary className="min-h-11 cursor-pointer content-center font-medium">{t('sms.deniedHowTo')}</summary>
+            <p className="mt-2 leading-relaxed">{t('sms.deniedLead')}</p>
+            <ol className="mt-2 list-decimal space-y-1.5 pl-5 leading-relaxed">
+              {(t('sms.deniedSteps', { returnObjects: true }) as string[]).map((x) => (
+                <li key={x}>{x}</li>
+              ))}
+            </ol>
+            <Button variant="secondary" className="mt-3" onClick={() => void openSmsSettings()}>
+              {t('sms.openSettings')}
+            </Button>
+          </details>
         )}
         <h4 className="pt-2 text-sm font-semibold">{t('sms.gateTitle')}</h4>
         <p className="text-sm leading-relaxed">{t('sms.gateLead')}</p>

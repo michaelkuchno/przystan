@@ -8,7 +8,8 @@ import { isNative } from '@/lib/platform';
 import { normPhone } from './links';
 
 interface SmsPluginApi {
-  available(): Promise<{ available: boolean; permission: 'granted' | 'prompt' }>;
+  available(): Promise<{ available: boolean; permission: 'granted' | 'denied' | 'prompt' }>;
+  openSettings(): Promise<void>;
   send(o: { to: string; body: string }): Promise<{ sent: boolean; confirmed: boolean }>;
 }
 
@@ -18,6 +19,17 @@ export async function nativeSmsAvailable(): Promise<boolean> {
   if (!isNative()) return false;
   try {
     return (await Sms.available()).available;
+  } catch {
+    return false;
+  }
+}
+
+/** Opens Android's app info screen (to allow the restricted SMS permission). */
+export async function openSmsSettings(): Promise<boolean> {
+  if (!isNative()) return false;
+  try {
+    await Sms.openSettings();
+    return true;
   } catch {
     return false;
   }

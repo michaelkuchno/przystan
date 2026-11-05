@@ -13,7 +13,7 @@ import { mailtoUrl, smsUrl, smsSegments, looksLikeEmail, looksLikePhone, MAILTO_
 import { emailJsReady, loadSecrets, saveSecrets, signature, emptySecrets, type CommsSecrets } from '@/lib/notify/secrets';
 import { sendEmailJs } from '@/lib/notify/emailjs';
 import { connectGoogle, GmailError, sendGmail } from '@/lib/notify/gmail';
-import { nativeSmsAvailable, sendNativeSms, SmsSendError } from '@/lib/notify/nativeSms';
+import { nativeSmsAvailable, openSmsSettings, sendNativeSms, SmsSendError } from '@/lib/notify/nativeSms';
 import { sendViaSmsGate, smsGateReady, smsGateUsable } from '@/lib/notify/smsGateway';
 import { isNative } from '@/lib/platform';
 import { useConfirm } from '@/components/ui/overlay';
@@ -189,6 +189,14 @@ export function Composer() {
       await done('phone');
       toast({ text: r.confirmed ? t('send.sentPhone') : t('send.sentPhoneUnconfirmed'), tone: 'ok' });
     } catch (e) {
+      if (e instanceof SmsSendError && e.code === 'DENIED') {
+        // Android 13+ blocks SMS for apps installed outside Google Play until allowed in App info
+        if (
+          await confirm({ title: t('send.phoneError.DENIED'), text: t('send.phoneDeniedHelp'), confirm: t('send.openSettings') })
+        )
+          void openSmsSettings();
+        return;
+      }
       toast({
         text: t(`send.phoneError.${e instanceof SmsSendError ? e.code : 'FAILED'}`, {
           msg: e instanceof Error ? e.message : String(e),

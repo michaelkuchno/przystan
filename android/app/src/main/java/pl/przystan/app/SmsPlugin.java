@@ -11,6 +11,8 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
+import android.net.Uri;
+import android.provider.Settings;
 import android.telephony.SmsManager;
 import androidx.core.content.ContextCompat;
 import com.getcapacitor.JSObject;
@@ -39,8 +41,26 @@ public class SmsPlugin extends Plugin {
         PackageManager pm = getContext().getPackageManager();
         JSObject r = new JSObject();
         r.put("available", pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY));
-        r.put("permission", getPermissionState("sms") == PermissionState.GRANTED ? "granted" : "prompt");
+        PermissionState st = getPermissionState("sms");
+        r.put("permission", st == PermissionState.GRANTED ? "granted" : st == PermissionState.DENIED ? "denied" : "prompt");
         call.resolve(r);
+    }
+
+    /**
+     * Opens Android's "App info" screen for Przystań. Android 13+ blocks the SMS permission of apps
+     * installed outside Google Play ("restricted setting"); it can only be allowed there (⋮ → Allow
+     * restricted settings → Permissions → SMS). There is no way – and no intent – to bypass this.
+     */
+    @PluginMethod
+    public void openSettings(PluginCall call) {
+        try {
+            Intent i = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.fromParts("package", getContext().getPackageName(), null));
+            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            getContext().startActivity(i);
+            call.resolve();
+        } catch (Exception e) {
+            call.reject("Settings could not be opened: " + e.getMessage(), "FAILED");
+        }
     }
 
     @PluginMethod

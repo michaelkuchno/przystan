@@ -57,18 +57,20 @@
     "gmailError": {
       "noClientId": "Gmail ist nicht eingerichtet – Einstellungen → Erinnerungen und Nachrichten.",
       "popup": "Der Browser hat das Google-Fenster blockiert – Pop-ups erlauben.",
-      "denied": "Google-Anmeldung abgebrochen.",
+      "denied": "Google-Anmeldung abgebrochen ({{msg}}).",
       "auth": "Google hat die Berechtigung nicht erteilt: {{msg}}",
       "send": "Gmail hat die Nachricht abgelehnt: {{msg}}",
       "network": "Keine Verbindung zu Google.",
       "unavailable": "Gmail ist gerade nicht verfügbar."
     },
     "phoneError": {
-      "DENIED": "Keine SMS-Erlaubnis – in den Telefoneinstellungen erlauben.",
+      "DENIED": "Android hat Przystań den SMS-Zugriff verweigert",
       "UNAVAILABLE": "Dieses Gerät kann keine SMS senden.",
       "INVALID": "Nummer und Text prüfen.",
       "FAILED": "Die SMS konnte nicht gesendet werden: {{msg}}"
-    }
+    },
+    "phoneDeniedHelp": "Android sperrt SMS für Apps ausserhalb des Play Stores. In den App-Einstellungen: ⋮ (oben rechts) → «Eingeschränkte Einstellungen zulassen» → bestätigen → Berechtigungen → SMS → Zulassen. Danach erneut senden.",
+    "openSettings": "App-Einstellungen öffnen"
   },
   "ai": {
     "title": "KI-Hilfe",
