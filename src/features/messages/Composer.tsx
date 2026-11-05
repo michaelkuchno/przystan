@@ -10,8 +10,13 @@ import { useToast } from '@/components/ui/toast';
 import { all, get, useStore } from '@/lib/store';
 import { locale } from '@/lib/format';
 import { mailtoUrl, smsUrl, smsSegments, looksLikeEmail, looksLikePhone, MAILTO_SAFE_LENGTH } from '@/lib/notify/links';
-import { emailJsReady, loadSecrets, signature, emptySecrets, type CommsSecrets } from '@/lib/notify/secrets';
+import { emailJsReady, loadSecrets, saveSecrets, signature, emptySecrets, type CommsSecrets } from '@/lib/notify/secrets';
 import { sendEmailJs } from '@/lib/notify/emailjs';
+import { connectGoogle, GmailError, sendGmail } from '@/lib/notify/gmail';
+import { nativeSmsAvailable, sendNativeSms, SmsSendError } from '@/lib/notify/nativeSms';
+import { sendViaSmsGate, smsGateReady, smsGateUsable } from '@/lib/notify/smsGateway';
+import { isNative } from '@/lib/platform';
+import { useConfirm } from '@/components/ui/overlay';
 import { renderTemplate, templateVars, templates, type TemplateId } from '@/lib/notify/templates';
 import type { Contact, ContactRole, Message, MessageChannel } from '@/domain/types';
 import { hasCrisisSignal } from '@/lib/ai/crisis';
@@ -85,11 +90,17 @@ export function Composer() {
   const [params] = useSearchParams();
   const location = useLocation();
   const toast = useToast();
+  const confirm = useConfirm();
+  const [phoneSms, setPhoneSms] = useState(false);
   const contacts = useStore(() => all('contact'));
   const clients = useStore(() => all('client'));
   const [secrets, setSecrets] = useState<CommsSecrets>(emptySecrets());
   const [m, setM] = useState<Draft>(() => initialDraft(params, (location.state ?? {}) as Prefill, i18n));
   const program = params.get('program') ?? undefined;
+
+  useEffect(() => {
+    void nativeSmsAvailable().then(setPhoneSms);
+  }, []);
 
   useEffect(() => {
     void loadSecrets().then((s) => {
@@ -142,6 +153,58 @@ export function Composer() {
       });
       await done('emailjs');
       toast({ text: t('send.sentEmailJs'), tone: 'ok' });
+    } catch (e) {
+      toast({ text: t('send.failed', { msg: e instanceof Error ? e.message : String(e) }), tone: 'warn' });
+    }
+  };
+
+  const gmailOn = isNative() || !!secrets.google?.clientId.trim();
+  const viaGmail = async () => {
+    if (!(await confirm({ title: t('send.confirmEmail', { to: m.to }), confirm: t('send.gmail') }))) return;
+    try {
+      // the token request must stay inside the click (Google opens a popup)
+      const tok = await connectGoogle(secrets.google?.clientId ?? '', secrets.google?.email);
+      await sendGmail(tok, { to: m.to.trim(), toName: m.toName, subject: m.subject, body: m.body, fromName: secrets.myName });
+      if (tok.email && tok.email !== secrets.google?.email) {
+        const next = { ...secrets, google: { clientId: secrets.google?.clientId ?? '', email: tok.email } };
+        setSecrets(next);
+        void saveSecrets(next);
+      }
+      await done('gmail');
+      toast({ text: t('send.sentGmail', { from: tok.email ?? 'Gmail' }), tone: 'ok' });
+    } catch (e) {
+      toast({
+        text: t(`send.gmailError.${e instanceof GmailError ? e.code : 'send'}`, {
+          msg: e instanceof Error ? e.message : String(e),
+        }),
+        tone: 'warn',
+      });
+    }
+  };
+
+  const viaPhone = async () => {
+    if (!(await confirm({ title: t('send.confirmSms', { to: m.to }), confirm: t('send.phone') }))) return;
+    try {
+      const r = await sendNativeSms(m.to, m.body);
+      await done('phone');
+      toast({ text: r.confirmed ? t('send.sentPhone') : t('send.sentPhoneUnconfirmed'), tone: 'ok' });
+    } catch (e) {
+      toast({
+        text: t(`send.phoneError.${e instanceof SmsSendError ? e.code : 'FAILED'}`, {
+          msg: e instanceof Error ? e.message : String(e),
+        }),
+        tone: 'warn',
+      });
+    }
+  };
+
+  const viaGate = async () => {
+    if (!(await confirm({ title: t('send.confirmSms', { to: m.to }), text: t('send.gateWarning'), confirm: t('send.smsGate') })))
+      return;
+    try {
+      await sendViaSmsGate(secrets.smsGate!, m.to, m.body);
+      await done('smsGate');
+      toast({ text: t('send.sentGate'), tone: 'ok' });
     } catch (e) {
       toast({ text: t('send.failed', { msg: e instanceof Error ? e.message : String(e) }), tone: 'warn' });
     }
@@ -250,11 +313,43 @@ export function Composer() {
           <Notice tone="warn">{t('send.long')}</Notice>
         )}
         <div className="flex flex-wrap gap-2" data-testid="send-actions">
+          {m.channel === 'email' && gmailOn && (
+            <Button
+              icon={<Send className="size-4" aria-hidden />}
+              disabled={!valid || !m.body.trim()}
+              onClick={() => void viaGmail()}
+            >
+              {secrets.google?.email ? t('send.gmailFrom', { from: secrets.google.email }) : t('send.gmail')}
+            </Button>
+          )}
+          {m.channel === 'sms' && phoneSms && (
+            <Button
+              icon={<Send className="size-4" aria-hidden />}
+              disabled={!valid || !m.body.trim()}
+              onClick={() => void viaPhone()}
+            >
+              {t('send.phone')}
+            </Button>
+          )}
+          {m.channel === 'sms' && smsGateUsable() && smsGateReady(secrets.smsGate) && (
+            <Button
+              variant="secondary"
+              icon={<Send className="size-4" aria-hidden />}
+              disabled={!valid || !m.body.trim()}
+              onClick={() => void viaGate()}
+            >
+              {t('send.smsGate')}
+            </Button>
+          )}
           {m.channel === 'email' ? (
             <a
               href={valid && m.body.trim() ? mailto : undefined}
               aria-disabled={!valid || !m.body.trim()}
-              className={buttonClass('primary', 'md', !valid || !m.body.trim() ? 'pointer-events-none opacity-50' : '')}
+              className={buttonClass(
+                gmailOn ? 'secondary' : 'primary',
+                'md',
+                !valid || !m.body.trim() ? 'pointer-events-none opacity-50' : '',
+              )}
               onClick={() => void done('mailApp')}
             >
               <Mail className="size-4" aria-hidden /> {t('send.mailApp')}
@@ -263,7 +358,11 @@ export function Composer() {
             <a
               href={valid && m.body.trim() ? sms : undefined}
               aria-disabled={!valid || !m.body.trim()}
-              className={buttonClass('primary', 'md', !valid || !m.body.trim() ? 'pointer-events-none opacity-50' : '')}
+              className={buttonClass(
+                phoneSms ? 'secondary' : 'primary',
+                'md',
+                !valid || !m.body.trim() ? 'pointer-events-none opacity-50' : '',
+              )}
               onClick={() => void done('smsApp')}
             >
               <MessageSquare className="size-4" aria-hidden /> {t('send.smsApp')}

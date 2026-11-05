@@ -82,7 +82,8 @@
     "about": "About",
     "practice": "Placement log",
     "notes": "Notebook",
-    "messages": "Messages"
+    "messages": "Messages",
+    "studies": "Studies"
   },
   "navHint": {
     "screening": "AUDIT, AUDIT-C, DUDIT",
@@ -100,6 +101,7 @@
     "about": "Version & disclaimers",
     "practice": "Hours, entries, PDF for supervisor",
     "notes": "Notes and supervision",
-    "messages": "E-mail, SMS, contacts"
+    "messages": "E-mail, SMS, contacts",
+    "studies": "Programme, exams, learning"
   }
 }

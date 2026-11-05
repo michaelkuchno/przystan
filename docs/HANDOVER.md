@@ -72,6 +72,16 @@ Wersja **1.4.0**. Repozytorium: https://github.com/michaelkuchno/przystan (konto
       w APK sprawdzić, czy EmailJS nie zwraca 403; wtedy w EmailJS Account → Security zezwolić na API).
 - [ ] Podsumowanie dnia po godzinie z ustawień: powiadomienie + e-mail (raz dziennie).
 
+**Wersja 1.5 – wysyłka bezpośrednia i Studia:**
+- [ ] Gmail: konfiguracja Google Cloud wg docs/NOTIFICATIONS.md §7 (Gmail API, użytkownicy testowi, klient
+      „Aplikacja internetowa” + klient „Android” z SHA-1) → „Połącz z Google” → próbny e-mail (PWA i APK).
+- [ ] iPhone (PWA z ekranu początkowego): czy okno logowania Google wraca do aplikacji; jeśli nie – Safari lub EmailJS.
+- [ ] APK: „Wyślij z tego telefonu” → zgoda SEND_SMS (Android 13+: ewentualnie „Zezwól na ustawienia
+      z ograniczeniami” w informacjach o aplikacji) → SMS dociera; Play Protect może ostrzec przy instalacji.
+- [ ] Bramka SMS Gateway for Android: login/hasło → „Wyślij próbny SMS”.
+- [ ] Studia: wybór semestru, ukrycie / dodanie przedmiotów zgodnie z planem z dziekanatu WSHE,
+      fiszki, egzamin próbny, „Zapytaj” z prawdziwym kluczem Gemini (gdy wróci dzienny limit).
+
 ## 2. Weryfikacja treści
 
 Lista: [`docs/CONTENT_REVIEW.md`](CONTENT_REVIEW.md) – w szczególności sekcja 15 (wytyczne AI do korespondencji i szablony e-mail / SMS), sekcja 14 (prompty systemowe

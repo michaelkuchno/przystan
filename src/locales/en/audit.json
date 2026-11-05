@@ -102,7 +102,10 @@
     "practice": "Placement log entry",
     "note": "Note",
     "contact": "Contact",
-    "message": "Message"
+    "message": "Message",
+    "studyCourse": "Course (studies)",
+    "studyMaterial": "Class material",
+    "studyAttempt": "Mock exam"
   },
   "history": {
     "title": "Change history",

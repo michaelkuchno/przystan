@@ -86,7 +86,7 @@
   "settingsLink": "Einstellungen für Erinnerungen",
   "statusOn": "Ein",
   "statusOff": "Aus",
-  "info": "Automatische SMS sind nicht kostenlos möglich (jedes SMS-Gateway kostet). SMS an Personen sendest du manuell mit vorbereitetem Text – über die SMS-App des Telefons.",
+  "info": "Automatische SMS über einen Server gibt es nicht – kostenpflichtige Gateways wurden ausgeschlossen. Kostenlos: SMS direkt von diesem Telefon (Android-App), über das kostenlose SMS Gateway for Android oder von Hand mit der Nachrichten-App.",
   "line": {
     "meeting": "Gespräch um {{time}}",
     "task": "Aufgabe fällig {{date}}",
@@ -123,5 +123,70 @@
     "ipr": "Förderplan-Überprüfung (Przystań)",
     "keyDate": "Wichtiger Termin (Przystań)",
     "description": "Details in der App Przystań."
+  },
+  "direct": {
+    "title": "Direkt aus Przystań senden"
+  },
+  "gmail": {
+    "title": "E-Mails aus meinem Gmail (Google-Anmeldung)",
+    "lead": "Nachrichten gehen direkt aus deinem Gmail-Postfach hinaus – ohne Mail-App und ohne Zwischenstelle. Przystań erhält von Google nur die Berechtigung «in deinem Namen senden» (kein Lesen der Mails) für eine Stunde.",
+    "clientId": "OAuth-Client-ID (Google Cloud)",
+    "clientIdHint": "Einmalige Einrichtung – Anleitung unten. Die ID ist nicht geheim.",
+    "as": "Verbunden: {{email}}",
+    "connect": "Mit Google verbinden",
+    "reconnect": "Erneut verbinden",
+    "test": "Test-E-Mail an mich senden",
+    "connected": "Verbunden mit {{email}}",
+    "testBody": "Dies ist eine Test-E-Mail, direkt aus deinem Gmail über Przystań gesendet. Wenn du sie siehst, funktioniert das Senden.",
+    "testOk": "Test-E-Mail von {{email}} gesendet",
+    "howTo": "So richtest du es ein (einmalig, etwa 10 Minuten)",
+    "steps": [
+      "Öffne console.cloud.google.com mit demselben Google-Konto (das Projekt des Gemini-Schlüssels geht auch).",
+      "«APIs & Dienste» → «Bibliothek» → «Gmail API» aktivieren.",
+      "«Google Auth Platform» → «Branding»: Name «Przystań» und deine E-Mail; «Audience»: Typ «Extern», Status «Test» → unter «Testnutzer» die Gmail-Adressen eintragen, von denen du senden willst.",
+      "«Data Access» → «Bereiche hinzufügen» → …/auth/gmail.send.",
+      "«Clients» → «Client erstellen» → «Webanwendung» → «Autorisierte JavaScript-Quellen»: {{origin}} → Client-ID kopieren und oben einfügen (PWA, Browser).",
+      "Für die Android-App: «Client erstellen» → «Android» → Paketname {{pkg}}, SHA-1-Fingerabdruck: {{sha1}}.",
+      "Beim ersten Verbinden zeigt Google «nicht überprüfte App» – es ist deine eigene Einrichtung: «Weiter». Im Testmodus kann Google alle 7 Tage erneut um Zustimmung bitten."
+    ],
+    "privacy": "Das Zugriffstoken liegt nur im Arbeitsspeicher (etwa 1 Std.) und wird nirgends gespeichert. Google sendet die Nachricht von deinem Konto – du findest sie in Gmail unter «Gesendet».",
+    "error": {
+      "noClientId": "Zuerst die OAuth-Client-ID eintragen.",
+      "popup": "Der Browser hat das Google-Anmeldefenster blockiert – Pop-ups erlauben.",
+      "denied": "Google-Anmeldung abgebrochen oder Berechtigung verweigert.",
+      "auth": "Google hat die Berechtigung nicht erteilt ({{msg}}). Einrichtung in Google Cloud prüfen.",
+      "send": "Gmail hat die Nachricht abgelehnt: {{msg}}",
+      "network": "Keine Verbindung zu Google.",
+      "unavailable": "Die Google-Anmeldung ist gerade nicht verfügbar."
+    }
+  },
+  "sms": {
+    "title": "SMS direkt aus der App",
+    "phoneOn": "Dieses Telefon kann SMS direkt aus Przystań senden – von deiner SIM-Karte, im Rahmen deines Abos. Android fragt beim ersten SMS nach der Erlaubnis.",
+    "phoneNoSim": "Dieses Gerät kann keine SMS senden.",
+    "phoneWeb": "Das direkte Senden von der SIM funktioniert in der Android-App (APK). Auf dem iPhone und im Browser öffnet sich die SMS mit vorbereitetem Text in der Nachrichten-App.",
+    "testNumber": "Nummer für einen Test (z. B. deine)",
+    "testPhone": "Test-SMS von diesem Telefon senden",
+    "testBody": "Test-SMS von Przystań.",
+    "testOk": "Test-SMS gesendet",
+    "error": {
+      "DENIED": "Keine Erlaubnis zum SMS-Senden – in den Telefoneinstellungen → Apps → Przystań → Berechtigungen erlauben.",
+      "UNAVAILABLE": "Dieses Gerät kann keine SMS senden.",
+      "INVALID": "Nummer und Text prüfen.",
+      "FAILED": "Die SMS konnte nicht gesendet werden: {{msg}}"
+    },
+    "gateTitle": "Kostenloses SMS-Gateway (SMS Gateway for Android)",
+    "gateLead": "Eine kostenlose Open-Source-App macht ein beliebiges Android-Telefon zum SMS-Gateway – Przystań sendet darüber SMS von der SIM jenes Telefons. Der Text läuft über den Server von sms-gate.app – keine heiklen Daten so senden.",
+    "gateWeb": "Das Gateway funktioniert nur aus der Android-App von Przystań (der Server erlaubt keine Aufrufe aus dem Browser).",
+    "gateUser": "Benutzername (aus der SMS-Gateway-App)",
+    "gatePassword": "Passwort (aus der SMS-Gateway-App)",
+    "testGate": "Test-SMS über das Gateway senden",
+    "gateFail": "Das Gateway hat die SMS nicht gesendet: {{msg}}",
+    "gateHowTo": "So richtest du das Gateway ein",
+    "gateSteps": [
+      "Auf einem Android-Telefon «SMS Gateway for Android» installieren (sms-gate.app, GitHub capcom6/android-sms-gateway).",
+      "In der App «Cloud server» einschalten und den Dienst starten – Benutzername und Passwort erscheinen.",
+      "Oben eintragen und eine Test-SMS senden."
+    ]
   }
 }

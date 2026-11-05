@@ -33,6 +33,7 @@ import { isDue } from '@/lib/srs';
 import { BackupBanner, SupervisionTasks } from './DashboardExtras';
 
 const TodayCard = lazy(() => import('@/features/notify/TodayCard'));
+const StudyTodayCard = lazy(() => import('@/features/studies/StudyTodayCard'));
 
 export function useAttention(): AttentionFlag[] {
   const clients = useStore(() => all('client'));
@@ -187,6 +188,11 @@ export function Dashboard() {
       {prefs.notify.enabled && (
         <Suspense fallback={null}>
           <TodayCard />
+        </Suspense>
+      )}
+      {prefs.study.programId && (
+        <Suspense fallback={null}>
+          <StudyTodayCard />
         </Suspense>
       )}
 

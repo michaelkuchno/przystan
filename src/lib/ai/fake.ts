@@ -75,6 +75,42 @@ const ANSWERS: Record<string, (req: GenerateRequest) => unknown> = {
     riskFactors: ['FAKE: Presja rówieśnicza'],
     protectiveFactors: ['FAKE: Więź ze szkołą'],
   }),
+  mockExam: () => ({
+    questions: [
+      {
+        type: 'single',
+        question: 'FAKE: Co oznacza współuzależnienie?',
+        options: [
+          'Uzależnienie od dwóch substancji',
+          'Zaburzony wzorzec funkcjonowania bliskich osoby uzależnionej',
+          'Leczenie farmakologiczne',
+          'Rodzaj profilaktyki',
+        ],
+        correct: 1,
+        answer: 'FAKE: Współuzależnienie dotyczy bliskich.',
+        topic: 'Rodzina z problemem alkoholowym',
+      },
+      {
+        type: 'single',
+        question: 'FAKE: Profilaktyka wskazująca jest kierowana do…',
+        options: [
+          'całej populacji',
+          'grup podwyższonego ryzyka',
+          'osób z pierwszymi objawami problemów',
+          'osób uzależnionych w leczeniu',
+        ],
+        correct: 2,
+        answer: 'FAKE: Wskazująca – osoby z pierwszymi objawami.',
+        topic: 'Poziomy profilaktyki',
+      },
+      {
+        type: 'open',
+        question: 'FAKE: Omów czynniki ryzyka i chroniące.',
+        answer: 'FAKE: Czynniki ryzyka zwiększają, a chroniące zmniejszają prawdopodobieństwo problemów.',
+        topic: 'Czynniki ryzyka',
+      },
+    ],
+  }),
   message: () => ({
     subject: 'FAKE: Odpowiedź w sprawie spotkania',
     body: 'Dzień dobry,\n\nFAKE: dziękuję za wiadomość. Proponuję rozmowę telefoniczną [data].\n\nZ poważaniem\n[podpis]',

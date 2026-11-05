@@ -232,7 +232,8 @@ describe.skipIf(!KEY)('real Gemini – e-mail replies', { timeout: 300_000 }, ()
     const { messageSchema, validateMessage } = await import('./tasks');
     const r = await g().structured({
       system: COMMS_PROMPTS.reply('de', { channel: 'email', recipient: 'probation', tone: 'formal', country: 'CH' }),
-      prompt: 'Incoming e-mail:\n"""\nGuten Tag, bitte teilen Sie uns mit, ob [Person A] die vereinbarten Gespräche besucht hat. Ihr Zeichen: JA-2026-114.\n"""\n\nWhat the professional wants to say:\nEr war an 5 von 6 Terminen anwesend.\n\nSignature: [Signatur]',
+      prompt:
+        'Incoming e-mail:\n"""\nGuten Tag, bitte teilen Sie uns mit, ob [Person A] die vereinbarten Gespräche besucht hat. Ihr Zeichen: JA-2026-114.\n"""\n\nWhat the professional wants to say:\nEr war an 5 von 6 Terminen anwesend.\n\nSignature: [Signatur]',
       schema: messageSchema,
       validate: validateMessage,
       maxTokens: 3000,

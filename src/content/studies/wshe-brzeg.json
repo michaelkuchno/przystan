@@ -1,0 +1,776 @@
+{
+  "id": "wshe-brzeg-ped2-resoc-uzal",
+  "university": "Wyższa Szkoła Humanistyczno-Ekonomiczna w Brzegu (WSHE)",
+  "short": "WSHE Brzeg",
+  "address": "ul. Piastowska 14, 49-300 Brzeg",
+  "program": "Pedagogika – studia II stopnia (magisterskie), niestacjonarne, profil praktyczny",
+  "specialization": "Pedagogika resocjalizacyjna z profilaktyką uzależnień",
+  "semesters": 4,
+  "ects": 120,
+  "checked": "2026-11-05",
+  "note": "Specjalność „z profilaktyką uzależnień” WSHE prowadzi od roku 2025/26, ale nie opublikowała jej osobnego planu. Ten plan złożono z oficjalnych dokumentów WSHE: programu studiów II stopnia (przedmioty ogólne i moduł resocjalizacyjny) oraz sylabusów przedmiotów o uzależnieniach (z programu I stopnia – oznaczone „odpowiednik”). Dopasuj przedmioty, semestry i terminy do planu zajęć swojej grupy – możesz je ukrywać, przenosić i dodawać.",
+  "sources": [
+    {
+      "title": "Strona specjalności",
+      "url": "https://wshe.edu.pl/pedagogika-resocjalizacyjna-z-profilaktyka-uzaleznien/"
+    },
+    {
+      "title": "Program studiów II stopnia (2023)",
+      "url": "https://www.wshe.edu.pl/dopobrania/program_studiow_II_stopnia.pdf"
+    },
+    {
+      "title": "Treści programowe (sylabusy) II stopnia",
+      "url": "https://www.wshe.edu.pl/dopobrania/tresci_programowe_studia_II_stopnia.pdf"
+    },
+    {
+      "title": "Treści programowe I stopnia (przedmioty o uzależnieniach)",
+      "url": "https://www.wshe.edu.pl/dopobrania/tresci_programowe_studia_I_stopnia.pdf"
+    },
+    {
+      "title": "Instrukcja praktyk – studia II stopnia",
+      "url": "https://www.wshe.edu.pl/dopobrania/instrukcja_odbywania_praktyk_zawodowych_studia_II_stopnia.pdf"
+    },
+    {
+      "title": "Regulamin studiów",
+      "url": "https://www.wshe.edu.pl/dopobrania/regulamin_studiow.pdf"
+    }
+  ],
+  "courses": [
+    {
+      "id": "filozofia-etyka",
+      "name": "Współczesne koncepcje filozofii i etyki",
+      "semester": 1,
+      "ects": 3,
+      "hours": {
+        "W": 15
+      },
+      "assessment": "ZO",
+      "group": "general",
+      "topics": [
+        "Realizm filozoficzny i specyfika myślenia realistycznego",
+        "Fenomenologia i myślenie fenomenologiczne",
+        "Pragmatyzm i neopragmatyzm",
+        "Neopozytywizm i myślenie neopozytywistyczne",
+        "Neomarksizm – specyfika myślenia",
+        "Postmodernizm i myślenie ponowoczesne w filozofii i etyce"
+      ],
+      "literature": [
+        "Tatarkiewicz W., Historia filozofii, t. 3, Warszawa 2022",
+        "Gutek G. L., Filozoficzne i ideologiczne podstawy edukacji, Gdańsk 2003",
+        "Łażewska D., Współczesne koncepcje filozofii i etyki, Józefów 2009"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "socjologia",
+      "name": "Współczesne nurty socjologii w pedagogice",
+      "semester": 1,
+      "ects": 3,
+      "hours": {
+        "W": 5,
+        "C": 10
+      },
+      "assessment": "ZO",
+      "group": "general",
+      "topics": [
+        "Podstawowe pojęcia socjologii i ich związek z pedagogiką",
+        "Socjalizacja i wychowanie jako pojęcia wspólne socjologii i pedagogiki",
+        "Socjologia wychowania – typologia środowisk wychowawczych",
+        "Pedagogika socjologiczna, społeczna, narodowa i idealistyczna",
+        "Ideologie edukacyjne: neokonserwatyzm, neoliberalizm, radykalizm",
+        "Socjalizacja w różnych środowiskach (wieś – duże miasto) we współczesnej Polsce"
+      ],
+      "literature": [
+        "Banaszak S., Pedagogika ogólna a socjologia ogólna, Forum Pedagogiczne 2018/1"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "psychologia-spoleczna",
+      "name": "Wybrane zagadnienia współczesnej psychologii społecznej",
+      "semester": 1,
+      "ects": 3,
+      "hours": {
+        "W": 10,
+        "C": 10
+      },
+      "assessment": "ZO",
+      "group": "general",
+      "topics": [
+        "Przedmiot psychologii społecznej; eksperyment jako wzorzec badania zachowań społecznych",
+        "Dysonans poznawczy i teorie atrybucji w pracy pedagoga",
+        "Ukryte teorie osobowości, samospełniające się proroctwo, wyuczona bezradność",
+        "Komunikacja społeczna w zawodzie pedagoga",
+        "Stereotypy i zniekształcenia poznawcze w spostrzeganiu społecznym",
+        "Wpływ społeczny i konformizm jako zagrożenia w rozwoju adolescentów",
+        "Eksperymenty Zimbardo i Milgrama – nadużycie autorytetu, etykietowanie, role społeczne",
+        "Postawy społeczne i możliwości ich zmiany"
+      ],
+      "literature": [
+        "Aronson E., Aronson J., Człowiek istota społeczna, Warszawa 2020",
+        "Cialdini R., Pre-swazja, Gdańsk 2017",
+        "Wojciszke B., Psychologia społeczna, Warszawa 2022"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "metodologia",
+      "name": "Metodologia badań społecznych",
+      "semester": 1,
+      "ects": 5,
+      "hours": {
+        "W": 10,
+        "C": 10
+      },
+      "assessment": "E",
+      "group": "general",
+      "topics": [
+        "Elementy poznania naukowego",
+        "Etapy procesu badawczego",
+        "Badania ilościowe, jakościowe i mieszane",
+        "Metody badań społecznych – ilościowe i jakościowe",
+        "Etyczne aspekty prowadzenia badań",
+        "Problem badawczy, pytania badawcze, temat badań a tytuł pracy",
+        "Hipotezy – rodzaje i warunki poprawnego formułowania",
+        "Metoda, technika, narzędzie badawcze; konstruowanie narzędzi",
+        "Organizacja i przebieg badań"
+      ],
+      "literature": [
+        "Babbie E., Badania społeczne w praktyce, Warszawa 2003",
+        "Brzeziński J., Metodologia badań psychologicznych, Warszawa 2004",
+        "Eco U., Jak napisać pracę dyplomową, Warszawa 2007"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "metody-techniki",
+      "name": "Metody i techniki badań społecznych",
+      "semester": 1,
+      "ects": 5,
+      "hours": {
+        "C": 20
+      },
+      "assessment": "ZO",
+      "group": "general",
+      "topics": [
+        "Język naukowy: terminy, definiowanie pojęć, formy pisarstwa naukowego",
+        "Przedmiot i problem badawczy, źródła i rodzaje problemów",
+        "Strategie badawcze, dobór próby i terenu badań",
+        "Rola hipotezy; badanie bez hipotezy",
+        "Zmienne i wskaźniki; badanie ilościowe",
+        "Podstawowa statystyka: procent, mediana, średnie, korelacje",
+        "Badania jakościowe – kryteria analizy",
+        "Łączenie strategii ilościowych i jakościowych; etyka badań"
+      ],
+      "literature": [
+        "Brzeziński J., Elementy metodologii badań psychologicznych, Warszawa 2010",
+        "Babbie E., Badania społeczne w praktyce, Warszawa 2004",
+        "Kubinowski D., Jakościowe badania pedagogiczne, Lublin 2010"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "historia-mysli",
+      "name": "Historia myśli pedagogicznej",
+      "semester": 1,
+      "ects": 3,
+      "hours": {
+        "W": 15
+      },
+      "assessment": "E",
+      "group": "general",
+      "topics": [],
+      "literature": [],
+      "source": "II"
+    },
+    {
+      "id": "lektorat",
+      "name": "Lektorat języka obcego",
+      "semester": 1,
+      "ects": 3,
+      "hours": {
+        "C": 30
+      },
+      "assessment": "ZO",
+      "group": "general",
+      "topics": [],
+      "literature": [],
+      "source": "II",
+      "alsoIn": [
+        2
+      ]
+    },
+    {
+      "id": "kierunki-pedagogiki",
+      "name": "Kierunki i prądy współczesnej pedagogiki",
+      "semester": 2,
+      "ects": 3,
+      "hours": {
+        "W": 10,
+        "C": 20
+      },
+      "assessment": "E",
+      "group": "general",
+      "topics": [
+        "Różnorodność teorii i koncepcji wychowania",
+        "Interdyscyplinarny charakter wychowania; teoria konwergencji",
+        "Warstwicowa teoria wychowania",
+        "Personalizm pedagogiczny",
+        "Pedagogika pozytywistyczna i egzystencjalna",
+        "Pedagogika religii (ks. J. Twardowski, ks. J. Tischner)",
+        "Nowe Wychowanie i pedagogika antyautorytarna",
+        "Pedagogika międzykulturowa i ekologiczna",
+        "Modernizm i postmodernizm w pedagogice"
+      ],
+      "literature": [
+        "Śliwerski B., Współczesne teorie i nurty wychowania, Kraków 2015",
+        "Śliwerski B., Kwieciński Z., Pedagogika, Warszawa 2019",
+        "Nowak M., Teorie i koncepcje wychowania, Warszawa 2008"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "pedagogika-porownawcza",
+      "name": "Pedagogika porównawcza",
+      "semester": 2,
+      "ects": 3,
+      "hours": {
+        "W": 5,
+        "C": 10
+      },
+      "assessment": "ZO",
+      "group": "general",
+      "topics": [
+        "Rozwój współpracy międzynarodowej w edukacji",
+        "Raporty edukacyjne (IEA, Klub Rzymski i inne)",
+        "Ideologie edukacyjne a charakter społeczeństwa",
+        "Prawa dziecka w dokumentach UE",
+        "Efektywne systemy szkolne: wschodnioazjatycki, anglosaski, skandynawski",
+        "Systemy edukacyjne: USA, Japonia, Szwecja, Finlandia, Niemcy, Polska",
+        "Nauczanie indywidualne i grupowe – za i przeciw"
+      ],
+      "literature": [
+        "Nowakowska-Siuta R., Pedagogika porównawcza, Kraków 2014",
+        "Ferenz K., Konteksty edukacji kulturowej, Zielona Góra 2003"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "pedeutologia",
+      "name": "Pedeutologia z elementami dydaktyki",
+      "semester": 2,
+      "ects": 3,
+      "hours": {
+        "W": 5,
+        "C": 10
+      },
+      "assessment": "ZO",
+      "group": "general",
+      "topics": [],
+      "literature": [
+        "Kwiatkowska H., Pedeutologia, Warszawa 2008",
+        "Kupisiewicz Cz., Dydaktyka. Podręcznik akademicki, Kraków 2012",
+        "Ferenz K., Kozioł E. (red.), Kompetencje nauczyciela wychowawcy, Zielona Góra 2002"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "andragogika",
+      "name": "Andragogika",
+      "semester": 2,
+      "ects": 2,
+      "hours": {
+        "C": 10
+      },
+      "assessment": "ZO",
+      "group": "general",
+      "topics": [
+        "Dorosłość jako kategoria andragogiki; „pozorna” i odraczana dorosłość",
+        "Dorosły jako uczeń – motywacje edukacyjne",
+        "Formalne i pozaformalne instytucje edukacji dorosłych",
+        "Starzenie się i edukacja w późnej dorosłości",
+        "Edukacja dorosłych wobec marginalizacji i wykluczenia społecznego",
+        "Nieformalne uczenie się: praca, kultura popularna, uczenie się społeczne"
+      ],
+      "literature": [
+        "Knowles M., Holton E., Swanson R., Edukacja dorosłych, Warszawa 2009",
+        "Illeris K., Trzy wymiary uczenia się, Wrocław 2006"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "pedagogika-penitencjarna",
+      "name": "Pedagogika penitencjarna",
+      "semester": 2,
+      "ects": 3,
+      "hours": {
+        "W": 10,
+        "C": 10
+      },
+      "assessment": "E",
+      "group": "specialization",
+      "topics": [],
+      "literature": [
+        "Niewiadomska I., Polski model resocjalizacji penitencjarnej, Lublin 2016",
+        "Miszewski K., Zabójcy w więzieniu, Warszawa 2016",
+        "Bieńkowska E., Wiktymologia, Warszawa 2018"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "polityka-spoleczna",
+      "name": "Polityka społeczna z elementami pracy socjalnej",
+      "semester": 2,
+      "ects": 2,
+      "hours": {
+        "W": 15
+      },
+      "assessment": "ZO",
+      "group": "specialization",
+      "topics": [
+        "Cele, wartości, podmioty i modele polityki społecznej",
+        "Narzędzia polityki społecznej na poziomie lokalnym, krajowym i międzynarodowym",
+        "Zadania, cele, zasady i modele pracy socjalnej",
+        "Metody pracy socjalnej: indywidualny przypadek, grupa, środowisko lokalne",
+        "Pracownik socjalny jako organizator pomocy",
+        "Osoby starsze w polityce społecznej i pracy socjalnej",
+        "Usługi społeczne – rodzaje",
+        "Decentralizacja i deinstytucjonalizacja – szanse i ryzyka"
+      ],
+      "literature": [
+        "Auleytner J., Polityka społeczna w Polsce i w świecie, Warszawa 2012",
+        "Firlit-Fesnak G., Szylko-Skoczny M. (red.), Polityka społeczna. Podręcznik akademicki, Warszawa 2013"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "prawo-rodzinne",
+      "name": "Prawo rodzinne i opiekuńcze",
+      "semester": 2,
+      "ects": 3,
+      "hours": {
+        "C": 20
+      },
+      "assessment": "ZO",
+      "group": "specialization",
+      "topics": [
+        "Podstawowe wiadomości o prawie; Internetowy System Aktów Prawnych",
+        "Małżeństwo",
+        "Pochodzenie dziecka",
+        "Władza rodzicielska",
+        "Sprawowanie opieki faktycznej nad małoletnim",
+        "Przysposobienie i piecza zastępcza",
+        "Opieka i kuratela"
+      ],
+      "literature": [
+        "Kodeks rodzinny i opiekuńczy (Dz.U. 1964 nr 9 poz. 59 z późn. zm.)",
+        "Kodeks cywilny (Dz.U. 1964 nr 16 poz. 93 z późn. zm.)"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "patologie-spoleczne",
+      "name": "Patologie społeczne z elementami tworzenia programów profilaktycznych",
+      "semester": 3,
+      "ects": 4,
+      "hours": {
+        "W": 5,
+        "C": 15
+      },
+      "assessment": "ZO",
+      "group": "specialization",
+      "topics": [
+        "Patologie społeczne – wprowadzenie",
+        "Partnerki życiowe recydywistów i ich rola w powstrzymywaniu przestępczości",
+        "Etyka funkcjonariusza Służby Więziennej",
+        "Resocjalizacja osób z zaburzeniami osobowości (m.in. antyspołeczne, borderline, narcystyczne)",
+        "Poczucie winy, wstyd i poczucie krzywdy u skazanych",
+        "Tworzenie i prezentacja programów profilaktycznych"
+      ],
+      "literature": [
+        "Szczepanik R., Partnerki życiowe recydywistów…, Profilaktyka Społeczna i Resocjalizacja nr 26, 2015",
+        "Mudrecka I., Meandry resocjalizacji psychopatów, w: Dylematy i wyzwania współczesnej resocjalizacji, 2015"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "pomoc-postpenitencjarna",
+      "name": "Pomoc postpenitencjarna i readaptacja społeczna",
+      "semester": 3,
+      "ects": 3,
+      "hours": {
+        "C": 15
+      },
+      "assessment": "ZO",
+      "group": "specialization",
+      "topics": [
+        "Pomoc postpenitencjarna – formy, podstawy prawne, podmioty, etapy",
+        "Readaptacja społeczna – czynniki sukcesu i bariery; funkcje sieci społecznej",
+        "Resocjalizacja, readaptacja, reintegracja; resocjalizacja a praca socjalna",
+        "Praca z osobą opuszczającą placówkę – klient niedobrowolny, wieloproblemowy",
+        "Metody pracy socjalnej; sprawiedliwość naprawcza; dialog motywujący",
+        "Praca z rodzinami osób opuszczających placówki"
+      ],
+      "literature": [
+        "Ciosek M., Pastwa-Wojciechowska B. (red.), Psychologia penitencjarna, Warszawa 2016",
+        "Miłkowska G., Sobański S., Sieć – kompleksowe wsparcie osób opuszczających zakłady karne, 2017"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "zaburzenia-osobowosci",
+      "name": "Zaburzenia osobowości",
+      "semester": 3,
+      "ects": 4,
+      "hours": {
+        "C": 20
+      },
+      "assessment": "ZO",
+      "group": "specialization",
+      "topics": [
+        "Norma a patologia – granice ilościowe i jakościowe",
+        "Klasyfikacje zaburzeń osobowości: DSM i ICD",
+        "Zaburzenie narcystyczne, histrioniczne, paranoiczne w pracy pedagoga",
+        "Praca z osobami z zaburzeniem antyspołecznym (system penitencjarny)",
+        "Zaburzenie zależne i unikające",
+        "Zaburzenie schizoidalne i anankastyczne",
+        "Kontakt terapeutyczny: przeniesienie, przeciwprzeniesienie, opór"
+      ],
+      "literature": [
+        "Butcher J. N., Hooley J. M., Mineka S., Psychologia zaburzeń DSM-5, Gdańsk 2020",
+        "Cierpiałkowska L., Psychopatologia, Warszawa 2022",
+        "Remberk B., Zaburzenia psychiczne u dzieci i młodzieży, Warszawa 2020"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "diagnostyka-resocjalizacja",
+      "name": "Diagnostyka w resocjalizacji",
+      "semester": 3,
+      "ects": 5,
+      "hours": {
+        "C": 20
+      },
+      "assessment": "E",
+      "group": "specialization",
+      "topics": [
+        "Niedostosowanie społeczne a zaburzenie; kryteria diagnostyczne",
+        "Modele diagnozowania: strukturalno-funkcjonalny i strukturalno-dynamiczny",
+        "Metodologiczne podstawy diagnozy w resocjalizacji",
+        "Etapy diagnozy: konstatująca, projektująca, kontrolująca, efektów",
+        "Płaszczyzny, sfery i obszary diagnozy resocjalizacyjnej",
+        "Dzieci z trudnościami wychowawczymi – etiologia i symptomatologia",
+        "Błąd wychowawczy jako kategoria diagnozy",
+        "Diagnoza rodziny: przemoc i zaniedbywanie dzieci, ryzyko przemocy"
+      ],
+      "literature": [
+        "Deptuła M., Diagnostyka, profilaktyka, socjoterapia w teorii i praktyce pedagogicznej, Bydgoszcz 2005",
+        "Elliott J., Dzieci i młodzież w kłopocie, Warszawa 2000",
+        "Ganczarska M. (red.), Socjoterapia wychowanków pogotowia opiekuńczego, Opole 2008"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "rodzina-dysfunkcyjna",
+      "name": "Strategie pracy z rodziną dysfunkcyjną",
+      "semester": 3,
+      "ects": 4,
+      "hours": {
+        "C": 15
+      },
+      "assessment": "ZO",
+      "group": "specialization",
+      "topics": [
+        "Środowisko rodziny dysfunkcyjnej – specyfika i procesy",
+        "Formy pomocy: poradnictwo, psycho- i socjoterapia, mediacje, wsparcie socjalne, piecza zastępcza",
+        "System wsparcia rodzin; współpraca z asystentem rodziny i kuratorem",
+        "Procedura „Niebieskiej Karty”; praca z rodziną, w której występuje przemoc",
+        "Praca z osobą bezrobotną, bezdomną, w ubóstwie",
+        "Zadania asystenta rodziny i kuratora rodzinnego",
+        "Poradnie psychologiczno-pedagogiczne; pedagog i psycholog szkolny"
+      ],
+      "literature": [
+        "Brągiel J., Kawula S., Janke A. W., Pedagogika rodziny, 2014",
+        "James R. K., Gilliland B. E., Strategie interwencji kryzysowej, Warszawa 2008",
+        "Krasiejko I., Rodzina z dziećmi. Rodzina dysfunkcyjna, 2019"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "trening-relaksacyjny",
+      "name": "Trening relaksacyjny",
+      "semester": 3,
+      "ects": 2,
+      "hours": {
+        "C": 15
+      },
+      "assessment": "ZO",
+      "group": "specialization",
+      "topics": [
+        "Stres i jego uwarunkowania; napięcia i lęki u dzieci",
+        "Relaksacja progresywna Jacobsona i trening autogenny Schultza",
+        "Praca z oddechem; ćwiczenia oddechowe",
+        "Biofeedback (RSA)",
+        "Geloterapia; bajki i muzyka relaksacyjna",
+        "Self-reg i mindfulness w ujęciu pedagogicznym"
+      ],
+      "literature": [
+        "Dobińska G., Cieślikowska-Ryczko A., Techniki i metody relaksacyjne w wychowaniu, edukacji i terapii, Łódź 2019",
+        "Gmitrzak D., Trening relaksacji, Warszawa 2017"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "psychologia-uzaleznien",
+      "name": "Psychologia uzależnień i współuzależnień",
+      "semester": 3,
+      "ects": 4,
+      "hours": {
+        "W": 10,
+        "C": 10
+      },
+      "assessment": "E",
+      "group": "addiction",
+      "proxy": true,
+      "topics": [
+        "Substancje psychoaktywne i ich wpływ na funkcjonowanie dzieci i młodzieży",
+        "Uzależnienie od alkoholu: przyczyny, typologie, fazy a metody pracy pedagogicznej",
+        "Rodzina z problemem alkoholowym; współuzależnienie; FAS",
+        "Narkomania: rodzaje i działanie narkotyków, skutki, rozpoznawanie objawów",
+        "Uzależnienia behawioralne: rodzaje, objawy, czynniki ryzyka i chroniące",
+        "Kryteria uzależnienia według ICD w pracy pedagoga",
+        "Mechanizmy obronne i metody pracy z osobami współuzależnionymi",
+        "Zespół abstynencyjny i profilaktyka trzeciorzędowa"
+      ],
+      "literature": [
+        "Forcehimes A. A., Miller W. R., Allen Z., Terapia uzależnień, Kraków 2020",
+        "Grzegorzewska I., Cierpiałkowska L., Uzależnienia behawioralne, Warszawa 2018",
+        "Malorny I., Ryzyko uzależnienia młodzieży szkolnej od narkotyków, Katowice 2016"
+      ],
+      "source": "I"
+    },
+    {
+      "id": "profilaktyka-uzaleznien",
+      "name": "Profilaktyka uzależnień",
+      "semester": 3,
+      "ects": 3,
+      "hours": {
+        "W": 10,
+        "C": 10
+      },
+      "assessment": "E",
+      "group": "addiction",
+      "proxy": true,
+      "topics": [
+        "Profilaktyka – definicje i poziomy działań",
+        "Osobowościowe i temperamentalne korelaty uzależnień",
+        "Czynniki ryzyka i czynniki chroniące – rozpoznawanie i wzmacnianie",
+        "Psychopedagogiczna charakterystyka osób uzależnionych",
+        "Mechanizmy uzależnienia a trudności w profilaktyce",
+        "Modele profilaktyki uzależnień w szkole i placówce",
+        "Nikotynizm, alkoholizm, narkomania – zapobieganie w programach profilaktycznych",
+        "Picie ryzykowne, szkodliwe a uzależnienie"
+      ],
+      "literature": [
+        "Forcehimes A. A., Miller W. R., Allen Z., Terapia uzależnień, Kraków 2020",
+        "Miller W. R., Forcehimes A. A., Zweben A., Terapia uzależnień, Kraków 2014",
+        "Malorny I., Ryzyko uzależnienia młodzieży szkolnej od narkotyków, Katowice 2016"
+      ],
+      "source": "I"
+    },
+    {
+      "id": "metodyka-resocjalizacji",
+      "name": "Metodyka resocjalizacji w środowisku otwartym i zamkniętym",
+      "semester": 4,
+      "ects": 4,
+      "hours": {
+        "C": 30
+      },
+      "assessment": "E",
+      "group": "specialization",
+      "topics": [],
+      "literature": [],
+      "source": "II"
+    },
+    {
+      "id": "kurator",
+      "name": "Metodyka pracy kuratora sądowego",
+      "semester": 4,
+      "ects": 4,
+      "hours": {
+        "C": 30
+      },
+      "assessment": "ZO",
+      "group": "specialization",
+      "topics": [
+        "Organizacja kurateli sądowej w Polsce i podstawy prawne",
+        "Kuratorzy zawodowi i społeczni; rodzinni i dla dorosłych – kompetencje",
+        "Obowiązki i prawa kuratorów sądowych",
+        "Metody pracy w sprawach rodzinnych, nieletnich, ośrodka kuratorskiego, leczenia odwykowego",
+        "Diagnoza w pracy kuratora (sprawy rodzinne i nieletnich)",
+        "Wywiad środowiskowy",
+        "Nadzór kuratorski i jego cele"
+      ],
+      "literature": [
+        "Gromek K., Kuratorzy sądowi. Komentarz, Warszawa 2005",
+        "Jadach K., Praca kuratora sądowego w sprawach rodzinnych, nieletnich i karnych, Poznań 2011",
+        "Kwadrans Ł., Metody pracy… kuratorów sądowych, IWS, Warszawa 2019"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "nieletni",
+      "name": "Metodyka oddziaływań resocjalizacyjnych wobec nieletnich – warsztat",
+      "semester": 4,
+      "ects": 4,
+      "hours": {
+        "C": 20
+      },
+      "assessment": "E",
+      "group": "specialization",
+      "topics": [
+        "Terminologia i istota procesu resocjalizacji",
+        "Funkcje, procedury i modele systemu resocjalizacji (model optymalny wg L. Pytki)",
+        "Metody i środki oddziaływania; ekonomia punktowa",
+        "Edukacja i szkolenie zawodowe w resocjalizacji",
+        "Oddziaływanie przez pracę",
+        "Kulturotechnika: arteterapia, muzykoterapia, sport, psychodrama i socjodrama"
+      ],
+      "literature": [
+        "Konopczyński M., Metody twórczej resocjalizacji, Warszawa 2006",
+        "Pospiszyl K., Resocjalizacja, Warszawa 1998",
+        "Pytka L., Pedagogika resocjalizacyjna, Warszawa 2008"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "socjoterapia",
+      "name": "Metodyka pracy socjoterapeutycznej – warsztat",
+      "semester": 4,
+      "ects": 3,
+      "hours": {
+        "C": 15
+      },
+      "assessment": "ZO",
+      "group": "specialization",
+      "topics": [
+        "Cele socjoterapii i źródła doświadczeń korekcyjnych",
+        "Dynamika procesu socjoterapeutycznego",
+        "Struktura zajęć, scenariusze i ćwiczenia",
+        "Konstruowanie programów socjoterapeutycznych; praca z przypadkiem",
+        "Dobre praktyki socjoterapii"
+      ],
+      "literature": [
+        "Grudziewska E., Socjoterapia w pracy z dziećmi i młodzieżą, Warszawa 2015",
+        "Sawicka K. (red.), Socjoterapia, Warszawa 1999",
+        "Dąbrowska-Jabłońska I. (red.), Terapia dzieci i młodzieży, Kraków 2006"
+      ],
+      "source": "II"
+    },
+    {
+      "id": "terapia-resocjalizacja",
+      "name": "Podstawy terapii w resocjalizacji",
+      "semester": 4,
+      "ects": 4,
+      "hours": {
+        "C": 20
+      },
+      "assessment": "ZO",
+      "group": "addiction",
+      "proxy": true,
+      "topics": [
+        "Rodzaje pomocy psychologicznej w resocjalizacji",
+        "Wybrane systemy i modele terapeutyczne",
+        "Zadania, rodzaje i formy terapii w resocjalizacji; diagnoza w terapii",
+        "Czynniki leczące w psychoterapii; warunki zmiany",
+        "Analiza programów terapeutycznych",
+        "Postawa terapeutyczna w resocjalizacji",
+        "Dialog motywujący"
+      ],
+      "literature": [
+        "Rejzner A., Szczepaniak P. (red.), Terapia w resocjalizacji, Warszawa 2009",
+        "Czabała J. Cz., Czynniki leczące w psychoterapii, Warszawa 2008",
+        "Wysocka E., Diagnoza w resocjalizacji, Warszawa 2013"
+      ],
+      "source": "I"
+    },
+    {
+      "id": "profilaktyka-niedostosowania",
+      "name": "Profilaktyka niedostosowania społecznego i zagrożeń rozwoju",
+      "semester": 4,
+      "ects": 4,
+      "hours": {
+        "W": 10,
+        "C": 15
+      },
+      "assessment": "E",
+      "group": "addiction",
+      "proxy": true,
+      "topics": [
+        "Poziomy profilaktyki i ich znaczenie dla edukacji i resocjalizacji",
+        "Szkoła jako miejsce profilaktyki pierwszo- i drugorzędowej",
+        "Zajęcia profilaktyczne a czynniki ryzyka i chroniące",
+        "Planowanie zajęć na podstawie diagnozy klasy i środowiska",
+        "Zasady, składniki, wdrażanie i ewaluacja programów profilaktycznych",
+        "Programy rekomendowane (np. „Program siedmiu kroków”, „Saper”)"
+      ],
+      "literature": [
+        "Porzak R. (red.), Profilaktyka w szkole, 2019",
+        "Forcehimes A. A., Miller W. R., Allen Z., Terapia uzależnień, Kraków 2020",
+        "Malorny I., Ryzyko uzależnienia młodzieży szkolnej od narkotyków, Katowice 2016"
+      ],
+      "source": "I"
+    },
+    {
+      "id": "seminarium",
+      "name": "Seminarium magisterskie",
+      "semester": 2,
+      "ects": 16,
+      "hours": {
+        "S": 120
+      },
+      "assessment": "E",
+      "group": "seminar",
+      "topics": [
+        "Struktura pracy magisterskiej",
+        "Problem badawczy, pytania i hipotezy",
+        "Dobór metod, technik i narzędzi badawczych",
+        "Analiza i interpretacja wyników",
+        "Egzamin dyplomowy – przygotowanie"
+      ],
+      "literature": [
+        "Eco U., Jak napisać pracę dyplomową, Warszawa 2007",
+        "Babbie E., Badania społeczne w praktyce, Warszawa 2004"
+      ],
+      "source": "II",
+      "alsoIn": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "praktyka",
+      "name": "Praktyka zawodowa",
+      "semester": 1,
+      "ects": 20,
+      "hours": {
+        "P": 480
+      },
+      "assessment": "ZO",
+      "group": "practice",
+      "topics": [
+        "120 godzin w każdym semestrze (terminy 30 stycznia i 30 września)",
+        "Praktyka hospitacyjna, asystencka i zadaniowa",
+        "Dziennik praktyk i portfolio",
+        "Miejsca: ośrodki leczenia uzależnień, interwencji kryzysowej, kuratorzy, MOS/MOW, zakłady karne, PCPR"
+      ],
+      "literature": [],
+      "source": "II",
+      "alsoIn": [
+        2,
+        3,
+        4
+      ]
+    }
+  ]
+}

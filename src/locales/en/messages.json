@@ -2,8 +2,15 @@
   "title": "Messages",
   "subtitle": "E-mails and SMS from templates and with AI help – sent with your own mail and phone",
   "navHint": "E-mail, SMS, contacts",
-  "tabs": { "compose": "New", "history": "Sent and drafts", "contacts": "Contacts" },
-  "channel": { "email": "E-mail", "sms": "SMS" },
+  "tabs": {
+    "compose": "New",
+    "history": "Sent and drafts",
+    "contacts": "Contacts"
+  },
+  "channel": {
+    "email": "E-mail",
+    "sms": "SMS"
+  },
   "to": "To",
   "toEmail": "E-mail address",
   "toPhone": "Phone number",
@@ -35,7 +42,33 @@
     "handedOff": "Handed over to the app – send it there",
     "copied": "Text copied",
     "savedDraft": "Draft saved",
-    "failed": "Could not send: {{msg}}"
+    "failed": "Could not send: {{msg}}",
+    "gmail": "Send from Gmail",
+    "gmailFrom": "Send from {{from}}",
+    "phone": "Send from this phone",
+    "smsGate": "Send through the SMS gateway",
+    "confirmEmail": "Send the e-mail to {{to}}?",
+    "confirmSms": "Send the SMS to {{to}}?",
+    "gateWarning": "The text passes through the sms-gate.app server.",
+    "sentGmail": "Sent from {{from}}",
+    "sentPhone": "SMS sent",
+    "sentPhoneUnconfirmed": "SMS handed to the network (not confirmed)",
+    "sentGate": "SMS handed to the gateway",
+    "gmailError": {
+      "noClientId": "Gmail is not set up – Settings → Notifications and messages.",
+      "popup": "The browser blocked the Google window – allow pop-ups.",
+      "denied": "Google sign-in cancelled.",
+      "auth": "Google did not grant the permission: {{msg}}",
+      "send": "Gmail rejected the message: {{msg}}",
+      "network": "No connection to Google.",
+      "unavailable": "Gmail is not available right now."
+    },
+    "phoneError": {
+      "DENIED": "No SMS permission – allow it in the phone settings.",
+      "UNAVAILABLE": "This device cannot send SMS.",
+      "INVALID": "Check the number and the text.",
+      "FAILED": "The SMS could not be sent: {{msg}}"
+    }
   },
   "ai": {
     "title": "AI help",
@@ -50,7 +83,11 @@
     "useClient": "Include basic information about the person (stage of change, goal, context – nothing identifying)",
     "recipient": "Recipient",
     "tone": "Tone",
-    "tones": { "formal": "Formal", "neutral": "Neutral", "warm": "Warm" },
+    "tones": {
+      "formal": "Formal",
+      "neutral": "Neutral",
+      "warm": "Warm"
+    },
     "run": "Prepare a draft",
     "apply": "Insert into the message",
     "useSms": "Insert the SMS version",
@@ -85,7 +122,10 @@
       "smsApp": "via the SMS app",
       "emailjs": "via EmailJS",
       "copy": "copied",
-      "share": "shared"
+      "share": "shared",
+      "gmail": "from Gmail",
+      "phone": "from the phone",
+      "smsGate": "through the SMS gateway"
     },
     "open": "Open",
     "duplicate": "Use again",
@@ -117,7 +157,12 @@
     "emailReferral": "Send by e-mail",
     "invite": "Invitation e-mail"
   },
-  "placeholders": { "date": "date", "time": "time", "signature": "signature", "program": "programme name" },
+  "placeholders": {
+    "date": "date",
+    "time": "time",
+    "signature": "signature",
+    "program": "programme name"
+  },
   "templates": {
     "meetingReminder": {
       "title": "Meeting reminder",

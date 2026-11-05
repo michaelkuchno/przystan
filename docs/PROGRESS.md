@@ -1,6 +1,6 @@
 # Postęp prac
 
-Stan: **wersja 1.4.0** – powiadomienia, wiadomości e-mail / SMS z AI (D-060…D-064, `docs/NOTIFICATIONS.md`); 1.3: asystent AI (D-051…D-059, `docs/AI.md`).
+Stan: **wersja 1.5.0** – wysyłka prosto z Gmaila i SMS z telefonu / darmowej bramki (D-065, D-066), moduł Studia – nauka do egzaminów WSHE Brzeg (D-067…D-069, `docs/STUDIES.md`); 1.4: powiadomienia, wiadomości e-mail / SMS z AI (D-060…D-064, `docs/NOTIFICATIONS.md`); 1.3: asystent AI (D-051…D-059, `docs/AI.md`).
 historia z audytem (1.2) i asystent AI (1.3) zakończone.
 
 | Etap | Zakres | Status |
@@ -73,7 +73,25 @@ historia z audytem (1.2) i asystent AI (1.3) zakończone.
 | 5 | Wejścia: spotkanie, lista spotkań, profil osoby, kreator skierowania, program profilaktyczny, pulpit „Na dziś”, Ustawienia, Więcej | ✅ |
 | 6 | Android: plugin powiadomień, ikona, dokładne godziny; CSP + EmailJS; audyt; testy; wersja 1.4.0 | ✅ |
 
-## Jakość (ostatni przebieg, wersja 1.4.0)
+## Wersja 1.5 – wysyłka bezpośrednia i Studia (D-065…D-069)
+
+| Punkt | Zakres | Status |
+|---|---|---|
+| 1 | E-mail prosto z Gmaila: GIS (PWA) i natywny AuthorizationClient (APK), Gmail API, RFC 2822/2047, instrukcja konfiguracji w aplikacji | ✅ |
+| 2 | SMS z karty SIM telefonu (wtyczka PrzystanSms, SEND_SMS, potwierdzenie) i przez darmową bramkę SMS Gateway for Android | ✅ |
+| 3 | Studia: program WSHE Brzeg (Pedagogika II st., resocjalizacja z profilaktyką uzależnień), semestry, edycja planu | ✅ |
+| 4 | Nauka: samoocena tematów, fiszki SM-2, egzaminy próbne (AI i bez AI), cel dzienny, seria, gotowość, karta na pulpicie | ✅ |
+| 5 | Wyszukiwanie (słowa kluczowe / semantyczne), „Zapytaj” tylko z danych uczelni z odnośnikami, „Wytłumacz na egzamin”, materiały | ✅ |
+
+## Jakość (ostatni przebieg, wersja 1.5.0)
+
+- 1.5.0: lint 0 / typecheck 0; **261 testów jednostkowych** ✅ (+11: program i semestry, wyszukiwanie, dzielenie tekstu,
+  seria dni, walidacja egzaminu próbnego, wiadomość Gmail RFC 2822 z polskimi znakami, bramka SMS);
+  **53 testy E2E** ✅ (+4: studia bez AI, studia z AI, a11y i przewijanie ekranów studiów, Gmail z atrapą logowania Google);
+  natywne wtyczki (SMS, Google) skompilowane w CI.
+
+### Wersja 1.4.0
+
 
 - `npm run lint` – 0 błędów, 0 ostrzeżeń; `npm run typecheck` – 0 błędów
 - `npm test` – **250 testów jednostkowych** ✅ (1.4: +14 – terminy i przypomnienia, podsumowanie bez szczegółów,

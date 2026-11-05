@@ -47,6 +47,8 @@ export default function Study() {
     const id = `${deck.id}:${card.id}`;
     const prev = all('cardState').find((s) => s.id === id) ?? newCardState(deck.id, card.id, today);
     await save('cardState', review(prev, g, today));
+    // cards of a study course count towards the daily goal (Studies module)
+    if (deck.id.startsWith('study-')) void import('@/lib/studies/streak').then((m) => m.countStudy(1));
     void haptic(g === 'again' ? 'warning' : 'light');
     setCounts({ ...counts, [g]: counts[g] + 1 });
     setFlipped(false);

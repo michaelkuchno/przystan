@@ -288,3 +288,58 @@ export function validateMessage(v: unknown): DraftMessage {
     cautions: strList(o.cautions, 6),
   };
 }
+
+/* ------------------------------------------------------------ mock exam */
+
+export interface MockExam {
+  questions: {
+    type: 'single' | 'open';
+    question: string;
+    options?: string[];
+    correct?: number;
+    answer: string;
+    topic?: string;
+  }[];
+}
+
+export const mockExamSchema = S('mockExam', {
+  questions: {
+    type: 'array',
+    items: {
+      type: 'object',
+      properties: {
+        type: { type: 'string', enum: ['single', 'open'] },
+        question: T,
+        options: LIST,
+        correct: { type: 'integer', minimum: 0, maximum: 5 },
+        answer: T,
+        topic: T,
+      },
+      required: ['type', 'question', 'answer'],
+    },
+    maxItems: 25,
+  },
+});
+
+export function validateMockExam(v: unknown): MockExam {
+  const questions = arr(
+    obj(v).questions,
+    (x) => {
+      const q = obj(x);
+      const type = oneOf(q.type, ['single', 'open'] as const, Array.isArray(q.options) ? 'single' : 'open');
+      const question = str(q.question, 'question', 600);
+      if (type === 'single') {
+        const options = strList(q.options, 6);
+        const correct = typeof q.correct === 'string' ? Number(q.correct) : q.correct;
+        // an out-of-range answer key means the question is broken – drop it rather than guess
+        if (options.length < 2 || typeof correct !== 'number' || !Number.isInteger(correct) || correct < 0 || correct >= options.length)
+          throw new Error('bad single');
+        return { type, question, options, correct, answer: optStr(q.answer, 600), topic: optStr(q.topic, 200) };
+      }
+      return { type, question, answer: str(q.answer, 'answer', 1500), topic: optStr(q.topic, 200) };
+    },
+    25,
+  );
+  if (!questions.length) throw new Error('empty');
+  return { questions };
+}

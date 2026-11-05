@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { GraduationCap, Plus, Upload, FileQuestion, Pencil, Sparkles } from 'lucide-react';
+import { GraduationCap, Plus, Upload, FileQuestion, Pencil, Sparkles, School } from 'lucide-react';
 import { Page, PageHeader } from '@/components/ui/page';
 import { Button, ButtonLink, Card, CardLink, Badge, SectionTitle, IconButton } from '@/components/ui/core';
 import { usePrefs } from '@/lib/prefs';
@@ -49,9 +49,14 @@ export default function Learn() {
         title={t('title')}
         subtitle={t('subtitle')}
         actions={
-          <ButtonLink to="/learn/exam" icon={<FileQuestion className="size-4" />}>
-            {t('exam')}
-          </ButtonLink>
+          <>
+            <ButtonLink to="/studies" variant="soft" icon={<School className="size-4" aria-hidden />}>
+              {t('common:nav.studies')}
+            </ButtonLink>
+            <ButtonLink to="/learn/exam" icon={<FileQuestion className="size-4" />}>
+              {t('exam')}
+            </ButtonLink>
+          </>
         }
       />
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

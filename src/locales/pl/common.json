@@ -82,7 +82,8 @@
     "about": "O aplikacji",
     "practice": "Dzienniczek praktyk",
     "notes": "Notatnik",
-    "messages": "Wiadomości"
+    "messages": "Wiadomości",
+    "studies": "Studia"
   },
   "navHint": {
     "screening": "AUDIT, AUDIT-C, DUDIT",
@@ -100,6 +101,7 @@
     "about": "Wersja i zastrzeżenia",
     "practice": "Godziny, wpisy, PDF dla opiekuna",
     "notes": "Notatki i superwizja",
-    "messages": "E-mail, SMS, kontakty"
+    "messages": "E-mail, SMS, kontakty",
+    "studies": "WSHE Brzeg – nauka do egzaminów"
   }
 }

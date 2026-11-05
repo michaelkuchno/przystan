@@ -23,6 +23,7 @@ import { sendEmailJs } from '@/lib/notify/emailjs';
 import { mailtoUrl } from '@/lib/notify/links';
 import { exportCalendar } from '@/lib/notify/calendar';
 import { runNotifications, todaysDigest } from '@/lib/notify/engine';
+import { DirectSending } from './DirectSending';
 import type { Digest } from '@/lib/notify/text';
 
 const setNotify = (patch: Partial<NotifyPrefs>) => setPrefs({ notify: { ...getPrefs().notify, ...patch } });
@@ -268,6 +269,8 @@ export default function NotifySettings() {
           </div>
           <Button onClick={() => void persist()}>{t('save')}</Button>
         </Card>
+
+        <DirectSending s={s} setS={setS} />
 
         <SectionTitle>{t('emailjs')}</SectionTitle>
         <Card className="space-y-3">

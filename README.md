@@ -56,6 +56,12 @@ EmailJS), **e-maile i SMS-y** z szablonów i z AI (także **odpowiedź na otrzym
 i historia. Wysyłasz przez własną pocztę i telefon – bez serwera i bez kosztów. Szczegóły:
 [`docs/NOTIFICATIONS.md`](docs/NOTIFICATIONS.md).
 
+**Od 1.5:** e-maile **prosto z Twojego Gmaila** (logowanie Google) i SMS-y **z karty SIM telefonu**
+(aplikacja na Androida) lub przez darmową bramkę SMS Gateway for Android. Nowy moduł **Studia** – nauka do
+egzaminów według programu **WSHE w Brzegu** (Pedagogika II stopnia, resocjalizacja z profilaktyką
+uzależnień): semestry, tematy z sylabusa, własne materiały, fiszki, egzaminy próbne (z AI i bez),
+wyszukiwanie i pytania odpowiadane wyłącznie z danych uczelni. Szczegóły: [`docs/STUDIES.md`](docs/STUDIES.md).
+
 ## Kurzfassung (Deutsch)
 
 **Przystań** ist eine App für Soziale Arbeit, Sozialpädagogik und Suchtberatung – auf Deutsch
@@ -82,6 +88,9 @@ Gerät.
 - **Erinnerungen und Nachrichten (ab 1.4):** Erinnerungen an Gespräche, Aufgaben und wichtige Termine
   (Android auch bei geschlossener App, iPhone über Kalender-Export), Tagesübersicht, E-Mails und SMS aus
   Vorlagen und mit KI (auch Antworten auf erhaltene E-Mails) – gesendet über die eigene Mail und das Telefon.
+- **Ab 1.5:** E-Mails direkt aus dem eigenen Gmail (Google-Anmeldung), SMS direkt von der SIM des Telefons
+  (Android-App) oder über das kostenlose SMS Gateway for Android; Modul **Studium** – Prüfungsvorbereitung nach
+  dem Studienplan der WSHE Brzeg (Polen): Semester, Themen, Karteikarten, Probeprüfungen, Suche, KI nur aus Hochschuldaten.
 - Sprache und Arbeitsland: beim ersten Start oder in den **Einstellungen**. Inhalte, die noch
   geprüft werden müssen, sind entsprechend markiert (siehe `docs/CONTENT_REVIEW.md`).
 
@@ -133,7 +142,10 @@ people never goes to the cloud automatically – only pseudonymised, after a pre
 (see [`docs/AI.md`](docs/AI.md)) · **reminders and messages** (1.4): reminders for meetings,
 tasks, reviews and key dates (Android also when the app is closed, iPhone via calendar export), a daily
 summary, e-mails and SMS from templates and with AI (including replies to received e-mails) sent with
-your own mail and phone (see [`docs/NOTIFICATIONS.md`](docs/NOTIFICATIONS.md)).
+your own mail and phone (see [`docs/NOTIFICATIONS.md`](docs/NOTIFICATIONS.md)) · **1.5:** e-mail straight from
+your Gmail (Google sign-in), SMS from the phone's SIM (Android app) or the free SMS Gateway for Android, and a
+**Studies** module for exam preparation based on the WSHE Brzeg programme – semesters, topics, flashcards, mock
+exams, search and AI answers grounded only in university data (see [`docs/STUDIES.md`](docs/STUDIES.md)).
 
 ### Local preview (Windows)
 

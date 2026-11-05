@@ -52,6 +52,9 @@ const AiSettings = lazy(() => import('@/features/ai/AiSettings'));
 const AiInfo = lazy(() => import('@/features/ai/AiInfo'));
 const Messages = lazy(() => import('@/features/messages/Messages'));
 const NotifySettings = lazy(() => import('@/features/notify/NotifySettings'));
+const StudiesHome = lazy(() => import('@/features/studies/StudiesHome'));
+const CourseDetail = lazy(() => import('@/features/studies/CourseDetail'));
+const StudySearch = lazy(() => import('@/features/studies/StudySearch'));
 const Ask = lazy(() => import('@/features/ai/Ask'));
 const SimulatorLive = lazy(() => import('@/features/simulator/SimulatorLive'));
 const GenerateCards = lazy(() => import('@/features/learn/GenerateCards'));
@@ -158,6 +161,9 @@ export default function AuthedApp({ overlay }: { overlay?: ReactNode }) {
                     <Route path="/settings/ai" element={<AiSettings />} />
                     <Route path="/settings/notify" element={<NotifySettings />} />
                     <Route path="/messages/:tab?" element={<Messages />} />
+                    <Route path="/studies" element={<StudiesHome />} />
+                    <Route path="/studies/course/:id" element={<CourseDetail />} />
+                    <Route path="/studies/search" element={<StudySearch />} />
                     <Route path="/ai/info" element={<AiInfo />} />
                     <Route path="/ask" element={<Ask />} />
                     <Route path="/audit" element={<AuditLog />} />

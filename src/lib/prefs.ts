@@ -9,6 +9,7 @@ import type { ReviewStatus } from '@/content/types';
 import { syncSystemBars } from './platform';
 import { DEFAULT_MODEL, defaultAiPrefs, type AiPrefs } from './ai/settings';
 import { defaultNotifyPrefs, type NotifyPrefs } from './notify/settings';
+import { defaultStudyPrefs, type StudyPrefs } from './studies/settings';
 
 export type Lang = 'pl' | 'en' | 'de';
 export const LANGS: Lang[] = ['pl', 'en', 'de'];
@@ -42,6 +43,8 @@ export interface Prefs {
   ai: AiPrefs;
   /** Notifications and reminders (docs/NOTIFICATIONS.md). Off by default. */
   notify: NotifyPrefs;
+  /** Studies module (docs/STUDIES.md). */
+  study: StudyPrefs;
 }
 
 const navLang = () => ((typeof navigator !== 'undefined' && navigator.language) || 'pl').toLowerCase();
@@ -73,6 +76,7 @@ export const defaultPrefs = (): Prefs => ({
   practiceGoalH: 90,
   ai: defaultAiPrefs(),
   notify: defaultNotifyPrefs(),
+  study: defaultStudyPrefs(),
 });
 
 let prefs: Prefs = defaultPrefs();
@@ -93,6 +97,7 @@ export async function loadPrefs(): Promise<Prefs> {
           rules: { ...defaultNotifyPrefs().rules, ...v.notify?.rules },
           channels: { ...defaultNotifyPrefs().channels, ...v.notify?.channels },
         },
+        study: { ...defaultStudyPrefs(), ...v.study },
       };
       // a default that was never chosen follows the current default model (1.3.1: Flash-Lite)
       if (!prefs.ai.modelChosen) prefs.ai.model = DEFAULT_MODEL;

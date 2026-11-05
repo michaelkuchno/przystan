@@ -86,7 +86,7 @@
   "settingsLink": "Notification settings",
   "statusOn": "On",
   "statusOff": "Off",
-  "info": "Automatic SMS is not available for free (every SMS gateway costs money). SMS to people are sent manually with a prepared text – through the phone's SMS app.",
+  "info": "There is no automatic server SMS – paid gateways were ruled out. Free: SMS directly from this phone (Android app), through the free SMS Gateway for Android, or manually with the Messages app.",
   "line": {
     "meeting": "Meeting at {{time}}",
     "task": "Task due {{date}}",
@@ -123,5 +123,70 @@
     "ipr": "IPR review (Przystań)",
     "keyDate": "Key date (Przystań)",
     "description": "Details in the Przystań app."
+  },
+  "direct": {
+    "title": "Sending directly from Przystań"
+  },
+  "gmail": {
+    "title": "E-mails from my Gmail (Google sign-in)",
+    "lead": "Messages go out directly from your Gmail mailbox – no mail app and no intermediary. Przystań receives from Google only the permission “send on your behalf” (it cannot read your mail) for one hour.",
+    "clientId": "OAuth client ID (Google Cloud)",
+    "clientIdHint": "One-time setup – instructions below. The ID is not secret.",
+    "as": "Connected: {{email}}",
+    "connect": "Connect with Google",
+    "reconnect": "Connect again",
+    "test": "Send a test e-mail to myself",
+    "connected": "Connected to {{email}}",
+    "testBody": "This is a test e-mail sent from Przystań directly from your Gmail. If you can see it, sending works.",
+    "testOk": "Test e-mail sent from {{email}}",
+    "howTo": "How to set it up (once, about 10 minutes)",
+    "steps": [
+      "Open console.cloud.google.com with the same Google account (you can use the project of your Gemini key).",
+      "“APIs & Services” → “Library” → enable “Gmail API”.",
+      "“Google Auth Platform” → “Branding”: name “Przystań” and your e-mail; “Audience”: type “External”, status “Testing” → add the Gmail addresses you want to send from under “Test users”.",
+      "“Data Access” → “Add scopes” → …/auth/gmail.send.",
+      "“Clients” → “Create client” → “Web application” → “Authorized JavaScript origins”: {{origin}} → copy the client ID and paste it above (PWA, browser).",
+      "For the Android app: “Create client” → “Android” → package name {{pkg}}, SHA-1 fingerprint: {{sha1}}.",
+      "On the first connection Google shows “unverified app” – it is your own setup: “Continue”. In testing mode Google may ask for consent again every 7 days."
+    ],
+    "privacy": "The access token is kept in memory only (about 1 h) and never stored. Google sends the message from your account – you will find it under “Sent” in Gmail.",
+    "error": {
+      "noClientId": "First enter the OAuth client ID.",
+      "popup": "The browser blocked the Google sign-in window – allow pop-ups.",
+      "denied": "Google sign-in was cancelled or the permission was refused.",
+      "auth": "Google did not grant the permission ({{msg}}). Check the Google Cloud setup.",
+      "send": "Gmail rejected the message: {{msg}}",
+      "network": "No connection to Google.",
+      "unavailable": "Google sign-in is not available right now."
+    }
+  },
+  "sms": {
+    "title": "SMS directly from the app",
+    "phoneOn": "This phone can send SMS directly from Przystań – from your SIM card, within your plan. Android asks for permission with the first SMS.",
+    "phoneNoSim": "This device cannot send SMS.",
+    "phoneWeb": "Direct sending from the SIM works in the Android app (APK). On the iPhone and in the browser the SMS opens in the Messages app with the text ready.",
+    "testNumber": "Number for a test (e.g. yours)",
+    "testPhone": "Send a test SMS from this phone",
+    "testBody": "Test SMS from Przystań.",
+    "testOk": "Test SMS sent",
+    "error": {
+      "DENIED": "No permission to send SMS – allow it in phone Settings → Apps → Przystań → Permissions.",
+      "UNAVAILABLE": "This device cannot send SMS.",
+      "INVALID": "Check the number and the text.",
+      "FAILED": "The SMS could not be sent: {{msg}}"
+    },
+    "gateTitle": "Free SMS gateway (SMS Gateway for Android)",
+    "gateLead": "A free open-source app turns any Android phone into an SMS gateway – Przystań sends SMS through it from that phone’s SIM. The text passes through the sms-gate.app server – do not send sensitive data this way.",
+    "gateWeb": "The gateway works only from the Przystań Android app (its server does not allow calls from a browser).",
+    "gateUser": "Username (from the SMS Gateway app)",
+    "gatePassword": "Password (from the SMS Gateway app)",
+    "testGate": "Send a test SMS through the gateway",
+    "gateFail": "The gateway did not send the SMS: {{msg}}",
+    "gateHowTo": "How to set up the gateway",
+    "gateSteps": [
+      "On an Android phone install “SMS Gateway for Android” (sms-gate.app, GitHub capcom6/android-sms-gateway).",
+      "In the app turn on “Cloud server” and start the service – a username and password appear.",
+      "Enter them above and send a test SMS."
+    ]
   }
 }

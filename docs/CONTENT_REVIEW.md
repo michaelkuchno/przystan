@@ -465,3 +465,13 @@ uzyskaniu klucza warto zrobić próbę na 5–10 typowych wypowiedziach w każdy
   mogą być omawiane wyłącznie bezpośrednio, z poszanowaniem prywatności i zaufania [Osoba A]. Zapraszam
   Panią na rozmowę telefoniczną…”; uwagi: „Nie przekazywano przez e-mail informacji o stosowaniu
   substancji…”.
+
+## 16. Studia – program WSHE Brzeg i AI do nauki (NOWE w 1.5.0)
+
+- **Program** (`src/content/studies/wshe-brzeg.json`, opis źródeł: `docs/STUDIES.md`): sprawdzić z planem
+  zajęć grupy w dziekanacie – szczególnie przedmioty oznaczone „odpowiednik” (z programu I stopnia),
+  przypisanie do semestrów, formy zaliczenia; uzupełnić tematy przedmiotów, dla których sylabus ich
+  nie podaje (Historia myśli pedagogicznej, Pedeutologia, Pedagogika penitencjarna, Metodyka resocjalizacji
+  w środowisku otwartym i zamkniętym).
+- **Prompty** (`src/lib/ai/studyPrompts.ts`): czy „Zapytaj” rzeczywiście ogranicza się do źródeł; czy
+  „Wytłumacz na egzamin” używa terminologii z polskiej literatury przedmiotu; jakość pytań egzaminacyjnych.

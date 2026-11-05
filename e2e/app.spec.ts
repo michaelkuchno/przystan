@@ -276,6 +276,8 @@ test('no horizontal scrolling at phone width on any screen', async ({ page }) =>
     '#/messages/history',
     '#/messages/contacts',
     '#/settings/notify',
+    '#/studies',
+    '#/studies/search',
   ];
   const overflow: string[] = [];
   for (const r of routes) {

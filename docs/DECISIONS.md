@@ -580,3 +580,60 @@ dane. Wiadomość „wysłana” = przekazana do aplikacji poczty / SMS, EmailJS
 (Przystań nie wie, czy użytkownik faktycznie nacisnął „Wyślij” w aplikacji poczty – status mówi
 „przekazano”). Dziennik audytu: `message.send` (kanał, sposób – bez treści i adresata), `notify.settings`.
 Teksty interfejsu powiadomień i wiadomości ładują się po odblokowaniu (jak AI, D-058) – start bez zmian.
+
+## D-065 SMS bezpośrednio z aplikacji (1.5.0)
+Na pytanie „dlaczego nie da się wysyłać prosto z Przystani”: w 1.4 SMS-y przekazywaliśmy do aplikacji
+Wiadomości, bo bez serwera nie ma darmowej bramki. W 1.5 dochodzą dwie bezpłatne drogi:
+- **Z karty SIM tego telefonu** (aplikacja na Androida): własna wtyczka `PrzystanSms`
+  (`SmsManager.sendMultipartTextMessage`, zgoda `SEND_SMS` pytana przy pierwszym SMS-ie, potwierdzenie
+  wysłania przez `PendingIntent`, limit 60 s). Koszt – abonament użytkownika. APK jest instalowany poza
+  Google Play, więc ograniczenia Play dla `SEND_SMS` nie mają zastosowania (Android 13+ może wymagać
+  zezwolenia w „ustawieniach z ograniczeniami”). Przed wysłaniem zawsze potwierdzenie.
+- **Darmowa bramka „SMS Gateway for Android”** (open source, sms-gate.app): dowolny telefon z Androidem
+  wysyła z własnej SIM; Przystań woła publiczne API (`POST /3rdparty/v1/messages`, Basic auth). API nie
+  wysyła nagłówków CORS (sprawdzone 05.11.2026), więc działa tylko z aplikacji na Androida (natywny HTTP
+  `CapacitorHttp`). Treść przechodzi przez serwer sms-gate.app – ostrzeżenie przy wysyłce.
+- Odrzucone: Textbelt (1 SMS/dzień, brak CORS, kraje niepewne), płatne bramki.
+- iPhone: Apple nie pozwala aplikacjom webowym wysyłać SMS – zostaje aplikacja Wiadomości z gotową treścią.
+
+## D-066 E-mail prosto z Gmaila (logowanie Google)
+E-maile mogą wychodzić z konta Gmail użytkownika bez aplikacji poczty i bez pośredników:
+- **Przeglądarka / PWA:** Google Identity Services (token client, okno logowania) z **własnym
+  identyfikatorem klienta OAuth** użytkownika (typ „Aplikacja internetowa”, źródło
+  `https://michaelkuchno.github.io`) + Gmail API `users.messages.send` (CORS sprawdzony na żywo).
+  Zakres tylko `gmail.send` („wysyłanie w Twoim imieniu” – bez czytania poczty; zakres „wrażliwy”,
+  nie „zastrzeżony”) + `email`. Token tylko w pamięci (~1 h). Wiadomość RFC 2822, UTF-8 (nagłówki RFC 2047),
+  base64url – test jednostkowy z polskimi znakami.
+- **Aplikacja na Androida:** Google zabrania OAuth w WebView (`disallowed_useragent`), dlatego własna
+  wtyczka `PrzystanGoogle` z natywnym `AuthorizationClient` (play-services-auth 21.3.0). Wymaga klienta
+  OAuth typu „Android” z pakietem `pl.przystan.app` i odciskiem SHA-1 klucza podpisu
+  `3A:1B:64:F6:AF:22:B3:6E:FA:03:13:27:94:50:C9:E0:DC:5A:AA:FA` (odczytany z logu budowania APK).
+- Aplikacja Google pozostaje w trybie „Testowanie” (do 100 użytkowników testowych, bez weryfikacji
+  Google; ostrzeżenie „niezweryfikowana aplikacja”; zgoda może wygasać po 7 dniach) – dla własnego
+  użytku wystarczy. Instrukcja krok po kroku w aplikacji (Ustawienia → Powiadomienia i wiadomości).
+- EmailJS (D-061) zostaje jako alternatywa bez Google Cloud – także z usługą Gmail (wysyła z jej adresu).
+- iPhone PWA: zachowanie okna logowania Google w trybie „z ekranu początkowego” nie jest
+  udokumentowane – do sprawdzenia na urządzeniu; w razie problemów: Safari albo EmailJS.
+
+## D-067 Studia: program WSHE Brzeg
+Badanie (05.11.2026): w Brzegu działa wyłącznie WSHE; dla absolwentki studiów licencjackich innej
+uczelni pasuje **Pedagogika II stopnia, specjalność „Pedagogika resocjalizacyjna z profilaktyką
+uzależnień”** (nowa od 2025/26). WSHE nie opublikowała planu tej specjalności, więc program złożono z
+oficjalnych dokumentów (II st.: przedmioty ogólne i moduł resocjalizacyjny; I st.: sylabusy przedmiotów o
+uzależnieniach jako jawnie oznaczone „odpowiedniki”). Treści są streszczone, ze źródłami. Ponieważ plan
+grupy może się różnić, wszystko jest edytowalne (ukryj / dodaj przedmiot, własne tematy, daty).
+
+## D-068 AI w nauce: tylko dane uczelni
+„Zapytaj” odpowiada wyłącznie z ponumerowanych źródeł – fragmentów sylabusa i materiałów z zajęć –
+z cytowaniem [n]; jeśli źródła nie wystarczają: `known=false` i wskazanie przedmiotu / literatury.
+Egzaminy próbne i fiszki z AI powstają „w zakresie tematów sylabusa” (+ materiały). „Wytłumacz na
+egzamin” korzysta z ogólnej wiedzy akademickiej w granicach tematu i literatury z sylabusa i kończy się
+wskazaniem pozycji do sprawdzenia. Odpowiedzi do egzaminu z błędnym kluczem (indeks spoza zakresu) są
+odrzucane, nie „naprawiane”. Bez AI moduł działa w pełni: wyszukiwanie, samoocena tematów, fiszki,
+test z własnych fiszek.
+
+## D-069 Nauka „miła i przyjemna”
+Cel dzienny (15 fiszek / pytań), seria dni, pierścień gotowości przedmiotu (tematy „umiem”, opanowane
+fiszki, najlepszy egzamin próbny), odliczanie do egzaminu, karta na pulpicie, życzliwe komunikaty
+po egzaminie próbnym. Własne materiały mają pierwszeństwo w wynikach wyszukiwania (×1,5). Teksty
+modułu ładują się po odblokowaniu (start bez zmian).

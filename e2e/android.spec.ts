@@ -71,6 +71,8 @@ const ROUTES = [
   '#/messages',
   '#/messages/contacts',
   '#/settings/notify',
+  '#/studies',
+  '#/studies/search',
 ];
 
 test.beforeEach(async ({ page }, info) => {

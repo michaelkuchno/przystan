@@ -87,7 +87,7 @@
   "today": "Na dziś",
   "todayEmpty": "Na dziś nic pilnego.",
   "settingsLink": "Ustawienia powiadomień",
-  "info": "SMS-y automatyczne nie są dostępne bezpłatnie (każda bramka SMS jest płatna). SMS do osób wyślesz ręcznie z gotową treścią – przez aplikację SMS telefonu.",
+  "info": "Automatycznych SMS-ów z serwera nie ma – płatne bramki odrzuciliśmy. Bezpłatnie: SMS prosto z tego telefonu (aplikacja na Androida), przez darmową bramkę SMS Gateway for Android albo ręcznie przez aplikację Wiadomości.",
   "line": {
     "meeting": "Spotkanie o {{time}}",
     "task": "Zadanie na {{date}}",
@@ -127,5 +127,70 @@
   },
   "emailjsHow": "Jak skonfigurować EmailJS (4 kroki, ok. 5 minut)",
   "statusOn": "Włączone",
-  "statusOff": "Wyłączone"
+  "statusOff": "Wyłączone",
+  "direct": {
+    "title": "Wysyłka bezpośrednio z Przystani"
+  },
+  "gmail": {
+    "title": "E-maile z mojego Gmaila (logowanie Google)",
+    "lead": "Wiadomości wychodzą prosto z Twojej skrzynki Gmail – bez aplikacji poczty i bez pośredników. Przystań dostaje od Google tylko uprawnienie „wysyłanie w Twoim imieniu” (nie czyta poczty) na godzinę.",
+    "clientId": "Identyfikator klienta OAuth (Google Cloud)",
+    "clientIdHint": "Jednorazowa konfiguracja – instrukcja poniżej. Identyfikator nie jest tajny.",
+    "as": "Połączono: {{email}}",
+    "connect": "Połącz z Google",
+    "reconnect": "Połącz ponownie",
+    "test": "Wyślij próbny e-mail do siebie",
+    "connected": "Połączono z {{email}}",
+    "testBody": "To jest próbny e-mail wysłany z Przystani prosto z Twojego Gmaila. Jeśli go widzisz, wysyłka działa.",
+    "testOk": "Wysłano próbny e-mail z {{email}}",
+    "howTo": "Jak skonfigurować (jednorazowo, ok. 10 minut)",
+    "steps": [
+      "Wejdź na console.cloud.google.com tym samym kontem Google (możesz użyć projektu z kluczem Gemini).",
+      "„Interfejsy API i usługi” → „Biblioteka” → włącz „Gmail API”.",
+      "„Google Auth Platform” → „Branding”: nazwa „Przystań” i Twój e-mail; „Audience”: typ „Zewnętrzny”, stan „Testowanie” → dodaj w „Użytkownicy testowi” adresy Gmail, z których chcesz wysyłać.",
+      "„Data Access” → „Dodaj zakresy” → …/auth/gmail.send.",
+      "„Klienci” → „Utwórz klienta” → „Aplikacja internetowa” → „Autoryzowane źródła JavaScript”: {{origin}} → skopiuj identyfikator klienta i wklej powyżej (PWA, przeglądarka).",
+      "Dla aplikacji na Androida: „Utwórz klienta” → „Android” → nazwa pakietu {{pkg}}, odcisk SHA-1: {{sha1}}.",
+      "Przy pierwszym połączeniu Google pokaże ostrzeżenie „aplikacja niezweryfikowana” – to Twoja własna konfiguracja: „Kontynuuj”. W trybie testowym Google może co 7 dni poprosić o ponowną zgodę."
+    ],
+    "privacy": "Token dostępu jest tylko w pamięci (ok. 1 godz.), nigdzie nie zapisywany. Wiadomość wysyła Google z Twojego konta – w Gmailu zobaczysz ją w „Wysłanych”.",
+    "error": {
+      "noClientId": "Najpierw wpisz identyfikator klienta OAuth.",
+      "popup": "Przeglądarka zablokowała okno logowania Google – zezwól na wyskakujące okna.",
+      "denied": "Logowanie Google przerwane lub odmówiono uprawnień.",
+      "auth": "Google nie wydał uprawnienia ({{msg}}). Sprawdź konfigurację w Google Cloud.",
+      "send": "Gmail odrzucił wiadomość: {{msg}}",
+      "network": "Brak połączenia z Google.",
+      "unavailable": "Logowanie Google jest teraz niedostępne."
+    }
+  },
+  "sms": {
+    "title": "SMS-y bezpośrednio z aplikacji",
+    "phoneOn": "Ten telefon może wysyłać SMS-y prosto z Przystani – z Twojej karty SIM, w ramach Twojego abonamentu. Przy pierwszym SMS-ie Android zapyta o zgodę.",
+    "phoneNoSim": "To urządzenie nie ma modułu SMS.",
+    "phoneWeb": "Bezpośrednia wysyłka z karty SIM działa w aplikacji na Androida (APK). Na iPhonie i w przeglądarce SMS otworzy się w aplikacji Wiadomości z gotową treścią.",
+    "testNumber": "Numer do próby (np. Twój)",
+    "testPhone": "Wyślij próbny SMS z tego telefonu",
+    "testBody": "Próbny SMS z Przystani.",
+    "testOk": "Wysłano próbny SMS",
+    "error": {
+      "DENIED": "Brak zgody na wysyłanie SMS – włącz ją w Ustawieniach telefonu → Aplikacje → Przystań → Uprawnienia.",
+      "UNAVAILABLE": "To urządzenie nie może wysyłać SMS.",
+      "INVALID": "Sprawdź numer i treść.",
+      "FAILED": "Nie udało się wysłać SMS: {{msg}}"
+    },
+    "gateTitle": "Darmowa bramka SMS (SMS Gateway for Android)",
+    "gateLead": "Bezpłatna aplikacja open source zamienia dowolny telefon z Androidem w bramkę SMS – Przystań wysyła przez nią SMS-y z karty SIM tamtego telefonu. Treść przechodzi przez serwer sms-gate.app – nie wysyłaj tak danych wrażliwych.",
+    "gateWeb": "Bramka działa tylko z aplikacji Przystań na Androida (jej serwer nie pozwala na wywołania z przeglądarki).",
+    "gateUser": "Login (z aplikacji SMS Gateway)",
+    "gatePassword": "Hasło (z aplikacji SMS Gateway)",
+    "testGate": "Wyślij próbny SMS przez bramkę",
+    "gateFail": "Bramka nie wysłała SMS: {{msg}}",
+    "gateHowTo": "Jak skonfigurować bramkę",
+    "gateSteps": [
+      "Na telefonie z Androidem zainstaluj „SMS Gateway for Android” (sms-gate.app, GitHub capcom6/android-sms-gateway).",
+      "W aplikacji włącz „Cloud server” i uruchom usługę – pojawi się login i hasło.",
+      "Wpisz je powyżej i wyślij próbny SMS."
+    ]
+  }
 }

@@ -102,7 +102,10 @@
     "practice": "Praktikumseintrag",
     "note": "Notiz",
     "contact": "Kontakt",
-    "message": "Nachricht"
+    "message": "Nachricht",
+    "studyCourse": "Fach (Studium)",
+    "studyMaterial": "Unterrichtsmaterial",
+    "studyAttempt": "Probeprüfung"
   },
   "history": {
     "title": "Änderungsverlauf",

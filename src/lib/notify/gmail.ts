@@ -37,7 +37,6 @@ export const base64url = (bytes: Uint8Array) => b64(bytes).replace(/\+/g, '-').r
 
 /** RFC 2047 encoded-words (≤ 75 chars each) for non-ASCII header values. */
 export function encodeHeader(value: string): string {
-  // eslint-disable-next-line no-control-regex
   if (/^[\x20-\x7e]*$/.test(value)) return value;
   const words: string[] = [];
   let chunk = '';

@@ -1,3 +1,4 @@
+import type { StudyAttempt, StudyCourse, StudyMaterial } from '@/lib/studies/types';
 /**
  * Domain model of Przystań. Every record below is stored encrypted in IndexedDB
  * (see src/lib/db.ts). Dates are ISO strings (YYYY-MM-DD or full ISO timestamps).
@@ -514,8 +515,11 @@ export interface Contact {
 }
 
 export type MessageChannel = 'email' | 'sms';
-/** How a message left the app: own mail/SMS app, EmailJS, clipboard or the share sheet. */
-export type MessageVia = 'mailApp' | 'smsApp' | 'emailjs' | 'copy' | 'share';
+/**
+ * How a message left the app: own mail / SMS app, EmailJS, directly from the user's Gmail, directly
+ * from this phone's SIM (Android), SMS Gateway for Android, clipboard or the share sheet.
+ */
+export type MessageVia = 'mailApp' | 'smsApp' | 'emailjs' | 'gmail' | 'phone' | 'smsGate' | 'copy' | 'share';
 
 /** E-mail or SMS written in Przystań (draft or handed over for sending). */
 export interface Message {
@@ -561,6 +565,9 @@ export interface RecordMap {
   note: Note;
   contact: Contact;
   message: Message;
+  studyCourse: StudyCourse;
+  studyMaterial: StudyMaterial;
+  studyAttempt: StudyAttempt;
 }
 
 export type RecordKind = keyof RecordMap;
@@ -585,4 +592,7 @@ export const RECORD_KINDS: RecordKind[] = [
   'note',
   'contact',
   'message',
+  'studyCourse',
+  'studyMaterial',
+  'studyAttempt',
 ];

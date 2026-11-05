@@ -104,7 +104,10 @@
     "practice": "Wpis w dzienniczku praktyk",
     "note": "Notatka",
     "contact": "Kontakt",
-    "message": "Wiadomość"
+    "message": "Wiadomość",
+    "studyCourse": "Przedmiot (studia)",
+    "studyMaterial": "Materiał z zajęć",
+    "studyAttempt": "Egzamin próbny"
   },
   "history": {
     "title": "Historia zmian",

@@ -150,3 +150,42 @@ test('messages and notification screens: no horizontal scrolling, no serious acc
   }
   expect(problems).toEqual([]);
 });
+
+test('e-mail directly from Gmail (Google sign-in mocked): token, Gmail API call, history', async ({ page }) => {
+  await page.addInitScript(() => {
+    // Google Identity Services stand-in: returns a token without a popup
+    (window as unknown as { google: unknown }).google = {
+      accounts: {
+        oauth2: {
+          initTokenClient: (c: { callback: (r: unknown) => void }) => ({
+            requestAccessToken: () => setTimeout(() => c.callback({ access_token: 'TEST-TOKEN', expires_in: 3600 }), 10),
+          }),
+        },
+      },
+    };
+  });
+  const sent: string[] = [];
+  await page.route('https://www.googleapis.com/oauth2/v3/userinfo', (r) => r.fulfill({ json: { email: 'ewelina.test@gmail.com' } }));
+  await page.route('https://gmail.googleapis.com/**', async (r) => {
+    sent.push(`${r.request().headers().authorization} ${r.request().postDataJSON().raw.length}`);
+    await r.fulfill({ json: { id: 'm1' } });
+  });
+  await onboard(page);
+  await go(page, '#/settings/notify');
+  await page.getByLabel('Identyfikator klienta OAuth (Google Cloud)').fill('123-abc.apps.googleusercontent.com');
+  await page.getByLabel('Identyfikator klienta OAuth (Google Cloud)').blur();
+  await page.getByRole('button', { name: 'Połącz z Google' }).click();
+  await expect(page.getByText('Połączono: ewelina.test@gmail.com')).toBeVisible();
+  await go(page, '#/messages/new?channel=email');
+  await expect(page.getByTestId('send-actions')).toBeVisible();
+  await page.getByLabel('Adres e-mail', { exact: true }).fill('szkola@example.pl');
+  await page.getByLabel('Temat').fill('Zaproszenie');
+  await page.getByLabel('Treść', { exact: true }).fill('Dzień dobry, zapraszam na rozmowę.');
+  await page.getByRole('button', { name: 'Wyślij z ewelina.test@gmail.com' }).click();
+  await page.getByRole('button', { name: 'Wyślij z Gmaila' }).click(); // confirmation dialog
+  await expect(page.getByText('Wysłano z ewelina.test@gmail.com')).toBeVisible();
+  expect(sent).toHaveLength(1);
+  expect(sent[0]).toMatch(/^Bearer TEST-TOKEN \d+$/);
+  await go(page, '#/messages/history');
+  await expect(page.getByTestId('message-history')).toContainText('z Gmaila');
+});

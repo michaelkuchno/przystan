@@ -8,16 +8,7 @@ import type { Lang } from '@/lib/prefs';
 import { BASE, LANG_NAME } from './prompts';
 
 export type Recipient =
-  | 'client'
-  | 'guardian'
-  | 'family'
-  | 'school'
-  | 'court'
-  | 'probation'
-  | 'institution'
-  | 'colleague'
-  | 'supervisor'
-  | 'other';
+  'client' | 'guardian' | 'family' | 'school' | 'court' | 'probation' | 'institution' | 'colleague' | 'supervisor' | 'other';
 
 export const COMMS_GUIDE = `PROFESSIONAL CORRESPONDENCE GUIDE (social rehabilitation, addiction work, youth work; Poland and Switzerland)
 
@@ -100,7 +91,7 @@ const COMMON = (lang: Lang, o: ComposeOptions) =>
 export const COMMS_PROMPTS = {
   /** A new message from the professional's instructions (+ optional template draft). */
   compose: (lang: Lang, o: ComposeOptions) =>
-    [COMMON(lang, o), 'Task: write a new message following the professional\'s instructions below.'].join('\n'),
+    [COMMON(lang, o), "Task: write a new message following the professional's instructions below."].join('\n'),
   /** Reply to an incoming e-mail, with the professional's intention and context from the app. */
   reply: (lang: Lang, o: ComposeOptions) =>
     [

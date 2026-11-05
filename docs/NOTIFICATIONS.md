@@ -1,7 +1,7 @@
 # Powiadomienia i wiadomości (od wersji 1.4.0)
 
 Wszystko jest **bezpłatne i działa bez serwera Przystani**. Przypomnienia są domyślnie wyłączone.
-Decyzje: `docs/DECISIONS.md` D-060…D-064. Stan sprawdzenia faktów: 05.11.2026.
+Decyzje: `docs/DECISIONS.md` D-060…D-066. Stan sprawdzenia faktów: 05.11.2026.
 
 ## 1. Kanały
 
@@ -11,8 +11,10 @@ Decyzje: `docs/DECISIONS.md` D-060…D-064. Stan sprawdzenia faktów: 05.11.2026
 | Kalendarz (.ics z alarmami) | działa (zależnie od aplikacji kalendarza) | **zalecane** – przypomnienia z kalendarza iPhone’a przy zamkniętej aplikacji | 0 |
 | E-mail ręcznie | aplikacja poczty (`mailto:`) | aplikacja poczty (`mailto:`) | 0 |
 | E-mail automatycznie | własne konto EmailJS (200 e-maili/mies.), wysyłka przy otwarciu aplikacji | jw. | 0 |
+| **E-mail prosto z Gmaila** (1.5) | logowanie Google (natywne, AuthorizationClient) | logowanie Google (okno Google) | 0 |
 | SMS ręcznie | aplikacja SMS (`sms:` z treścią) | aplikacja SMS | w ramach abonamentu |
-| SMS automatycznie | **niedostępne** – każda bramka SMS jest płatna (D-062) | – | – |
+| **SMS prosto z telefonu** (1.5) | z karty SIM, wtyczka `PrzystanSms` | – (Apple nie pozwala) | abonament |
+| **SMS przez darmową bramkę** (1.5) | SMS Gateway for Android (inny telefon z Androidem) | – (brak CORS) | 0 |
 
 ## 2. O czym przypomina (Ustawienia → Powiadomienia i wiadomości)
 
@@ -82,3 +84,22 @@ domyślnie nie zawierają szczegółów.
   przypomnienie może się spóźnić o kilka minut), zgoda na powiadomienia pytana przy włączeniu.
 - CSP `connect-src` + `https://api.emailjs.com`.
 - Testy: `src/lib/notify/notify.test.ts`, `e2e/messages.spec.ts`.
+
+## 7. Wysyłka bezpośrednio z aplikacji (1.5)
+
+### Gmail
+Jednorazowo w Google Cloud (tym samym kontem Google; wystarczy projekt z kluczem Gemini):
+1. „Interfejsy API i usługi” → „Biblioteka” → **Gmail API** → Włącz.
+2. „Google Auth Platform” → „Branding” (nazwa „Przystań”), „Audience”: **Zewnętrzny**, stan **Testowanie**,
+   „Użytkownicy testowi” → adresy Gmail, z których ma iść wysyłka.
+3. „Data Access” → zakres **…/auth/gmail.send**.
+4. „Klienci” → **Aplikacja internetowa** → źródło JavaScript **https://michaelkuchno.github.io** →
+   identyfikator wkleić w Przystani (Ustawienia → Powiadomienia i wiadomości → E-maile z mojego Gmaila).
+5. Dla APK: „Klienci” → **Android** → pakiet **pl.przystan.app**, SHA-1
+   **3A:1B:64:F6:AF:22:B3:6E:FA:03:13:27:94:50:C9:E0:DC:5A:AA:FA**.
+6. „Połącz z Google” → „Wyślij próbny e-mail do siebie”.
+
+### SMS
+- Android (APK): „Wyślij z tego telefonu” – z karty SIM; zgoda Androida przy pierwszym SMS-ie.
+- Bramka: na dowolnym telefonie z Androidem aplikacja **SMS Gateway for Android** (sms-gate.app) →
+  „Cloud server” → login i hasło → wpisać w Przystani (działa z aplikacji na Androida).

@@ -42,7 +42,33 @@
     "handedOff": "Przekazano do aplikacji – wyślij tam wiadomość",
     "copied": "Skopiowano treść",
     "savedDraft": "Zapisano szkic",
-    "failed": "Nie udało się wysłać: {{msg}}"
+    "failed": "Nie udało się wysłać: {{msg}}",
+    "gmail": "Wyślij z Gmaila",
+    "gmailFrom": "Wyślij z {{from}}",
+    "phone": "Wyślij z tego telefonu",
+    "smsGate": "Wyślij przez bramkę SMS",
+    "confirmEmail": "Wysłać e-mail do {{to}}?",
+    "confirmSms": "Wysłać SMS do {{to}}?",
+    "gateWarning": "Treść przejdzie przez serwer bramki sms-gate.app.",
+    "sentGmail": "Wysłano z {{from}}",
+    "sentPhone": "SMS wysłany",
+    "sentPhoneUnconfirmed": "SMS przekazany do sieci (bez potwierdzenia)",
+    "sentGate": "SMS przekazany do bramki",
+    "gmailError": {
+      "noClientId": "Gmail nie jest skonfigurowany – Ustawienia → Powiadomienia i wiadomości.",
+      "popup": "Przeglądarka zablokowała okno Google – zezwól na wyskakujące okna.",
+      "denied": "Logowanie Google przerwane.",
+      "auth": "Google nie wydał uprawnienia: {{msg}}",
+      "send": "Gmail odrzucił wiadomość: {{msg}}",
+      "network": "Brak połączenia z Google.",
+      "unavailable": "Gmail jest teraz niedostępny."
+    },
+    "phoneError": {
+      "DENIED": "Brak zgody na SMS – zezwól w ustawieniach telefonu.",
+      "UNAVAILABLE": "To urządzenie nie wysyła SMS.",
+      "INVALID": "Sprawdź numer i treść.",
+      "FAILED": "Nie udało się wysłać SMS: {{msg}}"
+    }
   },
   "ai": {
     "title": "Pomoc AI",
@@ -96,7 +122,10 @@
       "smsApp": "przez aplikację SMS",
       "emailjs": "przez EmailJS",
       "copy": "skopiowano",
-      "share": "udostępniono"
+      "share": "udostępniono",
+      "gmail": "z Gmaila",
+      "phone": "z telefonu",
+      "smsGate": "przez bramkę SMS"
     },
     "open": "Otwórz",
     "duplicate": "Użyj ponownie",

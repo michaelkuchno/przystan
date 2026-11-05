@@ -115,8 +115,8 @@ export async function initI18n(lang: Lang, term: Term) {
  * Namespaces needed only after unlocking (AI assistant, notifications, messages) – kept out of
  * the start-up bundle so they do not delay the first paint. Loaded by AuthedApp after unlocking.
  */
-export const LAZY_NAMESPACES = ['ai', 'notify', 'messages'] as const;
-const lazyBundles = import.meta.glob<{ default: Record<string, unknown> }>('./locales/*/{ai,notify,messages}.json');
+export const LAZY_NAMESPACES = ['ai', 'notify', 'messages', 'studies'] as const;
+const lazyBundles = import.meta.glob<{ default: Record<string, unknown> }>('./locales/*/{ai,notify,messages,studies}.json');
 let lazyWanted = false;
 
 export const lazyReady = (lang: string) => LAZY_NAMESPACES.every((ns) => i18n.hasResourceBundle(lang, ns));

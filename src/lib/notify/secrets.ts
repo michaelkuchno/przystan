@@ -24,6 +24,10 @@ export interface CommsSecrets {
   /** Where the daily summary goes. */
   myEmail: string;
   emailjs?: EmailJsConfig;
+  /** Gmail sending: the OAuth client ID (Web application) from the user's Google Cloud project; the last connected address (hint). */
+  google?: { clientId: string; email?: string };
+  /** SMS Gateway for Android (sms-gate.app) – credentials shown in that app. */
+  smsGate?: { username: string; password: string };
 }
 
 const META = 'commsSecrets';

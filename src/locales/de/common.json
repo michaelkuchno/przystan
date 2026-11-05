@@ -82,7 +82,8 @@
     "about": "Über die App",
     "practice": "Praktikumsjournal",
     "notes": "Notizbuch",
-    "messages": "Nachrichten"
+    "messages": "Nachrichten",
+    "studies": "Studium"
   },
   "navHint": {
     "screening": "AUDIT, AUDIT-C, DUDIT",
@@ -100,6 +101,7 @@
     "about": "Version & Hinweise",
     "practice": "Stunden, Einträge, PDF für Praxisanleitung",
     "notes": "Notizen und Supervision",
-    "messages": "E-Mail, SMS, Kontakte"
+    "messages": "E-Mail, SMS, Kontakte",
+    "studies": "Studienplan, Prüfungen, Lernen"
   }
 }

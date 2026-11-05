@@ -2,8 +2,15 @@
   "title": "Nachrichten",
   "subtitle": "E-Mails und SMS aus Vorlagen und mit KI-Hilfe – gesendet über deine eigene Mail und dein Telefon",
   "navHint": "E-Mail, SMS, Kontakte",
-  "tabs": { "compose": "Neu", "history": "Gesendet und Entwürfe", "contacts": "Kontakte" },
-  "channel": { "email": "E-Mail", "sms": "SMS" },
+  "tabs": {
+    "compose": "Neu",
+    "history": "Gesendet und Entwürfe",
+    "contacts": "Kontakte"
+  },
+  "channel": {
+    "email": "E-Mail",
+    "sms": "SMS"
+  },
   "to": "An",
   "toEmail": "E-Mail-Adresse",
   "toPhone": "Telefonnummer",
@@ -35,7 +42,33 @@
     "handedOff": "An die App übergeben – dort senden",
     "copied": "Text kopiert",
     "savedDraft": "Entwurf gespeichert",
-    "failed": "Senden fehlgeschlagen: {{msg}}"
+    "failed": "Senden fehlgeschlagen: {{msg}}",
+    "gmail": "Aus Gmail senden",
+    "gmailFrom": "Von {{from}} senden",
+    "phone": "Von diesem Telefon senden",
+    "smsGate": "Über das SMS-Gateway senden",
+    "confirmEmail": "E-Mail an {{to}} senden?",
+    "confirmSms": "SMS an {{to}} senden?",
+    "gateWarning": "Der Text läuft über den Server von sms-gate.app.",
+    "sentGmail": "Von {{from}} gesendet",
+    "sentPhone": "SMS gesendet",
+    "sentPhoneUnconfirmed": "SMS ans Netz übergeben (ohne Bestätigung)",
+    "sentGate": "SMS ans Gateway übergeben",
+    "gmailError": {
+      "noClientId": "Gmail ist nicht eingerichtet – Einstellungen → Erinnerungen und Nachrichten.",
+      "popup": "Der Browser hat das Google-Fenster blockiert – Pop-ups erlauben.",
+      "denied": "Google-Anmeldung abgebrochen.",
+      "auth": "Google hat die Berechtigung nicht erteilt: {{msg}}",
+      "send": "Gmail hat die Nachricht abgelehnt: {{msg}}",
+      "network": "Keine Verbindung zu Google.",
+      "unavailable": "Gmail ist gerade nicht verfügbar."
+    },
+    "phoneError": {
+      "DENIED": "Keine SMS-Erlaubnis – in den Telefoneinstellungen erlauben.",
+      "UNAVAILABLE": "Dieses Gerät kann keine SMS senden.",
+      "INVALID": "Nummer und Text prüfen.",
+      "FAILED": "Die SMS konnte nicht gesendet werden: {{msg}}"
+    }
   },
   "ai": {
     "title": "KI-Hilfe",
@@ -50,7 +83,11 @@
     "useClient": "Grundangaben zur Person einbeziehen (Veränderungsphase, Ziel, Kontext – nichts Identifizierendes)",
     "recipient": "Empfänger/in",
     "tone": "Ton",
-    "tones": { "formal": "Förmlich", "neutral": "Neutral", "warm": "Warm" },
+    "tones": {
+      "formal": "Förmlich",
+      "neutral": "Neutral",
+      "warm": "Warm"
+    },
     "run": "Entwurf vorbereiten",
     "apply": "In die Nachricht übernehmen",
     "useSms": "SMS-Version übernehmen",
@@ -85,7 +122,10 @@
       "smsApp": "über die SMS-App",
       "emailjs": "über EmailJS",
       "copy": "kopiert",
-      "share": "geteilt"
+      "share": "geteilt",
+      "gmail": "aus Gmail",
+      "phone": "vom Telefon",
+      "smsGate": "über das SMS-Gateway"
     },
     "open": "Öffnen",
     "duplicate": "Erneut verwenden",
@@ -117,7 +157,12 @@
     "emailReferral": "Per E-Mail senden",
     "invite": "Einladung per E-Mail"
   },
-  "placeholders": { "date": "Datum", "time": "Uhrzeit", "signature": "Signatur", "program": "Name des Programms" },
+  "placeholders": {
+    "date": "Datum",
+    "time": "Uhrzeit",
+    "signature": "Signatur",
+    "program": "Name des Programms"
+  },
   "templates": {
     "meetingReminder": {
       "title": "Erinnerung an ein Gespräch",
