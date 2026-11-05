@@ -43,4 +43,7 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <!-- Optional reminders (Settings → Notifications): exact times, only after the user enables them -->
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <!-- Optional: send an SMS directly from this phone (Messages → "Send from this phone"), asked on first use -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
 </manifest>
