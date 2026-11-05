@@ -41,6 +41,14 @@ ukrywanie przedmiotów, których nie ma, dodawanie własnych przedmiotów i tema
   (lokalny model e5, jeśli pobrany); własne materiały mają pierwszeństwo w wynikach.
 - **Cel dzienny i seria dni** – każda fiszka i pytanie egzaminu próbnego liczy się do celu (domyślnie 15).
 
+## 2a. Gotowe materiały (od 1.6.0, D-072)
+
+Dla każdego przedmiotu: **opracowanie każdego tematu** (Program → „Notatka”, Materiały → „Opracowanie
+tematów”), **gotowe fiszki** w talii przedmiotu, **bank pytań egzaminacyjnych** (Egzamin próbny →
+„Egzamin z bazy pytań” – pytania zamknięte z wyjaśnieniami i otwarte z odpowiedziami wzorcowymi, za
+każdym razem inne losowanie). Wszystko działa bez AI i bez internetu. Opracowania przygotowała
+Przystań na podstawie sylabusów WSHE i literatury przedmiotu – nie są to oficjalne materiały uczelni.
+
 ## 3. Prywatność
 
 Materiały i postępy są zaszyfrowanymi rekordami (`studyCourse`, `studyMaterial`, `studyAttempt`,

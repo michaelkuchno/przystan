@@ -1,0 +1,410 @@
+{
+  "courseId": "patologie-spoleczne",
+  "notes": [
+    {
+      "topic": "Patologie społeczne – wprowadzenie",
+      "text": "Patologia społeczna to – według A. Podgóreckiego – zachowanie, proces lub stan, który pozostaje w kolizji z wartościami uznawanymi w danym społeczeństwie i wywołuje powszechną dezaprobatę. Pojęcie jest wartościujące i zmienne kulturowo, dlatego w socjologii częściej używa się terminu dewiacja (odchylenie od normy). Do zjawisk patologicznych zalicza się m.in.: przestępczość, alkoholizm i inne uzależnienia (także behawioralne – hazard, gry), przemoc domową, prostytucję, samobójstwa, korupcję, bezdomność (jako skutek), handel ludźmi.\nGłówne teorie wyjaśniające:\n• teoria anomii – É. Durkheim (rozpad norm w okresie gwałtownych zmian) i R. K. Merton (napięcie między celami kulturowymi a legalnymi środkami; typy przystosowania: konformizm, innowacja, rytualizm, wycofanie, bunt),\n• teoria zróżnicowanych powiązań E. Sutherlanda – zachowań przestępczych uczymy się w interakcjach z innymi,\n• teoria kontroli społecznej T. Hirschiego – przestępczości zapobiegają więzi z konwencjonalnym społeczeństwem: przywiązanie, zaangażowanie, uczestnictwo, przekonania,\n• teoria naznaczania (etykietowania) – E. Lemert (dewiacja pierwotna i wtórna), H. Becker,\n• teorie podkultur (A. Cohen) i teoria techniki neutralizacji (G. Sykes, D. Matza).\nW Polsce podstawą prawną przeciwdziałania są m.in.: ustawa o wychowaniu w trzeźwości i przeciwdziałaniu alkoholizmowi, ustawa o przeciwdziałaniu narkomanii, ustawa o przeciwdziałaniu przemocy domowej (po nowelizacji z 2023 r. – m.in. przemoc ekonomiczna i cyberprzemoc, grupy diagnostyczno-pomocowe, procedura „Niebieskie Karty”), ustawa o wspieraniu i resocjalizacji nieletnich z 2022 r. Klasyfikację zaburzeń związanych z substancjami i zachowaniami nałogowymi (w tym hazard i zaburzenie związane z grami) zawiera ICD-11.\nPrzykład: uzależnienie od alkoholu rodzica często kumuluje się z przemocą, ubóstwem i zaniedbaniem dzieci – dlatego patologie bada się jako powiązane ze sobą zjawiska. Na egzaminie typowe są pytania o definicję patologii i typologię Mertona.",
+      "key": [
+        "Patologia społeczna (Podgórecki) – zjawisko sprzeczne z uznawanymi wartościami, wywołujące powszechną dezaprobatę",
+        "Anomia – stan rozpadu lub niespójności norm społecznych",
+        "Typologia Mertona – konformizm, innowacja, rytualizm, wycofanie, bunt",
+        "Dewiacja wtórna (Lemert) – zachowanie dewiacyjne utrwalone w wyniku naznaczenia",
+        "Teoria więzi (Hirschi) – przywiązanie, zaangażowanie, uczestnictwo i przekonania chronią przed przestępczością"
+      ]
+    },
+    {
+      "topic": "Partnerki życiowe recydywistów i ich rola w powstrzymywaniu przestępczości",
+      "text": "Problematyka partnerek recydywistów wpisuje się w badania nad zaprzestawaniem przestępczości (desistance). R. J. Sampson i J. H. Laub w teorii nieformalnej kontroli społecznej zależnej od wieku wykazali, że „punkty zwrotne” w biografii – zwłaszcza stabilny, wspierający związek i stała praca – sprzyjają wycofywaniu się z przestępczości. Mechanizmy działania związku to: nieformalna kontrola (nadzór, oczekiwania partnerki), zmiana rutyny dnia i oddzielenie od przestępczego środowiska rówieśniczego, inwestycja w relację („coś do stracenia”), zmiana tożsamości (np. z „przestępcy” na „partnera i ojca”). S. Maruna podkreśla znaczenie nowej narracji o sobie („scenariusz odkupienia”).\nBadania polskie (m.in. R. Szczepanik) pokazują, że partnerki życiowe recydywistów mogą być ważnym zasobem resocjalizacyjnym, ale ich rola jest ambiwalentna:\n• czynniki sprzyjające – trwałość i jakość więzi, wspólne dzieci, wsparcie emocjonalne i materialne, utrzymywanie kontaktu w czasie pobytu w zakładzie karnym, prospołeczne postawy partnerki,\n• czynniki ryzyka – partnerka sama uwikłana w przestępczość lub uzależnienie, współuzależnienie i usprawiedliwianie sprawcy, przemoc w związku, przeciążenie i wyczerpanie partnerki, kontakty utrzymywane wyłącznie z przyczyn instrumentalnych.\nNie każdy związek działa ochronnie – znaczenie ma jakość relacji, a nie sam fakt jej istnienia. Partnerki doświadczają też własnych kosztów: stygmatyzacji, samotnego rodzicielstwa, problemów finansowych, lęku przed powrotem partnera do przestępstwa lub nałogu.\nImplikacje praktyczne: diagnoza relacji w zakładzie karnym, wspieranie kontaktów (widzenia, rozmowy, przepustki), programy dla par i rodzin, praca nad współuzależnieniem i przemocą, wsparcie partnerek przez pomoc społeczną i organizacje pozarządowe, współpraca kuratora z rodziną po zwolnieniu. W pracy z osobami uzależnionymi warto pamiętać, że partnerka może jednocześnie motywować do leczenia i – nieświadomie – podtrzymywać nałóg (np. ukrywając jego skutki). Na egzaminie pytają o mechanizmy ochronnego wpływu związku i jego ograniczenia.",
+      "key": [
+        "Desistance – proces zaprzestawania działalności przestępczej",
+        "Punkty zwrotne (Sampson, Laub) – zdarzenia biograficzne zmieniające trajektorię przestępczą, np. małżeństwo, praca",
+        "Nieformalna kontrola społeczna – kontrola wynikająca z więzi i oczekiwań bliskich",
+        "Scenariusz odkupienia (Maruna) – nowa narracja tożsamościowa osoby odstępującej od przestępczości",
+        "Współuzależnienie – przystosowanie bliskiej osoby do nałogu partnera, często podtrzymujące problem"
+      ]
+    },
+    {
+      "topic": "Etyka funkcjonariusza Służby Więziennej",
+      "text": "Służba Więzienna działa na podstawie ustawy z 9 kwietnia 2010 r. o Służbie Więziennej. Do jej podstawowych zadań należy m.in. prowadzenie oddziaływań penitencjarnych wobec skazanych, wykonywanie tymczasowego aresztowania, zapewnienie porządku i bezpieczeństwa, humanitarne traktowanie osób pozbawionych wolności, poszanowanie ich praw i godności oraz ochrona społeczeństwa przed sprawcami przestępstw. Funkcjonariuszy obowiązują zasady etyki zawodowej, sformułowane w kodeksie etyki Służby Więziennej.\nKluczowe wartości i zasady:\n• poszanowanie godności człowieka i praw osób pozbawionych wolności, zakaz tortur oraz nieludzkiego i poniżającego traktowania (art. 40 Konstytucji, art. 3 Europejskiej Konwencji Praw Człowieka),\n• praworządność, bezstronność, niedyskryminacja,\n• humanitaryzm i profesjonalizm,\n• uczciwość, odpowiedzialność, lojalność wobec służby (ale nie wobec bezprawia),\n• dbałość o dobre imię służby także poza służbą.\nStandardy międzynarodowe: Europejskie Reguły Więzienne (Rada Europy), Reguły Nelsona Mandeli (ONZ), standardy CPT – Europejskiego Komitetu do spraw Zapobiegania Torturom. W Polsce funkcję krajowego mechanizmu prewencji tortur pełni Rzecznik Praw Obywatelskich.\nDylematy etyczne: podwójna rola – opiekuna i strażnika (pomoc vs kontrola), granice bliskości z osadzonymi (ryzyko manipulacji, nadmiernej poufałości, korupcji), stosowanie środków przymusu bezpośredniego (zasada proporcjonalności i konieczności), lojalność zespołowa a reagowanie na nadużycia kolegów, poufność informacji, stres i wypalenie zawodowe prowadzące do cynizmu i depersonalizacji. Eksperyment więzienny P. Zimbardo (Stanford, 1971) pokazał, jak silnie sytuacja i rola władzy mogą wpływać na zachowanie strażników – stąd potrzeba szkoleń, superwizji i jasnych procedur.\nW pracy z osadzonymi uzależnionymi etyka wymaga traktowania uzależnienia jako choroby, nie moralnej słabości, i zapewnienia dostępu do leczenia. Na egzaminie pytają o wartości etyki SW i typowe dylematy.",
+      "key": [
+        "Ustawa o Służbie Więziennej (2010) – określa zadania, organizację i zasady służby",
+        "Zakaz tortur – bezwzględny zakaz okrutnego, nieludzkiego i poniżającego traktowania",
+        "Europejskie Reguły Więzienne – standardy Rady Europy dotyczące warunków i traktowania więźniów",
+        "Krajowy mechanizm prewencji – zadanie RPO polegające na wizytowaniu miejsc detencji",
+        "Zasada proporcjonalności – środki przymusu adekwatne do zagrożenia i stosowane tylko w koniecznym zakresie"
+      ]
+    },
+    {
+      "topic": "Resocjalizacja osób z zaburzeniami osobowości (m.in. antyspołeczne, borderline, narcystyczne)",
+      "text": "Zaburzenia osobowości to trwałe, sztywne wzorce przeżywania i zachowania, odbiegające od oczekiwań kulturowych, powodujące cierpienie lub problemy w funkcjonowaniu. ICD-11 (obowiązująca od 2022 r.) zastąpiła wcześniejsze typy jedną diagnozą zaburzenia osobowości z oceną nasilenia (łagodne, umiarkowane, ciężkie) oraz opisem dominujących cech: negatywna afektywność, dystansowanie się (detachment), dyssocjalność, rozhamowanie i anankastyczność; dodatkowo można określić wzorzec borderline. DSM-5 zachowuje klasyczne typy, m.in. z wiązki B: antyspołeczne, borderline, narcystyczne, histrioniczne.\n• Antyspołeczne (dyssocjalne) – lekceważenie praw innych, impulsywność, brak poczucia winy, nieodpowiedzialność, agresja. Pokrewnym konstruktem jest psychopatia (H. Cleckley, R. Hare – skala PCL-R): płytkość emocjonalna, brak empatii, manipulacja, urok powierzchowny.\n• Borderline – niestabilność emocji, obrazu siebie i relacji, impulsywność, lęk przed odrzuceniem, samookaleczenia i zachowania samobójcze.\n• Narcystyczne – poczucie wyższości, potrzeba podziwu, brak empatii, nadwrażliwość na krytykę, reagowanie gniewem na zranienie.\nW populacji więziennej i wśród osób uzależnionych zaburzenia osobowości występują znacznie częściej niż w populacji ogólnej, często współwystępując z uzależnieniem (podwójna diagnoza).\nKierunki oddziaływań:\n• model RNR – intensywność według ryzyka, praca nad potrzebami kryminogennymi,\n• programy poznawczo-behawioralne (np. Trening Zastępowania Agresji, programy rozwijania umiejętności poznawczych),\n• terapia dialektyczno-behawioralna (M. Linehan) przy borderline, terapia schematów (J. Young), terapia oparta na mentalizacji,\n• jasne granice, konsekwencja, kontrakty, unikanie walki o władzę i uleganiu manipulacji,\n• przy psychopatii – nacisk na zarządzanie ryzykiem i odwoływanie się do własnego interesu, a nie do empatii; I. Mudrecka zwraca uwagę na ograniczenia klasycznej resocjalizacji wobec psychopatów.\nPersonel potrzebuje superwizji, bo praca z tymi osobami wywołuje silne przeciwprzeniesienie. Egzamin: charakterystyka trzech zaburzeń i metody pracy.",
+      "key": [
+        "Zaburzenie osobowości – trwały, sztywny wzorzec przeżywania i zachowania powodujący dysfunkcję",
+        "Psychopatia (Hare, PCL-R) – płytkość emocjonalna, brak empatii, manipulacja, styl antyspołeczny",
+        "Osobowość borderline – niestabilność emocji, tożsamości i relacji, impulsywność",
+        "DBT (Linehan) – terapia dialektyczno-behawioralna, skuteczna m.in. przy zaburzeniu borderline",
+        "Podwójna diagnoza – współwystępowanie zaburzenia psychicznego i uzależnienia"
+      ]
+    },
+    {
+      "topic": "Poczucie winy, wstyd i poczucie krzywdy u skazanych",
+      "text": "Poczucie winy i wstyd to emocje samoświadomościowe, ale o różnym znaczeniu dla resocjalizacji. Według J. P. Tangney:\n• poczucie winy dotyczy czynu („zrobiłem coś złego”) – wiąże się z empatią, chęcią naprawienia szkody, przeprosinami i jest czynnikiem sprzyjającym zmianie,\n• wstyd dotyczy całego „ja” („jestem zły”) – rodzi poczucie bezwartościowości, chęć ukrycia się, obronność, przerzucanie winy na innych i agresję; podatność na wstyd bywa powiązana z gorszym przystosowaniem.\nJ. Braithwaite w teorii reintegracyjnego zawstydzania odróżnił zawstydzanie stygmatyzujące (potępienie osoby, wykluczenie, które sprzyja powrotowi do przestępstwa) od reintegrującego (potępienie czynu przy zachowaniu szacunku dla osoby i umożliwieniu powrotu do wspólnoty). Na tej idei opiera się sprawiedliwość naprawcza i mediacja między sprawcą a pokrzywdzonym.\nPoczucie krzywdy jest u skazanych bardzo częste: postrzegają siebie jako ofiary rodziny, systemu, sądu, „pecha”. Wiąże się to z technikami neutralizacji G. Sykesa i D. Matzy: zaprzeczanie odpowiedzialności, zaprzeczanie szkodzie, zaprzeczanie ofierze („sam sobie winien”), potępianie potępiających, odwoływanie się do wyższych racji (lojalność wobec grupy). Poczucie krzywdy bywa uzasadnione (doświadczenia przemocy w dzieciństwie), ale pozostawione bez pracy blokuje przyjęcie odpowiedzialności.\nZadania wychowawcy i terapeuty:\n• przekształcanie wstydu w konstruktywne poczucie winy (oddzielanie czynu od osoby),\n• praca nad empatią wobec ofiary i odpowiedzialnością (programy uświadamiające skutki przestępstwa, mediacja),\n• uznanie doznanych krzywd bez usprawiedliwiania czynów,\n• ostrożność – silny wstyd i wina zwiększają ryzyko samobójstwa i samouszkodzeń.\nW uzależnieniach wstyd jest jednym z głównych czynników podtrzymujących picie („piję, bo się wstydzę, wstydzę się, bo piję”); wspólnoty dwunastu kroków pracują nad nim przez przyznanie się, zadośćuczynienie i akceptację. Egzamin: różnica między winą a wstydem oraz techniki neutralizacji.",
+      "key": [
+        "Poczucie winy – negatywna ocena własnego czynu, motywująca do naprawy",
+        "Wstyd – negatywna ocena całego siebie, prowadząca do ukrywania się i obronności",
+        "Reintegracyjne zawstydzanie (Braithwaite) – potępienie czynu przy akceptacji osoby",
+        "Techniki neutralizacji (Sykes, Matza) – racjonalizacje osłabiające działanie norm",
+        "Poczucie krzywdy – przekonanie o byciu ofiarą, utrudniające przyjęcie odpowiedzialności"
+      ]
+    },
+    {
+      "topic": "Tworzenie i prezentacja programów profilaktycznych",
+      "text": "Profilaktyka to działania zapobiegające pojawieniu się lub pogłębianiu problemów (uzależnień, przemocy, przestępczości) przez redukcję czynników ryzyka i wzmacnianie czynników chroniących. W Polsce koncepcję profilaktyki rozwijał m.in. Z. B. Gaś.\nPoziomy profilaktyki:\n• tradycyjnie: pierwszorzędowa (zapobieganie u osób zdrowych), drugorzędowa (wczesne wykrywanie i interwencja wobec grup ryzyka), trzeciorzędowa (przeciwdziałanie pogłębianiu się problemu, zapobieganie nawrotom, readaptacja),\n• obecnie częściej: uniwersalna (cała populacja, np. klasa szkolna), selektywna (grupy podwyższonego ryzyka, np. dzieci z rodzin z problemem alkoholowym), wskazująca (osoby z pierwszymi objawami problemu).\nStrategie: informacyjne, edukacyjne (rozwijanie umiejętności psychospołecznych), działań alternatywnych, interwencyjne, zmniejszania szkód oraz zmian środowiskowych i legislacyjnych. Same strategie informacyjne i straszenie są mało skuteczne.\nEtapy tworzenia programu:\n1. diagnoza potrzeb i problemu (czynniki ryzyka i chroniące, np. wg modelu J. D. Hawkinsa i R. Catalano),\n2. określenie grupy docelowej i poziomu profilaktyki,\n3. sformułowanie celu głównego i celów szczegółowych (SMART),\n4. dobór strategii, metod i treści opartych na dowodach naukowych,\n5. harmonogram, zasoby, budżet, realizatorzy,\n6. ewaluacja – ex ante, bieżąca (procesu) i ex post (wyników), z użyciem wskaźników.\nWarto korzystać z programów rekomendowanych w ramach Systemu rekomendacji programów profilaktycznych i promocji zdrowia psychicznego (współtworzonego m.in. przez Krajowe Centrum Przeciwdziałania Uzależnieniom i Ośrodek Rozwoju Edukacji), np. „Unplugged”, „Archipelag Skarbów”, Program Wzmacniania Rodziny 10–14, „Szkoła dla Rodziców i Wychowawców”.\nPrezentacja programu powinna zawierać: uzasadnienie (dane z diagnozy), cele, adresatów, metody, harmonogram, sposób ewaluacji i oczekiwane rezultaty – przejrzyście, z odniesieniem do lokalnych zasobów (gminny program profilaktyki, szkoła, OPS). Egzamin: poziomy profilaktyki i etapy projektowania programu.",
+      "key": [
+        "Profilaktyka uniwersalna – działania kierowane do całej populacji bez względu na ryzyko",
+        "Profilaktyka selektywna – działania dla grup o podwyższonym ryzyku",
+        "Profilaktyka wskazująca – działania wobec osób z pierwszymi symptomami problemu",
+        "Czynniki chroniące – cechy jednostki i środowiska zmniejszające ryzyko zachowań problemowych",
+        "Ewaluacja – systematyczna ocena przebiegu i efektów programu",
+        "Cele SMART – konkretne, mierzalne, osiągalne, istotne i określone w czasie"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "front": "Patologia społeczna wg A. Podgóreckiego",
+      "back": "Zachowanie, proces lub stan sprzeczny z wartościami uznawanymi w danym społeczeństwie, wywołujący powszechną dezaprobatę."
+    },
+    {
+      "front": "Dewiacja",
+      "back": "Zachowanie odbiegające od norm społecznych; pojęcie szersze i mniej wartościujące niż patologia."
+    },
+    {
+      "front": "Anomia wg Mertona",
+      "back": "Napięcie między celami kulturowymi (np. sukces materialny) a dostępnymi legalnymi środkami ich osiągania."
+    },
+    {
+      "front": "Typy przystosowania wg Mertona",
+      "back": "Konformizm, innowacja (cele tak, środki nielegalne), rytualizm, wycofanie (np. uzależnienia), bunt."
+    },
+    {
+      "front": "Teoria więzi społecznych Hirschiego",
+      "back": "Przed przestępczością chronią: przywiązanie do innych, zaangażowanie w konwencjonalne cele, uczestnictwo w konwencjonalnych działaniach i przekonania o słuszności norm."
+    },
+    {
+      "front": "Teoria naznaczania",
+      "back": "Dewiacja wtórna (Lemert) powstaje, gdy osoba przyjmuje etykietę nadaną przez otoczenie i zaczyna działać zgodnie z nią (Becker, Lemert)."
+    },
+    {
+      "front": "Teoria zróżnicowanych powiązań",
+      "back": "E. Sutherland: zachowań przestępczych, technik i motywów uczymy się w interakcjach z innymi, zwłaszcza w bliskich grupach."
+    },
+    {
+      "front": "Ustawa o przeciwdziałaniu przemocy domowej",
+      "back": "Po nowelizacji z 2023 r. obejmuje m.in. przemoc ekonomiczną i cyberprzemoc, procedurę „Niebieskie Karty”, zespoły interdyscyplinarne i grupy diagnostyczno-pomocowe."
+    },
+    {
+      "front": "Desistance",
+      "back": "Proces stopniowego zaprzestawania działalności przestępczej, wspierany przez więzi, pracę i zmianę tożsamości."
+    },
+    {
+      "front": "Punkty zwrotne (Sampson i Laub)",
+      "back": "Zdarzenia życiowe, np. stabilny związek czy stała praca, które poprzez nieformalną kontrolę i zmianę rutyny sprzyjają wycofaniu się z przestępczości."
+    },
+    {
+      "front": "Ambiwalentna rola partnerki recydywisty",
+      "back": "Może wspierać zmianę (kontrola, motywacja, więź), ale także ją utrudniać (własna przestępczość, uzależnienie, współuzależnienie, przemoc w związku)."
+    },
+    {
+      "front": "Scenariusz odkupienia (S. Maruna)",
+      "back": "Narracja osób odstępujących od przestępczości: „prawdziwe ja” było dobre, a przeszłe doświadczenia nadają sens nowemu życiu i pomaganiu innym."
+    },
+    {
+      "front": "Podstawa prawna działania Służby Więziennej",
+      "back": "Ustawa z 9 kwietnia 2010 r. o Służbie Więziennej oraz Kodeks karny wykonawczy."
+    },
+    {
+      "front": "Kluczowe wartości etyki funkcjonariusza SW",
+      "back": "Poszanowanie godności i praw osadzonych, humanitaryzm, praworządność, bezstronność, profesjonalizm, uczciwość."
+    },
+    {
+      "front": "Dylematy etyczne funkcjonariusza SW",
+      "back": "Pomoc vs kontrola, granice bliskości z osadzonymi, użycie przymusu bezpośredniego, lojalność zespołowa a reagowanie na nadużycia."
+    },
+    {
+      "front": "Stanfordzki eksperyment więzienny",
+      "back": "Badanie P. Zimbardo (1971) pokazujące, jak rola strażnika i sytuacja władzy mogą prowadzić do nadużyć wobec „więźniów”."
+    },
+    {
+      "front": "Zaburzenie osobowości w ICD-11",
+      "back": "Jedna kategoria z oceną nasilenia (łagodne, umiarkowane, ciężkie) i opisem cech: negatywna afektywność, dystansowanie się, dyssocjalność, rozhamowanie, anankastyczność; możliwy wzorzec borderline."
+    },
+    {
+      "front": "Osobowość antyspołeczna (dyssocjalna)",
+      "back": "Lekceważenie praw innych, impulsywność, nieodpowiedzialność, agresja i brak poczucia winy."
+    },
+    {
+      "front": "Psychopatia i PCL-R",
+      "back": "Konstrukt (Cleckley, Hare) łączący płytkość emocjonalną, brak empatii i manipulację ze stylem antyspołecznym; mierzony skalą PCL-R R. Hare'a."
+    },
+    {
+      "front": "Osobowość borderline",
+      "back": "Niestabilność emocji, obrazu siebie i relacji, impulsywność, lęk przed odrzuceniem, samookaleczenia."
+    },
+    {
+      "front": "Osobowość narcystyczna",
+      "back": "Poczucie wyższości, potrzeba podziwu, brak empatii, nadwrażliwość na krytykę i gniew przy zranieniu."
+    },
+    {
+      "front": "Terapia dialektyczno-behawioralna (DBT)",
+      "back": "Metoda M. Linehan dla osób z zaburzeniem borderline: regulacja emocji, tolerancja dyskomfortu, uważność, skuteczność interpersonalna."
+    },
+    {
+      "front": "Poczucie winy a wstyd (Tangney)",
+      "back": "Wina dotyczy czynu i motywuje do naprawy; wstyd dotyczy całego „ja”, rodzi obronność, ukrywanie się i obwinianie innych."
+    },
+    {
+      "front": "Reintegracyjne zawstydzanie",
+      "back": "Koncepcja J. Braithwaite'a: potępia się czyn, ale szanuje osobę i umożliwia jej powrót do wspólnoty – w przeciwieństwie do zawstydzania stygmatyzującego."
+    },
+    {
+      "front": "Techniki neutralizacji (Sykes i Matza)",
+      "back": "Zaprzeczanie odpowiedzialności, szkodzie i ofierze, potępianie potępiających, odwoływanie się do wyższych racji."
+    },
+    {
+      "front": "Poziomy profilaktyki (współczesne)",
+      "back": "Uniwersalna (cała populacja), selektywna (grupy ryzyka), wskazująca (osoby z pierwszymi objawami)."
+    },
+    {
+      "front": "Strategie profilaktyczne",
+      "back": "Informacyjne, edukacyjne, działań alternatywnych, interwencyjne, zmniejszania szkód, zmian środowiskowych i legislacyjnych."
+    },
+    {
+      "front": "Etapy tworzenia programu profilaktycznego",
+      "back": "Diagnoza, określenie adresatów, cele (SMART), dobór strategii i metod, harmonogram i zasoby, ewaluacja."
+    },
+    {
+      "front": "Rodzaje ewaluacji",
+      "back": "Ex ante (przed realizacją), bieżąca/procesu (w trakcie) i ex post (wyników, po zakończeniu)."
+    },
+    {
+      "front": "Przykłady programów rekomendowanych",
+      "back": "„Unplugged”, „Archipelag Skarbów”, Program Wzmacniania Rodziny 10–14, „Szkoła dla Rodziców i Wychowawców”."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Autorem definicji patologii społecznej jako zjawiska sprzecznego z uznawanymi wartościami i wywołującego powszechną dezaprobatę jest:",
+      "options": ["A. Podgórecki", "R. K. Merton", "E. Sutherland", "J. Braithwaite"],
+      "correct": 0,
+      "explain": "Definicja A. Podgóreckiego jest klasyczna w polskiej literaturze patologii społecznej."
+    },
+    {
+      "q": "W typologii Mertona osoby uzależnione, które odrzucają zarówno cele kulturowe, jak i środki, reprezentują:",
+      "options": ["innowację", "wycofanie", "rytualizm", "bunt"],
+      "correct": 1,
+      "explain": "Wycofanie (retreatyzm) to odrzucenie celów i środków bez zastąpienia ich nowymi – Merton zaliczał tu m.in. uzależnionych."
+    },
+    {
+      "q": "Pojęcie dewiacji pierwotnej i wtórnej wprowadził:",
+      "options": ["T. Hirschi", "A. Cohen", "E. Lemert", "É. Durkheim"],
+      "correct": 2,
+      "explain": "E. Lemert, przedstawiciel teorii naznaczania, odróżnił dewiację pierwotną od wtórnej, utrwalonej przez reakcję otoczenia."
+    },
+    {
+      "q": "Według teorii więzi społecznych T. Hirschiego przed przestępczością chroni m.in.:",
+      "options": [
+        "silna podkultura rówieśnicza",
+        "brak kontroli rodzicielskiej",
+        "napięcie między celami a środkami",
+        "przywiązanie do bliskich osób"
+      ],
+      "correct": 3,
+      "explain": "Hirschi wymienia przywiązanie, zaangażowanie, uczestnictwo i przekonania jako elementy więzi chroniącej."
+    },
+    {
+      "q": "Nowelizacja z 2023 r. ustawy o przeciwdziałaniu przemocy domowej wprowadziła m.in.:",
+      "options": [
+        "pojęcie przemocy ekonomicznej i cyberprzemocy",
+        "likwidację procedury „Niebieskie Karty”",
+        "zniesienie zespołów interdyscyplinarnych",
+        "wyłączenie byłych małżonków spod ochrony"
+      ],
+      "correct": 0,
+      "explain": "Ustawa rozszerzyła definicje przemocy i krąg osób chronionych, zachowując procedurę „Niebieskie Karty”."
+    },
+    {
+      "q": "Teoria wskazująca, że stabilny związek i stała praca są „punktami zwrotnymi” sprzyjającymi zaprzestaniu przestępczości, pochodzi od:",
+      "options": ["Sykesa i Matzy", "Sampsona i Lauba", "Cloward i Ohlina", "Glueck i Glueck"],
+      "correct": 1,
+      "explain": "R. J. Sampson i J. H. Laub opracowali teorię nieformalnej kontroli społecznej zależnej od wieku."
+    },
+    {
+      "q": "Który czynnik osłabia ochronną rolę partnerki w powstrzymywaniu recydywy?",
+      "options": [
+        "Prospołeczne postawy partnerki",
+        "Wspólne wychowywanie dzieci",
+        "Współuzależnienie i usprawiedliwianie zachowań sprawcy",
+        "Utrzymywanie regularnych kontaktów podczas odbywania kary"
+      ],
+      "correct": 2,
+      "explain": "Współuzależnienie podtrzymuje problem, zamiast wywierać nieformalną kontrolę sprzyjającą zmianie."
+    },
+    {
+      "q": "Proces zaprzestawania działalności przestępczej określa się w literaturze jako:",
+      "options": ["prizonizacja", "recydywa", "dewiacja wtórna", "desistance"],
+      "correct": 3,
+      "explain": "Desistance to proces wycofywania się z przestępczości, badany m.in. przez S. Marunę."
+    },
+    {
+      "q": "Ustawa o Służbie Więziennej obowiązująca obecnie pochodzi z roku:",
+      "options": ["2010", "1997", "1996", "2016"],
+      "correct": 0,
+      "explain": "Obowiązuje ustawa z 9 kwietnia 2010 r. o Służbie Więziennej."
+    },
+    {
+      "q": "Funkcję krajowego mechanizmu prewencji tortur w Polsce pełni:",
+      "options": [
+        "Dyrektor Generalny Służby Więziennej",
+        "Rzecznik Praw Obywatelskich",
+        "Minister Sprawiedliwości",
+        "sędzia penitencjarny"
+      ],
+      "correct": 1,
+      "explain": "KMPT działa w ramach Biura RPO i wizytuje miejsca pozbawienia wolności."
+    },
+    {
+      "q": "Stanfordzki eksperyment więzienny przeprowadził:",
+      "options": ["S. Milgram", "S. Asch", "P. Zimbardo", "E. Goffman"],
+      "correct": 2,
+      "explain": "P. Zimbardo w 1971 r. pokazał wpływ roli i sytuacji na zachowanie „strażników”."
+    },
+    {
+      "q": "Które zachowanie funkcjonariusza SW narusza zasady etyki zawodowej?",
+      "options": [
+        "Stosowanie przymusu bezpośredniego proporcjonalnie do zagrożenia",
+        "Zgłoszenie przełożonemu nadużycia kolegi",
+        "Kierowanie osadzonego uzależnionego na terapię",
+        "Przyjmowanie drobnych przysług od osadzonych w zamian za przywileje"
+      ],
+      "correct": 3,
+      "explain": "Nadmierna poufałość i korzyści od osadzonych prowadzą do korupcji i manipulacji."
+    },
+    {
+      "q": "W ICD-11 zaburzenia osobowości diagnozuje się przede wszystkim przez:",
+      "options": [
+        "ocenę nasilenia i opis dominujących cech",
+        "wybór jednego z dziesięciu typów",
+        "wyłącznie testy projekcyjne",
+        "ocenę ilorazu inteligencji"
+      ],
+      "correct": 0,
+      "explain": "ICD-11 zastąpiła typy wymiarowym opisem nasilenia i domen cech, z możliwością określenia wzorca borderline."
+    },
+    {
+      "q": "Skalę PCL-R do oceny psychopatii opracował:",
+      "options": ["H. Cleckley", "R. Hare", "A. Beck", "O. Kernberg"],
+      "correct": 1,
+      "explain": "R. Hare stworzył Psychopathy Checklist – Revised, opierając się na opisach H. Cleckleya."
+    },
+    {
+      "q": "Terapia dialektyczno-behawioralna (DBT) została opracowana przede wszystkim z myślą o osobach z zaburzeniem osobowości:",
+      "options": ["narcystycznym", "anankastycznym", "borderline", "schizoidalnym"],
+      "correct": 2,
+      "explain": "M. Linehan stworzyła DBT dla osób z borderline i zachowaniami samobójczymi."
+    },
+    {
+      "q": "W pracy resocjalizacyjnej z osobami o wysokim poziomie psychopatii zaleca się przede wszystkim:",
+      "options": [
+        "odwoływanie się do empatii wobec ofiar jako jedynej metody",
+        "rezygnację z wszelkich granic i kontraktów",
+        "terapię wyłącznie w formie spotkań nieustrukturyzowanych",
+        "jasne granice, zarządzanie ryzykiem i odwoływanie się do własnego interesu"
+      ],
+      "correct": 3,
+      "explain": "Przy ograniczonej empatii skuteczniejsze są struktura, konsekwencja i motywowanie przez korzyści własne."
+    },
+    {
+      "q": "Według J. P. Tangney emocją sprzyjającą naprawie szkody i empatii jest:",
+      "options": ["poczucie winy", "wstyd", "poczucie krzywdy", "pogarda"],
+      "correct": 0,
+      "explain": "Wina dotyczy czynu i motywuje do naprawy; wstyd dotyczy całego „ja” i sprzyja obronności."
+    },
+    {
+      "q": "Wypowiedź skazanego „sam się prosił, należało mu się” to technika neutralizacji polegająca na:",
+      "options": [
+        "zaprzeczaniu szkodzie",
+        "zaprzeczaniu ofierze",
+        "odwoływaniu się do wyższych racji",
+        "potępianiu potępiających"
+      ],
+      "correct": 1,
+      "explain": "Zaprzeczanie ofierze przedstawia pokrzywdzonego jako zasługującego na krzywdę."
+    },
+    {
+      "q": "Koncepcja reintegracyjnego zawstydzania pochodzi od:",
+      "options": ["H. Zehra", "G. Sykesa", "J. Braithwaite'a", "D. Matzy"],
+      "correct": 2,
+      "explain": "J. Braithwaite przeciwstawił zawstydzanie reintegrujące zawstydzaniu stygmatyzującemu."
+    },
+    {
+      "q": "Program skierowany do dzieci z rodzin z problemem alkoholowym, jako grupy podwyższonego ryzyka, to przykład profilaktyki:",
+      "options": ["uniwersalnej", "wskazującej", "trzeciorzędowej wyłącznie", "selektywnej"],
+      "correct": 3,
+      "explain": "Profilaktyka selektywna obejmuje grupy o podwyższonym ryzyku, bez objawów problemu."
+    },
+    {
+      "q": "Ewaluacja prowadzona przed rozpoczęciem realizacji programu to ewaluacja:",
+      "options": ["ex ante", "ex post", "bieżąca", "wyników"],
+      "correct": 0,
+      "explain": "Ewaluacja ex ante ocenia trafność i wykonalność projektu przed jego wdrożeniem."
+    },
+    {
+      "q": "Która strategia profilaktyczna jest uznawana za najmniej skuteczną, gdy stosowana samodzielnie?",
+      "options": [
+        "Rozwijanie umiejętności psychospołecznych",
+        "Straszenie i samo przekazywanie informacji",
+        "Wzmacnianie kompetencji wychowawczych rodziców",
+        "Tworzenie alternatyw spędzania czasu"
+      ],
+      "correct": 1,
+      "explain": "Badania pokazują, że straszenie i sama informacja nie zmieniają zachowań, a mogą wzbudzać ciekawość."
+    },
+    {
+      "q": "Pierwszym etapem tworzenia programu profilaktycznego powinna być:",
+      "options": [
+        "ewaluacja ex post",
+        "prezentacja programu radzie gminy",
+        "diagnoza potrzeb i czynników ryzyka oraz chroniących",
+        "wybór materiałów reklamowych"
+      ],
+      "correct": 2,
+      "explain": "Bez diagnozy nie da się trafnie określić adresatów, celów ani metod."
+    }
+  ],
+  "open": [
+    {
+      "q": "Zdefiniuj patologię społeczną i omów wybrane teorie wyjaśniające zachowania dewiacyjne.",
+      "answer": "Według A. Podgóreckiego patologia społeczna to zachowanie, proces lub stan sprzeczny z wartościami uznawanymi w danym społeczeństwie, wywołujący powszechną dezaprobatę. Teoria anomii Durkheima i Mertona wyjaśnia dewiację napięciem między celami kulturowymi a dostępnymi legalnymi środkami; Merton wyróżnił konformizm, innowację, rytualizm, wycofanie (np. uzależnienia) i bunt. Teoria zróżnicowanych powiązań Sutherlanda zakłada, że przestępczości uczymy się w interakcjach z innymi. Teoria kontroli Hirschiego wskazuje, że chronią więzi: przywiązanie, zaangażowanie, uczestnictwo i przekonania. Teoria naznaczania (Lemert, Becker) pokazuje, jak etykieta nadana przez otoczenie utrwala dewiację wtórną. W praktyce zjawiska patologiczne – uzależnienia, przemoc, przestępczość – zwykle się kumulują, co wymaga interdyscyplinarnych działań."
+    },
+    {
+      "q": "Jaką rolę mogą odegrać partnerki życiowe recydywistów w procesie zaprzestawania przestępczości?",
+      "answer": "Badania nad desistance (Sampson i Laub, Maruna) pokazują, że stabilny, wspierający związek może być punktem zwrotnym w biografii przestępczej. Partnerka sprawuje nieformalną kontrolę, zmienia rutynę dnia, oddziela od przestępczego środowiska, daje motywację („mam coś do stracenia”) i wspiera budowanie nowej tożsamości partnera i ojca. Rola ta jest jednak ambiwalentna: jeśli partnerka sama jest uwikłana w przestępczość lub uzależnienie, usprawiedliwia sprawcę, jest współuzależniona albo w związku występuje przemoc, relacja może podtrzymywać zachowania przestępcze. Liczy się jakość, nie sam fakt związku. Praktyczne wnioski to: diagnoza relacji, wspieranie kontaktów w czasie odbywania kary, programy dla par i rodzin, praca nad współuzależnieniem oraz wsparcie samych partnerek, które ponoszą koszty stygmatyzacji i samotnego rodzicielstwa."
+    },
+    {
+      "q": "Omów zasady etyki zawodowej funkcjonariusza Służby Więziennej i najczęstsze dylematy etyczne.",
+      "answer": "Funkcjonariusz SW, działający na podstawie ustawy o Służbie Więziennej z 2010 r. i kodeksu etyki służby, powinien kierować się poszanowaniem godności i praw osób pozbawionych wolności, humanitaryzmem, praworządnością, bezstronnością, profesjonalizmem i uczciwością. Obowiązuje go bezwzględny zakaz tortur i nieludzkiego traktowania (art. 40 Konstytucji, art. 3 EKPC), a standardy wyznaczają Europejskie Reguły Więzienne i Reguły Mandeli. Najczęstsze dylematy to: konflikt roli opiekuna i strażnika, granice bliskości z osadzonymi i ryzyko manipulacji lub korupcji, użycie przymusu bezpośredniego zgodnie z zasadą konieczności i proporcjonalności, lojalność zespołowa wobec obowiązku reagowania na nadużycia, a także wypalenie prowadzące do cynizmu. Eksperyment Zimbardo pokazuje, jak łatwo sytuacja władzy sprzyja nadużyciom, dlatego potrzebne są szkolenia, superwizja i kontrola zewnętrzna."
+    },
+    {
+      "q": "Scharakteryzuj specyfikę pracy resocjalizacyjnej z osobami z zaburzeniami osobowości antyspołecznej, borderline i narcystycznej.",
+      "answer": "Osoby z osobowością antyspołeczną lekceważą prawa innych, są impulsywne i nie odczuwają winy; przy wysokim poziomie psychopatii (PCL-R Hare'a) dochodzą płytkość emocjonalna i manipulacja. Skuteczne są jasne granice, konsekwencja, programy poznawczo-behawioralne zgodne z modelem RNR i odwoływanie się do własnego interesu, a nie empatii; konieczne jest zarządzanie ryzykiem. Osoby z borderline charakteryzuje niestabilność emocji i relacji, impulsywność i samookaleczenia – pomocne są DBT M. Linehan, terapia oparta na mentalizacji, przewidywalność i monitorowanie ryzyka samobójczego. Osoby narcystyczne potrzebują podziwu i reagują gniewem na krytykę – ważne jest unikanie walki o władzę i upokarzania, przy jednoczesnej konfrontacji z konsekwencjami czynów. Zaburzenia te często współwystępują z uzależnieniem, a personel potrzebuje superwizji z powodu silnego przeciwprzeniesienia."
+    },
+    {
+      "q": "Porównaj poczucie winy i wstyd oraz wyjaśnij ich znaczenie w resocjalizacji skazanych.",
+      "answer": "Według J. P. Tangney poczucie winy dotyczy konkretnego czynu („zrobiłem coś złego”), wiąże się z empatią i motywuje do przeprosin i naprawienia szkody, dlatego sprzyja zmianie. Wstyd obejmuje całe „ja” („jestem zły”), wywołuje poczucie bezwartościowości, ukrywanie się, obronność, przerzucanie winy i agresję. J. Braithwaite pokazał, że zawstydzanie stygmatyzujące zwiększa ryzyko powrotu do przestępstwa, a zawstydzanie reintegrujące – potępienie czynu przy szacunku dla osoby – sprzyja reintegracji. U skazanych częste jest też poczucie krzywdy i techniki neutralizacji (Sykes, Matza), które blokują przyjęcie odpowiedzialności. Zadaniem wychowawcy jest oddzielanie czynu od osoby, rozwijanie empatii wobec ofiary, uznanie doznanych krzywd bez usprawiedliwiania przestępstwa oraz czujność na ryzyko samobójcze związane z silnym wstydem."
+    },
+    {
+      "q": "Przedstaw etapy tworzenia programu profilaktycznego na przykładzie programu dla młodzieży z gminy z problemem alkoholowym.",
+      "answer": "Najpierw przeprowadza się diagnozę: dane o używaniu alkoholu przez młodzież (np. badania ankietowe w szkołach), rozpoznanie czynników ryzyka (łatwa dostępność, przyzwolenie dorosłych, brak oferty czasu wolnego) i chroniących (więzi z rodziną, zaangażowanie w szkołę). Następnie określa się adresatów i poziom – np. profilaktyka uniwersalna dla uczniów klas siódmych i selektywna dla dzieci z rodzin z problemem alkoholowym. Formułuje się cel główny i cele szczegółowe według zasady SMART, np. zwiększenie umiejętności odmawiania i opóźnienie inicjacji. Dobiera się strategie oparte na dowodach – edukację umiejętności życiowych, warsztaty dla rodziców, alternatywy spędzania czasu – najlepiej z programów rekomendowanych. Planuje się harmonogram, zasoby i budżet (np. z gminnego programu). Na końcu ewaluacja: ex ante, bieżąca i ex post z wcześniej określonymi wskaźnikami."
+    }
+  ]
+}

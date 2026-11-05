@@ -1,0 +1,443 @@
+{
+  "courseId": "diagnostyka-resocjalizacja",
+  "notes": [
+    {
+      "topic": "Niedostosowanie społeczne a zaburzenie; kryteria diagnostyczne",
+      "text": "Niedostosowanie społeczne to kategoria pedagogiczna i socjologiczna, a zaburzenie (np. zaburzenie zachowania, zaburzenie osobowości) – kategoria kliniczna, opisywana w klasyfikacjach DSM-5-TR i ICD-11. Ten sam wychowanek może być opisany w obu językach, ale cel diagnozy jest inny: pedagog pyta o funkcjonowanie w rolach społecznych i możliwości zmiany, lekarz lub psycholog kliniczny – o spełnienie kryteriów jednostki chorobowej.\n\nNiedostosowanie społeczne w polskiej pedagogice resocjalizacyjnej (m.in. L. Pytka, J. Konopnicki, O. Lipkowski) rozumie się jako trwały, negatywny stosunek jednostki do norm i wartości społecznych, przejawiający się zachowaniami sprzecznymi z oczekiwaniami społecznymi i utrudniający pełnienie ról (ucznia, dziecka, kolegi, pracownika). Kryteria zwykle przyjmowane w diagnozie:\n• trwałość i powtarzalność zachowań (nie epizod);\n• wielosferowość – objawy w kilku środowiskach (dom, szkoła, rówieśnicy);\n• negatywny stosunek do norm, a nie tylko ich nieznajomość;\n• adekwatność do wieku i kontekstu kulturowego;\n• skutki – zakłócone pełnienie ról społecznych.\n\nKlasyczna typologia H. C. Quaya wyróżnia: zaburzenia zachowania nieuspołecznione (agresywne), zaburzenia o podłożu neurotycznym (lękowe), niedojrzałość społeczną oraz zachowania podkulturowe (uspołecznione – zgodne z normami grupy przestępczej). Często stosuje się też podział na zachowania eksternalizacyjne (agresja, łamanie zasad) i internalizacyjne (wycofanie, lęk).\n\nW ujęciu prawnym ustawa o wspieraniu i resocjalizacji nieletnich posługuje się pojęciem demoralizacji (m.in. naruszanie zasad współżycia społecznego, popełnienie czynu zabronionego, uchylanie się od obowiązku szkolnego, używanie alkoholu lub środków odurzających).\n\nPo stronie klinicznej odpowiednikami są zaburzenie opozycyjno-buntownicze i zaburzenie zachowania (w ICD-11: zaburzenie zachowania o typie dyssocjalnym). Na egzaminie często pada pytanie: czym różni się diagnoza pedagogiczna niedostosowania od diagnozy klinicznej zaburzenia.",
+      "key": [
+        "Niedostosowanie społeczne – trwały negatywny stosunek do norm społecznych utrudniający pełnienie ról",
+        "Zaburzenie zachowania – kategoria kliniczna DSM/ICD obejmująca uporczywe naruszanie praw innych i norm",
+        "Demoralizacja – pojęcie prawne z ustawy o wspieraniu i resocjalizacji nieletnich",
+        "Typologia Quaya – nieuspołecznione agresywne, neurotyczne, niedojrzałość, podkulturowe",
+        "Zachowania eksternalizacyjne – problemy skierowane na zewnątrz (agresja, łamanie zasad)"
+      ]
+    },
+    {
+      "topic": "Modele diagnozowania: strukturalno-funkcjonalny i strukturalno-dynamiczny",
+      "text": "Model diagnozowania określa, jak diagnosta ujmuje osobę i jej środowisko oraz jakie zależności bada.\n\nModel strukturalno-funkcjonalny wywodzi się z podejścia systemowego i funkcjonalizmu. Osobę traktuje się jako układ elementów (struktura: cechy osobowości, kompetencje, potrzeby, system wartości), które pełnią określone funkcje w jej przystosowaniu. Diagnosta pyta:\n• jakie elementy struktury są zaburzone lub niedorozwinięte;\n• jakie funkcje pełni dane zachowanie dla jednostki (np. agresja daje pozycję w grupie, picie redukuje napięcie);\n• jak jednostka funkcjonuje w rolach społecznych i w systemach (rodzina, szkoła, grupa).\nZaletą jest uporządkowany opis i możliwość porównań, ograniczeniem – ujęcie raczej statyczne, „fotografia” stanu.\n\nModel strukturalno-dynamiczny uzupełnia ten obraz o wymiar czasu i zmiany. Uwzględnia:\n• genezę zachowań i ich rozwój (historia życia, kolejne fazy niedostosowania);\n• mechanizmy i procesy psychologiczne oraz społeczne, które podtrzymują lub zmieniają zachowanie;\n• dynamikę relacji między jednostką a środowiskiem;\n• prognozę i potencjał zmiany.\nTo ujęcie bliższe procesualnemu rozumieniu resocjalizacji – diagnoza nie jest jednorazowa, lecz towarzyszy oddziaływaniom.\n\nW praktyce oba modele się dopełniają: pedagog najpierw opisuje strukturę i funkcje (co jest i do czego służy), a następnie dynamikę (skąd się wzięło, jak się zmienia, dokąd zmierza). Nawiązuje to do koncepcji diagnozy pełnej S. Ziemskiego, która obejmuje diagnozę typologiczną, genetyczną, znaczenia, fazy i rozwojową.\n\nPrzykład: u nastolatka używającego marihuany model funkcjonalny pokaże, że substancja redukuje lęk społeczny i daje przynależność do grupy; model dynamiczny – że zaczęło się po rozwodzie rodziców i nasila w okresach konfliktów szkolnych.",
+      "key": [
+        "Model strukturalno-funkcjonalny – opis elementów osobowości i środowiska oraz funkcji, jakie pełni zachowanie",
+        "Model strukturalno-dynamiczny – uwzględnia genezę, mechanizmy, zmiany w czasie i prognozę",
+        "Funkcja zachowania – korzyść lub potrzeba, którą zachowanie zaspokaja",
+        "Diagnoza pełna (S. Ziemski) – typologiczna, genetyczna, znaczenia, fazy, rozwojowa",
+        "Prognoza – przewidywanie kierunku rozwoju zjawiska przy danych oddziaływaniach"
+      ]
+    },
+    {
+      "topic": "Metodologiczne podstawy diagnozy w resocjalizacji",
+      "text": "Diagnoza resocjalizacyjna to proces rozpoznawania stanu i genezy niedostosowania oraz zasobów jednostki i środowiska, służący zaplanowaniu oddziaływań. Ma charakter praktyczny (prowadzi do działania), a nie tylko poznawczy.\n\nParadygmaty diagnozy:\n• pozytywistyczny (nomotetyczny) – dąży do obiektywnego pomiaru, porównania z normą, posługuje się standaryzowanymi testami i kwestionariuszami;\n• interpretatywny (idiograficzny, humanistyczny) – dąży do zrozumienia znaczeń i perspektywy podopiecznego, wykorzystuje wywiad narracyjny, biografię, obserwację uczestniczącą; diagnoza bywa „negocjowana” z klientem;\n• współcześnie akcentuje się diagnozę pozytywną (zasobów, potencjałów), np. w twórczej resocjalizacji M. Konopczyńskiego.\n\nMetody i techniki:\n• obserwacja (swobodna, kategoryzowana, uczestnicząca);\n• wywiad i rozmowa diagnostyczna (z podopiecznym, rodziną, nauczycielami);\n• analiza dokumentów (akta sądowe, opinie, świadectwa, dokumentacja medyczna) i wytworów;\n• testy i kwestionariusze psychologiczne (osobowości, inteligencji, agresji, uzależnień – np. AUDIT jako przesiewowy test alkoholowy);\n• techniki socjometryczne (pozycja w grupie);\n• techniki projekcyjne (np. zdania niedokończone) – z ostrożnością interpretacyjną.\n\nKryteria jakości diagnozy: trafność, rzetelność, obiektywizm, standaryzacja, triangulacja (łączenie metod, źródeł i diagnostów), całościowość, aktualność. Zasady etyczne: dobro i godność podopiecznego, poufność, unikanie etykietowania, świadoma zgoda, kompetencje diagnosty (testy psychologiczne stosuje psycholog).\n\nTypowe błędy: efekt aureoli, pierwszego wrażenia, sugerowanie się aktami, potwierdzanie hipotez (szukanie tylko danych pasujących), przenoszenie własnych doświadczeń. Diagnozę warto traktować jako zbiór hipotez weryfikowanych w trakcie pracy.\n\nNa egzaminie: wymień metody diagnozy i kryteria jej poprawności; porównaj diagnozę ilościową i jakościową.",
+      "key": [
+        "Diagnoza resocjalizacyjna – rozpoznanie stanu, genezy i zasobów w celu zaplanowania oddziaływań",
+        "Triangulacja – łączenie różnych metod, źródeł i diagnostów dla zwiększenia trafności",
+        "Trafność – stopień, w jakim narzędzie mierzy to, co ma mierzyć",
+        "Rzetelność – dokładność i powtarzalność pomiaru",
+        "Diagnoza pozytywna – rozpoznanie zasobów, mocnych stron i potencjałów"
+      ]
+    },
+    {
+      "topic": "Etapy diagnozy: konstatująca, projektująca, kontrolująca, efektów",
+      "text": "Diagnoza w resocjalizacji jest procesem towarzyszącym całemu oddziaływaniu. Wyróżnia się cztery etapy (rodzaje) diagnozy:\n\n• Diagnoza konstatująca (wstępna, stanu) – opis aktualnego stanu: jakie zachowania problemowe występują, jakie są ich przyczyny i mechanizmy, jakie zasoby ma podopieczny i jego środowisko. Odpowiada na pytania: co jest? dlaczego? jakie są mocne strony? Źródła to wywiad, obserwacja, dokumenty, testy.\n\n• Diagnoza projektująca (prognostyczna) – na podstawie konstatacji formułuje się cele i plan oddziaływań: indywidualny program resocjalizacji, terapii lub wsparcia (np. IPET, plan pracy z rodziną, indywidualny program oddziaływania w zakładzie karnym). Określa się cele krótko- i długoterminowe, metody, osoby odpowiedzialne, terminy i kryteria sukcesu, a także prognozę.\n\n• Diagnoza kontrolująca (bieżąca, monitorująca) – prowadzona w trakcie realizacji programu; sprawdza, czy oddziaływania przebiegają zgodnie z planem i czy przynoszą oczekiwane zmiany; pozwala modyfikować plan (np. zmiana metody, gdy wychowanek nie reaguje na trening umiejętności).\n\n• Diagnoza efektów (końcowa, ewaluacyjna) – ocena wyników po zakończeniu etapu lub programu: co się zmieniło, w jakim stopniu osiągnięto cele, jaka jest prognoza na przyszłość (np. przed opuszczeniem placówki). Staje się punktem wyjścia do kolejnej konstatacji – proces ma charakter cykliczny.\n\nKażdy etap wymaga dokumentowania i porównywania danych. W praktyce często pomija się etap kontrolujący i efektów, co uniemożliwia ocenę skuteczności pracy.\n\nPrzykład: w młodzieżowym ośrodku wychowawczym diagnoza konstatująca wykazuje u chłopca agresję i używanie alkoholu przy dobrych zdolnościach manualnych; projektująca planuje ART, terapię uzależnień i warsztaty stolarskie; kontrolująca co kwartał sprawdza liczbę incydentów; diagnoza efektów przed usamodzielnieniem ocenia zmianę i ryzyko nawrotu.",
+      "key": [
+        "Diagnoza konstatująca – opis aktualnego stanu, przyczyn i zasobów",
+        "Diagnoza projektująca – formułowanie celów, planu oddziaływań i prognozy",
+        "Diagnoza kontrolująca – monitorowanie przebiegu oddziaływań i korygowanie planu",
+        "Diagnoza efektów – ocena wyników oddziaływań po zakończeniu etapu",
+        "Cykliczność diagnozy – wynik oceny efektów staje się podstawą nowej konstatacji"
+      ]
+    },
+    {
+      "topic": "Płaszczyzny, sfery i obszary diagnozy resocjalizacyjnej",
+      "text": "Aby diagnoza była całościowa, porządkuje się ją według płaszczyzn, sfer i obszarów.\n\nPłaszczyzny diagnozy (ujęcie podmiotowe i środowiskowe):\n• jednostkowa (indywidualna) – osoba: rozwój, osobowość, zdrowie, kompetencje, motywacja;\n• środowiskowa – rodzina, szkoła lub praca, grupa rówieśnicza, społeczność lokalna, podkultury;\n• interakcyjna (sytuacyjna) – relacje między jednostką a środowiskiem, sytuacje wyzwalające zachowania problemowe.\n\nSfery funkcjonowania jednostki:\n• biologiczno-zdrowotna (stan zdrowia, uszkodzenia OUN, FASD, uzależnienia, sen);\n• poznawcza (inteligencja, funkcje wykonawcze, przekonania, zniekształcenia poznawcze, usprawiedliwienia);\n• emocjonalno-motywacyjna (kontrola emocji, empatia, lęk, potrzeby, samoocena);\n• społeczna (kompetencje społeczne, role, przynależność, przywiązanie);\n• aksjologiczna (system wartości, stosunek do norm, tożsamość);\n• behawioralna (repertuar zachowań, nawyki, częstotliwość i nasilenie zachowań problemowych).\n\nObszary diagnozy – konkretne dziedziny życia, które bada się w wywiadzie i dokumentach: sytuacja rodzinna, nauka i obowiązek szkolny, praca, czas wolny, grupa rówieśnicza, używanie substancji psychoaktywnych i zachowania nałogowe (np. hazard, internet), historia przestępczości i kontakt z wymiarem sprawiedliwości, zdrowie psychiczne, sytuacja materialna i mieszkaniowa, zasoby i zainteresowania.\n\nIstotne jest równoczesne badanie czynników ryzyka (np. przemoc w rodzinie, dewiacyjni rówieśnicy, wczesna inicjacja alkoholowa) i czynników chroniących (więź z dorosłym, sukcesy szkolne, pasje, przynależność do grup prospołecznych). Taki model ryzyka i ochrony jest podstawą współczesnej profilaktyki i resocjalizacji.\n\nPrzykład: w diagnozie dziewczyny z MOW obszar „czas wolny” ujawnił talent taneczny, który stał się osią programu – to pokazuje, że diagnoza obszarów służy także szukaniu zasobów. Na egzaminie warto umieć wymienić sfery i podać przykład narzędzia dla każdej z nich.",
+      "key": [
+        "Płaszczyzna jednostkowa – diagnoza osoby i jej cech",
+        "Płaszczyzna środowiskowa – diagnoza rodziny, szkoły, rówieśników, społeczności",
+        "Sfera aksjologiczna – system wartości i stosunek do norm",
+        "Czynniki ryzyka – okoliczności zwiększające prawdopodobieństwo zachowań problemowych",
+        "Czynniki chroniące – zasoby zmniejszające wpływ czynników ryzyka"
+      ]
+    },
+    {
+      "topic": "Dzieci z trudnościami wychowawczymi – etiologia i symptomatologia",
+      "text": "Trudności wychowawcze to zachowania dziecka, które utrudniają realizację celów wychowania i wymagają szczególnych oddziaływań. Nie zawsze oznaczają niedostosowanie społeczne – mogą być przejściowe i rozwojowe (np. bunt w okresie przedszkolnym czy adolescencji).\n\nEtiologia (przyczyny) – ujęcie wieloczynnikowe, biopsychospołeczne:\n• czynniki biologiczne: temperament, dziedziczność, uszkodzenia OUN, FASD (spektrum płodowych zaburzeń alkoholowych – istotne w rodzinach z problemem alkoholowym), ADHD, choroby przewlekłe;\n• czynniki psychologiczne: zaburzenia przywiązania, niska samoocena, deficyty regulacji emocji, trudności w uczeniu się, traumy;\n• czynniki rodzinne: przemoc, zaniedbanie, uzależnienie rodziców, rozpad rodziny, niekonsekwentne lub zbyt surowe wychowanie, błędne postawy rodzicielskie;\n• czynniki szkolne: niepowodzenia, odrzucenie, przemoc rówieśnicza, nieadekwatne wymagania;\n• czynniki rówieśnicze i społeczne: grupy dewiacyjne, podkultury, ubóstwo, media cyfrowe, dostępność substancji.\nJ. Elliott (Dzieci i młodzież w kłopocie) podkreśla wzajemne nakładanie się tych czynników.\n\nSymptomatologia (objawy):\n• eksternalizacyjne: agresja, nieposłuszeństwo, kłamstwa, kradzieże, wagary, ucieczki z domu, niszczenie mienia, wczesne używanie alkoholu i narkotyków, ryzykowne zachowania seksualne;\n• internalizacyjne: wycofanie, lęki, smutek, objawy psychosomatyczne, samookaleczenia;\n• szkolne: trudności w nauce, konflikty z nauczycielami, absencja.\nR. Jessor opisał zespół zachowań problemowych – różne zachowania ryzykowne współwystępują i mają wspólne źródła.\n\nKlinicznie warto znać: zaburzenie opozycyjno-buntownicze (uporczywa złość, kłótliwość, mściwość) i zaburzenie zachowania (poważne naruszanie praw innych i norm), a także różnicowanie z ADHD, depresją i skutkami traumy.\n\nPrzykład: agresja ośmiolatka może być objawem przemocy domowej – dlatego objaw zawsze trzeba łączyć z diagnozą środowiska.",
+      "key": [
+        "Trudności wychowawcze – zachowania utrudniające realizację celów wychowania, nie zawsze trwałe",
+        "Etiologia – nauka o przyczynach i uwarunkowaniach zjawiska",
+        "Symptomatologia – opis objawów i ich nasilenia",
+        "FASD – spektrum płodowych zaburzeń alkoholowych wynikających z ekspozycji prenatalnej na alkohol",
+        "Zespół zachowań problemowych (R. Jessor) – współwystępowanie różnych zachowań ryzykownych"
+      ]
+    },
+    {
+      "topic": "Błąd wychowawczy jako kategoria diagnozy",
+      "text": "Błąd wychowawczy to działanie lub zaniechanie wychowawcy (rodzica, nauczyciela, opiekuna w placówce), które – zwykle niezamierzenie – utrudnia lub zaburza prawidłowy rozwój dziecka i realizację celów wychowania. W diagnozie resocjalizacyjnej błąd wychowawczy jest kategorią pozwalającą szukać przyczyn trudności nie tylko w dziecku, ale także w oddziaływaniach dorosłych.\n\nRodzaje błędów najczęściej opisywane w literaturze:\n• błędy nadmiaru – nadopiekuńczość, nadmierne wymagania, nadmiar kar lub nagród, nadmierna kontrola;\n• błędy niedoboru – zaniedbanie, brak zainteresowania, brak granic, brak czasu i ciepła;\n• niekonsekwencja – zmienne reguły, kary zależne od nastroju dorosłego;\n• rozbieżność oddziaływań – sprzeczne wymagania matki i ojca lub domu i szkoły;\n• błędy komunikacyjne – ośmieszanie, etykietowanie („jesteś złodziejem”), moralizowanie, groźby.\n\nPostawy rodzicielskie wg M. Ziemskiej: właściwe – akceptacja, współdziałanie, rozumna swoboda, uznanie praw dziecka; niewłaściwe – odtrącająca i unikająca (nadmierny dystans) oraz nadmiernie wymagająca i nadmiernie chroniąca (nadmierna koncentracja). Style wychowania wg D. Baumrind (uzupełnione przez Maccoby i Martina): autorytatywny, autorytarny, permisywny i zaniedbujący – najkorzystniejszy dla rozwoju jest styl autorytatywny (ciepło + jasne wymagania).\n\nBłąd może popełniać także instytucja – mówi się o jatrogenności oddziaływań (szkodliwy wpływ samej pomocy), np. gdy umieszczenie w grupie wychowanków o nasilonej demoralizacji wzmacnia zachowania przestępcze (efekt zarażenia rówieśniczego) lub gdy etykietowanie w placówce utrwala tożsamość dewianta.\n\nW diagnozie ważne jest, by kategorię błędu stosować bez oskarżania rodziców – celem jest zrozumienie mechanizmu i zaplanowanie pracy (psychoedukacja, trening umiejętności wychowawczych, wsparcie asystenta rodziny). Przykład: rodzice pijący naprzemiennie z okresami abstynencji wychowują niekonsekwentnie – dziecko uczy się, że reguły nie obowiązują.",
+      "key": [
+        "Błąd wychowawczy – działanie lub zaniechanie wychowawcy utrudniające rozwój dziecka",
+        "Postawy rodzicielskie (M. Ziemska) – właściwe: akceptacja, współdziałanie, rozumna swoboda, uznanie praw",
+        "Styl autorytatywny – połączenie ciepła i jasnych wymagań (D. Baumrind)",
+        "Niekonsekwencja – zmienność reguł i reakcji wychowawcy",
+        "Jatrogenność – szkodliwe skutki samych oddziaływań pomocowych lub instytucjonalnych"
+      ]
+    },
+    {
+      "topic": "Diagnoza rodziny: przemoc i zaniedbywanie dzieci, ryzyko przemocy",
+      "text": "Diagnoza rodziny w resocjalizacji obejmuje strukturę rodziny, relacje i komunikację, postawy i style wychowania, sytuację materialną i mieszkaniową, zdrowie i uzależnienia, a przede wszystkim bezpieczeństwo dziecka.\n\nPrzemoc domowa według ustawy o przeciwdziałaniu przemocy domowej (nowelizacja z 2023 r.) to jednorazowe albo powtarzające się umyślne działanie lub zaniechanie wykorzystujące przewagę, naruszające prawa lub dobra osobiste. Formy: fizyczna, psychiczna, seksualna, ekonomiczna oraz cyberprzemoc. Dziecko będące świadkiem przemocy domowej jest uznawane za osobę jej doznającą.\n\nZaniedbanie to niezaspokajanie podstawowych potrzeb dziecka przez opiekunów: fizycznych (jedzenie, ubranie, higiena, opieka medyczna), emocjonalnych (brak ciepła i uwagi), edukacyjnych (brak dbałości o naukę) oraz brak nadzoru i bezpieczeństwa.\n\nSygnały ostrzegawcze u dziecka: niewyjaśnione urazy, lęk przed powrotem do domu, wycofanie lub agresja, zachowania seksualne nieadekwatne do wieku, zaniedbany wygląd, głód, częste nieobecności, regres rozwojowy, samookaleczenia.\n\nCzynniki ryzyka przemocy: uzależnienie od alkoholu lub narkotyków, wcześniejsze akty przemocy, eskalacja ich częstotliwości i nasilenia, groźby zabójstwa lub samobójstwa, dostęp do broni, separacja lub rozstanie, izolacja społeczna, zaburzenia psychiczne, przemoc doznana w dzieciństwie, stres ekonomiczny. Ocena ryzyka służy planowaniu bezpieczeństwa i decyzji o interwencji.\n\nNarzędzia i procedury: wywiad z różnymi członkami rodziny osobno, obserwacja, dokumentacja szkolna i medyczna, procedura Niebieskiej Karty (wszczynają ją m.in. policja, pomoc społeczna, gminna komisja rozwiązywania problemów alkoholowych, ochrona zdrowia, oświata), praca zespołu interdyscyplinarnego i grupy diagnostyczno-pomocowej. W bezpośrednim zagrożeniu życia lub zdrowia dziecka pracownik socjalny wspólnie z policją może odebrać dziecko i umieścić je w bezpiecznym miejscu. Szkoły i placówki mają obowiązek posiadania standardów ochrony małoletnich.\n\nNa egzaminie: formy przemocy, różnica przemoc–konflikt (przewaga sił, intencjonalność, naruszanie praw, cierpienie), czynniki ryzyka.",
+      "key": [
+        "Przemoc domowa – umyślne działanie lub zaniechanie wykorzystujące przewagę i naruszające prawa lub dobra osobiste",
+        "Zaniedbanie – niezaspokajanie podstawowych potrzeb fizycznych, emocjonalnych i edukacyjnych dziecka",
+        "Dziecko świadek – w świetle ustawy osoba doznająca przemocy domowej",
+        "Ocena ryzyka – szacowanie prawdopodobieństwa i powagi dalszej przemocy",
+        "Standardy ochrony małoletnich – obowiązkowe zasady chroniące dzieci w szkołach i placówkach"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "front": "Niedostosowanie społeczne",
+      "back": "Trwały negatywny stosunek do norm i wartości społecznych przejawiający się zachowaniami utrudniającymi pełnienie ról społecznych."
+    },
+    {
+      "front": "Czym różni się niedostosowanie społeczne od zaburzenia zachowania?",
+      "back": "Niedostosowanie to kategoria pedagogiczno-socjologiczna (funkcjonowanie w rolach), zaburzenie to kategoria kliniczna opisana w DSM/ICD."
+    },
+    {
+      "front": "Kryteria rozpoznania niedostosowania społecznego",
+      "back": "Trwałość, wielosferowość, negatywny stosunek do norm, nieadekwatność do wieku i kontekstu, zakłócone pełnienie ról."
+    },
+    {
+      "front": "Typologia zaburzeń zachowania H. C. Quaya",
+      "back": "Zaburzenia nieuspołecznione agresywne, neurotyczne (lękowe), niedojrzałość społeczna, zachowania podkulturowe (uspołecznione)."
+    },
+    {
+      "front": "Demoralizacja",
+      "back": "Pojęcie z ustawy o wspieraniu i resocjalizacji nieletnich: m.in. naruszanie zasad współżycia społecznego, czyn zabroniony, uchylanie się od nauki, używanie alkoholu lub środków odurzających."
+    },
+    {
+      "front": "Model strukturalno-funkcjonalny diagnozy",
+      "back": "Opisuje elementy osobowości i środowiska oraz funkcje, jakie pełnią zachowania jednostki; daje uporządkowany, ale raczej statyczny obraz."
+    },
+    {
+      "front": "Model strukturalno-dynamiczny diagnozy",
+      "back": "Uwzględnia genezę, mechanizmy, zmiany w czasie i prognozę – diagnoza jako proces towarzyszący oddziaływaniom."
+    },
+    {
+      "front": "Diagnoza pełna wg S. Ziemskiego",
+      "back": "Diagnoza typologiczna, genetyczna, znaczenia, fazy i rozwojowa (prognostyczna)."
+    },
+    {
+      "front": "Paradygmat pozytywistyczny a interpretatywny w diagnozie",
+      "back": "Pozytywistyczny: pomiar, normy, testy (nomotetyczny). Interpretatywny: rozumienie znaczeń i perspektywy osoby, narracja (idiograficzny)."
+    },
+    {
+      "front": "Triangulacja w diagnozie",
+      "back": "Łączenie różnych metod, źródeł informacji i diagnostów w celu zwiększenia trafności wniosków."
+    },
+    {
+      "front": "Podstawowe metody diagnozy resocjalizacyjnej",
+      "back": "Obserwacja, wywiad i rozmowa, analiza dokumentów i wytworów, testy i kwestionariusze, socjometria, techniki projekcyjne."
+    },
+    {
+      "front": "Typowe błędy diagnosty",
+      "back": "Efekt aureoli i pierwszego wrażenia, sugerowanie się aktami, szukanie tylko danych potwierdzających hipotezę, etykietowanie."
+    },
+    {
+      "front": "Diagnoza konstatująca",
+      "back": "Opis aktualnego stanu: zachowań problemowych, ich przyczyn, mechanizmów oraz zasobów osoby i środowiska."
+    },
+    {
+      "front": "Diagnoza projektująca",
+      "back": "Formułowanie celów, planu oddziaływań, metod, terminów, kryteriów sukcesu i prognozy."
+    },
+    {
+      "front": "Diagnoza kontrolująca",
+      "back": "Bieżące monitorowanie przebiegu oddziaływań i ich skutków, umożliwiające modyfikację planu."
+    },
+    {
+      "front": "Diagnoza efektów",
+      "back": "Ocena wyników po zakończeniu programu lub etapu; punkt wyjścia do kolejnej diagnozy konstatującej."
+    },
+    {
+      "front": "Płaszczyzny diagnozy resocjalizacyjnej",
+      "back": "Jednostkowa (osoba), środowiskowa (rodzina, szkoła, rówieśnicy) i interakcyjna (relacje i sytuacje)."
+    },
+    {
+      "front": "Sfery funkcjonowania badane w diagnozie",
+      "back": "Biologiczno-zdrowotna, poznawcza, emocjonalno-motywacyjna, społeczna, aksjologiczna i behawioralna."
+    },
+    {
+      "front": "Czynniki chroniące – przykłady",
+      "back": "Silna więź z dorosłym, sukcesy szkolne, pasje, prospołeczni rówieśnicy, wsparcie społeczności, dobre umiejętności społeczne."
+    },
+    {
+      "front": "Zachowania eksternalizacyjne a internalizacyjne",
+      "back": "Eksternalizacyjne skierowane na zewnątrz (agresja, kradzieże, wagary); internalizacyjne skierowane do wewnątrz (lęk, wycofanie, smutek)."
+    },
+    {
+      "front": "FASD",
+      "back": "Spektrum płodowych zaburzeń alkoholowych – skutki ekspozycji prenatalnej na alkohol: deficyty poznawcze, impulsywność, trudności w uczeniu się na konsekwencjach."
+    },
+    {
+      "front": "Teoria zachowań problemowych R. Jessora",
+      "back": "Różne zachowania ryzykowne (używki, przestępczość, wczesna aktywność seksualna) współwystępują i mają wspólne uwarunkowania."
+    },
+    {
+      "front": "Błąd wychowawczy",
+      "back": "Działanie lub zaniechanie wychowawcy, zwykle niezamierzone, które utrudnia prawidłowy rozwój dziecka."
+    },
+    {
+      "front": "Niewłaściwe postawy rodzicielskie wg M. Ziemskiej",
+      "back": "Odtrącająca, unikająca (nadmierny dystans), nadmiernie wymagająca, nadmiernie chroniąca (nadmierna koncentracja)."
+    },
+    {
+      "front": "Style wychowania wg D. Baumrind (z uzupełnieniem Maccoby i Martina)",
+      "back": "Autorytatywny, autorytarny, permisywny, zaniedbujący; najkorzystniejszy jest autorytatywny."
+    },
+    {
+      "front": "Formy przemocy domowej wg ustawy (po 2023 r.)",
+      "back": "Fizyczna, psychiczna, seksualna, ekonomiczna i cyberprzemoc."
+    },
+    {
+      "front": "Rodzaje zaniedbania dziecka",
+      "back": "Fizyczne, emocjonalne, edukacyjne, medyczne oraz brak nadzoru i bezpieczeństwa."
+    },
+    {
+      "front": "Czynniki ryzyka eskalacji przemocy",
+      "back": "Uzależnienie sprawcy, narastanie częstotliwości i nasilenia przemocy, groźby zabójstwa, dostęp do broni, rozstanie, izolacja ofiary."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Niedostosowanie społeczne jest przede wszystkim kategorią:",
+      "options": ["pedagogiczno-socjologiczną", "wyłącznie medyczną", "wyłącznie prawną", "neurologiczną"],
+      "correct": 0,
+      "explain": "Opisuje funkcjonowanie w rolach i stosunek do norm, a nie jednostkę chorobową."
+    },
+    {
+      "q": "Który z poniższych NIE jest typowym kryterium niedostosowania społecznego?",
+      "options": ["trwałość zachowań", "jednorazowy incydent", "wielosferowość objawów", "negatywny stosunek do norm"],
+      "correct": 1,
+      "explain": "Pojedynczy epizod nie świadczy o niedostosowaniu."
+    },
+    {
+      "q": "Zachowania podkulturowe w typologii Quaya to zachowania:",
+      "options": [
+        "lękowe i wycofujące",
+        "wynikające z niedojrzałości",
+        "zgodne z normami grupy dewiacyjnej",
+        "o podłożu psychotycznym"
+      ],
+      "correct": 2,
+      "explain": "Są uspołecznione, ale w obrębie norm podkultury przestępczej."
+    },
+    {
+      "q": "Pojęcie „demoralizacja” w odniesieniu do nieletnich pochodzi z:",
+      "options": [
+        "Kodeksu karnego wykonawczego",
+        "klasyfikacji ICD-11",
+        "ustawy o pomocy społecznej",
+        "ustawy o wspieraniu i resocjalizacji nieletnich"
+      ],
+      "correct": 3,
+      "explain": "To kategoria prawna stosowana przez sądy rodzinne."
+    },
+    {
+      "q": "Pytanie „jaką funkcję pełni agresja dla tego chłopca w grupie?” jest charakterystyczne dla modelu:",
+      "options": ["strukturalno-funkcjonalnego", "biomedycznego", "psychometrycznego", "behawiorystycznego bodziec–reakcja"],
+      "correct": 0,
+      "explain": "Model strukturalno-funkcjonalny bada funkcje zachowań."
+    },
+    {
+      "q": "Model strukturalno-dynamiczny w odróżnieniu od strukturalno-funkcjonalnego akcentuje:",
+      "options": [
+        "wyłącznie pomiar testowy",
+        "genezę, zmiany w czasie i prognozę",
+        "jednorazowość diagnozy",
+        "pomijanie środowiska"
+      ],
+      "correct": 1,
+      "explain": "Dodaje wymiar dynamiki i procesu."
+    },
+    {
+      "q": "Diagnoza genetyczna w koncepcji S. Ziemskiego odpowiada na pytanie o:",
+      "options": [
+        "dziedziczenie cech",
+        "fazę rozwoju zjawiska",
+        "genezę, czyli pochodzenie zjawiska",
+        "znaczenie zjawiska dla całości"
+      ],
+      "correct": 2,
+      "explain": "Genetyczna nie oznacza tu biologicznej – chodzi o przyczyny i rozwój zjawiska."
+    },
+    {
+      "q": "Łączenie wywiadu, obserwacji i analizy dokumentów oraz opinii różnych specjalistów to:",
+      "options": ["standaryzacja", "efekt aureoli", "rzetelność", "triangulacja"],
+      "correct": 3,
+      "explain": "Triangulacja zwiększa trafność diagnozy."
+    },
+    {
+      "q": "Paradygmat interpretatywny w diagnozie charakteryzuje się:",
+      "options": [
+        "dążeniem do zrozumienia perspektywy i znaczeń podopiecznego",
+        "wyłącznym stosowaniem testów standaryzowanych",
+        "porównywaniem z normą statystyczną",
+        "pomijaniem narracji klienta"
+      ],
+      "correct": 0,
+      "explain": "Jest idiograficzny i jakościowy."
+    },
+    {
+      "q": "Rzetelność narzędzia diagnostycznego oznacza:",
+      "options": [
+        "że mierzy ono to, co ma mierzyć",
+        "dokładność i powtarzalność pomiaru",
+        "zgodność z oczekiwaniami sądu",
+        "łatwość stosowania"
+      ],
+      "correct": 1,
+      "explain": "To, co ma mierzyć – to trafność; rzetelność to precyzja i stabilność."
+    },
+    {
+      "q": "Opracowanie indywidualnego programu oddziaływań na podstawie wcześniejszego rozpoznania to diagnoza:",
+      "options": ["konstatująca", "kontrolująca", "projektująca", "efektów"],
+      "correct": 2,
+      "explain": "Diagnoza projektująca przekłada rozpoznanie na cele i plan."
+    },
+    {
+      "q": "Kwartalna analiza liczby incydentów agresji wychowanka w trakcie programu ART to przykład diagnozy:",
+      "options": ["konstatującej", "projektującej", "genetycznej", "kontrolującej"],
+      "correct": 3,
+      "explain": "Monitoruje przebieg oddziaływań w trakcie ich trwania."
+    },
+    {
+      "q": "Diagnoza efektów pełni w procesie resocjalizacji funkcję:",
+      "options": [
+        "oceny wyników i punktu wyjścia do kolejnej konstatacji",
+        "wstępnego rozpoznania",
+        "jedynie formalnego zamknięcia akt",
+        "zastępującą diagnozę projektującą"
+      ],
+      "correct": 0,
+      "explain": "Proces diagnozy jest cykliczny."
+    },
+    {
+      "q": "Do sfery aksjologicznej w diagnozie należy:",
+      "options": [
+        "poziom inteligencji",
+        "system wartości i stosunek do norm",
+        "stan zdrowia somatycznego",
+        "liczba nieobecności w szkole"
+      ],
+      "correct": 1,
+      "explain": "Aksjologia to dziedzina wartości."
+    },
+    {
+      "q": "Który z poniższych jest czynnikiem chroniącym?",
+      "options": [
+        "wczesna inicjacja alkoholowa",
+        "dewiacyjni rówieśnicy",
+        "silna więź z prospołecznym dorosłym",
+        "przemoc w rodzinie"
+      ],
+      "correct": 2,
+      "explain": "Więź z dorosłym jest jednym z najsilniejszych czynników ochronnych."
+    },
+    {
+      "q": "Wycofanie, lęk i objawy psychosomatyczne zalicza się do zachowań:",
+      "options": ["eksternalizacyjnych", "podkulturowych", "antyspołecznych", "internalizacyjnych"],
+      "correct": 3,
+      "explain": "Problemy internalizacyjne kierowane są do wewnątrz."
+    },
+    {
+      "q": "FASD jest istotnym czynnikiem etiologicznym trudności wychowawczych, ponieważ:",
+      "options": [
+        "wynika z prenatalnej ekspozycji na alkohol i wpływa na funkcje poznawcze oraz kontrolę zachowania",
+        "jest chorobą zakaźną",
+        "występuje wyłącznie u dorosłych",
+        "wynika z błędów wychowawczych w szkole"
+      ],
+      "correct": 0,
+      "explain": "FASD powoduje m.in. impulsywność i trudności w uczeniu się na konsekwencjach."
+    },
+    {
+      "q": "Teoria zespołu zachowań problemowych jest związana z nazwiskiem:",
+      "options": ["M. Ziemskiej", "R. Jessora", "D. Baumrind", "S. Ziemskiego"],
+      "correct": 1,
+      "explain": "R. Jessor opisał współwystępowanie zachowań ryzykownych."
+    },
+    {
+      "q": "Postawa nadmiernie chroniąca w ujęciu M. Ziemskiej należy do grupy postaw:",
+      "options": ["właściwych", "nadmiernego dystansu", "nadmiernej koncentracji na dziecku", "autorytatywnych"],
+      "correct": 2,
+      "explain": "Nadmiernie wymagająca i nadmiernie chroniąca to postawy nadmiernej koncentracji."
+    },
+    {
+      "q": "Styl wychowania łączący ciepło z jasnymi wymaganiami to wg D. Baumrind styl:",
+      "options": ["autorytarny", "permisywny", "zaniedbujący", "autorytatywny"],
+      "correct": 3,
+      "explain": "Styl autorytatywny jest najkorzystniejszy dla rozwoju dziecka."
+    },
+    {
+      "q": "Szkodliwy wpływ samych oddziaływań pomocowych lub instytucjonalnych określa się jako:",
+      "options": ["jatrogenność", "parentyfikację", "triangulację", "prizonizację"],
+      "correct": 0,
+      "explain": "Jatrogenność to szkody wywołane przez interwencję."
+    },
+    {
+      "q": "Która forma przemocy została wprost dodana do ustawowej definicji przemocy domowej w 2023 r.?",
+      "options": ["przemoc fizyczna", "cyberprzemoc", "przemoc seksualna", "przemoc psychiczna"],
+      "correct": 1,
+      "explain": "Nowelizacja z 2023 r. wprowadziła m.in. cyberprzemoc i przemoc ekonomiczną do definicji."
+    },
+    {
+      "q": "Który czynnik w szczególny sposób zwiększa ryzyko eskalacji przemocy domowej?",
+      "options": [
+        "wysoki poziom wykształcenia ofiary",
+        "regularne kontakty z rodziną pochodzenia",
+        "groźby zabójstwa i dostęp do broni",
+        "udział w zajęciach pozalekcyjnych dziecka"
+      ],
+      "correct": 2,
+      "explain": "Groźby i dostęp do broni to klasyczne wskaźniki wysokiego ryzyka."
+    },
+    {
+      "q": "Dziecko, które jest świadkiem przemocy domowej, w świetle obecnej ustawy:",
+      "options": [
+        "nie jest objęte ochroną",
+        "jest chronione tylko przez sąd karny",
+        "może zostać objęte procedurą wyłącznie po ukończeniu 13 lat",
+        "jest osobą doznającą przemocy domowej"
+      ],
+      "correct": 3,
+      "explain": "Nowelizacja z 2023 r. wprost uznaje dziecko świadka za osobę doznającą przemocy."
+    }
+  ],
+  "open": [
+    {
+      "q": "Wyjaśnij różnicę między niedostosowaniem społecznym a zaburzeniem zachowania i podaj kryteria diagnostyczne niedostosowania.",
+      "answer": "Niedostosowanie społeczne jest kategorią pedagogiczno-socjologiczną: oznacza trwały negatywny stosunek do norm i wartości społecznych, przejawiający się zachowaniami utrudniającymi pełnienie ról społecznych. Zaburzenie zachowania jest kategorią kliniczną z klasyfikacji DSM-5-TR i ICD-11, opartą na określonych objawach i kryteriach czasowych. Diagnoza pedagogiczna koncentruje się na funkcjonowaniu, przyczynach środowiskowych i możliwościach zmiany, kliniczna – na rozpoznaniu jednostki. Kryteria niedostosowania to trwałość i powtarzalność zachowań, wielosferowość, negatywny stosunek do norm, nieadekwatność do wieku i kontekstu oraz zakłócone pełnienie ról. Pomocna jest typologia Quaya: zaburzenia nieuspołecznione agresywne, neurotyczne, niedojrzałość i podkulturowe."
+    },
+    {
+      "q": "Porównaj model strukturalno-funkcjonalny i strukturalno-dynamiczny diagnozy resocjalizacyjnej.",
+      "answer": "Model strukturalno-funkcjonalny ujmuje osobę jako układ elementów (cech, potrzeb, kompetencji, wartości) i bada, jakie funkcje pełnią zachowania w przystosowaniu jednostki oraz jak funkcjonuje ona w rolach i systemach społecznych. Daje uporządkowany, ale statyczny obraz – fotografię stanu. Model strukturalno-dynamiczny uwzględnia genezę zachowań, ich rozwój, mechanizmy podtrzymujące, zmiany w relacji jednostka–środowisko oraz prognozę. Traktuje diagnozę jako proces towarzyszący oddziaływaniom. Modele się uzupełniają: pierwszy pokazuje, co jest i czemu służy, drugi – skąd się wzięło i dokąd zmierza. Nawiązują do diagnozy pełnej S. Ziemskiego."
+    },
+    {
+      "q": "Omów etapy diagnozy resocjalizacyjnej na przykładzie wychowanka placówki.",
+      "answer": "Diagnoza konstatująca opisuje stan: np. u wychowanka MOW stwierdza się agresję, wagary i używanie alkoholu, a jednocześnie zdolności manualne i dobrą relację z babcią. Diagnoza projektująca przekłada to na plan: trening zastępowania agresji, terapię uzależnienia, warsztaty zawodowe, kontakty z babcią, z określonymi celami, terminami i kryteriami sukcesu. Diagnoza kontrolująca monitoruje przebieg – np. co kwartał liczbę incydentów, frekwencję i wyniki testów na obecność substancji – i pozwala korygować plan. Diagnoza efektów ocenia rezultaty przed usamodzielnieniem i formułuje prognozę. Jej wyniki stają się podstawą kolejnej konstatacji, więc proces jest cykliczny."
+    },
+    {
+      "q": "Jakie metody i kryteria jakości obowiązują w diagnozie resocjalizacyjnej?",
+      "answer": "Metody to obserwacja (swobodna, kategoryzowana, uczestnicząca), wywiad i rozmowa diagnostyczna z podopiecznym oraz jego otoczeniem, analiza dokumentów i wytworów, testy i kwestionariusze, techniki socjometryczne i projekcyjne. Diagnoza może być prowadzona w paradygmacie pozytywistycznym (pomiar, normy) lub interpretatywnym (rozumienie znaczeń, narracja), a współcześnie akcentuje się diagnozę zasobów. Kryteria jakości to trafność, rzetelność, obiektywizm, standaryzacja, triangulacja, całościowość i aktualność. Zasady etyczne obejmują poszanowanie godności, poufność, świadomą zgodę i unikanie etykietowania. Należy unikać błędów: efektu aureoli, pierwszego wrażenia, sugerowania się aktami i szukania wyłącznie danych potwierdzających."
+    },
+    {
+      "q": "Przedstaw etiologię i symptomatologię trudności wychowawczych u dzieci.",
+      "answer": "Etiologia jest wieloczynnikowa. Czynniki biologiczne to temperament, uszkodzenia OUN, ADHD i FASD. Psychologiczne – zaburzenia przywiązania, deficyty regulacji emocji, niska samoocena, trauma. Rodzinne – przemoc, zaniedbanie, uzależnienie rodziców, rozpad rodziny, błędy wychowawcze. Szkolne – niepowodzenia, odrzucenie, przemoc rówieśnicza. Społeczne – grupy dewiacyjne, ubóstwo, dostępność substancji. Symptomatologia obejmuje zachowania eksternalizacyjne (agresja, kłamstwa, kradzieże, wagary, ucieczki, używki), internalizacyjne (wycofanie, lęk, smutek, objawy psychosomatyczne, samookaleczenia) oraz trudności szkolne. Według R. Jessora zachowania problemowe współwystępują. Objaw zawsze trzeba odnieść do diagnozy środowiska."
+    },
+    {
+      "q": "Scharakteryzuj błąd wychowawczy jako kategorię diagnozy resocjalizacyjnej.",
+      "answer": "Błąd wychowawczy to działanie lub zaniechanie wychowawcy, zwykle niezamierzone, które utrudnia rozwój dziecka. W diagnozie pozwala szukać przyczyn trudności w oddziaływaniach dorosłych, a nie tylko w dziecku. Wyróżnia się błędy nadmiaru (nadopiekuńczość, nadmierne wymagania, nadmiar kar), niedoboru (zaniedbanie, brak granic), niekonsekwencji, rozbieżności oddziaływań i błędy komunikacyjne (etykietowanie, ośmieszanie). Pomocne są postawy rodzicielskie M. Ziemskiej oraz style wychowania D. Baumrind, wśród których najkorzystniejszy jest styl autorytatywny. Błędy popełniają też instytucje (jatrogenność, zarażenie rówieśnicze). Kategorię stosuje się bez obwiniania – służy planowaniu psychoedukacji i treningu umiejętności rodzicielskich."
+    },
+    {
+      "q": "Jak prowadzić diagnozę rodziny pod kątem przemocy i zaniedbania dziecka?",
+      "answer": "Diagnoza obejmuje strukturę i relacje w rodzinie, style wychowania, sytuację materialną, zdrowie i uzależnienia, przede wszystkim jednak bezpieczeństwo dziecka. Należy znać formy przemocy domowej z ustawy (fizyczna, psychiczna, seksualna, ekonomiczna, cyberprzemoc) i pamiętać, że dziecko świadek jest osobą doznającą przemocy. Zaniedbanie dotyczy potrzeb fizycznych, emocjonalnych, edukacyjnych, medycznych i nadzoru. Zbiera się dane z wywiadów prowadzonych z członkami rodziny osobno, z obserwacji, dokumentacji szkolnej i medycznej. Ocenia się czynniki ryzyka: uzależnienie, eskalację przemocy, groźby, dostęp do broni, rozstanie, izolację. W razie podejrzenia przemocy wszczyna się procedurę Niebieskiej Karty, a w bezpośrednim zagrożeniu podejmuje interwencję chroniącą dziecko."
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "courseId": "metodyka-resocjalizacji",
+  "notes": [
+    {
+      "topic": "Środowisko otwarte i zamknięte w resocjalizacji – pojęcia, podstawy prawne i instytucje",
+      "text": "Resocjalizację prowadzi się w dwóch zasadniczych typach środowisk. Różnią się one stopniem izolacji, ingerencji w wolność i kontroli.\nŚrodowisko otwarte (wolnościowe, probacyjne) to działania prowadzone w naturalnym środowisku życia podopiecznego: w rodzinie, szkole, miejscu pracy, społeczności lokalnej. Instytucje i formy: kuratorzy sądowi (nadzory i dozory), ośrodki kuratorskie, kara ograniczenia wolności i praca społecznie użyteczna, warunkowe umorzenie, zawieszenie wykonania kary i warunkowe przedterminowe zwolnienie z dozorem, dozór elektroniczny, świetlice socjoterapeutyczne, streetworking, poradnie, organizacje pozarządowe.\nŚrodowisko zamknięte (instytucjonalne, izolacyjne) to placówki o całodobowym pobycie: zakłady karne i areszty śledcze, zakłady poprawcze i schroniska dla nieletnich, młodzieżowe ośrodki wychowawcze (MOW), młodzieżowe ośrodki socjoterapii (MOS). Według E. Goffmana skrajną postacią jest instytucja totalna: regulacja wszystkich aspektów życia, odcięcie od świata, depersonalizacja, sprzyjająca prizonizacji i podkulturze.\nPodstawy prawne:\n• Kodeks karny i Kodeks karny wykonawczy (1997) – kary, środki probacyjne, wykonywanie kary pozbawienia wolności;\n• ustawa z 9 czerwca 2022 r. o wspieraniu i resocjalizacji nieletnich – środki wychowawcze i poprawcze;\n• ustawa o kuratorach sądowych (2001);\n• Prawo oświatowe i przepisy o MOW i MOS;\n• ustawa o wychowaniu w trzeźwości i ustawa o przeciwdziałaniu narkomanii – leczenie osób uzależnionych.\nWspółczesna polityka kryminalna i pedagogika resocjalizacyjna (L. Pytka, M. Konopczyński) preferuje środowisko otwarte. Izolacja ma bowiem wysokie koszty społeczne, prowadzi do stygmatyzacji i zerwania więzi, a jej skuteczność jest ograniczona. Izolacja powinna być środkiem ostatecznym (ultima ratio), a pobyt w instytucji – przygotowaniem do powrotu do społeczeństwa.\nPrzykład: wobec nieletniego sprawcy kradzieży sąd orzeka najpierw nadzór kuratora i ośrodek kuratorski; dopiero przy braku efektów rozważa umieszczenie w MOW.\nNa egzaminie: definicje obu środowisk, katalog instytucji, zasada ultima ratio, instytucja totalna.",
+      "key": [
+        "środowisko otwarte – resocjalizacja w naturalnym środowisku życia, bez izolacji",
+        "środowisko zamknięte – resocjalizacja w instytucji izolacyjnej o całodobowym pobycie",
+        "instytucja totalna – placówka regulująca całość życia podopiecznych (Goffman)",
+        "probacja – poddanie sprawcy próbie na wolności, zwykle pod dozorem kuratora",
+        "ultima ratio – zasada stosowania izolacji jako środka ostatecznego"
+      ]
+    },
+    {
+      "topic": "Diagnoza resocjalizacyjna i indywidualny program oddziaływań",
+      "text": "Diagnoza resocjalizacyjna jest punktem wyjścia każdego planowego oddziaływania. Według L. Pytki to proces rozpoznawania stanu niedostosowania społecznego, jego genezy, dynamiki i zasobów jednostki w celu zaprojektowania skutecznej pomocy. Współcześnie podkreśla się przejście od diagnozy deficytów do diagnozy pozytywnej, czyli zasobów, mocnych stron i potencjałów (M. Konopczyński, I. Mudrecka).\nRodzaje diagnozy (m.in. według Pytki i Z. Skornego):\n• typologiczna – zaliczenie do określonej kategorii, np. typu niedostosowania;\n• genetyczna – przyczyny i przebieg rozwoju zaburzeń;\n• znaczeniowa – rola zjawiska w funkcjonowaniu osoby;\n• fazowa – etap rozwoju problemu;\n• prognostyczna – przewidywanie zachowań i efektów oddziaływań.\nMetody i techniki: obserwacja, wywiad i rozmowa, analiza dokumentów (akta sądowe, opinie szkolne i OZSS), wywiad środowiskowy, testy i skale (np. Skala Nieprzystosowania Społecznego), techniki socjometryczne, genogram, ekomapa, analiza wytworów.\nW ocenie ryzyka powrotu do przestępstwa stosuje się model RNR (Risk–Need–Responsivity, D.A. Andrews, J. Bonta):\n• ryzyko – intensywność oddziaływań dostosowana do poziomu ryzyka;\n• potrzeby – oddziaływanie na czynniki kryminogenne (postawy prokryminalne, środowisko, uzależnienie, brak pracy);\n• responsywność – metody dopasowane do możliwości i stylu uczenia się podopiecznego.\nIndywidualny program oddziaływań (w zakładzie karnym – indywidualny program oddziaływania opracowywany z udziałem skazanego, w placówkach dla nieletnich – indywidualny plan resocjalizacji lub plan pracy) zawiera cele krótko- i długoterminowe, metody, osoby odpowiedzialne, formy współpracy z rodziną i terminy ewaluacji. Powinien być realny, mierzalny, zawierać zobowiązania podopiecznego i podlegać okresowej modyfikacji.\nPrzykład: diagnoza wychowanka MOW ujawnia uzależnienie od marihuany, trudności w nauce i talent muzyczny. Plan łączy terapię uzależnień, wyrównywanie zaległości i zajęcia w zespole muzycznym jako zasób.\nNa egzaminie: rodzaje diagnozy, diagnoza pozytywna, model RNR, struktura programu.",
+      "key": [
+        "diagnoza resocjalizacyjna – rozpoznanie niedostosowania, jego genezy i zasobów osoby jako podstawa planowania",
+        "diagnoza pozytywna – koncentracja na mocnych stronach i potencjałach podopiecznego",
+        "model RNR – zasady ryzyka, potrzeb kryminogennych i responsywności (Andrews, Bonta)",
+        "czynniki kryminogenne – dynamiczne czynniki ryzyka przestępczości, na które można oddziaływać",
+        "indywidualny program oddziaływania – plan celów i metod resocjalizacji ustalany z podopiecznym"
+      ]
+    },
+    {
+      "topic": "Metodyka oddziaływań penitencjarnych w zakładzie karnym",
+      "text": "Wykonywanie kary pozbawienia wolności reguluje Kodeks karny wykonawczy z 1997 r. Jego celem jest wzbudzenie u skazanego woli współdziałania w kształtowaniu społecznie pożądanych postaw, w szczególności poczucia odpowiedzialności i potrzeby przestrzegania porządku prawnego, a tym samym powstrzymanie się od powrotu do przestępstwa. Udział w oddziaływaniach jest co do zasady dobrowolny – kkw przyjmuje model resocjalizacji podmiotowej, a nie przymusowej.\nŚrodki oddziaływania wymienione w kkw: praca (zwłaszcza sprzyjająca zdobyciu kwalifikacji), nauczanie, zajęcia kulturalno-oświatowe i sportowe, podtrzymywanie kontaktów z rodziną i światem zewnętrznym oraz środki terapeutyczne.\nRodzaje zakładów karnych: dla młodocianych, dla odbywających karę po raz pierwszy, dla recydywistów penitencjarnych, wojskowe; typy: zamknięte, półotwarte, otwarte – różniące się stopniem izolacji i swobody.\nSystemy wykonywania kary:\n• programowanego oddziaływania – skazany współtworzy i realizuje indywidualny program (obowiązkowo młodociani; inni za zgodą);\n• terapeutyczny – dla skazanych z niepsychotycznymi zaburzeniami psychicznymi, upośledzeniem umysłowym, uzależnionych od alkoholu lub innych substancji oraz niepełnosprawnych fizycznie; realizowany w oddziałach terapeutycznych;\n• zwykły – bez programu, z dostępem do pracy, nauki i zajęć.\nKluczowe podmioty: komisja penitencjarna (klasyfikacja, przeniesienia, zmiany typu zakładu), wychowawca do spraw penitencjarnych, psycholog, terapeuci, kapelan, sędzia penitencjarny i sąd penitencjarny (np. przepustki, warunkowe przedterminowe zwolnienie).\nZjawiska utrudniające resocjalizację: prizonizacja (przystosowanie do norm więziennych, D. Clemmer), podkultura więzienna („grypsera”, „drugie życie”), stygmatyzacja, zerwanie więzi rodzinnych, deprywacje opisane przez G. Sykesa (wolności, dóbr, kontaktów heteroseksualnych, autonomii, bezpieczeństwa). H. Machel wskazuje na napięcie między funkcją izolacyjno-karną a resocjalizacyjną więzienia.\nPrzykład: skazany uzależniony od alkoholu trafia do oddziału terapeutycznego, kończy program terapii, podejmuje pracę i kurs zawodowy, co stanowi argument we wniosku o warunkowe zwolnienie.\nNa egzaminie: cel kary wg kkw, systemy wykonywania kary, typy zakładów, prizonizacja.",
+      "key": [
+        "system programowanego oddziaływania – wykonywanie kary według indywidualnego programu ustalonego ze skazanym",
+        "system terapeutyczny – system dla skazanych wymagających specjalistycznych oddziaływań, np. uzależnionych",
+        "komisja penitencjarna – organ zakładu karnego klasyfikujący skazanych i ustalający programy",
+        "prizonizacja – przyswajanie norm i zwyczajów społeczności więziennej (Clemmer)",
+        "deprywacje więzienne – pozbawienia związane z uwięzieniem opisane przez Sykesa"
+      ]
+    },
+    {
+      "topic": "Metodyka pracy z nieletnimi w MOW, MOS i zakładach poprawczych",
+      "text": "Placówki dla nieletnich różnią się podstawą umieszczenia, profilem podopiecznych i podległością.\n• Młodzieżowy ośrodek socjoterapii (MOS) – placówka dla dzieci i młodzieży z zaburzeniami zachowania zagrożonych niedostosowaniem społecznym. Umieszczenie następuje na wniosek rodziców, na podstawie orzeczenia o potrzebie kształcenia specjalnego. Łączy kształcenie, wychowanie i socjoterapię, a podstawą jest współpraca z rodziną.\n• Młodzieżowy ośrodek wychowawczy (MOW) – placówka dla nieletnich niedostosowanych społecznie, umieszczanych przez sąd rodzinny jako środek wychowawczy na podstawie ustawy o wspieraniu i resocjalizacji nieletnich. Zapewnia naukę w szkole przy ośrodku, zajęcia resocjalizacyjne, terapeutyczne, sportowe, kontakty z rodziną.\n• Zakład poprawczy – placówka resocjalizacyjna resortu sprawiedliwości dla nieletnich, wobec których orzeczono środek poprawczy (za czyn karalny przy wysokim stopniu demoralizacji, gdy środki wychowawcze okazały się lub okażą się nieskuteczne). Występuje w typach o różnym stopniu swobody: otwarty, półotwarty, zamknięty, o wzmożonym nadzorze wychowawczym.\n• Schronisko dla nieletnich – tymczasowe umieszczenie na czas postępowania.\nMetodyka pracy w placówce:\n• diagnoza wstępna i indywidualny plan (program) resocjalizacji, okresowo oceniany przez zespół;\n• systemy motywacyjne: ekonomia punktowa, system stopni (etapów) z rosnącymi przywilejami, kontrakty;\n• oddziaływania grupowe: społeczność wychowawcza i samorząd, socjoterapia, Trening Zastępowania Agresji, treningi umiejętności;\n• metody twórczej resocjalizacji (Konopczyński): teatr, muzyka, sport, plastyka;\n• nauka szkolna i przygotowanie zawodowe;\n• praca z rodziną i usamodzielnianie, przepustki i urlopy jako etap powrotu do środowiska.\nTrudności: ucieczki, przemoc rówieśnicza, podkultura, łączenie w jednej grupie różnych problemów (uzależnienia, zaburzenia psychiczne). Według Pytki skuteczność zależy od trafnej selekcji, ciągłości oddziaływań i współpracy ze środowiskiem otwartym.\nPrzykład: w MOW wychowanek przechodzi przez kolejne etapy systemu motywacyjnego, a w ostatnim uzyskuje przepustki do domu i przygotowuje się z kuratorem do powrotu.\nNa egzaminie: różnice MOS–MOW–zakład poprawczy, systemy motywacyjne, ciągłość oddziaływań.",
+      "key": [
+        "MOS – młodzieżowy ośrodek socjoterapii, dla młodzieży zagrożonej niedostosowaniem, na wniosek rodziców",
+        "MOW – młodzieżowy ośrodek wychowawczy, dla niedostosowanych społecznie, z orzeczenia sądu",
+        "zakład poprawczy – placówka resocjalizacyjna, w której wykonuje się środek poprawczy",
+        "schronisko dla nieletnich – placówka tymczasowego pobytu na czas postępowania",
+        "system stopni – etapowy system motywacyjny z rosnącymi przywilejami i odpowiedzialnością"
+      ]
+    },
+    {
+      "topic": "Resocjalizacja w środowisku otwartym – kurator, ośrodek kuratorski, praca środowiskowa i streetworking",
+      "text": "Resocjalizacja w środowisku otwartym wykorzystuje zasoby naturalnego otoczenia: rodzinę, szkołę, pracę, społeczność lokalną. Pozwala uniknąć stygmatyzacji i zerwania więzi. Jej korzenie sięgają pedagogiki społecznej H. Radlińskiej – idei przetwarzania środowiska „siłami człowieka” i aktywizowania sił społecznych.\nGłówne formy:\n• kuratela sądowa – kurator rodzinny sprawuje nadzory nad nieletnimi i rodzinami, kurator dla dorosłych – dozory nad skazanymi warunkowo i zwolnionymi warunkowo. Kurator łączy funkcje wychowawczo-resocjalizacyjne, diagnostyczne, profilaktyczne i kontrolne;\n• ośrodek kuratorski – placówka zespołu kuratorskiej służby sądowej, do której sąd kieruje nieletnich na zajęcia popołudniowe (pomoc w nauce, socjoterapia, rozwijanie zainteresowań, praca z rodzicami); umożliwia intensywne oddziaływanie bez odrywania od domu;\n• kara ograniczenia wolności i praca społecznie użyteczna;\n• dozór elektroniczny – wykonywanie kary pozbawienia wolności poza zakładem karnym pod kontrolą elektroniczną;\n• praca środowiskowa (community work) – organizowanie społeczności lokalnej, współpraca z OPS, PCPR, szkołami, policją, organizacjami pozarządowymi;\n• streetworking (pedagogika ulicy) – docieranie do dzieci i młodzieży w miejscach ich przebywania (podwórka, galerie handlowe, dworce), budowanie relacji, redukcja szkód, kierowanie do pomocy; streetworker działa w środowisku klienta, na jego warunkach i z zachowaniem dobrowolności;\n• świetlice socjoterapeutyczne i placówki wsparcia dziennego, kluby młodzieżowe;\n• mediacja i sprawiedliwość naprawcza – spotkanie sprawcy z pokrzywdzonym, naprawienie szkody.\nMetody pracy socjalnej stosowane przez kuratorów (Ł. Kwadrans): metoda indywidualnego przypadku (case work), praca z grupą (group work), organizowanie społeczności lokalnej (community work).\nWarunki skuteczności: ciągłość relacji, rozsądne obciążenie kuratorów, koordynacja instytucji, łączenie kontroli z realną pomocą.\nPrzykład: chłopiec zagrożony umieszczeniem w MOW zostaje skierowany do ośrodka kuratorskiego, rodzice uczestniczą w warsztatach umiejętności wychowawczych, a streetworker pomaga mu odejść od grupy podwórkowej.\nNa egzaminie: formy resocjalizacji otwartej, ośrodek kuratorski, streetworking, sprawiedliwość naprawcza.",
+      "key": [
+        "ośrodek kuratorski – placówka kuratorskiej służby sądowej prowadząca zajęcia dla nieletnich pod nadzorem",
+        "streetworking – praca socjalno-wychowawcza w miejscach naturalnego przebywania klientów",
+        "sprawiedliwość naprawcza – koncepcja rozwiązywania skutków przestępstwa przez naprawienie szkody i mediację",
+        "dozór elektroniczny – wykonywanie kary poza zakładem karnym pod kontrolą elektroniczną",
+        "community work – metoda organizowania społeczności lokalnej do rozwiązywania problemów"
+      ]
+    },
+    {
+      "topic": "Metody i techniki oddziaływań: TZA, trening umiejętności społecznych, dialog motywujący, twórcza resocjalizacja",
+      "text": "Współczesna metodyka resocjalizacji korzysta z metod o potwierdzonej skuteczności, głównie poznawczo-behawioralnych i humanistycznych.\nTrening Zastępowania Agresji (TZA, ART – Aggression Replacement Training) opracowali A.P. Goldstein, B. Glick i J.C. Gibbs. Składa się z trzech komponentów:\n• trening umiejętności prospołecznych (komponent behawioralny) – modelowanie, odgrywanie ról, informacja zwrotna, transfer;\n• trening kontroli złości (komponent emocjonalny) – rozpoznawanie wyzwalaczy i sygnałów ciała, techniki obniżania napięcia, „przypominacze”, ocena siebie;\n• trening wnioskowania moralnego (komponent poznawczy) – dyskusje dylematów moralnych, rozwijanie rozumowania moralnego.\nTrening umiejętności społecznych (TUS) uczy konkretnych zachowań: słuchania, rozpoczynania rozmowy, proszenia o pomoc, radzenia sobie z presją, odmawiania, rozwiązywania konfliktów. Stosuje modelowanie, odgrywanie ról, informację zwrotną i zadania domowe.\nDialog motywujący (W.R. Miller, S. Rollnick) to styl rozmowy wzmacniający wewnętrzną motywację do zmiany przez pracę z ambiwalencją. Opiera się na partnerstwie, akceptacji, współczuciu i wydobywaniu. Stosuje techniki OARS: pytania otwarte, dowartościowanie, odzwierciedlanie, podsumowania. Jest szczególnie przydatny wobec osób uzależnionych i skazanych z niską gotowością do zmiany.\nTwórcza resocjalizacja (M. Konopczyński) zakłada, że zamiast korygować deficyty należy rozwijać potencjały i kreować nową tożsamość społeczną nieletniego. Wykorzystuje metody kulturotechniczne: resocjalizacyjną aktywność teatralną, muzyczną, plastyczną, sportową, twórczą pracę z tekstem i mediami. Przez działanie twórcze wychowanek doświadcza sukcesu, buduje pozytywny obraz siebie i nowe role społeczne, np. aktora, muzyka czy sportowca, a nie „przestępcy”.\nInne metody: ekonomia punktowa, kontrakt, socjoterapia, psychoedukacja, techniki poznawcze (restrukturyzacja myśli), mediacja, coaching i mentoring.\nPrzykład: grupa wychowanków MOW realizuje 10-tygodniowy cykl TZA, a efekty przenosi na sytuacje z życia ośrodka dzięki zadaniom domowym i wzmocnieniom wychowawców.\nNa egzaminie: trzy komponenty TZA i autorzy, zasady dialogu motywującego, założenia twórczej resocjalizacji.",
+      "key": [
+        "TZA – Trening Zastępowania Agresji: umiejętności prospołeczne, kontrola złości, wnioskowanie moralne",
+        "trening umiejętności społecznych – nauka zachowań interpersonalnych przez modelowanie i odgrywanie ról",
+        "dialog motywujący – styl rozmowy wzmacniający wewnętrzną motywację i pracujący z ambiwalencją",
+        "OARS – techniki dialogu motywującego: pytania otwarte, dowartościowanie, odzwierciedlanie, podsumowania",
+        "twórcza resocjalizacja – rozwijanie potencjałów i nowej tożsamości przez działania kulturotechniczne"
+      ]
+    },
+    {
+      "topic": "Readaptacja społeczna i pomoc postpenitencjarna",
+      "text": "Readaptacja społeczna to proces ponownego przystosowania osoby opuszczającej instytucję izolacyjną (zakład karny, zakład poprawczy, MOW) do życia w społeczeństwie: odbudowa ról rodzinnych, zawodowych i obywatelskich. Jest ostatnim, ale krytycznym ogniwem procesu resocjalizacji. Pytka podkreśla, że bez ciągłości oddziaływań między instytucją a środowiskiem otwartym efekty pobytu w placówce szybko zanikają.\nTrudności po zwolnieniu: brak mieszkania i pracy, zadłużenie, stygmatyzacja i dyskryminacja, rozpad więzi, powrót do dawnego środowiska przestępczego, nawrót uzależnienia, utrata nawyków samodzielnego życia (skutek prizonizacji). Najwyższe ryzyko powrotu do przestępstwa przypada na pierwsze miesiące po wyjściu.\nEtapy pracy:\n• przygotowanie do zwolnienia w zakładzie – program przygotowania, kontakty z rodziną, przepustki, kursy zawodowe, załatwienie dokumentów, kontakt z kuratorem;\n• okres bezpośrednio po zwolnieniu – pomoc doraźna: nocleg, żywność, odzież, środki na przejazd;\n• stabilizacja – praca, mieszkanie, terapia, wsparcie społeczne.\nPomoc postpenitencjarna – w Polsce finansowana m.in. z Funduszu Pomocy Pokrzywdzonym oraz Pomocy Postpenitencjarnej (Fundusz Sprawiedliwości), realizowana przez Służbę Więzienną, kuratorów sądowych, ośrodki pomocy społecznej oraz organizacje pozarządowe i kościelne. Formy: pomoc materialna, mieszkaniowa (hostele, mieszkania readaptacyjne), zawodowa (kursy, pośrednictwo pracy, centra i kluby integracji społecznej, spółdzielnie socjalne), psychologiczna i terapeutyczna, prawna. Osoby zwolnione warunkowo pozostają zwykle pod dozorem kuratora.\nW przypadku nieletnich istotne jest usamodzielnienie: pomoc w kontynuowaniu nauki, praca kuratora z rodziną, a dla wychowanków pieczy zastępczej – wsparcie PCPR i program usamodzielnienia.\nPrzykład: mężczyzna po odbyciu kary i terapii uzależnień zamieszkuje w mieszkaniu readaptacyjnym, uczestniczy w zajęciach CIS i spotyka się z kuratorem oraz w grupie AA.\nNa egzaminie: pojęcie readaptacji, bariery, formy pomocy postpenitencjarnej, znaczenie ciągłości oddziaływań.",
+      "key": [
+        "readaptacja społeczna – ponowne przystosowanie do życia w społeczeństwie po pobycie w instytucji",
+        "pomoc postpenitencjarna – wsparcie osób zwalnianych z zakładów karnych i ich rodzin",
+        "Fundusz Sprawiedliwości – państwowy fundusz celowy finansujący m.in. pomoc postpenitencjarną",
+        "mieszkanie readaptacyjne – mieszkanie wspierające usamodzielnienie osób po izolacji",
+        "ciągłość oddziaływań – zasada łączenia pracy w instytucji z pomocą w środowisku otwartym"
+      ]
+    },
+    {
+      "topic": "Warsztat i kompetencje pedagoga resocjalizacyjnego; wypalenie zawodowe",
+      "text": "Pedagog resocjalizacyjny pracuje z osobami o niskiej motywacji, nieufnymi, często manipulującymi i doświadczonymi traumą. Jego warsztat obejmuje wiedzę, umiejętności i postawy.\nKompetencje:\n• merytoryczne – wiedza z pedagogiki, psychologii, kryminologii, prawa (kk, kkw, ustawa o wspieraniu i resocjalizacji nieletnich), wiedza o uzależnieniach;\n• diagnostyczne – obserwacja, wywiad, ocena ryzyka i zasobów;\n• metodyczne – planowanie, prowadzenie zajęć indywidualnych i grupowych (TZA, TUS, socjoterapia, metody kulturotechniczne), ewaluacja;\n• interpersonalne – budowanie relacji, komunikacja, asertywność, rozwiązywanie konfliktów, mediacja, rozpoznawanie manipulacji;\n• osobowościowe – autentyczność, empatia, konsekwencja, odporność na stres, poczucie humoru, zdolność do stawiania granic;\n• etyczne – szacunek dla godności, poufność, podmiotowość podopiecznego.\nKonopczyński opisuje pedagoga jako twórcę sytuacji wychowawczych i animatora, a nie wyłącznie kontrolera. Czapów podkreślał znaczenie relacji opartej na zaufaniu i autorytecie.\nWypalenie zawodowe według C. Maslach to syndrom trzech składników:\n• wyczerpanie emocjonalne;\n• depersonalizacja (cynizm, dystansowanie się, przedmiotowe traktowanie podopiecznych);\n• obniżone poczucie dokonań osobistych.\nCzynniki ryzyka: przeciążenie, praca z trudnymi klientami, niewidoczne efekty, konflikt ról (kontrola–pomoc), brak wsparcia przełożonych, biurokracja, zagrożenie agresją, perfekcjonizm i nadmierne zaangażowanie. Pojawia się też zmęczenie współczuciem i wtórny stres traumatyczny.\nProfilaktyka wypalenia: superwizja i intervizja, szkolenia, praca zespołowa, jasne procedury, realistyczne cele, dbałość o granice między pracą a życiem prywatnym, odpoczynek, rozwój zawodowy, wsparcie psychologiczne.\nPrzykład: wychowawca MOW zauważa u siebie cynizm wobec wychowanków („i tak nic z nich nie będzie”); zgłasza się na superwizję i zmienia formę pracy, wprowadzając projekt teatralny, który przywraca mu poczucie sensu.\nNa egzaminie: katalog kompetencji, składniki wypalenia wg Maslach, metody zapobiegania.",
+      "key": [
+        "wypalenie zawodowe – syndrom wyczerpania emocjonalnego, depersonalizacji i obniżonego poczucia dokonań (Maslach)",
+        "depersonalizacja – cyniczne, przedmiotowe traktowanie podopiecznych",
+        "superwizja – regularna konsultacja pracy z doświadczonym specjalistą, wspierająca rozwój i chroniąca przed wypaleniem",
+        "zmęczenie współczuciem – wyczerpanie wynikające z długotrwałego kontaktu z cierpieniem innych",
+        "konflikt ról – napięcie między funkcją kontrolną a pomocową pedagoga"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "front": "Środowisko otwarte w resocjalizacji",
+      "back": "Oddziaływania w naturalnym środowisku życia (rodzina, szkoła, praca), bez izolacji: kuratela, ośrodki kuratorskie, kara ograniczenia wolności, streetworking."
+    },
+    {
+      "front": "Środowisko zamknięte w resocjalizacji",
+      "back": "Instytucje izolacyjne o całodobowym pobycie: zakłady karne, areszty, zakłady poprawcze, schroniska, MOW, MOS."
+    },
+    {
+      "front": "Instytucja totalna (Goffman)",
+      "back": "Placówka regulująca całość życia podopiecznych, odcinająca od świata zewnętrznego i sprzyjająca depersonalizacji."
+    },
+    {
+      "front": "Zasada ultima ratio",
+      "back": "Izolacja powinna być środkiem ostatecznym – stosowanym, gdy środki wolnościowe są niewystarczające."
+    },
+    {
+      "front": "Rodzaje diagnozy resocjalizacyjnej",
+      "back": "Typologiczna, genetyczna, znaczeniowa, fazowa, prognostyczna."
+    },
+    {
+      "front": "Diagnoza pozytywna",
+      "back": "Diagnoza skoncentrowana na zasobach, mocnych stronach i potencjałach podopiecznego (np. Konopczyński)."
+    },
+    {
+      "front": "Model RNR",
+      "back": "Risk–Need–Responsivity (Andrews, Bonta): intensywność wg ryzyka, praca nad potrzebami kryminogennymi, metody dopasowane do podopiecznego."
+    },
+    {
+      "front": "Cel wykonania kary pozbawienia wolności wg kkw",
+      "back": "Wzbudzenie woli współdziałania w kształtowaniu społecznie pożądanych postaw, poczucia odpowiedzialności i przestrzegania prawa – powstrzymanie od powrotu do przestępstwa."
+    },
+    {
+      "front": "Systemy wykonywania kary pozbawienia wolności",
+      "back": "Programowanego oddziaływania, terapeutyczny, zwykły."
+    },
+    {
+      "front": "Rodzaje zakładów karnych",
+      "back": "Dla młodocianych, dla odbywających karę po raz pierwszy, dla recydywistów penitencjarnych, wojskowe."
+    },
+    {
+      "front": "Typy zakładów karnych",
+      "back": "Zamknięty, półotwarty, otwarty."
+    },
+    {
+      "front": "Kto trafia do systemu terapeutycznego?",
+      "back": "Skazani z niepsychotycznymi zaburzeniami psychicznymi, upośledzeniem umysłowym, uzależnieni od alkoholu lub innych substancji, niepełnosprawni fizycznie wymagający specjalistycznych oddziaływań."
+    },
+    {
+      "front": "Prizonizacja",
+      "back": "Przyswajanie norm, wartości i zwyczajów społeczności więziennej (D. Clemmer), utrudniające readaptację."
+    },
+    {
+      "front": "Deprywacje więzienne wg Sykesa",
+      "back": "Pozbawienie wolności, dóbr i usług, kontaktów heteroseksualnych, autonomii oraz poczucia bezpieczeństwa."
+    },
+    {
+      "front": "MOS a MOW",
+      "back": "MOS – młodzież zagrożona niedostosowaniem, na wniosek rodziców i z orzeczeniem o kształceniu specjalnym; MOW – młodzież niedostosowana społecznie, z orzeczenia sądu rodzinnego."
+    },
+    {
+      "front": "Zakład poprawczy",
+      "back": "Placówka resortu sprawiedliwości wykonująca środek poprawczy wobec nieletnich sprawców czynów karalnych o wysokim stopniu demoralizacji."
+    },
+    {
+      "front": "Schronisko dla nieletnich",
+      "back": "Placówka tymczasowego umieszczenia nieletniego na czas postępowania."
+    },
+    {
+      "front": "Ośrodek kuratorski",
+      "back": "Placówka zespołu kuratorskiej służby sądowej prowadząca zajęcia popołudniowe dla nieletnich (nauka, socjoterapia, zainteresowania, praca z rodzicami)."
+    },
+    {
+      "front": "Streetworking",
+      "back": "Praca w miejscach naturalnego przebywania młodzieży (ulica, podwórko, galeria): budowanie relacji, redukcja szkód, kierowanie do pomocy."
+    },
+    {
+      "front": "Metody pracy socjalnej stosowane przez kuratorów",
+      "back": "Indywidualnego przypadku (case work), grupowa (group work), organizowania społeczności lokalnej (community work)."
+    },
+    {
+      "front": "Autorzy i komponenty TZA",
+      "back": "Goldstein, Glick, Gibbs; trening umiejętności prospołecznych, kontroli złości i wnioskowania moralnego."
+    },
+    {
+      "front": "Dialog motywujący – autorzy i techniki",
+      "back": "W.R. Miller i S. Rollnick; techniki OARS: pytania otwarte, dowartościowanie, odzwierciedlanie, podsumowania."
+    },
+    {
+      "front": "Twórcza resocjalizacja – główna idea",
+      "back": "Zamiast korygować deficyty – rozwijać potencjały i kreować nową tożsamość społeczną przez działania kulturotechniczne (Konopczyński)."
+    },
+    {
+      "front": "Readaptacja społeczna",
+      "back": "Ponowne przystosowanie do życia w społeczeństwie po pobycie w instytucji izolacyjnej (rodzina, praca, mieszkanie, role obywatelskie)."
+    },
+    {
+      "front": "Źródło finansowania pomocy postpenitencjarnej",
+      "back": "Fundusz Pomocy Pokrzywdzonym oraz Pomocy Postpenitencjarnej – Fundusz Sprawiedliwości."
+    },
+    {
+      "front": "Składniki wypalenia zawodowego wg Maslach",
+      "back": "Wyczerpanie emocjonalne, depersonalizacja, obniżone poczucie dokonań osobistych."
+    },
+    {
+      "front": "Główne sposoby zapobiegania wypaleniu",
+      "back": "Superwizja, praca zespołowa, szkolenia, realistyczne cele, granice praca–dom, odpoczynek, wsparcie psychologiczne."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Które z wymienionych form należą do resocjalizacji w środowisku otwartym?",
+      "options": [
+        "Zakład poprawczy i schronisko",
+        "Ośrodek kuratorski i kara ograniczenia wolności",
+        "MOW i zakład karny typu półotwartego",
+        "Areszt śledczy i oddział terapeutyczny"
+      ],
+      "correct": 1,
+      "explain": "Ośrodek kuratorski i kara ograniczenia wolności realizowane są bez izolacji, w naturalnym środowisku."
+    },
+    {
+      "q": "Pojęcie instytucji totalnej wprowadził:",
+      "options": ["D. Clemmer", "G. Sykes", "E. Goffman", "L. Pytka"],
+      "correct": 2,
+      "explain": "Erving Goffman opisał instytucje totalne, np. więzienia i szpitale psychiatryczne."
+    },
+    {
+      "q": "Zasada ultima ratio w resocjalizacji oznacza, że:",
+      "options": [
+        "izolacja jest środkiem ostatecznym",
+        "kara powinna być jak najsurowsza",
+        "resocjalizacja ma zawsze charakter przymusowy",
+        "każdy nieletni powinien trafić do MOW"
+      ],
+      "correct": 0,
+      "explain": "Izolację stosuje się dopiero wtedy, gdy środki wolnościowe są niewystarczające."
+    },
+    {
+      "q": "Diagnoza koncentrująca się na mocnych stronach i potencjałach podopiecznego to diagnoza:",
+      "options": ["typologiczna", "fazowa", "genetyczna", "pozytywna"],
+      "correct": 3,
+      "explain": "Diagnoza pozytywna szuka zasobów, na których można oprzeć oddziaływania."
+    },
+    {
+      "q": "Zasada potrzeb w modelu RNR nakazuje:",
+      "options": [
+        "dostosować intensywność do poziomu ryzyka",
+        "koncentrować oddziaływania na czynnikach kryminogennych",
+        "dopasować metody do stylu uczenia się",
+        "zaspokajać wszystkie potrzeby materialne skazanego"
+      ],
+      "correct": 1,
+      "explain": "Zasada potrzeb (need) dotyczy oddziaływania na dynamiczne czynniki kryminogenne, np. postawy prokryminalne czy uzależnienie."
+    },
+    {
+      "q": "Który system wykonywania kary jest obowiązkowy dla młodocianych?",
+      "options": ["Zwykły", "Terapeutyczny", "Programowanego oddziaływania", "Półotwarty"],
+      "correct": 2,
+      "explain": "Kkw przewiduje, że młodociani odbywają karę w systemie programowanego oddziaływania."
+    },
+    {
+      "q": "Skazany uzależniony od alkoholu, wymagający specjalistycznych oddziaływań, może odbywać karę w systemie:",
+      "options": ["terapeutycznym", "zwykłym wyłącznie", "otwartym", "półotwartym"],
+      "correct": 0,
+      "explain": "System terapeutyczny obejmuje m.in. skazanych uzależnionych od alkoholu lub innych substancji."
+    },
+    {
+      "q": "Typy zakładów karnych to:",
+      "options": [
+        "dla młodocianych, dla recydywistów, wojskowe",
+        "zamknięte, półotwarte, otwarte",
+        "terapeutyczne, programowane, zwykłe",
+        "męskie, żeńskie, mieszane"
+      ],
+      "correct": 1,
+      "explain": "Typy różnią się stopniem izolacji: zamknięty, półotwarty i otwarty; pierwsza odpowiedź to rodzaje zakładów."
+    },
+    {
+      "q": "Prizonizację jako przyswajanie norm społeczności więziennej opisał:",
+      "options": ["M. Konopczyński", "A. Goldstein", "C. Maslach", "D. Clemmer"],
+      "correct": 3,
+      "explain": "Donald Clemmer opisał proces prizonizacji w badaniach społeczności więziennej."
+    },
+    {
+      "q": "Do młodzieżowego ośrodka socjoterapii (MOS) młodzież przyjmuje się:",
+      "options": [
+        "na podstawie wyroku sądu karnego",
+        "na wniosek rodziców, na podstawie orzeczenia o potrzebie kształcenia specjalnego",
+        "wyłącznie na wniosek policji",
+        "z urzędu po ukończeniu 17 lat"
+      ],
+      "correct": 1,
+      "explain": "MOS jest placówką oświatową dla zagrożonych niedostosowaniem; umieszczenie następuje za zgodą i na wniosek rodziców."
+    },
+    {
+      "q": "Placówka, w której wykonuje się środek poprawczy, to:",
+      "options": [
+        "młodzieżowy ośrodek wychowawczy",
+        "ośrodek kuratorski",
+        "zakład poprawczy",
+        "młodzieżowy ośrodek socjoterapii"
+      ],
+      "correct": 2,
+      "explain": "Środek poprawczy polega na umieszczeniu w zakładzie poprawczym."
+    },
+    {
+      "q": "Schronisko dla nieletnich służy:",
+      "options": [
+        "tymczasowemu umieszczeniu nieletniego na czas postępowania",
+        "wykonywaniu kary pozbawienia wolności",
+        "leczeniu uzależnień nieletnich",
+        "usamodzielnianiu wychowanków pieczy zastępczej"
+      ],
+      "correct": 0,
+      "explain": "Schronisko to środek tymczasowy stosowany w toku postępowania w sprawie nieletniego."
+    },
+    {
+      "q": "Istotą streetworkingu jest:",
+      "options": [
+        "kontrola policyjna na ulicach",
+        "zapraszanie młodzieży do poradni na terapię",
+        "praca w miejscach naturalnego przebywania klientów z zachowaniem dobrowolności",
+        "nadzór sądowy nad rodziną"
+      ],
+      "correct": 2,
+      "explain": "Streetworker dociera do ludzi tam, gdzie przebywają, i buduje relację na ich warunkach."
+    },
+    {
+      "q": "Ideę przetwarzania środowiska siłami człowieka, inspirującą pracę środowiskową, sformułowała:",
+      "options": ["M. Grzegorzewska", "H. Radlińska", "M. Montessori", "C. Maslach"],
+      "correct": 1,
+      "explain": "Helena Radlińska, twórczyni polskiej pedagogiki społecznej, rozwijała ideę aktywizacji sił społecznych."
+    },
+    {
+      "q": "Który komponent nie wchodzi w skład Treningu Zastępowania Agresji?",
+      "options": [
+        "Trening umiejętności prospołecznych",
+        "Trening kontroli złości",
+        "Trening wnioskowania moralnego",
+        "Trening relaksacji Jacobsona jako odrębny moduł"
+      ],
+      "correct": 3,
+      "explain": "TZA składa się z trzech komponentów: umiejętności prospołecznych, kontroli złości i wnioskowania moralnego."
+    },
+    {
+      "q": "Techniki OARS są charakterystyczne dla:",
+      "options": ["dialogu motywującego", "ekonomii punktowej", "psychodramy", "terapii awersyjnej"],
+      "correct": 0,
+      "explain": "OARS to podstawowe umiejętności dialogu motywującego Millera i Rollnicka."
+    },
+    {
+      "q": "Twórcza resocjalizacja według Konopczyńskiego zakłada przede wszystkim:",
+      "options": [
+        "eliminację deficytów przez system kar",
+        "izolację od środowiska rówieśniczego",
+        "rozwijanie potencjałów i kreowanie nowej tożsamości przez działania kulturotechniczne",
+        "wyłącznie terapię farmakologiczną"
+      ],
+      "correct": 2,
+      "explain": "Konopczyński proponuje rozwijanie zdolności i budowanie nowych ról społecznych przez twórczość."
+    },
+    {
+      "q": "Readaptacja społeczna to:",
+      "options": [
+        "proces ponownego przystosowania do życia w społeczeństwie po pobycie w instytucji",
+        "pierwotna socjalizacja dziecka w rodzinie",
+        "procedura przeniesienia skazanego do innego zakładu",
+        "wyłącznie pomoc materialna po zwolnieniu"
+      ],
+      "correct": 0,
+      "explain": "Readaptacja dotyczy odbudowy ról społecznych po okresie izolacji."
+    },
+    {
+      "q": "Z jakiego źródła finansowana jest w Polsce m.in. pomoc postpenitencjarna?",
+      "options": [
+        "Z Funduszu Pracy",
+        "Z Państwowego Funduszu Rehabilitacji Osób Niepełnosprawnych",
+        "Z Narodowego Funduszu Zdrowia",
+        "Z Funduszu Pomocy Pokrzywdzonym oraz Pomocy Postpenitencjarnej"
+      ],
+      "correct": 3,
+      "explain": "Fundusz Sprawiedliwości finansuje m.in. pomoc postpenitencjarną."
+    },
+    {
+      "q": "Cynizm i przedmiotowe traktowanie podopiecznych to w modelu Maslach przejaw:",
+      "options": ["wyczerpania emocjonalnego", "obniżonego poczucia dokonań", "depersonalizacji", "zmęczenia fizycznego"],
+      "correct": 2,
+      "explain": "Depersonalizacja to dystansowanie się i cyniczne traktowanie osób, z którymi się pracuje."
+    },
+    {
+      "q": "Najskuteczniejszą formą zapobiegania wypaleniu w pracy resocjalizacyjnej jest:",
+      "options": [
+        "regularna superwizja i wsparcie zespołu",
+        "ograniczenie kontaktu z podopiecznymi do minimum",
+        "zwiększenie liczby godzin pracy",
+        "unikanie rozmów o trudnościach"
+      ],
+      "correct": 0,
+      "explain": "Superwizja i wsparcie zespołowe pomagają przepracować obciążenia i utrzymać profesjonalny dystans."
+    },
+    {
+      "q": "Kodeks karny wykonawczy przyjmuje, że udział skazanego w oddziaływaniach resocjalizacyjnych jest co do zasady:",
+      "options": [
+        "przymusowy w każdym przypadku",
+        "dobrowolny – zgodnie z modelem podmiotowym",
+        "zależny wyłącznie od decyzji rodziny",
+        "zakazany w zakładach zamkniętych"
+      ],
+      "correct": 1,
+      "explain": "Kkw opiera się na podmiotowości i dobrowolności; wyjątek stanowią m.in. młodociani w systemie programowanego oddziaływania."
+    }
+  ],
+  "open": [
+    {
+      "q": "Porównaj resocjalizację w środowisku otwartym i zamkniętym – ich zalety, ograniczenia i instytucje.",
+      "answer": "Resocjalizacja w środowisku otwartym odbywa się w naturalnym otoczeniu podopiecznego, przez kuratelę, ośrodki kuratorskie, kary i środki wolnościowe, dozór elektroniczny, streetworking i świetlice. Jej zalety to zachowanie więzi i ról społecznych, brak stygmatyzacji i prizonizacji, niższe koszty i możliwość wykorzystania zasobów środowiska. Ograniczeniem jest mniejsza kontrola i wpływ negatywnego otoczenia. Środowisko zamknięte (zakład karny, zakład poprawczy, MOW, MOS, schronisko) pozwala na intensywne, kontrolowane oddziaływania i chroni społeczeństwo. Wiąże się jednak z depersonalizacją (instytucja totalna Goffmana), podkulturą, zerwaniem więzi i trudną readaptacją. Zgodnie z zasadą ultima ratio izolację stosuje się, gdy środki wolnościowe zawiodły. Ważna jest ciągłość oddziaływań między obu środowiskami."
+    },
+    {
+      "q": "Omów systemy wykonywania kary pozbawienia wolności i środki oddziaływania wymienione w kkw.",
+      "answer": "Kkw przewiduje trzy systemy. System programowanego oddziaływania polega na realizacji indywidualnego programu współtworzonego przez skazanego; jest obowiązkowy dla młodocianych, a dla pozostałych dobrowolny. System terapeutyczny jest przeznaczony dla skazanych z niepsychotycznymi zaburzeniami psychicznymi, upośledzeniem umysłowym, uzależnionych od alkoholu lub innych substancji i niepełnosprawnych fizycznie; realizuje się go w oddziałach terapeutycznych. System zwykły nie ma programu, ale daje dostęp do pracy, nauki i zajęć. Środki oddziaływania to praca, nauczanie, zajęcia kulturalno-oświatowe i sportowe, kontakty z rodziną i światem zewnętrznym oraz środki terapeutyczne. Celem jest wzbudzenie woli współdziałania w kształtowaniu społecznie pożądanych postaw i powstrzymanie od powrotu do przestępstwa."
+    },
+    {
+      "q": "Scharakteryzuj Trening Zastępowania Agresji i wskaż, dlaczego jest stosowany w placówkach resocjalizacyjnych.",
+      "answer": "Trening Zastępowania Agresji opracowali Goldstein, Glick i Gibbs. Jest programem wielomodalnym, który łączy trzy komponenty. Trening umiejętności prospołecznych (behawioralny) uczy konkretnych zachowań przez modelowanie, odgrywanie ról, informację zwrotną i zadania domowe. Trening kontroli złości (emocjonalny) uczy rozpoznawania wyzwalaczy i sygnałów ciała, technik obniżania napięcia i samooceny. Trening wnioskowania moralnego (poznawczy) opiera się na dyskusji dylematów moralnych, które rozwijają rozumowanie moralne. Program stosuje się w MOW, zakładach poprawczych i karnych, ponieważ agresja wynika zwykle zarówno z braku umiejętności, jak i z nieumiejętności kontroli emocji i niedojrzałości moralnej. Zajęcia prowadzi się cyklicznie w małych grupach, a skuteczność zwiększa transfer na codzienne sytuacje."
+    },
+    {
+      "q": "Na czym polega twórcza resocjalizacja według M. Konopczyńskiego? Podaj przykłady metod.",
+      "answer": "Konopczyński krytykuje model korekcyjny, skupiony na usuwaniu deficytów. W zamian proponuje rozwijanie potencjałów i zdolności nieletniego, aby zbudować nową tożsamość społeczną. Przez działanie twórcze wychowanek doświadcza sukcesu, uznania i nowych ról społecznych (aktora, muzyka, sportowca), co zmienia jego obraz siebie i sposób, w jaki postrzega go otoczenie. Metody kulturotechniczne obejmują resocjalizacyjną aktywność teatralną (np. przygotowanie spektaklu), muzyczną (zespół, warsztaty rapu), plastyczną, sportową oraz twórczą pracę z tekstem i mediami. Ważna jest rola pedagoga jako animatora i twórcy sytuacji wychowawczych, a także prezentacja efektów w środowisku lokalnym, która zmienia społeczny odbiór wychowanka."
+    },
+    {
+      "q": "Jakie bariery napotyka osoba opuszczająca zakład karny i jakie formy pomocy postpenitencjarnej są dostępne?",
+      "answer": "Po zwolnieniu osoba często nie ma mieszkania ani pracy, ma długi i doświadcza stygmatyzacji. Bywa, że rozpadły się jej więzi rodzinne. Grozi jej powrót do dawnego środowiska przestępczego i nawrót uzależnienia, a w wyniku prizonizacji traci nawyki samodzielnego życia. Ryzyko powrotu do przestępstwa jest najwyższe w pierwszych miesiącach. Pomoc obejmuje przygotowanie do zwolnienia w zakładzie (kursy, przepustki, dokumenty, kontakt z kuratorem), pomoc doraźną (nocleg, żywność, odzież, przejazd), pomoc mieszkaniową (hostele, mieszkania readaptacyjne), zawodową (CIS, KIS, pośrednictwo pracy, spółdzielnie socjalne), terapeutyczną i prawną. Finansuje ją m.in. Fundusz Sprawiedliwości, a realizują Służba Więzienna, kuratorzy, OPS i organizacje pozarządowe."
+    },
+    {
+      "q": "Omów kompetencje pedagoga resocjalizacyjnego oraz zjawisko wypalenia zawodowego w tej profesji.",
+      "answer": "Pedagog resocjalizacyjny potrzebuje kompetencji merytorycznych (pedagogika, psychologia, kryminologia, prawo, uzależnienia), diagnostycznych, metodycznych (TZA, TUS, socjoterapia, metody twórcze, ewaluacja) i interpersonalnych (relacja, asertywność, mediacja, rozpoznawanie manipulacji). Ważne są też cechy osobowościowe, takie jak empatia, autentyczność, konsekwencja i odporność na stres, oraz postawa etyczna. Wypalenie zawodowe według Maslach obejmuje wyczerpanie emocjonalne, depersonalizację i obniżone poczucie dokonań. Sprzyjają mu przeciążenie, trudni klienci, niewidoczne efekty, konflikt ról kontroli i pomocy, agresja oraz brak wsparcia. Zapobiegają mu superwizja, praca zespołowa, szkolenia, realistyczne cele, granice między pracą a domem i dbanie o siebie."
+    },
+    {
+      "q": "Przedstaw zasady diagnozy resocjalizacyjnej i budowy indywidualnego programu oddziaływań.",
+      "answer": "Diagnoza resocjalizacyjna rozpoznaje niedostosowanie społeczne, jego genezę i dynamikę oraz zasoby osoby. Wyróżnia się diagnozę typologiczną, genetyczną, znaczeniową, fazową i prognostyczną, a współcześnie akcentuje się diagnozę pozytywną. Wykorzystuje się obserwację, wywiad, analizę dokumentów, wywiad środowiskowy, skale i techniki socjometryczne. Ryzyko ocenia się według modelu RNR: intensywność oddziaływań dobiera się do ryzyka, pracuje się nad czynnikami kryminogennymi, a metody dopasowuje do możliwości podopiecznego. Indywidualny program zawiera cele krótko- i długoterminowe, metody, osoby odpowiedzialne, formy współpracy z rodziną i terminy ewaluacji. Powinien być realny, mierzalny i ustalony z udziałem podopiecznego, a następnie okresowo modyfikowany."
+    }
+  ]
+}

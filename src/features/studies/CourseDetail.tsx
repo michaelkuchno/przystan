@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { BookOpen, EyeOff, Eye, Lightbulb, Plus, Trash2 } from 'lucide-react';
@@ -16,7 +16,10 @@ import { todayIso } from '@/lib/platform';
 import { STUDY_PROMPTS, type StudyContext } from '@/lib/ai/studyPrompts';
 import { useAiTask } from '@/features/ai/useAiTask';
 import { AiOutput } from '@/features/ai/AiOutput';
-import { useStudies } from './useStudies';
+import { usePack, useStudies } from './useStudies';
+import type { PackNote } from '@/lib/studies/packs';
+import { NoteBody } from './Materials';
+import { seedPackCards } from './CourseCards';
 import { Materials } from './Materials';
 import { CourseCards } from './CourseCards';
 import { MockExam } from './MockExam';
@@ -32,10 +35,23 @@ export function patchCourse(c: CourseView, patch: Partial<StudyCourse>) {
 
 const LEVELS: TopicLevel[] = [0, 1, 2];
 
-function TopicRow({ c, topic, context, own }: { c: CourseView; topic: string; context: StudyContext; own: boolean }) {
+function TopicRow({
+  c,
+  topic,
+  context,
+  own,
+  note,
+}: {
+  c: CourseView;
+  topic: string;
+  context: StudyContext;
+  own: boolean;
+  note?: PackNote;
+}) {
   const { t } = useTranslation(['studies', 'ai']);
   const { lang, ai } = usePrefs();
   const [open, setOpen] = useState(false);
+  const [noteOpen, setNoteOpen] = useState(false);
   const [text, setText] = useState('');
   const task = useAiTask<string>();
   const level = c.levels[topic] ?? 0;
@@ -84,6 +100,11 @@ function TopicRow({ c, topic, context, own }: { c: CourseView; topic: string; co
         </div>
       </div>
       <div className="mt-1 flex flex-wrap gap-1">
+        {note && (
+          <Button size="sm" variant="soft" icon={<BookOpen className="size-4" aria-hidden />} onClick={() => setNoteOpen(true)}>
+            {t('note.read')}
+          </Button>
+        )}
         {ai.mode !== 'off' && (
           <Button size="sm" variant="ghost" icon={<Lightbulb className="size-4" aria-hidden />} onClick={explain}>
             {t('explain')}
@@ -119,12 +140,17 @@ function TopicRow({ c, topic, context, own }: { c: CourseView; topic: string; co
           )}
         </AiOutput>
       </Sheet>
+      {note && (
+        <Sheet open={noteOpen} wide onOpenChange={setNoteOpen} title={topic} description={c.name}>
+          <NoteBody note={note} />
+        </Sheet>
+      )}
       {task.previewEl}
     </li>
   );
 }
 
-function ProgramTab({ c, context }: { c: CourseView; context: StudyContext }) {
+function ProgramTab({ c, context, notes }: { c: CourseView; context: StudyContext; notes: Map<string, PackNote> }) {
   const { t } = useTranslation('studies');
   const [newTopic, setNewTopic] = useState('');
   const confirm = useConfirm();
@@ -133,6 +159,7 @@ function ProgramTab({ c, context }: { c: CourseView; context: StudyContext }) {
   return (
     <div className="space-y-4">
       {c.proxy && <Notice tone="warn">{t('proxy')}</Notice>}
+      {c.topicsBy === 'przystan' && <Notice>{t('topicsByPrzystan')}</Notice>}
       <Card className="grid gap-3 sm:grid-cols-2">
         <Field label={t('examDate')} htmlFor="exam-date">
           <TextInput
@@ -160,7 +187,7 @@ function ProgramTab({ c, context }: { c: CourseView; context: StudyContext }) {
         ) : (
           <ul className="space-y-2" data-testid="topics">
             {c.allTopics.map((tp) => (
-              <TopicRow key={tp} c={c} topic={tp} context={context} own={own.has(tp)} />
+              <TopicRow key={tp} c={c} topic={tp} context={context} own={own.has(tp)} note={notes.get(tp)} />
             ))}
           </ul>
         )}
@@ -248,6 +275,11 @@ export default function CourseDetail() {
   const [params, setParams] = useSearchParams();
   const { courses, loaded, context, decks, states, attempts } = useStudies();
   const c = courses.find((x) => x.id === id);
+  const pack = usePack(c && !c.custom ? c.id : undefined);
+  useEffect(() => {
+    if (c && pack) void seedPackCards(c, pack);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- once per course and pack
+  }, [c?.id, pack]);
   if (!loaded) return <Page>{null}</Page>;
   if (!c)
     return (
@@ -264,6 +296,7 @@ export default function CourseDetail() {
   );
   const d = daysUntil(c.examDate, todayIso());
   const tab = params.get('tab') ?? 'program';
+  const notes = new Map((pack?.notes ?? []).map((n) => [n.topic, n]));
   return (
     <Page wide>
       <PageHeader
@@ -292,10 +325,10 @@ export default function CourseDetail() {
         value={tab}
         onChange={(v) => setParams({ tab: v }, { replace: true })}
         tabs={[
-          { value: 'program', label: t('tabs.program'), content: <ProgramTab c={c} context={context} /> },
-          { value: 'materials', label: t('tabs.materials'), content: <Materials c={c} /> },
+          { value: 'program', label: t('tabs.program'), content: <ProgramTab c={c} context={context} notes={notes} /> },
+          { value: 'materials', label: t('tabs.materials'), content: <Materials c={c} pack={pack ?? null} /> },
           { value: 'cards', label: t('tabs.cards'), content: <CourseCards c={c} context={context} /> },
-          { value: 'exam', label: t('tabs.exam'), content: <MockExam c={c} context={context} /> },
+          { value: 'exam', label: t('tabs.exam'), content: <MockExam c={c} context={context} pack={pack ?? null} /> },
           { value: 'ask', label: t('tabs.ask'), content: <StudyAsk courseId={c.id} /> },
         ]}
       />

@@ -1,0 +1,412 @@
+{
+  "courseId": "metodologia",
+  "notes": [
+    {
+      "topic": "Elementy poznania naukowego",
+      "text": "Poznanie naukowe różni się od potocznego tym, że jest systematyczne, metodyczne, sprawdzalne, intersubiektywne (inni badacze mogą je powtórzyć i skontrolować), krytyczne i wyrażone w precyzyjnym języku. Wiedza potoczna opiera się na doświadczeniu jednostkowym, tradycji i autorytecie, bywa niespójna i nieuzasadniona.\nPodstawowe elementy poznania naukowego:\n• fakty naukowe – stwierdzone, sprawdzone stany rzeczy,\n• pojęcia i terminy – precyzyjnie definiowane,\n• twierdzenia, prawa i prawidłowości – ogólne zależności między zjawiskami,\n• hipotezy – twierdzenia przypuszczalne, wymagające sprawdzenia,\n• teorie – uporządkowane systemy twierdzeń wyjaśniających określony zakres zjawisk,\n• metody – sposoby dochodzenia do wiedzy.\nFunkcje nauki: opisowa (diagnostyczna), wyjaśniająca, prognostyczna (przewidywanie) i praktyczna (projektowanie działań, np. programów resocjalizacyjnych). W pedagogice podkreśla się, że jest ona nauką teoretyczno-praktyczną.\nSposoby rozumowania: indukcja (od faktów szczegółowych do uogólnień), dedukcja (od twierdzeń ogólnych do wniosków szczegółowych), abdukcja (wnioskowanie do najlepszego wyjaśnienia), redukcja.\nParadygmaty badań społecznych:\n• pozytywistyczny (scjentystyczny, ilościowy) – obiektywny pomiar, wyjaśnianie, uogólnianie,\n• interpretatywny (humanistyczny, jakościowy) – rozumienie znaczeń nadawanych przez ludzi,\n• krytyczny (emancypacyjny) – ujawnianie dominacji, zmiana społeczna.\nKoncepcje rozwoju nauki: K. Popper (falsyfikacja), T. Kuhn (paradygmat, rewolucje naukowe), I. Lakatos (programy badawcze).\nPolska literatura metodologiczna dla pedagogów: T. Pilch i T. Bauman, M. Łobocki, K. Rubacha, J. Apanowicz, S. Palka; dla nauk społecznych – E. Babbie, J. Brzeziński, S. Nowak.\nNa egzaminie: cechy wiedzy naukowej, funkcje nauki, paradygmaty, indukcja i dedukcja.",
+      "key": [
+        "Intersubiektywność – możliwość sprawdzenia i zrozumienia wyników przez innych badaczy",
+        "Teoria naukowa – system twierdzeń wyjaśniających określony zakres zjawisk",
+        "Indukcja – wnioskowanie od przypadków szczegółowych do uogólnień",
+        "Dedukcja – wyprowadzanie wniosków szczegółowych z twierdzeń ogólnych",
+        "Paradygmat (Kuhn) – przyjęty w danej wspólnocie naukowej wzorzec uprawiania nauki"
+      ]
+    },
+    {
+      "topic": "Etapy procesu badawczego",
+      "text": "Proces badawczy to uporządkowany ciąg czynności prowadzących od sformułowania problemu do raportu. W ujęciu T. Pilcha i T. Baumana oraz M. Łobockiego wyróżnia się:\n1. Etap koncepcyjny:\n• wybór i uzasadnienie tematu oraz przedmiotu i celu badań,\n• przegląd literatury i stanu badań,\n• sformułowanie problemów badawczych (głównego i szczegółowych),\n• sformułowanie hipotez (jeśli są uzasadnione),\n• określenie zmiennych i wskaźników (operacjonalizacja),\n• dobór metod, technik i narzędzi badawczych,\n• dobór próby i terenu badań.\n2. Badania pilotażowe (próbne) – sprawdzenie narzędzi i procedury na małej grupie, poprawienie niejasnych pytań.\n3. Badania właściwe – zbieranie danych w terenie.\n4. Opracowanie materiału – porządkowanie, kodowanie, analiza ilościowa (statystyczna) lub jakościowa (kategoryzacja, interpretacja).\n5. Weryfikacja hipotez i formułowanie wniosków, w tym wniosków praktycznych.\n6. Raport z badań – opis koncepcji, wyników i wniosków.\nE. Babbie przedstawia proces badawczy jako cykl: zainteresowanie, idea, teoria → konceptualizacja → wybór metody → operacjonalizacja → dobór próby → obserwacja → przetwarzanie danych → analiza → zastosowanie wyników. W badaniach jakościowych proces jest bardziej elastyczny i spiralny: zbieranie i analiza danych przenikają się, a pytania mogą ewoluować (np. w teorii ugruntowanej).\nW pracy magisterskiej etapy te odpowiadają rozdziałowi metodologicznemu (założenia badań własnych) i empirycznemu.\nPrzykład: badanie motywacji do leczenia osób skierowanych przez gminną komisję rozwiązywania problemów alkoholowych – od przeglądu literatury o motywacji, przez problem i hipotezy, wybór skali i wywiadu, pilotaż na kilku osobach, po badanie właściwe i analizę.\nNa egzaminie: kolejność etapów, rola badań pilotażowych, operacjonalizacja.",
+      "key": [
+        "Etap koncepcyjny – zaplanowanie badań: problem, hipotezy, zmienne, metody, próba",
+        "Badanie pilotażowe – próbne badanie sprawdzające narzędzia i procedurę",
+        "Operacjonalizacja – przełożenie pojęć na mierzalne zmienne i wskaźniki",
+        "Konceptualizacja – precyzowanie znaczenia pojęć używanych w badaniu",
+        "Raport z badań – opis koncepcji, przebiegu, wyników i wniosków"
+      ]
+    },
+    {
+      "topic": "Badania ilościowe, jakościowe i mieszane",
+      "text": "Badania ilościowe (paradygmat pozytywistyczny) dążą do obiektywnego pomiaru, opisu rozkładów zjawisk, sprawdzania hipotez i uogólniania wyników na populację. Cechy: duże, najlepiej losowe próby, standaryzowane narzędzia (kwestionariusze, testy, skale), analiza statystyczna, dystans badacza. Pytania typu „ile?”, „jak często?”, „czy istnieje związek?”. Przykład: sondaż rozpowszechnienia picia ryzykownego wśród uczniów.\nBadania jakościowe (paradygmat interpretatywny) dążą do zrozumienia znaczeń, doświadczeń i perspektywy badanych w naturalnym kontekście. Cechy: małe, celowo dobrane próby, elastyczne techniki (wywiad pogłębiony, narracyjny, obserwacja uczestnicząca, analiza dokumentów osobistych), badacz jako „narzędzie”, analiza interpretacyjna i kodowanie. Pytania typu „jak?”, „dlaczego?”, „jakie znaczenie?”. Strategie: teoria ugruntowana (B. Glaser, A. Strauss), fenomenografia, fenomenologia, etnografia, badania biograficzne, studium przypadku, badanie w działaniu (action research). Przykład: jak dorosłe dzieci alkoholików opisują swoje dzieciństwo.\nKryteria jakości: w ilościowych – rzetelność i trafność, reprezentatywność; w jakościowych – wiarygodność (E. Guba, Y. Lincoln: wiarygodność, przenoszalność, zależność, potwierdzalność), refleksyjność badacza.\nBadania mieszane (mixed methods, J. Creswell) łączą obie strategie w jednym projekcie. Podstawowe schematy:\n• zbieżny (równoległy) – oba typy danych zbierane jednocześnie i porównywane,\n• sekwencyjny wyjaśniający – najpierw ilościowe, potem jakościowe dla wyjaśnienia wyników,\n• sekwencyjny eksploracyjny – najpierw jakościowe, potem ilościowe (np. budowa narzędzia).\nTriangulacja (N. Denzin) – danych, badaczy, teorii i metod – wzmacnia wiarygodność wniosków.\nNa egzaminie: porównanie badań ilościowych i jakościowych, przykłady strategii, schematy mieszane, triangulacja.",
+      "key": [
+        "Badania ilościowe – pomiar, statystyka, uogólnianie na populację",
+        "Badania jakościowe – rozumienie znaczeń i doświadczeń w kontekście",
+        "Teoria ugruntowana – budowanie teorii z danych w toku analizy (Glaser, Strauss)",
+        "Badania mieszane – łączenie danych ilościowych i jakościowych w jednym projekcie",
+        "Triangulacja – stosowanie różnych źródeł, metod, badaczy lub teorii"
+      ]
+    },
+    {
+      "topic": "Metody badań społecznych – ilościowe i jakościowe",
+      "text": "W polskiej metodologii pedagogiki rozróżnia się metody, techniki i narzędzia. T. Pilch wyróżnia cztery podstawowe metody badań pedagogicznych:\n• eksperyment pedagogiczny – celowe wprowadzenie czynnika (np. programu profilaktycznego) i badanie jego skutków; techniki: grup równoległych, rotacji, jednej grupy (pomiar przed i po),\n• monografia pedagogiczna – badanie instytucji wychowawczej (np. młodzieżowego ośrodka wychowawczego, oddziału terapii uzależnień) w jej strukturze i funkcjonowaniu,\n• metoda indywidualnych przypadków (studium przypadku) – analiza losów jednostki w celu diagnozy i projektowania pomocy; typowa dla pedagogiki resocjalizacyjnej i pracy socjalnej,\n• sondaż diagnostyczny – badanie zjawisk społecznych w populacji przez reprezentatywną próbę; najczęściej stosowany w pracach dyplomowych.\nM. Łobocki proponuje szerszy katalog: obserwacja, eksperyment, wywiad, ankieta, testy osiągnięć, socjometria, analiza dokumentów, skale ocen, techniki projekcyjne, metoda indywidualnych przypadków.\nMetody ilościowe (w literaturze ogólnej, np. E. Babbie): sondaż (survey), eksperyment, analiza danych zastanych, analiza treści ilościowa, obserwacja standaryzowana.\nMetody jakościowe: wywiad swobodny, narracyjny i biograficzny, obserwacja uczestnicząca, analiza dokumentów osobistych (pamiętniki, listy), fokusowe wywiady grupowe, etnografia, studium przypadku, badanie w działaniu, analiza dyskursu.\nDobór metody zależy od problemu: pytania o rozpowszechnienie – sondaż; o skuteczność oddziaływania – eksperyment lub quasi-eksperyment; o funkcjonowanie placówki – monografia; o losy konkretnej osoby – studium przypadku; o przeżycia i znaczenia – wywiad narracyjny.\nPrzykład: ocena programu profilaktyki alkoholowej w szkołach może łączyć quasi-eksperyment (pomiar przed i po) z wywiadami fokusowymi z uczniami.\nNa egzaminie: cztery metody Pilcha i ich zastosowanie, różnice ilościowe – jakościowe.",
+      "key": [
+        "Sondaż diagnostyczny – badanie zjawisk w populacji przez próbę (Pilch)",
+        "Monografia pedagogiczna – badanie instytucji wychowawczej",
+        "Metoda indywidualnych przypadków – analiza losów jednostki w celu diagnozy i terapii",
+        "Eksperyment pedagogiczny – badanie skutków celowo wprowadzonego czynnika",
+        "Wywiad narracyjny – technika jakościowa, w której badany swobodnie opowiada historię życia"
+      ]
+    },
+    {
+      "topic": "Etyczne aspekty prowadzenia badań",
+      "text": "Etyka badań społecznych chroni uczestników, rzetelność nauki i zaufanie społeczne. Podstawowe zasady (por. Babbie, Kodeks etyki pracownika naukowego PAN):\n• dobrowolność udziału i świadoma zgoda (informed consent) – uczestnik zna cel, przebieg, ryzyko, sposób wykorzystania danych i może w każdej chwili się wycofać,\n• nieszkodzenie – unikanie krzywdy psychicznej, fizycznej i społecznej, minimalizacja stresu,\n• anonimowość (badacz nie może powiązać danych z osobą) i poufność (badacz zna tożsamość, ale jej nie ujawnia),\n• ochrona danych osobowych – w Polsce i UE zgodnie z RODO; szczególna ochrona danych o zdrowiu, nałogach, karalności,\n• uczciwość wobec uczestników – podstęp tylko wyjątkowo, z następczym wyjaśnieniem (debriefing),\n• rzetelność naukowa – zakaz fabrykowania i fałszowania danych oraz plagiatu, uczciwe raportowanie, także wyników niepotwierdzających hipotez.\nGrupy szczególnie wrażliwe: dzieci i nieletni (zgoda przedstawiciela ustawowego oraz zgoda samego dziecka adekwatna do wieku), osoby pozbawione wolności, osoby uzależnione, ofiary przemocy, osoby z zaburzeniami psychicznymi. Ich zgoda może być ograniczona przez zależność od instytucji – np. więzień może obawiać się, że odmowa wpłynie na ocenę. Badacz musi jasno podkreślić dobrowolność i brak konsekwencji odmowy.\nW wielu uczelniach projekty badań z udziałem ludzi opiniuje komisja etyczna; zgodę na badania w placówce wyraża jej dyrektor (np. dyrektor zakładu karnego, szkoły, ośrodka).\nDylematy: obowiązek reagowania, gdy w badaniu ujawnione zostanie zagrożenie życia lub przemoc wobec dziecka; granica między rolą badacza a rolą terapeuty; badanie własnych podopiecznych (konflikt ról).\nHistoryczne przykłady naruszeń (eksperymenty Milgrama, Zimbardo, badania nad kiłą w Tuskegee) doprowadziły do kodeksów etycznych i komisji bioetycznych.\nNa egzaminie: świadoma zgoda, anonimowość a poufność, badanie grup wrażliwych.",
+      "key": [
+        "Świadoma zgoda – dobrowolna zgoda po uzyskaniu pełnej informacji o badaniu",
+        "Anonimowość – niemożność powiązania danych z konkretną osobą",
+        "Poufność – nieujawnianie tożsamości badanych mimo jej znajomości",
+        "Debriefing – wyjaśnienie uczestnikom celu i ewentualnego podstępu po badaniu",
+        "Grupy wrażliwe – osoby szczególnie narażone na krzywdę lub presję w badaniu"
+      ]
+    },
+    {
+      "topic": "Problem badawczy, pytania badawcze, temat badań a tytuł pracy",
+      "text": "Problem badawczy to pytanie lub zespół pytań, na które odpowiedzi ma dostarczyć badanie; wyraża lukę w wiedzy. T. Pilch określa go jako „pytanie, na które poszukujemy odpowiedzi na drodze badań naukowych”. Problem wyprowadza się z przedmiotu i celu badań.\nPojęcia pokrewne:\n• przedmiot badań – to, co badamy (zjawisko, proces, zależność), np. poczucie własnej skuteczności osób w trakcie terapii uzależnienia,\n• cel badań – co chcemy osiągnąć: poznawczy (opis, wyjaśnienie) i praktyczny (wskazania dla praktyki),\n• problem główny i problemy szczegółowe – szczegółowe rozkładają problem główny na mniejsze części, nie wychodząc poza jego zakres.\nRodzaje pytań (S. Nowak): pytania rozstrzygnięcia (odpowiedź „tak” lub „nie”, np. „Czy istnieje związek między…?”) i pytania dopełnienia (otwarte, zaczynające się od „jaki”, „w jakim stopniu”, „jak”). Pytania mogą być opisowe, porównawcze, zależnościowe (relacyjne), wyjaśniające.\nWarunki poprawności problemu: rozstrzygalność empiryczna, jasność i jednoznaczność, adekwatność do przedmiotu i celu, wyczerpanie zakresu niewiedzy, oryginalność i użyteczność, wykonalność (dostęp do badanych, czas, środki).\nTemat badań a tytuł pracy: temat określa obszar i przedmiot badań, a tytuł pracy jest jego zwięzłym, komunikatywnym ujęciem. Tytuł powinien wskazywać zmienne lub zjawisko, populację, ewentualnie teren, np. „Poczucie własnej skuteczności a motywacja do leczenia osób uzależnionych od alkoholu”. Nie powinien być zbyt szeroki („Alkoholizm w Polsce”), publicystyczny ani zawierać tez z góry rozstrzygniętych.\nNa egzaminie: definicja problemu, pytania rozstrzygnięcia i dopełnienia, poprawne formułowanie tytułu, przykłady problemów do własnej pracy.",
+      "key": [
+        "Problem badawczy – pytanie wyznaczające kierunek i zakres badań",
+        "Przedmiot badań – zjawisko lub proces, który jest badany",
+        "Pytanie rozstrzygnięcia – pytanie zamknięte z odpowiedzią „tak” lub „nie”",
+        "Pytanie dopełnienia – pytanie otwarte wymagające uzupełnienia treścią",
+        "Cel badań – zamierzony rezultat poznawczy i praktyczny"
+      ]
+    },
+    {
+      "topic": "Hipotezy – rodzaje i warunki poprawnego formułowania",
+      "text": "Hipoteza to twierdzenie przypuszczalne, prawdopodobna odpowiedź na problem badawczy, która podlega empirycznemu sprawdzeniu. Wynika z teorii, wcześniejszych badań lub doświadczenia badacza. Każdemu problemowi rozstrzygnięcia odpowiada zwykle hipoteza.\nRodzaje hipotez:\n• robocza (merytoryczna) – sformułowana w języku dyscypliny, kierunkowa lub niekierunkowa,\n• statystyczna – zerowa (H0: brak różnicy lub związku) i alternatywna (H1); w testach statystycznych weryfikuje się H0,\n• kierunkowa (wskazuje kierunek zależności, np. „im wyższe wsparcie, tym niższe ryzyko nawrotu”) i niekierunkowa („istnieje związek”),\n• opisowe (o występowaniu lub nasileniu zjawiska), porównawcze (różnice między grupami), zależnościowe i wyjaśniające (przyczynowe),\n• główna i szczegółowe – odpowiadające problemom.\nWarunki poprawnej hipotezy (Pilch, Łobocki, Brzeziński):\n• sprawdzalność empiryczna – musi dać się zweryfikować (potwierdzić lub odrzucić),\n• jednoznaczność i precyzja pojęć,\n• adekwatność do problemu,\n• prostota i zwięzłość,\n• nie może być tautologią ani oczywistością,\n• powinna być uzasadniona teorią lub wynikami badań,\n• powinna mieć określony zakres (populacja, zmienne).\nBadanie bez hipotez – w badaniach eksploracyjnych, opisowych (diagnoza zjawiska mało poznanego) i jakościowych hipotez się zwykle nie formułuje; w teorii ugruntowanej hipotezy wyłaniają się z danych. Formułowanie hipotez „na siłę” do pytań typu „jaki jest poziom…?” bywa krytykowane.\nWażne: hipotezy nie „udowadniamy”, lecz potwierdzamy z określonym prawdopodobieństwem lub odrzucamy (Popper – falsyfikacja).\nPrzykład: H1 – osoby uzależnione od alkoholu z wyższym poczuciem własnej skuteczności deklarują wyższą motywację do kontynuowania terapii.\nNa egzaminie: definicja, rodzaje, warunki poprawności, kiedy nie formułujemy hipotez.",
+      "key": [
+        "Hipoteza – przypuszczalna odpowiedź na problem, podlegająca weryfikacji",
+        "Hipoteza zerowa (H0) – zakłada brak różnicy lub związku",
+        "Hipoteza kierunkowa – określa kierunek przewidywanej zależności",
+        "Sprawdzalność – możliwość empirycznego potwierdzenia lub odrzucenia hipotezy",
+        "Badanie eksploracyjne – rozpoznanie mało znanego zjawiska, zwykle bez hipotez"
+      ]
+    },
+    {
+      "topic": "Metoda, technika, narzędzie badawcze; konstruowanie narzędzi",
+      "text": "Rozróżnienie trzech poziomów jest typowe dla polskiej metodologii pedagogiki:\n• metoda – zespół teoretycznie uzasadnionych zabiegów koncepcyjnych i instrumentalnych obejmujących całość postępowania badacza, zmierzający do rozwiązania problemu (A. Kamiński, T. Pilch), np. sondaż diagnostyczny, monografia,\n• technika – czynności praktyczne regulowane dyrektywami, pozwalające zebrać dane, np. ankieta, wywiad, obserwacja, analiza dokumentów, techniki socjometryczne,\n• narzędzie – przedmiot służący do realizacji techniki, np. kwestionariusz ankiety, kwestionariusz wywiadu, arkusz obserwacji, skala, test.\nKonstruowanie kwestionariusza:\n• wyjście od problemów i zmiennych – każde pytanie musi być związane z problemem (tabela operacjonalizacji),\n• struktura: tytuł, instrukcja i zapewnienie anonimowości, pytania właściwe od łatwiejszych do trudniejszych, metryczka (zwykle na końcu),\n• pytania otwarte i zamknięte (dychotomiczne, wyboru jednokrotnego, wielokrotnego), półotwarte (z kategorią „inne”), skale (np. Likerta, dyferencjał semantyczny), pytania filtrujące,\n• błędy: pytania sugerujące, podwójne („czy pijesz i palisz…?”), z zaprzeczeniem, niejasne, zbyt intymne bez uzasadnienia, niewyczerpujące lub niewykluczające się kafeterie.\nWłaściwości psychometryczne narzędzi standaryzowanych:\n• rzetelność – dokładność i powtarzalność pomiaru (np. współczynnik alfa Cronbacha, test–retest),\n• trafność – czy narzędzie mierzy to, co ma mierzyć (treściowa, kryterialna, teoretyczna),\n• normalizacja i standaryzacja procedury.\nW pracy magisterskiej warto łączyć narzędzie autorskie z wystandaryzowaną skalą (np. testy przesiewowe używania alkoholu, skale samooceny, poczucia własnej skuteczności), podając autora i polską adaptację. Narzędzie przed badaniem właściwym sprawdza się w pilotażu.\nNa egzaminie: definicje metody, techniki i narzędzia z przykładami, zasady budowy kwestionariusza, rzetelność i trafność.",
+      "key": [
+        "Metoda badawcza – całościowy sposób postępowania badacza w rozwiązaniu problemu",
+        "Technika badawcza – czynności praktyczne do zbierania danych (np. ankieta)",
+        "Narzędzie badawcze – przedmiot realizacji techniki (np. kwestionariusz)",
+        "Rzetelność – dokładność i powtarzalność pomiaru",
+        "Trafność – stopień, w jakim narzędzie mierzy to, co ma mierzyć"
+      ]
+    },
+    {
+      "topic": "Organizacja i przebieg badań",
+      "text": "Organizacja badań obejmuje praktyczne zaplanowanie i przeprowadzenie postępowania badawczego. Kluczowe elementy:\n• teren badań – instytucja lub środowisko, w którym prowadzi się badania (np. poradnia leczenia uzależnień, PCPR, zakład karny, MOW, szkoła); wybór uzasadnia się celem i dostępnością,\n• populacja i próba – populacja to zbiór wszystkich jednostek, o których chcemy wnioskować; próba to jej część poddana badaniu,\n• dobór próby: losowy (prosty, systematyczny, warstwowy, grupowy) – umożliwia uogólnianie statystyczne; nielosowy (celowy, kwotowy, dostępnych przypadków, metodą kuli śnieżnej) – częsty w badaniach trudno dostępnych grup, np. osób uzależnionych lub bezdomnych; ogranicza uogólnianie,\n• harmonogram – kolejne etapy i terminy,\n• uzyskanie zgód – dyrektora placówki, ewentualnie komisji etycznej, świadoma zgoda uczestników, zgoda opiekunów nieletnich,\n• przygotowanie narzędzi i badanie pilotażowe,\n• przeprowadzenie badań właściwych – jednakowe warunki, instrukcja, zapewnienie anonimowości, kontakt z osobami kluczowymi (gatekeepers),\n• opracowanie danych – kodowanie, wprowadzanie do arkusza lub programu statystycznego, analiza jakościowa (transkrypcja, kodowanie, kategoryzacja).\nW rozdziale metodologicznym pracy magisterskiej opisuje się: przedmiot i cel badań, problemy i hipotezy, zmienne i wskaźniki, metody, techniki i narzędzia, charakterystykę terenu badań i próby, organizację i przebieg badań.\nTypowe trudności: niski odsetek zwrotów ankiet, odmowy, efekt aprobaty społecznej (zwłaszcza w pytaniach o używanie substancji), wpływ obecności personelu na odpowiedzi, utrata uczestników w badaniach podłużnych.\nPrzykład: badanie 60 uczestników programu korekcyjno-edukacyjnego w kilku powiatach, dobór celowy, ankieta i skala, pilotaż na 5 osobach, badania w trakcie zajęć grupowych za zgodą realizatorów.\nNa egzaminie: populacja a próba, rodzaje doboru próby, elementy organizacji badań.",
+      "key": [
+        "Populacja – zbiór wszystkich jednostek, których dotyczą wnioski",
+        "Próba reprezentatywna – próba odzwierciedlająca strukturę populacji",
+        "Dobór losowy – każda jednostka ma znane, niezerowe szanse wyboru",
+        "Metoda kuli śnieżnej – dobór przez polecenia kolejnych uczestników",
+        "Teren badań – środowisko lub instytucja, w której prowadzi się badania"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "front": "Cechy poznania naukowego",
+      "back": "Systematyczność, metodyczność, sprawdzalność, intersubiektywność, krytycyzm, precyzja języka."
+    },
+    {
+      "front": "Funkcje nauki",
+      "back": "Opisowa (diagnostyczna), wyjaśniająca, prognostyczna i praktyczna (projektowanie działań)."
+    },
+    {
+      "front": "Indukcja a dedukcja",
+      "back": "Indukcja: od faktów szczegółowych do uogólnień; dedukcja: od twierdzeń ogólnych do wniosków szczegółowych."
+    },
+    {
+      "front": "Paradygmat interpretatywny",
+      "back": "Podejście jakościowe skupione na rozumieniu znaczeń nadawanych przez ludzi swoim działaniom."
+    },
+    {
+      "front": "Etapy procesu badawczego",
+      "back": "Koncepcja badań, pilotaż, badania właściwe, opracowanie materiału, weryfikacja hipotez i wnioski, raport."
+    },
+    { "front": "Operacjonalizacja", "back": "Przełożenie pojęć teoretycznych na zmienne i mierzalne wskaźniki." },
+    {
+      "front": "Badanie pilotażowe",
+      "back": "Próbne badanie na małej grupie w celu sprawdzenia i poprawienia narzędzi oraz procedury."
+    },
+    {
+      "front": "Badania ilościowe – cechy",
+      "back": "Duże próby, standaryzowane narzędzia, pomiar, analiza statystyczna, uogólnianie na populację."
+    },
+    {
+      "front": "Badania jakościowe – cechy",
+      "back": "Małe celowe próby, elastyczne techniki, rozumienie znaczeń i doświadczeń w naturalnym kontekście."
+    },
+    {
+      "front": "Schemat sekwencyjny wyjaśniający",
+      "back": "Badanie mieszane: najpierw etap ilościowy, potem jakościowy wyjaśniający uzyskane wyniki."
+    },
+    {
+      "front": "Triangulacja wg N. Denzina",
+      "back": "Triangulacja danych, badaczy, teorii i metod – zwiększa wiarygodność wniosków."
+    },
+    {
+      "front": "Cztery metody badań pedagogicznych (Pilch)",
+      "back": "Eksperyment pedagogiczny, monografia pedagogiczna, metoda indywidualnych przypadków, sondaż diagnostyczny."
+    },
+    {
+      "front": "Monografia pedagogiczna",
+      "back": "Metoda badania instytucji wychowawczej, jej struktury, funkcjonowania i efektywności."
+    },
+    {
+      "front": "Metoda indywidualnych przypadków",
+      "back": "Analiza losów jednostki uwikłanej w trudną sytuację w celu diagnozy i opracowania pomocy."
+    },
+    {
+      "front": "Technika grup równoległych",
+      "back": "Technika eksperymentu porównująca grupę eksperymentalną (z czynnikiem) i kontrolną (bez czynnika)."
+    },
+    {
+      "front": "Świadoma zgoda",
+      "back": "Dobrowolna zgoda na udział po uzyskaniu informacji o celu, przebiegu, ryzyku i prawie do wycofania."
+    },
+    { "front": "Anonimowość a poufność", "back": "Anonimowość – badacz nie zna tożsamości; poufność – zna ją, ale nie ujawnia." },
+    { "front": "Problem badawczy", "back": "Pytanie lub zespół pytań, na które odpowiedź ma przynieść badanie naukowe." },
+    {
+      "front": "Pytania rozstrzygnięcia i dopełnienia",
+      "back": "Rozstrzygnięcia – odpowiedź tak/nie („Czy…?”); dopełnienia – otwarte („Jaki…?”, „W jakim stopniu…?”)."
+    },
+    {
+      "front": "Hipoteza",
+      "back": "Twierdzenie przypuszczalne, prawdopodobna odpowiedź na problem, która podlega empirycznemu sprawdzeniu."
+    },
+    { "front": "Hipoteza zerowa", "back": "H0 – zakłada brak różnicy lub związku; weryfikowana w testach statystycznych." },
+    {
+      "front": "Warunki poprawnej hipotezy",
+      "back": "Sprawdzalność, jednoznaczność, adekwatność do problemu, prostota, uzasadnienie teoretyczne, brak tautologii."
+    },
+    { "front": "Metoda – technika – narzędzie", "back": "Np. sondaż diagnostyczny – ankieta – kwestionariusz ankiety." },
+    {
+      "front": "Rzetelność narzędzia",
+      "back": "Dokładność i powtarzalność pomiaru; szacowana np. współczynnikiem alfa Cronbacha lub metodą test–retest."
+    },
+    {
+      "front": "Trafność narzędzia",
+      "back": "Stopień, w jakim narzędzie mierzy to, co ma mierzyć (treściowa, kryterialna, teoretyczna)."
+    },
+    {
+      "front": "Pytanie sugerujące",
+      "back": "Błąd w kwestionariuszu – pytanie podsuwające odpowiedź, np. „Czy zgodzisz się, że alkohol niszczy rodzinę?”."
+    },
+    {
+      "front": "Dobór celowy",
+      "back": "Nielosowy dobór próby według kryteriów ważnych dla badania; częsty w badaniach osób uzależnionych."
+    },
+    {
+      "front": "Metoda kuli śnieżnej",
+      "back": "Dobór próby, w którym badani wskazują kolejnych uczestników; przydatny w grupach trudno dostępnych."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Cecha wiedzy naukowej polegająca na tym, że inni badacze mogą ją sprawdzić i zrozumieć, to:",
+      "options": ["intersubiektywność", "subiektywność", "intuicyjność", "dogmatyczność"],
+      "correct": 0,
+      "explain": "Intersubiektywna sprawdzalność i komunikowalność odróżnia naukę od wiedzy potocznej."
+    },
+    {
+      "q": "Wnioskowanie od obserwacji szczegółowych przypadków do uogólnienia to:",
+      "options": ["dedukcja", "indukcja", "falsyfikacja", "operacjonalizacja"],
+      "correct": 1,
+      "explain": "Indukcja prowadzi od faktów szczegółowych do twierdzeń ogólnych."
+    },
+    {
+      "q": "Badania pilotażowe służą przede wszystkim:",
+      "options": [
+        "ostatecznej weryfikacji hipotez",
+        "napisaniu raportu",
+        "sprawdzeniu narzędzi i procedury przed badaniem właściwym",
+        "doborowi literatury"
+      ],
+      "correct": 2,
+      "explain": "Pilotaż pozwala wykryć niejasne pytania i problemy organizacyjne."
+    },
+    {
+      "q": "Przełożenie pojęcia „motywacja do leczenia” na konkretne, mierzalne wskaźniki to:",
+      "options": ["triangulacja", "kategoryzacja", "konceptualizacja", "operacjonalizacja"],
+      "correct": 3,
+      "explain": "Operacjonalizacja określa zmienne i wskaźniki możliwe do pomiaru."
+    },
+    {
+      "q": "Które z poniższych NIE jest cechą badań jakościowych?",
+      "options": [
+        "losowy dobór dużej próby i analiza statystyczna",
+        "rozumienie znaczeń nadawanych przez badanych",
+        "elastyczność procedury",
+        "badacz jako główne narzędzie badawcze"
+      ],
+      "correct": 0,
+      "explain": "Duże losowe próby i statystyka to cechy badań ilościowych."
+    },
+    {
+      "q": "Teorię ugruntowaną stworzyli:",
+      "options": ["Guba i Lincoln", "Glaser i Strauss", "Pilch i Bauman", "Berger i Luckmann"],
+      "correct": 1,
+      "explain": "B. Glaser i A. Strauss zaproponowali budowanie teorii z danych empirycznych."
+    },
+    {
+      "q": "W badaniu mieszanym najpierw przeprowadzono wywiady z osobami uzależnionymi, a na ich podstawie zbudowano kwestionariusz dla dużej próby. To schemat:",
+      "options": ["zbieżny", "sekwencyjny wyjaśniający", "sekwencyjny eksploracyjny", "eksperymentalny"],
+      "correct": 2,
+      "explain": "Etap jakościowy poprzedza i ukierunkowuje etap ilościowy."
+    },
+    {
+      "q": "Która z metod NIE należy do czterech metod badań pedagogicznych wg T. Pilcha?",
+      "options": [
+        "sondaż diagnostyczny",
+        "monografia pedagogiczna",
+        "metoda indywidualnych przypadków",
+        "obserwacja uczestnicząca"
+      ],
+      "correct": 3,
+      "explain": "Obserwacja to u Pilcha technika, a nie metoda."
+    },
+    {
+      "q": "Badanie funkcjonowania konkretnego młodzieżowego ośrodka wychowawczego najlepiej zrealizować metodą:",
+      "options": ["monografii pedagogicznej", "sondażu diagnostycznego", "eksperymentu pedagogicznego", "analizy treści"],
+      "correct": 0,
+      "explain": "Monografia dotyczy instytucji wychowawczych i ich działania."
+    },
+    {
+      "q": "Analiza losów konkretnego podopiecznego PCPR w celu zaplanowania pomocy to metoda:",
+      "options": ["sondażu", "indywidualnych przypadków", "monografii", "eksperymentu naturalnego"],
+      "correct": 1,
+      "explain": "Metoda indywidualnych przypadków służy diagnozie i projektowaniu pomocy dla jednostki."
+    },
+    {
+      "q": "Badacz zna tożsamość respondentów, ale zobowiązuje się jej nie ujawniać. Zapewnia więc:",
+      "options": ["anonimowość", "reprezentatywność", "poufność", "rzetelność"],
+      "correct": 2,
+      "explain": "Poufność – w odróżnieniu od anonimowości – zakłada, że badacz zna tożsamość."
+    },
+    {
+      "q": "W badaniach z udziałem nieletnich wymagana jest:",
+      "options": [
+        "wyłącznie zgoda dyrektora szkoły",
+        "zgoda kuratora sądowego",
+        "tylko ustna zgoda dziecka",
+        "zgoda przedstawiciela ustawowego oraz zgoda samego dziecka adekwatna do wieku"
+      ],
+      "correct": 3,
+      "explain": "Dziecko jest uczestnikiem, ale prawnie zgodę wyraża opiekun."
+    },
+    {
+      "q": "Pytanie „Czy istnieje związek między wsparciem rodziny a utrzymywaniem abstynencji?” to pytanie:",
+      "options": ["rozstrzygnięcia", "dopełnienia", "retoryczne", "filtrujące"],
+      "correct": 0,
+      "explain": "Pytanie rozstrzygnięcia przewiduje odpowiedź tak lub nie."
+    },
+    {
+      "q": "Który tytuł pracy magisterskiej jest sformułowany najbardziej poprawnie?",
+      "options": [
+        "Alkoholizm w Polsce",
+        "Poczucie własnej skuteczności a motywacja do leczenia osób uzależnionych od alkoholu",
+        "Jak pokonać nałóg?",
+        "Dlaczego terapia zawsze działa"
+      ],
+      "correct": 1,
+      "explain": "Wskazuje zmienne i populację, jest precyzyjny i nie przesądza wyniku."
+    },
+    {
+      "q": "Hipoteza zerowa zakłada:",
+      "options": [
+        "istnienie silnego związku",
+        "kierunek zależności",
+        "brak różnicy lub związku między zmiennymi",
+        "brak problemu badawczego"
+      ],
+      "correct": 2,
+      "explain": "H0 jest weryfikowana testem statystycznym; jej odrzucenie wspiera H1."
+    },
+    {
+      "q": "W jakim typie badań zwykle NIE formułuje się hipotez?",
+      "options": [
+        "w eksperymencie",
+        "w badaniu zależności korelacyjnych",
+        "w quasi-eksperymencie",
+        "w badaniu eksploracyjnym mało znanego zjawiska"
+      ],
+      "correct": 3,
+      "explain": "Badania eksploracyjne i wiele jakościowych mają charakter odkrywczy."
+    },
+    {
+      "q": "Hipoteza „Im wyższe wsparcie społeczne, tym niższe ryzyko nawrotu” jest hipotezą:",
+      "options": ["kierunkową", "niekierunkową", "zerową", "tautologiczną"],
+      "correct": 0,
+      "explain": "Określa kierunek zależności między zmiennymi."
+    },
+    {
+      "q": "Ankieta jest w terminologii T. Pilcha:",
+      "options": ["metodą", "techniką", "narzędziem", "paradygmatem"],
+      "correct": 1,
+      "explain": "Ankieta to technika; kwestionariusz ankiety – narzędzie."
+    },
+    {
+      "q": "Pytanie „Czy pijesz alkohol i palisz papierosy?” to błąd w postaci pytania:",
+      "options": ["filtrującego", "otwartego", "podwójnego", "metryczkowego"],
+      "correct": 2,
+      "explain": "Pytanie podwójne dotyczy dwóch kwestii naraz i uniemożliwia jednoznaczną odpowiedź."
+    },
+    {
+      "q": "Powtarzalność i dokładność pomiaru danego narzędzia to jego:",
+      "options": ["trafność", "reprezentatywność", "normalizacja", "rzetelność"],
+      "correct": 3,
+      "explain": "Rzetelność mierzy się np. alfą Cronbacha lub metodą test–retest."
+    },
+    {
+      "q": "Dobór próby, w którym uczestnicy wskazują kolejne osoby do badania, to:",
+      "options": ["kula śnieżna", "dobór warstwowy", "dobór systematyczny", "losowanie proste"],
+      "correct": 0,
+      "explain": "Metoda kuli śnieżnej jest nielosowa i przydatna w trudno dostępnych grupach."
+    },
+    {
+      "q": "Zbiór wszystkich jednostek, do których odnoszą się wnioski z badania, to:",
+      "options": ["próba", "populacja", "teren badań", "wskaźnik"],
+      "correct": 1,
+      "explain": "Próba jest częścią populacji poddaną badaniu."
+    },
+    {
+      "q": "Koncepcję paradygmatów i rewolucji naukowych sformułował:",
+      "options": ["K. Popper", "I. Lakatos", "T. Kuhn", "E. Babbie"],
+      "correct": 2,
+      "explain": "T. Kuhn – „Struktura rewolucji naukowych”."
+    }
+  ],
+  "open": [
+    {
+      "q": "Omów etapy procesu badawczego na przykładzie własnego projektu badań.",
+      "answer": "Proces badawczy rozpoczyna etap koncepcyjny: wybór tematu, przegląd literatury, określenie przedmiotu i celu, sformułowanie problemu głównego i problemów szczegółowych, hipotez, zmiennych i wskaźników, dobór metod, technik, narzędzi, próby i terenu. Np. badając motywację do leczenia osób uzależnionych od alkoholu, określam zmienne (poczucie skuteczności, wsparcie rodziny), wybieram sondaż diagnostyczny, ankietę i wystandaryzowaną skalę. Następnie przeprowadzam pilotaż na kilku osobach, poprawiam narzędzie i realizuję badania właściwe w poradni za zgodą kierownika. Kolejno opracowuję dane statystycznie, weryfikuję hipotezy, formułuję wnioski teoretyczne i praktyczne oraz przygotowuję raport."
+    },
+    {
+      "q": "Porównaj badania ilościowe i jakościowe oraz wyjaśnij, na czym polegają badania mieszane.",
+      "answer": "Badania ilościowe wyrastają z paradygmatu pozytywistycznego: dążą do pomiaru, sprawdzania hipotez i uogólniania na populację, stosują duże próby, standaryzowane narzędzia i statystykę, a jakość ocenia się przez rzetelność, trafność i reprezentatywność. Badania jakościowe wyrastają z paradygmatu interpretatywnego: dążą do zrozumienia znaczeń i doświadczeń, stosują małe celowe próby, wywiady pogłębione, obserwację uczestniczącą, analizę interpretacyjną, a jakość ocenia się przez wiarygodność i refleksyjność. Badania mieszane łączą oba podejścia w schematach zbieżnym, sekwencyjnym wyjaśniającym lub eksploracyjnym, co pozwala zarówno zmierzyć zjawisko, jak i je zrozumieć; wzmacnia to triangulacja."
+    },
+    {
+      "q": "Scharakteryzuj metody badań pedagogicznych według T. Pilcha i podaj przykłady ich zastosowania w resocjalizacji.",
+      "answer": "Pilch wyróżnia cztery metody. Eksperyment pedagogiczny polega na wprowadzeniu czynnika i badaniu jego skutków, np. ocena programu zastępowania agresji w MOW techniką grup równoległych. Monografia pedagogiczna dotyczy instytucji wychowawczej, np. funkcjonowania oddziału terapeutycznego w zakładzie karnym. Metoda indywidualnych przypadków to analiza losów jednostki w celu diagnozy i planu pomocy, np. studium przypadku podopiecznego po wyjściu z pieczy zastępczej. Sondaż diagnostyczny pozwala badać zjawiska w populacji przez próbę, np. postawy kuratorów wobec dozoru elektronicznego. Metody te realizuje się przy użyciu technik (ankieta, wywiad, obserwacja, analiza dokumentów) i narzędzi."
+    },
+    {
+      "q": "Jakie zasady etyczne obowiązują w badaniach z udziałem osób uzależnionych lub pozbawionych wolności?",
+      "answer": "Obowiązują zasady dobrowolności i świadomej zgody, nieszkodzenia, anonimowości lub poufności, ochrony danych osobowych zgodnie z RODO (dane o zdrowiu i karalności są szczególnie wrażliwe) oraz rzetelności naukowej. Osoby uzależnione i więźniowie są grupami wrażliwymi: ich zgoda może być ograniczona zależnością od instytucji, dlatego badacz musi wyraźnie podkreślić, że odmowa nie wpłynie na leczenie czy ocenę w zakładzie. Należy uzyskać zgodę dyrektora placówki, często opinię komisji etycznej, unikać pytań nadmiernie obciążających, zapewnić dostęp do wsparcia po badaniu i przemyśleć postępowanie w razie ujawnienia zagrożenia życia lub przemocy."
+    },
+    {
+      "q": "Czym jest problem badawczy i jak poprawnie go sformułować? Podaj przykłady.",
+      "answer": "Problem badawczy to pytanie lub zespół pytań, na które odpowiedzi ma dostarczyć badanie; wyraża lukę w wiedzy i wynika z przedmiotu i celu badań. Wyróżnia się problem główny oraz problemy szczegółowe, a według Nowaka pytania rozstrzygnięcia (tak/nie) i dopełnienia (otwarte). Problem powinien być empirycznie rozstrzygalny, jasny, adekwatny do celu, wyczerpywać zakres niewiedzy i być wykonalny. Przykład problemu głównego: „Jakie czynniki są związane z motywacją do leczenia osób uzależnionych od alkoholu?”. Problemy szczegółowe: „Jaki jest poziom motywacji badanych?”, „Czy istnieje związek między wsparciem rodziny a motywacją?”."
+    },
+    {
+      "q": "Omów rodzaje hipotez i warunki ich poprawnego formułowania.",
+      "answer": "Hipoteza to przypuszczalna odpowiedź na problem badawczy, podlegająca empirycznej weryfikacji. Wyróżnia się hipotezy robocze i statystyczne (zerowa i alternatywna), kierunkowe i niekierunkowe, opisowe, porównawcze, zależnościowe i wyjaśniające, a także główną i szczegółowe. Poprawna hipoteza jest sprawdzalna, jednoznaczna, adekwatna do problemu, prosta, uzasadniona teorią lub wcześniejszymi badaniami i nie jest tautologią ani oczywistością. Hipotez nie udowadnia się, lecz potwierdza lub odrzuca. W badaniach eksploracyjnych i jakościowych hipotez zwykle się nie stawia, bo celem jest rozpoznanie zjawiska, a przypuszczenia mogą dopiero wyłonić się z danych."
+    },
+    {
+      "q": "Wyjaśnij różnicę między metodą, techniką i narzędziem badawczym oraz omów zasady konstruowania kwestionariusza.",
+      "answer": "Metoda to całościowy, teoretycznie uzasadniony sposób postępowania badacza (np. sondaż diagnostyczny), technika – praktyczne czynności zbierania danych (np. ankieta, wywiad, obserwacja), a narzędzie – przedmiot służący realizacji techniki (np. kwestionariusz ankiety, arkusz obserwacji). Kwestionariusz konstruuje się na podstawie problemów i zmiennych, tak aby każde pytanie miało uzasadnienie. Zawiera instrukcję z zapewnieniem anonimowości, pytania uporządkowane od łatwych do trudnych i metryczkę. Stosuje się pytania zamknięte, otwarte, półotwarte i skale. Należy unikać pytań sugerujących, podwójnych, niejasnych i niewyczerpujących kafeterii. Narzędzie sprawdza się w pilotażu, a w przypadku skal ocenia rzetelność i trafność."
+    },
+    {
+      "q": "Jak zaplanować organizację badań i dobór próby w pracy magisterskiej?",
+      "answer": "Należy określić populację, do której odnoszą się wnioski, i sposób doboru próby. Dobór losowy (prosty, warstwowy, systematyczny, grupowy) pozwala na uogólnianie statystyczne, ale w badaniach osób uzależnionych czy skazanych zwykle stosuje się dobór celowy, dostępnych przypadków lub kuli śnieżnej, co trzeba uczciwie opisać jako ograniczenie. Trzeba wybrać i scharakteryzować teren badań, uzyskać zgody dyrektora placówki i uczestników, ułożyć harmonogram, przeprowadzić pilotaż, zapewnić jednakowe warunki badań i anonimowość. Następnie dane się koduje, analizuje i interpretuje. W rozdziale metodologicznym opisuje się to wszystko, by czytelnik mógł ocenić wiarygodność wyników."
+    }
+  ]
+}

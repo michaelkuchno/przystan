@@ -1,0 +1,395 @@
+{
+  "courseId": "seminarium",
+  "notes": [
+    {
+      "topic": "Struktura pracy magisterskiej",
+      "text": "Praca magisterska na kierunku pedagogika ma zwykle charakter teoretyczno-empiryczny: wykazuje znajomość literatury przedmiotu oraz umiejętność samodzielnego zaplanowania, przeprowadzenia i zinterpretowania badań. Typowa struktura:\n• strona tytułowa i oświadczenie o samodzielnym przygotowaniu pracy;\n• spis treści;\n• wstęp – uzasadnienie wyboru tematu, cel pracy, krótka zapowiedź zawartości rozdziałów;\n• rozdziały teoretyczne (zwykle jeden lub dwa) – definicje kluczowych pojęć, przegląd koncepcji i wyników wcześniejszych badań, uporządkowane wokół zmiennych badanych w pracy;\n• rozdział metodologiczny – przedmiot i cel badań, problemy badawcze, hipotezy (jeśli są), zmienne i wskaźniki, metody, techniki i narzędzia, organizacja i teren badań, charakterystyka próby;\n• rozdział empiryczny – prezentacja i analiza wyników (tabele, wykresy), interpretacja;\n• zakończenie – wnioski, odpowiedzi na problemy badawcze, weryfikacja hipotez, rekomendacje dla praktyki, ograniczenia badań;\n• bibliografia, spis tabel i wykresów, aneks (narzędzia badawcze, np. kwestionariusz ankiety).\nUmberto Eco w książce „Jak napisać pracę dyplomową” radzi, by temat był wąski, zgodny z zainteresowaniami, a źródła – dostępne. Literatura powinna być aktualna i naukowa (monografie, artykuły z czasopism recenzowanych, akty prawne, raporty instytucji).\nZasady techniczne: konsekwentny styl przypisów – przypisy dolne (tradycyjny styl polski) albo system autor–rok (APA, obecnie 7. wydanie), zgodnie z wymaganiami promotora; każdy cytat i parafraza muszą mieć wskazane źródło; tabele i wykresy są numerowane i opisane źródłem.\nPrzykład tematu dla specjalności: „Motywacja do zmiany a etap leczenia u osób uzależnionych od alkoholu objętych wsparciem PCPR”.\nNa seminarium i egzaminie oczekuje się umiejętności opisania struktury pracy i funkcji każdej części.",
+      "key": [
+        "wstęp – uzasadnienie tematu, cel pracy, zapowiedź struktury",
+        "rozdział metodologiczny – opis koncepcji badań: problemy, hipotezy, zmienne, metody, próba",
+        "aneks – załączniki, np. narzędzia badawcze",
+        "styl APA – system przypisów autor–rok w nawiasie z bibliografią alfabetyczną",
+        "parafraza – oddanie cudzej myśli własnymi słowami, zawsze ze wskazaniem źródła"
+      ]
+    },
+    {
+      "topic": "Problem badawczy, pytania i hipotezy",
+      "text": "Przedmiot badań to fragment rzeczywistości, który badamy (np. motywacja do leczenia osób uzależnionych). Cel badań określa, co chcemy osiągnąć: cele poznawcze (opis, wyjaśnienie zjawiska), praktyczne (wskazania dla praktyki) i ewentualnie metodologiczne.\nProblem badawczy według M. Łobockiego to pytanie lub zespół pytań określających rodzaj wiedzy, którą chcemy uzyskać w wyniku badań. Wyróżnia się:\n• problem główny – ogólne pytanie, wynikające z tematu pracy;\n• problemy szczegółowe – pytania precyzujące problem główny, zwykle odnoszące się do zmiennych i ich związków.\nT. Pilch rozróżnia pytania rozstrzygnięcia (zaczynają się od „czy”, odpowiedź tak/nie) i pytania dopełnienia (zaczynają się od „jaki”, „w jakim stopniu”, „jakie czynniki”), które dają bogatszą wiedzę. Dobry problem jest jasny, rozstrzygalny empirycznie, ma uzasadnienie teoretyczne i praktyczne.\nHipoteza to przypuszczenie, będące przewidywaną odpowiedzią na problem badawczy, które podlega sprawdzeniu w badaniach. Powinna być: sprawdzalna, jednoznaczna, oparta na teorii lub wcześniejszych badaniach, dotycząca związku między zmiennymi. Hipotezy formułuje się zwłaszcza w badaniach ilościowych wyjaśniających; w badaniach jakościowych i czysto opisowych zwykle się ich nie stawia.\nZmienne (J. Brzeziński) to cechy, które przyjmują różne wartości:\n• zmienna zależna – to, co wyjaśniamy (np. poziom motywacji do leczenia);\n• zmienne niezależne – czynniki wyjaśniające (np. wsparcie rodziny, czas trwania abstynencji), dzielone na główne i uboczne;\n• wskaźniki – obserwowalne przejawy zmiennych (np. wynik w skali, liczba sesji).\nPrzykład: problem główny „Jakie czynniki wiążą się z motywacją do leczenia u podopiecznych PCPR uzależnionych od alkoholu?”; hipoteza „Osoby z silniejszym wsparciem rodzinnym przejawiają wyższą motywację do leczenia”.\nNa egzaminie pytają o definicję problemu, rodzaje pytań, warunki poprawnej hipotezy i rodzaje zmiennych.",
+      "key": [
+        "problem badawczy – pytanie określające rodzaj wiedzy, którą ma przynieść badanie (Łobocki)",
+        "pytanie rozstrzygnięcia – pytanie typu „czy”, z odpowiedzią tak lub nie",
+        "pytanie dopełnienia – pytanie typu „jaki”, „w jakim stopniu”, wymagające rozbudowanej odpowiedzi",
+        "hipoteza – sprawdzalne przypuszczenie, przewidywana odpowiedź na problem",
+        "zmienna zależna i niezależna – zjawisko wyjaśniane oraz czynnik wyjaśniający"
+      ]
+    },
+    {
+      "topic": "Dobór metod, technik i narzędzi badawczych",
+      "text": "W polskiej metodologii pedagogiki (T. Pilch, T. Bauman, M. Łobocki) rozróżnia się trzy poziomy:\n• metoda badań – ogólny, zamierzony sposób postępowania badawczego, obejmujący zespół technik;\n• technika badań – czynność praktyczna, sposób zbierania danych (np. ankieta, wywiad);\n• narzędzie badawcze – przedmiot służący do realizacji techniki (np. kwestionariusz ankiety, kwestionariusz wywiadu, arkusz obserwacji, skala).\nMetody według T. Pilcha:\n• eksperyment pedagogiczny – celowe wprowadzenie zmiany i badanie jej skutków (grupa eksperymentalna i kontrolna);\n• monografia pedagogiczna – badanie instytucji wychowawczej (np. MOW, oddziału terapeutycznego);\n• metoda indywidualnych przypadków – analiza losów jednostki, często w pracy resocjalizacyjnej;\n• sondaż diagnostyczny – badanie zjawisk społecznych na podstawie reprezentatywnej grupy, najczęściej wybierany w pracach magisterskich.\nTechniki: obserwacja, wywiad (swobodny, skategoryzowany), ankieta, analiza dokumentów, techniki socjometryczne, testy. Często stosuje się też wystandaryzowane narzędzia psychologiczne (skale), pamiętając o licencjach i kompetencjach do ich stosowania.\nBadania ilościowe szukają związków i prawidłowości w większej próbie; jakościowe (wywiad narracyjny, analiza treści, studium przypadku) koncentrują się na znaczeniach i doświadczeniu badanych. Możliwe jest łączenie podejść (triangulacja).\nDobór próby: losowy (umożliwia uogólnianie) lub celowy, dostępności, kuli śnieżnej – częsty w badaniach osób uzależnionych lub skazanych.\nEtyka badań: dobrowolność i świadoma zgoda, anonimowość lub poufność, ochrona danych osobowych zgodnie z RODO, zasada niekrzywdzenia, zgoda rodziców przy małoletnich i dyrekcji placówki, szczególna ostrożność wobec osób w instytucjach (zakład karny, MOW), gdzie zgoda może nie być w pełni swobodna.\nPrzykład: sondaż diagnostyczny z techniką ankiety (autorski kwestionariusz) i skalą motywacji wśród podopiecznych ośrodka terapii.\nNa egzaminie pytają o różnicę metoda–technika–narzędzie i o dobór metod do problemu.",
+      "key": [
+        "metoda badań – ogólny sposób postępowania badawczego, obejmujący techniki",
+        "technika badań – sposób zbierania danych, np. ankieta, wywiad, obserwacja",
+        "narzędzie badawcze – przedmiot służący technice, np. kwestionariusz ankiety",
+        "sondaż diagnostyczny – metoda badania zjawisk społecznych na podstawie wybranej próby",
+        "triangulacja – łączenie metod, źródeł lub badaczy dla wzmocnienia trafności"
+      ]
+    },
+    {
+      "topic": "Analiza i interpretacja wyników",
+      "text": "Analiza wyników polega na uporządkowaniu, opracowaniu i przedstawieniu danych w sposób umożliwiający odpowiedź na problemy badawcze. Interpretacja to nadanie wynikom znaczenia: wyjaśnienie, odniesienie do teorii i wcześniejszych badań, wskazanie konsekwencji praktycznych.\nW badaniach ilościowych:\n• statystyka opisowa – liczebności i procenty, średnia, mediana, dominanta, odchylenie standardowe;\n• statystyka wnioskowania – np. test chi-kwadrat (związek zmiennych jakościowych), test t-Studenta lub test U Manna-Whitneya (porównanie dwóch grup), analiza wariancji, korelacja r Pearsona lub rho Spearmana; wynik uznaje się za istotny statystycznie, gdy poziom p jest mniejszy od przyjętego poziomu istotności (najczęściej 0,05);\n• korelacja nie oznacza przyczynowości – to częsty błąd interpretacyjny;\n• tabele i wykresy muszą być ponumerowane, zatytułowane, opatrzone źródłem („opracowanie własne”) i omówione w tekście, a nie tylko wstawione.\nW badaniach jakościowych: transkrypcja, kodowanie, tworzenie kategorii, wyodrębnianie wątków, ilustrowanie ich cytatami z wypowiedzi przy zachowaniu anonimowości.\nStruktura rozdziału empirycznego zwykle odpowiada kolejności problemów szczegółowych – każdy podrozdział odpowiada na jeden problem. W zakończeniu formułuje się wnioski, weryfikuje hipotezy (potwierdzone, częściowo potwierdzone, niepotwierdzone), wskazuje ograniczenia (wielkość i dobór próby, narzędzia) oraz rekomendacje dla praktyki.\nPrzykład: badanie pokazuje, że podopieczni z dłuższą abstynencją częściej deklarują gotowość do pracy. Interpretacja odwołuje się do modelu transteoretycznego i badań nad zapobieganiem nawrotom, ale autor zaznacza, że to związek, a nie dowód przyczynowości, a próba była celowa.\nNa egzaminie mogą pytać, jak przedstawiono wyniki, dlaczego wybrano dany test, jakie są ograniczenia badań i jakie wnioski płyną dla praktyki.",
+      "key": [
+        "statystyka opisowa – podsumowanie danych miarami tendencji centralnej i rozproszenia",
+        "istotność statystyczna – małe prawdopodobieństwo, że wynik jest dziełem przypadku (p mniejsze od 0,05)",
+        "korelacja – współwystępowanie zmian dwóch zmiennych, bez przesądzania o przyczynowości",
+        "kodowanie – przypisywanie fragmentom danych jakościowych kategorii znaczeniowych",
+        "ograniczenia badań – czynniki zawężające możliwość uogólniania wyników"
+      ]
+    },
+    {
+      "topic": "Egzamin dyplomowy – przygotowanie",
+      "text": "Według Regulaminu studiów WSHE w Brzegu studia kończy wykonanie pracy dyplomowej pod kierunkiem promotora posiadającego co najmniej stopień doktora oraz zdanie egzaminu dyplomowego. Najważniejsze zasady (warto sprawdzić aktualną wersję regulaminu w dziekanacie):\n• temat pracy musi być zgodny z kierunkiem i specjalnością; tematy zatwierdza rektor na wniosek dziekana; zmiana promotora jest możliwa z ważnych przyczyn, najpóźniej do rozpoczęcia ostatniego semestru;\n• pracę składa się do 30 stycznia (studia kończące się semestrem zimowym) lub do 30 maja (semestrem letnim); w uzasadnionych przypadkach dziekan może przesunąć termin na wniosek zaopiniowany przez promotora;\n• po zatwierdzeniu przez promotora student składa w dziekanacie wydruk i wersję cyfrową w dwóch egzemplarzach najpóźniej 14 dni przed egzaminem;\n• pracę oceniają promotor i recenzent wyznaczony przez dziekana;\n• każda praca dyplomowa jest sprawdzana w Jednolitym Systemie Antyplagiatowym (JSA), a następnie trafia do Ogólnopolskiego Repozytorium Pisemnych Prac Dyplomowych – wynika to z ustawy Prawo o szkolnictwie wyższym i nauce;\n• warunkiem dopuszczenia jest zaliczenie wszystkich przedmiotów, egzaminów i praktyk oraz pozytywna ocena pracy; termin egzaminu ustala dziekan w ciągu sześciu tygodni od złożenia pracy;\n• komisja: promotor, recenzent oraz dziekan lub wyznaczony nauczyciel akademicki z co najmniej stopniem doktora; możliwy jest egzamin otwarty na wniosek studenta lub promotora;\n• wynik studiów = 1/2 średniej ocen z całych studiów + 1/4 oceny pracy + 1/4 oceny egzaminu; na dyplomie: do 3,25 dostateczny, 3,26–3,74 dostateczny plus, 3,75–4,24 dobry, 4,25–4,74 dobry plus, powyżej 4,75 bardzo dobry;\n• przy niezdanym egzaminie dziekan na wniosek studenta wyznacza drugi, ostateczny termin.\nPlagiat (przywłaszczenie autorstwa cudzego utworu) narusza prawo autorskie i może skutkować odpowiedzialnością dyscyplinarną, karną i unieważnieniem dyplomu.\nPrzygotowanie: znać tezy własnej pracy (problem, metody, główne wyniki i wnioski), przejrzeć recenzję, powtórzyć zagadnienia kierunkowe i specjalnościowe.\nNa egzaminie zwykle pada pytanie o pracę oraz pytania z zakresu studiów.",
+      "key": [
+        "JSA – Jednolity System Antyplagiatowy, obowiązkowe sprawdzenie pracy przed egzaminem",
+        "recenzent – nauczyciel akademicki wyznaczony przez dziekana do oceny pracy",
+        "wynik studiów WSHE – 1/2 średniej + 1/4 oceny pracy + 1/4 oceny egzaminu",
+        "plagiat – przypisanie sobie autorstwa cudzego utworu lub jego części",
+        "egzamin otwarty – egzamin z udziałem zaproszonych osób bez prawa głosu, na wniosek studenta lub promotora"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "front": "Podstawowe części pracy magisterskiej",
+      "back": "Wstęp, rozdziały teoretyczne, rozdział metodologiczny, rozdział empiryczny, zakończenie, bibliografia, aneks."
+    },
+    {
+      "front": "Co zawiera wstęp pracy?",
+      "back": "Uzasadnienie wyboru tematu, cel pracy i krótką zapowiedź zawartości rozdziałów."
+    },
+    {
+      "front": "Co zawiera rozdział metodologiczny?",
+      "back": "Przedmiot i cel badań, problemy, hipotezy, zmienne i wskaźniki, metody, techniki i narzędzia, teren i organizację badań, próbę."
+    },
+    {
+      "front": "Co zawiera zakończenie pracy?",
+      "back": "Wnioski, odpowiedzi na problemy, weryfikację hipotez, ograniczenia badań i rekomendacje dla praktyki."
+    },
+    {
+      "front": "Problem badawczy wg M. Łobockiego",
+      "back": "Pytanie lub zespół pytań określających rodzaj wiedzy, który chcemy uzyskać w wyniku badań."
+    },
+    {
+      "front": "Pytania rozstrzygnięcia i dopełnienia",
+      "back": "Rozstrzygnięcia – typu „czy” (tak/nie); dopełnienia – typu „jaki”, „w jakim stopniu” (odpowiedź rozbudowana)."
+    },
+    {
+      "front": "Hipoteza badawcza",
+      "back": "Sprawdzalne przypuszczenie, przewidywana odpowiedź na problem badawczy, oparta na teorii lub wcześniejszych badaniach."
+    },
+    {
+      "front": "Cechy poprawnej hipotezy",
+      "back": "Sprawdzalna, jednoznaczna, uzasadniona teoretycznie, dotyczy związku zmiennych."
+    },
+    {
+      "front": "Zmienna zależna",
+      "back": "Zjawisko, które badacz wyjaśnia (np. poziom motywacji do leczenia)."
+    },
+    {
+      "front": "Zmienna niezależna",
+      "back": "Czynnik wyjaśniający zmienną zależną (np. wsparcie rodziny); dzielona na główne i uboczne."
+    },
+    {
+      "front": "Wskaźnik",
+      "back": "Obserwowalny przejaw zmiennej, np. wynik w skali, liczba odbytych sesji."
+    },
+    {
+      "front": "Metoda – technika – narzędzie",
+      "back": "Metoda to ogólny sposób postępowania; technika to sposób zbierania danych; narzędzie to przedmiot służący technice."
+    },
+    {
+      "front": "Metody badań pedagogicznych wg T. Pilcha",
+      "back": "Eksperyment pedagogiczny, monografia pedagogiczna, metoda indywidualnych przypadków, sondaż diagnostyczny."
+    },
+    {
+      "front": "Monografia pedagogiczna",
+      "back": "Metoda badania instytucji wychowawczej, np. MOW lub oddziału terapeutycznego."
+    },
+    {
+      "front": "Przykłady narzędzi badawczych",
+      "back": "Kwestionariusz ankiety, kwestionariusz wywiadu, arkusz obserwacji, skala, test."
+    },
+    {
+      "front": "Zasady etyki badań",
+      "back": "Dobrowolność, świadoma zgoda, anonimowość lub poufność, ochrona danych (RODO), niekrzywdzenie, zgoda rodziców i placówki."
+    },
+    {
+      "front": "Korelacja a przyczynowość",
+      "back": "Współwystępowanie zmiennych nie dowodzi, że jedna jest przyczyną drugiej."
+    },
+    {
+      "front": "Najczęściej przyjmowany poziom istotności",
+      "back": "0,05 – wynik uznaje się za istotny, gdy p jest mniejsze od tej wartości."
+    },
+    {
+      "front": "Test chi-kwadrat – zastosowanie",
+      "back": "Sprawdzanie związku między zmiennymi jakościowymi (np. płeć a forma leczenia)."
+    },
+    {
+      "front": "Analiza danych jakościowych",
+      "back": "Transkrypcja, kodowanie, kategoryzacja, wyodrębnianie wątków, ilustrowanie cytatami."
+    },
+    {
+      "front": "JSA",
+      "back": "Jednolity System Antyplagiatowy – obowiązkowe sprawdzenie pracy dyplomowej przed egzaminem."
+    },
+    {
+      "front": "Terminy złożenia pracy wg regulaminu WSHE",
+      "back": "Do 30 stycznia (studia kończące się semestrem zimowym) lub do 30 maja (letnim)."
+    },
+    {
+      "front": "Ile przed egzaminem trzeba złożyć pracę w dziekanacie (WSHE)?",
+      "back": "Najpóźniej 14 dni przed egzaminem – wydruk i wersja cyfrowa w dwóch egzemplarzach."
+    },
+    {
+      "front": "Skład komisji egzaminu dyplomowego (WSHE)",
+      "back": "Promotor, recenzent oraz dziekan lub wyznaczony nauczyciel akademicki z co najmniej stopniem doktora."
+    },
+    {
+      "front": "Wynik studiów wg regulaminu WSHE",
+      "back": "1/2 średniej ocen z całych studiów + 1/4 oceny pracy + 1/4 oceny egzaminu dyplomowego."
+    },
+    {
+      "front": "Od jakiego wyniku na dyplomie jest ocena bardzo dobra (WSHE)?",
+      "back": "Powyżej 4,75; od 4,25 do 4,74 – dobry plus."
+    },
+    {
+      "front": "Plagiat",
+      "back": "Przywłaszczenie autorstwa cudzego utworu lub jego części; grozi odpowiedzialnością dyscyplinarną, karną i unieważnieniem dyplomu."
+    }
+  ],
+  "questions": [
+    {
+      "q": "W której części pracy magisterskiej opisuje się problemy badawcze, hipotezy i narzędzia?",
+      "options": ["we wstępie", "w rozdziale teoretycznym", "w rozdziale metodologicznym", "w aneksie"],
+      "correct": 2,
+      "explain": "Rozdział metodologiczny przedstawia całą koncepcję badań."
+    },
+    {
+      "q": "Problem badawczy według M. Łobockiego to:",
+      "options": [
+        "pytanie określające rodzaj wiedzy, którą chcemy uzyskać w badaniach",
+        "trudność, jaką badacz napotyka w terenie",
+        "zjawisko patologii społecznej",
+        "temat pracy dyplomowej"
+      ],
+      "correct": 0,
+      "explain": "Problem to pytanie, na które badania mają udzielić odpowiedzi."
+    },
+    {
+      "q": "Pytanie „Czy wsparcie rodziny wiąże się z motywacją do leczenia?” jest pytaniem:",
+      "options": ["dopełnienia", "otwartym jakościowym", "retorycznym", "rozstrzygnięcia"],
+      "correct": 3,
+      "explain": "Pytania zaczynające się od „czy” są pytaniami rozstrzygnięcia."
+    },
+    {
+      "q": "Hipoteza badawcza to:",
+      "options": [
+        "pewna, udowodniona teza",
+        "opis próby badawczej",
+        "cytat z literatury",
+        "sprawdzalne przypuszczenie będące przewidywaną odpowiedzią na problem"
+      ],
+      "correct": 3,
+      "explain": "Hipoteza ma charakter przypuszczenia i podlega weryfikacji w badaniach."
+    },
+    {
+      "q": "W badaniu wpływu długości abstynencji na poczucie własnej skuteczności zmienną zależną jest:",
+      "options": ["długość abstynencji", "wiek badanych", "poczucie własnej skuteczności", "miejsce zamieszkania"],
+      "correct": 2,
+      "explain": "Zmienna zależna to zjawisko wyjaśniane – tu poczucie skuteczności."
+    },
+    {
+      "q": "Kwestionariusz ankiety to:",
+      "options": ["metoda badań", "technika badań", "narzędzie badawcze", "problem badawczy"],
+      "correct": 2,
+      "explain": "Ankieta to technika, a kwestionariusz ankiety – narzędzie."
+    },
+    {
+      "q": "Metodą badania instytucji wychowawczej, np. młodzieżowego ośrodka wychowawczego, jest:",
+      "options": ["monografia pedagogiczna", "sondaż diagnostyczny", "socjometria", "test osiągnięć"],
+      "correct": 0,
+      "explain": "Monografia pedagogiczna dotyczy instytucji wychowawczych."
+    },
+    {
+      "q": "Najczęściej stosowaną metodą w pracach magisterskich z pedagogiki jest:",
+      "options": [
+        "eksperyment laboratoryjny",
+        "metoda historyczna",
+        "obserwacja uczestnicząca długoterminowa",
+        "sondaż diagnostyczny"
+      ],
+      "correct": 3,
+      "explain": "Sondaż diagnostyczny z ankietą lub wywiadem jest najczęściej wybierany."
+    },
+    {
+      "q": "Według T. Pilcha do metod badań pedagogicznych NIE należy:",
+      "options": [
+        "eksperyment pedagogiczny",
+        "metoda indywidualnych przypadków",
+        "sondaż diagnostyczny",
+        "kwestionariusz wywiadu"
+      ],
+      "correct": 3,
+      "explain": "Kwestionariusz wywiadu jest narzędziem, a nie metodą."
+    },
+    {
+      "q": "Która zasada etyki badań jest naruszona, gdy skazany czuje, że odmowa udziału w badaniu pogorszy jego sytuację?",
+      "options": ["dobrowolności", "rzetelności statystycznej", "triangulacji", "reprezentatywności"],
+      "correct": 0,
+      "explain": "Udział w badaniach musi być dobrowolny; w instytucjach totalnych wymaga to szczególnej ostrożności."
+    },
+    {
+      "q": "Związek między dwiema zmiennymi ilościowymi bada się najczęściej za pomocą:",
+      "options": ["współczynnika korelacji", "dominanty", "kodowania otwartego", "genogramu"],
+      "correct": 0,
+      "explain": "Korelacja r Pearsona lub rho Spearmana opisuje siłę i kierunek związku."
+    },
+    {
+      "q": "Silna korelacja między wsparciem rodziny a abstynencją oznacza, że:",
+      "options": [
+        "wsparcie rodziny jest przyczyną abstynencji",
+        "abstynencja powoduje wsparcie rodziny",
+        "zmienne współwystępują, ale przyczynowości nie dowiedziono",
+        "wynik jest nieistotny"
+      ],
+      "correct": 2,
+      "explain": "Korelacja nie przesądza o kierunku i przyczynie związku."
+    },
+    {
+      "q": "Wynik uznaje się zwykle za istotny statystycznie, gdy:",
+      "options": [
+        "p jest większe od 0,5",
+        "średnia jest większa od mediany",
+        "próba liczy ponad 1000 osób",
+        "p jest mniejsze od 0,05"
+      ],
+      "correct": 3,
+      "explain": "Najczęściej przyjmowany poziom istotności to 0,05."
+    },
+    {
+      "q": "Kodowanie i kategoryzacja to etapy analizy:",
+      "options": ["danych jakościowych", "statystyki opisowej", "bibliografii", "recenzji pracy"],
+      "correct": 0,
+      "explain": "W badaniach jakościowych przypisuje się fragmentom wypowiedzi kody i łączy je w kategorie."
+    },
+    {
+      "q": "Według regulaminu WSHE pracę dyplomową na studiach kończących się semestrem letnim należy złożyć do:",
+      "options": ["30 stycznia", "30 kwietnia", "30 maja", "30 września"],
+      "correct": 2,
+      "explain": "Regulamin wskazuje 30 stycznia dla semestru zimowego i 30 maja dla letniego."
+    },
+    {
+      "q": "Wynik studiów w WSHE oblicza się jako:",
+      "options": [
+        "1/2 średniej + 1/4 oceny pracy + 1/4 oceny egzaminu",
+        "średnią ocen z całych studiów",
+        "1/3 średniej + 1/3 oceny pracy + 1/3 oceny egzaminu",
+        "ocenę z egzaminu dyplomowego"
+      ],
+      "correct": 0,
+      "explain": "Tak stanowi regulamin studiów WSHE."
+    },
+    {
+      "q": "Wynik studiów 4,30 oznacza na dyplomie WSHE ocenę:",
+      "options": ["dobry", "bardzo dobry", "dobry plus", "dostateczny plus"],
+      "correct": 2,
+      "explain": "Przedział 4,25–4,74 odpowiada ocenie dobry plus."
+    },
+    {
+      "q": "Pracę dyplomową ocenia według regulaminu WSHE:",
+      "options": [
+        "tylko promotor",
+        "promotor i recenzent wyznaczony przez dziekana",
+        "komisja trzech recenzentów zewnętrznych",
+        "rektor"
+      ],
+      "correct": 1,
+      "explain": "Ocenę wystawiają promotor i recenzent; przy rozbieżności dziekan zasięga opinii drugiego recenzenta."
+    },
+    {
+      "q": "Jednolity System Antyplagiatowy (JSA) służy do:",
+      "options": [
+        "oceny poprawności językowej pracy",
+        "sprawdzania prac dyplomowych pod kątem niesamodzielności",
+        "wyznaczania terminu egzaminu",
+        "losowania pytań egzaminacyjnych"
+      ],
+      "correct": 1,
+      "explain": "Sprawdzenie w JSA jest obowiązkowe przed egzaminem dyplomowym."
+    },
+    {
+      "q": "Co należy umieścić w aneksie pracy empirycznej?",
+      "options": [
+        "podziękowania dla rodziny",
+        "narzędzia badawcze, np. kwestionariusz",
+        "wnioski końcowe",
+        "streszczenie rozdziałów teoretycznych"
+      ],
+      "correct": 1,
+      "explain": "Aneks zawiera materiały pomocnicze, przede wszystkim narzędzia badawcze."
+    },
+    {
+      "q": "Przy niezdanym egzaminie dyplomowym w WSHE:",
+      "options": [
+        "student zostaje automatycznie skreślony",
+        "dziekan na wniosek studenta wyznacza drugi, ostateczny termin",
+        "student pisze nową pracę",
+        "egzamin powtarza się po roku"
+      ],
+      "correct": 1,
+      "explain": "Regulamin przewiduje drugi termin, który jest ostateczny."
+    },
+    {
+      "q": "Parafraza cudzego tekstu bez podania źródła to:",
+      "options": ["dopuszczalna praktyka, jeśli zmieniono słowa", "plagiat", "autocytat", "triangulacja"],
+      "correct": 1,
+      "explain": "Każda cudza myśl, także sparafrazowana, wymaga wskazania źródła."
+    },
+    {
+      "q": "Promotor pracy magisterskiej w WSHE musi posiadać co najmniej:",
+      "options": ["tytuł zawodowy magistra", "stopień doktora", "stopień doktora habilitowanego", "tytuł profesora"],
+      "correct": 1,
+      "explain": "Regulamin wymaga co najmniej stopnia naukowego doktora."
+    }
+  ],
+  "open": [
+    {
+      "q": "Przedstaw strukturę pracy magisterskiej i funkcję jej poszczególnych części.",
+      "answer": "Praca zaczyna się od strony tytułowej, oświadczenia o samodzielności i spisu treści. Wstęp uzasadnia wybór tematu, określa cel i zapowiada zawartość. Rozdziały teoretyczne definiują pojęcia i przedstawiają koncepcje oraz wyniki wcześniejszych badań związane ze zmiennymi. Rozdział metodologiczny opisuje przedmiot i cel badań, problemy, hipotezy, zmienne i wskaźniki, metody, techniki i narzędzia, teren, organizację i próbę. Rozdział empiryczny prezentuje i interpretuje wyniki, zwykle w kolejności problemów szczegółowych. Zakończenie zawiera wnioski, weryfikację hipotez, ograniczenia i rekomendacje dla praktyki. Całość zamykają bibliografia, spisy tabel i wykresów oraz aneks z narzędziami badawczymi."
+    },
+    {
+      "q": "Sformułuj przykładowy problem główny, problemy szczegółowe i hipotezę do pracy z zakresu pedagogiki resocjalizacyjnej.",
+      "answer": "Temat: motywacja do leczenia u osób uzależnionych od alkoholu objętych wsparciem PCPR. Problem główny: Jakie czynniki wiążą się z poziomem motywacji do leczenia u badanych? Problemy szczegółowe: Jaki jest poziom motywacji do leczenia badanych? Czy i w jakim stopniu poziom motywacji różnicuje wsparcie rodziny? Czy długość wcześniejszej abstynencji wiąże się z motywacją? Hipoteza: Osoby deklarujące silniejsze wsparcie rodziny przejawiają wyższą motywację do leczenia. Zmienną zależną jest motywacja do leczenia, niezależnymi – wsparcie rodziny i długość abstynencji, a wskaźnikami – wyniki w skalach oraz deklaracje w kwestionariuszu ankiety."
+    },
+    {
+      "q": "Wyjaśnij różnicę między metodą, techniką i narzędziem badawczym oraz podaj przykłady.",
+      "answer": "Metoda to ogólny, zamierzony sposób postępowania badawczego, obejmujący zespół technik; według T. Pilcha należą do nich eksperyment pedagogiczny, monografia pedagogiczna, metoda indywidualnych przypadków i sondaż diagnostyczny. Technika to czynność praktyczna służąca zbieraniu danych, np. ankieta, wywiad, obserwacja, analiza dokumentów, socjometria. Narzędzie to przedmiot, za pomocą którego realizuje się technikę, np. kwestionariusz ankiety, kwestionariusz wywiadu, arkusz obserwacji, standaryzowana skala. Przykład: w sondażu diagnostycznym wśród podopiecznych ośrodka terapii stosuję technikę ankiety, a narzędziem jest autorski kwestionariusz ankiety uzupełniony skalą motywacji."
+    },
+    {
+      "q": "Omów zasady etyczne prowadzenia badań z udziałem osób uzależnionych, skazanych lub małoletnich.",
+      "answer": "Podstawą jest dobrowolność i świadoma zgoda – badany musi wiedzieć, czego dotyczy badanie, jak zostaną wykorzystane dane i że może zrezygnować bez konsekwencji. W instytucjach totalnych, jak zakład karny czy MOW, należy szczególnie zadbać, by odmowa nie wpływała na sytuację badanego. Konieczna jest anonimowość lub poufność i ochrona danych osobowych zgodnie z RODO. Obowiązuje zasada niekrzywdzenia: pytania nie mogą narażać na wtórną traumatyzację, trzeba przewidzieć możliwość skierowania po pomoc. Przy małoletnich wymagana jest zgoda rodziców lub opiekunów, a także zgoda dyrekcji placówki. Wyniki prezentuje się tak, by nie dało się zidentyfikować uczestników."
+    },
+    {
+      "q": "Jak poprawnie przeprowadzić analizę i interpretację wyników badań w pracy magisterskiej?",
+      "answer": "Najpierw porządkuje się dane i sprawdza ich kompletność. W badaniach ilościowych stosuje się statystykę opisową (procenty, średnia, odchylenie standardowe) i, gdy to potrzebne, testy statystyczne dobrane do rodzaju zmiennych, np. chi-kwadrat, t-Studenta, korelację; istotność ocenia się zwykle na poziomie 0,05. W badaniach jakościowych prowadzi się transkrypcję, kodowanie i kategoryzację. Tabele i wykresy numeruje się, opisuje źródłem i omawia w tekście. Interpretacja odnosi wyniki do teorii i wcześniejszych badań, unika mylenia korelacji z przyczynowością. Rozdział układa się według problemów szczegółowych, a w zakończeniu weryfikuje hipotezy, wskazuje ograniczenia i rekomendacje dla praktyki."
+    },
+    {
+      "q": "Opisz procedurę dyplomowania w WSHE w Brzegu według regulaminu studiów.",
+      "answer": "Pracę pisze się pod kierunkiem promotora z co najmniej stopniem doktora; temat zgodny z kierunkiem i specjalnością zatwierdza rektor na wniosek dziekana. Pracę składa się do 30 stycznia lub do 30 maja, zależnie od semestru kończącego studia, a po zatwierdzeniu przez promotora – wydruk i wersję cyfrową w dwóch egzemplarzach najpóźniej 14 dni przed egzaminem. Pracę sprawdza się w JSA, oceniają ją promotor i recenzent. Warunkiem dopuszczenia są wszystkie zaliczenia, egzaminy i praktyki oraz pozytywna ocena pracy. Komisję tworzą promotor, recenzent i dziekan lub wyznaczony doktor. Wynik to połowa średniej ze studiów plus po jednej czwartej oceny pracy i egzaminu."
+    },
+    {
+      "q": "Czym jest plagiat i jak go unikać przy pisaniu pracy dyplomowej?",
+      "answer": "Plagiat to przywłaszczenie autorstwa cudzego utworu lub jego fragmentu, także przez parafrazę bez podania źródła, tłumaczenie cudzego tekstu jako własnego czy wykorzystanie pracy napisanej przez inną osobę lub narzędzie bez ujawnienia tego faktu. Narusza prawo autorskie i może skutkować odpowiedzialnością dyscyplinarną, karną oraz unieważnieniem dyplomu. Każda praca jest sprawdzana w Jednolitym Systemie Antyplagiatowym. Aby uniknąć plagiatu, należy prowadzić notatki ze źródłami od początku, oznaczać cytaty cudzysłowem z przypisem, przy parafrazie zawsze wskazywać autora, konsekwentnie stosować jeden styl przypisów (np. APA) i pisać własne analizy i wnioski."
+    }
+  ]
+}

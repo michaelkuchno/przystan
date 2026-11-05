@@ -9,12 +9,33 @@ import { useToast } from '@/components/ui/toast';
 import { all, remove, save, uid, useStore } from '@/lib/store';
 import { fmtDate } from '@/lib/format';
 import type { CourseView } from '@/lib/studies/program';
+import type { PackNote, StudyPack } from '@/lib/studies/packs';
 import type { StudyMaterial } from '@/lib/studies/types';
 import { DictateButton } from '@/features/ai/DictateButton';
 import { appendText } from '@/features/ai/text';
 
 /** Class notes, handouts and PDF text – private (encrypted), the main source for AI answers and exams. */
-export function Materials({ c }: { c: CourseView }) {
+/** A built-in study note: text with paragraphs and bullets + key terms. */
+export function NoteBody({ note }: { note: PackNote }) {
+  const { t } = useTranslation('studies');
+  return (
+    <div className="space-y-3" data-testid="study-note">
+      <div className="leading-relaxed whitespace-pre-line">{note.text}</div>
+      {note.key.length > 0 && (
+        <div className="rounded-2xl bg-surface-2 p-3">
+          <h4 className="mb-1.5 text-sm font-semibold">{t('note.key')}</h4>
+          <ul className="space-y-1 text-sm leading-relaxed">
+            {note.key.map((k) => (
+              <li key={k}>{k}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export function Materials({ c, pack }: { c: CourseView; pack: StudyPack | null }) {
   const { t } = useTranslation('studies');
   const toast = useToast();
   const list = useStore(() => all('studyMaterial').filter((m) => m.courseId === c.id)).sort((a, b) =>
@@ -43,6 +64,25 @@ export function Materials({ c }: { c: CourseView }) {
   const now = () => new Date().toISOString();
   return (
     <div className="space-y-3">
+      {pack && pack.notes.length > 0 && (
+        <section className="space-y-2" data-testid="pack-notes">
+          <h3 className="font-sans text-base font-semibold">{t('note.title')}</h3>
+          <p className="text-sm text-muted">{t('note.lead')}</p>
+          <ul className="space-y-2">
+            {pack.notes.map((n) => (
+              <li key={n.topic}>
+                <details className="group rounded-2xl border border-line bg-surface p-3 sm:p-4">
+                  <summary className="min-h-11 cursor-pointer content-center font-medium leading-snug">{n.topic}</summary>
+                  <div className="mt-2">
+                    <NoteBody note={n} />
+                  </div>
+                </details>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+      <h3 className="pt-2 font-sans text-base font-semibold">{t('materials.own')}</h3>
       <Notice>{t('materials.lead')}</Notice>
       <Button
         icon={<Plus className="size-4" aria-hidden />}

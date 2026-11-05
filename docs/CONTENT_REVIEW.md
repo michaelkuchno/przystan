@@ -475,3 +475,9 @@ uzyskaniu klucza warto zrobić próbę na 5–10 typowych wypowiedziach w każdy
   w środowisku otwartym i zamkniętym).
 - **Prompty** (`src/lib/ai/studyPrompts.ts`): czy „Zapytaj” rzeczywiście ogranicza się do źródeł; czy
   „Wytłumacz na egzamin” używa terminologii z polskiej literatury przedmiotu; jakość pytań egzaminacyjnych.
+- **Gotowe materiały (1.6.0)** (`src/content/studies/pack/*.json`): opracowania tematów, fiszki, banki
+  pytań i odpowiedzi wzorcowe – porównać z wykładami i literaturą; zwłaszcza stan prawny (ustawa o
+  wspieraniu i resocjalizacji nieletnich, k.k.w., ustawa o przeciwdziałaniu przemocy domowej) i tematy
+  opracowane w Przystani (przedmioty bez sylabusa WSHE).
+- **AUDIT / DUDIT PL i DE (1.6.0)** (`src/lib/screening/pl.ts`, `de.ts`): porównać brzmienie z oficjalną
+  wersją KCPU / niemiecką; po potwierdzeniu ustawić `validated: true` (znika informacja o tłumaczeniu roboczym).

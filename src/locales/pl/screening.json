@@ -12,9 +12,12 @@
   "items_few": "{{count}} pytania",
   "items_many": "{{count}} pytań",
   "items_other": "{{count}} pytania",
-  "population": { "adult": "Dorośli", "adolescentAdult": "Młodzież i dorośli" },
-  "todoPl": "TODO: wersja PL",
-  "todoPlText": "Brak oficjalnej, walidowanej polskiej wersji w aplikacji. Wyświetlany jest oryginał angielski. Nie tłumaczymy samodzielnie narzędzi walidowanych – wstaw oficjalną polską wersję (src/lib/screening/pl.ts).",
+  "population": {
+    "adult": "Dorośli",
+    "adolescentAdult": "Młodzież i dorośli"
+  },
+  "todoPl": "Tłumaczenie robocze",
+  "todoPlText": "Wersja polska: {{source}}. Punktacja i progi jak w oryginale. Przed użyciem w dokumentacji klinicznej porównaj brzmienie z oficjalną wersją (KCPU).",
   "excludedTitle": "Narzędzia pominięte",
   "excludedText": "{{list}} zostały pominięte, ponieważ ich status licencyjny nie pozwala jednoznacznie na swobodne użycie w aplikacji (szczegóły w docs/DECISIONS.md). Można je dodać po uzyskaniu zgody autorów.",
   "notFound": "Nie znaleziono narzędzia",

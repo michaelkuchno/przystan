@@ -4,6 +4,7 @@
  */
 import type { Deck, CardState } from '@/domain/types';
 import type { Program, ProgramCourse, StudyAttempt, StudyCourse, StudyMaterial, TopicLevel } from './types';
+import type { StudyPack } from './packs';
 
 export const PROGRAMS = [{ id: 'wshe-brzeg-ped2-resoc-uzal', load: () => import('@/content/studies/wshe-brzeg.json') }] as const;
 
@@ -125,7 +126,7 @@ export function weakTopics(c: CourseView, limit = 5): string[] {
 
 export interface StudyDoc {
   id: string;
-  kind: 'course' | 'topic' | 'material';
+  kind: 'course' | 'topic' | 'note' | 'material';
   courseId: string;
   semester: number;
   title: string;
@@ -153,8 +154,15 @@ export function chunk(text: string, size = 900): string[] {
   return out;
 }
 
-/** Everything searchable – only university data: syllabus (courses, topics, literature) and own materials. */
-export function studyDocs(courses: CourseView[], materials: StudyMaterial[]): StudyDoc[] {
+/**
+ * Everything searchable – only course data: syllabus (courses, topics, literature), the built-in
+ * study notes per syllabus topic and the student's own materials.
+ */
+export function studyDocs(
+  courses: CourseView[],
+  materials: StudyMaterial[],
+  packs: Map<string, StudyPack> = new Map(),
+): StudyDoc[] {
   const docs: StudyDoc[] = [];
   const sem = new Map(courses.map((c) => [c.id, c.semester]));
   for (const c of courses) {
@@ -183,6 +191,21 @@ export function studyDocs(courses: CourseView[], materials: StudyMaterial[]): St
         to: `/studies/course/${c.id}`,
       }),
     );
+  }
+  for (const c of courses) {
+    if (c.hidden) continue;
+    for (const [n, note] of (packs.get(c.id)?.notes ?? []).entries())
+      chunk(`${note.text}\n\n${note.key.join('. ')}`).forEach((part, i) =>
+        docs.push({
+          id: `${c.id}~${n}#${i}`,
+          kind: 'note',
+          courseId: c.id,
+          semester: c.semester,
+          title: note.topic,
+          body: part,
+          to: `/studies/course/${c.id}?tab=materials`,
+        }),
+      );
   }
   for (const m of materials)
     chunk(m.text).forEach((part, i) =>

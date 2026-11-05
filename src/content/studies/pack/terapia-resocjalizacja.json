@@ -1,0 +1,431 @@
+{
+  "courseId": "terapia-resocjalizacja",
+  "notes": [
+    {
+      "topic": "Rodzaje pomocy psychologicznej w resocjalizacji",
+      "text": "Pomoc psychologiczna w resocjalizacji to zespół oddziaływań, których celem jest zmiana funkcjonowania osoby niedostosowanej społecznie, nieletniego lub skazanego, z wykorzystaniem wiedzy psychologicznej. Nie każda pomoc jest psychoterapią – w pracy resocjalizacyjnej stosuje się całe spektrum form o różnej głębokości i strukturze:\n• wsparcie psychologiczne – podtrzymanie emocjonalne w trudnej sytuacji, np. po przyjęciu do zakładu karnego;\n• interwencja kryzysowa – krótkoterminowa pomoc w ostrym kryzysie (np. ryzyko samobójcze, utrata bliskiej osoby, przemoc);\n• poradnictwo (counseling) – pomoc w rozwiązaniu konkretnego problemu życiowego lub decyzji;\n• psychoedukacja – przekazywanie wiedzy o mechanizmach uzależnienia, przemocy, emocji;\n• treningi umiejętności – np. Trening Zastępowania Agresji (ART, A. Goldstein), treningi umiejętności społecznych, programy korekcyjno-edukacyjne;\n• socjoterapia – grupowa praca na doświadczeniach korekcyjnych, głównie z młodzieżą;\n• psychoterapia – systematyczne, oparte na teorii leczenie zaburzeń psychicznych i problemów emocjonalnych, prowadzone przez osoby z kwalifikacjami;\n• terapia uzależnień – specjalistyczna forma pomocy prowadzona przez specjalistów psychoterapii uzależnień i instruktorów terapii uzależnień.\nA. Rejzner i P. Szczepaniak podkreślają, że terapia w resocjalizacji ma specyficzny kontekst: często jest częściowo przymusowa, odbywa się w instytucji totalnej lub pod nadzorem sądu, a klient ma niską motywację wewnętrzną i doświadczenie odrzucenia. Dlatego tak ważne są praca motywacyjna i budowanie przymierza.\nPrzykład: skazany po pierwszym tygodniu pobytu w areszcie przeżywa kryzys – potrzebna jest interwencja kryzysowa, a dopiero później kwalifikacja do programu terapii uzależnień.\nNa egzaminie oczekuje się rozróżnienia form pomocy i dopasowania ich do sytuacji podopiecznego.",
+      "key": [
+        "interwencja kryzysowa – krótkoterminowa pomoc w ostrym kryzysie psychicznym",
+        "psychoedukacja – przekazywanie wiedzy o mechanizmach problemu w celu zmiany zachowania",
+        "poradnictwo – pomoc w rozwiązaniu konkretnego problemu lub podjęciu decyzji",
+        "psychoterapia – systematyczne leczenie oparte na teorii i relacji terapeutycznej",
+        "ART (Trening Zastępowania Agresji) – program A. Goldsteina łączący trening umiejętności, kontroli złości i wnioskowania moralnego"
+      ]
+    },
+    {
+      "topic": "Wybrane systemy i modele terapeutyczne",
+      "text": "W resocjalizacji i terapii uzależnień wykorzystuje się różne podejścia psychoterapeutyczne, często łączone w modelu integracyjnym.\n• Podejście psychodynamiczne – źródeł problemów szuka w nieświadomych konfliktach i wczesnych relacjach; ważne pojęcia: przeniesienie, opór, mechanizmy obronne.\n• Terapia poznawczo-behawioralna (CBT) – zakłada, że zachowanie i emocje zależą od sposobu myślenia; pracuje na zniekształceniach poznawczych, przekonaniach i umiejętnościach. Programy CBT należą do najlepiej przebadanych w pracy ze sprawcami przestępstw.\n• Zapobieganie nawrotom (G. A. Marlatt, J. Gordon) – model poznawczo-behawioralny: identyfikacja sytuacji wysokiego ryzyka, odróżnienie wpadki (lapse) od nawrotu (relapse), efekt naruszenia abstynencji, pozornie nieistotne decyzje.\n• Podejście humanistyczne (C. Rogers) – terapia skoncentrowana na kliencie, oparta na empatii, akceptacji i autentyczności.\n• Terapia systemowa – problem jednostki rozumiany jako element systemu rodzinnego; ważne np. przy współuzależnieniu.\n• Terapia skoncentrowana na rozwiązaniach (TSR; S. de Shazer, I. K. Berg) – zamiast analizować problem, szuka wyjątków, zasobów i małych kroków; techniki: pytanie o cud, skalowanie, komplementowanie.\n• Dialog motywujący (W. R. Miller, S. Rollnick) – styl rozmowy wzmacniający wewnętrzną motywację do zmiany.\n• Wspólnota terapeutyczna (M. Jones; w Polsce Monar, założony przez Marka Kotańskiego w 1978 r.) – długoterminowy pobyt, w którym czynnikiem leczącym jest społeczność, jej zasady, odpowiedzialność i informacja zwrotna.\n• W Polsce w lecznictwie odwykowym rozwinął się integracyjny model psychoterapii uzależnień (J. Mellibruda, Z. Sobolewska-Mellibruda).\nPrzykład: w oddziale terapeutycznym zakładu karnego łączy się psychoedukację, grupę CBT zapobiegania nawrotom i elementy społeczności terapeutycznej.\nNa egzaminie pytają o założenia i techniki poszczególnych podejść, zwłaszcza CBT, TSR i modelu Marlatta.",
+      "key": [
+        "CBT – terapia poznawczo-behawioralna, zmiana myśli, emocji i zachowań",
+        "TSR – terapia skoncentrowana na rozwiązaniach; pytanie o cud, skalowanie, wyjątki",
+        "zapobieganie nawrotom – model Marlatta i Gordona oparty na sytuacjach wysokiego ryzyka",
+        "wpadka a nawrót – jednorazowe użycie substancji a powrót do dawnego wzorca",
+        "wspólnota terapeutyczna – leczenie przez życie w społeczności o jasnych zasadach i wzajemnej odpowiedzialności"
+      ]
+    },
+    {
+      "topic": "Zadania, rodzaje i formy terapii w resocjalizacji; diagnoza w terapii",
+      "text": "Terapia w resocjalizacji ma do spełnienia kilka zadań: redukcję objawów i cierpienia, korektę zaburzonych schematów zachowania, rozwój kompetencji społecznych, przygotowanie do samodzielnego życia i zmniejszenie ryzyka powrotu do przestępstwa lub nałogu.\nRodzaje i formy terapii można porządkować według kryteriów:\n• liczby uczestników – indywidualna, grupowa, rodzinna, społeczność terapeutyczna;\n• czasu – krótkoterminowa i długoterminowa;\n• miejsca – ambulatoryjna, dzienna, stacjonarna, w warunkach izolacji (zakład karny, MOW, zakład poprawczy);\n• dobrowolności – dobrowolna, zlecona przez sąd lub w ramach systemu wykonywania kary;\n• środków – werbalna, przez twórczość (arteterapia, biblioterapia, dramaterapia), przez ruch i sport.\nW zakładach karnych terapia uzależnień jest prowadzona w oddziałach terapeutycznych w ramach systemu terapeutycznego – jednego z trzech systemów wykonywania kary obok systemu programowanego oddziaływania i zwykłego (Kodeks karny wykonawczy).\nDiagnoza w terapii (E. Wysocka) jest procesem, a nie jednorazowym badaniem. Obejmuje diagnozę problemów i deficytów, ale też zasobów (diagnoza pozytywna). Klasyczny model diagnozy pedagogicznej S. Ziemskiego wyróżnia diagnozę typologiczną, genetyczną, znaczeniową, fazy i prognostyczną. W terapii uzależnień stosuje się też diagnozę nozologiczną opartą na klasyfikacji ICD-11 (zespół uzależnienia: zaburzona kontrola, rosnący priorytet substancji w życiu, objawy fizjologiczne jak tolerancja i zespół odstawienny). W pracy ze sprawcami stosuje się model RNR (D. Andrews, J. Bonta): ryzyko, potrzeby kryminogenne, responsywność.\nPrzykład: przed skierowaniem skazanego do oddziału terapeutycznego ocenia się wzorzec używania substancji, motywację, ryzyko powrotu do przestępstwa i zasoby (rodzina, praca).\nNa egzaminie pyta się o klasyfikacje form terapii, zadania diagnozy i różnicę diagnozy deficytów i zasobów.",
+      "key": [
+        "system terapeutyczny – system wykonywania kary dla skazanych wymagających specjalistycznych oddziaływań, m.in. uzależnionych",
+        "diagnoza pozytywna – rozpoznanie zasobów i mocnych stron klienta",
+        "diagnoza prognostyczna – przewidywanie dalszego rozwoju sytuacji przy podjęciu lub braku oddziaływań",
+        "model RNR – ryzyko, potrzeby kryminogenne i responsywność jako zasady skutecznej resocjalizacji",
+        "ICD-11 – obowiązująca międzynarodowa klasyfikacja chorób WHO, podstawa diagnozy uzależnienia"
+      ]
+    },
+    {
+      "topic": "Czynniki leczące w psychoterapii; warunki zmiany",
+      "text": "Czynniki leczące to elementy procesu terapii, które powodują zmianę u klienta. Jan Czesław Czabała dzieli je na czynniki niespecyficzne (wspólne dla różnych podejść) i specyficzne (związane z konkretną metodą). Analizuje czynniki tkwiące w pacjencie (motywacja, oczekiwania, zasoby), w terapeucie (osobowość, umiejętności, postawa), w relacji terapeutycznej oraz w zastosowanych technikach. Badania nad skutecznością psychoterapii (m.in. przeglądy M. Lamberta) wskazują, że dużą część zmiany wyjaśniają czynniki pozaterapeutyczne i relacja terapeutyczna, a mniejszą – sama technika. To ważny wniosek dla resocjalizacji: bez przymierza nawet najlepszy program nie zadziała.\nI. Yalom opisał czynniki leczące w terapii grupowej, m.in.:\n• zaszczepianie nadziei;\n• uniwersalność (nie tylko ja mam ten problem);\n• udzielanie informacji;\n• altruizm;\n• korektywne odtworzenie pierwotnej grupy rodzinnej;\n• rozwój umiejętności społecznych;\n• naśladownictwo;\n• uczenie się interpersonalne;\n• spójność grupy;\n• katharsis;\n• czynniki egzystencjalne.\nWarunki zmiany to m.in.: motywacja (w modelu transteoretycznym J. Prochaski i C. DiClemente zależna od etapu – prekontemplacja, kontemplacja, przygotowanie, działanie, utrzymanie), przymierze terapeutyczne, poczucie bezpieczeństwa, odpowiedni czas trwania oddziaływań, wsparcie środowiska po zakończeniu terapii oraz dopasowanie metody do klienta.\nPrzykład: w grupie terapeutycznej dla skazanych uzależnionych uczestnik, słysząc historię innych, przestaje czuć się „wyjątkowo zepsuty” (uniwersalność), a widząc osoby z dłuższą abstynencją, odzyskuje nadzieję.\nNa egzaminie często trzeba wymienić czynniki leczące Yaloma, omówić podział Czabały i etapy zmiany Prochaski i DiClemente.",
+      "key": [
+        "czynniki niespecyficzne – wspólne dla wszystkich terapii, np. relacja, nadzieja, oczekiwania",
+        "przymierze terapeutyczne – współpraca terapeuty i klienta oparta na zgodzie co do celów i zadań oraz więzi",
+        "uniwersalność – czynnik Yaloma: odkrycie, że inni mają podobne problemy",
+        "model transteoretyczny – etapy zmiany: prekontemplacja, kontemplacja, przygotowanie, działanie, utrzymanie",
+        "katharsis – odreagowanie emocji w bezpiecznych warunkach"
+      ]
+    },
+    {
+      "topic": "Analiza programów terapeutycznych",
+      "text": "Analiza programu terapeutycznego polega na ocenie, czy jego założenia, struktura i sposób realizacji odpowiadają potrzebom adresatów i aktualnej wiedzy o skuteczności. W analizie uwzględnia się:\n• podstawy teoretyczne – na jakim modelu zmiany oparty jest program (np. CBT, społeczne uczenie się);\n• diagnozę potrzeb i adresatów – kryteria kwalifikacji i przeciwwskazania;\n• cele ogólne i szczegółowe – czy są mierzalne i realistyczne;\n• strukturę – etapy, liczbę i częstotliwość sesji, formy (indywidualne, grupowe);\n• metody i techniki, kwalifikacje realizatorów, superwizję;\n• ewaluację – wskaźniki, narzędzia, badanie procesu i efektów;\n• zgodność z zasadami RNR – czy intensywność odpowiada poziomowi ryzyka, czy program celuje w potrzeby kryminogenne (np. postawy prokryminalne, uzależnienie, kontakty z grupą przestępczą), czy jest dopasowany do możliwości uczestników.\nPrzykłady programów stosowanych w polskiej resocjalizacji:\n• programy terapii uzależnień w oddziałach terapeutycznych zakładów karnych;\n• programy korekcyjno-edukacyjne dla osób stosujących przemoc domową (często inspirowane modelem z Duluth);\n• Trening Zastępowania Agresji (ART) w MOW i zakładach poprawczych;\n• programy readaptacji społecznej przed zwolnieniem;\n• wspólnoty terapeutyczne dla osób uzależnionych od narkotyków (np. ośrodki Monaru).\nW analizie warto zadać pytania: czy program ma ewaluację potwierdzającą skuteczność, czy jest realizowany zgodnie z protokołem (wierność implementacji), co dzieje się z uczestnikiem po zakończeniu (kontynuacja, postpenitencjarne wsparcie).\nPrzykład: program antyalkoholowy oparty tylko na wykładach o szkodliwości alkoholu jest słaby – brak treningu umiejętności i pracy z motywacją.\nNa egzaminie może pojawić się polecenie przeanalizowania konkretnego programu według podanych kryteriów.",
+      "key": [
+        "potrzeby kryminogenne – dynamiczne czynniki ryzyka przestępczości, na które można oddziaływać",
+        "wierność implementacji – realizacja programu zgodnie z jego założeniami i procedurą",
+        "program korekcyjno-edukacyjny – program dla osób stosujących przemoc, nastawiony na zmianę postaw i zachowań",
+        "ewaluacja wyników – ocena, czy program osiągnął zakładane zmiany",
+        "readaptacja społeczna – przygotowanie do powrotu do życia w społeczeństwie po izolacji"
+      ]
+    },
+    {
+      "topic": "Postawa terapeutyczna w resocjalizacji",
+      "text": "Postawa terapeutyczna to sposób bycia terapeuty lub wychowawcy w relacji z podopiecznym, który sam w sobie ma działanie zmieniające. Carl Rogers opisał trzy warunki konieczne: empatię (rozumienie świata klienta z jego perspektywy), bezwarunkową akceptację (szacunek dla osoby, nie dla czynu) oraz autentyczność (kongruencję – zgodność tego, co terapeuta przeżywa i komunikuje).\nW resocjalizacji postawa ta jest szczególnie wymagająca, ponieważ:\n• pracownik często łączy rolę pomagającą z kontrolną (wychowawca w zakładzie karnym, kurator) – konieczna jest jasność ról i granic;\n• podopieczni mogą manipulować, testować granice, mieć doświadczenie odrzucenia i nieufność wobec instytucji;\n• pojawiają się silne reakcje emocjonalne terapeuty (przeciwprzeniesienie) – złość, lęk, chęć ratowania;\n• rośnie ryzyko wypalenia zawodowego.\nElementy dojrzałej postawy terapeutycznej w resocjalizacji:\n• szacunek dla osoby przy jednoznacznym nieakceptowaniu przemocy i przestępstwa;\n• konsekwencja, przewidywalność, dotrzymywanie umów;\n• wiara w możliwość zmiany i koncentracja na zasobach;\n• rezygnacja z moralizowania, etykietowania i konfrontacji opartej na upokarzaniu;\n• świadomość własnych emocji i korzystanie z superwizji;\n• przestrzeganie zasad etyki, tajemnicy i granic relacji (zakaz relacji podwójnych).\nPrzykład: kurator słyszy od podopiecznego, że „znowu wypił, bo żona go zdenerwowała”. Zamiast oceny i groźby wniosku o odwieszenie kary stosuje odzwierciedlenie i pytania otwarte, a jednocześnie jasno informuje o konsekwencjach prawnych – łączy empatię z jasnością granic.\nNa egzaminie typowe pytania dotyczą warunków Rogersa, dylematu pomoc–kontrola oraz przeciwprzeniesienia i wypalenia.",
+      "key": [
+        "empatia – rozumienie przeżyć klienta z jego perspektywy i komunikowanie tego zrozumienia",
+        "bezwarunkowa akceptacja – szacunek dla osoby niezależnie od jej czynów",
+        "kongruencja – autentyczność, zgodność przeżyć i komunikatów terapeuty",
+        "przeciwprzeniesienie – reakcje emocjonalne terapeuty wobec klienta",
+        "relacja podwójna – łączenie relacji zawodowej z inną (prywatną, finansową), niedopuszczalne etycznie"
+      ]
+    },
+    {
+      "topic": "Dialog motywujący",
+      "text": "Dialog motywujący (DM, ang. motivational interviewing) opracowali William R. Miller i Stephen Rollnick. Definiują go jako oparty na współpracy styl rozmowy, który wzmacnia własną motywację i zaangażowanie człowieka w zmianę. Powstał w terapii uzależnień, dziś stosowany jest w resocjalizacji, kurateli, pomocy społecznej i ochronie zdrowia.\nDuch DM tworzą: partnerstwo, akceptacja (w tym szacunek dla autonomii, dokładna empatia, afirmacja), troska o dobro klienta (współczucie) oraz wydobywanie (ewokacja) – zakłada się, że motywacja i zasoby są w kliencie.\nCztery procesy DM:\n• angażowanie – budowa relacji;\n• ukierunkowanie – ustalenie celu rozmowy;\n• wydobywanie – wywoływanie własnych argumentów klienta za zmianą;\n• planowanie – przygotowanie konkretnych kroków.\nPodstawowe umiejętności (OARS): pytania otwarte, dowartościowanie (afirmacje), odzwierciedlanie (proste i złożone), podsumowania. Terapeuta słucha mowy zmiany (wypowiedzi za zmianą: pragnienie, zdolność, powody, potrzeba, zobowiązanie, gotowość, podejmowanie kroków) i wzmacnia ją, a nie spiera się z mową podtrzymania. W nowszych wydaniach autorzy zrezygnowali z pojęcia „oporu” na rzecz mowy podtrzymania i dysonansu w relacji. Należy unikać „odruchu naprawiania” – przekonywania, straszenia, dawania rad bez zgody.\nTechniki: linijka gotowości (skalowanie ważności i pewności siebie), bilans decyzyjny, odzwierciedlenie dwustronne (ambiwalencja), pytania o przyszłość i wartości.\nPrzykład: klient PCPR mówi: „Piję, bo wszyscy piją, ale córka przestała do mnie przychodzić”. Odzwierciedlenie dwustronne: „Z jednej strony picie wydaje się normalne w twoim otoczeniu, z drugiej – tracisz kontakt z córką, na której ci zależy”.\nNa egzaminie pytają o definicję, ducha DM, OARS, procesy i pojęcie ambiwalencji.",
+      "key": [
+        "ambiwalencja – jednoczesne chcenie i niechcenie zmiany, naturalny etap procesu zmiany",
+        "mowa zmiany – wypowiedzi klienta świadczące o pragnieniu, zdolności, powodach i potrzebie zmiany",
+        "OARS – pytania otwarte, afirmacje, odzwierciedlenia, podsumowania",
+        "odruch naprawiania – skłonność pomagającego do przekonywania i pouczania, która nasila mowę podtrzymania",
+        "linijka gotowości – skalowanie ważności zmiany i wiary we własne możliwości"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "front": "Autorzy dialogu motywującego",
+      "back": "William R. Miller i Stephen Rollnick."
+    },
+    {
+      "front": "Cztery procesy dialogu motywującego",
+      "back": "Angażowanie, ukierunkowanie, wydobywanie, planowanie."
+    },
+    {
+      "front": "Co oznacza skrót OARS?",
+      "back": "Open questions – pytania otwarte, Affirmations – dowartościowanie, Reflections – odzwierciedlenia, Summaries – podsumowania."
+    },
+    {
+      "front": "Duch dialogu motywującego",
+      "back": "Partnerstwo, akceptacja, troska (współczucie) i wydobywanie motywacji z klienta."
+    },
+    {
+      "front": "Mowa zmiany a mowa podtrzymania",
+      "back": "Mowa zmiany to wypowiedzi za zmianą (pragnienie, zdolność, powody, potrzeba, zobowiązanie); mowa podtrzymania – argumenty za utrzymaniem obecnego zachowania."
+    },
+    {
+      "front": "Odruch naprawiania",
+      "back": "Skłonność pomagającego do przekonywania i dawania rad; w DM należy go powstrzymać, bo wywołuje mowę podtrzymania."
+    },
+    {
+      "front": "Etapy zmiany Prochaski i DiClemente",
+      "back": "Prekontemplacja, kontemplacja, przygotowanie, działanie, utrzymanie (z możliwym nawrotem)."
+    },
+    {
+      "front": "Model zapobiegania nawrotom – autorzy",
+      "back": "G. Alan Marlatt i Judith Gordon."
+    },
+    {
+      "front": "Wpadka a nawrót",
+      "back": "Wpadka (lapse) to jednorazowe użycie substancji; nawrót (relapse) to powrót do dawnego wzorca używania."
+    },
+    {
+      "front": "Efekt naruszenia abstynencji",
+      "back": "Reakcja na wpadkę (wina, „i tak wszystko stracone”) zwiększająca ryzyko pełnego nawrotu."
+    },
+    {
+      "front": "Pozornie nieistotne decyzje",
+      "back": "Drobne wybory (np. droga obok baru) prowadzące krok po kroku do sytuacji wysokiego ryzyka."
+    },
+    {
+      "front": "TSR – twórcy i techniki",
+      "back": "Steve de Shazer i Insoo Kim Berg; pytanie o cud, skalowanie, szukanie wyjątków, komplementowanie."
+    },
+    {
+      "front": "Założenie terapii poznawczo-behawioralnej",
+      "back": "Emocje i zachowania zależą od sposobu myślenia; zmiana przekonań i nauka umiejętności zmienia zachowanie."
+    },
+    {
+      "front": "Wspólnota terapeutyczna – twórca idei i polski przykład",
+      "back": "Maxwell Jones; w Polsce Monar, założony przez Marka Kotańskiego w 1978 r."
+    },
+    {
+      "front": "Trzy systemy wykonywania kary pozbawienia wolności",
+      "back": "Programowanego oddziaływania, terapeutyczny i zwykły (Kodeks karny wykonawczy)."
+    },
+    {
+      "front": "Model RNR",
+      "back": "Andrews i Bonta: ryzyko (intensywność do poziomu ryzyka), potrzeby kryminogenne (cele), responsywność (dopasowanie metod do sprawcy)."
+    },
+    {
+      "front": "Warunki zmiany wg C. Rogersa",
+      "back": "Empatia, bezwarunkowa akceptacja i autentyczność (kongruencja) terapeuty."
+    },
+    {
+      "front": "Podział czynników leczących wg J. Cz. Czabały",
+      "back": "Czynniki niespecyficzne (wspólne dla terapii, np. relacja, nadzieja) i specyficzne (związane z metodą)."
+    },
+    {
+      "front": "Czynniki leczące Yaloma – przykłady",
+      "back": "Zaszczepianie nadziei, uniwersalność, altruizm, uczenie się interpersonalne, spójność grupy, katharsis, czynniki egzystencjalne."
+    },
+    {
+      "front": "Diagnoza pozytywna",
+      "back": "Rozpoznanie zasobów, mocnych stron i czynników chroniących klienta, a nie tylko deficytów."
+    },
+    {
+      "front": "Elementy diagnozy wg S. Ziemskiego",
+      "back": "Diagnoza typologiczna, genetyczna, znaczeniowa, fazy i prognostyczna."
+    },
+    {
+      "front": "Kryteria zespołu uzależnienia w ICD-11",
+      "back": "Zaburzona kontrola nad używaniem, rosnący priorytet substancji w życiu oraz cechy fizjologiczne (tolerancja, objawy odstawienne)."
+    },
+    {
+      "front": "ART – co obejmuje?",
+      "back": "Trening Zastępowania Agresji A. Goldsteina: trening umiejętności prospołecznych, kontroli złości i wnioskowania moralnego."
+    },
+    {
+      "front": "Przeciwprzeniesienie",
+      "back": "Reakcje emocjonalne terapeuty wobec klienta (złość, lęk, chęć ratowania), które trzeba rozpoznawać i omawiać w superwizji."
+    },
+    {
+      "front": "Dylemat pomoc–kontrola",
+      "back": "Pracownik resocjalizacji często jednocześnie pomaga i nadzoruje; wymaga to jasności ról, granic i informowania o konsekwencjach."
+    },
+    {
+      "front": "Odzwierciedlenie dwustronne",
+      "back": "Technika DM ukazująca obie strony ambiwalencji: „Z jednej strony…, z drugiej strony…”."
+    },
+    {
+      "front": "Integracyjna psychoterapia uzależnień – autorzy",
+      "back": "Jerzy Mellibruda i Zofia Sobolewska-Mellibruda."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Dialog motywujący opracowali:",
+      "options": [
+        "W. R. Miller i S. Rollnick",
+        "J. Prochaska i C. DiClemente",
+        "G. A. Marlatt i J. Gordon",
+        "S. de Shazer i I. K. Berg"
+      ],
+      "correct": 0,
+      "explain": "Miller i Rollnick są autorami DM; Prochaska i DiClemente – modelu transteoretycznego, Marlatt i Gordon – zapobiegania nawrotom, de Shazer i Berg – TSR."
+    },
+    {
+      "q": "Który zestaw opisuje cztery procesy dialogu motywującego?",
+      "options": [
+        "diagnoza, konfrontacja, terapia, katamneza",
+        "prekontemplacja, kontemplacja, działanie, utrzymanie",
+        "obserwacja, wywiad, test, interpretacja",
+        "angażowanie, ukierunkowanie, wydobywanie, planowanie"
+      ],
+      "correct": 3,
+      "explain": "Procesy DM to angażowanie, ukierunkowanie, wydobywanie i planowanie; etapy zmiany należą do modelu transteoretycznego."
+    },
+    {
+      "q": "Klient mówi: „Chciałbym znowu widywać dzieci”. W dialogu motywującym jest to przykład:",
+      "options": ["mowy podtrzymania", "dysonansu w relacji", "mowy zmiany", "odruchu naprawiania"],
+      "correct": 2,
+      "explain": "Wyrażenie pragnienia związanego ze zmianą należy do mowy zmiany."
+    },
+    {
+      "q": "Którego zachowania pomagający powinien unikać w dialogu motywującym?",
+      "options": ["zadawania pytań otwartych", "odzwierciedlania", "podsumowywania", "przekonywania i straszenia konsekwencjami"],
+      "correct": 3,
+      "explain": "Odruch naprawiania wywołuje mowę podtrzymania i obronę klienta."
+    },
+    {
+      "q": "Jednorazowe użycie substancji po okresie abstynencji w modelu Marlatta to:",
+      "options": ["wpadka", "nawrót", "efekt naruszenia abstynencji", "głód substancji"],
+      "correct": 0,
+      "explain": "Wpadka (lapse) to pojedynczy epizod; nawrót oznacza powrót do dawnego wzorca."
+    },
+    {
+      "q": "Pytanie o cud i skalowanie to techniki charakterystyczne dla:",
+      "options": [
+        "terapii psychodynamicznej",
+        "wspólnoty terapeutycznej",
+        "psychoedukacji",
+        "terapii skoncentrowanej na rozwiązaniach"
+      ],
+      "correct": 3,
+      "explain": "TSR koncentruje się na rozwiązaniach, wyjątkach i zasobach, wykorzystując pytanie o cud i skalowanie."
+    },
+    {
+      "q": "Twórcą idei wspólnoty terapeutycznej był:",
+      "options": ["Carl Rogers", "Aaron Beck", "Maxwell Jones", "Irvin Yalom"],
+      "correct": 2,
+      "explain": "Maxwell Jones rozwinął koncepcję społeczności terapeutycznej; w Polsce ideę rozwijał m.in. Monar."
+    },
+    {
+      "q": "Monar został założony przez:",
+      "options": ["Jerzego Mellibrudę", "Kazimierza Pospiszyla", "Marka Kotańskiego", "Czesława Czapówa"],
+      "correct": 2,
+      "explain": "Marek Kotański założył Monar w 1978 r."
+    },
+    {
+      "q": "Systemy wykonywania kary pozbawienia wolności według Kodeksu karnego wykonawczego to:",
+      "options": [
+        "zamknięty, półotwarty, otwarty",
+        "progresywny, regresywny, mieszany",
+        "indywidualny, grupowy, środowiskowy",
+        "programowanego oddziaływania, terapeutyczny, zwykły"
+      ],
+      "correct": 3,
+      "explain": "Rodzaje zakładów karnych (zamknięty, półotwarty, otwarty) to inna kategoria niż systemy wykonywania kary."
+    },
+    {
+      "q": "Według C. Rogersa warunkami zmiany w terapii są:",
+      "options": [
+        "empatia, bezwarunkowa akceptacja, autentyczność",
+        "interpretacja, wgląd, przepracowanie",
+        "nagroda, kara, wygaszanie",
+        "diagnoza, plan, ewaluacja"
+      ],
+      "correct": 0,
+      "explain": "Rogers opisał empatię, akceptację i kongruencję jako warunki konieczne zmiany."
+    },
+    {
+      "q": "Czynnik leczący „uniwersalność” w ujęciu Yaloma oznacza:",
+      "options": [
+        "dostęp terapii dla wszystkich",
+        "odkrycie, że inni mają podobne problemy",
+        "stosowanie uniwersalnych technik",
+        "pomaganie innym członkom grupy"
+      ],
+      "correct": 1,
+      "explain": "Uniwersalność zmniejsza poczucie wyjątkowości i izolacji; pomaganie innym to altruizm."
+    },
+    {
+      "q": "J. Cz. Czabała dzieli czynniki leczące na:",
+      "options": ["świadome i nieświadome", "specyficzne i niespecyficzne", "wewnętrzne i zewnętrzne", "biologiczne i społeczne"],
+      "correct": 1,
+      "explain": "Czynniki niespecyficzne są wspólne dla wielu podejść, specyficzne zależą od metody."
+    },
+    {
+      "q": "Osoba, która nie dostrzega problemu i nie zamierza się zmieniać, znajduje się według modelu transteoretycznego w etapie:",
+      "options": ["kontemplacji", "przygotowania", "prekontemplacji", "utrzymania"],
+      "correct": 2,
+      "explain": "Prekontemplacja to etap braku świadomości problemu i zamiaru zmiany."
+    },
+    {
+      "q": "Zasada „potrzeb” w modelu RNR oznacza, że oddziaływania powinny być skierowane na:",
+      "options": [
+        "potrzeby materialne rodziny",
+        "dynamiczne czynniki kryminogenne",
+        "potrzeby instytucji",
+        "zaspokojenie wszystkich potrzeb psychicznych"
+      ],
+      "correct": 1,
+      "explain": "Skuteczne programy celują w zmienialne czynniki związane z przestępczością, np. postawy prokryminalne czy uzależnienie."
+    },
+    {
+      "q": "Diagnoza pozytywna w resocjalizacji koncentruje się na:",
+      "options": [
+        "zasobach i mocnych stronach podopiecznego",
+        "zaburzeniach osobowości",
+        "wyłącznie na historii przestępczej",
+        "ocenie pracy wychowawcy"
+      ],
+      "correct": 0,
+      "explain": "Diagnoza pozytywna uzupełnia diagnozę deficytów o rozpoznanie zasobów, na których buduje się zmianę."
+    },
+    {
+      "q": "Trening Zastępowania Agresji (ART) obejmuje:",
+      "options": [
+        "trening umiejętności prospołecznych, kontroli złości i wnioskowania moralnego",
+        "farmakoterapię i psychoedukację",
+        "terapię rodzin i mediacje",
+        "wyłącznie zajęcia sportowe"
+      ],
+      "correct": 0,
+      "explain": "ART A. Goldsteina składa się z trzech komponentów: behawioralnego, emocjonalnego i moralnego."
+    },
+    {
+      "q": "Przeciwprzeniesienie to:",
+      "options": [
+        "przenoszenie podopiecznego do innej placówki",
+        "reakcje emocjonalne terapeuty wobec klienta",
+        "przekazanie dokumentacji sądowi",
+        "odmowa współpracy przez klienta"
+      ],
+      "correct": 1,
+      "explain": "Przeciwprzeniesienie dotyczy uczuć terapeuty; należy je rozpoznawać i omawiać w superwizji."
+    },
+    {
+      "q": "Interwencja kryzysowa to forma pomocy, która:",
+      "options": [
+        "trwa zwykle kilka lat",
+        "jest krótkoterminowa i skupia się na ostrym kryzysie",
+        "polega wyłącznie na przekazywaniu wiedzy",
+        "jest zarezerwowana dla osób uzależnionych"
+      ],
+      "correct": 1,
+      "explain": "Interwencja kryzysowa ma przywrócić równowagę w sytuacji ostrego kryzysu i jest ograniczona w czasie."
+    },
+    {
+      "q": "Który element ICD-11 NIE należy do głównych cech zespołu uzależnienia?",
+      "options": [
+        "zaburzona kontrola nad używaniem",
+        "rosnący priorytet substancji w życiu",
+        "tolerancja i objawy odstawienne",
+        "wiek inicjacji poniżej 15 lat"
+      ],
+      "correct": 3,
+      "explain": "Wiek inicjacji jest czynnikiem ryzyka, a nie kryterium diagnostycznym uzależnienia."
+    },
+    {
+      "q": "Wierność implementacji programu oznacza:",
+      "options": [
+        "lojalność terapeuty wobec pracodawcy",
+        "realizację programu zgodnie z jego protokołem i założeniami",
+        "dobrowolny udział uczestników",
+        "zgodność programu z oczekiwaniami rodziny"
+      ],
+      "correct": 1,
+      "explain": "Program realizowany niezgodnie z założeniami może tracić skuteczność potwierdzoną w badaniach."
+    },
+    {
+      "q": "Kurator słyszy od podopiecznego o powrocie do picia. Która reakcja jest zgodna z postawą terapeutyczną?",
+      "options": [
+        "moralizowanie i natychmiastowa groźba sankcji",
+        "pominięcie tematu, by nie psuć relacji",
+        "odzwierciedlenie i pytania otwarte połączone z jasną informacją o konsekwencjach",
+        "przekazanie sprawy innemu kuratorowi"
+      ],
+      "correct": 2,
+      "explain": "Postawa terapeutyczna łączy empatię z jasnością ról i granic."
+    },
+    {
+      "q": "Odzwierciedlenie dwustronne w DM służy przede wszystkim:",
+      "options": [
+        "ukazaniu obu stron ambiwalencji klienta",
+        "konfrontacji klienta z kłamstwem",
+        "zebraniu danych do wywiadu środowiskowego",
+        "zakończeniu sesji"
+      ],
+      "correct": 0,
+      "explain": "Pokazuje klientowi jednocześnie argumenty za i przeciw zmianie, co sprzyja rozwiązywaniu ambiwalencji."
+    }
+  ],
+  "open": [
+    {
+      "q": "Scharakteryzuj dialog motywujący: definicja, duch, procesy i podstawowe umiejętności.",
+      "answer": "Dialog motywujący (Miller, Rollnick) to oparty na współpracy styl rozmowy, który wzmacnia własną motywację człowieka do zmiany. Jego duch tworzą partnerstwo, akceptacja (szacunek dla autonomii, empatia, afirmacja), troska o dobro klienta i wydobywanie motywacji, która jest już w kliencie. Rozmowa przebiega w czterech procesach: angażowanie, ukierunkowanie, wydobywanie i planowanie. Podstawowe umiejętności to OARS: pytania otwarte, dowartościowanie, odzwierciedlenia i podsumowania. Pomagający wychwytuje i wzmacnia mowę zmiany, nie walczy z mową podtrzymania i powstrzymuje odruch naprawiania. Przydatne techniki to linijka gotowości, bilans decyzyjny i odzwierciedlenie dwustronne pracujące z ambiwalencją."
+    },
+    {
+      "q": "Omów model zapobiegania nawrotom G. A. Marlatta i jego zastosowanie w pracy z osobą uzależnioną.",
+      "answer": "Model Marlatta i Gordona traktuje nawrót jako proces, a nie nagłe zdarzenie. Kluczowe pojęcia to sytuacje wysokiego ryzyka (negatywne emocje, konflikty, presja społeczna, wyzwalacze), umiejętności radzenia sobie, poczucie własnej skuteczności, pozornie nieistotne decyzje oraz efekt naruszenia abstynencji – reakcja na wpadkę typu „i tak już wszystko stracone”. Rozróżnia się wpadkę (jednorazowe użycie) i nawrót (powrót do dawnego wzorca). W praktyce terapeuta pomaga klientowi zidentyfikować własne sytuacje ryzyka, przećwiczyć strategie radzenia sobie, przygotować plan postępowania na wypadek wpadki i budować zrównoważony styl życia. W pracy z osobą wychodzącą z zakładu karnego obejmuje to plan na pierwsze dni po zwolnieniu."
+    },
+    {
+      "q": "Przedstaw czynniki leczące w psychoterapii według J. Cz. Czabały i I. Yaloma.",
+      "answer": "Czabała dzieli czynniki leczące na niespecyficzne, wspólne dla wielu podejść (relacja terapeutyczna, nadzieja, oczekiwania, możliwość wyrażenia emocji), oraz specyficzne, wynikające z konkretnej metody. Analizuje czynniki związane z pacjentem, terapeutą, relacją i techniką, podkreślając znaczenie przymierza. Yalom opisał czynniki leczące w terapii grupowej: zaszczepianie nadziei, uniwersalność, udzielanie informacji, altruizm, korektywne odtworzenie grupy rodzinnej, rozwój umiejętności społecznych, naśladownictwo, uczenie się interpersonalne, spójność grupy, katharsis i czynniki egzystencjalne. W resocjalizacji oznacza to, że grupa osób z podobnym doświadczeniem i dobra relacja z terapeutą są równie ważne jak sama technika."
+    },
+    {
+      "q": "Na czym polega specyfika postawy terapeutycznej w resocjalizacji?",
+      "answer": "Podstawą są warunki Rogersa: empatia, bezwarunkowa akceptacja osoby i autentyczność. W resocjalizacji pracownik często łączy pomoc z kontrolą (kurator, wychowawca penitencjarny), dlatego potrzebna jest jasność ról i granic oraz rzetelne informowanie o konsekwencjach. Podopieczni bywają nieufni, testują granice i manipulują, a terapeuta doświadcza silnych emocji (przeciwprzeniesienie). Dojrzała postawa oznacza szacunek dla osoby przy jednoznacznym nieakceptowaniu przemocy i przestępstwa, konsekwencję, wiarę w możliwość zmiany i koncentrację na zasobach, rezygnację z moralizowania i upokarzającej konfrontacji, korzystanie z superwizji oraz przestrzeganie zasad etyki, tajemnicy i zakazu relacji podwójnych."
+    },
+    {
+      "q": "Jakie są rodzaje i formy terapii w resocjalizacji oraz jak przebiega terapia uzależnień w zakładzie karnym?",
+      "answer": "Terapię można dzielić według liczby uczestników (indywidualna, grupowa, rodzinna, społeczność terapeutyczna), czasu (krótko- i długoterminowa), miejsca (ambulatoryjna, dzienna, stacjonarna, w izolacji), dobrowolności (dobrowolna lub zlecona) oraz środków (werbalna, przez twórczość, ruch). W zakładach karnych terapia uzależnień odbywa się w oddziałach terapeutycznych w ramach systemu terapeutycznego, przewidzianego w Kodeksie karnym wykonawczym obok systemu programowanego oddziaływania i zwykłego. Obejmuje diagnozę, psychoedukację, terapię grupową i indywidualną, często elementy zapobiegania nawrotom i społeczności terapeutycznej. Ważne jest przygotowanie do kontynuacji leczenia po zwolnieniu i współpraca z placówkami w środowisku."
+    },
+    {
+      "q": "Według jakich kryteriów analizuje się program terapeutyczny w resocjalizacji?",
+      "answer": "Analizuje się podstawy teoretyczne programu i model zmiany, diagnozę potrzeb oraz adresatów z kryteriami kwalifikacji, cele ogólne i szczegółowe (czy są mierzalne), strukturę (etapy, liczba i częstotliwość sesji, formy pracy), metody i techniki, kwalifikacje realizatorów i superwizję oraz plan ewaluacji procesu i wyników. Ważna jest zgodność z modelem RNR: intensywność dostosowana do poziomu ryzyka, praca na potrzebach kryminogennych i dopasowanie metod do możliwości uczestników. Sprawdza się też wierność implementacji i ciągłość oddziaływań po zakończeniu programu, np. w ramach pomocy postpenitencjarnej. Program oparty tylko na wykładach i straszeniu ocenia się jako słaby."
+    },
+    {
+      "q": "Porównaj terapię poznawczo-behawioralną i terapię skoncentrowaną na rozwiązaniach w pracy z podopiecznym resocjalizacji.",
+      "answer": "CBT zakłada, że emocje i zachowania wynikają ze sposobu myślenia. Terapeuta pomaga rozpoznać zniekształcenia poznawcze (np. usprawiedliwienia przestępstwa, minimalizowanie picia), modyfikuje przekonania i uczy umiejętności, np. kontroli złości czy odmawiania. Programy CBT należą do najlepiej przebadanych w pracy ze sprawcami i osobami uzależnionymi. TSR (de Shazer, Berg) nie analizuje szczegółowo problemu, lecz szuka wyjątków, zasobów i małych kroków; stosuje pytanie o cud, skalowanie i komplementowanie. Jest krótkoterminowa i dobrze sprawdza się przy niskiej motywacji, bo wzmacnia poczucie kompetencji. Oba podejścia są ustrukturyzowane i zorientowane na cel, różni je koncentracja na problemie albo na rozwiązaniu."
+    }
+  ]
+}

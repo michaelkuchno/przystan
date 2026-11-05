@@ -48,7 +48,7 @@ export default function ScreeningForm() {
 
   // official validated wording in the UI language (PL / DE), otherwise the English original
   const pl = officialText(lang, inst.id);
-  const showTodo = lang !== 'en' && !pl;
+  const showTodo = lang !== 'en' && !pl?.validated;
   const answered = answers.filter((a) => a !== undefined).length;
 
   const submit = async () => {
@@ -76,7 +76,7 @@ export default function ScreeningForm() {
       </Notice>
       {showTodo && (
         <Notice tone="accent" className="mb-4" icon={<Languages aria-hidden />}>
-          <strong>TODO:</strong> {t('todoPlText')}
+          {t('todoPlText', { source: pl?.source ?? '' })}
         </Notice>
       )}
       <Card className="mb-4 grid gap-4 sm:grid-cols-2">

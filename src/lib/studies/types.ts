@@ -21,6 +21,8 @@ export interface ProgramCourse {
   literature: string[];
   /** Syllabus of the first-cycle programme used as the closest equivalent. */
   proxy?: boolean;
+  /** Topics compiled by Przystań (WSHE published no syllabus topics for this course). */
+  topicsBy?: 'przystan';
   source: 'I' | 'II' | 'own';
 }
 

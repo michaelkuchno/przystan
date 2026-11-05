@@ -4,6 +4,34 @@ import { usePrefs } from '@/lib/prefs';
 import { loadProgram, mergeCourses, type CourseView } from '@/lib/studies/program';
 import type { Program } from '@/lib/studies/types';
 import type { StudyContext } from '@/lib/ai/studyPrompts';
+import { loadPack, loadPacks, type StudyPack } from '@/lib/studies/packs';
+
+/** Built-in pack of one course (undefined while loading, null = none). */
+export function usePack(courseId: string | undefined): StudyPack | null | undefined {
+  const [pack, setPack] = useState<{ id: string; pack: StudyPack | null } | null>(null);
+  useEffect(() => {
+    let alive = true;
+    if (courseId) void loadPack(courseId).then((p) => alive && setPack({ id: courseId, pack: p }));
+    return () => {
+      alive = false;
+    };
+  }, [courseId]);
+  return pack && pack.id === courseId ? pack.pack : undefined;
+}
+
+/** Built-in packs of the given courses (for search and questions). */
+export function usePacks(courseIds: string[]): Map<string, StudyPack> {
+  const key = courseIds.join(',');
+  const [packs, setPacks] = useState<Map<string, StudyPack>>(new Map());
+  useEffect(() => {
+    let alive = true;
+    void loadPacks(key ? key.split(',') : []).then((p) => alive && setPacks(p));
+    return () => {
+      alive = false;
+    };
+  }, [key]);
+  return packs;
+}
 
 /** Programme (lazy JSON) + the student's records, merged. */
 export function useStudies() {

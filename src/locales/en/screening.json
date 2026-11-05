@@ -10,9 +10,12 @@
   },
   "items_one": "{{count}} question",
   "items_other": "{{count}} questions",
-  "population": { "adult": "Adults", "adolescentAdult": "Adolescents and adults" },
-  "todoPl": "TODO: PL version",
-  "todoPlText": "No official validated Polish version in the app yet.",
+  "population": {
+    "adult": "Adults",
+    "adolescentAdult": "Adolescents and adults"
+  },
+  "todoPl": "Working translation",
+  "todoPlText": "Wording: {{source}}. Scoring and cut-offs as in the original.",
   "excludedTitle": "Tools left out",
   "excludedText": "{{list}} were left out because their licence status does not clearly allow free use in an app (details in docs/DECISIONS.md). They can be added once the authors give permission.",
   "notFound": "Tool not found",

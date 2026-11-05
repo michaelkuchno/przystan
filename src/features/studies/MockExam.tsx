@@ -16,6 +16,7 @@ import { shuffle } from '@/features/learn/decks';
 import { useAiTask } from '@/features/ai/useAiTask';
 import { AiOutput } from '@/features/ai/AiOutput';
 import { materialsText } from './CourseCards';
+import { examFromPack, type StudyPack } from '@/lib/studies/packs';
 
 /** Without AI: single-choice questions from the course flash cards (correct back + 3 others). */
 export function examFromCards(cards: { front: string; back: string }[], n: number, rnd = Math.random): ExamQuestion[] {
@@ -37,7 +38,7 @@ export function examFromCards(cards: { front: string; back: string }[], n: numbe
 export const scoreOf = (points: number[]) =>
   points.length ? Math.round((points.reduce((a, b) => a + b, 0) / points.length) * 100) : 0;
 
-export function MockExam({ c, context }: { c: CourseView; context: StudyContext }) {
+export function MockExam({ c, context, pack }: { c: CourseView; context: StudyContext; pack: StudyPack | null }) {
   const { t } = useTranslation(['studies', 'ai']);
   const { lang, ai } = usePrefs();
   const attempts = useStore(() => all('studyAttempt').filter((a) => a.courseId === c.id)).sort((a, b) =>
@@ -215,8 +216,17 @@ export function MockExam({ c, context }: { c: CourseView; context: StudyContext 
           </Select>
         </label>
         <div className="flex flex-wrap gap-2">
+          {pack && pack.questions.length > 0 && (
+            <Button
+              icon={<ClipboardCheck className="size-4" aria-hidden />}
+              onClick={() => start(examFromPack(pack, Number(size)))}
+            >
+              {t('exam.fromBank')}
+            </Button>
+          )}
           {ai.mode !== 'off' && (
             <Button
+              variant={pack ? 'secondary' : 'primary'}
               icon={<Sparkles className="size-4" aria-hidden />}
               disabled={task.state.status === 'working' || (!c.allTopics.length && !materialsText(c.id, 10))}
               onClick={generate}
@@ -233,8 +243,11 @@ export function MockExam({ c, context }: { c: CourseView; context: StudyContext 
             {t('exam.fromCards')}
           </Button>
         </div>
+        {pack && pack.questions.length > 0 && (
+          <p className="text-xs text-muted">{t('exam.bank', { single: pack.questions.length, open: pack.open.length })}</p>
+        )}
         {cards.length < 4 && <p className="text-xs text-muted">{t('exam.needCards')}</p>}
-        {ai.mode === 'off' && <Notice>{t('exam.noAi')}</Notice>}
+        {ai.mode === 'off' && !pack && <Notice>{t('exam.noAi')}</Notice>}
       </Card>
       <AiOutput state={task.state} onRetry={generate} />
       <div>

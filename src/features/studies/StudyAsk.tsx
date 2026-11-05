@@ -14,7 +14,7 @@ import { studyDocs, type StudyDoc } from '@/lib/studies/program';
 import { keywordSearch, semanticSearch, updateIndex, docText } from '@/features/ai/semantic';
 import { useAiTask } from '@/features/ai/useAiTask';
 import { AiOutput } from '@/features/ai/AiOutput';
-import { useStudies } from './useStudies';
+import { usePacks, useStudies } from './useStudies';
 
 interface Hit {
   doc: StudyDoc;
@@ -47,7 +47,8 @@ export function StudyAsk({ courseId, initialAsk = true }: { courseId?: string; i
   const [embedder, setEmbedder] = useState<Embedder | null>(null);
   const [vectors, setVectors] = useState<Map<string, Float32Array> | null>(null);
   const task = useAiTask<Answer>();
-  const allDocs = useMemo(() => studyDocs(courses, materials), [courses, materials]);
+  const packs = usePacks(courses.filter((c) => !c.hidden && !c.custom).map((c) => c.id));
+  const allDocs = useMemo(() => studyDocs(courses, materials, packs), [courses, materials, packs]);
   const docs = useMemo(
     () => allDocs.filter((d) => (courseId ? d.courseId === courseId : semester === 'all' || d.semester === Number(semester))),
     [allDocs, courseId, semester],
@@ -77,20 +78,22 @@ export function StudyAsk({ courseId, initialAsk = true }: { courseId?: string; i
     let found: Hit[];
     if (embedder && vectors) {
       const [qv] = await embedder.embed([question], 'query');
-      found = semanticSearch(qv!, docs, vectors, 30) as Hit[];
-    } else found = keywordSearch(question, docs, 30) as Hit[];
-    // the student's own class materials are the most relevant source – ranked higher
-    found = found
-      .map((h) => ({ ...h, score: h.doc.kind === 'material' ? h.score * 1.5 : h.score }))
-      .sort((a, b) => b.score - a.score)
-      .slice(0, 10);
+      found = semanticSearch(qv!, docs, vectors, 80) as Hit[];
+    } else found = keywordSearch(question, docs, 80) as Hit[];
+    // the student's own class materials are what the lecturer actually taught – up to 3 matching
+    // ones always come first, then the best of the syllabus and the built-in notes
+    const own = found.filter((h) => h.doc.kind === 'material').slice(0, 3);
+    found = [...own, ...found.filter((h) => !own.includes(h))].slice(0, 10);
     setHits(found);
     task.reset();
     if (!withAi || !found.length) return;
     const top = found.slice(0, 6);
     setSources(top);
     const block = top
-      .map((h, i) => `[${i + 1}] (${h.doc.kind === 'material' ? 'materiał z zajęć' : 'sylabus'}) ${docText(h.doc)}`)
+      .map(
+        (h, i) =>
+          `[${i + 1}] (${h.doc.kind === 'material' ? 'materiał z zajęć' : h.doc.kind === 'note' ? 'opracowanie tematu z sylabusa' : 'sylabus'}) ${docText(h.doc)}`,
+      )
       .join('\n\n');
     await task.run({
       sensitivity: 'study',
@@ -190,7 +193,9 @@ export function StudyAsk({ courseId, initialAsk = true }: { courseId?: string; i
                 <p className="mt-1 text-xs text-muted">
                   {courseName(h.doc.courseId)} · {t('semester', { n: h.doc.semester })}
                 </p>
-                {h.doc.kind === 'material' && <p className="mt-1 line-clamp-2 text-sm text-muted">{h.doc.body}</p>}
+                {(h.doc.kind === 'material' || h.doc.kind === 'note') && (
+                  <p className="mt-1 line-clamp-4 text-sm leading-relaxed whitespace-pre-line text-muted">{h.doc.body}</p>
+                )}
               </Link>
             </li>
           ))}

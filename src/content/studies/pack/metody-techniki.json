@@ -1,0 +1,375 @@
+{
+  "courseId": "metody-techniki",
+  "notes": [
+    {
+      "topic": "Język naukowy: terminy, definiowanie pojęć, formy pisarstwa naukowego",
+      "text": "Język naukowy powinien być precyzyjny, jednoznaczny, rzeczowy, bezosobowy lub umiarkowanie osobowy („w badaniu przyjęto…”), wolny od wartościowania i publicystyki. Posługuje się terminami – wyrazami o ściśle ustalonym znaczeniu w danej dyscyplinie (np. „niedostosowanie społeczne”, „uzależnienie”, „resocjalizacja”).\nDefiniowanie pojęć:\n• definicja klasyczna składa się z definiendum (to, co definiujemy), łącznika i definiensu (to, przez co definiujemy) – rodzaj najbliższy i różnica gatunkowa, np. „Kurator sądowy to funkcjonariusz publiczny (rodzaj) wykonujący orzeczenia sądu o charakterze wychowawczym, resocjalizacyjnym… (różnica)”,\n• definicja nominalna (o znaczeniu słowa) i realna (o istocie obiektu),\n• definicja sprawozdawcza (oddaje przyjęte znaczenie), projektująca (wprowadza nowe znaczenie), regulująca (precyzuje znaczenie nieostre),\n• definicja operacyjna – określa sposób pomiaru pojęcia.\nBłędy definiowania: błędne koło (idem per idem), nieznane przez nieznane (ignotum per ignotum), definicja za szeroka lub za wąska, definicja przez negację tam, gdzie niepotrzebna, metafora zamiast definicji.\nW pracy naukowej warto przytoczyć kilka definicji autorów, porównać je i wskazać definicję przyjętą na potrzeby pracy.\nFormy pisarstwa naukowego: artykuł naukowy (często w strukturze IMRaD: wstęp, metoda, wyniki, dyskusja), monografia, rozdział w pracy zbiorowej, recenzja, sprawozdanie z konferencji, referat, raport z badań, abstrakt, praca dyplomowa (licencjacka, magisterska), esej naukowy.\nZasady rzetelności: przypisy lub odsyłacze w tekście (np. styl APA: nazwisko, rok, strona), bibliografia, odróżnianie cytatu od parafrazy, unikanie plagiatu; prace dyplomowe sprawdza się w Jednolitym Systemie Antyplagiatowym.\nNa egzaminie: budowa definicji klasycznej, rodzaje definicji, błędy definiowania, formy pisarstwa naukowego.",
+      "key": [
+        "Termin – wyraz o ściśle ustalonym znaczeniu w dyscyplinie",
+        "Definiendum i definiens – człon definiowany i człon definiujący",
+        "Definicja projektująca – nadaje słowu nowe lub zmodyfikowane znaczenie",
+        "Idem per idem – błąd błędnego koła w definicji",
+        "IMRaD – struktura artykułu: wstęp, metoda, wyniki, dyskusja"
+      ]
+    },
+    {
+      "topic": "Przedmiot i problem badawczy, źródła i rodzaje problemów",
+      "text": "Przedmiot badań to fragment rzeczywistości, który badacz poddaje analizie: zjawisko, proces, cecha, zależność (np. sposoby radzenia sobie ze stresem u wychowanków MOW). Należy odróżnić przedmiot od podmiotu badań (osób, które biorą udział w badaniu) i od terenu badań.\nProblem badawczy to pytanie, na które badanie ma udzielić odpowiedzi; ujawnia lukę w wiedzy. Formułuje się problem główny i problemy szczegółowe.\nŹródła problemów badawczych:\n• praktyka zawodowa i jej trudności (np. częste nawroty po zakończeniu terapii w ośrodku),\n• literatura przedmiotu i luki w dotychczasowych badaniach,\n• teorie naukowe wymagające sprawdzenia lub rozwinięcia,\n• zmiany społeczne i prawne (np. nowe regulacje dotyczące nieletnich, nowe formy uzależnień behawioralnych),\n• zamówienie społeczne – potrzeby instytucji, samorządów (diagnozy do gminnych programów),\n• własne doświadczenia i zainteresowania badacza.\nRodzaje problemów:\n• teoretyczne (poznawcze) i praktyczne (wdrożeniowe),\n• opisowe (jakie jest zjawisko?), porównawcze (czym różnią się grupy?), zależnościowe (czy i jak zmienne są powiązane?), wyjaśniające (dlaczego?),\n• według formy – pytania rozstrzygnięcia (tak/nie) i dopełnienia (otwarte),\n• w badaniach jakościowych – szerokie pytania o znaczenia i doświadczenia („Jak kobiety współuzależnione opisują proces wychodzenia z relacji?”).\nKryteria dobrego problemu: istotność teoretyczna lub praktyczna, rozstrzygalność empiryczna, jasność, wykonalność, zgodność z etyką.\nTypowe błędy studentów: problem zbyt szeroki, pytania nierozstrzygalne empirycznie lub wartościujące („Czy kary są słuszne?”), problemy szczegółowe niezwiązane z głównym, mylenie problemu z celem.\nNa egzaminie: przedmiot a problem, źródła problemów, rodzaje problemów z przykładami.",
+      "key": [
+        "Przedmiot badań – zjawisko lub proces będący celem poznania",
+        "Podmiot badań – osoby uczestniczące w badaniu jako źródło informacji",
+        "Problem praktyczny – dotyczy rozwiązania konkretnej trudności w praktyce",
+        "Problem zależnościowy – pyta o związek między zmiennymi",
+        "Luka badawcza – obszar niewyjaśniony w dotychczasowych badaniach"
+      ]
+    },
+    {
+      "topic": "Strategie badawcze, dobór próby i terenu badań",
+      "text": "Strategia badawcza to ogólny plan dochodzenia do wiedzy. Wyróżnia się:\n• strategię ilościową (pomiar, statystyka, uogólnianie), jakościową (rozumienie, interpretacja) i mieszaną,\n• badania przekrojowe (jednorazowy pomiar różnych grup) i podłużne (wielokrotny pomiar tych samych osób w czasie, np. losy absolwentów terapii),\n• badania eksploracyjne (rozpoznanie), diagnostyczne (opis stanu), weryfikacyjne (sprawdzanie hipotez), ewaluacyjne (ocena programów), badanie w działaniu.\nDobór próby:\n• losowy (probabilistyczny): prosty, systematyczny (co k-ta osoba z listy), warstwowy (losowanie w warstwach, np. płeć, typ placówki), grupowy (losowanie całych grup, np. klas) – pozwala uogólniać wyniki i szacować błąd,\n• nielosowy: celowy (według kryteriów), kwotowy (zachowanie proporcji cech), dostępnych przypadków (wygodny), kuli śnieżnej – stosowany, gdy nie istnieje operat losowania lub populacja jest ukryta (osoby używające narkotyków, bezdomni).\nW badaniach jakościowych stosuje się dobór celowy, teoretyczny (w teorii ugruntowanej) i kieruje się kryterium nasycenia (saturacji) – zbiera się dane, dopóki nie pojawiają się nowe kategorie.\nWielkość próby zależy od celu, zróżnicowania populacji i planowanych analiz; w pracy magisterskiej ważniejsze od liczebności jest uczciwe opisanie sposobu doboru i ograniczeń uogólniania.\nTeren badań to instytucja lub środowisko, w którym zbiera się dane. Wybór uzasadnia się celem, dostępem i specyfiką (np. poradnia terapii uzależnień, PCPR, dom pomocy społecznej, zakład karny). W pracy charakteryzuje się teren (zadania, struktura, podopieczni) z zachowaniem poufności, a osoby badane opisuje się przez cechy (wiek, płeć, staż abstynencji itd.).\nNa egzaminie: rodzaje doboru próby z przykładami, badania przekrojowe i podłużne, saturacja.",
+      "key": [
+        "Dobór warstwowy – losowanie osobno w wyodrębnionych podgrupach populacji",
+        "Dobór kwotowy – nielosowy dobór z zachowaniem proporcji wybranych cech",
+        "Badanie podłużne – wielokrotny pomiar tych samych osób w czasie",
+        "Saturacja – moment, w którym nowe dane nie wnoszą nowych kategorii",
+        "Operat losowania – wykaz jednostek populacji, z którego losuje się próbę"
+      ]
+    },
+    {
+      "topic": "Rola hipotezy; badanie bez hipotezy",
+      "text": "Hipoteza pełni w badaniach kilka funkcji: ukierunkowuje zbieranie danych (wskazuje, co mierzyć), łączy badanie z teorią, umożliwia sprawdzenie przewidywań i organizuje analizę wyników. Jest odpowiedzią na problem rozstrzygnięcia, a jej weryfikacja prowadzi do przyjęcia lub odrzucenia przypuszczenia.\nSkąd biorą się hipotezy: z teorii (dedukcyjnie), z wyników wcześniejszych badań, z obserwacji praktyki, z analogii. Hipoteza powinna być sprawdzalna, jednoznaczna, adekwatna do problemu i uzasadniona.\nWeryfikacja w badaniach ilościowych odbywa się przez testy statystyczne: badacz przyjmuje hipotezę zerową (brak związku lub różnicy) i sprawdza, czy uzyskane dane pozwalają ją odrzucić na przyjętym poziomie istotności (zwykle p < 0,05). Wynik nieistotny nie dowodzi braku związku, a jedynie nie daje podstaw do odrzucenia H0. Istotność statystyczną trzeba odróżnić od wielkości efektu i znaczenia praktycznego.\nBadanie bez hipotezy jest uprawnione, gdy:\n• badanie ma charakter eksploracyjny (nowe zjawisko, np. nowe substancje psychoaktywne, uzależnienia od zakupów online),\n• problem ma charakter czysto opisowy (pytania typu „jaki jest poziom…?”, „jakie są…?”),\n• stosujemy strategię jakościową – hipotezy mogą być wynikiem, a nie punktem wyjścia (teoria ugruntowana); zamiast hipotez badacz formułuje pytania badawcze i założenia wstępne (tzw. uczulające pojęcia).\nW polskiej metodologii pedagogiki trwa spór: część autorów (np. T. Pilch) wymagała hipotez w każdej pracy empirycznej, inni (np. K. Rubacha, S. Palka, autorzy jakościowi) wskazują, że stawianie hipotez do pytań opisowych jest zbędne lub sztuczne.\nNa egzaminie: funkcje hipotezy, przykład weryfikacji H0, kiedy badanie bez hipotezy jest dopuszczalne.",
+      "key": [
+        "Funkcja ukierunkowująca hipotezy – wskazuje, jakie dane zebrać",
+        "Poziom istotności – przyjęte ryzyko błędnego odrzucenia H0 (zwykle 0,05)",
+        "Wielkość efektu – miara siły związku lub różnicy niezależna od liczebności",
+        "Pojęcia uczulające – wstępne założenia kierujące uwagą badacza jakościowego",
+        "Badanie opisowe – diagnoza stanu zjawiska bez wyjaśniania przyczyn"
+      ]
+    },
+    {
+      "topic": "Zmienne i wskaźniki; badanie ilościowe",
+      "text": "Zmienna to cecha, która może przyjmować różne wartości u różnych osób lub w różnym czasie (np. wiek, płeć, poziom lęku, staż abstynencji).\nRodzaje zmiennych:\n• zależna – wynik, który wyjaśniamy (np. motywacja do leczenia),\n• niezależna – czynnik wyjaśniający; w ujęciu Pilcha główna (badana) i uboczne (istotne – kontrolowane, nieistotne – pomijane),\n• pośrednicząca (mediator) – przenosi wpływ zmiennej niezależnej na zależną,\n• moderująca – zmienia siłę lub kierunek związku,\n• ilościowe (ciągłe i dyskretne) i jakościowe (kategorialne).\nPoziomy (skale) pomiaru według S. Stevensa:\n• nominalna – kategorie bez porządku (płeć, rodzaj substancji),\n• porządkowa – kategorie uporządkowane (wykształcenie, ocena w skali „rzadko–często”),\n• interwałowa – równe odstępy, brak zera bezwzględnego (wyniki wielu testów),\n• ilorazowa (stosunkowa) – zero bezwzględne (wiek, liczba dni abstynencji).\nSkala pomiaru decyduje o dopuszczalnych statystykach.\nWskaźnik to obserwowalna cecha lub zdarzenie, na podstawie którego wnioskujemy o zmiennej. J. Lutyński wyróżnia wskaźniki definicyjne (wskaźnik jest częścią definicji pojęcia), empiryczne (rzeczowe – związane z cechą związkiem empirycznym, obserwowalnym) i inferencyjne (o nieobserwowalnej cesze wnioskujemy z obserwowalnych przejawów, np. postawa z odpowiedzi na skali). Przykład: zmienna „funkcjonowanie społeczne po opuszczeniu zakładu karnego” – wskaźniki: zatrudnienie, miejsce zamieszkania, kontakt z rodziną, powrót do przestępstwa.\nBadanie ilościowe obejmuje: operacjonalizację zmiennych, wybór narzędzi, dobór próby, standaryzowany pomiar, kodowanie danych, analizę statystyczną (opisową i wnioskowanie statystyczne), interpretację. Do analizy używa się arkusza kalkulacyjnego lub programów statystycznych.\nNa egzaminie: zmienna zależna i niezależna, skale pomiaru, rodzaje wskaźników, przykład operacjonalizacji.",
+      "key": [
+        "Zmienna zależna – zmienna, której zróżnicowanie wyjaśniamy",
+        "Zmienna niezależna – czynnik wpływający na zmienną zależną",
+        "Skala porządkowa – kategorie uporządkowane bez równych odstępów",
+        "Wskaźnik inferencyjny – obserwowalny przejaw, z którego wnioskujemy o cesze ukrytej",
+        "Zmienna moderująca – zmienia siłę lub kierunek związku między zmiennymi"
+      ]
+    },
+    {
+      "topic": "Podstawowa statystyka: procent, mediana, średnie, korelacje",
+      "text": "Statystyka opisowa porządkuje i streszcza dane, a statystyka indukcyjna (wnioskowanie statystyczne) pozwala uogólniać wyniki z próby na populację.\nRozkład częstości i procent: liczba (n) i odsetek osób w danej kategorii. Procent = liczba przypadków w kategorii podzielona przez liczebność grupy, razy 100. W pracy podaje się zawsze n i %, a przy małych grupach (np. kilkanaście osób) ostrożnie interpretuje procenty.\nMiary tendencji centralnej:\n• średnia arytmetyczna – suma wartości podzielona przez ich liczbę; wrażliwa na wartości skrajne; wymaga skali interwałowej lub ilorazowej,\n• mediana – wartość środkowa w uporządkowanym szeregu, dzieli grupę na dwie połowy; odporna na wartości skrajne, dla skali co najmniej porządkowej,\n• dominanta (moda) – wartość najczęstsza; dla każdej skali, także nominalnej.\nPrzykład: staż abstynencji w miesiącach: 1, 2, 2, 3, 40. Średnia = 9,6, mediana = 2, dominanta = 2 – mediana lepiej opisuje typową osobę.\nMiary rozproszenia: rozstęp (max – min), odchylenie standardowe (przeciętne odchylenie od średniej), wariancja, rozstęp ćwiartkowy.\nKorelacja to miara współzmienności dwóch zmiennych:\n• współczynnik r Pearsona (dla zmiennych ilościowych, związek liniowy) i rho Spearmana (dla danych porządkowych),\n• wartości od –1 do +1; znak wskazuje kierunek (dodatni – obie rosną razem, ujemny – jedna rośnie, druga maleje), wartość bezwzględna – siłę,\n• korelacja nie oznacza przyczynowości – związek może wynikać z trzeciej zmiennej.\nDla zmiennych nominalnych stosuje się tabele krzyżowe i test chi-kwadrat niezależności. Do porównywania średnich – test t Studenta (dwie grupy) lub analiza wariancji (więcej grup), a gdy założenia nie są spełnione – testy nieparametryczne (np. U Manna-Whitneya).\nNa egzaminie: obliczanie i interpretacja średniej, mediany, dominanty, interpretacja współczynnika korelacji.",
+      "key": [
+        "Średnia arytmetyczna – suma wartości podzielona przez liczbę obserwacji",
+        "Mediana – wartość środkowa uporządkowanego szeregu",
+        "Dominanta – wartość występująca najczęściej",
+        "Odchylenie standardowe – przeciętne rozproszenie wyników wokół średniej",
+        "Współczynnik korelacji – miara siły i kierunku związku w zakresie od –1 do +1"
+      ]
+    },
+    {
+      "topic": "Badania jakościowe – kryteria analizy",
+      "text": "Badania jakościowe w pedagogice (D. Kubinowski, K. Rubacha, M. Łobocki) pozwalają zrozumieć doświadczenia, znaczenia i procesy z perspektywy uczestników. Typowe techniki: wywiad pogłębiony, narracyjny (F. Schütze), biograficzny, fokusowy, obserwacja uczestnicząca, analiza dokumentów osobistych i instytucjonalnych.\nAnaliza danych jakościowych przebiega zwykle etapami:\n• transkrypcja (dosłowny zapis nagrań) i wielokrotna lektura,\n• kodowanie – przypisywanie fragmentom tekstu etykiet; w teorii ugruntowanej kodowanie otwarte, osiowe i selektywne (A. Strauss, J. Corbin),\n• kategoryzacja i tworzenie tematów (np. analiza tematyczna V. Braun i V. Clarke),\n• interpretacja, porównywanie przypadków, budowanie modelu lub teorii,\n• prezentacja wyników z cytatami z wypowiedzi badanych.\nMożna korzystać z programów do analizy jakościowej (CAQDAS), ale interpretację wykonuje badacz.\nKryteria jakości (E. Guba, Y. Lincoln) zamiast rzetelności i trafności:\n• wiarygodność (credibility) – zgodność opisu z doświadczeniem badanych; techniki: przedłużony kontakt, triangulacja, konsultacja wyników z uczestnikami (member checking),\n• przenoszalność (transferability) – „gęsty opis” kontekstu pozwalający ocenić, czy wnioski dotyczą innych sytuacji,\n• zależność/spójność (dependability) – przejrzysty, udokumentowany proces badawczy,\n• potwierdzalność (confirmability) – wnioski wynikają z danych, a nie z uprzedzeń badacza; służy temu refleksyjność i dziennik badacza.\nDodatkowo: nasycenie teoretyczne, spójność pytań, metody i analizy, etyka (zgoda na nagrywanie, anonimizacja wypowiedzi).\nPrzykład: wywiady narracyjne z kobietami po terapii współuzależnienia, kodowanie, wyłonienie tematów (np. „odzyskiwanie granic”, „wstyd i ukrywanie”), konsultacja interpretacji z uczestniczkami.\nNa egzaminie: etapy analizy jakościowej, rodzaje kodowania, kryteria Guby i Lincoln.",
+      "key": [
+        "Kodowanie – przypisywanie fragmentom danych etykiet znaczeniowych",
+        "Wiarygodność – zgodność wyników z doświadczeniem badanych",
+        "Przenoszalność – możliwość odniesienia wniosków do innych kontekstów dzięki gęstemu opisowi",
+        "Refleksyjność – świadomość wpływu badacza na proces i wyniki badań",
+        "Member checking – konsultowanie interpretacji z uczestnikami badania"
+      ]
+    },
+    {
+      "topic": "Łączenie strategii ilościowych i jakościowych; etyka badań",
+      "text": "Łączenie strategii (badania mieszane, mixed methods) pozwala wykorzystać mocne strony obu podejść: pomiar i uogólnianie oraz pogłębione rozumienie. Uzasadnienia: triangulacja (potwierdzanie wyników różnymi metodami), komplementarność (uzupełnianie obrazu), rozwój (jedna metoda przygotowuje drugą, np. wywiady do budowy kwestionariusza), wyjaśnianie nieoczekiwanych wyników ilościowych.\nSchematy według J. Creswella:\n• zbieżny (równoległy) – oba rodzaje danych zbierane w tym samym czasie i integrowane w interpretacji,\n• sekwencyjny wyjaśniający – ilościowe, potem jakościowe,\n• sekwencyjny eksploracyjny – jakościowe, potem ilościowe,\n• schematy zagnieżdżone, np. wywiady z częścią uczestników eksperymentu.\nTriangulacja według N. Denzina: danych (różne źródła, czas, miejsca), badaczy, teorii i metod. Przykład: ocena skuteczności programu korekcyjno-edukacyjnego dla sprawców przemocy domowej – kwestionariusz przed i po programie, wywiady z uczestnikami i realizatorami, analiza dokumentacji.\nEtyka badań (synteza):\n• dobrowolność i świadoma zgoda, prawo do wycofania bez konsekwencji,\n• nieszkodzenie i ochrona przed wtórną wiktymizacją (np. w wywiadach z ofiarami przemocy),\n• anonimowość lub poufność, anonimizacja transkrypcji, bezpieczne przechowywanie nagrań, RODO,\n• szczególna ochrona grup wrażliwych – dzieci, osób uzależnionych, pozbawionych wolności, w kryzysie,\n• rzetelność – zakaz fabrykowania, fałszowania danych i plagiatu; uczciwe raportowanie ograniczeń i wyników niezgodnych z hipotezami,\n• konflikt ról – gdy praktyk bada własnych podopiecznych, musi zadbać, by udział nie zależał od relacji zawodowej,\n• zgody instytucji i, gdy wymagane, opinia komisji etycznej uczelni.\nNa egzaminie: uzasadnienia i schematy badań mieszanych, rodzaje triangulacji, zasady etyczne z przykładami.",
+      "key": [
+        "Komplementarność – uzupełnianie wyników jednej metody wynikami drugiej",
+        "Schemat zbieżny – równoległe zbieranie danych ilościowych i jakościowych",
+        "Triangulacja metod – badanie tego samego zjawiska różnymi metodami",
+        "Anonimizacja – usunięcie z danych informacji identyfikujących osoby",
+        "Wtórna wiktymizacja – ponowne skrzywdzenie ofiary przez sposób postępowania wobec niej"
+      ]
+    }
+  ],
+  "cards": [
+    { "front": "Termin naukowy", "back": "Wyraz o ściśle określonym, jednoznacznym znaczeniu w danej dyscyplinie." },
+    {
+      "front": "Budowa definicji klasycznej",
+      "back": "Definiendum + łącznik + definiens, w którym podaje się rodzaj najbliższy i różnicę gatunkową."
+    },
+    {
+      "front": "Definicja operacyjna",
+      "back": "Definicja określająca, jak dane pojęcie będzie mierzone lub obserwowane w badaniu."
+    },
+    {
+      "front": "Błąd ignotum per ignotum",
+      "back": "Definiowanie nieznanego przez nieznane – definiens jest równie niezrozumiały jak definiendum."
+    },
+    {
+      "front": "Struktura IMRaD",
+      "back": "Introduction, Methods, Results and Discussion – wstęp, metoda, wyniki, dyskusja; typowa budowa artykułu empirycznego."
+    },
+    { "front": "Przedmiot a podmiot badań", "back": "Przedmiot – badane zjawisko; podmiot – osoby biorące udział w badaniu." },
+    {
+      "front": "Źródła problemów badawczych",
+      "back": "Praktyka zawodowa, literatura i luki badawcze, teorie, zmiany społeczne i prawne, zamówienie społeczne, zainteresowania badacza."
+    },
+    {
+      "front": "Problem opisowy a zależnościowy",
+      "back": "Opisowy pyta, jakie jest zjawisko; zależnościowy – czy i jak zmienne są ze sobą powiązane."
+    },
+    { "front": "Badanie przekrojowe", "back": "Jednorazowy pomiar różnych osób lub grup w tym samym czasie." },
+    { "front": "Badanie podłużne", "back": "Wielokrotny pomiar tych samych osób w czasie, pozwalający śledzić zmiany." },
+    { "front": "Dobór systematyczny", "back": "Wybór co k-tej jednostki z listy po losowym wybraniu punktu startowego." },
+    { "front": "Dobór grupowy (zespołowy)", "back": "Losowanie całych grup (np. klas, placówek), a nie pojedynczych osób." },
+    {
+      "front": "Saturacja (nasycenie)",
+      "back": "Kryterium zakończenia zbierania danych jakościowych – kolejne dane nie wnoszą nowych kategorii."
+    },
+    {
+      "front": "Funkcje hipotezy",
+      "back": "Ukierunkowuje zbieranie danych, łączy badanie z teorią, umożliwia sprawdzenie przewidywań i organizuje analizę."
+    },
+    {
+      "front": "Poziom istotności p < 0,05",
+      "back": "Przyjmujemy najwyżej 5% ryzyka błędnego odrzucenia prawdziwej hipotezy zerowej."
+    },
+    {
+      "front": "Kiedy badanie bez hipotez?",
+      "back": "W badaniach eksploracyjnych, opisowych i jakościowych, gdzie hipotezy mogą być wynikiem, a nie punktem wyjścia."
+    },
+    { "front": "Zmienna pośrednicząca (mediator)", "back": "Zmienna, przez którą zmienna niezależna wpływa na zależną." },
+    { "front": "Skale pomiaru wg Stevensa", "back": "Nominalna, porządkowa, interwałowa, ilorazowa." },
+    { "front": "Rodzaje wskaźników wg Lutyńskiego", "back": "Definicyjne, empiryczne (rzeczowe) i inferencyjne." },
+    { "front": "Mediana", "back": "Wartość środkowa uporządkowanego szeregu; odporna na wartości skrajne." },
+    { "front": "Dominanta", "back": "Wartość najczęściej występująca; można ją wyznaczyć nawet dla danych nominalnych." },
+    {
+      "front": "Korelacja r = –0,60",
+      "back": "Umiarkowany do silnego związek ujemny: gdy jedna zmienna rośnie, druga ma tendencję do spadku."
+    },
+    {
+      "front": "Korelacja a przyczynowość",
+      "back": "Korelacja wskazuje współwystępowanie, nie dowodzi związku przyczynowego – może działać trzecia zmienna."
+    },
+    {
+      "front": "Test chi-kwadrat",
+      "back": "Test statystyczny sprawdzający związek między zmiennymi nominalnymi w tabeli krzyżowej."
+    },
+    {
+      "front": "Kodowanie otwarte, osiowe, selektywne",
+      "back": "Etapy analizy w teorii ugruntowanej: wstępne etykietowanie, łączenie kategorii, wyłonienie kategorii centralnej."
+    },
+    {
+      "front": "Kryteria jakości badań jakościowych (Guba, Lincoln)",
+      "back": "Wiarygodność, przenoszalność, zależność (spójność), potwierdzalność."
+    },
+    { "front": "Triangulacja wg Denzina", "back": "Triangulacja danych, badaczy, teorii i metod." },
+    {
+      "front": "Konflikt ról w badaniach",
+      "back": "Sytuacja, gdy praktyk bada własnych podopiecznych – zagraża dobrowolności i szczerości odpowiedzi."
+    }
+  ],
+  "questions": [
+    {
+      "q": "W definicji „Resocjalizacja to proces… mający na celu…” wyraz „resocjalizacja” jest:",
+      "options": ["definiendum", "definiensem", "łącznikiem", "różnicą gatunkową"],
+      "correct": 0,
+      "explain": "Definiendum to człon definiowany; definiens – człon definiujący."
+    },
+    {
+      "q": "Definicja „Alkoholik to osoba uzależniona od alkoholu, czyli alkoholik” zawiera błąd:",
+      "options": ["definicji za szerokiej", "błędnego koła (idem per idem)", "definicji za wąskiej", "ignotum per ignotum"],
+      "correct": 1,
+      "explain": "Definiens odwołuje się do definiendum, więc powstaje błędne koło."
+    },
+    {
+      "q": "Definicja określająca, w jaki sposób pojęcie będzie mierzone w badaniu, to definicja:",
+      "options": ["sprawozdawcza", "nominalna", "operacyjna", "perswazyjna"],
+      "correct": 2,
+      "explain": "Definicja operacyjna wskazuje procedurę pomiaru."
+    },
+    {
+      "q": "Struktura IMRaD dotyczy przede wszystkim:",
+      "options": ["recenzji książki", "eseju filozoficznego", "notatki służbowej", "artykułu empirycznego"],
+      "correct": 3,
+      "explain": "IMRaD to typowa struktura artykułu prezentującego wyniki badań."
+    },
+    {
+      "q": "Osoby uczestniczące w badaniu jako źródło informacji to:",
+      "options": ["podmiot badań", "przedmiot badań", "teren badań", "populacja generalna"],
+      "correct": 0,
+      "explain": "Przedmiotem jest badane zjawisko, podmiotem – uczestnicy."
+    },
+    {
+      "q": "Pytanie „Czy kara pozbawienia wolności jest moralnie słuszna?” nie jest dobrym problemem empirycznym, ponieważ:",
+      "options": [
+        "jest zbyt wąskie",
+        "ma charakter wartościujący i nie jest rozstrzygalne empirycznie",
+        "jest pytaniem dopełnienia",
+        "dotyczy osób dorosłych"
+      ],
+      "correct": 1,
+      "explain": "Badanie empiryczne nie rozstrzyga pytań normatywnych."
+    },
+    {
+      "q": "Badanie tych samych absolwentów programu terapii po 6, 12 i 24 miesiącach to badanie:",
+      "options": ["przekrojowe", "eksploracyjne", "podłużne", "fokusowe"],
+      "correct": 2,
+      "explain": "Wielokrotny pomiar tych samych osób w czasie to badanie podłużne."
+    },
+    {
+      "q": "Losowanie całych klas szkolnych zamiast pojedynczych uczniów to dobór:",
+      "options": ["kwotowy", "kuli śnieżnej", "systematyczny", "grupowy (zespołowy)"],
+      "correct": 3,
+      "explain": "W doborze grupowym jednostką losowania jest grupa."
+    },
+    {
+      "q": "Zbieranie wywiadów kończy się, gdy kolejne nie wnoszą nowych kategorii. To kryterium:",
+      "options": ["saturacji", "reprezentatywności", "istotności statystycznej", "randomizacji"],
+      "correct": 0,
+      "explain": "Nasycenie teoretyczne jest kryterium wielkości próby w badaniach jakościowych."
+    },
+    {
+      "q": "Badanie bez hipotez jest najbardziej uzasadnione, gdy:",
+      "options": [
+        "sprawdzamy przewidywanie wynikające z teorii",
+        "badamy nowe, mało poznane zjawisko w sposób eksploracyjny",
+        "porównujemy grupę eksperymentalną i kontrolną",
+        "obliczamy korelację między zmiennymi"
+      ],
+      "correct": 1,
+      "explain": "W badaniach eksploracyjnych brak podstaw do formułowania przewidywań."
+    },
+    {
+      "q": "Wynik testu statystycznego p = 0,30 przy przyjętym poziomie 0,05 oznacza, że:",
+      "options": [
+        "udowodniono brak związku",
+        "należy przyjąć hipotezę alternatywną",
+        "nie ma podstaw do odrzucenia hipotezy zerowej",
+        "efekt jest bardzo silny"
+      ],
+      "correct": 2,
+      "explain": "Wynik nieistotny nie dowodzi braku związku, jedynie nie pozwala odrzucić H0."
+    },
+    {
+      "q": "Zmienną mierzoną na skali nominalnej jest:",
+      "options": [
+        "wiek w latach",
+        "liczba dni abstynencji",
+        "wynik testu inteligencji",
+        "rodzaj przyjmowanej substancji psychoaktywnej"
+      ],
+      "correct": 3,
+      "explain": "Kategorie bez porządku i odległości to skala nominalna."
+    },
+    {
+      "q": "W badaniu wpływu wsparcia rodziny na utrzymanie abstynencji zmienną zależną jest:",
+      "options": ["utrzymanie abstynencji", "wsparcie rodziny", "płeć badanych", "miejsce zamieszkania"],
+      "correct": 0,
+      "explain": "Zmienna zależna to wynik, który wyjaśniamy."
+    },
+    {
+      "q": "Zmienna, która zmienia siłę lub kierunek związku między dwiema innymi zmiennymi, to zmienna:",
+      "options": ["zależna", "moderująca", "nominalna", "stała"],
+      "correct": 1,
+      "explain": "Moderator wpływa na relację między zmienną niezależną a zależną."
+    },
+    {
+      "q": "Staż abstynencji (w miesiącach) pięciu osób: 1, 2, 2, 3, 40. Mediana wynosi:",
+      "options": ["9,6", "3", "2", "40"],
+      "correct": 2,
+      "explain": "Wartość środkowa uporządkowanego szeregu to 2; średnia zawyżona przez 40 wynosi 9,6."
+    },
+    {
+      "q": "Którą miarę tendencji centralnej można wyznaczyć dla zmiennej nominalnej?",
+      "options": ["średnią arytmetyczną", "medianę", "odchylenie standardowe", "dominantę"],
+      "correct": 3,
+      "explain": "Dla danych nominalnych sensowna jest tylko wartość najczęstsza."
+    },
+    {
+      "q": "Współczynnik korelacji r = 0,05 oznacza:",
+      "options": ["praktycznie brak związku liniowego", "silny związek dodatni", "silny związek ujemny", "związek przyczynowy"],
+      "correct": 0,
+      "explain": "Wartość bliska zeru wskazuje na brak związku liniowego."
+    },
+    {
+      "q": "Do sprawdzenia związku między płcią a rodzajem używanej substancji (zmienne nominalne) najlepiej zastosować:",
+      "options": ["korelację r Pearsona", "test chi-kwadrat", "średnią arytmetyczną", "test t dla prób zależnych"],
+      "correct": 1,
+      "explain": "Chi-kwadrat analizuje tabele krzyżowe zmiennych kategorialnych."
+    },
+    {
+      "q": "Kryterium Guby i Lincoln odpowiadające za to, czy wnioski można odnieść do innych kontekstów dzięki gęstemu opisowi, to:",
+      "options": ["wiarygodność", "potwierdzalność", "przenoszalność", "zależność"],
+      "correct": 2,
+      "explain": "Przenoszalność (transferability) jest jakościowym odpowiednikiem trafności zewnętrznej."
+    },
+    {
+      "q": "Etap analizy w teorii ugruntowanej polegający na wyłonieniu kategorii centralnej to kodowanie:",
+      "options": ["otwarte", "osiowe", "wstępne", "selektywne"],
+      "correct": 3,
+      "explain": "Kodowanie selektywne integruje kategorie wokół kategorii centralnej."
+    },
+    {
+      "q": "Ocena programu dla sprawców przemocy obejmująca kwestionariusz przed i po programie oraz wywiady z uczestnikami to przykład:",
+      "options": [
+        "badań mieszanych z triangulacją metod",
+        "wyłącznie badań jakościowych",
+        "badania bez zmiennych",
+        "analizy danych zastanych"
+      ],
+      "correct": 0,
+      "explain": "Łączy dane ilościowe i jakościowe w jednym projekcie."
+    },
+    {
+      "q": "Terapeuta prowadzący badania wśród własnych pacjentów powinien przede wszystkim zadbać o:",
+      "options": [
+        "zwiększenie liczby pytań",
+        "to, by udział był rzeczywiście dobrowolny i niezależny od relacji terapeutycznej",
+        "ujawnienie danych pacjentów zespołowi badawczemu",
+        "pominięcie zgody pacjentów"
+      ],
+      "correct": 1,
+      "explain": "Konflikt ról zagraża dobrowolności i szczerości odpowiedzi."
+    },
+    {
+      "q": "Usunięcie z transkrypcji wywiadu imion, nazw miejscowości i placówek to:",
+      "options": ["kodowanie", "kategoryzacja", "anonimizacja", "standaryzacja"],
+      "correct": 2,
+      "explain": "Anonimizacja chroni tożsamość uczestników."
+    }
+  ],
+  "open": [
+    {
+      "q": "Omów zasady definiowania pojęć w pracy naukowej i podaj przykład.",
+      "answer": "Pojęcia w pracy naukowej trzeba definiować precyzyjnie, bo od tego zależy operacjonalizacja i interpretacja wyników. Definicja klasyczna składa się z definiendum i definiensu, który podaje rodzaj najbliższy i różnicę gatunkową. Wyróżnia się definicje nominalne i realne, sprawozdawcze, projektujące, regulujące oraz operacyjne. Należy unikać błędnego koła, definiowania nieznanego przez nieznane oraz definicji za szerokich lub za wąskich. W pracy warto zestawić definicje kilku autorów i wskazać przyjętą. Przykład: współuzależnienie można zdefiniować jako zaburzenie funkcjonowania osoby bliskiej (rodzaj) wynikające z długotrwałego życia w relacji z osobą uzależnioną (różnica), a następnie operacyjnie – jako wynik w określonym kwestionariuszu."
+    },
+    {
+      "q": "Skąd czerpie się problemy badawcze i jakie są ich rodzaje?",
+      "answer": "Problemy badawcze wynikają z praktyki zawodowej (np. częste nawroty po terapii), z literatury i luk w badaniach, z teorii wymagających weryfikacji, ze zmian społecznych i prawnych, z zamówień instytucji oraz z zainteresowań badacza. Rodzaje problemów: teoretyczne i praktyczne; opisowe (jakie jest zjawisko), porównawcze (czym różnią się grupy), zależnościowe (czy zmienne są powiązane) i wyjaśniające (dlaczego). Ze względu na formę – pytania rozstrzygnięcia i dopełnienia. Dobry problem jest istotny, empirycznie rozstrzygalny, jasny, wykonalny i etyczny. Przykład: „Jakie czynniki różnicują motywację do terapii osób skierowanych na leczenie przez sąd i zgłaszających się dobrowolnie?”."
+    },
+    {
+      "q": "Przedstaw rodzaje doboru próby i wskaż, które sprawdzają się w badaniach osób uzależnionych.",
+      "answer": "Dobór losowy obejmuje losowanie proste, systematyczne, warstwowe i grupowe; pozwala na uogólnianie statystyczne, ale wymaga operatu losowania, czyli pełnej listy populacji. Dobór nielosowy to dobór celowy, kwotowy, dostępnych przypadków i metodą kuli śnieżnej. Osoby uzależnione, zwłaszcza używające nielegalnych substancji, bezdomne czy niepodejmujące leczenia, są populacją ukrytą, dla której nie ma listy, dlatego najczęściej stosuje się dobór celowy w placówkach (poradnie, ośrodki, grupy AA za zgodą) albo kulę śnieżną. Trzeba wówczas uczciwie opisać ograniczenia uogólniania. W badaniach jakościowych stosuje się dobór teoretyczny i kryterium saturacji."
+    },
+    {
+      "q": "Wyjaśnij rolę hipotezy w badaniach i uzasadnij, kiedy można prowadzić badania bez hipotez.",
+      "answer": "Hipoteza ukierunkowuje zbieranie danych, łączy badanie z teorią, umożliwia sprawdzenie przewidywań i porządkuje analizę. W badaniach ilościowych weryfikuje się ją testem statystycznym, odrzucając lub nie hipotezę zerową na przyjętym poziomie istotności; należy pamiętać, że wynik nieistotny nie dowodzi braku związku, a istotność nie jest tym samym co znaczenie praktyczne. Badania bez hipotez są uzasadnione w podejściu eksploracyjnym, gdy zjawisko jest mało znane, w badaniach czysto opisowych oraz w strategii jakościowej, gdzie przypuszczenia mogą wyłaniać się z danych, jak w teorii ugruntowanej. Wtedy badacz formułuje pytania badawcze i założenia wstępne."
+    },
+    {
+      "q": "Czym są zmienne i wskaźniki? Przedstaw przykład operacjonalizacji.",
+      "answer": "Zmienna to cecha przyjmująca różne wartości, np. wiek, poziom lęku, wsparcie społeczne. Wyróżnia się zmienne zależne (wyjaśniane), niezależne (wyjaśniające, u Pilcha główne i uboczne), pośredniczące i moderujące. Zmienne mierzy się na skalach nominalnej, porządkowej, interwałowej lub ilorazowej, co określa dopuszczalne statystyki. Wskaźnik to obserwowalna cecha pozwalająca wnioskować o zmiennej; Lutyński dzieli je na definicyjne, empiryczne i inferencyjne. Przykład: zmienna „readaptacja społeczna po opuszczeniu zakładu karnego” – wskaźniki: zatrudnienie, stałe miejsce zamieszkania, kontakt z rodziną, abstynencja, brak ponownego skazania; narzędzie: kwestionariusz wywiadu i analiza dokumentacji kuratora."
+    },
+    {
+      "q": "Omów podstawowe miary statystyczne i ich interpretację w pracy magisterskiej.",
+      "answer": "W statystyce opisowej podaje się liczebności i procenty, pamiętając o zapisie n oraz ostrożności przy małych grupach. Miary tendencji centralnej to średnia arytmetyczna (dla skal interwałowej i ilorazowej, wrażliwa na wartości skrajne), mediana (wartość środkowa, odporna na skrajności) i dominanta (wartość najczęstsza, także dla danych nominalnych). Rozproszenie opisują rozstęp i odchylenie standardowe. Współczynniki korelacji Pearsona lub Spearmana przyjmują wartości od –1 do +1: znak wskazuje kierunek, wartość bezwzględna siłę związku. Korelacja nie dowodzi przyczynowości. Dla zmiennych nominalnych stosuje się test chi-kwadrat, do porównań średnich – test t lub analizę wariancji."
+    },
+    {
+      "q": "Jakie kryteria jakości stosuje się w analizie badań jakościowych?",
+      "answer": "Badania jakościowe ocenia się innymi kryteriami niż ilościowe. Guba i Lincoln zaproponowali: wiarygodność (zgodność opisu z doświadczeniem badanych, wzmacniana przez przedłużony kontakt, triangulację i konsultowanie wyników z uczestnikami), przenoszalność (gęsty opis kontekstu umożliwiający ocenę zastosowania wniosków gdzie indziej), zależność (przejrzysty, udokumentowany proces badawczy) i potwierdzalność (wnioski ugruntowane w danych, a nie w przekonaniach badacza). Ważne są też refleksyjność badacza, osiągnięcie saturacji, spójność pytań, metod i analizy oraz rzetelne kodowanie i kategoryzacja. Etycznie konieczna jest zgoda na nagrywanie i anonimizacja wypowiedzi."
+    },
+    {
+      "q": "Uzasadnij łączenie strategii ilościowych i jakościowych oraz wskaż zasady etyczne takich badań.",
+      "answer": "Łączenie strategii pozwala jednocześnie zmierzyć zjawisko i zrozumieć je od wewnątrz. Uzasadnieniem jest triangulacja, komplementarność, rozwój narzędzi oraz wyjaśnianie nieoczekiwanych wyników. Creswell opisuje schematy zbieżny, sekwencyjny wyjaśniający i sekwencyjny eksploracyjny. Przykładem jest ocena programu korekcyjno-edukacyjnego: kwestionariusz przed i po programie, wywiady z uczestnikami oraz analiza dokumentacji. Zasady etyczne obejmują świadomą zgodę i prawo do wycofania, nieszkodzenie i unikanie wtórnej wiktymizacji, anonimowość lub poufność, ochronę danych zgodnie z RODO, szczególną troskę o grupy wrażliwe, unikanie konfliktu ról i rzetelne raportowanie bez fabrykowania danych i plagiatu."
+    }
+  ]
+}

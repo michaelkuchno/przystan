@@ -72,6 +72,12 @@ Wersja **1.4.0**. Repozytorium: https://github.com/michaelkuchno/przystan (konto
       w APK sprawdzić, czy EmailJS nie zwraca 403; wtedy w EmailJS Account → Security zezwolić na API).
 - [ ] Podsumowanie dnia po godzinie z ustawień: powiadomienie + e-mail (raz dziennie).
 
+**Wersja 1.6:**
+- [ ] Scenariusz zajęć na telefonie: długi opis kroku zawija się i rośnie (bez przewijania w poziomie).
+- [ ] Studia: przedmiot → „Notatka” przy temacie, Materiały → „Opracowanie tematów”, Fiszki (gotowe), Egzamin
+      próbny → „Egzamin z bazy pytań”; porównanie opracowań z wykładami (CONTENT_REVIEW §16).
+- [ ] Praktyki: zapytać opiekuna praktyk WSHE o zaliczenie na podstawie pracy w PCPR (Regulamin §21).
+
 **Wersja 1.5 – wysyłka bezpośrednia i Studia:**
 - [ ] Gmail: konfiguracja Google Cloud wg docs/NOTIFICATIONS.md §7 (Gmail API, użytkownicy testowi, klient
       „Aplikacja internetowa” + klient „Android” z SHA-1) → „Połącz z Google” → próbny e-mail (PWA i APK).

@@ -20,9 +20,14 @@ test('studies without AI: programme, exam date, topic levels, materials, cards, 
   await expect(topics).toContainText('Rodzina z problemem alkoholowym; współuzależnienie; FAS');
   await topics.getByRole('radio', { name: 'Umiem' }).first().click();
   await expect(topics.getByRole('radio', { name: 'Umiem' }).first()).toHaveAttribute('aria-checked', 'true');
+  // built-in study note for every syllabus topic
+  await topics.getByRole('button', { name: 'Notatka' }).first().click();
+  await expect(page.getByTestId('study-note')).toContainText('Najważniejsze pojęcia');
+  await page.keyboard.press('Escape');
 
   // materials
   await page.getByRole('tab', { name: 'Materiały' }).click();
+  await expect(page.getByTestId('pack-notes')).toContainText('Opracowanie tematów');
   await page.getByRole('button', { name: 'Dodaj materiał' }).click();
   await page.getByLabel('Tytuł').fill('Wykład 2 – współuzależnienie');
   await page.getByLabel('Treść').fill('Współuzależnienie to wyuczony sposób funkcjonowania bliskich osoby uzależnionej. Kontrola, zaprzeczanie, nadodpowiedzialność.');
@@ -46,12 +51,21 @@ test('studies without AI: programme, exam date, topic levels, materials, cards, 
   await page.getByLabel('Liczba pytań').selectOption('5');
   await page.getByRole('button', { name: 'Test z moich fiszek' }).click();
   const exam = page.getByTestId('exam');
-  await expect(exam.getByRole('radiogroup')).toHaveCount(4);
+  await expect(exam.getByRole('radiogroup')).toHaveCount(5);
   for (const g of await exam.getByRole('radiogroup').all()) await g.getByRole('radio').first().click();
   await page.getByRole('button', { name: 'Sprawdź odpowiedzi' }).click();
   await expect(page.getByTestId('exam-result')).toContainText('%');
   await page.getByRole('button', { name: 'Zapisz wynik' }).click();
   await expect(page.getByTestId('exam-history').getByRole('listitem')).toHaveCount(1);
+  // exam from the built-in question bank (no AI): single-choice + open question with a model answer
+  await page.getByRole('button', { name: 'Egzamin z bazy pytań' }).click();
+  await expect(exam.getByRole('radiogroup')).toHaveCount(4);
+  await expect(exam.getByLabel('Twoja odpowiedź')).toHaveCount(1);
+  for (const g of await exam.getByRole('radiogroup').all()) await g.getByRole('radio').first().click();
+  await page.getByRole('button', { name: 'Sprawdź odpowiedzi' }).click();
+  await expect(exam).toContainText('Odpowiedź wzorcowa');
+  await page.getByRole('button', { name: 'Zapisz wynik' }).click();
+  await expect(page.getByTestId('exam-history').getByRole('listitem')).toHaveCount(2);
 
   // search in university data (no AI)
   await go(page, '#/studies/search');
@@ -65,7 +79,7 @@ test('studies without AI: programme, exam date, topic levels, materials, cards, 
   // home: next exam + daily goal counted the exam questions; dashboard card
   await go(page, '#/studies');
   await expect(page.getByTestId('study-today')).toContainText('Psychologia uzależnień i współuzależnień');
-  await expect(page.getByTestId('study-today')).toContainText('4 / 15');
+  await expect(page.getByTestId('study-today')).toContainText('10 / 15');
   await go(page, '#/');
   await expect(page.getByTestId('study-dashboard')).toBeVisible();
 });

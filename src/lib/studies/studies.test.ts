@@ -1,7 +1,17 @@
 import { describe, expect, it, vi } from 'vitest';
 import program from '@/content/studies/wshe-brzeg.json';
 import type { Program, StudyAttempt } from './types';
-import { chunk, courseProgress, daysUntil, deckIdFor, inSemester, mergeCourses, nextExam, studyDocs, weakTopics } from './program';
+import {
+  chunk,
+  courseProgress,
+  daysUntil,
+  deckIdFor,
+  inSemester,
+  mergeCourses,
+  nextExam,
+  studyDocs,
+  weakTopics,
+} from './program';
 import { defaultStudyPrefs, recordStudy, visibleStreak } from './settings';
 import { examFromCards, scoreOf } from '@/features/studies/MockExam';
 import { validateMockExam } from '@/lib/ai/tasks';
@@ -32,9 +42,23 @@ describe('WSHE Brzeg programme (bundled data)', () => {
 
 describe('programme merged with the student’s changes', () => {
   const merged = mergeCourses(P, [
-    { id: 'psychologia-uzaleznien', examDate: '2027-01-30', extraTopics: ['Model Prochaski w terapii'], levels: { 'Model Prochaski w terapii': 2 }, updatedAt: '' },
+    {
+      id: 'psychologia-uzaleznien',
+      examDate: '2027-01-30',
+      extraTopics: ['Model Prochaski w terapii'],
+      levels: { 'Model Prochaski w terapii': 2 },
+      updatedAt: '',
+    },
     { id: 'andragogika', hidden: true, updatedAt: '' },
-    { id: 'own-1', custom: true, name: 'Warsztat interwencji kryzysowej', semester: 3, assessment: 'E', extraTopics: ['Model ABC'], updatedAt: '' },
+    {
+      id: 'own-1',
+      custom: true,
+      name: 'Warsztat interwencji kryzysowej',
+      semester: 3,
+      assessment: 'E',
+      extraTopics: ['Model ABC'],
+      updatedAt: '',
+    },
   ]);
 
   it('overrides, hides and adds own courses', () => {
@@ -44,7 +68,12 @@ describe('programme merged with the student’s changes', () => {
     expect(merged.find((c) => c.id === 'andragogika')!.hidden).toBe(true);
     const own = merged.find((c) => c.id === 'own-1')!;
     expect(own).toMatchObject({ custom: true, semester: 3, allTopics: ['Model ABC'], group: 'custom' });
-    expect(inSemester(merged.find((c) => c.id === 'seminarium')!, 4)).toBe(true);
+    expect(
+      inSemester(
+        merged.find((c) => c.id === 'seminarium')!,
+        4,
+      ),
+    ).toBe(true);
     expect(nextExam(merged, '2026-11-05')!.id).toBe('psychologia-uzaleznien');
     expect(daysUntil('2026-11-08', '2026-11-05')).toBe(3);
   });
@@ -53,8 +82,18 @@ describe('programme merged with the student’s changes', () => {
     const own = merged.find((c) => c.id === 'own-1')!;
     expect(courseProgress(own, undefined, [], []).readiness).toBe(0);
     const psy = merged.find((c) => c.id === 'psychologia-uzaleznien')!;
-    const deck = { id: deckIdFor(psy.id), title: '', module: 'study', cards: [{ id: 'a', front: 'f', back: 'b' }, { id: 'b', front: 'f', back: 'b' }] };
-    const states = [{ id: 'x', deckId: deck.id, cardId: 'a', easiness: 2.5, interval: 6, repetitions: 2, due: '2026-12-01', lapses: 0 }];
+    const deck = {
+      id: deckIdFor(psy.id),
+      title: '',
+      module: 'study',
+      cards: [
+        { id: 'a', front: 'f', back: 'b' },
+        { id: 'b', front: 'f', back: 'b' },
+      ],
+    };
+    const states = [
+      { id: 'x', deckId: deck.id, cardId: 'a', easiness: 2.5, interval: 6, repetitions: 2, due: '2026-12-01', lapses: 0 },
+    ];
     const attempts = [{ courseId: psy.id, score: 80 } as StudyAttempt, { courseId: psy.id, score: 60 } as StudyAttempt];
     const pr = courseProgress(psy, deck, states, attempts);
     expect(pr.cards).toBe(0.5);
@@ -65,7 +104,15 @@ describe('programme merged with the student’s changes', () => {
 
   it('search documents: only university data (syllabus + own materials, chunked)', () => {
     const docs = studyDocs(merged, [
-      { id: 'm1', courseId: 'psychologia-uzaleznien', title: 'Wykład 2', text: 'Współuzależnienie to… '.repeat(80), kind: 'notes', createdAt: '', updatedAt: '' },
+      {
+        id: 'm1',
+        courseId: 'psychologia-uzaleznien',
+        title: 'Wykład 2',
+        text: 'Współuzależnienie to… '.repeat(80),
+        kind: 'notes',
+        createdAt: '',
+        updatedAt: '',
+      },
     ]);
     expect(docs.some((d) => d.courseId === 'andragogika')).toBe(false); // hidden
     expect(docs.filter((d) => d.kind === 'material').length).toBeGreaterThan(1);
@@ -95,7 +142,7 @@ describe('mock exams', () => {
   it('without AI: single-choice questions from flash cards', () => {
     const cards = ['A', 'B', 'C', 'D', 'E'].map((x) => ({ front: `Q${x}`, back: `A${x}` }));
     let seed = 1;
-    const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+    const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
     const qs = examFromCards(cards, 3, rnd);
     expect(qs).toHaveLength(3);
     for (const q of qs) {
@@ -149,7 +196,9 @@ describe('Gmail and SMS gateway', () => {
     expect(msg).toContain('Subject: =?UTF-8?B?');
     expect(msg).toContain('Content-Type: text/plain; charset=UTF-8');
     const body = msg.split('\r\n\r\n')[1]!.replace(/\r\n/g, '');
-    expect(new TextDecoder().decode(Uint8Array.from(atob(body), (c) => c.charCodeAt(0)))).toBe('Dzień dobry,\r\nzapraszam.\r\nZ poważaniem');
+    expect(new TextDecoder().decode(Uint8Array.from(atob(body), (c) => c.charCodeAt(0)))).toBe(
+      'Dzień dobry,\r\nzapraszam.\r\nZ poważaniem',
+    );
     expect(encodeHeader('Plain ASCII')).toBe('Plain ASCII');
     for (const w of encodeHeader('Ż'.repeat(60)).split('\r\n ')) expect(w.length).toBeLessThanOrEqual(75);
     expect(base64url(new Uint8Array([251, 255]))).toBe('-_8');
@@ -157,16 +206,25 @@ describe('Gmail and SMS gateway', () => {
 
   it('sends with the bearer token; 401 → reconnect', async () => {
     const fetchImpl = vi.fn(async () => new Response(JSON.stringify({ id: 'abc' }), { status: 200 }));
-    const r = await sendGmail({ access: 'TOKEN', expires: Date.now() + 1e6, email: 'me@gmail.com' }, { to: 'a@b.pl', subject: 'S', body: 'B' }, fetchImpl);
+    const r = await sendGmail(
+      { access: 'TOKEN', expires: Date.now() + 1e6, email: 'me@gmail.com' },
+      { to: 'a@b.pl', subject: 'S', body: 'B' },
+      fetchImpl,
+    );
     expect(r.id).toBe('abc');
     const [url, init] = fetchImpl.mock.calls[0] as unknown as [string, RequestInit];
     expect(url).toBe(GMAIL_SEND_URL);
     expect((init.headers as Record<string, string>).authorization).toBe('Bearer TOKEN');
     const bad = vi.fn(async () => new Response('{}', { status: 401 }));
-    await expect(sendGmail({ access: 'x', expires: 0 }, { to: 'a@b.pl', subject: 'S', body: 'B' }, bad)).rejects.toMatchObject({ code: 'auth' });
+    await expect(sendGmail({ access: 'x', expires: 0 }, { to: 'a@b.pl', subject: 'S', body: 'B' }, bad)).rejects.toMatchObject({
+      code: 'auth',
+    });
   });
 
   it('SMS gateway request body', () => {
-    expect(smsGateBody('+48 600 123 456, 0048 601 222 333', 'Hej')).toEqual({ textMessage: { text: 'Hej' }, phoneNumbers: ['+48600123456', '+48601222333'] });
+    expect(smsGateBody('+48 600 123 456, 0048 601 222 333', 'Hej')).toEqual({
+      textMessage: { text: 'Hej' },
+      phoneNumbers: ['+48600123456', '+48601222333'],
+    });
   });
 });

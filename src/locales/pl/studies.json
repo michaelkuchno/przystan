@@ -39,8 +39,15 @@
   "addCourse": "Dodaj przedmiot",
   "courseName": "Nazwa przedmiotu",
   "save": "Zapisz",
-  "assessment": { "E": "Egzamin", "ZO": "Zaliczenie na ocenę", "Z": "Zaliczenie" },
-  "group": { "addiction": "uzależnienia", "custom": "mój" },
+  "assessment": {
+    "E": "Egzamin",
+    "ZO": "Zaliczenie na ocenę",
+    "Z": "Zaliczenie"
+  },
+  "group": {
+    "addiction": "uzależnienia",
+    "custom": "mój"
+  },
   "hiddenCount_one": "{{count}} przedmiot ukryty",
   "hiddenCount_few": "{{count}} przedmioty ukryte",
   "hiddenCount_many": "{{count}} przedmiotów ukrytych",
@@ -49,7 +56,11 @@
   "checked": "Dokumenty sprawdzone: {{date}}",
   "notFound": "Nie znaleziono przedmiotu",
   "levelLabel": "Jak dobrze znasz: {{topic}}",
-  "level": { "0": "Nie znam", "1": "Do powtórki", "2": "Umiem" },
+  "level": {
+    "0": "Nie znam",
+    "1": "Do powtórki",
+    "2": "Umiem"
+  },
   "explain": "Wytłumacz na egzamin",
   "removeTopic": "Usuń temat",
   "proxy": "Opis przedmiotu pochodzi z programu I stopnia WSHE (najbliższy odpowiednik) – porównaj z sylabusem od prowadzącego.",
@@ -65,8 +76,19 @@
   "show": "Pokaż przedmiot",
   "hide": "Ukryj (nie mam tego przedmiotu)",
   "deleteCourse": "Usuń przedmiot",
-  "hours": { "W": "wykład", "C": "ćwiczenia", "S": "seminarium", "P": "praktyka" },
-  "tabs": { "program": "Program", "materials": "Materiały", "cards": "Fiszki", "exam": "Egzamin próbny", "ask": "Zapytaj" },
+  "hours": {
+    "W": "wykład",
+    "C": "ćwiczenia",
+    "S": "seminarium",
+    "P": "praktyka"
+  },
+  "tabs": {
+    "program": "Program",
+    "materials": "Materiały",
+    "cards": "Fiszki",
+    "exam": "Egzamin próbny",
+    "ask": "Zapytaj"
+  },
   "materials": {
     "lead": "Notatki, prezentacje i skrypty z zajęć (tekst lub PDF). Zostają zaszyfrowane na urządzeniu i są głównym źródłem dla wyszukiwania, pytań i egzaminów próbnych.",
     "add": "Dodaj materiał",
@@ -81,11 +103,16 @@
     "fileError": "Nie udało się odczytać pliku.",
     "saved": "Zapisano materiał",
     "delete": "Usuń materiał",
-    "kind": { "notes": "notatki", "pdf": "PDF", "text": "tekst" },
+    "kind": {
+      "notes": "notatki",
+      "pdf": "PDF",
+      "text": "tekst"
+    },
     "chars_one": "{{count}} znak",
     "chars_few": "{{count}} znaki",
     "chars_many": "{{count}} znaków",
-    "chars_other": "{{count}} znaku"
+    "chars_other": "{{count}} znaku",
+    "own": "Moje materiały z zajęć"
   },
   "cards": {
     "total": "Fiszki",
@@ -123,7 +150,11 @@
     "why": "Wyjaśnienie",
     "topic": "Temat: {{topic}}",
     "selfScore": "Jak oceniasz swoją odpowiedź?",
-    "self": { "good": "Dobrze", "partial": "Częściowo", "wrong": "Źle" },
+    "self": {
+      "good": "Dobrze",
+      "partial": "Częściowo",
+      "wrong": "Źle"
+    },
     "result": "Wynik",
     "great": "Świetnie – jesteś gotowa/gotowy!",
     "ok": "Dobrze idzie – powtórz słabsze tematy.",
@@ -134,15 +165,29 @@
     "questions_one": "{{count}} pytanie",
     "questions_few": "{{count}} pytania",
     "questions_many": "{{count}} pytań",
-    "questions_other": "{{count}} pytania"
+    "questions_other": "{{count}} pytania",
+    "fromBank": "Egzamin z bazy pytań",
+    "bank": "Baza pytań: {{single}} zamkniętych i {{open}} otwartych z odpowiedziami wzorcowymi – za każdym razem inne losowanie."
   },
   "askPlaceholder": "np. Czym jest współuzależnienie i jak z nim pracować?",
   "onlyUni": "Odpowiedzi tylko na podstawie sylabusa i Twoich materiałów z zajęć – ze źródłami.",
   "searchOnly": "Wyszukiwanie w sylabusie i Twoich materiałach. Włącz asystenta AI, by zadawać pytania.",
   "notCovered": "Tego nie ma w materiałach uczelni – zobacz wskazane przedmioty i literaturę.",
   "noResults": "Brak wyników.",
-  "docKind": { "course": "przedmiot", "topic": "temat", "material": "materiał" },
+  "docKind": {
+    "course": "przedmiot",
+    "topic": "temat",
+    "material": "materiał",
+    "note": "Opracowanie"
+  },
   "searchTitle": "Szukaj w studiach",
   "searchSubtitle": "Sylabusy WSHE i Twoje materiały – z AI i bez AI",
-  "dashboard": "Nauka"
+  "dashboard": "Nauka",
+  "note": {
+    "read": "Notatka",
+    "key": "Najważniejsze pojęcia",
+    "title": "Opracowanie tematów",
+    "lead": "Notatki do każdego tematu z sylabusa – przygotowane w Przystani na podstawie programu WSHE i literatury przedmiotu. Uzupełniaj je notatkami z zajęć poniżej."
+  },
+  "topicsByPrzystan": "Tematy tego przedmiotu opracowano w Przystani według typowego programu na polskich uczelniach – WSHE nie opublikowała jego sylabusa. Dopasuj je do zajęć: dodaj tematy od prowadzącego."
 }

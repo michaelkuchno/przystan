@@ -647,3 +647,34 @@ przycisk otwierający ekran „Informacje o aplikacji” (`ACTION_APPLICATION_DE
 instrukcja jest stale w Ustawieniach → Powiadomienia i wiadomości. Alternatywy bez zgody: bramka SMS
 Gateway albo aplikacja Wiadomości. Przy okazji komunikat o przerwanym logowaniu Google pokazuje
 techniczny powód od Google (ułatwia diagnozę konfiguracji OAuth).
+
+## D-071 Polskie i niemieckie brzmienie AUDIT, AUDIT-C i DUDIT (1.6.0)
+Użytkownik nie chce w aplikacji żadnych brakujących treści, a narzędzia przesiewowe pokazywały
+znacznik „TODO: wersja PL” i angielski oryginał. AUDIT (WHO) i DUDIT (Berman i in.) są bezpłatne do
+użytku. Wprowadziliśmy brzmienie PL (AUDIT według materiałów PARPA / KCPU; DUDIT – tłumaczenie robocze)
+i DE (tłumaczenia robocze). Punktacja i progi są bez zmian (oryginał). Zamiast „TODO” formularz pokazuje
+krótką informację „Tłumaczenie robocze – przed użyciem w dokumentacji klinicznej porównaj z oficjalną
+wersją”. Zmienia to wcześniejszą zasadę „nie tłumaczymy narzędzi walidowanych” – kompromis między
+kompletnością a ostrożnością; test sprawdza zgodność liczby pytań i odpowiedzi z oryginałem.
+
+## D-072 Gotowe materiały do nauki dla każdego przedmiotu WSHE
+WSHE nie publikuje wykładów ani banków pytań. Żeby moduł Studia był kompletny bez AI, Przystań ma dla
+każdego z 30 przedmiotów pakiet (`src/content/studies/pack/<id>.json`, ładowany leniwie):
+opracowanie każdego tematu z sylabusa (200–350 słów + najważniejsze pojęcia), 22–30 fiszek, 20–25
+pytań jednokrotnego wyboru z wyjaśnieniami (zrównoważony klucz) i 6–8 pytań otwartych z odpowiedziami
+wzorcowymi. Dla przedmiotów bez tematów w sylabusie WSHE (np. Historia myśli pedagogicznej,
+Pedeutologia, Pedagogika penitencjarna, Metodyka resocjalizacji, Lektorat) tematy i literatura są
+opracowane według typowych programów polskich uczelni i oznaczone w aplikacji. Fiszki pakietu
+trafiają do talii przedmiotu raz (usunięte nie wracają). Opracowania są przeszukiwalne i są źródłem dla
+„Zapytaj” (oznaczone jako „opracowanie tematu z sylabusa”). Walidacja: `scripts/check-study-packs.mjs`
+(każdy temat ma notatkę, liczby pytań, klucz w zakresie i zrównoważony, brak znaczników) – uruchamiana
+w testach jednostkowych. Treści napisane w Przystani – do sprawdzenia z wykładami (CONTENT_REVIEW §16).
+
+## D-073 Czytelne pola tekstowe na telefonie
+Zgłoszenie: „Przebieg zajęć” w scenariuszu zajęć wymagał przewijania tekstu litera po literze
+(długie opisy kroków w jednowierszowych polach). Krok ma teraz układ pionowy (czas i przyciski w
+nagłówku, tytuł i uwagi na całą szerokość), a pola z dłuższym tekstem (wszystkie wielowierszowe pola,
+działania IPR, fiszki, pytania do AI, harmonogram i wskaźniki programu profilaktycznego, tematy)
+rosną razem z treścią (`TextArea autoGrow`). Nowy test E2E `readability.spec.ts` na 360 px i z
+największą czcionką systemu przechodzi przez wszystkie ekrany i zakładki z długimi tekstami i wykrywa
+pola z przewijanym tekstem, ucięte napisy i zbyt małą czcionkę (sprawdzony na starym układzie – wykrywa błąd).

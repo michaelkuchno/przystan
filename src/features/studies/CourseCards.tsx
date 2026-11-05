@@ -14,6 +14,7 @@ import { flashcardsSchema, validateFlashcards, type GeneratedCards } from '@/lib
 import { useAiTask } from '@/features/ai/useAiTask';
 import { AiOutput } from '@/features/ai/AiOutput';
 import type { Deck, FlashCard } from '@/domain/types';
+import { PACK_CARD, type StudyPack } from '@/lib/studies/packs';
 
 /** Adds cards to the course deck (creates it on first use). */
 let queue: Promise<unknown> = Promise.resolve();
@@ -24,6 +25,25 @@ function addCards(c: CourseView, cards: Omit<FlashCard, 'id'>[]): Promise<void> 
     const cur = get('deck', id);
     const deck: Deck = cur ?? { id, title: c.name, module: 'study', cards: [] };
     await save('deck', { ...deck, title: c.name, cards: [...deck.cards, ...cards.map((x) => ({ ...x, id: uid() }))] });
+  };
+  const next = queue.then(run, run);
+  queue = next.catch(() => undefined);
+  return next;
+}
+
+/** Adds the built-in cards of the course pack to the deck once (kept deleted if the student removes them). */
+export function seedPackCards(c: CourseView, pack: StudyPack): Promise<void> {
+  const run = async () => {
+    const id = deckIdFor(c.id);
+    const cur = get('deck', id);
+    if (cur?.packSeeded || !pack.cards.length) return;
+    const base: Deck = cur ?? { id, title: c.name, module: 'study', cards: [] };
+    await save('deck', {
+      ...base,
+      title: c.name,
+      packSeeded: true,
+      cards: [...pack.cards.map((x, i) => ({ id: `${PACK_CARD}${i}`, front: x.front, back: x.back })), ...base.cards],
+    });
   };
   const next = queue.then(run, run);
   queue = next.catch(() => undefined);

@@ -13,7 +13,7 @@ export function officialText(lang: Lang, id: InstrumentId): PolishInstrumentText
   return null;
 }
 
-/** True when the UI language needs an official translation that is still missing (TODO marker). */
+/** True when the wording in the UI language is a working translation (short note in the form). */
 export function needsOfficialText(lang: Lang, id: InstrumentId): boolean {
-  return lang !== 'en' && !officialText(lang, id);
+  return lang !== 'en' && !officialText(lang, id)?.validated;
 }

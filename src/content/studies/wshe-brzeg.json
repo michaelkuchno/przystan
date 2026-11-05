@@ -80,9 +80,7 @@
         "Ideologie edukacyjne: neokonserwatyzm, neoliberalizm, radykalizm",
         "Socjalizacja w różnych środowiskach (wieś – duże miasto) we współczesnej Polsce"
       ],
-      "literature": [
-        "Banaszak S., Pedagogika ogólna a socjologia ogólna, Forum Pedagogiczne 2018/1"
-      ],
+      "literature": ["Banaszak S., Pedagogika ogólna a socjologia ogólna, Forum Pedagogiczne 2018/1"],
       "source": "II"
     },
     {
@@ -179,9 +177,24 @@
       },
       "assessment": "E",
       "group": "general",
-      "topics": [],
-      "literature": [],
-      "source": "II"
+      "topics": [
+        "Myśl wychowawcza starożytnej Grecji i Rzymu",
+        "Wychowanie w średniowieczu i epoce odrodzenia",
+        "Jan Amos Komeński i narodziny dydaktyki",
+        "Oświecenie: J. Locke, J.J. Rousseau i Komisja Edukacji Narodowej",
+        "Pedagogika XIX wieku: J.H. Pestalozzi, J.F. Herbart, F. Froebel",
+        "Ruch Nowego Wychowania na przełomie XIX i XX wieku",
+        "Polska myśl pedagogiczna XX wieku (J. Korczak, H. Radlińska, A. Kamiński)",
+        "Z dziejów myśli resocjalizacyjnej i opieki nad dziećmi zaniedbanymi"
+      ],
+      "literature": [
+        "Kot S., Historia wychowania, t. 1–2, Wydawnictwo Akademickie „Żak”, Warszawa 1996",
+        "Kurdybacha Ł. (red.), Historia wychowania, t. 1–2, PWN, Warszawa 1965–1967",
+        "Litak S., Historia wychowania, t. 1: Do Wielkiej Rewolucji Francuskiej, Wydawnictwo WAM, Kraków 2004",
+        "Wroczyński R., Dzieje oświaty polskiej 1795–1945, PWN, Warszawa 1980"
+      ],
+      "source": "II",
+      "topicsBy": "przystan"
     },
     {
       "id": "lektorat",
@@ -193,12 +206,25 @@
       },
       "assessment": "ZO",
       "group": "general",
-      "topics": [],
-      "literature": [],
+      "topics": [
+        "Słownictwo zawodowe: pomoc społeczna, edukacja i resocjalizacja (social work vocabulary)",
+        "Słownictwo z zakresu uzależnień i zdrowienia (addiction and recovery)",
+        "Czasy gramatyczne, strona bierna i mowa zależna w dokumentacji zawodowej",
+        "Czasowniki modalne i hedging w języku akademickim i zawodowym",
+        "Czytanie tekstów specjalistycznych: skimming, scanning, abstrakt naukowy",
+        "Pisanie formalne: e-mail, notatka służbowa, raport",
+        "Komunikacja z klientem: aktywne słuchanie, rodzaje pytań, dialog motywujący",
+        "Prezentacja i dyskusja: autoprezentacja i omawianie tematu pracy magisterskiej"
+      ],
+      "literature": [
+        "Clare A., Wilson J.J., Speakout Upper Intermediate (2nd edition), Pearson Education, Harlow 2015",
+        "Murphy R., English Grammar in Use (5th edition), Cambridge University Press, Cambridge 2019",
+        "Hewings M., Advanced Grammar in Use (3rd edition), Cambridge University Press, Cambridge 2013",
+        "McCarthy M., O'Dell F., Academic Vocabulary in Use (2nd edition), Cambridge University Press, Cambridge 2016"
+      ],
       "source": "II",
-      "alsoIn": [
-        2
-      ]
+      "alsoIn": [2],
+      "topicsBy": "przystan"
     },
     {
       "id": "kierunki-pedagogiki",
@@ -266,13 +292,23 @@
       },
       "assessment": "ZO",
       "group": "general",
-      "topics": [],
+      "topics": [
+        "Pedeutologia jako subdyscyplina pedagogiczna – przedmiot, zadania i rozwój badań",
+        "Nauczyciel w warunkach zmian społecznych i edukacyjnych; rola nauczyciela w modelach szkoły",
+        "Osobowość nauczyciela w poglądach wybranych pedagogów",
+        "Kompetencje zawodowe nauczyciela współczesnej edukacji",
+        "Tożsamość zawodowa nauczyciela i etapy rozwoju zawodowego",
+        "Kształcenie, dokształcanie i doskonalenie zawodowe nauczycieli",
+        "Wypalenie zawodowe i dylematy w zawodzie nauczyciela",
+        "Elementy dydaktyki: cele, zasady, metody i formy kształcenia"
+      ],
       "literature": [
         "Kwiatkowska H., Pedeutologia, Warszawa 2008",
         "Kupisiewicz Cz., Dydaktyka. Podręcznik akademicki, Kraków 2012",
         "Ferenz K., Kozioł E. (red.), Kompetencje nauczyciela wychowawcy, Zielona Góra 2002"
       ],
-      "source": "II"
+      "source": "II",
+      "topicsBy": "przystan"
     },
     {
       "id": "andragogika",
@@ -309,13 +345,23 @@
       },
       "assessment": "E",
       "group": "specialization",
-      "topics": [],
+      "topics": [
+        "Przedmiot, zadania i podstawowe pojęcia pedagogiki penitencjarnej",
+        "Penologia i teorie kary",
+        "Prawne podstawy wykonywania kary pozbawienia wolności – rodzaje i typy zakładów karnych, systemy wykonywania kary",
+        "Środki i metody oddziaływania penitencjarnego; indywidualny program oddziaływania",
+        "Prizonizacja, podkultura więzienna i psychospołeczne skutki izolacji",
+        "Zachowania samobójcze i autoagresywne osób pozbawionych wolności",
+        "Twórcza resocjalizacja i rola rodziny w resocjalizacji penitencjarnej",
+        "Readaptacja społeczna i pomoc postpenitencjarna"
+      ],
       "literature": [
         "Niewiadomska I., Polski model resocjalizacji penitencjarnej, Lublin 2016",
         "Miszewski K., Zabójcy w więzieniu, Warszawa 2016",
         "Bieńkowska E., Wiktymologia, Warszawa 2018"
       ],
-      "source": "II"
+      "source": "II",
+      "topicsBy": "przystan"
     },
     {
       "id": "polityka-spoleczna",
@@ -588,9 +634,24 @@
       },
       "assessment": "E",
       "group": "specialization",
-      "topics": [],
-      "literature": [],
-      "source": "II"
+      "topics": [
+        "Środowisko otwarte i zamknięte w resocjalizacji – pojęcia, podstawy prawne i instytucje",
+        "Diagnoza resocjalizacyjna i indywidualny program oddziaływań",
+        "Metodyka oddziaływań penitencjarnych w zakładzie karnym",
+        "Metodyka pracy z nieletnimi w MOW, MOS i zakładach poprawczych",
+        "Resocjalizacja w środowisku otwartym – kurator, ośrodek kuratorski, praca środowiskowa i streetworking",
+        "Metody i techniki oddziaływań: TZA, trening umiejętności społecznych, dialog motywujący, twórcza resocjalizacja",
+        "Readaptacja społeczna i pomoc postpenitencjarna",
+        "Warsztat i kompetencje pedagoga resocjalizacyjnego; wypalenie zawodowe"
+      ],
+      "literature": [
+        "Konopczyński M., Metody twórczej resocjalizacji. Teoria i praktyka wychowawcza, Wydawnictwo Naukowe PWN, Warszawa 2006",
+        "Pytka L., Pedagogika resocjalizacyjna. Wybrane zagadnienia teoretyczne, diagnostyczne i metodyczne, Wydawnictwo APS, Warszawa 2005",
+        "Urban B., Stanik J.M. (red.), Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2, Wydawnictwo Naukowe PWN, Warszawa 2007",
+        "Machel H., Więzienie jako instytucja karna i resocjalizacyjna, Wydawnictwo Arche, Gdańsk 2003"
+      ],
+      "source": "II",
+      "topicsBy": "przystan"
     },
     {
       "id": "kurator",
@@ -743,10 +804,7 @@
         "Babbie E., Badania społeczne w praktyce, Warszawa 2004"
       ],
       "source": "II",
-      "alsoIn": [
-        3,
-        4
-      ]
+      "alsoIn": [3, 4]
     },
     {
       "id": "praktyka",
@@ -764,13 +822,15 @@
         "Dziennik praktyk i portfolio",
         "Miejsca: ośrodki leczenia uzależnień, interwencji kryzysowej, kuratorzy, MOS/MOW, zakłady karne, PCPR"
       ],
-      "literature": [],
+      "literature": [
+        "Pospiszyl K., Resocjalizacja. Teoretyczne podstawy oraz przykłady programów oddziaływań, Warszawa 1998",
+        "Konopczyński M., Metody twórczej resocjalizacji. Teoria i praktyka wychowawcza, Warszawa 2006",
+        "Urban B., Stanik J. M. (red.), Resocjalizacja. Teoria i praktyka pedagogiczna, t. 1–2, Warszawa 2007",
+        "Miller W. R., Rollnick S., Dialog motywujący. Jak pomóc ludziom w zmianie, Kraków 2014",
+        "Mellibruda J., Sobolewska-Mellibruda Z., Integracyjna psychoterapia uzależnień. Teoria i praktyka, Warszawa 2006"
+      ],
       "source": "II",
-      "alsoIn": [
-        2,
-        3,
-        4
-      ]
+      "alsoIn": [2, 3, 4]
     }
   ]
 }

@@ -14,8 +14,8 @@
     "adult": "Erwachsene",
     "adolescentAdult": "Jugendliche und Erwachsene"
   },
-  "todoPl": "TODO: offizielle DE-Fassung",
-  "todoPlText": "Noch keine offizielle, validierte deutsche Fassung in der App. Angezeigt wird das englische Original. Validierte Instrumente übersetzen wir nicht selbst – offizielle deutsche Fassung einfügen (src/lib/screening/de.ts).",
+  "todoPl": "Arbeitsübersetzung",
+  "todoPlText": "Deutsche Fassung: {{source}}. Auswertung und Grenzwerte wie im Original. Vor dem klinischen Einsatz mit der offiziellen deutschen Fassung abgleichen.",
   "excludedTitle": "Nicht aufgenommene Instrumente",
   "excludedText": "{{list}} wurden nicht aufgenommen, weil ihr Lizenzstatus die freie Nutzung in einer App nicht eindeutig erlaubt (Details in docs/DECISIONS.md). Sie können ergänzt werden, sobald die Autor/innen zustimmen.",
   "notFound": "Instrument nicht gefunden",

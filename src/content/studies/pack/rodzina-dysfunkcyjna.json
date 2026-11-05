@@ -1,0 +1,411 @@
+{
+  "courseId": "rodzina-dysfunkcyjna",
+  "notes": [
+    {
+      "topic": "Środowisko rodziny dysfunkcyjnej – specyfika i procesy",
+      "text": "Rodzina dysfunkcyjna to rodzina, która nie realizuje w sposób prawidłowy swoich podstawowych funkcji (opiekuńczej, wychowawczej, emocjonalnej, socjalizacyjnej, ekonomicznej), przez co zaburza rozwój i dobrostan swoich członków. W literaturze (J. Brągiel, S. Kawula, I. Krasiejko) odróżnia się rodzinę dysfunkcyjną (np. alkoholowa, z przemocą, zaniedbująca, chronicznie konfliktowa) od rodziny niewydolnej wychowawczo lub doświadczającej przejściowego kryzysu.\n\nPerspektywa systemowa (S. Minuchin, M. Bowen, V. Satir) ujmuje rodzinę jako system z podsystemami (małżeński, rodzicielski, rodzeństwa) i granicami. W rodzinie dysfunkcyjnej obserwuje się:\n• granice zbyt sztywne (izolacja, chłód) lub rozmyte (splątanie, brak prywatności);\n• koalicje międzypokoleniowe i triangulację – wciąganie dziecka w konflikt rodziców;\n• parentyfikację – dziecko przejmuje rolę rodzica;\n• zaburzoną komunikację: podwójne wiązanie, tajemnice rodzinne, komunikaty niespójne, przemilczenia;\n• sztywne reguły – w rodzinie z problemem alkoholowym opisywane przez C. Black jako „nie mów, nie ufaj, nie czuj”.\n\nW rodzinie z uzależnieniem rozwija się współuzależnienie, a dzieci przyjmują role opisane przez S. Wegscheider-Cruse: bohater rodzinny, kozioł ofiarny, zagubione dziecko, maskotka. Role te pełnią funkcję ochronną dla systemu, ale w dorosłości mogą prowadzić do trudności – mówi się o syndromie DDA lub szerzej DDD (dorosłe dzieci z rodzin dysfunkcyjnych).\n\nW rodzinie z przemocą działa cykl przemocy L. Walker: faza narastania napięcia, faza ostrej przemocy i faza miodowego miesiąca (skruchy), po której cykl się powtarza, zwykle z eskalacją.\n\nModel kołowy D. Olsona opisuje rodzinę w wymiarach spójności i elastyczności – rodziny skrajnie splątane lub rozłączone oraz chaotyczne lub sztywne funkcjonują gorzej niż zrównoważone.\n\nNa egzaminie typowe pytania: funkcje rodziny, role dzieci w rodzinie alkoholowej, cykl przemocy, cechy komunikacji w rodzinie dysfunkcyjnej.",
+      "key": [
+        "Rodzina dysfunkcyjna – rodzina nierealizująca prawidłowo swoich funkcji i zaburzająca rozwój członków",
+        "Triangulacja – wciąganie trzeciej osoby, najczęściej dziecka, w konflikt dwojga dorosłych",
+        "Role dzieci (S. Wegscheider-Cruse) – bohater, kozioł ofiarny, zagubione dziecko, maskotka",
+        "Cykl przemocy (L. Walker) – narastanie napięcia, ostra przemoc, miodowy miesiąc",
+        "Model kołowy Olsona – opis rodziny w wymiarach spójności i elastyczności"
+      ]
+    },
+    {
+      "topic": "Formy pomocy: poradnictwo, psycho- i socjoterapia, mediacje, wsparcie socjalne, piecza zastępcza",
+      "text": "Pomoc rodzinie dysfunkcyjnej powinna być dobrana do rodzaju problemu, jego nasilenia i zasobów rodziny. Zasadą jest pierwszeństwo wsparcia w środowisku rodzinnym przed umieszczeniem dziecka poza domem.\n\n• Poradnictwo rodzinne – udzielanie informacji, porad i psychoedukacji (np. o wychowaniu, uzależnieniu, prawach); realizują je ośrodki interwencji kryzysowej, poradnie rodzinne, PCPR, OPS, poradnie psychologiczno-pedagogiczne.\n• Psychoterapia – indywidualna, małżeńska, rodzinna (systemowa); terapia uzależnienia i współuzależnienia; terapia DDA; terapia traumy u dzieci.\n• Socjoterapia – forma pomocy dzieciom i młodzieży z zaburzeniami zachowania, prowadzona w grupie, oparta na doświadczeniach korygujących (K. Sawicka, M. Ganczarska); cele terapeutyczne, edukacyjne i rozwojowe.\n• Interwencja kryzysowa (R. K. James, B. E. Gilliland) – krótkoterminowa pomoc w sytuacji kryzysu, np. przemocy, rozpadu rodziny; model sześciu kroków: zdefiniowanie problemu, zapewnienie bezpieczeństwa, wsparcie, analiza alternatyw, plan, uzyskanie zobowiązania.\n• Mediacje rodzinne – dobrowolne rozwiązywanie konfliktów z udziałem bezstronnego mediatora (np. przy rozwodzie, kontaktach z dzieckiem); przeciwwskazaniem jest przemoc domowa, gdyż nierównowaga sił uniemożliwia rzeczywiste porozumienie.\n• Wsparcie socjalne – świadczenia pieniężne i niepieniężne z pomocy społecznej, praca socjalna, kontrakt socjalny, pomoc w mieszkaniu, dożywianie.\n• Piecza zastępcza (ustawa o wspieraniu rodziny i systemie pieczy zastępczej) – gdy rodzice nie mogą zapewnić opieki: rodzinna (rodzina zastępcza spokrewniona, niezawodowa, zawodowa, rodzinny dom dziecka) lub instytucjonalna (placówka opiekuńczo-wychowawcza, regionalna placówka opiekuńczo-terapeutyczna, interwencyjny ośrodek preadopcyjny). Pierwszeństwo ma piecza rodzinna. Organizatorem rodzinnej pieczy zastępczej jest często PCPR. Umieszczenie co do zasady następuje na podstawie postanowienia sądu, a celem jest powrót dziecka do rodziny biologicznej, jeśli to możliwe.\n\nPrzykład: w rodzinie z uzależnionym ojcem pomoc może łączyć terapię uzależnienia, grupę Al-Anon dla matki, socjoterapię dla syna i asystenta rodziny.",
+      "key": [
+        "Socjoterapia – grupowa forma pomocy dzieciom oparta na doświadczeniach korygujących",
+        "Interwencja kryzysowa – krótkoterminowa pomoc w sytuacji ostrego kryzysu",
+        "Mediacja rodzinna – dobrowolne rozwiązywanie konfliktu z bezstronnym mediatorem; przeciwwskazana przy przemocy",
+        "Piecza zastępcza rodzinna – rodzina zastępcza lub rodzinny dom dziecka",
+        "Piecza zastępcza instytucjonalna – placówki opiekuńczo-wychowawcze i opiekuńczo-terapeutyczne"
+      ]
+    },
+    {
+      "topic": "System wsparcia rodzin; współpraca z asystentem rodziny i kuratorem",
+      "text": "System wsparcia rodzin w Polsce ma charakter wielosektorowy i wielopoziomowy. Podstawowe akty prawne to: ustawa o pomocy społecznej, ustawa o wspieraniu rodziny i systemie pieczy zastępczej, ustawa o przeciwdziałaniu przemocy domowej, ustawa o wychowaniu w trzeźwości i przeciwdziałaniu alkoholizmowi, ustawa o przeciwdziałaniu narkomanii, Kodeks rodzinny i opiekuńczy oraz ustawa o kuratorach sądowych.\n\nPoziomy i podmioty:\n• gmina – ośrodek pomocy społecznej (lub centrum usług społecznych), asystent rodziny, placówki wsparcia dziennego (świetlice, kluby), gminna komisja rozwiązywania problemów alkoholowych, zespół interdyscyplinarny ds. przeciwdziałania przemocy domowej;\n• powiat – PCPR (piecza zastępcza, ośrodki interwencji kryzysowej, poradnictwo specjalistyczne), poradnie psychologiczno-pedagogiczne, powiatowy urząd pracy;\n• województwo – regionalne ośrodki polityki społecznej, ośrodki adopcyjne;\n• sądy rodzinne i kuratorzy, policja, szkoły, ochrona zdrowia, organizacje pozarządowe, kościoły.\n\nWsparcie rodziny przeżywającej trudności wychowawcze polega m.in. na pracy z rodziną, pomocy w opiece i wychowaniu dziecka (placówki wsparcia dziennego, rodziny wspierające) oraz na asystenturze.\n\nWspółpraca z asystentem rodziny i kuratorem wymaga:\n• wymiany informacji z poszanowaniem przepisów o ochronie danych i tajemnicy zawodowej;\n• wspólnego planu – plan pracy z rodziną asystenta, plan nadzoru kuratora i ewentualnie plan pomocy dziecku w pieczy powinny być spójne;\n• jasnego podziału ról: asystent wspiera i towarzyszy, kurator kontroluje wykonanie orzeczenia sądu i również wspiera, pracownik socjalny organizuje świadczenia;\n• spotkań zespołowych (case conference) i wspólnej oceny postępów.\n\nTypowe trudności: dublowanie działań, sprzeczne komunikaty wobec rodziny, „przerzucanie” odpowiedzialności, rotacja kadr. Rodzina, która ma pięciu specjalistów i żadnego koordynatora, może czuć się kontrolowana zamiast wspierana.\n\nPrzykład z PCPR: koordynator rodzinnej pieczy zastępczej, asystent rodziny biologicznej i kurator wspólnie ustalają warunki powrotu dziecka do matki po terapii uzależnienia.",
+      "key": [
+        "Ustawa o wspieraniu rodziny i systemie pieczy zastępczej – podstawa asystentury rodzinnej i pieczy zastępczej",
+        "PCPR – powiatowe centrum pomocy rodzinie, m.in. organizator rodzinnej pieczy zastępczej",
+        "Placówka wsparcia dziennego – świetlica lub klub wspierający dziecko i rodzinę w środowisku",
+        "Zespół interdyscyplinarny – gminne ciało koordynujące przeciwdziałanie przemocy domowej",
+        "Case conference – spotkanie specjalistów różnych instytucji w sprawie jednej rodziny"
+      ]
+    },
+    {
+      "topic": "Procedura „Niebieskiej Karty”; praca z rodziną, w której występuje przemoc",
+      "text": "Procedura „Niebieskiej Karty” obejmuje działania podejmowane w związku z uzasadnionym podejrzeniem przemocy domowej. Jej podstawą jest ustawa o przeciwdziałaniu przemocy domowej (po nowelizacji z 2023 r.) oraz rozporządzenie Rady Ministrów w sprawie procedury i wzorów formularzy.\n\nNajważniejsze elementy:\n• wszczęcie – przez przedstawiciela jednej ze służb: policji, jednostek organizacyjnych pomocy społecznej, gminnej komisji rozwiązywania problemów alkoholowych, ochrony zdrowia, oświaty; wszczęcie nie wymaga zgody osoby doznającej przemocy;\n• formularz „Niebieska Karta – A” wypełnia wszczynający, a osobie doznającej przemocy przekazuje się formularz „B” z informacjami o prawach i miejscach pomocy;\n• sprawę przekazuje się zespołowi interdyscyplinarnemu, który powołuje grupę diagnostyczno-pomocową (dawniej grupa robocza);\n• grupa diagnozuje sytuację, spotyka się z osobą doznającą i stosującą przemoc (osobno), opracowuje indywidualny plan pomocy, monitoruje sytuację;\n• zakończenie – po ustaniu przemocy i zrealizowaniu planu lub po stwierdzeniu bezzasadności.\n\nNowelizacja z 2023 r. wprowadziła m.in. terminy „osoba doznająca” i „osoba stosująca przemoc domową”, rozszerzyła definicję o przemoc ekonomiczną i cyberprzemoc, objęła ochroną dziecko-świadka oraz osoby w związkach niezamieszkujących razem i byłych partnerów, a także wzmocniła środki izolacji sprawcy (nakazy i zakazy wydawane przez policję).\n\nZasady pracy z rodziną z przemocą:\n• priorytet bezpieczeństwa – ocena ryzyka i plan bezpieczeństwa;\n• praca oddzielna z osobą doznającą (wsparcie, poradnictwo, grupy wsparcia, pomoc prawna) i z osobą stosującą przemoc (programy korekcyjno-edukacyjne, programy psychologiczno-terapeutyczne, terapia uzależnienia);\n• brak mediacji i terapii par w czasie trwania przemocy;\n• nieobwinianie ofiary, rozumienie mechanizmów (cykl przemocy, wyuczona bezradność, syndrom sztokholmski);\n• odpowiedzialność za przemoc zawsze ponosi osoba ją stosująca, także gdy jest pod wpływem alkoholu.\n\nNa egzaminie: kto wszczyna procedurę, rola zespołu i grupy, zmiany z 2023 r.",
+      "key": [
+        "Niebieska Karta – procedura podejmowana przy uzasadnionym podejrzeniu przemocy domowej",
+        "Zespół interdyscyplinarny – gminny zespół koordynujący działania wobec przemocy domowej",
+        "Grupa diagnostyczno-pomocowa – grupa specjalistów prowadząca konkretną sprawę w ramach procedury",
+        "Program korekcyjno-edukacyjny – oddziaływanie na osoby stosujące przemoc domową",
+        "Plan bezpieczeństwa – zestaw działań chroniących osobę doznającą przemocy"
+      ]
+    },
+    {
+      "topic": "Praca z osobą bezrobotną, bezdomną, w ubóstwie",
+      "text": "Bezrobocie, bezdomność i ubóstwo często współwystępują z problemami rodzinnymi i uzależnieniami, tworząc spiralę wykluczenia społecznego.\n\nBezrobocie – skutki psychospołeczne opisywała M. Jahoda (utrata struktury czasu, kontaktów, statusu, celu); typowe fazy reakcji: szok, optymizm, pesymizm, fatalizm i apatia. Długotrwałe bezrobocie prowadzi do wyuczonej bezradności (M. Seligman), obniżenia samooceny, konfliktów rodzinnych, sięgania po alkohol. Formy pomocy: powiatowy urząd pracy (od 2025 r. działający na podstawie ustawy o rynku pracy i służbach zatrudnienia) – pośrednictwo, poradnictwo zawodowe, szkolenia, staże; zatrudnienie socjalne w CIS i KIS; spółdzielnie socjalne i inne podmioty ekonomii społecznej; trening kompetencji i coaching.\n\nBezdomność – według ustawy o pomocy społecznej osoba bezdomna to m.in. osoba niezamieszkująca w lokalu mieszkalnym i niezameldowana na pobyt stały lub zameldowana w lokalu, w którym nie ma możliwości zamieszkania. Europejska typologia ETHOS (FEANTSA) wyróżnia bezdach, bezmieszkaniowość, niezabezpieczone i nieodpowiednie warunki mieszkaniowe. Pomoc obejmuje ogrzewalnie, noclegownie, schroniska (także z usługami opiekuńczymi), mieszkania treningowe i wspierane oraz indywidualny program wychodzenia z bezdomności. Rośnie znaczenie podejścia „Najpierw mieszkanie” (Housing First) – zapewnienie mieszkania bez warunku wcześniejszej abstynencji, z elastycznym wsparciem.\n\nUbóstwo – absolutne (brak zaspokojenia podstawowych potrzeb) i relatywne (odstawanie od standardu życia w społeczeństwie). O. Lewis opisał kulturę ubóstwa – utrwalane międzypokoleniowo wzorce bierności i krótkiej perspektywy czasowej. Pomoc społeczna przyznaje świadczenia na podstawie kryterium dochodowego, łącząc je z pracą socjalną i kontraktem socjalnym.\n\nZasady pracy: empowerment (wzmacnianie poczucia wpływu), podejście skoncentrowane na rozwiązaniach, małe kroki, praca na zasobach, unikanie roszczeniowego wzorca zależności od pomocy, współpraca międzyinstytucjonalna. Przykład: bezdomny mężczyzna uzależniony od alkoholu – najpierw schronisko i detoks, potem terapia, CIS i mieszkanie treningowe.",
+      "key": [
+        "Wyuczona bezradność – przekonanie o braku wpływu na sytuację wynikające z powtarzanych niepowodzeń (M. Seligman)",
+        "ETHOS – europejska typologia bezdomności i wykluczenia mieszkaniowego",
+        "Indywidualny program wychodzenia z bezdomności – plan pracy z osobą bezdomną w ramach pomocy społecznej",
+        "Housing First – zapewnienie mieszkania jako pierwszego kroku, bez warunku abstynencji",
+        "Kultura ubóstwa (O. Lewis) – międzypokoleniowo przekazywane wzorce przystosowania do biedy"
+      ]
+    },
+    {
+      "topic": "Zadania asystenta rodziny i kuratora rodzinnego",
+      "text": "Asystent rodziny – zawód wprowadzony ustawą o wspieraniu rodziny i systemie pieczy zastępczej. Zatrudnia go gmina (najczęściej OPS). Pracuje z rodziną przeżywającą trudności w wypełnianiu funkcji opiekuńczo-wychowawczych, za jej zgodą i przy jej aktywnym udziale, głównie w miejscu zamieszkania. Liczba rodzin pod opieką jednego asystenta jest ustawowo ograniczona (do 15). Zadania obejmują m.in.:\n• opracowanie i realizację planu pracy z rodziną we współpracy z jej członkami i pracownikiem socjalnym;\n• pomoc w poprawie sytuacji życiowej, w tym w nabywaniu umiejętności prowadzenia gospodarstwa domowego;\n• pomoc w rozwiązywaniu problemów socjalnych, psychologicznych i wychowawczych z dziećmi;\n• wspieranie aktywności społecznej, motywowanie do podnoszenia kwalifikacji i podjęcia pracy;\n• udzielanie wsparcia dzieciom, w tym udział w zajęciach psychoedukacyjnych;\n• współpracę z zespołem interdyscyplinarnym, szkołą, poradniami, kuratorem;\n• monitorowanie funkcjonowania rodziny po zakończeniu pracy oraz sporządzanie okresowych ocen sytuacji rodziny.\nAsystent działa w modelu towarzyszenia – jest „obok” rodziny, wzmacnia jej kompetencje, a nie wyręcza (I. Krasiejko).\n\nKurator rodzinny – kurator sądowy wykonujący orzeczenia sądu w sprawach rodzinnych i nieletnich (ustawa o kuratorach sądowych). Może być zawodowy lub społeczny. Zadania:\n• nadzór nad rodziną przy ograniczeniu władzy rodzicielskiej (art. 109 KRO);\n• nadzór nad nieletnimi wobec których orzeczono środki wychowawcze;\n• przeprowadzanie wywiadów środowiskowych na zlecenie sądu;\n• kontrola i wspieranie wykonywania obowiązków, informowanie sądu o przebiegu nadzoru i wnioskowanie o zmianę środków;\n• nadzór nad kontaktami rodziców z dzieckiem, jeśli sąd tak postanowi.\nKurator łączy funkcję kontrolną z wychowawczo-resocjalizacyjną i pomocową.\n\nRóżnica egzaminacyjna: asystent działa w systemie pomocy społecznej, za zgodą rodziny i wspierająco; kurator – w systemie sądowym, na podstawie orzeczenia, z silną funkcją kontrolną.",
+      "key": [
+        "Asystent rodziny – pracownik gminy wspierający rodzinę z trudnościami opiekuńczo-wychowawczymi w jej środowisku",
+        "Plan pracy z rodziną – dokument określający cele i działania asystenta i rodziny",
+        "Kurator rodzinny – kurator sądowy wykonujący orzeczenia sądu rodzinnego",
+        "Nadzór kuratora – forma kontroli i wsparcia rodziny lub nieletniego z orzeczenia sądu",
+        "Model towarzyszenia – wspieranie rodziny w jej własnym procesie zmiany zamiast wyręczania"
+      ]
+    },
+    {
+      "topic": "Poradnie psychologiczno-pedagogiczne; pedagog i psycholog szkolny",
+      "text": "Poradnie psychologiczno-pedagogiczne (w tym specjalistyczne) są publicznymi placówkami systemu oświaty, prowadzonymi zwykle przez powiat. Udzielają dzieciom, młodzieży, rodzicom i nauczycielom pomocy psychologiczno-pedagogicznej. Zadania:\n• diagnoza – poziomu rozwoju, potrzeb, możliwości, trudności w uczeniu się i zachowaniu, zaburzeń rozwojowych;\n• wydawanie opinii (np. o specyficznych trudnościach w uczeniu się) oraz – przez zespoły orzekające – orzeczeń o potrzebie kształcenia specjalnego, zajęć rewalidacyjno-wychowawczych, indywidualnego nauczania oraz opinii o potrzebie wczesnego wspomagania rozwoju;\n• terapia i pomoc bezpośrednia: terapia pedagogiczna, logopedyczna, psychologiczna, socjoterapia, terapia rodzin, grupy wsparcia;\n• profilaktyka (w tym uzależnień) i psychoedukacja rodziców;\n• wspomaganie szkół i nauczycieli, doradztwo zawodowe.\nKorzystanie z poradni jest bezpłatne i dobrowolne; wniosek o orzeczenie składa rodzic.\n\nPedagog szkolny i psycholog szkolny (a także pedagog specjalny, terapeuta pedagogiczny, logopeda) organizują i udzielają pomocy psychologiczno-pedagogicznej w szkole. Zadania pedagoga obejmują m.in.:\n• rozpoznawanie potrzeb i trudności uczniów, w tym sytuacji rodzinnej;\n• działania wychowawcze i profilaktyczne wynikające z programu wychowawczo-profilaktycznego;\n• pomoc uczniom w sytuacjach kryzysowych, interwencje;\n• współpracę z rodzicami, OPS, asystentem rodziny, kuratorem, policją, poradnią;\n• udział w procedurze Niebieskiej Karty (oświata może ją wszczynać) i realizację standardów ochrony małoletnich.\nPsycholog skupia się bardziej na diagnozie i pomocy psychologicznej, wsparciu emocjonalnym, interwencji kryzysowej i pracy z zespołem klasowym.\n\nDla dziecka z rodziny dysfunkcyjnej szkoła bywa jedynym stabilnym miejscem i pierwszym, które dostrzega problem (głód, zaniedbanie, zmęczenie, siniaki, zmiany zachowania). Pedagog powinien wtedy porozmawiać z dzieckiem w bezpiecznych warunkach, nie obiecywać tajemnicy, udokumentować obserwacje i uruchomić procedurę ochronną. Na egzaminie: zadania poradni, różnica opinia–orzeczenie, rola szkoły w systemie wsparcia.",
+      "key": [
+        "Poradnia psychologiczno-pedagogiczna – placówka oświatowa diagnozująca i wspierająca dzieci, rodziców i nauczycieli",
+        "Orzeczenie o potrzebie kształcenia specjalnego – dokument wydawany przez zespół orzekający poradni",
+        "Opinia poradni – dokument opisujący potrzeby i trudności dziecka, np. w uczeniu się",
+        "Program wychowawczo-profilaktyczny – szkolny dokument planujący działania wychowawcze i profilaktyczne",
+        "Pomoc psychologiczno-pedagogiczna – rozpoznawanie i zaspokajanie indywidualnych potrzeb rozwojowych i edukacyjnych ucznia"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "front": "Rodzina dysfunkcyjna",
+      "back": "Rodzina, która nie realizuje prawidłowo swoich funkcji (opiekuńczej, wychowawczej, emocjonalnej, socjalizacyjnej, ekonomicznej), przez co zaburza rozwój członków."
+    },
+    {
+      "front": "Reguły rodziny alkoholowej wg C. Black",
+      "back": "„Nie mów, nie ufaj, nie czuj” – zakaz ujawniania problemu, nieufność i tłumienie emocji."
+    },
+    {
+      "front": "Role dzieci w rodzinie z uzależnieniem (S. Wegscheider-Cruse)",
+      "back": "Bohater rodzinny, kozioł ofiarny, zagubione dziecko, maskotka."
+    },
+    {
+      "front": "Parentyfikacja",
+      "back": "Odwrócenie ról – dziecko przejmuje obowiązki i odpowiedzialność rodzica, emocjonalną lub praktyczną."
+    },
+    {
+      "front": "Triangulacja",
+      "back": "Wciąganie trzeciej osoby, zwykle dziecka, w konflikt dwojga dorosłych w celu obniżenia napięcia w ich relacji."
+    },
+    {
+      "front": "Cykl przemocy wg L. Walker",
+      "back": "Faza narastania napięcia, faza ostrej przemocy, faza miodowego miesiąca; cykl się powtarza, zwykle z eskalacją."
+    },
+    {
+      "front": "Model kołowy D. Olsona",
+      "back": "Opis rodziny w wymiarach spójności (od rozłączenia do splątania) i elastyczności (od sztywności do chaosu); najlepiej funkcjonują rodziny zrównoważone."
+    },
+    {
+      "front": "Socjoterapia",
+      "back": "Grupowa forma pomocy dzieciom i młodzieży z zaburzeniami zachowania i emocji, oparta na doświadczeniach korygujących; ma cele terapeutyczne, edukacyjne i rozwojowe."
+    },
+    {
+      "front": "Dlaczego mediacja jest przeciwwskazana w sytuacji przemocy domowej?",
+      "back": "Bo nierównowaga sił i zagrożenie uniemożliwiają dobrowolne, równoprawne porozumienie, a osoba doznająca przemocy może być narażona na odwet."
+    },
+    {
+      "front": "Formy rodzinnej pieczy zastępczej",
+      "back": "Rodzina zastępcza spokrewniona, niezawodowa, zawodowa oraz rodzinny dom dziecka."
+    },
+    {
+      "front": "Formy instytucjonalnej pieczy zastępczej",
+      "back": "Placówka opiekuńczo-wychowawcza, regionalna placówka opiekuńczo-terapeutyczna, interwencyjny ośrodek preadopcyjny."
+    },
+    {
+      "front": "Model interwencji kryzysowej Jamesa i Gillilanda",
+      "back": "Sześć kroków: zdefiniowanie problemu, zapewnienie bezpieczeństwa, wsparcie, analiza alternatyw, plan działania, uzyskanie zobowiązania."
+    },
+    {
+      "front": "Rola PCPR w systemie wsparcia rodzin",
+      "back": "Organizuje rodzinną pieczę zastępczą, prowadzi poradnictwo specjalistyczne i interwencję kryzysową, wspiera usamodzielnianych wychowanków."
+    },
+    {
+      "front": "Kto może wszcząć procedurę Niebieskiej Karty?",
+      "back": "Przedstawiciele policji, pomocy społecznej, gminnej komisji rozwiązywania problemów alkoholowych, ochrony zdrowia i oświaty."
+    },
+    {
+      "front": "Czy wszczęcie Niebieskiej Karty wymaga zgody osoby doznającej przemocy?",
+      "back": "Nie – procedurę wszczyna się przy uzasadnionym podejrzeniu przemocy, bez konieczności uzyskania zgody."
+    },
+    {
+      "front": "Grupa diagnostyczno-pomocowa",
+      "back": "Grupa powoływana przez zespół interdyscyplinarny do prowadzenia konkretnej sprawy w procedurze Niebieskiej Karty (zastąpiła grupy robocze)."
+    },
+    {
+      "front": "Najważniejsze zmiany ustawy o przeciwdziałaniu przemocy domowej z 2023 r.",
+      "back": "Nowa nazwa i terminologia (osoba doznająca/stosująca), przemoc ekonomiczna i cyberprzemoc, dziecko-świadek jako osoba doznająca, ochrona byłych partnerów, grupy diagnostyczno-pomocowe."
+    },
+    {
+      "front": "Praca z osobą stosującą przemoc",
+      "back": "Programy korekcyjno-edukacyjne i psychologiczno-terapeutyczne, terapia uzależnienia, środki izolacji; pełna odpowiedzialność sprawcy za przemoc."
+    },
+    {
+      "front": "Fazy reakcji na bezrobocie",
+      "back": "Szok, optymizm, pesymizm, fatalizm i apatia – kolejne etapy przy przedłużającym się braku pracy."
+    },
+    {
+      "front": "Typologia ETHOS",
+      "back": "Europejska typologia bezdomności: bez dachu, bez mieszkania, niezabezpieczone warunki mieszkaniowe, nieodpowiednie warunki mieszkaniowe."
+    },
+    {
+      "front": "Housing First",
+      "back": "Podejście zapewniające osobie bezdomnej mieszkanie jako pierwszy krok, bez warunku abstynencji, z elastycznym wsparciem."
+    },
+    {
+      "front": "Ubóstwo absolutne a relatywne",
+      "back": "Absolutne – niezaspokojenie podstawowych potrzeb biologicznych; relatywne – poziom życia wyraźnie niższy niż przeciętny w danym społeczeństwie."
+    },
+    {
+      "front": "Kto zatrudnia asystenta rodziny i na jakiej podstawie działa?",
+      "back": "Gmina (zwykle OPS), na podstawie ustawy o wspieraniu rodziny i systemie pieczy zastępczej; pracuje za zgodą i z udziałem rodziny."
+    },
+    {
+      "front": "Główne zadania asystenta rodziny",
+      "back": "Plan pracy z rodziną, pomoc w sprawach socjalnych, wychowawczych i prowadzeniu domu, motywowanie do pracy i edukacji, wsparcie dzieci, monitoring po zakończeniu pracy."
+    },
+    {
+      "front": "Kurator rodzinny – zadania",
+      "back": "Wykonuje orzeczenia sądu rodzinnego: nadzór nad rodziną przy ograniczeniu władzy rodzicielskiej, nadzór nad nieletnimi, wywiady środowiskowe, informowanie sądu."
+    },
+    {
+      "front": "Asystent rodziny a kurator rodzinny",
+      "back": "Asystent działa w systemie pomocy społecznej, wspierająco i za zgodą rodziny; kurator – w systemie sądowym, na podstawie orzeczenia, z funkcją kontrolną."
+    },
+    {
+      "front": "Opinia a orzeczenie poradni psychologiczno-pedagogicznej",
+      "back": "Opinię wydaje poradnia (np. o specyficznych trudnościach w uczeniu się); orzeczenie (np. o potrzebie kształcenia specjalnego) wydaje zespół orzekający."
+    },
+    {
+      "front": "Rola pedagoga szkolnego wobec dziecka z rodziny dysfunkcyjnej",
+      "back": "Rozpoznaje sygnały, rozmawia z dzieckiem, dokumentuje, współpracuje z rodzicami i instytucjami, w razie przemocy wszczyna Niebieską Kartę."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Reguła „nie mów, nie ufaj, nie czuj” w rodzinie alkoholowej została opisana przez:",
+      "options": ["C. Black", "V. Satir", "S. Minuchina", "D. Olsona"],
+      "correct": 0,
+      "explain": "Claudia Black opisała te reguły w pracy z dziećmi alkoholików."
+    },
+    {
+      "q": "Dziecko, które przyciąga uwagę negatywnymi zachowaniami i odciąga ją od problemu rodziców, pełni rolę:",
+      "options": ["bohatera rodzinnego", "kozła ofiarnego", "maskotki", "zagubionego dziecka"],
+      "correct": 1,
+      "explain": "Kozioł ofiarny skupia na sobie napięcia systemu."
+    },
+    {
+      "q": "Faza „miodowego miesiąca” w cyklu przemocy L. Walker to:",
+      "options": [
+        "okres narastania napięcia",
+        "akt ostrej przemocy",
+        "okres skruchy i okazywania czułości przez sprawcę",
+        "zakończenie związku"
+      ],
+      "correct": 2,
+      "explain": "Skrucha sprawcy podtrzymuje nadzieję ofiary i utrwala cykl."
+    },
+    {
+      "q": "Wciąganie dziecka w konflikt między rodzicami to:",
+      "options": ["parentyfikacja", "separacja", "współuzależnienie", "triangulacja"],
+      "correct": 3,
+      "explain": "Triangulacja oznacza tworzenie trójkąta w miejsce bezpośredniej konfrontacji dwojga dorosłych."
+    },
+    {
+      "q": "W modelu kołowym Olsona rodzinę opisuje się w wymiarach:",
+      "options": ["spójności i elastyczności", "władzy i kontroli", "kary i nagrody", "dochodu i wykształcenia"],
+      "correct": 0,
+      "explain": "Model kołowy opiera się na spójności i elastyczności (adaptacyjności)."
+    },
+    {
+      "q": "Mediacja rodzinna jest przeciwwskazana, gdy:",
+      "options": [
+        "rodzice się rozwodzą",
+        "w rodzinie występuje przemoc domowa",
+        "spór dotyczy kontaktów z dzieckiem",
+        "strony są gotowe do rozmowy"
+      ],
+      "correct": 1,
+      "explain": "Nierównowaga sił wyklucza dobrowolne porozumienie i grozi odwetem."
+    },
+    {
+      "q": "Która forma należy do instytucjonalnej pieczy zastępczej?",
+      "options": [
+        "rodzina zastępcza zawodowa",
+        "rodzinny dom dziecka",
+        "regionalna placówka opiekuńczo-terapeutyczna",
+        "rodzina zastępcza spokrewniona"
+      ],
+      "correct": 2,
+      "explain": "Pozostałe odpowiedzi to formy pieczy rodzinnej."
+    },
+    {
+      "q": "Podstawą prawną asystentury rodzinnej i pieczy zastępczej jest:",
+      "options": [
+        "ustawa o pomocy społecznej",
+        "ustawa o kuratorach sądowych",
+        "Kodeks karny wykonawczy",
+        "ustawa o wspieraniu rodziny i systemie pieczy zastępczej"
+      ],
+      "correct": 3,
+      "explain": "Ustawa z 2011 r. reguluje wspieranie rodziny, asystenta i pieczę zastępczą."
+    },
+    {
+      "q": "Organizatorem rodzinnej pieczy zastępczej w powiecie jest najczęściej:",
+      "options": ["powiatowe centrum pomocy rodzinie", "sąd rejonowy", "szkoła", "powiatowy urząd pracy"],
+      "correct": 0,
+      "explain": "Starosta zwykle wyznacza PCPR jako organizatora rodzinnej pieczy zastępczej."
+    },
+    {
+      "q": "Pierwszym krokiem modelu interwencji kryzysowej Jamesa i Gillilanda jest:",
+      "options": ["uzyskanie zobowiązania", "zdefiniowanie problemu", "analiza alternatyw", "plan działania"],
+      "correct": 1,
+      "explain": "Model rozpoczyna się od zrozumienia problemu z perspektywy klienta."
+    },
+    {
+      "q": "Który podmiot NIE jest wymieniany jako uprawniony do wszczęcia procedury Niebieskiej Karty?",
+      "options": ["policja", "oświata", "powiatowy urząd pracy", "ochrona zdrowia"],
+      "correct": 2,
+      "explain": "Procedurę wszczynają: policja, pomoc społeczna, GKRPA, ochrona zdrowia i oświata."
+    },
+    {
+      "q": "Grupa diagnostyczno-pomocowa jest powoływana przez:",
+      "options": ["sąd rodzinny", "policję", "wojewodę", "zespół interdyscyplinarny"],
+      "correct": 3,
+      "explain": "Zespół interdyscyplinarny tworzy grupy do prowadzenia konkretnych spraw."
+    },
+    {
+      "q": "Wszczęcie procedury Niebieskiej Karty:",
+      "options": [
+        "nie wymaga zgody osoby doznającej przemocy",
+        "wymaga pisemnej zgody osoby doznającej przemocy",
+        "wymaga zgody sądu",
+        "jest możliwe tylko po skazaniu sprawcy"
+      ],
+      "correct": 0,
+      "explain": "Wystarczy uzasadnione podejrzenie przemocy domowej."
+    },
+    {
+      "q": "Nowelizacja z 2023 r. wprowadziła terminy:",
+      "options": [
+        "ofiara i sprawca przemocy w rodzinie",
+        "osoba doznająca i osoba stosująca przemoc domową",
+        "pokrzywdzony i oskarżony",
+        "klient i beneficjent"
+      ],
+      "correct": 1,
+      "explain": "Zmieniono terminologię na mniej stygmatyzującą."
+    },
+    {
+      "q": "W pracy z rodziną, w której trwa przemoc, NIE zaleca się:",
+      "options": [
+        "opracowania planu bezpieczeństwa",
+        "programu korekcyjno-edukacyjnego dla osoby stosującej przemoc",
+        "wspólnej terapii par jako pierwszej formy pomocy",
+        "grupy wsparcia dla osoby doznającej przemocy"
+      ],
+      "correct": 2,
+      "explain": "Terapia par przy trwającej przemocy może zwiększać zagrożenie."
+    },
+    {
+      "q": "Wyuczoną bezradność jako mechanizm psychologiczny opisał:",
+      "options": ["O. Lewis", "M. Jahoda", "D. Olson", "M. Seligman"],
+      "correct": 3,
+      "explain": "Martin Seligman opisał learned helplessness."
+    },
+    {
+      "q": "Podejście Housing First polega na:",
+      "options": [
+        "zapewnieniu mieszkania bez warunku wcześniejszej abstynencji",
+        "umieszczeniu osoby w noclegowni do czasu podjęcia pracy",
+        "przyznaniu mieszkania po ukończeniu terapii",
+        "zakwaterowaniu tylko rodzin z dziećmi"
+      ],
+      "correct": 0,
+      "explain": "Mieszkanie jest punktem wyjścia, a wsparcie jest elastyczne."
+    },
+    {
+      "q": "Kulturę ubóstwa jako międzypokoleniowy wzorzec przystosowania do biedy opisał:",
+      "options": ["M. Seligman", "O. Lewis", "S. Kawula", "R. Jessor"],
+      "correct": 1,
+      "explain": "Oscar Lewis wprowadził pojęcie kultury ubóstwa."
+    },
+    {
+      "q": "Asystent rodziny pracuje z rodziną:",
+      "options": [
+        "wyłącznie na podstawie orzeczenia sądu",
+        "tylko w siedzibie ośrodka pomocy społecznej",
+        "za jej zgodą i z jej aktywnym udziałem",
+        "tylko po umieszczeniu dziecka w pieczy zastępczej"
+      ],
+      "correct": 2,
+      "explain": "Asystentura jest formą wsparcia, opartą na współpracy z rodziną."
+    },
+    {
+      "q": "Nadzór nad rodziną przy ograniczeniu władzy rodzicielskiej sprawuje:",
+      "options": ["asystent rodziny", "pedagog szkolny", "pracownik poradni psychologiczno-pedagogicznej", "kurator rodzinny"],
+      "correct": 3,
+      "explain": "To zadanie kuratora sądowego wykonującego orzeczenie sądu rodzinnego."
+    },
+    {
+      "q": "Orzeczenie o potrzebie kształcenia specjalnego wydaje:",
+      "options": [
+        "zespół orzekający w publicznej poradni psychologiczno-pedagogicznej",
+        "dyrektor szkoły",
+        "pedagog szkolny",
+        "sąd rodzinny"
+      ],
+      "correct": 0,
+      "explain": "Orzeczenia wydają zespoły orzekające działające w publicznych poradniach."
+    },
+    {
+      "q": "Pedagog szkolny podejrzewający przemoc wobec ucznia powinien przede wszystkim:",
+      "options": [
+        "obiecać dziecku dochowanie tajemnicy",
+        "porozmawiać z dzieckiem w bezpiecznych warunkach, udokumentować obserwacje i uruchomić procedurę ochronną",
+        "poczekać na kolejne sygnały",
+        "skonfrontować rodziców z dzieckiem"
+      ],
+      "correct": 1,
+      "explain": "Bezpieczeństwo dziecka wymaga działania, a nie obietnicy tajemnicy."
+    }
+  ],
+  "open": [
+    {
+      "q": "Scharakteryzuj środowisko rodziny dysfunkcyjnej i procesy w niej zachodzące.",
+      "answer": "Rodzina dysfunkcyjna nie realizuje prawidłowo funkcji opiekuńczej, wychowawczej, emocjonalnej, socjalizacyjnej i ekonomicznej. W ujęciu systemowym widać w niej zaburzone granice (sztywne lub rozmyte), koalicje międzypokoleniowe i triangulację, parentyfikację dzieci, niespójną komunikację, tajemnice i sztywne reguły, np. „nie mów, nie ufaj, nie czuj” w rodzinie alkoholowej. Dzieci przyjmują role ochronne: bohatera, kozła ofiarnego, zagubionego dziecka i maskotki, co może skutkować trudnościami w dorosłości (DDA, DDD). W rodzinach z przemocą działa cykl L. Walker: narastanie napięcia, ostra przemoc, miodowy miesiąc. Model Olsona pozwala ocenić spójność i elastyczność rodziny."
+    },
+    {
+      "q": "Omów formy pomocy rodzinie dysfunkcyjnej i kryteria ich doboru.",
+      "answer": "Formy pomocy to poradnictwo rodzinne i psychoedukacja, psychoterapia (indywidualna, rodzinna, terapia uzależnienia i współuzależnienia), socjoterapia dla dzieci, interwencja kryzysowa, mediacje rodzinne, wsparcie socjalne (świadczenia, praca socjalna, kontrakt socjalny) oraz piecza zastępcza – rodzinna lub instytucjonalna. Dobór zależy od rodzaju i nasilenia problemu, poziomu bezpieczeństwa dzieci, motywacji i zasobów rodziny. Obowiązuje zasada pierwszeństwa wsparcia w środowisku rodzinnym przed umieszczeniem dziecka poza domem oraz pierwszeństwa pieczy rodzinnej przed instytucjonalną. Mediacje są przeciwwskazane przy przemocy domowej. Najskuteczniejsze bywa łączenie form i ich koordynacja."
+    },
+    {
+      "q": "Przedstaw procedurę Niebieskiej Karty po nowelizacji z 2023 r.",
+      "answer": "Procedurę wszczyna się przy uzasadnionym podejrzeniu przemocy domowej, bez zgody osoby jej doznającej. Uprawnieni są przedstawiciele policji, pomocy społecznej, gminnej komisji rozwiązywania problemów alkoholowych, ochrony zdrowia i oświaty. Wszczynający wypełnia formularz A, a osobie doznającej przemocy przekazuje formularz B z informacjami o pomocy. Sprawa trafia do zespołu interdyscyplinarnego, który powołuje grupę diagnostyczno-pomocową; ta spotyka się osobno z osobą doznającą i stosującą przemoc, opracowuje plan pomocy i monitoruje sytuację. Nowelizacja wprowadziła terminy osoba doznająca i stosująca przemoc domową, przemoc ekonomiczną i cyberprzemoc, uznała dziecko-świadka za osobę doznającą przemocy i rozszerzyła ochronę na byłych partnerów."
+    },
+    {
+      "q": "Porównaj zadania asystenta rodziny i kuratora rodzinnego oraz zasady ich współpracy.",
+      "answer": "Asystent rodziny jest zatrudniany przez gminę na podstawie ustawy o wspieraniu rodziny i systemie pieczy zastępczej. Pracuje za zgodą rodziny, głównie w jej domu: opracowuje plan pracy, pomaga w sprawach socjalnych, wychowawczych i bytowych, motywuje do pracy, wspiera dzieci i monitoruje rodzinę po zakończeniu współpracy. Kurator rodzinny wykonuje orzeczenia sądu: sprawuje nadzór przy ograniczeniu władzy rodzicielskiej i nad nieletnimi, przeprowadza wywiady środowiskowe i informuje sąd, łącząc kontrolę z pomocą. Współpraca wymaga spójnego planu, jasnego podziału ról, wymiany informacji zgodnej z przepisami i wspólnych spotkań, aby rodzina nie otrzymywała sprzecznych komunikatów."
+    },
+    {
+      "q": "Jak pracować z osobą bezrobotną, bezdomną lub żyjącą w ubóstwie?",
+      "answer": "Należy uwzględnić skutki psychospołeczne: utratę struktury dnia, statusu i kontaktów, fazy reakcji na bezrobocie aż do apatii, wyuczoną bezradność, a często także uzależnienie. Osobie bezrobotnej pomaga urząd pracy (pośrednictwo, szkolenia, staże), zatrudnienie socjalne w CIS i KIS oraz ekonomia społeczna. Osobie bezdomnej – ogrzewalnie, noclegownie, schroniska, mieszkania treningowe, indywidualny program wychodzenia z bezdomności oraz podejście Housing First. Osobie w ubóstwie – świadczenia pomocy społecznej powiązane z pracą socjalną i kontraktem socjalnym. Zasady pracy to empowerment, małe kroki, praca na zasobach, unikanie utrwalania zależności i współpraca instytucji."
+    },
+    {
+      "q": "Jaką rolę pełnią poradnie psychologiczno-pedagogiczne oraz pedagog i psycholog szkolny we wspieraniu rodzin dysfunkcyjnych?",
+      "answer": "Poradnie psychologiczno-pedagogiczne diagnozują rozwój i trudności dzieci, wydają opinie oraz – przez zespoły orzekające – orzeczenia o potrzebie kształcenia specjalnego i indywidualnego nauczania, prowadzą terapię pedagogiczną, psychologiczną, socjoterapię, terapię rodzin, profilaktykę i psychoedukację rodziców. Pedagog i psycholog szkolny rozpoznają potrzeby uczniów, realizują program wychowawczo-profilaktyczny, interweniują w kryzysie, współpracują z rodzicami, OPS, asystentem, kuratorem i poradnią. Szkoła często jako pierwsza dostrzega objawy zaniedbania lub przemocy i może wszcząć procedurę Niebieskiej Karty. Dla dziecka z rodziny dysfunkcyjnej szkoła bywa jedynym stabilnym środowiskiem i źródłem wsparcia."
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "courseId": "pomoc-postpenitencjarna",
+  "notes": [
+    {
+      "topic": "Pomoc postpenitencjarna – formy, podstawy prawne, podmioty, etapy",
+      "text": "Pomoc postpenitencjarna to zespół działań wspierających osobę skazaną w powrocie do życia na wolności – zaczynających się jeszcze w zakładzie karnym i kontynuowanych po zwolnieniu. Jej celem jest zapobieganie powrotności do przestępstwa (recydywie) i umożliwienie samodzielnego, zgodnego z prawem funkcjonowania.\n\nPodstawy prawne:\n• Kodeks karny wykonawczy – przepisy o pomocy w readaptacji społecznej skazanych (art. 41 i nast.) oraz o przygotowaniu skazanego do zwolnienia i pomocy po zwolnieniu (art. 164 i nast.); art. 43 kkw tworzy Fundusz Pomocy Pokrzywdzonym oraz Pomocy Postpenitencjarnej – Fundusz Sprawiedliwości.\n• Ustawa o pomocy społecznej – trudności w przystosowaniu do życia po zwolnieniu z zakładu karnego są jedną z ustawowych przesłanek udzielenia pomocy (art. 7).\n• Ustawa o kuratorach sądowych, ustawa o zatrudnieniu socjalnym (CIS, KIS), przepisy o rynku pracy.\n\nPodmioty: Służba Więzienna (wychowawcy, psycholodzy, działy penitencjarne), kuratorzy sądowi zawodowi i społeczni, ośrodki pomocy społecznej i PCPR, powiatowe urzędy pracy, organizacje pozarządowe i kościelne (stowarzyszenia, fundacje, Caritas), podmioty ekonomii społecznej, rodzina skazanego.\n\nFormy pomocy: materialna (odzież, zapomogi, bilet na przejazd, żywność), mieszkaniowa (hostele, schroniska, mieszkania treningowe), medyczna i terapeutyczna (leczenie uzależnień), prawna, w zatrudnieniu (szkolenia, staże, zatrudnienie socjalne), psychologiczna i duchowa.\n\nEtapy:\n• penitencjarny – oddziaływania w trakcie odbywania kary (praca, nauka, terapia, kontakty z rodziną);\n• przygotowanie do zwolnienia – ok. pół roku przed końcem kary (program readaptacji, kontakt z OPS, ustalenie miejsca zamieszkania, dokumenty);\n• postpenitencjarny – pomoc bezpośrednio po wyjściu i w okresie adaptacji (często dozór kuratora przy warunkowym przedterminowym zwolnieniu).\n\nNa egzaminie często pada pytanie o Fundusz Sprawiedliwości, o etapy pomocy oraz o to, dlaczego „pierwsze dni na wolności” są okresem największego ryzyka powrotu do przestępstwa i do substancji psychoaktywnych.",
+      "key": [
+        "Pomoc postpenitencjarna – wsparcie skazanego w powrocie do społeczeństwa, rozpoczynane przed zwolnieniem i kontynuowane po nim",
+        "Fundusz Sprawiedliwości – Fundusz Pomocy Pokrzywdzonym oraz Pomocy Postpenitencjarnej z art. 43 kkw",
+        "Przygotowanie do zwolnienia – etap ostatnich miesięcy kary, w którym planuje się mieszkanie, pracę, dokumenty i wsparcie",
+        "Dozór kuratora – forma kontroli i pomocy wobec warunkowo zwolnionego",
+        "Recydywa – powrót do przestępstwa po odbyciu kary"
+      ]
+    },
+    {
+      "topic": "Readaptacja społeczna – czynniki sukcesu i bariery; funkcje sieci społecznej",
+      "text": "Readaptacja społeczna oznacza ponowne przystosowanie się osoby po izolacji (więzienie, placówka, długie leczenie) do warunków życia w otwartym społeczeństwie: podjęcie ról rodzinnych, zawodowych i obywatelskich zgodnie z normami prawnymi.\n\nCzynniki sprzyjające sukcesowi readaptacji:\n• stabilne miejsce zamieszkania i źródło utrzymania (praca, zatrudnienie socjalne);\n• wspierające więzi rodzinne i prospołeczna sieć znajomych;\n• abstynencja lub leczenie uzależnienia, zdrowie psychiczne;\n• motywacja wewnętrzna, poczucie sprawstwa, tożsamość „osoby, która się zmienia”;\n• ciągłość oddziaływań – „przekazanie” klienta z instytucji penitencjarnej do instytucji środowiskowych.\n\nBariery:\n• prizonizacja (D. Clemmer) – przyswojenie norm podkultury więziennej i utrata kompetencji do życia na wolności;\n• stygmatyzacja i etykietowanie (E. Goffman, E. Lemert – dewiacja wtórna), niechęć pracodawców, karalność w rejestrze;\n• zadłużenie, alimenty, egzekucje komornicze, brak dokumentów;\n• bezdomność, powrót do kryminogennego środowiska, nawrót picia lub brania;\n• wyuczona bezradność i niskie kompetencje społeczne.\n\nSieć społeczna to układ relacji, w których funkcjonuje człowiek (rodzina, przyjaciele, sąsiedzi, grupy samopomocowe, instytucje). Wsparcie społeczne pełni funkcje: emocjonalną (akceptacja, poczucie przynależności), informacyjną (porady, wiedza o możliwościach), instrumentalną/rzeczową (pieniądze, mieszkanie, praca), wartościującą (informacja zwrotna wzmacniająca samoocenę) oraz kontrolną – normatywną (sieć utrwala zachowania zgodne z prawem). Koncepcja „Sieci” (G. Miłkowska, S. Sobański) podkreśla, że skuteczna pomoc jest kompleksowa i międzyinstytucjonalna.\n\nPrzykład: mężczyzna po wyroku za przestępstwo pod wpływem alkoholu ma szansę, jeśli od pierwszego dnia ma miejsce w hostelu, kontakt z poradnią leczenia uzależnień, grupę AA i pracownika socjalnego, a nie tylko „bilet do domu”.",
+      "key": [
+        "Readaptacja społeczna – ponowne przystosowanie do życia na wolności po okresie izolacji",
+        "Prizonizacja – przyswojenie norm i wzorów podkultury więziennej (D. Clemmer)",
+        "Dewiacja wtórna – utrwalenie tożsamości dewianta w wyniku reakcji społecznej (E. Lemert)",
+        "Wsparcie instrumentalne – konkretna pomoc materialna lub usługowa",
+        "Sieć wsparcia – układ osób i instytucji udzielających pomocy oraz kontroli społecznej"
+      ]
+    },
+    {
+      "topic": "Resocjalizacja, readaptacja, reintegracja; resocjalizacja a praca socjalna",
+      "text": "Trzy pojęcia są często mylone, a egzaminatorzy lubią pytać o różnice.\n\n• Resocjalizacja – proces zmiany osobowości i zachowania osoby niedostosowanej społecznie, prowadzący do przyswojenia norm i wartości akceptowanych społecznie. W polskiej tradycji (L. Pytka, K. Pospiszyl, B. Urban, M. Konopczyński) podkreśla się, że jej istotą jest rekonstrukcja tożsamości i rozwój kompetencji, a nie tylko wymuszenie posłuszeństwa. M. Konopczyński rozwinął metodykę twórczej resocjalizacji – rozwijanie potencjałów przez działania kulturotechniczne.\n• Readaptacja – ponowne przystosowanie do warunków życia w społeczeństwie po okresie izolacji; ma wymiar praktyczny (mieszkanie, praca, relacje, dokumenty).\n• Reintegracja społeczna – odbudowa uczestnictwa w życiu społeczności lokalnej, powrót do pełnienia ról społecznych i zawodowych; w ustawie o zatrudnieniu socjalnym wyróżnia się reintegrację społeczną i zawodową.\n\nMożna je ująć jako kontinuum: resocjalizacja (zmiana osoby) → readaptacja (dopasowanie do warunków) → reintegracja (ponowne włączenie i akceptacja przez wspólnotę).\n\nResocjalizacja a praca socjalna:\n• resocjalizacja koncentruje się na jednostce i jej zmianie, często w warunkach instytucjonalnych i z elementem przymusu;\n• praca socjalna (ustawa o pomocy społecznej) ma pomagać osobom i rodzinom we wzmacnianiu lub odzyskiwaniu zdolności do funkcjonowania w społeczeństwie oraz tworzyć warunki temu sprzyjające – obejmuje więc też środowisko;\n• obie dziedziny łączy cel (samodzielność, włączenie społeczne) i narzędzia (kontrakt, plan pomocy, praca ze środowiskiem); różni je akcent – wychowawczy vs pomocowo-środowiskowy.\n\nW praktyce, np. w pracy PCPR czy OPS, pedagog resocjalizacyjny i pracownik socjalny współpracują: pierwszy pracuje nad motywacją i zachowaniem, drugi organizuje zasoby (świadczenia, mieszkanie, zatrudnienie socjalne).",
+      "key": [
+        "Resocjalizacja – zmiana postaw i zachowań osoby niedostosowanej w kierunku norm społecznych",
+        "Readaptacja – praktyczne ponowne przystosowanie do życia po izolacji",
+        "Reintegracja – ponowne włączenie do społeczności i ról społecznych, w tym zawodowych",
+        "Praca socjalna – działalność zawodowa wzmacniająca zdolność osób i rodzin do funkcjonowania społecznego",
+        "Twórcza resocjalizacja – koncepcja M. Konopczyńskiego oparta na rozwijaniu potencjałów"
+      ]
+    },
+    {
+      "topic": "Praca z osobą opuszczającą placówkę – klient niedobrowolny, wieloproblemowy",
+      "text": "Osoba opuszczająca zakład karny, młodzieżowy ośrodek wychowawczy, zakład poprawczy czy pieczę zastępczą bywa jednocześnie klientem niedobrowolnym i wieloproblemowym.\n\nKlient niedobrowolny to ktoś, kto korzysta z pomocy pod presją – orzeczenia sądu, dozoru kuratora, warunku otrzymania świadczenia, nacisku rodziny. Typowe reakcje: opór, nieufność, bierność, „mówienie tego, co chcą usłyszeć”, testowanie granic. Według R. Rooneya i C. Trottera skuteczna praca z takim klientem opiera się na:\n• jasnym wyjaśnieniu roli i granic (co jest obowiązkowe, a co do negocjacji – „przestrzeń wyboru”);\n• modelowaniu i wzmacnianiu zachowań prospołecznych (pro-social modelling);\n• wspólnym rozwiązywaniu problemów definiowanych przez klienta, nie tylko przez instytucję;\n• szacunku, uczciwości i konsekwencji pracownika.\n\nKlient wieloproblemowy doświadcza wielu nakładających się trudności: uzależnienia, bezdomności, zadłużenia, bezrobocia, chorób somatycznych i psychicznych, zerwanych więzi, czasem zaburzeń osobowości. Problemy wzajemnie się wzmacniają, a klient zwykle „krąży” między instytucjami.\n\nZasady pracy:\n• diagnoza całościowa i ustalenie priorytetów (najpierw bezpieczeństwo, dach nad głową, leczenie);\n• case management – jeden koordynator przypadku, który łączy usługi różnych instytucji;\n• kontrakt socjalny z małymi, mierzalnymi krokami;\n• praca na zasobach (podejście skoncentrowane na rozwiązaniach, empowerment);\n• redukcja szkód tam, gdzie abstynencja nie jest na razie osiągalna.\n\nPrzykład: kobieta opuszczająca zakład karny, uzależniona od alkoholu, z dziećmi w pieczy zastępczej – koordynator łączy terapię uzależnień, OPS, PCPR (kontakty z dziećmi) i kuratora. Egzamin: wymień cechy klienta niedobrowolnego i strategie budowania współpracy.",
+      "key": [
+        "Klient niedobrowolny – osoba korzystająca z pomocy pod przymusem formalnym lub nieformalnym",
+        "Klient wieloproblemowy – osoba z kumulacją wzajemnie wzmacniających się problemów",
+        "Modelowanie prospołeczne – świadome wzmacnianie i pokazywanie zachowań zgodnych z normami (C. Trotter)",
+        "Case management – koordynacja usług wielu instytucji przez jednego opiekuna przypadku",
+        "Kontrakt socjalny – pisemna umowa określająca uprawnienia i zobowiązania stron w rozwiązywaniu trudności"
+      ]
+    },
+    {
+      "topic": "Metody pracy socjalnej; sprawiedliwość naprawcza; dialog motywujący",
+      "text": "Klasyczne metody pracy socjalnej:\n• metoda indywidualnego przypadku (case work, M. Richmond) – diagnoza i plan pomocy dla osoby lub rodziny;\n• metoda grupowa (group work) – grupy wsparcia, edukacyjne, treningi umiejętności społecznych;\n• metoda środowiskowa (organizowanie społeczności lokalnej) – aktywizowanie zasobów społeczności, partnerstwa lokalne.\nDo narzędzi należą: wywiad środowiskowy, kontrakt socjalny, case management, interwencja kryzysowa.\n\nSprawiedliwość naprawcza (restorative justice, H. Zehr) traktuje przestępstwo przede wszystkim jako krzywdę wyrządzoną konkretnym ludziom i relacjom, a nie tylko naruszenie prawa. Pytania kluczowe: kto został skrzywdzony, jakie są jego potrzeby, kto ma obowiązek naprawić szkodę. Formy: mediacja między pokrzywdzonym a sprawcą (w Polsce możliwa w postępowaniu karnym, wykonawczym i w sprawach nieletnich), konferencje grup rodzinnych, kręgi naprawcze, zadośćuczynienie i praca na rzecz społeczności. Dla sprawcy oznacza wzięcie odpowiedzialności i realne zadośćuczynienie, co sprzyja readaptacji.\n\nDialog motywujący (W. R. Miller, S. Rollnick) to oparty na współpracy styl rozmowy wzmacniający własną motywację klienta do zmiany. Duch DM: partnerstwo, akceptacja, współczucie, wydobywanie. Umiejętności OARS: pytania otwarte, dowartościowanie (afirmacja), odzwierciedlanie, podsumowania. Cztery procesy: angażowanie, ukierunkowanie, wydobywanie (mowa zmiany), planowanie. Pracownik nie walczy z oporem, lecz „płynie z nim”, unikając odruchu naprawiania. Ważna jest ambiwalencja – klient jednocześnie chce i nie chce zmiany. DM łączy się z transteoretycznym modelem zmiany Prochaski i DiClemente (prekontemplacja, kontemplacja, przygotowanie, działanie, utrzymanie, nawrót).\n\nPrzykład: zamiast „musi pan przestać pić, bo wróci pan do więzienia”, pytanie „co dla pana byłoby najważniejsze w pierwszym roku na wolności i jak alkohol miałby się do tego?”.",
+      "key": [
+        "Sprawiedliwość naprawcza – podejście koncentrujące się na naprawie szkody i relacji (H. Zehr)",
+        "Mediacja – dobrowolne spotkanie pokrzywdzonego i sprawcy z bezstronnym mediatorem",
+        "Dialog motywujący – styl rozmowy wzmacniający wewnętrzną motywację do zmiany (Miller, Rollnick)",
+        "OARS – pytania otwarte, afirmacja, odzwierciedlanie, podsumowania",
+        "Mowa zmiany – wypowiedzi klienta świadczące o pragnieniu, możliwości, powodach i potrzebie zmiany"
+      ]
+    },
+    {
+      "topic": "Praca z rodzinami osób opuszczających placówki",
+      "text": "Rodzina jest zarówno najważniejszym zasobem readaptacji, jak i potencjalnym źródłem ryzyka. Uwięzienie członka rodziny dotyka bliskich – mówi się o „ukrytych ofiarach” kary lub o uwięzieniu pośrednim: rodzina traci dochody, doświadcza wstydu i stygmatyzacji, dzieci przeżywają rozłąkę, lojalnościowe konflikty i trudności szkolne.\n\nTypowe problemy rodzin:\n• zmiana ról podczas nieobecności (partnerka przejmuje wszystkie obowiązki, starsze dziecko staje się „rodzicem”); powrót skazanego zaburza nową równowagę;\n• nierealistyczne oczekiwania po obu stronach („wszystko będzie jak dawniej”);\n• współuzależnienie i przemoc domowa w historii rodziny;\n• długi, problemy mieszkaniowe, konflikt z sąsiedztwem.\n\nKierunki pracy:\n• utrzymywanie więzi w trakcie kary (widzenia, listy, rozmowy telefoniczne, przepustki) – udowodnione badaniami czynnik ochronny;\n• przygotowanie rodziny do powrotu – rozmowy o oczekiwaniach, zasadach, podziale obowiązków;\n• poradnictwo rodzinne, terapia systemowa, mediacje rodzinne;\n• wsparcie dzieci (świetlice, psycholog szkolny, grupy dla dzieci osób uwięzionych);\n• wsparcie socjalne i prawne (świadczenia, ugoda z wierzycielami);\n• diagnoza ryzyka przemocy – jeśli w przeszłości stosowano przemoc, priorytetem jest bezpieczeństwo osób doznających przemocy (procedura Niebieskiej Karty, plan bezpieczeństwa).\n\nPodejście systemowe przypomina, że zmiana jednego członka zmienia cały system: rodzina może nieświadomie „wciągać” osobę w dawne role (np. picie jako sposób regulacji napięcia). Dlatego warto pracować z rodziną, a nie tylko z osobą zwalnianą.\n\nPrzykład: kurator i asystent rodziny wspólnie przygotowują powrót ojca – ustala się zasady kontaktu z dziećmi, terapię uzależnienia ojca oraz grupę wsparcia dla matki (Al-Anon).",
+      "key": [
+        "Uwięzienie pośrednie – skutki kary pozbawienia wolności dotykające rodzinę skazanego",
+        "Współuzależnienie – utrwalony wzorzec funkcjonowania bliskich osoby uzależnionej, podporządkowany jej problemowi",
+        "Parentyfikacja – przejęcie przez dziecko ról i obowiązków rodzica",
+        "Podejście systemowe – traktowanie rodziny jako całości, w której zmiana jednego elementu wpływa na pozostałe",
+        "Plan bezpieczeństwa – ustalone kroki chroniące osoby zagrożone przemocą"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "front": "Czym jest pomoc postpenitencjarna?",
+      "back": "Zespół działań wspierających skazanego w powrocie do życia na wolności, rozpoczynanych przed zwolnieniem i kontynuowanych po nim; ma zapobiegać recydywie."
+    },
+    {
+      "front": "Jaki fundusz finansuje pomoc postpenitencjarną?",
+      "back": "Fundusz Pomocy Pokrzywdzonym oraz Pomocy Postpenitencjarnej – Fundusz Sprawiedliwości (art. 43 kkw), dysponowany przez Ministra Sprawiedliwości."
+    },
+    {
+      "front": "Wymień etapy pomocy skazanym.",
+      "back": "Etap penitencjarny (w trakcie kary), przygotowanie do zwolnienia (końcowe miesiące kary) i etap postpenitencjarny (po zwolnieniu)."
+    },
+    {
+      "front": "Która ustawa wskazuje trudności po zwolnieniu z zakładu karnego jako przesłankę pomocy społecznej?",
+      "back": "Ustawa o pomocy społecznej (art. 7) – wśród powodów udzielania pomocy wymienia trudności w przystosowaniu do życia po zwolnieniu z zakładu karnego."
+    },
+    {
+      "front": "Podmioty pomocy postpenitencjarnej",
+      "back": "Służba Więzienna, kuratorzy sądowi, OPS i PCPR, urzędy pracy, CIS/KIS, organizacje pozarządowe i kościelne, rodzina."
+    },
+    {
+      "front": "Prizonizacja",
+      "back": "Proces przyswajania norm, wartości i wzorów zachowań podkultury więziennej (D. Clemmer), utrudniający późniejszą readaptację."
+    },
+    {
+      "front": "Readaptacja społeczna",
+      "back": "Ponowne przystosowanie się do życia w społeczeństwie po okresie izolacji – w sferze mieszkaniowej, zawodowej, rodzinnej i obywatelskiej."
+    },
+    {
+      "front": "Reintegracja społeczna",
+      "back": "Ponowne włączenie osoby do społeczności i pełnienia ról społecznych oraz zawodowych; zakłada akceptację ze strony środowiska."
+    },
+    {
+      "front": "Czym resocjalizacja różni się od readaptacji?",
+      "back": "Resocjalizacja to zmiana osobowości i zachowania w kierunku norm społecznych; readaptacja to praktyczne przystosowanie do warunków życia po izolacji."
+    },
+    {
+      "front": "Funkcje wsparcia społecznego",
+      "back": "Emocjonalna, informacyjna, instrumentalna (rzeczowa), wartościująca oraz normatywno-kontrolna."
+    },
+    {
+      "front": "Dewiacja wtórna (E. Lemert)",
+      "back": "Utrwalenie zachowań dewiacyjnych i tożsamości dewianta w wyniku stygmatyzującej reakcji otoczenia na dewiację pierwotną."
+    },
+    {
+      "front": "Klient niedobrowolny",
+      "back": "Osoba korzystająca z pomocy pod przymusem formalnym (sąd, kurator) lub nieformalnym (rodzina); często przejawia opór i nieufność."
+    },
+    {
+      "front": "Klient wieloproblemowy",
+      "back": "Osoba lub rodzina z kumulacją wielu wzajemnie powiązanych problemów (uzależnienie, bezdomność, bezrobocie, choroby), wymagająca współpracy wielu instytucji."
+    },
+    {
+      "front": "Modelowanie prospołeczne (C. Trotter)",
+      "back": "Strategia pracy z klientem niedobrowolnym polegająca na pokazywaniu i wzmacnianiu zachowań zgodnych z normami oraz konstruktywnym konfrontowaniu zachowań antyspołecznych."
+    },
+    {
+      "front": "Case management",
+      "back": "Model pracy, w którym koordynator przypadku planuje, łączy i monitoruje usługi różnych instytucji dla jednego klienta."
+    },
+    {
+      "front": "Kontrakt socjalny",
+      "back": "Pisemna umowa pracownika socjalnego z osobą lub rodziną, określająca cele, działania, zobowiązania i terminy w rozwiązywaniu trudnej sytuacji."
+    },
+    {
+      "front": "Trzy klasyczne metody pracy socjalnej",
+      "back": "Metoda indywidualnego przypadku, metoda pracy grupowej oraz metoda środowiskowa (organizowania społeczności lokalnej)."
+    },
+    {
+      "front": "Sprawiedliwość naprawcza",
+      "back": "Podejście (H. Zehr) traktujące przestępstwo jako krzywdę wyrządzoną ludziom; celem jest naprawa szkody, udział pokrzywdzonego i odpowiedzialność sprawcy."
+    },
+    {
+      "front": "Formy sprawiedliwości naprawczej",
+      "back": "Mediacja pokrzywdzony–sprawca, konferencje grup rodzinnych, kręgi naprawcze, zadośćuczynienie, praca na rzecz społeczności."
+    },
+    {
+      "front": "Dialog motywujący – autorzy i istota",
+      "back": "W. R. Miller i S. Rollnick; oparty na współpracy styl rozmowy wydobywający i wzmacniający własną motywację klienta do zmiany."
+    },
+    {
+      "front": "OARS w dialogu motywującym",
+      "back": "Pytania otwarte, dowartościowanie (afirmacja), odzwierciedlanie i podsumowania – podstawowe umiejętności prowadzenia rozmowy."
+    },
+    {
+      "front": "Cztery procesy dialogu motywującego",
+      "back": "Angażowanie, ukierunkowanie, wydobywanie (mowy zmiany) i planowanie."
+    },
+    {
+      "front": "Etapy zmiany wg Prochaski i DiClemente",
+      "back": "Prekontemplacja, kontemplacja, przygotowanie, działanie, utrzymanie zmiany; możliwy nawrót i ponowne wejście w cykl."
+    },
+    {
+      "front": "Uwięzienie pośrednie",
+      "back": "Skutki kary pozbawienia wolności ponoszone przez rodzinę skazanego: ubóstwo, stygmatyzacja, rozłąka, problemy dzieci."
+    },
+    {
+      "front": "Dlaczego więzi rodzinne są ważne w readaptacji?",
+      "back": "Utrzymane i wspierające więzi są czynnikiem ochronnym – zapewniają mieszkanie, wsparcie emocjonalne i kontrolę społeczną, zmniejszając ryzyko powrotu do przestępstwa."
+    },
+    {
+      "front": "Ustawa o zatrudnieniu socjalnym – jakie instytucje tworzy?",
+      "back": "Centra integracji społecznej (CIS) i kluby integracji społecznej (KIS), prowadzące reintegrację społeczną i zawodową osób zagrożonych wykluczeniem, m.in. zwolnionych z zakładów karnych."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Fundusz Pomocy Pokrzywdzonym oraz Pomocy Postpenitencjarnej został uregulowany w:",
+      "options": [
+        "Kodeksie karnym wykonawczym",
+        "ustawie o pomocy społecznej",
+        "Kodeksie rodzinnym i opiekuńczym",
+        "ustawie o kuratorach sądowych"
+      ],
+      "correct": 0,
+      "explain": "Fundusz Sprawiedliwości tworzy art. 43 Kodeksu karnego wykonawczego."
+    },
+    {
+      "q": "Przygotowanie skazanego do zwolnienia to etap pomocy, który:",
+      "options": [
+        "rozpoczyna się w dniu zwolnienia",
+        "obejmuje końcowy okres odbywania kary",
+        "dotyczy wyłącznie skazanych warunkowo zwolnionych",
+        "jest realizowany tylko przez organizacje pozarządowe"
+      ],
+      "correct": 1,
+      "explain": "Przygotowanie do życia na wolności prowadzi się w ostatnich miesiącach kary, jeszcze w zakładzie karnym."
+    },
+    {
+      "q": "Prizonizacja to pojęcie wprowadzone przez:",
+      "options": ["E. Goffmana", "H. Zehra", "D. Clemmera", "E. Lemerta"],
+      "correct": 2,
+      "explain": "D. Clemmer opisał prizonizację jako przyswajanie kultury więziennej."
+    },
+    {
+      "q": "Która funkcja wsparcia społecznego polega na przekazaniu pieniędzy, żywności lub zapewnieniu noclegu?",
+      "options": ["emocjonalna", "informacyjna", "wartościująca", "instrumentalna"],
+      "correct": 3,
+      "explain": "Wsparcie instrumentalne (rzeczowe) to konkretna pomoc materialna lub usługowa."
+    },
+    {
+      "q": "Pojęcie dewiacji wtórnej, wyjaśniające utrwalanie zachowań przestępczych przez etykietowanie, pochodzi od:",
+      "options": ["E. Lemerta", "D. Clemmera", "M. Richmond", "W. Millera"],
+      "correct": 0,
+      "explain": "E. Lemert odróżnił dewiację pierwotną od wtórnej, wywołanej reakcją społeczną."
+    },
+    {
+      "q": "Reintegracja społeczna w odróżnieniu od readaptacji akcentuje przede wszystkim:",
+      "options": [
+        "zmianę struktury osobowości",
+        "ponowne włączenie do społeczności i jej akceptację",
+        "izolację od środowiska kryminogennego",
+        "kontrolę sądową"
+      ],
+      "correct": 1,
+      "explain": "Reintegracja to odbudowa uczestnictwa i ról społecznych, z akceptacją ze strony wspólnoty."
+    },
+    {
+      "q": "Koncepcję twórczej resocjalizacji rozwinął:",
+      "options": ["L. Pytka", "K. Pospiszyl", "M. Konopczyński", "B. Urban"],
+      "correct": 2,
+      "explain": "M. Konopczyński jest autorem metodyki twórczej resocjalizacji."
+    },
+    {
+      "q": "Praca socjalna różni się od resocjalizacji przede wszystkim tym, że:",
+      "options": [
+        "nie stosuje kontraktu",
+        "dotyczy wyłącznie osób bezdomnych",
+        "nie ma celów związanych z samodzielnością",
+        "obejmuje również zmianę warunków środowiskowych i dostęp do zasobów"
+      ],
+      "correct": 3,
+      "explain": "Praca socjalna wzmacnia zdolność do funkcjonowania i tworzy sprzyjające warunki, czyli działa szerzej niż na samą osobę."
+    },
+    {
+      "q": "Klient niedobrowolny to osoba, która:",
+      "options": [
+        "korzysta z pomocy pod presją, np. orzeczenia sądu",
+        "odmawia jakiegokolwiek kontaktu",
+        "ma zaburzenie psychiczne",
+        "nie spełnia kryterium dochodowego"
+      ],
+      "correct": 0,
+      "explain": "Niedobrowolność wynika z przymusu formalnego lub nieformalnego, a nie z diagnozy."
+    },
+    {
+      "q": "Autorem podejścia do pracy z klientem niedobrowolnym opartego na modelowaniu prospołecznym jest:",
+      "options": ["S. Rollnick", "C. Trotter", "H. Zehr", "J. Prochaska"],
+      "correct": 1,
+      "explain": "C. Trotter opisał pro-social modelling w pracy z klientami niedobrowolnymi."
+    },
+    {
+      "q": "W pracy z klientem wieloproblemowym kluczowe jest:",
+      "options": [
+        "rozwiązywanie wszystkich problemów jednocześnie przez różne instytucje bez koordynacji",
+        "skierowanie do jednej instytucji o najszerszych kompetencjach",
+        "koordynacja usług i ustalenie priorytetów",
+        "odroczenie pomocy do czasu osiągnięcia abstynencji"
+      ],
+      "correct": 2,
+      "explain": "Case management i hierarchia potrzeb zapobiegają chaotycznemu krążeniu klienta między instytucjami."
+    },
+    {
+      "q": "Metoda indywidualnego przypadku w pracy socjalnej wiąże się z nazwiskiem:",
+      "options": ["H. Zehra", "D. Clemmera", "E. Goffmana", "M. Richmond"],
+      "correct": 3,
+      "explain": "Mary Richmond jest uznawana za twórczynię social case work."
+    },
+    {
+      "q": "Sprawiedliwość naprawcza traktuje przestępstwo przede wszystkim jako:",
+      "options": [
+        "krzywdę wyrządzoną konkretnym osobom i relacjom",
+        "naruszenie interesu państwa",
+        "objaw choroby",
+        "wynik niedostatecznej represji"
+      ],
+      "correct": 0,
+      "explain": "H. Zehr akcentuje szkodę wyrządzoną ludziom i potrzebę jej naprawienia."
+    },
+    {
+      "q": "Które z poniższych NIE jest formą sprawiedliwości naprawczej?",
+      "options": [
+        "mediacja pokrzywdzony–sprawca",
+        "izolacja w celi przejściowej",
+        "konferencja grupy rodzinnej",
+        "krąg naprawczy"
+      ],
+      "correct": 1,
+      "explain": "Izolacja jest środkiem represyjnym, nie naprawczym."
+    },
+    {
+      "q": "Skrót OARS w dialogu motywującym oznacza:",
+      "options": [
+        "obserwację, analizę, rekomendację, superwizję",
+        "ocenę, akceptację, ryzyko, strategię",
+        "pytania otwarte, afirmację, odzwierciedlanie, podsumowania",
+        "orientację, aktywizację, regulację, stabilizację"
+      ],
+      "correct": 2,
+      "explain": "To cztery podstawowe umiejętności komunikacyjne DM."
+    },
+    {
+      "q": "W dialogu motywującym ambiwalencja klienta jest traktowana jako:",
+      "options": ["objaw manipulacji", "przeciwwskazanie do pracy", "dowód braku motywacji", "naturalny etap procesu zmiany"],
+      "correct": 3,
+      "explain": "DM zakłada, że ambiwalencja jest normalna i można ją rozwiązywać przez wydobywanie mowy zmiany."
+    },
+    {
+      "q": "Etap, w którym osoba nie dostrzega problemu i nie planuje zmiany, to w modelu Prochaski i DiClemente:",
+      "options": ["prekontemplacja", "kontemplacja", "przygotowanie", "utrzymanie"],
+      "correct": 0,
+      "explain": "Prekontemplacja oznacza brak świadomości problemu lub intencji zmiany."
+    },
+    {
+      "q": "Pojęcie uwięzienia pośredniego odnosi się do:",
+      "options": [
+        "kary ograniczenia wolności",
+        "skutków kary ponoszonych przez rodzinę skazanego",
+        "dozoru elektronicznego",
+        "aresztu tymczasowego"
+      ],
+      "correct": 1,
+      "explain": "Bliscy skazanego doświadczają ubóstwa, stygmatyzacji i rozłąki, choć sami nie zostali skazani."
+    },
+    {
+      "q": "Jeśli w historii rodziny osoby zwalnianej występowała przemoc domowa, priorytetem pracy jest:",
+      "options": [
+        "jak najszybsze połączenie rodziny",
+        "mediacja rodzinna bez dodatkowej diagnozy",
+        "bezpieczeństwo osób doznających przemocy",
+        "pominięcie tego wątku, by nie stygmatyzować"
+      ],
+      "correct": 2,
+      "explain": "Ocena ryzyka i bezpieczeństwo ofiar wyprzedzają działania na rzecz rekonstrukcji rodziny."
+    },
+    {
+      "q": "Centra integracji społecznej działają na podstawie ustawy o:",
+      "options": [
+        "pomocy społecznej",
+        "wspieraniu rodziny i systemie pieczy zastępczej",
+        "kuratorach sądowych",
+        "zatrudnieniu socjalnym"
+      ],
+      "correct": 3,
+      "explain": "CIS i KIS są instytucjami ustawy o zatrudnieniu socjalnym."
+    },
+    {
+      "q": "Które twierdzenie o pierwszych tygodniach po zwolnieniu jest prawdziwe?",
+      "options": [
+        "To okres podwyższonego ryzyka powrotu do przestępstwa i substancji",
+        "To okres najmniejszego ryzyka nawrotu",
+        "Pomoc w tym czasie jest zbędna, bo działa efekt odstraszający kary",
+        "Pomoc należy wyłącznie do Służby Więziennej"
+      ],
+      "correct": 0,
+      "explain": "Brak mieszkania, pieniędzy i wsparcia kumuluje się tuż po wyjściu, dlatego ciągłość pomocy jest kluczowa."
+    },
+    {
+      "q": "Kompleksowe, międzyinstytucjonalne wsparcie osób opuszczających zakłady karne opisali w publikacji „Sieć”:",
+      "options": [
+        "B. Pastwa-Wojciechowska i M. Ciosek",
+        "G. Miłkowska i S. Sobański",
+        "W. Miller i S. Rollnick",
+        "L. Pytka i M. Konopczyński"
+      ],
+      "correct": 1,
+      "explain": "To pozycja z literatury przedmiotu autorstwa G. Miłkowskiej i S. Sobańskiego."
+    }
+  ],
+  "open": [
+    {
+      "q": "Omów podstawy prawne i etapy pomocy postpenitencjarnej w Polsce.",
+      "answer": "Podstawą jest Kodeks karny wykonawczy: przepisy o pomocy w readaptacji społecznej skazanych, o przygotowaniu do zwolnienia i pomocy po zwolnieniu, a także art. 43 tworzący Fundusz Pomocy Pokrzywdzonym oraz Pomocy Postpenitencjarnej – Fundusz Sprawiedliwości. Uzupełniają go ustawa o pomocy społecznej (trudności po zwolnieniu z zakładu karnego jako przesłanka pomocy), ustawa o kuratorach sądowych i ustawa o zatrudnieniu socjalnym. Wyróżnia się trzy etapy: penitencjarny (oddziaływania w trakcie kary – praca, nauka, terapia, kontakty z rodziną), przygotowanie do zwolnienia w końcowym okresie kary (plan mieszkania, pracy, dokumentów, kontakt z OPS i kuratorem) oraz postpenitencjarny – pomoc materialną, mieszkaniową, terapeutyczną, prawną i zawodową po wyjściu na wolność."
+    },
+    {
+      "q": "Wyjaśnij różnice między resocjalizacją, readaptacją i reintegracją społeczną.",
+      "answer": "Resocjalizacja to proces zmiany osobowości, postaw i zachowań osoby niedostosowanej społecznie w kierunku norm akceptowanych społecznie – dotyczy przede wszystkim wewnętrznej przemiany. Readaptacja to praktyczne ponowne przystosowanie do warunków życia po izolacji: znalezienie mieszkania, pracy, odbudowa relacji, załatwienie dokumentów. Reintegracja oznacza ponowne włączenie do społeczności i podjęcie ról społecznych i zawodowych, co wymaga także akceptacji ze strony otoczenia. Pojęcia tworzą kontinuum: zmiana osoby, dopasowanie do warunków, włączenie do wspólnoty. Skuteczna pomoc łączy wszystkie trzy wymiary."
+    },
+    {
+      "q": "Jakie czynniki sprzyjają, a jakie utrudniają readaptację społeczną osób opuszczających zakłady karne?",
+      "answer": "Sprzyjają: stabilne mieszkanie i źródło dochodu, wspierająca rodzina i prospołeczni znajomi, leczenie uzależnienia i abstynencja, motywacja wewnętrzna i poczucie sprawstwa oraz ciągłość pomocy między instytucjami penitencjarnymi i środowiskowymi. Utrudniają: prizonizacja, stygmatyzacja i etykietowanie prowadzące do dewiacji wtórnej, niechęć pracodawców, zadłużenie i egzekucje, bezdomność, powrót do kryminogennego środowiska, nawrót picia lub brania, wyuczona bezradność i deficyty kompetencji społecznych. Szczególnie ryzykowne są pierwsze tygodnie po zwolnieniu, dlatego pomoc powinna zaczynać się przed opuszczeniem zakładu."
+    },
+    {
+      "q": "Scharakteryzuj klienta niedobrowolnego i strategie budowania z nim współpracy.",
+      "answer": "Klient niedobrowolny korzysta z pomocy pod presją – orzeczenia sądu, dozoru kuratora, warunków świadczenia lub nacisku rodziny. Przejawia opór, nieufność, bierność, pozorne podporządkowanie. Strategie (R. Rooney, C. Trotter): jasne określenie roli pracownika i granic – co jest obowiązkowe, a co podlega negocjacji; wskazanie przestrzeni wyboru; modelowanie i wzmacnianie zachowań prospołecznych; wspólne rozwiązywanie problemów ważnych dla klienta, a nie tylko dla instytucji; uczciwość, konsekwencja i szacunek. Pomocny jest dialog motywujący, który nie konfrontuje oporu wprost, lecz pracuje z ambiwalencją."
+    },
+    {
+      "q": "Przedstaw założenia dialogu motywującego i jego zastosowanie w pracy z osobą uzależnioną po zwolnieniu z zakładu karnego.",
+      "answer": "Dialog motywujący (Miller, Rollnick) to styl rozmowy oparty na współpracy, który wydobywa własną motywację klienta. Jego duch to partnerstwo, akceptacja, współczucie i wydobywanie. Podstawowe umiejętności to OARS: pytania otwarte, afirmacja, odzwierciedlanie i podsumowania. Proces obejmuje angażowanie, ukierunkowanie, wydobywanie mowy zmiany i planowanie. Pracownik unika moralizowania i odruchu naprawiania, a ambiwalencję traktuje jako naturalną. W pracy z osobą uzależnioną po zwolnieniu pozwala połączyć cele ważne dla niej (dzieci, praca, uniknięcie powrotu do więzienia) z decyzją o leczeniu, zamiast narzucać abstynencję z zewnątrz."
+    },
+    {
+      "q": "Czym jest sprawiedliwość naprawcza i jakie ma znaczenie dla readaptacji sprawcy?",
+      "answer": "Sprawiedliwość naprawcza (H. Zehr) traktuje przestępstwo jako krzywdę wyrządzoną konkretnym osobom i relacjom. Pyta, kto został skrzywdzony, jakie ma potrzeby i kto powinien naprawić szkodę. Formy to mediacja pokrzywdzony–sprawca, konferencje grup rodzinnych, kręgi naprawcze, zadośćuczynienie i praca na rzecz społeczności. Dla sprawcy oznacza konfrontację z realnymi skutkami czynu i aktywne wzięcie odpowiedzialności, co sprzyja zmianie postaw i ogranicza neutralizację winy. Dla społeczności daje szansę na ponowne przyjęcie sprawcy, co ułatwia reintegrację i zmniejsza stygmatyzację."
+    },
+    {
+      "q": "Jak pracować z rodziną osoby opuszczającej zakład karny?",
+      "answer": "Rodzina skazanego doświadcza uwięzienia pośredniego: ubóstwa, wstydu, rozłąki, zmiany ról. Praca obejmuje utrzymywanie więzi w czasie kary (widzenia, listy, przepustki), przygotowanie do powrotu poprzez rozmowy o oczekiwaniach i zasadach, poradnictwo i terapię rodzinną, mediacje, wsparcie dzieci oraz pomoc socjalną i prawną. W ujęciu systemowym trzeba pamiętać, że powrót jednej osoby zaburza wypracowaną równowagę, a rodzina może odtwarzać dawne wzorce, np. współuzależnienie. Jeśli występowała przemoc domowa, najpierw ocenia się ryzyko i zapewnia bezpieczeństwo osobom jej doznającym, w razie potrzeby uruchamiając procedurę Niebieskiej Karty."
+    }
+  ]
+}

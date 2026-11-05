@@ -62,6 +62,9 @@ egzaminów według programu **WSHE w Brzegu** (Pedagogika II stopnia, resocjaliz
 uzależnień): semestry, tematy z sylabusa, własne materiały, fiszki, egzaminy próbne (z AI i bez),
 wyszukiwanie i pytania odpowiadane wyłącznie z danych uczelni. Szczegóły: [`docs/STUDIES.md`](docs/STUDIES.md).
 
+**Od 1.6:** dla każdego z 30 przedmiotów gotowe opracowania tematów, fiszki i bank pytań egzaminacyjnych
+z wyjaśnieniami i odpowiedziami wzorcowymi – nauka działa w pełni bez AI i bez internetu.
+
 ## Kurzfassung (Deutsch)
 
 **Przystań** ist eine App für Soziale Arbeit, Sozialpädagogik und Suchtberatung – auf Deutsch

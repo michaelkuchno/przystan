@@ -1,0 +1,433 @@
+{
+  "courseId": "prawo-rodzinne",
+  "notes": [
+    {
+      "topic": "Podstawowe wiadomości o prawie; Internetowy System Aktów Prawnych",
+      "text": "Prawo to zbiór norm postępowania ustanowionych lub uznanych przez państwo i zabezpieczonych przymusem państwowym. Norma prawna składa się z hipotezy (określa adresata i okoliczności), dyspozycji (nakazane lub zakazane zachowanie) i sankcji (skutek naruszenia). Przepis prawny to jednostka redakcyjna tekstu aktu (artykuł, paragraf, ustęp), z której odtwarza się normy.\nŹródła prawa powszechnie obowiązującego (art. 87 Konstytucji RP): Konstytucja, ratyfikowane umowy międzynarodowe, ustawy, rozporządzenia, a na obszarze działania organów, które je ustanowiły – akty prawa miejscowego. Obowiązuje zasada hierarchii: akt niższy musi być zgodny z wyższym. Akty powszechnie obowiązujące wchodzą w życie po ogłoszeniu, co do zasady po 14 dniach (vacatio legis), chyba że ustawa stanowi inaczej.\nPrawo rodzinne i opiekuńcze należy do prawa prywatnego (cywilnego w szerokim znaczeniu) i ma charakter materialny. Główne akty to Kodeks rodzinny i opiekuńczy z 25 lutego 1964 r., Kodeks cywilny (np. zdolność do czynności prawnych, ubezwłasnowolnienie) oraz Kodeks postępowania cywilnego (postępowanie przed sądem opiekuńczym, w trybie nieprocesowym). Ochronę rodziny gwarantuje Konstytucja (art. 18 – małżeństwo jako związek kobiety i mężczyzny, rodzina, macierzyństwo i rodzicielstwo pod ochroną; art. 48 – prawo rodziców do wychowania dzieci; art. 72 – ochrona praw dziecka). Sprawy rodzinne rozpoznają wydziały rodzinne i nieletnich sądów rejonowych (sąd opiekuńczy), a sprawy o rozwód i separację – sądy okręgowe.\nInternetowy System Aktów Prawnych (ISAP, isap.sejm.gov.pl) prowadzi Kancelaria Sejmu. Zawiera opisy bibliograficzne i teksty aktów z Dziennika Ustaw i Monitora Polskiego, informacje o statusie (obowiązujący, uchylony), aktach zmieniających, tekstach jednolitych i tekstach ujednoliconych. Urzędowym źródłem tekstu jest Dziennik Ustaw, wydawany elektronicznie. Tekst jednolity to urzędowe obwieszczenie całości aktu z uwzględnieniem zmian; tekst ujednolicony ma charakter informacyjny.\nNa ćwiczeniach typowym zadaniem jest odnalezienie w ISAP aktualnego tekstu KRO i sprawdzenie ostatniej nowelizacji.",
+      "key": [
+        "Norma prawna – hipoteza, dyspozycja i sankcja",
+        "Hierarchia źródeł prawa – Konstytucja, umowy ratyfikowane, ustawy, rozporządzenia, akty prawa miejscowego",
+        "Vacatio legis – okres między ogłoszeniem a wejściem w życie aktu, co do zasady 14 dni",
+        "ISAP – prowadzona przez Kancelarię Sejmu baza aktów prawnych z Dziennika Ustaw i Monitora Polskiego",
+        "Tekst jednolity – urzędowo ogłoszony tekst aktu z uwzględnieniem wszystkich zmian",
+        "Sąd opiekuńczy – sąd rejonowy (wydział rodzinny i nieletnich) właściwy w sprawach rodzinnych i opiekuńczych"
+      ]
+    },
+    {
+      "topic": "Małżeństwo",
+      "text": "Małżeństwo w prawie polskim to związek kobiety i mężczyzny zawarty w formie przewidzianej prawem. Może być zawarte:\n• w formie świeckiej – przed kierownikiem urzędu stanu cywilnego, przez jednoczesne oświadczenia obojga nupturientów, w obecności dwóch pełnoletnich świadków,\n• w formie wyznaniowej (tzw. konkordatowej) – przed duchownym kościoła lub związku wyznaniowego, jeśli ustawa tak stanowi, ze skutkami cywilnymi po sporządzeniu aktu małżeństwa w USC.\nPrzeszkody małżeńskie (art. 10–15 KRO): wiek (zasadą jest pełnoletność; wyjątek dotyczący kobiet, które ukończyły 16 lat, był przedmiotem prac legislacyjnych zmierzających do jego zniesienia – aktualne brzmienie art. 10 należy sprawdzić w ISAP), ubezwłasnowolnienie całkowite, choroba psychiczna lub niedorozwój umysłowy (z możliwością zezwolenia sądu, jeśli nie zagraża to małżeństwu ani zdrowiu potomstwa), pozostawanie w związku małżeńskim (bigamia), pokrewieństwo w linii prostej i rodzeństwo, powinowactwo w linii prostej (sąd może zezwolić), przysposobienie. Naruszenie przeszkody jest podstawą do unieważnienia małżeństwa. Unieważnienia można też żądać z powodu wad oświadczenia woli (brak świadomości, błąd co do tożsamości, groźba).\nPrawa i obowiązki małżonków: równe prawa i obowiązki, obowiązek wspólnego pożycia, wzajemnej pomocy, wierności i współdziałania dla dobra rodziny; obowiązek przyczyniania się do zaspokajania potrzeb rodziny. Ustawowym ustrojem majątkowym jest wspólność majątkowa (wspólność ustawowa); umową majątkową można ją rozszerzyć, ograniczyć lub wprowadzić rozdzielność (także z wyrównaniem dorobków).\nRozwód (art. 56 KRO) orzeka sąd okręgowy, gdy nastąpił zupełny i trwały rozkład pożycia (więź duchowa, fizyczna i gospodarcza). Rozwód jest niedopuszczalny, gdy ucierpiałoby dobro wspólnych małoletnich dzieci, byłby sprzeczny z zasadami współżycia społecznego lub żąda go małżonek wyłącznie winny (z wyjątkami). Separacja wymaga zupełnego rozkładu pożycia (nie musi być trwały) i nie rozwiązuje małżeństwa. Uzależnienie małżonka bywa przyczyną rozkładu pożycia i podstawą orzekania o winie.",
+      "key": [
+        "Przeszkody małżeńskie – okoliczności wyłączające ważne zawarcie małżeństwa (art. 10–15 KRO)",
+        "Małżeństwo wyznaniowe – zawarte przed duchownym ze skutkami cywilnymi po rejestracji w USC",
+        "Wspólność ustawowa – ustawowy ustrój majątkowy małżonków",
+        "Rozwód – rozwiązanie małżeństwa przez sąd przy zupełnym i trwałym rozkładzie pożycia",
+        "Separacja – orzeczenie przy zupełnym rozkładzie pożycia, bez rozwiązania małżeństwa"
+      ]
+    },
+    {
+      "topic": "Pochodzenie dziecka",
+      "text": "Pochodzenie dziecka (filiacja) reguluje dział II tytułu II KRO.\nMacierzyństwo: matką dziecka jest kobieta, która je urodziła. Możliwe jest sądowe ustalenie macierzyństwa (np. gdy matka jest nieznana) i zaprzeczenie macierzyństwa (np. przy zamianie dzieci w szpitalu).\nOjcostwo może zostać ustalone na trzy sposoby:\n1. Domniemanie pochodzenia od męża matki – jeżeli dziecko urodziło się w czasie trwania małżeństwa albo przed upływem 300 dni od jego ustania lub unieważnienia, domniemywa się, że pochodzi od męża matki. Domniemanie to można obalić wyłącznie w procesie o zaprzeczenie ojcostwa. Uprawnieni to mąż matki (w terminie roku od dnia, w którym dowiedział się, że dziecko od niego nie pochodzi, nie później niż do pełnoletności dziecka), matka, dziecko po osiągnięciu pełnoletności oraz prokurator, jeśli wymaga tego dobro dziecka lub ochrona interesu społecznego.\n2. Uznanie ojcostwa – następuje, gdy mężczyzna, od którego dziecko pochodzi, oświadcza przed kierownikiem USC (w określonych sytuacjach przed sądem opiekuńczym lub konsulem), że jest ojcem dziecka, a matka potwierdza to oświadczenie. Uznać można także dziecko poczęte, ale jeszcze nieurodzone. Uznanie nie jest możliwe, gdy działa domniemanie pochodzenia od męża matki.\n3. Sądowe ustalenie ojcostwa – na żądanie dziecka, matki, domniemanego ojca lub prokuratora. Domniemywa się, że ojcem jest ten, kto obcował z matką nie dawniej niż w 300., a nie później niż w 181. dniu przed urodzeniem dziecka. W praktyce rozstrzyga badanie DNA. Ustalając ojcostwo, sąd może orzec o alimentach, nazwisku i władzy rodzicielskiej.\nPrzy medycznie wspomaganej prokreacji z udziałem dawcy mąż matki, który wyraził zgodę, nie może zaprzeczyć ojcostwa.\nW praktyce PCPR i pieczy zastępczej uregulowanie pochodzenia dziecka ma znaczenie dla alimentów, dziedziczenia, kontaktów i ewentualnej adopcji. Na egzaminie typowe są pytania o domniemanie 300 dni i formy ustalenia ojcostwa.",
+      "key": [
+        "Domniemanie pochodzenia od męża matki – dziecko urodzone w małżeństwie lub do 300 dni po jego ustaniu",
+        "Zaprzeczenie ojcostwa – proces obalający domniemanie pochodzenia od męża matki",
+        "Uznanie ojcostwa – oświadczenie mężczyzny potwierdzone przez matkę dziecka",
+        "Sądowe ustalenie ojcostwa – orzeczenie sądu, gdy nie działa domniemanie ani nie było uznania",
+        "Macierzyństwo – matką jest kobieta, która urodziła dziecko"
+      ]
+    },
+    {
+      "topic": "Władza rodzicielska",
+      "text": "Władza rodzicielska to ogół obowiązków i praw rodziców wobec dziecka. Dziecko pozostaje pod władzą rodzicielską do pełnoletności. Obejmuje ona w szczególności obowiązek i prawo rodziców do wykonywania pieczy nad osobą i majątkiem dziecka oraz do jego wychowania, z poszanowaniem jego godności i praw. Władza rodzicielska powinna być wykonywana tak, jak wymaga tego dobro dziecka i interes społeczny. Rodzice reprezentują dziecko (gdy konflikt interesów – sąd ustanawia kuratora) i zarządzają jego majątkiem (czynności przekraczające zwykły zarząd wymagają zgody sądu). Przed podjęciem ważnych decyzji powinni wysłuchać dziecko, jeśli jego rozwój na to pozwala. Od 2010 r. KRO wprost zakazuje stosowania kar cielesnych wobec dziecka.\nIngerencja sądu opiekuńczego (stopniowalna):\n• ograniczenie władzy (art. 109 KRO) – gdy dobro dziecka jest zagrożone; sąd może m.in. zobowiązać rodziców do określonego postępowania (np. współpracy z asystentem rodziny, korzystania z placówki wsparcia dziennego), poddać wykonywanie władzy nadzorowi kuratora sądowego, wymagać zgody sądu na określone czynności albo umieścić dziecko w pieczy zastępczej,\n• zawieszenie władzy (art. 110) – przy przemijającej przeszkodzie w jej wykonywaniu (np. długi pobyt za granicą, pobyt w szpitalu),\n• pozbawienie władzy (art. 111) – przy trwałej przeszkodzie, nadużywaniu władzy lub rażącym zaniedbywaniu obowiązków wobec dziecka, a także gdy mimo udzielonej pomocy rodzice trwale nie interesują się dzieckiem przebywającym w pieczy zastępczej.\nNiezależnie od władzy rodzicielskiej rodzice i dziecko mają prawo i obowiązek utrzymywania kontaktów (art. 113), które sąd może ograniczyć lub zakazać, gdy zagrażają dobru dziecka. Rodzice mają też obowiązek alimentacyjny.\nPrzykład: przy uzależnieniu rodzica, przemocy i zaniedbaniu sąd najczęściej najpierw ogranicza władzę (nadzór kuratora, asystent rodziny, zobowiązanie do terapii), a pozbawienie stosuje jako środek ostateczny. Egzamin: różnica między ograniczeniem, zawieszeniem i pozbawieniem.",
+      "key": [
+        "Władza rodzicielska – obowiązki i prawa rodziców wobec osoby i majątku dziecka oraz jego wychowania",
+        "Ograniczenie władzy rodzicielskiej (art. 109) – zarządzenia sądu przy zagrożeniu dobra dziecka",
+        "Zawieszenie władzy (art. 110) – przy przemijającej przeszkodzie w jej wykonywaniu",
+        "Pozbawienie władzy (art. 111) – przy trwałej przeszkodzie, nadużyciu lub rażącym zaniedbaniu",
+        "Kontakty z dzieckiem (art. 113) – prawo i obowiązek niezależne od władzy rodzicielskiej"
+      ]
+    },
+    {
+      "topic": "Sprawowanie opieki faktycznej nad małoletnim",
+      "text": "Opieka faktyczna to sytuacja, w której osoba sprawuje stałą pieczę nad małoletnim, choć nie ma do tego tytułu ustawowego ani nie została ustanowiona przez sąd (nie jest rodzicem, opiekunem prawnym ani rodziną zastępczą). Typowe przykłady: dziadkowie wychowujący wnuka, gdy rodzice wyjechali do pracy za granicę; ciocia opiekująca się dzieckiem siostry przebywającej w zakładzie karnym lub na leczeniu odwykowym; partner rodzica.\nKRO zawiera odrębny dział „Sprawowanie opieki faktycznej nad małoletnim”. Opiekun faktyczny:\n• może i powinien zajmować się bieżącymi sprawami dziecka, zwłaszcza dotyczącymi jego zdrowia i wychowania (np. kontakt ze szkołą, wizyta u lekarza),\n• nie wykonuje władzy rodzicielskiej i nie jest ustawowym przedstawicielem dziecka – w sprawach istotnych decydują rodzice albo sąd opiekuńczy,\n• powinien zawiadomić sąd opiekuńczy, jeżeli dziecko pozostaje bez opieki rodziców, aby sąd mógł uregulować sytuację prawną (np. powierzyć tymczasowo pieczę, ustanowić rodzinę zastępczą spokrewnioną lub opiekuna prawnego).\nPrzepisy medyczne (ustawa o prawach pacjenta, ustawa o zawodach lekarza i lekarza dentysty) przyznają opiekunowi faktycznemu – osobie sprawującej bez obowiązku ustawowego stałą opiekę nad pacjentem – m.in. prawo do informacji i wyrażenia zgody na badanie małoletniego, gdy brak przedstawiciela ustawowego lub kontakt z nim jest niemożliwy. Zgoda na zabieg o podwyższonym ryzyku wymaga przedstawiciela ustawowego lub sądu.\nObowiązek zawiadomienia sądu o zdarzeniu uzasadniającym wszczęcie postępowania z urzędu (np. gdy dziecko pozostaje bez opieki) ciąży też na każdym, kto o nim wie, a zwłaszcza na instytucjach (szkoła, OPS, PCPR, policja) – wynika z Kodeksu postępowania cywilnego.\nW praktyce PCPR opieka faktyczna często poprzedza ustanowienie rodziny zastępczej spokrewnionej (np. dziadków), która daje stabilność prawną i prawo do świadczeń. Na egzaminie warto umieć odróżnić opiekuna faktycznego od opiekuna prawnego i rodziny zastępczej.",
+      "key": [
+        "Opiekun faktyczny – osoba sprawująca stałą pieczę nad dzieckiem bez tytułu ustawowego i orzeczenia sądu",
+        "Bieżące sprawy dziecka – codzienne decyzje dotyczące zdrowia i wychowania, które może podejmować opiekun faktyczny",
+        "Przedstawiciel ustawowy – rodzic z władzą rodzicielską lub opiekun prawny",
+        "Obowiązek zawiadomienia sądu – powinność informowania sądu opiekuńczego o zagrożeniu dobra dziecka",
+        "Rodzina zastępcza spokrewniona – forma pieczy sprawowana przez wstępnych lub rodzeństwo dziecka"
+      ]
+    },
+    {
+      "topic": "Przysposobienie i piecza zastępcza",
+      "text": "Przysposobienie (adopcja) to stosunek prawny między przysposabiającym a przysposobionym, podobny do stosunku rodzic–dziecko. Przysposobić można tylko osobę małoletnią i wyłącznie dla jej dobra. Przysposabiający musi mieć pełną zdolność do czynności prawnych, odpowiednie kwalifikacje osobiste i odpowiednią różnicę wieku. Kwalifikację kandydatów prowadzą ośrodki adopcyjne, a orzeka sąd opiekuńczy po okresie osobistej styczności z dzieckiem. Dziecko, które ukończyło 13 lat, musi wyrazić zgodę; młodsze sąd wysłuchuje, jeśli może ono zrozumieć sytuację. Co do zasady wymagana jest zgoda rodziców, chyba że zostali pozbawieni władzy rodzicielskiej lub są nieznani.\nRodzaje przysposobienia:\n• niepełne – skutki tylko między przysposabiającym a przysposobionym, więzi z rodziną naturalną nie wygasają,\n• pełne – przysposobiony uzyskuje prawa i obowiązki dziecka w rodzinie przysposabiającego, a więzi z rodziną naturalną wygasają,\n• całkowite (pełne nierozwiązywalne) – na podstawie zgody rodziców wyrażonej przed sądem bez wskazania przysposabiającego (tzw. zgoda blankietowa), nie wcześniej niż 6 tygodni po urodzeniu dziecka; nie może zostać rozwiązane.\nPiecza zastępcza (ustawa z 9 czerwca 2011 r. o wspieraniu rodziny i systemie pieczy zastępczej) zapewnia dziecku opiekę, gdy rodzice nie mogą jej sprawować. Ma charakter tymczasowy – celem jest powrót dziecka do rodziny, a gdy to niemożliwe – adopcja lub usamodzielnienie.\n• rodzinna: rodzina zastępcza spokrewniona (wstępni lub rodzeństwo), niezawodowa, zawodowa (w tym pełniąca funkcję pogotowia rodzinnego i specjalistyczna) oraz rodzinny dom dziecka,\n• instytucjonalna: placówki opiekuńczo-wychowawcze (socjalizacyjne, interwencyjne, specjalistyczno-terapeutyczne, rodzinne – do 14 dzieci), regionalne placówki opiekuńczo-terapeutyczne, interwencyjne ośrodki preadopcyjne.\nZasadą jest pierwszeństwo pieczy rodzinnej; dzieci do 10. roku życia co do zasady nie umieszcza się w placówce. Organizatorem rodzinnej pieczy zastępczej jest najczęściej PCPR, który zatrudnia koordynatorów, a gmina zapewnia asystenta rodziny pracującego z rodziną biologiczną. Pełnoletni wychowankowie mogą korzystać z pomocy na usamodzielnienie.",
+      "key": [
+        "Przysposobienie pełne – zerwanie więzi z rodziną naturalną i pełne wejście do rodziny przysposabiającego",
+        "Zgoda blankietowa – zgoda rodziców na adopcję bez wskazania przysposabiającego, dopuszczalna po 6 tygodniach od urodzenia",
+        "Piecza zastępcza – tymczasowa opieka nad dzieckiem, gdy rodzice nie mogą jej sprawować",
+        "Rodzina zastępcza spokrewniona – tworzona przez wstępnych lub rodzeństwo dziecka",
+        "Organizator rodzinnej pieczy zastępczej – podmiot wyznaczony przez starostę, najczęściej PCPR",
+        "Usamodzielnienie – pomoc dla pełnoletnich wychowanków opuszczających pieczę zastępczą"
+      ]
+    },
+    {
+      "topic": "Opieka i kuratela",
+      "text": "Opieka i kuratela to instytucje prawa opiekuńczego, służące ochronie osób, które nie mogą samodzielnie prowadzić swoich spraw.\nOpieka (art. 145 i nast. KRO) jest ustanawiana:\n• dla małoletniego, jeżeli żadnemu z rodziców nie przysługuje władza rodzicielska (zmarli, zostali jej pozbawieni, władza jest zawieszona) albo rodzice są nieznani,\n• dla osoby ubezwłasnowolnionej całkowicie.\nOpiekuna ustanawia sąd opiekuńczy. W pierwszej kolejności rozważa osobę wskazaną przez rodziców, krewnych lub inne osoby bliskie. Opiekunem nie może zostać m.in. osoba bez pełnej zdolności do czynności prawnych, pozbawiona praw publicznych lub władzy rodzicielskiej. Opiekun sprawuje pieczę nad osobą i majątkiem podopiecznego oraz go reprezentuje, z należytą starannością, pod nadzorem sądu opiekuńczego, któremu składa sprawozdania. We wszystkich ważniejszych sprawach dotyczących osoby lub majątku podopiecznego potrzebuje zezwolenia sądu. Opieka małoletniego ustaje z chwilą jego pełnoletności.\nUbezwłasnowolnienie reguluje Kodeks cywilny. Ubezwłasnowolnić całkowicie można osobę, która ukończyła 13 lat, jeżeli wskutek choroby psychicznej, niedorozwoju umysłowego albo innego rodzaju zaburzeń psychicznych, w szczególności pijaństwa lub narkomanii, nie jest w stanie kierować swym postępowaniem. Częściowo – osobę pełnoletnią, która z tych przyczyn potrzebuje pomocy do prowadzenia swoich spraw.\nKuratela (art. 178 i nast. KRO) służy do załatwienia określonych spraw lub sprawowania ograniczonej pieczy. Kuratora ustanawia się m.in.:\n• dla osoby ubezwłasnowolnionej częściowo,\n• dla osoby niepełnosprawnej, która potrzebuje pomocy do prowadzenia wszelkich spraw albo spraw określonego rodzaju,\n• dla dziecka poczętego (dla strzeżenia jego przyszłych praw),\n• dla małoletniego, gdy jego interesy są sprzeczne z interesami rodziców,\n• dla osoby nieobecnej.\nKurator ma zakres kompetencji wyznaczony przez sąd; kuratora prawa opiekuńczego należy odróżnić od kuratora sądowego, który sprawuje nadzór i dozór.\nW kontekście uzależnień ubezwłasnowolnienie z powodu pijaństwa lub narkomanii jest możliwe, ale stanowi ostateczność – zwykle wystarczają leczenie i wsparcie. Egzamin: przesłanki opieki i rodzaje kurateli.",
+      "key": [
+        "Opieka – piecza nad osobą i majątkiem małoletniego bez rodziców z władzą lub osoby ubezwłasnowolnionej całkowicie",
+        "Kuratela – ochrona prawna ograniczona do określonych spraw",
+        "Ubezwłasnowolnienie całkowite – możliwe od 13 lat przy niezdolności do kierowania swoim postępowaniem",
+        "Ubezwłasnowolnienie częściowe – dla pełnoletniego potrzebującego pomocy w prowadzeniu spraw",
+        "Kurator dla osoby niepełnosprawnej – pomoc w prowadzeniu spraw bez ubezwłasnowolnienia"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "front": "Elementy normy prawnej",
+      "back": "Hipoteza (adresat i okoliczności), dyspozycja (nakazane lub zakazane zachowanie) i sankcja (skutek naruszenia)."
+    },
+    {
+      "front": "Źródła prawa powszechnie obowiązującego (art. 87 Konstytucji)",
+      "back": "Konstytucja, ratyfikowane umowy międzynarodowe, ustawy, rozporządzenia oraz akty prawa miejscowego na obszarze działania organów, które je ustanowiły."
+    },
+    {
+      "front": "ISAP",
+      "back": "Internetowy System Aktów Prawnych prowadzony przez Kancelarię Sejmu (isap.sejm.gov.pl) – teksty aktów z Dziennika Ustaw i Monitora Polskiego, ich status i zmiany."
+    },
+    {
+      "front": "Tekst jednolity a tekst ujednolicony",
+      "back": "Tekst jednolity to urzędowe obwieszczenie aktu z uwzględnieniem zmian; tekst ujednolicony ma wyłącznie charakter informacyjny."
+    },
+    {
+      "front": "Vacatio legis",
+      "back": "Okres między ogłoszeniem aktu a jego wejściem w życie; co do zasady 14 dni, chyba że akt stanowi inaczej."
+    },
+    {
+      "front": "Konstytucyjna ochrona rodziny",
+      "back": "Art. 18 (małżeństwo, rodzina, macierzyństwo i rodzicielstwo pod ochroną), art. 48 (prawo rodziców do wychowania), art. 72 (ochrona praw dziecka)."
+    },
+    {
+      "front": "Formy zawarcia małżeństwa",
+      "back": "Świecka – przed kierownikiem USC w obecności dwóch pełnoletnich świadków; wyznaniowa – przed duchownym, ze skutkami cywilnymi po sporządzeniu aktu w USC."
+    },
+    {
+      "front": "Przeszkody małżeńskie",
+      "back": "Wiek, ubezwłasnowolnienie całkowite, choroba psychiczna lub niedorozwój umysłowy, bigamia, pokrewieństwo, powinowactwo w linii prostej, przysposobienie."
+    },
+    {
+      "front": "Przesłanka pozytywna rozwodu",
+      "back": "Zupełny i trwały rozkład pożycia małżeńskiego – ustanie więzi duchowej, fizycznej i gospodarczej bez szans na powrót."
+    },
+    {
+      "front": "Przesłanki negatywne rozwodu",
+      "back": "Ucierpienie dobra wspólnych małoletnich dzieci, sprzeczność z zasadami współżycia społecznego, żądanie małżonka wyłącznie winnego (z wyjątkami)."
+    },
+    {
+      "front": "Separacja",
+      "back": "Orzekana przy zupełnym (niekoniecznie trwałym) rozkładzie pożycia; nie rozwiązuje małżeństwa i uniemożliwia zawarcie nowego."
+    },
+    {
+      "front": "Ustawowy ustrój majątkowy małżonków",
+      "back": "Wspólność majątkowa (ustawowa); umową można ją rozszerzyć, ograniczyć lub ustanowić rozdzielność, także z wyrównaniem dorobków."
+    },
+    { "front": "Kto jest matką dziecka?", "back": "Kobieta, która je urodziła." },
+    {
+      "front": "Domniemanie pochodzenia od męża matki",
+      "back": "Dziecko urodzone w czasie małżeństwa lub przed upływem 300 dni od jego ustania lub unieważnienia uważa się za pochodzące od męża matki."
+    },
+    {
+      "front": "Sposoby ustalenia ojcostwa",
+      "back": "Domniemanie pochodzenia od męża matki, uznanie ojcostwa i sądowe ustalenie ojcostwa."
+    },
+    {
+      "front": "Uznanie ojcostwa",
+      "back": "Oświadczenie mężczyzny, że jest ojcem dziecka, złożone zwykle przed kierownikiem USC i potwierdzone przez matkę; możliwe także wobec dziecka poczętego."
+    },
+    {
+      "front": "Treść władzy rodzicielskiej",
+      "back": "Piecza nad osobą i majątkiem dziecka oraz jego wychowanie, z poszanowaniem godności i praw dziecka, zgodnie z jego dobrem."
+    },
+    {
+      "front": "Zakaz kar cielesnych",
+      "back": "KRO (od 2010 r.) zakazuje osobom wykonującym władzę rodzicielską, opiekę lub pieczę stosowania kar cielesnych wobec dziecka."
+    },
+    {
+      "front": "Ograniczenie, zawieszenie i pozbawienie władzy rodzicielskiej",
+      "back": "Ograniczenie – przy zagrożeniu dobra dziecka (art. 109); zawieszenie – przy przemijającej przeszkodzie (art. 110); pozbawienie – przy trwałej przeszkodzie, nadużyciu lub rażącym zaniedbaniu (art. 111)."
+    },
+    {
+      "front": "Kontakty rodzica z dzieckiem",
+      "back": "Prawo i obowiązek rodziców i dziecka niezależne od władzy rodzicielskiej (art. 113 KRO); sąd może je ograniczyć lub zakazać ze względu na dobro dziecka."
+    },
+    {
+      "front": "Opiekun faktyczny",
+      "back": "Osoba sprawująca stałą pieczę nad dzieckiem bez tytułu ustawowego i orzeczenia sądu, np. dziadkowie pod nieobecność rodziców; zajmuje się bieżącymi sprawami dziecka."
+    },
+    {
+      "front": "Rodzaje przysposobienia",
+      "back": "Niepełne (więzi z rodziną naturalną trwają), pełne (więzi wygasają) i całkowite – nierozwiązywalne, oparte na zgodzie blankietowej."
+    },
+    {
+      "front": "Zgoda dziecka na przysposobienie",
+      "back": "Wymagana, gdy dziecko ukończyło 13 lat; młodsze sąd wysłuchuje, jeśli może zrozumieć sytuację."
+    },
+    {
+      "front": "Formy rodzinnej pieczy zastępczej",
+      "back": "Rodzina zastępcza spokrewniona, niezawodowa, zawodowa (w tym pogotowie rodzinne i specjalistyczna) oraz rodzinny dom dziecka."
+    },
+    {
+      "front": "Formy instytucjonalnej pieczy zastępczej",
+      "back": "Placówki opiekuńczo-wychowawcze (socjalizacyjne, interwencyjne, specjalistyczno-terapeutyczne, rodzinne), regionalne placówki opiekuńczo-terapeutyczne, interwencyjne ośrodki preadopcyjne."
+    },
+    {
+      "front": "Przesłanki ustanowienia opieki",
+      "back": "Małoletni, któremu rodzice nie mogą wykonywać władzy rodzicielskiej (lub są nieznani), oraz osoba ubezwłasnowolniona całkowicie."
+    },
+    {
+      "front": "Przesłanki ubezwłasnowolnienia całkowitego (KC)",
+      "back": "Ukończone 13 lat oraz niezdolność do kierowania swoim postępowaniem wskutek choroby psychicznej, niedorozwoju umysłowego lub innych zaburzeń, w szczególności pijaństwa lub narkomanii."
+    },
+    {
+      "front": "Kiedy ustanawia się kuratora (KRO)?",
+      "back": "M.in. dla osoby częściowo ubezwłasnowolnionej, osoby niepełnosprawnej potrzebującej pomocy, dziecka poczętego, małoletniego przy konflikcie interesów z rodzicami, osoby nieobecnej."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Który element normy prawnej określa skutki jej naruszenia?",
+      "options": ["Hipoteza", "Dyspozycja", "Sankcja", "Przepis"],
+      "correct": 2,
+      "explain": "Sankcja wskazuje konsekwencje niezastosowania się do dyspozycji normy."
+    },
+    {
+      "q": "Internetowy System Aktów Prawnych (ISAP) prowadzi:",
+      "options": [
+        "Ministerstwo Sprawiedliwości",
+        "Kancelaria Sejmu",
+        "Rządowe Centrum Legislacji jako jedyne źródło urzędowe",
+        "Trybunał Konstytucyjny"
+      ],
+      "correct": 1,
+      "explain": "ISAP prowadzi Kancelaria Sejmu; urzędowym źródłem tekstu jest Dziennik Ustaw."
+    },
+    {
+      "q": "Co do zasady akt normatywny wchodzi w życie po upływie:",
+      "options": ["14 dni od ogłoszenia", "7 dni od uchwalenia", "30 dni od podpisania", "z dniem uchwalenia"],
+      "correct": 0,
+      "explain": "Ustawa o ogłaszaniu aktów normatywnych przewiduje co do zasady 14-dniowe vacatio legis."
+    },
+    {
+      "q": "Który akt NIE jest źródłem prawa powszechnie obowiązującego według art. 87 Konstytucji?",
+      "options": ["Ustawa", "Rozporządzenie", "Ratyfikowana umowa międzynarodowa", "Zarządzenie wewnętrzne dyrektora szkoły"],
+      "correct": 3,
+      "explain": "Zarządzenia wewnętrzne obowiązują tylko jednostki podległe organowi, który je wydał."
+    },
+    {
+      "q": "Sprawy o rozwód rozpoznaje w pierwszej instancji:",
+      "options": ["sąd rejonowy – wydział rodzinny i nieletnich", "sąd okręgowy", "kierownik USC", "sąd apelacyjny"],
+      "correct": 1,
+      "explain": "Sprawy o rozwód i separację należą do właściwości sądów okręgowych."
+    },
+    {
+      "q": "Pozytywną przesłanką rozwodu jest:",
+      "options": [
+        "zupełny rozkład pożycia",
+        "wina jednego z małżonków",
+        "zupełny i trwały rozkład pożycia",
+        "wspólne żądanie obojga małżonków"
+      ],
+      "correct": 2,
+      "explain": "Art. 56 § 1 KRO wymaga, by rozkład pożycia był zarówno zupełny, jak i trwały."
+    },
+    {
+      "q": "Ustawowym ustrojem majątkowym małżeńskim w Polsce jest:",
+      "options": [
+        "wspólność majątkowa",
+        "rozdzielność majątkowa",
+        "rozdzielność z wyrównaniem dorobków",
+        "wspólność rozszerzona"
+      ],
+      "correct": 0,
+      "explain": "Z chwilą zawarcia małżeństwa powstaje z mocy ustawy wspólność majątkowa, chyba że małżonkowie zawarli umowę."
+    },
+    {
+      "q": "Która okoliczność NIE jest przeszkodą małżeńską?",
+      "options": [
+        "Pozostawanie w związku małżeńskim",
+        "Pokrewieństwo w linii prostej",
+        "Ubezwłasnowolnienie całkowite",
+        "Różnica wyznania nupturientów"
+      ],
+      "correct": 3,
+      "explain": "Różnica wyznania nie jest przeszkodą w prawie polskim; pozostałe są przeszkodami z KRO."
+    },
+    {
+      "q": "Domniemanie pochodzenia dziecka od męża matki obejmuje dziecko urodzone w czasie trwania małżeństwa albo przed upływem:",
+      "options": [
+        "181 dni od jego ustania",
+        "300 dni od jego ustania lub unieważnienia",
+        "6 miesięcy od orzeczenia separacji",
+        "roku od rozwodu"
+      ],
+      "correct": 1,
+      "explain": "Art. 62 KRO przyjmuje 300 dni jako maksymalny okres trwania ciąży dla domniemania."
+    },
+    {
+      "q": "Ojcostwo można ustalić przez:",
+      "options": [
+        "wyłącznie badanie DNA w laboratorium",
+        "oświadczenie matki przed notariuszem",
+        "domniemanie, uznanie lub orzeczenie sądu",
+        "wpis dokonany przez szpital"
+      ],
+      "correct": 2,
+      "explain": "KRO przewiduje trzy drogi: domniemanie pochodzenia od męża matki, uznanie ojcostwa i sądowe ustalenie."
+    },
+    {
+      "q": "Uznanie ojcostwa jest niedopuszczalne, gdy:",
+      "options": [
+        "dziecko pozostaje objęte domniemaniem pochodzenia od męża matki",
+        "dziecko nie ukończyło 1 roku",
+        "rodzice nie mieszkają razem",
+        "dziecko zostało dopiero poczęte"
+      ],
+      "correct": 0,
+      "explain": "Domniemanie z art. 62 KRO trzeba najpierw obalić w procesie o zaprzeczenie ojcostwa; uznać można natomiast dziecko poczęte."
+    },
+    {
+      "q": "Sąd orzeka zawieszenie władzy rodzicielskiej, gdy:",
+      "options": [
+        "rodzic rażąco zaniedbuje obowiązki",
+        "rodzic nadużywa władzy",
+        "dobro dziecka jest zagrożone",
+        "istnieje przemijająca przeszkoda w wykonywaniu władzy"
+      ],
+      "correct": 3,
+      "explain": "Art. 110 KRO – zawieszenie stosuje się przy przemijającej przeszkodzie, np. długim wyjeździe."
+    },
+    {
+      "q": "Poddanie wykonywania władzy rodzicielskiej nadzorowi kuratora sądowego to przykład:",
+      "options": ["pozbawienia władzy", "ograniczenia władzy", "zawieszenia władzy", "przysposobienia"],
+      "correct": 1,
+      "explain": "Nadzór kuratora jest jednym z zarządzeń przy ograniczeniu władzy na podstawie art. 109 KRO."
+    },
+    {
+      "q": "Prawo do kontaktów z dzieckiem:",
+      "options": [
+        "wygasa z chwilą pozbawienia władzy rodzicielskiej",
+        "przysługuje tylko rodzicowi mieszkającemu z dzieckiem",
+        "przysługuje rodzicom niezależnie od władzy rodzicielskiej",
+        "wymaga zgody kuratora sądowego"
+      ],
+      "correct": 2,
+      "explain": "Art. 113 KRO – kontakty są prawem i obowiązkiem niezależnym od władzy rodzicielskiej, choć sąd może je ograniczyć."
+    },
+    {
+      "q": "Babcia, która bez orzeczenia sądu stale wychowuje wnuka pod nieobecność rodziców, jest:",
+      "options": ["opiekunem faktycznym", "opiekunem prawnym", "kuratorem", "rodziną zastępczą zawodową"],
+      "correct": 0,
+      "explain": "Opiekun faktyczny sprawuje stałą pieczę bez tytułu ustawowego i bez orzeczenia sądu."
+    },
+    {
+      "q": "Zgoda dziecka na przysposobienie jest wymagana, jeżeli ukończyło ono:",
+      "options": ["7 lat", "10 lat", "16 lat", "13 lat"],
+      "correct": 3,
+      "explain": "Art. 118 KRO wymaga zgody przysposabianego, który ukończył 13 lat."
+    },
+    {
+      "q": "Przysposobienie oparte na zgodzie blankietowej rodziców:",
+      "options": [
+        "może zostać rozwiązane z ważnych powodów",
+        "nie może zostać rozwiązane",
+        "ma skutki tylko między przysposabiającym a przysposobionym",
+        "nie wymaga orzeczenia sądu"
+      ],
+      "correct": 1,
+      "explain": "Przysposobienie całkowite (pełne nierozwiązywalne) nie podlega rozwiązaniu."
+    },
+    {
+      "q": "Rodzinę zastępczą spokrewnioną mogą tworzyć:",
+      "options": [
+        "dowolne osoby po szkoleniu",
+        "wyłącznie osoby zatrudnione na umowę z PCPR",
+        "wstępni lub rodzeństwo dziecka",
+        "wyłącznie małżonkowie bezdzietni"
+      ],
+      "correct": 2,
+      "explain": "Ustawa o wspieraniu rodziny i systemie pieczy zastępczej przewiduje rodzinę spokrewnioną dla dziadków i rodzeństwa."
+    },
+    {
+      "q": "Która forma pieczy zastępczej ma charakter instytucjonalny?",
+      "options": [
+        "Placówka opiekuńczo-wychowawcza typu socjalizacyjnego",
+        "Rodzinny dom dziecka",
+        "Rodzina zastępcza zawodowa pełniąca funkcję pogotowia rodzinnego",
+        "Rodzina zastępcza niezawodowa"
+      ],
+      "correct": 0,
+      "explain": "Rodzinny dom dziecka i rodziny zastępcze to formy rodzinne; placówki to piecza instytucjonalna."
+    },
+    {
+      "q": "Opiekę ustanawia się dla:",
+      "options": [
+        "osoby ubezwłasnowolnionej częściowo",
+        "dziecka poczętego",
+        "osoby nieobecnej",
+        "osoby ubezwłasnowolnionej całkowicie"
+      ],
+      "correct": 3,
+      "explain": "Dla częściowo ubezwłasnowolnionego, dziecka poczętego i nieobecnego ustanawia się kuratora."
+    },
+    {
+      "q": "Ubezwłasnowolnić całkowicie można osobę, która ukończyła:",
+      "options": ["18 lat", "13 lat", "16 lat", "21 lat"],
+      "correct": 1,
+      "explain": "Art. 13 Kodeksu cywilnego dopuszcza ubezwłasnowolnienie całkowite osoby, która ukończyła 13 lat."
+    },
+    {
+      "q": "Kurator dla małoletniego jest ustanawiany m.in. wtedy, gdy:",
+      "options": [
+        "rodzice wyjeżdżają na urlop",
+        "dziecko rozpoczyna naukę w szkole",
+        "zachodzi sprzeczność interesów małoletniego i rodziców",
+        "dziecko ukończy 13 lat"
+      ],
+      "correct": 2,
+      "explain": "Przy sprzeczności interesów rodzice nie mogą reprezentować dziecka – sąd ustanawia kuratora (art. 99 KRO)."
+    }
+  ],
+  "open": [
+    {
+      "q": "Wyjaśnij hierarchię źródeł prawa i opisz, jak korzystać z ISAP przy pracy z prawem rodzinnym.",
+      "answer": "Zgodnie z art. 87 Konstytucji źródłami prawa powszechnie obowiązującego są: Konstytucja, ratyfikowane umowy międzynarodowe, ustawy i rozporządzenia, a na obszarze działania organów, które je wydały – akty prawa miejscowego. Akt niższego rzędu musi być zgodny z wyższym. W prawie rodzinnym podstawą jest ustawa – Kodeks rodzinny i opiekuńczy, uzupełniana przez Kodeks cywilny, Kodeks postępowania cywilnego i ustawy szczególne, np. o wspieraniu rodziny i systemie pieczy zastępczej. W ISAP (isap.sejm.gov.pl, prowadzony przez Kancelarię Sejmu) wyszukuje się akt po tytule lub roku, sprawdza jego status (obowiązujący, uchylony), najnowszy tekst jednolity oraz późniejsze akty zmieniające. Tekst ujednolicony ma charakter informacyjny; wiążący jest tekst ogłoszony w Dzienniku Ustaw."
+    },
+    {
+      "q": "Omów przesłanki rozwodu i separacji w Kodeksie rodzinnym i opiekuńczym.",
+      "answer": "Pozytywną przesłanką rozwodu (art. 56 KRO) jest zupełny i trwały rozkład pożycia małżeńskiego, czyli ustanie więzi duchowej, fizycznej i gospodarczej, bez rozsądnych szans na ich odbudowę. Przesłanki negatywne wyłączające rozwód to: ucierpienie dobra wspólnych małoletnich dzieci, sprzeczność z zasadami współżycia społecznego oraz żądanie rozwodu przez małżonka wyłącznie winnego, chyba że drugi małżonek wyrazi zgodę lub odmowa jest sprzeczna z zasadami współżycia społecznego. Sąd okręgowy orzeka także o winie (chyba że małżonkowie zgodnie o to nie wnoszą), władzy rodzicielskiej, kontaktach i alimentach na dzieci. Separacja wymaga zupełnego rozkładu pożycia, który nie musi być trwały; może być orzeczona na zgodne żądanie małżonków bez wspólnych małoletnich dzieci. Separacja nie rozwiązuje małżeństwa, a uzależnienie jednego z małżonków bywa przyczyną rozkładu."
+    },
+    {
+      "q": "Przedstaw sposoby ustalenia ojcostwa i możliwość jego zaprzeczenia.",
+      "answer": "Ojcostwo ustala się na trzy sposoby. Po pierwsze, działa domniemanie, że dziecko urodzone w czasie trwania małżeństwa albo przed upływem 300 dni od jego ustania lub unieważnienia pochodzi od męża matki. Domniemanie to można obalić tylko w procesie o zaprzeczenie ojcostwa, który mogą wytoczyć mąż matki (w ustawowym terminie od dowiedzenia się, że dziecko od niego nie pochodzi), matka, pełnoletnie dziecko i prokurator. Po drugie, gdy domniemanie nie działa, mężczyzna może uznać ojcostwo przez oświadczenie złożone przed kierownikiem USC, potwierdzone przez matkę; uznać można też dziecko poczęte. Po trzecie, możliwe jest sądowe ustalenie ojcostwa – domniemywa się, że ojcem jest mężczyzna, który obcował z matką między 300. a 181. dniem przed urodzeniem dziecka; w praktyce decyduje badanie DNA. Sąd orzeka wtedy także o alimentach i nazwisku."
+    },
+    {
+      "q": "Scharakteryzuj środki ingerencji sądu opiekuńczego we władzę rodzicielską na przykładzie rodziny z problemem alkoholowym.",
+      "answer": "Sąd opiekuńczy stosuje środki stopniowalne. Jeśli dobro dziecka jest zagrożone, ogranicza władzę rodzicielską (art. 109 KRO): może zobowiązać rodziców do określonego postępowania, np. współpracy z asystentem rodziny lub korzystania z placówki wsparcia dziennego, poddać wykonywanie władzy nadzorowi kuratora sądowego, wymagać zgody sądu na określone czynności, a w poważniejszych przypadkach umieścić dziecko w pieczy zastępczej. Zawieszenie władzy (art. 110) stosuje się przy przemijającej przeszkodzie, np. długotrwałym leczeniu stacjonarnym. Pozbawienie władzy (art. 111) jest środkiem ostatecznym – przy trwałej przeszkodzie, nadużywaniu władzy lub rażącym zaniedbaniu, także gdy rodzice trwale nie interesują się dzieckiem w pieczy. W rodzinie z problemem alkoholowym zwykle zaczyna się od nadzoru kuratora i asystenta, motywując rodzica do leczenia, a kontakty z dzieckiem mogą trwać, o ile nie zagrażają jego dobru."
+    },
+    {
+      "q": "Czym jest opieka faktyczna i czym różni się od opieki prawnej i rodziny zastępczej?",
+      "answer": "Opieka faktyczna to stałe sprawowanie pieczy nad małoletnim przez osobę, która nie ma tytułu ustawowego ani orzeczenia sądu – np. dziadków wychowujących wnuka pod nieobecność rodziców przebywających za granicą, w zakładzie karnym lub na leczeniu. Opiekun faktyczny zajmuje się bieżącymi sprawami dziecka, zwłaszcza zdrowiem i wychowaniem, a przepisy medyczne pozwalają mu m.in. wyrazić zgodę na badanie, ale nie jest przedstawicielem ustawowym i nie wykonuje władzy rodzicielskiej. Opiekun prawny jest ustanawiany przez sąd, gdy rodzicom nie przysługuje władza; reprezentuje dziecko i zarządza jego majątkiem pod nadzorem sądu. Rodzina zastępcza jest ustanawiana orzeczeniem sądu w systemie pieczy zastępczej, ma prawa do świadczeń i wsparcia koordynatora z PCPR. Opieka faktyczna powinna zostać zgłoszona sądowi, by uregulować sytuację dziecka."
+    },
+    {
+      "q": "Omów rodzaje przysposobienia i ich skutki prawne.",
+      "answer": "Przysposobić można wyłącznie małoletniego i tylko dla jego dobra; orzeka sąd opiekuńczy po kwalifikacji kandydatów przez ośrodek adopcyjny i okresie osobistej styczności. Przysposobienie niepełne wywołuje skutki tylko między przysposabiającym a przysposobionym – dziecko nie wchodzi do rodziny przysposabiającego, a więzi z rodziną naturalną nie wygasają. Przysposobienie pełne powoduje, że przysposobiony uzyskuje prawa i obowiązki dziecka w rodzinie przysposabiającego, a ustają prawa i obowiązki wobec krewnych naturalnych; może być rozwiązane z ważnych powodów. Przysposobienie całkowite, oparte na zgodzie blankietowej rodziców wyrażonej przed sądem nie wcześniej niż 6 tygodni po urodzeniu, ma skutki pełnego i jest nierozwiązywalne. Dziecko po ukończeniu 13 lat musi wyrazić zgodę na przysposobienie."
+    },
+    {
+      "q": "Przedstaw formy pieczy zastępczej i zasady jej organizacji.",
+      "answer": "Piecza zastępcza, regulowana ustawą z 9 czerwca 2011 r. o wspieraniu rodziny i systemie pieczy zastępczej, zapewnia opiekę dziecku, gdy rodzice nie mogą jej sprawować. Formy rodzinne to rodzina zastępcza spokrewniona (wstępni lub rodzeństwo), niezawodowa, zawodowa – w tym pełniąca funkcję pogotowia rodzinnego i specjalistyczna – oraz rodzinny dom dziecka. Formy instytucjonalne to placówki opiekuńczo-wychowawcze (socjalizacyjne, interwencyjne, specjalistyczno-terapeutyczne i rodzinne), regionalne placówki opiekuńczo-terapeutyczne oraz interwencyjne ośrodki preadopcyjne. Zasady: tymczasowość i dążenie do powrotu dziecka do rodziny, pierwszeństwo pieczy rodzinnej, co do zasady nieumieszczanie w placówkach dzieci do 10 lat, utrzymywanie więzi z rodzeństwem i rodzicami. Rodzinną pieczę organizuje powiat, zwykle przez PCPR z koordynatorami, a gmina zapewnia asystenta rodziny biologicznej. Pełnoletnim wychowankom przysługuje pomoc na usamodzielnienie."
+    },
+    {
+      "q": "Wyjaśnij różnicę między opieką a kuratelą i wskaż, kiedy może dojść do ubezwłasnowolnienia osoby uzależnionej.",
+      "answer": "Opieka jest instytucją o szerokim zakresie: obejmuje pieczę nad osobą i majątkiem podopiecznego oraz jego reprezentację. Ustanawia się ją dla małoletniego, któremu rodzice nie mogą wykonywać władzy rodzicielskiej lub są nieznani, oraz dla osoby ubezwłasnowolnionej całkowicie. Kuratela ma zakres ograniczony do określonych spraw: ustanawia się ją dla osoby ubezwłasnowolnionej częściowo, osoby niepełnosprawnej potrzebującej pomocy, dziecka poczętego, małoletniego przy konflikcie interesów z rodzicami czy osoby nieobecnej. Oba podlegają nadzorowi sądu opiekuńczego. Kodeks cywilny dopuszcza ubezwłasnowolnienie całkowite osoby, która ukończyła 13 lat, gdy wskutek zaburzeń psychicznych, w szczególności pijaństwa lub narkomanii, nie jest w stanie kierować swym postępowaniem, a częściowe – osoby pełnoletniej potrzebującej pomocy w prowadzeniu spraw. Jest to środek ostateczny, stosowany, gdy leczenie i wsparcie nie wystarczają."
+    }
+  ]
+}

@@ -33,15 +33,26 @@
   "addCourse": "Fach hinzufügen",
   "courseName": "Name des Fachs",
   "save": "Speichern",
-  "assessment": { "E": "Prüfung", "ZO": "Benoteter Leistungsnachweis", "Z": "Leistungsnachweis" },
-  "group": { "addiction": "Sucht", "custom": "eigenes" },
+  "assessment": {
+    "E": "Prüfung",
+    "ZO": "Benoteter Leistungsnachweis",
+    "Z": "Leistungsnachweis"
+  },
+  "group": {
+    "addiction": "Sucht",
+    "custom": "eigenes"
+  },
   "hiddenCount_one": "{{count}} Fach ausgeblendet",
   "hiddenCount_other": "{{count}} Fächer ausgeblendet",
   "about": "Zum Studienplan",
   "checked": "Dokumente geprüft: {{date}}",
   "notFound": "Fach nicht gefunden",
   "levelLabel": "Wie gut kennst du: {{topic}}",
-  "level": { "0": "Noch nicht", "1": "Wiederholen", "2": "Kann ich" },
+  "level": {
+    "0": "Noch nicht",
+    "1": "Wiederholen",
+    "2": "Kann ich"
+  },
   "explain": "Für die Prüfung erklären",
   "removeTopic": "Thema entfernen",
   "proxy": "Die Beschreibung stammt aus dem Bachelorprogramm der WSHE (nächstes Pendant) – mit dem Syllabus der Dozentin / des Dozenten vergleichen.",
@@ -57,8 +68,19 @@
   "show": "Fach einblenden",
   "hide": "Ausblenden (habe ich nicht)",
   "deleteCourse": "Fach löschen",
-  "hours": { "W": "Vorlesung", "C": "Übung", "S": "Seminar", "P": "Praktikum" },
-  "tabs": { "program": "Studienplan", "materials": "Unterlagen", "cards": "Lernkarten", "exam": "Probeprüfung", "ask": "Fragen" },
+  "hours": {
+    "W": "Vorlesung",
+    "C": "Übung",
+    "S": "Seminar",
+    "P": "Praktikum"
+  },
+  "tabs": {
+    "program": "Studienplan",
+    "materials": "Unterlagen",
+    "cards": "Lernkarten",
+    "exam": "Probeprüfung",
+    "ask": "Fragen"
+  },
   "materials": {
     "lead": "Notizen, Folien und Skripte aus dem Unterricht (Text oder PDF). Sie bleiben verschlüsselt auf dem Gerät und sind die Hauptquelle für Suche, Fragen und Probeprüfungen.",
     "add": "Unterlage hinzufügen",
@@ -73,9 +95,14 @@
     "fileError": "Die Datei konnte nicht gelesen werden.",
     "saved": "Unterlage gespeichert",
     "delete": "Unterlage löschen",
-    "kind": { "notes": "Notizen", "pdf": "PDF", "text": "Text" },
+    "kind": {
+      "notes": "Notizen",
+      "pdf": "PDF",
+      "text": "Text"
+    },
     "chars_one": "{{count}} Zeichen",
-    "chars_other": "{{count}} Zeichen"
+    "chars_other": "{{count}} Zeichen",
+    "own": "Meine Unterlagen aus dem Unterricht"
   },
   "cards": {
     "total": "Lernkarten",
@@ -109,7 +136,11 @@
     "why": "Erklärung",
     "topic": "Thema: {{topic}}",
     "selfScore": "Wie bewertest du deine Antwort?",
-    "self": { "good": "Gut", "partial": "Teilweise", "wrong": "Falsch" },
+    "self": {
+      "good": "Gut",
+      "partial": "Teilweise",
+      "wrong": "Falsch"
+    },
     "result": "Ergebnis",
     "great": "Super – du bist bereit!",
     "ok": "Läuft gut – schwächere Themen wiederholen.",
@@ -118,15 +149,29 @@
     "history": "Deine Ergebnisse",
     "noHistory": "Noch keine Probeprüfung.",
     "questions_one": "{{count}} Frage",
-    "questions_other": "{{count}} Fragen"
+    "questions_other": "{{count}} Fragen",
+    "fromBank": "Prüfung aus dem Fragenpool",
+    "bank": "Fragenpool: {{single}} Auswahl- und {{open}} offene Fragen mit Musterantworten – jedes Mal neu gezogen."
   },
   "askPlaceholder": "z. B. Was ist Co-Abhängigkeit und wie arbeitet man damit?",
   "onlyUni": "Antworten nur auf Grundlage des Syllabus und deiner Unterlagen – mit Quellen.",
   "searchOnly": "Suche in Syllabus und Unterlagen. Schalte den KI-Assistenten ein, um Fragen zu stellen.",
   "notCovered": "Das steht nicht in den Hochschulunterlagen – siehe die genannten Fächer und Literatur.",
   "noResults": "Keine Treffer.",
-  "docKind": { "course": "Fach", "topic": "Thema", "material": "Unterlage" },
+  "docKind": {
+    "course": "Fach",
+    "topic": "Thema",
+    "material": "Unterlage",
+    "note": "Lernnotiz"
+  },
   "searchTitle": "Im Studium suchen",
   "searchSubtitle": "WSHE-Syllabi und deine Unterlagen – mit und ohne KI",
-  "dashboard": "Studium"
+  "dashboard": "Studium",
+  "note": {
+    "read": "Lernnotiz",
+    "key": "Wichtigste Begriffe",
+    "title": "Themen-Lernnotizen",
+    "lead": "Notizen zu jedem Thema des Lehrplans – in Przystań erstellt auf Grundlage des WSHE-Programms und der Fachliteratur. Unten eigene Unterlagen ergänzen."
+  },
+  "topicsByPrzystan": "Die Themen dieses Fachs wurden in Przystań nach typischen Lehrplänen polnischer Hochschulen zusammengestellt – die WSHE hat keinen Lehrplan veröffentlicht. Passen Sie sie an Ihren Unterricht an."
 }

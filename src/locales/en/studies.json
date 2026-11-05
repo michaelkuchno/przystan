@@ -33,15 +33,26 @@
   "addCourse": "Add a course",
   "courseName": "Course name",
   "save": "Save",
-  "assessment": { "E": "Exam", "ZO": "Graded credit", "Z": "Credit" },
-  "group": { "addiction": "addictions", "custom": "mine" },
+  "assessment": {
+    "E": "Exam",
+    "ZO": "Graded credit",
+    "Z": "Credit"
+  },
+  "group": {
+    "addiction": "addictions",
+    "custom": "mine"
+  },
   "hiddenCount_one": "{{count}} course hidden",
   "hiddenCount_other": "{{count}} courses hidden",
   "about": "About the programme",
   "checked": "Documents checked: {{date}}",
   "notFound": "Course not found",
   "levelLabel": "How well do you know: {{topic}}",
-  "level": { "0": "Not yet", "1": "Review", "2": "I know it" },
+  "level": {
+    "0": "Not yet",
+    "1": "Review",
+    "2": "I know it"
+  },
   "explain": "Explain for the exam",
   "removeTopic": "Remove topic",
   "proxy": "The course description comes from WSHE's first-cycle programme (closest equivalent) – compare it with the syllabus from your lecturer.",
@@ -57,8 +68,19 @@
   "show": "Show course",
   "hide": "Hide (I don't have this course)",
   "deleteCourse": "Delete course",
-  "hours": { "W": "lecture", "C": "classes", "S": "seminar", "P": "placement" },
-  "tabs": { "program": "Programme", "materials": "Materials", "cards": "Flashcards", "exam": "Mock exam", "ask": "Ask" },
+  "hours": {
+    "W": "lecture",
+    "C": "classes",
+    "S": "seminar",
+    "P": "placement"
+  },
+  "tabs": {
+    "program": "Programme",
+    "materials": "Materials",
+    "cards": "Flashcards",
+    "exam": "Mock exam",
+    "ask": "Ask"
+  },
   "materials": {
     "lead": "Notes, slides and handouts from classes (text or PDF). They stay encrypted on the device and are the main source for search, questions and mock exams.",
     "add": "Add material",
@@ -73,9 +95,14 @@
     "fileError": "The file could not be read.",
     "saved": "Material saved",
     "delete": "Delete material",
-    "kind": { "notes": "notes", "pdf": "PDF", "text": "text" },
+    "kind": {
+      "notes": "notes",
+      "pdf": "PDF",
+      "text": "text"
+    },
     "chars_one": "{{count}} character",
-    "chars_other": "{{count}} characters"
+    "chars_other": "{{count}} characters",
+    "own": "My class materials"
   },
   "cards": {
     "total": "Flashcards",
@@ -109,7 +136,11 @@
     "why": "Explanation",
     "topic": "Topic: {{topic}}",
     "selfScore": "How do you rate your answer?",
-    "self": { "good": "Good", "partial": "Partly", "wrong": "Wrong" },
+    "self": {
+      "good": "Good",
+      "partial": "Partly",
+      "wrong": "Wrong"
+    },
     "result": "Result",
     "great": "Great – you are ready!",
     "ok": "Going well – review the weaker topics.",
@@ -118,15 +149,29 @@
     "history": "Your results",
     "noHistory": "No mock exam yet.",
     "questions_one": "{{count}} question",
-    "questions_other": "{{count}} questions"
+    "questions_other": "{{count}} questions",
+    "fromBank": "Exam from the question bank",
+    "bank": "Question bank: {{single}} single-choice and {{open}} open questions with model answers – a new draw every time."
   },
   "askPlaceholder": "e.g. What is co-dependency and how do you work with it?",
   "onlyUni": "Answers based only on the syllabus and your class materials – with sources.",
   "searchOnly": "Search in the syllabus and your materials. Turn on the AI assistant to ask questions.",
   "notCovered": "This is not in the university materials – see the courses and literature mentioned.",
   "noResults": "No results.",
-  "docKind": { "course": "course", "topic": "topic", "material": "material" },
+  "docKind": {
+    "course": "course",
+    "topic": "topic",
+    "material": "material",
+    "note": "Study note"
+  },
   "searchTitle": "Search your studies",
   "searchSubtitle": "WSHE syllabi and your materials – with and without AI",
-  "dashboard": "Studies"
+  "dashboard": "Studies",
+  "note": {
+    "read": "Study note",
+    "key": "Key terms",
+    "title": "Topic notes",
+    "lead": "Notes for every syllabus topic – prepared in Przystań from the WSHE programme and the course literature. Add your class notes below."
+  },
+  "topicsByPrzystan": "The topics of this course were compiled in Przystań from typical programmes at Polish universities – WSHE has not published its syllabus. Adjust them to your classes."
 }

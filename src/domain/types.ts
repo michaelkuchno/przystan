@@ -389,6 +389,8 @@ export interface Deck {
   module: string;
   cards: FlashCard[];
   builtIn?: boolean;
+  /** Study decks: the built-in cards of the course pack were added once (not re-added after deleting). */
+  packSeeded?: boolean;
 }
 
 export interface CardState {
@@ -417,7 +419,8 @@ export interface SimulatorRun {
 
 /* ------------------------------------------------------------ practice log */
 
-export type PracticeActivity = 'observation' | 'individual' | 'group' | 'prevention' | 'documentation' | 'teamMeeting' | 'supervision' | 'other';
+export type PracticeActivity =
+  'observation' | 'individual' | 'group' | 'prevention' | 'documentation' | 'teamMeeting' | 'supervision' | 'other';
 export const PRACTICE_ACTIVITIES: PracticeActivity[] = [
   'observation',
   'individual',
@@ -472,20 +475,10 @@ export interface Note {
   updatedAt: string;
 }
 
-
 /* ------------------------------------------------------ messages & contacts */
 
 export type ContactRole =
-  | 'client'
-  | 'guardian'
-  | 'family'
-  | 'school'
-  | 'court'
-  | 'probation'
-  | 'institution'
-  | 'colleague'
-  | 'supervisor'
-  | 'other';
+  'client' | 'guardian' | 'family' | 'school' | 'court' | 'probation' | 'institution' | 'colleague' | 'supervisor' | 'other';
 export const CONTACT_ROLES: ContactRole[] = [
   'client',
   'guardian',

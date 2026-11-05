@@ -1,6 +1,6 @@
 # Postęp prac
 
-Stan: **wersja 1.5.1** – instrukcja i przycisk do odblokowania SMS na Androidzie 13+ (D-070); 1.5.0: wysyłka prosto z Gmaila i SMS z telefonu / darmowej bramki (D-065, D-066), moduł Studia – nauka do egzaminów WSHE Brzeg (D-067…D-069, `docs/STUDIES.md`); 1.4: powiadomienia, wiadomości e-mail / SMS z AI (D-060…D-064, `docs/NOTIFICATIONS.md`); 1.3: asystent AI (D-051…D-059, `docs/AI.md`).
+Stan: **wersja 1.6.0** – gotowe materiały do nauki dla wszystkich 30 przedmiotów WSHE (210 opracowań tematów, 814 fiszek, 673 pytania zamknięte, 204 otwarte; D-072), AUDIT / DUDIT po polsku i niemiecku (D-071), czytelne pola tekstowe na telefonie + audyt czytelności (D-073); 1.5.1: instrukcja i przycisk do odblokowania SMS na Androidzie 13+ (D-070); 1.5.0: wysyłka prosto z Gmaila i SMS z telefonu / darmowej bramki (D-065, D-066), moduł Studia – nauka do egzaminów WSHE Brzeg (D-067…D-069, `docs/STUDIES.md`); 1.4: powiadomienia, wiadomości e-mail / SMS z AI (D-060…D-064, `docs/NOTIFICATIONS.md`); 1.3: asystent AI (D-051…D-059, `docs/AI.md`).
 historia z audytem (1.2) i asystent AI (1.3) zakończone.
 
 | Etap | Zakres | Status |
@@ -83,7 +83,14 @@ historia z audytem (1.2) i asystent AI (1.3) zakończone.
 | 4 | Nauka: samoocena tematów, fiszki SM-2, egzaminy próbne (AI i bez AI), cel dzienny, seria, gotowość, karta na pulpicie | ✅ |
 | 5 | Wyszukiwanie (słowa kluczowe / semantyczne), „Zapytaj” tylko z danych uczelni z odnośnikami, „Wytłumacz na egzamin”, materiały | ✅ |
 
-## Jakość (ostatni przebieg, wersja 1.5.0)
+## Jakość (ostatni przebieg, wersja 1.6.0)
+
+- 1.6.0: lint 0 / typecheck 0; **265 testów jednostkowych** ✅ (+4: egzamin z bazy pytań zachowuje poprawną
+  odpowiedź po tasowaniu, opracowania w wyszukiwaniu, walidacja wszystkich 30 pakietów, zgodność PL/DE
+  narzędzi przesiewowych z oryginałem); **56 testów E2E** ✅ (nowy audyt czytelności na 360 px i największej
+  czcionce na wszystkich ekranach i zakładkach; studia: notatki, opracowania, egzamin z bazy pytań).
+
+### Wersja 1.5.0
 
 - 1.5.0: lint 0 / typecheck 0; **261 testów jednostkowych** ✅ (+11: program i semestry, wyszukiwanie, dzielenie tekstu,
   seria dni, walidacja egzaminu próbnego, wiadomość Gmail RFC 2822 z polskimi znakami, bramka SMS);

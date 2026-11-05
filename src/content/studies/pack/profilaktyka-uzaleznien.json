@@ -1,0 +1,424 @@
+{
+  "courseId": "profilaktyka-uzaleznien",
+  "notes": [
+    {
+      "topic": "Profilaktyka – definicje i poziomy działań",
+      "text": "Profilaktyka to działania, które mają zapobiegać pojawieniu się problemów zdrowotnych i społecznych lub ograniczać ich rozwój i skutki. Według Z.B. Gasia profilaktyka to proces wspierania zdrowia psychicznego i fizycznego przez udostępnianie wiedzy, umiejętności i zasobów pozwalających prowadzić satysfakcjonujące, wolne od uzależnień życie. Obejmuje wspieranie rozwoju i zdrowia, przeciwdziałanie czynnikom ryzyka oraz wzmacnianie czynników chroniących.\nKlasyczny podział (G. Caplan) ma trzy poziomy:\n• pierwszorzędowa – wobec osób jeszcze bez problemu: zapobieganie inicjacji i promocja zdrowego stylu życia;\n• drugorzędowa – wobec osób już eksperymentujących lub z grup ryzyka: wczesne rozpoznanie i powstrzymanie rozwoju problemu;\n• trzeciorzędowa – wobec osób uzależnionych: zapobieganie nawrotom, redukcja szkód, readaptacja.\nWspółcześnie (R. Gordon, a następnie Institute of Medicine, 1994) stosuje się podział według grupy docelowej i poziomu ryzyka:\n• uniwersalna – cała populacja, np. wszyscy uczniowie danego rocznika;\n• selektywna – grupy o podwyższonym ryzyku, np. dzieci z rodzin z problemem alkoholowym, wychowankowie placówek;\n• wskazująca – osoby z pierwszymi objawami problemu, np. młodzież przyłapana na używaniu, z wczesnymi zaburzeniami zachowania.\nStrategie profilaktyczne (Gaś, Ostaszewski): informacyjna, edukacyjna (umiejętności życiowe), alternatyw (rozwijanie pasji), interwencyjna (pomoc w kryzysie) oraz zmniejszania szkód. Istotna jest także profilaktyka środowiskowa – zmiana norm, dostępności i polityki lokalnej.\nW Polsce zadania koordynuje Krajowe Centrum Przeciwdziałania Uzależnieniom (KCPU), które od 2022 r. przejęło zadania PARPA i Krajowego Biura ds. Przeciwdziałania Narkomanii. Gminy realizują gminne programy profilaktyki i rozwiązywania problemów alkoholowych oraz przeciwdziałania narkomanii, finansowane z opłat za zezwolenia na sprzedaż alkoholu; szkoły realizują program wychowawczo-profilaktyczny.\nPrzykład: warsztaty umiejętności społecznych dla całej klasy to profilaktyka uniwersalna, a grupa socjoterapeutyczna dla dzieci z rodzin alkoholowych – selektywna.\nNa egzaminie: oba podziały poziomów, ich odpowiedniki, strategie, instytucje.",
+      "key": [
+        "profilaktyka uniwersalna – działania skierowane do całej populacji, bez względu na poziom ryzyka",
+        "profilaktyka selektywna – działania wobec grup o podwyższonym ryzyku",
+        "profilaktyka wskazująca – działania wobec osób z pierwszymi objawami problemu",
+        "strategia alternatyw – zaspokajanie potrzeb przez zdrowe aktywności, np. sport, pasje, wolontariat",
+        "KCPU – Krajowe Centrum Przeciwdziałania Uzależnieniom, od 2022 r. następca PARPA i KBPN"
+      ]
+    },
+    {
+      "topic": "Osobowościowe i temperamentalne korelaty uzależnień",
+      "text": "Badania nie potwierdziły istnienia jednej „osobowości uzależnieniowej”. Wskazują natomiast na cechy temperamentu i osobowości, które zwiększają podatność na używanie substancji i rozwój uzależnienia. Działają one zawsze w interakcji ze środowiskiem.\nNajważniejsze korelaty:\n• poszukiwanie doznań (sensation seeking, M. Zuckerman) – potrzeba nowych, intensywnych i ryzykownych przeżyć; predyktor wczesnej inicjacji;\n• wymiary temperamentu C.R. Cloningera – wysokie poszukiwanie nowości, niskie unikanie szkody, zależność od nagrody; profil ten wiąże się z typem II alkoholizmu;\n• impulsywność i słaba kontrola wysiłkowa – trudność w odraczaniu gratyfikacji;\n• neurotyczność, lękliwość i wysoka reaktywność emocjonalna (w regulacyjnej teorii temperamentu J. Strelaua) – używanie substancji jako „samoleczenie” napięcia;\n• niska samoocena, poczucie bezradności, zewnętrzne umiejscowienie kontroli;\n• aleksytymia – trudność w rozpoznawaniu i nazywaniu emocji;\n• ADHD, zaburzenia zachowania i osobowości antyspołecznej, depresja i zaburzenia lękowe jako częste współwystępowanie (podwójna diagnoza).\nWyróżnia się dwie główne ścieżki rozwoju problemu: eksternalizacyjną (impulsywność, łamanie norm, wczesna inicjacja) i internalizacyjną (lęk, depresja, używanie dla ulgi).\nZnaczenie dla profilaktyki: programy selektywne mogą być dopasowane do profilu cech. Przykładem są interwencje oparte na profilach osobowości (np. kanadyjski program PreVenture P. Conrod), które pracują osobno z młodzieżą o wysokim poszukiwaniu doznań, impulsywnością, lękową wrażliwością i beznadziejnością. Dla osób poszukujących doznań skuteczne są alternatywy dostarczające bezpiecznej stymulacji, takie jak sport ekstremalny pod opieką czy wspinaczka.\nPrzykład: w MOW wychowanek o wysokim poszukiwaniu doznań nudzi się na pogadankach, ale dobrze reaguje na survival i zajęcia sportowe z elementami ryzyka kontrolowanego.\nNa egzaminie: Zuckerman, Cloninger, Strelau, krytyka „osobowości uzależnieniowej”, dwie ścieżki.",
+      "key": [
+        "poszukiwanie doznań – potrzeba silnych, nowych przeżyć (Zuckerman), predyktor inicjacji",
+        "impulsywność – skłonność do działania bez namysłu i trudność w odraczaniu gratyfikacji",
+        "aleksytymia – trudność w identyfikowaniu i wyrażaniu emocji",
+        "podwójna diagnoza – współwystępowanie uzależnienia i innego zaburzenia psychicznego",
+        "ścieżka eksternalizacyjna – droga do uzależnienia przez impulsywność i łamanie norm"
+      ]
+    },
+    {
+      "topic": "Czynniki ryzyka i czynniki chroniące – rozpoznawanie i wzmacnianie",
+      "text": "Czynniki ryzyka to cechy, sytuacje i warunki, które zwiększają prawdopodobieństwo pojawienia się zachowań problemowych. Czynniki chroniące zmniejszają to prawdopodobieństwo lub łagodzą wpływ czynników ryzyka. Podstawą tego podejścia są m.in. teoria zachowań problemowych R. Jessora (zachowania ryzykowne współwystępują i pełnią podobne funkcje rozwojowe) oraz model rozwoju społecznego J.D. Hawkinsa i R. Catalano. W Polsce koncepcję rozwijał zwłaszcza K. Ostaszewski, łącząc ją z pojęciem resilience (odporności psychicznej).\nCzynniki ryzyka w różnych obszarach:\n• indywidualne – impulsywność, poszukiwanie doznań, wczesne problemy z zachowaniem, pozytywne przekonania o substancjach;\n• rodzinne – używanie substancji przez rodziców, konflikty, przemoc, brak nadzoru, niekonsekwentna dyscyplina;\n• rówieśnicze – przyjaciele używający substancji, odrzucenie przez rówieśników;\n• szkolne – niepowodzenia w nauce, słaba więź ze szkołą, wagary;\n• środowiskowe – łatwa dostępność substancji, przyzwalające normy, ubóstwo, dezorganizacja społeczności.\nCzynniki chroniące:\n• silna więź z rodzicami i ich zainteresowanie życiem dziecka;\n• zainteresowanie nauką i więź ze szkołą;\n• praktyki religijne lub wyraźny system wartości;\n• respektowanie norm i autorytetów;\n• przynależność do prospołecznych grup;\n• umiejętności życiowe: radzenie sobie ze stresem, asertywność, rozwiązywanie problemów.\nOstaszewski podkreśla, że wzmacnianie czynników chroniących jest często skuteczniejsze niż samo eliminowanie ryzyka i że czynniki działają kumulatywnie: im więcej czynników ryzyka, tym większe prawdopodobieństwo problemu.\nRozpoznawanie: diagnoza potrzeb środowiska szkolnego (ankiety, wywiady), obserwacja, rozmowy z rodzicami, analiza lokalnych danych. Wzmacnianie: programy rozwijania umiejętności rodzicielskich, mentoring, zajęcia pozalekcyjne, budowanie klimatu szkoły.\nPrzykład: w rodzinie zastępczej dziecko z rodziny alkoholowej ma czynniki ryzyka, ale pracownik PCPR wzmacnia jego więź z opiekunem, wspiera rozwój pasji sportowej i znajduje mentora.\nNa egzaminie: podział czynników na obszary, koncepcja resilience, autorzy.",
+      "key": [
+        "czynnik ryzyka – warunek zwiększający prawdopodobieństwo zachowań problemowych",
+        "czynnik chroniący – warunek zmniejszający prawdopodobieństwo problemu lub łagodzący wpływ ryzyka",
+        "resilience – odporność, zdolność do pozytywnej adaptacji mimo niekorzystnych warunków",
+        "teoria zachowań problemowych – koncepcja Jessora o współwystępowaniu zachowań ryzykownych",
+        "kumulacja ryzyka – wzrost prawdopodobieństwa problemu wraz z liczbą czynników ryzyka"
+      ]
+    },
+    {
+      "topic": "Psychopedagogiczna charakterystyka osób uzależnionych",
+      "text": "Uzależnienie zmienia funkcjonowanie człowieka w wielu sferach. Pedagog powinien znać te zmiany, żeby rozumieć zachowania podopiecznego i planować oddziaływania.\nSfera emocjonalna: nałogowe regulowanie uczuć (Mellibruda) – substancja staje się głównym sposobem zmiany nastroju, przez co zanikają inne strategie radzenia sobie. Pojawiają się chwiejność emocjonalna, drażliwość, lęk, poczucie winy i wstydu, a często objawy depresyjne.\nSfera poznawcza: system iluzji i zaprzeczeń, czyli zniekształcenia myślenia o piciu (zaprzeczanie, minimalizowanie, racjonalizowanie, obwinianie), myślenie życzeniowe, zawężenie uwagi do substancji, a przy długotrwałym używaniu deficyty pamięci i funkcji wykonawczych.\nSfera „ja”: rozproszone i rozdwojone „ja” – niska i niestabilna samoocena, rozdźwięk między „ja trzeźwym” a „ja w nałogu”, poczucie bezwartościowości zakrywane pozorną pewnością siebie.\nSfera społeczna i moralna: zawężenie kontaktów do środowiska używających, konflikty, kłamstwa, łamanie norm, zaniedbywanie ról rodzicielskich i zawodowych, u części osób przestępczość związana z substancją.\nSfera motywacyjna: ambiwalencja wobec zmiany; według transteoretycznego modelu zmiany J. Prochaski i C. DiClemente osoba może być w fazie prekontemplacji, kontemplacji, przygotowania, działania lub utrzymania (z możliwością nawrotu). Oddziaływanie musi być dostosowane do etapu.\nU młodzieży dochodzą zaburzenia rozwoju: zahamowanie dojrzewania emocjonalnego („zatrzymanie” w wieku inicjacji), trudności szkolne, wcześniejsze przejmowanie ról dorosłych lub ich unikanie.\nImplikacje praktyczne: stała struktura i jasne zasady, konsekwencja bez moralizowania, wzmacnianie każdego przejawu odpowiedzialności, uczenie nazywania emocji, budowanie poczucia sprawstwa, współpraca z terapeutą uzależnień.\nPrzykład: podopieczny PCPR w fazie kontemplacji mówi „może kiedyś przestanę”; pedagog nie naciska na natychmiastową abstynencję, lecz pomaga ważyć koszty i korzyści zmiany.\nNa egzaminie: sfery funkcjonowania, mechanizmy Mellibrudy, model Prochaski i DiClemente.",
+      "key": [
+        "nałogowe regulowanie uczuć – zastąpienie innych strategii emocjonalnych substancją",
+        "rozproszone i rozdwojone „ja” – niespójna, niska samoocena i rozdźwięk między „ja trzeźwym” a „ja nałogowym”",
+        "transteoretyczny model zmiany – etapy: prekontemplacja, kontemplacja, przygotowanie, działanie, utrzymanie",
+        "ambiwalencja – jednoczesne chcenie i niechcenie zmiany, typowa dla osób uzależnionych"
+      ]
+    },
+    {
+      "topic": "Mechanizmy uzależnienia a trudności w profilaktyce",
+      "text": "Rozwój uzależnienia wyjaśnia się na kilku poziomach. Na każdym z nich pojawiają się konkretne trudności dla działań profilaktycznych.\nMechanizmy biologiczne: substancje i zachowania nałogowe zwiększają wydzielanie dopaminy w układzie nagrody. Według teorii uwrażliwienia zachęt T. Robinsona i K. Berridge’a z czasem rośnie „chcenie” (wanting), czyli siła wskazówek wywołujących głód, choć „lubienie” (liking), czyli przyjemność, nie rośnie, a często słabnie. Neuroadaptacja prowadzi do tolerancji i objawów odstawienia.\nMechanizmy uczenia się: warunkowanie instrumentalne – wzmocnienie pozytywne (euforia) i negatywne (ulga w napięciu, ustąpienie objawów odstawienia); warunkowanie klasyczne – bodźce kojarzone z używaniem (miejsca, osoby) wywołują głód; modelowanie (A. Bandura) – naśladowanie rodziców, rówieśników, wzorców medialnych.\nMechanizmy poznawcze: pozytywne oczekiwania wobec substancji („alkohol rozluźnia”), przecenianie powszechności używania wśród rówieśników, złudzenie nieśmiertelności i optymizm nierealistyczny („mnie to nie dotyczy”).\nMechanizmy psychologiczne (Mellibruda): nałogowe regulowanie uczuć, iluzje i zaprzeczanie, rozdwojone „ja”.\nTrudności w profilaktyce wynikające z tych mechanizmów:\n• natychmiastowa nagroda kontra odroczone i niepewne szkody – młodzież przecenia korzyści „tu i teraz”;\n• straszenie konsekwencjami jest mało skuteczne, a czasem przynosi efekt bumerangowy (rozbudzenie ciekawości, reaktancja);\n• sama wiedza nie zmienia zachowania, jeśli brak umiejętności i wsparcia;\n• silne normy środowiskowe i dostępność substancji, reklama i marketing (także w mediach społecznościowych);\n• zaprzeczanie u osób już używających utrudnia profilaktykę wskazującą.\nOdpowiedzią są programy oparte na wzmacnianiu umiejętności życiowych, korekcie norm (pokazywanie, że większość rówieśników nie używa), angażowaniu rodziców i ograniczaniu dostępności.\nPrzykład: zamiast pokazywać drastyczne zdjęcia wypadków, profilaktyk prowadzi warsztaty odmawiania i dyskusję o rzeczywistej skali używania w danej szkole.\nNa egzaminie: neurobiologia, uczenie się, oczekiwania, przyczyny nieskuteczności straszenia.",
+      "key": [
+        "teoria uwrażliwienia zachęt – w uzależnieniu rośnie „chcenie” substancji, a nie „lubienie” (Robinson, Berridge)",
+        "wzmocnienie negatywne – podtrzymywanie zachowania przez usuwanie przykrego stanu (np. napięcia)",
+        "efekt bumerangowy – skutek odwrotny do zamierzonego, np. wzrost ciekawości po straszeniu",
+        "oczekiwania alkoholowe – przekonania o skutkach picia, które wpływają na decyzję o piciu",
+        "korekta norm – podawanie rzeczywistych danych o rozpowszechnieniu używania wśród rówieśników"
+      ]
+    },
+    {
+      "topic": "Modele profilaktyki uzależnień w szkole i placówce",
+      "text": "Profilaktyka szkolna przeszła ewolucję od przekazu informacji do kompleksowego rozwijania kompetencji. Opisuje się kolejne generacje programów:\n• I – informacyjna: przekazywanie wiedzy o substancjach i ich szkodliwości, często ze straszeniem; mało skuteczna;\n• II – afektywna (edukacji afektywnej): rozwijanie samoświadomości, samooceny, wartości;\n• III – umiejętności społecznych i życiowych (life skills, G. Botvin): asertywność, odmawianie, radzenie sobie ze stresem, rozwiązywanie problemów, korekta norm;\n• IV – programy kompleksowe i środowiskowe: łączenie działań w szkole, rodzinie i społeczności lokalnej, angażowanie rodziców, liderów młodzieżowych i samorządu.\nModele w praktyce szkolnej:\n• model wpływów społecznych – uczenie rozpoznawania i odpierania presji;\n• model kompetencji życiowych;\n• edukacja rówieśnicza – młodzieżowi liderzy jako realizatorzy;\n• model zdrowia publicznego – szkoła promująca zdrowie.\nZgodnie z przepisami oświatowymi szkoła i placówka realizuje program wychowawczo-profilaktyczny, opracowany na podstawie diagnozy potrzeb i problemów środowiska, uchwalany przez radę rodziców w porozumieniu z radą pedagogiczną. Programy o potwierdzonej skuteczności zbiera System rekomendacji programów profilaktycznych i promocji zdrowia psychicznego, prowadzony we współpracy m.in. KCPU, ORE i IPiN. Przykłady programów rekomendowanych: „Unplugged”, „Spójrz inaczej”, „Golden Five”, „Program Wzmacniania Rodziny 10–14”, „Archipelag Skarbów”, „Fantastyczne Możliwości”.\nW placówkach resocjalizacyjnych (MOW, MOS, zakłady poprawcze) dominuje profilaktyka selektywna i wskazująca: socjoterapia, trening zastępowania agresji, warsztaty umiejętności, kontrakty, praca z rodziną, współpraca z poradnią terapii uzależnień.\nStandardy jakości: diagnoza przed działaniem, opieranie się na modelu teoretycznym, interaktywne metody, odpowiednia liczba spotkań, ewaluacja. Jednorazowe pogadanki i prelekcje osób „po przejściach” nie mają potwierdzonej skuteczności.\nPrzykład: MOW realizuje „Unplugged” w grupie wychowanków oraz cykliczne spotkania z rodzicami.\nNa egzaminie: generacje programów, model kompetencji, program wychowawczo-profilaktyczny, przykłady rekomendowanych programów.",
+      "key": [
+        "program wychowawczo-profilaktyczny – obowiązkowy dokument szkoły oparty na diagnozie potrzeb",
+        "model kompetencji życiowych – rozwijanie umiejętności osobistych i społecznych (Botvin)",
+        "edukacja rówieśnicza – działania profilaktyczne prowadzone przez przeszkolonych rówieśników",
+        "system rekomendacji – baza programów profilaktycznych o potwierdzonej jakości i skuteczności",
+        "ewaluacja – systematyczna ocena przebiegu i efektów programu"
+      ]
+    },
+    {
+      "topic": "Nikotynizm, alkoholizm, narkomania – zapobieganie w programach profilaktycznych",
+      "text": "Profilaktykę trzech głównych obszarów prowadzi się na podstawie odrębnych ustaw i z różnymi akcentami, choć coraz częściej w ramach programów zintegrowanych. Wspólne uwarunkowania i umiejętności życiowe są bowiem te same.\nNikotynizm: podstawą jest ustawa o ochronie zdrowia przed następstwami używania tytoniu i wyrobów tytoniowych. Wprowadza ona zakaz sprzedaży wyrobów tytoniowych i papierosów elektronicznych osobom niepełnoletnim, zakazy reklamy i palenia w określonych miejscach oraz ostrzeżenia zdrowotne. Wyzwaniem są e-papierosy (zwłaszcza jednorazowe, smakowe), podgrzewacze tytoniu i saszetki nikotynowe, atrakcyjne dla młodzieży. Działania: edukacja o mechanizmach marketingu, kształtowanie postaw, poradnictwo antynikotynowe, Telefoniczna Poradnia Pomocy Palącym.\nAlkoholizm: ustawa z 26 października 1982 r. o wychowaniu w trzeźwości i przeciwdziałaniu alkoholizmowi. Reguluje ograniczanie dostępności (zezwolenia, zakaz sprzedaży osobom do 18 lat i nietrzeźwym, ograniczenia reklamy), zadania gmin (gminna komisja rozwiązywania problemów alkoholowych, gminny program) oraz postępowanie o zobowiązanie do leczenia. Profilaktyka obejmuje opóźnianie inicjacji, przeciwdziałanie upijaniu się, edukację o FASD, krótkie interwencje wobec pijących ryzykownie, akcje „Prowadzę – nie piję”, wsparcie dzieci z rodzin z problemem alkoholowym (świetlice socjoterapeutyczne).\nNarkomania: ustawa z 29 lipca 2005 r. o przeciwdziałaniu narkomanii. Obejmuje działalność wychowawczą, edukacyjną, informacyjną i zapobiegawczą, leczenie, rehabilitację, ograniczanie szkód zdrowotnych oraz nadzór nad substancjami, w tym NSP. Profilaktyka koncentruje się na umiejętnościach odmawiania, korekcie norm, informowaniu o ryzyku „dopalaczy” i wczesnej interwencji (np. program FreD goes net dla młodzieży po pierwszym kontakcie z prawem).\nRamą strategiczną jest Narodowy Program Zdrowia, a na poziomie lokalnym – gminne programy. Zadania koordynuje KCPU.\nSkuteczne programy łączą kilka substancji, bo wczesna inicjacja nikotynowa i alkoholowa zwiększa ryzyko sięgania po inne substancje.\nPrzykład: świetlica socjoterapeutyczna dla dzieci z rodzin alkoholowych łączy pomoc w nauce, socjoterapię i warsztaty odmawiania wszystkich substancji.\nNa egzaminie: podstawy prawne, specyfika każdego obszaru, rola gminy.",
+      "key": [
+        "ustawa o wychowaniu w trzeźwości – akt z 1982 r. regulujący profilaktykę i rozwiązywanie problemów alkoholowych",
+        "GKRPA – gminna komisja rozwiązywania problemów alkoholowych",
+        "ustawa o przeciwdziałaniu narkomanii – akt z 2005 r. dotyczący profilaktyki, leczenia i kontroli substancji",
+        "świetlica socjoterapeutyczna – placówka wsparcia dziennego dla dzieci z grup ryzyka",
+        "Narodowy Program Zdrowia – strategiczny dokument obejmujący m.in. przeciwdziałanie uzależnieniom"
+      ]
+    },
+    {
+      "topic": "Picie ryzykowne, szkodliwe a uzależnienie",
+      "text": "Problemy alkoholowe tworzą kontinuum: od abstynencji przez picie o niskim ryzyku, picie ryzykowne i szkodliwe, aż po uzależnienie. Rozróżnienie tych poziomów jest kluczowe, bo każdy wymaga innej formy pomocy.\n• Picie ryzykowne – wzorzec, który nie spowodował jeszcze szkód, ale znacząco zwiększa ryzyko ich wystąpienia (np. częste picie większych ilości, upijanie się, picie w ciąży, prowadzenie po alkoholu, picie przez nieletnich).\n• Picie szkodliwe – wzorzec, który już powoduje szkody zdrowotne, fizyczne lub psychiczne, bez spełnienia kryteriów uzależnienia. W ICD-10 to „używanie szkodliwe” (F10.1). ICD-11 rozróżnia epizod szkodliwego używania i szkodliwy wzorzec używania, uwzględniając także szkody wyrządzone innym osobom.\n• Uzależnienie – zespół objawów: upośledzona kontrola, priorytet alkoholu w życiu, kontynuacja mimo szkód, tolerancja i objawy odstawienia.\nW Polsce przyjmuje się, że porcja standardowa alkoholu to 10 g czystego etanolu (mniej więcej małe piwo, lampka wina, kieliszek wódki). Epizodyczne intensywne picie (upijanie się) WHO definiuje jako jednorazowe spożycie co najmniej 60 g czystego alkoholu. Coraz częściej podkreśla się, że nie ma poziomu picia całkowicie wolnego od ryzyka.\nNarzędzia: test AUDIT (WHO, 10 pytań; wynik pozwala wstępnie odróżnić picie o niskim ryzyku, ryzykowne, szkodliwe i prawdopodobne uzależnienie), skrócony AUDIT-C, u młodzieży m.in. CRAFFT.\nPomoc: osobom pijącym ryzykownie i szkodliwie wystarcza często krótka interwencja (model FRAMES: informacja zwrotna, odpowiedzialność, rada, wachlarz możliwości, empatia, wzmacnianie poczucia skuteczności) i cel ograniczenia picia. Osoby uzależnione kieruje się do leczenia specjalistycznego, w którym celem jest zwykle abstynencja.\nPrzykład: kurator przeprowadza z dozorowanym AUDIT; wynik wskazuje na picie szkodliwe, więc prowadzi krótką interwencję i ustala plan ograniczenia picia, monitorowany na kolejnych spotkaniach.\nNa egzaminie: definicje trzech wzorców, porcja standardowa, AUDIT, krótka interwencja.",
+      "key": [
+        "picie ryzykowne – wzorzec zwiększający ryzyko szkód, które jeszcze nie wystąpiły",
+        "picie szkodliwe – wzorzec już powodujący szkody zdrowotne, bez cech uzależnienia",
+        "porcja standardowa – w Polsce 10 g czystego alkoholu",
+        "AUDIT – test przesiewowy WHO z 10 pytaniami do oceny wzorca picia",
+        "krótka interwencja – kilkuminutowa, ustrukturyzowana rozmowa motywująca do ograniczenia picia (FRAMES)"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "front": "Poziomy profilaktyki według Caplana",
+      "back": "Pierwszorzędowa (zapobieganie inicjacji), drugorzędowa (wczesna interwencja wobec grup ryzyka i eksperymentujących), trzeciorzędowa (osoby uzależnione: nawroty, szkody, readaptacja)."
+    },
+    {
+      "front": "Poziomy profilaktyki według Gordona / IOM",
+      "back": "Uniwersalna (cała populacja), selektywna (grupy podwyższonego ryzyka), wskazująca (osoby z pierwszymi objawami)."
+    },
+    {
+      "front": "Przykład profilaktyki selektywnej",
+      "back": "Zajęcia socjoterapeutyczne dla dzieci z rodzin z problemem alkoholowym albo program dla wychowanków placówek."
+    },
+    {
+      "front": "Strategie profilaktyczne",
+      "back": "Informacyjna, edukacyjna, alternatyw, interwencyjna, zmniejszania szkód (oraz działania środowiskowe)."
+    },
+    {
+      "front": "Czym jest KCPU?",
+      "back": "Krajowe Centrum Przeciwdziałania Uzależnieniom – od 2022 r. przejęło zadania PARPA i Krajowego Biura ds. Przeciwdziałania Narkomanii."
+    },
+    {
+      "front": "Czy istnieje „osobowość uzależnieniowa”?",
+      "back": "Nie potwierdzono jej; istnieją cechy zwiększające podatność (poszukiwanie doznań, impulsywność, neurotyczność, niska samoocena), działające w interakcji ze środowiskiem."
+    },
+    {
+      "front": "Poszukiwanie doznań – autor i znaczenie",
+      "back": "M. Zuckerman; potrzeba nowych, intensywnych przeżyć, predyktor wczesnej inicjacji."
+    },
+    {
+      "front": "Wymiary temperamentu Cloningera związane z ryzykiem",
+      "back": "Wysokie poszukiwanie nowości, niskie unikanie szkody, zależność od nagrody."
+    },
+    {
+      "front": "Dwie ścieżki rozwoju problemów z substancjami",
+      "back": "Eksternalizacyjna (impulsywność, łamanie norm) i internalizacyjna (lęk, depresja, picie dla ulgi)."
+    },
+    {
+      "front": "Teoria zachowań problemowych – autor",
+      "back": "R. Jessor – zachowania ryzykowne współwystępują i pełnią podobne funkcje rozwojowe."
+    },
+    {
+      "front": "Trzy kluczowe czynniki chroniące wg Ostaszewskiego",
+      "back": "Silna więź z rodzicami, zainteresowanie nauką szkolną, praktyki religijne; ważne są też normy i autorytety."
+    },
+    { "front": "Resilience", "back": "Odporność psychiczna – zdolność do pozytywnej adaptacji mimo niekorzystnych warunków." },
+    {
+      "front": "Psychologiczne mechanizmy uzależnienia (Mellibruda)",
+      "back": "Nałogowe regulowanie uczuć, system iluzji i zaprzeczeń, rozproszone i rozdwojone „ja”."
+    },
+    {
+      "front": "Etapy zmiany wg Prochaski i DiClemente",
+      "back": "Prekontemplacja, kontemplacja, przygotowanie, działanie, utrzymanie (możliwy nawrót)."
+    },
+    {
+      "front": "„Wanting” a „liking” (Robinson, Berridge)",
+      "back": "W uzależnieniu wzrasta „chcenie” (siła wskazówek i głodu), a „lubienie” (przyjemność) nie rośnie lub słabnie."
+    },
+    {
+      "front": "Dlaczego straszenie jest mało skuteczne?",
+      "back": "Odroczone szkody są mniej ważne niż natychmiastowa nagroda; może wystąpić efekt bumerangowy i reaktancja; sama wiedza nie zmienia zachowań."
+    },
+    {
+      "front": "Korekta norm",
+      "back": "Pokazywanie rzeczywistych danych, że większość rówieśników nie używa substancji – przeciwdziała przecenianiu powszechności."
+    },
+    {
+      "front": "Generacje programów profilaktycznych",
+      "back": "I – informacyjna, II – afektywna, III – umiejętności życiowych (life skills), IV – kompleksowa/środowiskowa."
+    },
+    {
+      "front": "Kto uchwala program wychowawczo-profilaktyczny szkoły?",
+      "back": "Rada rodziców w porozumieniu z radą pedagogiczną, na podstawie diagnozy potrzeb środowiska szkolnego."
+    },
+    {
+      "front": "Przykłady programów rekomendowanych",
+      "back": "„Unplugged”, „Spójrz inaczej”, „Golden Five”, „Program Wzmacniania Rodziny 10–14”, „Archipelag Skarbów”, „Fantastyczne Możliwości”."
+    },
+    {
+      "front": "Ustawa regulująca profilaktykę alkoholową",
+      "back": "Ustawa z 26 października 1982 r. o wychowaniu w trzeźwości i przeciwdziałaniu alkoholizmowi."
+    },
+    {
+      "front": "Ustawa regulująca przeciwdziałanie narkomanii",
+      "back": "Ustawa z 29 lipca 2005 r. o przeciwdziałaniu narkomanii."
+    },
+    {
+      "front": "Rola gminy w profilaktyce alkoholowej",
+      "back": "Gminny program profilaktyki i rozwiązywania problemów alkoholowych, GKRPA, finansowanie z opłat za zezwolenia na sprzedaż alkoholu."
+    },
+    {
+      "front": "Picie ryzykowne a szkodliwe",
+      "back": "Ryzykowne – zwiększa ryzyko szkód, które jeszcze nie wystąpiły; szkodliwe – szkody już występują, ale brak kryteriów uzależnienia."
+    },
+    {
+      "front": "Porcja standardowa alkoholu w Polsce",
+      "back": "10 g czystego alkoholu (np. małe piwo, lampka wina, kieliszek wódki)."
+    },
+    {
+      "front": "AUDIT",
+      "back": "Test przesiewowy WHO (10 pytań) do oceny wzorca picia: niskie ryzyko, ryzykowne, szkodliwe, prawdopodobne uzależnienie."
+    },
+    {
+      "front": "Model FRAMES",
+      "back": "Elementy krótkiej interwencji: Feedback, Responsibility, Advice, Menu, Empathy, Self-efficacy."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Program realizowany wobec wszystkich uczniów klas siódmych w gminie to przykład profilaktyki:",
+      "options": ["selektywnej", "wskazującej", "uniwersalnej", "trzeciorzędowej"],
+      "correct": 2,
+      "explain": "Profilaktyka uniwersalna obejmuje całą populację bez względu na poziom ryzyka."
+    },
+    {
+      "q": "Profilaktyka wskazująca jest adresowana do:",
+      "options": [
+        "osób z pierwszymi objawami problemu",
+        "całej populacji uczniów",
+        "osób uzależnionych po terapii",
+        "rodziców dzieci przedszkolnych"
+      ],
+      "correct": 0,
+      "explain": "Wskazująca dotyczy osób, u których pojawiły się już sygnały problemu, np. pierwsze używanie substancji."
+    },
+    {
+      "q": "Która instytucja od 2022 r. koordynuje w Polsce zadania wcześniej realizowane przez PARPA i KBPN?",
+      "options": [
+        "Narodowy Instytut Zdrowia Publicznego",
+        "Krajowe Centrum Przeciwdziałania Uzależnieniom",
+        "Ośrodek Rozwoju Edukacji",
+        "Instytut Psychiatrii i Neurologii"
+      ],
+      "correct": 1,
+      "explain": "KCPU powstało z połączenia PARPA i Krajowego Biura ds. Przeciwdziałania Narkomanii."
+    },
+    {
+      "q": "Strategia alternatyw polega na:",
+      "options": [
+        "przekazywaniu rzetelnej wiedzy o substancjach",
+        "pomocy w sytuacji kryzysu",
+        "dostarczaniu zdrowych sposobów zaspokajania potrzeb, np. sport, pasje",
+        "ograniczaniu szkód u osób używających"
+      ],
+      "correct": 2,
+      "explain": "Strategia alternatyw zaspokaja potrzeby (np. przygody, uznania) przez aktywności konstruktywne."
+    },
+    {
+      "q": "Pojęcie poszukiwania doznań (sensation seeking) wprowadził:",
+      "options": ["J. Strelau", "C.R. Cloninger", "R. Jessor", "M. Zuckerman"],
+      "correct": 3,
+      "explain": "Zuckerman opisał poszukiwanie doznań jako cechę związaną z ryzykownymi zachowaniami."
+    },
+    {
+      "q": "Używanie alkoholu jako „samoleczenia” lęku i obniżonego nastroju jest typowe dla ścieżki:",
+      "options": ["internalizacyjnej", "eksternalizacyjnej", "behawioralnej", "rówieśniczej"],
+      "correct": 0,
+      "explain": "Ścieżka internalizacyjna wiąże się z lękiem i depresją oraz piciem dla ulgi."
+    },
+    {
+      "q": "Które twierdzenie o „osobowości uzależnieniowej” jest zgodne z aktualną wiedzą?",
+      "options": [
+        "Istnieje jeden typ osobowości predysponujący do uzależnienia",
+        "Osobowość nie ma żadnego związku z ryzykiem uzależnienia",
+        "Nie potwierdzono jednej osobowości uzależnieniowej, są jednak cechy zwiększające podatność",
+        "Uzależnienie zawsze wynika z zaburzeń osobowości"
+      ],
+      "correct": 2,
+      "explain": "Badania wskazują na cechy podatności (impulsywność, poszukiwanie doznań, neurotyczność), nie na jeden typ osobowości."
+    },
+    {
+      "q": "Teorię zachowań problemowych, według której zachowania ryzykowne współwystępują, sformułował:",
+      "options": ["R. Jessor", "G. Caplan", "A. Bandura", "W.R. Miller"],
+      "correct": 0,
+      "explain": "Jessor wykazał, że zachowania problemowe młodzieży tworzą syndrom i pełnią podobne funkcje."
+    },
+    {
+      "q": "Który czynnik jest czynnikiem chroniącym?",
+      "options": [
+        "Wczesne problemy z zachowaniem",
+        "Przyjaciele używający substancji",
+        "Niekonsekwentna dyscyplina",
+        "Silna więź z rodzicami"
+      ],
+      "correct": 3,
+      "explain": "Więź z rodzicami jest jednym z najsilniejszych czynników chroniących; pozostałe to czynniki ryzyka."
+    },
+    {
+      "q": "Resilience oznacza:",
+      "options": [
+        "skłonność do ryzykownych zachowań",
+        "zdolność do pozytywnej adaptacji mimo niekorzystnych warunków",
+        "odporność organizmu na alkohol (tolerancję)",
+        "zespół czynników ryzyka rodzinnego"
+      ],
+      "correct": 1,
+      "explain": "Resilience to odporność psychiczna, czyli dobre funkcjonowanie mimo przeciwności."
+    },
+    {
+      "q": "Osoba, która mówi „wiem, że picie mi szkodzi, ale nie jestem gotów nic zmieniać teraz”, jest na etapie:",
+      "options": ["prekontemplacji", "działania", "utrzymania", "kontemplacji"],
+      "correct": 3,
+      "explain": "W kontemplacji osoba dostrzega problem i rozważa zmianę, lecz jeszcze się na nią nie zdecydowała."
+    },
+    {
+      "q": "Mechanizm nałogowego regulowania uczuć polega na tym, że:",
+      "options": [
+        "substancja staje się głównym sposobem zmiany stanów emocjonalnych",
+        "osoba uzależniona nie odczuwa żadnych emocji",
+        "emocje są regulowane wyłącznie przez otoczenie",
+        "uczucia stają się stabilniejsze w miarę picia"
+      ],
+      "correct": 0,
+      "explain": "Mellibruda opisuje zastępowanie innych strategii radzenia sobie z emocjami używaniem substancji."
+    },
+    {
+      "q": "Według teorii uwrażliwienia zachęt w miarę rozwoju uzależnienia:",
+      "options": [
+        "rośnie przyjemność z używania",
+        "rośnie „chcenie”, a „lubienie” nie rośnie lub słabnie",
+        "zanika reakcja na bodźce związane z substancją",
+        "zmniejsza się wydzielanie dopaminy w odpowiedzi na wskazówki"
+      ],
+      "correct": 1,
+      "explain": "Robinson i Berridge wykazali rozdzielenie „chcenia” od „lubienia” – głód rośnie, choć przyjemność nie."
+    },
+    {
+      "q": "Picie dla uniknięcia objawów odstawienia jest przykładem:",
+      "options": ["wzmocnienia pozytywnego", "modelowania", "wzmocnienia negatywnego", "warunkowania klasycznego"],
+      "correct": 2,
+      "explain": "Wzmocnienie negatywne polega na usunięciu przykrego stanu, co utrwala zachowanie."
+    },
+    {
+      "q": "Efekt bumerangowy w profilaktyce oznacza:",
+      "options": [
+        "powrót uczestnika na kolejną edycję programu",
+        "efekt odwrotny do zamierzonego, np. wzrost zainteresowania substancją",
+        "przeniesienie efektów na rodzeństwo",
+        "stopniowe wygasanie efektów po zakończeniu programu"
+      ],
+      "correct": 1,
+      "explain": "Nieodpowiednie przekazy (np. straszenie) mogą zwiększać ciekawość lub opór."
+    },
+    {
+      "q": "Programy III generacji koncentrują się na:",
+      "options": [
+        "przekazie informacji o szkodliwości substancji",
+        "wyłącznie na edukacji afektywnej",
+        "testowaniu uczniów na obecność narkotyków",
+        "rozwijaniu umiejętności życiowych i społecznych"
+      ],
+      "correct": 3,
+      "explain": "Trzecia generacja to programy umiejętności życiowych (np. Botvin), z ćwiczeniem odmawiania i radzenia sobie ze stresem."
+    },
+    {
+      "q": "Program wychowawczo-profilaktyczny szkoły uchwala:",
+      "options": [
+        "dyrektor samodzielnie",
+        "kurator oświaty",
+        "rada rodziców w porozumieniu z radą pedagogiczną",
+        "samorząd uczniowski"
+      ],
+      "correct": 2,
+      "explain": "Tak stanowią przepisy prawa oświatowego; program opiera się na diagnozie potrzeb środowiska."
+    },
+    {
+      "q": "Który z programów jest polskim programem rekomendowanym w obszarze profilaktyki szkolnej?",
+      "options": ["„Golden Five”", "„Niebieska Karta”", "„Rodzina 500+”", "„Za życiem”"],
+      "correct": 0,
+      "explain": "„Golden Five” jest w systemie rekomendacji; pozostałe to procedury lub programy socjalne."
+    },
+    {
+      "q": "Gminne programy profilaktyki i rozwiązywania problemów alkoholowych finansowane są przede wszystkim z:",
+      "options": [
+        "składek ubezpieczenia zdrowotnego",
+        "opłat za zezwolenia na sprzedaż napojów alkoholowych",
+        "podatku akcyzowego od tytoniu",
+        "środków Unii Europejskiej"
+      ],
+      "correct": 1,
+      "explain": "Ustawa o wychowaniu w trzeźwości przeznacza środki z opłat za zezwolenia na zadania gminnego programu."
+    },
+    {
+      "q": "Wzorzec picia, który już powoduje szkody zdrowotne, ale nie spełnia kryteriów uzależnienia, to:",
+      "options": ["picie o niskim ryzyku", "picie ryzykowne", "zespół abstynencyjny", "picie szkodliwe"],
+      "correct": 3,
+      "explain": "Picie szkodliwe (szkodliwy wzorzec używania) oznacza już obecne szkody bez cech uzależnienia."
+    },
+    {
+      "q": "Porcja standardowa alkoholu przyjęta w Polsce zawiera:",
+      "options": ["10 g czystego alkoholu", "5 g czystego alkoholu", "20 g czystego alkoholu", "14 g czystego alkoholu"],
+      "correct": 0,
+      "explain": "W Polsce porcja standardowa to 10 g etanolu; 14 g stosuje się m.in. w USA."
+    },
+    {
+      "q": "Test AUDIT został opracowany przez:",
+      "options": [
+        "Amerykańskie Towarzystwo Psychiatryczne",
+        "Krajowe Centrum Przeciwdziałania Uzależnieniom",
+        "Światową Organizację Zdrowia",
+        "Anonimowych Alkoholików"
+      ],
+      "correct": 2,
+      "explain": "AUDIT (Alcohol Use Disorders Identification Test) to narzędzie przesiewowe WHO."
+    }
+  ],
+  "open": [
+    {
+      "q": "Porównaj podział profilaktyki według Caplana z podziałem Gordona/IOM. Podaj przykłady z pracy resocjalizacyjnej.",
+      "answer": "Podział Caplana opiera się na stadium problemu. Profilaktyka pierwszorzędowa zapobiega inicjacji, drugorzędowa obejmuje wczesne rozpoznanie i interwencję wobec eksperymentujących i grup ryzyka, a trzeciorzędowa dotyczy osób uzależnionych (nawroty, szkody, readaptacja). Podział Gordona przyjęty przez IOM w 1994 r. bierze pod uwagę grupę docelową i poziom ryzyka. Profilaktyka uniwersalna obejmuje całą populację (np. warsztaty umiejętności w całej szkole), selektywna – grupy podwyższonego ryzyka (np. wychowankowie MOW, dzieci z rodzin alkoholowych w pieczy zastępczej), a wskazująca – osoby z pierwszymi objawami (np. nieletni zatrzymany z marihuaną kierowany do programu wczesnej interwencji). Profilaktyka uniwersalna odpowiada mniej więcej pierwszorzędowej, a selektywna i wskazująca obejmują część działań pierwszo- i drugorzędowych."
+    },
+    {
+      "q": "Omów czynniki ryzyka i czynniki chroniące w różnych obszarach życia młodego człowieka oraz sposoby ich wzmacniania.",
+      "answer": "Czynniki ryzyka zwiększają prawdopodobieństwo problemów, a chroniące je zmniejszają lub buforują. W obszarze indywidualnym ryzyko tworzą impulsywność, poszukiwanie doznań i pozytywne przekonania o substancjach. W rodzinie są to używanie substancji przez rodziców, konflikty, przemoc i brak nadzoru. W grupie rówieśniczej ryzykiem są znajomi używający substancji, w szkole niepowodzenia i słaba więź ze szkołą, a w środowisku dostępność substancji i przyzwalające normy. Czynniki chroniące to więź z rodzicami, zainteresowanie nauką, praktyki religijne lub jasne wartości, respektowanie norm, prospołeczni rówieśnicy i umiejętności życiowe (Ostaszewski). Czynniki działają kumulatywnie. Wzmacnia się je przez programy dla rodziców, mentoring, zajęcia pozalekcyjne, budowanie klimatu szkoły, treningi umiejętności i ograniczanie dostępności."
+    },
+    {
+      "q": "Dlaczego programy oparte wyłącznie na informacji i straszeniu są mało skuteczne? Jakie podejścia rekomenduje się zamiast nich?",
+      "answer": "Młodzież przecenia natychmiastowe korzyści, a niedocenia odroczonych i niepewnych szkód. Ulega też złudzeniu, że jej to nie dotyczy, i myli się co do powszechności używania wśród rówieśników. Sama wiedza nie przekłada się na zachowanie, jeśli brakuje umiejętności i wsparcia. Drastyczne przekazy mogą wywołać reaktancję albo efekt bumerangowy w postaci wzrostu ciekawości. Rekomenduje się programy umiejętności życiowych (asertywność, radzenie sobie ze stresem i emocjami, rozwiązywanie problemów), korektę norm, interaktywne metody, angażowanie rodziców, edukację rówieśniczą oraz działania środowiskowe ograniczające dostępność. Programy powinny wynikać z diagnozy, opierać się na teorii, obejmować cykl spotkań i podlegać ewaluacji. Warto korzystać z programów z systemu rekomendacji."
+    },
+    {
+      "q": "Scharakteryzuj psychopedagogiczne funkcjonowanie osoby uzależnionej i wynikające z niego wskazania do pracy.",
+      "answer": "W sferze emocjonalnej dominuje nałogowe regulowanie uczuć, a do tego chwiejność, lęk, wstyd i poczucie winy. W sferze poznawczej działa system iluzji i zaprzeczeń: minimalizowanie, racjonalizowanie, obwinianie oraz zawężenie uwagi do substancji. W sferze „ja” pojawia się niska, niestabilna samoocena i rozdwojenie na „ja trzeźwe” i „ja nałogowe”. Społecznie następuje zawężenie kontaktów, łamanie norm i zaniedbywanie ról. W motywacji widoczna jest ambiwalencja; według modelu Prochaski i DiClemente osoba może być na różnych etapach gotowości do zmiany. Wskazania do pracy: jasna struktura i konsekwencja bez moralizowania, dopasowanie działań do etapu zmiany, dialog motywujący, nauka rozpoznawania emocji, wzmacnianie odpowiedzialności i sprawstwa oraz współpraca z terapeutą uzależnień."
+    },
+    {
+      "q": "Wyjaśnij różnice między piciem ryzykownym, szkodliwym i uzależnieniem oraz wskaż adekwatne formy pomocy.",
+      "answer": "Picie ryzykowne to wzorzec zwiększający prawdopodobieństwo szkód, które jeszcze nie wystąpiły, np. upijanie się, picie w ciąży, picie przez nieletnich. Picie szkodliwe już powoduje szkody fizyczne lub psychiczne, ale nie spełnia kryteriów uzależnienia; ICD-11 nazywa je szkodliwym wzorcem używania lub epizodem szkodliwego używania. Uzależnienie obejmuje upośledzoną kontrolę, priorytet alkoholu w życiu, kontynuację mimo szkód oraz tolerancję i objawy odstawienia. Do rozróżnienia służy test AUDIT. Osobom pijącym ryzykownie i szkodliwie pomaga zwykle krótka interwencja według modelu FRAMES, z celem ograniczenia picia. Osoby uzależnione wymagają leczenia specjalistycznego w poradni lub oddziale terapii uzależnień, zazwyczaj z celem abstynencji."
+    },
+    {
+      "q": "Przedstaw podstawy prawne i instytucjonalne profilaktyki uzależnień w Polsce.",
+      "answer": "Podstawą profilaktyki alkoholowej jest ustawa z 26 października 1982 r. o wychowaniu w trzeźwości i przeciwdziałaniu alkoholizmowi. Reguluje ona ograniczanie dostępności alkoholu, zadania gmin (gminny program, GKRPA) i zobowiązanie do leczenia. Ustawa z 29 lipca 2005 r. o przeciwdziałaniu narkomanii obejmuje profilaktykę, leczenie, rehabilitację, redukcję szkód i kontrolę substancji, w tym NSP. Profilaktykę tytoniową reguluje ustawa o ochronie zdrowia przed następstwami używania tytoniu i wyrobów tytoniowych. Ramą strategiczną jest Narodowy Program Zdrowia. Na szczeblu centralnym działania koordynuje KCPU, następca PARPA i KBPN. Lokalnie zadania wykonują gminy, a w szkołach realizuje się programy wychowawczo-profilaktyczne. Jakość programów wspiera system rekomendacji programów profilaktycznych."
+    }
+  ]
+}

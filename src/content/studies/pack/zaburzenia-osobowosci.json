@@ -1,0 +1,402 @@
+{
+  "courseId": "zaburzenia-osobowosci",
+  "notes": [
+    {
+      "topic": "Norma a patologia – granice ilościowe i jakościowe",
+      "text": "Rozróżnienie normy i patologii jest punktem wyjścia psychopatologii. Nie istnieje jedno kryterium normy – w literaturze (np. L. Cierpiałkowska; Butcher, Hooley, Mineka) wyróżnia się kilka ujęć:\n• norma statystyczna – normalne jest to, co przeciętne i najczęstsze; patologia to skrajne odchylenie od średniej (granica ilościowa);\n• norma społeczno-kulturowa – normalne jest to, co zgodne z oczekiwaniami danej kultury; kryterium względne i zmienne historycznie;\n• norma funkcjonalna (adaptacyjna) – zaburzenie to zachowanie, które utrudnia realizację celów, pełnienie ról i przystosowanie;\n• norma idealna (perfekcjonistyczna) – stan pełnego rozwoju i dobrostanu, którego nikt w pełni nie osiąga;\n• norma subiektywna – kryterium cierpienia odczuwanego przez osobę.\n\nPraktycznym narzędziem jest model „4D”: odchylenie od normy (deviance), cierpienie (distress), dysfunkcja (dysfunction) i niebezpieczeństwo (danger) dla siebie lub innych.\n\nGranica ilościowa zakłada kontinuum – zaburzenie to nasilenie cech obecnych u każdego (np. podejrzliwość, impulsywność). Granica jakościowa zakłada, że patologia jest czymś odrębnym, nowym jakościowo (np. urojenia). Współczesne modele zaburzeń osobowości – ICD-11 i alternatywny model DSM-5-TR – przesuwają się w stronę ujęcia wymiarowego (ilościowego), oceniając stopień nasilenia problemów i profil cech, zamiast tylko kategorii „jest/nie ma”.\n\nZaburzenie osobowości odróżnia się od trudnego charakteru tym, że wzorzec jest trwały (od adolescencji lub wczesnej dorosłości), sztywny, przejawia się w wielu sytuacjach i prowadzi do istotnego cierpienia lub upośledzenia funkcjonowania. Ważny jest też kontekst kulturowy i rozwojowy – u dzieci i młodzieży z rozpoznaniem należy być ostrożnym.\n\nPrzykład: nieufność wobec instytucji u osoby po wieloletnim pobycie w więzieniu może być adaptacyjna, a nie paranoiczna – diagnosta musi uwzględnić kontekst.",
+      "key": [
+        "Norma statystyczna – to, co przeciętne; patologia jako skrajne odchylenie",
+        "Norma funkcjonalna – kryterium przystosowania i realizacji ról",
+        "Model 4D – odchylenie, cierpienie, dysfunkcja, niebezpieczeństwo",
+        "Ujęcie wymiarowe – zaburzenie jako nasilenie cech na kontinuum",
+        "Ujęcie kategorialne – zaburzenie jako odrębna kategoria diagnostyczna"
+      ]
+    },
+    {
+      "topic": "Klasyfikacje zaburzeń osobowości: DSM i ICD",
+      "text": "DSM-5-TR (Amerykańskie Towarzystwo Psychiatryczne, 2022) w sekcji II utrzymuje model kategorialny: 10 zaburzeń osobowości w trzech wiązkach (klastrach):\n• klaster A – dziwaczne, ekscentryczne: paranoiczne, schizoidalne, schizotypowe;\n• klaster B – dramatyczne, emocjonalne, chwiejne: antyspołeczne, borderline, histrioniczne, narcystyczne;\n• klaster C – lękowe, bojaźliwe: unikające, zależne, obsesyjno-kompulsyjne.\nOgólne kryteria: trwały wzorzec przeżyć i zachowań wyraźnie odbiegający od oczekiwań kultury, widoczny w co najmniej dwóch obszarach (poznanie, afektywność, funkcjonowanie interpersonalne, kontrola impulsów), sztywny, prowadzący do cierpienia lub upośledzenia. W sekcji III DSM-5-TR opisano alternatywny model (AMPD): poziom funkcjonowania osobowości (tożsamość, samokierowanie, empatia, intymność) oraz patologiczne cechy w pięciu domenach (negatywna afektywność, dystans, antagonizm, rozhamowanie, psychotyczność).\n\nICD-11 (WHO, obowiązuje od 2022 r.) wprowadziła model wymiarowy:\n• najpierw ocenia się, czy występuje zaburzenie osobowości i jego nasilenie: łagodne, umiarkowane, ciężkie; poniżej progu – trudności osobowościowe;\n• następnie opcjonalnie opisuje się wyraziste cechy (domeny): negatywna afektywność, zdystansowanie, dyssocjalność, rozhamowanie, anankastia;\n• można dodać wzorzec borderline (specyfikator).\nZnikły dawne typy (np. osobowość paranoiczna, histrioniczna, zależna) – opisuje się je poprzez profil domen. Zaburzenie schizotypowe w ICD-11 należy do spektrum schizofrenii, nie do zaburzeń osobowości.\n\nDla porównania ICD-10 zawierała kategorie F60 (m.in. osobowość dyssocjalna, chwiejna emocjonalnie typu impulsywnego i borderline, anankastyczna, lękliwa/unikająca, zależna).\n\nNa egzaminie typowe pytania: wymień klastry DSM i przypisz zaburzenia; czym ICD-11 różni się od DSM (wymiar vs kategoria); jakie są domeny cech ICD-11.",
+      "key": [
+        "Klaster A – zaburzenia dziwaczne: paranoiczne, schizoidalne, schizotypowe",
+        "Klaster B – dramatyczne: antyspołeczne, borderline, histrioniczne, narcystyczne",
+        "Klaster C – lękowe: unikające, zależne, obsesyjno-kompulsyjne",
+        "ICD-11 – ocena nasilenia (łagodne, umiarkowane, ciężkie) + domeny cech + wzorzec borderline",
+        "Domeny ICD-11 – negatywna afektywność, zdystansowanie, dyssocjalność, rozhamowanie, anankastia",
+        "AMPD – alternatywny model DSM-5-TR (poziom funkcjonowania + cechy)"
+      ]
+    },
+    {
+      "topic": "Zaburzenie narcystyczne, histrioniczne, paranoiczne w pracy pedagoga",
+      "text": "Osobowość narcystyczna (klaster B DSM): wzorzec wielkościowości, potrzeby podziwu i braku empatii. Osoba przecenia swoje osiągnięcia, oczekuje szczególnego traktowania, wykorzystuje innych, zazdrości i reaguje złością lub wstydem na krytykę (zranienie narcystyczne). Pod fasadą często kryje się krucha samoocena (O. Kernberg, H. Kohut). Wskazówki dla pedagoga: unikać publicznego zawstydzania, dawać informację zwrotną rzeczowo i prywatnie, docenić realne starania, a granice stawiać spokojnie i konsekwentnie; nie wchodzić w rywalizację.\n\nOsobowość histrioniczna (klaster B): nadmierna emocjonalność i poszukiwanie uwagi, teatralność, sugestywność, powierzchowne i szybko zmieniające się emocje, przecenianie bliskości relacji, wykorzystywanie wyglądu do przyciągania uwagi. Pedagog powinien zachować ciepły, ale profesjonalny dystans, wzmacniać zachowania adekwatne, a nie dramatyzowanie, pomagać nazywać emocje i skupiać się na konkretach.\n\nOsobowość paranoiczna (klaster A): wszechobecna nieufność i podejrzliwość, przypisywanie innym wrogich intencji, chowanie urazy, nadwrażliwość na krytykę, skłonność do sporów. Brak urojeń (to odróżnia ją od psychozy). Zalecenia: przejrzystość działań, informowanie o celach i procedurach, dotrzymywanie słowa, unikanie żartów i dwuznaczności, nie przekonywać na siłę, uznawać prawo do wątpliwości.\n\nW ICD-11 nie ma tych odrębnych typów – profil narcystyczny opisuje się zwykle przez dyssocjalność (wielkościowość, brak empatii) i negatywną afektywność, histrioniczny przez negatywną afektywność i rozhamowanie, paranoiczny przez negatywną afektywność (podejrzliwość) i zdystansowanie.\n\nPrzykład z resocjalizacji: wychowanek z cechami narcystycznymi zaczyna przestrzegać regulaminu, gdy dostaje odpowiedzialną funkcję w grupie i jest doceniany za realne osiągnięcia, a nie upominany przy rówieśnikach.",
+      "key": [
+        "Osobowość narcystyczna – wielkościowość, potrzeba podziwu, brak empatii",
+        "Zranienie narcystyczne – reakcja wstydu i gniewu na krytykę lub porażkę",
+        "Osobowość histrioniczna – nadmierna emocjonalność, teatralność, poszukiwanie uwagi",
+        "Osobowość paranoiczna – trwała nieufność i przypisywanie innym wrogich intencji bez urojeń",
+        "Przejrzystość działań – podstawowa zasada kontaktu z osobą podejrzliwą"
+      ]
+    },
+    {
+      "topic": "Praca z osobami z zaburzeniem antyspołecznym (system penitencjarny)",
+      "text": "Antyspołeczne zaburzenie osobowości (DSM-5-TR, klaster B) to wzorzec lekceważenia i naruszania praw innych: łamanie prawa, kłamstwo i manipulacja, impulsywność, drażliwość i agresja, lekkomyślność wobec bezpieczeństwa, nieodpowiedzialność, brak wyrzutów sumienia. Rozpoznaje się je u osób dorosłych, gdy objawy zaburzeń zachowania występowały już przed 15. rokiem życia. W ICD-10 odpowiednikiem była osobowość dyssocjalna; w ICD-11 opisuje się te cechy domeną dyssocjalności (lekceważenie praw i uczuć innych, egocentryzm, brak empatii), często z rozhamowaniem.\n\nPsychopatia to pojęcie węższe i nie jest kategorią DSM/ICD. H. Cleckley opisał ją klinicznie, a R. Hare stworzył skalę PCL-R, która wyróżnia czynnik interpersonalno-afektywny (powierzchowny urok, wielkościowość, kłamliwość, płytki afekt, brak empatii i poczucia winy) oraz czynnik stylu życia i antyspołeczności. Większość osób z zaburzeniem antyspołecznym nie spełnia kryteriów psychopatii, a w populacji więziennej zaburzenie antyspołeczne jest bardzo częste.\n\nZasady pracy w systemie penitencjarnym:\n• jasna struktura, przewidywalne reguły i konsekwencje, odporność na manipulację (spójność zespołu, dokumentowanie ustaleń);\n• model RNR (Andrews, Bonta): ryzyko – intensywność oddziaływań dostosowana do poziomu ryzyka; potrzeby – praca nad czynnikami kryminogennymi (postawy, otoczenie, uzależnienie); responsywność – metody dopasowane do stylu uczenia się;\n• programy poznawczo-behawioralne (np. treningi zastępowania agresji ART, programy korekcyjno-edukacyjne), terapia uzależnień;\n• odwoływanie się do własnego interesu skazanego (co zyska, jeśli zmieni zachowanie), a nie do poczucia winy;\n• dbałość o bezpieczeństwo personelu i superwizję.\n\nNa egzaminie: odróżnij zaburzenie antyspołeczne od psychopatii, wymień kryteria i zasady pracy.",
+      "key": [
+        "Antyspołeczne zaburzenie osobowości – trwałe lekceważenie i naruszanie praw innych, od wieku dorosłego, z zaburzeniami zachowania przed 15 r.ż.",
+        "Dyssocjalność – domena cech ICD-11: lekceważenie praw i uczuć innych, brak empatii",
+        "Psychopatia – konstrukt (Cleckley, Hare) łączący deficyty afektywne z antyspołecznym stylem życia",
+        "PCL-R – Skala Obserwacyjna Skłonności Psychopatycznych R. Hare'a",
+        "Model RNR – ryzyko, potrzeby kryminogenne, responsywność (Andrews, Bonta)"
+      ]
+    },
+    {
+      "topic": "Zaburzenie zależne i unikające",
+      "text": "Oba zaburzenia należą w DSM-5-TR do klastra C (lękowo-bojaźliwego).\n\nZaburzenie osobowości zależnej: wszechobecna, nadmierna potrzeba bycia otoczonym opieką, prowadząca do uległości, przywierania i lęku przed separacją. Przejawy: trudność w podejmowaniu codziennych decyzji bez rad innych, przerzucanie odpowiedzialności, trudność w wyrażaniu sprzeciwu z obawy przed utratą wsparcia, brak inicjatywy, posuwanie się daleko, by uzyskać opiekę, dyskomfort w samotności, pospieszne szukanie nowego związku po rozpadzie poprzedniego.\n\nZaburzenie osobowości unikającej: wzorzec zahamowania społecznego, poczucia nieadekwatności i nadwrażliwości na negatywną ocenę. Osoba unika kontaktów z obawy przed krytyką lub odrzuceniem, angażuje się tylko wtedy, gdy jest pewna akceptacji, postrzega siebie jako gorszą i nieatrakcyjną. W przeciwieństwie do osoby schizoidalnej pragnie bliskości, lecz się jej boi. Różnicuje się ją z fobią społeczną, z którą często współwystępuje.\n\nW ICD-11 cechy te opisuje się głównie domeną negatywnej afektywności (lękliwość, niska samoocena) i zdystansowania (unikanie relacji).\n\nZnaczenie w pracy z uzależnieniami: cechy zależne zwiększają ryzyko współuzależnienia, trwania w przemocowym związku i uległości wobec presji grupy (np. „picie towarzyskie”); cechy unikające sprzyjają używaniu alkoholu lub leków jako „samoleczenia” lęku społecznego.\n\nZasady pracy:\n• przy zależności – stopniowe zwiększanie samodzielności, chwalenie decyzji podejmowanych samodzielnie, unikanie przejmowania odpowiedzialności przez pomagającego, trening asertywności;\n• przy unikaniu – bezpieczna, akceptująca relacja, łagodna ekspozycja na sytuacje społeczne, trening umiejętności, praca z przekonaniami o własnej bezwartościowości (podejście poznawczo-behawioralne, terapia schematów J. Younga).",
+      "key": [
+        "Osobowość zależna – nadmierna potrzeba opieki, uległość, lęk przed separacją",
+        "Osobowość unikająca – zahamowanie społeczne, poczucie nieadekwatności, lęk przed oceną",
+        "Klaster C – grupa zaburzeń lękowo-bojaźliwych w DSM-5-TR",
+        "Trening asertywności – nauka wyrażania własnego zdania i odmawiania z szacunkiem dla siebie i innych",
+        "Terapia schematów – podejście J. Younga pracujące z wczesnymi nieadaptacyjnymi schematami"
+      ]
+    },
+    {
+      "topic": "Zaburzenie schizoidalne i anankastyczne",
+      "text": "Zaburzenie osobowości schizoidalnej (klaster A DSM-5-TR): wzorzec oderwania od relacji społecznych i ograniczonego wyrażania emocji. Osoba nie pragnie bliskich związków ani nie czerpie z nich przyjemności, wybiera aktywności samotne, ma niewielkie zainteresowanie kontaktami seksualnymi, niewiele rzeczy sprawia jej przyjemność (anhedonia), jest obojętna na pochwały i krytykę, sprawia wrażenie chłodnej. W odróżnieniu od osobowości unikającej nie cierpi z powodu samotności, a w odróżnieniu od schizotypowej nie ma dziwacznych przekonań i zaburzeń percepcji. W ICD-11 odpowiada jej głównie domena zdystansowania (społecznego i emocjonalnego).\n\nPraca: szanować potrzebę dystansu, nie wymuszać zwierzeń i zajęć grupowych, proponować zadania indywidualne, komunikować się rzeczowo; kontakt buduje się wolno, poprzez wspólne zadanie, a nie rozmowę o uczuciach.\n\nZaburzenie anankastyczne (w DSM-5-TR: obsesyjno-kompulsyjne zaburzenie osobowości, klaster C): nadmierne zaabsorbowanie porządkiem, perfekcjonizmem i kontrolą kosztem elastyczności i efektywności. Przejawy: przywiązanie do szczegółów, list i reguł, perfekcjonizm uniemożliwiający ukończenie zadań, pracoholizm, skrupulatność moralna, niezdolność do wyrzucania rzeczy, niechęć do delegowania, skąpstwo, sztywność i upór. W ICD-11 jest to osobna domena cech – anankastia.\n\nWażne rozróżnienie egzaminacyjne: zaburzenie anankastyczne to nie to samo co zaburzenie obsesyjno-kompulsyjne (OCD). W OCD występują natrętne myśli i czynności przymusowe przeżywane jako obce i przykre (ego-dystoniczne); w zaburzeniu osobowości cechy są ego-syntoniczne – osoba uważa je za słuszne.\n\nPraca: przewidywalny plan, jasne kryteria „wystarczająco dobrego” wykonania, unikanie walki o kontrolę, praca nad elastycznością i tolerancją błędu. W terapii uzależnień osoby anankastyczne dobrze odnajdują się w strukturze programu, ale mogą sztywno moralizować wobec innych.",
+      "key": [
+        "Osobowość schizoidalna – oderwanie od relacji, ograniczona ekspresja emocji, preferencja samotności",
+        "Zdystansowanie – domena ICD-11 obejmująca wycofanie społeczne i emocjonalne",
+        "Anankastia – domena ICD-11: perfekcjonizm, sztywność, potrzeba kontroli",
+        "Ego-syntoniczność – cechy przeżywane jako zgodne z własnym ja, typowe dla zaburzeń osobowości",
+        "OCD a anankastyczna osobowość – natręctwa ego-dystoniczne vs trwały styl perfekcjonizmu"
+      ]
+    },
+    {
+      "topic": "Kontakt terapeutyczny: przeniesienie, przeciwprzeniesienie, opór",
+      "text": "Pojęcia wywodzą się z psychoanalizy (Z. Freud), ale są dziś używane szeroko – w terapii psychodynamicznej, w pracy pedagoga resocjalizacyjnego, kuratora czy terapeuty uzależnień.\n\nPrzeniesienie – nieświadome przenoszenie na osobę pomagającą uczuć, oczekiwań i wzorców relacji z ważnych osób z przeszłości (najczęściej rodziców). Może być pozytywne (idealizacja, zaufanie) lub negatywne (wrogość, nieufność). Np. wychowanek reaguje na wychowawcę jak na przemocowego ojca, zanim ten zrobił cokolwiek złego.\n\nPrzeciwprzeniesienie – reakcje emocjonalne pomagającego na klienta i jego przeniesienie. Dawniej uznawane za przeszkodę, dziś traktowane także jako źródło informacji o kliencie (co klient „wywołuje” w innych). Przykłady: złość na manipulującego skazanego, chęć ratowania podopiecznej, znudzenie przy osobie schizoidalnej, poczucie bycia wyjątkowym przy idealizacji. Nieuświadomione prowadzi do odgrywania (np. karania lub nadopiekuńczości).\n\nOpór – wszystko, co w procesie pomocy przeciwdziała zmianie i uświadamianiu trudnych treści: spóźnianie się, milczenie, zmiana tematu, intelektualizacja, „ucieczka w zdrowie”, zaprzeczanie. Opór chroni przed lękiem i nie jest złą wolą. W dialogu motywującym mówi się raczej o niezgodzie i podtrzymywaniu status quo, na które reaguje się odzwierciedleniem, a nie konfrontacją.\n\nOsoby z zaburzeniami osobowości szczególnie silnie wywołują reakcje przeciwprzeniesieniowe; przy organizacji borderline częste są rozszczepienie (dzielenie zespołu na „dobrych” i „złych”) i identyfikacja projekcyjna (O. Kernberg). Dlatego kluczowe są: superwizja, praca zespołowa, jasne granice i kontrakt, autorefleksja. Metody o udokumentowanej skuteczności w zaburzeniu z wzorcem borderline to m.in. DBT (M. Linehan), MBT (A. Bateman, P. Fonagy), TFP (O. Kernberg) i terapia schematów.",
+      "key": [
+        "Przeniesienie – nieświadome przenoszenie na pomagającego wzorców relacji z przeszłości",
+        "Przeciwprzeniesienie – emocjonalne reakcje pomagającego na klienta, źródło informacji i ryzyko odgrywania",
+        "Opór – przeciwdziałanie zmianie i uświadamianiu trudnych treści, pełniące funkcję ochronną",
+        "Rozszczepienie – mechanizm dzielenia ludzi na całkowicie dobrych i całkowicie złych",
+        "Superwizja – konsultowanie pracy z doświadczonym specjalistą w celu analizy relacji z klientem"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "front": "Model 4D w psychopatologii",
+      "back": "Odchylenie od normy (deviance), cierpienie (distress), dysfunkcja (dysfunction), niebezpieczeństwo (danger)."
+    },
+    {
+      "front": "Norma statystyczna – na czym polega i jaka jest jej słabość?",
+      "back": "Normalne jest to, co przeciętne; słabość – rzadkie cechy pozytywne (np. wybitna inteligencja) też byłyby „patologią”."
+    },
+    {
+      "front": "Granica ilościowa a jakościowa normy i patologii",
+      "back": "Ilościowa: patologia to nasilenie cech obecnych u wszystkich (kontinuum). Jakościowa: patologia to zjawisko odrębne, nowe jakościowo."
+    },
+    {
+      "front": "Ogólne kryteria zaburzenia osobowości (DSM-5-TR)",
+      "back": "Trwały, sztywny, wszechobecny wzorzec odbiegający od oczekiwań kultury, obecny od adolescencji lub wczesnej dorosłości, powodujący cierpienie lub upośledzenie funkcjonowania."
+    },
+    { "front": "Klaster A DSM-5-TR", "back": "Zaburzenia dziwaczne, ekscentryczne: paranoiczne, schizoidalne, schizotypowe." },
+    {
+      "front": "Klaster B DSM-5-TR",
+      "back": "Zaburzenia dramatyczne, emocjonalne: antyspołeczne, borderline, histrioniczne, narcystyczne."
+    },
+    { "front": "Klaster C DSM-5-TR", "back": "Zaburzenia lękowe, bojaźliwe: unikające, zależne, obsesyjno-kompulsyjne." },
+    {
+      "front": "Stopnie nasilenia zaburzenia osobowości w ICD-11",
+      "back": "Łagodne, umiarkowane, ciężkie; poniżej progu diagnostycznego – trudności osobowościowe."
+    },
+    {
+      "front": "Domeny cech osobowości w ICD-11",
+      "back": "Negatywna afektywność, zdystansowanie, dyssocjalność, rozhamowanie, anankastia; dodatkowo specyfikator wzorca borderline."
+    },
+    {
+      "front": "Gdzie ICD-11 klasyfikuje zaburzenie schizotypowe?",
+      "back": "W spektrum schizofrenii i innych pierwotnych zaburzeń psychotycznych, a nie wśród zaburzeń osobowości."
+    },
+    {
+      "front": "Alternatywny model zaburzeń osobowości (AMPD) w DSM-5-TR",
+      "back": "Model z sekcji III: ocena poziomu funkcjonowania osobowości (tożsamość, samokierowanie, empatia, intymność) i patologicznych cech w 5 domenach."
+    },
+    {
+      "front": "Osobowość narcystyczna – główne cechy",
+      "back": "Wielkościowość, potrzeba podziwu, brak empatii, poczucie uprzywilejowania, wykorzystywanie innych, nadwrażliwość na krytykę."
+    },
+    {
+      "front": "Osobowość histrioniczna – główne cechy",
+      "back": "Nadmierna, płytka emocjonalność, teatralność, poszukiwanie uwagi, sugestywność, przecenianie bliskości relacji."
+    },
+    {
+      "front": "Osobowość paranoiczna a zaburzenie urojeniowe",
+      "back": "W osobowości paranoicznej występuje trwała podejrzliwość bez urojeń; zaburzenie urojeniowe obejmuje utrwalone, fałszywe przekonania o charakterze psychotycznym."
+    },
+    {
+      "front": "Kryterium wieku przy antyspołecznym zaburzeniu osobowości (DSM-5-TR)",
+      "back": "Osoba ma co najmniej 18 lat, a objawy zaburzeń zachowania występowały przed 15. rokiem życia."
+    },
+    {
+      "front": "Psychopatia a antyspołeczne zaburzenie osobowości",
+      "back": "Psychopatia (Cleckley, Hare) jest węższa, obejmuje rdzeń afektywno-interpersonalny (płytki afekt, brak empatii, urok); większość osób z zaburzeniem antyspołecznym nie jest psychopatami."
+    },
+    {
+      "front": "PCL-R",
+      "back": "Skala R. Hare'a do oceny psychopatii na podstawie wywiadu i dokumentacji; dwa główne czynniki: interpersonalno-afektywny i antyspołecznego stylu życia."
+    },
+    {
+      "front": "Model RNR",
+      "back": "Ryzyko (intensywność dopasowana do ryzyka), potrzeby (praca nad czynnikami kryminogennymi), responsywność (metody dopasowane do osoby) – Andrews i Bonta."
+    },
+    {
+      "front": "Osobowość zależna",
+      "back": "Nadmierna potrzeba bycia otoczonym opieką, uległość, trudność w samodzielnych decyzjach i wyrażaniu sprzeciwu, lęk przed samotnością."
+    },
+    {
+      "front": "Osobowość unikająca a schizoidalna",
+      "back": "Osoba unikająca pragnie bliskości, ale boi się odrzucenia; osoba schizoidalna nie odczuwa potrzeby bliskości."
+    },
+    {
+      "front": "Anankastyczne zaburzenie osobowości a OCD",
+      "back": "Osobowość anankastyczna to ego-syntoniczny styl perfekcjonizmu i kontroli; OCD to ego-dystoniczne natręctwa myślowe i czynności przymusowe."
+    },
+    {
+      "front": "Przeniesienie",
+      "back": "Nieświadome przenoszenie na terapeutę lub wychowawcę uczuć i wzorców relacji z ważnych osób z przeszłości."
+    },
+    {
+      "front": "Przeciwprzeniesienie",
+      "back": "Emocjonalne reakcje pomagającego na klienta; jeśli uświadomione – źródło wiedzy o kliencie, jeśli nie – ryzyko odgrywania."
+    },
+    {
+      "front": "Opór w kontakcie terapeutycznym",
+      "back": "Zachowania przeciwdziałające zmianie i uświadamianiu trudnych treści (spóźnienia, milczenie, intelektualizacja), pełniące funkcję ochrony przed lękiem."
+    },
+    {
+      "front": "Rozszczepienie (splitting)",
+      "back": "Prymitywny mechanizm obronny dzielenia ludzi na całkowicie dobrych i złych; w zespole może prowadzić do konfliktów wokół klienta."
+    },
+    {
+      "front": "Terapie o udokumentowanej skuteczności przy wzorcu borderline",
+      "back": "Terapia dialektyczno-behawioralna (DBT, M. Linehan), terapia oparta na mentalizacji (MBT, Bateman i Fonagy), TFP (Kernberg), terapia schematów (Young)."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Które kryterium normy opiera się na przeciętności i częstości występowania cechy?",
+      "options": ["funkcjonalne", "statystyczne", "idealne", "subiektywne"],
+      "correct": 1,
+      "explain": "Norma statystyczna utożsamia normalność z tym, co najczęstsze."
+    },
+    {
+      "q": "W modelu 4D litera „distress” oznacza:",
+      "options": ["niebezpieczeństwo", "dysfunkcję", "cierpienie", "odchylenie"],
+      "correct": 2,
+      "explain": "Distress to subiektywne cierpienie osoby."
+    },
+    {
+      "q": "Ujęcie wymiarowe zaburzeń osobowości zakłada, że:",
+      "options": [
+        "zaburzenie jest nasileniem cech obecnych na kontinuum",
+        "zaburzenia są jakościowo odrębnymi chorobami",
+        "diagnoza opiera się wyłącznie na testach projekcyjnych",
+        "zaburzeń osobowości nie da się zdiagnozować"
+      ],
+      "correct": 0,
+      "explain": "Model wymiarowy traktuje zaburzenie jako skrajny poziom ciągłych cech."
+    },
+    {
+      "q": "Do klastra B w DSM-5-TR należy zaburzenie osobowości:",
+      "options": ["schizoidalnej", "zależnej", "obsesyjno-kompulsyjnej", "histrionicznej"],
+      "correct": 3,
+      "explain": "Klaster B obejmuje antyspołeczne, borderline, histrioniczne i narcystyczne."
+    },
+    {
+      "q": "Do klastra C w DSM-5-TR należy zaburzenie osobowości:",
+      "options": ["paranoicznej", "unikającej", "narcystycznej", "schizotypowej"],
+      "correct": 1,
+      "explain": "Klaster C to zaburzenia unikające, zależne i obsesyjno-kompulsyjne."
+    },
+    {
+      "q": "W ICD-11 ocenę zaburzenia osobowości rozpoczyna się od:",
+      "options": [
+        "przypisania do jednego z dziesięciu typów",
+        "badania testem projekcyjnym",
+        "określenia nasilenia: łagodne, umiarkowane, ciężkie",
+        "wskazania klastra A, B lub C"
+      ],
+      "correct": 2,
+      "explain": "ICD-11 jest wymiarowa – najpierw ocenia się stopień nasilenia."
+    },
+    {
+      "q": "Która z wymienionych NIE jest domeną cech w ICD-11?",
+      "options": ["psychotyczność", "anankastia", "dyssocjalność", "rozhamowanie"],
+      "correct": 0,
+      "explain": "Psychotyczność występuje w modelu alternatywnym DSM-5-TR, a nie wśród domen ICD-11."
+    },
+    {
+      "q": "Zaburzenie schizotypowe w ICD-11:",
+      "options": [
+        "jest jednym z typów zaburzeń osobowości",
+        "zostało usunięte z klasyfikacji",
+        "jest specyfikatorem borderline",
+        "należy do spektrum schizofrenii"
+      ],
+      "correct": 3,
+      "explain": "ICD-11 umieszcza je wśród pierwotnych zaburzeń psychotycznych."
+    },
+    {
+      "q": "Wzorzec borderline w ICD-11 ma status:",
+      "options": [
+        "osobnej domeny cech",
+        "specyfikatora (wzorca) dodawanego do diagnozy",
+        "kategorii w klastrze B",
+        "zaburzenia nastroju"
+      ],
+      "correct": 1,
+      "explain": "ICD-11 pozwala dodać specyfikator wzorca borderline."
+    },
+    {
+      "q": "Kluczowa zasada w pracy z osobą o cechach paranoicznych to:",
+      "options": [
+        "żartowanie dla rozładowania napięcia",
+        "konfrontowanie jej przekonań w grupie",
+        "przejrzystość działań i dotrzymywanie słowa",
+        "unikanie informowania o procedurach"
+      ],
+      "correct": 2,
+      "explain": "Przewidywalność i jawność zmniejszają podejrzliwość."
+    },
+    {
+      "q": "Wielkościowość, potrzeba podziwu i brak empatii to rdzeń zaburzenia osobowości:",
+      "options": ["narcystycznej", "histrionicznej", "zależnej", "schizoidalnej"],
+      "correct": 0,
+      "explain": "To trzy główne wymiary osobowości narcystycznej w DSM."
+    },
+    {
+      "q": "Diagnozę antyspołecznego zaburzenia osobowości (DSM-5-TR) stawia się, gdy:",
+      "options": [
+        "osoba ma co najmniej 15 lat",
+        "osoba była karana sądownie",
+        "uzyskała wysoki wynik w PCL-R",
+        "osoba jest dorosła, a zaburzenia zachowania występowały przed 15 r.ż."
+      ],
+      "correct": 3,
+      "explain": "Kryterium wieku i wcześniejsze zaburzenia zachowania są warunkiem rozpoznania."
+    },
+    {
+      "q": "Autorem skali PCL-R służącej do oceny psychopatii jest:",
+      "options": ["H. Cleckley", "R. Hare", "O. Kernberg", "M. Linehan"],
+      "correct": 1,
+      "explain": "Robert Hare opracował Psychopathy Checklist-Revised."
+    },
+    {
+      "q": "Zasada „responsywności” w modelu RNR oznacza:",
+      "options": [
+        "intensywność oddziaływań zależną od ryzyka",
+        "koncentrację na potrzebach kryminogennych",
+        "dopasowanie metod do możliwości i stylu uczenia się sprawcy",
+        "natychmiastową reakcję na naruszenie regulaminu"
+      ],
+      "correct": 2,
+      "explain": "Responsywność dotyczy sposobu prowadzenia oddziaływań."
+    },
+    {
+      "q": "Trudność w podejmowaniu codziennych decyzji bez rad innych i lęk przed samotnością są typowe dla osobowości:",
+      "options": ["zależnej", "unikającej", "schizoidalnej", "paranoicznej"],
+      "correct": 0,
+      "explain": "To główne kryteria zaburzenia osobowości zależnej."
+    },
+    {
+      "q": "Osobę unikającą od schizoidalnej odróżnia przede wszystkim to, że:",
+      "options": [
+        "ma objawy psychotyczne",
+        "jest obojętna na krytykę",
+        "nie odczuwa potrzeby bliskości",
+        "pragnie relacji, ale boi się odrzucenia"
+      ],
+      "correct": 3,
+      "explain": "Unikanie wynika z lęku, a nie z braku potrzeby kontaktu."
+    },
+    {
+      "q": "Cechy osobowości anankastycznej są zazwyczaj przeżywane jako:",
+      "options": [
+        "ego-dystoniczne natręctwa",
+        "ego-syntoniczne, zgodne z własnym obrazem siebie",
+        "objawy psychotyczne",
+        "efekt uboczny leków"
+      ],
+      "correct": 1,
+      "explain": "W odróżnieniu od OCD osoba uznaje swój perfekcjonizm za słuszny."
+    },
+    {
+      "q": "W ICD-11 perfekcjonizm, sztywność i potrzebę kontroli opisuje domena:",
+      "options": ["negatywnej afektywności", "zdystansowania", "anankastii", "rozhamowania"],
+      "correct": 2,
+      "explain": "Anankastia to domena skupiona na kontroli i perfekcjonizmie."
+    },
+    {
+      "q": "Przeniesienie to:",
+      "options": [
+        "nieświadome przenoszenie przez klienta na pomagającego wzorców relacji z przeszłości",
+        "reakcja emocjonalna terapeuty na klienta",
+        "przekazanie klienta innemu specjaliście",
+        "świadome naśladowanie terapeuty"
+      ],
+      "correct": 0,
+      "explain": "Przeniesienie dotyczy klienta; reakcja terapeuty to przeciwprzeniesienie."
+    },
+    {
+      "q": "Wychowawca zauważa, że ma silną potrzebę „ratowania” podopiecznej i łamie dla niej zasady. Jest to przejaw:",
+      "options": ["oporu", "przeniesienia pozytywnego klienta", "rozszczepienia", "nieuświadomionego przeciwprzeniesienia"],
+      "correct": 3,
+      "explain": "To reakcja emocjonalna pomagającego, która prowadzi do odgrywania."
+    },
+    {
+      "q": "Terapia dialektyczno-behawioralna (DBT) została opracowana przez:",
+      "options": ["A. Batemana", "M. Linehan", "J. Younga", "O. Kernberga"],
+      "correct": 1,
+      "explain": "Marsha Linehan stworzyła DBT dla osób z wzorcem borderline."
+    },
+    {
+      "q": "Najlepszym sposobem radzenia sobie z rozszczepieniem w zespole wychowawczym jest:",
+      "options": [
+        "wybór jednego wychowawcy jako jedynego decydenta",
+        "unikanie rozmów o kliencie",
+        "spójność zespołu, wymiana informacji i superwizja",
+        "przeniesienie klienta do innej placówki"
+      ],
+      "correct": 2,
+      "explain": "Rozszczepienie neutralizuje wspólne stanowisko zespołu i refleksja w superwizji."
+    }
+  ],
+  "open": [
+    {
+      "q": "Omów kryteria normy i patologii oraz ich przydatność w diagnozie zaburzeń osobowości.",
+      "answer": "Wyróżnia się normę statystyczną (to, co przeciętne), społeczno-kulturową (zgodność z oczekiwaniami kultury), funkcjonalną (przystosowanie i realizacja ról), idealną (pełny rozwój) i subiektywną (cierpienie). Każda ma ograniczenia, dlatego stosuje się kryteria łączone, np. model 4D: odchylenie, cierpienie, dysfunkcja, niebezpieczeństwo. Granica ilościowa traktuje patologię jako skrajne nasilenie cech, jakościowa – jako zjawisko odrębne. W zaburzeniach osobowości współczesne klasyfikacje (ICD-11, model alternatywny DSM-5-TR) przyjmują ujęcie wymiarowe. O zaburzeniu mówimy, gdy wzorzec jest trwały, sztywny, wszechobecny i prowadzi do cierpienia lub upośledzenia, przy uwzględnieniu kontekstu kulturowego i sytuacyjnego."
+    },
+    {
+      "q": "Porównaj ujęcie zaburzeń osobowości w DSM-5-TR i ICD-11.",
+      "answer": "DSM-5-TR w sekcji II utrzymuje model kategorialny: 10 zaburzeń w trzech klastrach – A (paranoiczne, schizoidalne, schizotypowe), B (antyspołeczne, borderline, histrioniczne, narcystyczne), C (unikające, zależne, obsesyjno-kompulsyjne). W sekcji III proponuje model alternatywny: poziom funkcjonowania osobowości i pięć domen cech. ICD-11 zrezygnowała z typów na rzecz modelu wymiarowego: ocenia się nasilenie zaburzenia (łagodne, umiarkowane, ciężkie) lub trudności osobowościowe, a następnie opisuje wyraziste domeny: negatywną afektywność, zdystansowanie, dyssocjalność, rozhamowanie i anankastię; można dodać wzorzec borderline. Zaburzenie schizotypowe ICD-11 włączyła do spektrum schizofrenii."
+    },
+    {
+      "q": "Scharakteryzuj antyspołeczne zaburzenie osobowości i zasady pracy z takimi osobami w systemie penitencjarnym.",
+      "answer": "To trwały wzorzec lekceważenia i naruszania praw innych: łamanie prawa, kłamstwo, manipulacja, impulsywność, agresja, nieodpowiedzialność, brak wyrzutów sumienia; rozpoznawany u dorosłych z zaburzeniami zachowania przed 15. rokiem życia. W ICD-11 odpowiada mu domena dyssocjalności. Należy je odróżnić od psychopatii (Cleckley, Hare, PCL-R), która obejmuje także płytki afekt i brak empatii. W pracy penitencjarnej ważne są jasne reguły i konsekwencje, spójność zespołu i odporność na manipulację, model RNR (ryzyko, potrzeby kryminogenne, responsywność), programy poznawczo-behawioralne, trening zastępowania agresji, terapia uzależnień oraz odwoływanie się do własnego interesu skazanego. Konieczna jest superwizja personelu."
+    },
+    {
+      "q": "Jak pedagog powinien pracować z wychowankiem o cechach narcystycznych, a jak z osobą o cechach paranoicznych?",
+      "answer": "Przy cechach narcystycznych podstawą jest ochrona przed zawstydzeniem: informację zwrotną daje się rzeczowo i prywatnie, docenia realne starania i osiągnięcia, nie wchodzi w rywalizację, a granice stawia spokojnie i konsekwentnie. Pomocne bywa powierzenie odpowiedzialnej roli, która zaspokaja potrzebę znaczenia w sposób prospołeczny. Przy cechach paranoicznych kluczowa jest przewidywalność: jawne informowanie o celach i procedurach, dotrzymywanie obietnic, unikanie dwuznaczności i żartów, nieprzekonywanie na siłę oraz uznanie prawa do wątpliwości. W obu przypadkach pedagog powinien obserwować własne reakcje emocjonalne i korzystać z superwizji."
+    },
+    {
+      "q": "Wyjaśnij różnicę między osobowością unikającą, zależną i schizoidalną.",
+      "answer": "Osobowość unikająca (klaster C) to zahamowanie społeczne, poczucie nieadekwatności i lęk przed oceną – osoba pragnie bliskości, ale unika jej ze strachu przed odrzuceniem. Osobowość zależna (klaster C) cechuje nadmierna potrzeba opieki, uległość, trudność w samodzielnych decyzjach i lęk przed samotnością – osoba szuka relacji i przywiera do nich. Osobowość schizoidalna (klaster A) to brak potrzeby bliskości, preferencja samotności, chłód emocjonalny i obojętność na ocenę. W ICD-11 dwie pierwsze opisuje się głównie negatywną afektywnością, a unikającą i schizoidalną także zdystansowaniem."
+    },
+    {
+      "q": "Czym różni się zaburzenie anankastyczne od zaburzenia obsesyjno-kompulsyjnego?",
+      "answer": "Zaburzenie anankastyczne (w DSM-5-TR obsesyjno-kompulsyjne zaburzenie osobowości, w ICD-11 domena anankastii) to trwały styl funkcjonowania: perfekcjonizm, przywiązanie do reguł i szczegółów, sztywność, potrzeba kontroli, pracoholizm, niechęć do delegowania. Cechy te są ego-syntoniczne – osoba uznaje je za słuszne. Zaburzenie obsesyjno-kompulsyjne (OCD) to zaburzenie z natrętnymi, niechcianymi myślami i czynnościami przymusowymi, przeżywanymi jako obce i przykre (ego-dystoniczne), które osoba próbuje powstrzymać. Oba mogą współwystępować, ale wymagają innego leczenia: OCD – terapii ekspozycji i farmakoterapii, osobowość – pracy nad elastycznością i tolerancją błędu."
+    },
+    {
+      "q": "Omów pojęcia przeniesienia, przeciwprzeniesienia i oporu oraz ich znaczenie w pracy z osobami z zaburzeniami osobowości.",
+      "answer": "Przeniesienie to nieświadome przenoszenie przez klienta na pomagającego uczuć i wzorców relacji z ważnych osób z przeszłości – może przybrać formę idealizacji lub wrogości. Przeciwprzeniesienie to reakcje emocjonalne pomagającego na klienta: uświadomione dostarcza informacji o tym, co klient wywołuje w innych, nieuświadomione prowadzi do odgrywania (karania, ratowania). Opór to zachowania chroniące przed zmianą i lękiem – spóźnienia, milczenie, intelektualizacja. Osoby z zaburzeniami osobowości wywołują silne reakcje, a przy wzorcu borderline występuje rozszczepienie dzielące zespół. Dlatego niezbędne są jasny kontrakt, spójność zespołu, autorefleksja i regularna superwizja."
+    }
+  ]
+}
