@@ -52,5 +52,6 @@
   "deleteConfirm": "Usunąć ten przepis?",
   "pdfSubtitle": "Przepis na zajęcia",
   "time": "Czas",
-  "step": "Krok"
+  "step": "Krok",
+  "minutes": "Czas kroku (min)"
 }

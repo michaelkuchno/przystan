@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { MessageCircleQuestion, Search as SearchIcon } from 'lucide-react';
 import { Page, PageHeader } from '@/components/ui/page';
 import { Badge, Button, Card } from '@/components/ui/core';
-import { TextInput } from '@/components/ui/form';
+import { TextArea } from '@/components/ui/form';
 import { Notice } from '@/components/ui/notice';
 import { useContent } from '@/content/ContentProvider';
 import { all, activeSpace, useStore } from '@/lib/store';
@@ -129,9 +129,19 @@ export default function Ask() {
         <label htmlFor="ask-q" className="sr-only">
           {t('ask.placeholder')}
         </label>
-        <TextInput
+        <TextArea
+          autoGrow
+          rows={1}
           id="ask-q"
           className="min-h-13 min-w-0 flex-1 basis-64 text-lg"
+          enterKeyHint="send"
+          onKeyDown={(e) => {
+            // Enter sends, Shift+Enter makes a new line
+            if (e.key === 'Enter' && !e.shiftKey) {
+              e.preventDefault();
+              e.currentTarget.form?.requestSubmit();
+            }
+          }}
           placeholder={t('ask.placeholder')}
           value={q}
           onChange={(e) => setQ(e.target.value)}

@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Plus, Target, Trash2, CheckSquare2, Square } from 'lucide-react';
 import { Card, Button, EmptyState, IconButton, Badge } from '@/components/ui/core';
-import { TextField, DateField, Slider, TextInput } from '@/components/ui/form';
+import { TextField, DateField, Slider, TextInput, TextArea } from '@/components/ui/form';
 import { SaveStatus } from '@/components/SaveStatus';
 import { useStore, forClient, save, uid } from '@/lib/store';
 import { useEditable } from '@/lib/useEditable';
@@ -107,7 +107,9 @@ function Editor({ ipr }: { ipr: Ipr }) {
                     >
                       {a.done ? <CheckSquare2 className="size-5 text-ok" /> : <Square className="size-5 text-muted" />}
                     </button>
-                    <TextInput
+                    <TextArea
+                      autoGrow
+                      rows={1}
                       aria-label={t('ipr.action')}
                       placeholder={t('ipr.action')}
                       className={cn(a.done && 'line-through opacity-70')}

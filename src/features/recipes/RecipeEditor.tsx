@@ -5,7 +5,7 @@ import { Reorder, useDragControls } from 'framer-motion';
 import { GripVertical, Plus, Trash2, FileDown, Clock, ChefHat, Search, Copy } from 'lucide-react';
 import { Page, PageHeader } from '@/components/ui/page';
 import { Button, Card, EmptyState, IconButton, Badge } from '@/components/ui/core';
-import { TextField, TextInput, Chips } from '@/components/ui/form';
+import { TextField, TextArea, TextInput, Chips } from '@/components/ui/form';
 import { useConfirm } from '@/components/ui/overlay';
 import { useToast } from '@/components/ui/toast';
 import { SaveStatus } from '@/components/SaveStatus';
@@ -49,52 +49,58 @@ function Step({
   const controls = useDragControls();
   return (
     <Reorder.Item value={item} dragListener={false} dragControls={controls} className="list-none">
-      <div className="flex items-start gap-2 rounded-2xl border border-line bg-surface p-3 shadow-sm">
-        <button
-          type="button"
-          className="mt-1 inline-flex size-11 shrink-0 cursor-grab touch-none items-center justify-center rounded-xl text-muted hover:bg-surface-2 active:cursor-grabbing"
-          onPointerDown={(e) => controls.start(e)}
-          aria-label={t('reorder')}
-        >
-          <GripVertical className="size-5" />
-        </button>
-        <div className="min-w-0 flex-1 space-y-2">
-          <div className="flex items-center gap-2">
-            <span className="w-16 shrink-0 text-xs font-semibold text-muted tabular-nums">
-              {start}–{start + item.minutes}′
-            </span>
-            <TextInput
-              aria-label={t('stepTitle', { n: index + 1 })}
-              value={item.title}
-              onChange={(e) => onChange({ ...item, title: e.target.value })}
-              className="font-medium"
-            />
-          </div>
-          <div className="flex items-center gap-2">
-            <label className="flex w-16 shrink-0 items-center gap-1 text-xs text-muted" htmlFor={`min-${item.id}`}>
-              <Clock className="size-3.5" aria-hidden /> min
-            </label>
-            <input
-              id={`min-${item.id}`}
-              type="number"
-              min={1}
-              max={240}
-              value={item.minutes}
-              onChange={(e) => onChange({ ...item, minutes: Math.max(1, Number(e.target.value) || 1) })}
-              className="min-h-11 w-20 rounded-xl border border-line bg-surface px-2 text-center"
-            />
-            <TextInput
-              aria-label={t('note')}
-              placeholder={t('note')}
-              value={item.note}
-              onChange={(e) => onChange({ ...item, note: e.target.value })}
-              className="text-sm"
-            />
-          </div>
+      {/* Full-width texts that wrap and grow – long step descriptions (e.g. from AI) stay readable on phones */}
+      <div className="space-y-2 rounded-2xl border border-line bg-surface p-3 shadow-sm" data-testid="recipe-step">
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            className="inline-flex size-11 shrink-0 cursor-grab touch-none items-center justify-center rounded-xl text-muted hover:bg-surface-2 active:cursor-grabbing"
+            onPointerDown={(e) => controls.start(e)}
+            aria-label={t('reorder')}
+          >
+            <GripVertical className="size-5" />
+          </button>
+          <span className="rounded-full bg-surface-2 px-2.5 py-1 text-xs font-semibold text-muted tabular-nums">
+            {index + 1}. · {start}–{start + item.minutes}′
+          </span>
+          <div className="flex-1" />
+          <label className="sr-only" htmlFor={`min-${item.id}`}>
+            {t('minutes')}
+          </label>
+          <input
+            id={`min-${item.id}`}
+            type="number"
+            inputMode="numeric"
+            min={1}
+            max={240}
+            value={item.minutes}
+            onChange={(e) => onChange({ ...item, minutes: Math.max(1, Number(e.target.value) || 1) })}
+            className="min-h-11 w-16 rounded-xl border border-line bg-surface px-1 text-center"
+          />
+          <span className="flex items-center gap-1 text-xs text-muted" aria-hidden>
+            <Clock className="size-3.5" /> min
+          </span>
+          <IconButton label={t('common:delete')} onClick={onRemove}>
+            <Trash2 className="size-4" />
+          </IconButton>
         </div>
-        <IconButton label={t('common:delete')} onClick={onRemove}>
-          <Trash2 className="size-4" />
-        </IconButton>
+        <TextArea
+          autoGrow
+          rows={1}
+          aria-label={t('stepTitle', { n: index + 1 })}
+          value={item.title}
+          onChange={(e) => onChange({ ...item, title: e.target.value })}
+          className="font-medium"
+        />
+        <TextArea
+          autoGrow
+          rows={2}
+          aria-label={t('note')}
+          placeholder={t('note')}
+          value={item.note}
+          onChange={(e) => onChange({ ...item, note: e.target.value })}
+          className="text-sm"
+        />
       </div>
     </Reorder.Item>
   );

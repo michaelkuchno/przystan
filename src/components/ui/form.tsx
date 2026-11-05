@@ -1,6 +1,9 @@
 import {
   forwardRef,
+  useCallback,
   useId,
+  useLayoutEffect,
+  useRef,
   useState,
   type InputHTMLAttributes,
   type ReactNode,
@@ -54,11 +57,39 @@ export const TextInput = forwardRef<HTMLInputElement, InputHTMLAttributes<HTMLIn
   return <input ref={ref} className={cn(control, className)} {...rest} />;
 });
 
-export const TextArea = forwardRef<HTMLTextAreaElement, TextareaHTMLAttributes<HTMLTextAreaElement>>(function TextArea(
-  { className, rows = 3, ...rest },
+type TextAreaProps = TextareaHTMLAttributes<HTMLTextAreaElement> & {
+  /** Grows with its content (no inner scrolling) – for short-to-medium texts in lists and cards. */
+  autoGrow?: boolean;
+};
+
+export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(function TextArea(
+  { className, rows = 3, autoGrow = false, value, ...rest },
   ref,
 ) {
-  return <textarea ref={ref} rows={rows} className={cn(control, 'resize-y leading-relaxed', className)} {...rest} />;
+  const inner = useRef<HTMLTextAreaElement | null>(null);
+  const setRef = useCallback(
+    (el: HTMLTextAreaElement | null) => {
+      inner.current = el;
+      if (typeof ref === 'function') ref(el);
+      else if (ref) ref.current = el;
+    },
+    [ref],
+  );
+  useLayoutEffect(() => {
+    const el = inner.current;
+    if (!autoGrow || !el) return;
+    el.style.height = 'auto';
+    el.style.height = `${el.scrollHeight + 2}px`;
+  }, [autoGrow, value]);
+  return (
+    <textarea
+      ref={setRef}
+      rows={rows}
+      value={value}
+      className={cn(control, autoGrow ? 'resize-none overflow-hidden' : 'resize-y', 'leading-relaxed', className)}
+      {...rest}
+    />
+  );
 });
 
 export function Select({ className, children, ...rest }: SelectHTMLAttributes<HTMLSelectElement>) {
@@ -90,7 +121,14 @@ export function TextField({
   return (
     <Field label={label} hint={hint} htmlFor={id}>
       {multiline ? (
-        <TextArea id={id} rows={rows} value={value} onChange={(e) => onChange(e.target.value)} placeholder={rest.placeholder} />
+        <TextArea
+          autoGrow
+          id={id}
+          rows={rows}
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          placeholder={rest.placeholder}
+        />
       ) : (
         <TextInput id={id} value={value} onChange={(e) => onChange(e.target.value)} {...rest} />
       )}

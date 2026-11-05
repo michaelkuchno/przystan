@@ -97,7 +97,7 @@ function Editor({ plan }: { plan: RelapsePlan }) {
             </Button>
           </div>
           {draft.supportPeople.map((p) => (
-            <div key={p.id} className="flex gap-2">
+            <div key={p.id} className="flex flex-wrap gap-2 [&>input]:min-w-0 [&>input]:flex-1 [&>input]:basis-40">
               <TextInput
                 aria-label={t('relapse.personName')}
                 placeholder={t('relapse.personName')}

@@ -50,5 +50,6 @@
   "deleteConfirm": "Dieses Rezept löschen?",
   "pdfSubtitle": "Rezept für eine Einheit",
   "time": "Zeit",
-  "step": "Schritt"
+  "step": "Schritt",
+  "minutes": "Dauer des Schritts (Min.)"
 }

@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, FileDown, Lightbulb, Plus, Trash2, Check, ChefHat, ThumbsUp, ThumbsDown } from 'lucide-react';
 import { Page, PageHeader, Notice } from '@/components/ui/page';
 import { Button, Card, EmptyState, IconButton, Badge } from '@/components/ui/core';
-import { ListEditor, TextField, TextInput } from '@/components/ui/form';
+import { ListEditor, TextField, TextInput, TextArea } from '@/components/ui/form';
 import { useConfirm } from '@/components/ui/overlay';
 import { useToast } from '@/components/ui/toast';
 import { SaveStatus } from '@/components/SaveStatus';
@@ -192,7 +192,7 @@ function Wizard({ program }: { program: PreventionProgram }) {
     schedule: (
       <div className="space-y-4">
         {draft.schedule.map((s) => (
-          <div key={s.id} className="flex items-end gap-2">
+          <div key={s.id} className="flex flex-wrap items-end gap-2">
             <div className="w-40">
               <label className="mb-1 block text-xs text-muted" htmlFor={`sd-${s.id}`}>
                 {t('common:date')}
@@ -206,11 +206,13 @@ function Wizard({ program }: { program: PreventionProgram }) {
                 }
               />
             </div>
-            <div className="flex-1">
+            <div className="min-w-0 flex-1 basis-52">
               <label className="mb-1 block text-xs text-muted" htmlFor={`sa-${s.id}`}>
                 {t('activity')}
               </label>
-              <TextInput
+              <TextArea
+                autoGrow
+                rows={1}
                 id={`sa-${s.id}`}
                 value={s.activity}
                 onChange={(e) =>
@@ -251,7 +253,9 @@ function Wizard({ program }: { program: PreventionProgram }) {
               <label className="mb-1 block text-xs text-muted" htmlFor={`il-${i.id}`}>
                 {t('indicator')}
               </label>
-              <TextInput
+              <TextArea
+                autoGrow
+                rows={1}
                 id={`il-${i.id}`}
                 value={i.label}
                 onChange={(e) =>

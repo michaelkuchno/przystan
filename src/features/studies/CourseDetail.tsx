@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { BookOpen, EyeOff, Eye, Lightbulb, Plus, Trash2 } from 'lucide-react';
 import { Page, PageHeader } from '@/components/ui/page';
 import { Badge, Button, Card, EmptyState, IconButton } from '@/components/ui/core';
-import { Field, TextInput } from '@/components/ui/form';
+import { Field, TextInput, TextArea } from '@/components/ui/form';
 import { Sheet, Tabs, useConfirm } from '@/components/ui/overlay';
 import { Notice } from '@/components/ui/notice';
 import { cn } from '@/components/ui/cn';
@@ -143,7 +143,9 @@ function ProgramTab({ c, context }: { c: CourseView; context: StudyContext }) {
           />
         </Field>
         <Field label={t('examNote')} htmlFor="exam-note">
-          <TextInput
+          <TextArea
+            autoGrow
+            rows={1}
             id="exam-note"
             value={c.examNote ?? ''}
             onChange={(e) => void patchCourse(c, { examNote: e.target.value })}
@@ -175,9 +177,19 @@ function ProgramTab({ c, context }: { c: CourseView; context: StudyContext }) {
           <label htmlFor="new-topic" className="sr-only">
             {t('addTopic')}
           </label>
-          <TextInput
+          <TextArea
+            autoGrow
+            rows={1}
             id="new-topic"
             className="min-w-0 flex-1 basis-56"
+            enterKeyHint="send"
+            onKeyDown={(e) => {
+              // Enter sends, Shift+Enter makes a new line
+              if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                e.currentTarget.form?.requestSubmit();
+              }
+            }}
             placeholder={t('addTopicHint')}
             value={newTopic}
             onChange={(e) => setNewTopic(e.target.value)}

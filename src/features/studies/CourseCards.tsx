@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { GraduationCap, Pencil, Plus, Sparkles } from 'lucide-react';
 import { Badge, Button, ButtonLink, Card, Stat } from '@/components/ui/core';
-import { TextArea, TextInput } from '@/components/ui/form';
+import { TextArea } from '@/components/ui/form';
 import { useToast } from '@/components/ui/toast';
 import { all, get, save, uid, useStore } from '@/lib/store';
 import { usePrefs } from '@/lib/prefs';
@@ -141,13 +141,16 @@ export function CourseCards({ c, context }: { c: CourseView; context: StudyConte
       </AiOutput>
       <Card className="space-y-2">
         <h3 className="font-sans text-base font-semibold">{t('cards.own')}</h3>
-        <TextInput
+        <TextArea
+          autoGrow
+          rows={1}
           aria-label={t('cards.front')}
           placeholder={t('cards.front')}
           value={front}
           onChange={(e) => setFront(e.target.value)}
         />
         <TextArea
+          autoGrow
           aria-label={t('cards.back')}
           placeholder={t('cards.back')}
           rows={2}

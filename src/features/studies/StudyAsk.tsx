@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { MessageCircleQuestion, Search } from 'lucide-react';
 import { Badge, Button, Card } from '@/components/ui/core';
-import { Chips, TextInput } from '@/components/ui/form';
+import { Chips, TextArea } from '@/components/ui/form';
 import { usePrefs } from '@/lib/prefs';
 import { activeSpace } from '@/lib/store';
 import { currentRoute, getEmbedder } from '@/lib/ai';
@@ -130,9 +130,19 @@ export function StudyAsk({ courseId, initialAsk = true }: { courseId?: string; i
         <label htmlFor="study-q" className="sr-only">
           {t('askPlaceholder')}
         </label>
-        <TextInput
+        <TextArea
+          autoGrow
+          rows={1}
           id="study-q"
           className="min-h-12 min-w-0 flex-1 basis-60"
+          enterKeyHint="send"
+          onKeyDown={(e) => {
+            // Enter sends, Shift+Enter makes a new line
+            if (e.key === 'Enter' && !e.shiftKey) {
+              e.preventDefault();
+              e.currentTarget.form?.requestSubmit();
+            }
+          }}
           placeholder={t('askPlaceholder')}
           value={q}
           onChange={(e) => setQ(e.target.value)}

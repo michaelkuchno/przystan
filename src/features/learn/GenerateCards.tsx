@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { FileUp, Save, Sparkles, Trash2 } from 'lucide-react';
 import { Page, PageHeader } from '@/components/ui/page';
 import { Button, Card, IconButton, SectionTitle } from '@/components/ui/core';
-import { Field, Select, TextArea, TextInput } from '@/components/ui/form';
+import { Field, Select, TextArea } from '@/components/ui/form';
 import { Notice } from '@/components/ui/notice';
 import { useToast } from '@/components/ui/toast';
 import { all, save, uid, useStore } from '@/lib/store';
@@ -134,12 +134,15 @@ export default function GenerateCards() {
                       <Trash2 className="size-4" />
                     </IconButton>
                   </div>
-                  <TextInput
+                  <TextArea
+                    autoGrow
+                    rows={1}
                     aria-label={t('learn.front')}
                     value={d.front}
                     onChange={(e) => patch(d.id, { front: e.target.value })}
                   />
                   <TextArea
+                    autoGrow
                     aria-label={t('learn.back')}
                     rows={2}
                     value={d.back}

@@ -50,5 +50,6 @@
   "deleteConfirm": "Delete this recipe?",
   "pdfSubtitle": "Session recipe",
   "time": "Time",
-  "step": "Step"
+  "step": "Step",
+  "minutes": "Step duration (min)"
 }
